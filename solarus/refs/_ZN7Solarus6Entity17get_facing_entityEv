@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='240' type='Solarus::Entity * Solarus::Entity::get_facing_entity()'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='173' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='189' u='c' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='559' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1078' ll='1080' type='Solarus::Entity * Solarus::Entity::get_facing_entity()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1782' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1074'>/**
+ * \brief Returns the detector in front of this entity.
+ * \return The detector this entity is facing, or nullptr if there is no detector in front of him.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1899' u='c' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2004' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='375' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='98' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='92' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='95' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='115' u='c' c='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='104' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='167' u='c' c='_ZN7Solarus4Hero17SwordTappingState21is_cutting_with_swordERNS_6EntityE'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='47' u='c' c='_ZN7Solarus4Hero14UsingItemState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1041' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_facing_entityEP9lua_State'/>

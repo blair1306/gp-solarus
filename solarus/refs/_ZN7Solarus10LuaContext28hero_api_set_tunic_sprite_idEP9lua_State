@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='871' type='static int Solarus::LuaContext::hero_api_set_tunic_sprite_id(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='165' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1999' ll='2011' type='static int Solarus::LuaContext::hero_api_set_tunic_sprite_id(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1994'>/**
+ * \brief Implementation of hero:set_tunic_sprite_id().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

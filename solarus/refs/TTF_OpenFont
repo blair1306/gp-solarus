@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_ttf.h' l='86' type='TTF_Font * TTF_OpenFont(const char * file, int ptsize)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='82'>/* Open a font file and create a font of the specified point size.
+ * Some .fon fonts will have several sizes embedded in the file, so the
+ * point size becomes the index of choosing which size.  If the value
+ * is too high, the last indexed size will be the default. */</doc>

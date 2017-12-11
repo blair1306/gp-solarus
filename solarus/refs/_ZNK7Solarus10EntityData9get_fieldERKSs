@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='109' type='Solarus::EntityData::FieldValue Solarus::EntityData::get_field(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='524' ll='532' type='FieldValue Solarus::EntityData::get_field(const std::string &amp; key) const'/>
+<use f='codebrowser/src/EntityData.cpp' l='685' u='c' c='_ZNK7Solarus10EntityData9has_fieldERKSs'/>
+<doc f='codebrowser/src/EntityData.cpp' l='519'>/**
+ * \brief Returns a field of this entity if it exists.
+ * \param key Key of the field to get.
+ * \return The corresponding field or a nil field.
+ */</doc>

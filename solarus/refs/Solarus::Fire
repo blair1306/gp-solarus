@@ -1,0 +1,13 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Fire.h' l='31' ll='51'/>
+<size>256</size>
+<doc f='codebrowser/include/solarus/entities/Fire.h' l='26'>/**
+ * \brief Represents some fire on the map.
+ *
+ * Fire can interact with entities.
+ */</doc>
+<smbr r='Solarus::Fire::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<fun r='_ZNK7Solarus4Fire8get_typeEv'/>
+<fun r='_ZN7Solarus4Fire6updateEv'/>
+<fun r='_ZN7Solarus4Fire16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>

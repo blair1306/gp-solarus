@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ItDecoder.cpp source code [codebrowser/src/lowlevel/ItDecoder.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/lowlevel/ItDecoder.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>lowlevel</a>/<a href='ItDecoder.cpp.html'>ItDecoder.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/lowlevel/ItDecoder.h.html">"solarus/lowlevel/ItDecoder.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../../include/libmodplug/stdafx.h.html">&lt;stdafx.h&gt;</a>  // These two headers are with the libmodplug ones.</u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../include/libmodplug/sndfile.h.html">&lt;sndfile.h&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * <span class="command">\brief</span> Creates an Impulse Tracker decoder.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td><a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoderC1Ev" title='Solarus::ItDecoder::ItDecoder' data-ref="_ZN7Solarus9ItDecoderC1Ev">ItDecoder</dfn>():</td></tr>
+<tr><th id="28">28</th><td>  <a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a><a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNSt10unique_ptrC1EDn" title='std::unique_ptr::unique_ptr&lt;_Tp, _Dp&gt;' data-ref="_ZNSt10unique_ptrC1EDn">(</a><b>nullptr</b>) {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>  <a class="typedef" href="../../../include/libmodplug/modplug.h.html#ModPlug_Settings" title='ModPlug_Settings' data-type='struct _ModPlug_Settings' data-ref="ModPlug_Settings">ModPlug_Settings</a> <a class="ref fake" href="../../../include/libmodplug/modplug.h.html#73" title='_ModPlug_Settings::_ModPlug_Settings' data-ref="_ZN17_ModPlug_SettingsC1Ev"></a><dfn class="local col6 decl" id="336settings" title='settings' data-type='ModPlug_Settings' data-ref="336settings">settings</dfn>;</td></tr>
+<tr><th id="31">31</th><td>  <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_GetSettings" title='ModPlug_GetSettings' data-ref="ModPlug_GetSettings">ModPlug_GetSettings</a>(&amp;<a class="local col6 ref" href="#336settings" title='settings' data-ref="336settings">settings</a>);</td></tr>
+<tr><th id="32">32</th><td>  <a class="local col6 ref" href="#336settings" title='settings' data-ref="336settings">settings</a>.<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlug_Settings::mChannels" title='_ModPlug_Settings::mChannels' data-ref="_ModPlug_Settings::mChannels">mChannels</a> = <var>2</var>;     <i>// stereo</i></td></tr>
+<tr><th id="33">33</th><td>  <a class="local col6 ref" href="#336settings" title='settings' data-ref="336settings">settings</a>.<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlug_Settings::mBits" title='_ModPlug_Settings::mBits' data-ref="_ModPlug_Settings::mBits">mBits</a> = <var>16</var>;        <i>// 16 bits</i></td></tr>
+<tr><th id="34">34</th><td>  <a class="local col6 ref" href="#336settings" title='settings' data-ref="336settings">settings</a>.<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlug_Settings::mLoopCount" title='_ModPlug_Settings::mLoopCount' data-ref="_ModPlug_Settings::mLoopCount">mLoopCount</a> = -<var>1</var>;   <i>// Loop forever by default.</i></td></tr>
+<tr><th id="35">35</th><td>  <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_SetSettings" title='ModPlug_SetSettings' data-ref="ModPlug_SetSettings">ModPlug_SetSettings</a>(&amp;<a class="local col6 ref" href="#336settings" title='settings' data-ref="336settings">settings</a>);</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * <span class="command">\brief</span> Loads an IT file from memory.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">sound_buffer</span> The memory area to read</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="42">42</th><td><em>void</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder4loadERKSs" title='Solarus::ItDecoder::load' data-ref="_ZN7Solarus9ItDecoder4loadERKSs">load</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col7 decl" id="337sound_buffer" title='sound_buffer' data-type='const std::string &amp;' data-ref="337sound_buffer">sound_buffer</dfn>) {</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a> <a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZSteqRKSt10unique_ptrIT_T0_EDn" title='std::operator==' data-ref="_ZSteqRKSt10unique_ptrIT_T0_EDn">==</a> <b>nullptr</b>,</td></tr>
+<tr><th id="45">45</th><td>      <q>"IT data is already loaded"</q></td></tr>
+<tr><th id="46">46</th><td>  );</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>  <i>// Load the IT data into the IT library.</i></td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a> <a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNSt10unique_ptraSEOSt10unique_ptrIT_T0_E" title='std::unique_ptr::operator=' data-ref="_ZNSt10unique_ptraSEOSt10unique_ptrIT_T0_E">=</a> <a class="typedef" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::ModPlugFileUniquePtr" title='Solarus::ItDecoder::ModPlugFileUniquePtr' data-type='std::unique_ptr&lt;ModPlugFile, ModPlugFileDeleter&gt;' data-ref="Solarus::ItDecoder::ModPlugFileUniquePtr"><a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNSt10unique_ptrC1ENNS_8_PointerE4typeE" title='std::unique_ptr::unique_ptr&lt;_Tp, _Dp&gt;' data-ref="_ZNSt10unique_ptrC1ENNS_8_PointerE4typeE">ModPlugFileUniquePtr</a></a>(</td></tr>
+<tr><th id="50">50</th><td>      <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_Load" title='ModPlug_Load' data-ref="ModPlug_Load">ModPlug_Load</a>((<em>const</em> <em>void</em>*) <a class="local col7 ref" href="#337sound_buffer" title='sound_buffer' data-ref="337sound_buffer">sound_buffer</a>.<a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNKSt12basic_string4dataEv" title='std::basic_string::data' data-ref="_ZNKSt12basic_string4dataEv">data</a>(), (<em>int</em>) <a class="local col7 ref" href="#337sound_buffer" title='sound_buffer' data-ref="337sound_buffer">sound_buffer</a>.<a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNKSt12basic_string4sizeEv" title='std::basic_string::size' data-ref="_ZNKSt12basic_string4sizeEv">size</a>())</td></tr>
+<tr><th id="51">51</th><td>  );</td></tr>
+<tr><th id="52">52</th><td>}</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * <span class="command">\brief</span> Unloads the IT file previously loaded.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="57">57</th><td><em>void</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder6unloadEv" title='Solarus::ItDecoder::unload' data-ref="_ZN7Solarus9ItDecoder6unloadEv">unload</dfn>() {</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a> <a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZStneRKSt10unique_ptrIT_T0_EDn" title='std::operator!=' data-ref="_ZStneRKSt10unique_ptrIT_T0_EDn">!=</a> <b>nullptr</b>,</td></tr>
+<tr><th id="60">60</th><td>      <q>"IT data is not loaded"</q></td></tr>
+<tr><th id="61">61</th><td>  );</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>  <a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a> <a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNSt10unique_ptraSEDn" title='std::unique_ptr::operator=' data-ref="_ZNSt10unique_ptraSEDn">=</a> <b>nullptr</b>;</td></tr>
+<tr><th id="64">64</th><td>}</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * <span class="command">\brief</span> Decodes a chunk of the previously loaded IT data into PCM data.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">decoded_data</span> Pointer to where you want the decoded data to be written.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">nb_samples</span> Number of samples to write.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">\return</span> The number of bytes read, or 0 if the end is reached.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="72">72</th><td><em>int</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder6decodeEPvi" title='Solarus::ItDecoder::decode' data-ref="_ZN7Solarus9ItDecoder6decodeEPvi">decode</dfn>(<em>void</em>* <dfn class="local col8 decl" id="338decoded_data" title='decoded_data' data-type='void *' data-ref="338decoded_data">decoded_data</dfn>, <em>int</em> <dfn class="local col9 decl" id="339nb_samples" title='nb_samples' data-type='int' data-ref="339nb_samples">nb_samples</dfn>) {</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>  <i>// Decode from the IT data the specified number of PCM samples.</i></td></tr>
+<tr><th id="75">75</th><td>  <b>return</b> <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_Read" title='ModPlug_Read' data-ref="ModPlug_Read">ModPlug_Read</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>(), <a class="local col8 ref" href="#338decoded_data" title='decoded_data' data-ref="338decoded_data">decoded_data</a>, <a class="local col9 ref" href="#339nb_samples" title='nb_samples' data-ref="339nb_samples">nb_samples</a>);</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * <span class="command">\brief</span> Returns the number of channels in this music.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * <span class="command">\return</span> The number of channels.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="82">82</th><td><em>int</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZNK7Solarus9ItDecoder16get_num_channelsEv" title='Solarus::ItDecoder::get_num_channels' data-ref="_ZNK7Solarus9ItDecoder16get_num_channelsEv">get_num_channels</dfn>() <em>const</em> {</td></tr>
+<tr><th id="83">83</th><td>  <b>return</b> <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_NumChannels" title='ModPlug_NumChannels' data-ref="ModPlug_NumChannels">ModPlug_NumChannels</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>());</td></tr>
+<tr><th id="84">84</th><td>}</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * <span class="command">\brief</span> Returns the volume of a channel.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">channel</span> A channel index.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * <span class="command">\return</span> The volume of this channel.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="91">91</th><td><em>int</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZNK7Solarus9ItDecoder18get_channel_volumeEi" title='Solarus::ItDecoder::get_channel_volume' data-ref="_ZNK7Solarus9ItDecoder18get_channel_volumeEi">get_channel_volume</dfn>(<em>int</em> <dfn class="local col0 decl" id="340channel" title='channel' data-type='int' data-ref="340channel">channel</dfn>) <em>const</em> {</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>  <em>const</em> <em>int</em> <dfn class="local col1 decl" id="341num_patterns" title='num_patterns' data-type='const int' data-ref="341num_patterns">num_patterns</dfn> = <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_NumPatterns" title='ModPlug_NumPatterns' data-ref="ModPlug_NumPatterns">ModPlug_NumPatterns</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>());</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="local col0 ref" href="#340channel" title='channel' data-ref="340channel">channel</a> &gt;= <var>0</var> &amp;&amp; <a class="local col0 ref" href="#340channel" title='channel' data-ref="340channel">channel</a> &lt; <a class="member" href="#_ZNK7Solarus9ItDecoder16get_num_channelsEv" title='Solarus::ItDecoder::get_num_channels' data-ref="_ZNK7Solarus9ItDecoder16get_num_channelsEv">get_num_channels</a>(),</td></tr>
+<tr><th id="96">96</th><td>      <q>"Invalid channel number"</q>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>  <b>if</b> (<a class="local col1 ref" href="#341num_patterns" title='num_patterns' data-ref="341num_patterns">num_patterns</a> == <var>0</var>) {</td></tr>
+<tr><th id="99">99</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="100">100</th><td>  }</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>  <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="342num_rows" title='num_rows' data-type='unsigned int' data-ref="342num_rows">num_rows</dfn> = <var>0</var>;</td></tr>
+<tr><th id="103">103</th><td>  <a class="typedef" href="../../../include/libmodplug/modplug.h.html#ModPlugNote" title='ModPlugNote' data-type='struct _ModPlugNote' data-ref="ModPlugNote">ModPlugNote</a>* <dfn class="local col3 decl" id="343notes" title='notes' data-type='ModPlugNote *' data-ref="343notes">notes</dfn> = <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_GetPattern" title='ModPlug_GetPattern' data-ref="ModPlug_GetPattern">ModPlug_GetPattern</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>(), <var>0</var>, &amp;<a class="local col2 ref" href="#342num_rows" title='num_rows' data-ref="342num_rows">num_rows</a>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>  <b>if</b> (<a class="local col2 ref" href="#342num_rows" title='num_rows' data-ref="342num_rows">num_rows</a> == <var>0</var>) {</td></tr>
+<tr><th id="106">106</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="107">107</th><td>  }</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>  <b>return</b> <a class="local col3 ref" href="#343notes" title='notes' data-ref="343notes">notes</a>[<var>0</var>].<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlugNote::Volume" title='_ModPlugNote::Volume' data-ref="_ModPlugNote::Volume">Volume</a>;</td></tr>
+<tr><th id="110">110</th><td>}</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * <span class="command">\brief</span> Sets the volume of a channel.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">channel</span> A channel index.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">volume</span> The volume to set.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><em>void</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder18set_channel_volumeEii" title='Solarus::ItDecoder::set_channel_volume' data-ref="_ZN7Solarus9ItDecoder18set_channel_volumeEii">set_channel_volume</dfn>(<em>int</em> <dfn class="local col4 decl" id="344channel" title='channel' data-type='int' data-ref="344channel">channel</dfn>, <em>int</em> <dfn class="local col5 decl" id="345volume" title='volume' data-type='int' data-ref="345volume">volume</dfn>) {</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td>  <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="346num_channels" title='num_channels' data-type='const unsigned int' data-ref="346num_channels">num_channels</dfn> = <a class="member" href="#_ZNK7Solarus9ItDecoder16get_num_channelsEv" title='Solarus::ItDecoder::get_num_channels' data-ref="_ZNK7Solarus9ItDecoder16get_num_channelsEv">get_num_channels</a>();</td></tr>
+<tr><th id="120">120</th><td>  <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="347num_patterns" title='num_patterns' data-type='const unsigned int' data-ref="347num_patterns">num_patterns</dfn> = <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_NumPatterns" title='ModPlug_NumPatterns' data-ref="ModPlug_NumPatterns">ModPlug_NumPatterns</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>());</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>  <b>for</b> (<em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="348pattern" title='pattern' data-type='unsigned int' data-ref="348pattern">pattern</dfn> = <var>0</var>; <a class="local col8 ref" href="#348pattern" title='pattern' data-ref="348pattern">pattern</a> &lt; <a class="local col7 ref" href="#347num_patterns" title='num_patterns' data-ref="347num_patterns">num_patterns</a>; ++<a class="local col8 ref" href="#348pattern" title='pattern' data-ref="348pattern">pattern</a>) {</td></tr>
+<tr><th id="123">123</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="349num_rows" title='num_rows' data-type='unsigned int' data-ref="349num_rows">num_rows</dfn>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="typedef" href="../../../include/libmodplug/modplug.h.html#ModPlugNote" title='ModPlugNote' data-type='struct _ModPlugNote' data-ref="ModPlugNote">ModPlugNote</a>* <dfn class="local col0 decl" id="350notes" title='notes' data-type='ModPlugNote *' data-ref="350notes">notes</dfn> = <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_GetPattern" title='ModPlug_GetPattern' data-ref="ModPlug_GetPattern">ModPlug_GetPattern</a>(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>(), <a class="local col8 ref" href="#348pattern" title='pattern' data-ref="348pattern">pattern</a>, &amp;<a class="local col9 ref" href="#349num_rows" title='num_rows' data-ref="349num_rows">num_rows</a>);</td></tr>
+<tr><th id="125">125</th><td>    <b>for</b> (<em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="351j" title='j' data-type='unsigned int' data-ref="351j">j</dfn> = <a class="local col4 ref" href="#344channel" title='channel' data-ref="344channel">channel</a>; <a class="local col1 ref" href="#351j" title='j' data-ref="351j">j</a> &lt; <a class="local col9 ref" href="#349num_rows" title='num_rows' data-ref="349num_rows">num_rows</a> * <a class="local col6 ref" href="#346num_channels" title='num_channels' data-ref="346num_channels">num_channels</a>; <a class="local col1 ref" href="#351j" title='j' data-ref="351j">j</a> += <a class="local col6 ref" href="#346num_channels" title='num_channels' data-ref="346num_channels">num_channels</a>) {</td></tr>
+<tr><th id="126">126</th><td>      <a class="local col0 ref" href="#350notes" title='notes' data-ref="350notes">notes</a>[<a class="local col1 ref" href="#351j" title='j' data-ref="351j">j</a>].<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlugNote::Volume" title='_ModPlugNote::Volume' data-ref="_ModPlugNote::Volume">Volume</a> = <a class="local col5 ref" href="#345volume" title='volume' data-ref="345volume">volume</a>;</td></tr>
+<tr><th id="127">127</th><td>    }</td></tr>
+<tr><th id="128">128</th><td>  }</td></tr>
+<tr><th id="129">129</th><td>}</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * <span class="command">\brief</span> Returns the tempo of the music.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * <span class="command">\return</span> The tempo.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="135">135</th><td><em>int</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZNK7Solarus9ItDecoder9get_tempoEv" title='Solarus::ItDecoder::get_tempo' data-ref="_ZNK7Solarus9ItDecoder9get_tempoEv">get_tempo</dfn>() <em>const</em> {</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>  <b>return</b> <b>reinterpret_cast</b>&lt;<a class="type" href="../../../include/libmodplug/sndfile.h.html#CSoundFile" title='CSoundFile' data-ref="CSoundFile">CSoundFile</a>*&gt;(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>())-&gt;<a class="ref" href="../../../include/libmodplug/sndfile.h.html#_ZNK10CSoundFile13GetMusicTempoEv" title='CSoundFile::GetMusicTempo' data-ref="_ZNK10CSoundFile13GetMusicTempoEv">GetMusicTempo</a>();</td></tr>
+<tr><th id="138">138</th><td>}</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * <span class="command">\brief</span> Sets the tempo of the music.</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">tempo</span> The tempo to set.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="144">144</th><td><em>void</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder9set_tempoEi" title='Solarus::ItDecoder::set_tempo' data-ref="_ZN7Solarus9ItDecoder9set_tempoEi">set_tempo</dfn>(<em>int</em> <dfn class="local col2 decl" id="352tempo" title='tempo' data-type='int' data-ref="352tempo">tempo</dfn>) {</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td>  <b>reinterpret_cast</b>&lt;<a class="type" href="../../../include/libmodplug/sndfile.h.html#CSoundFile" title='CSoundFile' data-ref="CSoundFile">CSoundFile</a>*&gt;(<a class="member" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder::modplug_file" title='Solarus::ItDecoder::modplug_file' data-ref="Solarus::ItDecoder::modplug_file">modplug_file</a>.<a class="ref" href="../../../include/c++/4.9/bits/unique_ptr.h.html#_ZNKSt10unique_ptr3getEv" title='std::unique_ptr::get' data-ref="_ZNKSt10unique_ptr3getEv">get</a>())-&gt;<a class="ref" href="../../../include/libmodplug/sndfile.h.html#_ZN10CSoundFile8SetTempoEj" title='CSoundFile::SetTempo' data-ref="_ZN10CSoundFile8SetTempoEj">SetTempo</a>(<a class="local col2 ref" href="#352tempo" title='tempo' data-ref="352tempo">tempo</a>);</td></tr>
+<tr><th id="147">147</th><td>}</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the decoder loops when reaching the end.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="152">152</th><td><em>bool</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZNK7Solarus9ItDecoder5loopsEv" title='Solarus::ItDecoder::loops' data-ref="_ZNK7Solarus9ItDecoder5loopsEv">loops</dfn>() <em>const</em> {</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td>  <a class="typedef" href="../../../include/libmodplug/modplug.h.html#ModPlug_Settings" title='ModPlug_Settings' data-type='struct _ModPlug_Settings' data-ref="ModPlug_Settings">ModPlug_Settings</a> <a class="ref fake" href="../../../include/libmodplug/modplug.h.html#73" title='_ModPlug_Settings::_ModPlug_Settings' data-ref="_ZN17_ModPlug_SettingsC1Ev"></a><dfn class="local col3 decl" id="353settings" title='settings' data-type='ModPlug_Settings' data-ref="353settings">settings</dfn>;</td></tr>
+<tr><th id="155">155</th><td>  <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_GetSettings" title='ModPlug_GetSettings' data-ref="ModPlug_GetSettings">ModPlug_GetSettings</a>(&amp;<a class="local col3 ref" href="#353settings" title='settings' data-ref="353settings">settings</a>);</td></tr>
+<tr><th id="156">156</th><td>  <b>return</b> <a class="local col3 ref" href="#353settings" title='settings' data-ref="353settings">settings</a>.<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlug_Settings::mLoopCount" title='_ModPlug_Settings::mLoopCount' data-ref="_ModPlug_Settings::mLoopCount">mLoopCount</a> == -<var>1</var>;  <i>// -1 means looping forever.</i></td></tr>
+<tr><th id="157">157</th><td>}</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * <span class="command">\brief</span> Sets whether the decoder should loop when reaching the end.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">loops</span><span class="command"> \c</span> <span class="arg">true</span> to make the decoder loop.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="163">163</th><td><em>void</em> <a class="type" href="../../include/solarus/lowlevel/ItDecoder.h.html#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>::<dfn class="decl def" id="_ZN7Solarus9ItDecoder9set_loopsEb" title='Solarus::ItDecoder::set_loops' data-ref="_ZN7Solarus9ItDecoder9set_loopsEb">set_loops</dfn>(<em>bool</em> <dfn class="local col4 decl" id="354loops" title='loops' data-type='bool' data-ref="354loops">loops</dfn>) {</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>  <a class="typedef" href="../../../include/libmodplug/modplug.h.html#ModPlug_Settings" title='ModPlug_Settings' data-type='struct _ModPlug_Settings' data-ref="ModPlug_Settings">ModPlug_Settings</a> <a class="ref fake" href="../../../include/libmodplug/modplug.h.html#73" title='_ModPlug_Settings::_ModPlug_Settings' data-ref="_ZN17_ModPlug_SettingsC1Ev"></a><dfn class="local col5 decl" id="355settings" title='settings' data-type='ModPlug_Settings' data-ref="355settings">settings</dfn>;</td></tr>
+<tr><th id="166">166</th><td>  <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_GetSettings" title='ModPlug_GetSettings' data-ref="ModPlug_GetSettings">ModPlug_GetSettings</a>(&amp;<a class="local col5 ref" href="#355settings" title='settings' data-ref="355settings">settings</a>);</td></tr>
+<tr><th id="167">167</th><td>  <a class="local col5 ref" href="#355settings" title='settings' data-ref="355settings">settings</a>.<a class="ref" href="../../../include/libmodplug/modplug.h.html#_ModPlug_Settings::mLoopCount" title='_ModPlug_Settings::mLoopCount' data-ref="_ModPlug_Settings::mLoopCount">mLoopCount</a> = <a class="local col4 ref" href="#354loops" title='loops' data-ref="354loops">loops</a> ? -<var>1</var> : <var>0</var>;</td></tr>
+<tr><th id="168">168</th><td>  <a class="ref" href="../../../include/libmodplug/modplug.h.html#ModPlug_SetSettings" title='ModPlug_SetSettings' data-ref="ModPlug_SetSettings">ModPlug_SetSettings</a>(&amp;<a class="local col5 ref" href="#355settings" title='settings' data-ref="355settings">settings</a>);</td></tr>
+<tr><th id="169">169</th><td>}</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>}</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

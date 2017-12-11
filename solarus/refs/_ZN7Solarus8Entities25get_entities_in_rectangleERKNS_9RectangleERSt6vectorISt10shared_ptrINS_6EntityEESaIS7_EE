@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='105' type='void Solarus::Entities::get_entities_in_rectangle(const Solarus::Rectangle &amp; rectangle, EntityVector &amp; result)'/>
+<use f='codebrowser/src/Map.cpp' l='865' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1287' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1333' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1379' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1422' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='444' ll='449' type='void Solarus::Entities::get_entities_in_rectangle(const Solarus::Rectangle &amp; rectangle, EntityVector &amp; result)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='474' u='c' c='_ZN7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='495' u='c' c='_ZN7Solarus8Entities22get_entities_in_regionERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1231' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1348' u='c' c='_ZN7Solarus8Entities22overlaps_raised_blocksEiRKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='441'>/**
+ * \overload Non-const version.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='175' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>

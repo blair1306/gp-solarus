@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='84' type='int Solarus::Hero::get_animation_direction() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='47' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='209' u='c' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='63' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='88' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='451' ll='453' type='int Solarus::Hero::get_animation_direction() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='746' u='c' c='_ZNK7Solarus4Hero16get_facing_pointEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='824' u='c' c='_ZNK7Solarus4Hero20is_facing_direction4Ei'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='834' u='c' c='_ZNK7Solarus4Hero20is_facing_direction8Ei'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2006' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2197' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='444'>/**
+ * \brief Returns the direction of the hero&apos;s sprites.
+ *
+ * It is different from the movement direction.
+ *
+ * \return the direction of the sprites (0 to 3)
+ */</doc>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='51' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='269' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='139' u='c' c='_ZN7Solarus4Hero9FreeState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1771' u='c' c='_ZN7Solarus10LuaContext22hero_api_get_directionEP9lua_State'/>

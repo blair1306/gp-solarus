@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_pixels.h' l='338' type='void SDL_FreeFormat(SDL_PixelFormat * format)'/>
+<doc f='include/SDL2/SDL_pixels.h' l='335'>/**
+ *  \brief Free an SDL_PixelFormat structure.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='404' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='315' u='c' c='_ZN7Solarus5Video4quitEv'/>

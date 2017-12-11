@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/FontResource.h' l='41' type='static bool Solarus::FontResource::is_bitmap_font(const std::string &amp; font_id)'/>
+<def f='codebrowser/src/lowlevel/FontResource.cpp' l='154' ll='163' type='static bool Solarus::FontResource::is_bitmap_font(const std::string &amp; font_id)'/>
+<doc f='codebrowser/src/lowlevel/FontResource.cpp' l='149'>/**
+ * \brief Returns whether the specified font is a bitmap or an outline font.
+ * \param font_id Id of the font to test. It must exist.
+ * \return \c true if this is a bitmap font, \c false if this is an outline font.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='405' u='c' c='_ZN7Solarus11TextSurface7rebuildEv'/>

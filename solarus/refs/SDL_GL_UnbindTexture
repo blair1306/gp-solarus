@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_render.h' l='859' type='int SDL_GL_UnbindTexture(SDL_Texture * texture)'/>
+<doc f='include/SDL2/SDL_render.h' l='852'>/**
+ *  \brief Unbind a texture from the current OpenGL/ES/ES2 context.
+ *
+ *  \param texture  The SDL texture to unbind
+ *
+ *  \return 0 on success, or -1 if the operation is not supported
+ */</doc>

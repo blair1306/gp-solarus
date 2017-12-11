@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='103' type='void Solarus::Npc::initialize_sprite(const std::string &amp; sprite_name, int initial_direction)'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='69' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='110' ll='118' type='void Solarus::Npc::initialize_sprite(const std::string &amp; sprite_name, int initial_direction)'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='104'>/**
+ * \brief Creates the sprite specified.
+ * \param sprite_name sprite animation set of the entity, or an empty string to create no sprite
+ * \param initial_direction direction of the entity&apos;s sprite (ignored if there is no sprite
+ * of if the direction specified is -1)
+ */</doc>

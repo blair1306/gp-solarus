@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='302' type='void Solarus::LuaContext::sprite_on_animation_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation)'/>
+<use f='codebrowser/src/Sprite.cpp' l='298' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='633' ll='643' type='void Solarus::LuaContext::sprite_on_animation_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='625'>/**
+ * \brief Calls the on_animation_changed() method of a Lua sprite.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sprite A sprite whose animation has just changed.
+ * \param animation Name of the new animation.
+ */</doc>

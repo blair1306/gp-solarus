@@ -1,0 +1,7 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='379'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='380' ll='383'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='384' ll='385'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='375'>// We can&apos;t get has_trivial_assign right without compiler help, so fail
+// conservatively. We will assume it&apos;s false except for: (1) types
+// for which is_pod is true. (2) std::pair of types with trivial copy
+// constructors. (3) array of a type with a trivial assign constructor.</doc>

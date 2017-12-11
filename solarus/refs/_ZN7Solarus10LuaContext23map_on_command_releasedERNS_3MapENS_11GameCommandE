@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='366' type='bool Solarus::LuaContext::map_on_command_released(Solarus::Map &amp; map, Solarus::GameCommand command)'/>
+<use f='codebrowser/src/Game.cpp' l='335' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2309' ll='2321' type='bool Solarus::LuaContext::map_on_command_released(Solarus::Map &amp; map, Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2299'>/**
+ * \brief Calls the on_command_released() method of a Lua map.
+ *
+ * Also notifies the menus of the game if the game itself does not handle the
+ * event.
+ *
+ * \param map A map.
+ * \param command The command released.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

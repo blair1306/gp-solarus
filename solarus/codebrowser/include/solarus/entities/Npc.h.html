@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Npc.h source code [codebrowser/include/solarus/entities/Npc.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Npc "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/entities/Npc.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>entities</a>/<a href='Npc.h.html'>Npc.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_NPC_H">SOLARUS_NPC_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_NPC_H" data-ref="_M/SOLARUS_NPC_H">SOLARUS_NPC_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../CommandsEffects.h.html">"solarus/CommandsEffects.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * <span class="command">\brief</span> A non-playing character or a more general interactive entity.</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * The entity triggers a message or an event</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * when the player presses the action key while facing it.</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * This class can be used for usual living NPCs who the hero can talk to,</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * but also for more general non-living, interactive objects that show a</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * dialog or trigger a script, like signs or torches.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * Such customizable interactive objects are called generalized NPCs.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * A usual NPC has some specific collision and displaying properties.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * It must have a sprite with four directions, an animation "stopped",</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * and an animation "walking" if the script starts a movement.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * This class handles automatically the sprite's direction and animations</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * depending on the movement and the interactions with the hero.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * On the contrary, a generalized NPC is just assumed to be a solid</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * interactive entity, and the map script has to handle explicitly its</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * animations (if any).</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="48">48</th><td><b>class</b> <a class="macro" href="../Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <dfn class="type def" id="Solarus::Npc" title='Solarus::Npc' data-ref="Solarus::Npc">Npc</dfn>: <b>public</b> <a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a> {</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>  <b>public</b>:</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>    <em>static</em> <b>constexpr</b> <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a> <dfn class="decl" id="Solarus::Npc::ThisType" title='Solarus::Npc::ThisType' data-ref="Solarus::Npc::ThisType">ThisType</dfn> = <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a>::<a class="enum" href="EntityType.h.html#Solarus::EntityType::NPC" title='Solarus::EntityType::NPC' data-ref="Solarus::EntityType::NPC">NPC</a>;</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">     * <span class="command">\brief</span> The different kinds of interactions.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="57">57</th><td>    <b>enum</b> <dfn class="type def" id="Solarus::Npc::Subtype" title='Solarus::Npc::Subtype' data-ref="Solarus::Npc::Subtype">Subtype</dfn> {</td></tr>
+<tr><th id="58">58</th><td>      <dfn class="enum" id="Solarus::Npc::Subtype::GENERALIZED_NPC" title='Solarus::Npc::Subtype::GENERALIZED_NPC' data-ref="Solarus::Npc::Subtype::GENERALIZED_NPC">GENERALIZED_NPC</dfn>,    <i class="doc">/**&lt; a custom interactive entity (not necessarily a person) */</i></td></tr>
+<tr><th id="59">59</th><td>      <dfn class="enum" id="Solarus::Npc::Subtype::USUAL_NPC" title='Solarus::Npc::Subtype::USUAL_NPC' data-ref="Solarus::Npc::Subtype::USUAL_NPC">USUAL_NPC</dfn>           <i class="doc">/**&lt; a usual NPC who the player can talk to */</i></td></tr>
+<tr><th id="60">60</th><td>    };</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     * <span class="command">\brief</span> Type of action done when an interaction occurs.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="65">65</th><td>    <b>enum</b> <dfn class="type def" id="Solarus::Npc::Behavior" title='Solarus::Npc::Behavior' data-ref="Solarus::Npc::Behavior">Behavior</dfn> {</td></tr>
+<tr><th id="66">66</th><td>       <dfn class="enum" id="Solarus::Npc::Behavior::BEHAVIOR_DIALOG" title='Solarus::Npc::Behavior::BEHAVIOR_DIALOG' data-ref="Solarus::Npc::Behavior::BEHAVIOR_DIALOG">BEHAVIOR_DIALOG</dfn>,                 <i class="doc">/**&lt; start a dialog */</i></td></tr>
+<tr><th id="67">67</th><td>       <dfn class="enum" id="Solarus::Npc::Behavior::BEHAVIOR_MAP_SCRIPT" title='Solarus::Npc::Behavior::BEHAVIOR_MAP_SCRIPT' data-ref="Solarus::Npc::Behavior::BEHAVIOR_MAP_SCRIPT">BEHAVIOR_MAP_SCRIPT</dfn>,             <i class="doc">/**&lt; notify the NPC in Lua */</i></td></tr>
+<tr><th id="68">68</th><td>       <dfn class="enum" id="Solarus::Npc::Behavior::BEHAVIOR_ITEM_SCRIPT" title='Solarus::Npc::Behavior::BEHAVIOR_ITEM_SCRIPT' data-ref="Solarus::Npc::Behavior::BEHAVIOR_ITEM_SCRIPT">BEHAVIOR_ITEM_SCRIPT</dfn>             <i class="doc">/**&lt; notify an equipment item in Lua */</i></td></tr>
+<tr><th id="69">69</th><td>    };</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <dfn class="decl" id="_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_" title='Solarus::Npc::Npc' data-ref="_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_">Npc</dfn>(</td></tr>
+<tr><th id="72">72</th><td>        <a class="type" href="../Game.h.html#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <dfn class="local col9 decl" id="189game" title='game' data-type='Solarus::Game &amp;' data-ref="189game">game</dfn>,</td></tr>
+<tr><th id="73">73</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col0 decl" id="190name" title='name' data-type='const std::string &amp;' data-ref="190name">name</dfn>,</td></tr>
+<tr><th id="74">74</th><td>        <em>int</em> <dfn class="local col1 decl" id="191layer" title='layer' data-type='int' data-ref="191layer">layer</dfn>,</td></tr>
+<tr><th id="75">75</th><td>        <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col2 decl" id="192xy" title='xy' data-type='const Solarus::Point &amp;' data-ref="192xy">xy</dfn>,</td></tr>
+<tr><th id="76">76</th><td>        <a class="type" href="#Solarus::Npc::Subtype" title='Solarus::Npc::Subtype' data-ref="Solarus::Npc::Subtype">Subtype</a> <dfn class="local col3 decl" id="193subtype" title='subtype' data-type='Solarus::Npc::Subtype' data-ref="193subtype">subtype</dfn>,</td></tr>
+<tr><th id="77">77</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col4 decl" id="194sprite_name" title='sprite_name' data-type='const std::string &amp;' data-ref="194sprite_name">sprite_name</dfn>,</td></tr>
+<tr><th id="78">78</th><td>        <em>int</em> <dfn class="local col5 decl" id="195initial_direction" title='initial_direction' data-type='int' data-ref="195initial_direction">initial_direction</dfn>,</td></tr>
+<tr><th id="79">79</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col6 decl" id="196behavior_string" title='behavior_string' data-type='const std::string &amp;' data-ref="196behavior_string">behavior_string</dfn></td></tr>
+<tr><th id="80">80</th><td>    );</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a> <dfn class="virtual decl" id="_ZNK7Solarus3Npc8get_typeEv" title='Solarus::Npc::get_type' data-ref="_ZNK7Solarus3Npc8get_typeEv">get_type</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus3Npc8is_solidEv" title='Solarus::Npc::is_solid' data-ref="_ZNK7Solarus3Npc8is_solidEv">is_solid</dfn>() <em>const</em>;</td></tr>
+<tr><th id="85">85</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus3Npc14is_traversableEv" title='Solarus::Npc::is_traversable' data-ref="_ZNK7Solarus3Npc14is_traversableEv">is_traversable</dfn>() <em>const</em>;</td></tr>
+<tr><th id="86">86</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus3Npc15set_traversableEb" title='Solarus::Npc::set_traversable' data-ref="_ZN7Solarus3Npc15set_traversableEb">set_traversable</dfn>(<em>bool</em> <dfn class="local col7 decl" id="197traversable" title='traversable' data-type='bool' data-ref="197traversable">traversable</dfn>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc15is_obstacle_forERNS_6EntityE" title='Solarus::Npc::is_obstacle_for' data-ref="_ZN7Solarus3Npc15is_obstacle_forERNS_6EntityE">is_obstacle_for</dfn>(<a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col8 decl" id="198other" title='other' data-type='Solarus::Entity &amp;' data-ref="198other">other</dfn>) override;</td></tr>
+<tr><th id="89">89</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc16is_hero_obstacleERNS_4HeroE" title='Solarus::Npc::is_hero_obstacle' data-ref="_ZN7Solarus3Npc16is_hero_obstacleERNS_4HeroE">is_hero_obstacle</dfn>(<a class="type" href="Hero.h.html#Solarus::Hero" title='Solarus::Hero' data-ref="Solarus::Hero">Hero</a>&amp; <dfn class="local col9 decl" id="199hero" title='hero' data-type='Solarus::Hero &amp;' data-ref="199hero">hero</dfn>) override;</td></tr>
+<tr><th id="90">90</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc15is_npc_obstacleERS0_" title='Solarus::Npc::is_npc_obstacle' data-ref="_ZN7Solarus3Npc15is_npc_obstacleERS0_">is_npc_obstacle</dfn>(<a class="type" href="#Solarus::Npc" title='Solarus::Npc' data-ref="Solarus::Npc">Npc</a>&amp; <dfn class="local col0 decl" id="200npc" title='npc' data-type='Solarus::Npc &amp;' data-ref="200npc">npc</dfn>) override;</td></tr>
+<tr><th id="91">91</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc17is_enemy_obstacleERNS_5EnemyE" title='Solarus::Npc::is_enemy_obstacle' data-ref="_ZN7Solarus3Npc17is_enemy_obstacleERNS_5EnemyE">is_enemy_obstacle</dfn>(<a class="type" href="Enemy.h.html#Solarus::Enemy" title='Solarus::Enemy' data-ref="Solarus::Enemy">Enemy</a>&amp; <dfn class="local col1 decl" id="201enemy" title='enemy' data-type='Solarus::Enemy &amp;' data-ref="201enemy">enemy</dfn>) override;</td></tr>
+<tr><th id="92">92</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus3Npc16is_sword_ignoredEv" title='Solarus::Npc::is_sword_ignored' data-ref="_ZNK7Solarus3Npc16is_sword_ignoredEv">is_sword_ignored</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE" title='Solarus::Npc::notify_collision' data-ref="_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE">notify_collision</dfn>(<a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col2 decl" id="202entity_overlapping" title='entity_overlapping' data-type='Solarus::Entity &amp;' data-ref="202entity_overlapping">entity_overlapping</dfn>, <a class="type" href="CollisionMode.h.html#Solarus::CollisionMode" title='Solarus::CollisionMode' data-ref="Solarus::CollisionMode">CollisionMode</a> <dfn class="local col3 decl" id="203collision_mode" title='collision_mode' data-type='Solarus::CollisionMode' data-ref="203collision_mode">collision_mode</dfn>) override;</td></tr>
+<tr><th id="95">95</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc29notify_action_command_pressedEv" title='Solarus::Npc::notify_action_command_pressed' data-ref="_ZN7Solarus3Npc29notify_action_command_pressedEv">notify_action_command_pressed</dfn>() override;</td></tr>
+<tr><th id="96">96</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE" title='Solarus::Npc::notify_interaction_with_item' data-ref="_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE">notify_interaction_with_item</dfn>(<a class="type" href="Entity.h.html#Solarus::EquipmentItem" title='Solarus::EquipmentItem' data-ref="Solarus::EquipmentItem">EquipmentItem</a>&amp; <dfn class="local col4 decl" id="204item" title='item' data-type='Solarus::EquipmentItem &amp;' data-ref="204item">item</dfn>) override;</td></tr>
+<tr><th id="97">97</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc23notify_position_changedEv" title='Solarus::Npc::notify_position_changed' data-ref="_ZN7Solarus3Npc23notify_position_changedEv">notify_position_changed</dfn>() override;</td></tr>
+<tr><th id="98">98</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus3Npc24notify_movement_finishedEv" title='Solarus::Npc::notify_movement_finished' data-ref="_ZN7Solarus3Npc24notify_movement_finishedEv">notify_movement_finished</dfn>() override;</td></tr>
+<tr><th id="99">99</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus3Npc13can_be_liftedEv" title='Solarus::Npc::can_be_lifted' data-ref="_ZNK7Solarus3Npc13can_be_liftedEv">can_be_lifted</dfn>() <em>const</em>;</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>  <b>private</b>:</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus3Npc17initialize_spriteERKSsi" title='Solarus::Npc::initialize_sprite' data-ref="_ZN7Solarus3Npc17initialize_spriteERKSsi">initialize_sprite</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col5 decl" id="205sprite_name" title='sprite_name' data-type='const std::string &amp;' data-ref="205sprite_name">sprite_name</dfn>, <em>int</em> <dfn class="local col6 decl" id="206initial_direction" title='initial_direction' data-type='int' data-ref="206initial_direction">initial_direction</dfn>);</td></tr>
+<tr><th id="104">104</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus3Npc28call_script_hero_interactionEv" title='Solarus::Npc::call_script_hero_interaction' data-ref="_ZN7Solarus3Npc28call_script_hero_interactionEv">call_script_hero_interaction</dfn>();</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <a class="type" href="#Solarus::Npc::Subtype" title='Solarus::Npc::Subtype' data-ref="Solarus::Npc::Subtype">Subtype</a> <dfn class="decl" id="Solarus::Npc::subtype" title='Solarus::Npc::subtype' data-ref="Solarus::Npc::subtype">subtype</dfn>;                    <i class="doc">/**&lt; subtpype of NPC */</i></td></tr>
+<tr><th id="107">107</th><td>    <a class="type" href="#Solarus::Npc::Behavior" title='Solarus::Npc::Behavior' data-ref="Solarus::Npc::Behavior">Behavior</a> <dfn class="decl" id="Solarus::Npc::behavior" title='Solarus::Npc::behavior' data-ref="Solarus::Npc::behavior">behavior</dfn>;                  <i class="doc">/**&lt; type of action done when the player interacts with this entity */</i></td></tr>
+<tr><th id="108">108</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Npc::traversable" title='Solarus::Npc::traversable' data-ref="Solarus::Npc::traversable">traversable</dfn>;                   <i class="doc">/**&lt; Whether this NPC can be traversed by other entities</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">                                         * (not that some entities override this setting). */</i></td></tr>
+<tr><th id="110">110</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Npc::dialog_to_show" title='Solarus::Npc::dialog_to_show' data-ref="Solarus::Npc::dialog_to_show">dialog_to_show</dfn>;         <i class="doc">/**&lt; dialog to show when an interaction occurs, or an empty string */</i></td></tr>
+<tr><th id="111">111</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Npc::item_name" title='Solarus::Npc::item_name' data-ref="Solarus::Npc::item_name">item_name</dfn>;              <i class="doc">/**&lt; name of an equipment item to notify when an interaction occurs */</i></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>};</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Arrow.cpp.html'>codebrowser/src/entities/Arrow.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

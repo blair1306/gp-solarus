@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='233' type='bool Solarus::InputEvent::is_mouse_event() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='613' ll='619' type='bool Solarus::InputEvent::is_mouse_event() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1192' u='c' c='_ZNK7Solarus10InputEvent16get_mouse_buttonEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1208' u='c' c='_ZNK7Solarus10InputEvent18get_mouse_positionERNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='609'>/**
+ * \brief Returns whether this event is a mouse event.
+ * \return true if this is a mouse event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1572' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

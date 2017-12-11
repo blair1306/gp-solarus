@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='112' type='bool Solarus::Entity::State::can_avoid_switch() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='846' ll='848' type='bool Solarus::Entity::State::can_avoid_switch() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='839'>/**
+ * \brief Returns whether the entity ignores the effect of switches in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of switches in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1784' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='269' c='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_switchEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='170' c='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_switchEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='161' c='_ZNK7Solarus4Hero13HookshotState16can_avoid_switchEv'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='204' c='_ZNK7Solarus4Hero9HurtState16can_avoid_switchEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='302' c='_ZNK7Solarus4Hero12JumpingState16can_avoid_switchEv'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='90' type='SpritePtr'/>
+<offset>64</offset>
+<use f='codebrowser/src/entities/Entity.cpp' l='1261' u='r' c='_ZNK7Solarus6Entity10get_spriteERKSs'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1277' u='r' c='_ZNK7Solarus6Entity10get_spriteERKSs'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1293' u='r' c='_ZNK7Solarus6Entity11get_spritesEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1321' u='w' c='_ZN7Solarus6Entity13create_spriteERKSsS2_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1336' u='m' c='_ZN7Solarus6Entity13remove_spriteERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1390' u='m' c='_ZN7Solarus6Entity20bring_sprite_to_backERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1413' u='m' c='_ZN7Solarus6Entity21bring_sprite_to_frontERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1712' u='m' c='_ZN7Solarus6Entity23enable_pixel_collisionsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2059' u='m' c='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2066' u='m' c='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2154' u='m' c='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2277' u='m' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2301' u='m' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2775' u='m' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3313' u='m' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3357' u='m' c='_ZN7Solarus6Entity28set_animation_ignore_suspendEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3395' u='m' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3466' u='m' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='730' u='m' c='_ZN7Solarus10LuaContext26push_named_sprite_iteratorEP9lua_StateRKSt6vectorINS_6Entity11NamedSpriteESaIS5_EE'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lowlevel/Random.h' l='32' type='int Solarus::Random::get_number(unsigned int x)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='272' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='272' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='272' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='836' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='837' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<def f='codebrowser/src/lowlevel/Random.cpp' l='46' ll='48' type='int Solarus::Random::get_number(unsigned int x)'/>
+<doc f='codebrowser/src/lowlevel/Random.cpp' l='38'>/**
+ * \brief Returns a random integer number in [0, x[ with a uniform distribution.
+ *
+ * This is equivalent to: Random::get_number(0, x).
+ *
+ * \param x The superior bound.
+ * \return a Random integer number in [0, x[.
+ */</doc>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='101' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='450' u='c' c='_ZN7Solarus12PathMovement18create_random_pathEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='451' u='c' c='_ZN7Solarus12PathMovement18create_random_pathEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='123' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='132' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>

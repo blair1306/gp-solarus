@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='97' type='void Solarus::Stairs::play_sound(Solarus::Stairs::Way way) const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='204' ll='226' type='void Solarus::Stairs::play_sound(Solarus::Stairs::Way way) const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='196'>/**
+ * \brief Plays a sound corresponding to these stairs.
+ *
+ * When an entity collides with the stairs (usually the hero),
+ * it can call this function to play the appropriate stairs sound.
+ *
+ * \param way The way you are taking these stairs.
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='169' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

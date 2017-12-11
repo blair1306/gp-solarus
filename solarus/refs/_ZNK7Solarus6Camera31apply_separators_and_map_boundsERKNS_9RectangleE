@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='72' type='Solarus::Rectangle Solarus::Camera::apply_separators_and_map_bounds(const Solarus::Rectangle &amp; area) const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='102' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='313' u='c' c='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='544' ll='546' type='Solarus::Rectangle Solarus::Camera::apply_separators_and_map_bounds(const Solarus::Rectangle &amp; area) const'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='532'>/**
+ * \brief Ensures that a rectangle does not cross separators nor map bounds.
+ * \param area The rectangle to check.
+ * It is the responsibility of quest makers to put enough space between
+ * separators (the space should be at least the quest size).
+ * If separators are too close to each other for the rectangle to fit,
+ * the camera will cross some of them.
+ * If separators are too close to a limit of the map, the
+ * the camera will cross them but will never cross map limits.
+ * \return A rectangle corresponding to the first one but stopping on
+ * separators and map bounds.
+ */</doc>

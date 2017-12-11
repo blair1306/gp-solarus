@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_gamecontroller.h' l='161' type='const char * SDL_GameControllerNameForIndex(int joystick_index)'/>
+<doc f='include/SDL2/SDL_gamecontroller.h' l='156'>/**
+ *  Get the implementation dependent name of a game controller.
+ *  This can be called before any controllers are opened.
+ *  If no name can be found, this function returns NULL.
+ */</doc>

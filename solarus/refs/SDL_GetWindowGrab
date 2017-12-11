@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_video.h' l='729' type='SDL_bool SDL_GetWindowGrab(SDL_Window * window)'/>
+<doc f='include/SDL2/SDL_video.h' l='722'>/**
+ *  \brief Get a window&apos;s input grab mode.
+ *
+ *  \return This returns SDL_TRUE if input is grabbed, and SDL_FALSE otherwise.
+ *
+ *  \sa SDL_SetWindowGrab()
+ */</doc>

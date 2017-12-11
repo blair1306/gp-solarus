@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_mutex.h' l='124' type='int SDL_SemWait(SDL_sem * sem)'/>
+<doc f='include/SDL2/SDL_mutex.h' l='119'>/**
+ *  This function suspends the calling thread until the semaphore pointed
+ *  to by \c sem has a positive count. It then atomically decreases the
+ *  semaphore count.
+ */</doc>

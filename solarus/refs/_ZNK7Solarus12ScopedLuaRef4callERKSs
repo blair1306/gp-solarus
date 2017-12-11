@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='56' type='void Solarus::ScopedLuaRef::call(const std::string &amp; function_name) const'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='379' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='177' ll='183' type='void Solarus::ScopedLuaRef::call(const std::string &amp; function_name) const'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='168'>/**
+ * \brief Calls the referenced function.
+ *
+ * If the referenced value is not empty, it must be a function.
+ * No parameters are passed to the function, and return values are ignored.
+ *
+ * \param function_name A name describing the Lua function (only used to
+ * print the error message if any).
+ */</doc>

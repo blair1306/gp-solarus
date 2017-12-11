@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Game.h' l='114' type='void Solarus::Game::set_pause_allowed(bool pause_allowed)'/>
+<def f='codebrowser/src/Game.cpp' l='817' ll='821' type='void Solarus::Game::set_pause_allowed(bool pause_allowed)'/>
+<doc f='codebrowser/src/Game.cpp' l='809'>/**
+ * \brief Sets whether the pause command is available.
+ *
+ * Even when the pause command is available, the player may still
+ * be unauthorized to pause the game, depending on the result of can_pause().
+ *
+ * \param pause_allowed \c true to make the pause command available.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='398' u='c' c='_ZN7Solarus10LuaContext26game_api_set_pause_allowedEP9lua_State'/>

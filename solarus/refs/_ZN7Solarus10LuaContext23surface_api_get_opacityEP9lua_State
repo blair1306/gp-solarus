@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='557' type='static int Solarus::LuaContext::surface_api_get_opacity(lua_State * )'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='47' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='210' ll='220' type='static int Solarus::LuaContext::surface_api_get_opacity(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='205'>/**
+ * \brief Implementation of surface:get_opacity().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

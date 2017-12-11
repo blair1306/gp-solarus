@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='63' type='bool Solarus::QuestFiles::quest_exists()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='316' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='147' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='204' ll='207' type='bool Solarus::QuestFiles::quest_exists()'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='196'>/**
+ * @brief Returns whether there is a quest in the directory QuestFiles
+ * were initialized with.
+ *
+ * A quest is considered to be found if there is at a least quest.dat file.
+ *
+ * @return @c true if the quest exists.
+ */</doc>

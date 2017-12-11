@@ -1,0 +1,27 @@
+<dec f='include/physfs.h' l='971' type='const char * PHYSFS_getRealDir(const char * filename)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='222' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<doc f='include/physfs.h' l='946'>/**
+ * \fn const char *PHYSFS_getRealDir(const char *filename)
+ * \brief Figure out where in the search path a file resides.
+ *
+ * The file is specified in platform-independent notation. The returned
+ *  filename will be the element of the search path where the file was found,
+ *  which may be a directory, or an archive. Even if there are multiple
+ *  matches in different parts of the search path, only the first one found
+ *  is used, just like when opening a file.
+ *
+ * So, if you look for &quot;maps/level1.map&quot;, and C:\\mygame is in your search
+ *  path and C:\\mygame\\maps\\level1.map exists, then &quot;C:\mygame&quot; is returned.
+ *
+ * If a any part of a match is a symbolic link, and you&apos;ve not explicitly
+ *  permitted symlinks, then it will be ignored, and the search for a match
+ *  will continue.
+ *
+ * If you specify a fake directory that only exists as a mount point, it&apos;ll
+ *  be associated with the first archive mounted there, even though that
+ *  directory isn&apos;t necessarily contained in a real archive.
+ *
+ *     \param filename file to look for.
+ *    \return READ ONLY string of element of search path containing the
+ *             the file in question. NULL if not found.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='185' type='bool Solarus::MapData::insert_entity(const Solarus::EntityData &amp; entity, const Solarus::EntityIndex &amp; index)'/>
+<use f='codebrowser/src/MapData.cpp' l='676' u='c' c='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<def f='codebrowser/src/MapData.cpp' l='694' ll='743' type='bool Solarus::MapData::insert_entity(const Solarus::EntityData &amp; entity, const Solarus::EntityIndex &amp; index)'/>
+<doc f='codebrowser/src/MapData.cpp' l='683'>/**
+ * \brief Adds an entity to the map at the specified index.
+ *
+ * If the new entity has a name, it should be unique on the map.
+ *
+ * \param entity The information of an entity.
+ * \param index The index this entity should have on the map.
+ * \return \c false in case of failure, that is,
+ * if the name was already in use, if the entity type is illegal
+ * or if the index was out of range.
+ */</doc>

@@ -1,0 +1,17 @@
+<def f='codebrowser/include/solarus/Dialog.h' l='29' ll='52'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/Dialog.h' l='26'>/**
+ * \brief A dialog that can be displayed during the game in the dialog box.
+ */</doc>
+<fun r='_ZN7Solarus6DialogC1Ev'/>
+<fun r='_ZNK7Solarus6Dialog6get_idEv'/>
+<fun r='_ZN7Solarus6Dialog6set_idERKSs'/>
+<fun r='_ZNK7Solarus6Dialog8get_textEv'/>
+<fun r='_ZN7Solarus6Dialog8set_textERKSs'/>
+<fun r='_ZNK7Solarus6Dialog14get_propertiesEv'/>
+<fun r='_ZNK7Solarus6Dialog12has_propertyERKSs'/>
+<fun r='_ZNK7Solarus6Dialog12get_propertyERKSs'/>
+<fun r='_ZN7Solarus6Dialog12set_propertyERKSsS2_'/>
+<mbr r='Solarus::Dialog::id' o='0' t='std::string'/>
+<mbr r='Solarus::Dialog::text' o='64' t='std::string'/>
+<mbr r='Solarus::Dialog::properties' o='128' t='std::map&lt;std::string, std::string&gt;'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='70' type='void Solarus::Equipment::set_max_life(int max_life)'/>
+<def f='codebrowser/src/Equipment.cpp' l='226' ll='237' type='void Solarus::Equipment::set_max_life(int max_life)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='218'>/**
+ * \brief Sets the maximum level of life of the player.
+ *
+ * The program exits with an error message if the specified maximum
+ * life is not valid.
+ *
+ * \param max_life the player&apos;s maximum life
+ */</doc>
+<use f='codebrowser/src/Savegame.cpp' l='143' u='c' c='_ZN7Solarus8Savegame18set_initial_valuesEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='851' u='c' c='_ZN7Solarus10LuaContext21game_api_set_max_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='873' u='c' c='_ZN7Solarus10LuaContext21game_api_add_max_lifeEP9lua_State'/>

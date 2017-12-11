@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='245' type='bool Solarus::Hero::is_moving_grabbed_entity() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2324' ll='2327' type='bool Solarus::Hero::is_moving_grabbed_entity() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2317'>/**
+ * \brief Returns whether the hero is grabbing and moving an entity in its current state.
+ *
+ * If he is not grabbing any entity, false is returned.
+ *
+ * \return true if the hero is grabbing and moving an entity
+ */</doc>

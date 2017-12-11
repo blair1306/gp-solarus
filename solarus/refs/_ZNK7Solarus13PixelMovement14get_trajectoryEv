@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='40' type='const std::list&lt;Point&gt; &amp; Solarus::PixelMovement::get_trajectory() const'/>
+<doc f='codebrowser/include/solarus/movements/PixelMovement.h' l='39'>// properties</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1803' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_get_trajectoryEP9lua_State'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='53' ll='55' type='const std::list&lt;Point&gt; &amp; Solarus::PixelMovement::get_trajectory() const'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='49'>/**
+ * \brief Returns the trajectory of this movement.
+ * \return the succession of translations that compose this movement
+ */</doc>

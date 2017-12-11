@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='351' type='bool Solarus::Entity::is_sword_ignored() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2751' ll='2753' type='bool Solarus::Entity::is_sword_ignored() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2744'>/**
+ * \brief Returns true if this entity does not react to the sword.
+ *
+ * If true is returned, nothing will happen when the hero taps this entity with the sword.
+ *
+ * \return true if the sword is ignored
+ */</doc>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='401' c='_ZNK7Solarus6Jumper16is_sword_ignoredEv'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='204' c='_ZNK7Solarus3Npc16is_sword_ignoredEv'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='147' c='_ZNK7Solarus12ShopTreasure16is_sword_ignoredEv'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='123' c='_ZNK7Solarus6Stairs16is_sword_ignoredEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='119' u='c' c='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='53' type='void Solarus::MainLoop::set_resetting()'/>
+<def f='codebrowser/src/MainLoop.cpp' l='265' ll='272' type='void Solarus::MainLoop::set_resetting()'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='261'>/**
+ * \brief Marks the current game as finished and sets the initial screen
+ * to be started at the next cycle.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='183' u='c' c='_ZN7Solarus10LuaContext14main_api_resetEP9lua_State'/>

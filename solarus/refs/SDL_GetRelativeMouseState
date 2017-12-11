@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_mouse.h' l='87' type='Uint32 SDL_GetRelativeMouseState(int * x, int * y)'/>
+<doc f='include/SDL2/SDL_mouse.h' l='80'>/**
+ *  \brief Retrieve the relative state of the mouse.
+ *
+ *  The current button state is returned as a button bitmask, which can
+ *  be tested using the SDL_BUTTON(X) macros, and x and y are set to the
+ *  mouse deltas since the last call to SDL_GetRelativeMouseState().
+ */</doc>

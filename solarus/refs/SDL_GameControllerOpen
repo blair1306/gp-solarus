@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_gamecontroller.h' l='171' type='SDL_GameController * SDL_GameControllerOpen(int joystick_index)'/>
+<doc f='include/SDL2/SDL_gamecontroller.h' l='163'>/**
+ *  Open a game controller for use.
+ *  The index passed as an argument refers to the N&apos;th game controller on the system.
+ *  This index is the value which will identify this controller in future controller
+ *  events.
+ *
+ *  \return A controller identifier, or NULL if an error occurred.
+ */</doc>

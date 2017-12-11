@@ -1,0 +1,16 @@
+<dec f='include/SDL2/SDL_render.h' l='813' type='int SDL_RenderReadPixels(SDL_Renderer * renderer, const SDL_Rect * rect, Uint32 format, void * pixels, int pitch)'/>
+<doc f='include/SDL2/SDL_render.h' l='798'>/**
+ *  \brief Read pixels from the current rendering target.
+ *
+ *  \param renderer The renderer from which pixels should be read.
+ *  \param rect   A pointer to the rectangle to read, or NULL for the entire
+ *                render target.
+ *  \param format The desired format of the pixel data, or 0 to use the format
+ *                of the rendering target
+ *  \param pixels A pointer to be filled in with the pixel data
+ *  \param pitch  The pitch of the pixels parameter.
+ *
+ *  \return 0 on success, or -1 if pixel reading is not supported.
+ *
+ *  \warning This is a very slow operation, and should not be used frequently.
+ */</doc>

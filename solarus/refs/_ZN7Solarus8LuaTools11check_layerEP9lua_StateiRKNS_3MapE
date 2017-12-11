@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='207' type='int Solarus::LuaTools::check_layer(lua_State * l, int index, const Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1149' u='c' c='_ZN7Solarus10LuaContext20entity_api_set_layerEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1624' u='c' c='_ZN7Solarus10LuaContext25entity_api_test_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1854' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='782' ll='799' type='int Solarus::LuaTools::check_layer(lua_State * l, int index, const Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='848' u='c' c='_ZN7Solarus8LuaTools9opt_layerEP9lua_StateiRKNS_3MapEi'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='775'>/**
+ * \brief Checks that the value at the given index is a valid layer and returns it.
+ * \param l A Lua state.
+ * \param index An index in the Lua stack.
+ * \param map The map whose number of layer matters.
+ * \return The layer at this index.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1733' u='c' c='_ZN7Solarus10LuaContext18map_api_get_groundEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='79' type='ALuint Solarus::Sound::decode_file(const std::string &amp; file_name)'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='383' u='c' c='_ZN7Solarus5Sound4loadEv'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='444' ll='547' type='ALuint Solarus::Sound::decode_file(const std::string &amp; file_name)'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='439'>/**
+ * \brief Loads the specified sound file and decodes its content into an OpenAL buffer.
+ * \param file_name name of the file to open
+ * \return the buffer created, or AL_NONE if the sound could not be loaded
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='80' type='bool Solarus::Transition::is_started() const'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='76'>/**
+     * \brief Returns whether the transition effect is started.
+     * \return true if the transition effect is started
+     */</doc>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='125' c='_ZNK7Solarus14TransitionFade10is_startedEv'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='40' c='_ZNK7Solarus19TransitionImmediate10is_startedEv'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='126' c='_ZNK7Solarus19TransitionScrolling10is_startedEv'/>

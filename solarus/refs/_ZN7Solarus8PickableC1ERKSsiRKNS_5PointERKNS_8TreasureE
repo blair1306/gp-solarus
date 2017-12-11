@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='42' type='void Solarus::Pickable::Pickable(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/include/solarus/entities/Pickable.h' l='41'>// creation and destruction</doc>
+<def f='codebrowser/src/entities/Pickable.cpp' l='46' ll='67' type='void Solarus::Pickable::Pickable(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='39'>/**
+ * \brief Creates a pickable item with the specified subtype.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer layer of the pickable item to create on the map
+ * \param xy Coordinates of the pickable item to create.
+ * \param treasure the treasure to give when the item is picked
+ */</doc>

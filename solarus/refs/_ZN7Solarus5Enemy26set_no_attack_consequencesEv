@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='137' type='void Solarus::Enemy::set_no_attack_consequences()'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='682' ll='687' type='void Solarus::Enemy::set_no_attack_consequences()'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='679'>/**
+ * \brief Sets the enemy insensible to all attacks.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4850' u='c' c='_ZN7Solarus10LuaContext24enemy_api_set_invincibleEP9lua_State'/>

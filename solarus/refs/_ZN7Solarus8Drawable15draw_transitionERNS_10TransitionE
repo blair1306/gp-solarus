@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='119' type='void Solarus::Drawable::draw_transition(Solarus::Transition &amp; transition)'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='109'>/**
+     * \brief Draws a transition effect on this drawable object.
+     *
+     * Redefine this function to apply the transition effect on the surface
+     * of your object.
+     *
+     * \param transition The transition effect to apply.
+     *
+     * TODO Since there is get_transition_surface() now, this function can probably be removed.
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='237' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Drawable.cpp' l='268' u='c' c='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<ovr f='codebrowser/src/Sprite.cpp' l='861' c='_ZN7Solarus6Sprite15draw_transitionERNS_10TransitionE'/>
+<ovr f='codebrowser/src/lowlevel/Surface.cpp' l='727' c='_ZN7Solarus7Surface15draw_transitionERNS_10TransitionE'/>
+<ovr f='codebrowser/src/lowlevel/TextSurface.cpp' l='570' c='_ZN7Solarus11TextSurface15draw_transitionERNS_10TransitionE'/>

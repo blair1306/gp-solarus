@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='122' type='bool Solarus::Entity::State::can_be_hurt(Solarus::Entity * attacker) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='938' ll='940' type='bool Solarus::Entity::State::can_be_hurt(Solarus::Entity * ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='929'>/**
+ * \brief Returns whether the entity can be hurt in this state.
+ *
+ * Returns false by default.
+ *
+ * \param attacker an attacker that is trying to hurt the entity
+ * (or nullptr if the source of the attack is not an enemy)
+ * \return true if the entity can be hurt in this state
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='938'>/* attacker */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2090' u='c' c='_ZNK7Solarus4Hero11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='180' c='_ZNK7Solarus4Hero18ForcedWalkingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/GrabbingState.cpp' l='92' c='_ZNK7Solarus4Hero13GrabbingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='171' c='_ZNK7Solarus4Hero13HookshotState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='196' c='_ZNK7Solarus4Hero9HurtState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='312' c='_ZNK7Solarus4Hero12JumpingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/LiftingState.cpp' l='131' c='_ZNK7Solarus4Hero12LiftingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='276' c='_ZNK7Solarus4Hero19PlayerMovementState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='242' c='_ZNK7Solarus4Hero12PullingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='264' c='_ZNK7Solarus4Hero12PushingState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='243' c='_ZNK7Solarus4Hero12RunningState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='134' c='_ZNK7Solarus4Hero15SpinAttackState11can_be_hurtEPNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='121' c='_ZNK7Solarus4Hero18SwordSwingingState11can_be_hurtEPNS_6EntityE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='95' type='void Solarus::Pickable::set_blinking(bool blinking)'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='328' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='466' ll='477' type='void Solarus::Pickable::set_blinking(bool blinking)'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='569' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='462'>/**
+ * \brief Sets whether the pickable treasure is blinking.
+ * \param blinking true to make it blink, false to make it stop blinking
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='716' type='static int Solarus::LuaContext::game_api_add_magic(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='88' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1032' ll='1046' type='static int Solarus::LuaContext::game_api_add_magic(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1027'>/**
+ * \brief Implementation of game:add_magic().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

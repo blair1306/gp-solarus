@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_video.h' l='368' type='int SDL_SetWindowDisplayMode(SDL_Window * window, const SDL_DisplayMode * mode)'/>
+<doc f='include/SDL2/SDL_video.h' l='354'>/**
+ *  \brief Set the display mode used when a fullscreen window is visible.
+ *
+ *  By default the window&apos;s dimensions and the desktop format and refresh rate
+ *  are used.
+ *
+ *  \param window The window for which the display mode should be set.
+ *  \param mode The mode to use, or NULL for the default mode.
+ *
+ *  \return 0 on success, or -1 if setting the display mode failed.
+ *
+ *  \sa SDL_GetWindowDisplayMode()
+ *  \sa SDL_SetWindowFullscreen()
+ */</doc>

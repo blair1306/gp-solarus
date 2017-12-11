@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='381' type='void Solarus::LuaContext::entity_on_movement_finished(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2192' u='c' c='_ZN7Solarus6Entity24notify_movement_finishedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5894' ll='5903' type='void Solarus::LuaContext::entity_on_movement_finished(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5887'>/**
+ * \brief Calls the on_movement_finished() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ */</doc>

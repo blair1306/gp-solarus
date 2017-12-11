@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='326' type='std::shared_ptr&lt;Teletransporter&gt; Solarus::Hero::get_delayed_teletransporter()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1613' ll='1615' type='std::shared_ptr&lt;Teletransporter&gt; Solarus::Hero::get_delayed_teletransporter()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1607'>/**
+ * \brief Returns a teletransporter that has detected a collision with the hero
+ * bu will be activated when the current action is finished
+ * (e.g. falling into a hole or taking stairs).
+ * \return The delayed teletransporter or nullptr.
+ */</doc>
+<use f='codebrowser/src/hero/FallingState.cpp' l='73' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='215' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

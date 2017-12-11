@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Game.h' l='113' type='bool Solarus::Game::is_pause_allowed() const'/>
+<use f='codebrowser/src/Game.cpp' l='783' u='c' c='_ZNK7Solarus4Game9can_pauseEv'/>
+<use f='codebrowser/src/Game.cpp' l='793' u='c' c='_ZNK7Solarus4Game11can_unpauseEv'/>
+<def f='codebrowser/src/Game.cpp' l='805' ll='807' type='bool Solarus::Game::is_pause_allowed() const'/>
+<doc f='codebrowser/src/Game.cpp' l='797'>/**
+ * \brief Returns whether the pause command is available.
+ *
+ * Even when the pause command is available, the player may still
+ * be unauthorized to pause the game, depending on the result of can_pause().
+ *
+ * \return \c true if the pause command is available.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='378' u='c' c='_ZN7Solarus10LuaContext25game_api_is_pause_allowedEP9lua_State'/>

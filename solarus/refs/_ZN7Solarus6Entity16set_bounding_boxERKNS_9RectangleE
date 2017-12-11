@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='153' type='void Solarus::Entity::set_bounding_box(const Solarus::Rectangle &amp; bounding_box)'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='102' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='131' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='889' ll='891' type='void Solarus::Entity::set_bounding_box(const Solarus::Rectangle &amp; bounding_box)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='881'>/**
+ * \brief Sets the bounding box of the entity.
+ *
+ * This function sets the rectangle defined by
+ * get_top_left_x(), get_top_left_y(), get_width() and get_height().
+ *
+ * \param bounding_box The new position and size of the entity.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='349' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='358' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='368' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2018' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>

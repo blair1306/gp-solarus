@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='356' type='void Solarus::LuaContext::map_on_finished(Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/Map.cpp' l='711' u='c' c='_ZN7Solarus3Map5leaveEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2204' ll='2213' type='void Solarus::LuaContext::map_on_finished(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2197'>/**
+ * \brief Calls the on_finished() method of a Lua map if it is defined.
+ *
+ * Also stops timers and menus associated to the map.
+ *
+ * \param map A map.
+ */</doc>

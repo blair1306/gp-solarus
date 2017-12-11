@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='181' type='const std::map&lt;std::string, EntityIndex&gt; &amp; Solarus::MapData::get_named_entities_indexes() const'/>
+<def f='codebrowser/src/MapData.cpp' l='609' ll='611' type='const std::map&lt;std::string, EntityIndex&gt; &amp; Solarus::MapData::get_named_entities_indexes() const'/>
+<doc f='codebrowser/src/MapData.cpp' l='605'>/**
+ * \brief Returns all entities that have a name on the map.
+ * \return The named entities.
+ */</doc>

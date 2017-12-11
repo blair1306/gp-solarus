@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_video.h' l='309' type='int SDL_GetDisplayMode(int displayIndex, int modeIndex, SDL_DisplayMode * mode)'/>
+<doc f='include/SDL2/SDL_video.h' l='298'>/**
+ *  \brief Fill in information about a specific display mode.
+ *
+ *  \note The display modes are sorted in this priority:
+ *        \li bits per pixel -&gt; more colors to fewer colors
+ *        \li width -&gt; largest to smallest
+ *        \li height -&gt; largest to smallest
+ *        \li refresh rate -&gt; highest to lowest
+ *
+ *  \sa SDL_GetNumDisplayModes()
+ */</doc>

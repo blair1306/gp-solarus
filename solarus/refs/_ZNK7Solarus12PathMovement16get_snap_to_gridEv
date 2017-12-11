@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='62' type='bool Solarus::PathMovement::get_snap_to_grid() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1232' u='c' c='_ZN7Solarus10LuaContext34path_movement_api_get_snap_to_gridEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='137' ll='139' type='bool Solarus::PathMovement::get_snap_to_grid() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='132'>/**
+ * \brief Returns whether the entity is snapped to the map grid before the
+ * path starts.
+ * \return true if the entity is made aligned to the grid
+ */</doc>

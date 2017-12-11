@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='76' type='void Solarus::Switch::set_locked(bool locked)'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='206' ll='208' type='void Solarus::Switch::set_locked(bool locked)'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='195'>/**
+ * \brief Locks this switch is its current state or unlocks it.
+ *
+ * When the switch is locked, it cannot be activated or deactivated
+ * by other entities.
+ * However, the state can still be changed manually by calling
+ * set_activated().
+ *
+ * \param locked \c true to lock the switch in its current state,
+ * \c false to unlock it.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3410' u='c' c='_ZN7Solarus10LuaContext21switch_api_set_lockedEP9lua_State'/>

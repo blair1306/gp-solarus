@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='280' type='void Solarus::Entity::check_collision(Solarus::Entity &amp; other)'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='279'>// Detecting other entities.</doc>
+<use f='codebrowser/src/Map.cpp' l='1302' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1328' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1346' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1750' ll='1800' type='void Solarus::Entity::check_collision(Solarus::Entity &amp; other)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1736'>/**
+ * \brief Checks whether an entity collides with this detector.
+ *
+ * Only checks non pixel precise collisions.
+ * Does nothing if this entity is not a detector.
+ *
+ * This function is called by the map when an entity has just moved.
+ * It checks whether the entity collides with this detector.
+ * Depending on this detector&apos;s collision mode(s), the appropriate
+ * test_collision_* functions are called.
+ * If there is a collision, the notify_collision() method is called.
+ *
+ * \param other The entity to check.
+ */</doc>
+<use f='codebrowser/src/entities/Switch.cpp' l='223' u='c' c='_ZN7Solarus6Switch6updateEv'/>

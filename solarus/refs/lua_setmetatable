@@ -1,0 +1,6 @@
+<dec f='include/luajit-2.0/lua.h' l='194' type='int lua_setmetatable(lua_State * L, int objindex)'/>
+<use f='codebrowser/src/Savegame.cpp' l='221' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='122' u='c' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='280' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1054' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='312' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>

@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_joystick.h' l='242' type='void SDL_JoystickClose(SDL_Joystick * joystick)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='239'>/**
+ *  Close a joystick previously opened with SDL_JoystickOpen().
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='206' u='c' c='_ZN7Solarus10InputEvent4quitEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='911' u='c' c='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>

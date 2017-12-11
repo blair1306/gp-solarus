@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_render.h' l='717' type='int SDL_RenderDrawRect(SDL_Renderer * renderer, const SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='709'>/**
+ *  \brief Draw a rectangle on the current rendering target.
+ *
+ *  \param renderer The renderer which should draw a rectangle.
+ *  \param rect A pointer to the destination rectangle, or NULL to outline the entire rendering target.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

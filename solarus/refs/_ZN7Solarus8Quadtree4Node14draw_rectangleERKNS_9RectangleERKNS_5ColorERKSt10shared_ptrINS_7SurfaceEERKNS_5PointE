@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='116' type='void Solarus::Quadtree::Node::draw_rectangle(const Solarus::Rectangle &amp; rectangle, const Solarus::Color &amp; line_color, const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='582' u='c' c='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='588' u='c' c='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='607' ll='630' type='void Solarus::Quadtree::Node::draw_rectangle(const Solarus::Rectangle &amp; rectangle, const Solarus::Color &amp; line_color, const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='600'>/**
+ * \brief Draws the border of a rectangle on a surface for debugging purposes.
+ * \param rectangle The rectangle to draw.
+ * \param line_color The color to use.
+ * \param dst_surface The destination surface.
+ * \param dst_position Where to draw on that surface.
+ */</doc>

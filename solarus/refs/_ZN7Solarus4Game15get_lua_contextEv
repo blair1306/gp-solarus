@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/Game.h' l='67' type='Solarus::LuaContext &amp; Solarus::Game::get_lua_context()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='110' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='189' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='217' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/Game.cpp' l='127' u='c' c='_ZN7Solarus4Game5startEv'/>
+<use f='codebrowser/src/Game.cpp' l='156' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<def f='codebrowser/src/Game.cpp' l='177' ll='179' type='Solarus::LuaContext &amp; Solarus::Game::get_lua_context()'/>
+<use f='codebrowser/src/Game.cpp' l='267' u='c' c='_ZN7Solarus4Game12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/Game.cpp' l='296' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='301' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='331' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='335' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='366' u='c' c='_ZN7Solarus4Game6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='592' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Game.cpp' l='664' u='c' c='_ZN7Solarus4Game18notify_map_changedEv'/>
+<use f='codebrowser/src/Game.cpp' l='838' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<use f='codebrowser/src/Game.cpp' l='841' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<use f='codebrowser/src/Game.cpp' l='916' u='c' c='_ZN7Solarus4Game15start_game_overEv'/>
+<use f='codebrowser/src/Game.cpp' l='932' u='c' c='_ZN7Solarus4Game14stop_game_overEv'/>
+<doc f='codebrowser/src/Game.cpp' l='173'>/**
+ * \brief Returns the Lua context of this game.
+ * \return The Lua context.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='326' u='c' c='_ZN7Solarus3Map15get_lua_contextEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='184' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='122' u='c' c='_ZN7Solarus6Entity5State15get_lua_contextEv'/>

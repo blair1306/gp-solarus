@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='478' type='static int Solarus::LuaContext::video_api_is_fullscreen(lua_State * )'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='44' u='r' c='_ZN7Solarus10LuaContext21register_video_moduleEv'/>
+<def f='codebrowser/src/lua/VideoApi.cpp' l='183' ll='191' type='static int Solarus::LuaContext::video_api_is_fullscreen(lua_State * l)'/>
+<doc f='codebrowser/src/lua/VideoApi.cpp' l='178'>/**
+ * \brief Implementation of sol.video.is_fullscreen().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

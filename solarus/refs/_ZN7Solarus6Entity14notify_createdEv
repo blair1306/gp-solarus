@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='126' type='void Solarus::Entity::notify_created()'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='159' c='_ZN7Solarus5Block14notify_createdEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='161' u='c' c='_ZN7Solarus5Block14notify_createdEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='201' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='203' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='371' u='c' c='_ZN7Solarus6Entity21finish_initializationEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='398' ll='403' type='void Solarus::Entity::notify_created()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='389'>/**
+ * \brief Notifies this entity that it has just been created on a map.
+ *
+ * At this point, the map is already loaded and running,
+ * including if the entity was created from the map data file.
+ * The entity:on_created() event has just been called.
+ * You can redefine this function to perform additional initializations
+ * after entity:on_created().
+ */</doc>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='227' c='_ZN7Solarus8Pickable14notify_createdEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='229' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>

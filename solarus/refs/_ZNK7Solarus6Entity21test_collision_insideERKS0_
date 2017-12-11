@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='286' type='bool Solarus::Entity::test_collision_inside(const Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='845' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1772' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1933' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1978' ll='1981' type='bool Solarus::Entity::test_collision_inside(const Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1970'>/**
+ * \brief Returns whether an entity&apos;s rectangle is entirely inside this entity&apos;s rectangle.
+ *
+ * The layer is not checked.
+ *
+ * \param entity The entity.
+ * \return \c true if the entity&apos;s rectangle is entirely inside this entity&apos;s rectangle.
+ */</doc>
+<use f='codebrowser/src/entities/Sensor.cpp' l='132' u='c' c='_ZN7Solarus6Sensor6updateEv'/>

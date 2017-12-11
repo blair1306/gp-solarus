@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='51' type='bool Solarus::Arrow::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='345' c='_ZN7Solarus6Entity15is_npc_obstacleERNS_3NpcE'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='193' ll='195' type='bool Solarus::Arrow::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='188'>/**
+ * \brief Returns whether a non-playing character is currently considered as an obstacle for this entity.
+ * \param npc a non-playing character
+ * \return true if the NPC is currently an obstacle for this entity
+ */</doc>

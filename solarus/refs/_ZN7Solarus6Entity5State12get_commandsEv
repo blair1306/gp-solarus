@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='161' type='Solarus::GameCommands &amp; Solarus::Entity::State::get_commands()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='169' ll='171' type='Solarus::GameCommands &amp; Solarus::Entity::State::get_commands()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='165'>/**
+ * \brief Returns the game commands.
+ * \return The commands.
+ */</doc>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='69' u='c' c='_ZN7Solarus4Hero14BoomerangState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='85' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/GrabbingState.cpp' l='58' u='c' c='_ZN7Solarus4Hero13GrabbingState6updateEv'/>
+<use f='codebrowser/src/hero/GrabbingState.cpp' l='63' u='c' c='_ZN7Solarus4Hero13GrabbingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='75' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='79' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='82' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='84' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='244' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='248' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='77' u='c' c='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='84' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='88' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='89' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>

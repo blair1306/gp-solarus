@@ -1,0 +1,14 @@
+<def f='include/c++/4.9/bits/stl_iterator.h' l='160' ll='165' type='reference std::reverse_iterator::operator*() const'/>
+<use f='include/c++/4.9/bits/stl_iterator.h' l='174' u='c' c='_ZNKSt16reverse_iteratorptEv'/>
+<doc f='include/c++/4.9/bits/stl_iterator.h' l='150'>/**
+       *  @return  A reference to the value at @c --current
+       *
+       *  This requires that @c --current is dereferenceable.
+       *
+       *  @warning This implementation requires that for an iterator of the
+       *           underlying iterator type, @c x, a reference obtained by
+       *           @c *x remains valid after @c x has been modified or
+       *           destroyed. This is a bug: http://gcc.gnu.org/PR51823
+      */</doc>
+<use f='codebrowser/src/Map.cpp' l='1094' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='276' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='823' type='static int Solarus::LuaContext::entity_api_set_origin(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='480' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='502' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='942' ll='954' type='static int Solarus::LuaContext::entity_api_set_origin(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='937'>/**
+ * \brief Implementation of enemy:set_origin().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

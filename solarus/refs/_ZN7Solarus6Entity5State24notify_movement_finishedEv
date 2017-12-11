@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='78' type='void Solarus::Entity::State::notify_movement_finished()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='515' ll='516' type='void Solarus::Entity::State::notify_movement_finished()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='512'>/**
+ * \brief Notifies this state that the movement if finished.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1038' u='c' c='_ZN7Solarus4Hero24notify_movement_finishedEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='143' c='_ZN7Solarus4Hero12PullingState24notify_movement_finishedEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='153' c='_ZN7Solarus4Hero12PushingState24notify_movement_finishedEv'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1309' type='static int Solarus::LuaContext::l_named_sprite_iterator_next(lua_State * )'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='678' ll='704' type='static int Solarus::LuaContext::l_named_sprite_iterator_next(lua_State * l)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='740' u='r' c='_ZN7Solarus10LuaContext26push_named_sprite_iteratorEP9lua_StateRKSt6vectorINS_6Entity11NamedSpriteESaIS5_EE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='667'>/**
+ * \brief Closure of an iterator over a list of sprites and their names.
+ *
+ * This closure expects 3 upvalues in this order:
+ * - An array of { name, sprite } pairs.
+ * - The size of the array (for performance).
+ * - The current index in the array.
+ *
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

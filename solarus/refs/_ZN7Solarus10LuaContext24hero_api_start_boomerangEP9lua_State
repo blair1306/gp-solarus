@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='890' type='static int Solarus::LuaContext::hero_api_start_boomerang(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='185' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2359' ll='2373' type='static int Solarus::LuaContext::hero_api_start_boomerang(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2354'>/**
+ * \brief Implementation of hero:start_boomerang().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

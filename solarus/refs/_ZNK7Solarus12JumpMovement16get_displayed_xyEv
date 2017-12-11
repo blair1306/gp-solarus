@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='45' type='Solarus::Point Solarus::JumpMovement::get_displayed_xy() const'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='93' c='_ZNK7Solarus8Movement16get_displayed_xyEv'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='160' ll='165' type='Solarus::Point Solarus::JumpMovement::get_displayed_xy() const'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='151'>/**
+ * \brief Returns the coordinates where an object controlled by this movement
+ * should be displayed.
+ *
+ * The movement is applied to the shadow of the entity and
+ * this function returns the coordinates where the entity should be displayed instead.
+ *
+ * \return the coordinates to use to display the object controlled by this movement
+ */</doc>

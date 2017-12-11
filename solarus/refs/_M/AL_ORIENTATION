@@ -1,0 +1,11 @@
+<dec f='include/AL/al.h' l='228'/>
+<doc f='include/AL/al.h' l='218'>/**
+ * Listener orientation.
+ * Type: ALfloat[6]
+ * Default: {0.0, 0.0, -1.0, 0.0, 1.0, 0.0}
+ *
+ * Effectively two three dimensional vectors. The first vector is the front (or
+ * &quot;at&quot;) and the second is the top (or &quot;up&quot;).
+ *
+ * Both vectors are in local space.
+ */</doc>

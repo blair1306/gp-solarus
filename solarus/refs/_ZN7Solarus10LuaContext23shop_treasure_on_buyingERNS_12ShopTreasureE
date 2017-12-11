@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='403' type='bool Solarus::LuaContext::shop_treasure_on_buying(Solarus::ShopTreasure &amp; shop_treasure)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3851' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6305' ll='6315' type='bool Solarus::LuaContext::shop_treasure_on_buying(Solarus::ShopTreasure &amp; shop_treasure)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6297'>/**
+ * \brief Calls the on_buying() method of a Lua shop treasure.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param shop_treasure A shop treasure.
+ * \return \c true if the player is allowed to buy the treasure.
+ */</doc>

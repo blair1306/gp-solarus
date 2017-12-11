@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='59' type='Solarus::Point Solarus::Camera::get_position_on_screen() const'/>
+<use f='codebrowser/src/Game.cpp' l='583' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='289' ll='291' type='Solarus::Point Solarus::Camera::get_position_on_screen() const'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='284'>/**
+ * \brief Returns where this camera is displayed on the screen.
+ * \return Position of the upper-left corner of the camera relative to the
+ * quest screen.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2600' u='c' c='_ZN7Solarus10LuaContext33camera_api_get_position_on_screenEP9lua_State'/>

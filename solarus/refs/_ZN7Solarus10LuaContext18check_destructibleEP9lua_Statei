@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1197' type='static std::shared_ptr&lt;Destructible&gt; Solarus::LuaContext::check_destructible(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3979' ll='3983' type='static std::shared_ptr&lt;Destructible&gt; Solarus::LuaContext::check_destructible(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4002' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4031' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4067' u='c' c='_ZN7Solarus10LuaContext38destructible_api_get_destruction_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4089' u='c' c='_ZN7Solarus10LuaContext38destructible_api_set_destruction_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4108' u='c' c='_ZN7Solarus10LuaContext27destructible_api_get_weightEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4125' u='c' c='_ZN7Solarus10LuaContext27destructible_api_set_weightEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4142' u='c' c='_ZN7Solarus10LuaContext31destructible_api_get_can_be_cutEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4159' u='c' c='_ZN7Solarus10LuaContext31destructible_api_set_can_be_cutEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4176' u='c' c='_ZN7Solarus10LuaContext32destructible_api_get_can_explodeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4193' u='c' c='_ZN7Solarus10LuaContext32destructible_api_set_can_explodeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4210' u='c' c='_ZN7Solarus10LuaContext35destructible_api_get_can_regenerateEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4227' u='c' c='_ZN7Solarus10LuaContext35destructible_api_set_can_regenerateEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4244' u='c' c='_ZN7Solarus10LuaContext38destructible_api_get_damage_on_enemiesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4261' u='c' c='_ZN7Solarus10LuaContext38destructible_api_set_damage_on_enemiesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4278' u='c' c='_ZN7Solarus10LuaContext36destructible_api_get_modified_groundEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3972'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * destructible object and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The destructible object.
+ */</doc>

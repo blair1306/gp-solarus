@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='288' type='bool Solarus::InputEvent::is_finger_pressed() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='287'>// touch finger</doc>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1221' ll='1224' type='bool Solarus::InputEvent::is_finger_pressed() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1234' u='c' c='_ZNK7Solarus10InputEvent17is_finger_pressedEi'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1216'>/**
+ * \brief Returns whether this event is a finger event.
+ * corresponding to pressing a finger.
+ * \return true if this event corresponds to pressing a finger.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1583' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

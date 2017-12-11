@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='111' type='bool Solarus::Hero::is_facing_obstacle()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='774' ll='801' type='bool Solarus::Hero::is_facing_obstacle()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='762'>/**
+ * \brief Returns whether there is an obstacle in front of the hero.
+ *
+ * This function returns whether he is touching an obstacle that
+ * is just in front of him.
+ * Note that even if this function returns true, the hero
+ * may still be able to move in that direction due to the possibly sliding movement.
+ * This information is calculated and not stored, so it is
+ * always up to date.
+ *
+ * \return true if the hero is facing an obstacle
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='77' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='866' type='static int Solarus::LuaContext::hero_api_reset_solid_ground(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='160' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1874' ll='1883' type='static int Solarus::LuaContext::hero_api_reset_solid_ground(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1869'>/**
+ * \brief Implementation of hero:reset_solid_ground().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

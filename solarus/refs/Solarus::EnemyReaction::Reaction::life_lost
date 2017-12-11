@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EnemyReaction.h' l='54' type='int'/>
+<use f='codebrowser/include/solarus/entities/EnemyReaction.h' l='58' u='w' c='_ZN7Solarus13EnemyReaction8ReactionC1Ev'/>
+<offset>32</offset>
+<doc f='codebrowser/include/solarus/entities/EnemyReaction.h' l='54'>/**&lt; number of life points lost (possibly zero) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1237' u='w' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1242' u='w' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1246' u='w' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1248' u='r' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='47' u='w' c='_ZN7Solarus13EnemyReaction20set_default_reactionEv'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='61' u='w' c='_ZN7Solarus13EnemyReaction20set_general_reactionENS0_12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='78' u='w' c='_ZN7Solarus13EnemyReaction19set_sprite_reactionEPKNS_6SpriteENS0_12ReactionTypeEi'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4709' u='r' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4765' u='r' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>

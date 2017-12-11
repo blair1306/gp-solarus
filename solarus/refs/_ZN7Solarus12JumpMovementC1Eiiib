@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='35' type='void Solarus::JumpMovement::JumpMovement(int direction8, int distance, int speed, bool ignore_obstacles)'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='46' ll='59' type='void Solarus::JumpMovement::JumpMovement(int direction8, int distance, int speed, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='39'>/**
+ * \brief Creates a jump movement.
+ * \param direction8 of the movement (0 to 7)
+ * \param distance distance of the jump in pixels
+ * \param speed speed of the movement in pixels per second (0: default, based on the jump length)
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ */</doc>

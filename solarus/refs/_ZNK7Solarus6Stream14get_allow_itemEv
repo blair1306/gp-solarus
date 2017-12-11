@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='55' type='bool Solarus::Stream::get_allow_item() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2598' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='117' ll='119' type='bool Solarus::Stream::get_allow_item() const'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='113'>/**
+ * \brief Returns whether the hero can use equipment items in this stream.
+ * \return \c true if the hero can use equipment items.
+ */</doc>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='96' u='c' c='_ZNK7Solarus4Hero14UsingItemState16can_avoid_streamERKNS_6StreamE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3605' u='c' c='_ZN7Solarus10LuaContext25stream_api_get_allow_itemEP9lua_State'/>

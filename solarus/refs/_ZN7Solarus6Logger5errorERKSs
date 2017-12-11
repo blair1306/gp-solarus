@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Logger.h' l='41' type='void Solarus::Logger::error(const std::string &amp; message)'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='217' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='89' u='c' c='_ZN7Solarus5Debug5errorERKSs'/>
+<def f='codebrowser/src/lowlevel/Logger.cpp' l='93' ll='98' type='void Solarus::Logger::error(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Logger.cpp' l='89'>/**
+ * \brief Logs an error message on stdout and error.txt.
+ * \param message The message to log.
+ */</doc>

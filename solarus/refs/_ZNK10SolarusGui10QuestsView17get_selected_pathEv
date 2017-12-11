@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='54' type='QString SolarusGui::QuestsView::get_selected_path() const'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='345' u='c' c='_ZN10SolarusGui10MainWindow30on_action_play_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='462' u='c' c='_ZN10SolarusGui10MainWindow16update_run_questEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='480' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='171' ll='174' type='QString SolarusGui::QuestsView::get_selected_path() const'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='167'>/**
+ * @brief Returns the quest path currently selected.
+ * @return The current quest path, or an empty string if no quest is selected.
+ */</doc>

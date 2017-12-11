@@ -1,0 +1,19 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/StringResources.h' l='29' ll='53'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/StringResources.h' l='26'>/**
+ * \brief Stores the content of a string data file.
+ */</doc>
+<fun r='_ZN7Solarus15StringResourcesC1Ev'/>
+<fun r='_ZN7Solarus15StringResources5clearEv'/>
+<fun r='_ZNK7Solarus15StringResources11get_stringsEv'/>
+<fun r='_ZNK7Solarus15StringResources10has_stringERKSs'/>
+<fun r='_ZNK7Solarus15StringResources10get_stringERKSs'/>
+<fun r='_ZN7Solarus15StringResources10get_stringERKSs'/>
+<fun r='_ZN7Solarus15StringResources10add_stringERKSsS2_'/>
+<fun r='_ZN7Solarus15StringResources13remove_stringERKSs'/>
+<fun r='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<fun r='_ZN7Solarus15StringResources15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus15StringResources13export_to_luaERSo'/>
+<fun r='_ZN7Solarus15StringResources6l_textEP9lua_State'/>
+<mbr r='Solarus::StringResources::strings' o='64' t='std::map&lt;std::string, std::string&gt;'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='54' type='const std::string &amp; Solarus::Treasure::get_item_name() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='106' u='c' c='_ZNK7Solarus8Treasure8get_itemEv'/>
+<def f='codebrowser/src/Treasure.cpp' l='113' ll='115' type='const std::string &amp; Solarus::Treasure::get_item_name() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='150' u='c' c='_ZNK7Solarus8Treasure8is_emptyEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='195' u='c' c='_ZNK7Solarus8Treasure13create_spriteEv'/>
+<doc f='codebrowser/src/Treasure.cpp' l='109'>/**
+ * \brief Returns the name of the item.
+ * \return The name of the item.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='172' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='235' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2482' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3106' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4005' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4011' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4884' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4890' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>

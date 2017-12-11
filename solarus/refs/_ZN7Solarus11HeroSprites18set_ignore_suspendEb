@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='89' type='void Solarus::HeroSprites::set_ignore_suspend(bool ignore_suspend)'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1001' ll='1024' type='void Solarus::HeroSprites::set_ignore_suspend(bool ignore_suspend)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='995'>/**
+ * \brief Sets whether the hero&apos;s sprite should keep playing their animation
+ * when the game is suspended.
+ * \param ignore_suspend true to make the sprites continue their animation even
+ * when the game is suspended
+ */</doc>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='52' u='c' c='_ZN7Solarus4Hero12VictoryState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='69' u='c' c='_ZN7Solarus4Hero12VictoryState4stopEPKNS_6Entity5StateE'/>

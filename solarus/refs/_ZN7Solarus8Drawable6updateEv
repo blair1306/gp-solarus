@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='128' type='void Solarus::Drawable::update()'/>
+<def f='codebrowser/src/Drawable.cpp' l='154' ll='175' type='void Solarus::Drawable::update()'/>
+<doc f='codebrowser/src/Drawable.cpp' l='148'>/**
+ * \brief Updates this object.
+ *
+ * This function is called repeatedly.
+ * You can redefine it for your needs.
+ */</doc>
+<ovr f='codebrowser/src/Sprite.cpp' l='677' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='679' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='117' u='c' c='_ZN7Solarus10LuaContext16update_drawablesEv'/>

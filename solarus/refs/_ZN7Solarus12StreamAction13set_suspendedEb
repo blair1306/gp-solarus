@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/StreamAction.h' l='50' type='void Solarus::StreamAction::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2270' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3322' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/entities/StreamAction.cpp' l='282' ll='293' type='void Solarus::StreamAction::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/StreamAction.cpp' l='278'>/**
+ * \brief Suspends or resumes this stream action.
+ * \param suspended \c true to suspend, \c false to resume.
+ */</doc>

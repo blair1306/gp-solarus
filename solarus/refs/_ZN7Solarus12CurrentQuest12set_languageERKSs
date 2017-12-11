@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='49' type='void Solarus::CurrentQuest::set_language(const std::string &amp; language_code)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='167' ll='205' type='void Solarus::CurrentQuest::set_language(const std::string &amp; language_code)'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='159'>/**
+ * \brief Sets the current language.
+ *
+ * The language-specific data will be loaded from the directory of this language.
+ * This function must be called before the first language-specific file is loaded.
+ *
+ * \param language_code Code of the language to set.
+ */</doc>
+<use f='codebrowser/src/Settings.cpp' l='349' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='107' u='c' c='_ZN7Solarus10LuaContext25language_api_set_languageEP9lua_State'/>

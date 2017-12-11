@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='56' type='void Solarus::Drawable::start_movement(const std::shared_ptr&lt;Movement&gt; &amp; movement)'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='55'>// dynamic effects</doc>
+<def f='codebrowser/src/Drawable.cpp' l='64' ll='71' type='void Solarus::Drawable::start_movement(const std::shared_ptr&lt;Movement&gt; &amp; movement)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='57'>/**
+ * \brief Applies a movement to this object.
+ *
+ * Any previous movement is stopped.
+ *
+ * \param movement The movement to apply.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='609' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='48' type='void Solarus::Equipment::Equipment(Solarus::Savegame &amp; savegame)'/>
+<def f='codebrowser/src/Equipment.cpp' l='37' ll='41' type='void Solarus::Equipment::Equipment(Solarus::Savegame &amp; savegame)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='33'>/**
+ * \brief Constructor.
+ * \param savegame The savegame to encapsulate.
+ */</doc>
+<doc f='codebrowser/include/solarus/Equipment.h' l='47'>// creation and destruction</doc>
+<use f='codebrowser/src/Savegame.cpp' l='87' u='c' c='_ZN7Solarus8SavegameC1ERNS_8MainLoopERKSs'/>

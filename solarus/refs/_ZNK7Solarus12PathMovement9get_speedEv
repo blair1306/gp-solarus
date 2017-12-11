@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='58' type='int Solarus::PathMovement::get_speed() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1172' u='c' c='_ZN7Solarus10LuaContext27path_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1286' u='c' c='_ZN7Solarus10LuaContext34random_path_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1355' u='c' c='_ZN7Solarus10LuaContext35path_finding_movement_api_get_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='96' ll='98' type='int Solarus::PathMovement::get_speed() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='92'>/**
+ * \brief Returns the speed of this movement.
+ * \return the speed in pixels per second
+ */</doc>

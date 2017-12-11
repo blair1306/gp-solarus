@@ -1,0 +1,26 @@
+<inh f='codebrowser/include/solarus/movements/StraightMovement.h' l='32' c='Solarus::StraightMovement'/>
+<def f='codebrowser/include/solarus/movements/TargetMovement.h' l='34' ll='83'/>
+<size>232</size>
+<doc f='codebrowser/include/solarus/movements/TargetMovement.h' l='29'>/**
+ * \brief Movement of an object that goes to a target point.
+ *
+ * The target point may be a fixed point or a moving entity.
+ */</doc>
+<fun r='_ZN7Solarus14TargetMovementC1ERKSt10shared_ptrINS_6EntityEEiiib'/>
+<fun r='_ZN7Solarus14TargetMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEib'/>
+<fun r='_ZN7Solarus14TargetMovement10set_targetERKSt10shared_ptrINS_6EntityEERKNS_5PointE'/>
+<fun r='_ZNK7Solarus14TargetMovement16get_moving_speedEv'/>
+<fun r='_ZN7Solarus14TargetMovement16set_moving_speedEi'/>
+<fun r='_ZN7Solarus14TargetMovement24notify_object_controlledEv'/>
+<fun r='_ZNK7Solarus14TargetMovement11is_finishedEv'/>
+<fun r='_ZN7Solarus14TargetMovement6updateEv'/>
+<fun r='_ZNK7Solarus14TargetMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus14TargetMovement18recompute_movementEv'/>
+<mbr r='Solarus::TargetMovement::target' o='1408' t='Solarus::Point'/>
+<mbr r='Solarus::TargetMovement::target_entity' o='1472' t='EntityPtr'/>
+<mbr r='Solarus::TargetMovement::entity_offset' o='1600' t='Solarus::Point'/>
+<mbr r='Solarus::TargetMovement::sign_x' o='1664' t='int'/>
+<mbr r='Solarus::TargetMovement::sign_y' o='1696' t='int'/>
+<mbr r='Solarus::TargetMovement::moving_speed' o='1728' t='int'/>
+<mbr r='Solarus::TargetMovement::next_recomputation_date' o='1760' t='uint32_t'/>
+<mbr r='Solarus::TargetMovement::finished' o='1792' t='bool'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='70' type='static std::string Solarus::PathMovement::create_random_path()'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='71' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='89' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='448' ll='458' type='static std::string Solarus::PathMovement::create_random_path()'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='444'>/**
+ * \brief Returns a string describing a path with random length in one of the four main directions.
+ * \return A random path.
+ */</doc>
+<use f='codebrowser/src/movements/RandomPathMovement.cpp' l='28' u='c' c='_ZN7Solarus18RandomPathMovementC1Ei'/>
+<use f='codebrowser/src/movements/RandomPathMovement.cpp' l='43' u='c' c='_ZN7Solarus18RandomPathMovement6updateEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='48' type='Solarus::QuestProperties SolarusGui::QuestsView::get_quest_properties(int index) const'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='118' u='c' c='_ZNK10SolarusGui10QuestsView29get_selected_quest_propertiesEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='126' ll='129' type='Solarus::QuestProperties SolarusGui::QuestsView::get_quest_properties(int index) const'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='121'>/**
+ * @brief Returns the properties of a quest in this view.
+ * @param index Index of the quest to get.
+ * @return The quest properties.
+ */</doc>

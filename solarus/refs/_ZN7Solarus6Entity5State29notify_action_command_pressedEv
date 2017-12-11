@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='55' type='void Solarus::Entity::State::notify_action_command_pressed()'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='283' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='371' ll='372' type='void Solarus::Entity::State::notify_action_command_pressed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='368'>/**
+ * \brief Notifies this state that the action command was just pressed.
+ */</doc>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='166' c='_ZN7Solarus4Hero13CarryingState29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='95' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='128' c='_ZN7Solarus4Hero13SwimmingState29notify_action_command_pressedEv'/>

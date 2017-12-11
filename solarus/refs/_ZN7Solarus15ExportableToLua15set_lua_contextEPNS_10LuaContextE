@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='43' type='void Solarus::ExportableToLua::set_lua_context(Solarus::LuaContext * lua_context)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='318' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<def f='codebrowser/src/lua/ExportableToLua.cpp' l='55' ll='57' type='void Solarus::ExportableToLua::set_lua_context(Solarus::LuaContext * lua_context)'/>
+<doc f='codebrowser/src/lua/ExportableToLua.cpp' l='51'>/**
+ * \brief Sets the Solarus Lua API.
+ * \param lua_context The Lua context, or nullptr to disable Lua for this object.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1008' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1234' u='c' c='_ZN7Solarus10LuaContext18userdata_close_luaEv'/>

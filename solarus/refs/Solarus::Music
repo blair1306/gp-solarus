@@ -1,0 +1,60 @@
+<def f='codebrowser/include/solarus/lowlevel/Music.h' l='46' ll='135'/>
+<size>80</size>
+<doc f='codebrowser/include/solarus/lowlevel/Music.h' l='33'>/**
+ * \brief Represents a music that can be played.
+ *
+ * A music should be in format .spc (Snes), .it (Impulse Tracker module) or .ogg.
+ * The .mp3 format will probably be supported in a future version.
+ * Only one music can be played at the same time.
+ * Before using this class, the audio system should have been
+ * initialized, by calling Sound::initialize().
+ * Sound and Music are the only classes that depends on audio libraries.
+ *
+ * TODO move the non-static parts to an internal private class.
+ * TODO make a subclass for each format?
+ */</doc>
+<smbr r='Solarus::Music::none' t='const std::string'/>
+<smbr r='Solarus::Music::unchanged' t='const std::string'/>
+<smbr r='Solarus::Music::format_names' t='const std::vector&lt;std::string&gt;'/>
+<fun r='_ZN7Solarus5Music10initializeEv'/>
+<fun r='_ZN7Solarus5Music4quitEv'/>
+<fun r='_ZN7Solarus5Music14is_initializedEv'/>
+<fun r='_ZN7Solarus5Music6updateEv'/>
+<fun r='_ZN7Solarus5Music10get_formatEv'/>
+<fun r='_ZN7Solarus5Music10get_volumeEv'/>
+<fun r='_ZN7Solarus5Music10set_volumeEi'/>
+<fun r='_ZN7Solarus5Music16get_num_channelsEv'/>
+<fun r='_ZN7Solarus5Music18get_channel_volumeEi'/>
+<fun r='_ZN7Solarus5Music18set_channel_volumeEii'/>
+<fun r='_ZN7Solarus5Music9get_tempoEv'/>
+<fun r='_ZN7Solarus5Music9set_tempoEi'/>
+<fun r='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<fun r='_ZN7Solarus5Music6existsERKSs'/>
+<fun r='_ZN7Solarus5Music4playERKSsb'/>
+<fun r='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus5Music12stop_playingEv'/>
+<fun r='_ZN7Solarus5Music20get_current_music_idEv'/>
+<fun r='_ZN7Solarus5MusicC1Ev'/>
+<fun r='_ZN7Solarus5MusicC1ERKSsbRKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus5Music5startEv'/>
+<fun r='_ZN7Solarus5Music4stopEv'/>
+<fun r='_ZN7Solarus5Music9is_pausedEv'/>
+<fun r='_ZN7Solarus5Music10set_pausedEb'/>
+<fun r='_ZN7Solarus5Music12set_callbackERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus5Music10decode_spcEji'/>
+<fun r='_ZN7Solarus5Music9decode_itEji'/>
+<fun r='_ZN7Solarus5Music10decode_oggEji'/>
+<fun r='_ZN7Solarus5Music14update_playingEv'/>
+<mbr r='Solarus::Music::id' o='0' t='std::string'/>
+<mbr r='Solarus::Music::file_name' o='64' t='std::string'/>
+<mbr r='Solarus::Music::format' o='128' t='Solarus::Music::Format'/>
+<mbr r='Solarus::Music::loop' o='160' t='bool'/>
+<mbr r='Solarus::Music::callback_ref' o='192' t='Solarus::ScopedLuaRef'/>
+<smbr r='Solarus::Music::nb_buffers' t='const int'/>
+<mbr r='Solarus::Music::buffers' o='320' t='ALuint [8]'/>
+<mbr r='Solarus::Music::source' o='576' t='ALuint'/>
+<smbr r='Solarus::Music::spc_decoder' t='std::unique_ptr&lt;SpcDecoder&gt;'/>
+<smbr r='Solarus::Music::it_decoder' t='std::unique_ptr&lt;ItDecoder&gt;'/>
+<smbr r='Solarus::Music::ogg_decoder' t='std::unique_ptr&lt;OggDecoder&gt;'/>
+<smbr r='Solarus::Music::volume' t='float'/>
+<smbr r='Solarus::Music::current_music' t='std::unique_ptr&lt;Music&gt;'/>

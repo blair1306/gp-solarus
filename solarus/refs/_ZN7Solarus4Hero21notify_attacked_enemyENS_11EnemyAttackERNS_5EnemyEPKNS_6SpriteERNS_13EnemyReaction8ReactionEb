@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='213' type='void Solarus::Hero::notify_attacked_enemy(Solarus::EnemyAttack attack, Solarus::Enemy &amp; victim, const Solarus::Sprite * victim_sprite, EnemyReaction::Reaction &amp; result, bool killed)'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='208'>/**
+     * \name Enemies.
+     *
+     * Attacking enemies or getting hurt by them.
+     */</doc>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='318' c='_ZN7Solarus6Entity21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2026' ll='2034' type='void Solarus::Hero::notify_attacked_enemy(Solarus::EnemyAttack attack, Solarus::Enemy &amp; victim, const Solarus::Sprite * victim_sprite, EnemyReaction::Reaction &amp; result, bool killed)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2023'>/**
+ * \copydoc Entity::notify_attacked_enemy
+ */</doc>

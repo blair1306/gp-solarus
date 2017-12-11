@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='50' type='bool Solarus::PixelMovement::is_finished() const'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='150' u='c' c='_ZN7Solarus4Hero12JumpingState6updateEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='127' u='c' c='_ZN7Solarus12PathMovement8set_loopEb'/>
+<ovr f='codebrowser/src/movements/PathMovement.cpp' l='200' c='_ZNK7Solarus12PathMovement11is_finishedEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='202' u='c' c='_ZNK7Solarus12PathMovement11is_finishedEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='242' u='c' c='_ZNK7Solarus12PathMovement35is_current_elementary_move_finishedEv'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='81' c='_ZNK7Solarus8Movement11is_finishedEv'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='272' ll='274' type='bool Solarus::PixelMovement::is_finished() const'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='267'>/**
+ * \brief Returns whether the movement is finished, i.e.
+ * whether the end of the trajectory was reached.
+ * \return true if the end of the trajectory was reached
+ */</doc>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='32' u='c' c='_ZN12_GLOBAL__N_110basic_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='50' u='c' c='_ZN12_GLOBAL__N_19loop_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='67' u='c' c='_ZN12_GLOBAL__N_110empty_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='78' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='89' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='111' u='c' c='_ZN12_GLOBAL__N_19list_testERN7Solarus15TestEnvironmentE'/>

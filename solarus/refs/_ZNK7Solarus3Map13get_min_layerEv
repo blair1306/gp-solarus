@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Map.h' l='79' type='int Solarus::Map::get_min_layer() const'/>
+<def f='codebrowser/src/Map.cpp' l='221' ll='224' type='int Solarus::Map::get_min_layer() const'/>
+<use f='codebrowser/src/Map.cpp' l='243' u='c' c='_ZNK7Solarus3Map14is_valid_layerEi'/>
+<doc f='codebrowser/src/Map.cpp' l='217'>/**
+ * \brief Returns the index of the first layer of the map.
+ * \return The first (lowest) layer (0 or less).
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='279' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='165' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='167' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='191' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='595' u='c' c='_ZN7Solarus8Entities20get_entities_by_typeENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='696' u='c' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='736' u='c' c='_ZN7Solarus8Entities22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='765' u='c' c='_ZN7Solarus8Entities17initialize_layersEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1243' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1264' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='586' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1127' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='209' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1479' u='c' c='_ZN7Solarus10LuaContext21map_api_get_min_layerEP9lua_State'/>

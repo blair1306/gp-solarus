@@ -1,0 +1,23 @@
+<inh f='codebrowser/include/solarus/movements/StraightMovement.h' l='32' c='Solarus::StraightMovement'/>
+<def f='codebrowser/include/solarus/movements/RandomMovement.h' l='32' ll='64'/>
+<size>208</size>
+<doc f='codebrowser/include/solarus/movements/RandomMovement.h' l='28'>/**
+ * \brief A movement that makes successive steps of random directions
+ * and (possibly) stays inside a limited rectangle.
+ */</doc>
+<fun r='_ZN7Solarus14RandomMovementC1Ei'/>
+<fun r='_ZN7Solarus14RandomMovementC1Eii'/>
+<fun r='_ZN7Solarus14RandomMovement24notify_object_controlledEv'/>
+<fun r='_ZN7Solarus14RandomMovement6updateEv'/>
+<fun r='_ZN7Solarus14RandomMovement13set_suspendedEb'/>
+<fun r='_ZNK7Solarus14RandomMovement16get_normal_speedEv'/>
+<fun r='_ZN7Solarus14RandomMovement16set_normal_speedEd'/>
+<fun r='_ZNK7Solarus14RandomMovement14get_max_radiusEv'/>
+<fun r='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>
+<fun r='_ZNK7Solarus14RandomMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus14RandomMovement23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<mbr r='Solarus::RandomMovement::normal_speed' o='1408' t='double'/>
+<mbr r='Solarus::RandomMovement::max_radius' o='1472' t='int'/>
+<mbr r='Solarus::RandomMovement::bounds' o='1504' t='Solarus::Rectangle'/>
+<mbr r='Solarus::RandomMovement::next_direction_change_date' o='1632' t='uint32_t'/>

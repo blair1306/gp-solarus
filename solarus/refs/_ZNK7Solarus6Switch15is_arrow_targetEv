@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='70' type='bool Solarus::Switch::is_arrow_target() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='354' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='117' ll='119' type='bool Solarus::Switch::is_arrow_target() const'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='113'>/**
+ * \brief Returns whether this switch is an arrow target.
+ * \return \c true if the subtype of this switch is ARROW_TARGET.
+ */</doc>

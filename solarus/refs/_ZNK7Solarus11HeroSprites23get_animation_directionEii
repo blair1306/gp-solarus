@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='78' type='int Solarus::HeroSprites::get_animation_direction(int keys_direction, int real_movement_direction) const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1166' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='690' ll='716' type='int Solarus::HeroSprites::get_animation_direction(int keys_direction, int real_movement_direction) const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='676'>/**
+ * \brief Returns the direction that the hero&apos;s sprites should take.
+ *
+ * This function returns the direction that the hero&apos;s sprites should take depending on the direction wanted
+ * by the player and the real movement direction.
+ * For diagonal directions, the direction returned depends
+ * on the current real direction of the hero&apos;s sprites.
+ *
+ * \param keys_direction the direction defined by the combination of directional keys pressed (0 to 7),
+ * or -1 if this is not a valid direction
+ * \param real_movement_direction the direction of the hero&apos;s actual movement (may be different from keys_direction)
+ * \return the direction of the sprites corresponding to these arrows (0 to 3),
+ * or -1 if the directional keys combination is illegal
+ */</doc>

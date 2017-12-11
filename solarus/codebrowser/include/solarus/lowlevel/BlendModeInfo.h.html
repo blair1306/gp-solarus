@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BlendModeInfo.h source code [codebrowser/include/solarus/lowlevel/BlendModeInfo.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::EnumInfoTraits "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/lowlevel/BlendModeInfo.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>lowlevel</a>/<a href='BlendModeInfo.h.html'>BlendModeInfo.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_BLEND_MODE_INFO_H">SOLARUS_BLEND_MODE_INFO_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_BLEND_MODE_INFO_H" data-ref="_M/SOLARUS_BLEND_MODE_INFO_H">SOLARUS_BLEND_MODE_INFO_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../EnumInfo.h.html">"solarus/EnumInfo.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="BlendMode.h.html">"solarus/lowlevel/BlendMode.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>template</b> &lt;&gt;</td></tr>
+<tr><th id="29">29</th><td><b>struct</b> <a class="macro" href="../Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <dfn class="type def" id="Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits"><a class="type" href="../EnumInfo.h.html#Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits">EnumInfoTraits</a></dfn>&lt;<a class="type" href="BlendMode.h.html#Solarus::BlendMode" title='Solarus::BlendMode' data-ref="Solarus::BlendMode">BlendMode</a>&gt; {</td></tr>
+<tr><th id="30">30</th><td>  <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::EnumInfoTraits{Solarus::BlendMode}::pretty_name" title='Solarus::EnumInfoTraits&lt;Solarus::BlendMode&gt;::pretty_name' data-ref="Solarus::EnumInfoTraits{Solarus::BlendMode}::pretty_name">pretty_name</dfn>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>  <em>static</em> <em>const</em> <a class="type" href="../EnumInfo.h.html#Solarus::EnumInfo" title='Solarus::EnumInfo' data-ref="Solarus::EnumInfo">EnumInfo</a>&lt;<a class="type" href="BlendMode.h.html#Solarus::BlendMode" title='Solarus::BlendMode' data-ref="Solarus::BlendMode">BlendMode</a>&gt;::<a class="typedef" href="../EnumInfo.h.html#Solarus::EnumInfo{Solarus::BlendMode}::names_type" title='Solarus::EnumInfo&lt;Solarus::BlendMode&gt;::names_type' data-type='std::map&lt;BlendMode, std::string&gt;' data-ref="Solarus::EnumInfo{Solarus::BlendMode}::names_type">names_type</a> <dfn class="decl" id="Solarus::EnumInfoTraits{Solarus::BlendMode}::names" title='Solarus::EnumInfoTraits&lt;Solarus::BlendMode&gt;::names' data-ref="Solarus::EnumInfoTraits{Solarus::BlendMode}::names">names</dfn>;</td></tr>
+<tr><th id="33">33</th><td>};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/lowlevel/BlendModeInfo.cpp.html'>codebrowser/src/lowlevel/BlendModeInfo.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

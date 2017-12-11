@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='113' type='bool Solarus::Enemy::is_traversable() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='258' u='c' c='_ZN7Solarus5Enemy15is_obstacle_forERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='534' ll='536' type='bool Solarus::Enemy::is_traversable() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='524'>/**
+ * \brief Returns whether this enemy is traversable by other entities.
+ *
+ * If the enemy is not traversable, is_obstacle_for() will always return
+ * \c false.
+ * If the enemy is traversable, is_obstacle_for() will call
+ * is_enemy_obstacle() on the entity to test.
+ *
+ * \return \c true if this enemy is traversable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4949' u='c' c='_ZN7Solarus10LuaContext24enemy_api_is_traversableEP9lua_State'/>

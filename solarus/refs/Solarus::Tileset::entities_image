@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='68' type='SurfacePtr'/>
+<offset>704</offset>
+<doc f='codebrowser/include/solarus/entities/Tileset.h' l='68'>/**&lt; Image from which the tileset-dependent sprites are
+                                    * extracted (optional, nullptr if none). */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='42' u='w' c='_ZN7Solarus7TilesetC1ERKSs'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='158' u='w' c='_ZN7Solarus7Tileset4loadEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='169' u='w' c='_ZN7Solarus7Tileset6unloadEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='202' u='a' c='_ZNK7Solarus7Tileset18get_entities_imageEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='234' u='w' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>

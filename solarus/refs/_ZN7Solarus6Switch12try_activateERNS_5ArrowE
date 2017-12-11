@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='80' type='void Solarus::Switch::try_activate(Solarus::Arrow &amp; arrow)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='355' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='332' ll='339' type='void Solarus::Switch::try_activate(Solarus::Arrow &amp; )'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='325'>/**
+ * \brief This function is called when an arrow overlaps this switch.
+ *
+ * The switch is activated if its properties allow it.
+ *
+ * \param arrow the arrow overlapping this switch
+ */</doc>
+<doc f='codebrowser/src/entities/Switch.cpp' l='332'>/* arrow */</doc>

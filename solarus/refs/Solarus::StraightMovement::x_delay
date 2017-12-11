@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='94' type='uint32_t'/>
+<offset>1152</offset>
+<doc f='codebrowser/include/solarus/movements/StraightMovement.h' l='93'>// the following fields are redundant and can be computed from x_speed and y_speed</doc>
+<doc f='codebrowser/include/solarus/movements/StraightMovement.h' l='94'>/**&lt; Delay in ticks between an x move of 1 pixel.
+                                  * x_delay = 200 / |x_speed| */</doc>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='41' u='w' c='_ZN7Solarus16StraightMovementC1Ebb'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='106' u='w' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='110' u='w' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='113' u='r' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='424' u='r' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='448' u='r' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='455' u='r' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='579' u='r' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='610' u='r' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='617' u='r' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

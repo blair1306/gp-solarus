@@ -1,0 +1,34 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Teletransporter.h' l='34' ll='92'/>
+<size>304</size>
+<doc f='codebrowser/include/solarus/entities/Teletransporter.h' l='27'>/**
+ * \brief A detector that sends the hero to a destination.
+ *
+ * A teletransporter is a detector placed on a map.
+ * When the hero walks on this detector, he is placed on a destination
+ * on the same map or another one.
+ */</doc>
+<smbr r='Solarus::Teletransporter::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus15TeletransporterC1ERKSsiRKNS_5PointERKNS_4SizeES2_S2_NS_10Transition5StyleES2_S2_'/>
+<fun r='_ZNK7Solarus15Teletransporter8get_typeEv'/>
+<fun r='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<fun r='_ZNK7Solarus15Teletransporter12get_sound_idEv'/>
+<fun r='_ZN7Solarus15Teletransporter12set_sound_idERKSs'/>
+<fun r='_ZNK7Solarus15Teletransporter20get_transition_styleEv'/>
+<fun r='_ZN7Solarus15Teletransporter20set_transition_styleENS_10Transition5StyleE'/>
+<fun r='_ZNK7Solarus15Teletransporter22get_destination_map_idEv'/>
+<fun r='_ZN7Solarus15Teletransporter22set_destination_map_idERKSs'/>
+<fun r='_ZNK7Solarus15Teletransporter20get_destination_nameEv'/>
+<fun r='_ZN7Solarus15Teletransporter20set_destination_nameERKSs'/>
+<fun r='_ZNK7Solarus15Teletransporter14is_on_map_sideEv'/>
+<fun r='_ZN7Solarus15Teletransporter15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<fun r='_ZN7Solarus15Teletransporter16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<mbr r='Solarus::Teletransporter::sound_id' o='2048' t='std::string'/>
+<mbr r='Solarus::Teletransporter::transition_style' o='2112' t='Transition::Style'/>
+<mbr r='Solarus::Teletransporter::destination_map_id' o='2176' t='std::string'/>
+<mbr r='Solarus::Teletransporter::destination_name' o='2240' t='std::string'/>
+<mbr r='Solarus::Teletransporter::destination_side' o='2304' t='int'/>
+<mbr r='Solarus::Teletransporter::transition_direction' o='2336' t='int'/>
+<mbr r='Solarus::Teletransporter::transporting_hero' o='2368' t='bool'/>

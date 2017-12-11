@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='235' type='void Solarus::Entity::notify_movement_finished()'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='290' c='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2189' ll='2194' type='void Solarus::Entity::notify_movement_finished()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2186'>/**
+ * \brief This function is called when the movement of the entity is finished.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1037' c='_ZN7Solarus4Hero24notify_movement_finishedEv'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='387' c='_ZN7Solarus3Npc24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='389' u='c' c='_ZN7Solarus3Npc24notify_movement_finishedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='322' u='c' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>

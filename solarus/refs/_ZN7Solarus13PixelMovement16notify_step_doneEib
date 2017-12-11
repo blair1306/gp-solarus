@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='60' type='void Solarus::PixelMovement::notify_step_done(int step_index, bool success)'/>
+<ovr f='codebrowser/src/movements/JumpMovement.cpp' l='175' c='_ZN7Solarus12JumpMovement16notify_step_doneEib'/>
+<ovr f='codebrowser/src/movements/PathMovement.cpp' l='224' c='_ZN7Solarus12PathMovement16notify_step_doneEib'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='240' u='c' c='_ZN7Solarus13PixelMovement14make_next_stepEv'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='248' ll='249' type='void Solarus::PixelMovement::notify_step_done(int , bool )'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='243'>/**
+ * \brief This function is called when a step of the trajectory just occurred.
+ * \param step_index index of the step in the trajectory (the first one is 0)
+ * \param success true if the move was made, false if the movement was stopped by an obstacle
+ */</doc>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='248'>/* step_index */</doc>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='248'>/* success */</doc>

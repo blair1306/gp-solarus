@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='82' type='void Solarus::HeroSprites::set_animation_direction(int direction)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='463' u='c' c='_ZN7Solarus4Hero23set_animation_directionEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='654' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='663' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1174' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero18ForcedWalkingState6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='156' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='725' ll='752' type='void Solarus::HeroSprites::set_animation_direction(int direction)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='767' u='c' c='_ZN7Solarus11HeroSprites24set_animation_direction8Ei'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='801' u='c' c='_ZN7Solarus11HeroSprites27restore_animation_directionEv'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='718'>/**
+ * \brief Changes the direction of the hero&apos;s sprites.
+ *
+ * It is different from the movement direction.
+ *
+ * \param direction the direction to set (0 to 3)
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='97' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='246' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='255' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='259' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

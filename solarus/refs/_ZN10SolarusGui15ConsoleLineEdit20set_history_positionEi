@@ -1,0 +1,11 @@
+<dec f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='41' type='void SolarusGui::ConsoleLineEdit::set_history_position(int history_position)'/>
+<use f='codebrowser/gui/moc_console_line_edit.cpp' l='81' u='c' c='_ZN10SolarusGui15ConsoleLineEdit18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='75' u='c' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<def f='codebrowser/gui/src/console_line_edit.cpp' l='127' ll='141' type='void SolarusGui::ConsoleLineEdit::set_history_position(int history_position)'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='159' u='c' c='_ZN10SolarusGui15ConsoleLineEdit16history_previousEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='173' u='c' c='_ZN10SolarusGui15ConsoleLineEdit12history_nextEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='198' u='c' c='_ZN10SolarusGui15ConsoleLineEdit16command_executedERK7QString'/>
+<doc f='codebrowser/gui/src/console_line_edit.cpp' l='123'>/**
+ * @brief Shows the command at the given history position.
+ * @param history_position The new history position to set.
+ */</doc>

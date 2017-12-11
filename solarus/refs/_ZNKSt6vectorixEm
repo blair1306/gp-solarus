@@ -1,0 +1,35 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='793' ll='795' type='const_reference std::vector::operator[](size_type __n) const'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='782'>/**
+       *  @brief  Subscript access to the data contained in the %vector.
+       *  @param __n The index of the element for which data should be
+       *  accessed.
+       *  @return  Read-only (constant) reference to data.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='codebrowser/include/solarus/entities/Entities.h' l='244' u='c' c='_ZNK7Solarus8Entities15get_tile_groundEiii'/>
+<use f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='97' u='c' c='_ZNK7Solarus24SpriteAnimationDirection14get_pixel_bitsEi'/>
+<use f='codebrowser/include/solarus/SpriteAnimation.h' l='93' u='c' c='_ZNK7Solarus15SpriteAnimation13get_directionEi'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='126' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='219' u='c' c='_ZNK7Solarus15SpriteAnimation28are_pixel_collisions_enabledEv'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='47' u='c' c='_ZNK7Solarus24SpriteAnimationDirection8get_sizeEv'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='47' u='c' c='_ZNK7Solarus24SpriteAnimationDirection8get_sizeEv'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='71' u='c' c='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='74' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='118' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='119' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='120' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='121' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='122' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='123' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='124' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='152' u='c' c='_ZNK7Solarus15TilePatternData9get_frameEv'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='211' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='212' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='219' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='255' u='c' c='_ZNK7Solarus9PixelBits5printEv'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='255' u='c' c='_ZNK7Solarus9PixelBits5printEv'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='235' u='c' c='_ZN7Solarus10LuaContext26audio_api_get_music_formatEP9lua_State'/>

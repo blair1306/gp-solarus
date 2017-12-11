@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='59' type='const std::string &amp; Solarus::Teletransporter::get_destination_map_id() const'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='152' ll='154' type='const std::string &amp; Solarus::Teletransporter::get_destination_map_id() const'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='145'>/**
+ * \brief Returns the id of the destination map.
+ *
+ * This might be the same map.
+ *
+ * \return The id of the destination map.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2902' u='c' c='_ZN7Solarus10LuaContext39teletransporter_api_get_destination_mapEP9lua_State'/>

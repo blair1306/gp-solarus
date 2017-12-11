@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='39' type='void Solarus::VideoMode::VideoMode(const std::string &amp; name, const Solarus::Size &amp; initial_window_size, std::unique_ptr&lt;PixelFilter&gt; software_filter, std::unique_ptr&lt;Shader&gt; hardware_filter)'/>
+<def f='codebrowser/src/lowlevel/VideoMode.cpp' l='35' ll='48' type='void Solarus::VideoMode::VideoMode(const std::string &amp; name, const Solarus::Size &amp; initial_window_size, std::unique_ptr&lt;PixelFilter&gt; software_filter, std::unique_ptr&lt;Shader&gt; hardware_filter)'/>
+<doc f='codebrowser/src/lowlevel/VideoMode.cpp' l='25'>/**
+ * \brief Creates a video mode with the specified properties.
+ *
+ * \c software_filter and \c hardware_filter cannot be both set.
+ *
+ * \param name Lua name of the video mode.
+ * \param initial_window_size Default size of the window when selecting this video mode.
+ * \param software_filter Software filter to apply to the quest image or nullptr.
+ * \param hardware_filter Scaling shader to apply to the quest image or nullptr.
+ */</doc>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='208' type='EntityList'/>
+<offset>2048</offset>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='208'>/**&lt; All map entities except tiles and the hero. */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='152' u='w' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='231' u='m' c='_ZN7Solarus8Entities12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='231' u='m' c='_ZN7Solarus8Entities12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='320' c='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='415' c='_ZNK7Solarus8Entities22has_entity_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='709' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='723' c='_ZN7Solarus8Entities38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='740' c='_ZN7Solarus8Entities22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='751' c='_ZN7Solarus8Entities19notify_map_finishedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1010' u='m' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1118' u='m' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1166' c='_ZN7Solarus8Entities13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1184' c='_ZN7Solarus8Entities6updateEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='120' type='bool Solarus::Entity::is_initialized() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='119'>// adding to a map</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='939' u='c' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='339' ll='341' type='bool Solarus::Entity::is_initialized() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='332'>/**
+ * @brief Returns whether this entity is fully initialized.
+ *
+ * This becomes true after entity:on_created() is called.
+ *
+ * @return @c true if the entity is initialized.
+ */</doc>

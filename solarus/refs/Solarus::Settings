@@ -1,0 +1,27 @@
+<def f='codebrowser/include/solarus/Settings.h' l='33' ll='66'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/Settings.h' l='28'>/**
+ * \brief Stores built-in settings of the quest.
+ *
+ * Settings include the language, the video mode and the audio volume.
+ */</doc>
+<fun r='_ZN7Solarus8SettingsC1Ev'/>
+<fun r='_ZN7Solarus8Settings4loadERKSs'/>
+<fun r='_ZN7Solarus8Settings4saveERKSs'/>
+<fun r='_ZN7Solarus8Settings14set_from_questEv'/>
+<fun r='_ZN7Solarus8Settings14apply_to_questEv'/>
+<fun r='_ZN7Solarus8Settings10get_stringERKSs'/>
+<fun r='_ZN7Solarus8Settings11get_integerERKSs'/>
+<fun r='_ZN7Solarus8Settings11get_booleanERKSs'/>
+<fun r='_ZN7Solarus8Settings10set_stringERKSsS2_'/>
+<fun r='_ZN7Solarus8Settings11set_integerERKSsi'/>
+<fun r='_ZN7Solarus8Settings11set_booleanERKSsb'/>
+<fun r='_ZN7Solarus8Settings5unsetERKSs'/>
+<fun r='_ZN7Solarus8Settings5clearEv'/>
+<smbr r='Solarus::Settings::key_video_mode' t='const std::string'/>
+<smbr r='Solarus::Settings::key_fullscreen' t='const std::string'/>
+<smbr r='Solarus::Settings::key_sound_volume' t='const std::string'/>
+<smbr r='Solarus::Settings::key_music_volume' t='const std::string'/>
+<smbr r='Solarus::Settings::key_language' t='const std::string'/>
+<smbr r='Solarus::Settings::key_joypad_enabled' t='const std::string'/>
+<mbr r='Solarus::Settings::entries' o='0' t='std::map&lt;std::string, std::string&gt;'/>

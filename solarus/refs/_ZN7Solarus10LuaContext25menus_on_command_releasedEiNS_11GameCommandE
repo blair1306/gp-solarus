@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='297' type='bool Solarus::LuaContext::menus_on_command_released(int context_index, Solarus::GameCommand command)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1835' u='c' c='_ZN7Solarus10LuaContext24game_on_command_releasedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2317' u='c' c='_ZN7Solarus10LuaContext23map_on_command_releasedERNS_3MapENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='398' u='c' c='_ZN7Solarus10LuaContext24menu_on_command_releasedERKNS_12ScopedLuaRefENS_11GameCommandE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='524' ll='547' type='bool Solarus::LuaContext::menus_on_command_released(int context_index, Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='518'>/**
+ * \brief Calls the on_command_released() method of the menus associated to a context.
+ * \param context_index Index of an object with menus.
+ * \param command The game command just released.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

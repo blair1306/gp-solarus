@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Arguments.h' l='47' type='void Solarus::Arguments::add_argument(const std::string &amp; key, const std::string &amp; value)'/>
+<def f='codebrowser/src/Arguments.cpp' l='115' ll='118' type='void Solarus::Arguments::add_argument(const std::string &amp; key, const std::string &amp; value)'/>
+<doc f='codebrowser/src/Arguments.cpp' l='107'>/**
+ * \brief Adds an argument as a key and value.
+ *
+ * This is equivalent to &lt;tt&gt;add_argument(key + &quot;=&quot; + value)&lt;/tt&gt;.
+ *
+ * \param key Key of the argument to add.
+ * \param value Value of the argument to add.
+ */</doc>

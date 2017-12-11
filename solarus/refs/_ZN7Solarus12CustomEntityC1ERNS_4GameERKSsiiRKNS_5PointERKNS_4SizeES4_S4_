@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='42' type='void Solarus::CustomEntity::CustomEntity(Solarus::Game &amp; game, const std::string &amp; name, int direction, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const std::string &amp; sprite_name, const std::string &amp; model)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='54' ll='83' type='void Solarus::CustomEntity::CustomEntity(Solarus::Game &amp; , const std::string &amp; name, int direction, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const std::string &amp; sprite_name, const std::string &amp; model)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='43'>/**
+ * \brief Creates a custom entity.
+ * \param game The game.
+ * \param name Name of the entity or an empty string.
+ * \param direction Direction of the entity (0 to 3).
+ * \param layer The layer on the map.
+ * \param xy Coordinates on the map.
+ * \param size Size of the entity.
+ * \param sprite_name Animation set id of a sprite or an empty string.
+ * \param model Model of custom entity or an empty string.
+ */</doc>

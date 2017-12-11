@@ -1,0 +1,35 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='113' type='Solarus::Equipment &amp; Solarus::Savegame::get_equipment()'/>
+<use f='codebrowser/src/Game.cpp' l='245' u='c' c='_ZN7Solarus4Game13get_equipmentEv'/>
+<use f='codebrowser/src/Savegame.cpp' l='119' u='c' c='_ZN7Solarus8Savegame10initializeEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='336' ll='338' type='Solarus::Equipment &amp; Solarus::Savegame::get_equipment()'/>
+<doc f='codebrowser/src/Savegame.cpp' l='332'>/**
+ * \brief Returns the player&apos;s equipment corresponding to this savegame.
+ * \return The equipment.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='754' u='c' c='_ZN7Solarus10LuaContext17game_api_get_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='771' u='c' c='_ZN7Solarus10LuaContext17game_api_set_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='792' u='c' c='_ZN7Solarus10LuaContext17game_api_add_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='813' u='c' c='_ZN7Solarus10LuaContext20game_api_remove_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='829' u='c' c='_ZN7Solarus10LuaContext21game_api_get_max_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='851' u='c' c='_ZN7Solarus10LuaContext21game_api_set_max_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='872' u='c' c='_ZN7Solarus10LuaContext21game_api_add_max_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='889' u='c' c='_ZN7Solarus10LuaContext18game_api_get_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='907' u='c' c='_ZN7Solarus10LuaContext18game_api_set_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='928' u='c' c='_ZN7Solarus10LuaContext18game_api_add_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='949' u='c' c='_ZN7Solarus10LuaContext21game_api_remove_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='965' u='c' c='_ZN7Solarus10LuaContext22game_api_get_max_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='987' u='c' c='_ZN7Solarus10LuaContext22game_api_set_max_moneyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1003' u='c' c='_ZN7Solarus10LuaContext18game_api_get_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1021' u='c' c='_ZN7Solarus10LuaContext18game_api_set_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1042' u='c' c='_ZN7Solarus10LuaContext18game_api_add_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1063' u='c' c='_ZN7Solarus10LuaContext21game_api_remove_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1079' u='c' c='_ZN7Solarus10LuaContext22game_api_get_max_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1101' u='c' c='_ZN7Solarus10LuaContext22game_api_set_max_magicEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1118' u='c' c='_ZN7Solarus10LuaContext20game_api_has_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1136' u='c' c='_ZN7Solarus10LuaContext20game_api_get_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1155' u='c' c='_ZN7Solarus10LuaContext20game_api_set_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1172' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1176' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1192' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1221' u='c' c='_ZN7Solarus10LuaContext26game_api_get_item_assignedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1252' u='c' c='_ZN7Solarus10LuaContext26game_api_set_item_assignedEP9lua_State'/>

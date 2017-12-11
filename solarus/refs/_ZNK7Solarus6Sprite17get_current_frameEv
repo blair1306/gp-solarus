@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='81' type='int Solarus::Sprite::get_current_frame() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='387' ll='389' type='int Solarus::Sprite::get_current_frame() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='596' u='c' c='_ZNK7Solarus6Sprite21is_last_frame_reachedEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='694' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='734' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='383'>/**
+ * \brief Returns the current frame of the sprite&apos;s animation.
+ * \return the current frame
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='3412' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='784' u='c' c='_ZNK7Solarus11HeroSprites17get_current_frameEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='820' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='833' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='291' u='c' c='_ZN7Solarus10LuaContext20sprite_api_get_frameEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='496' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

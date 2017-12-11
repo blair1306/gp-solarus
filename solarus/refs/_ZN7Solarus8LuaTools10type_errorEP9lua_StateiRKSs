@@ -1,0 +1,35 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='78' type='void Solarus::LuaTools::type_error(lua_State * l, int arg_index, const std::string &amp; expected_type_name)'/>
+<use f='codebrowser/src/Savegame.cpp' l='274' u='c' c='_ZN7Solarus8Savegame10l_newindexEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='61' u='c' c='_ZN7Solarus10LuaContext14check_drawableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='607' u='c' c='_ZN7Solarus10LuaContext12check_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2680' u='c' c='_ZN7Solarus10LuaContext32camera_api_get_position_to_trackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2773' u='c' c='_ZN7Solarus10LuaContext42destination_api_set_starting_location_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3301' u='c' c='_ZN7Solarus10LuaContext27block_api_set_maximum_movesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5427' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5486' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5526' u='c' c='_ZN7Solarus10LuaContext41custom_entity_api_set_can_traverse_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5592' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5649' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_set_modified_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1390' u='c' c='_ZN7Solarus10LuaContext37game_api_set_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1443' u='c' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='213' ll='220' type='void Solarus::LuaTools::type_error(lua_State * l, int arg_index, const std::string &amp; expected_type_name)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='204'>/**
+ * \brief Similar to luaL_typerror() but throws a LuaException.
+ *
+ * This function never returns.
+ *
+ * \param l A Lua state.
+ * \param arg_index Index of an argument in the stack.
+ * \param expected_type_name A name describing the type that was expected.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1457' u='c' c='_ZN7Solarus10LuaContext17map_api_set_worldEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1530' u='c' c='_ZN7Solarus10LuaContext17map_api_set_floorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2082' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='189' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='243' u='c' c='_ZN7Solarus10LuaContext17menu_api_stop_allEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='352' u='c' c='_ZN7Solarus10LuaContext14check_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='612' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='182' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='131' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='354' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='418' u='c' c='_ZN7Solarus10LuaContext18timer_api_stop_allEP9lua_State'/>

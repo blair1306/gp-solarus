@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='323' type='void Solarus::Hero::update_movement()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='181' u='c' c='_ZN7Solarus4Hero6updateEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='199' ll='220' type='void Solarus::Hero::update_movement()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='194'>/**
+ * \brief Updates the hero&apos;s position according to its movement.
+ *
+ * This function is called repeatedly by update().
+ */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='267' u='c' c='_ZN7Solarus4Hero19PlayerMovementState20notify_layer_changedEv'/>

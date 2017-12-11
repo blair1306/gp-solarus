@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='194' type='void Solarus::Entity::notify_direction_changed()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='649' u='c' c='_ZN7Solarus6Entity13set_directionEi'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='656' ll='657' type='void Solarus::Entity::notify_direction_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='653'>/**
+ * \brief Notifies this entity that its direction property has changed.
+ */</doc>
+<ovr f='codebrowser/src/entities/Stream.cpp' l='132' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='134' u='c' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>

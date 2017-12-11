@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Map.h' l='113' type='bool Solarus::Map::test_collision_with_border(int x, int y) const'/>
+<def f='codebrowser/include/solarus/Map.h' l='240' ll='243' type='bool Solarus::Map::test_collision_with_border(int x, int y) const'/>
+<use f='codebrowser/include/solarus/Map.h' l='252' u='c' c='_ZNK7Solarus3Map26test_collision_with_borderERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/Map.h' l='112'>// collisions with obstacles (checked before a move)</doc>
+<doc f='codebrowser/include/solarus/Map.h' l='234'>/**
+ * \brief Tests whether a point is outside the map area.
+ * \param x x of the point to check.
+ * \param y y of the point to check.
+ * \return true if this point is outside the map area.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='784' u='c' c='_ZNK7Solarus3Map26test_collision_with_groundEiiiRKNS_6EntityERb'/>

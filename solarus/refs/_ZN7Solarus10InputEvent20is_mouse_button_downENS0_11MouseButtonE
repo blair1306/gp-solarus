@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='221' type='static bool Solarus::InputEvent::is_mouse_button_down(Solarus::InputEvent::MouseButton button)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='414' ll='417' type='static bool Solarus::InputEvent::is_mouse_button_down(Solarus::InputEvent::MouseButton button)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='409'>/**
+ * \brief Returns whether a mouse button is currently down.
+ * \param button A mouse button.
+ * \return \c true if this mouse button is currently down.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='208' u='c' c='_ZN7Solarus10LuaContext33input_api_is_mouse_button_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='229' u='c' c='_ZN7Solarus10LuaContext34input_api_is_mouse_button_releasedEP9lua_State'/>

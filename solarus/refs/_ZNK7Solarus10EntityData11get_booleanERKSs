@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='117' type='bool Solarus::EntityData::get_boolean(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='649' ll='659' type='bool Solarus::EntityData::get_boolean(const std::string &amp; key) const'/>
+<use f='codebrowser/src/EntityData.cpp' l='737' u='c' c='_ZNK7Solarus10EntityData14is_field_unsetERKSs'/>
+<use f='codebrowser/src/EntityData.cpp' l='921' u='c' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<doc f='codebrowser/src/EntityData.cpp' l='644'>/**
+ * \brief Returns the value of a boolean field of this entity.
+ * \param key Key of the field to get. It must exist and be a boolean.
+ * \return The boolean value.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='471' u='c' c='_ZN7Solarus10LuaContext20l_create_destinationEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='594' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='595' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='596' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='660' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='792' u='c' c='_ZN7Solarus10LuaContext14l_create_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='793' u='c' c='_ZN7Solarus10LuaContext14l_create_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='823' u='c' c='_ZN7Solarus10LuaContext21l_create_dynamic_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='852' u='c' c='_ZN7Solarus10LuaContext15l_create_switchEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='853' u='c' c='_ZN7Solarus10LuaContext15l_create_switchEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='880' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='881' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='882' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='883' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='884' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1035' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1036' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1037' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1097' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

@@ -1,0 +1,42 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1124' type='static const ExportableToLuaPtr &amp; Solarus::LuaContext::check_userdata(lua_State * l, int index, const std::string &amp; module_name)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1723' u='c' c='_ZN7Solarus10LuaContext10check_heroEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2576' u='c' c='_ZN7Solarus10LuaContext12check_cameraEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2730' u='c' c='_ZN7Solarus10LuaContext17check_destinationEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2802' u='c' c='_ZN7Solarus10LuaContext21check_teletransporterEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2978' u='c' c='_ZN7Solarus10LuaContext9check_npcEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3043' u='c' c='_ZN7Solarus10LuaContext11check_chestEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3174' u='c' c='_ZN7Solarus10LuaContext11check_blockEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3338' u='c' c='_ZN7Solarus10LuaContext12check_switchEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3449' u='c' c='_ZN7Solarus10LuaContext12check_streamEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3645' u='c' c='_ZN7Solarus10LuaContext10check_doorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3737' u='c' c='_ZN7Solarus10LuaContext19check_shop_treasureEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3888' u='c' c='_ZN7Solarus10LuaContext14check_pickableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3980' u='c' c='_ZN7Solarus10LuaContext18check_destructibleEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4305' u='c' c='_ZN7Solarus10LuaContext18check_dynamic_tileEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4371' u='c' c='_ZN7Solarus10LuaContext11check_enemyEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5157' u='c' c='_ZN7Solarus10LuaContext19check_custom_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='140' u='c' c='_ZN7Solarus10LuaContext10check_gameEP9lua_Statei'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='107' u='c' c='_ZN7Solarus10LuaContext10check_itemEP9lua_Statei'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1107' ll='1118' type='static const ExportableToLuaPtr &amp; Solarus::LuaContext::check_userdata(lua_State * l, int index, const std::string &amp; module_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1099'>/**
+ * \brief Checks that the value at the given index is userdata of the
+ * specified type and returns it.
+ * \param l A Lua state.
+ * \param index An index in the Lua stack.
+ * \param module_name Name identifying the userdata type.
+ * \return The userdata at this index.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='212' u='c' c='_ZN7Solarus10LuaContext9check_mapEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='718' u='c' c='_ZN7Solarus10LuaContext23check_straight_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='856' u='c' c='_ZN7Solarus10LuaContext21check_random_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='981' u='c' c='_ZN7Solarus10LuaContext21check_target_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1109' u='c' c='_ZN7Solarus10LuaContext19check_path_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1262' u='c' c='_ZN7Solarus10LuaContext26check_random_path_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1324' u='c' c='_ZN7Solarus10LuaContext27check_path_finding_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1393' u='c' c='_ZN7Solarus10LuaContext21check_circle_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1678' u='c' c='_ZN7Solarus10LuaContext19check_jump_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1788' u='c' c='_ZN7Solarus10LuaContext20check_pixel_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='101' u='c' c='_ZN7Solarus10LuaContext12check_spriteEP9lua_Statei'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='90' u='c' c='_ZN7Solarus10LuaContext13check_surfaceEP9lua_Statei'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='124' u='c' c='_ZN7Solarus10LuaContext18check_text_surfaceEP9lua_Statei'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='90' u='c' c='_ZN7Solarus10LuaContext11check_timerEP9lua_Statei'/>

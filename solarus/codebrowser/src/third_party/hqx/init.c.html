@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>init.c source code [codebrowser/src/third_party/hqx/init.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/third_party/hqx/init.c'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>src</a>/<a href='..'>third_party</a>/<a href='./'>hqx</a>/<a href='init.c.html'>init.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2010 Cameron Zemek ( grom@zeminvaders.net)</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="16">16</th><td><i> * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../include/solarus/third_party/hqx/hqx.h.html">"hqx/hqx.h"</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>   <dfn class="decl def" id="RGBtoYUV" title='RGBtoYUV' data-ref="RGBtoYUV">RGBtoYUV</dfn>[<var>16777216</var>];</td></tr>
+<tr><th id="23">23</th><td><a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>   <dfn class="decl def" id="YUV1" title='YUV1' data-ref="YUV1">YUV1</dfn>, <dfn class="decl def" id="YUV2" title='YUV2' data-ref="YUV2">YUV2</dfn>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><a class="macro" href="../../../include/solarus/third_party/hqx/hqx.h.html#39" title="" data-ref="_M/HQX_API">HQX_API</a> <em>void</em> <a class="macro" href="../../../include/solarus/third_party/hqx/hqx.h.html#33" title="" data-ref="_M/HQX_CALLCONV">HQX_CALLCONV</a> <dfn class="decl def" id="hqxInit" title='hqxInit' data-ref="hqxInit">hqxInit</dfn>(<em>void</em>)</td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>    <i>/* Initalize RGB to YUV lookup table */</i></td></tr>
+<tr><th id="28">28</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="1c" title='c' data-type='uint32_t' data-ref="1c">c</dfn>, <dfn class="local col2 decl" id="2r" title='r' data-type='uint32_t' data-ref="2r">r</dfn>, <dfn class="local col3 decl" id="3g" title='g' data-type='uint32_t' data-ref="3g">g</dfn>, <dfn class="local col4 decl" id="4b" title='b' data-type='uint32_t' data-ref="4b">b</dfn>, <dfn class="local col5 decl" id="5y" title='y' data-type='uint32_t' data-ref="5y">y</dfn>, <dfn class="local col6 decl" id="6u" title='u' data-type='uint32_t' data-ref="6u">u</dfn>, <dfn class="local col7 decl" id="7v" title='v' data-type='uint32_t' data-ref="7v">v</dfn>;</td></tr>
+<tr><th id="29">29</th><td>    <b>for</b> (<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> = <var>0</var>; <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &lt; <var>16777215</var>; <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a>++) {</td></tr>
+<tr><th id="30">30</th><td>        <a class="local col2 ref" href="#2r" title='r' data-ref="2r">r</a> = (<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &amp; <var>0xFF0000</var>) &gt;&gt; <var>16</var>;</td></tr>
+<tr><th id="31">31</th><td>        <a class="local col3 ref" href="#3g" title='g' data-ref="3g">g</a> = (<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &amp; <var>0x00FF00</var>) &gt;&gt; <var>8</var>;</td></tr>
+<tr><th id="32">32</th><td>        <a class="local col4 ref" href="#4b" title='b' data-ref="4b">b</a> = <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &amp; <var>0x0000FF</var>;</td></tr>
+<tr><th id="33">33</th><td>        <a class="local col5 ref" href="#5y" title='y' data-ref="5y">y</a> = (<a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>)(<var>0.299</var>*<a class="local col2 ref" href="#2r" title='r' data-ref="2r">r</a> + <var>0.587</var>*<a class="local col3 ref" href="#3g" title='g' data-ref="3g">g</a> + <var>0.114</var>*<a class="local col4 ref" href="#4b" title='b' data-ref="4b">b</a>);</td></tr>
+<tr><th id="34">34</th><td>        <a class="local col6 ref" href="#6u" title='u' data-ref="6u">u</a> = (<a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>)(-<var>0.169</var>*<a class="local col2 ref" href="#2r" title='r' data-ref="2r">r</a> - <var>0.331</var>*<a class="local col3 ref" href="#3g" title='g' data-ref="3g">g</a> + <var>0.5</var>*<a class="local col4 ref" href="#4b" title='b' data-ref="4b">b</a>) + <var>128</var>;</td></tr>
+<tr><th id="35">35</th><td>        <a class="local col7 ref" href="#7v" title='v' data-ref="7v">v</a> = (<a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>)(<var>0.5</var>*<a class="local col2 ref" href="#2r" title='r' data-ref="2r">r</a> - <var>0.419</var>*<a class="local col3 ref" href="#3g" title='g' data-ref="3g">g</a> - <var>0.081</var>*<a class="local col4 ref" href="#4b" title='b' data-ref="4b">b</a>) + <var>128</var>;</td></tr>
+<tr><th id="36">36</th><td>        <a class="ref" href="#RGBtoYUV" title='RGBtoYUV' data-ref="RGBtoYUV">RGBtoYUV</a>[<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a>] = (<a class="local col5 ref" href="#5y" title='y' data-ref="5y">y</a> &lt;&lt; <var>16</var>) + (<a class="local col6 ref" href="#6u" title='u' data-ref="6u">u</a> &lt;&lt; <var>8</var>) + <a class="local col7 ref" href="#7v" title='v' data-ref="7v">v</a>;</td></tr>
+<tr><th id="37">37</th><td>    }</td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

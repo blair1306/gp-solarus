@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='122' type='void Solarus::Entity::set_map(Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='232' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1052' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='314' ll='330' type='void Solarus::Entity::set_map(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='306'>/**
+ * \brief Sets the map where this entity is.
+ *
+ * Warning: when this function is called during the initialization of a new map,
+ * the current map of the game is still the old one.
+ *
+ * \param map The map.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='562' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero13CarryingState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='135' u='c' c='_ZN7Solarus4Hero12JumpingState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='54' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='69' u='c' c='_ZN7Solarus4Hero11StairsState7set_mapERNS_3MapE'/>

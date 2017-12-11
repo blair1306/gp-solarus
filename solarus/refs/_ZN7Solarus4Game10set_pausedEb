@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Game.h' l='115' type='void Solarus::Game::set_paused(bool paused)'/>
+<use f='codebrowser/src/Game.cpp' l='309' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='314' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/Game.cpp' l='827' ll='847' type='void Solarus::Game::set_paused(bool paused)'/>
+<doc f='codebrowser/src/Game.cpp' l='823'>/**
+ * \brief Pauses or resumes the game.
+ * \param paused true to pause the game, false to resume it.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='360' u='c' c='_ZN7Solarus10LuaContext19game_api_set_pausedEP9lua_State'/>

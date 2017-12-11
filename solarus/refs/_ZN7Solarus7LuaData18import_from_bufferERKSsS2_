@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='41' type='bool Solarus::LuaData::import_from_buffer(const std::string &amp; buffer, const std::string &amp; file_name)'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='35' ll='50' type='bool Solarus::LuaData::import_from_buffer(const std::string &amp; buffer, const std::string &amp; file_name)'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='103' u='c' c='_ZN7Solarus7LuaData22import_from_quest_fileERKSsb'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='28'>/**
+ * \brief Imports a Lua data file from memory to this object.
+ * \param[in] buffer A memory area with the content of a data file
+ * encoded in UTF-8.
+ * \param[in] file_name Name of a file to use in error messages.
+ * \return \c true in case of success, \c false if the file could not be loaded.
+ */</doc>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='42' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='40' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='62' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='41' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='40' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

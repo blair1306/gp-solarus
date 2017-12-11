@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='158' type='void Solarus::Hero::set_target_solid_ground_callback(const Solarus::ScopedLuaRef &amp; callback)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1390' ll='1394' type='void Solarus::Hero::set_target_solid_ground_callback(const Solarus::ScopedLuaRef &amp; target_solid_ground_callback)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1405' u='c' c='_ZN7Solarus4Hero34reset_target_solid_ground_callbackEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1381'>/**
+ * \brief Specifies a function indicating where the hero will go back
+ * if he falls into a hole or some other bad ground.
+ * \param target_solid_ground_callback A Lua function that gives the
+ * coordinates and layer of where the hero should go if he falls into
+ * a hole or some other bad ground.
+ * An empty ref means returning automatically to the last solid ground
+ * position.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1863' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>

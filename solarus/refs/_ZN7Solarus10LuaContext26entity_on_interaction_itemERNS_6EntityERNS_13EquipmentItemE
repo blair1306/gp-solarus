@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='383' type='bool Solarus::LuaContext::entity_on_interaction_item(Solarus::Entity &amp; entity, Solarus::EquipmentItem &amp; item_used)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1162' u='c' c='_ZN7Solarus12CustomEntity28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='344' u='c' c='_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5935' ll='5946' type='bool Solarus::LuaContext::entity_on_interaction_item(Solarus::Entity &amp; entity, Solarus::EquipmentItem &amp; item_used)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5926'>/**
+ * \brief Calls the on_interaction_item() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \param item_used The equipment item used.
+ * \return \c true if an interaction occurred.
+ */</doc>

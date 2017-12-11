@@ -1,0 +1,11 @@
+<def f='include/SDL2/SDL_keyboard.h' l='47' ll='53'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_keyboard.h' l='42'>/**
+ *  \brief The SDL keysym structure, used in key events.
+ *
+ *  \note  If you are looking for translated character input, see the ::SDL_TEXTINPUT event.
+ */</doc>
+<mbr r='SDL_Keysym::scancode' o='0' t='SDL_Scancode'/>
+<mbr r='SDL_Keysym::sym' o='32' t='SDL_Keycode'/>
+<mbr r='SDL_Keysym::mod' o='64' t='Uint16'/>
+<mbr r='SDL_Keysym::unused' o='96' t='Uint32'/>

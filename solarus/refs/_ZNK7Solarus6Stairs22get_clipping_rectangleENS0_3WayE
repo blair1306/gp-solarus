@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='99' type='Solarus::Rectangle Solarus::Stairs::get_clipping_rectangle(Solarus::Stairs::Way way) const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='293' ll='327' type='Solarus::Rectangle Solarus::Stairs::get_clipping_rectangle(Solarus::Stairs::Way ) const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='286'>/**
+ * \brief Returns the subarea in which an entity tooking these stairs can be
+ * displayed.
+ * \param way The way you are taking these stairs.
+ * \return The subarea of the map where the entity displaying should be
+ * restricted to.
+ */</doc>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='293'>/* way */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='110' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>

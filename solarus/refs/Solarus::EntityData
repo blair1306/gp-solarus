@@ -1,0 +1,46 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/EntityData.h' l='37' ll='139'/>
+<size>88</size>
+<doc f='codebrowser/include/solarus/EntityData.h' l='31'>/**
+ * \brief Stores the properties of a map entity.
+ *
+ * Properties includes its name, layer, coordinates and properties specific
+ * to each entity type.
+ */</doc>
+<fun r='_ZN7Solarus10EntityDataC1Ev'/>
+<fun r='_ZN7Solarus10EntityDataC1ENS_10EntityTypeE'/>
+<fun r='_ZNK7Solarus10EntityData8get_typeEv'/>
+<fun r='_ZN7Solarus10EntityData8set_typeENS_10EntityTypeE'/>
+<fun r='_ZNK7Solarus10EntityData13get_type_nameEv'/>
+<fun r='_ZNK7Solarus10EntityData10is_dynamicEv'/>
+<fun r='_ZNK7Solarus10EntityData8has_nameEv'/>
+<fun r='_ZNK7Solarus10EntityData8get_nameEv'/>
+<fun r='_ZN7Solarus10EntityData8set_nameERKSs'/>
+<fun r='_ZNK7Solarus10EntityData9get_layerEv'/>
+<fun r='_ZN7Solarus10EntityData9set_layerEi'/>
+<fun r='_ZNK7Solarus10EntityData6get_xyEv'/>
+<fun r='_ZN7Solarus10EntityData6set_xyERKNS_5PointE'/>
+<fun r='_ZN7Solarus10EntityData17initialize_fieldsEv'/>
+<fun r='_ZNK7Solarus10EntityData10get_fieldsEv'/>
+<fun r='_ZNK7Solarus10EntityData9get_fieldERKSs'/>
+<fun r='_ZNK7Solarus10EntityData9is_stringERKSs'/>
+<fun r='_ZNK7Solarus10EntityData10get_stringERKSs'/>
+<fun r='_ZN7Solarus10EntityData10set_stringERKSsS2_'/>
+<fun r='_ZNK7Solarus10EntityData10is_integerERKSs'/>
+<fun r='_ZNK7Solarus10EntityData11get_integerERKSs'/>
+<fun r='_ZN7Solarus10EntityData11set_integerERKSsi'/>
+<fun r='_ZNK7Solarus10EntityData10is_booleanERKSs'/>
+<fun r='_ZNK7Solarus10EntityData11get_booleanERKSs'/>
+<fun r='_ZN7Solarus10EntityData11set_booleanERKSsb'/>
+<fun r='_ZNK7Solarus10EntityData9has_fieldERKSs'/>
+<fun r='_ZNK7Solarus10EntityData17is_field_optionalERKSs'/>
+<fun r='_ZNK7Solarus10EntityData14is_field_unsetERKSs'/>
+<fun r='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<fun r='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<fun r='_ZN7Solarus10EntityData28get_entity_type_descriptionsEv'/>
+<mbr r='Solarus::EntityData::type' o='64' t='Solarus::EntityType'/>
+<mbr r='Solarus::EntityData::name' o='128' t='std::string'/>
+<mbr r='Solarus::EntityData::layer' o='192' t='int'/>
+<mbr r='Solarus::EntityData::xy' o='224' t='Solarus::Point'/>
+<mbr r='Solarus::EntityData::fields' o='320' t='std::map&lt;std::string, FieldValue&gt;'/>

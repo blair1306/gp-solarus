@@ -1,0 +1,36 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='84' type='void Solarus::CommandsEffects::set_action_key_effect(Solarus::CommandsEffects::ActionKeyEffect action_key_effect)'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='89' ll='91' type='void Solarus::CommandsEffects::set_action_key_effect(CommandsEffects::ActionKeyEffect action_key_effect)'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='85'>/**
+ * \brief Sets the current effect of the action key.
+ * \param action_key_effect the current effect of the action key
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='103' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='119' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='226' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/Game.cpp' l='834' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='177' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='429' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='116' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='334' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='337' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='241' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='245' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='758' u='c' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1822' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1855' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1869' u='c' c='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1903' u='c' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='232' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='236' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='263' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='379' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='179' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='55' u='c' c='_ZN7Solarus4Hero13CarryingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='68' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='60' u='c' c='_ZN7Solarus4Hero9FreeState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FrozenState.cpp' l='42' u='c' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='56' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='88' u='c' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='98' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='48' u='c' c='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>

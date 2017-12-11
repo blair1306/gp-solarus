@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='60' type='Solarus::LuaContext &amp; Solarus::MainLoop::get_lua_context()'/>
+<use f='codebrowser/src/Game.cpp' l='178' u='c' c='_ZN7Solarus4Game15get_lua_contextEv'/>
+<def f='codebrowser/src/MainLoop.cpp' l='220' ll='222' type='Solarus::LuaContext &amp; Solarus::MainLoop::get_lua_context()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='421' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='216'>/**
+ * \brief Returns the shared Lua context.
+ * \return The Lua context where all scripts are run.
+ */</doc>
+<use f='codebrowser/src/Savegame.cpp' l='329' u='c' c='_ZN7Solarus8Savegame15get_lua_contextEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='318' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>

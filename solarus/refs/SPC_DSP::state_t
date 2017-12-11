@@ -1,0 +1,23 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='114' ll='145'/>
+<size>1792</size>
+<mbr r='SPC_DSP::state_t::regs' o='0' t='uint8_t [128]'/>
+<mbr r='SPC_DSP::state_t::echo_hist' o='1024' t='int [16][2]'/>
+<mbr r='SPC_DSP::state_t::echo_hist_pos' o='2048' t='int (*)[2]'/>
+<mbr r='SPC_DSP::state_t::every_other_sample' o='2112' t='int'/>
+<mbr r='SPC_DSP::state_t::kon' o='2144' t='int'/>
+<mbr r='SPC_DSP::state_t::noise' o='2176' t='int'/>
+<mbr r='SPC_DSP::state_t::echo_offset' o='2208' t='int'/>
+<mbr r='SPC_DSP::state_t::echo_length' o='2240' t='int'/>
+<mbr r='SPC_DSP::state_t::phase' o='2272' t='int'/>
+<mbr r='SPC_DSP::state_t::counters' o='2304' t='unsigned int [4]'/>
+<mbr r='SPC_DSP::state_t::new_kon' o='2432' t='int'/>
+<mbr r='SPC_DSP::state_t::t_koff' o='2464' t='int'/>
+<mbr r='SPC_DSP::state_t::voices' o='2496' t='SPC_DSP::voice_t [8]'/>
+<mbr r='SPC_DSP::state_t::counter_select' o='11712' t='unsigned int *[32]'/>
+<mbr r='SPC_DSP::state_t::ram' o='13760' t='uint8_t *'/>
+<mbr r='SPC_DSP::state_t::mute_mask' o='13824' t='int'/>
+<mbr r='SPC_DSP::state_t::surround_threshold' o='13856' t='int'/>
+<mbr r='SPC_DSP::state_t::out' o='13888' t='sample_t *'/>
+<mbr r='SPC_DSP::state_t::out_end' o='13952' t='sample_t *'/>
+<mbr r='SPC_DSP::state_t::out_begin' o='14016' t='sample_t *'/>
+<mbr r='SPC_DSP::state_t::extra' o='14080' t='sample_t [16]'/>

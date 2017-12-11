@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='164' type='bool Solarus::LuaTools::check_boolean_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<use f='codebrowser/src/EntityData.cpp' l='810' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='606' ll='622' type='bool Solarus::LuaTools::check_boolean_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='599'>/**
+ * \brief Checks that a table field is a boolean and returns it.
+* \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \return The wanted field as a boolean.
+ */</doc>

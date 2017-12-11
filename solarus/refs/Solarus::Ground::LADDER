@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Ground.h' l='57' type='17'/>
+<doc f='codebrowser/include/solarus/entities/Ground.h' l='57'>/**&lt; A ladder that slows down the hero. */</doc>
+<use f='codebrowser/src/Map.cpp' l='803' c='_ZNK7Solarus3Map26test_collision_with_groundEiiiRKNS_6EntityERb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='627' c='_ZNK7Solarus12CustomEntity19can_traverse_groundENS_6GroundE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='760' u='r' c='_ZNK7Solarus12CustomEntity18is_ladder_obstacleEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='829' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2419' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='42' u='r'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='75' c='_ZN7Solarus10GroundInfo18is_ground_diagonalENS_6GroundE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1138' u='r' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1278' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2716' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='202' type='bool Solarus::LuaTools::is_layer(lua_State * l, int index, const Solarus::Map &amp; map)'/>
+<doc f='codebrowser/include/solarus/lua/LuaTools.h' l='201'>// Layer</doc>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='763' ll='773' type='bool Solarus::LuaTools::is_layer(lua_State * l, int index, const Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='787' u='c' c='_ZN7Solarus8LuaTools11check_layerEP9lua_StateiRKNS_3MapE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='819' u='c' c='_ZN7Solarus8LuaTools17check_layer_fieldEP9lua_StateiRKSsRKNS_3MapE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='873' u='c' c='_ZN7Solarus8LuaTools15opt_layer_fieldEP9lua_StateiRKSsRKNS_3MapEi'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='756'>/**
+ * \brief Returns whether a value is a layer.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \param map The map whose number of layer matters.
+ * \return \c true if the value is a valid layer for the map.
+ */</doc>

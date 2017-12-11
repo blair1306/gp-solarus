@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='59' type='3'/>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='59'>/**&lt; Can be opened by pressing the action command, provided that the player has a specific equipment item. */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='47' u='r'/>
+<use f='codebrowser/src/entities/Door.cpp' l='311' u='r' c='_ZNK7Solarus4Door23is_interaction_requiredEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='450' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='618' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1073' u='r' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

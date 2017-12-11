@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='334' type='int SDL_GetTextureAlphaMod(SDL_Texture * texture, Uint8 * alpha)'/>
+<doc f='include/SDL2/SDL_render.h' l='324'>/**
+ *  \brief Get the additional alpha value used in render copy operations.
+ *
+ *  \param texture The texture to query.
+ *  \param alpha     A pointer filled in with the current alpha value.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid.
+ *
+ *  \sa SDL_SetTextureAlphaMod()
+ */</doc>

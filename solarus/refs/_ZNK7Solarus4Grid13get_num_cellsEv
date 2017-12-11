@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='45' type='size_t Solarus::Grid::get_num_cells() const'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='134' ll='137' type='size_t Solarus::Grid::get_num_cells() const'/>
+<use f='codebrowser/include/solarus/containers/Grid.h' l='147' u='c' c='_ZNK7Solarus4Grid12get_elementsEm'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='130'>/**
+ * \brief Returns the total number of cells in the grid.
+ * \return The number of cells.
+ */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='71' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='122' u='c' c='_ZN7Solarus18NonAnimatedRegions22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='224' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='44' type='void Solarus::ScopedLuaRef::ScopedLuaRef(Solarus::ScopedLuaRef &amp;&amp; other)'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='63' ll='69' type='void Solarus::ScopedLuaRef::ScopedLuaRef(Solarus::ScopedLuaRef &amp;&amp; other)'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='56'>/**
+ * \brief Move constructor.
+ *
+ * This transfers the ref to the new object and leaves the existing one empty.
+ *
+ * \param other The object to move.
+ */</doc>

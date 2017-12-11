@@ -1,0 +1,66 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/EquipmentItem.h' l='39' ll='118'/>
+<size>104</size>
+<doc f='codebrowser/include/solarus/EquipmentItem.h' l='34'>/**
+ * \brief An item possibly possessed by the player.
+ *
+ * Its properties are controlled by the script of the item.
+ */</doc>
+<fun r='_ZN7Solarus13EquipmentItemC1ERNS_9EquipmentE'/>
+<fun r='_ZN7Solarus13EquipmentItem13get_equipmentEv'/>
+<fun r='_ZN7Solarus13EquipmentItem8get_gameEv'/>
+<fun r='_ZN7Solarus13EquipmentItem12get_savegameEv'/>
+<fun r='_ZNK7Solarus13EquipmentItem12get_savegameEv'/>
+<fun r='_ZN7Solarus13EquipmentItem15get_lua_contextEv'/>
+<fun r='_ZNK7Solarus13EquipmentItem8get_nameEv'/>
+<fun r='_ZN7Solarus13EquipmentItem8set_nameERKSs'/>
+<fun r='_ZNK7Solarus13EquipmentItem8is_savedEv'/>
+<fun r='_ZNK7Solarus13EquipmentItem21get_savegame_variableEv'/>
+<fun r='_ZN7Solarus13EquipmentItem21set_savegame_variableERKSs'/>
+<fun r='_ZNK7Solarus13EquipmentItem10has_amountEv'/>
+<fun r='_ZNK7Solarus13EquipmentItem28get_amount_savegame_variableEv'/>
+<fun r='_ZN7Solarus13EquipmentItem28set_amount_savegame_variableERKSs'/>
+<fun r='_ZNK7Solarus13EquipmentItem13is_obtainableEv'/>
+<fun r='_ZN7Solarus13EquipmentItem14set_obtainableEb'/>
+<fun r='_ZNK7Solarus13EquipmentItem13is_assignableEv'/>
+<fun r='_ZN7Solarus13EquipmentItem14set_assignableEb'/>
+<fun r='_ZNK7Solarus13EquipmentItem17get_can_disappearEv'/>
+<fun r='_ZN7Solarus13EquipmentItem17set_can_disappearEb'/>
+<fun r='_ZNK7Solarus13EquipmentItem24get_brandish_when_pickedEv'/>
+<fun r='_ZN7Solarus13EquipmentItem24set_brandish_when_pickedEb'/>
+<fun r='_ZNK7Solarus13EquipmentItem21get_sound_when_pickedEv'/>
+<fun r='_ZN7Solarus13EquipmentItem21set_sound_when_pickedERKSs'/>
+<fun r='_ZNK7Solarus13EquipmentItem25get_sound_when_brandishedEv'/>
+<fun r='_ZN7Solarus13EquipmentItem25set_sound_when_brandishedERKSs'/>
+<fun r='_ZNK7Solarus13EquipmentItem10get_shadowEv'/>
+<fun r='_ZN7Solarus13EquipmentItem10set_shadowERKSs'/>
+<fun r='_ZN7Solarus13EquipmentItem10initializeEv'/>
+<fun r='_ZN7Solarus13EquipmentItem4exitEv'/>
+<fun r='_ZN7Solarus13EquipmentItem6updateEv'/>
+<fun r='_ZN7Solarus13EquipmentItem13set_suspendedEb'/>
+<fun r='_ZN7Solarus13EquipmentItem5startEv'/>
+<fun r='_ZN7Solarus13EquipmentItem18notify_map_changedERNS_3MapE'/>
+<fun r='_ZN7Solarus13EquipmentItem21notify_amount_changedEi'/>
+<fun r='_ZN7Solarus13EquipmentItem22notify_variant_changedEi'/>
+<fun r='_ZN7Solarus13EquipmentItem12notify_usingEv'/>
+<fun r='_ZN7Solarus13EquipmentItem19notify_ability_usedENS_7AbilityE'/>
+<fun r='_ZN7Solarus13EquipmentItem24notify_pickable_appearedERNS_8PickableE'/>
+<fun r='_ZNK7Solarus13EquipmentItem11get_variantEv'/>
+<fun r='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<fun r='_ZNK7Solarus13EquipmentItem10get_amountEv'/>
+<fun r='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<fun r='_ZNK7Solarus13EquipmentItem14get_max_amountEv'/>
+<fun r='_ZN7Solarus13EquipmentItem14set_max_amountEi'/>
+<fun r='_ZNK7Solarus13EquipmentItem17get_lua_type_nameEv'/>
+<mbr r='Solarus::EquipmentItem::equipment' o='320' t='Solarus::Equipment &amp;'/>
+<mbr r='Solarus::EquipmentItem::name' o='384' t='std::string'/>
+<mbr r='Solarus::EquipmentItem::savegame_variable' o='448' t='std::string'/>
+<mbr r='Solarus::EquipmentItem::amount_savegame_variable' o='512' t='std::string'/>
+<mbr r='Solarus::EquipmentItem::max_amount' o='576' t='int'/>
+<mbr r='Solarus::EquipmentItem::obtainable' o='608' t='bool'/>
+<mbr r='Solarus::EquipmentItem::assignable' o='616' t='bool'/>
+<mbr r='Solarus::EquipmentItem::can_disappear' o='624' t='bool'/>
+<mbr r='Solarus::EquipmentItem::brandish_when_picked' o='632' t='bool'/>
+<mbr r='Solarus::EquipmentItem::sound_when_picked' o='640' t='std::string'/>
+<mbr r='Solarus::EquipmentItem::sound_when_brandished' o='704' t='std::string'/>
+<mbr r='Solarus::EquipmentItem::shadow' o='768' t='std::string'/>

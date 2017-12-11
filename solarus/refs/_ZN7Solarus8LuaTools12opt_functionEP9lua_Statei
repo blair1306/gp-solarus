@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='191' type='Solarus::ScopedLuaRef Solarus::LuaTools::opt_function(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='228' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='267' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1962' u='c' c='_ZN7Solarus10LuaContext22hero_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2329' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2346' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_victoryEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='463' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1469' u='c' c='_ZN7Solarus10LuaContext32game_api_capture_command_bindingEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='720' ll='728' type='Solarus::ScopedLuaRef Solarus::LuaTools::opt_function(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='714'>/**
+ * \brief Like LuaTools::check_function() but the value is optional.
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \return The wanted value as a Lua ref to the function, or an empty ref.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='597' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>

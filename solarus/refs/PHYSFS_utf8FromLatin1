@@ -1,0 +1,25 @@
+<dec f='include/physfs.h' l='2382' type='void PHYSFS_utf8FromLatin1(const char * src, char * dst, PHYSFS_uint64 len)'/>
+<doc f='include/physfs.h' l='2358'>/**
+ * \fn void PHYSFS_utf8FromLatin1(const char *src, char *dst, PHYSFS_uint64 len)
+ * \brief Convert a UTF-8 string to a Latin1 string.
+ *
+ * Latin1 strings are 8-bits per character: a popular &quot;high ASCII&quot;
+ *  encoding.
+ *
+ * To ensure that the destination buffer is large enough for the conversion,
+ *  please allocate a buffer that is double the size of the source buffer.
+ *  UTF-8 expands latin1 codepoints over 127 from 1 to 2 bytes, so the string
+ *  may grow in some cases.
+ *
+ * Strings that don&apos;t fit in the destination buffer will be truncated, but
+ *  will always be null-terminated and never have an incomplete UTF-8
+ *  sequence at the end. If the buffer length is 0, this function does nothing.
+ *
+ * Please note that we do not supply a UTF-8 to Latin1 converter, since Latin1
+ *  can&apos;t express most Unicode codepoints. It&apos;s a legacy encoding; you should
+ *  be converting away from it at all times.
+ *
+ *   \param src Null-terminated source string in Latin1 format.
+ *   \param dst Buffer to store converted UTF-8 string.
+ *   \param len Size, in bytes, of destination buffer.
+ */</doc>

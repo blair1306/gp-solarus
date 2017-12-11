@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='71' type='EntityPtr Solarus::Pickable::get_entity_followed()'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='278' ll='280' type='EntityPtr Solarus::Pickable::get_entity_followed()'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='368' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='274'>/**
+ * \brief Returns the entity (if any) followed by this pickable item.
+ * \return the entity followed or nullptr
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3912' u='c' c='_ZN7Solarus10LuaContext32pickable_api_get_followed_entityEP9lua_State'/>

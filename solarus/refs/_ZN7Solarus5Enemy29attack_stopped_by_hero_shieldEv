@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='176' type='void Solarus::Enemy::attack_stopped_by_hero_shield()'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1061' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1082' ll='1091' type='void Solarus::Enemy::attack_stopped_by_hero_shield()'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1077'>/**
+ * \brief This function is called when the hero stops an attack with his shield.
+ *
+ * By default, the shield sound is played and the enemy cannot attack again for a while.
+ */</doc>

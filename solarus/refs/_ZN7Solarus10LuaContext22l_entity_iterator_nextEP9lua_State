@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1308' type='static int Solarus::LuaContext::l_entity_iterator_next(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='649' u='r' c='_ZN7Solarus10LuaContext20push_entity_iteratorEP9lua_StateRKSt6vectorISt10shared_ptrINS_6EntityEESaIS6_EE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1368' ll='1392' type='static int Solarus::LuaContext::l_entity_iterator_next(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1357'>/**
+ * \brief Closure of an iterator over a list of entities.
+ *
+ * This closure expects 3 upvalues in this order:
+ * - The array of entities.
+ * - The size of the array (for performance).
+ * - The current index in the array.
+ *
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

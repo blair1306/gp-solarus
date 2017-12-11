@@ -1,0 +1,888 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_render.h source code [include/SDL2/SDL_render.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_render.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_render.h.html'>SDL_render.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_render.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Header file for SDL 2D rendering functions.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> *  This API supports the following features:</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> *      * single pixel points</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *      * single pixel lines</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> *      * filled rectangles</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> *      * texture images</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *  The primitives may be drawn in opaque, blended, or additive modes.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *  The texture images may be drawn in opaque, blended, or additive modes.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *  They can have an additional color tint or alpha modulation applied to</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *  them, and may also be stretched with linear interpolation.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *  This API is designed to accelerate simple 2D operations. You may</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *  want more functionality such as polygons and particle effects and</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *  in that case you should use SDL's OpenGL/Direct3D support or one</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *  of the many good 3D engines.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *  These functions must be called from the main thread.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  See this bug for details: <a href="http://bugzilla.libsdl.org/show_bug.cgi?id=1995">http://bugzilla.libsdl.org/show_bug.cgi?id=1995</a></i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">ifndef</span> <span class="macro" data-ref="_M/_SDL_render_h">_SDL_render_h</span></u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/_SDL_render_h" data-ref="_M/_SDL_render_h">_SDL_render_h</dfn></u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="52">52</th><td><u>#include <a href="SDL_rect.h.html">"SDL_rect.h"</a></u></td></tr>
+<tr><th id="53">53</th><td><u>#include <a href="SDL_video.h.html">"SDL_video.h"</a></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="56">56</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="57">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="58">58</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="57">endif</span></u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *  <span class="command">\brief</span> Flags used when creating a rendering context</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="64">64</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="65">65</th><td>{</td></tr>
+<tr><th id="66">66</th><td>    <dfn class="enum" id="::SDL_RENDERER_SOFTWARE" title='::SDL_RENDERER_SOFTWARE' data-ref="::SDL_RENDERER_SOFTWARE">SDL_RENDERER_SOFTWARE</dfn> = <var>0x00000001</var>,         <i class="doc">/**&lt; The renderer is a software fallback */</i></td></tr>
+<tr><th id="67">67</th><td>    <dfn class="enum" id="::SDL_RENDERER_ACCELERATED" title='::SDL_RENDERER_ACCELERATED' data-ref="::SDL_RENDERER_ACCELERATED">SDL_RENDERER_ACCELERATED</dfn> = <var>0x00000002</var>,      <i class="doc">/**&lt; The renderer uses hardware</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">                                                     acceleration */</i></td></tr>
+<tr><th id="69">69</th><td>    <dfn class="enum" id="::SDL_RENDERER_PRESENTVSYNC" title='::SDL_RENDERER_PRESENTVSYNC' data-ref="::SDL_RENDERER_PRESENTVSYNC">SDL_RENDERER_PRESENTVSYNC</dfn> = <var>0x00000004</var>,     <i class="doc">/**&lt; Present is synchronized</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">                                                     with the refresh rate */</i></td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="::SDL_RENDERER_TARGETTEXTURE" title='::SDL_RENDERER_TARGETTEXTURE' data-ref="::SDL_RENDERER_TARGETTEXTURE">SDL_RENDERER_TARGETTEXTURE</dfn> = <var>0x00000008</var>     <i class="doc">/**&lt; The renderer supports</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">                                                     rendering to texture */</i></td></tr>
+<tr><th id="73">73</th><td>} <dfn class="typedef" id="SDL_RendererFlags" title='SDL_RendererFlags' data-type='enum SDL_RendererFlags' data-ref="SDL_RendererFlags">SDL_RendererFlags</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *  <span class="command">\brief</span> Information on the capabilities of a render driver or context.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_RendererInfo" title='SDL_RendererInfo' data-ref="SDL_RendererInfo"><a class="type" href="#SDL_RendererInfo" title='SDL_RendererInfo' data-ref="SDL_RendererInfo">SDL_RendererInfo</a></dfn></td></tr>
+<tr><th id="79">79</th><td>{</td></tr>
+<tr><th id="80">80</th><td>    <em>const</em> <em>char</em> *<dfn class="decl" id="SDL_RendererInfo::name" title='SDL_RendererInfo::name' data-ref="SDL_RendererInfo::name">name</dfn>;           <i class="doc">/**&lt; The name of the renderer */</i></td></tr>
+<tr><th id="81">81</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_RendererInfo::flags" title='SDL_RendererInfo::flags' data-ref="SDL_RendererInfo::flags">flags</dfn>;               <i class="doc">/**&lt; Supported ::SDL_RendererFlags */</i></td></tr>
+<tr><th id="82">82</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_RendererInfo::num_texture_formats" title='SDL_RendererInfo::num_texture_formats' data-ref="SDL_RendererInfo::num_texture_formats">num_texture_formats</dfn>; <i class="doc">/**&lt; The number of available texture formats */</i></td></tr>
+<tr><th id="83">83</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_RendererInfo::texture_formats" title='SDL_RendererInfo::texture_formats' data-ref="SDL_RendererInfo::texture_formats">texture_formats</dfn>[<var>16</var>]; <i class="doc">/**&lt; The available texture formats */</i></td></tr>
+<tr><th id="84">84</th><td>    <em>int</em> <dfn class="decl" id="SDL_RendererInfo::max_texture_width" title='SDL_RendererInfo::max_texture_width' data-ref="SDL_RendererInfo::max_texture_width">max_texture_width</dfn>;      <i class="doc">/**&lt; The maximimum texture width */</i></td></tr>
+<tr><th id="85">85</th><td>    <em>int</em> <dfn class="decl" id="SDL_RendererInfo::max_texture_height" title='SDL_RendererInfo::max_texture_height' data-ref="SDL_RendererInfo::max_texture_height">max_texture_height</dfn>;     <i class="doc">/**&lt; The maximimum texture height */</i></td></tr>
+<tr><th id="86">86</th><td>} <dfn class="typedef" id="SDL_RendererInfo" title='SDL_RendererInfo' data-type='struct SDL_RendererInfo' data-ref="SDL_RendererInfo">SDL_RendererInfo</dfn>;</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *  <span class="command">\brief</span> The access pattern allowed for a texture.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="91">91</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>    <dfn class="enum" id="::SDL_TEXTUREACCESS_STATIC" title='::SDL_TEXTUREACCESS_STATIC' data-ref="::SDL_TEXTUREACCESS_STATIC">SDL_TEXTUREACCESS_STATIC</dfn>,    <i class="doc">/**&lt; Changes rarely, not lockable */</i></td></tr>
+<tr><th id="94">94</th><td>    <dfn class="enum" id="::SDL_TEXTUREACCESS_STREAMING" title='::SDL_TEXTUREACCESS_STREAMING' data-ref="::SDL_TEXTUREACCESS_STREAMING">SDL_TEXTUREACCESS_STREAMING</dfn>, <i class="doc">/**&lt; Changes frequently, lockable */</i></td></tr>
+<tr><th id="95">95</th><td>    <dfn class="enum" id="::SDL_TEXTUREACCESS_TARGET" title='::SDL_TEXTUREACCESS_TARGET' data-ref="::SDL_TEXTUREACCESS_TARGET">SDL_TEXTUREACCESS_TARGET</dfn>     <i class="doc">/**&lt; Texture can be used as a render target */</i></td></tr>
+<tr><th id="96">96</th><td>} <dfn class="typedef" id="SDL_TextureAccess" title='SDL_TextureAccess' data-type='enum SDL_TextureAccess' data-ref="SDL_TextureAccess">SDL_TextureAccess</dfn>;</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *  <span class="command">\brief</span> The texture channel modulation used in SDL_RenderCopy().</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="101">101</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="102">102</th><td>{</td></tr>
+<tr><th id="103">103</th><td>    <dfn class="enum" id="::SDL_TEXTUREMODULATE_NONE" title='::SDL_TEXTUREMODULATE_NONE' data-ref="::SDL_TEXTUREMODULATE_NONE">SDL_TEXTUREMODULATE_NONE</dfn> = <var>0x00000000</var>,     <i class="doc">/**&lt; No modulation */</i></td></tr>
+<tr><th id="104">104</th><td>    <dfn class="enum" id="::SDL_TEXTUREMODULATE_COLOR" title='::SDL_TEXTUREMODULATE_COLOR' data-ref="::SDL_TEXTUREMODULATE_COLOR">SDL_TEXTUREMODULATE_COLOR</dfn> = <var>0x00000001</var>,    <i class="doc">/**&lt; srcC = srcC * color */</i></td></tr>
+<tr><th id="105">105</th><td>    <dfn class="enum" id="::SDL_TEXTUREMODULATE_ALPHA" title='::SDL_TEXTUREMODULATE_ALPHA' data-ref="::SDL_TEXTUREMODULATE_ALPHA">SDL_TEXTUREMODULATE_ALPHA</dfn> = <var>0x00000002</var>     <i class="doc">/**&lt; srcA = srcA * alpha */</i></td></tr>
+<tr><th id="106">106</th><td>} <dfn class="typedef" id="SDL_TextureModulate" title='SDL_TextureModulate' data-type='enum SDL_TextureModulate' data-ref="SDL_TextureModulate">SDL_TextureModulate</dfn>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *  <span class="command">\brief</span> Flip constants for SDL_RenderCopyEx</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="111">111</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="112">112</th><td>{</td></tr>
+<tr><th id="113">113</th><td>    <dfn class="enum" id="::SDL_FLIP_NONE" title='::SDL_FLIP_NONE' data-ref="::SDL_FLIP_NONE">SDL_FLIP_NONE</dfn> = <var>0x00000000</var>,     <i class="doc">/**&lt; Do not flip */</i></td></tr>
+<tr><th id="114">114</th><td>    <dfn class="enum" id="::SDL_FLIP_HORIZONTAL" title='::SDL_FLIP_HORIZONTAL' data-ref="::SDL_FLIP_HORIZONTAL">SDL_FLIP_HORIZONTAL</dfn> = <var>0x00000001</var>,    <i class="doc">/**&lt; flip horizontally */</i></td></tr>
+<tr><th id="115">115</th><td>    <dfn class="enum" id="::SDL_FLIP_VERTICAL" title='::SDL_FLIP_VERTICAL' data-ref="::SDL_FLIP_VERTICAL">SDL_FLIP_VERTICAL</dfn> = <var>0x00000002</var>     <i class="doc">/**&lt; flip vertically */</i></td></tr>
+<tr><th id="116">116</th><td>} <dfn class="typedef" id="SDL_RendererFlip" title='SDL_RendererFlip' data-type='enum SDL_RendererFlip' data-ref="SDL_RendererFlip">SDL_RendererFlip</dfn>;</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> *  <span class="command">\brief</span> A structure representing rendering state</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="121">121</th><td><b>struct</b> <dfn class="type" id="SDL_Renderer" title='SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</dfn>;</td></tr>
+<tr><th id="122">122</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#SDL_Renderer" title='SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> <dfn class="typedef" id="SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</dfn>;</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *  <span class="command">\brief</span> An efficient driver-specific representation of pixel data</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="127">127</th><td><b>struct</b> <dfn class="type" id="SDL_Texture" title='SDL_Texture' data-ref="SDL_Texture">SDL_Texture</dfn>;</td></tr>
+<tr><th id="128">128</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#SDL_Texture" title='SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> <dfn class="typedef" id="SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</dfn>;</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><i>/* Function prototypes */</i></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *  <span class="command">\brief</span> Get the number of 2D rendering drivers available for the current</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *         display.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *  A render driver is a set of code that handles rendering and texture</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *  management on a particular display.  Normally there is only one, but</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *  some drivers may have several available with different capabilities.</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetRenderDriverInfo()</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateRenderer()</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="144">144</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetNumRenderDrivers" title='SDL_GetNumRenderDrivers' data-ref="SDL_GetNumRenderDrivers">SDL_GetNumRenderDrivers</dfn>(<em>void</em>);</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *  <span class="command">\brief</span> Get information about a specific 2D rendering driver for the current</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *         display.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">index</span> The index of the driver to query information about.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">info</span>  A pointer to an SDL_RendererInfo struct to be filled with</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *               information on the rendering driver.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, -1 if the index was out of range.</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateRenderer()</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="158">158</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRenderDriverInfo" title='SDL_GetRenderDriverInfo' data-ref="SDL_GetRenderDriverInfo">SDL_GetRenderDriverInfo</dfn>(<em>int</em> <dfn class="local col7 decl" id="1547index" title='index' data-type='int' data-ref="1547index">index</dfn>,</td></tr>
+<tr><th id="159">159</th><td>                                                    <a class="typedef" href="#SDL_RendererInfo" title='SDL_RendererInfo' data-type='struct SDL_RendererInfo' data-ref="SDL_RendererInfo">SDL_RendererInfo</a> * <dfn class="local col8 decl" id="1548info" title='info' data-type='SDL_RendererInfo *' data-ref="1548info">info</dfn>);</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> *  <span class="command">\brief</span> Create a window and default renderer</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">width</span>    The width of the window</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">height</span>   The height of the window</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window_flags</span> The flags used to create the window</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   A pointer filled with the window, or NULL on error</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> A pointer filled with the renderer, or NULL on error</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="172">172</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateWindowAndRenderer" title='SDL_CreateWindowAndRenderer' data-ref="SDL_CreateWindowAndRenderer">SDL_CreateWindowAndRenderer</dfn>(</td></tr>
+<tr><th id="173">173</th><td>                                <em>int</em> <dfn class="local col9 decl" id="1549width" title='width' data-type='int' data-ref="1549width">width</dfn>, <em>int</em> <dfn class="local col0 decl" id="1550height" title='height' data-type='int' data-ref="1550height">height</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col1 decl" id="1551window_flags" title='window_flags' data-type='Uint32' data-ref="1551window_flags">window_flags</dfn>,</td></tr>
+<tr><th id="174">174</th><td>                                <a class="typedef" href="SDL_video.h.html#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> **<dfn class="local col2 decl" id="1552window" title='window' data-type='SDL_Window **' data-ref="1552window">window</dfn>, <a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> **<dfn class="local col3 decl" id="1553renderer" title='renderer' data-type='SDL_Renderer **' data-ref="1553renderer">renderer</dfn>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *  <span class="command">\brief</span> Create a 2D rendering context for a window.</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window where rendering is displayed.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">index</span>    The index of the rendering driver to initialize, or -1 to</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> *                  initialize the first one supporting the requested flags.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">flags</span>    ::SDL_RendererFlags.</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *  <span class="command">\return</span> A valid rendering context or NULL if there was an error.</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateSoftwareRenderer()</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetRendererInfo()</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyRenderer()</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateRenderer" title='SDL_CreateRenderer' data-ref="SDL_CreateRenderer">SDL_CreateRenderer</dfn>(<a class="typedef" href="SDL_video.h.html#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col4 decl" id="1554window" title='window' data-type='SDL_Window *' data-ref="1554window">window</dfn>,</td></tr>
+<tr><th id="192">192</th><td>                                               <em>int</em> <dfn class="local col5 decl" id="1555index" title='index' data-type='int' data-ref="1555index">index</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col6 decl" id="1556flags" title='flags' data-type='Uint32' data-ref="1556flags">flags</dfn>);</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *  <span class="command">\brief</span> Create a 2D software rendering context for a surface.</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">surface</span> The surface where rendering is done.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *  <span class="command">\return</span> A valid rendering context or NULL if there was an error.</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateRenderer()</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyRenderer()</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="204">204</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateSoftwareRenderer" title='SDL_CreateSoftwareRenderer' data-ref="SDL_CreateSoftwareRenderer">SDL_CreateSoftwareRenderer</dfn>(<a class="typedef" href="SDL_surface.h.html#SDL_Surface" title='SDL_Surface' data-type='struct SDL_Surface' data-ref="SDL_Surface">SDL_Surface</a> * <dfn class="local col7 decl" id="1557surface" title='surface' data-type='SDL_Surface *' data-ref="1557surface">surface</dfn>);</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> *  <span class="command">\brief</span> Get the renderer associated with a window.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="209">209</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRenderer" title='SDL_GetRenderer' data-ref="SDL_GetRenderer">SDL_GetRenderer</dfn>(<a class="typedef" href="SDL_video.h.html#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col8 decl" id="1558window" title='window' data-type='SDL_Window *' data-ref="1558window">window</dfn>);</td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> *  <span class="command">\brief</span> Get information about a rendering context.</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="214">214</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRendererInfo" title='SDL_GetRendererInfo' data-ref="SDL_GetRendererInfo">SDL_GetRendererInfo</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col9 decl" id="1559renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1559renderer">renderer</dfn>,</td></tr>
+<tr><th id="215">215</th><td>                                                <a class="typedef" href="#SDL_RendererInfo" title='SDL_RendererInfo' data-type='struct SDL_RendererInfo' data-ref="SDL_RendererInfo">SDL_RendererInfo</a> * <dfn class="local col0 decl" id="1560info" title='info' data-type='SDL_RendererInfo *' data-ref="1560info">info</dfn>);</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> *  <span class="command">\brief</span> Get the output size of a rendering context.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="220">220</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRendererOutputSize" title='SDL_GetRendererOutputSize' data-ref="SDL_GetRendererOutputSize">SDL_GetRendererOutputSize</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col1 decl" id="1561renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1561renderer">renderer</dfn>,</td></tr>
+<tr><th id="221">221</th><td>                                                      <em>int</em> *<dfn class="local col2 decl" id="1562w" title='w' data-type='int *' data-ref="1562w">w</dfn>, <em>int</em> *<dfn class="local col3 decl" id="1563h" title='h' data-type='int *' data-ref="1563h">h</dfn>);</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc"> *  <span class="command">\brief</span> Create a texture for a rendering context.</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer.</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">format</span> The format of the texture.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">access</span> One of the enumerated values in ::SDL_TextureAccess.</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>      The width of the texture in pixels.</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>      The height of the texture in pixels.</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> *  <span class="command">\return</span> The created texture is returned, or 0 if no rendering context was</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> *          active,  the format was unsupported, or the width or height were out</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *          of range.</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_QueryTexture()</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UpdateTexture()</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyTexture()</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="240">240</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateTexture" title='SDL_CreateTexture' data-ref="SDL_CreateTexture">SDL_CreateTexture</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col4 decl" id="1564renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1564renderer">renderer</dfn>,</td></tr>
+<tr><th id="241">241</th><td>                                                        <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col5 decl" id="1565format" title='format' data-type='Uint32' data-ref="1565format">format</dfn>,</td></tr>
+<tr><th id="242">242</th><td>                                                        <em>int</em> <dfn class="local col6 decl" id="1566access" title='access' data-type='int' data-ref="1566access">access</dfn>, <em>int</em> <dfn class="local col7 decl" id="1567w" title='w' data-type='int' data-ref="1567w">w</dfn>,</td></tr>
+<tr><th id="243">243</th><td>                                                        <em>int</em> <dfn class="local col8 decl" id="1568h" title='h' data-type='int' data-ref="1568h">h</dfn>);</td></tr>
+<tr><th id="244">244</th><td></td></tr>
+<tr><th id="245">245</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> *  <span class="command">\brief</span> Create a texture from an existing surface.</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer.</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">surface</span> The surface containing pixel data used to fill the texture.</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> *  <span class="command">\return</span> The created texture is returned, or 0 on error.</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> *  <span class="command">\note</span> The surface is not modified or freed by this function.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_QueryTexture()</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyTexture()</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="258">258</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateTextureFromSurface" title='SDL_CreateTextureFromSurface' data-ref="SDL_CreateTextureFromSurface">SDL_CreateTextureFromSurface</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col9 decl" id="1569renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1569renderer">renderer</dfn>, <a class="typedef" href="SDL_surface.h.html#SDL_Surface" title='SDL_Surface' data-type='struct SDL_Surface' data-ref="SDL_Surface">SDL_Surface</a> * <dfn class="local col0 decl" id="1570surface" title='surface' data-type='SDL_Surface *' data-ref="1570surface">surface</dfn>);</td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> *  <span class="command">\brief</span> Query the attributes of a texture</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> A texture to be queried.</i></td></tr>
+<tr><th id="264">264</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">format</span>  A pointer filled in with the raw format of the texture.  The</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc"> *                 actual format may differ, but pixel transfers will use this</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> *                 format.</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">access</span>  A pointer filled in with the actual access to the texture.</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>       A pointer filled in with the width of the texture in pixels.</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>       A pointer filled in with the height of the texture in pixels.</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="273">273</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_QueryTexture" title='SDL_QueryTexture' data-ref="SDL_QueryTexture">SDL_QueryTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col1 decl" id="1571texture" title='texture' data-type='SDL_Texture *' data-ref="1571texture">texture</dfn>,</td></tr>
+<tr><th id="274">274</th><td>                                             <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> * <dfn class="local col2 decl" id="1572format" title='format' data-type='Uint32 *' data-ref="1572format">format</dfn>, <em>int</em> *<dfn class="local col3 decl" id="1573access" title='access' data-type='int *' data-ref="1573access">access</dfn>,</td></tr>
+<tr><th id="275">275</th><td>                                             <em>int</em> *<dfn class="local col4 decl" id="1574w" title='w' data-type='int *' data-ref="1574w">w</dfn>, <em>int</em> *<dfn class="local col5 decl" id="1575h" title='h' data-type='int *' data-ref="1575h">h</dfn>);</td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> *  <span class="command">\brief</span> Set an additional color value used in render copy operations.</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The texture to update.</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">r</span>       The red color value multiplied into copy operations.</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">g</span>       The green color value multiplied into copy operations.</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">b</span>       The blue color value multiplied into copy operations.</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid or color modulation</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> *          is not supported.</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetTextureColorMod()</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="290">290</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetTextureColorMod" title='SDL_SetTextureColorMod' data-ref="SDL_SetTextureColorMod">SDL_SetTextureColorMod</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col6 decl" id="1576texture" title='texture' data-type='SDL_Texture *' data-ref="1576texture">texture</dfn>,</td></tr>
+<tr><th id="291">291</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col7 decl" id="1577r" title='r' data-type='Uint8' data-ref="1577r">r</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col8 decl" id="1578g" title='g' data-type='Uint8' data-ref="1578g">g</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col9 decl" id="1579b" title='b' data-type='Uint8' data-ref="1579b">b</dfn>);</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> *  <span class="command">\brief</span> Get the additional color value used in render copy operations.</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The texture to query.</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">r</span>         A pointer filled in with the current red color value.</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">g</span>         A pointer filled in with the current green color value.</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">b</span>         A pointer filled in with the current blue color value.</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetTextureColorMod()</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="306">306</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetTextureColorMod" title='SDL_GetTextureColorMod' data-ref="SDL_GetTextureColorMod">SDL_GetTextureColorMod</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col0 decl" id="1580texture" title='texture' data-type='SDL_Texture *' data-ref="1580texture">texture</dfn>,</td></tr>
+<tr><th id="307">307</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col1 decl" id="1581r" title='r' data-type='Uint8 *' data-ref="1581r">r</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col2 decl" id="1582g" title='g' data-type='Uint8 *' data-ref="1582g">g</dfn>,</td></tr>
+<tr><th id="308">308</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col3 decl" id="1583b" title='b' data-type='Uint8 *' data-ref="1583b">b</dfn>);</td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> *  <span class="command">\brief</span> Set an additional alpha value used in render copy operations.</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The texture to update.</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">alpha</span>     The alpha value multiplied into copy operations.</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid or alpha modulation</i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> *          is not supported.</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetTextureAlphaMod()</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="321">321</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetTextureAlphaMod" title='SDL_SetTextureAlphaMod' data-ref="SDL_SetTextureAlphaMod">SDL_SetTextureAlphaMod</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col4 decl" id="1584texture" title='texture' data-type='SDL_Texture *' data-ref="1584texture">texture</dfn>,</td></tr>
+<tr><th id="322">322</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col5 decl" id="1585alpha" title='alpha' data-type='Uint8' data-ref="1585alpha">alpha</dfn>);</td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> *  <span class="command">\brief</span> Get the additional alpha value used in render copy operations.</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The texture to query.</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">alpha</span>     A pointer filled in with the current alpha value.</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetTextureAlphaMod()</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="334">334</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetTextureAlphaMod" title='SDL_GetTextureAlphaMod' data-ref="SDL_GetTextureAlphaMod">SDL_GetTextureAlphaMod</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col6 decl" id="1586texture" title='texture' data-type='SDL_Texture *' data-ref="1586texture">texture</dfn>,</td></tr>
+<tr><th id="335">335</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col7 decl" id="1587alpha" title='alpha' data-type='Uint8 *' data-ref="1587alpha">alpha</dfn>);</td></tr>
+<tr><th id="336">336</th><td></td></tr>
+<tr><th id="337">337</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> *  <span class="command">\brief</span> Set the blend mode used for texture copy operations.</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The texture to update.</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blendMode</span> ::SDL_BlendMode to use for texture blending.</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid or the blend mode is</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc"> *          not supported.</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc"> *  <span class="command">\note</span> If the blend mode is not supported, the closest supported mode is</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> *        chosen.</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetTextureBlendMode()</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="351">351</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetTextureBlendMode" title='SDL_SetTextureBlendMode' data-ref="SDL_SetTextureBlendMode">SDL_SetTextureBlendMode</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col8 decl" id="1588texture" title='texture' data-type='SDL_Texture *' data-ref="1588texture">texture</dfn>,</td></tr>
+<tr><th id="352">352</th><td>                                                    <a class="typedef" href="SDL_blendmode.h.html#SDL_BlendMode" title='SDL_BlendMode' data-type='enum SDL_BlendMode' data-ref="SDL_BlendMode">SDL_BlendMode</a> <dfn class="local col9 decl" id="1589blendMode" title='blendMode' data-type='SDL_BlendMode' data-ref="1589blendMode">blendMode</dfn>);</td></tr>
+<tr><th id="353">353</th><td></td></tr>
+<tr><th id="354">354</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc"> *  <span class="command">\brief</span> Get the blend mode used for texture copy operations.</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="357">357</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>   The texture to query.</i></td></tr>
+<tr><th id="358">358</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blendMode</span> A pointer filled in with the current blend mode.</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="361">361</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="362">362</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetTextureBlendMode()</i></td></tr>
+<tr><th id="363">363</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="364">364</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetTextureBlendMode" title='SDL_GetTextureBlendMode' data-ref="SDL_GetTextureBlendMode">SDL_GetTextureBlendMode</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col0 decl" id="1590texture" title='texture' data-type='SDL_Texture *' data-ref="1590texture">texture</dfn>,</td></tr>
+<tr><th id="365">365</th><td>                                                    <a class="typedef" href="SDL_blendmode.h.html#SDL_BlendMode" title='SDL_BlendMode' data-type='enum SDL_BlendMode' data-ref="SDL_BlendMode">SDL_BlendMode</a> *<dfn class="local col1 decl" id="1591blendMode" title='blendMode' data-type='SDL_BlendMode *' data-ref="1591blendMode">blendMode</dfn>);</td></tr>
+<tr><th id="366">366</th><td></td></tr>
+<tr><th id="367">367</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="368">368</th><td><i class="doc"> *  <span class="command">\brief</span> Update the given texture rectangle with new pixel data.</i></td></tr>
+<tr><th id="369">369</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="370">370</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>   The texture to update</i></td></tr>
+<tr><th id="371">371</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>      A pointer to the rectangle of pixels to update, or NULL to</i></td></tr>
+<tr><th id="372">372</th><td><i class="doc"> *                   update the entire texture.</i></td></tr>
+<tr><th id="373">373</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pixels</span>    The raw pixel data.</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pitch</span>     The number of bytes between rows of pixel data.</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="378">378</th><td><i class="doc"> *  <span class="command">\note</span> This is a fairly slow function.</i></td></tr>
+<tr><th id="379">379</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="380">380</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UpdateTexture" title='SDL_UpdateTexture' data-ref="SDL_UpdateTexture">SDL_UpdateTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col2 decl" id="1592texture" title='texture' data-type='SDL_Texture *' data-ref="1592texture">texture</dfn>,</td></tr>
+<tr><th id="381">381</th><td>                                              <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col3 decl" id="1593rect" title='rect' data-type='const SDL_Rect *' data-ref="1593rect">rect</dfn>,</td></tr>
+<tr><th id="382">382</th><td>                                              <em>const</em> <em>void</em> *<dfn class="local col4 decl" id="1594pixels" title='pixels' data-type='const void *' data-ref="1594pixels">pixels</dfn>, <em>int</em> <dfn class="local col5 decl" id="1595pitch" title='pitch' data-type='int' data-ref="1595pitch">pitch</dfn>);</td></tr>
+<tr><th id="383">383</th><td></td></tr>
+<tr><th id="384">384</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="385">385</th><td><i class="doc"> *  <span class="command">\brief</span> Update a rectangle within a planar YV12 or IYUV texture with new pixel data.</i></td></tr>
+<tr><th id="386">386</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="387">387</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>   The texture to update</i></td></tr>
+<tr><th id="388">388</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>      A pointer to the rectangle of pixels to update, or NULL to</i></td></tr>
+<tr><th id="389">389</th><td><i class="doc"> *                   update the entire texture.</i></td></tr>
+<tr><th id="390">390</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Yplane</span>    The raw pixel data for the Y plane.</i></td></tr>
+<tr><th id="391">391</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Ypitch</span>    The number of bytes between rows of pixel data for the Y plane.</i></td></tr>
+<tr><th id="392">392</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Uplane</span>    The raw pixel data for the U plane.</i></td></tr>
+<tr><th id="393">393</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Upitch</span>    The number of bytes between rows of pixel data for the U plane.</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Vplane</span>    The raw pixel data for the V plane.</i></td></tr>
+<tr><th id="395">395</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">Vpitch</span>    The number of bytes between rows of pixel data for the V plane.</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="397">397</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid.</i></td></tr>
+<tr><th id="398">398</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc"> *  <span class="command">\note</span> You can use SDL_UpdateTexture() as long as your pixel data is</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc"> *        a contiguous block of Y and U/V planes in the proper order, but</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc"> *        this function is available if your pixel data is not contiguous.</i></td></tr>
+<tr><th id="402">402</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="403">403</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UpdateYUVTexture" title='SDL_UpdateYUVTexture' data-ref="SDL_UpdateYUVTexture">SDL_UpdateYUVTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col6 decl" id="1596texture" title='texture' data-type='SDL_Texture *' data-ref="1596texture">texture</dfn>,</td></tr>
+<tr><th id="404">404</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col7 decl" id="1597rect" title='rect' data-type='const SDL_Rect *' data-ref="1597rect">rect</dfn>,</td></tr>
+<tr><th id="405">405</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="local col8 decl" id="1598Yplane" title='Yplane' data-type='const Uint8 *' data-ref="1598Yplane">Yplane</dfn>, <em>int</em> <dfn class="local col9 decl" id="1599Ypitch" title='Ypitch' data-type='int' data-ref="1599Ypitch">Ypitch</dfn>,</td></tr>
+<tr><th id="406">406</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="local col0 decl" id="1600Uplane" title='Uplane' data-type='const Uint8 *' data-ref="1600Uplane">Uplane</dfn>, <em>int</em> <dfn class="local col1 decl" id="1601Upitch" title='Upitch' data-type='int' data-ref="1601Upitch">Upitch</dfn>,</td></tr>
+<tr><th id="407">407</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="local col2 decl" id="1602Vplane" title='Vplane' data-type='const Uint8 *' data-ref="1602Vplane">Vplane</dfn>, <em>int</em> <dfn class="local col3 decl" id="1603Vpitch" title='Vpitch' data-type='int' data-ref="1603Vpitch">Vpitch</dfn>);</td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="410">410</th><td><i class="doc"> *  <span class="command">\brief</span> Lock a portion of the texture for write-only pixel access.</i></td></tr>
+<tr><th id="411">411</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="412">412</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>   The texture to lock for access, which was created with</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc"> *                   ::SDL_TEXTUREACCESS_STREAMING.</i></td></tr>
+<tr><th id="414">414</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>      A pointer to the rectangle to lock for access. If the rect</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc"> *                   is NULL, the entire texture will be locked.</i></td></tr>
+<tr><th id="416">416</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pixels</span>    This is filled in with a pointer to the locked pixels,</i></td></tr>
+<tr><th id="417">417</th><td><i class="doc"> *                   appropriately offset by the locked area.</i></td></tr>
+<tr><th id="418">418</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pitch</span>     This is filled in with the pitch of the locked pixels.</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the texture is not valid or was not created with ::SDL_TEXTUREACCESS_STREAMING.</i></td></tr>
+<tr><th id="421">421</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="422">422</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UnlockTexture()</i></td></tr>
+<tr><th id="423">423</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="424">424</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LockTexture" title='SDL_LockTexture' data-ref="SDL_LockTexture">SDL_LockTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col4 decl" id="1604texture" title='texture' data-type='SDL_Texture *' data-ref="1604texture">texture</dfn>,</td></tr>
+<tr><th id="425">425</th><td>                                            <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col5 decl" id="1605rect" title='rect' data-type='const SDL_Rect *' data-ref="1605rect">rect</dfn>,</td></tr>
+<tr><th id="426">426</th><td>                                            <em>void</em> **<dfn class="local col6 decl" id="1606pixels" title='pixels' data-type='void **' data-ref="1606pixels">pixels</dfn>, <em>int</em> *<dfn class="local col7 decl" id="1607pitch" title='pitch' data-type='int *' data-ref="1607pitch">pitch</dfn>);</td></tr>
+<tr><th id="427">427</th><td></td></tr>
+<tr><th id="428">428</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="429">429</th><td><i class="doc"> *  <span class="command">\brief</span> Unlock a texture, uploading the changes to video memory, if needed.</i></td></tr>
+<tr><th id="430">430</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="431">431</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_LockTexture()</i></td></tr>
+<tr><th id="432">432</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="433">433</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UnlockTexture" title='SDL_UnlockTexture' data-ref="SDL_UnlockTexture">SDL_UnlockTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col8 decl" id="1608texture" title='texture' data-type='SDL_Texture *' data-ref="1608texture">texture</dfn>);</td></tr>
+<tr><th id="434">434</th><td></td></tr>
+<tr><th id="435">435</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="436">436</th><td><i class="doc"> * <span class="command">\brief</span> Determines whether a window supports the use of render targets</i></td></tr>
+<tr><th id="437">437</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="438">438</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">renderer</span> The renderer that will be checked</i></td></tr>
+<tr><th id="439">439</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="440">440</th><td><i class="doc"> * <span class="command">\return</span> SDL_TRUE if supported, SDL_FALSE if not.</i></td></tr>
+<tr><th id="441">441</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="442">442</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderTargetSupported" title='SDL_RenderTargetSupported' data-ref="SDL_RenderTargetSupported">SDL_RenderTargetSupported</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> *<dfn class="local col9 decl" id="1609renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1609renderer">renderer</dfn>);</td></tr>
+<tr><th id="443">443</th><td></td></tr>
+<tr><th id="444">444</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="445">445</th><td><i class="doc"> * <span class="command">\brief</span> Set a texture as the current rendering target.</i></td></tr>
+<tr><th id="446">446</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="447">447</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">renderer</span> The renderer.</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">texture</span> The targeted texture, which must be created with the SDL_TEXTUREACCESS_TARGET flag, or NULL for the default render target</i></td></tr>
+<tr><th id="449">449</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="450">450</th><td><i class="doc"> * <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="451">451</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="452">452</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetRenderTarget()</i></td></tr>
+<tr><th id="453">453</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="454">454</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetRenderTarget" title='SDL_SetRenderTarget' data-ref="SDL_SetRenderTarget">SDL_SetRenderTarget</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> *<dfn class="local col0 decl" id="1610renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1610renderer">renderer</dfn>,</td></tr>
+<tr><th id="455">455</th><td>                                                <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> *<dfn class="local col1 decl" id="1611texture" title='texture' data-type='SDL_Texture *' data-ref="1611texture">texture</dfn>);</td></tr>
+<tr><th id="456">456</th><td></td></tr>
+<tr><th id="457">457</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc"> * <span class="command">\brief</span> Get the current render target or NULL for the default render target.</i></td></tr>
+<tr><th id="459">459</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="460">460</th><td><i class="doc"> * <span class="command">\return</span> The current render target</i></td></tr>
+<tr><th id="461">461</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="462">462</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetRenderTarget()</i></td></tr>
+<tr><th id="463">463</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="464">464</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRenderTarget" title='SDL_GetRenderTarget' data-ref="SDL_GetRenderTarget">SDL_GetRenderTarget</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> *<dfn class="local col2 decl" id="1612renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1612renderer">renderer</dfn>);</td></tr>
+<tr><th id="465">465</th><td></td></tr>
+<tr><th id="466">466</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc"> *  <span class="command">\brief</span> Set device independent resolution for rendering</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which resolution should be set.</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>      The width of the logical resolution</i></td></tr>
+<tr><th id="471">471</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>      The height of the logical resolution</i></td></tr>
+<tr><th id="472">472</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="473">473</th><td><i class="doc"> *  This function uses the viewport and scaling functionality to allow a fixed logical</i></td></tr>
+<tr><th id="474">474</th><td><i class="doc"> *  resolution for rendering, regardless of the actual output resolution.  If the actual</i></td></tr>
+<tr><th id="475">475</th><td><i class="doc"> *  output resolution doesn't have the same aspect ratio the output rendering will be</i></td></tr>
+<tr><th id="476">476</th><td><i class="doc"> *  centered within the output display.</i></td></tr>
+<tr><th id="477">477</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="478">478</th><td><i class="doc"> *  If the output display is a window, mouse events in the window will be filtered</i></td></tr>
+<tr><th id="479">479</th><td><i class="doc"> *  and scaled so they seem to arrive within the logical resolution.</i></td></tr>
+<tr><th id="480">480</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="481">481</th><td><i class="doc"> *  <span class="command">\note</span> If this function results in scaling or subpixel drawing by the</i></td></tr>
+<tr><th id="482">482</th><td><i class="doc"> *        rendering backend, it will be handled using the appropriate</i></td></tr>
+<tr><th id="483">483</th><td><i class="doc"> *        quality hints.</i></td></tr>
+<tr><th id="484">484</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="485">485</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderGetLogicalSize()</i></td></tr>
+<tr><th id="486">486</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetScale()</i></td></tr>
+<tr><th id="487">487</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetViewport()</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="489">489</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderSetLogicalSize" title='SDL_RenderSetLogicalSize' data-ref="SDL_RenderSetLogicalSize">SDL_RenderSetLogicalSize</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col3 decl" id="1613renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1613renderer">renderer</dfn>, <em>int</em> <dfn class="local col4 decl" id="1614w" title='w' data-type='int' data-ref="1614w">w</dfn>, <em>int</em> <dfn class="local col5 decl" id="1615h" title='h' data-type='int' data-ref="1615h">h</dfn>);</td></tr>
+<tr><th id="490">490</th><td></td></tr>
+<tr><th id="491">491</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="492">492</th><td><i class="doc"> *  <span class="command">\brief</span> Get device independent resolution for rendering</i></td></tr>
+<tr><th id="493">493</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="494">494</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which resolution should be queried.</i></td></tr>
+<tr><th id="495">495</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>      A pointer filled with the width of the logical resolution</i></td></tr>
+<tr><th id="496">496</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>      A pointer filled with the height of the logical resolution</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetLogicalSize()</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="500">500</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderGetLogicalSize" title='SDL_RenderGetLogicalSize' data-ref="SDL_RenderGetLogicalSize">SDL_RenderGetLogicalSize</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col6 decl" id="1616renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1616renderer">renderer</dfn>, <em>int</em> *<dfn class="local col7 decl" id="1617w" title='w' data-type='int *' data-ref="1617w">w</dfn>, <em>int</em> *<dfn class="local col8 decl" id="1618h" title='h' data-type='int *' data-ref="1618h">h</dfn>);</td></tr>
+<tr><th id="501">501</th><td></td></tr>
+<tr><th id="502">502</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc"> *  <span class="command">\brief</span> Set the drawing area for rendering on the current target.</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="505">505</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which the drawing area should be set.</i></td></tr>
+<tr><th id="506">506</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span> The rectangle representing the drawing area, or NULL to set the viewport to the entire target.</i></td></tr>
+<tr><th id="507">507</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="508">508</th><td><i class="doc"> *  The x,y of the viewport rect represents the origin for rendering.</i></td></tr>
+<tr><th id="509">509</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="510">510</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="511">511</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="512">512</th><td><i class="doc"> *  <span class="command">\note</span> If the window associated with the renderer is resized, the viewport is automatically reset.</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderGetViewport()</i></td></tr>
+<tr><th id="515">515</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetLogicalSize()</i></td></tr>
+<tr><th id="516">516</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="517">517</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderSetViewport" title='SDL_RenderSetViewport' data-ref="SDL_RenderSetViewport">SDL_RenderSetViewport</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col9 decl" id="1619renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1619renderer">renderer</dfn>,</td></tr>
+<tr><th id="518">518</th><td>                                                  <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col0 decl" id="1620rect" title='rect' data-type='const SDL_Rect *' data-ref="1620rect">rect</dfn>);</td></tr>
+<tr><th id="519">519</th><td></td></tr>
+<tr><th id="520">520</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="521">521</th><td><i class="doc"> *  <span class="command">\brief</span> Get the drawing area for the current target.</i></td></tr>
+<tr><th id="522">522</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="523">523</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetViewport()</i></td></tr>
+<tr><th id="524">524</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="525">525</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderGetViewport" title='SDL_RenderGetViewport' data-ref="SDL_RenderGetViewport">SDL_RenderGetViewport</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col1 decl" id="1621renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1621renderer">renderer</dfn>,</td></tr>
+<tr><th id="526">526</th><td>                                                   <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col2 decl" id="1622rect" title='rect' data-type='SDL_Rect *' data-ref="1622rect">rect</dfn>);</td></tr>
+<tr><th id="527">527</th><td></td></tr>
+<tr><th id="528">528</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc"> *  <span class="command">\brief</span> Set the clip rectangle for the current target.</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="531">531</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which clip rectangle should be set.</i></td></tr>
+<tr><th id="532">532</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>   A pointer to the rectangle to set as the clip rectangle, or</i></td></tr>
+<tr><th id="533">533</th><td><i class="doc"> *                NULL to disable clipping.</i></td></tr>
+<tr><th id="534">534</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="535">535</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="536">536</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="537">537</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderGetClipRect()</i></td></tr>
+<tr><th id="538">538</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="539">539</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderSetClipRect" title='SDL_RenderSetClipRect' data-ref="SDL_RenderSetClipRect">SDL_RenderSetClipRect</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col3 decl" id="1623renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1623renderer">renderer</dfn>,</td></tr>
+<tr><th id="540">540</th><td>                                                  <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col4 decl" id="1624rect" title='rect' data-type='const SDL_Rect *' data-ref="1624rect">rect</dfn>);</td></tr>
+<tr><th id="541">541</th><td></td></tr>
+<tr><th id="542">542</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="543">543</th><td><i class="doc"> *  <span class="command">\brief</span> Get the clip rectangle for the current target.</i></td></tr>
+<tr><th id="544">544</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="545">545</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which clip rectangle should be queried.</i></td></tr>
+<tr><th id="546">546</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>   A pointer filled in with the current clip rectangle, or</i></td></tr>
+<tr><th id="547">547</th><td><i class="doc"> *                an empty rectangle if clipping is disabled.</i></td></tr>
+<tr><th id="548">548</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="549">549</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetClipRect()</i></td></tr>
+<tr><th id="550">550</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="551">551</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderGetClipRect" title='SDL_RenderGetClipRect' data-ref="SDL_RenderGetClipRect">SDL_RenderGetClipRect</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col5 decl" id="1625renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1625renderer">renderer</dfn>,</td></tr>
+<tr><th id="552">552</th><td>                                                   <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col6 decl" id="1626rect" title='rect' data-type='SDL_Rect *' data-ref="1626rect">rect</dfn>);</td></tr>
+<tr><th id="553">553</th><td></td></tr>
+<tr><th id="554">554</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="555">555</th><td><i class="doc"> *  <span class="command">\brief</span> Set the drawing scale for rendering on the current target.</i></td></tr>
+<tr><th id="556">556</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which the drawing scale should be set.</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">scaleX</span> The horizontal scaling factor</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">scaleY</span> The vertical scaling factor</i></td></tr>
+<tr><th id="560">560</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="561">561</th><td><i class="doc"> *  The drawing coordinates are scaled by the x/y scaling factors</i></td></tr>
+<tr><th id="562">562</th><td><i class="doc"> *  before they are used by the renderer.  This allows resolution</i></td></tr>
+<tr><th id="563">563</th><td><i class="doc"> *  independent drawing with a single coordinate system.</i></td></tr>
+<tr><th id="564">564</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="565">565</th><td><i class="doc"> *  <span class="command">\note</span> If this results in scaling or subpixel drawing by the</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc"> *        rendering backend, it will be handled using the appropriate</i></td></tr>
+<tr><th id="567">567</th><td><i class="doc"> *        quality hints.  For best results use integer scaling factors.</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="569">569</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderGetScale()</i></td></tr>
+<tr><th id="570">570</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetLogicalSize()</i></td></tr>
+<tr><th id="571">571</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="572">572</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderSetScale" title='SDL_RenderSetScale' data-ref="SDL_RenderSetScale">SDL_RenderSetScale</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col7 decl" id="1627renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1627renderer">renderer</dfn>,</td></tr>
+<tr><th id="573">573</th><td>                                               <em>float</em> <dfn class="local col8 decl" id="1628scaleX" title='scaleX' data-type='float' data-ref="1628scaleX">scaleX</dfn>, <em>float</em> <dfn class="local col9 decl" id="1629scaleY" title='scaleY' data-type='float' data-ref="1629scaleY">scaleY</dfn>);</td></tr>
+<tr><th id="574">574</th><td></td></tr>
+<tr><th id="575">575</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="576">576</th><td><i class="doc"> *  <span class="command">\brief</span> Get the drawing scale for the current target.</i></td></tr>
+<tr><th id="577">577</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which drawing scale should be queried.</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">scaleX</span> A pointer filled in with the horizontal scaling factor</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">scaleY</span> A pointer filled in with the vertical scaling factor</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="582">582</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RenderSetScale()</i></td></tr>
+<tr><th id="583">583</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="584">584</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderGetScale" title='SDL_RenderGetScale' data-ref="SDL_RenderGetScale">SDL_RenderGetScale</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col0 decl" id="1630renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1630renderer">renderer</dfn>,</td></tr>
+<tr><th id="585">585</th><td>                                               <em>float</em> *<dfn class="local col1 decl" id="1631scaleX" title='scaleX' data-type='float *' data-ref="1631scaleX">scaleX</dfn>, <em>float</em> *<dfn class="local col2 decl" id="1632scaleY" title='scaleY' data-type='float *' data-ref="1632scaleY">scaleY</dfn>);</td></tr>
+<tr><th id="586">586</th><td></td></tr>
+<tr><th id="587">587</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="588">588</th><td><i class="doc"> *  <span class="command">\brief</span> Set the color used for drawing operations (Rect, Line and Clear).</i></td></tr>
+<tr><th id="589">589</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="590">590</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which drawing color should be set.</i></td></tr>
+<tr><th id="591">591</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">r</span> The red value used to draw on the rendering target.</i></td></tr>
+<tr><th id="592">592</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">g</span> The green value used to draw on the rendering target.</i></td></tr>
+<tr><th id="593">593</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">b</span> The blue value used to draw on the rendering target.</i></td></tr>
+<tr><th id="594">594</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">a</span> The alpha value used to draw on the rendering target, usually</i></td></tr>
+<tr><th id="595">595</th><td><i class="doc"> *           ::SDL_ALPHA_OPAQUE (255).</i></td></tr>
+<tr><th id="596">596</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="597">597</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="598">598</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="599">599</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetRenderDrawColor" title='SDL_SetRenderDrawColor' data-ref="SDL_SetRenderDrawColor">SDL_SetRenderDrawColor</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col3 decl" id="1633renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1633renderer">renderer</dfn>,</td></tr>
+<tr><th id="600">600</th><td>                                           <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col4 decl" id="1634r" title='r' data-type='Uint8' data-ref="1634r">r</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col5 decl" id="1635g" title='g' data-type='Uint8' data-ref="1635g">g</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col6 decl" id="1636b" title='b' data-type='Uint8' data-ref="1636b">b</dfn>,</td></tr>
+<tr><th id="601">601</th><td>                                           <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col7 decl" id="1637a" title='a' data-type='Uint8' data-ref="1637a">a</dfn>);</td></tr>
+<tr><th id="602">602</th><td></td></tr>
+<tr><th id="603">603</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="604">604</th><td><i class="doc"> *  <span class="command">\brief</span> Get the color used for drawing operations (Rect, Line and Clear).</i></td></tr>
+<tr><th id="605">605</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="606">606</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which drawing color should be queried.</i></td></tr>
+<tr><th id="607">607</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">r</span> A pointer to the red value used to draw on the rendering target.</i></td></tr>
+<tr><th id="608">608</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">g</span> A pointer to the green value used to draw on the rendering target.</i></td></tr>
+<tr><th id="609">609</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">b</span> A pointer to the blue value used to draw on the rendering target.</i></td></tr>
+<tr><th id="610">610</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">a</span> A pointer to the alpha value used to draw on the rendering target,</i></td></tr>
+<tr><th id="611">611</th><td><i class="doc"> *           usually ::SDL_ALPHA_OPAQUE (255).</i></td></tr>
+<tr><th id="612">612</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="613">613</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="614">614</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="615">615</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRenderDrawColor" title='SDL_GetRenderDrawColor' data-ref="SDL_GetRenderDrawColor">SDL_GetRenderDrawColor</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col8 decl" id="1638renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1638renderer">renderer</dfn>,</td></tr>
+<tr><th id="616">616</th><td>                                           <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col9 decl" id="1639r" title='r' data-type='Uint8 *' data-ref="1639r">r</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col0 decl" id="1640g" title='g' data-type='Uint8 *' data-ref="1640g">g</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col1 decl" id="1641b" title='b' data-type='Uint8 *' data-ref="1641b">b</dfn>,</td></tr>
+<tr><th id="617">617</th><td>                                           <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col2 decl" id="1642a" title='a' data-type='Uint8 *' data-ref="1642a">a</dfn>);</td></tr>
+<tr><th id="618">618</th><td></td></tr>
+<tr><th id="619">619</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="620">620</th><td><i class="doc"> *  <span class="command">\brief</span> Set the blend mode used for drawing operations (Fill and Line).</i></td></tr>
+<tr><th id="621">621</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="622">622</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer for which blend mode should be set.</i></td></tr>
+<tr><th id="623">623</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blendMode</span> ::SDL_BlendMode to use for blending.</i></td></tr>
+<tr><th id="624">624</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="625">625</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="626">626</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="627">627</th><td><i class="doc"> *  <span class="command">\note</span> If the blend mode is not supported, the closest supported mode is</i></td></tr>
+<tr><th id="628">628</th><td><i class="doc"> *        chosen.</i></td></tr>
+<tr><th id="629">629</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="630">630</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetRenderDrawBlendMode()</i></td></tr>
+<tr><th id="631">631</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="632">632</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetRenderDrawBlendMode" title='SDL_SetRenderDrawBlendMode' data-ref="SDL_SetRenderDrawBlendMode">SDL_SetRenderDrawBlendMode</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col3 decl" id="1643renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1643renderer">renderer</dfn>,</td></tr>
+<tr><th id="633">633</th><td>                                                       <a class="typedef" href="SDL_blendmode.h.html#SDL_BlendMode" title='SDL_BlendMode' data-type='enum SDL_BlendMode' data-ref="SDL_BlendMode">SDL_BlendMode</a> <dfn class="local col4 decl" id="1644blendMode" title='blendMode' data-type='SDL_BlendMode' data-ref="1644blendMode">blendMode</dfn>);</td></tr>
+<tr><th id="634">634</th><td></td></tr>
+<tr><th id="635">635</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="636">636</th><td><i class="doc"> *  <span class="command">\brief</span> Get the blend mode used for drawing operations.</i></td></tr>
+<tr><th id="637">637</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which blend mode should be queried.</i></td></tr>
+<tr><th id="639">639</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blendMode</span> A pointer filled in with the current blend mode.</i></td></tr>
+<tr><th id="640">640</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="641">641</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="642">642</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="643">643</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetRenderDrawBlendMode()</i></td></tr>
+<tr><th id="644">644</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="645">645</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRenderDrawBlendMode" title='SDL_GetRenderDrawBlendMode' data-ref="SDL_GetRenderDrawBlendMode">SDL_GetRenderDrawBlendMode</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col5 decl" id="1645renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1645renderer">renderer</dfn>,</td></tr>
+<tr><th id="646">646</th><td>                                                       <a class="typedef" href="SDL_blendmode.h.html#SDL_BlendMode" title='SDL_BlendMode' data-type='enum SDL_BlendMode' data-ref="SDL_BlendMode">SDL_BlendMode</a> *<dfn class="local col6 decl" id="1646blendMode" title='blendMode' data-type='SDL_BlendMode *' data-ref="1646blendMode">blendMode</dfn>);</td></tr>
+<tr><th id="647">647</th><td></td></tr>
+<tr><th id="648">648</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="649">649</th><td><i class="doc"> *  <span class="command">\brief</span> Clear the current rendering target with the drawing color</i></td></tr>
+<tr><th id="650">650</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="651">651</th><td><i class="doc"> *  This function clears the entire rendering target, ignoring the viewport.</i></td></tr>
+<tr><th id="652">652</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="653">653</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="654">654</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="655">655</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderClear" title='SDL_RenderClear' data-ref="SDL_RenderClear">SDL_RenderClear</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col7 decl" id="1647renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1647renderer">renderer</dfn>);</td></tr>
+<tr><th id="656">656</th><td></td></tr>
+<tr><th id="657">657</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="658">658</th><td><i class="doc"> *  <span class="command">\brief</span> Draw a point on the current rendering target.</i></td></tr>
+<tr><th id="659">659</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="660">660</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw a point.</i></td></tr>
+<tr><th id="661">661</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span> The x coordinate of the point.</i></td></tr>
+<tr><th id="662">662</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y</span> The y coordinate of the point.</i></td></tr>
+<tr><th id="663">663</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="664">664</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="665">665</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="666">666</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawPoint" title='SDL_RenderDrawPoint' data-ref="SDL_RenderDrawPoint">SDL_RenderDrawPoint</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col8 decl" id="1648renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1648renderer">renderer</dfn>,</td></tr>
+<tr><th id="667">667</th><td>                                                <em>int</em> <dfn class="local col9 decl" id="1649x" title='x' data-type='int' data-ref="1649x">x</dfn>, <em>int</em> <dfn class="local col0 decl" id="1650y" title='y' data-type='int' data-ref="1650y">y</dfn>);</td></tr>
+<tr><th id="668">668</th><td></td></tr>
+<tr><th id="669">669</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="670">670</th><td><i class="doc"> *  <span class="command">\brief</span> Draw multiple points on the current rendering target.</i></td></tr>
+<tr><th id="671">671</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="672">672</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw multiple points.</i></td></tr>
+<tr><th id="673">673</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">points</span> The points to draw</i></td></tr>
+<tr><th id="674">674</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">count</span> The number of points to draw</i></td></tr>
+<tr><th id="675">675</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="676">676</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="677">677</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="678">678</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawPoints" title='SDL_RenderDrawPoints' data-ref="SDL_RenderDrawPoints">SDL_RenderDrawPoints</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col1 decl" id="1651renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1651renderer">renderer</dfn>,</td></tr>
+<tr><th id="679">679</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Point" title='SDL_Point' data-type='struct SDL_Point' data-ref="SDL_Point">SDL_Point</a> * <dfn class="local col2 decl" id="1652points" title='points' data-type='const SDL_Point *' data-ref="1652points">points</dfn>,</td></tr>
+<tr><th id="680">680</th><td>                                                 <em>int</em> <dfn class="local col3 decl" id="1653count" title='count' data-type='int' data-ref="1653count">count</dfn>);</td></tr>
+<tr><th id="681">681</th><td></td></tr>
+<tr><th id="682">682</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="683">683</th><td><i class="doc"> *  <span class="command">\brief</span> Draw a line on the current rendering target.</i></td></tr>
+<tr><th id="684">684</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="685">685</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw a line.</i></td></tr>
+<tr><th id="686">686</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x1</span> The x coordinate of the start point.</i></td></tr>
+<tr><th id="687">687</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y1</span> The y coordinate of the start point.</i></td></tr>
+<tr><th id="688">688</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x2</span> The x coordinate of the end point.</i></td></tr>
+<tr><th id="689">689</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y2</span> The y coordinate of the end point.</i></td></tr>
+<tr><th id="690">690</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="691">691</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="692">692</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="693">693</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawLine" title='SDL_RenderDrawLine' data-ref="SDL_RenderDrawLine">SDL_RenderDrawLine</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col4 decl" id="1654renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1654renderer">renderer</dfn>,</td></tr>
+<tr><th id="694">694</th><td>                                               <em>int</em> <dfn class="local col5 decl" id="1655x1" title='x1' data-type='int' data-ref="1655x1">x1</dfn>, <em>int</em> <dfn class="local col6 decl" id="1656y1" title='y1' data-type='int' data-ref="1656y1">y1</dfn>, <em>int</em> <dfn class="local col7 decl" id="1657x2" title='x2' data-type='int' data-ref="1657x2">x2</dfn>, <em>int</em> <dfn class="local col8 decl" id="1658y2" title='y2' data-type='int' data-ref="1658y2">y2</dfn>);</td></tr>
+<tr><th id="695">695</th><td></td></tr>
+<tr><th id="696">696</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="697">697</th><td><i class="doc"> *  <span class="command">\brief</span> Draw a series of connected lines on the current rendering target.</i></td></tr>
+<tr><th id="698">698</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="699">699</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw multiple lines.</i></td></tr>
+<tr><th id="700">700</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">points</span> The points along the lines</i></td></tr>
+<tr><th id="701">701</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">count</span> The number of points, drawing count-1 lines</i></td></tr>
+<tr><th id="702">702</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="703">703</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="704">704</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="705">705</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawLines" title='SDL_RenderDrawLines' data-ref="SDL_RenderDrawLines">SDL_RenderDrawLines</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col9 decl" id="1659renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1659renderer">renderer</dfn>,</td></tr>
+<tr><th id="706">706</th><td>                                                <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Point" title='SDL_Point' data-type='struct SDL_Point' data-ref="SDL_Point">SDL_Point</a> * <dfn class="local col0 decl" id="1660points" title='points' data-type='const SDL_Point *' data-ref="1660points">points</dfn>,</td></tr>
+<tr><th id="707">707</th><td>                                                <em>int</em> <dfn class="local col1 decl" id="1661count" title='count' data-type='int' data-ref="1661count">count</dfn>);</td></tr>
+<tr><th id="708">708</th><td></td></tr>
+<tr><th id="709">709</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="710">710</th><td><i class="doc"> *  <span class="command">\brief</span> Draw a rectangle on the current rendering target.</i></td></tr>
+<tr><th id="711">711</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="712">712</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw a rectangle.</i></td></tr>
+<tr><th id="713">713</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span> A pointer to the destination rectangle, or NULL to outline the entire rendering target.</i></td></tr>
+<tr><th id="714">714</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="715">715</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="716">716</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="717">717</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawRect" title='SDL_RenderDrawRect' data-ref="SDL_RenderDrawRect">SDL_RenderDrawRect</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col2 decl" id="1662renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1662renderer">renderer</dfn>,</td></tr>
+<tr><th id="718">718</th><td>                                               <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col3 decl" id="1663rect" title='rect' data-type='const SDL_Rect *' data-ref="1663rect">rect</dfn>);</td></tr>
+<tr><th id="719">719</th><td></td></tr>
+<tr><th id="720">720</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="721">721</th><td><i class="doc"> *  <span class="command">\brief</span> Draw some number of rectangles on the current rendering target.</i></td></tr>
+<tr><th id="722">722</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="723">723</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should draw multiple rectangles.</i></td></tr>
+<tr><th id="724">724</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rects</span> A pointer to an array of destination rectangles.</i></td></tr>
+<tr><th id="725">725</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">count</span> The number of rectangles.</i></td></tr>
+<tr><th id="726">726</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="727">727</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="728">728</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="729">729</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderDrawRects" title='SDL_RenderDrawRects' data-ref="SDL_RenderDrawRects">SDL_RenderDrawRects</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col4 decl" id="1664renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1664renderer">renderer</dfn>,</td></tr>
+<tr><th id="730">730</th><td>                                                <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col5 decl" id="1665rects" title='rects' data-type='const SDL_Rect *' data-ref="1665rects">rects</dfn>,</td></tr>
+<tr><th id="731">731</th><td>                                                <em>int</em> <dfn class="local col6 decl" id="1666count" title='count' data-type='int' data-ref="1666count">count</dfn>);</td></tr>
+<tr><th id="732">732</th><td></td></tr>
+<tr><th id="733">733</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="734">734</th><td><i class="doc"> *  <span class="command">\brief</span> Fill a rectangle on the current rendering target with the drawing color.</i></td></tr>
+<tr><th id="735">735</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="736">736</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should fill a rectangle.</i></td></tr>
+<tr><th id="737">737</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span> A pointer to the destination rectangle, or NULL for the entire</i></td></tr>
+<tr><th id="738">738</th><td><i class="doc"> *              rendering target.</i></td></tr>
+<tr><th id="739">739</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="740">740</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="741">741</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="742">742</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderFillRect" title='SDL_RenderFillRect' data-ref="SDL_RenderFillRect">SDL_RenderFillRect</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col7 decl" id="1667renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1667renderer">renderer</dfn>,</td></tr>
+<tr><th id="743">743</th><td>                                               <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col8 decl" id="1668rect" title='rect' data-type='const SDL_Rect *' data-ref="1668rect">rect</dfn>);</td></tr>
+<tr><th id="744">744</th><td></td></tr>
+<tr><th id="745">745</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="746">746</th><td><i class="doc"> *  <span class="command">\brief</span> Fill some number of rectangles on the current rendering target with the drawing color.</i></td></tr>
+<tr><th id="747">747</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="748">748</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should fill multiple rectangles.</i></td></tr>
+<tr><th id="749">749</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rects</span> A pointer to an array of destination rectangles.</i></td></tr>
+<tr><th id="750">750</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">count</span> The number of rectangles.</i></td></tr>
+<tr><th id="751">751</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="752">752</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="753">753</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="754">754</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderFillRects" title='SDL_RenderFillRects' data-ref="SDL_RenderFillRects">SDL_RenderFillRects</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col9 decl" id="1669renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1669renderer">renderer</dfn>,</td></tr>
+<tr><th id="755">755</th><td>                                                <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col0 decl" id="1670rects" title='rects' data-type='const SDL_Rect *' data-ref="1670rects">rects</dfn>,</td></tr>
+<tr><th id="756">756</th><td>                                                <em>int</em> <dfn class="local col1 decl" id="1671count" title='count' data-type='int' data-ref="1671count">count</dfn>);</td></tr>
+<tr><th id="757">757</th><td></td></tr>
+<tr><th id="758">758</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="759">759</th><td><i class="doc"> *  <span class="command">\brief</span> Copy a portion of the texture to the current rendering target.</i></td></tr>
+<tr><th id="760">760</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="761">761</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should copy parts of a texture.</i></td></tr>
+<tr><th id="762">762</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The source texture.</i></td></tr>
+<tr><th id="763">763</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">srcrect</span>   A pointer to the source rectangle, or NULL for the entire</i></td></tr>
+<tr><th id="764">764</th><td><i class="doc"> *                   texture.</i></td></tr>
+<tr><th id="765">765</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">dstrect</span>   A pointer to the destination rectangle, or NULL for the</i></td></tr>
+<tr><th id="766">766</th><td><i class="doc"> *                   entire rendering target.</i></td></tr>
+<tr><th id="767">767</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="768">768</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="769">769</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="770">770</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderCopy" title='SDL_RenderCopy' data-ref="SDL_RenderCopy">SDL_RenderCopy</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col2 decl" id="1672renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1672renderer">renderer</dfn>,</td></tr>
+<tr><th id="771">771</th><td>                                           <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col3 decl" id="1673texture" title='texture' data-type='SDL_Texture *' data-ref="1673texture">texture</dfn>,</td></tr>
+<tr><th id="772">772</th><td>                                           <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col4 decl" id="1674srcrect" title='srcrect' data-type='const SDL_Rect *' data-ref="1674srcrect">srcrect</dfn>,</td></tr>
+<tr><th id="773">773</th><td>                                           <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col5 decl" id="1675dstrect" title='dstrect' data-type='const SDL_Rect *' data-ref="1675dstrect">dstrect</dfn>);</td></tr>
+<tr><th id="774">774</th><td></td></tr>
+<tr><th id="775">775</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="776">776</th><td><i class="doc"> *  <span class="command">\brief</span> Copy a portion of the source texture to the current rendering target, rotating it by angle around the given center</i></td></tr>
+<tr><th id="777">777</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="778">778</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer which should copy parts of a texture.</i></td></tr>
+<tr><th id="779">779</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span> The source texture.</i></td></tr>
+<tr><th id="780">780</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">srcrect</span>   A pointer to the source rectangle, or NULL for the entire</i></td></tr>
+<tr><th id="781">781</th><td><i class="doc"> *                   texture.</i></td></tr>
+<tr><th id="782">782</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">dstrect</span>   A pointer to the destination rectangle, or NULL for the</i></td></tr>
+<tr><th id="783">783</th><td><i class="doc"> *                   entire rendering target.</i></td></tr>
+<tr><th id="784">784</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">angle</span>    An angle in degrees that indicates the rotation that will be applied to dstrect</i></td></tr>
+<tr><th id="785">785</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">center</span>   A pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done aroud dstrect.w/2, dstrect.h/2)</i></td></tr>
+<tr><th id="786">786</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">flip</span>     An SDL_RendererFlip value stating which flipping actions should be performed on the texture</i></td></tr>
+<tr><th id="787">787</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="788">788</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error</i></td></tr>
+<tr><th id="789">789</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="790">790</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderCopyEx" title='SDL_RenderCopyEx' data-ref="SDL_RenderCopyEx">SDL_RenderCopyEx</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col6 decl" id="1676renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1676renderer">renderer</dfn>,</td></tr>
+<tr><th id="791">791</th><td>                                           <a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col7 decl" id="1677texture" title='texture' data-type='SDL_Texture *' data-ref="1677texture">texture</dfn>,</td></tr>
+<tr><th id="792">792</th><td>                                           <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col8 decl" id="1678srcrect" title='srcrect' data-type='const SDL_Rect *' data-ref="1678srcrect">srcrect</dfn>,</td></tr>
+<tr><th id="793">793</th><td>                                           <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col9 decl" id="1679dstrect" title='dstrect' data-type='const SDL_Rect *' data-ref="1679dstrect">dstrect</dfn>,</td></tr>
+<tr><th id="794">794</th><td>                                           <em>const</em> <em>double</em> <dfn class="local col0 decl" id="1680angle" title='angle' data-type='const double' data-ref="1680angle">angle</dfn>,</td></tr>
+<tr><th id="795">795</th><td>                                           <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Point" title='SDL_Point' data-type='struct SDL_Point' data-ref="SDL_Point">SDL_Point</a> *<dfn class="local col1 decl" id="1681center" title='center' data-type='const SDL_Point *' data-ref="1681center">center</dfn>,</td></tr>
+<tr><th id="796">796</th><td>                                           <em>const</em> <a class="typedef" href="#SDL_RendererFlip" title='SDL_RendererFlip' data-type='enum SDL_RendererFlip' data-ref="SDL_RendererFlip">SDL_RendererFlip</a> <dfn class="local col2 decl" id="1682flip" title='flip' data-type='const SDL_RendererFlip' data-ref="1682flip">flip</dfn>);</td></tr>
+<tr><th id="797">797</th><td></td></tr>
+<tr><th id="798">798</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="799">799</th><td><i class="doc"> *  <span class="command">\brief</span> Read pixels from the current rendering target.</i></td></tr>
+<tr><th id="800">800</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="801">801</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">renderer</span> The renderer from which pixels should be read.</i></td></tr>
+<tr><th id="802">802</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">rect</span>   A pointer to the rectangle to read, or NULL for the entire</i></td></tr>
+<tr><th id="803">803</th><td><i class="doc"> *                render target.</i></td></tr>
+<tr><th id="804">804</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">format</span> The desired format of the pixel data, or 0 to use the format</i></td></tr>
+<tr><th id="805">805</th><td><i class="doc"> *                of the rendering target</i></td></tr>
+<tr><th id="806">806</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pixels</span> A pointer to be filled in with the pixel data</i></td></tr>
+<tr><th id="807">807</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">pitch</span>  The pitch of the pixels parameter.</i></td></tr>
+<tr><th id="808">808</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="809">809</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if pixel reading is not supported.</i></td></tr>
+<tr><th id="810">810</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="811">811</th><td><i class="doc"> *  <span class="command">\warning</span> This is a very slow operation, and should not be used frequently.</i></td></tr>
+<tr><th id="812">812</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="813">813</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderReadPixels" title='SDL_RenderReadPixels' data-ref="SDL_RenderReadPixels">SDL_RenderReadPixels</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col3 decl" id="1683renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1683renderer">renderer</dfn>,</td></tr>
+<tr><th id="814">814</th><td>                                                 <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col4 decl" id="1684rect" title='rect' data-type='const SDL_Rect *' data-ref="1684rect">rect</dfn>,</td></tr>
+<tr><th id="815">815</th><td>                                                 <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col5 decl" id="1685format" title='format' data-type='Uint32' data-ref="1685format">format</dfn>,</td></tr>
+<tr><th id="816">816</th><td>                                                 <em>void</em> *<dfn class="local col6 decl" id="1686pixels" title='pixels' data-type='void *' data-ref="1686pixels">pixels</dfn>, <em>int</em> <dfn class="local col7 decl" id="1687pitch" title='pitch' data-type='int' data-ref="1687pitch">pitch</dfn>);</td></tr>
+<tr><th id="817">817</th><td></td></tr>
+<tr><th id="818">818</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="819">819</th><td><i class="doc"> *  <span class="command">\brief</span> Update the screen with rendering performed.</i></td></tr>
+<tr><th id="820">820</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="821">821</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RenderPresent" title='SDL_RenderPresent' data-ref="SDL_RenderPresent">SDL_RenderPresent</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col8 decl" id="1688renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1688renderer">renderer</dfn>);</td></tr>
+<tr><th id="822">822</th><td></td></tr>
+<tr><th id="823">823</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="824">824</th><td><i class="doc"> *  <span class="command">\brief</span> Destroy the specified texture.</i></td></tr>
+<tr><th id="825">825</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="826">826</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateTexture()</i></td></tr>
+<tr><th id="827">827</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateTextureFromSurface()</i></td></tr>
+<tr><th id="828">828</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="829">829</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_DestroyTexture" title='SDL_DestroyTexture' data-ref="SDL_DestroyTexture">SDL_DestroyTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> * <dfn class="local col9 decl" id="1689texture" title='texture' data-type='SDL_Texture *' data-ref="1689texture">texture</dfn>);</td></tr>
+<tr><th id="830">830</th><td></td></tr>
+<tr><th id="831">831</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="832">832</th><td><i class="doc"> *  <span class="command">\brief</span> Destroy the rendering context for a window and free associated</i></td></tr>
+<tr><th id="833">833</th><td><i class="doc"> *         textures.</i></td></tr>
+<tr><th id="834">834</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="835">835</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateRenderer()</i></td></tr>
+<tr><th id="836">836</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="837">837</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_DestroyRenderer" title='SDL_DestroyRenderer' data-ref="SDL_DestroyRenderer">SDL_DestroyRenderer</dfn>(<a class="typedef" href="#SDL_Renderer" title='SDL_Renderer' data-type='struct SDL_Renderer' data-ref="SDL_Renderer">SDL_Renderer</a> * <dfn class="local col0 decl" id="1690renderer" title='renderer' data-type='SDL_Renderer *' data-ref="1690renderer">renderer</dfn>);</td></tr>
+<tr><th id="838">838</th><td></td></tr>
+<tr><th id="839">839</th><td></td></tr>
+<tr><th id="840">840</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="841">841</th><td><i class="doc"> *  <span class="command">\brief</span> Bind the texture to the current OpenGL/ES/ES2 context for use with</i></td></tr>
+<tr><th id="842">842</th><td><i class="doc"> *         OpenGL instructions.</i></td></tr>
+<tr><th id="843">843</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="844">844</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>  The SDL texture to bind</i></td></tr>
+<tr><th id="845">845</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texw</span>     A pointer to a float that will be filled with the texture width</i></td></tr>
+<tr><th id="846">846</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texh</span>     A pointer to a float that will be filled with the texture height</i></td></tr>
+<tr><th id="847">847</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="848">848</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the operation is not supported</i></td></tr>
+<tr><th id="849">849</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="850">850</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_BindTexture" title='SDL_GL_BindTexture' data-ref="SDL_GL_BindTexture">SDL_GL_BindTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> *<dfn class="local col1 decl" id="1691texture" title='texture' data-type='SDL_Texture *' data-ref="1691texture">texture</dfn>, <em>float</em> *<dfn class="local col2 decl" id="1692texw" title='texw' data-type='float *' data-ref="1692texw">texw</dfn>, <em>float</em> *<dfn class="local col3 decl" id="1693texh" title='texh' data-type='float *' data-ref="1693texh">texh</dfn>);</td></tr>
+<tr><th id="851">851</th><td></td></tr>
+<tr><th id="852">852</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="853">853</th><td><i class="doc"> *  <span class="command">\brief</span> Unbind a texture from the current OpenGL/ES/ES2 context.</i></td></tr>
+<tr><th id="854">854</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="855">855</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">texture</span>  The SDL texture to unbind</i></td></tr>
+<tr><th id="856">856</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="857">857</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the operation is not supported</i></td></tr>
+<tr><th id="858">858</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="859">859</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_UnbindTexture" title='SDL_GL_UnbindTexture' data-ref="SDL_GL_UnbindTexture">SDL_GL_UnbindTexture</dfn>(<a class="typedef" href="#SDL_Texture" title='SDL_Texture' data-type='struct SDL_Texture' data-ref="SDL_Texture">SDL_Texture</a> *<dfn class="local col4 decl" id="1694texture" title='texture' data-type='SDL_Texture *' data-ref="1694texture">texture</dfn>);</td></tr>
+<tr><th id="860">860</th><td></td></tr>
+<tr><th id="861">861</th><td></td></tr>
+<tr><th id="862">862</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="863">863</th><td><u>#<span data-ppcond="863">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="864">864</th><td>}</td></tr>
+<tr><th id="865">865</th><td><u>#<span data-ppcond="863">endif</span></u></td></tr>
+<tr><th id="866">866</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="867">867</th><td></td></tr>
+<tr><th id="868">868</th><td><u>#<span data-ppcond="48">endif</span> /* _SDL_render_h */</u></td></tr>
+<tr><th id="869">869</th><td></td></tr>
+<tr><th id="870">870</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="871">871</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

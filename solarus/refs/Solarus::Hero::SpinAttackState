@@ -1,0 +1,43 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/SpinAttackState.h' l='27' ll='62'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/hero/SpinAttackState.h' l='24'>/**
+ * \brief The state &quot;spin attack&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero15SpinAttackStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState21can_sword_hit_crystalEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState21is_cutting_with_swordERNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState23get_sword_damage_factorEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState21is_separator_obstacleERKNS_9SeparatorE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<mbr r='Solarus::Hero::SpinAttackState::being_pushed' o='328' t='bool'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState21can_sword_hit_crystalEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState21is_cutting_with_swordERNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState23get_sword_damage_factorEv'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Hero15SpinAttackState21is_separator_obstacleERKNS_9SeparatorE'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

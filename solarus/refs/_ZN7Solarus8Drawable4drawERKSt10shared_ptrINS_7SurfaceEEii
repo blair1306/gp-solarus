@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='72' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface, int x, int y)'/>
+<def f='codebrowser/src/Drawable.cpp' l='222' ll='225' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface, int x, int y)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='216'>/**
+ * \brief Draws this object, applying dynamic effects.
+ * \param dst_surface the destination surface
+ * \param x x coordinate of where to draw
+ * \param y y coordinate of where to draw
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='643' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEii'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='225' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='231' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='234' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='118' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='140' u='c' c='_ZN7Solarus10LuaContext17drawable_api_drawEP9lua_State'/>

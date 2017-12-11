@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='133' type='void Solarus::HeroSprites::set_lifted_item(const std::shared_ptr&lt;CarriedObject&gt; &amp; lifted_item)'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='52' u='c' c='_ZN7Solarus4Hero13CarryingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='67' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1641' ll='1645' type='void Solarus::HeroSprites::set_lifted_item(const std::shared_ptr&lt;CarriedObject&gt; &amp; lifted_item)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1631'>/**
+ * \brief Indicates a lifted item to display with the hero&apos;s sprites.
+ *
+ * Calling this function makes this class display the lifted item and
+ * give it the appropriate animation, so that you don&apos;t have to make it yourself.
+ * However, this class only handles displaying:
+ * you still have to update it and make it follow the hero.
+ *
+ * \param lifted_item the item to display, or nullptr to stop displaying a lifted item
+ */</doc>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='77' u='c' c='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='106' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='111' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='58' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='74' u='c' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='94' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='139' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='143' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>

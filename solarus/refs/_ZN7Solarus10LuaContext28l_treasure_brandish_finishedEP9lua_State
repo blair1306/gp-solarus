@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1310' type='static int Solarus::LuaContext::l_treasure_brandish_finished(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2490' u='r' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2516' ll='2556' type='static int Solarus::LuaContext::l_treasure_brandish_finished(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2507'>/**
+ * \brief Callback function executed after the animation of brandishing
+ * a treasure.
+ *
+ * Upvalues: item, variant, savegame variable, callback/nil.
+ *
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='51' type='void Solarus::Settings::set_boolean(const std::string &amp; key, bool value)'/>
+<use f='codebrowser/gui/src/settings.cpp' l='69' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<use f='codebrowser/gui/src/settings.cpp' l='93' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<def f='codebrowser/src/Settings.cpp' l='122' ll='125' type='void Solarus::Settings::set_boolean(const std::string &amp; key, bool value)'/>
+<use f='codebrowser/src/Settings.cpp' l='292' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='299' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<doc f='codebrowser/src/Settings.cpp' l='117'>/**
+ * \brief Sets an boolean value.
+ * \param key Key of the value to set.
+ * \param value The new value.
+ */</doc>

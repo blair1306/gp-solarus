@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_surface.h' l='224' type='int SDL_SetColorKey(SDL_Surface * surface, int flag, Uint32 key)'/>
+<doc f='include/SDL2/SDL_surface.h' l='213'>/**
+ *  \brief Sets the color key (transparent pixel) in a blittable surface.
+ *
+ *  \param surface The surface to update
+ *  \param flag Non-zero to enable colorkey and 0 to disable colorkey
+ *  \param key The transparent pixel in the native surface format
+ *
+ *  \return 0 on success, or -1 if the surface is not valid
+ *
+ *  You can pass SDL_RLEACCEL to enable RLE accelerated blits.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='73' type='static bool Solarus::Video::is_cursor_visible()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='464' ll='466' type='static bool Solarus::Video::is_cursor_visible()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='460'>/**
+ * \brief Returns whether the mouse cursor is currently visible.
+ * \return true if the mouse cursor is currently visible.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='217' u='c' c='_ZN7Solarus10LuaContext27video_api_is_cursor_visibleEP9lua_State'/>

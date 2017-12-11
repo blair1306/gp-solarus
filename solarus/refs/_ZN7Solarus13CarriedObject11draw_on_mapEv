@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='76' type='void Solarus::CarriedObject::draw_on_map()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='357' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='443' ll='455' type='void Solarus::CarriedObject::draw_on_map()'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='437'>/**
+ * \brief Draws the carried object on the map.
+ *
+ * This is a redefinition of Entity::draw_on_map()
+ * to draw the shadow independently of the item movement.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='900' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>

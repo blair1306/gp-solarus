@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='91' type='Solarus::EquipmentItem &amp; Solarus::Equipment::get_item(const std::string &amp; item_name)'/>
+<def f='codebrowser/src/Equipment.cpp' l='426' ll='432' type='Solarus::EquipmentItem &amp; Solarus::Equipment::get_item(const std::string &amp; item_name)'/>
+<use f='codebrowser/src/Equipment.cpp' l='465' u='c' c='_ZN7Solarus9Equipment17get_item_assignedEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='421'>/**
+ * \brief Returns an equipment item.
+ * \param item_name Name of the item to get.
+ * \return The corresponding item.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='60' u='c' c='_ZNK7Solarus8Treasure13is_obtainableEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='106' u='c' c='_ZNK7Solarus8Treasure8get_itemEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='211' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='622' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='243' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='319' u='c' c='_ZN7Solarus3Npc28call_script_hero_interactionEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='338' u='c' c='_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='235' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1176' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1197' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1201' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='638' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1079' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

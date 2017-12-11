@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='70' type='Solarus::Rectangle Solarus::Camera::apply_map_bounds(const Solarus::Rectangle &amp; area) const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='131' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='404' ll='428' type='Solarus::Rectangle Solarus::Camera::apply_map_bounds(const Solarus::Rectangle &amp; area) const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='545' u='c' c='_ZNK7Solarus6Camera31apply_separators_and_map_boundsERKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='397'>/**
+ * \brief Ensures that a rectangle does not cross map limits.
+ * \param area The rectangle to check. Is should not be entirely inside the map.
+ * It can be bigger than the map: in such a case, the resulting rectangle cannot
+ * avoid to cross map limits, and it will be centered.
+ * \return A rectangle corresponding to the first one but stopping on map limits.
+ */</doc>

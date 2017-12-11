@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/HookshotState.h' l='57' type='void Solarus::Hero::HookshotState::finish_movement()'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='192' u='c' c='_ZN7Solarus4Hero13HookshotState23notify_obstacle_reachedEv'/>
+<def f='codebrowser/src/hero/HookshotState.cpp' l='201' ll='230' type='void Solarus::Hero::HookshotState::finish_movement()'/>
+<doc f='codebrowser/src/hero/HookshotState.cpp' l='195'>/**
+ * \brief Returns control to the hero after its hookshot movement.
+ *
+ * This function is called when the hero has finished the hookshot movement.
+ * It checks the validity of the destination position.
+ */</doc>

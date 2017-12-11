@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='362' type='void Solarus::LuaContext::map_on_obtaining_treasure(Solarus::Map &amp; map, const Solarus::Treasure &amp; treasure)'/>
+<use f='codebrowser/src/Treasure.cpp' l='186' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2370' ll='2379' type='void Solarus::LuaContext::map_on_obtaining_treasure(Solarus::Map &amp; map, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2362'>/**
+ * \brief Calls the on_obtaining_treasure() method of a Lua map.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param map A map.
+ * \param treasure A treasure the hero is about to obtain on that map.
+ */</doc>

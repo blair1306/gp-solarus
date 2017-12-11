@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='97' type='bool Solarus::Quadtree::Node::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='327' ll='361' type='bool Solarus::Quadtree::Node::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='318'>/**
+ * \brief Adds an element to this node if its bounding box intersects it.
+ *
+ * Splits the node if necessary when the threshold is exceeded.
+ *
+ * \param element The element to add.
+ * \param bounding_box Bounding box of the element.
+ * \return \c true in case of success.
+ */</doc>

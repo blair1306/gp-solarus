@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_video.h' l='532' type='void SDL_SetWindowSize(SDL_Window * window, int w, int h)'/>
+<doc f='include/SDL2/SDL_video.h' l='520'>/**
+ *  \brief Set the size of a window&apos;s client area.
+ *
+ *  \param window   The window to resize.
+ *  \param w        The width of the window, must be &gt;0
+ *  \param h        The height of the window, must be &gt;0
+ *
+ *  \note You can&apos;t change the size of a fullscreen window, it automatically
+ *        matches the size of the display mode.
+ *
+ *  \sa SDL_GetWindowSize()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='857' u='c' c='_ZN7Solarus5Video15set_window_sizeERKNS_4SizeE'/>

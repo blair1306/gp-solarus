@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='48' type='std::string Solarus::PathFinding::compute_path()'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='72' ll='98' type='std::string Solarus::PathFinding::compute_path()'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='67'>/**
+ * \brief Tries to find a path between the source point and the target point.
+ * \return the path found, or an empty string if no path was found
+ * (because there is no path or the target is too far)
+ */</doc>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='84' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='44' u='c' c='_ZN12_GLOBAL__N_117test_path_to_heroERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

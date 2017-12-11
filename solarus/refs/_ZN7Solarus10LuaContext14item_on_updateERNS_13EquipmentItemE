@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='319' type='void Solarus::LuaContext::item_on_update(Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='289' u='c' c='_ZN7Solarus13EquipmentItem6updateEv'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='802' ll='814' type='void Solarus::LuaContext::item_on_update(Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='795'>/**
+ * \brief Calls the on_update() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ */</doc>

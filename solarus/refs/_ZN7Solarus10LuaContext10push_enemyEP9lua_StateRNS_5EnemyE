@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1118' type='static void Solarus::LuaContext::push_enemy(lua_State * l, Solarus::Enemy &amp; enemy)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4381' ll='4383' type='static void Solarus::LuaContext::push_enemy(lua_State * l, Solarus::Enemy &amp; enemy)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6434' u='c' c='_ZN7Solarus10LuaContext18enemy_on_restartedERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6459' u='c' c='_ZN7Solarus10LuaContext24enemy_on_collision_enemyERNS_5EnemyES2_RNS_6SpriteES4_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6480' u='c' c='_ZN7Solarus10LuaContext31enemy_on_custom_attack_receivedERNS_5EnemyENS_11EnemyAttackEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6499' u='c' c='_ZN7Solarus10LuaContext22enemy_on_hurt_by_swordERNS_5EnemyERNS_4HeroERNS_6SpriteE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6515' u='c' c='_ZN7Solarus10LuaContext13enemy_on_hurtERNS_5EnemyENS_11EnemyAttackE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6532' u='c' c='_ZN7Solarus10LuaContext14enemy_on_dyingERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6553' u='c' c='_ZN7Solarus10LuaContext13enemy_on_deadERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6567' u='c' c='_ZN7Solarus10LuaContext20enemy_on_immobilizedERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6591' u='c' c='_ZN7Solarus10LuaContext23enemy_on_attacking_heroERNS_5EnemyERNS_4HeroEPNS_6SpriteE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4376'>/**
+ * \brief Pushes an enemy userdata onto the stack.
+ * \param l A Lua context.
+ * \param enemy An enemy.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='346' u='c' c='_ZN7Solarus10LuaContext9run_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2755' u='c' c='_ZN7Solarus10LuaContext18on_collision_enemyERNS_5EnemyERNS_6SpriteES4_'/>

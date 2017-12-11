@@ -1,0 +1,16 @@
+<dec f='include/physfs.h' l='1906' type='int PHYSFS_writeSBE64(PHYSFS_File * file, PHYSFS_sint64 val)'/>
+<doc f='include/physfs.h' l='1891'>/**
+ * \fn int PHYSFS_writeSBE64(PHYSFS_File *file, PHYSFS_sint64 val)
+ * \brief Convert and write a signed 64-bit bigending value.
+ *
+ * Convenience function. Convert a signed 64-bit value from the platform&apos;s
+ *  native byte order to bigendian and write it to a file.
+ *
+ *    \param file PhysicsFS file handle to which to write.
+ *    \param val Value to convert and write.
+ *   \return zero on failure, non-zero on success. On failure, you can
+ *           find out what went wrong from PHYSFS_getLastError().
+ *
+ * \warning Remember, PHYSFS_uint64 is only 32 bits on platforms without
+ *          any sort of 64-bit support.
+ */</doc>

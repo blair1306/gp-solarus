@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='104' type='void Solarus::Surface::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='571' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='616' u='c' c='_ZN7Solarus7Surface8raw_drawERS0_RKNS_5PointE'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='103' c='_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='625' ll='721' type='void Solarus::Surface::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='656' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='619'>/**
+ * \brief Draws a subrectangle of this surface on another surface.
+ * \param region The subrectangle to draw in this object.
+ * \param dst_surface The destination surface.
+ * \param dst_position Coordinates on the destination surface.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='560' u='c' c='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>

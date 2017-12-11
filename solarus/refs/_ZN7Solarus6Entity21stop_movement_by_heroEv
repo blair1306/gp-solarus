@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='329' type='void Solarus::Entity::stop_movement_by_hero()'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='293' c='_ZN7Solarus5Block21stop_movement_by_heroEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3276' ll='3277' type='void Solarus::Entity::stop_movement_by_hero()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3269'>/**
+ * \brief This function is called when the player finishes to push or pull
+ * this entity.
+ *
+ * By default, nothing happens.
+ * Redefine your function in the subclasses to make something happen with the entity.
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='197' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='203' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='162' type='Solarus::Point Solarus::Entity::get_top_left_xy() const'/>
+<use f='codebrowser/src/Map.cpp' l='1184' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1289' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='752' ll='754' type='Solarus::Point Solarus::Entity::get_top_left_xy() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='748'>/**
+ * \brief Returns the position of the entity&apos;s top-left corner.
+ * \return The position of the entity&apos;s top-left corner.
+ */</doc>
+<use f='codebrowser/src/entities/Tile.cpp' l='68' u='c' c='_ZN7Solarus4Tile11draw_on_mapEv'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='151' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='165' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

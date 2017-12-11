@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='73' type='const QPixmap &amp; SolarusGui::QuestsModel::get_quest_default_logo() const'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='200' ll='205' type='const QPixmap &amp; SolarusGui::QuestsModel::get_quest_default_logo() const'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='215' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='221' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='196'>/**
+ * @brief Returns the default logo for a quest.
+ * @return The default logo
+ */</doc>
+<use f='codebrowser/gui/src/quests_view.cpp' l='139' u='c' c='_ZNK10SolarusGui10QuestsView17get_selected_logoEv'/>

@@ -1,0 +1,28 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/PullingState.h' l='30' ll='66'/>
+<size>72</size>
+<doc f='codebrowser/include/solarus/hero/PullingState.h' l='27'>/**
+ * \brief The state &quot;Pulling&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero12PullingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero12PullingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12PullingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<fun r='_ZN7Solarus4Hero12PullingState31notify_grabbed_entity_collisionEv'/>
+<fun r='_ZN7Solarus4Hero12PullingState24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus4Hero12PullingState23notify_position_changedEv'/>
+<fun r='_ZN7Solarus4Hero12PullingState23notify_obstacle_reachedEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState22is_grabbing_or_pullingEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState24is_moving_grabbed_entityEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState25is_shallow_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PullingState18is_stream_obstacleERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero12PullingState21is_separator_obstacleERKNS_9SeparatorE'/>
+<fun r='_ZNK7Solarus4Hero12PullingState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero12PullingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<mbr r='Solarus::Hero::PullingState::pulled_entity' o='384' t='Solarus::Entity *'/>
+<mbr r='Solarus::Hero::PullingState::pulling_movement' o='448' t='std::shared_ptr&lt;PathMovement&gt;'/>

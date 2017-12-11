@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='63' type='void Solarus::Door::Door(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name, const std::string &amp; savegame_variable)'/>
+<def f='codebrowser/src/entities/Door.cpp' l='68' ll='99' type='void Solarus::Door::Door(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name, const std::string &amp; savegame_variable)'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='51'>/**
+ * \brief Creates a door.
+ * \param game The game.
+ * \param name Name identifying this entity.
+ * \param layer Layer of the entity to create.
+ * \param xy Coordinates of the entity to create.
+ * \param direction Direction of the door.
+ * \param sprite_name Name of the animation set of the
+ * sprite to create for the door.
+ * The sprite must have an animation \c &quot;closed&quot;, that will be shown while
+ * the door is closed. Optionally, they sprite can also have animations
+ * \c &quot;opening&quot; and \c &quot;closing&quot;, that will be shown (if they exist)
+ * while the door is being opened or closed, respectively.
+ * If they don&apos;t exist, the door will get opened or closed instantly.
+ * \param savegame_variable Boolean variable where the door&apos;s state is saved
+ * (an empty string lets the door unsaved).
+ */</doc>

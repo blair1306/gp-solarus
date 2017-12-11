@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='65' type='void Solarus::CarriedObject::set_animation_walking()'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='163' ll='169' type='void Solarus::CarriedObject::set_animation_walking()'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='157'>/**
+ * \brief Makes the item sprite move.
+ *
+ * This function is called when the hero starts walking while carrying the item.
+ * The item moves like him.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1187' u='c' c='_ZN7Solarus11HeroSprites30set_animation_walking_carryingEv'/>

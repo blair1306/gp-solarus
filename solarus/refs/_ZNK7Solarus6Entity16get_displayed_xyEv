@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='144' type='Solarus::Point Solarus::Entity::get_displayed_xy() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='802' ll='809' type='Solarus::Point Solarus::Entity::get_displayed_xy() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3467' u='c' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='793'>/**
+ * \brief Returns the coordinates where this entity should be drawn.
+ *
+ * Most of the time, this function just returns get_xy().
+ * But when the entity is moving, the movement may decide to display the
+ * entity at a different position.
+ *
+ * \return the coordinates of the entity on the map
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='499' u='c' c='_ZNK7Solarus4Hero17is_shadow_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='873' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='115' u='c' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>

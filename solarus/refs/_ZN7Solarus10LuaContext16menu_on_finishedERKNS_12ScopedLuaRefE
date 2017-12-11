@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='281' type='void Solarus::LuaContext::menu_on_finished(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='113' u='c' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='138' u='c' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='222' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='297' ll='304' type='void Solarus::LuaContext::menu_on_finished(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='293'>/**
+ * \brief Calls the on_finished() method of a Lua menu.
+ * \param menu_ref A reference to the menu object.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='121' type='bool Solarus::Enemy::get_can_hurt_hero_running() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='588' ll='590' type='bool Solarus::Enemy::get_can_hurt_hero_running() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='584'>/**
+ * \brief Returns whether this enemy can hurt the hero even if the hero is running.
+ * \return true if this enemy can attack the hero while he is running
+ */</doc>
+<use f='codebrowser/src/hero/RunningState.cpp' l='253' u='c' c='_ZNK7Solarus4Hero12RunningState11can_be_hurtEPNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4572' u='c' c='_ZN7Solarus10LuaContext35enemy_api_get_can_hurt_hero_runningEP9lua_State'/>

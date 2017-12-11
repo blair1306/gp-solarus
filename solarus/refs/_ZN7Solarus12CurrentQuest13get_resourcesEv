@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='44' type='Solarus::QuestResources &amp; Solarus::CurrentQuest::get_resources()'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='43' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='85' u='c' c='_ZN7Solarus12CurrentQuest4quitEv'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='117' ll='123' type='Solarus::QuestResources &amp; Solarus::CurrentQuest::get_resources()'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='134' u='c' c='_ZN7Solarus12CurrentQuest15resource_existsENS_12ResourceTypeERKSs'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='146' u='c' c='_ZN7Solarus12CurrentQuest13get_resourcesENS_12ResourceTypeE'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='113'>/**
+ * \brief Returns the resource list of the current quest.
+ * \return The current quest resource list.
+ */</doc>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='97' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='98' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='68' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='67' u='c' c='main'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='975' type='static int Solarus::LuaContext::enemy_api_get_can_hurt_hero_running(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='455' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4567' ll='4575' type='static int Solarus::LuaContext::enemy_api_get_can_hurt_hero_running(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4562'>/**
+ * \brief Implementation of enemy:get_can_hurt_hero_running().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

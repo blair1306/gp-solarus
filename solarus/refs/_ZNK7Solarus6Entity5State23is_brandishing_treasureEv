@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='128' type='bool Solarus::Entity::State::is_brandishing_treasure() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='981' ll='983' type='bool Solarus::Entity::State::is_brandishing_treasure() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='974'>/**
+ * \brief Returns whether the entity is brandishing a treasure in this state.
+ *
+ * Returns false by default.
+ *
+ * \return \c true if the entity is brandishing a treasure.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2335' u='c' c='_ZNK7Solarus4Hero23is_brandishing_treasureEv'/>
+<ovr f='codebrowser/src/hero/TreasureState.cpp' l='134' c='_ZNK7Solarus4Hero13TreasureState23is_brandishing_treasureEv'/>

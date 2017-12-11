@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='82' type='const Solarus::HeroSprites &amp; Solarus::Hero::get_hero_sprites() const'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='76'>/**
+     * \name Sprites.
+     *
+     * Functions relative to the sprites.
+     * The sprites are managed and drawn by the class HeroSprites.
+     */</doc>
+<def f='codebrowser/src/entities/Hero.cpp' l='433' ll='435' type='const Solarus::HeroSprites &amp; Solarus::Hero::get_hero_sprites() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='429'>/**
+ * \brief Returns the sprites currently representing the hero.
+ * \return the sprites
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='56' u='c' c='_ZNK7Solarus9HeroState11get_spritesEv'/>

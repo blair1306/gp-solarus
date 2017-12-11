@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='69' type='QStringList SolarusGui::QuestsModel::get_paths() const'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='173' ll='180' type='QStringList SolarusGui::QuestsModel::get_paths() const'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='169'>/**
+ * @brief Returns the list of quests paths in the model.
+ * @return The quests paths.
+ */</doc>
+<use f='codebrowser/gui/src/quests_view.cpp' l='73' u='c' c='_ZNK10SolarusGui10QuestsView9get_pathsEv'/>

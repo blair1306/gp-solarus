@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='74' type='int Solarus::Block::get_maximum_moves() const'/>
+<def f='codebrowser/src/entities/Block.cpp' l='386' ll='388' type='int Solarus::Block::get_maximum_moves() const'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='377'>/**
+ * \brief Returns the initial maximum moves of this block.
+ *
+ * This value is the one passed to the constructor or to set_maximum_moves,
+ * no matter if the block was already moved or not.
+ *
+ * \return How many times the block can be moved
+ * (0: none, 1: once, 2: infinite).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3278' u='c' c='_ZN7Solarus10LuaContext27block_api_get_maximum_movesEP9lua_State'/>

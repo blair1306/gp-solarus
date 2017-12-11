@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='56' type='void Solarus::CircleMovement::set_radius(int radius)'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='63' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1450' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_radiusEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='102' ll='123' type='void Solarus::CircleMovement::set_radius(int radius)'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='157' u='c' c='_ZN7Solarus14CircleMovement16set_radius_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='346' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='476' u='c' c='_ZN7Solarus14CircleMovement4stopEv'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='98'>/**
+ * \brief Sets the radius of the circles.
+ * \param radius The radius in pixels.
+ */</doc>

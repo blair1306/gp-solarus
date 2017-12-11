@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Ground.h' l='48' type='10'/>
+<doc f='codebrowser/include/solarus/entities/Ground.h' l='48'>/**&lt; The lower-left half of the entity is an obstacle
+                            * and the rest is deep water. */</doc>
+<use f='codebrowser/src/Map.cpp' l='827' c='_ZNK7Solarus3Map26test_collision_with_groundEiiiRKNS_6EntityERb'/>
+<use f='codebrowser/src/Map.cpp' l='1226' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='638' c='_ZNK7Solarus12CustomEntity19can_traverse_groundENS_6GroundE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='891' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2400' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='35' u='r'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='62' c='_ZN7Solarus10GroundInfo18is_ground_diagonalENS_6GroundE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1290' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2729' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>

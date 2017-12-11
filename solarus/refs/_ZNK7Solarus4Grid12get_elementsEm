@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='50' type='const std::vector&lt;T&gt; &amp; Solarus::Grid::get_elements(size_t cell_index) const'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='144' ll='151' type='const std::vector&lt;T&gt; &amp; Solarus::Grid::get_elements(size_t cell_index) const'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='139'>/**
+ * \brief Returns all elements in the specified cell.
+ * \param cell_index Index of a cell in the grid.
+ * \return The elements in this cell.
+ */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='247' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>

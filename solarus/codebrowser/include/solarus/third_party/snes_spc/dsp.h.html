@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>dsp.h source code [codebrowser/include/solarus/third_party/snes_spc/dsp.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/dsp.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='dsp.h.html'>dsp.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* SNES SPC-700 DSP emulator C interface (also usable from C++) */</i></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><i>/* snes_spc 0.9.0 */</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/DSP_H">DSP_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/DSP_H" data-ref="_M/DSP_H">DSP_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td>	<b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>typedef</b> <b>struct</b> <a class="type" href="SPC_DSP.h.html#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP" id="SPC_DSP"><a class="type" href="SPC_DSP.h.html#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a></a> <dfn class="typedef" id="SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</dfn>;</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><i>/* Creates new DSP emulator. NULL if out of memory. */</i></td></tr>
+<tr><th id="16">16</th><td><a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>* <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_new" title='spc_dsp_new' data-ref="spc_dsp_new" id="spc_dsp_new">spc_dsp_new</a>( <em>void</em> );</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><i>/* Frees DSP emulator */</i></td></tr>
+<tr><th id="19">19</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_delete" title='spc_dsp_delete' data-ref="spc_dsp_delete" id="spc_dsp_delete">spc_dsp_delete</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>* );</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* Initializes DSP and has it use the 64K RAM provided */</i></td></tr>
+<tr><th id="22">22</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_init" title='spc_dsp_init' data-ref="spc_dsp_init" id="spc_dsp_init">spc_dsp_init</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>void</em>* <dfn class="local col1 decl" id="1ram_64k" title='ram_64k' data-type='void *' data-ref="1ram_64k">ram_64k</dfn> );</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i>/* Sets destination for output samples. If out is NULL or out_size is 0,</i></td></tr>
+<tr><th id="25">25</th><td><i>doesn't generate any. */</i></td></tr>
+<tr><th id="26">26</th><td><b>typedef</b> <em>short</em> <dfn class="typedef" id="spc_dsp_sample_t" title='spc_dsp_sample_t' data-type='short' data-ref="spc_dsp_sample_t">spc_dsp_sample_t</dfn>;</td></tr>
+<tr><th id="27">27</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_set_output" title='spc_dsp_set_output' data-ref="spc_dsp_set_output" id="spc_dsp_set_output">spc_dsp_set_output</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <a class="typedef" href="#spc_dsp_sample_t" title='spc_dsp_sample_t' data-type='short' data-ref="spc_dsp_sample_t">spc_dsp_sample_t</a>* <dfn class="local col2 decl" id="2out" title='out' data-type='spc_dsp_sample_t *' data-ref="2out">out</dfn>, <em>int</em> <dfn class="local col3 decl" id="3out_size" title='out_size' data-type='int' data-ref="3out_size">out_size</dfn> );</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i>/* Number of samples written to output since it was last set, always</i></td></tr>
+<tr><th id="30">30</th><td><i>a multiple of 2. Undefined if more samples were generated than</i></td></tr>
+<tr><th id="31">31</th><td><i>output buffer could hold. */</i></td></tr>
+<tr><th id="32">32</th><td><em>int</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_sample_count" title='spc_dsp_sample_count' data-ref="spc_dsp_sample_count" id="spc_dsp_sample_count">spc_dsp_sample_count</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a> <em>const</em>* );</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i>/**** Emulation *****/</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/* Resets DSP to power-on state */</i></td></tr>
+<tr><th id="38">38</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_reset" title='spc_dsp_reset' data-ref="spc_dsp_reset" id="spc_dsp_reset">spc_dsp_reset</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>* );</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i>/* Emulates pressing reset switch on SNES */</i></td></tr>
+<tr><th id="41">41</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_soft_reset" title='spc_dsp_soft_reset' data-ref="spc_dsp_soft_reset" id="spc_dsp_soft_reset">spc_dsp_soft_reset</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>* );</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/* Reads/writes DSP registers. For accuracy, you must first call spc_dsp_run() */</i></td></tr>
+<tr><th id="44">44</th><td><i>/* to catch the DSP up to present. */</i></td></tr>
+<tr><th id="45">45</th><td><em>int</em>  <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_read" title='spc_dsp_read' data-ref="spc_dsp_read" id="spc_dsp_read">spc_dsp_read</a> ( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a> <em>const</em>*, <em>int</em> <dfn class="local col4 decl" id="4addr" title='addr' data-type='int' data-ref="4addr">addr</dfn> );</td></tr>
+<tr><th id="46">46</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_write" title='spc_dsp_write' data-ref="spc_dsp_write" id="spc_dsp_write">spc_dsp_write</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>int</em> <dfn class="local col5 decl" id="5addr" title='addr' data-type='int' data-ref="5addr">addr</dfn>, <em>int</em> <dfn class="local col6 decl" id="6data" title='data' data-type='int' data-ref="6data">data</dfn> );</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i>/* Runs DSP for specified number of clocks (~1024000 per second). Every 32 clocks */</i></td></tr>
+<tr><th id="49">49</th><td><i>/* a pair of samples is be generated. */</i></td></tr>
+<tr><th id="50">50</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_run" title='spc_dsp_run' data-ref="spc_dsp_run" id="spc_dsp_run">spc_dsp_run</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>int</em> <dfn class="local col7 decl" id="7clock_count" title='clock_count' data-type='int' data-ref="7clock_count">clock_count</dfn> );</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i>/**** Sound control *****/</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><i>/* Mutes voices corresponding to non-zero bits in mask. Reduces emulation accuracy. */</i></td></tr>
+<tr><th id="56">56</th><td><b>enum</b> { <dfn class="enum" id="::spc_dsp_voice_count" title='::spc_dsp_voice_count' data-ref="::spc_dsp_voice_count">spc_dsp_voice_count</dfn> = <var>8</var> };</td></tr>
+<tr><th id="57">57</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_mute_voices" title='spc_dsp_mute_voices' data-ref="spc_dsp_mute_voices" id="spc_dsp_mute_voices">spc_dsp_mute_voices</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>int</em> <dfn class="local col8 decl" id="8mask" title='mask' data-type='int' data-ref="8mask">mask</dfn> );</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/* If true, prevents channels and global volumes from being phase-negated.</i></td></tr>
+<tr><th id="60">60</th><td><i>Only supported by fast DSP; has no effect on accurate DSP. */</i></td></tr>
+<tr><th id="61">61</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_disable_surround" title='spc_dsp_disable_surround' data-ref="spc_dsp_disable_surround" id="spc_dsp_disable_surround">spc_dsp_disable_surround</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>int</em> <dfn class="local col9 decl" id="9disable" title='disable' data-type='int' data-ref="9disable">disable</dfn> );</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/**** State save/load *****/</i></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i>/* Resets DSP and uses supplied values to initialize registers */</i></td></tr>
+<tr><th id="67">67</th><td><b>enum</b> { <dfn class="enum" id="::spc_dsp_register_count" title='::spc_dsp_register_count' data-ref="::spc_dsp_register_count">spc_dsp_register_count</dfn> = <var>128</var> };</td></tr>
+<tr><th id="68">68</th><td><em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/dsp.cpp.html#spc_dsp_load" title='spc_dsp_load' data-ref="spc_dsp_load" id="spc_dsp_load">spc_dsp_load</a>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>unsigned</em> <em>char</em> <em>const</em> <dfn class="local col0 decl" id="10regs" title='regs' data-type='const unsigned char *' data-ref="10regs">regs</dfn> [<a class="enum" href="#::spc_dsp_register_count" title='::spc_dsp_register_count' data-ref="::spc_dsp_register_count">spc_dsp_register_count</a>] );</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i>/* Saves/loads exact emulator state (accurate DSP only) */</i></td></tr>
+<tr><th id="71">71</th><td><b>enum</b> { <dfn class="enum" id="::spc_dsp_state_size" title='::spc_dsp_state_size' data-ref="::spc_dsp_state_size">spc_dsp_state_size</dfn> = <var>640</var> }; <i>/* maximum space needed when saving */</i></td></tr>
+<tr><th id="72">72</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="spc_dsp_copy_func_t" title='spc_dsp_copy_func_t' data-type='void (*)(unsigned char **, void *, size_t)' data-ref="spc_dsp_copy_func_t">spc_dsp_copy_func_t</dfn>)( <em>unsigned</em> <em>char</em>** <dfn class="local col1 decl" id="11io" title='io' data-type='unsigned char **' data-ref="11io">io</dfn>, <em>void</em>* <dfn class="local col2 decl" id="12state" title='state' data-type='void *' data-ref="12state">state</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> );</td></tr>
+<tr><th id="73">73</th><td><em>void</em> <dfn class="decl" id="spc_dsp_copy_state" title='spc_dsp_copy_state' data-ref="spc_dsp_copy_state">spc_dsp_copy_state</dfn>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>*, <em>unsigned</em> <em>char</em>** <dfn class="local col3 decl" id="13io" title='io' data-type='unsigned char **' data-ref="13io">io</dfn>, <a class="typedef" href="#spc_dsp_copy_func_t" title='spc_dsp_copy_func_t' data-type='void (*)(unsigned char **, void *, size_t)' data-ref="spc_dsp_copy_func_t">spc_dsp_copy_func_t</a> );</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i>/* Returns non-zero if new key-on events occurred since last call (accurate DSP only) */</i></td></tr>
+<tr><th id="76">76</th><td><em>int</em> <dfn class="decl" id="spc_dsp_check_kon" title='spc_dsp_check_kon' data-ref="spc_dsp_check_kon">spc_dsp_check_kon</dfn>( <a class="typedef" href="#SPC_DSP" title='SPC_DSP' data-type='struct SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>* );</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="79">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="80">80</th><td>	}</td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="79">endif</span></u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/dsp.cpp.html'>codebrowser/src/third_party/snes_spc/dsp.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

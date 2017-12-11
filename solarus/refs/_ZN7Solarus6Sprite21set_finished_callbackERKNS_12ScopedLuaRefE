@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='120' type='void Solarus::Sprite::set_finished_callback(const Solarus::ScopedLuaRef &amp; finished_callback_ref)'/>
+<use f='codebrowser/src/Sprite.cpp' l='294' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/Sprite.cpp' l='906' ll='913' type='void Solarus::Sprite::set_finished_callback(const Solarus::ScopedLuaRef &amp; finished_callback_ref)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='901'>/**
+ * \brief Sets what to do when the current animation finishes.
+ * \param finished_callback_ref A Lua ref to a function or string
+ * (the name of an animation), or an empty ref.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='195' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

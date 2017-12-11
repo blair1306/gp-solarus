@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='49' type='void Solarus::Settings::set_string(const std::string &amp; key, const std::string &amp; value)'/>
+<use f='codebrowser/gui/src/settings.cpp' l='63' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<use f='codebrowser/gui/src/settings.cpp' l='87' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<def f='codebrowser/src/Settings.cpp' l='102' ll='105' type='void Solarus::Settings::set_string(const std::string &amp; key, const std::string &amp; value)'/>
+<use f='codebrowser/src/Settings.cpp' l='291' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='303' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<doc f='codebrowser/src/Settings.cpp' l='97'>/**
+ * \brief Sets a string value.
+ * \param key Key of the value to set.
+ * \param value The new value.
+ */</doc>

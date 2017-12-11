@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='160' type='bool Solarus::LuaTools::check_boolean(lua_State * l, int index)'/>
+<doc f='codebrowser/include/solarus/lua/LuaTools.h' l='159'>// bool</doc>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='586' ll='597' type='bool Solarus::LuaTools::check_boolean(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='639' u='c' c='_ZN7Solarus8LuaTools11opt_booleanEP9lua_Stateib'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='577'>/**
+ * \brief Checks that a value is a boolean and returns it.
+ *
+ * This function throws a LuaException in case of error.
+ *
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \return The boolean value.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1809' u='c' c='_ZN7Solarus10LuaContext25map_api_set_crystal_stateEP9lua_State'/>

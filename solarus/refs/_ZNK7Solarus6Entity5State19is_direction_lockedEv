@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='70' type='bool Solarus::Entity::State::is_direction_locked() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='458' ll='460' type='bool Solarus::Entity::State::is_direction_locked() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='447'>/**
+ * \brief Returns whether the animation direction is locked.
+ *
+ * When this function returns false, which is the case most of the time,
+ * it means that the animation direction is set to the movement direction.
+ * When it returns true, it means that the animation direction is fixed
+ * and do not depends on the movement direction anymore (this is the case
+ * when the hero is loading his sword).
+ *
+ * \return true if the animation direction is locked
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1031' u='c' c='_ZNK7Solarus4Hero19is_direction_lockedEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='155' c='_ZNK7Solarus4Hero17SwordLoadingState19is_direction_lockedEv'/>

@@ -1,0 +1,27 @@
+<def f='include/SDL2/SDL_haptic.h' l='628' ll='651'/>
+<size>44</size>
+<doc f='include/SDL2/SDL_haptic.h' l='615'>/**
+ *  \brief A structure containing a template for a Ramp effect.
+ *
+ *  This struct is exclusively for the ::SDL_HAPTIC_RAMP effect.
+ *
+ *  The ramp effect starts at start strength and ends at end strength.
+ *  It augments in linear fashion.  If you use attack and fade with a ramp
+ *  the effects get added to the ramp effect making the effect become
+ *  quadratic instead of linear.
+ *
+ *  \sa SDL_HAPTIC_RAMP
+ *  \sa SDL_HapticEffect
+ */</doc>
+<mbr r='SDL_HapticRamp::type' o='0' t='Uint16'/>
+<mbr r='SDL_HapticRamp::direction' o='32' t='SDL_HapticDirection'/>
+<mbr r='SDL_HapticRamp::length' o='160' t='Uint32'/>
+<mbr r='SDL_HapticRamp::delay' o='192' t='Uint16'/>
+<mbr r='SDL_HapticRamp::button' o='208' t='Uint16'/>
+<mbr r='SDL_HapticRamp::interval' o='224' t='Uint16'/>
+<mbr r='SDL_HapticRamp::start' o='240' t='Sint16'/>
+<mbr r='SDL_HapticRamp::end' o='256' t='Sint16'/>
+<mbr r='SDL_HapticRamp::attack_length' o='272' t='Uint16'/>
+<mbr r='SDL_HapticRamp::attack_level' o='288' t='Uint16'/>
+<mbr r='SDL_HapticRamp::fade_length' o='304' t='Uint16'/>
+<mbr r='SDL_HapticRamp::fade_level' o='320' t='Uint16'/>

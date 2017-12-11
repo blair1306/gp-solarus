@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='123' type='void Solarus::Entities::bring_to_front(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='454' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='672' ll='677' type='void Solarus::Entities::bring_to_front(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='668'>/**
+ * \brief Brings to front an entity in its layer.
+ * \param entity The entity to bring to front.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1355' u='c' c='_ZN7Solarus10LuaContext25entity_api_bring_to_frontEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/TargetMovement.h' l='53' type='void Solarus::TargetMovement::set_target(const EntityPtr &amp; target_entity, const Solarus::Point &amp; xy)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='999' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_targetEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1011' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_targetEP9lua_State'/>
+<def f='codebrowser/src/movements/TargetMovement.cpp' l='92' ll='107' type='void Solarus::TargetMovement::set_target(const EntityPtr &amp; target_entity, const Solarus::Point &amp; xy)'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='132' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>
+<doc f='codebrowser/src/movements/TargetMovement.cpp' l='87'>/**
+ * \brief Changes the target of this movement.
+ * \param target_entity The entity to target or nullptr.
+ * \param xy The target point, or offset in the case of an entity.
+ */</doc>

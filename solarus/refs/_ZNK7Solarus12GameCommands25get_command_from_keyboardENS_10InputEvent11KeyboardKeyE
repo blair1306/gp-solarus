@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='85' type='Solarus::GameCommand Solarus::GameCommands::get_command_from_keyboard(InputEvent::KeyboardKey key) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='197' u='c' c='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='224' u='c' c='_ZN7Solarus12GameCommands21keyboard_key_releasedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='538' u='c' c='_ZN7Solarus12GameCommands20set_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<def f='codebrowser/src/GameCommands.cpp' l='698' ll='707' type='Solarus::GameCommand Solarus::GameCommands::get_command_from_keyboard(InputEvent::KeyboardKey key) const'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='692'>/**
+ * \brief Returns the game command (if any) associated to the specified
+ * keyboard key.
+ * \param key A keyboard key.
+ * \return The game command mapped to that key or GameCommand::NONE.
+ */</doc>

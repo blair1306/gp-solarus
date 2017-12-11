@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='127' type='void Solarus::Entity::notify_map_opening_transition_finished()'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='222' c='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='224' u='c' c='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='724' u='c' c='_ZN7Solarus8Entities38notify_map_opening_transition_finishedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='409' ll='414' type='void Solarus::Entity::notify_map_opening_transition_finished()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='405'>/**
+ * \brief Notifies this entity that the opening transition
+ * of the map is finished.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='702' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='704' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>

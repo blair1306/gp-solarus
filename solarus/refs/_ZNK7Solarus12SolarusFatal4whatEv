@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SolarusFatal.h' l='34' type='const char * Solarus::SolarusFatal::what() const'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='113' u='c' c='_ZN7Solarus8LuaTools25exception_boundary_handleEP9lua_StateOT_'/>
+<inh f='include/c++/4.9/exception' l='68' c='_ZNKSt9exception4whatEv'/>
+<def f='codebrowser/src/SolarusFatal.cpp' l='34' ll='36' type='const char * Solarus::SolarusFatal::what() const'/>
+<doc f='codebrowser/src/SolarusFatal.cpp' l='30'>/**
+ * \brief Returns the error message.
+ * \return A message describing the error.
+ */</doc>

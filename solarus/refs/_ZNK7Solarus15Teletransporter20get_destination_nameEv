@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='61' type='const std::string &amp; Solarus::Teletransporter::get_destination_name() const'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='174' ll='176' type='const std::string &amp; Solarus::Teletransporter::get_destination_name() const'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='167'>/**
+ * \brief Returns the destination description of this teletransporter.
+ * \return Name of a destination entity of the destination map,
+ * or &quot;_same&quot; to keep the hero&apos;s coordinates,
+ * or &quot;_side&quot; to place the hero on the appropriate side of the map.
+ * An empty string means the default destination entity of the map.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2936' u='c' c='_ZN7Solarus10LuaContext40teletransporter_api_get_destination_nameEP9lua_State'/>

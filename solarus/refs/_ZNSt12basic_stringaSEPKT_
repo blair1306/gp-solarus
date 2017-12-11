@@ -1,0 +1,45 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='561' ll='563' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::basic_string::operator=(const _CharT * __s)'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='557'>/**
+       *  @brief  Copy contents of @a s into this string.
+       *  @param  __s  Source null-terminated string.
+       */</doc>
+<use f='codebrowser/src/Arguments.cpp' l='37' u='c' c='_ZN7Solarus9ArgumentsC1EiPPc'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='180' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/DialogResources.cpp' l='258' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/DialogResources.cpp' l='261' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/Game.cpp' l='108' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Settings.cpp' l='124' u='c' c='_ZN7Solarus8Settings11set_booleanERKSsb'/>
+<use f='codebrowser/src/Settings.cpp' l='193' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='225' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/SpriteData.cpp' l='517' u='c' c='_ZN7Solarus10SpriteData16remove_animationERKSs'/>
+<use f='codebrowser/src/Treasure.cpp' l='88' u='c' c='_ZN7Solarus8Treasure17ensure_obtainableEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1102' u='c' c='_ZN7Solarus5Enemy15play_hurt_soundEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1106' u='c' c='_ZN7Solarus5Enemy15play_hurt_soundEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1110' u='c' c='_ZN7Solarus5Enemy15play_hurt_soundEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='210' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='216' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='219' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1599' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1600' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1603' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1604' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='110' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='262' u='c' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='171' u='c' c='_ZN7Solarus10QuestFiles11close_questEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='172' u='c' c='_ZN7Solarus10QuestFiles11close_questEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='173' u='c' c='_ZN7Solarus10QuestFiles11close_questEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='510' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='527' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='219' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='223' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='140' u='c' c='_ZN7Solarus12_GLOBAL__N_113create_windowEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='328' u='c' c='_ZN7Solarus5Video4quitEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1295' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1301' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1314' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1320' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1326' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1332' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1154' u='c' c='_ZN7Solarus10LuaContext19is_solarus_userdataEP9lua_StateiRSs'/>
+<use f='codebrowser/src/main/Main.cpp' l='38' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='70' u='c' c='_ZN7Solarus13PixelMovement14set_trajectoryERKSt4listINS_5PointESaIS2_EE'/>

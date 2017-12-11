@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='75' type='void Solarus::TextSurface::TextSurface(int x, int y, Solarus::TextSurface::HorizontalAlignment horizontal_alignment, Solarus::TextSurface::VerticalAlignment vertical_alignment)'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='62' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='48' u='c' c='_ZN7Solarus11TextSurfaceC1Eii'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='60' ll='78' type='void Solarus::TextSurface::TextSurface(int x, int y, TextSurface::HorizontalAlignment horizontal_alignment, TextSurface::VerticalAlignment vertical_alignment)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='51'>/**
+ * \brief Creates a text to draw with the specified alignment properties.
+ * \param x x position of the text on the destination surface
+ * \param y y position of the text on the destination surface
+ * \param horizontal_alignment horizontal alignment of the text: ALIGN_LEFT,
+ * ALIGN_CENTER or ALIGN_RIGHT
+ * \param vertical_alignment vertical alignment of the text: ALIGN_TOP,
+ * ALIGN_MIDDLE or ALIGN_BOTTOM
+ */</doc>

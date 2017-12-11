@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='130' type='const Solarus::Game &amp; Solarus::Entity::get_game() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='449' ll='452' type='const Solarus::Game &amp; Solarus::Entity::get_game() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='485' u='c' c='_ZNK7Solarus6Entity13get_equipmentEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='517' u='c' c='_ZNK7Solarus6Entity12get_savegameEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='445'>/**
+ * \brief Returns the game that is running the map where this entity is.
+ * \return The game.
+ */</doc>

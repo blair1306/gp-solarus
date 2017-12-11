@@ -1,0 +1,16 @@
+<dec f='include/luajit-2.0/lua.h' l='202' type='int lua_pcall(lua_State * L, int nargs, int nresults, int errfunc)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='293' u='c' c='_ZN7Solarus15DialogResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/EntityData.cpp' l='859' u='c' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='897' u='c' c='_ZN7Solarus7MapData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='140' u='c' c='_ZN7Solarus15QuestProperties15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='241' macro='1' u='c'/>
+<use f='codebrowser/src/QuestResources.cpp' l='244' u='c' c='_ZN7Solarus14QuestResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/Savegame.cpp' l='226' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<use f='codebrowser/src/Settings.cpp' l='167' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/SpriteData.cpp' l='682' u='c' c='_ZN7Solarus10SpriteData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/StringResources.cpp' l='176' u='c' c='_ZN7Solarus15StringResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='616' u='c' c='_ZN7Solarus11TilesetData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='155' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='149' macro='1' u='c'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='160' macro='1' u='c'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='117' u='c' c='_ZN7Solarus8LuaTools13call_functionEP9lua_StateiiPKc'/>

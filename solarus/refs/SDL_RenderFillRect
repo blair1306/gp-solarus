@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='742' type='int SDL_RenderFillRect(SDL_Renderer * renderer, const SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='733'>/**
+ *  \brief Fill a rectangle on the current rendering target with the drawing color.
+ *
+ *  \param renderer The renderer which should fill a rectangle.
+ *  \param rect A pointer to the destination rectangle, or NULL for the entire
+ *              rendering target.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='838' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

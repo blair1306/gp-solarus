@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='231' type='void Solarus::Hero::notify_game_over_finished()'/>
+<use f='codebrowser/src/Game.cpp' l='937' u='c' c='_ZN7Solarus4Game14stop_game_overEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2168' ll='2174' type='void Solarus::Hero::notify_game_over_finished()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2164'>/**
+ * \brief This function is called when the hero was dying but the game-over
+ * sequence was canceled.
+ */</doc>

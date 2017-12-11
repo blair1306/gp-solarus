@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='73' type='void Solarus::CustomEntity::set_traversable_by_entities(Solarus::EntityType type, bool traversable)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='235' ll='242' type='void Solarus::CustomEntity::set_traversable_by_entities(Solarus::EntityType type, bool traversable)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='222'>/**
+ * \brief Sets whether this custom entity can be traversed by other entities
+ * of the specified type.
+ *
+ * This overrides for a specific type whatever was set by
+ * set_traversable_by_entities(bool)
+ * or
+ * set_traversable_by_entities(const ScopedLuaRef&amp;).
+ *
+ * \param type A type of entities.
+ * \param traversable \c true to allow other entities to traverse this custom
+ * entity.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5412' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>

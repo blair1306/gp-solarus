@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='422' type='bool Solarus::Entity::is_prickle_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='148' c='_ZNK7Solarus5Arrow19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='106' c='_ZNK7Solarus4Bomb19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='171' c='_ZNK7Solarus9Boomerang19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='549' c='_ZNK7Solarus13CarriedObject19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='750' c='_ZNK7Solarus12CustomEntity19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='405' c='_ZNK7Solarus5Enemy19is_prickle_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2423' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2544' ll='2546' type='bool Solarus::Entity::is_prickle_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2537'>/**
+ * \brief Returns whether prickles are currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \return true if prickles are currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1453' c='_ZNK7Solarus4Hero19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='128' c='_ZNK7Solarus8Hookshot19is_prickle_obstacleEv'/>

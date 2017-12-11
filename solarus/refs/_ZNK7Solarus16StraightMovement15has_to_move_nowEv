@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='41' type='bool Solarus::StraightMovement::has_to_move_now() const'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='309' ll='315' type='bool Solarus::StraightMovement::has_to_move_now() const'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='301'>/**
+ * \brief Returns true if the object is about to try to move.
+ *
+ * This function returns true if x_move is not equal to zero
+ * and next_move_date_x is past, or the same thing for y.
+ *
+ * \return true if the entity is about to try to move
+ */</doc>

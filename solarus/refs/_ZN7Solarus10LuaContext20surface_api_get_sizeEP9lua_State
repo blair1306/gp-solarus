@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='554' type='static int Solarus::LuaContext::surface_api_get_size(lua_State * )'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='44' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='151' ll='160' type='static int Solarus::LuaContext::surface_api_get_size(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='146'>/**
+ * \brief Implementation of surface:get_size().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

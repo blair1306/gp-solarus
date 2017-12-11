@@ -1,0 +1,11 @@
+<dec f='include/physfs.h' l='1492' type='PHYSFS_uint32 PHYSFS_swapUBE32(PHYSFS_uint32 val)'/>
+<doc f='include/physfs.h' l='1482'>/**
+ * \fn PHYSFS_uint32 PHYSFS_swapUBE32(PHYSFS_uint32 val)
+ * \brief Swap bigendian unsigned 32 to platform&apos;s native byte order.
+ *
+ * Take a 32-bit unsigned value in bigendian format and convert it to
+ *  the platform&apos;s native byte order.
+ *
+ *    \param val value to convert
+ *   \return converted value.
+ */</doc>

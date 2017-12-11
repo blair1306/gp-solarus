@@ -1,0 +1,21 @@
+<def f='include/libmodplug/sndfile.h' l='304' ll='321'/>
+<size>72</size>
+<doc f='include/libmodplug/sndfile.h' l='303'>// Sample Struct</doc>
+<mbr r='_MODINSTRUMENT::nLength' o='0' t='UINT'/>
+<mbr r='_MODINSTRUMENT::nLoopStart' o='32' t='UINT'/>
+<mbr r='_MODINSTRUMENT::nLoopEnd' o='64' t='UINT'/>
+<mbr r='_MODINSTRUMENT::nSustainStart' o='96' t='UINT'/>
+<mbr r='_MODINSTRUMENT::nSustainEnd' o='128' t='UINT'/>
+<mbr r='_MODINSTRUMENT::pSample' o='192' t='signed char *'/>
+<mbr r='_MODINSTRUMENT::nC4Speed' o='256' t='UINT'/>
+<mbr r='_MODINSTRUMENT::nPan' o='288' t='WORD'/>
+<mbr r='_MODINSTRUMENT::nVolume' o='304' t='WORD'/>
+<mbr r='_MODINSTRUMENT::nGlobalVol' o='320' t='WORD'/>
+<mbr r='_MODINSTRUMENT::uFlags' o='336' t='WORD'/>
+<mbr r='_MODINSTRUMENT::RelativeTone' o='352' t='signed char'/>
+<mbr r='_MODINSTRUMENT::nFineTune' o='360' t='signed char'/>
+<mbr r='_MODINSTRUMENT::nVibType' o='368' t='BYTE'/>
+<mbr r='_MODINSTRUMENT::nVibSweep' o='376' t='BYTE'/>
+<mbr r='_MODINSTRUMENT::nVibDepth' o='384' t='BYTE'/>
+<mbr r='_MODINSTRUMENT::nVibRate' o='392' t='BYTE'/>
+<mbr r='_MODINSTRUMENT::name' o='400' t='CHAR [22]'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='51' type='static SDL_Window * Solarus::Video::get_window()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='358' ll='360' type='static SDL_Window * Solarus::Video::get_window()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='354'>/**
+ * \brief Returns the main window.
+ * \return The main window, or nullptr if there is no window.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='88' type='void Solarus::CustomEntity::reset_can_traverse_entities(Solarus::EntityType type)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='417' ll='420' type='void Solarus::CustomEntity::reset_can_traverse_entities(Solarus::EntityType type)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='407'>/**
+ * \brief Restores the default setting of whether this custom entity can
+ * traverse other entities of the specified type.
+ callback_ref This reverts the settings of previous calls to
+ * set_can_traverse_entities(EntityType, bool)
+ * and
+ * set_can_traverse_entities(EntityType, const ScopedLuaRef&amp;).
+ *
+ * \param type A type of entities.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5461' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='213' type='void Solarus::LuaContext::destroy_timers()'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='183' u='c' c='_ZN7Solarus10LuaContext4exitEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='224' ll='226' type='void Solarus::LuaContext::destroy_timers()'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='221'>/**
+ * \brief Destroys immediately all existing timers.
+ */</doc>

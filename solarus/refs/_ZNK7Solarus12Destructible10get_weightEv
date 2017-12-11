@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='65' type='int Solarus::Destructible::get_weight() const'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='149' ll='151' type='int Solarus::Destructible::get_weight() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='326' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='333' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='393' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='398' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='140'>/**
+ * \brief Returns the weight of this destructible object.
+ *
+ * This corresponds to the &quot;lift&quot; ability level required to lift the object.
+ * Therefore, a value of 0 allows the hero to lift the item unconditionally.
+ * A value of -1 means that the object cannot be lifted.
+ *
+ * \return The weight of the object or -1.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4110' u='c' c='_ZN7Solarus10LuaContext27destructible_api_get_weightEP9lua_State'/>

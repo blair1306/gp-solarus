@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='97' type='void Solarus::Sprite::set_paused(bool suspended)'/>
+<use f='codebrowser/src/Sprite.cpp' l='484' u='c' c='_ZN7Solarus6Sprite17restart_animationEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='548' ll='563' type='void Solarus::Sprite::set_paused(bool paused)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='541'>/**
+ * \brief Pauses or resumes the animation.
+ *
+ * Nothing is done if the parameter specified does not change.
+ *
+ * \param paused true to pause the animation, false to resume it
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='560' u='c' c='_ZN7Solarus10LuaContext21sprite_api_set_pausedEP9lua_State'/>

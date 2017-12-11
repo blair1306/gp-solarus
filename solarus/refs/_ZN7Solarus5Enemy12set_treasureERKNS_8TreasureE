@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='191' type='void Solarus::Enemy::set_treasure(const Solarus::Treasure &amp; treasure)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1478' ll='1480' type='void Solarus::Enemy::set_treasure(const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1474'>/**
+ * \brief Sets the treasure dropped by this enemy.
+ * \param treasure The treasure to set.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4933' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='81' type='Solarus::TextSurface::HorizontalAlignment Solarus::TextSurface::get_horizontal_alignment() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='107' ll='109' type='TextSurface::HorizontalAlignment Solarus::TextSurface::get_horizontal_alignment() const'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='102'>/**
+ * \brief Returns the horizontal text alignment.
+ * \return Horizontal alignment of the text: ALIGN_LEFT,
+ * ALIGN_CENTER or ALIGN_RIGHT.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='212' u='c' c='_ZN7Solarus10LuaContext41text_surface_api_get_horizontal_alignmentEP9lua_State'/>

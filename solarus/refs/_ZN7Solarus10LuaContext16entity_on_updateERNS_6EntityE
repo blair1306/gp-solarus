@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='369' type='void Solarus::LuaContext::entity_on_update(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='368'>// Map entity events.</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1241' u='c' c='_ZN7Solarus12CustomEntity6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='874' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5667' ll='5679' type='void Solarus::LuaContext::entity_on_update(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5660'>/**
+ * \brief Calls the on_update() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ */</doc>

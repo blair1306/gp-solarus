@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='61' type='void Solarus::Hookshot::notify_collision_with_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; enemy_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='317' c='_ZN7Solarus6Entity27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='320' ll='326' type='void Solarus::Hookshot::notify_collision_with_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; enemy_sprite, Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='314'>/**
+ * \brief This function is called when an enemy&apos;s sprite collides with a sprite of this entity.
+ * \param enemy the enemy
+ * \param enemy_sprite the enemy&apos;s sprite that overlaps the hero
+ * \param this_sprite the arrow sprite
+ */</doc>

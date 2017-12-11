@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='54' type='bool Solarus::Hookshot::is_flying() const'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='250' ll='252' type='bool Solarus::Hookshot::is_flying() const'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='304' u='c' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='349' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='361' u='c' c='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='379' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='391' u='c' c='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='408' u='c' c='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='246'>/**
+ * \brief Returns whether the hookshot is currently flying.
+ * \return true if the hookshot was shot, is not going back and has not reached any target yet
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_audio.h' l='312' type='int SDL_GetNumAudioDevices(int iscapture)'/>
+<doc f='include/SDL2/SDL_audio.h' l='300'>/**
+ *  Get the number of available devices exposed by the current driver.
+ *  Only valid after a successfully initializing the audio subsystem.
+ *  Returns -1 if an explicit list of devices can&apos;t be determined; this is
+ *  not an error. For example, if SDL is set up to talk to a remote audio
+ *  server, it can&apos;t list every one available on the Internet, but it will
+ *  still allow a specific host to be specified to SDL_OpenAudioDevice().
+ *
+ *  In many common cases, when this function returns a value &lt;= 0, it can still
+ *  successfully open the default device (NULL for first argument of
+ *  SDL_OpenAudioDevice()).
+ */</doc>

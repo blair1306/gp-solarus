@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='70' type='static bool Solarus::Video::is_fullscreen()'/>
+<use f='codebrowser/src/Settings.cpp' l='292' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='307' u='c' c='_ZN7Solarus5Video4quitEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='444' ll='446' type='static bool Solarus::Video::is_fullscreen()'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='476' u='c' c='_ZN7Solarus5Video18set_cursor_visibleEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='532' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='822' u='c' c='_ZN7Solarus5Video15get_window_sizeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='848' u='c' c='_ZN7Solarus5Video15set_window_sizeERKNS_4SizeE'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='440'>/**
+ * \brief Returns whether the current video mode is in fullscreen.
+ * \return true if the current video mode is in fullscreen.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='186' u='c' c='_ZN7Solarus10LuaContext23video_api_is_fullscreenEP9lua_State'/>

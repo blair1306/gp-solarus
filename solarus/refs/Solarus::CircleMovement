@@ -1,0 +1,54 @@
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='42' c='Solarus::Movement'/>
+<def f='codebrowser/include/solarus/movements/CircleMovement.h' l='33' ll='110'/>
+<size>208</size>
+<doc f='codebrowser/include/solarus/movements/CircleMovement.h' l='28'>/**
+ * \brief Movement that makes circles around a center.
+ *
+ * This movement is used by entities that makes a circle around a center point or another entity.
+ */</doc>
+<fun r='_ZN7Solarus14CircleMovementC1Eb'/>
+<fun r='_ZN7Solarus14CircleMovement6updateEv'/>
+<fun r='_ZN7Solarus14CircleMovement13set_suspendedEb'/>
+<fun r='_ZN7Solarus14CircleMovement5startEv'/>
+<fun r='_ZN7Solarus14CircleMovement4stopEv'/>
+<fun r='_ZNK7Solarus14CircleMovement10is_startedEv'/>
+<fun r='_ZNK7Solarus14CircleMovement11is_finishedEv'/>
+<fun r='_ZN7Solarus14CircleMovement10set_centerERKNS_5PointE'/>
+<fun r='_ZN7Solarus14CircleMovement10set_centerERKSt10shared_ptrINS_6EntityEEii'/>
+<fun r='_ZNK7Solarus14CircleMovement10get_radiusEv'/>
+<fun r='_ZN7Solarus14CircleMovement10set_radiusEi'/>
+<fun r='_ZNK7Solarus14CircleMovement16get_radius_speedEv'/>
+<fun r='_ZN7Solarus14CircleMovement16set_radius_speedEi'/>
+<fun r='_ZNK7Solarus14CircleMovement15get_angle_speedEv'/>
+<fun r='_ZN7Solarus14CircleMovement15set_angle_speedEi'/>
+<fun r='_ZNK7Solarus14CircleMovement17get_initial_angleEv'/>
+<fun r='_ZN7Solarus14CircleMovement17set_initial_angleEi'/>
+<fun r='_ZNK7Solarus14CircleMovement12is_clockwiseEv'/>
+<fun r='_ZN7Solarus14CircleMovement13set_clockwiseEb'/>
+<fun r='_ZNK7Solarus14CircleMovement12get_durationEv'/>
+<fun r='_ZN7Solarus14CircleMovement12set_durationEj'/>
+<fun r='_ZNK7Solarus14CircleMovement17get_max_rotationsEv'/>
+<fun r='_ZN7Solarus14CircleMovement17set_max_rotationsEi'/>
+<fun r='_ZNK7Solarus14CircleMovement8get_loopEv'/>
+<fun r='_ZN7Solarus14CircleMovement8set_loopEj'/>
+<fun r='_ZNK7Solarus14CircleMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<mbr r='Solarus::CircleMovement::center_entity' o='896' t='EntityPtr'/>
+<mbr r='Solarus::CircleMovement::center_point' o='1024' t='Solarus::Point'/>
+<mbr r='Solarus::CircleMovement::current_angle' o='1088' t='int'/>
+<mbr r='Solarus::CircleMovement::initial_angle' o='1120' t='int'/>
+<mbr r='Solarus::CircleMovement::angle_increment' o='1152' t='int'/>
+<mbr r='Solarus::CircleMovement::next_angle_change_date' o='1184' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::angle_change_delay' o='1216' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::current_radius' o='1248' t='int'/>
+<mbr r='Solarus::CircleMovement::wanted_radius' o='1280' t='int'/>
+<mbr r='Solarus::CircleMovement::previous_radius' o='1312' t='int'/>
+<mbr r='Solarus::CircleMovement::radius_increment' o='1344' t='int'/>
+<mbr r='Solarus::CircleMovement::next_radius_change_date' o='1376' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::radius_change_delay' o='1408' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::duration' o='1440' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::end_movement_date' o='1472' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::max_rotations' o='1504' t='int'/>
+<mbr r='Solarus::CircleMovement::nb_rotations' o='1536' t='int'/>
+<mbr r='Solarus::CircleMovement::loop_delay' o='1568' t='uint32_t'/>
+<mbr r='Solarus::CircleMovement::restart_date' o='1600' t='uint32_t'/>

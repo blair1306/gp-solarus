@@ -1,0 +1,28 @@
+<inh f='include/c++/4.9/bits/shared_ptr.h' l='531' c='std::enable_shared_from_this'/>
+<def f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' ll='65'/>
+<ovr f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<ovr f='codebrowser/include/solarus/Drawable.h' l='41' c='Solarus::Drawable'/>
+<ovr f='codebrowser/include/solarus/Map.h' l='52' c='Solarus::Map'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/lua/ExportableToLua.h' l='28'>/**
+ * \brief Interface of a C++ type that can also exist as a Lua userdata.
+ *
+ * Use std::shared_ptr to safely share the object between C++ and Lua,
+ * no matter which world stops using it first.
+ */</doc>
+<fun r='_ZN7Solarus15ExportableToLuaC1Ev'/>
+<fun r='_ZN7Solarus15ExportableToLuaD1Ev'/>
+<fun r='_ZNK7Solarus15ExportableToLua15get_lua_contextEv'/>
+<fun r='_ZN7Solarus15ExportableToLua15set_lua_contextEPNS_10LuaContextE'/>
+<fun r='_ZNK7Solarus15ExportableToLua15is_known_to_luaEv'/>
+<fun r='_ZN7Solarus15ExportableToLua16set_known_to_luaEb'/>
+<fun r='_ZNK7Solarus15ExportableToLua17is_with_lua_tableEv'/>
+<fun r='_ZN7Solarus15ExportableToLua18set_with_lua_tableEb'/>
+<fun r='_ZNK7Solarus15ExportableToLua17get_lua_type_nameEv'/>
+<mbr r='Solarus::ExportableToLua::lua_context' o='192' t='Solarus::LuaContext *'/>
+<mbr r='Solarus::ExportableToLua::known_to_lua' o='256' t='bool'/>
+<mbr r='Solarus::ExportableToLua::with_lua_table' o='264' t='bool'/>
+<ovr f='codebrowser/include/solarus/movements/Movement.h' l='42' c='Solarus::Movement'/>
+<ovr f='codebrowser/include/solarus/Savegame.h' l='38' c='Solarus::Savegame'/>
+<ovr f='codebrowser/include/solarus/EquipmentItem.h' l='39' c='Solarus::EquipmentItem'/>
+<ovr f='codebrowser/include/solarus/Timer.h' l='31' c='Solarus::Timer'/>

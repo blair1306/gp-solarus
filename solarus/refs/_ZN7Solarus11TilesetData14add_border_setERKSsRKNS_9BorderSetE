@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='138' type='bool Solarus::TilesetData::add_border_set(const std::string &amp; border_set_id, const Solarus::BorderSet &amp; border_set)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='390' ll='400' type='bool Solarus::TilesetData::add_border_set(const std::string &amp; border_set_id, const Solarus::BorderSet &amp; border_set)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='434' u='c' c='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='598' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='384'>/**
+ * \brief Adds a border set to the tileset.
+ * \param border_set_id Id of the new border set.
+ * \param border_set The border set to add.
+ * \return \c true in case of success.
+ */</doc>

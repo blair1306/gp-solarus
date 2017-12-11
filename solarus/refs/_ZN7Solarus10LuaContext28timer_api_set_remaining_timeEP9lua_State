@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='528' type='static int Solarus::LuaContext::timer_api_set_remaining_time(lua_State * )'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='59' u='r' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='564' ll='586' type='static int Solarus::LuaContext::timer_api_set_remaining_time(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='559'>/**
+ * \brief Implementation of timer:set_remaining_time().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

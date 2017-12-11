@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='83' type='void Solarus::Surface::clear(const Solarus::Rectangle &amp; where)'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='287' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='525' ll='541' type='void Solarus::Surface::clear(const Solarus::Rectangle &amp; where)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='517'>/**
+ * \brief Clears a rectangle of this surface.
+ *
+ * This is only supported for software surfaces.
+ * The rectangle cleared becomes fully transparent.
+ *
+ * \param where The rectangle to clear.
+ */</doc>

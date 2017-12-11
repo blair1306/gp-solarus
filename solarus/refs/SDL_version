@@ -1,0 +1,17 @@
+<def f='include/SDL2/SDL_version.h' l='51' ll='56'/>
+<size>3</size>
+<doc f='include/SDL2/SDL_version.h' l='39'>/**
+ *  \brief Information the version of SDL in use.
+ *
+ *  Represents the library&apos;s version as three levels: major revision
+ *  (increments with massive changes, additions, and enhancements),
+ *  minor revision (increments with backwards-compatible changes to the
+ *  major revision), and patchlevel (increments with fixes to the minor
+ *  revision).
+ *
+ *  \sa SDL_VERSION
+ *  \sa SDL_GetVersion
+ */</doc>
+<mbr r='SDL_version::major' o='0' t='Uint8'/>
+<mbr r='SDL_version::minor' o='8' t='Uint8'/>
+<mbr r='SDL_version::patch' o='16' t='Uint8'/>

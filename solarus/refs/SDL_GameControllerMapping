@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_gamecontroller.h' l='148' type='char * SDL_GameControllerMapping(SDL_GameController * gamecontroller)'/>
+<doc f='include/SDL2/SDL_gamecontroller.h' l='143'>/**
+ *  Get a mapping string for an open GameController
+ *
+ *  \return the mapping string.  Must be freed with SDL_free.  Returns NULL if no mapping is available
+ */</doc>

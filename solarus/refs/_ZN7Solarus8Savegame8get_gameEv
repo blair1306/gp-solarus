@@ -1,0 +1,34 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='115' type='Solarus::Game * Solarus::Savegame::get_game()'/>
+<use f='codebrowser/src/Equipment.cpp' l='56' u='c' c='_ZN7Solarus9Equipment8get_gameEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='99' u='c' c='_ZN7Solarus9Equipment6updateEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='352' ll='354' type='Solarus::Game * Solarus::Savegame::get_game()'/>
+<doc f='codebrowser/src/Savegame.cpp' l='348'>/**
+ * \brief If this savegame is currently running in a game, return that game.
+ * \return A game or nullptr.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='253' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='283' u='c' c='_ZN7Solarus10LuaContext19game_api_is_startedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='301' u='c' c='_ZN7Solarus10LuaContext21game_api_is_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='320' u='c' c='_ZN7Solarus10LuaContext22game_api_set_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='339' u='c' c='_ZN7Solarus10LuaContext18game_api_is_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='358' u='c' c='_ZN7Solarus10LuaContext19game_api_set_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='377' u='c' c='_ZN7Solarus10LuaContext25game_api_is_pause_allowedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='396' u='c' c='_ZN7Solarus10LuaContext26game_api_set_pause_allowedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='415' u='c' c='_ZN7Solarus10LuaContext26game_api_is_dialog_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='443' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='481' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='513' u='c' c='_ZN7Solarus10LuaContext29game_api_is_game_over_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='534' u='c' c='_ZN7Solarus10LuaContext24game_api_start_game_overEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='555' u='c' c='_ZN7Solarus10LuaContext23game_api_stop_game_overEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='576' u='c' c='_ZN7Solarus10LuaContext16game_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='597' u='c' c='_ZN7Solarus10LuaContext17game_api_get_heroEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1270' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1364' u='c' c='_ZN7Solarus10LuaContext37game_api_get_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1394' u='c' c='_ZN7Solarus10LuaContext37game_api_set_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1418' u='c' c='_ZN7Solarus10LuaContext35game_api_get_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1451' u='c' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1471' u='c' c='_ZN7Solarus10LuaContext32game_api_capture_command_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1490' u='c' c='_ZN7Solarus10LuaContext27game_api_is_command_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1507' u='c' c='_ZN7Solarus10LuaContext31game_api_get_commands_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1532' u='c' c='_ZN7Solarus10LuaContext33game_api_simulate_command_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1550' u='c' c='_ZN7Solarus10LuaContext34game_api_simulate_command_releasedEP9lua_State'/>

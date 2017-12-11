@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='63' type='void Solarus::Treasure::give_to_player() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='168' ll='187' type='void Solarus::Treasure::give_to_player() const'/>
+<doc f='codebrowser/src/Treasure.cpp' l='162'>/**
+ * \brief Gives the treasure to the player.
+ *
+ * Adds the item to the hero&apos;s equipment.
+ * The item should not be empty and must be obtainable.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='454' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='72' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>

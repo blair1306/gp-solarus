@@ -1,0 +1,57 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='98' type='bool Solarus::Entity::is_being_removed() const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='517' ll='519' type='bool Solarus::Entity::is_being_removed() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='509'>/**
+ * \brief Returns true if this entity is about to be deleted.
+ *
+ * When this function returns true, the entity is not
+ * considered to be on the map anymore.
+ *
+ * \return true if this entity is about to be deleted
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='872' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1112' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1277' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1290' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1301' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1322' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1336' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1342' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1368' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1382' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1388' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1425' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1433' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='136' u='c' c='_ZN7Solarus4Bomb31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1156' u='c' c='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='211' u='c' c='_ZN7Solarus8Entities21notify_entity_removedERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='299' u='c' c='_ZN7Solarus8Entities11find_entityERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='321' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='333' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='370' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='382' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='416' u='c' c='_ZNK7Solarus8Entities22has_entity_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1062' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1187' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='222' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3380' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3385' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='363' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='538' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='150' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='161' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='59' u='c' c='_ZN7Solarus4Hero13HookshotState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='152' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='48' u='c' c='_ZN7Solarus4Hero14UsingItemState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='820' u='c' c='_ZN7Solarus10LuaContext17entity_api_existsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3786' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3819' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1347' u='c' c='_ZN7Solarus10LuaContext26l_get_map_entity_or_globalEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1936' u='c' c='_ZN7Solarus10LuaContext18map_api_get_entityEP9lua_State'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='321' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='272' u='c' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='289' u='c' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='305' u='c' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='321' u='c' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='54' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='72' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='131' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>

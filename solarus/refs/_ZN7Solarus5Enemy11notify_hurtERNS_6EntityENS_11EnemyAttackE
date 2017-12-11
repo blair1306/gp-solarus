@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='206' type='void Solarus::Enemy::notify_hurt(Solarus::Entity &amp; source, Solarus::EnemyAttack attack)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1251' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1313' ll='1319' type='void Solarus::Enemy::notify_hurt(Solarus::Entity &amp; , Solarus::EnemyAttack attack)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1308'>/**
+ * \brief This function is called when the enemy has just been hurt.
+ * \param source The source of the attack.
+ * \param attack The attack that was just successful.
+ */</doc>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1313'>/* source */</doc>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/movements/PlayerMovement.h' l='51' type='int'/>
+<offset>1440</offset>
+<doc f='codebrowser/include/solarus/movements/PlayerMovement.h' l='51'>/**&lt; Current direction of the movement (0 to 7),
+                              * as defined by the directional commands
+                              * currently pressed by the player (when the
+                              * movement allows them) or -1. */</doc>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='35' u='w' c='_ZN7Solarus14PlayerMovementC1Ei'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='62' u='r' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='65' u='w' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='75' u='r' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='76' u='w' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='88' u='r' c='_ZNK7Solarus14PlayerMovement21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='118' u='w' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='121' u='w' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='134' u='r' c='_ZN7Solarus14PlayerMovement16compute_movementEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='145' u='r' c='_ZN7Solarus14PlayerMovement16compute_movementEv'/>

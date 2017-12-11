@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='568' type='static int Solarus::LuaContext::text_surface_api_get_font(lua_State * )'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='73' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='279' ll='289' type='static int Solarus::LuaContext::text_surface_api_get_font(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='274'>/**
+ * \brief Implementation of text_surface:get_font().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

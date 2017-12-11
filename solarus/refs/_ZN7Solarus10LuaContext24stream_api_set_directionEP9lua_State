@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='931' type='static int Solarus::LuaContext::stream_api_set_direction(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='331' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3483' ll='3497' type='static int Solarus::LuaContext::stream_api_set_direction(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3478'>/**
+ * \brief Implementation of stream:set_direction().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

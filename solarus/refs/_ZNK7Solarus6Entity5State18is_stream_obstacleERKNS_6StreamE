@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='103' type='bool Solarus::Entity::State::is_stream_obstacle(const Solarus::Stream &amp; stream) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='732' ll='735' type='bool Solarus::Entity::State::is_stream_obstacle(const Solarus::Stream &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='727'>/**
+ * \brief Returns whether a stream is considered as an obstacle in this state.
+ * \param stream A stream.
+ * \return \c true if the stream is an obstacle in this state.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1488' u='c' c='_ZN7Solarus4Hero18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='170' c='_ZNK7Solarus4Hero9HurtState18is_stream_obstacleERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='298' c='_ZNK7Solarus4Hero12PullingState18is_stream_obstacleERKNS_6StreamE'/>

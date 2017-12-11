@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1187' type='static std::shared_ptr&lt;Switch&gt; Solarus::LuaContext::check_switch(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3337' ll='3341' type='static std::shared_ptr&lt;Switch&gt; Solarus::LuaContext::check_switch(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3360' u='c' c='_ZN7Solarus10LuaContext23switch_api_is_activatedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3375' u='c' c='_ZN7Solarus10LuaContext24switch_api_set_activatedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3392' u='c' c='_ZN7Solarus10LuaContext20switch_api_is_lockedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3407' u='c' c='_ZN7Solarus10LuaContext21switch_api_set_lockedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3424' u='c' c='_ZN7Solarus10LuaContext22switch_api_is_walkableEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3330'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * switch and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The switch.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='191' type='const int'/>
+<doc f='codebrowser/include/solarus/MapData.h' l='191'>/**&lt; Represents a non-existent floor (nil in Lua data files). */</doc>
+<use f='codebrowser/src/Map.cpp' l='51' u='r' c='_ZN7Solarus3MapC1ERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='139' u='r' c='_ZNK7Solarus3Map9has_floorEv'/>
+<use f='codebrowser/src/MapData.cpp' l='35' u='r' c='_ZN7Solarus7MapDataC1Ev'/>
+<use f='codebrowser/src/MapData.cpp' l='210' u='r' c='_ZNK7Solarus7MapData9has_floorEv'/>
+<use f='codebrowser/src/MapData.cpp' l='853' u='r' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1528' u='r' c='_ZN7Solarus10LuaContext17map_api_set_floorEP9lua_State'/>

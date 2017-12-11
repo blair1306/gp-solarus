@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='296' type='bool Solarus::LuaContext::menus_on_command_pressed(int context_index, Solarus::GameCommand command)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1811' u='c' c='_ZN7Solarus10LuaContext23game_on_command_pressedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2293' u='c' c='_ZN7Solarus10LuaContext22map_on_command_pressedERNS_3MapENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='373' u='c' c='_ZN7Solarus10LuaContext23menu_on_command_pressedERKNS_12ScopedLuaRefENS_11GameCommandE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='493' ll='516' type='bool Solarus::LuaContext::menus_on_command_pressed(int context_index, Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='487'>/**
+ * \brief Calls the on_command_pressed() method of the menus associated to a context.
+ * \param context_index Index of an object with menus.
+ * \param command The game command just pressed.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

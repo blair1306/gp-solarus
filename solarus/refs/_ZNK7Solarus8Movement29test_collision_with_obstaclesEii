@@ -1,0 +1,46 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='84' type='bool Solarus::Movement::test_collision_with_obstacles(int dx, int dy) const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='83'>// obstacles</doc>
+<def f='codebrowser/src/movements/Movement.cpp' l='434' ll='453' type='bool Solarus::Movement::test_collision_with_obstacles(int dx, int dy) const'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='466' u='c' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='423'>/**
+ * \brief Returns whether the entity would collide with the map
+ * if it was moved a few pixels from its position.
+ *
+ * If the movement is not attached to an entity of a map,
+ * or if obstacles are ignored, false is always returned.
+ *
+ * \param dx x distance between the current position and the position to check
+ * \param dy y distance between the current position and the position to check
+ * \return true if the entity would overlap the map obstacles in this position
+ */</doc>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='426' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='430' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='443' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='444' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='445' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='450' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='451' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='452' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='467' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='467' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='471' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='471' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='480' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='490' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='514' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='518' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='531' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='532' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='533' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='538' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='539' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='540' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='554' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='554' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='558' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='558' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='567' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='577' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='607' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='614' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='621' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

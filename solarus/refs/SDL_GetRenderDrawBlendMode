@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='645' type='int SDL_GetRenderDrawBlendMode(SDL_Renderer * renderer, SDL_BlendMode * blendMode)'/>
+<doc f='include/SDL2/SDL_render.h' l='635'>/**
+ *  \brief Get the blend mode used for drawing operations.
+ *
+ *  \param renderer The renderer from which blend mode should be queried.
+ *  \param blendMode A pointer filled in with the current blend mode.
+ *
+ *  \return 0 on success, or -1 on error
+ *
+ *  \sa SDL_SetRenderDrawBlendMode()
+ */</doc>

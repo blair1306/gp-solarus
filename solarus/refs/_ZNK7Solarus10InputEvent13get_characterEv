@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='257' type='std::string Solarus::InputEvent::get_character() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='850' ll='853' type='std::string Solarus::InputEvent::get_character() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='846'>/**
+ * \brief Returns a UTF-8 representation of the character that was pressed during this text event.
+ * \return The UTF-8 string corresponding to the entered character, or an empty string if this is not a text event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1658' u='c' c='_ZN7Solarus10LuaContext20on_character_pressedERKNS_10InputEventE'/>

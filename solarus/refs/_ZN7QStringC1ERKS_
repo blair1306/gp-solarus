@@ -1,0 +1,22 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='222' type='void QString::QString(const QString &amp; )'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='814' ll='815' type='void QString::QString(const QString &amp; other)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1203' u='c' c='_ZplRK7QStringS1_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1205' u='c' c='_ZplRK7QString5QChar'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1210' u='c' c='_ZplRK7QStringPKc'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1214' u='c' c='_ZplcRK7QString'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1216' u='c' c='_ZplRK7QStringc'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1220' u='c' c='_ZplRK7QStringRK10QByteArray'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='317' u='c' c='_ZNK9QKeyEvent4textEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='653' u='c' c='_ZNK15QStatusTipEvent3tipEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='666' u='c' c='_ZNK22QWhatsThisClickedEvent4hrefEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='692' u='c' c='_ZNK14QFileOpenEvent4fileEv'/>
+<use f='codebrowser/gui/src/console.cpp' l='190' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='282' u='c' c='_ZN10SolarusGui7Console21detect_command_resultERK7QStringS3_'/>
+<use f='codebrowser/gui/src/console.cpp' l='350' u='c' c='_ZN10SolarusGui7Console15colorize_outputERK7QStringS3_'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='80' u='c' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='161' u='c' c='_ZN10SolarusGui11QuestRunner5startERK7QString'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='101' u='c' c='_ZNK10SolarusGui11QuestsModel13index_to_pathEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='130' u='c' c='_ZN10SolarusGui11QuestsModel9add_questERK7QString'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='224' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='271' u='c' c='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<use f='codebrowser/gui/src/settings.cpp' l='49' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>

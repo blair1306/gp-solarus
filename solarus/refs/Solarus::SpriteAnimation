@@ -1,0 +1,26 @@
+<def f='codebrowser/include/solarus/SpriteAnimation.h' l='37' ll='81'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/SpriteAnimation.h' l='32'>/**
+ * \brief Stores the animated sequences of a sprite in a specific animation.
+ *
+ * Each animated sequence correspond to a direction of the sprite in this animation.
+ */</doc>
+<fun r='_ZN7Solarus15SpriteAnimationC1ERKSsRKSt6vectorINS_24SpriteAnimationDirectionESaIS4_EEji'/>
+<fun r='_ZN7Solarus15SpriteAnimation11set_tilesetERKNS_7TilesetE'/>
+<fun r='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<fun r='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<fun r='_ZNK7Solarus15SpriteAnimation17get_nb_directionsEv'/>
+<fun r='_ZNK7Solarus15SpriteAnimation13get_directionEi'/>
+<fun r='_ZNK7Solarus15SpriteAnimation15get_frame_delayEv'/>
+<fun r='_ZNK7Solarus15SpriteAnimation10is_loopingEv'/>
+<fun r='_ZN7Solarus15SpriteAnimation23enable_pixel_collisionsEv'/>
+<fun r='_ZNK7Solarus15SpriteAnimation28are_pixel_collisions_enabledEv'/>
+<fun r='_ZN7Solarus15SpriteAnimation26do_enable_pixel_collisionsEv'/>
+<fun r='_ZN7Solarus15SpriteAnimation24disable_pixel_collisionsEv'/>
+<mbr r='Solarus::SpriteAnimation::src_image' o='0' t='SurfacePtr'/>
+<mbr r='Solarus::SpriteAnimation::src_image_is_tileset' o='128' t='const bool'/>
+<mbr r='Solarus::SpriteAnimation::directions' o='192' t='std::vector&lt;SpriteAnimationDirection&gt;'/>
+<mbr r='Solarus::SpriteAnimation::frame_delay' o='384' t='const uint32_t'/>
+<mbr r='Solarus::SpriteAnimation::loop_on_frame' o='416' t='const int'/>
+<mbr r='Solarus::SpriteAnimation::should_enable_pixel_collisions' o='448' t='bool'/>
+<fun r='_ZNK7Solarus15SpriteAnimation13get_directionEi'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='143' type='std::string Solarus::Enemy::get_animation() const'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='142'>// sprites</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='742' ll='750' type='std::string Solarus::Enemy::get_animation() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='813' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='822' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='823' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1216' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='735'>/**
+ * \brief Returns the current animation of the first sprite of the enemy.
+ *
+ * This function is useful when the enemy has several sprites.
+ *
+ * \return name of the current animation of the first sprite
+ */</doc>

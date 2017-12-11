@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1091' type='static void Solarus::LuaContext::push_surface(lua_State * l, Solarus::Surface &amp; surface)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1420' u='c' c='_ZN7Solarus10LuaContext7on_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1432' u='c' c='_ZN7Solarus10LuaContext11on_pre_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1444' u='c' c='_ZN7Solarus10LuaContext12on_post_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='100' ll='102' type='static void Solarus::LuaContext::push_surface(lua_State * l, Solarus::Surface &amp; surface)'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='140' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='95'>/**
+ * \brief Pushes a surface userdata onto the stack.
+ * \param l a Lua context
+ * \param surface a surface
+ */</doc>

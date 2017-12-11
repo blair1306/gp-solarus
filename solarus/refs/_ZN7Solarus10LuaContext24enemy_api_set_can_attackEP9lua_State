@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='980' type='static int Solarus::LuaContext::enemy_api_set_can_attack(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='460' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4649' ll='4659' type='static int Solarus::LuaContext::enemy_api_set_can_attack(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4644'>/**
+ * \brief Implementation of enemy:set_can_attack().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

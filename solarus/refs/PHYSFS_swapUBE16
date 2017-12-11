@@ -1,0 +1,11 @@
+<dec f='include/physfs.h' l='1467' type='PHYSFS_uint16 PHYSFS_swapUBE16(PHYSFS_uint16 val)'/>
+<doc f='include/physfs.h' l='1457'>/**
+ * \fn PHYSFS_uint16 PHYSFS_swapUBE16(PHYSFS_uint16 val)
+ * \brief Swap bigendian unsigned 16 to platform&apos;s native byte order.
+ *
+ * Take a 16-bit unsigned value in bigendian format and convert it to
+ *  the platform&apos;s native byte order.
+ *
+ *    \param val value to convert
+ *   \return converted value.
+ */</doc>

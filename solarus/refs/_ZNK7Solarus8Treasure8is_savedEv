@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='57' type='bool Solarus::Treasure::is_saved() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='129' ll='131' type='bool Solarus::Treasure::is_saved() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='142' u='c' c='_ZNK7Solarus8Treasure8is_foundEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='173' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<doc f='codebrowser/src/Treasure.cpp' l='125'>/**
+ * \brief Returns whether this treasure is saved.
+ * \return \c true if this treasure is saved.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='388' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='155' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3109' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3858' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3952' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4013' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4892' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2171' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2190' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2465' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2565' u='c' c='_ZN7Solarus10LuaContext12on_obtainingERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2583' u='c' c='_ZN7Solarus10LuaContext11on_obtainedERKNS_8TreasureE'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='223' type='void Solarus::Entity::set_movement_notifications_enabled(bool notify)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='784' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1282' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1568' ll='1570' type='void Solarus::Entity::set_movement_notifications_enabled(bool notify)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1559'>/**
+ * \brief Sets whether Lua movement events are enabled for this entity.
+ *
+ * If no, events entity:on_position_changed(), entity:on_obstacle_reached(),
+ * entity:on_movement_started(), entity:on_movement_changed() and
+ * entity:on_movement_finished() won&apos;t be called.
+ *
+ * \param notify \c true to enable movement events.
+ */</doc>

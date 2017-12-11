@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='46' type='void Solarus::SpriteAnimationSet::SpriteAnimationSet(const std::string &amp; id)'/>
+<use f='codebrowser/src/Sprite.cpp' l='76' u='c' c='_ZN7Solarus6Sprite17get_animation_setERKSs'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='36' ll='40' type='void Solarus::SpriteAnimationSet::SpriteAnimationSet(const std::string &amp; id)'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='31'>/**
+ * \brief Loads the animations of a sprite from a file.
+ * \param id Id of the sprite animation set to load
+ * (name of a sprite definition file, without the &quot;.dat&quot; extension).
+ */</doc>

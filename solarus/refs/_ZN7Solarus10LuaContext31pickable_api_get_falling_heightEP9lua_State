@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='945' type='static int Solarus::LuaContext::pickable_api_get_falling_height(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='386' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3929' ll='3937' type='static int Solarus::LuaContext::pickable_api_get_falling_height(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3924'>/**
+ * \brief Implementation of pickable:get_falling_height().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

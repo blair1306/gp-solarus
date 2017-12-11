@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='220' type='static bool Solarus::InputEvent::is_joypad_button_down(int button)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='400' ll='407' type='static bool Solarus::InputEvent::is_joypad_button_down(int button)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='395'>/**
+ * \brief Returns whether a joypad button is currently down.
+ * \param button A joypad button.
+ * \return \c true if this joypad button is currently down.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='157' u='c' c='_ZN7Solarus10LuaContext34input_api_is_joypad_button_pressedEP9lua_State'/>

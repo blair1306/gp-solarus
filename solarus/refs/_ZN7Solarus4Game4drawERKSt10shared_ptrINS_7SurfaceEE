@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='81' type='void Solarus::Game::draw(const SurfacePtr &amp; dst_surface)'/>
+<def f='codebrowser/src/Game.cpp' l='566' ll='593' type='void Solarus::Game::draw(const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/Game.cpp' l='562'>/**
+ * \brief Draws the game.
+ * \param dst_surface The surface where the game will be drawn.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='503' u='c' c='_ZN7Solarus8MainLoop4drawEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1106' type='static void Solarus::LuaContext::push_npc(lua_State * l, Solarus::Npc &amp; npc)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2988' ll='2990' type='static void Solarus::LuaContext::push_npc(lua_State * l, Solarus::Npc &amp; npc)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6038' u='c' c='_ZN7Solarus10LuaContext21npc_on_collision_fireERNS_3NpcE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2983'>/**
+ * \brief Pushes an NPC userdata onto the stack.
+ * \param l A Lua context.
+ * \param npc An NPC.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2307' u='c' c='_ZN7Solarus10LuaContext18on_npc_interactionERNS_3NpcE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2322' u='c' c='_ZN7Solarus10LuaContext23on_npc_interaction_itemERNS_3NpcERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2381' u='c' c='_ZN7Solarus10LuaContext21on_npc_collision_fireERNS_3NpcE'/>

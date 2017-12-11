@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Game.h' l='130' type='void Solarus::Game::set_suspended_by_script(bool suspended)'/>
+<doc f='codebrowser/include/solarus/Game.h' l='129'>// Suspend manually.</doc>
+<use f='codebrowser/src/Game.cpp' l='530' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Game.cpp' l='877' ll='879' type='void Solarus::Game::set_suspended_by_script(bool suspended)'/>
+<doc f='codebrowser/src/Game.cpp' l='872'>/**
+ * \brief Sets whether this game is currently suspended by a script.
+ * \param \c true to suspend the game, \c false to resume it
+ * if nothing else is suspending it.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='322' u='c' c='_ZN7Solarus10LuaContext22game_api_set_suspendedEP9lua_State'/>

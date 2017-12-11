@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='128' type='void Solarus::Sprite::set_frame_changed(bool frame_changed)'/>
+<use f='codebrowser/src/Sprite.cpp' l='410' u='c' c='_ZN7Solarus6Sprite17set_current_frameEib'/>
+<def f='codebrowser/src/Sprite.cpp' l='447' ll='450' type='void Solarus::Sprite::set_frame_changed(bool frame_changed)'/>
+<use f='codebrowser/src/Sprite.cpp' l='720' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='738' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='443'>/**
+ * \brief Sets whether the frame has just changed.
+ * \param frame_changed true if the frame has just changed.
+ */</doc>

@@ -1,0 +1,13 @@
+<def f='include/SDL2/SDL_events.h' l='179' ll='189'/>
+<size>32</size>
+<doc f='include/SDL2/SDL_events.h' l='176'>/**
+ *  \brief Keyboard button event structure (event.key.*)
+ */</doc>
+<mbr r='SDL_KeyboardEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_KeyboardEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_KeyboardEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_KeyboardEvent::state' o='96' t='Uint8'/>
+<mbr r='SDL_KeyboardEvent::repeat' o='104' t='Uint8'/>
+<mbr r='SDL_KeyboardEvent::padding2' o='112' t='Uint8'/>
+<mbr r='SDL_KeyboardEvent::padding3' o='120' t='Uint8'/>
+<mbr r='SDL_KeyboardEvent::keysym' o='128' t='SDL_Keysym'/>

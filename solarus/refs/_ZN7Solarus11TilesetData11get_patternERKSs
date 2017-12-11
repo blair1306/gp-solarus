@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='126' type='Solarus::TilePatternData &amp; Solarus::TilesetData::get_pattern(const std::string &amp; pattern_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='262' ll='269' type='Solarus::TilePatternData &amp; Solarus::TilesetData::get_pattern(const std::string &amp; pattern_id)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='319' u='c' c='_ZN7Solarus11TilesetData14set_pattern_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='253'>/**
+ * \brief Returns the pattern with the specified id.
+ *
+ * Non-const version.
+ *
+ * \param pattern_id A tile pattern id. It must exist.
+ * \return The pattern with this id.
+ * The object remains valid until tile patterns are added or removed.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='53' type='const std::string &amp; Solarus::GameCommands::get_joypad_binding(Solarus::GameCommand command) const'/>
+<def f='codebrowser/src/GameCommands.cpp' l='565' ll='576' type='const std::string &amp; Solarus::GameCommands::get_joypad_binding(Solarus::GameCommand command) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='590' u='c' c='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='558'>/**
+ * \brief Returns a string representing the joypad action where the specified
+ * game command is currently mapped.
+ * \param command A game command.
+ * \return The joypad action mapped to this game command, or an empty string if
+ * this game command is not mapped to a joypad action.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1419' u='c' c='_ZN7Solarus10LuaContext35game_api_get_command_joypad_bindingEP9lua_State'/>

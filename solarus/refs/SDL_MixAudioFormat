@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_audio.h' l='472' type='void SDL_MixAudioFormat(Uint8 * dst, const Uint8 * src, SDL_AudioFormat format, Uint32 len, int volume)'/>
+<doc f='include/SDL2/SDL_audio.h' l='467'>/**
+ *  This works like SDL_MixAudio(), but you specify the audio format instead of
+ *  using the format of audio device 1. Thus it can be used when no audio
+ *  device is open at all.
+ */</doc>

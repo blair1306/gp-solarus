@@ -1,0 +1,10 @@
+<def f='include/vorbis/vorbisfile.h' l='75' ll='80' type='ov_callbacks'/>
+<doc f='include/vorbis/vorbisfile.h' l='65'>/* These structs below (OV_CALLBACKS_DEFAULT etc) are defined here as
+ * static data. That means that every file which includes this header
+ * will get its own copy of these structs whether it uses them or
+ * not unless it #defines OV_EXCLUDE_STATIC_CALLBACKS.
+ * These static symbols are essential on platforms such as Windows on
+ * which several different versions of stdio support may be linked to
+ * by different DLLs, and we need to be certain we know which one
+ * we&apos;re using (the same one as the main application).
+ */</doc>

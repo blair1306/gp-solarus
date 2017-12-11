@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='171' type='void Solarus::LuaContext::run_custom_entity(Solarus::CustomEntity &amp; custom_entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1226' u='c' c='_ZN7Solarus12CustomEntity15notify_creatingEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='361' ll='382' type='void Solarus::LuaContext::run_custom_entity(Solarus::CustomEntity &amp; custom_entity)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='353'>/**
+ * \brief Notifies the Lua world that a custom entity has just been added to
+ * the map.
+ *
+ * The Lua file of this entity if any is automatically loaded.
+ *
+ * \param custom_entity The custom entity.
+ */</doc>

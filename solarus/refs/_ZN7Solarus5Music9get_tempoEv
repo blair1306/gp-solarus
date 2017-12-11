@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='76' type='static int Solarus::Music::get_tempo()'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='220' ll='226' type='static int Solarus::Music::get_tempo()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='213'>/**
+ * \brief Returns the tempo of the current music.
+ *
+ * This function is only supported for .it musics.
+ *
+ * \return The tempo of the current music.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='323' u='c' c='_ZN7Solarus10LuaContext25audio_api_get_music_tempoEP9lua_State'/>

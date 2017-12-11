@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='156' type='int Solarus::MapData::get_floor() const'/>
+<use f='codebrowser/src/Map.cpp' l='306' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<def f='codebrowser/src/MapData.cpp' l='217' ll='219' type='int Solarus::MapData::get_floor() const'/>
+<use f='codebrowser/src/MapData.cpp' l='923' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<doc f='codebrowser/src/MapData.cpp' l='213'>/**
+ * \brief Returns the floor number of this map.
+ * \return The floor number or Map::NO_FLOOR.
+ */</doc>

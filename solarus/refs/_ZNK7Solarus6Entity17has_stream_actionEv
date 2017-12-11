@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='224' type='bool Solarus::Entity::has_stream_action() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1576' ll='1578' type='bool Solarus::Entity::has_stream_action() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1572'>/**
+ * \brief Returns whether this entity is following a stream.
+ * \return \c true if there is an active stream action.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='214' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='869' u='c' c='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1623' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2511' u='c' c='_ZNK7Solarus4Hero25can_avoid_teletransporterERKNS_15TeletransporterE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2530' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2557' u='c' c='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2597' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='56' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>

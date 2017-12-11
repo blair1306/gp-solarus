@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='281' type='void Solarus::Entity::check_collision(Solarus::Entity &amp; other, Solarus::Sprite &amp; other_sprite)'/>
+<use f='codebrowser/src/Map.cpp' l='1436' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1811' ll='1854' type='void Solarus::Entity::check_collision(Solarus::Entity &amp; other, Solarus::Sprite &amp; other_sprite)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1802'>/**
+ * \brief Checks whether any sprite of this detector collides
+ * with a specific sprite of another entity.
+ *
+ * If there is a collision, the notify_collision(Entity&amp;, Sprite&amp;, Sprite&amp;) method is called.
+ *
+ * \param other The entity to check.
+ * \param other_sprite The sprite of that entity.
+ */</doc>

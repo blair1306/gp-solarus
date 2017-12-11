@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='69' type='bool Solarus::Entity::State::is_visible() const'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='68'>// sprites</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='443' ll='445' type='bool Solarus::Entity::State::is_visible() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='439'>/**
+ * \brief Returns whether the entity is visible in the current state.
+ * \return true if the entity is displayed in the current state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='405' u='c' c='_ZN7Solarus4Hero11draw_on_mapEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='182' c='_ZNK7Solarus4Hero22BackToSolidGroundState10is_visibleEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='802' type='static int Solarus::LuaContext::map_api_has_entities(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='148' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2007' ll='2016' type='static int Solarus::LuaContext::map_api_has_entities(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2002'>/**
+ * \brief Implementation of map:has_entities().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

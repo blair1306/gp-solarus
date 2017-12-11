@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='77' type='std::ostream &amp; Solarus::operator&lt;&lt;(std::ostream &amp; stream, const Solarus::Point &amp; point)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.h' l='76'>// Output to stream</doc>
+<def f='codebrowser/src/lowlevel/Point.cpp' l='28' ll='31' type='std::ostream &amp; Solarus::operator&lt;&lt;(std::ostream &amp; stream, const Solarus::Point &amp; point)'/>
+<doc f='codebrowser/src/lowlevel/Point.cpp' l='22'>/**
+ * \brief Prints a point to an output stream.
+ * \param stream The stream.
+ * \param point A point.
+ * \return The output stream.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Rectangle.cpp' l='30' u='c' c='_ZN7SolaruslsERSoRKNS_9RectangleE'/>

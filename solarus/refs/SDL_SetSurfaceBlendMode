@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_surface.h' l='308' type='int SDL_SetSurfaceBlendMode(SDL_Surface * surface, SDL_BlendMode blendMode)'/>
+<doc f='include/SDL2/SDL_surface.h' l='298'>/**
+ *  \brief Set the blend mode used for blit operations.
+ *
+ *  \param surface The surface to update.
+ *  \param blendMode ::SDL_BlendMode to use for blit blending.
+ *
+ *  \return 0 on success, or -1 if the parameters are not valid.
+ *
+ *  \sa SDL_GetSurfaceBlendMode()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='260' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='483' u='c' c='_ZN7Solarus7Surface23create_software_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='669' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>

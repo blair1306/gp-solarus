@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_ttf.h' l='203' type='SDL_Surface * TTF_RenderText_Blended(TTF_Font * font, const char * text, SDL_Color fg)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='199'>/* Create a 32-bit ARGB surface and render the given text at high quality,
+   using alpha blending to dither the font with the given color.
+   This function returns the new surface, or NULL if there was an error.
+*/</doc>

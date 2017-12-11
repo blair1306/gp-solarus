@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Game.h' l='172' type='bool'/>
+<offset>2816</offset>
+<doc f='codebrowser/include/solarus/Game.h' l='171'>// world (i.e. the current set of maps)</doc>
+<doc f='codebrowser/include/solarus/Game.h' l='172'>/**&lt; indicates that a crystal has been enabled (i.e. the orange blocks are raised) */</doc>
+<use f='codebrowser/src/Game.cpp' l='65' u='w' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='427' u='w' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='678' u='r' c='_ZNK7Solarus4Game17get_crystal_stateEv'/>
+<use f='codebrowser/src/Game.cpp' l='685' u='w' c='_ZN7Solarus4Game20change_crystal_stateEv'/>
+<use f='codebrowser/src/Game.cpp' l='685' u='r' c='_ZN7Solarus4Game20change_crystal_stateEv'/>

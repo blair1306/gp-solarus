@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='53' type='void SNES_SPC::end_frame(time_t end_time)'/>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='533' ll='561' type='void SNES_SPC::end_frame(time_t end_time)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='52'>// Runs SPC to end_time and starts a new time frame at 0</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='342' u='c' c='_ZN8SNES_SPC4playEiPs'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='369' u='c' c='_ZN8SNES_SPC4skipEi'/>
+<use f='codebrowser/src/third_party/snes_spc/spc.cpp' l='53' u='c' c='spc_end_frame'/>

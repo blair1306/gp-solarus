@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='160' type='void SDL_StartTextInput()'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='152'>/**
+ *  \brief Start accepting Unicode text input events.
+ *         This function will show the on-screen keyboard if supported.
+ *
+ *  \sa SDL_StopTextInput()
+ *  \sa SDL_SetTextInputRect()
+ *  \sa SDL_HasScreenKeyboardSupport()
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='194' u='c' c='_ZN7Solarus10InputEvent10initializeEv'/>

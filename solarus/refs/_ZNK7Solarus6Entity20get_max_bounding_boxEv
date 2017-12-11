@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='155' type='Solarus::Rectangle Solarus::Entity::get_max_bounding_box() const'/>
+<use f='codebrowser/src/Map.cpp' l='1377' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1420' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='968' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1336' u='c' c='_ZN7Solarus8Entities34notify_entity_bounding_box_changedERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='917' ll='928' type='Solarus::Rectangle Solarus::Entity::get_max_bounding_box() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='906'>/**
+ * \brief Returns the bounding box of the entity including its sprites.
+ *
+ * The default implementation takes into account the bounding box of sprites
+ * created with create_sprite().
+ * Subclasses that manage sprites without create_sprite() should reimplement
+ * this function to return a correct bounding box, otherwise sprite collisions
+ * may fail to be detected.
+ *
+ * \return The bounding box of the entity including its sprites.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='489' c='_ZNK7Solarus4Hero20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1116' u='c' c='_ZN7Solarus10LuaContext31entity_api_get_max_bounding_boxEP9lua_State'/>

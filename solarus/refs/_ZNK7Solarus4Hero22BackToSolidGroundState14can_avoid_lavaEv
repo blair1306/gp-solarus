@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/BackToSolidGroundState.h' l='51' type='bool Solarus::Hero::BackToSolidGroundState::can_avoid_lava() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='86' c='_ZNK7Solarus6Entity5State14can_avoid_lavaEv'/>
+<def f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='214' ll='216' type='bool Solarus::Hero::BackToSolidGroundState::can_avoid_lava() const'/>
+<doc f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='210'>/**
+ * \brief Returns whether the hero ignores the effect of lava in this state.
+ * \return true if the hero ignores the effect of lava in the current state
+ */</doc>

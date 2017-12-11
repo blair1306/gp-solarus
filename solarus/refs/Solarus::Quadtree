@@ -1,0 +1,32 @@
+<def f='codebrowser/include/solarus/containers/Quadtree.h' l='44' ll='150'/>
+<fun r='_ZN7Solarus8QuadtreeC1Ev'/>
+<fun r='_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree5clearEv'/>
+<fun r='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree9get_spaceEv'/>
+<fun r='_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree6removeERKT_'/>
+<fun r='_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree12get_elementsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree16get_num_elementsEv'/>
+<fun r='_ZNK7Solarus8Quadtree8containsERKT_'/>
+<fun r='_ZN7Solarus8Quadtree4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<smbr r='Solarus::Quadtree::min_cell_size' t='const int'/>
+<smbr r='Solarus::Quadtree::max_in_cell' t='const int'/>
+<smbr r='Solarus::Quadtree::min_in_4_cells' t='const int'/>
+<smbr r='Solarus::Quadtree::debug_quadtrees' t='const bool'/>
+<mbr r='Solarus::Quadtree::elements' t='std::map&lt;T, ElementInfo&gt;'/>
+<mbr r='Solarus::Quadtree::elements_outside' t='std::set&lt;T&gt;'/>
+<mbr r='Solarus::Quadtree::root' t='Solarus::Quadtree::Node'/>
+<fun r='_ZN7Solarus8QuadtreeC1Ev'/>
+<fun r='_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree5clearEv'/>
+<fun r='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree9get_spaceEv'/>
+<fun r='_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree6removeERKT_'/>
+<fun r='_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree16get_num_elementsEv'/>
+<fun r='_ZNK7Solarus8Quadtree12get_elementsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree8containsERKT_'/>
+<fun r='_ZN7Solarus8Quadtree4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>

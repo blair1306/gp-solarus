@@ -1,0 +1,66 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='10' ll='252'/>
+<size>68712</size>
+<fun r='_ZN8SNES_SPC4initEv'/>
+<fun r='_ZN8SNES_SPC8init_romEPKh'/>
+<fun r='_ZN8SNES_SPC10set_outputEPsi'/>
+<fun r='_ZNK8SNES_SPC12sample_countEv'/>
+<fun r='_ZN8SNES_SPC5resetEv'/>
+<fun r='_ZN8SNES_SPC10soft_resetEv'/>
+<fun r='_ZN8SNES_SPC9read_portEii'/>
+<fun r='_ZN8SNES_SPC10write_portEiii'/>
+<fun r='_ZN8SNES_SPC9end_frameEi'/>
+<fun r='_ZN8SNES_SPC11mute_voicesEi'/>
+<fun r='_ZN8SNES_SPC16disable_surroundEb'/>
+<fun r='_ZN8SNES_SPC9set_tempoEi'/>
+<fun r='_ZN8SNES_SPC8load_spcEPKvl'/>
+<fun r='_ZN8SNES_SPC10clear_echoEv'/>
+<fun r='_ZN8SNES_SPC4playEiPs'/>
+<fun r='_ZN8SNES_SPC4skipEi'/>
+<mbr r='SNES_SPC::dsp' o='0' t='SPC_DSP'/>
+<smbr r='SNES_SPC::reg_times_' t='const signed char [256]'/>
+<mbr r='SNES_SPC::reg_times' o='14336' t='signed char [256]'/>
+<mbr r='SNES_SPC::m' o='16384' t='SNES_SPC::state_t'/>
+<fun r='_ZN8SNES_SPC13timers_loadedEv'/>
+<fun r='_ZN8SNES_SPC10enable_romEi'/>
+<fun r='_ZN8SNES_SPC9reset_bufEv'/>
+<fun r='_ZN8SNES_SPC10save_extraEv'/>
+<fun r='_ZN8SNES_SPC9load_regsEPKh'/>
+<fun r='_ZN8SNES_SPC10ram_loadedEv'/>
+<fun r='_ZN8SNES_SPC11regs_loadedEv'/>
+<fun r='_ZN8SNES_SPC15reset_time_regsEv'/>
+<fun r='_ZN8SNES_SPC12reset_commonEi'/>
+<fun r='_ZN8SNES_SPC10run_timer_EPNS_5TimerEi'/>
+<fun r='_ZN8SNES_SPC9run_timerEPNS_5TimerEi'/>
+<fun r='_ZN8SNES_SPC8dsp_readEi'/>
+<fun r='_ZN8SNES_SPC9dsp_writeEii'/>
+<fun r='_ZN8SNES_SPC18cpu_write_smp_reg_Eiii'/>
+<fun r='_ZN8SNES_SPC17cpu_write_smp_regEiii'/>
+<fun r='_ZN8SNES_SPC14cpu_write_highEiii'/>
+<fun r='_ZN8SNES_SPC9cpu_writeEiii'/>
+<fun r='_ZN8SNES_SPC16cpu_read_smp_regEii'/>
+<fun r='_ZN8SNES_SPC8cpu_readEii'/>
+<fun r='_ZN8SNES_SPC11CPU_mem_bitEPKhi'/>
+<fun r='_ZN8SNES_SPC17check_echo_accessEi'/>
+<fun r='_ZN8SNES_SPC10run_until_Ei'/>
+<smbr r='SNES_SPC::signature' t='const char [36]'/>
+<fun r='_ZN8SNES_SPC9save_regsEPh'/>
+<fun r='_ZNK8SNES_SPC12sample_countEv'/>
+<fun r='_ZN8SNES_SPC9read_portEii'/>
+<fun r='_ZN8SNES_SPC10write_portEiii'/>
+<fun r='_ZN8SNES_SPC11mute_voicesEi'/>
+<fun r='_ZN8SNES_SPC16disable_surroundEb'/>
+<fun r='_ZN8SNES_SPC10run_timer_EPNS_5TimerEi'/>
+<fun r='_ZN8SNES_SPC9run_timerEPNS_5TimerEi'/>
+<fun r='_ZN8SNES_SPC10enable_romEi'/>
+<smbr r='SNES_SPC::reg_times_' t='const signed char [256]'/>
+<fun r='_ZN8SNES_SPC8dsp_readEi'/>
+<fun r='_ZN8SNES_SPC9dsp_writeEii'/>
+<fun r='_ZN8SNES_SPC18cpu_write_smp_reg_Eiii'/>
+<fun r='_ZN8SNES_SPC17cpu_write_smp_regEiii'/>
+<fun r='_ZN8SNES_SPC14cpu_write_highEiii'/>
+<fun r='_ZN8SNES_SPC9cpu_writeEiii'/>
+<fun r='_ZN8SNES_SPC16cpu_read_smp_regEii'/>
+<fun r='_ZN8SNES_SPC8cpu_readEii'/>
+<fun r='_ZN8SNES_SPC9end_frameEi'/>
+<fun r='_ZN8SNES_SPC11CPU_mem_bitEPKhi'/>
+<fun r='_ZN8SNES_SPC10run_until_Ei'/>

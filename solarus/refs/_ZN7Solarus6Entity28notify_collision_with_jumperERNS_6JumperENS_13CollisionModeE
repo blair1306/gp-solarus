@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='303' type='void Solarus::Entity::notify_collision_with_jumper(Solarus::Jumper &amp; jumper, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1020' c='_ZN7Solarus12CustomEntity28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3071' ll='3072' type='void Solarus::Entity::notify_collision_with_jumper(Solarus::Jumper &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3066'>/**
+ * \brief This function is called when a jumper detects a collision with this entity.
+ * \param jumper The jumper.
+ * \param collision_mode The collision mode that detected the event.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3071'>/* jumper */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3071'>/* collision_mode */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1754' c='_ZN7Solarus4Hero28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='390' u='c' c='_ZN7Solarus6Jumper16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

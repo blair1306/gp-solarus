@@ -1,0 +1,41 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qobject.h' l='114' c='QObject'/>
+<def f='codebrowser/gui/include/solarus/gui/quest_runner.h' l='28' ll='65'/>
+<size>40</size>
+<doc f='codebrowser/gui/include/solarus/gui/quest_runner.h' l='25'>/**
+ * @brief Class to run a quest in a dedicated process.
+ */</doc>
+<fun r='_ZNK10SolarusGui11QuestRunner26qt_check_for_QOBJECT_macroERKT_'/>
+<smbr r='SolarusGui::QuestRunner::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui11QuestRunner10metaObjectEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui11QuestRunner2trEPKcS2_i'/>
+<fun r='_ZN10SolarusGui11QuestRunner6trUtf8EPKcS2_i'/>
+<fun r='_ZN10SolarusGui11QuestRunner11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui11QuestRunner18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui11QuestRunnerC1EP7QObject'/>
+<fun r='_ZN10SolarusGui11QuestRunnerD1Ev'/>
+<fun r='_ZNK10SolarusGui11QuestRunner10is_startedEv'/>
+<fun r='_ZNK10SolarusGui11QuestRunner10is_runningEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner15execute_commandERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestRunner14apply_settingsEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner5startERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestRunner4stopEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner7runningEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner8finishedEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner13solarus_fatalERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestRunner15output_producedERK11QStringList'/>
+<fun r='_ZN10SolarusGui11QuestRunner30standard_output_data_availableEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner11on_finishedEv'/>
+<fun r='_ZNK10SolarusGui11QuestRunner16create_argumentsERK7QString'/>
+<fun r='_ZNK10SolarusGui11QuestRunner36get_quest_lua_commands_from_settingsEv'/>
+<mbr r='SolarusGui::QuestRunner::process' o='128' t='QProcess'/>
+<mbr r='SolarusGui::QuestRunner::last_command_id' o='256' t='int'/>
+<fun r='_ZN10SolarusGui11QuestRunner18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='SolarusGui::QuestRunner::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui11QuestRunner10metaObjectEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui11QuestRunner11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui11QuestRunner7runningEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner8finishedEv'/>
+<fun r='_ZN10SolarusGui11QuestRunner13solarus_fatalERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestRunner15output_producedERK11QStringList'/>

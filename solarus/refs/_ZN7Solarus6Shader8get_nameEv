@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='43' type='const std::string &amp; Solarus::Shader::get_name()'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='225' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='233' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<def f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='77' ll='80' type='const std::string &amp; Solarus::Shader::get_name()'/>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='73'>/**
+ * \brief Get the name of the shader, which is also the name of the related video mode.
+ * \return The name of the shader.
+ */</doc>

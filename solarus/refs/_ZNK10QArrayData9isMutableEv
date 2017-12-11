@@ -1,0 +1,4 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h' l='76' ll='79' type='bool QArrayData::isMutable() const'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h' l='73'>// This refers to array data mutability, not &quot;header data&quot; represented by
+    // data members in QArrayData. Shared data (array and header) must still
+    // follow COW principles.</doc>

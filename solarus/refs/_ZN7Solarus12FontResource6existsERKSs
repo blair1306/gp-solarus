@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/FontResource.h' l='40' type='static bool Solarus::FontResource::exists(const std::string &amp; font_id)'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='69' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<def f='codebrowser/src/lowlevel/FontResource.cpp' l='140' ll='147' type='static bool Solarus::FontResource::exists(const std::string &amp; font_id)'/>
+<doc f='codebrowser/src/lowlevel/FontResource.cpp' l='134'>/**
+ * \brief Returns whether the specified font exists.
+ * \param font_id The id to test.
+ * \return \c true if there is a valid font with this id in the quest resource
+ * list.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='401' u='c' c='_ZN7Solarus11TextSurface7rebuildEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='172' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_set_fontEP9lua_State'/>

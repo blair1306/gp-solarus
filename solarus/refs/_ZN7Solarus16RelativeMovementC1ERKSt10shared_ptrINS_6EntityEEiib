@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/RelativeMovement.h' l='38' type='void Solarus::RelativeMovement::RelativeMovement(const EntityPtr &amp; entity_followed, int x, int y, bool ignore_obstacles)'/>
+<def f='codebrowser/src/movements/RelativeMovement.cpp' l='30' ll='36' type='void Solarus::RelativeMovement::RelativeMovement(const EntityPtr &amp; entity_followed, int x, int y, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/RelativeMovement.cpp' l='23'>/**
+ * \brief Creates a follow movement.
+ * \param entity_followed the entity to follow
+ * \param x x coordinate of where this entity should be placed (relative to the entity followed)
+ * \param y y coordinate of where this entity should be placed (relative to the entity followed)
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ */</doc>

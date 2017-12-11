@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_mutex.h' l='227' type='int SDL_CondWait(SDL_cond * cond, SDL_mutex * mutex)'/>
+<doc f='include/SDL2/SDL_mutex.h' l='218'>/**
+ *  Wait on the condition variable, unlocking the provided mutex.
+ *
+ *  \warning The mutex must be locked before entering this function!
+ *
+ *  The mutex is re-locked once the condition variable is signaled.
+ *
+ *  \return 0 when it is signaled, or -1 on error.
+ */</doc>

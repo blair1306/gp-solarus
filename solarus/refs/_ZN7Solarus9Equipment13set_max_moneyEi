@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='61' type='void Solarus::Equipment::set_max_money(int max_money)'/>
+<def f='codebrowser/src/Equipment.cpp' l='145' ll='156' type='void Solarus::Equipment::set_max_money(int max_money)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='141'>/**
+ * \brief Sets the maximum amount of money of the player.
+ * \param max_money the player&apos;s maximum amount number of money
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='987' u='c' c='_ZN7Solarus10LuaContext22game_api_set_max_moneyEP9lua_State'/>

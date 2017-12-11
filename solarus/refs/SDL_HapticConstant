@@ -1,0 +1,24 @@
+<def f='include/SDL2/SDL_haptic.h' l='457' ll='479'/>
+<size>40</size>
+<doc f='include/SDL2/SDL_haptic.h' l='446'>/**
+ *  \brief A structure containing a template for a Constant effect.
+ *
+ *  The struct is exclusive to the ::SDL_HAPTIC_CONSTANT effect.
+ *
+ *  A constant effect applies a constant force in the specified direction
+ *  to the joystick.
+ *
+ *  \sa SDL_HAPTIC_CONSTANT
+ *  \sa SDL_HapticEffect
+ */</doc>
+<mbr r='SDL_HapticConstant::type' o='0' t='Uint16'/>
+<mbr r='SDL_HapticConstant::direction' o='32' t='SDL_HapticDirection'/>
+<mbr r='SDL_HapticConstant::length' o='160' t='Uint32'/>
+<mbr r='SDL_HapticConstant::delay' o='192' t='Uint16'/>
+<mbr r='SDL_HapticConstant::button' o='208' t='Uint16'/>
+<mbr r='SDL_HapticConstant::interval' o='224' t='Uint16'/>
+<mbr r='SDL_HapticConstant::level' o='240' t='Sint16'/>
+<mbr r='SDL_HapticConstant::attack_length' o='256' t='Uint16'/>
+<mbr r='SDL_HapticConstant::attack_level' o='272' t='Uint16'/>
+<mbr r='SDL_HapticConstant::fade_length' o='288' t='Uint16'/>
+<mbr r='SDL_HapticConstant::fade_level' o='304' t='Uint16'/>

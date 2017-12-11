@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='72' type='bool Solarus::Block::is_pullable() const'/>
+<def f='codebrowser/src/entities/Block.cpp' l='364' ll='366' type='bool Solarus::Block::is_pullable() const'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='360'>/**
+ * \brief Returns whether this block can be pulled.
+ * \return \c true if it can be pulled, independently of the maximum moves.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3246' u='c' c='_ZN7Solarus10LuaContext21block_api_is_pullableEP9lua_State'/>

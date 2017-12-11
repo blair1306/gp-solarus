@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='850' type='int SDL_GL_BindTexture(SDL_Texture * texture, float * texw, float * texh)'/>
+<doc f='include/SDL2/SDL_render.h' l='840'>/**
+ *  \brief Bind the texture to the current OpenGL/ES/ES2 context for use with
+ *         OpenGL instructions.
+ *
+ *  \param texture  The SDL texture to bind
+ *  \param texw     A pointer to a float that will be filled with the texture width
+ *  \param texh     A pointer to a float that will be filled with the texture height
+ *
+ *  \return 0 on success, or -1 if the operation is not supported
+ */</doc>

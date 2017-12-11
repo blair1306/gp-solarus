@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_pixels.h' l='368' type='int SDL_SetPaletteColors(SDL_Palette * palette, const SDL_Color * colors, int firstcolor, int ncolors)'/>
+<doc f='include/SDL2/SDL_pixels.h' l='358'>/**
+ *  \brief Set a range of colors in a palette.
+ *
+ *  \param palette    The palette to modify.
+ *  \param colors     An array of colors to copy into the palette.
+ *  \param firstcolor The index of the first palette entry to modify.
+ *  \param ncolors    The number of entries to modify.
+ *
+ *  \return 0 on success, or -1 if not all of the colors could be set.
+ */</doc>

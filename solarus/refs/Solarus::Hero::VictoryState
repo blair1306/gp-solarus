@@ -1,0 +1,14 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/VictoryState.h' l='28' ll='45'/>
+<size>72</size>
+<doc f='codebrowser/include/solarus/hero/VictoryState.h' l='25'>/**
+ * \brief The victory state of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero12VictoryStateC1ERS0_RKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Hero12VictoryState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12VictoryState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12VictoryState6updateEv'/>
+<fun r='_ZN7Solarus4Hero12VictoryState13set_suspendedEb'/>
+<mbr r='Solarus::Hero::VictoryState::end_victory_date' o='352' t='uint32_t'/>
+<mbr r='Solarus::Hero::VictoryState::finished' o='384' t='bool'/>
+<mbr r='Solarus::Hero::VictoryState::callback_ref' o='448' t='Solarus::ScopedLuaRef'/>

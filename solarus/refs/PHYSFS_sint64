@@ -1,0 +1,6 @@
+<doc f='include/physfs.h' l='276'>/**
+ * \typedef PHYSFS_sint64
+ * \brief A signed, 64-bit integer type.
+ * \warning on platforms without any sort of 64-bit datatype, this is
+ *           equivalent to PHYSFS_sint32!
+ */</doc>

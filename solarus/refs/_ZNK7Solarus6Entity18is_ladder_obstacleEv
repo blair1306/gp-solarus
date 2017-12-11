@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='423' type='bool Solarus::Entity::is_ladder_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='156' c='_ZNK7Solarus5Arrow18is_ladder_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='114' c='_ZNK7Solarus4Bomb18is_ladder_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='179' c='_ZNK7Solarus9Boomerang18is_ladder_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='557' c='_ZNK7Solarus13CarriedObject18is_ladder_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='758' c='_ZNK7Solarus12CustomEntity18is_ladder_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2420' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2555' ll='2557' type='bool Solarus::Entity::is_ladder_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2548'>/**
+ * \brief Returns whether a ladder is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \return true if the ladders are currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1461' c='_ZNK7Solarus4Hero18is_ladder_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='136' c='_ZNK7Solarus8Hookshot18is_ladder_obstacleEv'/>

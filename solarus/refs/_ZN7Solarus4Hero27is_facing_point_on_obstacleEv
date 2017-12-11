@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='112' type='bool Solarus::Hero::is_facing_point_on_obstacle()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='811' ll='816' type='bool Solarus::Hero::is_facing_point_on_obstacle()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='803'>/**
+ * \brief Returns whether the facing point of the hero is overlapping an obstacle.
+ *
+ * This function returns whether his facing point is overlapping an obstacle of the map.
+ * This information is calculated and not stored, so it is always up to date.
+ *
+ * \return true if the facing point is overlapping an obstacle
+ */</doc>
+<use f='codebrowser/src/hero/FreeState.cpp' l='112' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='134' u='c' c='_ZN7Solarus4Hero9FreeState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='117' u='c' c='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>

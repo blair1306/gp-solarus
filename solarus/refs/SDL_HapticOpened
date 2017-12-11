@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_haptic.h' l='854' type='int SDL_HapticOpened(int device_index)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='845'>/**
+ *  \brief Checks if the haptic device at index has been opened.
+ *
+ *  \param device_index Index to check to see if it has been opened.
+ *  \return 1 if it has been opened or 0 if it hasn&apos;t.
+ *
+ *  \sa SDL_HapticOpen
+ *  \sa SDL_HapticIndex
+ */</doc>

@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1097' type='static void Solarus::LuaContext::push_map(lua_State * l, Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='769' u='c' c='_ZN7Solarus10LuaContext18entity_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2497' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='581' u='c' c='_ZN7Solarus10LuaContext16game_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='164' u='c' c='_ZN7Solarus10LuaContext16item_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='267' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='287' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2516' u='c' c='_ZN7Solarus10LuaContext14on_map_changedERNS_3MapE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='222' ll='225' type='static void Solarus::LuaContext::push_map(lua_State * l, Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1318' u='c' c='_ZN7Solarus10LuaContext27create_map_entity_from_dataERNS_3MapERKNS_10EntityDataE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2192' u='c' c='_ZN7Solarus10LuaContext14map_on_startedERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2206' u='c' c='_ZN7Solarus10LuaContext15map_on_finishedERNS_3MapE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2224' u='c' c='_ZN7Solarus10LuaContext13map_on_updateERNS_3MapE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2245' u='c' c='_ZN7Solarus10LuaContext11map_on_drawERNS_3MapERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2266' u='c' c='_ZN7Solarus10LuaContext12map_on_inputERNS_3MapERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2288' u='c' c='_ZN7Solarus10LuaContext22map_on_command_pressedERNS_3MapENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2312' u='c' c='_ZN7Solarus10LuaContext23map_on_command_releasedERNS_3MapENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2337' u='c' c='_ZN7Solarus10LuaContext16map_on_suspendedERNS_3MapEb'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2357' u='c' c='_ZN7Solarus10LuaContext34map_on_opening_transition_finishedERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2376' u='c' c='_ZN7Solarus10LuaContext25map_on_obtaining_treasureERNS_3MapERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2395' u='c' c='_ZN7Solarus10LuaContext24map_on_obtained_treasureERNS_3MapERKNS_8TreasureE'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='217'>/**
+ * \brief Pushes a map userdata onto the stack.
+ * \param l A Lua context.
+ * \param game A game.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='364' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/quest_runner.h' l='60' type='QStringList SolarusGui::QuestRunner::create_arguments(const QString &amp; quest_path) const'/>
+<def f='codebrowser/gui/src/quest_runner.cpp' l='77' ll='109' type='QStringList SolarusGui::QuestRunner::create_arguments(const QString &amp; quest_path) const'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='162' u='c' c='_ZN10SolarusGui11QuestRunner5startERK7QString'/>
+<doc f='codebrowser/gui/src/quest_runner.cpp' l='73'>/**
+ * @brief Creates and returns the list of arguments to pass to the process.
+ * @param quest_path The path of the quest to run.
+ */</doc>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>about_dialog.cpp source code [codebrowser/gui/src/about_dialog.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/gui/src/about_dialog.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>gui</a>/<a href='./'>src</a>/<a href='about_dialog.cpp.html'>about_dialog.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2014-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../include/solarus/gui/about_dialog.h.html">"solarus/gui/about_dialog.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/QApplication.html">&lt;QApplication&gt;</a></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">SolarusGui</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command">@brief</span> Creates a main window.</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">parent</span> Parent object or nullptr.</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="26">26</th><td><a class="type" href="../include/solarus/gui/about_dialog.h.html#SolarusGui::AboutDialog" title='SolarusGui::AboutDialog' data-ref="SolarusGui::AboutDialog">AboutDialog</a>::<dfn class="decl def" id="_ZN10SolarusGui11AboutDialogC1EP7QWidget" title='SolarusGui::AboutDialog::AboutDialog' data-ref="_ZN10SolarusGui11AboutDialogC1EP7QWidget">AboutDialog</dfn>(<a class="type" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a>* <dfn class="local col1 decl" id="1parent" title='parent' data-type='QWidget *' data-ref="1parent">parent</dfn>) :</td></tr>
+<tr><th id="27">27</th><td>  <a class="type" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h.html#QDialog" title='QDialog' data-ref="QDialog">QDialog</a><a class="ref" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h.html#_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE" title='QDialog::QDialog' data-ref="_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE">(</a><a class="local col1 ref" href="#1parent" title='parent' data-ref="1parent">parent</a>) {</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td>    <i>// Setup up widgets.</i></td></tr>
+<tr><th id="30">30</th><td>    <a class="member" href="../include/solarus/gui/about_dialog.h.html#SolarusGui::AboutDialog::ui" title='SolarusGui::AboutDialog::ui' data-ref="SolarusGui::AboutDialog::ui">ui</a>.<a class="ref" href="../ui_about_dialog.h.html#_ZN10SolarusGui14Ui_AboutDialog7setupUiEP7QDialog" title='SolarusGui::Ui_AboutDialog::setupUi' data-ref="_ZN10SolarusGui14Ui_AboutDialog7setupUiEP7QDialog">setupUi</a>(<b>this</b>);</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>    <i>// Set app information in labels</i></td></tr>
+<tr><th id="33">33</th><td>    <a class="member" href="../include/solarus/gui/about_dialog.h.html#SolarusGui::AboutDialog::ui" title='SolarusGui::AboutDialog::ui' data-ref="SolarusGui::AboutDialog::ui">ui</a>.<a class="ref" href="../ui_about_dialog.h.html#SolarusGui::Ui_AboutDialog::app_title_label" title='SolarusGui::Ui_AboutDialog::app_title_label' data-ref="SolarusGui::Ui_AboutDialog::app_title_label">app_title_label</a>-&gt;<a class="ref" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h.html#_ZN6QLabel7setTextERK7QString" title='QLabel::setText' data-ref="_ZN6QLabel7setTextERK7QString">setText</a>(<a class="type" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h.html#QApplication" title='QApplication' data-ref="QApplication">QApplication</a>::<a class="ref" href="../../../include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h.html#_ZN16QCoreApplication15applicationNameEv" title='QCoreApplication::applicationName' data-ref="_ZN16QCoreApplication15applicationNameEv">applicationName</a>());</td></tr>
+<tr><th id="34">34</th><td>    <a class="member" href="../include/solarus/gui/about_dialog.h.html#SolarusGui::AboutDialog::ui" title='SolarusGui::AboutDialog::ui' data-ref="SolarusGui::AboutDialog::ui">ui</a>.<a class="ref" href="../ui_about_dialog.h.html#SolarusGui::Ui_AboutDialog::app_version_label" title='SolarusGui::Ui_AboutDialog::app_version_label' data-ref="SolarusGui::Ui_AboutDialog::app_version_label">app_version_label</a>-&gt;<a class="ref" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h.html#_ZN6QLabel7setTextERK7QString" title='QLabel::setText' data-ref="_ZN6QLabel7setTextERK7QString">setText</a>(<a class="type" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h.html#QApplication" title='QApplication' data-ref="QApplication">QApplication</a>::<a class="ref" href="../../../include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h.html#_ZN16QCoreApplication18applicationVersionEv" title='QCoreApplication::applicationVersion' data-ref="_ZN16QCoreApplication18applicationVersionEv">applicationVersion</a>());</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <i>// Setup dialog properties.</i></td></tr>
+<tr><th id="37">37</th><td>    <a class="member" href="../../../include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h.html#_ZN7QWidget17setWindowModalityEN2Qt14WindowModalityE" title='QWidget::setWindowModality' data-ref="_ZN7QWidget17setWindowModalityEN2Qt14WindowModalityE">setWindowModality</a>(<span class="namespace">Qt::</span><a class="enum" href="../../../include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h.html#Qt::WindowModality::WindowModal" title='Qt::WindowModality::WindowModal' data-ref="Qt::WindowModality::WindowModal">WindowModal</a>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>    <i>// Connect html links</i></td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>} <i>// namespace SolarusGui</i></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

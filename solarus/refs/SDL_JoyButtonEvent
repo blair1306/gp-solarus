@@ -1,0 +1,12 @@
+<def f='include/SDL2/SDL_events.h' l='319' ll='328'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_events.h' l='316'>/**
+ *  \brief Joystick button event structure (event.jbutton.*)
+ */</doc>
+<mbr r='SDL_JoyButtonEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_JoyButtonEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_JoyButtonEvent::which' o='64' t='SDL_JoystickID'/>
+<mbr r='SDL_JoyButtonEvent::button' o='96' t='Uint8'/>
+<mbr r='SDL_JoyButtonEvent::state' o='104' t='Uint8'/>
+<mbr r='SDL_JoyButtonEvent::padding1' o='112' t='Uint8'/>
+<mbr r='SDL_JoyButtonEvent::padding2' o='120' t='Uint8'/>

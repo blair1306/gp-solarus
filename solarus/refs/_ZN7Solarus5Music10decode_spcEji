@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='109' type='void Solarus::Music::decode_spc(ALuint destination_buffer, ALsizei nb_samples)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='406' u='c' c='_ZN7Solarus5Music14update_playingEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='442' ll='458' type='void Solarus::Music::decode_spc(ALuint destination_buffer, ALsizei nb_samples)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='542' u='c' c='_ZN7Solarus5Music5startEv'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='437'>/**
+ * \brief Decodes a chunk of SPC data into PCM data for the current music.
+ * \param destination_buffer the destination buffer to write
+ * \param nb_samples number of samples to write
+ */</doc>

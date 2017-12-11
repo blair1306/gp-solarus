@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='193' type='void Solarus::Entity::set_direction(int direction)'/>
+<use f='codebrowser/src/entities/Block.cpp' l='72' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='123' u='c' c='_ZN7Solarus12CustomEntity21set_sprites_directionEi'/>
+<use f='codebrowser/src/entities/Door.cpp' l='90' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='167' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='645' ll='651' type='void Solarus::Entity::set_direction(int direction)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='641'>/**
+ * \brief Sets the direction property of this entity.
+ * \param direction the direction
+ */</doc>
+<use f='codebrowser/src/entities/Jumper.cpp' l='45' u='c' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='72' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='49' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3493' u='c' c='_ZN7Solarus10LuaContext24stream_api_set_directionEP9lua_State'/>

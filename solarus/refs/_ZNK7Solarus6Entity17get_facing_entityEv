@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='241' type='const Solarus::Entity * Solarus::Entity::get_facing_entity() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1086' ll='1088' type='const Solarus::Entity * Solarus::Entity::get_facing_entity() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1082'>/**
+ * \brief Returns the detector in front of this entity.
+ * \return The detector this entity is facing, or nullptr if there is no detector in front of him.
+ */</doc>

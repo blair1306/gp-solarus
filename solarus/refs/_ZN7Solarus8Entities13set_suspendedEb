@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='138' type='void Solarus::Entities::set_suspended(bool suspended)'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='137'>// Game loop.</doc>
+<use f='codebrowser/src/Map.cpp' l='459' u='c' c='_ZN7Solarus3Map13set_suspendedEb'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1160' ll='1171' type='void Solarus::Entities::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1151'>/**
+ * \brief Suspends or resumes the movement and animations of the entities.
+ *
+ * This function is called by the map when the game
+ * is being suspended or resumed.
+ *
+ * \param suspended true to suspend the movement and the animations,
+ * false to resume them
+ */</doc>

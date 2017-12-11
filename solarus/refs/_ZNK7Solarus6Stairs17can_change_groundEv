@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='85' type='bool Solarus::Stairs::can_change_ground() const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='80' ll='84' type='bool Solarus::Stairs::can_change_ground() const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='75'>/**
+ * \brief Returns whether entities of this type can override the ground
+ * of where they are placed.
+ * \return \c true if this type of entity can change the ground.
+ */</doc>

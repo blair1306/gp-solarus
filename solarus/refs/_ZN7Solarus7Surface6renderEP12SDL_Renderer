@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='93' type='void Solarus::Surface::render(SDL_Renderer * renderer)'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='778' ll='782' type='void Solarus::Surface::render(SDL_Renderer * renderer)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='773'>/**
+ * \brief Draws the internal texture if any, and all subtextures on the
+ * renderer.
+ * \param renderer The renderer where to draw.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='681' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>

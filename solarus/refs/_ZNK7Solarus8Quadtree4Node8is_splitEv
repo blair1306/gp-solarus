@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='125' type='bool Solarus::Quadtree::Node::is_split() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='337' u='c' c='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='350' u='c' c='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='382' u='c' c='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='415' ll='419' type='bool Solarus::Quadtree::Node::is_split() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='427' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='453' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='464' u='c' c='_ZN7Solarus8Quadtree4Node5mergeEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='480' u='c' c='_ZN7Solarus8Quadtree4Node5mergeEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='521' u='c' c='_ZNK7Solarus8Quadtree4Node16get_num_elementsEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='557' u='c' c='_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='580' u='c' c='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='411'>/**
+ * \brief Returns whether this node is split or is a leaf cell.
+ * \return \c true if the node is split.
+ */</doc>

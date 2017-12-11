@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='45' type='uint32_t Solarus::Timer::get_expiration_date() const'/>
+<def f='codebrowser/src/Timer.cpp' l='138' ll='140' type='uint32_t Solarus::Timer::get_expiration_date() const'/>
+<doc f='codebrowser/src/Timer.cpp' l='134'>/**
+ * \brief Returns the expiration date of this timer.
+ * \return The expiration date in milliseconds.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='325' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='549' u='c' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>

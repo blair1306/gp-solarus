@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='132' type='int Solarus::Hero::get_wanted_movement_direction8() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='278' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='291' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='927' ll='929' type='int Solarus::Hero::get_wanted_movement_direction8() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='947' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1011' u='c' c='_ZNK7Solarus4Hero17is_moving_towardsEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1162' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2195' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2260' u='c' c='_ZN7Solarus4Hero9start_iceEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='919'>/**
+ * \brief Returns the direction of the hero&apos;s movement as defined by the controls applied by the player.
+ *
+ * If he is not moving, -1 is returned.
+ * This direction may be different from the real movement direction because of obstacles.
+ *
+ * \return the hero&apos;s wanted direction between 0 and 7, or -1 if he is stopped
+ */</doc>

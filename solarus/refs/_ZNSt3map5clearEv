@@ -1,0 +1,25 @@
+<use f='include/c++/4.9/bits/stl_map.h' l='315' u='c' c='_ZNSt3mapaSEOSt3mapIT_T0_T1_T2_E'/>
+<def f='include/c++/4.9/bits/stl_map.h' l='825' ll='827' type='void std::map::clear()'/>
+<doc f='include/c++/4.9/bits/stl_map.h' l='819'>/**
+       *  Erases all elements in a %map.  Note that this function only
+       *  erases the elements, and that if the elements themselves are
+       *  pointers, the pointed-to memory is not touched in any way.
+       *  Managing the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/src/CurrentQuest.cpp' l='87' u='c' c='_ZN7Solarus12CurrentQuest4quitEv'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='185' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<use f='codebrowser/src/DialogResources.cpp' l='112' u='c' c='_ZN7Solarus15DialogResources5clearEv'/>
+<use f='codebrowser/src/EntityData.cpp' l='504' u='c' c='_ZN7Solarus10EntityData17initialize_fieldsEv'/>
+<use f='codebrowser/src/QuestResources.cpp' l='87' u='c' c='_ZN7Solarus14QuestResources5clearEv'/>
+<use f='codebrowser/src/Settings.cpp' l='141' u='c' c='_ZN7Solarus8Settings5clearEv'/>
+<use f='codebrowser/src/Settings.cpp' l='177' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='56' u='c' c='_ZN7Solarus6Sprite4quitEv'/>
+<use f='codebrowser/src/StringResources.cpp' l='35' u='c' c='_ZN7Solarus15StringResources5clearEv'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='48' u='c' c='_ZN7Solarus13EnemyReaction20set_default_reactionEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1196' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='42' u='c' c='_ZN7Solarus12FontResource4quitEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='233' u='c' c='_ZN7Solarus5Sound4quitEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1238' u='c' c='_ZN7Solarus10LuaContext18userdata_close_luaEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='225' u='c' c='_ZN7Solarus10LuaContext14destroy_timersEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='141' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='142' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>

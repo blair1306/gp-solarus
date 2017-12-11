@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='60' type='bool Solarus::StraightMovement::is_finished() const'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='81' c='_ZNK7Solarus8Movement11is_finishedEv'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='278' ll='280' type='bool Solarus::StraightMovement::is_finished() const'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='271'>/**
+ * \brief Returns whether the movement is finished.
+ *
+ * This functions returns true when max_distance is reached.
+ *
+ * \return true if the movement is finished
+ */</doc>
+<ovr f='codebrowser/src/movements/TargetMovement.cpp' l='186' c='_ZNK7Solarus14TargetMovement11is_finishedEv'/>

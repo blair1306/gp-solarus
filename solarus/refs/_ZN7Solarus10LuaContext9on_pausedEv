@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1213' type='void Solarus::LuaContext::on_paused()'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1663' u='c' c='_ZN7Solarus10LuaContext14game_on_pausedERNS_4GameE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1464' ll='1469' type='void Solarus::LuaContext::on_paused()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1461'>/**
+ * \brief Calls the on_paused() method of the object on top of the stack.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='135' type='bool Solarus::TilesetData::border_set_exists(const std::string &amp; border_set_id) const'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='347' ll='349' type='bool Solarus::TilesetData::border_set_exists(const std::string &amp; border_set_id) const'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='422' u='c' c='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='427' u='c' c='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='342'>/**
+ * \brief Returns whether there exists a border set with the specified id.
+ * \param border_set_id The id to test.
+ * \return \c true if a border set exists with this id in the tileset.
+ */</doc>

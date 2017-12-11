@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='257' type='Solarus::CustomEntity::TraversableInfo'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='147' u='a' c='_ZN7Solarus12CustomEntity30get_traversable_by_entity_infoENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='182' u='w' c='_ZN7Solarus12CustomEntity27set_traversable_by_entitiesEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='202' u='w' c='_ZN7Solarus12CustomEntity27set_traversable_by_entitiesERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='219' u='w' c='_ZN7Solarus12CustomEntity29reset_traversable_by_entitiesEv'/>
+<offset>2112</offset>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='255'>// Obstacles.</doc>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='257'>/**&lt; Whether entities can traverse me by default or nullptr. */</doc>

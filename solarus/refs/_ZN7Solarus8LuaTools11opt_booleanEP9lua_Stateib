@@ -1,0 +1,62 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='169' type='bool Solarus::LuaTools::opt_boolean(lua_State * l, int index, bool default_value)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='865' u='c' c='_ZN7Solarus10LuaContext22entity_api_set_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1529' u='c' c='_ZN7Solarus10LuaContext22entity_api_set_visibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1603' u='c' c='_ZN7Solarus10LuaContext43entity_api_set_layer_independent_collisionsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2139' u='c' c='_ZN7Solarus10LuaContext21hero_api_set_blinkingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2177' u='c' c='_ZN7Solarus10LuaContext23hero_api_set_invincibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2228' u='c' c='_ZN7Solarus10LuaContext13hero_api_walkEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2229' u='c' c='_ZN7Solarus10LuaContext13hero_api_walkEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2289' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_jumpingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3017' u='c' c='_ZN7Solarus10LuaContext23npc_api_set_traversableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3081' u='c' c='_ZN7Solarus10LuaContext18chest_api_set_openEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3228' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pushableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3260' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pullableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3376' u='c' c='_ZN7Solarus10LuaContext24switch_api_set_activatedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3408' u='c' c='_ZN7Solarus10LuaContext21switch_api_set_lockedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3555' u='c' c='_ZN7Solarus10LuaContext29stream_api_set_allow_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3587' u='c' c='_ZN7Solarus10LuaContext27stream_api_set_allow_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3619' u='c' c='_ZN7Solarus10LuaContext25stream_api_set_allow_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4160' u='c' c='_ZN7Solarus10LuaContext31destructible_api_set_can_be_cutEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4194' u='c' c='_ZN7Solarus10LuaContext32destructible_api_set_can_explodeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4228' u='c' c='_ZN7Solarus10LuaContext35destructible_api_set_can_regenerateEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4522' u='c' c='_ZN7Solarus10LuaContext35enemy_api_set_pushed_back_when_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4554' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_push_hero_on_swordEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4586' u='c' c='_ZN7Solarus10LuaContext35enemy_api_set_can_hurt_hero_runningEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4653' u='c' c='_ZN7Solarus10LuaContext24enemy_api_set_can_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4964' u='c' c='_ZN7Solarus10LuaContext25enemy_api_set_traversableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5367' u='c' c='_ZN7Solarus10LuaContext38custom_entity_api_set_drawn_in_y_orderEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='318' u='c' c='_ZN7Solarus10LuaContext22game_api_set_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='356' u='c' c='_ZN7Solarus10LuaContext19game_api_set_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='394' u='c' c='_ZN7Solarus10LuaContext26game_api_set_pause_allowedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='78' u='c' c='_ZN7Solarus10LuaContext28input_api_set_joypad_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='293' u='c' c='_ZN7Solarus10LuaContext23item_api_set_obtainableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='325' u='c' c='_ZN7Solarus10LuaContext23item_api_set_assignableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='357' u='c' c='_ZN7Solarus10LuaContext26item_api_set_can_disappearEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='389' u='c' c='_ZN7Solarus10LuaContext33item_api_set_brandish_when_pickedEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='631' ll='640' type='bool Solarus::LuaTools::opt_boolean(lua_State * l, int index, bool default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='624'>/**
+ * \brief Like LuaTools::check_boolean() but with a default value.
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \param default_value The default value to return if the value is \c nil.
+ * \return The wanted value as a boolean.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1910' u='c' c='_ZN7Solarus10LuaContext22map_api_set_doors_openEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2129' u='c' c='_ZN7Solarus10LuaContext28map_api_set_entities_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='192' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='677' u='c' c='_ZN7Solarus10LuaContext33movement_api_set_ignore_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='831' u='c' c='_ZN7Solarus10LuaContext32straight_movement_api_set_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='956' u='c' c='_ZN7Solarus10LuaContext30random_movement_api_set_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1084' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1215' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1246' u='c' c='_ZN7Solarus10LuaContext34path_movement_api_set_snap_to_gridEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1507' u='c' c='_ZN7Solarus10LuaContext33circle_movement_api_set_clockwiseEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1874' u='c' c='_ZN7Solarus10LuaContext27pixel_movement_api_set_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='558' u='c' c='_ZN7Solarus10LuaContext21sprite_api_set_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='575' u='c' c='_ZN7Solarus10LuaContext29sprite_api_set_ignore_suspendEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='126' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='451' u='c' c='_ZN7Solarus10LuaContext24timer_api_set_with_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='483' u='c' c='_ZN7Solarus10LuaContext23timer_api_set_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='517' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='201' u='c' c='_ZN7Solarus10LuaContext24video_api_set_fullscreenEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='232' u='c' c='_ZN7Solarus10LuaContext28video_api_set_cursor_visibleEP9lua_State'/>

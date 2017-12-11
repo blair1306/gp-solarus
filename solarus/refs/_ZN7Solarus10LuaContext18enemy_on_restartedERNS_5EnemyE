@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='410' type='void Solarus::LuaContext::enemy_on_restarted(Solarus::Enemy &amp; enemy)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1138' u='c' c='_ZN7Solarus5Enemy7restartEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6432' ll='6440' type='void Solarus::LuaContext::enemy_on_restarted(Solarus::Enemy &amp; enemy)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6425'>/**
+ * \brief Calls the on_restarted() method of a Lua enemy if it is defined.
+ *
+ * Also stops timers associated to the entity.
+ *
+ * \param enemy An enemy.
+ */</doc>

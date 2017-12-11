@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_video.h' l='252' type='void SDL_VideoQuit()'/>
+<doc f='include/SDL2/SDL_video.h' l='245'>/**
+ *  \brief Shuts down the video subsystem.
+ *
+ *  This function closes all windows, and restores the original video mode.
+ *
+ *  \sa SDL_VideoInit()
+ */</doc>

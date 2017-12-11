@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='507' type='static int Solarus::LuaContext::file_api_exists(lua_State * )'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='35' u='r' c='_ZN7Solarus10LuaContext20register_file_moduleEv'/>
+<def f='codebrowser/src/lua/FileApi.cpp' l='137' ll='146' type='static int Solarus::LuaContext::file_api_exists(lua_State * l)'/>
+<doc f='codebrowser/src/lua/FileApi.cpp' l='132'>/**
+ * \brief Implementation of sol.file.exists().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

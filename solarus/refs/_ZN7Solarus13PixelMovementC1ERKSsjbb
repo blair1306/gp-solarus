@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='37' type='void Solarus::PixelMovement::PixelMovement(const std::string &amp; trajectory_string, uint32_t delay, bool loop, bool ignore_obstacles)'/>
+<doc f='codebrowser/include/solarus/movements/PixelMovement.h' l='36'>// creation and destruction</doc>
+<use f='codebrowser/src/movements/FallingOnFloorMovement.cpp' l='45' u='c' c='_ZN7Solarus22FallingOnFloorMovementC1ENS_13FallingHeightE'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='47' u='c' c='_ZN7Solarus12JumpMovementC1Eiiib'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='58' u='c' c='_ZN7Solarus12PathMovementC1ERKSsibbb'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='34' ll='47' type='void Solarus::PixelMovement::PixelMovement(const std::string &amp; trajectory_string, uint32_t delay, bool loop, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='26'>/**
+ * \brief Creates a pixel movement object.
+ * \param trajectory_string a string describing the succession of translations that compose this movement,
+ * with the syntax &quot;dx1 dy1  dx2 dy2  dx3 dy3 ...&quot; (the number of spaces between values does not matter)
+ * \param delay delay in milliseconds between two translations
+ * \param loop true to make the movement return to the beginning once finished
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ */</doc>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='30' u='c' c='_ZN12_GLOBAL__N_110basic_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='48' u='c' c='_ZN12_GLOBAL__N_19loop_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='65' u='c' c='_ZN12_GLOBAL__N_110empty_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='76' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='108' u='c' c='_ZN12_GLOBAL__N_19list_testERN7Solarus15TestEnvironmentE'/>

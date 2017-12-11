@@ -1,0 +1,7 @@
+<def f='include/vorbis/vorbisfile.h' l='53' ll='63' type='int _ov_header_fseek_wrap(FILE * f, ogg_int64_t off, int whence)'/>
+<use f='include/vorbis/vorbisfile.h' l='77'/>
+<use f='include/vorbis/vorbisfile.h' l='84'/>
+<doc f='include/vorbis/vorbisfile.h' l='48'>/* a few sets of convenient callbacks, especially for use under
+ * Windows where ov_open_callbacks() should always be used instead of
+ * ov_open() to avoid problems with incompatible crt.o version linking
+ * issues. */</doc>

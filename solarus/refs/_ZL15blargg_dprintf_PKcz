@@ -1,0 +1,15 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/blargg_source.h' l='25' type='void blargg_dprintf_(const char * )'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='179' macro='1' u='c'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='334' macro='1' u='c'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='348' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='848' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='863' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='962' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='1166' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='1171' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='1187' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='1193' macro='1' u='c'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='1208' macro='1' u='c'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/blargg_source.h' l='22'>// Like printf() except output goes to debug log file. Might be defined to do
+// nothing (not even evaluate its arguments).
+// void dprintf( const char* format, ... );</doc>

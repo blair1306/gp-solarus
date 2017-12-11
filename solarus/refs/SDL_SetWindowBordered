@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_video.h' l='619' type='void SDL_SetWindowBordered(SDL_Window * window, SDL_bool bordered)'/>
+<doc f='include/SDL2/SDL_video.h' l='605'>/**
+ *  \brief Set the border state of a window.
+ *
+ *  This will add or remove the window&apos;s SDL_WINDOW_BORDERLESS flag and
+ *  add or remove the border from the actual window. This is a no-op if the
+ *  window&apos;s border already matches the requested state.
+ *
+ *  \param window The window of which to change the border state.
+ *  \param bordered SDL_FALSE to remove border, SDL_TRUE to add border.
+ *
+ *  \note You can&apos;t change the border state of a fullscreen window.
+ *
+ *  \sa SDL_GetWindowFlags()
+ */</doc>

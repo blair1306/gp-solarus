@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='57' type='static Solarus::Transition * Solarus::Transition::create(Solarus::Transition::Style style, Solarus::Transition::Direction direction, Solarus::Surface &amp; dst_surface, Solarus::Game * game = nullptr)'/>
+<use f='codebrowser/src/Game.cpp' l='395' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='478' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='518' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='887' u='c' c='_ZN7Solarus4Game7restartEv'/>
+<def f='codebrowser/src/Transition.cpp' l='62' ll='88' type='static Solarus::Transition * Solarus::Transition::create(Transition::Style style, Transition::Direction direction, Solarus::Surface &amp; dst_surface, Solarus::Game * game = nullptr)'/>
+<doc f='codebrowser/src/Transition.cpp' l='53'>/**
+ * \brief Creates a transition effect with the specified type and direction.
+ * \param style style of the transition: Transition::IMMEDIATE, Transition::FADE, etc.
+ * \param direction Direction of the transition.
+ * \param dst_surface The surface that will receive the transition
+ * (used by some kinds of transitions).
+ * \param game The current game if any (used by some kinds of transitions).
+ * \return the transition created
+ */</doc>

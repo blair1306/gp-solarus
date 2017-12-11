@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1287' type='void Solarus::LuaContext::on_movement_changed(Solarus::Movement &amp; movement)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5883' u='c' c='_ZN7Solarus10LuaContext26entity_on_movement_changedERNS_6EntityERNS_8MovementE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2728' ll='2734' type='void Solarus::LuaContext::on_movement_changed(Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2724'>/**
+ * \brief Calls the on_movement_changed() method of the object on top of the stack.
+ * \param movement A movement.
+ */</doc>

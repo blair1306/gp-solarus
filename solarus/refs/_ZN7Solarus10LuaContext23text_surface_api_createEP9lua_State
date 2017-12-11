@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='563' type='static int Solarus::LuaContext::text_surface_api_create(lua_State * )'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='63' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='143' ll='200' type='static int Solarus::LuaContext::text_surface_api_create(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='138'>/**
+ * \brief Implementation of sol.text_surface.create().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

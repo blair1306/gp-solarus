@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/NonAnimatedRegions.h' l='51' type='bool Solarus::NonAnimatedRegions::overlaps_animated_tile(const Solarus::TileInfo &amp; tile) const'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='103' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<def f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='133' ll='159' type='bool Solarus::NonAnimatedRegions::overlaps_animated_tile(const Solarus::TileInfo &amp; tile) const'/>
+<doc f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='128'>/**
+ * \brief Returns whether a tile is overlapping an animated other tile.
+ * \param tile The tile to check.
+ * \return \c true if this tile is overlapping an animated tile.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='300' type='void Solarus::LuaContext::sprite_on_animation_finished(Solarus::Sprite &amp; sprite, const std::string &amp; animation)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='299'>// Sprite events.</doc>
+<use f='codebrowser/src/Sprite.cpp' l='950' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='613' ll='623' type='void Solarus::LuaContext::sprite_on_animation_finished(Solarus::Sprite &amp; sprite, const std::string &amp; animation)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='605'>/**
+ * \brief Calls the on_animation_finished() method of a Lua sprite.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sprite A sprite whose animation has just finished.
+ * \param animation Name of the animation finished.
+ */</doc>

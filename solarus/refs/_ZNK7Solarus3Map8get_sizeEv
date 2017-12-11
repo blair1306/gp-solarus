@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Map.h' l='73' type='Solarus::Size Solarus::Map::get_size() const'/>
+<def f='codebrowser/src/Map.cpp' l='175' ll='177' type='Solarus::Size Solarus::Map::get_size() const'/>
+<doc f='codebrowser/src/Map.cpp' l='171'>/**
+ * \brief Returns the size of this map.
+ * \return The size of this map in pixels.
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='411' u='c' c='_ZNK7Solarus6Camera16apply_map_boundsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='34' u='c' c='_ZN7Solarus18NonAnimatedRegionsC1ERNS_3MapEi'/>

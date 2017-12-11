@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='264' type='static void Solarus::InputEvent::set_joypad_enabled(bool joypad_enabled)'/>
+<use f='codebrowser/src/Settings.cpp' l='358' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='197' u='c' c='_ZN7Solarus10InputEvent10initializeEv'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='904' ll='928' type='static void Solarus::InputEvent::set_joypad_enabled(bool joypad_enabled)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='897'>/**
+ * \brief Enables or disables joypad support.
+ *
+ * Joypad support may be enabled even without any joypad plugged.
+ *
+ * \param joypad_enabled true to enable joypad support, false to disable it.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='80' u='c' c='_ZN7Solarus10LuaContext28input_api_set_joypad_enabledEP9lua_State'/>

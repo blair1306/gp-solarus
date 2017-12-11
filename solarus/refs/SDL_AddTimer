@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_timer.h' l='93' type='SDL_TimerID SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void * param)'/>
+<doc f='include/SDL2/SDL_timer.h' l='88'>/**
+ * \brief Add a new timer to the pool of timers already running.
+ *
+ * \return A timer ID, or NULL when an error occurs.
+ */</doc>

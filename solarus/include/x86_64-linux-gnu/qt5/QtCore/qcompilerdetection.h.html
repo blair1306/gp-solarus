@@ -1,0 +1,1073 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qcompilerdetection.h source code [include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qcompilerdetection.h.html'>qcompilerdetection.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Copyright (C) 2012 Intel Corporation</i></td></tr>
+<tr><th id="5">5</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="6">6</th><td><i>**</i></td></tr>
+<tr><th id="7">7</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="8">8</th><td><i>**</i></td></tr>
+<tr><th id="9">9</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="10">10</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="11">11</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="12">12</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="14">14</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="15">15</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="16">16</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="17">17</th><td><i>**</i></td></tr>
+<tr><th id="18">18</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="19">19</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="20">20</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="21">21</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="22">22</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="23">23</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="24">24</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="25">25</th><td><i>**</i></td></tr>
+<tr><th id="26">26</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="27">27</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="28">28</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="29">29</th><td><i>**</i></td></tr>
+<tr><th id="30">30</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="31">31</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="32">32</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="33">33</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="34">34</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="35">35</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="36">36</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>**</i></td></tr>
+<tr><th id="39">39</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="40">40</th><td><i>**</i></td></tr>
+<tr><th id="41">41</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="43">ifndef</span> <a class="macro" href="qglobal.h.html#44" data-ref="_M/QGLOBAL_H">QGLOBAL_H</a></u></td></tr>
+<tr><th id="44">44</th><td><u># include &lt;QtCore/qglobal.h&gt;</u></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="43">endif</span></u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="47">ifndef</span> <span class="macro" data-ref="_M/QCOMPILERDETECTION_H">QCOMPILERDETECTION_H</span></u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/QCOMPILERDETECTION_H" data-ref="_M/QCOMPILERDETECTION_H">QCOMPILERDETECTION_H</dfn></u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>/*</i></td></tr>
+<tr><th id="51">51</th><td><i>   The compiler, must be one of: (Q_CC_x)</i></td></tr>
+<tr><th id="52">52</th><td><i></i></td></tr>
+<tr><th id="53">53</th><td><i>     SYM      - Digital Mars C/C++ (used to be Symantec C++)</i></td></tr>
+<tr><th id="54">54</th><td><i>     MSVC     - Microsoft Visual C/C++, Intel C++ for Windows</i></td></tr>
+<tr><th id="55">55</th><td><i>     BOR      - Borland/Turbo C++</i></td></tr>
+<tr><th id="56">56</th><td><i>     WAT      - Watcom C++</i></td></tr>
+<tr><th id="57">57</th><td><i>     GNU      - GNU C++</i></td></tr>
+<tr><th id="58">58</th><td><i>     COMEAU   - Comeau C++</i></td></tr>
+<tr><th id="59">59</th><td><i>     EDG      - Edison Design Group C++</i></td></tr>
+<tr><th id="60">60</th><td><i>     OC       - CenterLine C++</i></td></tr>
+<tr><th id="61">61</th><td><i>     SUN      - Forte Developer, or Sun Studio C++</i></td></tr>
+<tr><th id="62">62</th><td><i>     MIPS     - MIPSpro C++</i></td></tr>
+<tr><th id="63">63</th><td><i>     DEC      - DEC C++</i></td></tr>
+<tr><th id="64">64</th><td><i>     HPACC    - HP aC++</i></td></tr>
+<tr><th id="65">65</th><td><i>     USLC     - SCO OUDK and UDK</i></td></tr>
+<tr><th id="66">66</th><td><i>     CDS      - Reliant C++</i></td></tr>
+<tr><th id="67">67</th><td><i>     KAI      - KAI C++</i></td></tr>
+<tr><th id="68">68</th><td><i>     INTEL    - Intel C++ for Linux, Intel C++ for Windows</i></td></tr>
+<tr><th id="69">69</th><td><i>     HIGHC    - MetaWare High C/C++</i></td></tr>
+<tr><th id="70">70</th><td><i>     PGI      - Portland Group C++</i></td></tr>
+<tr><th id="71">71</th><td><i>     GHS      - Green Hills Optimizing C++ Compilers</i></td></tr>
+<tr><th id="72">72</th><td><i>     RVCT     - ARM Realview Compiler Suite</i></td></tr>
+<tr><th id="73">73</th><td><i>     CLANG    - C++ front-end for the LLVM compiler</i></td></tr>
+<tr><th id="74">74</th><td><i></i></td></tr>
+<tr><th id="75">75</th><td><i></i></td></tr>
+<tr><th id="76">76</th><td><i>   Should be sorted most to least authoritative.</i></td></tr>
+<tr><th id="77">77</th><td><i>*/</i></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><i>/* Symantec C++ is now Digital Mars */</i></td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="80">if</span> defined(<span class="macro" data-ref="_M/__DMC__">__DMC__</span>) || defined(<span class="macro" data-ref="_M/__SC__">__SC__</span>)</u></td></tr>
+<tr><th id="81">81</th><td><u>#  define Q_CC_SYM</u></td></tr>
+<tr><th id="82">82</th><td><i>/* "explicit" semantics implemented in 8.1e but keyword recognized since 7.5 */</i></td></tr>
+<tr><th id="83">83</th><td><u>#  if defined(__SC__) &amp;&amp; __SC__ &lt; 0x750</u></td></tr>
+<tr><th id="84">84</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="85">85</th><td><u>#  endif</u></td></tr>
+<tr><th id="86">86</th><td><u>#  define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><u>#<span data-ppcond="80">elif</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>)</u></td></tr>
+<tr><th id="89">89</th><td><u>#  define Q_CC_MSVC</u></td></tr>
+<tr><th id="90">90</th><td><u>#  define Q_CC_MSVC_NET</u></td></tr>
+<tr><th id="91">91</th><td><u>#  define Q_OUTOFLINE_TEMPLATE inline</u></td></tr>
+<tr><th id="92">92</th><td><u>#  define Q_NO_TEMPLATE_FRIENDS</u></td></tr>
+<tr><th id="93">93</th><td><u>#  define Q_COMPILER_MANGLES_RETURN_TYPE</u></td></tr>
+<tr><th id="94">94</th><td><u>#  define Q_FUNC_INFO __FUNCSIG__</u></td></tr>
+<tr><th id="95">95</th><td><u>#  define Q_ALIGNOF(type) __alignof(type)</u></td></tr>
+<tr><th id="96">96</th><td><u>#  define Q_DECL_ALIGN(n) __declspec(align(n))</u></td></tr>
+<tr><th id="97">97</th><td><u>#  define Q_ASSUME_IMPL(expr) __assume(expr)</u></td></tr>
+<tr><th id="98">98</th><td><u>#  define Q_UNREACHABLE_IMPL() __assume(0)</u></td></tr>
+<tr><th id="99">99</th><td><u>#  define Q_NORETURN __declspec(noreturn)</u></td></tr>
+<tr><th id="100">100</th><td><u>#  define Q_DECL_DEPRECATED __declspec(deprecated)</u></td></tr>
+<tr><th id="101">101</th><td><u>#  define Q_DECL_DEPRECATED_X(text) __declspec(deprecated(text))</u></td></tr>
+<tr><th id="102">102</th><td><u>#  define Q_DECL_EXPORT __declspec(dllexport)</u></td></tr>
+<tr><th id="103">103</th><td><u>#  define Q_DECL_IMPORT __declspec(dllimport)</u></td></tr>
+<tr><th id="104">104</th><td><i>/* Intel C++ disguising as Visual C++: the `using' keyword avoids warnings */</i></td></tr>
+<tr><th id="105">105</th><td><u>#  if defined(__INTEL_COMPILER)</u></td></tr>
+<tr><th id="106">106</th><td><u>#    define Q_DECL_VARIABLE_DEPRECATED</u></td></tr>
+<tr><th id="107">107</th><td><u>#    define Q_CC_INTEL</u></td></tr>
+<tr><th id="108">108</th><td><u>#  endif</u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i>/* only defined for MSVC since that's the only compiler that actually optimizes for this */</i></td></tr>
+<tr><th id="111">111</th><td><i>/* might get overridden further down when Q_COMPILER_NOEXCEPT is detected */</i></td></tr>
+<tr><th id="112">112</th><td><u>#  ifdef __cplusplus</u></td></tr>
+<tr><th id="113">113</th><td><u>#    define Q_DECL_NOTHROW  throw()</u></td></tr>
+<tr><th id="114">114</th><td><u>#  endif</u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="80">elif</span> defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>) || defined(<span class="macro" data-ref="_M/__TURBOC__">__TURBOC__</span>)</u></td></tr>
+<tr><th id="117">117</th><td><u>#  define Q_CC_BOR</u></td></tr>
+<tr><th id="118">118</th><td><u>#  define Q_INLINE_TEMPLATE</u></td></tr>
+<tr><th id="119">119</th><td><u>#  if __BORLANDC__ &lt; 0x502</u></td></tr>
+<tr><th id="120">120</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="121">121</th><td><u>#  endif</u></td></tr>
+<tr><th id="122">122</th><td><u>#  define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="80">elif</span> defined(<span class="macro" data-ref="_M/__WATCOMC__">__WATCOMC__</span>)</u></td></tr>
+<tr><th id="125">125</th><td><u>#  define Q_CC_WAT</u></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i>/* ARM Realview Compiler Suite</i></td></tr>
+<tr><th id="128">128</th><td><i>   RVCT compiler also defines __EDG__ and __GNUC__ (if --gnu flag is given),</i></td></tr>
+<tr><th id="129">129</th><td><i>   so check for it before that */</i></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="80">elif</span> defined(<span class="macro" data-ref="_M/__ARMCC__">__ARMCC__</span>) || defined(<span class="macro" data-ref="_M/__CC_ARM">__CC_ARM</span>)</u></td></tr>
+<tr><th id="131">131</th><td><u>#  define Q_CC_RVCT</u></td></tr>
+<tr><th id="132">132</th><td><i>/* work-around for missing compiler intrinsics */</i></td></tr>
+<tr><th id="133">133</th><td><u>#  define __is_empty(X) false</u></td></tr>
+<tr><th id="134">134</th><td><u>#  define __is_pod(X) false</u></td></tr>
+<tr><th id="135">135</th><td><u>#  define Q_DECL_DEPRECATED __attribute__ ((__deprecated__))</u></td></tr>
+<tr><th id="136">136</th><td><u>#  ifdef Q_OS_LINUX</u></td></tr>
+<tr><th id="137">137</th><td><u>#    define Q_DECL_EXPORT     __attribute__((visibility("default")))</u></td></tr>
+<tr><th id="138">138</th><td><u>#    define Q_DECL_IMPORT     __attribute__((visibility("default")))</u></td></tr>
+<tr><th id="139">139</th><td><u>#    define Q_DECL_HIDDEN     __attribute__((visibility("hidden")))</u></td></tr>
+<tr><th id="140">140</th><td><u>#  else</u></td></tr>
+<tr><th id="141">141</th><td><u>#    define Q_DECL_EXPORT     __declspec(dllexport)</u></td></tr>
+<tr><th id="142">142</th><td><u>#    define Q_DECL_IMPORT     __declspec(dllimport)</u></td></tr>
+<tr><th id="143">143</th><td><u>#  endif</u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><u>#<span data-ppcond="80">elif</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="146">146</th><td><u>#  define <dfn class="macro" id="_M/Q_CC_GNU" data-ref="_M/Q_CC_GNU">Q_CC_GNU</dfn></u></td></tr>
+<tr><th id="147">147</th><td><u>#  define <dfn class="macro" id="_M/Q_C_CALLBACKS" data-ref="_M/Q_C_CALLBACKS">Q_C_CALLBACKS</dfn></u></td></tr>
+<tr><th id="148">148</th><td><u>#  <span data-ppcond="148">if</span> defined(<span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span>)</u></td></tr>
+<tr><th id="149">149</th><td><u>#    define Q_CC_MINGW</u></td></tr>
+<tr><th id="150">150</th><td><u>#  <span data-ppcond="148">endif</span></u></td></tr>
+<tr><th id="151">151</th><td><u>#  <span data-ppcond="151">if</span> defined(<span class="macro" data-ref="_M/__INTEL_COMPILER">__INTEL_COMPILER</span>)</u></td></tr>
+<tr><th id="152">152</th><td><i>/* Intel C++ also masquerades as GCC */</i></td></tr>
+<tr><th id="153">153</th><td><u>#    define Q_CC_INTEL</u></td></tr>
+<tr><th id="154">154</th><td><u>#    define Q_ASSUME_IMPL(expr)  __assume(expr)</u></td></tr>
+<tr><th id="155">155</th><td><u>#    define Q_UNREACHABLE_IMPL() __builtin_unreachable()</u></td></tr>
+<tr><th id="156">156</th><td><u>#    if __INTEL_COMPILER &gt;= 1300 &amp;&amp; !defined(__APPLE__)</u></td></tr>
+<tr><th id="157">157</th><td><u>#      define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))</u></td></tr>
+<tr><th id="158">158</th><td><u>#    endif</u></td></tr>
+<tr><th id="159">159</th><td><u>#  <span data-ppcond="151">elif</span> defined(<span class="macro" data-ref="_M/__clang__">__clang__</span>)</u></td></tr>
+<tr><th id="160">160</th><td><i>/* Clang also masquerades as GCC */</i></td></tr>
+<tr><th id="161">161</th><td><u>#    define <dfn class="macro" id="_M/Q_CC_CLANG" data-ref="_M/Q_CC_CLANG">Q_CC_CLANG</dfn></u></td></tr>
+<tr><th id="162">162</th><td><u>#    define <dfn class="macro" id="_M/Q_ASSUME_IMPL" data-ref="_M/Q_ASSUME_IMPL">Q_ASSUME_IMPL</dfn>(expr)  if (expr){} else __builtin_unreachable()</u></td></tr>
+<tr><th id="163">163</th><td><u>#    define <dfn class="macro" id="_M/Q_UNREACHABLE_IMPL" data-ref="_M/Q_UNREACHABLE_IMPL">Q_UNREACHABLE_IMPL</dfn>() __builtin_unreachable()</u></td></tr>
+<tr><th id="164">164</th><td><u>#    <span data-ppcond="164">if</span> !defined(<span class="macro" data-ref="_M/__has_extension">__has_extension</span>)</u></td></tr>
+<tr><th id="165">165</th><td><u>#      /* Compatibility with older Clang versions */</u></td></tr>
+<tr><th id="166">166</th><td><u>#      define __has_extension __has_feature</u></td></tr>
+<tr><th id="167">167</th><td><u>#    <span data-ppcond="164">endif</span></u></td></tr>
+<tr><th id="168">168</th><td><u>#    <span data-ppcond="168">if</span> defined(<span class="macro" data-ref="_M/__APPLE__">__APPLE__</span>)</u></td></tr>
+<tr><th id="169">169</th><td>     <i>/* Apple/clang specific features */</i></td></tr>
+<tr><th id="170">170</th><td><u>#      define Q_DECL_CF_RETURNS_RETAINED __attribute__((cf_returns_retained))</u></td></tr>
+<tr><th id="171">171</th><td><u>#      ifdef __OBJC__</u></td></tr>
+<tr><th id="172">172</th><td><u>#        define Q_DECL_NS_RETURNS_AUTORELEASED __attribute__((ns_returns_autoreleased))</u></td></tr>
+<tr><th id="173">173</th><td><u>#      endif</u></td></tr>
+<tr><th id="174">174</th><td><u>#    <span data-ppcond="168">endif</span></u></td></tr>
+<tr><th id="175">175</th><td><u>#  <span data-ppcond="151">else</span></u></td></tr>
+<tr><th id="176">176</th><td><i>/* Plain GCC */</i></td></tr>
+<tr><th id="177">177</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 405</u></td></tr>
+<tr><th id="178">178</th><td><u>#      define Q_ASSUME_IMPL(expr)  if (expr){} else __builtin_unreachable()</u></td></tr>
+<tr><th id="179">179</th><td><u>#      define Q_UNREACHABLE_IMPL() __builtin_unreachable()</u></td></tr>
+<tr><th id="180">180</th><td><u>#      define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))</u></td></tr>
+<tr><th id="181">181</th><td><u>#    endif</u></td></tr>
+<tr><th id="182">182</th><td><u>#  <span data-ppcond="151">endif</span></u></td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><u>#  <span data-ppcond="184">ifdef</span> <span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span></u></td></tr>
+<tr><th id="185">185</th><td><u>#    define Q_DECL_EXPORT     __declspec(dllexport)</u></td></tr>
+<tr><th id="186">186</th><td><u>#    define Q_DECL_IMPORT     __declspec(dllimport)</u></td></tr>
+<tr><th id="187">187</th><td><u>#  <span data-ppcond="184">elif</span> defined(<a class="macro" href="qconfig.h.html#74" data-ref="_M/QT_VISIBILITY_AVAILABLE">QT_VISIBILITY_AVAILABLE</a>)</u></td></tr>
+<tr><th id="188">188</th><td><u>#    define <dfn class="macro" id="_M/Q_DECL_EXPORT" data-ref="_M/Q_DECL_EXPORT">Q_DECL_EXPORT</dfn>     __attribute__((visibility("default")))</u></td></tr>
+<tr><th id="189">189</th><td><u>#    define <dfn class="macro" id="_M/Q_DECL_IMPORT" data-ref="_M/Q_DECL_IMPORT">Q_DECL_IMPORT</dfn>     __attribute__((visibility("default")))</u></td></tr>
+<tr><th id="190">190</th><td><u>#    define <dfn class="macro" id="_M/Q_DECL_HIDDEN" data-ref="_M/Q_DECL_HIDDEN">Q_DECL_HIDDEN</dfn>     __attribute__((visibility("hidden")))</u></td></tr>
+<tr><th id="191">191</th><td><u>#  <span data-ppcond="184">endif</span></u></td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td><u>#  define <dfn class="macro" id="_M/Q_FUNC_INFO" data-ref="_M/Q_FUNC_INFO">Q_FUNC_INFO</dfn>       __PRETTY_FUNCTION__</u></td></tr>
+<tr><th id="194">194</th><td><u>#  define <dfn class="macro" id="_M/Q_ALIGNOF" data-ref="_M/Q_ALIGNOF">Q_ALIGNOF</dfn>(type)   __alignof__(type)</u></td></tr>
+<tr><th id="195">195</th><td><u>#  define <dfn class="macro" id="_M/Q_TYPEOF" data-ref="_M/Q_TYPEOF">Q_TYPEOF</dfn>(expr)    __typeof__(expr)</u></td></tr>
+<tr><th id="196">196</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_DEPRECATED" data-ref="_M/Q_DECL_DEPRECATED">Q_DECL_DEPRECATED</dfn> __attribute__ ((__deprecated__))</u></td></tr>
+<tr><th id="197">197</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_ALIGN" data-ref="_M/Q_DECL_ALIGN">Q_DECL_ALIGN</dfn>(n)   __attribute__((__aligned__(n)))</u></td></tr>
+<tr><th id="198">198</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_UNUSED" data-ref="_M/Q_DECL_UNUSED">Q_DECL_UNUSED</dfn>     __attribute__((__unused__))</u></td></tr>
+<tr><th id="199">199</th><td><u>#  define <dfn class="macro" id="_M/Q_LIKELY" data-ref="_M/Q_LIKELY">Q_LIKELY</dfn>(expr)    __builtin_expect(!!(expr), true)</u></td></tr>
+<tr><th id="200">200</th><td><u>#  define <dfn class="macro" id="_M/Q_UNLIKELY" data-ref="_M/Q_UNLIKELY">Q_UNLIKELY</dfn>(expr)  __builtin_expect(!!(expr), false)</u></td></tr>
+<tr><th id="201">201</th><td><u>#  define <dfn class="macro" id="_M/Q_NORETURN" data-ref="_M/Q_NORETURN">Q_NORETURN</dfn>        __attribute__((__noreturn__))</u></td></tr>
+<tr><th id="202">202</th><td><u>#  define <dfn class="macro" id="_M/Q_REQUIRED_RESULT" data-ref="_M/Q_REQUIRED_RESULT">Q_REQUIRED_RESULT</dfn> __attribute__ ((__warn_unused_result__))</u></td></tr>
+<tr><th id="203">203</th><td><u>#  <span data-ppcond="203">if</span> !defined(<span class="macro" data-ref="_M/QT_MOC_CPP">QT_MOC_CPP</span>)</u></td></tr>
+<tr><th id="204">204</th><td><u>#    define <dfn class="macro" id="_M/Q_PACKED" data-ref="_M/Q_PACKED">Q_PACKED</dfn> __attribute__ ((__packed__))</u></td></tr>
+<tr><th id="205">205</th><td><u>#    <span data-ppcond="205">ifndef</span> <span class="macro" data-ref="_M/__ARM_EABI__">__ARM_EABI__</span></u></td></tr>
+<tr><th id="206">206</th><td><u>#      define <dfn class="macro" id="_M/QT_NO_ARM_EABI" data-ref="_M/QT_NO_ARM_EABI">QT_NO_ARM_EABI</dfn></u></td></tr>
+<tr><th id="207">207</th><td><u>#    <span data-ppcond="205">endif</span></u></td></tr>
+<tr><th id="208">208</th><td><u>#  <span data-ppcond="203">endif</span></u></td></tr>
+<tr><th id="209">209</th><td><u>#  <span data-ppcond="209">if</span> (<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> * 100 + <span class="macro" title="2" data-ref="_M/__GNUC_MINOR__">__GNUC_MINOR__</span>) &gt;= 403 &amp;&amp; !defined(<a class="macro" href="#161" data-ref="_M/Q_CC_CLANG">Q_CC_CLANG</a>)</u></td></tr>
+<tr><th id="210">210</th><td><u>#      define Q_ALLOC_SIZE(x) __attribute__((alloc_size(x)))</u></td></tr>
+<tr><th id="211">211</th><td><u>#  <span data-ppcond="209">endif</span></u></td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i>/* IBM compiler versions are a bit messy. There are actually two products:</i></td></tr>
+<tr><th id="214">214</th><td><i>   the C product, and the C++ product. The C++ compiler is always packaged</i></td></tr>
+<tr><th id="215">215</th><td><i>   with the latest version of the C compiler. Version numbers do not always</i></td></tr>
+<tr><th id="216">216</th><td><i>   match. This little table (I'm not sure it's accurate) should be helpful:</i></td></tr>
+<tr><th id="217">217</th><td><i></i></td></tr>
+<tr><th id="218">218</th><td><i>   C++ product                C product</i></td></tr>
+<tr><th id="219">219</th><td><i></i></td></tr>
+<tr><th id="220">220</th><td><i>   C Set 3.1                  C Compiler 3.0</i></td></tr>
+<tr><th id="221">221</th><td><i>   ...                        ...</i></td></tr>
+<tr><th id="222">222</th><td><i>   C++ Compiler 3.6.6         C Compiler 4.3</i></td></tr>
+<tr><th id="223">223</th><td><i>   ...                        ...</i></td></tr>
+<tr><th id="224">224</th><td><i>   Visual Age C++ 4.0         ...</i></td></tr>
+<tr><th id="225">225</th><td><i>   ...                        ...</i></td></tr>
+<tr><th id="226">226</th><td><i>   Visual Age C++ 5.0         C Compiler 5.0</i></td></tr>
+<tr><th id="227">227</th><td><i>   ...                        ...</i></td></tr>
+<tr><th id="228">228</th><td><i>   Visual Age C++ 6.0         C Compiler 6.0</i></td></tr>
+<tr><th id="229">229</th><td><i></i></td></tr>
+<tr><th id="230">230</th><td><i>   Now:</i></td></tr>
+<tr><th id="231">231</th><td><i>   __xlC__    is the version of the C compiler in hexadecimal notation</i></td></tr>
+<tr><th id="232">232</th><td><i>              is only an approximation of the C++ compiler version</i></td></tr>
+<tr><th id="233">233</th><td><i>   __IBMCPP__ is the version of the C++ compiler in decimal notation</i></td></tr>
+<tr><th id="234">234</th><td><i>              but it is not defined on older compilers like C Set 3.1 */</i></td></tr>
+<tr><th id="235">235</th><td><u>#<span data-ppcond="80">elif</span> defined(__xlC__)</u></td></tr>
+<tr><th id="236">236</th><td><u>#  define Q_CC_XLC</u></td></tr>
+<tr><th id="237">237</th><td><u>#  define Q_FULL_TEMPLATE_INSTANTIATION</u></td></tr>
+<tr><th id="238">238</th><td><u>#  if __xlC__ &lt; 0x400</u></td></tr>
+<tr><th id="239">239</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="240">240</th><td><u>#  elif __xlC__ &gt;= 0x0600</u></td></tr>
+<tr><th id="241">241</th><td><u>#    define Q_ALIGNOF(type)     __alignof__(type)</u></td></tr>
+<tr><th id="242">242</th><td><u>#    define Q_TYPEOF(expr)      __typeof__(expr)</u></td></tr>
+<tr><th id="243">243</th><td><u>#    define Q_DECL_ALIGN(n)     __attribute__((__aligned__(n)))</u></td></tr>
+<tr><th id="244">244</th><td><u>#    define Q_PACKED            __attribute__((__packed__))</u></td></tr>
+<tr><th id="245">245</th><td><u>#  endif</u></td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td><i>/* Older versions of DEC C++ do not define __EDG__ or __EDG - observed</i></td></tr>
+<tr><th id="248">248</th><td><i>   on DEC C++ V5.5-004. New versions do define  __EDG__ - observed on</i></td></tr>
+<tr><th id="249">249</th><td><i>   Compaq C++ V6.3-002.</i></td></tr>
+<tr><th id="250">250</th><td><i>   This compiler is different enough from other EDG compilers to handle</i></td></tr>
+<tr><th id="251">251</th><td><i>   it separately anyway. */</i></td></tr>
+<tr><th id="252">252</th><td><u>#elif defined(__DECCXX) || defined(__DECC)</u></td></tr>
+<tr><th id="253">253</th><td><u>#  define Q_CC_DEC</u></td></tr>
+<tr><th id="254">254</th><td><i>/* Compaq C++ V6 compilers are EDG-based but I'm not sure about older</i></td></tr>
+<tr><th id="255">255</th><td><i>   DEC C++ V5 compilers. */</i></td></tr>
+<tr><th id="256">256</th><td><u>#  if defined(__EDG__)</u></td></tr>
+<tr><th id="257">257</th><td><u>#    define Q_CC_EDG</u></td></tr>
+<tr><th id="258">258</th><td><u>#  endif</u></td></tr>
+<tr><th id="259">259</th><td><i>/* Compaq has disabled EDG's _BOOL macro and uses _BOOL_EXISTS instead</i></td></tr>
+<tr><th id="260">260</th><td><i>   - observed on Compaq C++ V6.3-002.</i></td></tr>
+<tr><th id="261">261</th><td><i>   In any case versions prior to Compaq C++ V6.0-005 do not have bool. */</i></td></tr>
+<tr><th id="262">262</th><td><u>#  if !defined(_BOOL_EXISTS)</u></td></tr>
+<tr><th id="263">263</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="264">264</th><td><u>#  endif</u></td></tr>
+<tr><th id="265">265</th><td><i>/* Spurious (?) error messages observed on Compaq C++ V6.5-014. */</i></td></tr>
+<tr><th id="266">266</th><td><u>#  define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="267">267</th><td><i>/* Apply to all versions prior to Compaq C++ V6.0-000 - observed on</i></td></tr>
+<tr><th id="268">268</th><td><i>   DEC C++ V5.5-004. */</i></td></tr>
+<tr><th id="269">269</th><td><u>#  if __DECCXX_VER &lt; 60060000</u></td></tr>
+<tr><th id="270">270</th><td><u>#    define Q_BROKEN_TEMPLATE_SPECIALIZATION</u></td></tr>
+<tr><th id="271">271</th><td><u>#  endif</u></td></tr>
+<tr><th id="272">272</th><td><i>/* avoid undefined symbol problems with out-of-line template members */</i></td></tr>
+<tr><th id="273">273</th><td><u>#  define Q_OUTOFLINE_TEMPLATE inline</u></td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td><i>/* The Portland Group C++ compiler is based on EDG and does define __EDG__</i></td></tr>
+<tr><th id="276">276</th><td><i>   but the C compiler does not */</i></td></tr>
+<tr><th id="277">277</th><td><u>#elif defined(__PGI)</u></td></tr>
+<tr><th id="278">278</th><td><u>#  define Q_CC_PGI</u></td></tr>
+<tr><th id="279">279</th><td><u>#  if defined(__EDG__)</u></td></tr>
+<tr><th id="280">280</th><td><u>#    define Q_CC_EDG</u></td></tr>
+<tr><th id="281">281</th><td><u>#  endif</u></td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td><i>/* Compilers with EDG front end are similar. To detect them we test:</i></td></tr>
+<tr><th id="284">284</th><td><i>   __EDG documented by SGI, observed on MIPSpro 7.3.1.1 and KAI C++ 4.0b</i></td></tr>
+<tr><th id="285">285</th><td><i>   __EDG__ documented in EDG online docs, observed on Compaq C++ V6.3-002</i></td></tr>
+<tr><th id="286">286</th><td><i>   and PGI C++ 5.2-4 */</i></td></tr>
+<tr><th id="287">287</th><td><u>#elif !defined(Q_OS_HPUX) &amp;&amp; (defined(__EDG) || defined(__EDG__))</u></td></tr>
+<tr><th id="288">288</th><td><u>#  define Q_CC_EDG</u></td></tr>
+<tr><th id="289">289</th><td><i>/* From the EDG documentation (does not seem to apply to Compaq C++):</i></td></tr>
+<tr><th id="290">290</th><td><i>   _BOOL</i></td></tr>
+<tr><th id="291">291</th><td><i>        Defined in C++ mode when bool is a keyword. The name of this</i></td></tr>
+<tr><th id="292">292</th><td><i>        predefined macro is specified by a configuration flag. _BOOL</i></td></tr>
+<tr><th id="293">293</th><td><i>        is the default.</i></td></tr>
+<tr><th id="294">294</th><td><i>   __BOOL_DEFINED</i></td></tr>
+<tr><th id="295">295</th><td><i>        Defined in Microsoft C++ mode when bool is a keyword. */</i></td></tr>
+<tr><th id="296">296</th><td><u>#  if !defined(_BOOL) &amp;&amp; !defined(__BOOL_DEFINED)</u></td></tr>
+<tr><th id="297">297</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="298">298</th><td><u>#  endif</u></td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td><i>/* The Comeau compiler is based on EDG and does define __EDG__ */</i></td></tr>
+<tr><th id="301">301</th><td><u>#  if defined(__COMO__)</u></td></tr>
+<tr><th id="302">302</th><td><u>#    define Q_CC_COMEAU</u></td></tr>
+<tr><th id="303">303</th><td><u>#    define Q_C_CALLBACKS</u></td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><i>/* The `using' keyword was introduced to avoid KAI C++ warnings</i></td></tr>
+<tr><th id="306">306</th><td><i>   but it's now causing KAI C++ errors instead. The standard is</i></td></tr>
+<tr><th id="307">307</th><td><i>   unclear about the use of this keyword, and in practice every</i></td></tr>
+<tr><th id="308">308</th><td><i>   compiler is using its own set of rules. Forget it. */</i></td></tr>
+<tr><th id="309">309</th><td><u>#  elif defined(__KCC)</u></td></tr>
+<tr><th id="310">310</th><td><u>#    define Q_CC_KAI</u></td></tr>
+<tr><th id="311">311</th><td><u>#    define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td><i>/* Using the `using' keyword avoids Intel C++ for Linux warnings */</i></td></tr>
+<tr><th id="314">314</th><td><u>#  elif defined(__INTEL_COMPILER)</u></td></tr>
+<tr><th id="315">315</th><td><u>#    define Q_CC_INTEL</u></td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td><i>/* Uses CFront, make sure to read the manual how to tweak templates. */</i></td></tr>
+<tr><th id="318">318</th><td><u>#  elif defined(__ghs)</u></td></tr>
+<tr><th id="319">319</th><td><u>#    define Q_CC_GHS</u></td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td><u>#  elif defined(__DCC__)</u></td></tr>
+<tr><th id="322">322</th><td><u>#    define Q_CC_DIAB</u></td></tr>
+<tr><th id="323">323</th><td><u>#    if !defined(__bool)</u></td></tr>
+<tr><th id="324">324</th><td><u>#      error "Compiler not supported"</u></td></tr>
+<tr><th id="325">325</th><td><u>#    endif</u></td></tr>
+<tr><th id="326">326</th><td></td></tr>
+<tr><th id="327">327</th><td><i>/* The UnixWare 7 UDK compiler is based on EDG and does define __EDG__ */</i></td></tr>
+<tr><th id="328">328</th><td><u>#  elif defined(__USLC__) &amp;&amp; defined(__SCO_VERSION__)</u></td></tr>
+<tr><th id="329">329</th><td><u>#    define Q_CC_USLC</u></td></tr>
+<tr><th id="330">330</th><td><i>/* The latest UDK 7.1.1b does not need this, but previous versions do */</i></td></tr>
+<tr><th id="331">331</th><td><u>#    if !defined(__SCO_VERSION__) || (__SCO_VERSION__ &lt; 302200010)</u></td></tr>
+<tr><th id="332">332</th><td><u>#      define Q_OUTOFLINE_TEMPLATE inline</u></td></tr>
+<tr><th id="333">333</th><td><u>#    endif</u></td></tr>
+<tr><th id="334">334</th><td><u>#    define Q_NO_USING_KEYWORD /* ### check "using" status */</u></td></tr>
+<tr><th id="335">335</th><td></td></tr>
+<tr><th id="336">336</th><td><i>/* Never tested! */</i></td></tr>
+<tr><th id="337">337</th><td><u>#  elif defined(CENTERLINE_CLPP) || defined(OBJECTCENTER)</u></td></tr>
+<tr><th id="338">338</th><td><u>#    define Q_CC_OC</u></td></tr>
+<tr><th id="339">339</th><td><u>#    define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="340">340</th><td></td></tr>
+<tr><th id="341">341</th><td><i>/* CDS++ defines __EDG__ although this is not documented in the Reliant</i></td></tr>
+<tr><th id="342">342</th><td><i>   documentation. It also follows conventions like _BOOL and this documented */</i></td></tr>
+<tr><th id="343">343</th><td><u>#  elif defined(sinix)</u></td></tr>
+<tr><th id="344">344</th><td><u>#    define Q_CC_CDS</u></td></tr>
+<tr><th id="345">345</th><td><u>#    define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td><i>/* The MIPSpro compiler defines __EDG */</i></td></tr>
+<tr><th id="348">348</th><td><u>#  elif defined(__sgi)</u></td></tr>
+<tr><th id="349">349</th><td><u>#    define Q_CC_MIPS</u></td></tr>
+<tr><th id="350">350</th><td><u>#    define Q_NO_USING_KEYWORD /* ### check "using" status */</u></td></tr>
+<tr><th id="351">351</th><td><u>#    define Q_NO_TEMPLATE_FRIENDS</u></td></tr>
+<tr><th id="352">352</th><td><u>#    if defined(_COMPILER_VERSION) &amp;&amp; (_COMPILER_VERSION &gt;= 740)</u></td></tr>
+<tr><th id="353">353</th><td><u>#      define Q_OUTOFLINE_TEMPLATE inline</u></td></tr>
+<tr><th id="354">354</th><td><u>#      pragma set woff 3624,3625,3649 /* turn off some harmless warnings */</u></td></tr>
+<tr><th id="355">355</th><td><u>#    endif</u></td></tr>
+<tr><th id="356">356</th><td><u>#  endif</u></td></tr>
+<tr><th id="357">357</th><td></td></tr>
+<tr><th id="358">358</th><td><i>/* VxWorks' DIAB toolchain has an additional EDG type C++ compiler</i></td></tr>
+<tr><th id="359">359</th><td><i>   (see __DCC__ above). This one is for C mode files (__EDG is not defined) */</i></td></tr>
+<tr><th id="360">360</th><td><u>#elif defined(_DIAB_TOOL)</u></td></tr>
+<tr><th id="361">361</th><td><u>#  define Q_CC_DIAB</u></td></tr>
+<tr><th id="362">362</th><td><u>#  define Q_FUNC_INFO       __PRETTY_FUNCTION__</u></td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td><i>/* Never tested! */</i></td></tr>
+<tr><th id="365">365</th><td><u>#elif defined(__HIGHC__)</u></td></tr>
+<tr><th id="366">366</th><td><u>#  define Q_CC_HIGHC</u></td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td><u>#elif defined(__SUNPRO_CC) || defined(__SUNPRO_C)</u></td></tr>
+<tr><th id="369">369</th><td><u>#  define Q_CC_SUN</u></td></tr>
+<tr><th id="370">370</th><td><u>#  define Q_COMPILER_MANGLES_RETURN_TYPE</u></td></tr>
+<tr><th id="371">371</th><td><i>/* 5.0 compiler or better</i></td></tr>
+<tr><th id="372">372</th><td><i>    'bool' is enabled by default but can be disabled using -features=nobool</i></td></tr>
+<tr><th id="373">373</th><td><i>    in which case _BOOL is not defined</i></td></tr>
+<tr><th id="374">374</th><td><i>        this is the default in 4.2 compatibility mode triggered by -compat=4 */</i></td></tr>
+<tr><th id="375">375</th><td><u>#  if __SUNPRO_CC &gt;= 0x500</u></td></tr>
+<tr><th id="376">376</th><td><u>#    define QT_NO_TEMPLATE_TEMPLATE_PARAMETERS</u></td></tr>
+<tr><th id="377">377</th><td>   <i>/* see <a href="http://developers.sun.com/sunstudio/support/Ccompare.html">http://developers.sun.com/sunstudio/support/Ccompare.html</a> */</i></td></tr>
+<tr><th id="378">378</th><td><u>#    if __SUNPRO_CC &gt;= 0x590</u></td></tr>
+<tr><th id="379">379</th><td><u>#      define Q_ALIGNOF(type)   __alignof__(type)</u></td></tr>
+<tr><th id="380">380</th><td><u>#      define Q_TYPEOF(expr)    __typeof__(expr)</u></td></tr>
+<tr><th id="381">381</th><td><u>#      define Q_DECL_ALIGN(n)   __attribute__((__aligned__(n)))</u></td></tr>
+<tr><th id="382">382</th><td><u>#    endif</u></td></tr>
+<tr><th id="383">383</th><td><u>#    if __SUNPRO_CC &gt;= 0x550</u></td></tr>
+<tr><th id="384">384</th><td><u>#      define Q_DECL_EXPORT     __global</u></td></tr>
+<tr><th id="385">385</th><td><u>#    endif</u></td></tr>
+<tr><th id="386">386</th><td><u>#    if __SUNPRO_CC &lt; 0x5a0</u></td></tr>
+<tr><th id="387">387</th><td><u>#      define Q_NO_TEMPLATE_FRIENDS</u></td></tr>
+<tr><th id="388">388</th><td><u>#    endif</u></td></tr>
+<tr><th id="389">389</th><td><u>#    if !defined(_BOOL)</u></td></tr>
+<tr><th id="390">390</th><td><u>#      error "Compiler not supported"</u></td></tr>
+<tr><th id="391">391</th><td><u>#    endif</u></td></tr>
+<tr><th id="392">392</th><td><u>#    if defined(__SUNPRO_CC_COMPAT) &amp;&amp; (__SUNPRO_CC_COMPAT &lt;= 4)</u></td></tr>
+<tr><th id="393">393</th><td><u>#      define Q_NO_USING_KEYWORD</u></td></tr>
+<tr><th id="394">394</th><td><u>#    endif</u></td></tr>
+<tr><th id="395">395</th><td><u>#    define Q_C_CALLBACKS</u></td></tr>
+<tr><th id="396">396</th><td><i>/* 4.2 compiler or older */</i></td></tr>
+<tr><th id="397">397</th><td><u>#  else</u></td></tr>
+<tr><th id="398">398</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="399">399</th><td><u>#  endif</u></td></tr>
+<tr><th id="400">400</th><td></td></tr>
+<tr><th id="401">401</th><td><i>/* CDS++ does not seem to define __EDG__ or __EDG according to Reliant</i></td></tr>
+<tr><th id="402">402</th><td><i>   documentation but nevertheless uses EDG conventions like _BOOL */</i></td></tr>
+<tr><th id="403">403</th><td><u>#elif defined(sinix)</u></td></tr>
+<tr><th id="404">404</th><td><u>#  define Q_CC_EDG</u></td></tr>
+<tr><th id="405">405</th><td><u>#  define Q_CC_CDS</u></td></tr>
+<tr><th id="406">406</th><td><u>#  if !defined(_BOOL)</u></td></tr>
+<tr><th id="407">407</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="408">408</th><td><u>#  endif</u></td></tr>
+<tr><th id="409">409</th><td><u>#  define Q_BROKEN_TEMPLATE_SPECIALIZATION</u></td></tr>
+<tr><th id="410">410</th><td></td></tr>
+<tr><th id="411">411</th><td><u>#elif defined(Q_OS_HPUX)</u></td></tr>
+<tr><th id="412">412</th><td><i>/* __HP_aCC was not defined in first aCC releases */</i></td></tr>
+<tr><th id="413">413</th><td><u>#  if defined(__HP_aCC) || __cplusplus &gt;= 199707L</u></td></tr>
+<tr><th id="414">414</th><td><u>#    define Q_NO_TEMPLATE_FRIENDS</u></td></tr>
+<tr><th id="415">415</th><td><u>#    define Q_CC_HPACC</u></td></tr>
+<tr><th id="416">416</th><td><u>#    define Q_FUNC_INFO         __PRETTY_FUNCTION__</u></td></tr>
+<tr><th id="417">417</th><td><u>#    if __HP_aCC-0 &lt; 060000</u></td></tr>
+<tr><th id="418">418</th><td><u>#      define QT_NO_TEMPLATE_TEMPLATE_PARAMETERS</u></td></tr>
+<tr><th id="419">419</th><td><u>#      define Q_DECL_EXPORT     __declspec(dllexport)</u></td></tr>
+<tr><th id="420">420</th><td><u>#      define Q_DECL_IMPORT     __declspec(dllimport)</u></td></tr>
+<tr><th id="421">421</th><td><u>#    endif</u></td></tr>
+<tr><th id="422">422</th><td><u>#    if __HP_aCC-0 &gt;= 061200</u></td></tr>
+<tr><th id="423">423</th><td><u>#      define Q_DECL_ALIGN(n) __attribute__((aligned(n)))</u></td></tr>
+<tr><th id="424">424</th><td><u>#    endif</u></td></tr>
+<tr><th id="425">425</th><td><u>#    if __HP_aCC-0 &gt;= 062000</u></td></tr>
+<tr><th id="426">426</th><td><u>#      define Q_DECL_EXPORT     __attribute__((visibility("default")))</u></td></tr>
+<tr><th id="427">427</th><td><u>#      define Q_DECL_HIDDEN     __attribute__((visibility("hidden")))</u></td></tr>
+<tr><th id="428">428</th><td><u>#      define Q_DECL_IMPORT     Q_DECL_EXPORT</u></td></tr>
+<tr><th id="429">429</th><td><u>#    endif</u></td></tr>
+<tr><th id="430">430</th><td><u>#  else</u></td></tr>
+<tr><th id="431">431</th><td><u>#    error "Compiler not supported"</u></td></tr>
+<tr><th id="432">432</th><td><u>#  endif</u></td></tr>
+<tr><th id="433">433</th><td><u>#  define Q_NO_USING_KEYWORD /* ### check "using" status */</u></td></tr>
+<tr><th id="434">434</th><td></td></tr>
+<tr><th id="435">435</th><td><u>#else</u></td></tr>
+<tr><th id="436">436</th><td><u>#  error "Qt has not been tested with this compiler - see http://www.qt-project.org/"</u></td></tr>
+<tr><th id="437">437</th><td><u>#<span data-ppcond="80">endif</span></u></td></tr>
+<tr><th id="438">438</th><td></td></tr>
+<tr><th id="439">439</th><td><i>/*</i></td></tr>
+<tr><th id="440">440</th><td><i> * C++11 support</i></td></tr>
+<tr><th id="441">441</th><td><i> *</i></td></tr>
+<tr><th id="442">442</th><td><i> *  Paper           Macro</i></td></tr>
+<tr><th id="443">443</th><td><i> *  N2341           Q_COMPILER_ALIGNAS</i></td></tr>
+<tr><th id="444">444</th><td><i> *  N2341           Q_COMPILER_ALIGNOF</i></td></tr>
+<tr><th id="445">445</th><td><i> *  N2427           Q_COMPILER_ATOMICS</i></td></tr>
+<tr><th id="446">446</th><td><i> *  N2761           Q_COMPILER_ATTRIBUTES</i></td></tr>
+<tr><th id="447">447</th><td><i> *  N2541           Q_COMPILER_AUTO_FUNCTION</i></td></tr>
+<tr><th id="448">448</th><td><i> *  N1984 N2546     Q_COMPILER_AUTO_TYPE</i></td></tr>
+<tr><th id="449">449</th><td><i> *  N2437           Q_COMPILER_CLASS_ENUM</i></td></tr>
+<tr><th id="450">450</th><td><i> *  N2235           Q_COMPILER_CONSTEXPR</i></td></tr>
+<tr><th id="451">451</th><td><i> *  N2343 N3276     Q_COMPILER_DECLTYPE</i></td></tr>
+<tr><th id="452">452</th><td><i> *  N2346           Q_COMPILER_DEFAULT_MEMBERS</i></td></tr>
+<tr><th id="453">453</th><td><i> *  N2346           Q_COMPILER_DELETE_MEMBERS</i></td></tr>
+<tr><th id="454">454</th><td><i> *  N1986           Q_COMPILER_DELEGATING_CONSTRUCTORS</i></td></tr>
+<tr><th id="455">455</th><td><i> *  N2437           Q_COMPILER_EXPLICIT_CONVERSIONS</i></td></tr>
+<tr><th id="456">456</th><td><i> *  N3206 N3272     Q_COMPILER_EXPLICIT_OVERRIDES   (v0.9 and above only)</i></td></tr>
+<tr><th id="457">457</th><td><i> *  N1987           Q_COMPILER_EXTERN_TEMPLATES</i></td></tr>
+<tr><th id="458">458</th><td><i> *  N2540           Q_COMPILER_INHERITING_CONSTRUCTORS</i></td></tr>
+<tr><th id="459">459</th><td><i> *  N2672           Q_COMPILER_INITIALIZER_LISTS</i></td></tr>
+<tr><th id="460">460</th><td><i> *  N2658 N2927     Q_COMPILER_LAMBDA   (v1.0 and above only)</i></td></tr>
+<tr><th id="461">461</th><td><i> *  N2756           Q_COMPILER_NONSTATIC_MEMBER_INIT</i></td></tr>
+<tr><th id="462">462</th><td><i> *  N2855 N3050     Q_COMPILER_NOEXCEPT</i></td></tr>
+<tr><th id="463">463</th><td><i> *  N2431           Q_COMPILER_NULLPTR</i></td></tr>
+<tr><th id="464">464</th><td><i> *  N2930           Q_COMPILER_RANGE_FOR</i></td></tr>
+<tr><th id="465">465</th><td><i> *  N2442           Q_COMPILER_RAW_STRINGS</i></td></tr>
+<tr><th id="466">466</th><td><i> *  N2439           Q_COMPILER_REF_QUALIFIERS</i></td></tr>
+<tr><th id="467">467</th><td><i> *  N2118 N2844 N3053 Q_COMPILER_RVALUE_REFS   (Note: GCC 4.3 implements only the oldest)</i></td></tr>
+<tr><th id="468">468</th><td><i> *  N1720           Q_COMPILER_STATIC_ASSERT</i></td></tr>
+<tr><th id="469">469</th><td><i> *  N2258           Q_COMPILER_TEMPLATE_ALIAS</i></td></tr>
+<tr><th id="470">470</th><td><i> *  N2659           Q_COMPILER_THREAD_LOCAL</i></td></tr>
+<tr><th id="471">471</th><td><i> *  N2765           Q_COMPILER_UDL</i></td></tr>
+<tr><th id="472">472</th><td><i> *  N2442           Q_COMPILER_UNICODE_STRINGS</i></td></tr>
+<tr><th id="473">473</th><td><i> *  N2640           Q_COMPILER_UNIFORM_INIT</i></td></tr>
+<tr><th id="474">474</th><td><i> *  N2544           Q_COMPILER_UNRESTRICTED_UNIONS</i></td></tr>
+<tr><th id="475">475</th><td><i> *  N1653           Q_COMPILER_VARIADIC_MACROS</i></td></tr>
+<tr><th id="476">476</th><td><i> *  N2242 N2555     Q_COMPILER_VARIADIC_TEMPLATES</i></td></tr>
+<tr><th id="477">477</th><td><i> *</i></td></tr>
+<tr><th id="478">478</th><td><i> * C++1y proposed features</i></td></tr>
+<tr><th id="479">479</th><td><i> *</i></td></tr>
+<tr><th id="480">480</th><td><i> *  N3472           Q_COMPILER_BINARY_LITERALS</i></td></tr>
+<tr><th id="481">481</th><td><i> *  N3649           Q_COMPILER_GENERIC_LAMBDA</i></td></tr>
+<tr><th id="482">482</th><td><i> *  N3638           Q_COMPILER_LAMBDA_CAPTURES</i></td></tr>
+<tr><th id="483">483</th><td><i> *  N3652           Q_COMPILER_RELAXED_CONSTEXPR_FUNCTIONS</i></td></tr>
+<tr><th id="484">484</th><td><i> *  N3386 N3638     Q_COMPILER_RETURN_TYPE_DEDUCTION</i></td></tr>
+<tr><th id="485">485</th><td><i> *  N3651           Q_COMPILER_VARIABLE_TEMPLATES</i></td></tr>
+<tr><th id="486">486</th><td><i> *</i></td></tr>
+<tr><th id="487">487</th><td><i> * C++14 Technical Specifications / C++17:</i></td></tr>
+<tr><th id="488">488</th><td><i> *  N3639           Q_COMPILER_VLA  (see also Q_COMPILER_RESTRICTED_VLA)</i></td></tr>
+<tr><th id="489">489</th><td><i> *</i></td></tr>
+<tr><th id="490">490</th><td><i> */</i></td></tr>
+<tr><th id="491">491</th><td></td></tr>
+<tr><th id="492">492</th><td><u>#<span data-ppcond="492">ifdef</span> <span class="macro" data-ref="_M/Q_CC_INTEL">Q_CC_INTEL</span></u></td></tr>
+<tr><th id="493">493</th><td><u>#  define Q_COMPILER_RESTRICTED_VLA</u></td></tr>
+<tr><th id="494">494</th><td><u>#  define Q_COMPILER_VARIADIC_MACROS // C++11 feature supported as an extension in other modes, too</u></td></tr>
+<tr><th id="495">495</th><td><u>#  if __INTEL_COMPILER &lt; 1200</u></td></tr>
+<tr><th id="496">496</th><td><u>#    define Q_NO_TEMPLATE_FRIENDS</u></td></tr>
+<tr><th id="497">497</th><td><u>#  endif</u></td></tr>
+<tr><th id="498">498</th><td><u>#  if __INTEL_COMPILER &gt;= 1310 &amp;&amp; !defined(_WIN32)</u></td></tr>
+<tr><th id="499">499</th><td><i>//    ICC supports C++14 binary literals in C, C++98, and C++11 modes</i></td></tr>
+<tr><th id="500">500</th><td><i>//    at least since 13.1, but I can't test further back</i></td></tr>
+<tr><th id="501">501</th><td><u>#     define Q_COMPILER_BINARY_LITERALS</u></td></tr>
+<tr><th id="502">502</th><td><u>#  endif</u></td></tr>
+<tr><th id="503">503</th><td><u>#  if __cplusplus &gt;= 201103L</u></td></tr>
+<tr><th id="504">504</th><td><u>#    if __INTEL_COMPILER &gt;= 1200</u></td></tr>
+<tr><th id="505">505</th><td><u>#      define Q_COMPILER_AUTO_TYPE</u></td></tr>
+<tr><th id="506">506</th><td><u>#      define Q_COMPILER_CLASS_ENUM</u></td></tr>
+<tr><th id="507">507</th><td><u>#      define Q_COMPILER_DECLTYPE</u></td></tr>
+<tr><th id="508">508</th><td><u>#      define Q_COMPILER_DEFAULT_MEMBERS</u></td></tr>
+<tr><th id="509">509</th><td><u>#      define Q_COMPILER_DELETE_MEMBERS</u></td></tr>
+<tr><th id="510">510</th><td><u>#      define Q_COMPILER_EXTERN_TEMPLATES</u></td></tr>
+<tr><th id="511">511</th><td><u>#      define Q_COMPILER_LAMBDA</u></td></tr>
+<tr><th id="512">512</th><td><u>#      define Q_COMPILER_RVALUE_REFS</u></td></tr>
+<tr><th id="513">513</th><td><u>#      define Q_COMPILER_STATIC_ASSERT</u></td></tr>
+<tr><th id="514">514</th><td><u>#      define Q_COMPILER_VARIADIC_MACROS</u></td></tr>
+<tr><th id="515">515</th><td><u>#    endif</u></td></tr>
+<tr><th id="516">516</th><td><u>#    if __INTEL_COMPILER &gt;= 1210</u></td></tr>
+<tr><th id="517">517</th><td><u>#      define Q_COMPILER_ATTRIBUTES</u></td></tr>
+<tr><th id="518">518</th><td><u>#      define Q_COMPILER_AUTO_FUNCTION</u></td></tr>
+<tr><th id="519">519</th><td><u>#      define Q_COMPILER_NULLPTR</u></td></tr>
+<tr><th id="520">520</th><td><u>#      define Q_COMPILER_TEMPLATE_ALIAS</u></td></tr>
+<tr><th id="521">521</th><td><u>#      define Q_COMPILER_UNICODE_STRINGS</u></td></tr>
+<tr><th id="522">522</th><td><u>#      define Q_COMPILER_VARIADIC_TEMPLATES</u></td></tr>
+<tr><th id="523">523</th><td><u>#    endif</u></td></tr>
+<tr><th id="524">524</th><td><u>#    if __INTEL_COMPILER &gt;= 1300</u></td></tr>
+<tr><th id="525">525</th><td><u>#      define Q_COMPILER_ATOMICS</u></td></tr>
+<tr><th id="526">526</th><td><i>//       constexpr support is only partial</i></td></tr>
+<tr><th id="527">527</th><td><i>//#      define Q_COMPILER_CONSTEXPR</i></td></tr>
+<tr><th id="528">528</th><td><u>#      define Q_COMPILER_INITIALIZER_LISTS</u></td></tr>
+<tr><th id="529">529</th><td><u>#      define Q_COMPILER_UNIFORM_INIT</u></td></tr>
+<tr><th id="530">530</th><td><u>#      define Q_COMPILER_NOEXCEPT</u></td></tr>
+<tr><th id="531">531</th><td><u>#    endif</u></td></tr>
+<tr><th id="532">532</th><td><u>#    if __INTEL_COMPILER &gt;= 1400</u></td></tr>
+<tr><th id="533">533</th><td><i>//       causes issues with QArrayData and QtPrivate::RefCount - Intel issue ID 6000056211, bug DPD200534796</i></td></tr>
+<tr><th id="534">534</th><td><i>//#      define Q_COMPILER_CONSTEXPR</i></td></tr>
+<tr><th id="535">535</th><td><u>#      define Q_COMPILER_DELEGATING_CONSTRUCTORS</u></td></tr>
+<tr><th id="536">536</th><td><u>#      define Q_COMPILER_EXPLICIT_OVERRIDES</u></td></tr>
+<tr><th id="537">537</th><td><u>#      define Q_COMPILER_NONSTATIC_MEMBER_INIT</u></td></tr>
+<tr><th id="538">538</th><td><u>#      define Q_COMPILER_RAW_STRINGS</u></td></tr>
+<tr><th id="539">539</th><td><u>#      define Q_COMPILER_REF_QUALIFIERS</u></td></tr>
+<tr><th id="540">540</th><td><u>#      define Q_COMPILER_UNRESTRICTED_UNIONS</u></td></tr>
+<tr><th id="541">541</th><td><u>#    endif</u></td></tr>
+<tr><th id="542">542</th><td><u>#  endif</u></td></tr>
+<tr><th id="543">543</th><td><u>#<span data-ppcond="492">endif</span></u></td></tr>
+<tr><th id="544">544</th><td></td></tr>
+<tr><th id="545">545</th><td><u>#<span data-ppcond="545">if</span> defined(<a class="macro" href="#161" data-ref="_M/Q_CC_CLANG">Q_CC_CLANG</a>) &amp;&amp; !defined(<span class="macro" data-ref="_M/Q_CC_INTEL">Q_CC_INTEL</span>)</u></td></tr>
+<tr><th id="546">546</th><td><i>/* General C++ features */</i></td></tr>
+<tr><th id="547">547</th><td><u>#  define <dfn class="macro" id="_M/Q_COMPILER_RESTRICTED_VLA" data-ref="_M/Q_COMPILER_RESTRICTED_VLA">Q_COMPILER_RESTRICTED_VLA</dfn></u></td></tr>
+<tr><th id="548">548</th><td><u>#  <span data-ppcond="548">if</span> !<span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_exceptions)</u></td></tr>
+<tr><th id="549">549</th><td><u>#    ifndef QT_NO_EXCEPTIONS</u></td></tr>
+<tr><th id="550">550</th><td><u>#      define QT_NO_EXCEPTIONS</u></td></tr>
+<tr><th id="551">551</th><td><u>#    endif</u></td></tr>
+<tr><th id="552">552</th><td><u>#  <span data-ppcond="548">endif</span></u></td></tr>
+<tr><th id="553">553</th><td><u>#  <span data-ppcond="553">if</span> !<span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_rtti)</u></td></tr>
+<tr><th id="554">554</th><td><u>#    define QT_NO_RTTI</u></td></tr>
+<tr><th id="555">555</th><td><u>#  <span data-ppcond="553">endif</span></u></td></tr>
+<tr><th id="556">556</th><td><u>#  <span data-ppcond="556">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(attribute_deprecated_with_message)</u></td></tr>
+<tr><th id="557">557</th><td><u>#    define <dfn class="macro" id="_M/Q_DECL_DEPRECATED_X" data-ref="_M/Q_DECL_DEPRECATED_X">Q_DECL_DEPRECATED_X</dfn>(text) __attribute__ ((__deprecated__(text)))</u></td></tr>
+<tr><th id="558">558</th><td><u>#  <span data-ppcond="556">endif</span></u></td></tr>
+<tr><th id="559">559</th><td></td></tr>
+<tr><th id="560">560</th><td><i>// Clang supports binary literals in C, C++98 and C++11 modes</i></td></tr>
+<tr><th id="561">561</th><td><i>// It's been supported "since the dawn of time itself" (cf. commit 179883)</i></td></tr>
+<tr><th id="562">562</th><td><u>#  <span data-ppcond="562">if</span> <span class="macro" title="" data-ref="_M/__has_extension">__has_extension</span>(cxx_binary_literals)</u></td></tr>
+<tr><th id="563">563</th><td><u>#    define <dfn class="macro" id="_M/Q_COMPILER_BINARY_LITERALS" data-ref="_M/Q_COMPILER_BINARY_LITERALS">Q_COMPILER_BINARY_LITERALS</dfn></u></td></tr>
+<tr><th id="564">564</th><td><u>#  <span data-ppcond="562">endif</span></u></td></tr>
+<tr><th id="565">565</th><td></td></tr>
+<tr><th id="566">566</th><td><i>// Variadic macros are supported for gnu++98, c++11, c99 ... since 2.9</i></td></tr>
+<tr><th id="567">567</th><td><u>#  <span data-ppcond="567">if</span> ((<span class="macro" title="3" data-ref="_M/__clang_major__">__clang_major__</span> * 100) + <span class="macro" title="5" data-ref="_M/__clang_minor__">__clang_minor__</span>) &gt;= 209</u></td></tr>
+<tr><th id="568">568</th><td><u>#    <span data-ppcond="568">if</span> !defined(<span class="macro" data-ref="_M/__STRICT_ANSI__">__STRICT_ANSI__</span>) || defined(<span class="macro" data-ref="_M/__GXX_EXPERIMENTAL_CXX0X__">__GXX_EXPERIMENTAL_CXX0X__</span>) \</u></td></tr>
+<tr><th id="569">569</th><td><u>      || (defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>) &amp;&amp; (<span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L)) \</u></td></tr>
+<tr><th id="570">570</th><td><u>      || (defined(<span class="macro" data-ref="_M/__STDC_VERSION__">__STDC_VERSION__</span>) &amp;&amp; (__STDC_VERSION__ &gt;= 199901L))</u></td></tr>
+<tr><th id="571">571</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_VARIADIC_MACROS" data-ref="_M/Q_COMPILER_VARIADIC_MACROS">Q_COMPILER_VARIADIC_MACROS</dfn></u></td></tr>
+<tr><th id="572">572</th><td><u>#    <span data-ppcond="568">endif</span></u></td></tr>
+<tr><th id="573">573</th><td><u>#  <span data-ppcond="567">endif</span></u></td></tr>
+<tr><th id="574">574</th><td></td></tr>
+<tr><th id="575">575</th><td><i>/* C++11 features, see <a href="http://clang.llvm.org/cxx_status.html">http://clang.llvm.org/cxx_status.html</a> */</i></td></tr>
+<tr><th id="576">576</th><td><u>#  <span data-ppcond="576">if</span> <span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L || defined(<span class="macro" data-ref="_M/__GXX_EXPERIMENTAL_CXX0X__">__GXX_EXPERIMENTAL_CXX0X__</span>)</u></td></tr>
+<tr><th id="577">577</th><td>    <i>/* Detect C++ features using __has_feature(), see <a href="http://clang.llvm.org/docs/LanguageExtensions.html#cxx11">http://clang.llvm.org/docs/LanguageExtensions.html#cxx11</a> */</i></td></tr>
+<tr><th id="578">578</th><td><u>#    <span data-ppcond="578">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_alignas)</u></td></tr>
+<tr><th id="579">579</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_ALIGNAS" data-ref="_M/Q_COMPILER_ALIGNAS">Q_COMPILER_ALIGNAS</dfn></u></td></tr>
+<tr><th id="580">580</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_ALIGNOF" data-ref="_M/Q_COMPILER_ALIGNOF">Q_COMPILER_ALIGNOF</dfn></u></td></tr>
+<tr><th id="581">581</th><td><u>#    <span data-ppcond="578">endif</span></u></td></tr>
+<tr><th id="582">582</th><td><u>#    <span data-ppcond="582">if</span> 0 /* not implemented in clang yet */</u></td></tr>
+<tr><th id="583">583</th><td><u>#     define Q_COMPILER_ATOMICS</u></td></tr>
+<tr><th id="584">584</th><td><u>#    <span data-ppcond="582">endif</span></u></td></tr>
+<tr><th id="585">585</th><td><u>#    <span data-ppcond="585">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_attributes)</u></td></tr>
+<tr><th id="586">586</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_ATTRIBUTES" data-ref="_M/Q_COMPILER_ATTRIBUTES">Q_COMPILER_ATTRIBUTES</dfn></u></td></tr>
+<tr><th id="587">587</th><td><u>#    <span data-ppcond="585">endif</span></u></td></tr>
+<tr><th id="588">588</th><td><u>#    <span data-ppcond="588">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_auto_type)</u></td></tr>
+<tr><th id="589">589</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_AUTO_FUNCTION" data-ref="_M/Q_COMPILER_AUTO_FUNCTION">Q_COMPILER_AUTO_FUNCTION</dfn></u></td></tr>
+<tr><th id="590">590</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_AUTO_TYPE" data-ref="_M/Q_COMPILER_AUTO_TYPE">Q_COMPILER_AUTO_TYPE</dfn></u></td></tr>
+<tr><th id="591">591</th><td><u>#    <span data-ppcond="588">endif</span></u></td></tr>
+<tr><th id="592">592</th><td><u>#    <span data-ppcond="592">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_strong_enums)</u></td></tr>
+<tr><th id="593">593</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_CLASS_ENUM" data-ref="_M/Q_COMPILER_CLASS_ENUM">Q_COMPILER_CLASS_ENUM</dfn></u></td></tr>
+<tr><th id="594">594</th><td><u>#    <span data-ppcond="592">endif</span></u></td></tr>
+<tr><th id="595">595</th><td><u>#    <span data-ppcond="595">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_constexpr)</u></td></tr>
+<tr><th id="596">596</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_CONSTEXPR" data-ref="_M/Q_COMPILER_CONSTEXPR">Q_COMPILER_CONSTEXPR</dfn></u></td></tr>
+<tr><th id="597">597</th><td><u>#    <span data-ppcond="595">endif</span></u></td></tr>
+<tr><th id="598">598</th><td><u>#    <span data-ppcond="598">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_decltype) /* &amp;&amp; __has_feature(cxx_decltype_incomplete_return_types) */</u></td></tr>
+<tr><th id="599">599</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_DECLTYPE" data-ref="_M/Q_COMPILER_DECLTYPE">Q_COMPILER_DECLTYPE</dfn></u></td></tr>
+<tr><th id="600">600</th><td><u>#    <span data-ppcond="598">endif</span></u></td></tr>
+<tr><th id="601">601</th><td><u>#    <span data-ppcond="601">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_defaulted_functions)</u></td></tr>
+<tr><th id="602">602</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_DEFAULT_MEMBERS" data-ref="_M/Q_COMPILER_DEFAULT_MEMBERS">Q_COMPILER_DEFAULT_MEMBERS</dfn></u></td></tr>
+<tr><th id="603">603</th><td><u>#    <span data-ppcond="601">endif</span></u></td></tr>
+<tr><th id="604">604</th><td><u>#    <span data-ppcond="604">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_deleted_functions)</u></td></tr>
+<tr><th id="605">605</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_DELETE_MEMBERS" data-ref="_M/Q_COMPILER_DELETE_MEMBERS">Q_COMPILER_DELETE_MEMBERS</dfn></u></td></tr>
+<tr><th id="606">606</th><td><u>#    <span data-ppcond="604">endif</span></u></td></tr>
+<tr><th id="607">607</th><td><u>#    <span data-ppcond="607">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_delegating_constructors)</u></td></tr>
+<tr><th id="608">608</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_DELEGATING_CONSTRUCTORS" data-ref="_M/Q_COMPILER_DELEGATING_CONSTRUCTORS">Q_COMPILER_DELEGATING_CONSTRUCTORS</dfn></u></td></tr>
+<tr><th id="609">609</th><td><u>#    <span data-ppcond="607">endif</span></u></td></tr>
+<tr><th id="610">610</th><td><u>#    <span data-ppcond="610">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_explicit_conversions)</u></td></tr>
+<tr><th id="611">611</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_EXPLICIT_CONVERSIONS" data-ref="_M/Q_COMPILER_EXPLICIT_CONVERSIONS">Q_COMPILER_EXPLICIT_CONVERSIONS</dfn></u></td></tr>
+<tr><th id="612">612</th><td><u>#    <span data-ppcond="610">endif</span></u></td></tr>
+<tr><th id="613">613</th><td><u>#    <span data-ppcond="613">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_override_control)</u></td></tr>
+<tr><th id="614">614</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_EXPLICIT_OVERRIDES" data-ref="_M/Q_COMPILER_EXPLICIT_OVERRIDES">Q_COMPILER_EXPLICIT_OVERRIDES</dfn></u></td></tr>
+<tr><th id="615">615</th><td><u>#    <span data-ppcond="613">endif</span></u></td></tr>
+<tr><th id="616">616</th><td><u>#    <span data-ppcond="616">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_inheriting_constructors)</u></td></tr>
+<tr><th id="617">617</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_INHERITING_CONSTRUCTORS" data-ref="_M/Q_COMPILER_INHERITING_CONSTRUCTORS">Q_COMPILER_INHERITING_CONSTRUCTORS</dfn></u></td></tr>
+<tr><th id="618">618</th><td><u>#    <span data-ppcond="616">endif</span></u></td></tr>
+<tr><th id="619">619</th><td><u>#    <span data-ppcond="619">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_generalized_initializers)</u></td></tr>
+<tr><th id="620">620</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_INITIALIZER_LISTS" data-ref="_M/Q_COMPILER_INITIALIZER_LISTS">Q_COMPILER_INITIALIZER_LISTS</dfn></u></td></tr>
+<tr><th id="621">621</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_UNIFORM_INIT" data-ref="_M/Q_COMPILER_UNIFORM_INIT">Q_COMPILER_UNIFORM_INIT</dfn> /* both covered by this feature macro, according to docs */</u></td></tr>
+<tr><th id="622">622</th><td><u>#    <span data-ppcond="619">endif</span></u></td></tr>
+<tr><th id="623">623</th><td><u>#    <span data-ppcond="623">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_lambdas)</u></td></tr>
+<tr><th id="624">624</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_LAMBDA" data-ref="_M/Q_COMPILER_LAMBDA">Q_COMPILER_LAMBDA</dfn></u></td></tr>
+<tr><th id="625">625</th><td><u>#    <span data-ppcond="623">endif</span></u></td></tr>
+<tr><th id="626">626</th><td><u>#    <span data-ppcond="626">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_noexcept)</u></td></tr>
+<tr><th id="627">627</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_NOEXCEPT" data-ref="_M/Q_COMPILER_NOEXCEPT">Q_COMPILER_NOEXCEPT</dfn></u></td></tr>
+<tr><th id="628">628</th><td><u>#    <span data-ppcond="626">endif</span></u></td></tr>
+<tr><th id="629">629</th><td><u>#    <span data-ppcond="629">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_nonstatic_member_init)</u></td></tr>
+<tr><th id="630">630</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_NONSTATIC_MEMBER_INIT" data-ref="_M/Q_COMPILER_NONSTATIC_MEMBER_INIT">Q_COMPILER_NONSTATIC_MEMBER_INIT</dfn></u></td></tr>
+<tr><th id="631">631</th><td><u>#    <span data-ppcond="629">endif</span></u></td></tr>
+<tr><th id="632">632</th><td><u>#    <span data-ppcond="632">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_nullptr)</u></td></tr>
+<tr><th id="633">633</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_NULLPTR" data-ref="_M/Q_COMPILER_NULLPTR">Q_COMPILER_NULLPTR</dfn></u></td></tr>
+<tr><th id="634">634</th><td><u>#    <span data-ppcond="632">endif</span></u></td></tr>
+<tr><th id="635">635</th><td><u>#    <span data-ppcond="635">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_range_for)</u></td></tr>
+<tr><th id="636">636</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_RANGE_FOR" data-ref="_M/Q_COMPILER_RANGE_FOR">Q_COMPILER_RANGE_FOR</dfn></u></td></tr>
+<tr><th id="637">637</th><td><u>#    <span data-ppcond="635">endif</span></u></td></tr>
+<tr><th id="638">638</th><td><u>#    <span data-ppcond="638">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_raw_string_literals)</u></td></tr>
+<tr><th id="639">639</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_RAW_STRINGS" data-ref="_M/Q_COMPILER_RAW_STRINGS">Q_COMPILER_RAW_STRINGS</dfn></u></td></tr>
+<tr><th id="640">640</th><td><u>#    <span data-ppcond="638">endif</span></u></td></tr>
+<tr><th id="641">641</th><td><u>#    <span data-ppcond="641">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_reference_qualified_functions)</u></td></tr>
+<tr><th id="642">642</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_REF_QUALIFIERS" data-ref="_M/Q_COMPILER_REF_QUALIFIERS">Q_COMPILER_REF_QUALIFIERS</dfn></u></td></tr>
+<tr><th id="643">643</th><td><u>#    <span data-ppcond="641">endif</span></u></td></tr>
+<tr><th id="644">644</th><td><u>#    <span data-ppcond="644">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_rvalue_references)</u></td></tr>
+<tr><th id="645">645</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_RVALUE_REFS" data-ref="_M/Q_COMPILER_RVALUE_REFS">Q_COMPILER_RVALUE_REFS</dfn></u></td></tr>
+<tr><th id="646">646</th><td><u>#    <span data-ppcond="644">endif</span></u></td></tr>
+<tr><th id="647">647</th><td><u>#    <span data-ppcond="647">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_static_assert)</u></td></tr>
+<tr><th id="648">648</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_STATIC_ASSERT" data-ref="_M/Q_COMPILER_STATIC_ASSERT">Q_COMPILER_STATIC_ASSERT</dfn></u></td></tr>
+<tr><th id="649">649</th><td><u>#    <span data-ppcond="647">endif</span></u></td></tr>
+<tr><th id="650">650</th><td><u>#    <span data-ppcond="650">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_alias_templates)</u></td></tr>
+<tr><th id="651">651</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_TEMPLATE_ALIAS" data-ref="_M/Q_COMPILER_TEMPLATE_ALIAS">Q_COMPILER_TEMPLATE_ALIAS</dfn></u></td></tr>
+<tr><th id="652">652</th><td><u>#    <span data-ppcond="650">endif</span></u></td></tr>
+<tr><th id="653">653</th><td><u>#    <span data-ppcond="653">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_thread_local)</u></td></tr>
+<tr><th id="654">654</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_THREAD_LOCAL" data-ref="_M/Q_COMPILER_THREAD_LOCAL">Q_COMPILER_THREAD_LOCAL</dfn></u></td></tr>
+<tr><th id="655">655</th><td><u>#    <span data-ppcond="653">endif</span></u></td></tr>
+<tr><th id="656">656</th><td><u>#    <span data-ppcond="656">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_user_literals)</u></td></tr>
+<tr><th id="657">657</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_UDL" data-ref="_M/Q_COMPILER_UDL">Q_COMPILER_UDL</dfn></u></td></tr>
+<tr><th id="658">658</th><td><u>#    <span data-ppcond="656">endif</span></u></td></tr>
+<tr><th id="659">659</th><td><u>#    <span data-ppcond="659">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_unicode_literals)</u></td></tr>
+<tr><th id="660">660</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_UNICODE_STRINGS" data-ref="_M/Q_COMPILER_UNICODE_STRINGS">Q_COMPILER_UNICODE_STRINGS</dfn></u></td></tr>
+<tr><th id="661">661</th><td><u>#    <span data-ppcond="659">endif</span></u></td></tr>
+<tr><th id="662">662</th><td><u>#    <span data-ppcond="662">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_unrestricted_unions)</u></td></tr>
+<tr><th id="663">663</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_UNRESTRICTED_UNIONS" data-ref="_M/Q_COMPILER_UNRESTRICTED_UNIONS">Q_COMPILER_UNRESTRICTED_UNIONS</dfn></u></td></tr>
+<tr><th id="664">664</th><td><u>#    <span data-ppcond="662">endif</span></u></td></tr>
+<tr><th id="665">665</th><td><u>#    <span data-ppcond="665">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(cxx_variadic_templates)</u></td></tr>
+<tr><th id="666">666</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_VARIADIC_TEMPLATES" data-ref="_M/Q_COMPILER_VARIADIC_TEMPLATES">Q_COMPILER_VARIADIC_TEMPLATES</dfn></u></td></tr>
+<tr><th id="667">667</th><td><u>#    <span data-ppcond="665">endif</span></u></td></tr>
+<tr><th id="668">668</th><td>    <i>/* Features that have no __has_feature() check */</i></td></tr>
+<tr><th id="669">669</th><td><u>#    <span data-ppcond="669">if</span> ((<span class="macro" title="3" data-ref="_M/__clang_major__">__clang_major__</span> * 100) + <span class="macro" title="5" data-ref="_M/__clang_minor__">__clang_minor__</span>) &gt;= 209 /* since clang 2.9 */</u></td></tr>
+<tr><th id="670">670</th><td><u>#      define <dfn class="macro" id="_M/Q_COMPILER_EXTERN_TEMPLATES" data-ref="_M/Q_COMPILER_EXTERN_TEMPLATES">Q_COMPILER_EXTERN_TEMPLATES</dfn></u></td></tr>
+<tr><th id="671">671</th><td><u>#    <span data-ppcond="669">endif</span></u></td></tr>
+<tr><th id="672">672</th><td><u>#  <span data-ppcond="576">endif</span></u></td></tr>
+<tr><th id="673">673</th><td></td></tr>
+<tr><th id="674">674</th><td><i>/* C++1y features, see <a href="http://clang.llvm.org/cxx_status.html">http://clang.llvm.org/cxx_status.html</a> and</i></td></tr>
+<tr><th id="675">675</th><td><i> * <a href="http://clang.llvm.org/docs/LanguageExtensions.html#checks-for-standard-language-features">http://clang.llvm.org/docs/LanguageExtensions.html#checks-for-standard-language-features</a> */</i></td></tr>
+<tr><th id="676">676</th><td><u>#  <span data-ppcond="676">if</span> <span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt; 201103L</u></td></tr>
+<tr><th id="677">677</th><td><i>//#    if __has_feature(cxx_binary_literals)</i></td></tr>
+<tr><th id="678">678</th><td><i>//#      define Q_COMPILER_BINARY_LITERALS  // see above</i></td></tr>
+<tr><th id="679">679</th><td><i>//#    endif</i></td></tr>
+<tr><th id="680">680</th><td><u>#    if __has_feature(cxx_generic_lambda)</u></td></tr>
+<tr><th id="681">681</th><td><u>#      define Q_COMPILER_GENERIC_LAMBDA</u></td></tr>
+<tr><th id="682">682</th><td><u>#    endif</u></td></tr>
+<tr><th id="683">683</th><td><u>#    if __has_feature(cxx_init_capture)</u></td></tr>
+<tr><th id="684">684</th><td><u>#      define Q_COMPILER_LAMBDA_CAPTURES</u></td></tr>
+<tr><th id="685">685</th><td><u>#    endif</u></td></tr>
+<tr><th id="686">686</th><td><u>#    if __has_feature(cxx_relaxed_constexpr)</u></td></tr>
+<tr><th id="687">687</th><td><u>#      define Q_COMPILER_RELAXED_CONSTEXPR_FUNCTIONS</u></td></tr>
+<tr><th id="688">688</th><td><u>#    endif</u></td></tr>
+<tr><th id="689">689</th><td><u>#    if __has_feature(cxx_decltype_auto) &amp;&amp; __has_feature(cxx_return_type_deduction)</u></td></tr>
+<tr><th id="690">690</th><td><u>#      define Q_COMPILER_RETURN_TYPE_DEDUCTION</u></td></tr>
+<tr><th id="691">691</th><td><u>#    endif</u></td></tr>
+<tr><th id="692">692</th><td><u>#    if __has_feature(cxx_variable_templates)</u></td></tr>
+<tr><th id="693">693</th><td><u>#      define Q_COMPILER_VARIABLE_TEMPLATES</u></td></tr>
+<tr><th id="694">694</th><td><u>#    endif</u></td></tr>
+<tr><th id="695">695</th><td><u>#    if __has_feature(cxx_runtime_array)</u></td></tr>
+<tr><th id="696">696</th><td><u>#      define Q_COMPILER_VLA</u></td></tr>
+<tr><th id="697">697</th><td><u>#    endif</u></td></tr>
+<tr><th id="698">698</th><td><u>#  <span data-ppcond="676">endif</span></u></td></tr>
+<tr><th id="699">699</th><td><u>#<span data-ppcond="545">endif</span> // Q_CC_CLANG</u></td></tr>
+<tr><th id="700">700</th><td></td></tr>
+<tr><th id="701">701</th><td><u>#<span data-ppcond="701">if</span> defined(<a class="macro" href="#146" data-ref="_M/Q_CC_GNU">Q_CC_GNU</a>) &amp;&amp; !defined(<span class="macro" data-ref="_M/Q_CC_INTEL">Q_CC_INTEL</span>) &amp;&amp; !defined(<a class="macro" href="#161" data-ref="_M/Q_CC_CLANG">Q_CC_CLANG</a>)</u></td></tr>
+<tr><th id="702">702</th><td><u>#  define Q_COMPILER_RESTRICTED_VLA</u></td></tr>
+<tr><th id="703">703</th><td><u>#  if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 403</u></td></tr>
+<tr><th id="704">704</th><td><i>//   GCC supports binary literals in C, C++98 and C++11 modes</i></td></tr>
+<tr><th id="705">705</th><td><u>#    define Q_COMPILER_BINARY_LITERALS</u></td></tr>
+<tr><th id="706">706</th><td><u>#  endif</u></td></tr>
+<tr><th id="707">707</th><td><u>#  if !defined(__STRICT_ANSI__) || defined(__GXX_EXPERIMENTAL_CXX0X__) \</u></td></tr>
+<tr><th id="708">708</th><td><u>    || (defined(__cplusplus) &amp;&amp; (__cplusplus &gt;= 201103L)) \</u></td></tr>
+<tr><th id="709">709</th><td><u>    || (defined(__STDC_VERSION__) &amp;&amp; (__STDC_VERSION__ &gt;= 199901L))</u></td></tr>
+<tr><th id="710">710</th><td>     <i>// Variadic macros are supported for gnu++98, c++11, C99 ... since forever (gcc 2.97)</i></td></tr>
+<tr><th id="711">711</th><td><u>#    define Q_COMPILER_VARIADIC_MACROS</u></td></tr>
+<tr><th id="712">712</th><td><u>#  endif</u></td></tr>
+<tr><th id="713">713</th><td><u>#  if defined(__GXX_EXPERIMENTAL_CXX0X__) || __cplusplus &gt;= 201103L</u></td></tr>
+<tr><th id="714">714</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 403</u></td></tr>
+<tr><th id="715">715</th><td>       <i>/* C++11 features supported in GCC 4.3: */</i></td></tr>
+<tr><th id="716">716</th><td><u>#      define Q_COMPILER_DECLTYPE</u></td></tr>
+<tr><th id="717">717</th><td><u>#      define Q_COMPILER_RVALUE_REFS</u></td></tr>
+<tr><th id="718">718</th><td><u>#      define Q_COMPILER_STATIC_ASSERT</u></td></tr>
+<tr><th id="719">719</th><td><u>#    endif</u></td></tr>
+<tr><th id="720">720</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 404</u></td></tr>
+<tr><th id="721">721</th><td>       <i>/* C++11 features supported in GCC 4.4: */</i></td></tr>
+<tr><th id="722">722</th><td><u>#      define Q_COMPILER_AUTO_FUNCTION</u></td></tr>
+<tr><th id="723">723</th><td><u>#      define Q_COMPILER_AUTO_TYPE</u></td></tr>
+<tr><th id="724">724</th><td><u>#      define Q_COMPILER_CLASS_ENUM</u></td></tr>
+<tr><th id="725">725</th><td><u>#      define Q_COMPILER_DEFAULT_MEMBERS</u></td></tr>
+<tr><th id="726">726</th><td><u>#      define Q_COMPILER_DELETE_MEMBERS</u></td></tr>
+<tr><th id="727">727</th><td><u>#      define Q_COMPILER_EXTERN_TEMPLATES</u></td></tr>
+<tr><th id="728">728</th><td><u>#      define Q_COMPILER_INITIALIZER_LISTS</u></td></tr>
+<tr><th id="729">729</th><td><u>#      define Q_COMPILER_UNIFORM_INIT</u></td></tr>
+<tr><th id="730">730</th><td><u>#      define Q_COMPILER_UNICODE_STRINGS</u></td></tr>
+<tr><th id="731">731</th><td><u>#      define Q_COMPILER_VARIADIC_TEMPLATES</u></td></tr>
+<tr><th id="732">732</th><td><u>#    endif</u></td></tr>
+<tr><th id="733">733</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 405</u></td></tr>
+<tr><th id="734">734</th><td>       <i>/* C++11 features supported in GCC 4.5: */</i></td></tr>
+<tr><th id="735">735</th><td><u>#      define Q_COMPILER_EXPLICIT_CONVERSIONS</u></td></tr>
+<tr><th id="736">736</th><td><u>#      define Q_COMPILER_LAMBDA</u></td></tr>
+<tr><th id="737">737</th><td><u>#      define Q_COMPILER_RAW_STRINGS</u></td></tr>
+<tr><th id="738">738</th><td><u>#    endif</u></td></tr>
+<tr><th id="739">739</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 406</u></td></tr>
+<tr><th id="740">740</th><td>       <i>/* C++11 features supported in GCC 4.6: */</i></td></tr>
+<tr><th id="741">741</th><td><u>#      define Q_COMPILER_CONSTEXPR</u></td></tr>
+<tr><th id="742">742</th><td><u>#      define Q_COMPILER_NULLPTR</u></td></tr>
+<tr><th id="743">743</th><td><u>#      define Q_COMPILER_UNRESTRICTED_UNIONS</u></td></tr>
+<tr><th id="744">744</th><td><u>#      define Q_COMPILER_RANGE_FOR</u></td></tr>
+<tr><th id="745">745</th><td><u>#    endif</u></td></tr>
+<tr><th id="746">746</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 407</u></td></tr>
+<tr><th id="747">747</th><td>       <i>/* GCC 4.4 implemented &lt;atomic&gt; and std::atomic using its old intrinsics.</i></td></tr>
+<tr><th id="748">748</th><td><i>        * However, the implementation is incomplete for most platforms until GCC 4.7:</i></td></tr>
+<tr><th id="749">749</th><td><i>        * instead, std::atomic would use an external lock. Since we need an std::atomic</i></td></tr>
+<tr><th id="750">750</th><td><i>        * that is behavior-compatible with QBasicAtomic, we only enable it here */</i></td></tr>
+<tr><th id="751">751</th><td><u>#      define Q_COMPILER_ATOMICS</u></td></tr>
+<tr><th id="752">752</th><td>       <i>/* GCC 4.6.x has problems dealing with noexcept expressions,</i></td></tr>
+<tr><th id="753">753</th><td><i>        * so turn the feature on for 4.7 and above, only */</i></td></tr>
+<tr><th id="754">754</th><td><u>#      define Q_COMPILER_NOEXCEPT</u></td></tr>
+<tr><th id="755">755</th><td>       <i>/* C++11 features supported in GCC 4.7: */</i></td></tr>
+<tr><th id="756">756</th><td><u>#      define Q_COMPILER_NONSTATIC_MEMBER_INIT</u></td></tr>
+<tr><th id="757">757</th><td><u>#      define Q_COMPILER_DELEGATING_CONSTRUCTORS</u></td></tr>
+<tr><th id="758">758</th><td><u>#      define Q_COMPILER_EXPLICIT_OVERRIDES</u></td></tr>
+<tr><th id="759">759</th><td><u>#      define Q_COMPILER_TEMPLATE_ALIAS</u></td></tr>
+<tr><th id="760">760</th><td><u>#      define Q_COMPILER_UDL</u></td></tr>
+<tr><th id="761">761</th><td><u>#    endif</u></td></tr>
+<tr><th id="762">762</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 408</u></td></tr>
+<tr><th id="763">763</th><td><u>#      define Q_COMPILER_ATTRIBUTES</u></td></tr>
+<tr><th id="764">764</th><td><u>#      define Q_COMPILER_ALIGNAS</u></td></tr>
+<tr><th id="765">765</th><td><u>#      define Q_COMPILER_ALIGNOF</u></td></tr>
+<tr><th id="766">766</th><td><u>#      define Q_COMPILER_INHERITING_CONSTRUCTORS</u></td></tr>
+<tr><th id="767">767</th><td><u>#      define Q_COMPILER_THREAD_LOCAL</u></td></tr>
+<tr><th id="768">768</th><td><u>#      if (__GNUC__ * 100 + __GNUC_MINOR__) &gt; 408 || __GNUC_PATCHLEVEL__ &gt;= 1</u></td></tr>
+<tr><th id="769">769</th><td><u>#         define Q_COMPILER_REF_QUALIFIERS</u></td></tr>
+<tr><th id="770">770</th><td><u>#      endif</u></td></tr>
+<tr><th id="771">771</th><td><u>#    endif</u></td></tr>
+<tr><th id="772">772</th><td>     <i>/* C++11 features are complete as of GCC 4.8.1 */</i></td></tr>
+<tr><th id="773">773</th><td><u>#  endif</u></td></tr>
+<tr><th id="774">774</th><td><u>#  if __cplusplus &gt; 201103L</u></td></tr>
+<tr><th id="775">775</th><td><u>#    if (__GNUC__ * 100 + __GNUC_MINOR__) &gt;= 409</u></td></tr>
+<tr><th id="776">776</th><td>     <i>/* C++1y features in GCC 4.9 */</i></td></tr>
+<tr><th id="777">777</th><td><i>//#    define Q_COMPILER_BINARY_LITERALS   // already supported since GCC 4.3 as an extension</i></td></tr>
+<tr><th id="778">778</th><td><u>#      define Q_COMPILER_LAMBDA_CAPTURES</u></td></tr>
+<tr><th id="779">779</th><td><u>#      define Q_COMPILER_RETURN_TYPE_DEDUCTION</u></td></tr>
+<tr><th id="780">780</th><td><u>#    endif</u></td></tr>
+<tr><th id="781">781</th><td><u>#  endif</u></td></tr>
+<tr><th id="782">782</th><td><u>#<span data-ppcond="701">endif</span></u></td></tr>
+<tr><th id="783">783</th><td></td></tr>
+<tr><th id="784">784</th><td><u>#<span data-ppcond="784">if</span> defined(<span class="macro" data-ref="_M/Q_CC_MSVC">Q_CC_MSVC</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/Q_CC_INTEL">Q_CC_INTEL</span>)</u></td></tr>
+<tr><th id="785">785</th><td><u>#    if _MSC_VER &gt;= 1400</u></td></tr>
+<tr><th id="786">786</th><td>       <i>/* C++11 features supported in VC8 = VC2005: */</i></td></tr>
+<tr><th id="787">787</th><td><u>#      define Q_COMPILER_VARIADIC_MACROS</u></td></tr>
+<tr><th id="788">788</th><td></td></tr>
+<tr><th id="789">789</th><td><u>#      ifndef __cplusplus_cli</u></td></tr>
+<tr><th id="790">790</th><td>       <i>/* 2005 supports the override and final contextual keywords, in</i></td></tr>
+<tr><th id="791">791</th><td><i>        the same positions as the C++11 variants, but 'final' is</i></td></tr>
+<tr><th id="792">792</th><td><i>        called 'sealed' instead:</i></td></tr>
+<tr><th id="793">793</th><td><i>        <a href="http://msdn.microsoft.com/en-us/library/0w2w91tf%28v=vs.80%29.aspx">http://msdn.microsoft.com/en-us/library/0w2w91tf%28v=vs.80%29.aspx</a></i></td></tr>
+<tr><th id="794">794</th><td><i>        The behavior is slightly different in C++/CLI, which requires the</i></td></tr>
+<tr><th id="795">795</th><td><i>        "virtual" keyword to be present too, so don't define for that.</i></td></tr>
+<tr><th id="796">796</th><td><i>        So don't define Q_COMPILER_EXPLICIT_OVERRIDES (since it's not</i></td></tr>
+<tr><th id="797">797</th><td><i>        the same as the C++11 version), but define the Q_DECL_* flags</i></td></tr>
+<tr><th id="798">798</th><td><i>        accordingly: */</i></td></tr>
+<tr><th id="799">799</th><td><u>#      define Q_DECL_OVERRIDE override</u></td></tr>
+<tr><th id="800">800</th><td><u>#      define Q_DECL_FINAL sealed</u></td></tr>
+<tr><th id="801">801</th><td><u>#      endif</u></td></tr>
+<tr><th id="802">802</th><td><u>#    endif</u></td></tr>
+<tr><th id="803">803</th><td><u>#    if _MSC_VER &gt;= 1600</u></td></tr>
+<tr><th id="804">804</th><td>       <i>/* C++11 features supported in VC10 = VC2010: */</i></td></tr>
+<tr><th id="805">805</th><td><u>#      define Q_COMPILER_AUTO_FUNCTION</u></td></tr>
+<tr><th id="806">806</th><td><u>#      define Q_COMPILER_AUTO_TYPE</u></td></tr>
+<tr><th id="807">807</th><td><u>#      define Q_COMPILER_LAMBDA</u></td></tr>
+<tr><th id="808">808</th><td><u>#      define Q_COMPILER_DECLTYPE</u></td></tr>
+<tr><th id="809">809</th><td><u>#      define Q_COMPILER_RVALUE_REFS</u></td></tr>
+<tr><th id="810">810</th><td><u>#      define Q_COMPILER_STATIC_ASSERT</u></td></tr>
+<tr><th id="811">811</th><td><i>//  MSVC's library has std::initializer_list, but the compiler does not support the braces initialization</i></td></tr>
+<tr><th id="812">812</th><td><i>//#      define Q_COMPILER_INITIALIZER_LISTS</i></td></tr>
+<tr><th id="813">813</th><td><i>//#      define Q_COMPILER_UNIFORM_INIT</i></td></tr>
+<tr><th id="814">814</th><td><u>#    endif</u></td></tr>
+<tr><th id="815">815</th><td><u>#    if _MSC_VER &gt;= 1700</u></td></tr>
+<tr><th id="816">816</th><td>       <i>/* C++11 features supported in VC11 = VC2012: */</i></td></tr>
+<tr><th id="817">817</th><td><u>#       undef Q_DECL_OVERRIDE               /* undo 2005/2008 settings... */</u></td></tr>
+<tr><th id="818">818</th><td><u>#       undef Q_DECL_FINAL                  /* undo 2005/2008 settings... */</u></td></tr>
+<tr><th id="819">819</th><td><u>#      define Q_COMPILER_EXPLICIT_OVERRIDES /* ...and use std C++11 now   */</u></td></tr>
+<tr><th id="820">820</th><td><u>#      define Q_COMPILER_RANGE_FOR</u></td></tr>
+<tr><th id="821">821</th><td><u>#      define Q_COMPILER_CLASS_ENUM</u></td></tr>
+<tr><th id="822">822</th><td><u>#      define Q_COMPILER_ATOMICS</u></td></tr>
+<tr><th id="823">823</th><td><u>#    endif /* VC 11 */</u></td></tr>
+<tr><th id="824">824</th><td><u>#    if _MSC_VER &gt;= 1800</u></td></tr>
+<tr><th id="825">825</th><td>       <i>/* C++11 features in VC12 = VC2013 */</i></td></tr>
+<tr><th id="826">826</th><td><u>#      define Q_COMPILER_DEFAULT_MEMBERS</u></td></tr>
+<tr><th id="827">827</th><td><u>#      define Q_COMPILER_DELETE_MEMBERS</u></td></tr>
+<tr><th id="828">828</th><td><u>#      define Q_COMPILER_DELEGATING_CONSTRUCTORS</u></td></tr>
+<tr><th id="829">829</th><td><u>#      define Q_COMPILER_EXPLICIT_CONVERSIONS</u></td></tr>
+<tr><th id="830">830</th><td><u>#      define Q_COMPILER_NONSTATIC_MEMBER_INIT</u></td></tr>
+<tr><th id="831">831</th><td><i>// implemented, but nested initialization fails (eg tst_qvector): <a href="http://connect.microsoft.com/VisualStudio/feedback/details/800364/initializer-list-calls-object-destructor-twice">http://connect.microsoft.com/VisualStudio/feedback/details/800364/initializer-list-calls-object-destructor-twice</a></i></td></tr>
+<tr><th id="832">832</th><td><i>//      #define Q_COMPILER_INITIALIZER_LISTS</i></td></tr>
+<tr><th id="833">833</th><td><i>// implemented in principle, but has a bug that makes it unusable: <a href="http://connect.microsoft.com/VisualStudio/feedback/details/802058/c-11-unified-initialization-fails-with-c-style-arrays">http://connect.microsoft.com/VisualStudio/feedback/details/802058/c-11-unified-initialization-fails-with-c-style-arrays</a></i></td></tr>
+<tr><th id="834">834</th><td><i>//      #define Q_COMPILER_UNIFORM_INIT</i></td></tr>
+<tr><th id="835">835</th><td><u>#      define Q_COMPILER_RAW_STRINGS</u></td></tr>
+<tr><th id="836">836</th><td><u>#      define Q_COMPILER_TEMPLATE_ALIAS</u></td></tr>
+<tr><th id="837">837</th><td><u>#      define Q_COMPILER_VARIADIC_TEMPLATES</u></td></tr>
+<tr><th id="838">838</th><td><u>#    endif /* VC 12 */</u></td></tr>
+<tr><th id="839">839</th><td><u>#    if _MSC_FULL_VER &gt;= 180030324 // VC 12 SP 2 RC</u></td></tr>
+<tr><th id="840">840</th><td><u>#      define Q_COMPILER_INITIALIZER_LISTS</u></td></tr>
+<tr><th id="841">841</th><td><u>#    endif /* VC 12 SP 2 RC */</u></td></tr>
+<tr><th id="842">842</th><td></td></tr>
+<tr><th id="843">843</th><td><u>#<span data-ppcond="784">endif</span> /* Q_CC_MSVC */</u></td></tr>
+<tr><th id="844">844</th><td></td></tr>
+<tr><th id="845">845</th><td><u>#<span data-ppcond="845">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="846">846</th><td><u># include <a href="../../../c++/4.9/utility.html">&lt;utility&gt;</a></u></td></tr>
+<tr><th id="847">847</th><td><u># <span data-ppcond="847">if</span> defined(<span class="macro" data-ref="_M/Q_OS_QNX">Q_OS_QNX</span>)</u></td></tr>
+<tr><th id="848">848</th><td><u>#  if defined(_YVALS) || defined(_LIBCPP_VER)</u></td></tr>
+<tr><th id="849">849</th><td><i>// QNX: libcpp (Dinkumware-based) doesn't have the &lt;initializer_list&gt;</i></td></tr>
+<tr><th id="850">850</th><td><i>// header, so the feature is useless, even if the compiler supports</i></td></tr>
+<tr><th id="851">851</th><td><i>// it. Disable.</i></td></tr>
+<tr><th id="852">852</th><td><u>#    undef Q_COMPILER_INITIALIZER_LISTS</u></td></tr>
+<tr><th id="853">853</th><td><i>// That libcpp doesn't have std::move either, so disable everything</i></td></tr>
+<tr><th id="854">854</th><td><i>// related to rvalue refs.</i></td></tr>
+<tr><th id="855">855</th><td><u>#    undef Q_COMPILER_RVALUE_REFS</u></td></tr>
+<tr><th id="856">856</th><td><u>#    undef Q_COMPILER_REF_QUALIFIERS</u></td></tr>
+<tr><th id="857">857</th><td><u>#  endif</u></td></tr>
+<tr><th id="858">858</th><td><u># <span data-ppcond="847">endif</span> // Q_OS_QNX</u></td></tr>
+<tr><th id="859">859</th><td><u># <span data-ppcond="859">if</span> (defined(<a class="macro" href="#161" data-ref="_M/Q_CC_CLANG">Q_CC_CLANG</a>) || defined(<span class="macro" data-ref="_M/Q_CC_INTEL">Q_CC_INTEL</span>)) &amp;&amp; defined(<span class="macro" data-ref="_M/Q_OS_MAC">Q_OS_MAC</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__GNUC_LIBSTD__">__GNUC_LIBSTD__</span>) \</u></td></tr>
+<tr><th id="860">860</th><td><u>    &amp;&amp; ((__GNUC_LIBSTD__-0) * 100 + __GNUC_LIBSTD_MINOR__-0 &lt;= 402)</u></td></tr>
+<tr><th id="861">861</th><td><i>// Mac OS X: Apple has not updated libstdc++ since 2007, which means it does not have</i></td></tr>
+<tr><th id="862">862</th><td><i>// &lt;initializer_list&gt; or std::move. Let's disable these features</i></td></tr>
+<tr><th id="863">863</th><td><u>#  undef Q_COMPILER_INITIALIZER_LISTS</u></td></tr>
+<tr><th id="864">864</th><td><u>#  undef Q_COMPILER_RVALUE_REFS</u></td></tr>
+<tr><th id="865">865</th><td><u>#  undef Q_COMPILER_REF_QUALIFIERS</u></td></tr>
+<tr><th id="866">866</th><td><u># <span data-ppcond="859">endif</span></u></td></tr>
+<tr><th id="867">867</th><td><u>#<span data-ppcond="845">endif</span></u></td></tr>
+<tr><th id="868">868</th><td></td></tr>
+<tr><th id="869">869</th><td><i>/*</i></td></tr>
+<tr><th id="870">870</th><td><i> * C++11 keywords and expressions</i></td></tr>
+<tr><th id="871">871</th><td><i> */</i></td></tr>
+<tr><th id="872">872</th><td><u>#<span data-ppcond="872">ifdef</span> <a class="macro" href="#633" data-ref="_M/Q_COMPILER_NULLPTR">Q_COMPILER_NULLPTR</a></u></td></tr>
+<tr><th id="873">873</th><td><u># define <dfn class="macro" id="_M/Q_NULLPTR" data-ref="_M/Q_NULLPTR">Q_NULLPTR</dfn>         nullptr</u></td></tr>
+<tr><th id="874">874</th><td><u>#<span data-ppcond="872">else</span></u></td></tr>
+<tr><th id="875">875</th><td><u># define Q_NULLPTR         NULL</u></td></tr>
+<tr><th id="876">876</th><td><u>#<span data-ppcond="872">endif</span></u></td></tr>
+<tr><th id="877">877</th><td></td></tr>
+<tr><th id="878">878</th><td><u>#<span data-ppcond="878">ifdef</span> <a class="macro" href="#602" data-ref="_M/Q_COMPILER_DEFAULT_MEMBERS">Q_COMPILER_DEFAULT_MEMBERS</a></u></td></tr>
+<tr><th id="879">879</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_EQ_DEFAULT" data-ref="_M/Q_DECL_EQ_DEFAULT">Q_DECL_EQ_DEFAULT</dfn> = default</u></td></tr>
+<tr><th id="880">880</th><td><u>#<span data-ppcond="878">else</span></u></td></tr>
+<tr><th id="881">881</th><td><u>#  define Q_DECL_EQ_DEFAULT</u></td></tr>
+<tr><th id="882">882</th><td><u>#<span data-ppcond="878">endif</span></u></td></tr>
+<tr><th id="883">883</th><td></td></tr>
+<tr><th id="884">884</th><td><u>#<span data-ppcond="884">ifdef</span> <a class="macro" href="#605" data-ref="_M/Q_COMPILER_DELETE_MEMBERS">Q_COMPILER_DELETE_MEMBERS</a></u></td></tr>
+<tr><th id="885">885</th><td><u># define <dfn class="macro" id="_M/Q_DECL_EQ_DELETE" data-ref="_M/Q_DECL_EQ_DELETE">Q_DECL_EQ_DELETE</dfn> = delete</u></td></tr>
+<tr><th id="886">886</th><td><u>#<span data-ppcond="884">else</span></u></td></tr>
+<tr><th id="887">887</th><td><u># define Q_DECL_EQ_DELETE</u></td></tr>
+<tr><th id="888">888</th><td><u>#<span data-ppcond="884">endif</span></u></td></tr>
+<tr><th id="889">889</th><td></td></tr>
+<tr><th id="890">890</th><td><i>// Don't break code that is already using Q_COMPILER_DEFAULT_DELETE_MEMBERS</i></td></tr>
+<tr><th id="891">891</th><td><u>#<span data-ppcond="891">if</span> defined(<a class="macro" href="#602" data-ref="_M/Q_COMPILER_DEFAULT_MEMBERS">Q_COMPILER_DEFAULT_MEMBERS</a>) &amp;&amp; defined(<a class="macro" href="#605" data-ref="_M/Q_COMPILER_DELETE_MEMBERS">Q_COMPILER_DELETE_MEMBERS</a>)</u></td></tr>
+<tr><th id="892">892</th><td><u>#  define <dfn class="macro" id="_M/Q_COMPILER_DEFAULT_DELETE_MEMBERS" data-ref="_M/Q_COMPILER_DEFAULT_DELETE_MEMBERS">Q_COMPILER_DEFAULT_DELETE_MEMBERS</dfn></u></td></tr>
+<tr><th id="893">893</th><td><u>#<span data-ppcond="891">endif</span></u></td></tr>
+<tr><th id="894">894</th><td></td></tr>
+<tr><th id="895">895</th><td><u>#<span data-ppcond="895">ifdef</span> <a class="macro" href="#596" data-ref="_M/Q_COMPILER_CONSTEXPR">Q_COMPILER_CONSTEXPR</a></u></td></tr>
+<tr><th id="896">896</th><td><u># define <dfn class="macro" id="_M/Q_DECL_CONSTEXPR" data-ref="_M/Q_DECL_CONSTEXPR">Q_DECL_CONSTEXPR</dfn> constexpr</u></td></tr>
+<tr><th id="897">897</th><td><u># define <dfn class="macro" id="_M/Q_CONSTEXPR" data-ref="_M/Q_CONSTEXPR">Q_CONSTEXPR</dfn> constexpr</u></td></tr>
+<tr><th id="898">898</th><td><u>#<span data-ppcond="895">else</span></u></td></tr>
+<tr><th id="899">899</th><td><u># define Q_DECL_CONSTEXPR</u></td></tr>
+<tr><th id="900">900</th><td><u># define Q_CONSTEXPR const</u></td></tr>
+<tr><th id="901">901</th><td><u>#<span data-ppcond="895">endif</span></u></td></tr>
+<tr><th id="902">902</th><td></td></tr>
+<tr><th id="903">903</th><td><u>#<span data-ppcond="903">ifdef</span> <a class="macro" href="#614" data-ref="_M/Q_COMPILER_EXPLICIT_OVERRIDES">Q_COMPILER_EXPLICIT_OVERRIDES</a></u></td></tr>
+<tr><th id="904">904</th><td><u># define <dfn class="macro" id="_M/Q_DECL_OVERRIDE" data-ref="_M/Q_DECL_OVERRIDE">Q_DECL_OVERRIDE</dfn> override</u></td></tr>
+<tr><th id="905">905</th><td><u># define <dfn class="macro" id="_M/Q_DECL_FINAL" data-ref="_M/Q_DECL_FINAL">Q_DECL_FINAL</dfn> final</u></td></tr>
+<tr><th id="906">906</th><td><u>#<span data-ppcond="903">else</span></u></td></tr>
+<tr><th id="907">907</th><td><u># ifndef Q_DECL_OVERRIDE</u></td></tr>
+<tr><th id="908">908</th><td><u>#  define Q_DECL_OVERRIDE</u></td></tr>
+<tr><th id="909">909</th><td><u># endif</u></td></tr>
+<tr><th id="910">910</th><td><u># ifndef Q_DECL_FINAL</u></td></tr>
+<tr><th id="911">911</th><td><u>#  define Q_DECL_FINAL</u></td></tr>
+<tr><th id="912">912</th><td><u># endif</u></td></tr>
+<tr><th id="913">913</th><td><u>#<span data-ppcond="903">endif</span></u></td></tr>
+<tr><th id="914">914</th><td></td></tr>
+<tr><th id="915">915</th><td><u>#<span data-ppcond="915">ifdef</span> <a class="macro" href="#627" data-ref="_M/Q_COMPILER_NOEXCEPT">Q_COMPILER_NOEXCEPT</a></u></td></tr>
+<tr><th id="916">916</th><td><u># define <dfn class="macro" id="_M/Q_DECL_NOEXCEPT" data-ref="_M/Q_DECL_NOEXCEPT">Q_DECL_NOEXCEPT</dfn> noexcept</u></td></tr>
+<tr><th id="917">917</th><td><u># define <dfn class="macro" id="_M/Q_DECL_NOEXCEPT_EXPR" data-ref="_M/Q_DECL_NOEXCEPT_EXPR">Q_DECL_NOEXCEPT_EXPR</dfn>(x) noexcept(x)</u></td></tr>
+<tr><th id="918">918</th><td><u># <span data-ppcond="918">ifdef</span> <span class="macro" data-ref="_M/Q_DECL_NOTHROW">Q_DECL_NOTHROW</span></u></td></tr>
+<tr><th id="919">919</th><td><u>#  undef Q_DECL_NOTHROW /* override with C++11 noexcept if available */</u></td></tr>
+<tr><th id="920">920</th><td><u># <span data-ppcond="918">endif</span></u></td></tr>
+<tr><th id="921">921</th><td><u>#<span data-ppcond="915">else</span></u></td></tr>
+<tr><th id="922">922</th><td><u># define Q_DECL_NOEXCEPT</u></td></tr>
+<tr><th id="923">923</th><td><u># define Q_DECL_NOEXCEPT_EXPR(x)</u></td></tr>
+<tr><th id="924">924</th><td><u>#<span data-ppcond="915">endif</span></u></td></tr>
+<tr><th id="925">925</th><td><u>#<span data-ppcond="925">ifndef</span> <span class="macro" data-ref="_M/Q_DECL_NOTHROW">Q_DECL_NOTHROW</span></u></td></tr>
+<tr><th id="926">926</th><td><u># define <dfn class="macro" id="_M/Q_DECL_NOTHROW" data-ref="_M/Q_DECL_NOTHROW">Q_DECL_NOTHROW</dfn> Q_DECL_NOEXCEPT</u></td></tr>
+<tr><th id="927">927</th><td><u>#<span data-ppcond="925">endif</span></u></td></tr>
+<tr><th id="928">928</th><td></td></tr>
+<tr><th id="929">929</th><td><u>#<span data-ppcond="929">if</span> defined(<a class="macro" href="#580" data-ref="_M/Q_COMPILER_ALIGNOF">Q_COMPILER_ALIGNOF</a>) &amp;&amp; !defined(<a class="macro" href="#194" data-ref="_M/Q_ALIGNOF">Q_ALIGNOF</a>)</u></td></tr>
+<tr><th id="930">930</th><td><u>#  define Q_ALIGNOF(x)  alignof(x)</u></td></tr>
+<tr><th id="931">931</th><td><u>#<span data-ppcond="929">endif</span></u></td></tr>
+<tr><th id="932">932</th><td></td></tr>
+<tr><th id="933">933</th><td><i>/*</i></td></tr>
+<tr><th id="934">934</th><td><i> * Fallback macros to certain compiler features</i></td></tr>
+<tr><th id="935">935</th><td><i> */</i></td></tr>
+<tr><th id="936">936</th><td></td></tr>
+<tr><th id="937">937</th><td><u>#<span data-ppcond="937">ifndef</span> <a class="macro" href="#201" data-ref="_M/Q_NORETURN">Q_NORETURN</a></u></td></tr>
+<tr><th id="938">938</th><td><u># define Q_NORETURN</u></td></tr>
+<tr><th id="939">939</th><td><u>#<span data-ppcond="937">endif</span></u></td></tr>
+<tr><th id="940">940</th><td><u>#<span data-ppcond="940">ifndef</span> <a class="macro" href="#199" data-ref="_M/Q_LIKELY">Q_LIKELY</a></u></td></tr>
+<tr><th id="941">941</th><td><u>#  define Q_LIKELY(x) (x)</u></td></tr>
+<tr><th id="942">942</th><td><u>#<span data-ppcond="940">endif</span></u></td></tr>
+<tr><th id="943">943</th><td><u>#<span data-ppcond="943">ifndef</span> <a class="macro" href="#200" data-ref="_M/Q_UNLIKELY">Q_UNLIKELY</a></u></td></tr>
+<tr><th id="944">944</th><td><u>#  define Q_UNLIKELY(x) (x)</u></td></tr>
+<tr><th id="945">945</th><td><u>#<span data-ppcond="943">endif</span></u></td></tr>
+<tr><th id="946">946</th><td><u>#<span data-ppcond="946">ifndef</span> <a class="macro" href="#162" data-ref="_M/Q_ASSUME_IMPL">Q_ASSUME_IMPL</a></u></td></tr>
+<tr><th id="947">947</th><td><u>#  define Q_ASSUME_IMPL(expr) qt_noop()</u></td></tr>
+<tr><th id="948">948</th><td><u>#<span data-ppcond="946">endif</span></u></td></tr>
+<tr><th id="949">949</th><td><u>#<span data-ppcond="949">ifndef</span> <a class="macro" href="#163" data-ref="_M/Q_UNREACHABLE_IMPL">Q_UNREACHABLE_IMPL</a></u></td></tr>
+<tr><th id="950">950</th><td><u>#  define Q_UNREACHABLE_IMPL() qt_noop()</u></td></tr>
+<tr><th id="951">951</th><td><u>#<span data-ppcond="949">endif</span></u></td></tr>
+<tr><th id="952">952</th><td><u>#<span data-ppcond="952">ifndef</span> <span class="macro" data-ref="_M/Q_ALLOC_SIZE">Q_ALLOC_SIZE</span></u></td></tr>
+<tr><th id="953">953</th><td><u>#  define <dfn class="macro" id="_M/Q_ALLOC_SIZE" data-ref="_M/Q_ALLOC_SIZE">Q_ALLOC_SIZE</dfn>(x)</u></td></tr>
+<tr><th id="954">954</th><td><u>#<span data-ppcond="952">endif</span></u></td></tr>
+<tr><th id="955">955</th><td><u>#<span data-ppcond="955">ifndef</span> <a class="macro" href="#202" data-ref="_M/Q_REQUIRED_RESULT">Q_REQUIRED_RESULT</a></u></td></tr>
+<tr><th id="956">956</th><td><u>#  define Q_REQUIRED_RESULT</u></td></tr>
+<tr><th id="957">957</th><td><u>#<span data-ppcond="955">endif</span></u></td></tr>
+<tr><th id="958">958</th><td><u>#<span data-ppcond="958">ifndef</span> <a class="macro" href="#196" data-ref="_M/Q_DECL_DEPRECATED">Q_DECL_DEPRECATED</a></u></td></tr>
+<tr><th id="959">959</th><td><u>#  define Q_DECL_DEPRECATED</u></td></tr>
+<tr><th id="960">960</th><td><u>#<span data-ppcond="958">endif</span></u></td></tr>
+<tr><th id="961">961</th><td><u>#<span data-ppcond="961">ifndef</span> <span class="macro" data-ref="_M/Q_DECL_VARIABLE_DEPRECATED">Q_DECL_VARIABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="962">962</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_VARIABLE_DEPRECATED" data-ref="_M/Q_DECL_VARIABLE_DEPRECATED">Q_DECL_VARIABLE_DEPRECATED</dfn> Q_DECL_DEPRECATED</u></td></tr>
+<tr><th id="963">963</th><td><u>#<span data-ppcond="961">endif</span></u></td></tr>
+<tr><th id="964">964</th><td><u>#<span data-ppcond="964">ifndef</span> <a class="macro" href="#557" data-ref="_M/Q_DECL_DEPRECATED_X">Q_DECL_DEPRECATED_X</a></u></td></tr>
+<tr><th id="965">965</th><td><u>#  define Q_DECL_DEPRECATED_X(text) Q_DECL_DEPRECATED</u></td></tr>
+<tr><th id="966">966</th><td><u>#<span data-ppcond="964">endif</span></u></td></tr>
+<tr><th id="967">967</th><td><u>#<span data-ppcond="967">ifndef</span> <a class="macro" href="#188" data-ref="_M/Q_DECL_EXPORT">Q_DECL_EXPORT</a></u></td></tr>
+<tr><th id="968">968</th><td><u>#  define Q_DECL_EXPORT</u></td></tr>
+<tr><th id="969">969</th><td><u>#<span data-ppcond="967">endif</span></u></td></tr>
+<tr><th id="970">970</th><td><u>#<span data-ppcond="970">ifndef</span> <a class="macro" href="#189" data-ref="_M/Q_DECL_IMPORT">Q_DECL_IMPORT</a></u></td></tr>
+<tr><th id="971">971</th><td><u>#  define Q_DECL_IMPORT</u></td></tr>
+<tr><th id="972">972</th><td><u>#<span data-ppcond="970">endif</span></u></td></tr>
+<tr><th id="973">973</th><td><u>#<span data-ppcond="973">ifndef</span> <a class="macro" href="#190" data-ref="_M/Q_DECL_HIDDEN">Q_DECL_HIDDEN</a></u></td></tr>
+<tr><th id="974">974</th><td><u>#  define Q_DECL_HIDDEN</u></td></tr>
+<tr><th id="975">975</th><td><u>#<span data-ppcond="973">endif</span></u></td></tr>
+<tr><th id="976">976</th><td><u>#<span data-ppcond="976">ifndef</span> <a class="macro" href="#198" data-ref="_M/Q_DECL_UNUSED">Q_DECL_UNUSED</a></u></td></tr>
+<tr><th id="977">977</th><td><u>#  define Q_DECL_UNUSED</u></td></tr>
+<tr><th id="978">978</th><td><u>#<span data-ppcond="976">endif</span></u></td></tr>
+<tr><th id="979">979</th><td><u>#<span data-ppcond="979">ifndef</span> <a class="macro" href="#193" data-ref="_M/Q_FUNC_INFO">Q_FUNC_INFO</a></u></td></tr>
+<tr><th id="980">980</th><td><u>#  if defined(Q_OS_SOLARIS) || defined(Q_CC_XLC)</u></td></tr>
+<tr><th id="981">981</th><td><u>#    define Q_FUNC_INFO __FILE__ "(line number unavailable)"</u></td></tr>
+<tr><th id="982">982</th><td><u>#  else</u></td></tr>
+<tr><th id="983">983</th><td><u>#    define Q_FUNC_INFO __FILE__ ":" QT_STRINGIFY(__LINE__)</u></td></tr>
+<tr><th id="984">984</th><td><u>#  endif</u></td></tr>
+<tr><th id="985">985</th><td><u>#<span data-ppcond="979">endif</span></u></td></tr>
+<tr><th id="986">986</th><td><u>#<span data-ppcond="986">ifndef</span> <span class="macro" data-ref="_M/Q_DECL_CF_RETURNS_RETAINED">Q_DECL_CF_RETURNS_RETAINED</span></u></td></tr>
+<tr><th id="987">987</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_CF_RETURNS_RETAINED" data-ref="_M/Q_DECL_CF_RETURNS_RETAINED">Q_DECL_CF_RETURNS_RETAINED</dfn></u></td></tr>
+<tr><th id="988">988</th><td><u>#<span data-ppcond="986">endif</span></u></td></tr>
+<tr><th id="989">989</th><td><u>#<span data-ppcond="989">ifndef</span> <span class="macro" data-ref="_M/Q_DECL_NS_RETURNS_AUTORELEASED">Q_DECL_NS_RETURNS_AUTORELEASED</span></u></td></tr>
+<tr><th id="990">990</th><td><u>#  define <dfn class="macro" id="_M/Q_DECL_NS_RETURNS_AUTORELEASED" data-ref="_M/Q_DECL_NS_RETURNS_AUTORELEASED">Q_DECL_NS_RETURNS_AUTORELEASED</dfn></u></td></tr>
+<tr><th id="991">991</th><td><u>#<span data-ppcond="989">endif</span></u></td></tr>
+<tr><th id="992">992</th><td></td></tr>
+<tr><th id="993">993</th><td><i>/*</i></td></tr>
+<tr><th id="994">994</th><td><i>   Workaround for static const members on MSVC++.</i></td></tr>
+<tr><th id="995">995</th><td><i>*/</i></td></tr>
+<tr><th id="996">996</th><td></td></tr>
+<tr><th id="997">997</th><td><u>#<span data-ppcond="997">if</span> defined(<span class="macro" data-ref="_M/Q_CC_MSVC">Q_CC_MSVC</span>)</u></td></tr>
+<tr><th id="998">998</th><td><u>#  define QT_STATIC_CONST static</u></td></tr>
+<tr><th id="999">999</th><td><u>#  define QT_STATIC_CONST_IMPL</u></td></tr>
+<tr><th id="1000">1000</th><td><u>#<span data-ppcond="997">else</span></u></td></tr>
+<tr><th id="1001">1001</th><td><u>#  define <dfn class="macro" id="_M/QT_STATIC_CONST" data-ref="_M/QT_STATIC_CONST">QT_STATIC_CONST</dfn> static const</u></td></tr>
+<tr><th id="1002">1002</th><td><u>#  define <dfn class="macro" id="_M/QT_STATIC_CONST_IMPL" data-ref="_M/QT_STATIC_CONST_IMPL">QT_STATIC_CONST_IMPL</dfn> const</u></td></tr>
+<tr><th id="1003">1003</th><td><u>#<span data-ppcond="997">endif</span></u></td></tr>
+<tr><th id="1004">1004</th><td></td></tr>
+<tr><th id="1005">1005</th><td><i>/*</i></td></tr>
+<tr><th id="1006">1006</th><td><i>   Proper for-scoping in MIPSpro CC</i></td></tr>
+<tr><th id="1007">1007</th><td><i>*/</i></td></tr>
+<tr><th id="1008">1008</th><td><u>#<span data-ppcond="1008">ifndef</span> <span class="macro" data-ref="_M/QT_NO_KEYWORDS">QT_NO_KEYWORDS</span></u></td></tr>
+<tr><th id="1009">1009</th><td><u>#  <span data-ppcond="1009">if</span> defined(<span class="macro" data-ref="_M/Q_CC_MIPS">Q_CC_MIPS</span>) || (defined(<span class="macro" data-ref="_M/Q_CC_HPACC">Q_CC_HPACC</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__ia64">__ia64</span>))</u></td></tr>
+<tr><th id="1010">1010</th><td><u>#    define for if (0) {} else for</u></td></tr>
+<tr><th id="1011">1011</th><td><u>#  <span data-ppcond="1009">endif</span></u></td></tr>
+<tr><th id="1012">1012</th><td><u>#<span data-ppcond="1008">endif</span></u></td></tr>
+<tr><th id="1013">1013</th><td></td></tr>
+<tr><th id="1014">1014</th><td><u>#<span data-ppcond="1014">ifdef</span> <a class="macro" href="#645" data-ref="_M/Q_COMPILER_RVALUE_REFS">Q_COMPILER_RVALUE_REFS</a></u></td></tr>
+<tr><th id="1015">1015</th><td><u>#define <dfn class="macro" id="_M/qMove" data-ref="_M/qMove">qMove</dfn>(x) std::move(x)</u></td></tr>
+<tr><th id="1016">1016</th><td><u>#<span data-ppcond="1014">else</span></u></td></tr>
+<tr><th id="1017">1017</th><td><u>#define qMove(x) (x)</u></td></tr>
+<tr><th id="1018">1018</th><td><u>#<span data-ppcond="1014">endif</span></u></td></tr>
+<tr><th id="1019">1019</th><td></td></tr>
+<tr><th id="1020">1020</th><td><u>#define <dfn class="macro" id="_M/Q_UNREACHABLE" data-ref="_M/Q_UNREACHABLE">Q_UNREACHABLE</dfn>() \</u></td></tr>
+<tr><th id="1021">1021</th><td><u>    do {\</u></td></tr>
+<tr><th id="1022">1022</th><td><u>        Q_ASSERT_X(false, "Q_UNREACHABLE()", "Q_UNREACHABLE was reached");\</u></td></tr>
+<tr><th id="1023">1023</th><td><u>        Q_UNREACHABLE_IMPL();\</u></td></tr>
+<tr><th id="1024">1024</th><td><u>    } while (0)</u></td></tr>
+<tr><th id="1025">1025</th><td></td></tr>
+<tr><th id="1026">1026</th><td><u>#define <dfn class="macro" id="_M/Q_ASSUME" data-ref="_M/Q_ASSUME">Q_ASSUME</dfn>(Expr) \</u></td></tr>
+<tr><th id="1027">1027</th><td><u>    do {\</u></td></tr>
+<tr><th id="1028">1028</th><td><u>        const bool valueOfExpression = Expr;\</u></td></tr>
+<tr><th id="1029">1029</th><td><u>        Q_ASSERT_X(valueOfExpression, "Q_ASSUME()", "Assumption in Q_ASSUME(\"" #Expr "\") was not correct");\</u></td></tr>
+<tr><th id="1030">1030</th><td><u>        Q_ASSUME_IMPL(valueOfExpression);\</u></td></tr>
+<tr><th id="1031">1031</th><td><u>        Q_UNUSED(valueOfExpression); /* the value may not be used if Q_ASSERT_X and Q_ASSUME_IMPL are noop */\</u></td></tr>
+<tr><th id="1032">1032</th><td><u>    } while (0)</u></td></tr>
+<tr><th id="1033">1033</th><td></td></tr>
+<tr><th id="1034">1034</th><td></td></tr>
+<tr><th id="1035">1035</th><td><i>/*</i></td></tr>
+<tr><th id="1036">1036</th><td><i>    Sanitize compiler feature availability</i></td></tr>
+<tr><th id="1037">1037</th><td><i>*/</i></td></tr>
+<tr><th id="1038">1038</th><td><u>#<span data-ppcond="1038">if</span> !defined(<a class="macro" href="qprocessordetection.h.html#197" data-ref="_M/Q_PROCESSOR_X86">Q_PROCESSOR_X86</a>)</u></td></tr>
+<tr><th id="1039">1039</th><td><u>#  undef QT_COMPILER_SUPPORTS_SSE2</u></td></tr>
+<tr><th id="1040">1040</th><td><u>#  undef QT_COMPILER_SUPPORTS_SSE3</u></td></tr>
+<tr><th id="1041">1041</th><td><u>#  undef QT_COMPILER_SUPPORTS_SSSE3</u></td></tr>
+<tr><th id="1042">1042</th><td><u>#  undef QT_COMPILER_SUPPORTS_SSE4_1</u></td></tr>
+<tr><th id="1043">1043</th><td><u>#  undef QT_COMPILER_SUPPORTS_SSE4_2</u></td></tr>
+<tr><th id="1044">1044</th><td><u>#  undef QT_COMPILER_SUPPORTS_AVX</u></td></tr>
+<tr><th id="1045">1045</th><td><u>#  undef QT_COMPILER_SUPPORTS_AVX2</u></td></tr>
+<tr><th id="1046">1046</th><td><u>#<span data-ppcond="1038">endif</span></u></td></tr>
+<tr><th id="1047">1047</th><td><u>#<span data-ppcond="1047">if</span> !defined(<span class="macro" data-ref="_M/Q_PROCESSOR_ARM">Q_PROCESSOR_ARM</span>)</u></td></tr>
+<tr><th id="1048">1048</th><td><u>#  undef <span class="macro" data-ref="_M/QT_COMPILER_SUPPORTS_IWMMXT">QT_COMPILER_SUPPORTS_IWMMXT</span></u></td></tr>
+<tr><th id="1049">1049</th><td><u>#<span data-ppcond="1047">endif</span></u></td></tr>
+<tr><th id="1050">1050</th><td><u>#<span data-ppcond="1050">if</span> !defined(<span class="macro" data-ref="_M/Q_PROCESSOR_MIPS">Q_PROCESSOR_MIPS</span>)</u></td></tr>
+<tr><th id="1051">1051</th><td><u>#  undef <span class="macro" data-ref="_M/QT_COMPILER_SUPPORTS_MIPS_DSP">QT_COMPILER_SUPPORTS_MIPS_DSP</span></u></td></tr>
+<tr><th id="1052">1052</th><td><u>#  undef <span class="macro" data-ref="_M/QT_COMPILER_SUPPORTS_MIPS_DSPR2">QT_COMPILER_SUPPORTS_MIPS_DSPR2</span></u></td></tr>
+<tr><th id="1053">1053</th><td><u>#<span data-ppcond="1050">endif</span></u></td></tr>
+<tr><th id="1054">1054</th><td></td></tr>
+<tr><th id="1055">1055</th><td><u>#<span data-ppcond="47">endif</span> // QCOMPILERDETECTION_H</u></td></tr>
+<tr><th id="1056">1056</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/qrc_images.cpp.html'>codebrowser/gui/qrc_images.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

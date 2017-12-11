@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='119' type='bool Solarus::Enemy::get_push_hero_on_sword() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='572' ll='574' type='bool Solarus::Enemy::get_push_hero_on_sword() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='568'>/**
+ * \brief Returns whether the hero is pushed when he strikes the enemy with his sword.
+ * \return true if the hero is pushed away when he strkes the enemy with his sword
+ */</doc>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='255' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='138' u='c' c='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='226' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='207' u='c' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4540' u='c' c='_ZN7Solarus10LuaContext32enemy_api_get_push_hero_on_swordEP9lua_State'/>

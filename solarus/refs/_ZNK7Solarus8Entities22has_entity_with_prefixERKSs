@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='86' type='bool Solarus::Entities::has_entity_with_prefix(const std::string &amp; prefix) const'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='413' ll='422' type='bool Solarus::Entities::has_entity_with_prefix(const std::string &amp; prefix) const'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='407'>/**
+ * \brief Returns whether there exists at least one entity with the specified
+ * name prefix on the map.
+ * \param prefix Prefix of the name.
+ * \return \c true if there exists an entity with this prefix.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2013' u='c' c='_ZN7Solarus10LuaContext20map_api_has_entitiesEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='62' type='Solarus::Point Solarus::Rectangle::get_bottom_right() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='140' ll='142' type='Solarus::Point Solarus::Rectangle::get_bottom_right() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='442' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='133'>/**
+ * \brief Returns the bottom-right point of this rectangle.
+ *
+ * This is the equivalent of: Point(get_right(), get_bottom())
+ *
+ * \return The bottom-right point.
+ */</doc>

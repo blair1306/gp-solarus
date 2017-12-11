@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='101' type='bool Solarus::Door::is_closed() const'/>
+<def f='codebrowser/src/entities/Door.cpp' l='141' ll='143' type='bool Solarus::Door::is_closed() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='213' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='232' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='270' u='c' c='_ZN7Solarus4Door31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='514' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='534' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='559' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='692' u='c' c='_ZN7Solarus4Door5closeEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='136'>/**
+ * \brief Returns whether this door is completely closed.
+ * \return true if this door is closed, false if it is open, opening or
+ * closing.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3699' u='c' c='_ZN7Solarus10LuaContext18door_api_is_closedEP9lua_State'/>

@@ -1,0 +1,18 @@
+<dec f='include/SDL2/SDL_hints.h' l='367'/>
+<doc f='include/SDL2/SDL_hints.h' l='350'>/**
+ *  \brief  A variable that dictates policy for fullscreen Spaces on Mac OS X.
+ *
+ *  This hint only applies to Mac OS X.
+ *
+ *  The variable can be set to the following values:
+ *    &quot;0&quot;       - Disable Spaces support (FULLSCREEN_DESKTOP won&apos;t use them and
+ *                SDL_WINDOW_RESIZABLE windows won&apos;t offer the &quot;fullscreen&quot;
+ *                button on their titlebars).
+ *    &quot;1&quot;       - Enable Spaces support (FULLSCREEN_DESKTOP will use them and
+ *                SDL_WINDOW_RESIZABLE windows will offer the &quot;fullscreen&quot;
+ *                button on their titlebars.
+ *
+ *  The default value is &quot;1&quot;. Spaces are disabled regardless of this hint if
+ *   the OS isn&apos;t at least Mac OS X Lion (10.7). This hint must be set before
+ *   any windows are created.
+ */</doc>

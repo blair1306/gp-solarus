@@ -1,0 +1,22 @@
+<dec f='include/physfs.h' l='718' type='const char * PHYSFS_getUserDir()'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='487' u='c' c='_ZN7Solarus10QuestFiles18get_base_write_dirEv'/>
+<doc f='include/physfs.h' l='698'>/**
+ * \fn const char *PHYSFS_getUserDir(void)
+ * \brief Get the path where user&apos;s home directory resides.
+ *
+ * Helper function.
+ *
+ * Get the &quot;user dir&quot;. This is meant to be a suggestion of where a specific
+ *  user of the system can store files. On Unix, this is her home directory.
+ *  On systems with no concept of multiple home directories (MacOS, win95),
+ *  this will default to something like &quot;C:\mybasedir\users\username&quot;
+ *  where &quot;username&quot; will either be the login name, or &quot;default&quot; if the
+ *  platform doesn&apos;t support multiple users, either.
+ *
+ * You should probably use the user dir as the basis for your write dir, and
+ *  also put it near the beginning of your search path.
+ *
+ *  \return READ ONLY string of user dir in platform-dependent notation.
+ *
+ * \sa PHYSFS_getBaseDir
+ */</doc>

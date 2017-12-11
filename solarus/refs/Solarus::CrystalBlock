@@ -1,0 +1,28 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/CrystalBlock.h' l='32' ll='68'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/CrystalBlock.h' l='26'>/**
+ * \brief A block in the ground that can be raised or lowered with the help of a crystal.
+ *
+ * When the block is raised, the hero cannot traverse it. However, if the hero is
+ * on raised blocks, he can walk on them until he jumps back to the normal ground.
+ */</doc>
+<smbr r='Solarus::CrystalBlock::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<fun r='_ZNK7Solarus12CrystalBlock8get_typeEv'/>
+<fun r='_ZN7Solarus12CrystalBlock15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12CrystalBlock6updateEv'/>
+<fun r='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>
+<fun r='_ZNK7Solarus12CrystalBlock9is_raisedEv'/>
+<mbr r='Solarus::CrystalBlock::subtype' o='2048' t='Solarus::CrystalBlock::Subtype'/>
+<mbr r='Solarus::CrystalBlock::orange_raised' o='2080' t='bool'/>
+<fun r='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<fun r='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<fun r='_ZNK7Solarus12CrystalBlock8get_typeEv'/>
+<fun r='_ZNK7Solarus12CrystalBlock9is_raisedEv'/>
+<fun r='_ZN7Solarus12CrystalBlock15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<fun r='_ZN7Solarus12CrystalBlock6updateEv'/>
+<fun r='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>

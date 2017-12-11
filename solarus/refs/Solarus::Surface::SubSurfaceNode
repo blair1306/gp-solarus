@@ -1,0 +1,21 @@
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='47' ll='97'/>
+<size>72</size>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='33'>/**
+ * \brief Stores the tree of what surfaces have to be drawn on other surfaces.
+ *
+ * When a drawing is requested, if the destination surface is in GPU, no
+ * drawing actually occurs: instead, the information is stored into this tree.
+ * At rendering time, the tree is traversed to perform all drawings
+ * accelerated in GPU.
+ *
+ * The root node of the tree is the screen, and the children nodes are the
+ * surfaces drawn on it.
+ *
+ * Each node represents a source surface drawn somewhere, and the list of
+ * surfaces drawn on itself.
+ */</doc>
+<fun r='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>
+<mbr r='Solarus::Surface::SubSurfaceNode::src_surface' o='0' t='SurfacePtr'/>
+<mbr r='Solarus::Surface::SubSurfaceNode::src_rect' o='128' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Surface::SubSurfaceNode::dst_rect' o='256' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Surface::SubSurfaceNode::subsurfaces' o='384' t='std::vector&lt;SubSurfaceNodePtr&gt;'/>

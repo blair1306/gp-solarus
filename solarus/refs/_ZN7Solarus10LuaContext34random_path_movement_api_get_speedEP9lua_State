@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='641' type='static int Solarus::LuaContext::random_path_movement_api_get_speed(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='211' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1282' ll='1289' type='static int Solarus::LuaContext::random_path_movement_api_get_speed(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1277'>/**
+ * \brief Implementation of random_path_movement:get_speed().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

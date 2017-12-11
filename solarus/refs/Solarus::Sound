@@ -1,0 +1,38 @@
+<def f='codebrowser/include/solarus/lowlevel/Sound.h' l='41' ll='95'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/lowlevel/Sound.h' l='32'>/**
+ * \brief Represents a sound effect that can be played in the program.
+ *
+ * This class also handles the initialization of the whole audio system.
+ * To create a sound, prefer the Sound::play() method
+ * rather than calling directly the constructor of Sound.
+ * This class is the only one that depends on the sound decoding library (libsndfile).
+ * This class and the Music class are the only ones that depend on the audio mixer library (OpenAL).
+ */</doc>
+<smbr r='Solarus::Sound::ogg_callbacks' t='ov_callbacks'/>
+<fun r='_ZN7Solarus5SoundC1Ev'/>
+<fun r='_ZN7Solarus5SoundC1ERKSs'/>
+<fun r='_ZN7Solarus5SoundD1Ev'/>
+<fun r='_ZN7Solarus5Sound4loadEv'/>
+<fun r='_ZN7Solarus5Sound5startEv'/>
+<fun r='_ZN7Solarus5Sound8load_allEv'/>
+<fun r='_ZN7Solarus5Sound6existsERKSs'/>
+<fun r='_ZN7Solarus5Sound4playERKSs'/>
+<fun r='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<fun r='_ZN7Solarus5Sound4quitEv'/>
+<fun r='_ZN7Solarus5Sound14is_initializedEv'/>
+<fun r='_ZN7Solarus5Sound6updateEv'/>
+<fun r='_ZN7Solarus5Sound10get_volumeEv'/>
+<fun r='_ZN7Solarus5Sound10set_volumeEi'/>
+<fun r='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<fun r='_ZN7Solarus5Sound14update_playingEv'/>
+<smbr r='Solarus::Sound::device' t='ALCdevice *'/>
+<smbr r='Solarus::Sound::context' t='ALCcontext *'/>
+<mbr r='Solarus::Sound::id' o='0' t='std::string'/>
+<mbr r='Solarus::Sound::buffer' o='64' t='ALuint'/>
+<mbr r='Solarus::Sound::sources' o='128' t='std::list&lt;ALuint&gt;'/>
+<smbr r='Solarus::Sound::current_sounds' t='std::list&lt;Sound *&gt;'/>
+<smbr r='Solarus::Sound::all_sounds' t='std::map&lt;std::string, Sound&gt;'/>
+<smbr r='Solarus::Sound::initialized' t='bool'/>
+<smbr r='Solarus::Sound::sounds_preloaded' t='bool'/>
+<smbr r='Solarus::Sound::volume' t='float'/>

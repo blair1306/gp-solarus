@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='868' type='static int Solarus::LuaContext::hero_api_get_animation(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='162' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1940' ll='1950' type='static int Solarus::LuaContext::hero_api_get_animation(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1935'>/**
+ * \brief Implementation of hero:get_animation().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

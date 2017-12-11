@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='121' type='int Solarus::Entity::State::get_sword_damage_factor() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='924' ll='927' type='int Solarus::Entity::State::get_sword_damage_factor() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='916'>/**
+ * \brief Returns the damage power of the sword for the current attack.
+ *
+ * Redefine the function if your state changes the power of the sword
+ * (typically for a spin attack).
+ *
+ * \return the current damage factor of the sword
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2045' u='c' c='_ZNK7Solarus4Hero23get_sword_damage_factorEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='391' c='_ZNK7Solarus4Hero12RunningState23get_sword_damage_factorEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='394' u='c' c='_ZNK7Solarus4Hero12RunningState23get_sword_damage_factorEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='151' c='_ZNK7Solarus4Hero15SpinAttackState23get_sword_damage_factorEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='154' u='c' c='_ZNK7Solarus4Hero15SpinAttackState23get_sword_damage_factorEv'/>

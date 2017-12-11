@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='54' type='bool Solarus::EquipmentItem::is_saved() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='107' ll='109' type='bool Solarus::EquipmentItem::is_saved() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='391' u='c' c='_ZNK7Solarus13EquipmentItem11get_variantEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='406' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='103'>/**
+ * \brief Returns whether the item possession state is saved.
+ * \return true if the item is saved.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='179' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='212' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='458' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='623' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2582' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2266' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1197' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='549' u='c' c='_ZN7Solarus10LuaContext20item_api_get_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='569' u='c' c='_ZN7Solarus10LuaContext20item_api_set_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='639' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1080' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

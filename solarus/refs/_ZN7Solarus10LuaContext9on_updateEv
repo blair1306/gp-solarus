@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1208' type='void Solarus::LuaContext::on_update()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5677' u='c' c='_ZN7Solarus10LuaContext16entity_on_updateERNS_6EntityE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1606' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='812' u='c' c='_ZN7Solarus10LuaContext14item_on_updateERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1406' ll='1411' type='void Solarus::LuaContext::on_update()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1403'>/**
+ * \brief Calls the on_update() method of the object on top of the stack.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='434' u='c' c='_ZN7Solarus10LuaContext14main_on_updateEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2229' u='c' c='_ZN7Solarus10LuaContext13map_on_updateERNS_3MapE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='313' u='c' c='_ZN7Solarus10LuaContext14menu_on_updateERKNS_12ScopedLuaRefE'/>

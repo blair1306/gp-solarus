@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='252' type='bool Solarus::InputEvent::is_with_alt() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='805' ll='809' type='bool Solarus::InputEvent::is_with_alt() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='797'>/**
+ * \brief Returns whether the ALT key was pressed
+ * when this keyboard event occured.
+ *
+ * If this is not a keyboard event, false is returned.
+ *
+ * \return true if ALT was pressed during this keyboard event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1625' u='c' c='_ZN7Solarus10LuaContext14on_key_pressedERKNS_10InputEventE'/>

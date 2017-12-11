@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='282' type='void Solarus::LuaContext::menu_on_update(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='310' ll='316' type='void Solarus::LuaContext::menu_on_update(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='428' u='c' c='_ZN7Solarus10LuaContext15menus_on_updateEi'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='306'>/**
+ * \brief Calls the on_update() method of a Lua menu.
+ * \param menu_ref A reference to the menu object.
+ */</doc>

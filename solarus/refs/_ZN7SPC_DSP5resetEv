@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='31' type='void SPC_DSP::reset()'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='28'>// Emulation
+	
+	// Resets DSP to power-on state</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='208' u='c' c='_ZN8SNES_SPC5resetEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='647' u='c' c='_ZN7SPC_DSP4initEPv'/>
+<def f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='703' type='void SPC_DSP::reset()'/>
+<use f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='36' u='c' c='spc_dsp_reset'/>

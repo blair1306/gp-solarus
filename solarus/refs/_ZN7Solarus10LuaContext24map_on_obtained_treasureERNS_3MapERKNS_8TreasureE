@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='363' type='void Solarus::LuaContext::map_on_obtained_treasure(Solarus::Map &amp; map, const Solarus::Treasure &amp; treasure)'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='458' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2546' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2389' ll='2398' type='void Solarus::LuaContext::map_on_obtained_treasure(Solarus::Map &amp; map, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2381'>/**
+ * \brief Calls the on_obtained_treasure() method of a Lua map.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param map A map.
+ * \param treasure The treasure just obtained.
+ */</doc>

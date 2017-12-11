@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='48' type='const Solarus::Point &amp; Solarus::SpriteAnimationDirection::get_origin() const'/>
+<def f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='77' ll='79' type='const Solarus::Point &amp; Solarus::SpriteAnimationDirection::get_origin() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='191' u='c' c='_ZNK7Solarus6Sprite10get_originEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='658' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='664' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<doc f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='73'>/**
+ * \brief Returns the origin point of a frame.
+ * \return The origin point of a frame.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='477' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='446' type='Solarus::Point'/>
+<offset>640</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='446'>/**&lt; Coordinates of the origin point of the entity,
+                                                 * relative to the top-left corner of its rectangle.
+                                                 * Remember that when you call get_x() and get_y(), you get the coordinates
+                                                 * of the origin point on the map, not the coordinates of the rectangle&apos;s
+                                                 * top-left corner.
+                                                 * This is useful because the top-left corner of the entity&apos;s bounding box does
+                                                 * not represent the actual entity&apos;s coordinates and does not match necessarily
+                                                 * the sprite&apos;s rectangle. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='67' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='664' u='m' c='_ZNK7Solarus6Entity5get_xEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='672' u='m' c='_ZNK7Solarus6Entity5get_yEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='683' u='m' c='_ZN7Solarus6Entity5set_xEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='694' u='m' c='_ZN7Solarus6Entity5set_yEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1170' u='a' c='_ZNK7Solarus6Entity10get_originEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1181' u='m' c='_ZN7Solarus6Entity10set_originEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1181' u='m' c='_ZN7Solarus6Entity10set_originEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1182' u='w' c='_ZN7Solarus6Entity10set_originEii'/>

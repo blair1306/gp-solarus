@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='131' type='bool Solarus::SpriteData::has_animation(const std::string &amp; animation_name) const'/>
+<def f='codebrowser/src/SpriteData.cpp' l='443' ll='445' type='bool Solarus::SpriteData::has_animation(const std::string &amp; animation_name) const'/>
+<use f='codebrowser/src/SpriteData.cpp' l='534' u='c' c='_ZN7Solarus10SpriteData18set_animation_nameERKSsS2_'/>
+<use f='codebrowser/src/SpriteData.cpp' l='539' u='c' c='_ZN7Solarus10SpriteData18set_animation_nameERKSsS2_'/>
+<use f='codebrowser/src/SpriteData.cpp' l='571' u='c' c='_ZN7Solarus10SpriteData26set_default_animation_nameERKSs'/>
+<use f='codebrowser/src/SpriteData.cpp' l='715' u='c' c='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='438'>/**
+ * \brief Returns whether there exists an animation with the specified name.
+ * \param animation_name The name to test.
+ * \return \c true if an animation exists with this name in this sprite.
+ */</doc>

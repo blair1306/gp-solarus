@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='53' type='void Solarus::SpriteAnimationDirection::draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position, int current_frame, Solarus::Surface &amp; src_image)'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='159' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='82' ll='96' type='void Solarus::SpriteAnimationDirection::draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position, int current_frame, Solarus::Surface &amp; src_image)'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='74'>/**
+ * \brief Draws a specific frame on the map.
+ * \param dst_surface the surface on which the frame will be drawn
+ * \param dst_position coordinates on the destination surface
+ * (the origin point will be drawn at this position)
+ * \param current_frame the frame to show
+ * \param src_image the image from which the frame is extracted
+ */</doc>

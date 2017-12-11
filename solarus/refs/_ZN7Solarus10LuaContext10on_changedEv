@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1240' type='void Solarus::LuaContext::on_changed()'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2121' ll='2126' type='void Solarus::LuaContext::on_changed()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2118'>/**
+ * \brief Calls the on_changed() method of the object on top of the stack.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1982' u='c' c='_ZN7Solarus10LuaContext19movement_on_changedERNS_8MovementE'/>

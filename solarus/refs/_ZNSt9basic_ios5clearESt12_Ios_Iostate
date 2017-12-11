@@ -1,0 +1,14 @@
+<dec f='include/c++/4.9/bits/basic_ios.h' l='142' type='void std::basic_ios::clear(iostate __state = goodbit)'/>
+<def f='include/c++/4.9/bits/basic_ios.tcc' l='39' ll='49' type='void std::basic_ios::clear(iostate __state = goodbit)'/>
+<doc f='include/c++/4.9/bits/basic_ios.h' l='134'>/**
+       *  @brief  [Re]sets the error state.
+       *  @param  __state  The new state flag(s) to set.
+       *
+       *  See std::ios_base::iostate for the possible bit values.  Most
+       *  users will not need to pass an argument.
+      */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1028' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1039' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='81' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='89' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='729' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>

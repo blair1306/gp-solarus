@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='54' type='static SDL_Texture * Solarus::Video::get_render_target()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='374' ll='376' type='static SDL_Texture * Solarus::Video::get_render_target()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='370'>/**
+ * \brief Returns the render texture target, if any.
+ * \return The render target, or nullptr.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/gui_tools.h' l='30' type='void SolarusGui::GuiTools::error_dialog(const QString &amp; message)'/>
+<def f='codebrowser/gui/src/gui_tools.cpp' l='54' ll='61' type='void SolarusGui::GuiTools::error_dialog(const QString &amp; message)'/>
+<doc f='codebrowser/gui/src/gui_tools.cpp' l='50'>/**
+ * @brief Shows a modal dialog box with an error message.
+ * @param message The message to show.
+ */</doc>
+<use f='codebrowser/gui/src/main_window.cpp' l='289' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>

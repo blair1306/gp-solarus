@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='284' type='void Solarus::Hero::start_back_to_solid_ground(bool use_specified_position, uint32_t end_delay = 0, bool with_sound = true)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2287' u='c' c='_ZN7Solarus4Hero13start_prickleEj'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2654' ll='2658' type='void Solarus::Hero::start_back_to_solid_ground(bool use_specified_position, uint32_t end_delay = 0, bool with_sound = true)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2647'>/**
+ * \brief Makes the hero return to his last solid ground position.
+ * \param use_specified_position true to get back to the place previously specified (if any),
+ * false to get back to the last coordinates with solid ground
+ * \param end_delay a delay to add at the end before returning control to the hero (default 0)
+ * \param with_sound true to play a sound when returning to solid ground (default true)
+ */</doc>

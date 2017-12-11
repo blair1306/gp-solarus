@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='121' type='bool Solarus::EntityData::is_field_unset(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='714' ll='747' type='bool Solarus::EntityData::is_field_unset(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/EntityData.cpp' l='705'>/**
+ * \brief Returns whether a field is unset.
+ *
+ * A field can only be unset if it is optional.
+ *
+ * \param key Key of the field to check.
+ * \return \c true if the field exists, is optional and is equal to its
+ * default value.
+ */</doc>

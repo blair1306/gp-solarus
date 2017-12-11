@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='179' type='Solarus::ScopedLuaRef Solarus::LuaContext::create_ref()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='219' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='178'>// Lua refs.</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2491' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3762' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='459' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='494' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='459' ll='462' type='Solarus::ScopedLuaRef Solarus::LuaContext::create_ref()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='453'>/**
+ * \brief Creates a reference to the Lua value on top of the stack and pops
+ * this value.
+ * \return The reference created, wrapped in an object that manages its
+ * lifetime.
+ */</doc>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='196' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>

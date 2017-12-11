@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='263' type='static bool Solarus::InputEvent::is_joypad_enabled()'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='262'>// joypad</doc>
+<use f='codebrowser/src/Settings.cpp' l='299' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='892' ll='895' type='static bool Solarus::InputEvent::is_joypad_enabled()'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='906' u='c' c='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='885'>/**
+ * \brief Returns whether joypad support is enabled.
+ *
+ * This may be true even without any joypad plugged.
+ *
+ * \return true if joypad support is enabled.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='65' u='c' c='_ZN7Solarus10LuaContext27input_api_is_joypad_enabledEP9lua_State'/>

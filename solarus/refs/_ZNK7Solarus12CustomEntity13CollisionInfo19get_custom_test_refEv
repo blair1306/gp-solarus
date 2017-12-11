@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='229' type='const Solarus::ScopedLuaRef &amp; Solarus::CustomEntity::CollisionInfo::get_custom_test_ref() const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='881' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1420' ll='1422' type='const Solarus::ScopedLuaRef &amp; Solarus::CustomEntity::CollisionInfo::get_custom_test_ref() const'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1415'>/**
+ * \brief Returns the customized collision test to perform.
+ * \return A Lua ref to the customized collision test function,
+ * or an empty ref if this is a built-in collision test.
+ */</doc>

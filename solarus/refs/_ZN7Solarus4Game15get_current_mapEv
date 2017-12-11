@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/Game.h' l='93' type='Solarus::Map &amp; Solarus::Game::get_current_map()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='149' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='301' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='335' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<def f='codebrowser/src/Game.cpp' l='611' ll='613' type='Solarus::Map &amp; Solarus::Game::get_current_map()'/>
+<doc f='codebrowser/src/Game.cpp' l='607'>/**
+ * \brief Returns the current map.
+ * \return the current map
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='81' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='186' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='319' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2497' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2546' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='581' u='c' c='_ZN7Solarus10LuaContext16game_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='164' u='c' c='_ZN7Solarus10LuaContext16item_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='364' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='524' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='88' u='c' c='_ZN7Solarus15TestEnvironment7get_mapEv'/>

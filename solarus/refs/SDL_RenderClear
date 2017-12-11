@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_render.h' l='655' type='int SDL_RenderClear(SDL_Renderer * renderer)'/>
+<doc f='include/SDL2/SDL_render.h' l='648'>/**
+ *  \brief Clear the current rendering target with the drawing color
+ *
+ *  This function clears the entire rendering target, ignoring the viewport.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='680' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>

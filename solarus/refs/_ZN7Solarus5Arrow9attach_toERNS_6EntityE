@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='60' type='void Solarus::Arrow::attach_to(Solarus::Entity &amp; entity_reached)'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='332' ll='341' type='void Solarus::Arrow::attach_to(Solarus::Entity &amp; entity_reached)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='356' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='360' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='374' u='c' c='_ZN7Solarus5Arrow29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='393' u='c' c='_ZN7Solarus5Arrow34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='424' u='c' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='431' u='c' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='328'>/**
+ * \brief Stops the arrow movement and attaches the arrow to an entity that was just reached.
+ * \param entity_reached the entity that was reached
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1012' type='static int Solarus::LuaContext::custom_entity_api_get_modified_ground(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='517' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5620' ll='5635' type='static int Solarus::LuaContext::custom_entity_api_get_modified_ground(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5615'>/**
+ * \brief Implementation of custom_entity:get_modified_ground().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

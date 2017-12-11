@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='91' type='bool Solarus::Rectangle::contains(const Solarus::Rectangle &amp; other) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='396' ll='399' type='bool Solarus::Rectangle::contains(const Solarus::Rectangle &amp; other) const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='391'>/**
+ * \brief Returns whether the specified rectangle is inside this rectangle.
+ * \param other another rectangle
+ * \return true if the specified rectangle is inside this rectangle
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='1980' u='c' c='_ZNK7Solarus6Entity21test_collision_insideERKS0_'/>

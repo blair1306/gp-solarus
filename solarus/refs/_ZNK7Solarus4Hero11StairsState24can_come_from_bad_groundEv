@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='47' type='bool Solarus::Hero::StairsState::can_come_from_bad_ground() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='89' c='_ZNK7Solarus6Entity5State24can_come_from_bad_groundEv'/>
+<def f='codebrowser/src/hero/StairsState.cpp' l='299' ll='301' type='bool Solarus::Hero::StairsState::can_come_from_bad_ground() const'/>
+<doc f='codebrowser/src/hero/StairsState.cpp' l='294'>/**
+ * \brief Returns whether the hero&apos;s current position can be considered
+ * as a place to come back after a bad ground (hole, deep water, etc).
+ * \return true if the hero can come back here
+ */</doc>

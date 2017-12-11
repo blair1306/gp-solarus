@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destination.h' l='49' type='void Solarus::Destination::set_starting_location_mode(Solarus::StartingLocationMode mode)'/>
+<def f='codebrowser/src/entities/Destination.cpp' l='82' ll='84' type='void Solarus::Destination::set_starting_location_mode(Solarus::StartingLocationMode mode)'/>
+<doc f='codebrowser/src/entities/Destination.cpp' l='78'>/**
+ * \brief Sets whether this destination updates the starting location.
+ * \param mode The starting location mode.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2779' u='c' c='_ZN7Solarus10LuaContext42destination_api_set_starting_location_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='475' u='c' c='_ZN7Solarus10LuaContext20l_create_destinationEP9lua_State'/>

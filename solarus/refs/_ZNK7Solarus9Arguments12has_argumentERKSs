@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Arguments.h' l='43' type='bool Solarus::Arguments::has_argument(const std::string &amp; option) const'/>
+<def f='codebrowser/src/Arguments.cpp' l='75' ll='78' type='bool Solarus::Arguments::has_argument(const std::string &amp; argument) const'/>
+<doc f='codebrowser/src/Arguments.cpp' l='70'>/**
+ * \brief Returns whether the following exact string was passed as an argument.
+ * \param argument The string to test.
+ * \return \c true if an argument is exactly this string.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='184' u='c' c='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='265' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='112' u='c' c='main'/>

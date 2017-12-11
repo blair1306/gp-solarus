@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='69' type='const Solarus::Size &amp; Solarus::Sprite::get_max_size() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='176' ll='178' type='const Solarus::Size &amp; Solarus::Sprite::get_max_size() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='886' u='c' c='_ZNK7Solarus6Sprite24get_intermediate_surfaceEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='172'>/**
+ * \brief Returns the maximum frame size of the animation set of this sprite.
+ * \return The maximum frame size.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='78' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>

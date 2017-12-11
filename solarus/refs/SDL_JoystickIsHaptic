@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_haptic.h' l='895' type='int SDL_JoystickIsHaptic(SDL_Joystick * joystick)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='886'>/**
+ *  \brief Checks to see if a joystick has haptic features.
+ *
+ *  \param joystick Joystick to test for haptic capabilities.
+ *  \return 1 if the joystick is haptic, 0 if it isn&apos;t
+ *          or -1 if an error ocurred.
+ *
+ *  \sa SDL_HapticOpenFromJoystick
+ */</doc>

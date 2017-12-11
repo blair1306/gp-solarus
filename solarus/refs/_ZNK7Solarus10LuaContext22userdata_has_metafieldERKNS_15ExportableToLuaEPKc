@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1047' type='bool Solarus::LuaContext::userdata_has_metafield(const Solarus::ExportableToLua &amp; userdata, const char * key) const'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1046'>// Executing Lua code.</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='505' u='c' c='_ZNK7Solarus10LuaContext18userdata_has_fieldERKNS_15ExportableToLuaEPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='539' u='c' c='_ZNK7Solarus10LuaContext18userdata_has_fieldERKNS_15ExportableToLuaERKSs'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='562' ll='578' type='bool Solarus::LuaContext::userdata_has_metafield(const Solarus::ExportableToLua &amp; userdata, const char * key) const'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='556'>/**
+ * \brief Returns whether the metatable of a userdata has the specified field.
+ * \param userdata A userdata.
+ * \param key String key to test.
+ * \return \c true if this key exists on the userdata&apos;s metatable.
+ */</doc>

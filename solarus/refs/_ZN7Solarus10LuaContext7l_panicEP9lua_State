@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1305' type='static int Solarus::LuaContext::l_panic(lua_State * )'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='104' u='r' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2935' ll='2940' type='static int Solarus::LuaContext::l_panic(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2930'>/**
+ * \brief Function called when an unprotected Lua error occurs.
+ * \param l The Lua context.
+ * \return Number of values to return to Lua.
+ */</doc>

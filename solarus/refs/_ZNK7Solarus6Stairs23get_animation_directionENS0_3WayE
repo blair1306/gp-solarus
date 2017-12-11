@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='96' type='int Solarus::Stairs::get_animation_direction(Solarus::Stairs::Way way) const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='177' ll='194' type='int Solarus::Stairs::get_animation_direction(Solarus::Stairs::Way way) const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='168'>/**
+ * \brief Returns the direction of the animation an entity should take when
+ * walking these stairs.
+ *
+ * For spiral stairs, the direction returned is diagonal.
+ *
+ * \param way The way you are taking these stairs.
+ * \return The direction of animation (0 to 7).
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='238' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

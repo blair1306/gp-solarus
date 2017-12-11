@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RandomMovement.cpp source code [codebrowser/src/movements/RandomMovement.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/movements/RandomMovement.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>movements</a>/<a href='RandomMovement.cpp.html'>RandomMovement.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/movements/RandomMovement.h.html">"solarus/movements/RandomMovement.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/entities/Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/lua/LuaContext.h.html">"solarus/lua/LuaContext.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../include/solarus/lowlevel/Random.h.html">"solarus/lowlevel/Random.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../include/solarus/lowlevel/Geometry.h.html">"solarus/lowlevel/Geometry.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../include/c++/4.9/sstream.html">&lt;sstream&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * <span class="command">\brief</span> Constructor.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">speed</span> Speed of the movement in pixels per seconds.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="32">32</th><td><a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZN7Solarus14RandomMovementC1Ei" title='Solarus::RandomMovement::RandomMovement' data-ref="_ZN7Solarus14RandomMovementC1Ei">RandomMovement</dfn>(<em>int</em> <dfn class="local col1 decl" id="1speed" title='speed' data-type='int' data-ref="1speed">speed</dfn>):</td></tr>
+<tr><th id="33">33</th><td>  <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a><a class="ref" href="#_ZN7Solarus14RandomMovementC1Eii" title='Solarus::RandomMovement::RandomMovement' data-ref="_ZN7Solarus14RandomMovementC1Eii">(</a><a class="local col1 ref" href="#1speed" title='speed' data-ref="1speed">speed</a>, <var>0</var>) {</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * <span class="command">\brief</span> Constructor.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">speed</span> Speed of the movement in pixels per seconds.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">max_radius</span> if the object goes further than this distance, it will come back</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="42">42</th><td><a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZN7Solarus14RandomMovementC1Eii" title='Solarus::RandomMovement::RandomMovement' data-ref="_ZN7Solarus14RandomMovementC1Eii">RandomMovement</dfn>(<em>int</em> <dfn class="local col2 decl" id="2speed" title='speed' data-type='int' data-ref="2speed">speed</dfn>, <em>int</em> <dfn class="local col3 decl" id="3max_radius" title='max_radius' data-type='int' data-ref="3max_radius">max_radius</dfn>):</td></tr>
+<tr><th id="43">43</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a><a class="ref" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovementC1Ebb" title='Solarus::StraightMovement::StraightMovement' data-ref="_ZN7Solarus16StraightMovementC1Ebb">(</a><b>false</b>, <b>false</b>),</td></tr>
+<tr><th id="44">44</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::normal_speed" title='Solarus::RandomMovement::normal_speed' data-ref="Solarus::RandomMovement::normal_speed">normal_speed</a>(<a class="local col2 ref" href="#2speed" title='speed' data-ref="2speed">speed</a>),</td></tr>
+<tr><th id="45">45</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::max_radius" title='Solarus::RandomMovement::max_radius' data-ref="Solarus::RandomMovement::max_radius">max_radius</a>(<a class="local col3 ref" href="#3max_radius" title='max_radius' data-ref="3max_radius">max_radius</a>),</td></tr>
+<tr><th id="46">46</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::next_direction_change_date" title='Solarus::RandomMovement::next_direction_change_date' data-ref="Solarus::RandomMovement::next_direction_change_date">next_direction_change_date</a>(<var>0</var>) {</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>  <a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_speedEd" title='Solarus::StraightMovement::set_speed' data-ref="_ZN7Solarus16StraightMovement9set_speedEd">set_speed</a>(<a class="local col2 ref" href="#2speed" title='speed' data-ref="2speed">speed</a>);</td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="#_ZN7Solarus14RandomMovement18set_next_directionEv" title='Solarus::RandomMovement::set_next_direction' data-ref="_ZN7Solarus14RandomMovement18set_next_directionEv">set_next_direction</a>();</td></tr>
+<tr><th id="50">50</th><td>}</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that the object it controls has changed.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="55">55</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus14RandomMovement24notify_object_controlledEv" title='Solarus::RandomMovement::notify_object_controlled' data-ref="_ZN7Solarus14RandomMovement24notify_object_controlledEv">notify_object_controlled</dfn>() {</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement24notify_object_controlledEv" title='Solarus::StraightMovement::notify_object_controlled' data-ref="_ZN7Solarus16StraightMovement24notify_object_controlledEv">notify_object_controlled</a>();</td></tr>
+<tr><th id="58">58</th><td>  <a class="member" href="#_ZN7Solarus14RandomMovement14set_max_radiusEi" title='Solarus::RandomMovement::set_max_radius' data-ref="_ZN7Solarus14RandomMovement14set_max_radiusEi">set_max_radius</a>(<a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::max_radius" title='Solarus::RandomMovement::max_radius' data-ref="Solarus::RandomMovement::max_radius">max_radius</a>);</td></tr>
+<tr><th id="59">59</th><td>}</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * <span class="command">\brief</span> Returns the speed applied when the movement is started.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * <span class="command">\return</span> The speed when moving.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="65">65</th><td><em>double</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZNK7Solarus14RandomMovement16get_normal_speedEv" title='Solarus::RandomMovement::get_normal_speed' data-ref="_ZNK7Solarus14RandomMovement16get_normal_speedEv">get_normal_speed</dfn>() <em>const</em> {</td></tr>
+<tr><th id="66">66</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::normal_speed" title='Solarus::RandomMovement::normal_speed' data-ref="Solarus::RandomMovement::normal_speed">normal_speed</a>;</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">\brief</span> Sets the speed to apply when the movement is started.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">normal_speed</span> The new speed.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="73">73</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZN7Solarus14RandomMovement16set_normal_speedEd" title='Solarus::RandomMovement::set_normal_speed' data-ref="_ZN7Solarus14RandomMovement16set_normal_speedEd">set_normal_speed</dfn>(<em>double</em> <dfn class="local col4 decl" id="4normal_speed" title='normal_speed' data-type='double' data-ref="4normal_speed">normal_speed</dfn>) {</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::normal_speed" title='Solarus::RandomMovement::normal_speed' data-ref="Solarus::RandomMovement::normal_speed">normal_speed</a> = <a class="local col4 ref" href="#4normal_speed" title='normal_speed' data-ref="4normal_speed">normal_speed</a>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>  <b>if</b> (<a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZNK7Solarus16StraightMovement10is_startedEv" title='Solarus::StraightMovement::is_started' data-ref="_ZNK7Solarus16StraightMovement10is_startedEv">is_started</a>()) {</td></tr>
+<tr><th id="78">78</th><td>    <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_speedEd" title='Solarus::StraightMovement::set_speed' data-ref="_ZN7Solarus16StraightMovement9set_speedEd">set_speed</a>(<a class="local col4 ref" href="#4normal_speed" title='normal_speed' data-ref="4normal_speed">normal_speed</a>);</td></tr>
+<tr><th id="79">79</th><td>  }</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * <span class="command">\brief</span> Returns the maximum radius.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * <span class="command">\return</span> The distance above which the object comes back.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="86">86</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZNK7Solarus14RandomMovement14get_max_radiusEv" title='Solarus::RandomMovement::get_max_radius' data-ref="_ZNK7Solarus14RandomMovement14get_max_radiusEv">get_max_radius</dfn>() <em>const</em> {</td></tr>
+<tr><th id="87">87</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::max_radius" title='Solarus::RandomMovement::max_radius' data-ref="Solarus::RandomMovement::max_radius">max_radius</a>;</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * <span class="command">\brief</span> Sets the maximum radius.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">max_radius</span> If the object goes further than this distance,</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * it will come back (0 means no limit).</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="95">95</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZN7Solarus14RandomMovement14set_max_radiusEi" title='Solarus::RandomMovement::set_max_radius' data-ref="_ZN7Solarus14RandomMovement14set_max_radiusEi">set_max_radius</dfn>(<em>int</em> <dfn class="local col5 decl" id="5max_radius" title='max_radius' data-type='int' data-ref="5max_radius">max_radius</dfn>) {</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>  <b>if</b> (<a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="98">98</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostringstream" title='std::ostringstream' data-type='basic_ostringstream&lt;char&gt;' data-ref="std::ostringstream">ostringstream</a> <a class="ref fake" href="../../../include/c++/4.9/sstream.html#_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode" title='std::basic_ostringstream::basic_ostringstream&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode"></a><dfn class="local col6 decl" id="6oss" title='oss' data-type='std::ostringstream' data-ref="6oss">oss</dfn>;</td></tr>
+<tr><th id="99">99</th><td>    <a class="local col6 ref" href="#6oss" title='oss' data-ref="6oss">oss</a> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"Invalid max radius: "</q> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZNSt13basic_ostreamlsEi" title='std::basic_ostream::operator&lt;&lt;' data-ref="_ZNSt13basic_ostreamlsEi">&lt;&lt;</a> <a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a>;</td></tr>
+<tr><th id="100">100</th><td>    <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug3dieERKSs" title='Solarus::Debug::die' data-ref="_ZN7Solarus5Debug3dieERKSs">die</a>(<a class="local col6 ref" href="#6oss" title='oss' data-ref="6oss">oss</a>.<a class="ref" href="../../../include/c++/4.9/sstream.html#_ZNKSt19basic_ostringstream3strEv" title='std::basic_ostringstream::str' data-ref="_ZNKSt19basic_ostringstream3strEv">str</a>());</td></tr>
+<tr><th id="101">101</th><td>  }</td></tr>
+<tr><th id="102">102</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::max_radius" title='Solarus::RandomMovement::max_radius' data-ref="Solarus::RandomMovement::max_radius">max_radius</a> = <a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a>;</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>  <i>// restrict the movement in a rectangle</i></td></tr>
+<tr><th id="105">105</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::bounds" title='Solarus::RandomMovement::bounds' data-ref="Solarus::RandomMovement::bounds">bounds</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZN7Solarus9Rectangle6set_xyERKNS_5PointE" title='Solarus::Rectangle::set_xy' data-ref="_ZN7Solarus9Rectangle6set_xyERKNS_5PointE">set_xy</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>());</td></tr>
+<tr><th id="106">106</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::bounds" title='Solarus::RandomMovement::bounds' data-ref="Solarus::RandomMovement::bounds">bounds</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZN7Solarus9Rectangle6add_xyEii" title='Solarus::Rectangle::add_xy' data-ref="_ZN7Solarus9Rectangle6add_xyEii">add_xy</a>(-<a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a>, -<a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a>);</td></tr>
+<tr><th id="107">107</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::bounds" title='Solarus::RandomMovement::bounds' data-ref="Solarus::RandomMovement::bounds">bounds</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZN7Solarus9Rectangle8set_sizeEii" title='Solarus::Rectangle::set_size' data-ref="_ZN7Solarus9Rectangle8set_sizeEii">set_size</a>(<a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a> * <var>2</var>, <a class="local col5 ref" href="#5max_radius" title='max_radius' data-ref="5max_radius">max_radius</a> * <var>2</var>);</td></tr>
+<tr><th id="108">108</th><td>}</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * <span class="command">\brief</span> Chooses a new direction for the movement.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="decl def" id="_ZN7Solarus14RandomMovement18set_next_directionEv" title='Solarus::RandomMovement::set_next_direction' data-ref="_ZN7Solarus14RandomMovement18set_next_directionEv">set_next_direction</dfn>() {</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>  <a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_speedEd" title='Solarus::StraightMovement::set_speed' data-ref="_ZN7Solarus16StraightMovement9set_speedEd">set_speed</a>(<a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::normal_speed" title='Solarus::RandomMovement::normal_speed' data-ref="Solarus::RandomMovement::normal_speed">normal_speed</a>);</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>  <em>double</em> <dfn class="local col7 decl" id="7angle" title='angle' data-type='double' data-ref="7angle">angle</dfn>;</td></tr>
+<tr><th id="118">118</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>() == <b>nullptr</b></td></tr>
+<tr><th id="119">119</th><td>      || <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::max_radius" title='Solarus::RandomMovement::max_radius' data-ref="Solarus::RandomMovement::max_radius">max_radius</a> == <var>0</var> <i>// means no limit</i></td></tr>
+<tr><th id="120">120</th><td>      || <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::bounds" title='Solarus::RandomMovement::bounds' data-ref="Solarus::RandomMovement::bounds">bounds</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZNK7Solarus9Rectangle8containsERKNS_5PointE" title='Solarus::Rectangle::contains' data-ref="_ZNK7Solarus9Rectangle8containsERKNS_5PointE">contains</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>())) {</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>    <i>// we are inside the bounds (or there is no bound): pick a random direction</i></td></tr>
+<tr><th id="123">123</th><td>    <a class="local col7 ref" href="#7angle" title='angle' data-ref="7angle">angle</a> = <span class="namespace">Geometry::</span><a class="ref" href="../../include/solarus/lowlevel/Geometry.h.html#_ZN7Solarus8Geometry18degrees_to_radiansEd" title='Solarus::Geometry::degrees_to_radians' data-ref="_ZN7Solarus8Geometry18degrees_to_radiansEd">degrees_to_radians</a>(<span class="namespace">Random::</span><a class="ref" href="../../include/solarus/lowlevel/Random.h.html#_ZN7Solarus6Random10get_numberEj" title='Solarus::Random::get_number' data-ref="_ZN7Solarus6Random10get_numberEj">get_number</a>(<var>8</var>) * <var>45</var> + <var>22.5</var>);</td></tr>
+<tr><th id="124">124</th><td>  }</td></tr>
+<tr><th id="125">125</th><td>  <b>else</b> {</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>    <i>// we are outside the bounds: get back into the rectangle to avoid going too far</i></td></tr>
+<tr><th id="128">128</th><td>    <a class="local col7 ref" href="#7angle" title='angle' data-ref="7angle">angle</a> = <span class="namespace">Geometry::</span><a class="ref" href="../../include/solarus/lowlevel/Geometry.h.html#_ZN7Solarus8Geometry9get_angleERKNS_5PointES3_" title='Solarus::Geometry::get_angle' data-ref="_ZN7Solarus8Geometry9get_angleERKNS_5PointES3_">get_angle</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>(), <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::bounds" title='Solarus::RandomMovement::bounds' data-ref="Solarus::RandomMovement::bounds">bounds</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZNK7Solarus9Rectangle10get_centerEv" title='Solarus::Rectangle::get_center' data-ref="_ZNK7Solarus9Rectangle10get_centerEv">get_center</a>());</td></tr>
+<tr><th id="129">129</th><td>  }</td></tr>
+<tr><th id="130">130</th><td>  <a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_angleEd" title='Solarus::StraightMovement::set_angle' data-ref="_ZN7Solarus16StraightMovement9set_angleEd">set_angle</a>(<a class="local col7 ref" href="#7angle" title='angle' data-ref="7angle">angle</a>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>  <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::next_direction_change_date" title='Solarus::RandomMovement::next_direction_change_date' data-ref="Solarus::RandomMovement::next_direction_change_date">next_direction_change_date</a> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() + <var>500</var> + <span class="namespace">Random::</span><a class="ref" href="../../include/solarus/lowlevel/Random.h.html#_ZN7Solarus6Random10get_numberEj" title='Solarus::Random::get_number' data-ref="_ZN7Solarus6Random10get_numberEj">get_number</a>(<var>1500</var>); <i>// change again in 0.5 to 2 seconds</i></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>  <a class="virtual member" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8Movement23notify_movement_changedEv" title='Solarus::Movement::notify_movement_changed' data-ref="_ZN7Solarus8Movement23notify_movement_changedEv">notify_movement_changed</a>();</td></tr>
+<tr><th id="135">135</th><td>}</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * <span class="command">\brief</span> Updates the random movement.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * This function is called repeatedly by the map.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * This is a redefinition of Movement::update()</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * to change the direction sometimes.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="144">144</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus14RandomMovement6updateEv" title='Solarus::RandomMovement::update' data-ref="_ZN7Solarus14RandomMovement6updateEv">update</dfn>() {</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement6updateEv" title='Solarus::StraightMovement::update' data-ref="_ZN7Solarus16StraightMovement6updateEv">update</a>();</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td>  <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement12is_suspendedEv" title='Solarus::Movement::is_suspended' data-ref="_ZNK7Solarus8Movement12is_suspendedEv">is_suspended</a>()) {</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col8 decl" id="8now" title='now' data-type='uint32_t' data-ref="8now">now</dfn> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>    <b>if</b> (<a class="local col8 ref" href="#8now" title='now' data-ref="8now">now</a> &gt;= <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::next_direction_change_date" title='Solarus::RandomMovement::next_direction_change_date' data-ref="Solarus::RandomMovement::next_direction_change_date">next_direction_change_date</a>) {</td></tr>
+<tr><th id="153">153</th><td>      <a class="member" href="#_ZN7Solarus14RandomMovement18set_next_directionEv" title='Solarus::RandomMovement::set_next_direction' data-ref="_ZN7Solarus14RandomMovement18set_next_directionEv">set_next_direction</a>();</td></tr>
+<tr><th id="154">154</th><td>    }</td></tr>
+<tr><th id="155">155</th><td>  }</td></tr>
+<tr><th id="156">156</th><td>}</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * <span class="command">\brief</span> Suspends or resumes this movement.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true to suspend the movement, false to resume it</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="162">162</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus14RandomMovement13set_suspendedEb" title='Solarus::RandomMovement::set_suspended' data-ref="_ZN7Solarus14RandomMovement13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col9 decl" id="9suspended" title='suspended' data-type='bool' data-ref="9suspended">suspended</dfn>) {</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement13set_suspendedEb" title='Solarus::StraightMovement::set_suspended' data-ref="_ZN7Solarus16StraightMovement13set_suspendedEb">set_suspended</a>(<a class="local col9 ref" href="#9suspended" title='suspended' data-ref="9suspended">suspended</a>);</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>  <b>if</b> (!<a class="local col9 ref" href="#9suspended" title='suspended' data-ref="9suspended">suspended</a>) {</td></tr>
+<tr><th id="167">167</th><td>    <a class="member" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement::next_direction_change_date" title='Solarus::RandomMovement::next_direction_change_date' data-ref="Solarus::RandomMovement::next_direction_change_date">next_direction_change_date</a> += <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() - <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement18get_when_suspendedEv" title='Solarus::Movement::get_when_suspended' data-ref="_ZNK7Solarus8Movement18get_when_suspendedEv">get_when_suspended</a>();</td></tr>
+<tr><th id="168">168</th><td>  }</td></tr>
+<tr><th id="169">169</th><td>}</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that it just failed to apply</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * because of obstacles.</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="175">175</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus14RandomMovement23notify_obstacle_reachedEv" title='Solarus::RandomMovement::notify_obstacle_reached' data-ref="_ZN7Solarus14RandomMovement23notify_obstacle_reachedEv">notify_obstacle_reached</dfn>() {</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="virtual member" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8Movement23notify_obstacle_reachedEv" title='Solarus::Movement::notify_obstacle_reached' data-ref="_ZN7Solarus8Movement23notify_obstacle_reachedEv">notify_obstacle_reached</a>();</td></tr>
+<tr><th id="178">178</th><td>  <a class="member" href="#_ZN7Solarus14RandomMovement18set_next_directionEv" title='Solarus::RandomMovement::set_next_direction' data-ref="_ZN7Solarus14RandomMovement18set_next_directionEv">set_next_direction</a>();</td></tr>
+<tr><th id="179">179</th><td>}</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * <span class="command">\brief</span> Returns the name identifying this type in Lua.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * <span class="command">\return</span> the name identifying this type in Lua</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="185">185</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="type" href="../../include/solarus/movements/RandomMovement.h.html#Solarus::RandomMovement" title='Solarus::RandomMovement' data-ref="Solarus::RandomMovement">RandomMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus14RandomMovement17get_lua_type_nameEv" title='Solarus::RandomMovement::get_lua_type_name' data-ref="_ZNK7Solarus14RandomMovement17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> {</td></tr>
+<tr><th id="186">186</th><td>  <b>return</b> <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>::<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext::movement_random_module_name" title='Solarus::LuaContext::movement_random_module_name' data-ref="Solarus::LuaContext::movement_random_module_name">movement_random_module_name</a>;</td></tr>
+<tr><th id="187">187</th><td>}</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td>}</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

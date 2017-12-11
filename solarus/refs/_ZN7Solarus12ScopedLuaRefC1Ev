@@ -1,0 +1,53 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='41' type='void Solarus::ScopedLuaRef::ScopedLuaRef()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='38' u='c' c='_ZN7Solarus15DialogBoxSystemC1ERNS_4GameE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='214' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/Drawable.cpp' l='34' u='c' c='_ZN7Solarus8DrawableC1Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='86' u='c' c='_ZN7Solarus12GameCommandsC1ERNS_4GameE'/>
+<use f='codebrowser/src/Sprite.cpp' l='107' u='c' c='_ZN7Solarus6SpriteC1ERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='294' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='405' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='434' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='434' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='119' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='119' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1284' u='c' c='_ZN7Solarus12CustomEntity15TraversableInfoC1Ev'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1299' u='c' c='_ZN7Solarus12CustomEntity15TraversableInfoC1ERNS_10LuaContextEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1361' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1Ev'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1362' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1Ev'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1380' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='581' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='581' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='110' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1367' u='c' c='_ZNK7Solarus4Hero26make_solid_ground_callbackERKNS_5PointEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1405' u='c' c='_ZN7Solarus4Hero34reset_target_solid_ground_callbackEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='278' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='278' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='451' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='49' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='83' u='c' c='_ZN7Solarus11HeroSpritesC1ERNS_4HeroERNS_9EquipmentE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1490' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_animationERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1525' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='59' u='c' c='_ZN7Solarus5MusicC1Ev'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='313' u='c' c='_ZN7Solarus5Music4playERKSsb'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='156' u='c' c='_ZN7Solarus10LuaContext20audio_api_play_musicEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='216' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='255' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1835' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2503' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3766' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3842' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3842' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3847' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3847' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3857' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='436' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='437' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='491' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='725' u='c' c='_ZN7Solarus8LuaTools12opt_functionEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='745' u='c' c='_ZN7Solarus8LuaTools18opt_function_fieldEP9lua_StateiRKSs'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='26' ll='29' type='void Solarus::ScopedLuaRef::ScopedLuaRef()'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='23'>/**
+ * \brief Creates an empty scoped Lua ref.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='179' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='55' u='c' c='_ZN7Solarus8MovementC1Eb'/>

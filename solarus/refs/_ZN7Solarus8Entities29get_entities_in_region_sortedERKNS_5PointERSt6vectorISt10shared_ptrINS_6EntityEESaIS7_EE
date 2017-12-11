@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='111' type='void Solarus::Entities::get_entities_in_region_sorted(const Solarus::Point &amp; xy, EntityVector &amp; result)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='579' ll='585' type='void Solarus::Entities::get_entities_in_region_sorted(const Solarus::Point &amp; xy, EntityVector &amp; result)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='572'>/**
+ * \brief Like get_entities_in_region(), but sorts entities according to
+ * their Z index on the map.
+ * \param[in] xy A point.
+ * \param[out] result The entities in the same region as the point,
+ * where regions are delimited by separators and map limits.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2086' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>

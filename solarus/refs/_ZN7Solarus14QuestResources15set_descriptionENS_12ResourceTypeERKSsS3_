@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='83' type='bool Solarus::QuestResources::set_description(Solarus::ResourceType resource_type, const std::string &amp; id, const std::string &amp; description)'/>
+<def f='codebrowser/src/QuestResources.cpp' l='213' ll='225' type='bool Solarus::QuestResources::set_description(Solarus::ResourceType resource_type, const std::string &amp; id, const std::string &amp; description)'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='205'>/**
+ * \brief Sets the description of a resource element.
+ * \param resource_type A type of resource.
+ * \param id Id of the element to modify.
+ * \param description The new description.
+ * \return \c true in case of success, \c false if such an element does not
+ * exist.
+ */</doc>

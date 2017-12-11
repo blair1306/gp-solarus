@@ -1,0 +1,21 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Explosion.h' l='32' ll='70'/>
+<size>272</size>
+<doc f='codebrowser/include/solarus/entities/Explosion.h' l='27'>/**
+ * \brief Represents an explosion on the map.
+ *
+ * An explosion can hurt the hero, the enemies and open weak walls.
+ */</doc>
+<smbr r='Solarus::Explosion::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<fun r='_ZNK7Solarus9Explosion8get_typeEv'/>
+<fun r='_ZN7Solarus9Explosion6updateEv'/>
+<fun r='_ZN7Solarus9Explosion27notify_sprite_frame_changedERNS_6SpriteERKSsi'/>
+<fun r='_ZN7Solarus9Explosion16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus9Explosion28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<fun r='_ZN7Solarus9Explosion29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<fun r='_ZN7Solarus9Explosion28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Explosion27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus9Explosion16try_attack_enemyERNS_5EnemyERNS_6SpriteE'/>
+<fun r='_ZN7Solarus9Explosion21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<mbr r='Solarus::Explosion::victims' o='2048' t='std::list&lt;Enemy *&gt;'/>

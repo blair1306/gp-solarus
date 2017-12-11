@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='56' type='bool Solarus::Quadtree::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='103' ll='124' type='bool Solarus::Quadtree::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='185' u='c' c='_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='93'>/**
+ * \brief Adds an element to the quadtree.
+ *
+ * It is allowed to add it outside the space delimited by the quadtree,
+ * for example if it can move inside later.
+ *
+ * \param element The element to add.
+ * \param bounding_box Bounding box of the element.
+ * \return \c true in case of success.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='968' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>

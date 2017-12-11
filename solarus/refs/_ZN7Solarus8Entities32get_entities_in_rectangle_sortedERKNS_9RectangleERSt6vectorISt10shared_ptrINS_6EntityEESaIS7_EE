@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='107' type='void Solarus::Entities::get_entities_in_rectangle_sorted(const Solarus::Rectangle &amp; rectangle, EntityVector &amp; result)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='469' ll='476' type='void Solarus::Entities::get_entities_in_rectangle_sorted(const Solarus::Rectangle &amp; rectangle, EntityVector &amp; result)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='466'>/**
+ * \overload Non-const version.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2052' u='c' c='_ZN7Solarus10LuaContext33map_api_get_entities_in_rectangleEP9lua_State'/>

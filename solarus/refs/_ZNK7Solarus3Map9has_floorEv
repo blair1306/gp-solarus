@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='68' type='bool Solarus::Map::has_floor() const'/>
+<def f='codebrowser/src/Map.cpp' l='138' ll='140' type='bool Solarus::Map::has_floor() const'/>
+<doc f='codebrowser/src/Map.cpp' l='131'>/**
+ * \brief Returns whether this map has a floor.
+ *
+ * This function returns true if the floor is not MapData::NO_FLOOR.
+ *
+ * \return true if there is a floor.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1509' u='c' c='_ZN7Solarus10LuaContext17map_api_get_floorEP9lua_State'/>

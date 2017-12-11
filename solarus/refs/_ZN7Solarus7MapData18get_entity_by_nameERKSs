@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='179' type='Solarus::EntityData * Solarus::MapData::get_entity_by_name(const std::string &amp; name)'/>
+<def f='codebrowser/src/MapData.cpp' l='585' ll='593' type='Solarus::EntityData * Solarus::MapData::get_entity_by_name(const std::string &amp; name)'/>
+<doc f='codebrowser/src/MapData.cpp' l='576'>/**
+ * \brief Returns an entity given its name.
+ *
+ * Non-const version. Ownership of the pointer remains to MapData.
+ *
+ * \param name Name of the entity to get.
+ * \return The entity or nullptr if there is no such entity.
+ * The object remains valid until entities are added or removed.
+ */</doc>

@@ -1,0 +1,99 @@
+<def f='include/c++/4.9/sstream' l='422' ll='425' type='void std::basic_ostringstream::basic_ostringstream&lt;_CharT, _Traits, _Alloc&gt;(ios_base::openmode __mode = ios_base::out)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='134' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<doc f='include/c++/4.9/sstream' l='410'>/**
+       *  @brief  Default constructor starts with an empty string buffer.
+       *  @param  __mode  Whether the buffer can read, or write, or both.
+       *
+       *  @c ios_base::out is automatically included in @a mode.
+       *
+       *  Initializes @c sb using @c mode|out, and passes @c &amp;sb to the base
+       *  class initializer.  Does not allocate any buffer.
+       *
+       *  That&apos;s a lie.  We initialize the base class with NULL, because the
+       *  string class does its own memory management.
+      */</doc>
+<use f='codebrowser/src/Equipment.cpp' l='480' u='c' c='_ZNK7Solarus9Equipment17get_item_assignedEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='505' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='239' u='c' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='269' u='c' c='_ZN7Solarus12GameCommands22joypad_button_releasedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='290' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='307' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='353' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='405' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='430' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/MainLoop.cpp' l='77' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='812' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='238' u='c' c='_ZN7Solarus14QuestResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/Savegame.cpp' l='286' u='c' c='_ZN7Solarus8Savegame4saveEv'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='95' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='135' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='181' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='190' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='199' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/Settings.cpp' l='246' u='c' c='_ZN7Solarus8Settings4saveERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='350' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='117' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='153' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='66' u='c' c='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='651' u='c' c='_ZN7Solarus5Enemy22set_attack_consequenceENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='672' u='c' c='_ZN7Solarus5Enemy29set_attack_consequence_spriteERKNS_6SpriteENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1020' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='177' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='188' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='66' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='42' u='c' c='_ZN7Solarus11TilePatternC1ENS_6GroundERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='214' u='c' c='_ZNK7Solarus7Tileset16get_tile_patternERKSs'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='589' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='649' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='650' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='139' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='224' u='c' c='_ZNK7Solarus11HeroSprites27get_default_tunic_sprite_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='298' u='c' c='_ZNK7Solarus11HeroSprites27get_default_sword_sprite_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='343' u='c' c='_ZNK7Solarus11HeroSprites26get_default_sword_sound_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='416' u='c' c='_ZNK7Solarus11HeroSprites28get_default_shield_sprite_idEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='162' u='c' c='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='203' u='c' c='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='453' u='c' c='_ZN7Solarus5Music10decode_spcEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='481' u='c' c='_ZN7Solarus5Music9decode_itEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='584' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='167' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='185' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='199' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='283' u='c' c='_ZN7Solarus5Sound6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='413' u='c' c='_ZN7Solarus5Sound5startEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='426' u='c' c='_ZN7Solarus5Sound5startEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='463' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='497' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='533' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/String.cpp' l='34' u='c' c='_ZN7Solarus6String9to_stringEi'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='384' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='940' u='c' c='_ZNK7Solarus7Surface9get_pixelEi'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='792' u='c' c='_ZN7Solarus5Video20set_quest_size_rangeERKNS_4SizeES3_S3_'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='274' u='c' c='_ZN7Solarus10LuaContext34audio_api_get_music_channel_volumeEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='300' u='c' c='_ZN7Solarus10LuaContext34audio_api_set_music_channel_volumeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='902' u='c' c='_ZN7Solarus10LuaContext19entity_api_set_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='907' u='c' c='_ZN7Solarus10LuaContext19entity_api_set_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2481' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4733' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4790' u='c' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='675' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='748' u='c' c='_ZN7Solarus10LuaContext11print_stackEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2955' u='c' c='_ZN7Solarus10LuaContext8l_loaderEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='115' u='c' c='_ZNK7Solarus7LuaData16export_to_bufferERSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='179' u='c' c='_ZN7Solarus8LuaTools9arg_errorEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='788' u='c' c='_ZN7Solarus8LuaTools11check_layerEP9lua_StateiRKNS_3MapE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='250' u='c' c='_ZN7Solarus12_GLOBAL__N_127entity_creation_check_layerEP9lua_StateiRKNS_10EntityDataERKNS_3MapE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='280' u='c' c='_ZN7Solarus12_GLOBAL__N_126entity_creation_check_sizeEP9lua_StateiRKNS_10EntityDataE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='285' u='c' c='_ZN7Solarus12_GLOBAL__N_126entity_creation_check_sizeEP9lua_StateiRKNS_10EntityDataE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='782' u='c' c='_ZN7Solarus10LuaContext14l_create_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='245' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='308' u='c' c='_ZN7Solarus10LuaContext20sprite_api_set_frameEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='129' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='105' u='c' c='_ZN7Solarus14CircleMovement10set_radiusEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='145' u='c' c='_ZN7Solarus14CircleMovement16set_radius_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='175' u='c' c='_ZN7Solarus14CircleMovement15set_angle_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='286' u='c' c='_ZN7Solarus14CircleMovement17set_max_rotationsEi'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='54' u='c' c='_ZN7Solarus12JumpMovementC1Eiiib'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='66' u='c' c='_ZN7Solarus12JumpMovement7restartEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='98' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='61' u='c' c='_ZN12_GLOBAL__N_118check_num_elementsERKN7Solarus8QuadtreeISt10shared_ptrINS_7ElementEEEEi'/>

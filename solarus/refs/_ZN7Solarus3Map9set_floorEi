@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Map.h' l='70' type='void Solarus::Map::set_floor(int floor)'/>
+<def f='codebrowser/src/Map.cpp' l='154' ll='156' type='void Solarus::Map::set_floor(int floor)'/>
+<use f='codebrowser/src/Map.cpp' l='306' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<doc f='codebrowser/src/Map.cpp' l='150'>/**
+ * \brief Sets the floor where this map is.
+ * \param floor The floor or FLOOR_NIL.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1536' u='c' c='_ZN7Solarus10LuaContext17map_api_set_floorEP9lua_State'/>

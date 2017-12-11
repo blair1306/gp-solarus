@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='57' type='const Solarus::Size &amp; Solarus::SpriteAnimationSet::get_max_size() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='177' u='c' c='_ZNK7Solarus6Sprite12get_max_sizeEv'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='191' ll='193' type='const Solarus::Size &amp; Solarus::SpriteAnimationSet::get_max_size() const'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='187'>/**
+ * \brief Returns a size big enough to contain any frame of this animation set.
+ * \return The maximum size of a frame in this animation set.
+ */</doc>

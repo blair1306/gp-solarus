@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Map.h' l='74' type='int Solarus::Map::get_width() const'/>
+<def f='codebrowser/src/Map.cpp' l='183' ll='185' type='int Solarus::Map::get_width() const'/>
+<use f='codebrowser/src/Map.cpp' l='578' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='750' u='c' c='_ZNK7Solarus3Map26test_collision_with_borderERKNS_9RectangleE'/>
+<doc f='codebrowser/src/Map.cpp' l='179'>/**
+ * \brief Returns the map width in pixels.
+ * \return the map width
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='177' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='512' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='612' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='714' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='274' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='299' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='87' u='c' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='305' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1552' u='c' c='_ZN7Solarus10LuaContext16map_api_get_sizeEP9lua_State'/>

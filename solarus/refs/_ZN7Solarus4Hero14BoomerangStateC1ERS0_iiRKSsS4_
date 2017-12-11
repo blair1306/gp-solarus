@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/BoomerangState.h' l='32' type='void Solarus::Hero::BoomerangState::BoomerangState(Solarus::Hero &amp; hero, int max_distance, int speed, const std::string &amp; hero_preparing_animation, const std::string &amp; sprite_name)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2629' u='c' c='_ZN7Solarus4Hero15start_boomerangEiiRKSsS2_'/>
+<def f='codebrowser/src/hero/BoomerangState.cpp' l='39' ll='52' type='void Solarus::Hero::BoomerangState::BoomerangState(Solarus::Hero &amp; hero, int max_distance, int speed, const std::string &amp; tunic_preparing_animation, const std::string &amp; sprite_name)'/>
+<doc f='codebrowser/src/hero/BoomerangState.cpp' l='30'>/**
+ * \brief Constructor.
+ * \param hero the hero controlled by this state
+ * \param max_distance maximum distance of the movement in pixels
+ * \param speed speed of the movement in pixels per second
+ * \param tunic_preparing_animation animation name of the hero&apos;s tunic sprite
+ * when preparing the boomerang
+ * \param sprite_name animation set id that represents the boomerang
+ */</doc>

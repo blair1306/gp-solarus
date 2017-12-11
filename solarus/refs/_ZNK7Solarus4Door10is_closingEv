@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='102' type='bool Solarus::Door::is_closing() const'/>
+<def f='codebrowser/src/entities/Door.cpp' l='149' ll='151' type='bool Solarus::Door::is_closing() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='218' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='692' u='c' c='_ZN7Solarus4Door5closeEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='145'>/**
+ * \brief Returns whether this door is being closed.
+ * \return true if this door is being closed.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3714' u='c' c='_ZN7Solarus10LuaContext19door_api_is_closingEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1852' u='c' c='_ZN7Solarus10LuaContext18map_api_open_doorsEP9lua_State'/>

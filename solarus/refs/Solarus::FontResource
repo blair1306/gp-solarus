@@ -1,0 +1,15 @@
+<def f='codebrowser/include/solarus/lowlevel/FontResource.h' l='32' ll='87'/>
+<size>1</size>
+<doc f='codebrowser/include/solarus/lowlevel/FontResource.h' l='29'>/**
+ * \brief Provides access to font files.
+ */</doc>
+<fun r='_ZN7Solarus12FontResource10initializeEv'/>
+<fun r='_ZN7Solarus12FontResource4quitEv'/>
+<fun r='_ZN7Solarus12FontResource19get_default_font_idEv'/>
+<fun r='_ZN7Solarus12FontResource6existsERKSs'/>
+<fun r='_ZN7Solarus12FontResource14is_bitmap_fontERKSs'/>
+<fun r='_ZN7Solarus12FontResource15get_bitmap_fontERKSs'/>
+<fun r='_ZN7Solarus12FontResource16get_outline_fontERKSsi'/>
+<fun r='_ZN7Solarus12FontResource10load_fontsEv'/>
+<smbr r='Solarus::FontResource::fonts_loaded' t='bool'/>
+<smbr r='Solarus::FontResource::fonts' t='std::map&lt;std::string, FontFile&gt;'/>

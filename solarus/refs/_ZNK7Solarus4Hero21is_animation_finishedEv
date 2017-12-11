@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='86' type='bool Solarus::Hero::is_animation_finished() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='470' ll='472' type='bool Solarus::Hero::is_animation_finished() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='466'>/**
+ * \brief Returns whether the sprites animations are finished.
+ * \return true if the animation is finished
+ */</doc>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='81' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='103' u='c' c='_ZN7Solarus4Hero12LiftingState6updateEv'/>

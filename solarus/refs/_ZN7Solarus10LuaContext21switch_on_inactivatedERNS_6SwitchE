@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='393' type='void Solarus::LuaContext::switch_on_inactivated(Solarus::Switch &amp; sw)'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='232' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6125' ll='6134' type='void Solarus::LuaContext::switch_on_inactivated(Solarus::Switch &amp; sw)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6118'>/**
+ * \brief Calls the on_inactivated() method of a Lua switch.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sw A switch.
+ */</doc>

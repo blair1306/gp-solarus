@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='40' type='void Solarus::Teletransporter::Teletransporter(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const std::string &amp; sprite_name, const std::string &amp; sound_id, Transition::Style transition_style, const std::string &amp; destination_map_id, const std::string &amp; destination_name)'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='45' ll='70' type='void Solarus::Teletransporter::Teletransporter(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const std::string &amp; sprite_name, const std::string &amp; sound_id, Transition::Style transition_style, const std::string &amp; destination_map_id, const std::string &amp; destination_name)'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='29'>/**
+ * \brief Constructor.
+ * \param name Name of the teletransporter.
+ * \param layer Layer of the teletransporter.
+ * \param xy Coordinates where to create the entity.
+ * \param size Size of the teletransporter&apos;s rectangle.
+ * \param sprite_name Sprite animation set id to use, or an empty string.
+ * \param sound_id Sound to play when using the teletransporter,
+ * or an empty string.
+ * \param transition_style Style of transition between the two maps.
+ * \param destination_map_id Id of the destination map.
+ * \param destination_name Location on the destination map,
+ * or &quot;_same&quot; to keep the hero&apos;s coordinates,
+ * or &quot;_side&quot; to place the hero on the appropriate side of the map.
+ * An empty string means the default destination entity of the map.
+ */</doc>

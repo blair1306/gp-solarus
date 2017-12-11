@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='58' type='bool Solarus::Quadtree::move(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='165' ll='190' type='bool Solarus::Quadtree::move(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='151'>/**
+ * \brief Moves the element in the quadtree.
+ *
+ * This function should be called when the position or size or the element
+ * is changed.
+ *
+ * It is allowed for an element to go to or come from outside the space of the
+ * quadtree.
+ *
+ * \param element The element to move. If the element is not in the quadtree,
+ * does nothing and returns \c false.
+ * \param bounding_box New bounding box of the element.
+ * \return \c true in case of success.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1336' u='c' c='_ZN7Solarus8Entities34notify_entity_bounding_box_changedERNS_6EntityE'/>

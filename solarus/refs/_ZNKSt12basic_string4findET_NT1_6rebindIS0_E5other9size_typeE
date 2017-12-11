@@ -1,0 +1,15 @@
+<dec f='include/c++/4.9/bits/basic_string.h' l='1897' type='size_type std::basic_string::find(_CharT __c, size_type __pos = 0) const'/>
+<def f='include/c++/4.9/bits/basic_string.tcc' l='757' ll='773' type='typename basic_string&lt;_CharT, _Traits, _Alloc&gt;::size_type std::basic_string::find(_CharT __c, size_type __pos = 0) const'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='1886'>/**
+       *  @brief  Find position of a character.
+       *  @param __c  Character to locate.
+       *  @param __pos  Index of character to search from (default 0).
+       *  @return  Index of first occurrence.
+       *
+       *  Starting from @a __pos, searches forward for @a __c within
+       *  this string.  If found, returns the index where it was
+       *  found.  If not found, returns npos.
+      */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='58' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MainLoop.cpp' l='63' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='713' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>

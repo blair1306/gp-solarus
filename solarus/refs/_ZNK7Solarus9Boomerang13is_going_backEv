@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='68' type='bool Solarus::Boomerang::is_going_back() const'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='231' ll='233' type='bool Solarus::Boomerang::is_going_back() const'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='240' u='c' c='_ZN7Solarus9Boomerang7go_backEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='276' u='c' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='292' u='c' c='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='312' u='c' c='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='329' u='c' c='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='356' u='c' c='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='227'>/**
+ * \brief Returns whether the boomerang is going back towards the hero, i.e. if go_back() has been called.
+ * \return true if the boomerang is going back
+ */</doc>
+<doc f='codebrowser/include/solarus/entities/Boomerang.h' l='67'>// state</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='309' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

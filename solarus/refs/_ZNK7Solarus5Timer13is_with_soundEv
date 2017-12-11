@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='37' type='bool Solarus::Timer::is_with_sound() const'/>
+<def f='codebrowser/src/Timer.cpp' l='44' ll='46' type='bool Solarus::Timer::is_with_sound() const'/>
+<use f='codebrowser/src/Timer.cpp' l='87' u='c' c='_ZN7Solarus5Timer13set_suspendedEb'/>
+<use f='codebrowser/src/Timer.cpp' l='166' u='c' c='_ZN7Solarus5Timer6updateEv'/>
+<doc f='codebrowser/src/Timer.cpp' l='40'>/**
+ * \brief Returns whether a clock sound is played during this timer.
+ * \return true if a clock sound is played.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='437' u='c' c='_ZN7Solarus10LuaContext23timer_api_is_with_soundEP9lua_State'/>

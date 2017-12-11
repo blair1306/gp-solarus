@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Game.h' l='102' type='bool Solarus::Game::is_paused() const'/>
+<doc f='codebrowser/include/solarus/Game.h' l='101'>// current game state</doc>
+<use f='codebrowser/src/Game.cpp' l='307' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='545' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<def f='codebrowser/src/Game.cpp' l='692' ll='694' type='bool Solarus::Game::is_paused() const'/>
+<use f='codebrowser/src/Game.cpp' l='720' u='c' c='_ZNK7Solarus4Game12is_suspendedEv'/>
+<use f='codebrowser/src/Game.cpp' l='792' u='c' c='_ZNK7Solarus4Game11can_unpauseEv'/>
+<use f='codebrowser/src/Game.cpp' l='829' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<doc f='codebrowser/src/Game.cpp' l='688'>/**
+ * \brief Returns whether the game is paused.
+ * \return true if the game is paused
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='340' u='c' c='_ZN7Solarus10LuaContext18game_api_is_pausedEP9lua_State'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='68' type='static const Solarus::VideoMode * Solarus::Video::get_video_mode_by_name(const std::string &amp; mode_name)'/>
+<use f='codebrowser/src/Settings.cpp' l='317' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='226' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='632' ll='642' type='static const Solarus::VideoMode * Solarus::Video::get_video_mode_by_name(const std::string &amp; mode_name)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='626'>/**
+ * \brief Returns a video mode given its Lua name.
+ * \param mode_name Lua name of a video mode.
+ * \return The corresponding supported video mode, or nullptr if there is no
+ * known supported video mode with this name.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='112' u='c' c='_ZN7Solarus10LuaContext18video_api_set_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='169' u='c' c='_ZN7Solarus10LuaContext27video_api_is_mode_supportedEP9lua_State'/>

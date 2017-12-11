@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='110' type='int Solarus::Map::get_destination_side() const'/>
+<def f='codebrowser/src/Map.cpp' l='421' ll='428' type='int Solarus::Map::get_destination_side() const'/>
+<doc f='codebrowser/src/Map.cpp' l='416'>/**
+ * \brief When the destination point is a side of the map,
+ * returns this side.
+ * \return the destination side (0 to 3), or -1 if the destination point is not a side
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='84' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='602' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='706' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>

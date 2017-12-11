@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quest_runner.h' l='38' type='int SolarusGui::QuestRunner::execute_command(const QString &amp; command)'/>
+<use f='codebrowser/gui/src/console.cpp' l='173' u='c' c='_ZN10SolarusGui7Console15execute_commandERK7QString'/>
+<def f='codebrowser/gui/src/quest_runner.cpp' l='210' ll='229' type='int SolarusGui::QuestRunner::execute_command(const QString &amp; command)'/>
+<doc f='codebrowser/gui/src/quest_runner.cpp' l='204'>/**
+ * @brief Executes some Lua code in the quest process.
+ * @param command The Lua code.
+ * @return The id of the command executed, or -1 if it could not be sent
+ * to the process.
+ */</doc>

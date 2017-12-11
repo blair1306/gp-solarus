@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='114' type='std::string Solarus::Equipment::get_ability_savegame_variable(Solarus::Ability ability) const'/>
+<def f='codebrowser/src/Equipment.cpp' l='546' ll='579' type='std::string Solarus::Equipment::get_ability_savegame_variable(Solarus::Ability ability) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='597' u='c' c='_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE'/>
+<use f='codebrowser/src/Equipment.cpp' l='607' u='c' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='541'>/**
+ * \brief Returns the index of the savegame variable that stores the specified ability.
+ * \param ability An ability.
+ * \return Name of the boolean savegame variable that stores this ability.
+ */</doc>

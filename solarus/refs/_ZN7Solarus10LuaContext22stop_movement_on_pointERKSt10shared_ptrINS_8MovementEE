@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='242' type='void Solarus::LuaContext::stop_movement_on_point(const std::shared_ptr&lt;Movement&gt; &amp; movement)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='435' ll='448' type='void Solarus::LuaContext::stop_movement_on_point(const std::shared_ptr&lt;Movement&gt; &amp; movement)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='645' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='431'>/**
+ * \brief Stops moving an x,y point.
+ * \param movement The movement to stop.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1190' type='static bool Solarus::LuaContext::is_door(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3633' ll='3635' type='static bool Solarus::LuaContext::is_door(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3627'>/**
+ * \brief Returns whether a value is a userdata of type door.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a door.
+ */</doc>

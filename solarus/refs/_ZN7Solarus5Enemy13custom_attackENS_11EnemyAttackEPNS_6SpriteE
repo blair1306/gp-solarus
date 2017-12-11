@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='205' type='void Solarus::Enemy::custom_attack(Solarus::EnemyAttack attack, Solarus::Sprite * this_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1205' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1539' ll='1542' type='void Solarus::Enemy::custom_attack(Solarus::EnemyAttack attack, Solarus::Sprite * this_sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1530'>/**
+ * \brief This function is called when the enemy is attacked by a custom effect attack.
+ *
+ * Redefine this function to handle the attack.
+ *
+ * \param attack the attack
+ * \param this_sprite the sprite of this enemy subject to the attack, or nullptr
+ * if the attack does not come from a pixel-precise collision test
+ */</doc>

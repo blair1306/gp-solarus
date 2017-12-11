@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='536' type='static int Solarus::LuaContext::language_api_get_string(lua_State * )'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='66' u='r' c='_ZN7Solarus10LuaContext24register_language_moduleEv'/>
+<def f='codebrowser/src/lua/LanguageApi.cpp' l='171' ll='184' type='static int Solarus::LuaContext::language_api_get_string(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LanguageApi.cpp' l='166'>/**
+ * \brief Implementation of sol.language.get_string().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

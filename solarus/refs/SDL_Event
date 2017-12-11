@@ -1,0 +1,30 @@
+<def f='include/SDL2/SDL_events.h' l='498' ll='533'/>
+<size>56</size>
+<doc f='include/SDL2/SDL_events.h' l='495'>/**
+ *  \brief General event structure
+ */</doc>
+<mbr r='SDL_Event::type' o='0' t='Uint32'/>
+<mbr r='SDL_Event::common' o='0' t='SDL_CommonEvent'/>
+<mbr r='SDL_Event::window' o='0' t='SDL_WindowEvent'/>
+<mbr r='SDL_Event::key' o='0' t='SDL_KeyboardEvent'/>
+<mbr r='SDL_Event::edit' o='0' t='SDL_TextEditingEvent'/>
+<mbr r='SDL_Event::text' o='0' t='SDL_TextInputEvent'/>
+<mbr r='SDL_Event::motion' o='0' t='SDL_MouseMotionEvent'/>
+<mbr r='SDL_Event::button' o='0' t='SDL_MouseButtonEvent'/>
+<mbr r='SDL_Event::wheel' o='0' t='SDL_MouseWheelEvent'/>
+<mbr r='SDL_Event::jaxis' o='0' t='SDL_JoyAxisEvent'/>
+<mbr r='SDL_Event::jball' o='0' t='SDL_JoyBallEvent'/>
+<mbr r='SDL_Event::jhat' o='0' t='SDL_JoyHatEvent'/>
+<mbr r='SDL_Event::jbutton' o='0' t='SDL_JoyButtonEvent'/>
+<mbr r='SDL_Event::jdevice' o='0' t='SDL_JoyDeviceEvent'/>
+<mbr r='SDL_Event::caxis' o='0' t='SDL_ControllerAxisEvent'/>
+<mbr r='SDL_Event::cbutton' o='0' t='SDL_ControllerButtonEvent'/>
+<mbr r='SDL_Event::cdevice' o='0' t='SDL_ControllerDeviceEvent'/>
+<mbr r='SDL_Event::quit' o='0' t='SDL_QuitEvent'/>
+<mbr r='SDL_Event::user' o='0' t='SDL_UserEvent'/>
+<mbr r='SDL_Event::syswm' o='0' t='SDL_SysWMEvent'/>
+<mbr r='SDL_Event::tfinger' o='0' t='SDL_TouchFingerEvent'/>
+<mbr r='SDL_Event::mgesture' o='0' t='SDL_MultiGestureEvent'/>
+<mbr r='SDL_Event::dgesture' o='0' t='SDL_DollarGestureEvent'/>
+<mbr r='SDL_Event::drop' o='0' t='SDL_DropEvent'/>
+<mbr r='SDL_Event::padding' o='0' t='Uint8 [56]'/>

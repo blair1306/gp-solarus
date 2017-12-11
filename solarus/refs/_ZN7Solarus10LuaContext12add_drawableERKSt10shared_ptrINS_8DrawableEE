@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='232' type='void Solarus::LuaContext::add_drawable(const DrawablePtr &amp; drawable)'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='80' ll='86' type='void Solarus::LuaContext::add_drawable(const DrawablePtr &amp; drawable)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='76'>/**
+ * \brief Registers a drawable object created by Lua.
+ * \param drawable a drawable object
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='128' u='c' c='_ZN7Solarus10LuaContext17sprite_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='139' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='195' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='62' type='const std::string &amp; Solarus::QuestFiles::get_quest_path()'/>
+<doc f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='61'>// Reading data files of the quest.</doc>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='192' ll='194' type='const std::string &amp; Solarus::QuestFiles::get_quest_path()'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='187'>/**
+ * \brief Returns the path of the quest, relative to the current directory.
+ * \return Path of the data/ directory, the data.solarus archive or the
+ * data.solarus.zip archive, relative to the current directory.
+ */</doc>
+<use f='codebrowser/src/lua/FileApi.cpp' l='103' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>

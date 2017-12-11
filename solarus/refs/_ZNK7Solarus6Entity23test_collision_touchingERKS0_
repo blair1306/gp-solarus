@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='289' type='bool Solarus::Entity::test_collision_touching(const Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='866' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1789' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1942' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2021' ll='2028' type='bool Solarus::Entity::test_collision_touching(const Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2010'>/**
+ * \brief Returns whether a touching point of an entity
+ * (in any of the four main directions)
+ * is overlapping this entity&apos;s rectangle.
+ *
+ * The layer is not checked.
+ *
+ * \param entity The entity.
+ * \return \c true if a touching point of the entity is overlapping
+ * this entity&apos;s rectangle.
+ */</doc>

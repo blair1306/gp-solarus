@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Ability.h' l='28' type='1'/>
+<use f='codebrowser/src/AbilityInfo.cpp' l='25' u='r'/>
+<doc f='codebrowser/include/solarus/Ability.h' l='28'>/**&lt; Sword of the hero. 0 means no sword, a
+                           * greater values determine the sword sprite. */</doc>
+<use f='codebrowser/src/Equipment.cpp' l='553' c='_ZNK7Solarus9Equipment29get_ability_savegame_variableENS_7AbilityE'/>
+<use f='codebrowser/src/Equipment.cpp' l='612' u='r' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<use f='codebrowser/src/Game.cpp' l='550' u='r' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='555' u='r' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='926' u='r' c='_ZNK7Solarus6Entity5State23get_sword_damage_factorEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='136' u='r' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='293' u='r' c='_ZNK7Solarus11HeroSprites27get_default_sword_sprite_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='338' u='r' c='_ZNK7Solarus11HeroSprites26get_default_sword_sound_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='499' u='r' c='_ZNK7Solarus11HeroSprites16is_sword_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='509' u='r' c='_ZNK7Solarus11HeroSprites22is_sword_stars_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='594' u='r' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='621' u='r' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='915' u='r' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1160' u='r' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='163' u='r' c='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='204' u='r' c='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='51' u='r' c='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1191' type='static std::shared_ptr&lt;Door&gt; Solarus::LuaContext::check_door(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3644' ll='3648' type='static std::shared_ptr&lt;Door&gt; Solarus::LuaContext::check_door(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3667' u='c' c='_ZN7Solarus10LuaContext16door_api_is_openEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3682' u='c' c='_ZN7Solarus10LuaContext19door_api_is_openingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3697' u='c' c='_ZN7Solarus10LuaContext18door_api_is_closedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3712' u='c' c='_ZN7Solarus10LuaContext19door_api_is_closingEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3637'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * door and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The door.
+ */</doc>

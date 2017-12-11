@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='141' type='void Solarus::Hero::reset_movement()'/>
+<use f='codebrowser/src/Game.cpp' l='635' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1197' ll='1202' type='void Solarus::Hero::reset_movement()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1963' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1188'>/**
+ * \brief Stops the movement of the player and lets the player restart it when he can.
+ *
+ * This function is typically called when the player temporarily loses the control
+ * (e.g. because of a script or a map change) whereas the movement remains the same.
+ * Then the movement may want to move a few pixels more as soon as it is resumed.
+ * This function removes such residual effects of the player&apos;s movement.
+ * If the current movement is not controlled by the player, this function has no effect.
+ */</doc>

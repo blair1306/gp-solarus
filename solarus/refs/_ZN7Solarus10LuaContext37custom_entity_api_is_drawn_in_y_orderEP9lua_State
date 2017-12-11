@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1004' type='static int Solarus::LuaContext::custom_entity_api_is_drawn_in_y_order(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='507' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5348' ll='5356' type='static int Solarus::LuaContext::custom_entity_api_is_drawn_in_y_order(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5343'>/**
+ * \brief Implementation of custom_entity:is_drawn_in_y_order().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

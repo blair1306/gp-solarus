@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='279' type='bool Solarus::InputEvent::is_mouse_button_pressed() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='278'>// mouse</doc>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1144' ll='1147' type='bool Solarus::InputEvent::is_mouse_button_pressed() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1157' u='c' c='_ZNK7Solarus10InputEvent23is_mouse_button_pressedENS0_11MouseButtonE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1412' u='c' c='_ZNK7Solarus10InputEvent10is_pressedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1139'>/**
+ * \brief Returns whether this event is a mouse event.
+ * corresponding to pressing any button.
+ * \return true if this event corresponds to pressing a mouse button.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1574' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

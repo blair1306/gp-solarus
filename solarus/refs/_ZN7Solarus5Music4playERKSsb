@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='82' type='static void Solarus::Music::play(const std::string &amp; music_id, bool loop)'/>
+<use f='codebrowser/src/Map.cpp' l='699' u='c' c='_ZN7Solarus3Map5startEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='311' ll='314' type='static void Solarus::Music::play(const std::string &amp; music_id, bool loop)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='358' u='c' c='_ZN7Solarus5Music12stop_playingEv'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='299'>/**
+ * \brief Plays a music.
+ *
+ * If the music is different from the current one, the current one is stopped.
+ * The music specified can also be Music::none_id (then the current music is
+ * just stopped).
+ * or even Music::unchanged_id (the current music continues in this case).
+ *
+ * \param music_id Id of the music to play (file name without extension).
+ * \param loop Whether the music should loop when reaching its end
+ * (if there is an end).
+ */</doc>

@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='362' type='Solarus::Equipment &amp; Solarus::Entity::get_equipment()'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='211' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='333' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='398' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='516' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='622' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1041' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1090' u='c' c='_ZN7Solarus5Enemy29attack_stopped_by_hero_shieldEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='476' ll='478' type='Solarus::Equipment &amp; Solarus::Entity::get_equipment()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='472'>/**
+ * \brief Returns the current equipment.
+ * \return The equipment.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='390' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2181' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2182' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2286' u='c' c='_ZN7Solarus4Hero13start_prickleEj'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2682' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='235' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='243' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='287' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='319' u='c' c='_ZN7Solarus3Npc28call_script_hero_interactionEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='338' u='c' c='_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='235' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>

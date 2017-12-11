@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='61' type='bool Solarus::operator==(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='92' ll='94' type='bool Solarus::operator==(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<use f='codebrowser/include/solarus/lowlevel/Point.inl' l='103' u='c' c='_ZN7SolarusneERKNS_5PointES2_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='524' u='c' c='_ZN7SolaruseqERKNS_9RectangleES2_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.h' l='57'>////////////////////////////////////////////////////////////
+// Free functions
+
+// Comparison operators</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='86'>/**
+ * \brief Returns whether two points are equal.
+ * \param lhs A point.
+ * \param rhs Another point.
+ * \return \c true if the points are equal.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2226' u='c' c='_ZN7Solarus4Hero10start_holeEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='267' u='c' c='_ZNK7Solarus12StreamAction18has_reached_targetEv'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='46' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='42' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='51' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='60' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='69' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='115' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='126' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='151' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='165' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

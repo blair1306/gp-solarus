@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='63' type='int Solarus::Equipment::get_money() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='153' u='c' c='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<def f='codebrowser/src/Equipment.cpp' l='162' ll='164' type='int Solarus::Equipment::get_money() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='192' u='c' c='_ZN7Solarus9Equipment9add_moneyEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='207' u='c' c='_ZN7Solarus9Equipment12remove_moneyEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='158'>/**
+ * \brief Returns the player&apos;s current amount of money
+ * \return the player&apos;s current amount of money
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3839' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='889' u='c' c='_ZN7Solarus10LuaContext18game_api_get_moneyEP9lua_State'/>

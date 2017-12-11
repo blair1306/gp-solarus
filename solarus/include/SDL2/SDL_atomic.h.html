@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_atomic.h source code [include/SDL2/SDL_atomic.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_atomic.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_atomic.h.html'>SDL_atomic.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> *<span class="command"> \file</span> SDL_atomic.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * Atomic operations.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * IMPORTANT:</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * If you are not an expert in concurrent lockless programming, you should</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * only be using the atomic lock and reference counting functions in this</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * file.  In all other cases you should be protecting your data structures</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * with full mutexes.</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * The list of "safe" functions to use are:</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *  SDL_AtomicLock()</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *  SDL_AtomicUnlock()</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *  SDL_AtomicIncRef()</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *  SDL_AtomicDecRef()</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * Seriously, here be dragons!</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * ^^^^^^^^^^^^^^^^^^^^^^^^^^^</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * You can find out a little more about lockless programming and the</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * subtle issues that can arise here:</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * <a href="http://msdn.microsoft.com/en-us/library/ee418650%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ee418650%28v=vs.85%29.aspx</a></i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * There's also lots of good information here:</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * <a href="http://www.1024cores.net/home/lock-free-algorithms">http://www.1024cores.net/home/lock-free-algorithms</a></i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * <a href="http://preshing.com/">http://preshing.com/</a></i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * These operations may or may not actually be implemented using</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * processor specific atomic operations. When possible they are</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * implemented as true processor specific atomic operations. When that</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * is not possible the are implemented using locks that *do* use the</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * available atomic operations.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * All of the atomic operations that modify memory are full memory barriers.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="59">ifndef</span> <span class="macro" data-ref="_M/_SDL_atomic_h_">_SDL_atomic_h_</span></u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/_SDL_atomic_h_" data-ref="_M/_SDL_atomic_h_">_SDL_atomic_h_</dfn></u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="63">63</th><td><u>#include <a href="SDL_platform.h.html">"SDL_platform.h"</a></u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="68">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="69">69</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="68">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * <span class="command">\name</span> <span class="verb">SDL AtomicLock</span></i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * The atomic locks are efficient spinlocks using CPU instructions,</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * but are vulnerable to starvation and can spin forever if a thread</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * holding a lock has been terminated.  For this reason you should</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * minimize the code executed inside an atomic lock and never do</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * expensive things like API or system calls while holding them.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * The atomic locks are not safe to lock recursively.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * Porting Note:</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * The spin lock functions and type are required and can not be</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * emulated because they are used in the atomic emulation code.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="87">87</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="SDL_SpinLock" title='SDL_SpinLock' data-type='int' data-ref="SDL_SpinLock">SDL_SpinLock</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * <span class="command">\brief</span> Try to lock a spin lock by setting it to a non-zero value.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">lock</span> Points to the lock.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * <span class="command">\return</span> SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already held.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="98">98</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicTryLock" title='SDL_AtomicTryLock' data-ref="SDL_AtomicTryLock">SDL_AtomicTryLock</dfn>(<a class="typedef" href="#SDL_SpinLock" title='SDL_SpinLock' data-type='int' data-ref="SDL_SpinLock">SDL_SpinLock</a> *<dfn class="local col9 decl" id="1339lock" title='lock' data-type='SDL_SpinLock *' data-ref="1339lock">lock</dfn>);</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * <span class="command">\brief</span> Lock a spin lock by setting it to a non-zero value.</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">lock</span> Points to the lock.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicLock" title='SDL_AtomicLock' data-ref="SDL_AtomicLock">SDL_AtomicLock</dfn>(<a class="typedef" href="#SDL_SpinLock" title='SDL_SpinLock' data-type='int' data-ref="SDL_SpinLock">SDL_SpinLock</a> *<dfn class="local col0 decl" id="1340lock" title='lock' data-type='SDL_SpinLock *' data-ref="1340lock">lock</dfn>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * <span class="command">\brief</span> Unlock a spin lock by setting it to 0. Always returns immediately</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">lock</span> Points to the lock.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="112">112</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicUnlock" title='SDL_AtomicUnlock' data-ref="SDL_AtomicUnlock">SDL_AtomicUnlock</dfn>(<a class="typedef" href="#SDL_SpinLock" title='SDL_SpinLock' data-type='int' data-ref="SDL_SpinLock">SDL_SpinLock</a> *<dfn class="local col1 decl" id="1341lock" title='lock' data-type='SDL_SpinLock *' data-ref="1341lock">lock</dfn>);</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i>/* @} */</i><i>/* SDL AtomicLock */</i></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * The compiler barrier prevents the compiler from reordering</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * reads and writes to globally visible variables across the call.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="121">121</th><td><u>#<span data-ppcond="121">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; (_MSC_VER &gt; 1200)</u></td></tr>
+<tr><th id="122">122</th><td><em>void</em> _ReadWriteBarrier(<em>void</em>);</td></tr>
+<tr><th id="123">123</th><td><u>#pragma intrinsic(_ReadWriteBarrier)</u></td></tr>
+<tr><th id="124">124</th><td><u>#define SDL_CompilerBarrier()   _ReadWriteBarrier()</u></td></tr>
+<tr><th id="125">125</th><td><u>#<span data-ppcond="121">elif</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="126">126</th><td><u>#define <dfn class="macro" id="_M/SDL_CompilerBarrier" data-ref="_M/SDL_CompilerBarrier">SDL_CompilerBarrier</dfn>()   __asm__ __volatile__ ("" : : : "memory")</u></td></tr>
+<tr><th id="127">127</th><td><u>#<span data-ppcond="121">else</span></u></td></tr>
+<tr><th id="128">128</th><td><u>#define SDL_CompilerBarrier()   \</u></td></tr>
+<tr><th id="129">129</th><td><u>{ SDL_SpinLock _tmp = 0; SDL_AtomicLock(&amp;_tmp); SDL_AtomicUnlock(&amp;_tmp); }</u></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="121">endif</span></u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * Memory barriers are designed to prevent reads and writes from being</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * reordered by the compiler and being seen out of order on multi-core CPUs.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * A typical pattern would be for thread A to write some data and a flag,</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * and for thread B to read the flag and get the data. In this case you</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * would insert a release barrier between writing the data and the flag,</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * guaranteeing that the data write completes no later than the flag is</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * written, and you would insert an acquire barrier between reading the</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * flag and reading the data, to ensure that all the reads associated</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * with the flag have completed.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * In this pattern you should always see a release barrier paired with</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * an acquire barrier and you should gate the data reads/writes with a</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> * single flag variable.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * For more information on these semantics, take a look at the blog post:</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * <a href="http://preshing.com/20120913/acquire-and-release-semantics">http://preshing.com/20120913/acquire-and-release-semantics</a></i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="151">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; (defined(<span class="macro" data-ref="_M/__powerpc__">__powerpc__</span>) || defined(<span class="macro" data-ref="_M/__ppc__">__ppc__</span>))</u></td></tr>
+<tr><th id="152">152</th><td><u>#define SDL_MemoryBarrierRelease()   __asm__ __volatile__ ("lwsync" : : : "memory")</u></td></tr>
+<tr><th id="153">153</th><td><u>#define SDL_MemoryBarrierAcquire()   __asm__ __volatile__ ("lwsync" : : : "memory")</u></td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="151">elif</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__arm__">__arm__</span>)</u></td></tr>
+<tr><th id="155">155</th><td><u>#if defined(__ARM_ARCH_7__) || defined(__ARM_ARCH_7A__) || defined(__ARM_ARCH_7EM__) || defined(__ARM_ARCH_7R__) || defined(__ARM_ARCH_7M__) || defined(__ARM_ARCH_7S__)</u></td></tr>
+<tr><th id="156">156</th><td><u>#define SDL_MemoryBarrierRelease()   __asm__ __volatile__ ("dmb ish" : : : "memory")</u></td></tr>
+<tr><th id="157">157</th><td><u>#define SDL_MemoryBarrierAcquire()   __asm__ __volatile__ ("dmb ish" : : : "memory")</u></td></tr>
+<tr><th id="158">158</th><td><u>#elif defined(__ARM_ARCH_6__) || defined(__ARM_ARCH_6J__) || defined(__ARM_ARCH_6K__) || defined(__ARM_ARCH_6T2__) || defined(__ARM_ARCH_6Z__) || defined(__ARM_ARCH_6ZK__)</u></td></tr>
+<tr><th id="159">159</th><td><u>#ifdef __thumb__</u></td></tr>
+<tr><th id="160">160</th><td><i>/* The mcr instruction isn't available in thumb mode, use real functions */</i></td></tr>
+<tr><th id="161">161</th><td><b>extern</b> DECLSPEC <em>void</em> SDLCALL SDL_MemoryBarrierRelease();</td></tr>
+<tr><th id="162">162</th><td><b>extern</b> DECLSPEC <em>void</em> SDLCALL SDL_MemoryBarrierAcquire();</td></tr>
+<tr><th id="163">163</th><td><u>#else</u></td></tr>
+<tr><th id="164">164</th><td><u>#define SDL_MemoryBarrierRelease()   __asm__ __volatile__ ("mcr p15, 0, %0, c7, c10, 5" : : "r"(0) : "memory")</u></td></tr>
+<tr><th id="165">165</th><td><u>#define SDL_MemoryBarrierAcquire()   __asm__ __volatile__ ("mcr p15, 0, %0, c7, c10, 5" : : "r"(0) : "memory")</u></td></tr>
+<tr><th id="166">166</th><td><u>#endif /* __thumb__ */</u></td></tr>
+<tr><th id="167">167</th><td><u>#else</u></td></tr>
+<tr><th id="168">168</th><td><u>#define SDL_MemoryBarrierRelease()   __asm__ __volatile__ ("" : : : "memory")</u></td></tr>
+<tr><th id="169">169</th><td><u>#define SDL_MemoryBarrierAcquire()   __asm__ __volatile__ ("" : : : "memory")</u></td></tr>
+<tr><th id="170">170</th><td><u>#endif /* __GNUC__ &amp;&amp; __arm__ */</u></td></tr>
+<tr><th id="171">171</th><td><u>#<span data-ppcond="151">else</span></u></td></tr>
+<tr><th id="172">172</th><td><i>/* This is correct for the x86 and x64 CPUs, and we'll expand this over time. */</i></td></tr>
+<tr><th id="173">173</th><td><u>#define <dfn class="macro" id="_M/SDL_MemoryBarrierRelease" data-ref="_M/SDL_MemoryBarrierRelease">SDL_MemoryBarrierRelease</dfn>()  SDL_CompilerBarrier()</u></td></tr>
+<tr><th id="174">174</th><td><u>#define <dfn class="macro" id="_M/SDL_MemoryBarrierAcquire" data-ref="_M/SDL_MemoryBarrierAcquire">SDL_MemoryBarrierAcquire</dfn>()  SDL_CompilerBarrier()</u></td></tr>
+<tr><th id="175">175</th><td><u>#<span data-ppcond="151">endif</span></u></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> * <span class="command">\brief</span> A type representing an atomic integer value.  It is a struct</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *        so people don't accidentally use numeric operations on it.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="181">181</th><td><b>typedef</b> <b>struct</b> { <em>int</em> <dfn class="decl" id="(anonymous)::value" title='(anonymous struct)::value' data-ref="(anonymous)::value">value</dfn>; } <dfn class="typedef" id="SDL_atomic_t" title='SDL_atomic_t' data-type='struct SDL_atomic_t' data-ref="SDL_atomic_t">SDL_atomic_t</dfn>;</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * <span class="command">\brief</span> Set an atomic variable to a new value if it is currently an old value.</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> * <span class="command">\return</span> SDL_TRUE if the atomic variable was set, SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * <span class="command">\note</span> If you don't know what this function is for, you shouldn't use it!</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="190">190</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicCAS" title='SDL_AtomicCAS' data-ref="SDL_AtomicCAS">SDL_AtomicCAS</dfn>(<a class="typedef" href="#SDL_atomic_t" title='SDL_atomic_t' data-type='struct SDL_atomic_t' data-ref="SDL_atomic_t">SDL_atomic_t</a> *<dfn class="local col2 decl" id="1342a" title='a' data-type='SDL_atomic_t *' data-ref="1342a">a</dfn>, <em>int</em> <dfn class="local col3 decl" id="1343oldval" title='oldval' data-type='int' data-ref="1343oldval">oldval</dfn>, <em>int</em> <dfn class="local col4 decl" id="1344newval" title='newval' data-type='int' data-ref="1344newval">newval</dfn>);</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> * <span class="command">\brief</span> Set an atomic variable to a value.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> * <span class="command">\return</span> The previous value of the atomic variable.</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="197">197</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicSet" title='SDL_AtomicSet' data-ref="SDL_AtomicSet">SDL_AtomicSet</dfn>(<a class="typedef" href="#SDL_atomic_t" title='SDL_atomic_t' data-type='struct SDL_atomic_t' data-ref="SDL_atomic_t">SDL_atomic_t</a> *<dfn class="local col5 decl" id="1345a" title='a' data-type='SDL_atomic_t *' data-ref="1345a">a</dfn>, <em>int</em> <dfn class="local col6 decl" id="1346v" title='v' data-type='int' data-ref="1346v">v</dfn>);</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * <span class="command">\brief</span> Get the value of an atomic variable</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="202">202</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicGet" title='SDL_AtomicGet' data-ref="SDL_AtomicGet">SDL_AtomicGet</dfn>(<a class="typedef" href="#SDL_atomic_t" title='SDL_atomic_t' data-type='struct SDL_atomic_t' data-ref="SDL_atomic_t">SDL_atomic_t</a> *<dfn class="local col7 decl" id="1347a" title='a' data-type='SDL_atomic_t *' data-ref="1347a">a</dfn>);</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * <span class="command">\brief</span> Add to an atomic variable.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> * <span class="command">\return</span> The previous value of the atomic variable.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> * <span class="command">\note</span> This same style can be used for any number operation</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="211">211</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicAdd" title='SDL_AtomicAdd' data-ref="SDL_AtomicAdd">SDL_AtomicAdd</dfn>(<a class="typedef" href="#SDL_atomic_t" title='SDL_atomic_t' data-type='struct SDL_atomic_t' data-ref="SDL_atomic_t">SDL_atomic_t</a> *<dfn class="local col8 decl" id="1348a" title='a' data-type='SDL_atomic_t *' data-ref="1348a">a</dfn>, <em>int</em> <dfn class="local col9 decl" id="1349v" title='v' data-type='int' data-ref="1349v">v</dfn>);</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> * <span class="command">\brief</span> Increment an atomic variable used as a reference count.</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="216">216</th><td><u>#<span data-ppcond="216">ifndef</span> <span class="macro" data-ref="_M/SDL_AtomicIncRef">SDL_AtomicIncRef</span></u></td></tr>
+<tr><th id="217">217</th><td><u>#define <dfn class="macro" id="_M/SDL_AtomicIncRef" data-ref="_M/SDL_AtomicIncRef">SDL_AtomicIncRef</dfn>(a)    SDL_AtomicAdd(a, 1)</u></td></tr>
+<tr><th id="218">218</th><td><u>#<span data-ppcond="216">endif</span></u></td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> * <span class="command">\brief</span> Decrement an atomic variable used as a reference count.</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> * <span class="command">\return</span> SDL_TRUE if the variable reached zero after decrementing,</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc"> *         SDL_FALSE otherwise</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="226">226</th><td><u>#<span data-ppcond="226">ifndef</span> <span class="macro" data-ref="_M/SDL_AtomicDecRef">SDL_AtomicDecRef</span></u></td></tr>
+<tr><th id="227">227</th><td><u>#define <dfn class="macro" id="_M/SDL_AtomicDecRef" data-ref="_M/SDL_AtomicDecRef">SDL_AtomicDecRef</dfn>(a)    (SDL_AtomicAdd(a, -1) == 1)</u></td></tr>
+<tr><th id="228">228</th><td><u>#<span data-ppcond="226">endif</span></u></td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> * <span class="command">\brief</span> Set a pointer to a new value if it is currently an old value.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * <span class="command">\return</span> SDL_TRUE if the pointer was set, SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * <span class="command">\note</span> If you don't know what this function is for, you shouldn't use it!</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="237">237</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicCASPtr" title='SDL_AtomicCASPtr' data-ref="SDL_AtomicCASPtr">SDL_AtomicCASPtr</dfn>(<em>void</em> **<dfn class="local col0 decl" id="1350a" title='a' data-type='void **' data-ref="1350a">a</dfn>, <em>void</em> *<dfn class="local col1 decl" id="1351oldval" title='oldval' data-type='void *' data-ref="1351oldval">oldval</dfn>, <em>void</em> *<dfn class="local col2 decl" id="1352newval" title='newval' data-type='void *' data-ref="1352newval">newval</dfn>);</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * <span class="command">\brief</span> Set a pointer to a value atomically.</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> * <span class="command">\return</span> The previous value of the pointer.</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="244">244</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicSetPtr" title='SDL_AtomicSetPtr' data-ref="SDL_AtomicSetPtr">SDL_AtomicSetPtr</dfn>(<em>void</em> **<dfn class="local col3 decl" id="1353a" title='a' data-type='void **' data-ref="1353a">a</dfn>, <em>void</em>* <dfn class="local col4 decl" id="1354v" title='v' data-type='void *' data-ref="1354v">v</dfn>);</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> * <span class="command">\brief</span> Get the value of a pointer atomically.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="249">249</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AtomicGetPtr" title='SDL_AtomicGetPtr' data-ref="SDL_AtomicGetPtr">SDL_AtomicGetPtr</dfn>(<em>void</em> **<dfn class="local col5 decl" id="1355a" title='a' data-type='void **' data-ref="1355a">a</dfn>);</td></tr>
+<tr><th id="250">250</th><td></td></tr>
+<tr><th id="251">251</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="252">252</th><td><u>#<span data-ppcond="252">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="253">253</th><td>}</td></tr>
+<tr><th id="254">254</th><td><u>#<span data-ppcond="252">endif</span></u></td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><u>#<span data-ppcond="59">endif</span> /* _SDL_atomic_h_ */</u></td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="261">261</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

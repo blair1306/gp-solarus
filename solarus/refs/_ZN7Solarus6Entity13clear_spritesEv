@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='206' type='void Solarus::Entity::clear_sprites()'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1361' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='101' u='c' c='_ZN7Solarus6EntityD1Ev'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1353' ll='1358' type='void Solarus::Entity::clear_sprites()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1348'>/**
+ * \brief Removes all sprites of this entity.
+ *
+ * They will be destroyed at next iteration.
+ */</doc>

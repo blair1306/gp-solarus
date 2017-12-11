@@ -1,0 +1,42 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='388' type='void Solarus::Entity::Entity(const std::string &amp; name, int direction, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='387'>// Creation.</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='43' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='57' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='43' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='50' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='227' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='72' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='60' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='40' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='40' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='64' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/Destination.cpp' l='43' u='c' c='_ZN7Solarus11DestinationC1ERKSsiRKNS_5PointEiS2_b'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='58' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='75' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='47' u='c' c='_ZN7Solarus11DynamicTileC1ERKSsiRKNS_5PointERKNS_4SizeERKNS_7TilesetES2_b'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='88' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='55' ll='90' type='void Solarus::Entity::Entity(const std::string &amp; name, int direction, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='47'>/**
+ * \brief Creates an entity, specifying its position, its name and its direction.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param direction Direction of the entity.
+ * \param layer Layer of the entity.
+ * \param xy Coordinates where to create the entity.
+ * \param size Size of the entity.
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='38' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='31' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='101' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='43' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='39' u='c' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='61' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='52' u='c' c='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='40' u='c' c='_ZN7Solarus6SensorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='38' u='c' c='_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='56' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='43' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='41' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='59' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='56' u='c' c='_ZN7Solarus15TeletransporterC1ERKSsiRKNS_5PointERKNS_4SizeES2_S2_NS_10Transition5StyleES2_S2_'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='34' u='c' c='_ZN7Solarus4TileC1ERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='47' u='c' c='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>

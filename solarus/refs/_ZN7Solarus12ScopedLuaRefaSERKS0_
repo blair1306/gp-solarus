@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='47' type='Solarus::ScopedLuaRef &amp; Solarus::ScopedLuaRef::operator=(const Solarus::ScopedLuaRef &amp; other)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='98' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Drawable.cpp' l='124' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='772' u='c' c='_ZN7Solarus12GameCommands9customizeENS_11GameCommandERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/Sprite.cpp' l='912' u='c' c='_ZN7Solarus6Sprite21set_finished_callbackERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1393' u='c' c='_ZN7Solarus4Hero32set_target_solid_ground_callbackERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='56' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1508' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='690' u='c' c='_ZN7Solarus5Music12set_callbackERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='53' u='c' c='_ZN7Solarus12ScopedLuaRefC1ERKS0_'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='83' ll='99' type='Solarus::ScopedLuaRef &amp; Solarus::ScopedLuaRef::operator=(const Solarus::ScopedLuaRef &amp; other)'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='78'>/**
+ * \brief Copy assignment operator.
+ * \param other The object to copy.
+ * \return The current ref after modification.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='140' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='555' u='c' c='_ZN7Solarus8Movement21set_finished_callbackERKNS_12ScopedLuaRefE'/>

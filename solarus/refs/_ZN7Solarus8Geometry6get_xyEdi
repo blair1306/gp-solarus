@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='76' type='Solarus::Point Solarus::Geometry::get_xy(double angle, int distance)'/>
+<def f='codebrowser/src/lowlevel/Geometry.cpp' l='85' ll='91' type='Solarus::Point Solarus::Geometry::get_xy(double angle, int distance)'/>
+<use f='codebrowser/src/lowlevel/Geometry.cpp' l='101' u='c' c='_ZN7Solarus8Geometry6get_xyERKNS_5PointEdi'/>
+<doc f='codebrowser/src/lowlevel/Geometry.cpp' l='79'>/**
+ * \brief Returns the cartesian coordinates of a vector that starts from the origin, given its angle and distance.
+ * \param angle Angle of the vector in radians.
+ * \param distance Length of the vector in pixels.
+ * \return The coordinates of the second point.
+ */</doc>

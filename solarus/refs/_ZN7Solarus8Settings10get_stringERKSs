@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='45' type='std::pair&lt;std::string, bool&gt; Solarus::Settings::get_string(const std::string &amp; key)'/>
+<def f='codebrowser/src/Settings.cpp' l='53' ll='61' type='std::pair&lt;std::string, bool&gt; Solarus::Settings::get_string(const std::string &amp; key)'/>
+<use f='codebrowser/src/Settings.cpp' l='315' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='346' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<doc f='codebrowser/src/Settings.cpp' l='48'>/**
+ * \brief Returns a string value if any.
+ * \param key Key of the entry to get.
+ * \return The value if any and a boolean indicating if it exists.
+ */</doc>

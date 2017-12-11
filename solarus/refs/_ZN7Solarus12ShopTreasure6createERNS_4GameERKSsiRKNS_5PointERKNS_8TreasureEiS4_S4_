@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='56' type='static std::shared_ptr&lt;ShopTreasure&gt; Solarus::ShopTreasure::create(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure, int price, const std::string &amp; font_id, const std::string &amp; dialog_id)'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='87' ll='105' type='static std::shared_ptr&lt;ShopTreasure&gt; Solarus::ShopTreasure::create(Solarus::Game &amp; , const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure, int price, const std::string &amp; font_id, const std::string &amp; dialog_id)'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='74'>/**
+ * \brief Creates a new shop treasure with the specified treasure and price.
+ * \param game The current game.
+ * \param name The name identifying this entity.
+ * \param layer Layer of the entity to create.
+ * \param xy Coordinates of the entity to create.
+ * \param treasure The treasure that the hero can buy.
+ * \param price The treasure&apos;s price.
+ * \param font_id Id of the font to use to display the price.
+ * \param dialog_id Id of the dialog describing the treasure when the hero watches it.
+ * \return The shop treasure created, or nullptr if it is already bought or if it
+ * is not obtainable.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='987' u='c' c='_ZN7Solarus10LuaContext22l_create_shop_treasureEP9lua_State'/>

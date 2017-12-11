@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='101' type='bool Solarus::Entity::State::can_avoid_teletransporter() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='710' ll='712' type='bool Solarus::Entity::State::can_avoid_teletransporter() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='703'>/**
+ * \brief Returns whether the entity ignores the effect of teletransporters in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of teletransporters in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2516' u='c' c='_ZNK7Solarus4Hero25can_avoid_teletransporterERKNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='246' c='_ZNK7Solarus4Hero22BackToSolidGroundState25can_avoid_teletransporterEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='147' c='_ZNK7Solarus4Hero18ForcedWalkingState25can_avoid_teletransporterEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='118' c='_ZNK7Solarus4Hero13HookshotState25can_avoid_teletransporterEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='251' c='_ZNK7Solarus4Hero12JumpingState25can_avoid_teletransporterEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='327' c='_ZNK7Solarus4Hero12RunningState25can_avoid_teletransporterEv'/>

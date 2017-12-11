@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='66' type='void Solarus::Equipment::remove_money(int money_to_remove)'/>
+<def f='codebrowser/src/Equipment.cpp' l='203' ll='208' type='void Solarus::Equipment::remove_money(int money_to_remove)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='195'>/**
+ * \brief Removes some money from the player.
+ *
+ * If the money reaches zero, no more money is removed.
+ *
+ * \param money_to_remove Amount of money to remove.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3855' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='949' u='c' c='_ZN7Solarus10LuaContext21game_api_remove_moneyEP9lua_State'/>

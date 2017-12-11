@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_thread.h' l='153' type='const char * SDL_GetThreadName(SDL_Thread * thread)'/>
+<doc f='include/SDL2/SDL_thread.h' l='146'>/**
+ * Get the thread name, as it was specified in SDL_CreateThread().
+ *  This function returns a pointer to a UTF-8 string that names the
+ *  specified thread, or NULL if it doesn&apos;t have a name. This is internal
+ *  memory, not to be free()&apos;d by the caller, and remains valid until the
+ *  specified thread is cleaned up by SDL_WaitThread().
+ */</doc>

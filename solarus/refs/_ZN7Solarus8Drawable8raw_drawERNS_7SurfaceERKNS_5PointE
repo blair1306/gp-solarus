@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='87' type='void Solarus::Drawable::raw_draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='78'>/**
+     * \brief Draws this object without applying dynamic effects.
+     *
+     * Redefine this function to draw your object onto the destination
+     * surface.
+     *
+     * \param dst_surface The destination surface.
+     * \param dst_position Coordinates on the destination surface.
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='240' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<ovr f='codebrowser/src/Sprite.cpp' l='765' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<ovr f='codebrowser/src/lowlevel/Surface.cpp' l='613' c='_ZN7Solarus7Surface8raw_drawERS0_RKNS_5PointE'/>
+<ovr f='codebrowser/src/lowlevel/TextSurface.cpp' l='540' c='_ZN7Solarus11TextSurface8raw_drawERNS_7SurfaceERKNS_5PointE'/>

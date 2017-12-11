@@ -1,0 +1,27 @@
+<dec f='include/physfs.h' l='464' type='void PHYSFS_getLinkedVersion(PHYSFS_Version * ver)'/>
+<doc f='include/physfs.h' l='438'>/**
+ * \fn void PHYSFS_getLinkedVersion(PHYSFS_Version *ver)
+ * \brief Get the version of PhysicsFS that is linked against your program.
+ *
+ * If you are using a shared library (DLL) version of PhysFS, then it is
+ *  possible that it will be different than the version you compiled against.
+ *
+ * This is a real function; the macro PHYSFS_VERSION tells you what version
+ *  of PhysFS you compiled against:
+ *
+ * \code
+ * PHYSFS_Version compiled;
+ * PHYSFS_Version linked;
+ *
+ * PHYSFS_VERSION(&amp;compiled);
+ * PHYSFS_getLinkedVersion(&amp;linked);
+ * printf(&quot;We compiled against PhysFS version %d.%d.%d ...\n&quot;,
+ *           compiled.major, compiled.minor, compiled.patch);
+ * printf(&quot;But we linked against PhysFS version %d.%d.%d.\n&quot;,
+ *           linked.major, linked.minor, linked.patch);
+ * \endcode
+ *
+ * This function may be called safely at any time, even before PHYSFS_init().
+ *
+ * \sa PHYSFS_VERSION
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1212' type='void Solarus::LuaContext::on_suspended(bool suspended)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5696' u='c' c='_ZN7Solarus10LuaContext19entity_on_suspendedERNS_6EntityEb'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='831' u='c' c='_ZN7Solarus10LuaContext17item_on_suspendedERNS_13EquipmentItemEb'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1453' ll='1459' type='void Solarus::LuaContext::on_suspended(bool suspended)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1449'>/**
+ * \brief Calls the on_suspended() method of the object on top of the stack.
+ * \param suspended true to suspend the object, false to unsuspend it.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2338' u='c' c='_ZN7Solarus10LuaContext16map_on_suspendedERNS_3MapEb'/>

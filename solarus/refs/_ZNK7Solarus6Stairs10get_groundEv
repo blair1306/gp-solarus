@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='86' type='Solarus::Ground Solarus::Stairs::get_ground() const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='94' ll='96' type='Solarus::Ground Solarus::Stairs::get_ground() const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='86'>/**
+ * \brief When can_change_ground() is \c true, returns the ground defined
+ * by this entity.
+ *
+ * Entities overlapping it should take it into account.
+ *
+ * \return The ground defined by this entity.
+ */</doc>

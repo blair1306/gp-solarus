@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qarraydata.h source code [include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QArrayData,QArrayDataPointerRef,QStaticArrayData,QTypedArrayData "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qarraydata.h.html'>qarraydata.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="5">5</th><td><i>**</i></td></tr>
+<tr><th id="6">6</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="7">7</th><td><i>**</i></td></tr>
+<tr><th id="8">8</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="9">9</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="10">10</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="11">11</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="12">12</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="13">13</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="14">14</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="15">15</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i>**</i></td></tr>
+<tr><th id="17">17</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="18">18</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="19">19</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="21">21</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="22">22</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="23">23</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="24">24</th><td><i>**</i></td></tr>
+<tr><th id="25">25</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="26">26</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="27">27</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="28">28</th><td><i>**</i></td></tr>
+<tr><th id="29">29</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="30">30</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="31">31</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="32">32</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="33">33</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="34">34</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="35">35</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="36">36</th><td><i>**</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="39">39</th><td><i>**</i></td></tr>
+<tr><th id="40">40</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">ifndef</span> <span class="macro" data-ref="_M/QARRAYDATA_H">QARRAYDATA_H</span></u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/QARRAYDATA_H" data-ref="_M/QARRAYDATA_H">QARRAYDATA_H</dfn></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="qrefcount.h.html">&lt;QtCore/qrefcount.h&gt;</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="../../../string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><b>struct</b> <a class="macro" href="qglobal.h.html#304" title="__attribute__((visibility(&quot;default&quot;)))" data-ref="_M/Q_CORE_EXPORT">Q_CORE_EXPORT</a> <dfn class="type def" id="QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</dfn></td></tr>
+<tr><th id="51">51</th><td>{</td></tr>
+<tr><th id="52">52</th><td>    <span class="namespace">QtPrivate::</span><a class="type" href="qrefcount.h.html#QtPrivate::RefCount" title='QtPrivate::RefCount' data-ref="QtPrivate::RefCount">RefCount</a> <dfn class="decl" id="QArrayData::ref" title='QArrayData::ref' data-ref="QArrayData::ref">ref</dfn>;</td></tr>
+<tr><th id="53">53</th><td>    <em>int</em> <dfn class="decl" id="QArrayData::size" title='QArrayData::size' data-ref="QArrayData::size">size</dfn>;</td></tr>
+<tr><th id="54">54</th><td>    <a class="typedef" href="../../sys/types.h.html#uint" title='uint' data-type='unsigned int' data-ref="uint">uint</a> <dfn class="decl" id="QArrayData::alloc" title='QArrayData::alloc' data-ref="QArrayData::alloc">alloc</dfn> : <var>31</var>;</td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="../../sys/types.h.html#uint" title='uint' data-type='unsigned int' data-ref="uint">uint</a> <dfn class="decl" id="QArrayData::capacityReserved" title='QArrayData::capacityReserved' data-ref="QArrayData::capacityReserved">capacityReserved</dfn> : <var>1</var>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>    <a class="typedef" href="qglobal.h.html#qptrdiff" title='qptrdiff' data-type='QIntegerForSizeof&lt;void *&gt;::Signed' data-ref="qptrdiff">qptrdiff</a> <dfn class="decl" id="QArrayData::offset" title='QArrayData::offset' data-ref="QArrayData::offset">offset</dfn>; <i>// in bytes from beginning of header</i></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <em>void</em> *<dfn class="decl def" id="_ZN10QArrayData4dataEv" title='QArrayData::data' data-ref="_ZN10QArrayData4dataEv">data</dfn>()</td></tr>
+<tr><th id="60">60</th><td>    {</td></tr>
+<tr><th id="61">61</th><td>        <a class="macro" href="qglobal.h.html#662" title="qt_noop()" data-ref="_M/Q_ASSERT">Q_ASSERT</a>(size == <var>0</var></td></tr>
+<tr><th id="62">62</th><td>                || offset &lt; <var>0</var> || size_t(offset) &gt;= <b>sizeof</b>(QArrayData));</td></tr>
+<tr><th id="63">63</th><td>        <b>return</b> <b>reinterpret_cast</b>&lt;<em>char</em> *&gt;(<b>this</b>) + <a class="member" href="#QArrayData::offset" title='QArrayData::offset' data-ref="QArrayData::offset">offset</a>;</td></tr>
+<tr><th id="64">64</th><td>    }</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>    <em>const</em> <em>void</em> *<dfn class="decl def" id="_ZNK10QArrayData4dataEv" title='QArrayData::data' data-ref="_ZNK10QArrayData4dataEv">data</dfn>() <em>const</em></td></tr>
+<tr><th id="67">67</th><td>    {</td></tr>
+<tr><th id="68">68</th><td>        <a class="macro" href="qglobal.h.html#662" title="qt_noop()" data-ref="_M/Q_ASSERT">Q_ASSERT</a>(size == <var>0</var></td></tr>
+<tr><th id="69">69</th><td>                || offset &lt; <var>0</var> || size_t(offset) &gt;= <b>sizeof</b>(QArrayData));</td></tr>
+<tr><th id="70">70</th><td>        <b>return</b> <b>reinterpret_cast</b>&lt;<em>const</em> <em>char</em> *&gt;(<b>this</b>) + <a class="member" href="#QArrayData::offset" title='QArrayData::offset' data-ref="QArrayData::offset">offset</a>;</td></tr>
+<tr><th id="71">71</th><td>    }</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>    <i>// This refers to array data mutability, not "header data" represented by</i></td></tr>
+<tr><th id="74">74</th><td><i>    // data members in QArrayData. Shared data (array and header) must still</i></td></tr>
+<tr><th id="75">75</th><td><i>    // follow COW principles.</i></td></tr>
+<tr><th id="76">76</th><td>    <em>bool</em> <dfn class="decl def" id="_ZNK10QArrayData9isMutableEv" title='QArrayData::isMutable' data-ref="_ZNK10QArrayData9isMutableEv">isMutable</dfn>() <em>const</em></td></tr>
+<tr><th id="77">77</th><td>    {</td></tr>
+<tr><th id="78">78</th><td>        <b>return</b> <a class="member" href="#QArrayData::alloc" title='QArrayData::alloc' data-ref="QArrayData::alloc">alloc</a> != <var>0</var>;</td></tr>
+<tr><th id="79">79</th><td>    }</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <b>enum</b> <dfn class="type def" id="QArrayData::AllocationOption" title='QArrayData::AllocationOption' data-ref="QArrayData::AllocationOption">AllocationOption</dfn> {</td></tr>
+<tr><th id="82">82</th><td>        <dfn class="enum" id="QArrayData::AllocationOption::CapacityReserved" title='QArrayData::AllocationOption::CapacityReserved' data-ref="QArrayData::AllocationOption::CapacityReserved">CapacityReserved</dfn>    = <var>0x1</var>,</td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="83">if</span> <a class="macro" href="qglobal.h.html#65" title="(!defined(QT_NO_UNSHARABLE_CONTAINERS))" data-ref="_M/QT_SUPPORTS">QT_SUPPORTS</a>(UNSHARABLE_CONTAINERS)</u></td></tr>
+<tr><th id="84">84</th><td>        <dfn class="enum" id="QArrayData::AllocationOption::Unsharable" title='QArrayData::AllocationOption::Unsharable' data-ref="QArrayData::AllocationOption::Unsharable">Unsharable</dfn>          = <var>0x2</var>,</td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="83">endif</span></u></td></tr>
+<tr><th id="86">86</th><td>        <dfn class="enum" id="QArrayData::AllocationOption::RawData" title='QArrayData::AllocationOption::RawData' data-ref="QArrayData::AllocationOption::RawData">RawData</dfn>             = <var>0x4</var>,</td></tr>
+<tr><th id="87">87</th><td>        <dfn class="enum" id="QArrayData::AllocationOption::Grow" title='QArrayData::AllocationOption::Grow' data-ref="QArrayData::AllocationOption::Grow">Grow</dfn>                = <var>0x8</var>,</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>        <dfn class="enum" id="QArrayData::AllocationOption::Default" title='QArrayData::AllocationOption::Default' data-ref="QArrayData::AllocationOption::Default">Default</dfn> = <var>0</var></td></tr>
+<tr><th id="90">90</th><td>    };</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <a class="macro" href="qflags.h.html#145" title="typedef QFlags&lt;AllocationOption&gt; AllocationOptions;" data-ref="_M/Q_DECLARE_FLAGS">Q_DECLARE_FLAGS</a>(<dfn class="typedef" id="QArrayData::AllocationOptions" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</dfn>, <a class="type" href="#QArrayData::AllocationOption" title='QArrayData::AllocationOption' data-ref="QArrayData::AllocationOption">AllocationOption</a>)</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZNK10QArrayData14detachCapacityEm" title='QArrayData::detachCapacity' data-ref="_ZNK10QArrayData14detachCapacityEm">detachCapacity</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="434newSize" title='newSize' data-type='size_t' data-ref="434newSize">newSize</dfn>) <em>const</em></td></tr>
+<tr><th id="95">95</th><td>    {</td></tr>
+<tr><th id="96">96</th><td>        <b>if</b> (<a class="member" href="#QArrayData::capacityReserved" title='QArrayData::capacityReserved' data-ref="QArrayData::capacityReserved">capacityReserved</a> &amp;&amp; <a class="local col4 ref" href="#434newSize" title='newSize' data-ref="434newSize">newSize</a> &lt; <a class="member" href="#QArrayData::alloc" title='QArrayData::alloc' data-ref="QArrayData::alloc">alloc</a>)</td></tr>
+<tr><th id="97">97</th><td>            <b>return</b> <a class="member" href="#QArrayData::alloc" title='QArrayData::alloc' data-ref="QArrayData::alloc">alloc</a>;</td></tr>
+<tr><th id="98">98</th><td>        <b>return</b> <a class="local col4 ref" href="#434newSize" title='newSize' data-ref="434newSize">newSize</a>;</td></tr>
+<tr><th id="99">99</th><td>    }</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>    <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <dfn class="decl def" id="_ZNK10QArrayData11detachFlagsEv" title='QArrayData::detachFlags' data-ref="_ZNK10QArrayData11detachFlagsEv">detachFlags</dfn>() <em>const</em></td></tr>
+<tr><th id="102">102</th><td>    {</td></tr>
+<tr><th id="103">103</th><td>        <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1EMNS_7PrivateEi" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1EMNS_7PrivateEi"></a><dfn class="local col5 decl" id="435result" title='result' data-type='AllocationOptions' data-ref="435result">result</dfn>;</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="104">if</span> <a class="macro" href="qglobal.h.html#65" title="(!defined(QT_NO_UNSHARABLE_CONTAINERS))" data-ref="_M/QT_SUPPORTS">QT_SUPPORTS</a>(UNSHARABLE_CONTAINERS)</u></td></tr>
+<tr><th id="105">105</th><td>        <b>if</b> (!<a class="member" href="#QArrayData::ref" title='QArrayData::ref' data-ref="QArrayData::ref">ref</a>.<a class="ref" href="qrefcount.h.html#_ZNK9QtPrivate8RefCount10isSharableEv" title='QtPrivate::RefCount::isSharable' data-ref="_ZNK9QtPrivate8RefCount10isSharableEv">isSharable</a>())</td></tr>
+<tr><th id="106">106</th><td>            <a class="local col5 ref" href="#435result" title='result' data-ref="435result">result</a> <a class="ref" href="qflags.h.html#_ZN6QFlagsoRET_" title='QFlags::operator|=' data-ref="_ZN6QFlagsoRET_">|=</a> <a class="enum" href="#QArrayData::AllocationOption::Unsharable" title='QArrayData::AllocationOption::Unsharable' data-ref="QArrayData::AllocationOption::Unsharable">Unsharable</a>;</td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="104">endif</span></u></td></tr>
+<tr><th id="108">108</th><td>        <b>if</b> (<a class="member" href="#QArrayData::capacityReserved" title='QArrayData::capacityReserved' data-ref="QArrayData::capacityReserved">capacityReserved</a>)</td></tr>
+<tr><th id="109">109</th><td>            <a class="local col5 ref" href="#435result" title='result' data-ref="435result">result</a> <a class="ref" href="qflags.h.html#_ZN6QFlagsoRET_" title='QFlags::operator|=' data-ref="_ZN6QFlagsoRET_">|=</a> <a class="enum" href="#QArrayData::AllocationOption::CapacityReserved" title='QArrayData::AllocationOption::CapacityReserved' data-ref="QArrayData::AllocationOption::CapacityReserved">CapacityReserved</a>;</td></tr>
+<tr><th id="110">110</th><td>        <b>return</b> <a class="local col5 ref" href="#435result" title='result' data-ref="435result">result</a>;</td></tr>
+<tr><th id="111">111</th><td>    }</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>    <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <dfn class="decl def" id="_ZNK10QArrayData10cloneFlagsEv" title='QArrayData::cloneFlags' data-ref="_ZNK10QArrayData10cloneFlagsEv">cloneFlags</dfn>() <em>const</em></td></tr>
+<tr><th id="114">114</th><td>    {</td></tr>
+<tr><th id="115">115</th><td>        <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1EMNS_7PrivateEi" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1EMNS_7PrivateEi"></a><dfn class="local col6 decl" id="436result" title='result' data-type='AllocationOptions' data-ref="436result">result</dfn>;</td></tr>
+<tr><th id="116">116</th><td>        <b>if</b> (<a class="member" href="#QArrayData::capacityReserved" title='QArrayData::capacityReserved' data-ref="QArrayData::capacityReserved">capacityReserved</a>)</td></tr>
+<tr><th id="117">117</th><td>            <a class="local col6 ref" href="#436result" title='result' data-ref="436result">result</a> <a class="ref" href="qflags.h.html#_ZN6QFlagsoRET_" title='QFlags::operator|=' data-ref="_ZN6QFlagsoRET_">|=</a> <a class="enum" href="#QArrayData::AllocationOption::CapacityReserved" title='QArrayData::AllocationOption::CapacityReserved' data-ref="QArrayData::AllocationOption::CapacityReserved">CapacityReserved</a>;</td></tr>
+<tr><th id="118">118</th><td>        <b>return</b> <a class="local col6 ref" href="#436result" title='result' data-ref="436result">result</a>;</td></tr>
+<tr><th id="119">119</th><td>    }</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <em>static</em> <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> *<dfn class="decl" id="_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE" title='QArrayData::allocate' data-ref="_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE">allocate</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="437objectSize" title='objectSize' data-type='size_t' data-ref="437objectSize">objectSize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="438alignment" title='alignment' data-type='size_t' data-ref="438alignment">alignment</dfn>,</td></tr>
+<tr><th id="122">122</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="439capacity" title='capacity' data-type='size_t' data-ref="439capacity">capacity</dfn>, <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <dfn class="local col0 decl" id="440options" title='options' data-type='AllocationOptions' data-ref="440options">options</dfn> = <a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><a class="enum" href="#QArrayData::AllocationOption::Default" title='QArrayData::AllocationOption::Default' data-ref="QArrayData::AllocationOption::Default">Default</a>)</td></tr>
+<tr><th id="123">123</th><td>        <a class="macro" href="qcompilerdetection.h.html#202" title="__attribute__ ((__warn_unused_result__))" data-ref="_M/Q_REQUIRED_RESULT">Q_REQUIRED_RESULT</a>;</td></tr>
+<tr><th id="124">124</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN10QArrayData10deallocateEPS_mm" title='QArrayData::deallocate' data-ref="_ZN10QArrayData10deallocateEPS_mm">deallocate</dfn>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> *<dfn class="local col1 decl" id="441data" title='data' data-type='QArrayData *' data-ref="441data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="442objectSize" title='objectSize' data-type='size_t' data-ref="442objectSize">objectSize</dfn>,</td></tr>
+<tr><th id="125">125</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="443alignment" title='alignment' data-type='size_t' data-ref="443alignment">alignment</dfn>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>    <em>static</em> <em>const</em> <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> <dfn class="decl" id="QArrayData::shared_null" title='QArrayData::shared_null' data-ref="QArrayData::shared_null">shared_null</dfn>[<var>2</var>];</td></tr>
+<tr><th id="128">128</th><td>    <em>static</em> <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> *<dfn class="decl def" id="_ZN10QArrayData10sharedNullEv" title='QArrayData::sharedNull' data-ref="_ZN10QArrayData10sharedNullEv">sharedNull</dfn>() { <b>return</b> <b>const_cast</b>&lt;<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>*&gt;(<a class="member" href="#QArrayData::shared_null" title='QArrayData::shared_null' data-ref="QArrayData::shared_null">shared_null</a>); }</td></tr>
+<tr><th id="129">129</th><td>};</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><a class="macro" href="qflags.h.html#152" title="constexpr inline QFlags&lt;QArrayData::AllocationOptions::enum_type&gt; operator|(QArrayData::AllocationOptions::enum_type f1, QArrayData::AllocationOptions::enum_type f2) { return QFlags&lt;QArrayData::AllocationOptions::enum_type&gt;(f1) | f2; } constexpr inline QFlags&lt;QArrayData::AllocationOptions::enum_type&gt; operator|(QArrayData::AllocationOptions::enum_type f1, QFlags&lt;QArrayData::AllocationOptions::enum_type&gt; f2) { return f2 | f1; } constexpr inline QIncompatibleFlag operator|(QArrayData::AllocationOptions::enum_type f1, int f2) { return QIncompatibleFlag(int(f1) | f2); }" data-ref="_M/Q_DECLARE_OPERATORS_FOR_FLAGS">Q_DECLARE_OPERATORS_FOR_FLAGS</a>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::<a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a>)</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><b>template</b> &lt;<b>class</b> T&gt;</td></tr>
+<tr><th id="134">134</th><td><b>struct</b> <dfn class="type def" id="QTypedArrayData" title='QTypedArrayData' data-ref="QTypedArrayData">QTypedArrayData</dfn></td></tr>
+<tr><th id="135">135</th><td>    : <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a></td></tr>
+<tr><th id="136">136</th><td>{</td></tr>
+<tr><th id="137">137</th><td><u>#<span data-ppcond="137">ifdef</span> <span class="macro" data-ref="_M/QT_STRICT_ITERATORS">QT_STRICT_ITERATORS</span></u></td></tr>
+<tr><th id="138">138</th><td>    <b>class</b> iterator {</td></tr>
+<tr><th id="139">139</th><td>    <b>public</b>:</td></tr>
+<tr><th id="140">140</th><td>        T *i;</td></tr>
+<tr><th id="141">141</th><td>        <b>typedef</b> std::random_access_iterator_tag  iterator_category;</td></tr>
+<tr><th id="142">142</th><td>        <b>typedef</b> <em>int</em> difference_type;</td></tr>
+<tr><th id="143">143</th><td>        <b>typedef</b> T value_type;</td></tr>
+<tr><th id="144">144</th><td>        <b>typedef</b> T *pointer;</td></tr>
+<tr><th id="145">145</th><td>        <b>typedef</b> T &amp;reference;</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>        <b>inline</b> iterator() : i(<var>0</var>) {}</td></tr>
+<tr><th id="148">148</th><td>        <b>inline</b> iterator(T *n) : i(n) {}</td></tr>
+<tr><th id="149">149</th><td>        <b>inline</b> iterator(<em>const</em> iterator &amp;o): i(o.i){} <i>// #### Qt 6: remove, the implicit version is fine</i></td></tr>
+<tr><th id="150">150</th><td>        <b>inline</b> T &amp;<b>operator</b>*() <em>const</em> { <b>return</b> *i; }</td></tr>
+<tr><th id="151">151</th><td>        <b>inline</b> T *<b>operator</b>-&gt;() <em>const</em> { <b>return</b> i; }</td></tr>
+<tr><th id="152">152</th><td>        <b>inline</b> T &amp;<b>operator</b>[](<em>int</em> j) <em>const</em> { <b>return</b> *(i + j); }</td></tr>
+<tr><th id="153">153</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>==(<em>const</em> iterator &amp;o) <em>const</em> { <b>return</b> i == o.i; }</td></tr>
+<tr><th id="154">154</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>!=(<em>const</em> iterator &amp;o) <em>const</em> { <b>return</b> i != o.i; }</td></tr>
+<tr><th id="155">155</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&lt;(<em>const</em> iterator&amp; other) <em>const</em> { <b>return</b> i &lt; other.i; }</td></tr>
+<tr><th id="156">156</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&lt;=(<em>const</em> iterator&amp; other) <em>const</em> { <b>return</b> i &lt;= other.i; }</td></tr>
+<tr><th id="157">157</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&gt;(<em>const</em> iterator&amp; other) <em>const</em> { <b>return</b> i &gt; other.i; }</td></tr>
+<tr><th id="158">158</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&gt;=(<em>const</em> iterator&amp; other) <em>const</em> { <b>return</b> i &gt;= other.i; }</td></tr>
+<tr><th id="159">159</th><td>        <b>inline</b> iterator &amp;<b>operator</b>++() { ++i; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="160">160</th><td>        <b>inline</b> iterator <b>operator</b>++(<em>int</em>) { T *n = i; ++i; <b>return</b> n; }</td></tr>
+<tr><th id="161">161</th><td>        <b>inline</b> iterator &amp;<b>operator</b>--() { i--; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="162">162</th><td>        <b>inline</b> iterator <b>operator</b>--(<em>int</em>) { T *n = i; i--; <b>return</b> n; }</td></tr>
+<tr><th id="163">163</th><td>        <b>inline</b> iterator &amp;<b>operator</b>+=(<em>int</em> j) { i+=j; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="164">164</th><td>        <b>inline</b> iterator &amp;<b>operator</b>-=(<em>int</em> j) { i-=j; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="165">165</th><td>        <b>inline</b> iterator <b>operator</b>+(<em>int</em> j) <em>const</em> { <b>return</b> iterator(i+j); }</td></tr>
+<tr><th id="166">166</th><td>        <b>inline</b> iterator <b>operator</b>-(<em>int</em> j) <em>const</em> { <b>return</b> iterator(i-j); }</td></tr>
+<tr><th id="167">167</th><td>        <b>inline</b> <em>int</em> <b>operator</b>-(iterator j) <em>const</em> { <b>return</b> i - j.i; }</td></tr>
+<tr><th id="168">168</th><td>        <b>inline</b> <b>operator</b> T*() <em>const</em> { <b>return</b> i; }</td></tr>
+<tr><th id="169">169</th><td>    };</td></tr>
+<tr><th id="170">170</th><td>    <b>friend</b> <b>class</b> iterator;</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td>    <b>class</b> const_iterator {</td></tr>
+<tr><th id="173">173</th><td>    <b>public</b>:</td></tr>
+<tr><th id="174">174</th><td>        <em>const</em> T *i;</td></tr>
+<tr><th id="175">175</th><td>        <b>typedef</b> std::random_access_iterator_tag  iterator_category;</td></tr>
+<tr><th id="176">176</th><td>        <b>typedef</b> <em>int</em> difference_type;</td></tr>
+<tr><th id="177">177</th><td>        <b>typedef</b> T value_type;</td></tr>
+<tr><th id="178">178</th><td>        <b>typedef</b> <em>const</em> T *pointer;</td></tr>
+<tr><th id="179">179</th><td>        <b>typedef</b> <em>const</em> T &amp;reference;</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td>        <b>inline</b> const_iterator() : i(<var>0</var>) {}</td></tr>
+<tr><th id="182">182</th><td>        <b>inline</b> const_iterator(<em>const</em> T *n) : i(n) {}</td></tr>
+<tr><th id="183">183</th><td>        <b>inline</b> const_iterator(<em>const</em> const_iterator &amp;o): i(o.i) {} <i>// #### Qt 6: remove, the default version is fine</i></td></tr>
+<tr><th id="184">184</th><td>        <b>inline</b> <b>explicit</b> const_iterator(<em>const</em> iterator &amp;o): i(o.i) {}</td></tr>
+<tr><th id="185">185</th><td>        <b>inline</b> <em>const</em> T &amp;<b>operator</b>*() <em>const</em> { <b>return</b> *i; }</td></tr>
+<tr><th id="186">186</th><td>        <b>inline</b> <em>const</em> T *<b>operator</b>-&gt;() <em>const</em> { <b>return</b> i; }</td></tr>
+<tr><th id="187">187</th><td>        <b>inline</b> <em>const</em> T &amp;<b>operator</b>[](<em>int</em> j) <em>const</em> { <b>return</b> *(i + j); }</td></tr>
+<tr><th id="188">188</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>==(<em>const</em> const_iterator &amp;o) <em>const</em> { <b>return</b> i == o.i; }</td></tr>
+<tr><th id="189">189</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>!=(<em>const</em> const_iterator &amp;o) <em>const</em> { <b>return</b> i != o.i; }</td></tr>
+<tr><th id="190">190</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&lt;(<em>const</em> const_iterator&amp; other) <em>const</em> { <b>return</b> i &lt; other.i; }</td></tr>
+<tr><th id="191">191</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&lt;=(<em>const</em> const_iterator&amp; other) <em>const</em> { <b>return</b> i &lt;= other.i; }</td></tr>
+<tr><th id="192">192</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&gt;(<em>const</em> const_iterator&amp; other) <em>const</em> { <b>return</b> i &gt; other.i; }</td></tr>
+<tr><th id="193">193</th><td>        <b>inline</b> <em>bool</em> <b>operator</b>&gt;=(<em>const</em> const_iterator&amp; other) <em>const</em> { <b>return</b> i &gt;= other.i; }</td></tr>
+<tr><th id="194">194</th><td>        <b>inline</b> const_iterator &amp;<b>operator</b>++() { ++i; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="195">195</th><td>        <b>inline</b> const_iterator <b>operator</b>++(<em>int</em>) { <em>const</em> T *n = i; ++i; <b>return</b> n; }</td></tr>
+<tr><th id="196">196</th><td>        <b>inline</b> const_iterator &amp;<b>operator</b>--() { i--; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="197">197</th><td>        <b>inline</b> const_iterator <b>operator</b>--(<em>int</em>) { <em>const</em> T *n = i; i--; <b>return</b> n; }</td></tr>
+<tr><th id="198">198</th><td>        <b>inline</b> const_iterator &amp;<b>operator</b>+=(<em>int</em> j) { i+=j; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="199">199</th><td>        <b>inline</b> const_iterator &amp;<b>operator</b>-=(<em>int</em> j) { i-=j; <b>return</b> *<b>this</b>; }</td></tr>
+<tr><th id="200">200</th><td>        <b>inline</b> const_iterator <b>operator</b>+(<em>int</em> j) <em>const</em> { <b>return</b> const_iterator(i+j); }</td></tr>
+<tr><th id="201">201</th><td>        <b>inline</b> const_iterator <b>operator</b>-(<em>int</em> j) <em>const</em> { <b>return</b> const_iterator(i-j); }</td></tr>
+<tr><th id="202">202</th><td>        <b>inline</b> <em>int</em> <b>operator</b>-(const_iterator j) <em>const</em> { <b>return</b> i - j.i; }</td></tr>
+<tr><th id="203">203</th><td>        <b>inline</b> <b>operator</b> <em>const</em> T*() <em>const</em> { <b>return</b> i; }</td></tr>
+<tr><th id="204">204</th><td>    };</td></tr>
+<tr><th id="205">205</th><td>    <b>friend</b> <b>class</b> const_iterator;</td></tr>
+<tr><th id="206">206</th><td><u>#<span data-ppcond="137">else</span></u></td></tr>
+<tr><th id="207">207</th><td>    <b>typedef</b> T* <dfn class="typedef" id="QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</dfn>;</td></tr>
+<tr><th id="208">208</th><td>    <b>typedef</b> <em>const</em> T* <dfn class="typedef" id="QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</dfn>;</td></tr>
+<tr><th id="209">209</th><td><u>#<span data-ppcond="137">endif</span></u></td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td>    T *<dfn class="decl def" id="_ZN15QTypedArrayData4dataEv" title='QTypedArrayData::data' data-ref="_ZN15QTypedArrayData4dataEv">data</dfn>() { <b>return</b> <b>static_cast</b>&lt;T *&gt;(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::data()); }</td></tr>
+<tr><th id="212">212</th><td>    <em>const</em> T *<dfn class="decl def" id="_ZNK15QTypedArrayData4dataEv" title='QTypedArrayData::data' data-ref="_ZNK15QTypedArrayData4dataEv">data</dfn>() <em>const</em> { <b>return</b> <b>static_cast</b>&lt;<em>const</em> T *&gt;(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::data()); }</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td>    <a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a> <dfn class="decl def" id="_ZN15QTypedArrayData5beginEPT_" title='QTypedArrayData::begin' data-ref="_ZN15QTypedArrayData5beginEPT_">begin</dfn>(<a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a> = <a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a>()) { <b>return</b> data(); }</td></tr>
+<tr><th id="215">215</th><td>    <a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a> <dfn class="decl def" id="_ZN15QTypedArrayData3endEPT_" title='QTypedArrayData::end' data-ref="_ZN15QTypedArrayData3endEPT_">end</dfn>(<a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a> = <a class="typedef" href="#QTypedArrayData::iterator" title='QTypedArrayData::iterator' data-type='T *' data-ref="QTypedArrayData::iterator">iterator</a>()) { <b>return</b> data() + <a class="member" href="#QArrayData::size" title='QArrayData::size' data-ref="QArrayData::size">size</a>; }</td></tr>
+<tr><th id="216">216</th><td>    <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> <dfn class="decl def" id="_ZNK15QTypedArrayData5beginEPKT_" title='QTypedArrayData::begin' data-ref="_ZNK15QTypedArrayData5beginEPKT_">begin</dfn>(<a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> = <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a>()) <em>const</em> { <b>return</b> data(); }</td></tr>
+<tr><th id="217">217</th><td>    <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> <dfn class="decl def" id="_ZNK15QTypedArrayData3endEPKT_" title='QTypedArrayData::end' data-ref="_ZNK15QTypedArrayData3endEPKT_">end</dfn>(<a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> = <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a>()) <em>const</em> { <b>return</b> data() + <a class="member" href="#QArrayData::size" title='QArrayData::size' data-ref="QArrayData::size">size</a>; }</td></tr>
+<tr><th id="218">218</th><td>    <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> <dfn class="decl def" id="_ZNK15QTypedArrayData10constBeginEPKT_" title='QTypedArrayData::constBegin' data-ref="_ZNK15QTypedArrayData10constBeginEPKT_">constBegin</dfn>(<a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> = <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a>()) <em>const</em> { <b>return</b> data(); }</td></tr>
+<tr><th id="219">219</th><td>    <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> <dfn class="decl def" id="_ZNK15QTypedArrayData8constEndEPKT_" title='QTypedArrayData::constEnd' data-ref="_ZNK15QTypedArrayData8constEndEPKT_">constEnd</dfn>(<a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a> = <a class="typedef" href="#QTypedArrayData::const_iterator" title='QTypedArrayData::const_iterator' data-type='const T *' data-ref="QTypedArrayData::const_iterator">const_iterator</a>()) <em>const</em> { <b>return</b> data() + <a class="member" href="#QArrayData::size" title='QArrayData::size' data-ref="QArrayData::size">size</a>; }</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td>    <b>class</b> <dfn class="type def" id="QTypedArrayData::AlignmentDummy" title='QTypedArrayData::AlignmentDummy' data-ref="QTypedArrayData::AlignmentDummy">AlignmentDummy</dfn> { <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> <dfn class="decl" id="QTypedArrayData::AlignmentDummy::header" title='QTypedArrayData::AlignmentDummy::header' data-ref="QTypedArrayData::AlignmentDummy::header">header</dfn>; T <dfn class="decl" id="QTypedArrayData::AlignmentDummy::data" title='QTypedArrayData::AlignmentDummy::data' data-ref="QTypedArrayData::AlignmentDummy::data">data</dfn>; };</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>    <em>static</em> QTypedArrayData *<dfn class="decl def" id="_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE" title='QTypedArrayData::allocate' data-ref="_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE">allocate</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="444capacity" title='capacity' data-type='size_t' data-ref="444capacity">capacity</dfn>,</td></tr>
+<tr><th id="224">224</th><td>            <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <dfn class="local col5 decl" id="445options" title='options' data-type='AllocationOptions' data-ref="445options">options</dfn> = <a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><a class="enum" href="#QArrayData::AllocationOption::Default" title='QArrayData::AllocationOption::Default' data-ref="QArrayData::AllocationOption::Default">Default</a>) <a class="macro" href="qcompilerdetection.h.html#202" title="__attribute__ ((__warn_unused_result__))" data-ref="_M/Q_REQUIRED_RESULT">Q_REQUIRED_RESULT</a></td></tr>
+<tr><th id="225">225</th><td>    {</td></tr>
+<tr><th id="226">226</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="227">227</th><td>        <b>return</b> <b>static_cast</b>&lt;QTypedArrayData *&gt;(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::<a class="member" href="#_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE" title='QArrayData::allocate' data-ref="_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE">allocate</a>(<b>sizeof</b>(T),</td></tr>
+<tr><th id="228">228</th><td>                    <a class="macro" href="qcompilerdetection.h.html#194" title="__alignof__(AlignmentDummy)" data-ref="_M/Q_ALIGNOF">Q_ALIGNOF</a>(<a class="type" href="#QTypedArrayData::AlignmentDummy" title='QTypedArrayData::AlignmentDummy' data-ref="QTypedArrayData::AlignmentDummy">AlignmentDummy</a>), <a class="local col4 ref" href="#444capacity" title='capacity' data-ref="444capacity">capacity</a>, <a class="ref fake" href="qflags.h.html#90" title='QFlags&lt;QArrayData::AllocationOption&gt;::QFlags' data-ref="_ZN6QFlagsIN10QArrayData16AllocationOptionEEC1ERKS2_"></a><a class="local col5 ref" href="#445options" title='options' data-ref="445options">options</a>));</td></tr>
+<tr><th id="229">229</th><td>    }</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td>    <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN15QTypedArrayData10deallocateEP10QArrayData" title='QTypedArrayData::deallocate' data-ref="_ZN15QTypedArrayData10deallocateEP10QArrayData">deallocate</dfn>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> *<dfn class="local col6 decl" id="446data" title='data' data-type='QArrayData *' data-ref="446data">data</dfn>)</td></tr>
+<tr><th id="232">232</th><td>    {</td></tr>
+<tr><th id="233">233</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="234">234</th><td>        <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::<a class="member" href="#_ZN10QArrayData10deallocateEPS_mm" title='QArrayData::deallocate' data-ref="_ZN10QArrayData10deallocateEPS_mm">deallocate</a>(<a class="local col6 ref" href="#446data" title='data' data-ref="446data">data</a>, <b>sizeof</b>(T), <a class="macro" href="qcompilerdetection.h.html#194" title="__alignof__(AlignmentDummy)" data-ref="_M/Q_ALIGNOF">Q_ALIGNOF</a>(<a class="type" href="#QTypedArrayData::AlignmentDummy" title='QTypedArrayData::AlignmentDummy' data-ref="QTypedArrayData::AlignmentDummy">AlignmentDummy</a>));</td></tr>
+<tr><th id="235">235</th><td>    }</td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td>    <em>static</em> QTypedArrayData *<dfn class="decl def" id="_ZN15QTypedArrayData11fromRawDataEPKT_m6QFlagsIN10QArrayData16AllocationOptionEE" title='QTypedArrayData::fromRawData' data-ref="_ZN15QTypedArrayData11fromRawDataEPKT_m6QFlagsIN10QArrayData16AllocationOptionEE">fromRawData</dfn>(<em>const</em> T *<dfn class="local col7 decl" id="447data" title='data' data-type='const T *' data-ref="447data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="448n" title='n' data-type='size_t' data-ref="448n">n</dfn>,</td></tr>
+<tr><th id="238">238</th><td>            <a class="typedef" href="#92" title='QArrayData::AllocationOptions' data-type='QFlags&lt;QArrayData::AllocationOption&gt;' data-ref="QArrayData::AllocationOptions">AllocationOptions</a> <dfn class="local col9 decl" id="449options" title='options' data-type='AllocationOptions' data-ref="449options">options</dfn> = <a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><a class="enum" href="#QArrayData::AllocationOption::Default" title='QArrayData::AllocationOption::Default' data-ref="QArrayData::AllocationOption::Default">Default</a>)</td></tr>
+<tr><th id="239">239</th><td>    {</td></tr>
+<tr><th id="240">240</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="241">241</th><td>        QTypedArrayData *<dfn class="local col0 decl" id="450result" title='result' data-type='QTypedArrayData&lt;T&gt; *' data-ref="450result">result</dfn> = <a class="member" href="#_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE" title='QTypedArrayData::allocate' data-ref="_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE">allocate</a>(<var>0</var>, <a class="local col9 ref" href="#449options" title='options' data-ref="449options">options</a> <a class="ref" href="qflags.h.html#_ZNK6QFlagsorET_" title='QFlags::operator|' data-ref="_ZNK6QFlagsorET_">|</a> <a class="enum" href="#QArrayData::AllocationOption::RawData" title='QArrayData::AllocationOption::RawData' data-ref="QArrayData::AllocationOption::RawData">RawData</a>);</td></tr>
+<tr><th id="242">242</th><td>        <b>if</b> (<a class="local col0 ref" href="#450result" title='result' data-ref="450result">result</a>) {</td></tr>
+<tr><th id="243">243</th><td>            <a class="macro" href="qglobal.h.html#662" title="qt_noop()" data-ref="_M/Q_ASSERT">Q_ASSERT</a>(!result-&gt;ref.isShared()); <i>// No shared empty, please!</i></td></tr>
+<tr><th id="244">244</th><td></td></tr>
+<tr><th id="245">245</th><td>            <a class="local col0 ref" href="#450result" title='result' data-ref="450result">result</a>-&gt;offset = <b>reinterpret_cast</b>&lt;<em>const</em> <em>char</em> *&gt;(<a class="local col7 ref" href="#447data" title='data' data-ref="447data">data</a>)</td></tr>
+<tr><th id="246">246</th><td>                - <b>reinterpret_cast</b>&lt;<em>const</em> <em>char</em> *&gt;(<a class="local col0 ref" href="#450result" title='result' data-ref="450result">result</a>);</td></tr>
+<tr><th id="247">247</th><td>            <a class="local col0 ref" href="#450result" title='result' data-ref="450result">result</a>-&gt;size = <em>int</em>(<a class="local col8 ref" href="#448n" title='n' data-ref="448n">n</a>);</td></tr>
+<tr><th id="248">248</th><td>        }</td></tr>
+<tr><th id="249">249</th><td>        <b>return</b> <a class="local col0 ref" href="#450result" title='result' data-ref="450result">result</a>;</td></tr>
+<tr><th id="250">250</th><td>    }</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td>    <em>static</em> QTypedArrayData *<dfn class="decl def" id="_ZN15QTypedArrayData10sharedNullEv" title='QTypedArrayData::sharedNull' data-ref="_ZN15QTypedArrayData10sharedNullEv">sharedNull</dfn>()</td></tr>
+<tr><th id="253">253</th><td>    {</td></tr>
+<tr><th id="254">254</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="255">255</th><td>        <b>return</b> <b>static_cast</b>&lt;QTypedArrayData *&gt;(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>::<a class="member" href="#_ZN10QArrayData10sharedNullEv" title='QArrayData::sharedNull' data-ref="_ZN10QArrayData10sharedNullEv">sharedNull</a>());</td></tr>
+<tr><th id="256">256</th><td>    }</td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td>    <em>static</em> QTypedArrayData *<dfn class="decl def" id="_ZN15QTypedArrayData11sharedEmptyEv" title='QTypedArrayData::sharedEmpty' data-ref="_ZN15QTypedArrayData11sharedEmptyEv">sharedEmpty</dfn>()</td></tr>
+<tr><th id="259">259</th><td>    {</td></tr>
+<tr><th id="260">260</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="261">261</th><td>        <b>return</b> <a class="member" href="#_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE" title='QTypedArrayData::allocate' data-ref="_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE">allocate</a>(<i>/* capacity */</i> <var>0</var>);</td></tr>
+<tr><th id="262">262</th><td>    }</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td>    <em>static</em> QTypedArrayData *<dfn class="decl def" id="_ZN15QTypedArrayData15unsharableEmptyEv" title='QTypedArrayData::unsharableEmpty' data-ref="_ZN15QTypedArrayData15unsharableEmptyEv">unsharableEmpty</dfn>()</td></tr>
+<tr><th id="265">265</th><td>    {</td></tr>
+<tr><th id="266">266</th><td>        <a class="macro" href="qglobal.h.html#687" title="static_assert(bool(sizeof(QTypedArrayData) == sizeof(QArrayData)), &quot;sizeof(QTypedArrayData) == sizeof(QArrayData)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(<b>sizeof</b>(QTypedArrayData) == <b>sizeof</b>(<a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a>));</td></tr>
+<tr><th id="267">267</th><td>        <b>return</b> <a class="member" href="#_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE" title='QTypedArrayData::allocate' data-ref="_ZN15QTypedArrayData8allocateEm6QFlagsIN10QArrayData16AllocationOptionEE">allocate</a>(<i>/* capacity */</i> <var>0</var>, <a class="enum" href="#QArrayData::AllocationOption::Unsharable" title='QArrayData::AllocationOption::Unsharable' data-ref="QArrayData::AllocationOption::Unsharable">Unsharable</a>);</td></tr>
+<tr><th id="268">268</th><td>    }</td></tr>
+<tr><th id="269">269</th><td>};</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td><b>template</b> &lt;<b>class</b> T, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> N&gt;</td></tr>
+<tr><th id="272">272</th><td><b>struct</b> <dfn class="type def" id="QStaticArrayData" title='QStaticArrayData' data-ref="QStaticArrayData">QStaticArrayData</dfn></td></tr>
+<tr><th id="273">273</th><td>{</td></tr>
+<tr><th id="274">274</th><td>    <a class="type" href="#QArrayData" title='QArrayData' data-ref="QArrayData">QArrayData</a> <dfn class="decl" id="QStaticArrayData::header" title='QStaticArrayData::header' data-ref="QStaticArrayData::header">header</dfn>;</td></tr>
+<tr><th id="275">275</th><td>    T <dfn class="decl" id="QStaticArrayData::data" title='QStaticArrayData::data' data-ref="QStaticArrayData::data">data</dfn>[<a class="tu ref" href="#QStaticArrayData::N" title='QStaticArrayData::N' data-ref="QStaticArrayData::N">N</a>];</td></tr>
+<tr><th id="276">276</th><td>};</td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><i>// Support for returning QArrayDataPointer&lt;T&gt; from functions</i></td></tr>
+<tr><th id="279">279</th><td><b>template</b> &lt;<b>class</b> T&gt;</td></tr>
+<tr><th id="280">280</th><td><b>struct</b> <dfn class="type def" id="QArrayDataPointerRef" title='QArrayDataPointerRef' data-ref="QArrayDataPointerRef">QArrayDataPointerRef</dfn></td></tr>
+<tr><th id="281">281</th><td>{</td></tr>
+<tr><th id="282">282</th><td>    <a class="type" href="#QTypedArrayData" title='QTypedArrayData' data-ref="QTypedArrayData">QTypedArrayData</a>&lt;T&gt; *<dfn class="decl" id="QArrayDataPointerRef::ptr" title='QArrayDataPointerRef::ptr' data-ref="QArrayDataPointerRef::ptr">ptr</dfn>;</td></tr>
+<tr><th id="283">283</th><td>};</td></tr>
+<tr><th id="284">284</th><td></td></tr>
+<tr><th id="285">285</th><td><u>#define <dfn class="macro" id="_M/Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET" data-ref="_M/Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET">Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET</dfn>(size, offset) \</u></td></tr>
+<tr><th id="286">286</th><td><u>    { Q_REFCOUNT_INITIALIZE_STATIC, size, 0, 0, offset } \</u></td></tr>
+<tr><th id="287">287</th><td><u>    /**/</u></td></tr>
+<tr><th id="288">288</th><td></td></tr>
+<tr><th id="289">289</th><td><u>#define <dfn class="macro" id="_M/Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER" data-ref="_M/Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER">Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER</dfn>(type, size) \</u></td></tr>
+<tr><th id="290">290</th><td><u>    Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(size,\</u></td></tr>
+<tr><th id="291">291</th><td><u>        ((sizeof(QArrayData) + (Q_ALIGNOF(type) - 1)) &amp; ~(Q_ALIGNOF(type) - 1) )) \</u></td></tr>
+<tr><th id="292">292</th><td><u>    /**/</u></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i>////////////////////////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="295">295</th><td><i>//  Q_ARRAY_LITERAL</i></td></tr>
+<tr><th id="296">296</th><td><i></i></td></tr>
+<tr><th id="297">297</th><td><i>// The idea here is to place a (read-only) copy of header and array data in an</i></td></tr>
+<tr><th id="298">298</th><td><i>// mmappable portion of the executable (typically, .rodata section). This is</i></td></tr>
+<tr><th id="299">299</th><td><i>// accomplished by hiding a static const instance of QStaticArrayData, which is</i></td></tr>
+<tr><th id="300">300</th><td><i>// POD.</i></td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td><u>#<span data-ppcond="302">if</span> defined(<a class="macro" href="qcompilerdetection.h.html#571" data-ref="_M/Q_COMPILER_VARIADIC_MACROS">Q_COMPILER_VARIADIC_MACROS</a>)</u></td></tr>
+<tr><th id="303">303</th><td><u>#<span data-ppcond="303">if</span> defined(<a class="macro" href="qcompilerdetection.h.html#624" data-ref="_M/Q_COMPILER_LAMBDA">Q_COMPILER_LAMBDA</a>)</u></td></tr>
+<tr><th id="304">304</th><td><i>// Hide array inside a lambda</i></td></tr>
+<tr><th id="305">305</th><td><u>#define <dfn class="macro" id="_M/Q_ARRAY_LITERAL" data-ref="_M/Q_ARRAY_LITERAL">Q_ARRAY_LITERAL</dfn>(Type, ...)                                              \</u></td></tr>
+<tr><th id="306">306</th><td><u>    ([]() -&gt; QArrayDataPointerRef&lt;Type&gt; {                                       \</u></td></tr>
+<tr><th id="307">307</th><td><u>            /* MSVC 2010 Doesn't support static variables in a lambda, but */   \</u></td></tr>
+<tr><th id="308">308</th><td><u>            /* happily accepts them in a static function of a lambda-local */   \</u></td></tr>
+<tr><th id="309">309</th><td><u>            /* struct :-) */                                                    \</u></td></tr>
+<tr><th id="310">310</th><td><u>            struct StaticWrapper {                                              \</u></td></tr>
+<tr><th id="311">311</th><td><u>                static QArrayDataPointerRef&lt;Type&gt; get()                         \</u></td></tr>
+<tr><th id="312">312</th><td><u>                {                                                               \</u></td></tr>
+<tr><th id="313">313</th><td><u>                    Q_ARRAY_LITERAL_IMPL(Type, __VA_ARGS__)                     \</u></td></tr>
+<tr><th id="314">314</th><td><u>                    return ref;                                                 \</u></td></tr>
+<tr><th id="315">315</th><td><u>                }                                                               \</u></td></tr>
+<tr><th id="316">316</th><td><u>            };                                                                  \</u></td></tr>
+<tr><th id="317">317</th><td><u>            return StaticWrapper::get();                                        \</u></td></tr>
+<tr><th id="318">318</th><td><u>        }())                                                                    \</u></td></tr>
+<tr><th id="319">319</th><td><u>    /**/</u></td></tr>
+<tr><th id="320">320</th><td><u>#<span data-ppcond="303">endif</span></u></td></tr>
+<tr><th id="321">321</th><td><u>#<span data-ppcond="302">endif</span> // defined(Q_COMPILER_VARIADIC_MACROS)</u></td></tr>
+<tr><th id="322">322</th><td></td></tr>
+<tr><th id="323">323</th><td><u>#<span data-ppcond="323">if</span> defined(<a class="macro" href="#305" data-ref="_M/Q_ARRAY_LITERAL">Q_ARRAY_LITERAL</a>)</u></td></tr>
+<tr><th id="324">324</th><td><u>#define <dfn class="macro" id="_M/Q_ARRAY_LITERAL_IMPL" data-ref="_M/Q_ARRAY_LITERAL_IMPL">Q_ARRAY_LITERAL_IMPL</dfn>(Type, ...)                                         \</u></td></tr>
+<tr><th id="325">325</th><td><u>    union { Type type_must_be_POD; } dummy; Q_UNUSED(dummy)                     \</u></td></tr>
+<tr><th id="326">326</th><td><u>                                                                                \</u></td></tr>
+<tr><th id="327">327</th><td><u>    /* Portable compile-time array size computation */                          \</u></td></tr>
+<tr><th id="328">328</th><td><u>    Type data[] = { __VA_ARGS__ }; Q_UNUSED(data)                               \</u></td></tr>
+<tr><th id="329">329</th><td><u>    enum { Size = sizeof(data) / sizeof(data[0]) };                             \</u></td></tr>
+<tr><th id="330">330</th><td><u>                                                                                \</u></td></tr>
+<tr><th id="331">331</th><td><u>    static const QStaticArrayData&lt;Type, Size&gt; literal = {                       \</u></td></tr>
+<tr><th id="332">332</th><td><u>        Q_STATIC_ARRAY_DATA_HEADER_INITIALIZER(Type, Size), { __VA_ARGS__ } };  \</u></td></tr>
+<tr><th id="333">333</th><td><u>                                                                                \</u></td></tr>
+<tr><th id="334">334</th><td><u>    QArrayDataPointerRef&lt;Type&gt; ref =                                            \</u></td></tr>
+<tr><th id="335">335</th><td><u>        { static_cast&lt;QTypedArrayData&lt;Type&gt; *&gt;(                                 \</u></td></tr>
+<tr><th id="336">336</th><td><u>            const_cast&lt;QArrayData *&gt;(&amp;literal.header)) };                       \</u></td></tr>
+<tr><th id="337">337</th><td><u>    /**/</u></td></tr>
+<tr><th id="338">338</th><td><u>#<span data-ppcond="323">else</span></u></td></tr>
+<tr><th id="339">339</th><td><i>// As a fallback, memory is allocated and data copied to the heap.</i></td></tr>
+<tr><th id="340">340</th><td><i></i></td></tr>
+<tr><th id="341">341</th><td><i>// The fallback macro does NOT use variadic macros and does NOT support</i></td></tr>
+<tr><th id="342">342</th><td><i>// variable number of arguments. It is suitable for char arrays.</i></td></tr>
+<tr><th id="343">343</th><td></td></tr>
+<tr><th id="344">344</th><td><b>namespace</b> QtPrivate {</td></tr>
+<tr><th id="345">345</th><td>    <b>template</b> &lt;<b>class</b> T, size_t N&gt;</td></tr>
+<tr><th id="346">346</th><td>    <b>inline</b> QArrayDataPointerRef&lt;T&gt; qMakeArrayLiteral(<em>const</em> T (&amp;array)[N])</td></tr>
+<tr><th id="347">347</th><td>    {</td></tr>
+<tr><th id="348">348</th><td>        <b>union</b> { T type_must_be_POD; } dummy; Q_UNUSED(dummy)</td></tr>
+<tr><th id="349">349</th><td></td></tr>
+<tr><th id="350">350</th><td>        QArrayDataPointerRef&lt;T&gt; result = { QTypedArrayData&lt;T&gt;::allocate(N) };</td></tr>
+<tr><th id="351">351</th><td>        Q_CHECK_PTR(result.ptr);</td></tr>
+<tr><th id="352">352</th><td></td></tr>
+<tr><th id="353">353</th><td>        ::memcpy(result.ptr-&gt;data(), array, N * <b>sizeof</b>(T));</td></tr>
+<tr><th id="354">354</th><td>        result.ptr-&gt;size = N;</td></tr>
+<tr><th id="355">355</th><td></td></tr>
+<tr><th id="356">356</th><td>        <b>return</b> result;</td></tr>
+<tr><th id="357">357</th><td>    }</td></tr>
+<tr><th id="358">358</th><td>}</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td><u>#define Q_ARRAY_LITERAL(Type, Array) \</u></td></tr>
+<tr><th id="361">361</th><td><u>    QT_PREPEND_NAMESPACE(QtPrivate::qMakeArrayLiteral)&lt;Type&gt;( Array )</u></td></tr>
+<tr><th id="362">362</th><td><u>#<span data-ppcond="323">endif</span> // !defined(Q_ARRAY_LITERAL)</u></td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td><a class="macro" href="qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="365">365</th><td></td></tr>
+<tr><th id="366">366</th><td><u>#<span data-ppcond="42">endif</span> // include guard</u></td></tr>
+<tr><th id="367">367</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/solarus_gui_lib_automoc.cpp.html'>codebrowser/gui/solarus_gui_lib_automoc.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

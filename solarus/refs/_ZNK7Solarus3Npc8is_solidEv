@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='84' type='bool Solarus::Npc::is_solid() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='194' u='c' c='_ZN7Solarus5Arrow15is_npc_obstacleERNS_3NpcE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='217' u='c' c='_ZN7Solarus9Boomerang15is_npc_obstacleERNS_3NpcE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='595' u='c' c='_ZN7Solarus13CarriedObject15is_npc_obstacleERNS_3NpcE'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='129' ll='132' type='bool Solarus::Npc::is_solid() const'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='120'>/**
+ * \brief Returns whether this NPC is a solid, non-traversable object.
+ *
+ * This function can be called by other entities who want to be able to
+ * traverse people (usual NPCs) but not solid interactive entities
+ * (generalized NPCs).
+ *
+ * \return true if the NPC is a solid object
+ */</doc>

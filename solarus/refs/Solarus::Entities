@@ -1,0 +1,87 @@
+<def f='codebrowser/include/solarus/entities/Entities.h' l='64' ll='225'/>
+<size>688</size>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='56'>/**
+ * \brief Manages the whole content of a map.
+ *
+ * Each element of a map is called an entity and is an instance of
+ * a subclass of Entity.
+ * This class stores all entities of the current map:
+ * the tiles, the hero, the enemies and all other entities.
+ */</doc>
+<fun r='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<fun r='_ZN7Solarus8Entities8get_heroEv'/>
+<fun r='_ZNK7Solarus8Entities10get_cameraEv'/>
+<fun r='_ZNK7Solarus8Entities15get_tile_groundEiii'/>
+<fun r='_ZN7Solarus8Entities12get_entitiesEv'/>
+<fun r='_ZN7Solarus8Entities23get_default_destinationEv'/>
+<fun r='_ZN7Solarus8Entities10get_entityERKSs'/>
+<fun r='_ZN7Solarus8Entities11find_entityERKSs'/>
+<fun r='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<fun r='_ZN7Solarus8Entities31get_entities_with_prefix_sortedERKSs'/>
+<fun r='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<fun r='_ZN7Solarus8Entities31get_entities_with_prefix_sortedENS_10EntityTypeERKSs'/>
+<fun r='_ZNK7Solarus8Entities22has_entity_with_prefixERKSs'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeENS_10EntityTypeE'/>
+<fun r='_ZN7Solarus8Entities27get_entities_by_type_sortedENS_10EntityTypeE'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeENS_10EntityTypeEi'/>
+<fun r='_ZNK7Solarus8Entities20get_entities_by_typeEv'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeEv'/>
+<fun r='_ZNK7Solarus8Entities20get_entities_by_typeEi'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeEi'/>
+<fun r='_ZNK7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<fun r='_ZN7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<fun r='_ZNK7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<fun r='_ZN7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<fun r='_ZN7Solarus8Entities22get_entities_in_regionERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<fun r='_ZN7Solarus8Entities29get_entities_in_region_sortedERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<fun r='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<fun r='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<fun r='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities8add_tileERKSt10shared_ptrINS_4TileEE'/>
+<fun r='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Entities13remove_entityERKSs'/>
+<fun r='_ZN7Solarus8Entities27remove_entities_with_prefixERKSs'/>
+<fun r='_ZNK7Solarus8Entities27get_entity_relative_z_orderERKSt10shared_ptrIKNS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities14bring_to_frontERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Entities13bring_to_backERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Entities16set_entity_layerERNS_6EntityEi'/>
+<fun r='_ZN7Solarus8Entities34notify_entity_bounding_box_changedERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Entities22overlaps_raised_blocksEiRKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<fun r='_ZN7Solarus8Entities38notify_map_opening_transition_finishedEv'/>
+<fun r='_ZN7Solarus8Entities22notify_tileset_changedEv'/>
+<fun r='_ZN7Solarus8Entities19notify_map_finishedEv'/>
+<fun r='_ZN7Solarus8Entities13set_suspendedEb'/>
+<fun r='_ZN7Solarus8Entities6updateEv'/>
+<fun r='_ZN7Solarus8Entities4drawEv'/>
+<fun r='_ZN7Solarus8Entities17initialize_layersEv'/>
+<fun r='_ZN7Solarus8Entities15set_tile_groundEiiiNS_6GroundE'/>
+<fun r='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<fun r='_ZN7Solarus8Entities21notify_entity_removedERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Entities21update_crystal_blocksEv'/>
+<mbr r='Solarus::Entities::game' o='0' t='Solarus::Game &amp;'/>
+<mbr r='Solarus::Entities::map' o='64' t='Solarus::Map &amp;'/>
+<mbr r='Solarus::Entities::map_width8' o='128' t='int'/>
+<mbr r='Solarus::Entities::map_height8' o='160' t='int'/>
+<mbr r='Solarus::Entities::tiles_grid_size' o='192' t='int'/>
+<mbr r='Solarus::Entities::tiles_ground' o='256' t='ByLayer&lt;std::vector&lt;Ground&gt; &gt;'/>
+<mbr r='Solarus::Entities::non_animated_regions' o='640' t='ByLayer&lt;std::unique_ptr&lt;NonAnimatedRegions&gt; &gt;'/>
+<mbr r='Solarus::Entities::tiles_in_animated_regions' o='1024' t='ByLayer&lt;std::vector&lt;TilePtr&gt; &gt;'/>
+<mbr r='Solarus::Entities::hero' o='1408' t='HeroPtr'/>
+<mbr r='Solarus::Entities::camera' o='1536' t='CameraPtr'/>
+<mbr r='Solarus::Entities::named_entities' o='1664' t='std::map&lt;std::string, EntityPtr&gt;'/>
+<mbr r='Solarus::Entities::all_entities' o='2048' t='EntityList'/>
+<mbr r='Solarus::Entities::entities_by_type' o='2176' t='std::map&lt;EntityType, ByLayer&lt;EntitySet&gt; &gt;'/>
+<mbr r='Solarus::Entities::quadtree' o='2560' t='EntityTree'/>
+<mbr r='Solarus::Entities::z_caches' o='4096' t='ByLayer&lt;Solarus::Entities::ZCache&gt;'/>
+<mbr r='Solarus::Entities::entities_drawn_not_at_their_position' o='4480' t='ByLayer&lt;EntityVector&gt;'/>
+<mbr r='Solarus::Entities::entities_to_draw' o='4864' t='ByLayer&lt;EntitiesToDraw&gt;'/>
+<mbr r='Solarus::Entities::entities_to_remove' o='5248' t='EntityList'/>
+<mbr r='Solarus::Entities::default_destination' o='5376' t='std::shared_ptr&lt;Destination&gt;'/>
+<fun r='_ZNK7Solarus8Entities15get_tile_groundEiii'/>
+<fun r='_ZNK7Solarus8Entities10get_cameraEv'/>
+<fun r='_ZNK7Solarus8Entities20get_entities_by_typeEv'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeEv'/>
+<fun r='_ZNK7Solarus8Entities20get_entities_by_typeEi'/>
+<fun r='_ZN7Solarus8Entities20get_entities_by_typeEi'/>

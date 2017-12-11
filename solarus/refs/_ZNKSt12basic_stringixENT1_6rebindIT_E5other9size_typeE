@@ -1,0 +1,17 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='835' ll='840' type='const_reference std::basic_string::operator[](size_type __pos) const'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='825'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read-only (constant) reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='codebrowser/src/DialogResources.cpp' l='318' u='c' c='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<use f='codebrowser/src/MainLoop.cpp' l='101' u='c' c='_ZN7Solarus12_GLOBAL__N_114get_quest_pathERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/Map.cpp' l='424' u='c' c='_ZNK7Solarus3Map20get_destination_sideEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='654' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='55' u='c' c='_ZN7Solarus8LuaTools23is_valid_lua_identifierERKSs'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1129' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_get_pathEP9lua_State'/>

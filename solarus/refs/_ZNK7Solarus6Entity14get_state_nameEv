@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='382' type='std::string Solarus::Entity::get_state_name() const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='336' u='c' c='_ZN7Solarus6Camera23notify_movement_startedEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='363' u='c' c='_ZNK7Solarus6Camera18get_tracked_entityEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='376' u='c' c='_ZN7Solarus6Camera42notify_tracked_entity_traversing_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='390' u='c' c='_ZNK7Solarus6Camera23is_traversing_separatorEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='401' u='c' c='_ZN7Solarus6Entity14notify_createdEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3532' ll='3538' type='std::string Solarus::Entity::get_state_name() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3527'>/**
+ * \brief Returns the name of the entity&apos;s internal state.
+ * \return A name describing the current state of the entity.
+ * Returns an empty string if this entity has no state.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1694' u='c' c='_ZN7Solarus10LuaContext20entity_api_get_stateEP9lua_State'/>

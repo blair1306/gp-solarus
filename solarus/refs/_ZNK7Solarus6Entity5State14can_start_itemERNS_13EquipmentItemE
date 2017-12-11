@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='136' type='bool Solarus::Entity::State::can_start_item(Solarus::EquipmentItem &amp; item) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1079' ll='1081' type='bool Solarus::Entity::State::can_start_item(Solarus::EquipmentItem &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1071'>/**
+ * \brief Returns whether the entity can use an equipment item in this state.
+ *
+ * Returns false by default.
+ *
+ * \param item The equipment item to check.
+ * \return true if the entity can use an equipment item in this state.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1079'>/* item */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2603' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='169' c='_ZNK7Solarus4Hero9FreeState14can_start_itemERNS_13EquipmentItemE'/>

@@ -1,0 +1,73 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='246' type='static const std::string &amp; Solarus::LuaContext::get_entity_internal_type_name(Solarus::EntityType entity_type)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='245'>// Entities.</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='115' u='c' c='_ZNK7Solarus6Entity17get_lua_type_nameEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='85' u='c' c='_ZN7Solarus12_GLOBAL__N_134get_entity_internal_type_names_setEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='194' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='215' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='230' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='251' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='266' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='283' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='303' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='321' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='344' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='361' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='374' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='392' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='420' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='435' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='491' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='523' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='536' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='537' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='538' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='539' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='540' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='541' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='542' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='543' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='544' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='545' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='546' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='547' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='548' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='549' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='550' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='657' ll='665' type='static const std::string &amp; Solarus::LuaContext::get_entity_internal_type_name(Solarus::EntityType entity_type)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1712' u='c' c='_ZN7Solarus10LuaContext7is_heroEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1724' u='c' c='_ZN7Solarus10LuaContext10check_heroEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2565' u='c' c='_ZN7Solarus10LuaContext9is_cameraEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2577' u='c' c='_ZN7Solarus10LuaContext12check_cameraEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2719' u='c' c='_ZN7Solarus10LuaContext14is_destinationEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2731' u='c' c='_ZN7Solarus10LuaContext17check_destinationEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2791' u='c' c='_ZN7Solarus10LuaContext18is_teletransporterEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2803' u='c' c='_ZN7Solarus10LuaContext21check_teletransporterEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2967' u='c' c='_ZN7Solarus10LuaContext6is_npcEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2979' u='c' c='_ZN7Solarus10LuaContext9check_npcEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3032' u='c' c='_ZN7Solarus10LuaContext8is_chestEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3044' u='c' c='_ZN7Solarus10LuaContext11check_chestEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3163' u='c' c='_ZN7Solarus10LuaContext8is_blockEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3175' u='c' c='_ZN7Solarus10LuaContext11check_blockEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3327' u='c' c='_ZN7Solarus10LuaContext9is_switchEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3339' u='c' c='_ZN7Solarus10LuaContext12check_switchEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3438' u='c' c='_ZN7Solarus10LuaContext9is_streamEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3450' u='c' c='_ZN7Solarus10LuaContext12check_streamEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3634' u='c' c='_ZN7Solarus10LuaContext7is_doorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3646' u='c' c='_ZN7Solarus10LuaContext10check_doorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3726' u='c' c='_ZN7Solarus10LuaContext16is_shop_treasureEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3738' u='c' c='_ZN7Solarus10LuaContext19check_shop_treasureEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3877' u='c' c='_ZN7Solarus10LuaContext11is_pickableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3889' u='c' c='_ZN7Solarus10LuaContext14check_pickableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3969' u='c' c='_ZN7Solarus10LuaContext15is_destructibleEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3981' u='c' c='_ZN7Solarus10LuaContext18check_destructibleEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4294' u='c' c='_ZN7Solarus10LuaContext15is_dynamic_tileEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4306' u='c' c='_ZN7Solarus10LuaContext18check_dynamic_tileEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4360' u='c' c='_ZN7Solarus10LuaContext8is_enemyEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4372' u='c' c='_ZN7Solarus10LuaContext11check_enemyEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5146' u='c' c='_ZN7Solarus10LuaContext16is_custom_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5158' u='c' c='_ZN7Solarus10LuaContext19check_custom_entityEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='652'>/**
+ * \brief Returns the Lua metatable name corresponding to a type of map entity.
+ * \param entity_type A type of map entity.
+ * \return The corresponding Lua metatable name, e.g. &quot;sol.enemy&quot;.
+ */</doc>

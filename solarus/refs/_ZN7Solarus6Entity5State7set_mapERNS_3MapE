@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='65' type='void Solarus::Entity::State::set_map(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='64'>// game</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='427' ll='429' type='void Solarus::Entity::State::set_map(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='420'>/**
+ * \brief Changes the map.
+ *
+ * This function is called when the entity is about to go to another map.
+ *
+ * \param map the new map
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='510' u='c' c='_ZN7Solarus4Hero15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='522' u='c' c='_ZN7Solarus4Hero18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='560' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='129' c='_ZN7Solarus4Hero12JumpingState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='131' u='c' c='_ZN7Solarus4Hero12JumpingState7set_mapERNS_3MapE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='129' c='_ZN7Solarus4Hero19PlayerMovementState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='131' u='c' c='_ZN7Solarus4Hero19PlayerMovementState7set_mapERNS_3MapE'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='63' c='_ZN7Solarus4Hero11StairsState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='65' u='c' c='_ZN7Solarus4Hero11StairsState7set_mapERNS_3MapE'/>

@@ -1,0 +1,13 @@
+<dec f='include/physfs.h' l='1958' type='int PHYSFS_symbolicLinksPermitted()'/>
+<doc f='include/physfs.h' l='1946'>/**
+ * \fn int PHYSFS_symbolicLinksPermitted(void)
+ * \brief Determine if the symbolic links are permitted.
+ *
+ * This reports the setting from the last call to PHYSFS_permitSymbolicLinks().
+ *  If PHYSFS_permitSymbolicLinks() hasn&apos;t been called since the library was
+ *  last initialized, symbolic links are implicitly disabled.
+ *
+ *  \return non-zero if symlinks are permitted, zero if not.
+ *
+ * \sa PHYSFS_permitSymbolicLinks
+ */</doc>

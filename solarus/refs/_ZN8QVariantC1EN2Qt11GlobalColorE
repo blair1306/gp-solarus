@@ -1,0 +1,6 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='480' type='void QVariant::QVariant(Qt::GlobalColor )'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='475'>// These constructors don&apos;t create QVariants of the type associcated
+    // with the enum, as expected, but they would create a QVariant of
+    // type int with the value of the enum value.
+    // Use QVariant v = QColor(Qt::red) instead of QVariant v = Qt::red for
+    // example.</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='97' type='Solarus::Rectangle Solarus::Rectangle::operator&amp;(const Solarus::Rectangle &amp; other) const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='455' u='c' c='_ZNK7Solarus9Rectangle16get_intersectionERKS0_'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='463' ll='466' type='Solarus::Rectangle Solarus::Rectangle::operator&amp;(const Solarus::Rectangle &amp; other) const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='458'>/**
+ * \brief Returns the intersection between this rectangle and another one.
+ * \param other Another rectangle.
+ * \return The intersection or an empty rectangle.
+ */</doc>

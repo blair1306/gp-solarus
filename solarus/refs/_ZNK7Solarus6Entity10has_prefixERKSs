@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='191' type='bool Solarus::Entity::has_prefix(const std::string &amp; prefix) const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='332' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='381' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='416' u='c' c='_ZNK7Solarus8Entities22has_entity_with_prefixERKSs'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1160' ll='1162' type='bool Solarus::Entity::has_prefix(const std::string &amp; prefix) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1155'>/**
+ * \brief Returns whether the name of this entity starts with the specified prefix.
+ * \param prefix a prefix
+ * \return true if the name starts with this prefix
+ */</doc>

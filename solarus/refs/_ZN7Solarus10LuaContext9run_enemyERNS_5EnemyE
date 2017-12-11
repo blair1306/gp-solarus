@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='170' type='void Solarus::LuaContext::run_enemy(Solarus::Enemy &amp; enemy)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='195' u='c' c='_ZN7Solarus5Enemy15notify_creatingEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='337' ll='351' type='void Solarus::LuaContext::run_enemy(Solarus::Enemy &amp; enemy)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='330'>/**
+ * \brief Notifies the Lua world that an enemy has just been added to the map.
+ *
+ * The Lua file of this enemy is automatically loaded.
+ *
+ * \param enemy The enemy.
+ */</doc>

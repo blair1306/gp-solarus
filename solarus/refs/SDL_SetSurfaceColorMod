@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_surface.h' l='252' type='int SDL_SetSurfaceColorMod(SDL_Surface * surface, Uint8 r, Uint8 g, Uint8 b)'/>
+<doc f='include/SDL2/SDL_surface.h' l='240'>/**
+ *  \brief Set an additional color value used in blit operations.
+ *
+ *  \param surface The surface to update.
+ *  \param r The red color value multiplied into blit operations.
+ *  \param g The green color value multiplied into blit operations.
+ *  \param b The blue color value multiplied into blit operations.
+ *
+ *  \return 0 on success, or -1 if the surface is not valid.
+ *
+ *  \sa SDL_GetSurfaceColorMod()
+ */</doc>

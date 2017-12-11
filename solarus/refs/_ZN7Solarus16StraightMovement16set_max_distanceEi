@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='53' type='void Solarus::StraightMovement::set_max_distance(int max_distance)'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='87' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1299' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='75' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='105' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='267' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='232' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='213' u='c' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='803' u='c' c='_ZN7Solarus10LuaContext38straight_movement_api_set_max_distanceEP9lua_State'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='267' ll='269' type='void Solarus::StraightMovement::set_max_distance(int max_distance)'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='263'>/**
+ * \brief Sets the distance after which the movement stops.
+ * \param max_distance the maximum distance in pixels (0 means no limit)
+ */</doc>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='177' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

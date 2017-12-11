@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='134' type='bool'/>
+<offset>2240</offset>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='134'>/**&lt; Indicates that the required savegame variable
+                                                   * (in the case of \c OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE)
+                                                   * or the required item
+                                                   * (in the case of \c OPENING_BY_INTERACTION_IF_ITEM)
+                                                   * should be consumed when opening the door. */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='79' u='w' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='387' u='r' c='_ZNK7Solarus4Door29is_opening_condition_consumedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='410' u='w' c='_ZN7Solarus4Door30set_opening_condition_consumedEb'/>

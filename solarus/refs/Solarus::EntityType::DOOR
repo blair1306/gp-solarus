@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='55' type='18'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='55'>/**&lt; a door to open with a key or another action */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='217' u='r'/>
+<use f='codebrowser/include/solarus/entities/Door.h' l='48'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='40' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='77' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='127' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='361' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3634' u='r' c='_ZN7Solarus10LuaContext7is_doorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3646' u='r' c='_ZN7Solarus10LuaContext10check_doorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1288' u='r'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1849' u='r' c='_ZN7Solarus10LuaContext18map_api_open_doorsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1881' u='r' c='_ZN7Solarus10LuaContext19map_api_close_doorsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1913' u='r' c='_ZN7Solarus10LuaContext22map_api_set_doors_openEP9lua_State'/>

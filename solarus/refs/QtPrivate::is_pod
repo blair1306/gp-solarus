@@ -1,0 +1,8 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='333' ll='340'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='341'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='342'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='343'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='329'>// We can&apos;t get is_pod right without compiler help, so fail conservatively.
+// We will assume it&apos;s false except for arithmetic types, enumerations,
+// pointers and cv-qualified versions thereof. Note that std::pair&lt;T,U&gt;
+// is not a POD even if T and U are PODs.</doc>

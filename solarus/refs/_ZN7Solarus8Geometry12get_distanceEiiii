@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='69' type='double Solarus::Geometry::get_distance(int x1, int y1, int x2, int y2)'/>
+<def f='codebrowser/include/solarus/lowlevel/Geometry.h' l='87' ll='92' type='double Solarus::Geometry::get_distance(int x1, int y1, int x2, int y2)'/>
+<use f='codebrowser/include/solarus/lowlevel/Geometry.h' l='117' u='c' c='_ZN7Solarus8Geometry12get_distanceERKNS_5PointES3_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Geometry.h' l='79'>/**
+ * \brief Returns the distance between two points.
+ * \param x1 X coordinate of the first point.
+ * \param y1 Y coordinate of the first point.
+ * \param x2 X coordinate of the second point.
+ * \param y2 Y coordinate of the second point.
+ * \return The distance in pixels
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='2903' u='c' c='_ZNK7Solarus6Entity12get_distanceEii'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='318' u='c' c='_ZN7Solarus10LuaContext21main_api_get_distanceEP9lua_State'/>

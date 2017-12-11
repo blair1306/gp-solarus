@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_cpuinfo.h' l='77'/>
+<doc f='include/SDL2/SDL_cpuinfo.h' l='72'>/* This is a guess for the cacheline size used for padding.
+ * Most x86 processors have a 64 byte cache line.
+ * The 64-bit PowerPC processors have a 128 byte cache line.
+ * We&apos;ll use the larger value to be generally safe.
+ */</doc>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='49' type='void Solarus::PathMovement::PathMovement(const std::string &amp; path, int speed, bool loop, bool ignore_obstacles, bool snap_to_grid)'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='32' u='c' c='_ZN7Solarus19PathFindingMovementC1Ei'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='51' ll='69' type='void Solarus::PathMovement::PathMovement(const std::string &amp; path, int speed, bool loop, bool ignore_obstacles, bool must_be_aligned)'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='40'>/**
+ * \brief Creates a path movement object.
+ * \param path the succession of basic moves
+ * composing this movement (each character represents
+ * a direction between &apos;0&apos; and &apos;7&apos;)
+ * \param speed speed of the movement
+ * \param loop true to make the movement return to the beginning
+ * once finished
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ * \param must_be_aligned true to snap the entity to the map grid before moving it
+ */</doc>
+<use f='codebrowser/src/movements/RandomPathMovement.cpp' l='28' u='c' c='_ZN7Solarus18RandomPathMovementC1Ei'/>

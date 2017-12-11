@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='134' type='const std::string'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='77' type='const std::string'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='260' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1382' u='r' c='_ZN7Solarus10LuaContext18is_circle_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1394' u='r' c='_ZN7Solarus10LuaContext21check_circle_movementEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='74'>/**
+ * Name of the Lua table representing the circle movement module.
+ */</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='489' u='a' c='_ZNK7Solarus14CircleMovement17get_lua_type_nameEv'/>

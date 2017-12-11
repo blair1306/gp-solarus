@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='51' type='bool Solarus::Jumper::test_collision_custom(Solarus::Entity &amp; entity)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='292' c='_ZN7Solarus6Entity21test_collision_customERS0_'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='220' ll='229' type='bool Solarus::Jumper::test_collision_custom(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='212'>/**
+ * \brief Returns whether an entity&apos;s collides with this jumper.
+ *
+ * The result depends on the sensor&apos;s shape.
+ *
+ * \param entity the entity
+ * \return true if the entity&apos;s collides with this jumper
+ */</doc>

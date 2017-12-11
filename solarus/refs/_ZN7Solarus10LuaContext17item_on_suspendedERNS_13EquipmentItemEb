@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='320' type='void Solarus::LuaContext::item_on_suspended(Solarus::EquipmentItem &amp; item, bool suspended)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='298' u='c' c='_ZN7Solarus13EquipmentItem13set_suspendedEb'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='824' ll='833' type='void Solarus::LuaContext::item_on_suspended(Solarus::EquipmentItem &amp; item, bool suspended)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='816'>/**
+ * \brief Calls the on_suspended() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ * \param suspended true if the game is suspended.
+ */</doc>

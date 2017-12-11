@@ -1,0 +1,17 @@
+<dec f='include/SDL2/SDL_render.h' l='351' type='int SDL_SetTextureBlendMode(SDL_Texture * texture, SDL_BlendMode blendMode)'/>
+<doc f='include/SDL2/SDL_render.h' l='337'>/**
+ *  \brief Set the blend mode used for texture copy operations.
+ *
+ *  \param texture The texture to update.
+ *  \param blendMode ::SDL_BlendMode to use for texture blending.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid or the blend mode is
+ *          not supported.
+ *
+ *  \note If the blend mode is not supported, the closest supported mode is
+ *        chosen.
+ *
+ *  \sa SDL_GetTextureBlendMode()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='288' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='211' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='242' type='void Solarus::Entity::set_facing_entity(Solarus::Entity * facing_entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='560' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1097' ll='1101' type='void Solarus::Entity::set_facing_entity(Solarus::Entity * facing_entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1784' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3386' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1090'>/**
+ * \brief Sets the entity this entity is currently facing.
+ *
+ * This function is called when this entity is facing a new detector.
+ *
+ * \param facing_entity The detector this entity is now facing (possibly nullptr).
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1093' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='59' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>

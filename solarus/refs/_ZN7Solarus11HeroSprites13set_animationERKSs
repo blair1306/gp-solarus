@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='123' type='void Solarus::HeroSprites::set_animation(const std::string &amp; animation)'/>
+<use f='codebrowser/src/hero/BowState.cpp' l='43' u='c' c='_ZN7Solarus4Hero8BowState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1523' ll='1526' type='void Solarus::HeroSprites::set_animation(const std::string &amp; animation)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1513'>/**
+ * \brief Starts a custom animation of the hero&apos;s sprites.
+ *
+ * All sprites of the hero that have an animation with this name take the
+ * animation. The ones that don&apos;t have such an animation are not displayed.
+ * Many simple animations can be started with this function.
+ * More complex one have dedicated functions.
+ *
+ * \param animation Name of the animation to give to the hero&apos;s sprites.
+ */</doc>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='46' u='c' c='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='46' u='c' c='_ZN7Solarus4Hero13PlungingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='49' u='c' c='_ZN7Solarus4Hero13PlungingState5startEPKNS_6Entity5StateE'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='66' type='SpritePtr Solarus::Treasure::create_sprite() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='192' ll='198' type='SpritePtr Solarus::Treasure::create_sprite() const'/>
+<doc f='codebrowser/src/Treasure.cpp' l='189'>/**
+ * \brief Creates and returns a sprite representing this treasure.
+ */</doc>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='60' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='50' u='c' c='_ZN7Solarus4Hero13TreasureStateC1ERS0_RKNS_8TreasureERKNS_12ScopedLuaRefE'/>

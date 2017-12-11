@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='734' type='static int Solarus::LuaContext::game_api_capture_command_binding(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='106' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1463' ll='1476' type='static int Solarus::LuaContext::game_api_capture_command_binding(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1458'>/**
+ * \brief Implementation of game:capture_command_binding().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

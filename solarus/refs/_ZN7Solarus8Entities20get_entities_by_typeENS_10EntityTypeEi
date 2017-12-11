@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='91' type='EntitySet Solarus::Entities::get_entities_by_type(Solarus::EntityType type, int layer)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='596' u='c' c='_ZN7Solarus8Entities20get_entities_by_typeENS_10EntityTypeE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='623' ll='643' type='EntitySet Solarus::Entities::get_entities_by_type(Solarus::EntityType type, int layer)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='617'>/**
+ * \brief Returns all entities of a type on the given layer.
+ * \param type Type of entities to get.
+ * \param layer The layer to get entities from.
+ * \return All entities of the type on this layer.
+ */</doc>

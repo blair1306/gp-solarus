@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qconfig.h source code [include/x86_64-linux-gnu/qt5/QtCore/qconfig.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qconfig.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qconfig.h.html'>qconfig.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Everything */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* Compile time features */</i></td></tr>
+<tr><th id="3">3</th><td><u>#define <dfn class="macro" id="_M/QT_LARGEFILE_SUPPORT" data-ref="_M/QT_LARGEFILE_SUPPORT">QT_LARGEFILE_SUPPORT</dfn> 64</u></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/QT_POINTER_SIZE" data-ref="_M/QT_POINTER_SIZE">QT_POINTER_SIZE</dfn> 8</u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/QT_REDUCE_RELOCATIONS" data-ref="_M/QT_REDUCE_RELOCATIONS">QT_REDUCE_RELOCATIONS</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>// Compiler sub-arch support</i></td></tr>
+<tr><th id="8">8</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_SSE2" data-ref="_M/QT_COMPILER_SUPPORTS_SSE2">QT_COMPILER_SUPPORTS_SSE2</dfn></u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_SSE3" data-ref="_M/QT_COMPILER_SUPPORTS_SSE3">QT_COMPILER_SUPPORTS_SSE3</dfn></u></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_SSSE3" data-ref="_M/QT_COMPILER_SUPPORTS_SSSE3">QT_COMPILER_SUPPORTS_SSSE3</dfn></u></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_SSE4_1" data-ref="_M/QT_COMPILER_SUPPORTS_SSE4_1">QT_COMPILER_SUPPORTS_SSE4_1</dfn></u></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_SSE4_2" data-ref="_M/QT_COMPILER_SUPPORTS_SSE4_2">QT_COMPILER_SUPPORTS_SSE4_2</dfn></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_AVX" data-ref="_M/QT_COMPILER_SUPPORTS_AVX">QT_COMPILER_SUPPORTS_AVX</dfn></u></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/QT_COMPILER_SUPPORTS_AVX2" data-ref="_M/QT_COMPILER_SUPPORTS_AVX2">QT_COMPILER_SUPPORTS_AVX2</dfn></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">ifndef</span> <span class="macro" data-ref="_M/QT_BOOTSTRAPPED">QT_BOOTSTRAPPED</span></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="18">if</span> defined(<span class="macro" data-ref="_M/QT_NO_IMAGEFORMAT_JPEG">QT_NO_IMAGEFORMAT_JPEG</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_IMAGEFORMAT_JPEG">QT_IMAGEFORMAT_JPEG</span>)</u></td></tr>
+<tr><th id="19">19</th><td><u># undef QT_NO_IMAGEFORMAT_JPEG</u></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="18">elif</span> !defined(<span class="macro" data-ref="_M/QT_NO_IMAGEFORMAT_JPEG">QT_NO_IMAGEFORMAT_JPEG</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_IMAGEFORMAT_JPEG">QT_IMAGEFORMAT_JPEG</span>)</u></td></tr>
+<tr><th id="21">21</th><td><u># define <dfn class="macro" id="_M/QT_NO_IMAGEFORMAT_JPEG" data-ref="_M/QT_NO_IMAGEFORMAT_JPEG">QT_NO_IMAGEFORMAT_JPEG</dfn></u></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="18">endif</span></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">if</span> defined(<span class="macro" data-ref="_M/QT_NO_TABLET">QT_NO_TABLET</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_TABLET">QT_TABLET</span>)</u></td></tr>
+<tr><th id="25">25</th><td><u># undef QT_NO_TABLET</u></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">elif</span> !defined(<span class="macro" data-ref="_M/QT_NO_TABLET">QT_NO_TABLET</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_TABLET">QT_TABLET</span>)</u></td></tr>
+<tr><th id="27">27</th><td><u># define <dfn class="macro" id="_M/QT_NO_TABLET" data-ref="_M/QT_NO_TABLET">QT_NO_TABLET</dfn></u></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/QT_NO_XINPUT">QT_NO_XINPUT</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_XINPUT">QT_XINPUT</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u># undef QT_NO_XINPUT</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">elif</span> !defined(<span class="macro" data-ref="_M/QT_NO_XINPUT">QT_NO_XINPUT</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_XINPUT">QT_XINPUT</span>)</u></td></tr>
+<tr><th id="33">33</th><td><u># define <dfn class="macro" id="_M/QT_NO_XINPUT" data-ref="_M/QT_NO_XINPUT">QT_NO_XINPUT</dfn></u></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">if</span> defined(<span class="macro" data-ref="_M/QT_NO_ZLIB">QT_NO_ZLIB</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_ZLIB">QT_ZLIB</span>)</u></td></tr>
+<tr><th id="37">37</th><td><u># undef QT_NO_ZLIB</u></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">elif</span> !defined(<span class="macro" data-ref="_M/QT_NO_ZLIB">QT_NO_ZLIB</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_ZLIB">QT_ZLIB</span>)</u></td></tr>
+<tr><th id="39">39</th><td><u># define <dfn class="macro" id="_M/QT_NO_ZLIB" data-ref="_M/QT_NO_ZLIB">QT_NO_ZLIB</dfn></u></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">if</span> defined(<span class="macro" data-ref="_M/QT_RUNTIME_XCURSOR">QT_RUNTIME_XCURSOR</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XCURSOR">QT_NO_RUNTIME_XCURSOR</span>)</u></td></tr>
+<tr><th id="43">43</th><td><u># undef QT_RUNTIME_XCURSOR</u></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="42">elif</span> !defined(<span class="macro" data-ref="_M/QT_RUNTIME_XCURSOR">QT_RUNTIME_XCURSOR</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XCURSOR">QT_NO_RUNTIME_XCURSOR</span>)</u></td></tr>
+<tr><th id="45">45</th><td><u># define <dfn class="macro" id="_M/QT_RUNTIME_XCURSOR" data-ref="_M/QT_RUNTIME_XCURSOR">QT_RUNTIME_XCURSOR</dfn></u></td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="42">endif</span></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">if</span> defined(<span class="macro" data-ref="_M/QT_RUNTIME_XFIXES">QT_RUNTIME_XFIXES</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XFIXES">QT_NO_RUNTIME_XFIXES</span>)</u></td></tr>
+<tr><th id="49">49</th><td><u># undef QT_RUNTIME_XFIXES</u></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="48">elif</span> !defined(<span class="macro" data-ref="_M/QT_RUNTIME_XFIXES">QT_RUNTIME_XFIXES</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XFIXES">QT_NO_RUNTIME_XFIXES</span>)</u></td></tr>
+<tr><th id="51">51</th><td><u># define <dfn class="macro" id="_M/QT_RUNTIME_XFIXES" data-ref="_M/QT_RUNTIME_XFIXES">QT_RUNTIME_XFIXES</dfn></u></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="54">if</span> defined(<span class="macro" data-ref="_M/QT_RUNTIME_XINERAMA">QT_RUNTIME_XINERAMA</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XINERAMA">QT_NO_RUNTIME_XINERAMA</span>)</u></td></tr>
+<tr><th id="55">55</th><td><u># undef QT_RUNTIME_XINERAMA</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="54">elif</span> !defined(<span class="macro" data-ref="_M/QT_RUNTIME_XINERAMA">QT_RUNTIME_XINERAMA</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XINERAMA">QT_NO_RUNTIME_XINERAMA</span>)</u></td></tr>
+<tr><th id="57">57</th><td><u># define <dfn class="macro" id="_M/QT_RUNTIME_XINERAMA" data-ref="_M/QT_RUNTIME_XINERAMA">QT_RUNTIME_XINERAMA</dfn></u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="54">endif</span></u></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="60">if</span> defined(<span class="macro" data-ref="_M/QT_RUNTIME_XRANDR">QT_RUNTIME_XRANDR</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XRANDR">QT_NO_RUNTIME_XRANDR</span>)</u></td></tr>
+<tr><th id="61">61</th><td><u># undef QT_RUNTIME_XRANDR</u></td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="60">elif</span> !defined(<span class="macro" data-ref="_M/QT_RUNTIME_XRANDR">QT_RUNTIME_XRANDR</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_NO_RUNTIME_XRANDR">QT_NO_RUNTIME_XRANDR</span>)</u></td></tr>
+<tr><th id="63">63</th><td><u># define <dfn class="macro" id="_M/QT_RUNTIME_XRANDR" data-ref="_M/QT_RUNTIME_XRANDR">QT_RUNTIME_XRANDR</dfn></u></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="60">endif</span></u></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="66">if</span> defined(<span class="macro" data-ref="_M/QT_USE_MATH_H_FLOATS">QT_USE_MATH_H_FLOATS</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/QT_NO_USE_MATH_H_FLOATS">QT_NO_USE_MATH_H_FLOATS</span>)</u></td></tr>
+<tr><th id="67">67</th><td><u># undef QT_USE_MATH_H_FLOATS</u></td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="66">elif</span> !defined(<span class="macro" data-ref="_M/QT_USE_MATH_H_FLOATS">QT_USE_MATH_H_FLOATS</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/QT_NO_USE_MATH_H_FLOATS">QT_NO_USE_MATH_H_FLOATS</span>)</u></td></tr>
+<tr><th id="69">69</th><td><u># define <dfn class="macro" id="_M/QT_USE_MATH_H_FLOATS" data-ref="_M/QT_USE_MATH_H_FLOATS">QT_USE_MATH_H_FLOATS</dfn></u></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="66">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="16">endif</span> // QT_BOOTSTRAPPED</u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/QT_VISIBILITY_AVAILABLE" data-ref="_M/QT_VISIBILITY_AVAILABLE">QT_VISIBILITY_AVAILABLE</dfn></u></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/QT_QPA_DEFAULT_PLATFORM_NAME" data-ref="_M/QT_QPA_DEFAULT_PLATFORM_NAME">QT_QPA_DEFAULT_PLATFORM_NAME</dfn> "xcb"</u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/qrc_images.cpp.html'>codebrowser/gui/qrc_images.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,58 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='356' type='void Solarus::Entity::update()'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='207' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='209' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='226' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='228' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='248' c='_ZN7Solarus9Boomerang6updateEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='250' u='c' c='_ZN7Solarus9Boomerang6updateEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='355' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='358' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='379' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='411' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='162' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='183' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<ovr f='codebrowser/src/entities/CrystalBlock.cpp' l='183' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='204' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1232' c='_ZN7Solarus12CustomEntity6updateEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1234' u='c' c='_ZN7Solarus12CustomEntity6updateEv'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='498' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='500' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='505' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='507' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='769' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='771' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1190' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1195' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3373' ll='3434' type='void Solarus::Entity::update()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3362'>/**
+ * \brief Updates the entity.
+ *
+ * This function is called repeatedly by the map.
+ * By default, it updates the position
+ * of the entity according to its movement (if any),
+ * and it updates the sprites frames if there are sprites.
+ * Redefine it in subclasses for the entities that should be updated
+ * for other treatments but don&apos;t forget to call this method
+ * to handle the movement and the sprites.
+ */</doc>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='63' c='_ZN7Solarus9Explosion6updateEv'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='65' u='c' c='_ZN7Solarus9Explosion6updateEv'/>
+<ovr f='codebrowser/src/entities/Fire.cpp' l='53' c='_ZN7Solarus4Fire6updateEv'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='55' u='c' c='_ZN7Solarus4Fire6updateEv'/>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='178' c='_ZN7Solarus4Hero6updateEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='168' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='170' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='523' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='526' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='126' c='_ZN7Solarus6Sensor6updateEv'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='128' u='c' c='_ZN7Solarus6Sensor6updateEv'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='202' c='_ZN7Solarus12ShopTreasure6updateEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='204' u='c' c='_ZN7Solarus12ShopTreasure6updateEv'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='213' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='215' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='60' u='c' c='_ZN7Solarus4Hero12PullingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='147' u='c' c='_ZN7Solarus4Hero12PullingState24notify_movement_finishedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='160' u='c' c='_ZN7Solarus4Hero12PullingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero12PushingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='157' u='c' c='_ZN7Solarus4Hero12PushingState24notify_movement_finishedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='170' u='c' c='_ZN7Solarus4Hero12PushingState23notify_obstacle_reachedEv'/>

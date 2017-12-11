@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='64' type='void Solarus::CircleMovement::set_clockwise(bool clockwise)'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='66' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1509' u='c' c='_ZN7Solarus10LuaContext33circle_movement_api_set_clockwiseEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='224' ll='227' type='void Solarus::CircleMovement::set_clockwise(bool clockwise)'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='220'>/**
+ * \brief Sets the direction of circles.
+ * \param clockwise true to make clockwise circles
+ */</doc>

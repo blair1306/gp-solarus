@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='487' type='bool'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='506' u='r' c='_ZNK7Solarus6Entity10is_enabledEv'/>
+<offset>1936</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='487'>/**&lt; indicates that the entity is enabled
+                                                 * (if not, it will not be displayed and collisions will not be notified) */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='82' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2253' u='r' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2260' u='w' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2288' u='w' c='_ZN7Solarus6Entity11set_enabledEb'/>

@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_surface.h' l='282' type='int SDL_SetSurfaceAlphaMod(SDL_Surface * surface, Uint8 alpha)'/>
+<doc f='include/SDL2/SDL_surface.h' l='272'>/**
+ *  \brief Set an additional alpha value used in blit operations.
+ *
+ *  \param surface The surface to update.
+ *  \param alpha The alpha value multiplied into blit operations.
+ *
+ *  \return 0 on success, or -1 if the surface is not valid.
+ *
+ *  \sa SDL_GetSurfaceAlphaMod()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='259' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='343' u='c' c='_ZN7Solarus7Surface11set_opacityEh'/>

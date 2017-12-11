@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='50' type='lua_State * Solarus::ScopedLuaRef::get_lua_state() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='930' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='479' u='c' c='_ZN7Solarus10LuaContext8push_refEP9lua_StateRKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='121' ll='123' type='lua_State * Solarus::ScopedLuaRef::get_lua_state() const'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='117'>/**
+ * \brief Returns the Lua state this ref lives in.
+ * \return The Lua state (nullptr means that the ref is empty).
+ */</doc>

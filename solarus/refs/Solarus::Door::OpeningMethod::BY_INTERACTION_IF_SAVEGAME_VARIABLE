@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='58' type='2'/>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='58'>/**&lt; Can be opened by pressing the action command, provided that a savegame variable has the correct value. */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='46' u='r'/>
+<use f='codebrowser/src/entities/Door.cpp' l='310' u='r' c='_ZNK7Solarus4Door23is_interaction_requiredEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='426' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='598' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1070' u='r' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

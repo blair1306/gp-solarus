@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='276' type='bool Solarus::Entity::has_layer_independent_collisions() const'/>
+<use f='codebrowser/src/Map.cpp' l='869' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1722' ll='1724' type='bool Solarus::Entity::has_layer_independent_collisions() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1761' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1821' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1875' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1919' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1716'>/**
+ * \brief Returns whether this entity can have collisions with entities even if
+ * they are not on the same layer.
+ * \return \c true if this entity can detect collisions with entities
+ * that are on another layer.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1585' u='c' c='_ZN7Solarus10LuaContext43entity_api_has_layer_independent_collisionsEP9lua_State'/>

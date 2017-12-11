@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Color.h' l='37' type='uint8_t Solarus::Color::get_alpha() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Color.inl' l='51' ll='53' type='uint8_t Solarus::Color::get_alpha() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Color.inl' l='47'>/**
+ * \brief Returns the alpha component of this color.
+ * \return The alpha component. 255 is opaque.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='682' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='274' type='void Solarus::LuaContext::main_on_finished()'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='179' u='c' c='_ZN7Solarus10LuaContext4exitEv'/>
+<def f='codebrowser/src/lua/MainApi.cpp' l='417' ll='424' type='void Solarus::LuaContext::main_on_finished()'/>
+<doc f='codebrowser/src/lua/MainApi.cpp' l='412'>/**
+ * \brief Calls sol.main.on_finished() if it exists.
+ *
+ * This function is called when the program is reset or stopped.
+ */</doc>

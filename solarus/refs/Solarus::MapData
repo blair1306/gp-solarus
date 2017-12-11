@@ -1,0 +1,62 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/MapData.h' l='137' ll='212'/>
+<size>160</size>
+<doc f='codebrowser/include/solarus/MapData.h' l='134'>/**
+ * \brief Stores the contents of a map data file.
+ */</doc>
+<fun r='_ZN7Solarus7MapDataC1Ev'/>
+<fun r='_ZNK7Solarus7MapData8get_sizeEv'/>
+<fun r='_ZN7Solarus7MapData8set_sizeERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus7MapData12get_locationEv'/>
+<fun r='_ZN7Solarus7MapData12set_locationERKNS_5PointE'/>
+<fun r='_ZNK7Solarus7MapData13get_min_layerEv'/>
+<fun r='_ZN7Solarus7MapData13set_min_layerEi'/>
+<fun r='_ZNK7Solarus7MapData13get_max_layerEv'/>
+<fun r='_ZN7Solarus7MapData13set_max_layerEi'/>
+<fun r='_ZNK7Solarus7MapData14is_valid_layerEi'/>
+<fun r='_ZNK7Solarus7MapData9has_worldEv'/>
+<fun r='_ZNK7Solarus7MapData9get_worldEv'/>
+<fun r='_ZN7Solarus7MapData9set_worldERKSs'/>
+<fun r='_ZNK7Solarus7MapData9has_floorEv'/>
+<fun r='_ZNK7Solarus7MapData9get_floorEv'/>
+<fun r='_ZN7Solarus7MapData9set_floorEi'/>
+<fun r='_ZNK7Solarus7MapData14get_tileset_idEv'/>
+<fun r='_ZN7Solarus7MapData14set_tileset_idERKSs'/>
+<fun r='_ZNK7Solarus7MapData9has_musicEv'/>
+<fun r='_ZNK7Solarus7MapData12get_music_idEv'/>
+<fun r='_ZN7Solarus7MapData12set_music_idERKSs'/>
+<fun r='_ZNK7Solarus7MapData16get_num_entitiesEv'/>
+<fun r='_ZNK7Solarus7MapData16get_num_entitiesEi'/>
+<fun r='_ZNK7Solarus7MapData13get_num_tilesEi'/>
+<fun r='_ZNK7Solarus7MapData24get_num_dynamic_entitiesEi'/>
+<fun r='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<fun r='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<fun r='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<fun r='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<fun r='_ZNK7Solarus7MapData13entity_existsERKNS_11EntityIndexE'/>
+<fun r='_ZNK7Solarus7MapData10get_entityERKNS_11EntityIndexE'/>
+<fun r='_ZN7Solarus7MapData10get_entityERKNS_11EntityIndexE'/>
+<fun r='_ZNK7Solarus7MapData16get_entity_indexERKSs'/>
+<fun r='_ZNK7Solarus7MapData18get_entity_by_nameERKSs'/>
+<fun r='_ZN7Solarus7MapData18get_entity_by_nameERKSs'/>
+<fun r='_ZNK7Solarus7MapData13entity_existsERKSs'/>
+<fun r='_ZNK7Solarus7MapData26get_named_entities_indexesEv'/>
+<fun r='_ZN7Solarus7MapData15set_entity_nameERKNS_11EntityIndexERKSs'/>
+<fun r='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<fun r='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<fun r='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>
+<fun r='_ZN7Solarus7MapData15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<smbr r='Solarus::MapData::NO_FLOOR' t='const int'/>
+<fun r='_ZNK7Solarus7MapData12get_entitiesEi'/>
+<fun r='_ZN7Solarus7MapData12get_entitiesEi'/>
+<mbr r='Solarus::MapData::min_layer' o='64' t='int'/>
+<mbr r='Solarus::MapData::max_layer' o='96' t='int'/>
+<mbr r='Solarus::MapData::size' o='128' t='Solarus::Size'/>
+<mbr r='Solarus::MapData::world' o='192' t='std::string'/>
+<mbr r='Solarus::MapData::location' o='256' t='Solarus::Point'/>
+<mbr r='Solarus::MapData::floor' o='320' t='int'/>
+<mbr r='Solarus::MapData::tileset_id' o='384' t='std::string'/>
+<mbr r='Solarus::MapData::music_id' o='448' t='std::string'/>
+<mbr r='Solarus::MapData::entities' o='512' t='std::map&lt;int, EntityDataList&gt;'/>
+<mbr r='Solarus::MapData::named_entities' o='896' t='std::map&lt;std::string, EntityIndex&gt;'/>

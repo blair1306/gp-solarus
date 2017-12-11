@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='62' type='void Solarus::HeroSprites::set_sword_sprite_id(const std::string &amp; sprite_id)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='129' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='243' ll='281' type='void Solarus::HeroSprites::set_sword_sprite_id(const std::string &amp; sprite_id)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='238'>/**
+ * \brief Sets the animation set id to use for the sword sprite.
+ * \param sprite_id The sword sprite animation set id.
+ * An empty string means no sword sprite.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2041' u='c' c='_ZN7Solarus10LuaContext28hero_api_set_sword_sprite_idEP9lua_State'/>

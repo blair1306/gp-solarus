@@ -1,0 +1,62 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='218' type='const std::shared_ptr&lt;Movement&gt; &amp; Solarus::Entity::get_movement()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='217'>// Movement.</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='447' u='c' c='_ZN7Solarus5Arrow22has_reached_map_borderEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='451' u='c' c='_ZN7Solarus5Arrow22has_reached_map_borderEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='135' u='c' c='_ZN7Solarus5Block16is_hero_obstacleERNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='215' u='c' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='247' u='c' c='_ZN7Solarus5Block23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='331' u='c' c='_ZN7Solarus5Block5resetEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='146' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='248' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='248' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='279' u='c' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='236' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='270' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='365' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='411' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1488' ll='1490' type='const std::shared_ptr&lt;Movement&gt; &amp; Solarus::Entity::get_movement()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1624' u='c' c='_ZN7Solarus6Entity23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2182' u='c' c='_ZN7Solarus6Entity23notify_movement_startedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2204' u='c' c='_ZN7Solarus6Entity23notify_movement_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2265' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2266' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2293' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2294' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1484'>/**
+ * \brief Returns the current movement of the entity.
+ * \return the entity&apos;s movement, or nullptr if there is no movement
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='209' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='210' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='233' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='237' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1200' u='c' c='_ZN7Solarus4Hero14reset_movementEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='202' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='202' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='306' u='c' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='364' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='370' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='378' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='378' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='304' u='c' c='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='305' u='c' c='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='134' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='117' u='c' c='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='117' u='c' c='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='118' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='83' u='c' c='_ZN7Solarus4Hero15SpinAttackState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='101' u='c' c='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='101' u='c' c='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='257' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='183' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='201' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='63' u='c' c='_ZN7Solarus4Hero18SwordSwingingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='81' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='156' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21is_cutting_with_swordERNS_6EntityE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='65' u='c' c='_ZN7Solarus4Hero17SwordTappingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='83' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='117' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1547' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_movementEP9lua_State'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='177' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>

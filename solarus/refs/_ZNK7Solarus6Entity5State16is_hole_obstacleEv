@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='96' type='bool Solarus::Entity::State::is_hole_obstacle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='653' ll='655' type='bool Solarus::Entity::State::is_hole_obstacle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='646'>/**
+ * \brief Returns whether a hole is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the holes are considered as obstacles in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1438' u='c' c='_ZNK7Solarus4Hero16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='275' c='_ZNK7Solarus4Hero12PullingState16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='297' c='_ZNK7Solarus4Hero12PushingState16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='185' c='_ZNK7Solarus4Hero15SpinAttackState16is_hole_obstacleEv'/>

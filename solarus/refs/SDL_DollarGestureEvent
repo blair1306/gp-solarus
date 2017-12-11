@@ -1,0 +1,13 @@
+<def f='include/SDL2/SDL_events.h' l='421' ll='431'/>
+<size>40</size>
+<doc f='include/SDL2/SDL_events.h' l='418'>/**
+ * \brief Dollar Gesture Event (event.dgesture.*)
+ */</doc>
+<mbr r='SDL_DollarGestureEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_DollarGestureEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_DollarGestureEvent::touchId' o='64' t='SDL_TouchID'/>
+<mbr r='SDL_DollarGestureEvent::gestureId' o='128' t='SDL_GestureID'/>
+<mbr r='SDL_DollarGestureEvent::numFingers' o='192' t='Uint32'/>
+<mbr r='SDL_DollarGestureEvent::error' o='224' t='float'/>
+<mbr r='SDL_DollarGestureEvent::x' o='256' t='float'/>
+<mbr r='SDL_DollarGestureEvent::y' o='288' t='float'/>

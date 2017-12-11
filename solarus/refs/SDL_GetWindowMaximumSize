@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_video.h' l='602' type='void SDL_GetWindowMaximumSize(SDL_Window * window, int * w, int * h)'/>
+<doc f='include/SDL2/SDL_video.h' l='592'>/**
+ *  \brief Get the maximum size of a window&apos;s client area.
+ *
+ *  \param window   The window to query.
+ *  \param w        Pointer to variable for storing the maximum width, may be NULL
+ *  \param h        Pointer to variable for storing the maximum height, may be NULL
+ *
+ *  \sa SDL_GetWindowMinimumSize()
+ *  \sa SDL_SetWindowMaximumSize()
+ */</doc>

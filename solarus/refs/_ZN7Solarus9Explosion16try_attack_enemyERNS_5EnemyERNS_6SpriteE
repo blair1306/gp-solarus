@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Explosion.h' l='57' type='void Solarus::Explosion::try_attack_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; enemy_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='995' u='c' c='_ZN7Solarus5Enemy31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='140' u='c' c='_ZN7Solarus9Explosion27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<def f='codebrowser/src/entities/Explosion.cpp' l='151' ll='158' type='void Solarus::Explosion::try_attack_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; enemy_sprite)'/>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='143'>/**
+ * \brief Attacks the specified enemy if possible.
+ *
+ * This function is called by this explosion when it detects an enemy, or by an enemy who detects this explosion.
+ *
+ * \param enemy the enemy to attack
+ * \param enemy_sprite the enemy&apos;s sprite detected by the explosion
+ */</doc>

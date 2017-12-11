@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='87' type='void Solarus::Surface::set_opacity(uint8_t opacity)'/>
+<use f='codebrowser/src/Map.cpp' l='735' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='188' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='332' ll='351' type='void Solarus::Surface::set_opacity(uint8_t opacity)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='328'>/**
+ * \brief Sets the opacity of this surface.
+ * \param opacity The opacity (0 to 255).
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='233' u='c' c='_ZN7Solarus10LuaContext23surface_api_set_opacityEP9lua_State'/>

@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_audio.h' l='344' type='SDL_AudioDeviceID SDL_OpenAudioDevice(const char * device, int iscapture, const SDL_AudioSpec * desired, SDL_AudioSpec * obtained, int allowed_changes)'/>
+<doc f='include/SDL2/SDL_audio.h' l='331'>/**
+ *  Open a specific audio device. Passing in a device name of NULL requests
+ *  the most reasonable default (and is equivalent to calling SDL_OpenAudio()).
+ *
+ *  The device name is a UTF-8 string reported by SDL_GetAudioDeviceName(), but
+ *  some drivers allow arbitrary and driver-specific strings, such as a
+ *  hostname/IP address for a remote audio server, or a filename in the
+ *  diskaudio driver.
+ *
+ *  \return 0 on error, a valid device ID that is &gt;= 2 on success.
+ *
+ *  SDL_OpenAudio(), unlike this function, always acts on device ID 1.
+ */</doc>

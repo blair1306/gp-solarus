@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='89' type='std::string Solarus::Surface::get_pixels() const'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='360' ll='409' type='std::string Solarus::Surface::get_pixels() const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='353'>/**
+ * \brief Returns a buffer of the raw pixels of this surface.
+ *
+ * Pixels returned have the RGBA 32-bit format.
+ *
+ * \return The pixel buffer.
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='250' u='c' c='_ZN7Solarus10LuaContext22surface_api_get_pixelsEP9lua_State'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='84' type='Solarus::Treasure'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='61' u='w' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='111' u='a' c='_ZNK7Solarus5Chest12get_treasureEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='123' u='w' c='_ZN7Solarus5Chest12set_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='388' u='m' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='390' u='m' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='394' u='r' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='396' u='m' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='397' u='m' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='405' u='r' c='_ZN7Solarus5Chest6updateEv'/>
+<offset>2048</offset>
+<doc f='codebrowser/include/solarus/entities/Chest.h' l='84'>/**&lt; The treasure placed in this chest (possibly empty, possibly non-obtainable).
+                                        * Remains unchanged when the chest is open.  */</doc>

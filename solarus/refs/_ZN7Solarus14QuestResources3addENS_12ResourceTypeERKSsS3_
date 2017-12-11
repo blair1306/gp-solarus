@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='65' type='bool Solarus::QuestResources::add(Solarus::ResourceType resource_type, const std::string &amp; id, const std::string &amp; description)'/>
+<use f='codebrowser/src/QuestResources.cpp' l='63' u='c' c='_ZN7Solarus12_GLOBAL__N_118l_resource_elementEP9lua_State'/>
+<def f='codebrowser/src/QuestResources.cpp' l='134' ll='142' type='bool Solarus::QuestResources::add(Solarus::ResourceType resource_type, const std::string &amp; id, const std::string &amp; description)'/>
+<use f='codebrowser/src/QuestResources.cpp' l='180' u='c' c='_ZN7Solarus14QuestResources6renameENS_12ResourceTypeERKSsS3_'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='126'>/**
+ * \brief Adds a resource element to the list.
+ * \param resource_type A type of resource.
+ * \param id Id of the element to add.
+ * \param description Description the element to add.
+ * \return \c true if the element was added, \c false if an element with
+ * this id already exists.
+ */</doc>

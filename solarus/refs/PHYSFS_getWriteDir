@@ -1,0 +1,15 @@
+<dec f='include/physfs.h' l='732' type='const char * PHYSFS_getWriteDir()'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='229' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='444' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='467' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<doc f='include/physfs.h' l='721'>/**
+ * \fn const char *PHYSFS_getWriteDir(void)
+ * \brief Get path where PhysicsFS will allow file writing.
+ *
+ * Get the current write dir. The default write dir is NULL.
+ *
+ *  \return READ ONLY string of write dir in platform-dependent notation,
+ *           OR NULL IF NO WRITE PATH IS CURRENTLY SET.
+ *
+ * \sa PHYSFS_setWriteDir
+ */</doc>

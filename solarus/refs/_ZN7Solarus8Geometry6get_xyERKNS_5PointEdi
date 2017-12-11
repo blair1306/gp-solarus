@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='77' type='Solarus::Point Solarus::Geometry::get_xy(const Solarus::Point &amp; point1, double angle, int distance)'/>
+<def f='codebrowser/src/lowlevel/Geometry.cpp' l='100' ll='102' type='Solarus::Point Solarus::Geometry::get_xy(const Solarus::Point &amp; point1, double angle, int distance)'/>
+<doc f='codebrowser/src/lowlevel/Geometry.cpp' l='93'>/**
+ * \brief Returns the cartesian coordinates of a vector, given its initial point, angle and distance.
+ * \param point1 Coordinates of the first point.
+ * \param angle Angle of the vector in radians.
+ * \param distance Length of the vector in pixels.
+ * \return The coordinates of the second point.
+ */</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='404' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>

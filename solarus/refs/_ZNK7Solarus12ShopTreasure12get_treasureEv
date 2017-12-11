@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='69' type='const Solarus::Treasure &amp; Solarus::ShopTreasure::get_treasure() const'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='119' ll='121' type='const Solarus::Treasure &amp; Solarus::ShopTreasure::get_treasure() const'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='115'>/**
+ * \brief Returns the treasure for sale in this entity.
+ * \return The treasure.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3832' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>

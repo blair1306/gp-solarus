@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='78' type='void Solarus::Switch::try_activate(Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1785' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='297' ll='306' type='void Solarus::Switch::try_activate(Solarus::Hero &amp; hero)'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='290'>/**
+ * \brief This function is called when the hero overlaps this switch.
+ *
+ * The switch is activated if its properties allow it.
+ *
+ * \param hero the hero
+ */</doc>

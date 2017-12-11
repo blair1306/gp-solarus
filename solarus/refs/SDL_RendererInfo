@@ -1,0 +1,11 @@
+<def f='include/SDL2/SDL_render.h' l='78' ll='86'/>
+<size>88</size>
+<doc f='include/SDL2/SDL_render.h' l='75'>/**
+ *  \brief Information on the capabilities of a render driver or context.
+ */</doc>
+<mbr r='SDL_RendererInfo::name' o='0' t='const char *'/>
+<mbr r='SDL_RendererInfo::flags' o='64' t='Uint32'/>
+<mbr r='SDL_RendererInfo::num_texture_formats' o='96' t='Uint32'/>
+<mbr r='SDL_RendererInfo::texture_formats' o='128' t='Uint32 [16]'/>
+<mbr r='SDL_RendererInfo::max_texture_width' o='640' t='int'/>
+<mbr r='SDL_RendererInfo::max_texture_height' o='672' t='int'/>

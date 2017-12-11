@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='53' type='void SPC_DSP::disable_surround(bool disable = true)'/>
+<def f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='203' ll='206' type='void SPC_DSP::disable_surround(bool disable = true)'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='272' u='c' c='_ZN8SNES_SPC16disable_surroundEb'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='52'>// If true, prevents channels and global volumes from being phase-negated</doc>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='645' u='c' c='_ZN7SPC_DSP4initEPv'/>
+<use f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='42' u='c' c='spc_dsp_disable_surround'/>

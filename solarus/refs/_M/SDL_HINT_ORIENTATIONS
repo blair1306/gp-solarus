@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='226'/>
+<doc f='include/SDL2/SDL_hints.h' l='217'>/**
+ *  \brief  A variable controlling which orientations are allowed on iOS.
+ *
+ *  In some circumstances it is necessary to be able to explicitly control
+ *  which UI orientations are allowed.
+ *
+ *  This variable is a space delimited list of the following values:
+ *    &quot;LandscapeLeft&quot;, &quot;LandscapeRight&quot;, &quot;Portrait&quot; &quot;PortraitUpsideDown&quot;
+ */</doc>

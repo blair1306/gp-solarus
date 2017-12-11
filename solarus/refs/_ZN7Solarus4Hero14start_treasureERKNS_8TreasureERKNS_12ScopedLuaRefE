@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='259' type='void Solarus::Hero::start_treasure(const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='405' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2388' ll='2393' type='void Solarus::Hero::start_treasure(const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2382'>/**
+ * \brief Makes the hero brandish a treasure.
+ * \param treasure The treasure to give him. It must be obtainable.
+ * \param callback_ref Lua ref to a function to call when the
+ * treasure&apos;s dialog finishes (possibly an empty ref).
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='451' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2331' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3857' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>

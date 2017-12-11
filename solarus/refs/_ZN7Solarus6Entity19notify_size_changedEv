@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='151' type='void Solarus::Entity::notify_size_changed()'/>
+<ovr f='codebrowser/src/entities/Camera.cpp' l='276' c='_ZN7Solarus6Camera19notify_size_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='846' u='c' c='_ZN7Solarus6Entity8set_sizeEii'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='861' ll='864' type='void Solarus::Entity::notify_size_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='858'>/**
+ * \brief Notifies this entity that its size has just changed.
+ */</doc>

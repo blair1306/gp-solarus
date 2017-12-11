@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='108' type='const std::string &amp; Solarus::Map::get_destination_name() const'/>
+<use f='codebrowser/src/Game.cpp' l='431' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Map.cpp' l='359' ll='361' type='const std::string &amp; Solarus::Map::get_destination_name() const'/>
+<doc f='codebrowser/src/Map.cpp' l='353'>/**
+ * \brief Returns the destination point name set by the last call to
+ * set_destination().
+ * \return The name of the destination point previously set,
+ * possibly an empty string (meaning the default one).
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='573' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>

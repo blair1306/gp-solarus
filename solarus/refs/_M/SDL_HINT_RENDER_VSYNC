@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='129'/>
+<doc f='include/SDL2/SDL_hints.h' l='120'>/**
+ *  \brief  A variable controlling whether updates to the SDL screen surface should be synchronized with the vertical refresh, to avoid tearing.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Disable vsync
+ *    &quot;1&quot;       - Enable vsync
+ *
+ *  By default SDL does not sync screen surface updates with vertical refresh.
+ */</doc>

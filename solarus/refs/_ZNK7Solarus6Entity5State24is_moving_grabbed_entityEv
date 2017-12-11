@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='130' type='bool Solarus::Entity::State::is_moving_grabbed_entity() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1004' ll='1006' type='bool Solarus::Entity::State::is_moving_grabbed_entity() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='996'>/**
+ * \brief Returns whether the entity is grabbing and moving an entity in this state.
+ *
+ * If he is not grabbing any entity, false is returned.
+ * Returns false by default.
+ *
+ * \return true if the entity is grabbing and moving an entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2326' u='c' c='_ZNK7Solarus4Hero24is_moving_grabbed_entityEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='128' c='_ZNK7Solarus4Hero12PullingState24is_moving_grabbed_entityEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='138' c='_ZNK7Solarus4Hero12PushingState24is_moving_grabbed_entityEv'/>

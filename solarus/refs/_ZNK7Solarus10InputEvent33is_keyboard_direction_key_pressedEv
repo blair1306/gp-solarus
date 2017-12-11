@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='241' type='bool Solarus::InputEvent::is_keyboard_direction_key_pressed() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='690' ll='693' type='bool Solarus::InputEvent::is_keyboard_direction_key_pressed() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='703' u='c' c='_ZNK7Solarus10InputEvent37is_keyboard_non_direction_key_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1356' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1425' u='c' c='_ZNK7Solarus10InputEvent20is_direction_pressedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='685'>/**
+ * \brief Returns whether this event is a keyboard event
+ * corresponding to pressing one of the four directional keys.
+ * \return true if this event corresponds to pressing one of the four directional keys
+ */</doc>

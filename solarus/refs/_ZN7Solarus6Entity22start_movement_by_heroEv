@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='328' type='bool Solarus::Entity::start_movement_by_hero()'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='204' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3265' ll='3267' type='bool Solarus::Entity::start_movement_by_hero()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3256'>/**
+ * \brief This function is called when the player tries to push or pull this
+ * entity.
+ *
+ * By default, nothing happens.
+ * Redefine your function in the subclasses to make something happen with the entity.
+ *
+ * \return \c true if this entity was pushed or pulled successfully.
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='102' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>

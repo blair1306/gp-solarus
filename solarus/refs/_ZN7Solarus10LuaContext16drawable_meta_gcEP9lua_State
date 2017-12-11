@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='550' type='static int Solarus::LuaContext::drawable_meta_gc(lua_State * )'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='361' ll='375' type='static int Solarus::LuaContext::drawable_meta_gc(lua_State * l)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='356'>/**
+ * \brief Finalizer of types sprite, surface and text surface.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='75' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='65' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='99' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>

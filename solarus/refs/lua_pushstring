@@ -1,0 +1,18 @@
+<dec f='include/luajit-2.0/lua.h' l='164' type='void lua_pushstring(lua_State * L, const char * s)'/>
+<use f='codebrowser/src/EntityData.cpp' l='854' u='c' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='878' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='151' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='152' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='153' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='576' u='c' c='_ZN7Solarus10LuaContext9is_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='633' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='118' u='c' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='570' u='c' c='_ZNK7Solarus10LuaContext22userdata_has_metafieldERKNS_15ExportableToLuaEPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='891' u='c' c='_ZN7Solarus10LuaContext13register_typeERKSsPK8luaL_RegS5_S5_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1145' u='c' c='_ZN7Solarus10LuaContext19is_solarus_userdataEP9lua_StateiRSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2175' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2194' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2469' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2569' u='c' c='_ZN7Solarus10LuaContext12on_obtainingERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2587' u='c' c='_ZN7Solarus10LuaContext11on_obtainedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='308' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>

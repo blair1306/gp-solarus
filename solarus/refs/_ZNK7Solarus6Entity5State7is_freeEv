@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='125' type='bool Solarus::Entity::State::is_free() const'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='124'>// state specific</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='950' ll='952' type='bool Solarus::Entity::State::is_free() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='942'>/**
+ * \brief Returns whether the entity can walk normally and interact with entities
+ * in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity can walk normally
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1135' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2296' u='c' c='_ZNK7Solarus4Hero7is_freeEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='152' c='_ZNK7Solarus4Hero9FreeState7is_freeEv'/>

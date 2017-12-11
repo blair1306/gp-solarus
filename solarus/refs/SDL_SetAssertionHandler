@@ -1,0 +1,21 @@
+<dec f='include/SDL2/SDL_assert.h' l='210' type='void SDL_SetAssertionHandler(SDL_AssertionHandler handler, void * userdata)'/>
+<doc f='include/SDL2/SDL_assert.h' l='190'>/**
+ *  \brief Set an application-defined assertion handler.
+ *
+ *  This allows an app to show its own assertion UI and/or force the
+ *  response to an assertion failure. If the app doesn&apos;t provide this, SDL
+ *  will try to do the right thing, popping up a system-specific GUI dialog,
+ *  and probably minimizing any fullscreen windows.
+ *
+ *  This callback may fire from any thread, but it runs wrapped in a mutex, so
+ *  it will only fire from one thread at a time.
+ *
+ *  Setting the callback to NULL restores SDL&apos;s original internal handler.
+ *
+ *  This callback is NOT reset to SDL&apos;s internal handler upon SDL_Quit()!
+ *
+ *  \return SDL_assert_state value of how to handle the assertion failure.
+ *
+ *  \param handler Callback function, called when an assertion fails.
+ *  \param userdata A pointer passed to the callback as-is.
+ */</doc>

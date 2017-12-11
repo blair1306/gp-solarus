@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='286' type='void Solarus::Hero::start_state_from_ground()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='735' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2172' u='c' c='_ZN7Solarus4Hero25notify_game_over_finishedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2674' ll='2737' type='void Solarus::Hero::start_state_from_ground()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2660'>/**
+ * \brief Activates immediately the state corresponding to the current ground.
+ *
+ * Only the state is changed here.
+ * Some other functions like start_deep_water() and start_hole()
+ * are triggered when the ground changes (for example,
+ * going from normal ground to deep water ground) and make more
+ * complex transitions.
+ * This function is supposed to called when the ground was ignored
+ * and you want to apply its effect now (no matter whether it has changed or not).
+ * This function is typically called at the end of a state that ignores
+ * the ground (like JumpingState) to choose the
+ * correct next state depending on the ground the hero lands on.
+ */</doc>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='204' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='156' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='83' u='c' c='_ZN7Solarus4Hero18ForcedWalkingState6updateEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='211' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='221' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='123' u='c' c='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='151' u='c' c='_ZN7Solarus4Hero12JumpingState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='119' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2212' u='c' c='_ZN7Solarus10LuaContext17hero_api_unfreezeEP9lua_State'/>

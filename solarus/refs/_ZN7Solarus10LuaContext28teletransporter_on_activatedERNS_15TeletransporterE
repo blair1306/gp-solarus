@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='387' type='void Solarus::LuaContext::teletransporter_on_activated(Solarus::Teletransporter &amp; teletransporter)'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='321' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6014' ll='6023' type='void Solarus::LuaContext::teletransporter_on_activated(Solarus::Teletransporter &amp; teletransporter)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6007'>/**
+ * \brief Calls the on_activated() method of a Lua teletransporter.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param teletransporter A teletransporter.
+ */</doc>

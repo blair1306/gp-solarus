@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='432' type='Solarus::Map *'/>
+<offset>384</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='432'>/**&lt; The map where this entity is, or nullptr. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='63' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='228' u='r' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='303' u='r' c='_ZNK7Solarus6Entity9is_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='303' u='r' c='_ZNK7Solarus6Entity9is_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='317' u='w' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='433' u='r' c='_ZNK7Solarus6Entity7get_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='442' u='r' c='_ZN7Solarus6Entity8get_gameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='451' u='r' c='_ZNK7Solarus6Entity8get_gameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='459' u='r' c='_ZN7Solarus6Entity12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='460' u='r' c='_ZN7Solarus6Entity12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='468' u='r' c='_ZNK7Solarus6Entity12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='469' u='r' c='_ZNK7Solarus6Entity12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='553' u='r' c='_ZN7Solarus6Entity20notify_being_removedEv'/>

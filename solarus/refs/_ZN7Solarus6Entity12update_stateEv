@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='383' type='void Solarus::Entity::update_state()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3433' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3545' ll='3554' type='void Solarus::Entity::update_state()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3540'>/**
+ * \brief Updates the entity&apos;s internal state if any.
+ *
+ * This function is called repeatedly by the game loop.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='185' u='c' c='_ZN7Solarus4Hero6updateEv'/>

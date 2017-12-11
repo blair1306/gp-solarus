@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1236' type='void Solarus::LuaContext::on_direction_changed(const std::string &amp; animation, int direction)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2071' ll='2079' type='void Solarus::LuaContext::on_direction_changed(const std::string &amp; animation, int direction)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2066'>/**
+ * \brief Calls the on_direction_changed() method of the object on top of the stack.
+ * \param animation Name of the sprite animation.
+ * \param frame The new frame.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='662' u='c' c='_ZN7Solarus10LuaContext27sprite_on_direction_changedERNS_6SpriteERKSsi'/>

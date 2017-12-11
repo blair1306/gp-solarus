@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='373' type='void Solarus::LuaContext::entity_on_enabled(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1262' u='c' c='_ZN7Solarus12CustomEntity14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='923' u='c' c='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5742' ll='5751' type='void Solarus::LuaContext::entity_on_enabled(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5735'>/**
+ * \brief Calls the on_enabled() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ */</doc>

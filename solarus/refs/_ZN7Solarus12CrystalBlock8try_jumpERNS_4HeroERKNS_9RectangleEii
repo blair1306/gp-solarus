@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/CrystalBlock.h' l='65' type='bool Solarus::CrystalBlock::try_jump(Solarus::Hero &amp; hero, const Solarus::Rectangle &amp; collision_box, int jump_direction, int jump_length)'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='126' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='133' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='142' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='149' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/CrystalBlock.cpp' l='165' ll='178' type='bool Solarus::CrystalBlock::try_jump(Solarus::Hero &amp; hero, const Solarus::Rectangle &amp; collision_box, int jump_direction, int jump_length)'/>
+<doc f='codebrowser/src/entities/CrystalBlock.cpp' l='156'>/**
+ * \brief Makes the hero leave this raised crystal block if possible.
+ * \param hero the hero
+ * \param collision_box destination wanted for the jump
+ * \param jump_direction direction of the jump
+ * \param jump_length length of the jump
+ * \return true if the jump was done, i.e. if the collision box was overlapping
+ * no obstacle and no raised crystal block.
+ */</doc>

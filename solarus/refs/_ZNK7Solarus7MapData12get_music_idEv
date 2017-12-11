@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='161' type='const std::string &amp; Solarus::MapData::get_music_id() const'/>
+<use f='codebrowser/src/Map.cpp' l='304' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<def f='codebrowser/src/MapData.cpp' l='259' ll='261' type='const std::string &amp; Solarus::MapData::get_music_id() const'/>
+<use f='codebrowser/src/MapData.cpp' l='927' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<doc f='codebrowser/src/MapData.cpp' l='255'>/**
+ * \brief Returns the music played on this map.
+ * \return The music id or &quot;none&quot; or &quot;same&quot;.
+ */</doc>

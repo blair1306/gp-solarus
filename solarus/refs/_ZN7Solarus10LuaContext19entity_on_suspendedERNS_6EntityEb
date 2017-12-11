@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='370' type='void Solarus::LuaContext::entity_on_suspended(Solarus::Entity &amp; entity, bool suspended)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1251' u='c' c='_ZN7Solarus12CustomEntity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='896' u='c' c='_ZN7Solarus5Enemy13set_suspendedEb'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5689' ll='5698' type='void Solarus::LuaContext::entity_on_suspended(Solarus::Entity &amp; entity, bool suspended)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5681'>/**
+ * \brief Calls the on_suspended() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \param suspended \c true if the entity is suspended.
+ */</doc>

@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='49' type='void Solarus::Treasure::Treasure(Solarus::Game &amp; game, const std::string &amp; item_name, int variant, const std::string &amp; savegame_variable)'/>
+<def f='codebrowser/src/Treasure.cpp' l='45' ll='52' type='void Solarus::Treasure::Treasure(Solarus::Game &amp; game, const std::string &amp; item_name, int variant, const std::string &amp; savegame_variable)'/>
+<doc f='codebrowser/src/Treasure.cpp' l='31'>/**
+ * \brief Creates a new treasure.
+ *
+ * You must call ensure_obtainable() before giving it to the player, because
+ * of unauthorized treasures.
+ *
+ * \param game The current game.
+ * \param item_name Name of the item to give, or an empty string to mean no
+ * treasure.
+ * \param variant Variant of this item.
+ * \param savegame_variable Name of the saved boolean indicating that the
+ * player has found this treasure, or an empty string if this treasure is not
+ * saved.
+ */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1486' u='c' c='_ZN7Solarus5Enemy14clear_treasureEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2321' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2538' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3149' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4052' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4932' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5123' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='543' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='584' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='651' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='718' u='c' c='_ZN7Solarus10LuaContext14l_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='992' u='c' c='_ZN7Solarus10LuaContext22l_create_shop_treasureEP9lua_State'/>

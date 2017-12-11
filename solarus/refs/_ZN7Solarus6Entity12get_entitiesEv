@@ -1,0 +1,31 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='360' type='Solarus::Entities &amp; Solarus::Entity::get_entities()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='359'>// Easy access to various game objects.</doc>
+<use f='codebrowser/src/entities/Bomb.cpp' l='261' u='c' c='_ZN7Solarus4Bomb7explodeEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='266' u='c' c='_ZN7Solarus9Boomerang6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='251' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='284' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='407' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='170' u='c' c='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='294' u='c' c='_ZN7Solarus12Destructible15create_treasureEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='454' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='474' u='c' c='_ZN7Solarus12Destructible7explodeEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='211' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='216' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='838' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='855' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='127' u='c' c='_ZNK7Solarus12_GLOBAL__N_122DrawingOrderComparatorclERKSt10shared_ptrINS_6EntityEES6_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='175' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='458' ll='461' type='Solarus::Entities &amp; Solarus::Entity::get_entities()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='525' u='c' c='_ZN7Solarus6Entity8get_heroEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='536' u='c' c='_ZN7Solarus6Entity15remove_from_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='939' u='c' c='_ZN7Solarus6Entity27notify_bounding_box_changedEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='454'>/**
+ * \brief Returns the entities of the current map.
+ * \return The entities.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='206' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1063' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1133' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='398' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='353' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='359' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>

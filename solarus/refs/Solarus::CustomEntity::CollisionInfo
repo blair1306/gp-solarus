@@ -1,0 +1,22 @@
+<def f='codebrowser/include/solarus/entities/CustomEntity.h' l='212' ll='243'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='208'>/**
+     * \brief Stores a callback to be executed when the specified test
+     * detects a collision.
+     */</doc>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1Ev'/>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefES6_'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo17get_built_in_testEv'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo19get_custom_test_refEv'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo16get_callback_refEv'/>
+<mbr r='Solarus::CustomEntity::CollisionInfo::lua_context' o='0' t='Solarus::LuaContext *'/>
+<mbr r='Solarus::CustomEntity::CollisionInfo::built_in_test' o='64' t='Solarus::CollisionMode'/>
+<mbr r='Solarus::CustomEntity::CollisionInfo::custom_test_ref' o='128' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::CustomEntity::CollisionInfo::callback_ref' o='256' t='Solarus::ScopedLuaRef'/>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1Ev'/>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefES6_'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo17get_built_in_testEv'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo19get_custom_test_refEv'/>
+<fun r='_ZNK7Solarus12CustomEntity13CollisionInfo16get_callback_refEv'/>

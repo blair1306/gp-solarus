@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='337' type='void Solarus::LuaContext::game_on_update(Solarus::Game &amp; game)'/>
+<use f='codebrowser/src/Game.cpp' l='366' u='c' c='_ZN7Solarus4Game6updateEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1599' ll='1610' type='void Solarus::LuaContext::game_on_update(Solarus::Game &amp; game)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1592'>/**
+ * \brief Calls the on_update() method of a Lua game if it is defined.
+ *
+ * Also calls the method on its menus.
+ *
+ * \param game A game.
+ */</doc>

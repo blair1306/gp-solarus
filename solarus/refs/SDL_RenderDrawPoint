@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_render.h' l='666' type='int SDL_RenderDrawPoint(SDL_Renderer * renderer, int x, int y)'/>
+<doc f='include/SDL2/SDL_render.h' l='657'>/**
+ *  \brief Draw a point on the current rendering target.
+ *
+ *  \param renderer The renderer which should draw a point.
+ *  \param x The x coordinate of the point.
+ *  \param y The y coordinate of the point.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

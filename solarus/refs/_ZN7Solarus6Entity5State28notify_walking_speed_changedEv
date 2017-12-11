@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='75' type='void Solarus::Entity::State::notify_walking_speed_changed()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='493' ll='494' type='void Solarus::Entity::State::notify_walking_speed_changed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='487'>/**
+ * \brief Notifies this state that the walking speed has changed.
+ *
+ * If the entity can walk in this state, the state should modify its movement
+ * to set the new speed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='915' u='c' c='_ZN7Solarus4Hero17set_walking_speedEi'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='224' c='_ZN7Solarus4Hero19PlayerMovementState28notify_walking_speed_changedEv'/>

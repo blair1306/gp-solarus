@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='120' type='bool Solarus::EntityData::is_field_optional(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='693' ll='703' type='bool Solarus::EntityData::is_field_optional(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/EntityData.cpp' l='688'>/**
+ * \brief Returns whether a field is optional.
+ * \param key Key of the field to check.
+ * \return \c true if the field exists and is optional.
+ */</doc>

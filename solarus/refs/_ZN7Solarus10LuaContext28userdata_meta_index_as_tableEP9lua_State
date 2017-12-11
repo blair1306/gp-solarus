@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1018' type='static int Solarus::LuaContext::userdata_meta_index_as_table(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='147' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='115' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='82' u='r' c='_ZN7Solarus10LuaContext20register_item_moduleEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1328' ll='1381' type='static int Solarus::LuaContext::userdata_meta_index_as_table(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1316'>/**
+ * \brief Implementation of __index that allows userdata to be like tables.
+ *
+ * Lua code can get &quot;object[key]&quot; for an arbitrary key previously set.
+ *
+ * This metamethod must be used with its corresponding __newindex
+ * metamethod (see userdata_meta_newindex_as_table).
+ *
+ * \brief Implementation of __index for the type game.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='161' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='114' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='77' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>

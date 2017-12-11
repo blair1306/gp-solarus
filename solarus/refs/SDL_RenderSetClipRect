@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_render.h' l='539' type='int SDL_RenderSetClipRect(SDL_Renderer * renderer, const SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='528'>/**
+ *  \brief Set the clip rectangle for the current target.
+ *
+ *  \param renderer The renderer for which clip rectangle should be set.
+ *  \param rect   A pointer to the rectangle to set as the clip rectangle, or
+ *                NULL to disable clipping.
+ *
+ *  \return 0 on success, or -1 on error
+ *
+ *  \sa SDL_RenderGetClipRect()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='679' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>

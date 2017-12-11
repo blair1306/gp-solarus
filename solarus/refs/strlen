@@ -1,0 +1,12 @@
+<dec f='include/string.h' l='399' type='size_t strlen(const char * __s)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='85' u='c' c='_Z7qstrlenPKc'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='89' u='c' c='_ZN13QLatin1StringC1EPKc'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='487' u='c' c='_ZN7QString10fromLatin1EPKci'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='492' u='c' c='_ZN7QString8fromUtf8EPKci'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='496' u='c' c='_ZN7QString13fromLocal8BitEPKci'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='603' u='c' c='_ZN7QStringC1EPKc'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1651' u='c' c='_ZN18QMetaTypeIdQObjectIPT_Lb1EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1831' u='c' c='_ZN9QtPrivate29SharedPointerMetaTypeIdHelperI14QSharedPointerIT_ELb1EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1831' u='c' c='_ZN9QtPrivate29SharedPointerMetaTypeIdHelperI12QWeakPointerIT_ELb1EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1831' u='c' c='_ZN9QtPrivate29SharedPointerMetaTypeIdHelperI8QPointerIT_ELb1EE14qt_metatype_idEv'/>
+<doc f='include/string.h' l='398'>/* Return the length of S.  */</doc>

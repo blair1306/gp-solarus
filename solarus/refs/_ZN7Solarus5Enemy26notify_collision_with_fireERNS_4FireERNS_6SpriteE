@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='171' type='void Solarus::Enemy::notify_collision_with_fire(Solarus::Fire &amp; fire, Solarus::Sprite &amp; sprite_overlapping)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='315' c='_ZN7Solarus6Entity26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1004' ll='1007' type='void Solarus::Enemy::notify_collision_with_fire(Solarus::Fire &amp; fire, Solarus::Sprite &amp; sprite_overlapping)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='998'>/**
+ * \brief Notifies this entity that a sprite of fire
+ * detects a pixel-precise collision with a sprite of this entity.
+ * \param fire the fire
+ * \param sprite_overlapping the sprite of the current entity that collides with the fire
+ */</doc>

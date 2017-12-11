@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='78' type='bool Solarus::Destructible::is_waiting_for_regeneration() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='93' u='c' c='_ZNK7Solarus12Destructible19get_modified_groundEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='249' u='c' c='_ZN7Solarus12Destructible15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='328' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='352' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='376' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='395' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='465' ll='467' type='bool Solarus::Destructible::is_waiting_for_regeneration() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='522' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='461'>/**
+ * \brief Returns whether the object was lifted and will regenerate.
+ * \return \c true if the item is disabled and will regenerate.
+ */</doc>

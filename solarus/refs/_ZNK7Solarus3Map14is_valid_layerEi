@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Map.h' l='81' type='bool Solarus::Map::is_valid_layer(int layer) const'/>
+<def f='codebrowser/src/Map.cpp' l='241' ll='244' type='bool Solarus::Map::is_valid_layer(int layer) const'/>
+<doc f='codebrowser/src/Map.cpp' l='235'>/**
+ * \brief Returns whether the specified layer exists in this map.
+ * \param layer The layer to check.
+ * \return \c true if the layer is between \c get_lowest_layer()
+ * and \c get_highest_layer().
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='625' u='c' c='_ZN7Solarus8Entities20get_entities_by_typeENS_10EntityTypeEi'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='787' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='960' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1235' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='105' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='772' u='c' c='_ZN7Solarus8LuaTools8is_layerEP9lua_StateiRKNS_3MapE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='249' u='c' c='_ZN7Solarus12_GLOBAL__N_127entity_creation_check_layerEP9lua_StateiRKNS_10EntityDataERKNS_3MapE'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='70' type='bool Solarus::QuestResources::remove(Solarus::ResourceType resource_type, const std::string &amp; id)'/>
+<def f='codebrowser/src/QuestResources.cpp' l='151' ll='157' type='bool Solarus::QuestResources::remove(Solarus::ResourceType resource_type, const std::string &amp; id)'/>
+<use f='codebrowser/src/QuestResources.cpp' l='179' u='c' c='_ZN7Solarus14QuestResources6renameENS_12ResourceTypeERKSsS3_'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='144'>/**
+ * \brief Removes a resource element from the list.
+ * \param resource_type A type of resource.
+ * \param id Id of the element to remove.
+ * \return \c true if the element was removed, \c false if such an element
+ * did not exist.
+ */</doc>

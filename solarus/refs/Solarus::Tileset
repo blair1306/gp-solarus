@@ -1,0 +1,23 @@
+<def f='codebrowser/include/solarus/entities/Tileset.h' l='39' ll='71'/>
+<size>104</size>
+<doc f='codebrowser/include/solarus/entities/Tileset.h' l='34'>/**
+ * \brief A set of tile patterns that are used to compose a map.
+ *
+ * A tileset represents the skin of a map.
+ */</doc>
+<fun r='_ZN7Solarus7TilesetC1ERKSs'/>
+<fun r='_ZN7Solarus7Tileset4loadEv'/>
+<fun r='_ZN7Solarus7Tileset6unloadEv'/>
+<fun r='_ZNK7Solarus7Tileset6get_idEv'/>
+<fun r='_ZNK7Solarus7Tileset20get_background_colorEv'/>
+<fun r='_ZNK7Solarus7Tileset9is_loadedEv'/>
+<fun r='_ZNK7Solarus7Tileset15get_tiles_imageEv'/>
+<fun r='_ZNK7Solarus7Tileset18get_entities_imageEv'/>
+<fun r='_ZNK7Solarus7Tileset16get_tile_patternERKSs'/>
+<fun r='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<fun r='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<mbr r='Solarus::Tileset::id' o='0' t='const std::string'/>
+<mbr r='Solarus::Tileset::tile_patterns' o='64' t='std::unordered_map&lt;std::string, std::unique_ptr&lt;TilePattern&gt; &gt;'/>
+<mbr r='Solarus::Tileset::background_color' o='512' t='Solarus::Color'/>
+<mbr r='Solarus::Tileset::tiles_image' o='576' t='SurfacePtr'/>
+<mbr r='Solarus::Tileset::entities_image' o='704' t='SurfacePtr'/>

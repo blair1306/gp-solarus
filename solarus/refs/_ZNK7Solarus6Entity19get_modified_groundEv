@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='110' type='Solarus::Ground Solarus::Entity::get_modified_ground() const'/>
+<use f='codebrowser/src/Map.cpp' l='1096' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1163' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1200' c='_ZNK7Solarus12CustomEntity19get_modified_groundEv'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='91' c='_ZNK7Solarus12Destructible19get_modified_groundEv'/>
+<ovr f='codebrowser/src/entities/DynamicTile.cpp' l='75' c='_ZNK7Solarus11DynamicTile19get_modified_groundEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='148' u='c' c='_ZNK7Solarus6Entity18is_ground_modifierEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='159' ll='161' type='Solarus::Ground Solarus::Entity::get_modified_ground() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='151'>/**
+ * \brief Returns the ground defined by this entity.
+ *
+ * If a value other than Ground::EMPTY is returned, it means that this
+ * entity modifies the ground of the map where it is placed.
+ *
+ * \return The ground defined by this entity.
+ */</doc>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='178' type='void Solarus::Entities::set_tile_ground(int layer, int x8, int y8, Solarus::Ground ground)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='255' ll='261' type='void Solarus::Entities::set_tile_ground(int layer, int x8, int y8, Solarus::Ground ground)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='833' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='852' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='856' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='861' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='877' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='882' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='886' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='901' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='905' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='909' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='923' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='927' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='932' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='244'>/**
+ * \brief Sets the tile ground property of an 8*8 square of the map.
+ *
+ * Coordinates outside the range of the map are not an error:
+ * in this case, this function does nothing.
+ *
+ * \param layer Layer of the square.
+ * \param x8 X coordinate of the square (divided by 8).
+ * \param y8 Y coordinate of the square (divided by 8).
+ * \param ground The ground property to set.
+ */</doc>

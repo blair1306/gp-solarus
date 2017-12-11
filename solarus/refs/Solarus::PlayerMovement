@@ -1,0 +1,20 @@
+<inh f='codebrowser/include/solarus/movements/StraightMovement.h' l='32' c='Solarus::StraightMovement'/>
+<def f='codebrowser/include/solarus/movements/PlayerMovement.h' l='32' ll='57'/>
+<size>192</size>
+<doc f='codebrowser/include/solarus/movements/PlayerMovement.h' l='25'>/**
+ * \brief Movement of an entity controlled by the player.
+ *
+ * This movement is an 8-direction movement typically used by the hero.
+ * This class basically converts the combination of directional keys pressed
+ * (from the class GameControls) into a movement.
+ */</doc>
+<fun r='_ZN7Solarus14PlayerMovementC1Ei'/>
+<fun r='_ZN7Solarus14PlayerMovement6updateEv'/>
+<fun r='_ZNK7Solarus14PlayerMovement16get_moving_speedEv'/>
+<fun r='_ZN7Solarus14PlayerMovement16set_moving_speedEi'/>
+<fun r='_ZNK7Solarus14PlayerMovement21get_wanted_direction8Ev'/>
+<fun r='_ZN7Solarus14PlayerMovement16compute_movementEv'/>
+<fun r='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<mbr r='Solarus::PlayerMovement::moving_speed' o='1408' t='int'/>
+<mbr r='Solarus::PlayerMovement::direction8' o='1440' t='int'/>
+<mbr r='Solarus::PlayerMovement::blocked_by_stream' o='1472' t='bool'/>

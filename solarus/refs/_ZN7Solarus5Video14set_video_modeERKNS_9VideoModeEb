@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='64' type='static bool Solarus::Video::set_video_mode(const Solarus::VideoMode &amp; mode, bool fullscreen)'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='456' u='c' c='_ZN7Solarus5Video14set_fullscreenEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='476' u='c' c='_ZN7Solarus5Video18set_cursor_visibleEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='488' u='c' c='_ZN7Solarus5Video22set_default_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='532' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='544' ll='599' type='static bool Solarus::Video::set_video_mode(const Solarus::VideoMode &amp; mode, bool fullscreen)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='535'>/**
+ * \brief Sets the video mode and the fullscreen setting.
+ *
+ * If the mode changes, the window size is reset to its default value.
+ *
+ * \param mode The video mode to set.
+ * \param fullscreen \c true to set the window to fullscreen.
+ * \return true in case of success, false if this mode is not supported.
+ */</doc>

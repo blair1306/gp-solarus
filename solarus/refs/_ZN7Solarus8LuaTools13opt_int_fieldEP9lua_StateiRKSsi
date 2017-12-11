@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='108' type='int Solarus::LuaTools::opt_int_field(lua_State * l, int table_index, const std::string &amp; key, int default_value)'/>
+<use f='codebrowser/src/EntityData.cpp' l='794' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/MapData.cpp' l='846' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='847' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='853' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='599' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='600' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='634' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='635' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='636' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='637' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5080' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5081' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5082' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5086' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='338' ll='359' type='int Solarus::LuaTools::opt_int_field(lua_State * l, int table_index, const std::string &amp; key, int default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='327'>/**
+ * \brief Like LuaTools::check_int_field() but with a default value.
+ *
+ * This function acts like lua_getfield() followed by luaL_optint().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as an integer.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='168' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_surface.h' l='191' type='int SDL_SaveBMP_RW(SDL_Surface * surface, SDL_RWops * dst, int freedst)'/>
+<doc f='include/SDL2/SDL_surface.h' l='184'>/**
+ *  Save a surface to a seekable SDL data stream (memory or file).
+ *
+ *  If \c freedst is non-zero, the stream will be closed after being written.
+ *
+ *  \return 0 if successful or -1 if there was an error.
+ */</doc>

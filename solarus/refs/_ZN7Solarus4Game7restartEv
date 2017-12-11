@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='63' type='void Solarus::Game::restart()'/>
+<def f='codebrowser/src/Game.cpp' l='884' ll='896' type='void Solarus::Game::restart()'/>
+<use f='codebrowser/src/Game.cpp' l='919' u='c' c='_ZN7Solarus4Game15start_game_overEv'/>
+<doc f='codebrowser/src/Game.cpp' l='881'>/**
+ * \brief Restarts the game with the current savegame state.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='256' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='39' type='void Solarus::Stream::Stream(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name)'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='34' ll='54' type='void Solarus::Stream::Stream(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='26'>/**
+ * \brief Creates a new stream.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer Layer of the entity to create.
+ * \param xy Coordinates of the entity to create.
+ * \param direction Direction of the stream (0 to 7).
+ * \param sprite_name Animation set id of a sprite or an empty string.
+ */</doc>

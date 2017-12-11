@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='399' type='void Solarus::LuaContext::separator_on_activating(Solarus::Separator &amp; separator, int direction4)'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='129' u='c' c='_ZN7Solarus9Separator17notify_activatingEi'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6231' ll='6240' type='void Solarus::LuaContext::separator_on_activating(Solarus::Separator &amp; separator, int direction4)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6223'>/**
+ * \brief Calls the on_activating() method of a Lua separator.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param separator A separator.
+ * \param direction4 Direction of the traversal.
+ */</doc>

@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='387' ll='398'/>
+<size>48</size>
+<doc f='include/SDL2/SDL_events.h' l='384'>/**
+ *  \brief Touch finger event structure (event.tfinger.*)
+ */</doc>
+<mbr r='SDL_TouchFingerEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_TouchFingerEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_TouchFingerEvent::touchId' o='64' t='SDL_TouchID'/>
+<mbr r='SDL_TouchFingerEvent::fingerId' o='128' t='SDL_FingerID'/>
+<mbr r='SDL_TouchFingerEvent::x' o='192' t='float'/>
+<mbr r='SDL_TouchFingerEvent::y' o='224' t='float'/>
+<mbr r='SDL_TouchFingerEvent::dx' o='256' t='float'/>
+<mbr r='SDL_TouchFingerEvent::dy' o='288' t='float'/>
+<mbr r='SDL_TouchFingerEvent::pressure' o='320' t='float'/>

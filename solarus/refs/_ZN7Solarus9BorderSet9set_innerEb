@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/BorderSet.h' l='45' type='void Solarus::BorderSet::set_inner(bool inner)'/>
+<def f='codebrowser/src/entities/BorderSet.cpp' l='114' ll='116' type='void Solarus::BorderSet::set_inner(bool inner)'/>
+<doc f='codebrowser/src/entities/BorderSet.cpp' l='108'>/**
+ * \brief Sets whether the borders should be generated inside or outside
+ * the countour.
+ * \param inner \c true if these borders should be generated outside the
+ * countour.
+ */</doc>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='585' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>

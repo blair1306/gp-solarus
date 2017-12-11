@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='79' type='bool Solarus::Surface::is_software_destination() const'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='185' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='422' ll='424' type='bool Solarus::Surface::is_software_destination() const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='411'>/**
+ * When this surface is used as the destination of a drawing operation,
+ * returns whether the drawing operation is performed in RAM or by the GPU.
+ *
+ * By default, this setting is true and all drawing operations are performed
+ * in RAM.
+ * Otherwise, when 2D acceleration is active, drawing operations are delayed
+ * and performed by the GPU at rendering time.
+ *
+ * \return Whether this surface is a software destination surface.
+ */</doc>

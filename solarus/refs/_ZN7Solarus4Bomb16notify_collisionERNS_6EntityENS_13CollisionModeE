@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Bomb.h' l='46' type='void Solarus::Bomb::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Bomb.cpp' l='123' ll='126' type='void Solarus::Bomb::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Bomb.cpp' l='118'>/**
+ * \brief This function is called by the engine when an entity overlaps this detector.
+ * \param entity_overlapping the entity overlapping the detector
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Sensor.h' l='47' type='void Solarus::Sensor::activate(Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1771' u='c' c='_ZN7Solarus4Hero28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Sensor.cpp' l='103' ll='121' type='void Solarus::Sensor::activate(Solarus::Hero &amp; )'/>
+<doc f='codebrowser/src/entities/Sensor.cpp' l='96'>/**
+ * \brief Activates this sensor.
+ *
+ * This function is called when the hero overlaps the sensor.
+ *
+ * \param hero the hero
+ */</doc>
+<doc f='codebrowser/src/entities/Sensor.cpp' l='103'>/* hero */</doc>

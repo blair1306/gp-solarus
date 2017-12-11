@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='158' type='const std::string &amp; Solarus::MapData::get_tileset_id() const'/>
+<use f='codebrowser/src/Map.cpp' l='307' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<def f='codebrowser/src/MapData.cpp' l='234' ll='236' type='const std::string &amp; Solarus::MapData::get_tileset_id() const'/>
+<use f='codebrowser/src/MapData.cpp' l='925' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<doc f='codebrowser/src/MapData.cpp' l='229'>/**
+ * \brief Returns the tileset used to draw this map.
+ * \return The tileset id.
+ * An empty string means that the tileset is not set yet.
+ */</doc>

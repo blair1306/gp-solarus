@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='102' type='bool'/>
+<offset>2184</offset>
+<doc f='codebrowser/include/solarus/entities/Switch.h' l='102'>/**&lt; Whether this switch cannot be activated or inactivated by other entities for now. */</doc>
+<use f='codebrowser/src/entities/Switch.cpp' l='63' u='w' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='145' u='r' c='_ZN7Solarus6Switch8activateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='192' u='r' c='_ZNK7Solarus6Switch9is_lockedEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='207' u='w' c='_ZN7Solarus6Switch10set_lockedEb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='230' u='r' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='272' u='r' c='_ZN7Solarus6Switch16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='285' u='r' c='_ZN7Solarus6Switch16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>

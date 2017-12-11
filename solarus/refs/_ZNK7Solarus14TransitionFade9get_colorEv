@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/TransitionFade.h' l='41' type='const Solarus::Color &amp; Solarus::TransitionFade::get_color() const'/>
+<def f='codebrowser/src/TransitionFade.cpp' l='92' ll='94' type='const Solarus::Color &amp; Solarus::TransitionFade::get_color() const'/>
+<doc f='codebrowser/src/TransitionFade.cpp' l='85'>/**
+ * \brief Returns the foreground color of this fade transition.
+ *
+ * This function only makes sense when is_colored() is \c true.
+ *
+ * \return The color of the transition.
+ */</doc>

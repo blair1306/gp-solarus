@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='118' type='void Solarus::EntityData::set_boolean(const std::string &amp; key, bool value)'/>
+<def f='codebrowser/src/EntityData.cpp' l='666' ll='676' type='void Solarus::EntityData::set_boolean(const std::string &amp; key, bool value)'/>
+<use f='codebrowser/src/EntityData.cpp' l='812' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<doc f='codebrowser/src/EntityData.cpp' l='661'>/**
+ * \brief Sets the value of a boolean field of this entity.
+ * \param key Key of the field to set. It must exist and be a boolean.
+ * \param value The boolean value.
+ */</doc>

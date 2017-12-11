@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1316' type='static int Solarus::LuaContext::l_create_pickable(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='523' ll='566' type='static int Solarus::LuaContext::l_create_pickable(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1273' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='518'>/**
+ * \brief Creates a pickable treasure on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

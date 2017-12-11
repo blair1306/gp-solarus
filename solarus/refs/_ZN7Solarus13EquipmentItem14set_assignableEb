@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='63' type='void Solarus::EquipmentItem::set_assignable(bool assignable)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='189' ll='191' type='void Solarus::EquipmentItem::set_assignable(bool assignable)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='184'>/**
+ * \brief Sets whether this item can be assigned to an item key
+ * and then used explicitly by pressing this item key.
+ * \param assignable true if this item can be assigned.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='327' u='c' c='_ZN7Solarus10LuaContext23item_api_set_assignableEP9lua_State'/>

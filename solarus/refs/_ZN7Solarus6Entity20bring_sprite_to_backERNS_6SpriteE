@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='207' type='bool Solarus::Entity::bring_sprite_to_back(Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1384' ll='1400' type='bool Solarus::Entity::bring_sprite_to_back(Solarus::Sprite &amp; sprite)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1379'>/**
+ * \brief Changes the order of a sprite of this entity to display it first.
+ * \return \c true in case of success, \c false if this entity has no such
+ * sprite.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1496' u='c' c='_ZN7Solarus10LuaContext31entity_api_bring_sprite_to_backEP9lua_State'/>

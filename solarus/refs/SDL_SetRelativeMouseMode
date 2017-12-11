@@ -1,0 +1,17 @@
+<dec f='include/SDL2/SDL_mouse.h' l='117' type='int SDL_SetRelativeMouseMode(SDL_bool enabled)'/>
+<doc f='include/SDL2/SDL_mouse.h' l='101'>/**
+ *  \brief Set relative mouse mode.
+ *
+ *  \param enabled Whether or not to enable relative mode
+ *
+ *  \return 0 on success, or -1 if relative mode is not supported.
+ *
+ *  While the mouse is in relative mode, the cursor is hidden, and the
+ *  driver will try to report continuous motion in the current window.
+ *  Only relative motion events will be delivered, the mouse position
+ *  will not change.
+ *
+ *  \note This function will flush any pending mouse motion.
+ *
+ *  \sa SDL_GetRelativeMouseMode()
+ */</doc>

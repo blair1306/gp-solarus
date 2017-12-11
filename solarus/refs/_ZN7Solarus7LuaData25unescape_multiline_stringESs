@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='53' type='static std::string Solarus::LuaData::unescape_multiline_string(std::string value)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='240' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='60' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='243' ll='256' type='static std::string Solarus::LuaData::unescape_multiline_string(std::string value)'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='238'>/**
+ * \brief Restores an original string after a call to escape_multiline_string().
+ * \param value The string value to unescape.
+ * \return The unescaped value.
+ */</doc>

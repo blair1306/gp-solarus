@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='169' type='Solarus::Point Solarus::Entity::get_touching_point(int direction) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1033' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1042' ll='1072' type='Solarus::Point Solarus::Entity::get_touching_point(int direction) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2824' u='c' c='_ZNK7Solarus6Entity20is_touching_point_inERKNS_9RectangleEi'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1036'>/**
+ * \brief Returns the coordinates of the point the entity would be facing
+ * if it was looking towards the specified direction.
+ * \param direction A direction (0 to 3).
+ * \return The point the entity touching this direction.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='746' u='c' c='_ZNK7Solarus4Hero16get_facing_pointEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='227' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>

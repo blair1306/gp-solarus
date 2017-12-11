@@ -1,0 +1,11 @@
+<dec f='include/physfs.h' l='1257' type='PHYSFS_sint64 PHYSFS_tell(PHYSFS_File * handle)'/>
+<doc f='include/physfs.h' l='1247'>/**
+ * \fn PHYSFS_sint64 PHYSFS_tell(PHYSFS_File *handle)
+ * \brief Determine current position within a PhysicsFS filehandle.
+ *
+ *   \param handle handle returned from PHYSFS_open*().
+ *  \return offset in bytes from start of file. -1 if error occurred.
+ *           Specifics of the error can be gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_seek
+ */</doc>

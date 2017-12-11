@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='52' type='void Solarus::Stream::set_allow_movement(bool allow_movement)'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='93' ll='95' type='void Solarus::Stream::set_allow_movement(bool allow_movement)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='88'>/**
+ * \brief Sets whether the player can move the hero in this stream.
+ * \param allow_movement \c true to allow the hero to move, \c false if
+ * this is a blocking stream.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3557' u='c' c='_ZN7Solarus10LuaContext29stream_api_set_allow_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1035' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>

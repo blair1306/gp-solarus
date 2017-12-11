@@ -1,0 +1,17 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobject.h' l='93' ll='111'/>
+<size>48</size>
+<fun r='_ZN11QObjectDataD1Ev'/>
+<mbr r='QObjectData::q_ptr' o='64' t='QObject *'/>
+<mbr r='QObjectData::parent' o='128' t='QObject *'/>
+<mbr r='QObjectData::children' o='192' t='QObjectList'/>
+<mbr r='QObjectData::isWidget' o='256' t='uint'/>
+<mbr r='QObjectData::blockSig' o='257' t='uint'/>
+<mbr r='QObjectData::wasDeleted' o='258' t='uint'/>
+<mbr r='QObjectData::isDeletingChildren' o='259' t='uint'/>
+<mbr r='QObjectData::sendChildEvents' o='260' t='uint'/>
+<mbr r='QObjectData::receiveChildEvents' o='261' t='uint'/>
+<mbr r='QObjectData::isWindow' o='262' t='uint'/>
+<mbr r='QObjectData::unused' o='263' t='uint'/>
+<mbr r='QObjectData::postedEvents' o='288' t='int'/>
+<mbr r='QObjectData::metaObject' o='320' t='QDynamicMetaObjectData *'/>
+<fun r='_ZNK11QObjectData17dynamicMetaObjectEv'/>

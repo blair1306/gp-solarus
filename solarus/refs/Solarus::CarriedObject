@@ -1,0 +1,66 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/CarriedObject.h' l='35' ll='141'/>
+<size>344</size>
+<doc f='codebrowser/include/solarus/entities/CarriedObject.h' l='27'>/**
+ * \brief An item carried or thrown by the hero.
+ *
+ * Represents an item (pot, bush...) carried by the hero. He can throw it.
+ * While the hero is carrying it, the item is attached to the hero, not to the map.
+ * As soon as he throws it, the item becomes attached to the map and the hero
+ * may lift another item.
+ */</doc>
+<smbr r='Solarus::CarriedObject::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<fun r='_ZNK7Solarus13CarriedObject8get_typeEv'/>
+<fun r='_ZNK7Solarus13CarriedObject18is_ground_observerEv'/>
+<fun r='_ZNK7Solarus13CarriedObject21get_damage_on_enemiesEv'/>
+<fun r='_ZN7Solarus13CarriedObject21set_animation_stoppedEv'/>
+<fun r='_ZN7Solarus13CarriedObject21set_animation_walkingEv'/>
+<fun r='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<fun r='_ZNK7Solarus13CarriedObject15is_being_liftedEv'/>
+<fun r='_ZNK7Solarus13CarriedObject15is_being_thrownEv'/>
+<fun r='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<fun r='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<fun r='_ZNK7Solarus13CarriedObject9is_brokenEv'/>
+<fun r='_ZNK7Solarus13CarriedObject11can_explodeEv'/>
+<fun r='_ZN7Solarus13CarriedObject13set_suspendedEb'/>
+<fun r='_ZN7Solarus13CarriedObject6updateEv'/>
+<fun r='_ZN7Solarus13CarriedObject11draw_on_mapEv'/>
+<fun r='_ZN7Solarus13CarriedObject27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus13CarriedObject18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus13CarriedObject18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZNK7Solarus13CarriedObject20is_low_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus13CarriedObject22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus13CarriedObject16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus13CarriedObject16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus13CarriedObject19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus13CarriedObject18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus13CarriedObject18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus13CarriedObject24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus13CarriedObject19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus13CarriedObject18is_sensor_obstacleERNS_6SensorE'/>
+<fun r='_ZN7Solarus13CarriedObject15is_npc_obstacleERNS_3NpcE'/>
+<fun r='_ZN7Solarus13CarriedObject18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus13CarriedObject17is_enemy_obstacleERNS_5EnemyE'/>
+<fun r='_ZN7Solarus13CarriedObject23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus13CarriedObject28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus13CarriedObject29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus13CarriedObject28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus13CarriedObject27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus13CarriedObject21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZNK7Solarus13CarriedObject17will_explode_soonEv'/>
+<mbr r='Solarus::CarriedObject::hero' o='2048' t='Solarus::Hero &amp;'/>
+<mbr r='Solarus::CarriedObject::is_lifting' o='2112' t='bool'/>
+<mbr r='Solarus::CarriedObject::is_throwing' o='2120' t='bool'/>
+<mbr r='Solarus::CarriedObject::is_breaking' o='2128' t='bool'/>
+<mbr r='Solarus::CarriedObject::break_one_layer_above' o='2136' t='bool'/>
+<mbr r='Solarus::CarriedObject::destruction_sound_id' o='2176' t='std::string'/>
+<mbr r='Solarus::CarriedObject::damage_on_enemies' o='2240' t='int'/>
+<mbr r='Solarus::CarriedObject::main_sprite' o='2304' t='SpritePtr'/>
+<mbr r='Solarus::CarriedObject::shadow_sprite' o='2432' t='SpritePtr'/>
+<mbr r='Solarus::CarriedObject::throwing_direction' o='2560' t='int'/>
+<mbr r='Solarus::CarriedObject::next_down_date' o='2592' t='uint32_t'/>
+<mbr r='Solarus::CarriedObject::item_height' o='2624' t='int'/>
+<mbr r='Solarus::CarriedObject::y_increment' o='2656' t='int'/>
+<mbr r='Solarus::CarriedObject::explosion_date' o='2688' t='uint32_t'/>
+<smbr r='Solarus::CarriedObject::lifting_trajectories' t='const std::string [4]'/>

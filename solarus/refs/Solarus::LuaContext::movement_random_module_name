@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='129' type='const std::string'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='57' type='const std::string'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='164' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='845' u='r' c='_ZN7Solarus10LuaContext18is_random_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='857' u='r' c='_ZN7Solarus10LuaContext21check_random_movementEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='54'>/**
+ * Name of the Lua table representing the random movement module.
+ */</doc>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='186' u='a' c='_ZNK7Solarus14RandomMovement17get_lua_type_nameEv'/>

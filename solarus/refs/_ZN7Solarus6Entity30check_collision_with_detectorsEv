@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='295' type='void Solarus::Entity::check_collision_with_detectors()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='294'>// Being detected by other entities.</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='282' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='163' u='c' c='_ZN7Solarus5Block14notify_createdEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='253' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='783' u='c' c='_ZN7Solarus12CustomEntity18add_collision_testENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='807' u='c' c='_ZN7Solarus12CustomEntity18add_collision_testERKNS_12ScopedLuaRefES3_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='607' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1649' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2133' ll='2159' type='void Solarus::Entity::check_collision_with_detectors()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3334' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2127'>/**
+ * \brief Checks collisions between this entity and the detectors of the map.
+ *
+ * Simple collisions are checked, and then pixel-precise collisions if they are
+ * enabled for some sprites of this entity.
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='83' u='c' c='_ZN7Solarus9Explosion27notify_sprite_frame_changedERNS_6SpriteERKSsi'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='62' u='c' c='_ZN7Solarus4Fire6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='189' u='c' c='_ZN7Solarus4Hero6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1094' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='562' u='c' c='_ZN7Solarus8Pickable6updateEv'/>

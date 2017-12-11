@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Game.h' l='105' type='bool Solarus::Game::is_showing_game_over() const'/>
+<use f='codebrowser/src/Game.cpp' l='723' u='c' c='_ZNK7Solarus4Game12is_suspendedEv'/>
+<def f='codebrowser/src/Game.cpp' l='902' ll='904' type='bool Solarus::Game::is_showing_game_over() const'/>
+<use f='codebrowser/src/Game.cpp' l='911' u='c' c='_ZN7Solarus4Game15start_game_overEv'/>
+<use f='codebrowser/src/Game.cpp' l='929' u='c' c='_ZN7Solarus4Game14stop_game_overEv'/>
+<doc f='codebrowser/src/Game.cpp' l='898'>/**
+ * \brief Returns whether the gameover sequence is being shown.
+ * \return true if the gameover sequence is being shown
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='150' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='518' u='c' c='_ZN7Solarus10LuaContext29game_api_is_game_over_enabledEP9lua_State'/>

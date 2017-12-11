@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='443' type='Solarus::Ground'/>
+<offset>608</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='443'>/**&lt; Kind of ground under this entity: grass, shallow water, etc.
+                                                 * Only used by entities sensible to their ground. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='66' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='201' u='r' c='_ZNK7Solarus6Entity16get_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='234' u='r' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='235' u='w' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='238' u='r' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='323' u='w' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>

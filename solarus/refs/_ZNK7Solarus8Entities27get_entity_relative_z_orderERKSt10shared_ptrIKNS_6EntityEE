@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='122' type='int Solarus::Entities::get_entity_relative_z_order(const ConstEntityPtr &amp; entity) const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='78' u='c' c='_ZNK7Solarus12_GLOBAL__N_116ZOrderComparatorclERKSt10shared_ptrIKNS_6EntityEES7_'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='78' u='c' c='_ZNK7Solarus12_GLOBAL__N_116ZOrderComparatorclERKSt10shared_ptrIKNS_6EntityEES7_'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='128' u='c' c='_ZNK7Solarus12_GLOBAL__N_122DrawingOrderComparatorclERKSt10shared_ptrINS_6EntityEES6_'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='128' u='c' c='_ZNK7Solarus12_GLOBAL__N_122DrawingOrderComparatorclERKSt10shared_ptrINS_6EntityEES6_'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='662' ll='666' type='int Solarus::Entities::get_entity_relative_z_order(const ConstEntityPtr &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='645'>/**
+ * \brief Returns a hint on the Z order of this entity.
+ *
+ * It can be used to know if an entity is above or below another one on the
+ * same layer. It is unique for each entity on the same layer.
+ *
+ * This is an arbitrary value: it is not necessarily between 0 and the number
+ * of entities on the layer. Its value only makes sense when compared to the
+ * value of other entities.
+ * Due to entities being removed from the map, entities whose layer changes,
+ * and bring_to_front()/bring_to_back() calls,
+ * there may be holes in the sequence.
+ * The returned value can even be negative.
+ *
+ * \param entity An entity of the map.
+ * \return Its relative Z order.
+ */</doc>

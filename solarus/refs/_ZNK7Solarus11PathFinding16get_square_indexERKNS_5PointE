@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='77' type='int Solarus::PathFinding::get_square_index(const Solarus::Point &amp; location) const'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='118' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='132' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='180' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='238' ll='243' type='int Solarus::PathFinding::get_square_index(const Solarus::Point &amp; location) const'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='232'>/**
+ * \brief Returns the index of the 8*8 square in the map
+ * corresponding to the specified location.
+ * \param location location of a node on the map
+ * \return index of the square corresponding to the top-left part of the location
+ */</doc>

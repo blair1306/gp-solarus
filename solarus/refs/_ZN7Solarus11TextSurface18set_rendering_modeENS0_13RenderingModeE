@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='88' type='void Solarus::TextSurface::set_rendering_mode(Solarus::TextSurface::RenderingMode rendering_mode)'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='185' ll='193' type='void Solarus::TextSurface::set_rendering_mode(TextSurface::RenderingMode rendering_mode)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='181'>/**
+ * \brief Sets the rendering mode of the text.
+ * \param rendering_mode Rendering mode: TEXT_SOLID or TEXT_ANTIALIASING.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='176' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='340' u='c' c='_ZN7Solarus10LuaContext35text_surface_api_set_rendering_modeEP9lua_State'/>

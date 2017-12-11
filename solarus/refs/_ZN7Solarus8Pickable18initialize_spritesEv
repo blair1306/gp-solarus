@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='90' type='bool Solarus::Pickable::initialize_sprites()'/>
+<doc f='codebrowser/include/solarus/entities/Pickable.h' l='89'>// initialization</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='125' u='c' c='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='149' ll='222' type='bool Solarus::Pickable::initialize_sprites()'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='140'>/**
+ * \brief Creates the sprite of this pickable treasure.
+ *
+ * Pickable treasures are represented with two sprites:
+ * the treasure itself and, for some items, a shadow.
+ *
+ * \return \c true in case of success, \c false if the animation corresponding
+ * to the treasure is missing.
+ */</doc>

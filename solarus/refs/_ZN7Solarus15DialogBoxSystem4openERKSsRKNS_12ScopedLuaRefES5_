@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='51' type='void Solarus::DialogBoxSystem::open(const std::string &amp; dialog_id, const Solarus::ScopedLuaRef &amp; info_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='89' ll='166' type='void Solarus::DialogBoxSystem::open(const std::string &amp; dialog_id, const Solarus::ScopedLuaRef &amp; info_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='78'>/**
+ * \brief Opens the dialog box to show a dialog.
+ *
+ * No other dialog should be already running.
+ *
+ * \param dialog_id Id of the dialog to show.
+ * \param info_ref Lua ref to an optional info parameter to pass to the
+ * dialog box, or an empty ref.
+ * \param callback_ref Lua ref to a function to call when the dialog finishes,
+ * or an empty ref.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='758' u='c' c='_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='94' type='Solarus::Rectangle Solarus::Quadtree::Node::get_cell() const'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='304' ll='307' type='Solarus::Rectangle Solarus::Quadtree::Node::get_cell() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='315' u='c' c='_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='332' u='c' c='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='377' u='c' c='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='430' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='492' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='510' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='552' u='c' c='_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='582' u='c' c='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='300'>/**
+ * \brief Returns the cell represented by this node.
+ * \return The cell&apos;s rectangle.
+ */</doc>

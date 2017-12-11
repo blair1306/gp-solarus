@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Map.h' l='176' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, int x, int y)'/>
+<use f='codebrowser/src/Map.cpp' l='625' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableERKNS_5PointE'/>
+<def f='codebrowser/src/Map.cpp' l='634' ll='647' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, int x, int y)'/>
+<use f='codebrowser/src/Map.cpp' l='662' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<doc f='codebrowser/src/Map.cpp' l='628'>/**
+ * \brief Draws a drawable object on the camera surface.
+ * \param drawable The drawable object to draw.
+ * \param x X coordinate of the drawable&apos;s origin point in the map.
+ * \param y Y coordinate of the drawable&apos;s origin point in the map.
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='453' u='c' c='_ZN7Solarus13CarriedObject11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='226' u='c' c='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1756' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_visualEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1779' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_spriteEP9lua_State'/>

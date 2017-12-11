@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='99' type='const Solarus::Entities &amp; Solarus::Map::get_entities() const'/>
+<def f='codebrowser/include/solarus/Map.h' l='274' ll='276' type='const Solarus::Entities &amp; Solarus::Map::get_entities() const'/>
+<use f='codebrowser/include/solarus/Map.h' l='291' u='c' c='_ZNK7Solarus3Map10get_cameraEv'/>
+<doc f='codebrowser/include/solarus/Map.h' l='267'>/**
+ * \brief Returns the entities of the map.
+ *
+ * This function should not be called before the map is loaded into a game.
+ *
+ * \return The entities of the map.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1090' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2013' u='c' c='_ZN7Solarus10LuaContext20map_api_has_entitiesEP9lua_State'/>

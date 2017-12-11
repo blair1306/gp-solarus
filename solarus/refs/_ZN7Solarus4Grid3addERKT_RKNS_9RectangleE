@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='48' type='void Solarus::Grid::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='216' ll='242' type='void Solarus::Grid::add(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='208'>/**
+ * \brief Adds an element in the grid.
+ *
+ * The element will be added to all cells it overlaps.
+ *
+ * \param element The element to add.
+ * \param bounding_box Bounding box of the element.
+ */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='102' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>

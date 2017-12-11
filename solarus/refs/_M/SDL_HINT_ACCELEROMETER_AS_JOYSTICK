@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_hints.h' l='236'/>
+<doc f='include/SDL2/SDL_hints.h' l='228'>/**
+ *  \brief  A variable controlling whether an Android built-in accelerometer should be
+ *  listed as a joystick device, rather than listing actual joysticks only.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - List only real joysticks and accept input from them
+ *    &quot;1&quot;       - List real joysticks along with the accelerometer as if it were a 3 axis joystick (the default).
+ */</doc>

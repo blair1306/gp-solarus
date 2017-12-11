@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1306' type='static int Solarus::LuaContext::l_loader(lua_State * )'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='145' u='r' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2948' ll='2962' type='static int Solarus::LuaContext::l_loader(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2942'>/**
+ * \brief A loader that makes require() able to load Lua files
+ * from the quest data directory or archive.
+ * \param l The Lua context.
+ * \return Number of values to return to Lua.
+ */</doc>

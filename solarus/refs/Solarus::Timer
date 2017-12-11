@@ -1,0 +1,43 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/Timer.h' l='31' ll='63'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/Timer.h' l='26'>/**
+ * \brief Represents a timer that any class can start.
+ *
+ * Timers are mostly used by the scripts.
+ */</doc>
+<fun r='_ZN7Solarus5TimerC1Ej'/>
+<fun r='_ZNK7Solarus5Timer13is_with_soundEv'/>
+<fun r='_ZN7Solarus5Timer14set_with_soundEb'/>
+<fun r='_ZNK7Solarus5Timer12is_suspendedEv'/>
+<fun r='_ZN7Solarus5Timer13set_suspendedEb'/>
+<fun r='_ZNK7Solarus5Timer21is_suspended_with_mapEv'/>
+<fun r='_ZN7Solarus5Timer22set_suspended_with_mapEb'/>
+<fun r='_ZNK7Solarus5Timer11is_finishedEv'/>
+<fun r='_ZNK7Solarus5Timer20get_initial_durationEv'/>
+<fun r='_ZNK7Solarus5Timer19get_expiration_dateEv'/>
+<fun r='_ZN7Solarus5Timer19set_expiration_dateEj'/>
+<fun r='_ZN7Solarus5Timer6updateEv'/>
+<fun r='_ZN7Solarus5Timer20notify_map_suspendedEb'/>
+<fun r='_ZNK7Solarus5Timer17get_lua_type_nameEv'/>
+<mbr r='Solarus::Timer::expiration_date' o='288' t='uint32_t'/>
+<mbr r='Solarus::Timer::duration' o='320' t='uint32_t'/>
+<mbr r='Solarus::Timer::finished' o='352' t='bool'/>
+<mbr r='Solarus::Timer::suspended_with_map' o='360' t='bool'/>
+<mbr r='Solarus::Timer::suspended' o='368' t='bool'/>
+<mbr r='Solarus::Timer::when_suspended' o='384' t='uint32_t'/>
+<mbr r='Solarus::Timer::next_sound_date' o='416' t='uint32_t'/>
+<fun r='_ZN7Solarus5TimerC1Ej'/>
+<fun r='_ZNK7Solarus5Timer13is_with_soundEv'/>
+<fun r='_ZN7Solarus5Timer14set_with_soundEb'/>
+<fun r='_ZNK7Solarus5Timer12is_suspendedEv'/>
+<fun r='_ZN7Solarus5Timer13set_suspendedEb'/>
+<fun r='_ZNK7Solarus5Timer21is_suspended_with_mapEv'/>
+<fun r='_ZN7Solarus5Timer22set_suspended_with_mapEb'/>
+<fun r='_ZNK7Solarus5Timer11is_finishedEv'/>
+<fun r='_ZNK7Solarus5Timer20get_initial_durationEv'/>
+<fun r='_ZNK7Solarus5Timer19get_expiration_dateEv'/>
+<fun r='_ZN7Solarus5Timer19set_expiration_dateEj'/>
+<fun r='_ZN7Solarus5Timer6updateEv'/>
+<fun r='_ZN7Solarus5Timer20notify_map_suspendedEb'/>
+<fun r='_ZNK7Solarus5Timer17get_lua_type_nameEv'/>

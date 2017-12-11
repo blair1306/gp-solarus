@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='74' type='void Solarus::Switch::set_activated(bool enabled)'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='147' u='c' c='_ZN7Solarus6Switch8activateEv'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='164' ll='179' type='void Solarus::Switch::set_activated(bool activated)'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='231' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='157'>/**
+ * \brief Activates or inactivates the switch, not playing any sound.
+ *
+ * This function can change the switch state even if the switch is locked.
+ *
+ * \param activated true to make the switch on, false to make it off
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3378' u='c' c='_ZN7Solarus10LuaContext24switch_api_set_activatedEP9lua_State'/>

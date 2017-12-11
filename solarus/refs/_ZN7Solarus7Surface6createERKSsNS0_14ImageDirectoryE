@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='72' type='static SurfacePtr Solarus::Surface::create(const std::string &amp; file_name, Solarus::Surface::ImageDirectory base_directory = DIR_SPRITES)'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='48' u='c' c='_ZN7Solarus15SpriteAnimationC1ERKSsRKSt6vectorINS_24SpriteAnimationDirectionESaIS4_EEji'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='151' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='158' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='101' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='189' ll='200' type='static SurfacePtr Solarus::Surface::create(const std::string &amp; file_name, Solarus::Surface::ImageDirectory base_directory = DIR_SPRITES)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='179'>/**
+ * \brief Creates a surface from the specified image file name.
+ *
+ * This function acts like a constructor excepts that it returns nullptr if the
+ * file does not exist or is not a valid image.
+ *
+ * \param file_name Name of the image file to load, relative to the base directory specified.
+ * \param base_directory The base directory to use.
+ * \return The surface created, or nullptr if the file could not be loaded.
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='127' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>

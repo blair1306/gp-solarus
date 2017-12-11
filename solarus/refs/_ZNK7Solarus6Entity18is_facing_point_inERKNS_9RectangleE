@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='253' type='bool Solarus::Entity::is_facing_point_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='175' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='190' u='c' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2007' u='c' c='_ZNK7Solarus6Entity27test_collision_facing_pointERKS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2808' ll='2812' type='bool Solarus::Entity::is_facing_point_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2802'>/**
+ * \brief Returns whether this entity&apos;s facing point is in
+ * the specified rectangle.
+ * \param rectangle the rectangle to check
+ * \return true if this entity&apos;s facing point is in the specified rectangle
+ */</doc>
+<use f='codebrowser/src/entities/Npc.cpp' l='377' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>

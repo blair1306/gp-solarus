@@ -1,0 +1,13 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='99' ll='112'/>
+<size>144</size>
+<mbr r='SPC_DSP::voice_t::buf' o='0' t='int [24]'/>
+<mbr r='SPC_DSP::voice_t::buf_pos' o='768' t='int *'/>
+<mbr r='SPC_DSP::voice_t::interp_pos' o='832' t='int'/>
+<mbr r='SPC_DSP::voice_t::brr_addr' o='864' t='int'/>
+<mbr r='SPC_DSP::voice_t::brr_offset' o='896' t='int'/>
+<mbr r='SPC_DSP::voice_t::kon_delay' o='928' t='int'/>
+<mbr r='SPC_DSP::voice_t::env_mode' o='960' t='SPC_DSP::env_mode_t'/>
+<mbr r='SPC_DSP::voice_t::env' o='992' t='int'/>
+<mbr r='SPC_DSP::voice_t::hidden_env' o='1024' t='int'/>
+<mbr r='SPC_DSP::voice_t::volume' o='1056' t='int [2]'/>
+<mbr r='SPC_DSP::voice_t::enabled' o='1120' t='int'/>

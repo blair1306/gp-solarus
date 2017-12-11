@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='66' type='void Solarus::CarriedObject::throw_item(int direction)'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='175' ll='200' type='void Solarus::CarriedObject::throw_item(int direction)'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='171'>/**
+ * \brief Throws the item.
+ * \param direction direction where the hero throws the item (0 to 3)
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='183' u='c' c='_ZN7Solarus4Hero13CarryingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='103' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='143' u='c' c='_ZN7Solarus4Hero12LiftingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='136' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>

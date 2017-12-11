@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='128' type='void Solarus::Enemy::set_attack_consequence(Solarus::EnemyAttack attack, EnemyReaction::ReactionType reaction, int life_lost = 0)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='645' ll='656' type='void Solarus::Enemy::set_attack_consequence(Solarus::EnemyAttack attack, EnemyReaction::ReactionType reaction, int life_lost = 0)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='685' u='c' c='_ZN7Solarus5Enemy26set_no_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='710' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='711' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='712' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='713' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='714' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='715' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='716' u='c' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='635'>/**
+ * \brief Sets how the enemy reacts to an attack.
+ *
+ * This reaction will be used unless the attack is received by a sprite
+ * that has a specific reaction (see set_attack_consequence_sprite()).
+ *
+ * \param attack an attack
+ * \param reaction how the enemy will react
+ * \param life_lost number of life points lost with this attack (possibly zero)
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4738' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4743' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5036' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5060' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

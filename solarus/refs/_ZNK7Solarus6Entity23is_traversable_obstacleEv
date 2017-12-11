@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='413' type='bool Solarus::Entity::is_traversable_obstacle() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='412'>// Obstacles.</doc>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='678' c='_ZNK7Solarus12CustomEntity23is_traversable_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2386' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2441' ll='2443' type='bool Solarus::Entity::is_traversable_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2433'>/**
+ * \brief Returns whether traversable ground is currently considered as an
+ * obstacle by this entity.
+ *
+ * This function returns \c false by default.
+ *
+ * \return \c true if traversable ground is currently obstacle for this entity.
+ */</doc>

@@ -1,0 +1,20 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' c='QInputEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='754' ll='880'/>
+<size>72</size>
+<fun r='_ZN11QTouchEventC1EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardModifierEES4_INS5_15TouchPointStateEERK5QListINS_10TouchPointEE'/>
+<fun r='_ZN11QTouchEventD1Ev'/>
+<fun r='_ZNK11QTouchEvent6windowEv'/>
+<fun r='_ZNK11QTouchEvent6targetEv'/>
+<fun r='_ZNK11QTouchEvent16touchPointStatesEv'/>
+<fun r='_ZNK11QTouchEvent11touchPointsEv'/>
+<fun r='_ZNK11QTouchEvent6deviceEv'/>
+<fun r='_ZN11QTouchEvent9setWindowEP7QWindow'/>
+<fun r='_ZN11QTouchEvent9setTargetEP7QObject'/>
+<fun r='_ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE'/>
+<fun r='_ZN11QTouchEvent14setTouchPointsERK5QListINS_10TouchPointEE'/>
+<fun r='_ZN11QTouchEvent9setDeviceEP12QTouchDevice'/>
+<mbr r='QTouchEvent::_window' o='256' t='QWindow *'/>
+<mbr r='QTouchEvent::_target' o='320' t='QObject *'/>
+<mbr r='QTouchEvent::_device' o='384' t='QTouchDevice *'/>
+<mbr r='QTouchEvent::_touchPointStates' o='448' t='Qt::TouchPointStates'/>
+<mbr r='QTouchEvent::_touchPoints' o='512' t='QList&lt;QTouchEvent::TouchPoint&gt;'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='167' type='void Solarus::Entities::ZCache::bring_to_front(const ConstEntityPtr &amp; entity)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='676' u='c' c='_ZN7Solarus8Entities14bring_to_frontERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1424' ll='1428' type='void Solarus::Entities::ZCache::bring_to_front(const ConstEntityPtr &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1419'>/**
+ * \brief Puts an entity above all others.
+ *
+ * It will then have a Z order greater than all other entities in the structure.
+ */</doc>

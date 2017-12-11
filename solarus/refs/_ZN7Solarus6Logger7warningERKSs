@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Logger.h' l='40' type='void Solarus::Logger::warning(const std::string &amp; message)'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='71' u='c' c='_ZN7Solarus5Debug7warningERKSs'/>
+<def f='codebrowser/src/lowlevel/Logger.cpp' l='82' ll='87' type='void Solarus::Logger::warning(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Logger.cpp' l='78'>/**
+ * \brief Logs a warning message on stdout and error.txt.
+ * \param message The message to log.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='447' u='c' c='_ZN7Solarus10LuaContext18warning_deprecatedERKSsS2_'/>

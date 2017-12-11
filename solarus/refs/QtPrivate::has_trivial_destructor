@@ -1,0 +1,9 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='392'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='393' ll='396'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='397' ll='398'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='399' ll='400'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='387'>// We can&apos;t get has_trivial_destructor right without compiler help, so
+// fail conservatively. We will assume it&apos;s false except for: (1) types
+// for which is_pod is true. (2) std::pair of types with trivial
+// destructors. (3) array of a type with a trivial destructor.
+// (4) const versions thereof.</doc>

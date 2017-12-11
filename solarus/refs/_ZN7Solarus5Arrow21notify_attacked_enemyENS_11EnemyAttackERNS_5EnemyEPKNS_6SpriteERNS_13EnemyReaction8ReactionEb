@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='67' type='void Solarus::Arrow::notify_attacked_enemy(Solarus::EnemyAttack attack, Solarus::Enemy &amp; victim, const Solarus::Sprite * victim_sprite, EnemyReaction::Reaction &amp; result, bool killed)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='318' c='_ZN7Solarus6Entity21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='415' ll='434' type='void Solarus::Arrow::notify_attacked_enemy(Solarus::EnemyAttack , Solarus::Enemy &amp; victim, const Solarus::Sprite * , EnemyReaction::Reaction &amp; result, bool killed)'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='412'>/**
+ * \copydoc Entity::notify_attacked_enemy
+ */</doc>

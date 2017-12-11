@@ -1,0 +1,22 @@
+<def f='include/c++/4.9/sstream' l='325' ll='329' type='void std::basic_istringstream::basic_istringstream&lt;_CharT, _Traits, _Alloc&gt;(const __string_type &amp; __str, ios_base::openmode __mode = ios_base::in)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='141' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<doc f='include/c++/4.9/sstream' l='312'>/**
+       *  @brief  Starts with an existing string buffer.
+       *  @param  __str  A string to copy as a starting buffer.
+       *  @param  __mode  Whether the buffer can read, or write, or both.
+       *
+       *  @c ios_base::in is automatically included in @a mode.
+       *
+       *  Initializes @c sb using @a str and @c mode|in, and passes @c &amp;sb
+       *  to the base class initializer.
+       *
+       *  That&apos;s a lie.  We initialize the base class with NULL, because the
+       *  string class does its own memory management.
+      */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='59' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MainLoop.cpp' l='64' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MainLoop.cpp' l='134' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/Settings.cpp' l='77' u='c' c='_ZN7Solarus8Settings11get_integerERKSs'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='72' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='723' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='91' u='c' c='_ZN7Solarus13PixelMovement14set_trajectoryERKSs'/>

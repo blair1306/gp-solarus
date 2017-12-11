@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Map.h' l='199' type='const Solarus::Tileset *'/>
+<use f='codebrowser/include/solarus/Map.h' l='264' u='r' c='_ZNK7Solarus3Map11get_tilesetEv'/>
+<offset>640</offset>
+<doc f='codebrowser/include/solarus/Map.h' l='199'>/**&lt; Tileset of the map: every tile of this map
+                                   * is extracted from this tileset. */</doc>
+<use f='codebrowser/src/Map.cpp' l='50' u='w' c='_ZN7Solarus3MapC1ERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='90' u='w' c='_ZN7Solarus3Map11set_tilesetERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='264' u='w' c='_ZN7Solarus3Map6unloadEv'/>
+<use f='codebrowser/src/Map.cpp' l='308' u='w' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/Map.cpp' l='545' u='r' c='_ZN7Solarus3Map24build_background_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='547' u='r' c='_ZN7Solarus3Map24build_background_surfaceEv'/>

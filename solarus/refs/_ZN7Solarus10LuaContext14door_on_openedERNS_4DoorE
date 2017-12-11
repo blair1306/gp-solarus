@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='401' type='void Solarus::LuaContext::door_on_opened(Solarus::Door &amp; door)'/>
+<use f='codebrowser/src/entities/Door.cpp' l='194' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6268' ll='6277' type='void Solarus::LuaContext::door_on_opened(Solarus::Door &amp; door)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6261'>/**
+ * \brief Calls the on_opened() method of a Lua door.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param door A door.
+ */</doc>

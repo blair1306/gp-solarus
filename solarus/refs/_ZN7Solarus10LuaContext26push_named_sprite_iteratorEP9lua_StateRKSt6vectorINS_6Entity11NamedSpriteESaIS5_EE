@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1100' type='static void Solarus::LuaContext::push_named_sprite_iterator(lua_State * l, const std::vector&lt;Entity::NamedSprite&gt; &amp; sprites)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='714' ll='741' type='static void Solarus::LuaContext::push_named_sprite_iterator(lua_State * l, const std::vector&lt;Entity::NamedSprite&gt; &amp; sprites)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1410' u='c' c='_ZN7Solarus10LuaContext22entity_api_get_spritesEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='706'>/**
+ * \brief Pushes a list of sprites and their names as an iterator onto the stack.
+ *
+ * The iterator is pushed onto the stack as one value of type function.
+ *
+ * \param l A Lua context.
+ * \param sprites A list of sprites and their names. The iterator preserves their order.
+ */</doc>

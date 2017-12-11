@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='71' type='void Solarus::Hero::draw_on_map()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='357' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='403' ll='409' type='void Solarus::Hero::draw_on_map()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='397'>/**
+ * \brief Draws this entity on the map.
+ *
+ * This function should draw the entity only if is_visible() returns true.
+ * The hero is drawn with its current animation and at its current position.
+ */</doc>

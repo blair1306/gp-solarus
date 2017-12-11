@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='134' type='const std::map&lt;std::string, BorderSet&gt; &amp; Solarus::TilesetData::get_border_sets() const'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='338' ll='340' type='const std::map&lt;std::string, BorderSet&gt; &amp; Solarus::TilesetData::get_border_sets() const'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='334'>/**
+ * \brief Returns all border sets of this tileset.
+ * \return The border sets indexed by their id.
+ */</doc>

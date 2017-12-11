@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='86' type='bool'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='62' u='w' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='63' u='r' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='131' u='r' c='_ZNK7Solarus5Chest7is_openEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='147' u='r' c='_ZN7Solarus5Chest8set_openEb'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='149' u='w' c='_ZN7Solarus5Chest8set_openEb'/>
+<offset>2304</offset>
+<doc f='codebrowser/include/solarus/entities/Chest.h' l='86'>/**&lt; whether the chest is open (but the treasure may not have
+                                        * been given yet because there is a delay of 500 ms). */</doc>

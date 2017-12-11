@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='295' type='int Solarus::InputEvent::get_finger() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1289' ll='1294' type='int Solarus::InputEvent::get_finger() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1282'>/**
+ * \brief Returns the finger ID that was pressed, released or moved
+ * during this finger event.
+ *
+ * If this is not a finger event, -1 is returned.
+ * \return The finger ID of this finger event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1907' u='c' c='_ZN7Solarus10LuaContext17on_finger_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1940' u='c' c='_ZN7Solarus10LuaContext18on_finger_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1973' u='c' c='_ZN7Solarus10LuaContext15on_finger_movedERKNS_10InputEventE'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='160' type='Solarus::CommandsEffects &amp; Solarus::Entity::State::get_commands_effects()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='161' ll='163' type='Solarus::CommandsEffects &amp; Solarus::Entity::State::get_commands_effects()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='157'>/**
+ * \brief Returns the keys effect manager.
+ * \return the keys effect
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='55' u='c' c='_ZN7Solarus4Hero13CarryingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='68' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='168' u='c' c='_ZN7Solarus4Hero13CarryingState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='60' u='c' c='_ZN7Solarus4Hero9FreeState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='101' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='102' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FrozenState.cpp' l='42' u='c' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='81' u='c' c='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='56' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='88' u='c' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='98' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='48' u='c' c='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>

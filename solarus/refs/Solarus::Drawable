@@ -1,0 +1,44 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/Drawable.h' l='41' ll='152'/>
+<ovr f='codebrowser/include/solarus/lowlevel/Surface.h' l='45' c='Solarus::Surface'/>
+<ovr f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='43' c='Solarus::TextSurface'/>
+<size>96</size>
+<doc f='codebrowser/include/solarus/Drawable.h' l='35'>/**
+ * \brief An object that can be drawn on a surface with additional effects.
+ *
+ * Possible additional effects are movements and transitions.
+ * Lua callbacks may be associated to the end of these effects.
+ */</doc>
+<fun r='_ZN7Solarus8DrawableD1Ev'/>
+<fun r='_ZNK7Solarus8Drawable10get_originEv'/>
+<fun r='_ZNK7Solarus8Drawable8get_sizeEv'/>
+<fun r='_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE'/>
+<fun r='_ZN7Solarus8Drawable13stop_movementEv'/>
+<fun r='_ZN7Solarus8Drawable12get_movementEv'/>
+<fun r='_ZNK7Solarus8Drawable6get_xyEv'/>
+<fun r='_ZN7Solarus8Drawable6set_xyERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus8Drawable15stop_transitionEv'/>
+<fun r='_ZN7Solarus8Drawable14get_transitionEv'/>
+<fun r='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEEii'/>
+<fun r='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Drawable8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Drawable15draw_transitionERNS_10TransitionE'/>
+<fun r='_ZN7Solarus8Drawable22get_transition_surfaceEv'/>
+<fun r='_ZN7Solarus8Drawable6updateEv'/>
+<fun r='_ZNK7Solarus8Drawable12is_suspendedEv'/>
+<fun r='_ZN7Solarus8Drawable13set_suspendedEb'/>
+<fun r='_ZNK7Solarus8Drawable14get_blend_modeEv'/>
+<fun r='_ZN7Solarus8Drawable14set_blend_modeENS_9BlendModeE'/>
+<fun r='_ZN7Solarus8DrawableC1Ev'/>
+<mbr r='Solarus::Drawable::xy' o='288' t='Solarus::Point'/>
+<mbr r='Solarus::Drawable::movement' o='384' t='std::shared_ptr&lt;Movement&gt;'/>
+<mbr r='Solarus::Drawable::transition' o='512' t='std::unique_ptr&lt;Transition&gt;'/>
+<mbr r='Solarus::Drawable::transition_callback_ref' o='576' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::Drawable::suspended' o='704' t='bool'/>
+<mbr r='Solarus::Drawable::blend_mode' o='736' t='Solarus::BlendMode'/>
+<ovr f='codebrowser/include/solarus/Sprite.h' l='48' c='Solarus::Sprite'/>

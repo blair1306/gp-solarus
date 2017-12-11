@@ -1,0 +1,54 @@
+<inh f='codebrowser/include/solarus/Drawable.h' l='41' c='Solarus::Drawable'/>
+<def f='codebrowser/include/solarus/lowlevel/Surface.h' l='45' ll='170'/>
+<size>168</size>
+<doc f='codebrowser/include/solarus/lowlevel/Surface.h' l='38'>/**
+ * \brief Represents a graphic surface.
+ *
+ * A surface is a rectangle of pixels.
+ * A surface can be drawn or blitted on another surface.
+ * This class basically encapsulates a library-dependent surface object.
+ */</doc>
+<fun r='_ZN7Solarus7SurfaceC1Eii'/>
+<fun r='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<fun r='_ZN7Solarus7Surface6createEii'/>
+<fun r='_ZN7Solarus7Surface6createERKNS_4SizeE'/>
+<fun r='_ZN7Solarus7Surface6createERKSsNS0_14ImageDirectoryE'/>
+<fun r='_ZNK7Solarus7Surface9get_widthEv'/>
+<fun r='_ZNK7Solarus7Surface10get_heightEv'/>
+<fun r='_ZNK7Solarus7Surface8get_sizeEv'/>
+<fun r='_ZNK7Solarus7Surface23is_software_destinationEv'/>
+<fun r='_ZN7Solarus7Surface24set_software_destinationEb'/>
+<fun r='_ZN7Solarus7Surface5clearEv'/>
+<fun r='_ZN7Solarus7Surface5clearERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorE'/>
+<fun r='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus7Surface11get_opacityEv'/>
+<fun r='_ZN7Solarus7Surface11set_opacityEh'/>
+<fun r='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<fun r='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<fun r='_ZN7Solarus7Surface6renderEP12SDL_Renderer'/>
+<fun r='_ZNK7Solarus7Surface17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus7Surface8raw_drawERS0_RKNS_5PointE'/>
+<fun r='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<fun r='_ZN7Solarus7Surface15draw_transitionERNS_10TransitionE'/>
+<fun r='_ZN7Solarus7Surface22get_transition_surfaceEv'/>
+<fun r='_ZNK7Solarus7Surface9get_pixelEi'/>
+<fun r='_ZNK7Solarus7Surface20is_pixel_transparentEi'/>
+<fun r='_ZNK7Solarus7Surface15get_color_valueERKNS_5ColorE'/>
+<fun r='_ZNK7Solarus7Surface18get_sdl_blend_modeEv'/>
+<fun r='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<fun r='_ZN7Solarus7Surface23create_software_surfaceEv'/>
+<fun r='_ZN7Solarus7Surface24convert_software_surfaceEv'/>
+<fun r='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<fun r='_ZN7Solarus7Surface14add_subsurfaceERKSt10shared_ptrIS0_ERKNS_9RectangleERKNS_5PointE'/>
+<fun r='_ZN7Solarus7Surface17clear_subsurfacesEv'/>
+<fun r='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<mbr r='Solarus::Surface::subsurfaces' o='768' t='std::vector&lt;SubSurfaceNodePtr&gt;'/>
+<mbr r='Solarus::Surface::software_destination' o='960' t='bool'/>
+<mbr r='Solarus::Surface::internal_surface' o='1024' t='SDL_Surface_UniquePtr'/>
+<mbr r='Solarus::Surface::internal_texture' o='1088' t='SDL_Texture_UniquePtr'/>
+<mbr r='Solarus::Surface::internal_color' o='1152' t='std::unique_ptr&lt;Color&gt;'/>
+<mbr r='Solarus::Surface::is_rendered' o='1216' t='bool'/>
+<mbr r='Solarus::Surface::opacity' o='1224' t='uint8_t'/>
+<mbr r='Solarus::Surface::width' o='1248' t='int'/>
+<mbr r='Solarus::Surface::height' o='1280' t='int'/>

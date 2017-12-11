@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='76' type='const std::shared_ptr&lt;Destination&gt; &amp; Solarus::Entities::get_default_destination()'/>
+<use f='codebrowser/src/Game.cpp' l='438' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='410' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='240' ll='242' type='const std::shared_ptr&lt;Destination&gt; &amp; Solarus::Entities::get_default_destination()'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='235'>/**
+ * \brief Returns the default destination of the map.
+ * \return The default destination, or nullptr if there exists no destination
+ * on this map.
+ */</doc>

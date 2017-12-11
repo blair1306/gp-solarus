@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='62' type='bool Solarus::EquipmentItem::is_assignable() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='512' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='180' ll='182' type='bool Solarus::EquipmentItem::is_assignable() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='175'>/**
+ * \brief Returns whether this item can be assigned to an item key
+ * and then used explicitly by pressing this item key.
+ * \return true if this item can be assigned.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2587' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='311' u='c' c='_ZN7Solarus10LuaContext22item_api_is_assignableEP9lua_State'/>

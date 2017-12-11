@@ -1,0 +1,40 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Stairs.h' l='44' ll='107'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/Stairs.h' l='26'>/**
+ * \brief Some stairs that trigger a special animation on the hero.
+ *
+ * A stairs entity is a special terrain where the hero walks
+ * either before going to another floor
+ * or to change its layer inside a single floor.
+ *
+ * For stairs inside a single floor,
+ * only one stairs entity has to be placed and the collisions will be
+ * detected on both layers.
+ * This entity has to be placed on the lowest of both layers.
+ *
+ * For stairs that send the hero to another floor (i.e. another map),
+ * there must be three entities:
+ * - a teletransporter (that make the hero go to the next map),
+ * - a stairs entity (that make the hero take the stairs animation),
+ * - a destination point on the next map.
+ */</doc>
+<smbr r='Solarus::Stairs::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<fun r='_ZNK7Solarus6Stairs8get_typeEv'/>
+<fun r='_ZNK7Solarus6Stairs12can_be_drawnEv'/>
+<fun r='_ZNK7Solarus6Stairs17can_change_groundEv'/>
+<fun r='_ZNK7Solarus6Stairs10get_groundEv'/>
+<fun r='_ZN7Solarus6Stairs15notify_creatingEv'/>
+<fun r='_ZNK7Solarus6Stairs15is_inside_floorEv'/>
+<fun r='_ZNK7Solarus6Stairs16is_sword_ignoredEv'/>
+<fun r='_ZN7Solarus6Stairs15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus6Stairs16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Stairs14notify_enabledEb'/>
+<fun r='_ZNK7Solarus6Stairs22get_movement_directionENS0_3WayE'/>
+<fun r='_ZNK7Solarus6Stairs23get_animation_directionENS0_3WayE'/>
+<fun r='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<fun r='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<fun r='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<fun r='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<mbr r='Solarus::Stairs::subtype' o='2048' t='Solarus::Stairs::Subtype'/>

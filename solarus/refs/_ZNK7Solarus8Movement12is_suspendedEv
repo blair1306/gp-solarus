@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='57' type='bool Solarus::Movement::is_suspended() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1513' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='327' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='370' ll='372' type='bool Solarus::Movement::is_suspended() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='366'>/**
+ * \brief Returns whether the movement is suspended.
+ * \return true if the movement is suspended
+ */</doc>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='58' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='163' u='c' c='_ZN7Solarus12PathMovement6updateEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='175' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='75' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='148' u='c' c='_ZN7Solarus14RandomMovement6updateEv'/>
+<use f='codebrowser/src/movements/RandomPathMovement.cpp' l='40' u='c' c='_ZN7Solarus18RandomPathMovement6updateEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='204' u='c' c='_ZN7Solarus16StraightMovement20set_next_move_date_xEj'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='219' u='c' c='_ZN7Solarus16StraightMovement20set_next_move_date_yEj'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='399' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='627' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='650' u='c' c='_ZN7Solarus16StraightMovement6updateEv'/>

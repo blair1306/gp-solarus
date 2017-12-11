@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='149' type='bool Solarus::Entity::State::is_current_state() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='73' ll='75' type='bool Solarus::Entity::State::is_current_state() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='69'>/**
+ * \brief Returns whether this state is the current state.
+ * \return \c true if this state is the current state.
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='51' u='c' c='_ZN7Solarus4Hero13CarryingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='149' u='c' c='_ZN7Solarus4Hero13CarryingState6updateEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='71' u='c' c='_ZN7Solarus4Hero9FreeState6updateEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='90' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='92' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='238' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='71' u='c' c='_ZN7Solarus4Hero13SwimmingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='65' u='c' c='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='68' u='c' c='_ZN7Solarus4Hero14UsingItemState6updateEv'/>

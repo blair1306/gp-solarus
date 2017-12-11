@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='132' type='bool Solarus::Surface::is_pixel_transparent(int index) const'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='80' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='954' ll='972' type='bool Solarus::Surface::is_pixel_transparent(int index) const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='945'>/**
+ * \brief Returns whether a pixel is transparent.
+ *
+ * A pixel is transparent if it corresponds to the colorkey
+ * or if its alpha channel is equal to 0.
+ *
+ * \param index The index of the pixel to test.
+ * \return \c true if the pixel is transparent.
+ */</doc>

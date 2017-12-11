@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EnemyAttack.h' l='26' type='0'/>
+<doc f='codebrowser/include/solarus/entities/EnemyAttack.h' l='26'>/**&lt; attacked by the sword (for a spin attack, the life lost is multiplied by 2) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='49' u='r'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='710' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1223' u='r' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1562' u='r' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='253' u='r' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='135' u='r' c='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='223' u='r' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='205' u='r' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='58' type='void Solarus::Chest::set_treasure(const Solarus::Treasure &amp; treasure)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='122' ll='124' type='void Solarus::Chest::set_treasure(const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='114'>/**
+ * \brief Sets the treasure of this chest.
+ *
+ * The treasure can be set even if the chest is open.
+ * It will be placed inside the chest if the chest is closed again.
+ *
+ * \param treasure The treasure to set. It may be empty or non obtainable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3150' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>

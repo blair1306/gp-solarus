@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='386' type='void Solarus::LuaContext::destination_on_activated(Solarus::Destination &amp; destination)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='680' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5996' ll='6005' type='void Solarus::LuaContext::destination_on_activated(Solarus::Destination &amp; destination)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5989'>/**
+ * \brief Calls the on_activated() method of a Lua destination.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param destination A destination.
+ */</doc>

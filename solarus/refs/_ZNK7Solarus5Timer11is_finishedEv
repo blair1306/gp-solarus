@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='43' type='bool Solarus::Timer::is_finished() const'/>
+<def f='codebrowser/src/Timer.cpp' l='122' ll='124' type='bool Solarus::Timer::is_finished() const'/>
+<use f='codebrowser/src/Timer.cpp' l='157' u='c' c='_ZN7Solarus5Timer6updateEv'/>
+<doc f='codebrowser/src/Timer.cpp' l='118'>/**
+ * \brief Returns whether the timer is finished.
+ * \return true if the timer is finished
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='241' u='c' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='308' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='326' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>

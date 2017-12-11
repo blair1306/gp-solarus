@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='100' type='bool Solarus::Door::is_opening() const'/>
+<def f='codebrowser/src/entities/Door.cpp' l='132' ll='134' type='bool Solarus::Door::is_opening() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='213' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='529' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='658' u='c' c='_ZN7Solarus4Door4openEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='128'>/**
+ * \brief Returns whether this door is being opened.
+ * \return true if this door is being opened.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3684' u='c' c='_ZN7Solarus10LuaContext19door_api_is_openingEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1884' u='c' c='_ZN7Solarus10LuaContext19map_api_close_doorsEP9lua_State'/>

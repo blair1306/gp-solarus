@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='311' type='void Solarus::Entity::notify_collision_with_separator(Solarus::Separator &amp; separator, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1090' c='_ZN7Solarus12CustomEntity31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3138' ll='3141' type='void Solarus::Entity::notify_collision_with_separator(Solarus::Separator &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3132'>/**
+ * \brief This function is called when a separator detects a collision with
+ * this entity.
+ * \param separator The separator.
+ * \param collision_mode The collision mode that detected the event.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1876' c='_ZN7Solarus4Hero31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='120' u='c' c='_ZN7Solarus9Separator16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='327' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Hero::get_carried_object()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='144' ll='146' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Hero::get_carried_object()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='136'>/**
+ * \brief Returns the item currently carried by the hero, if any.
+ *
+ * This function is used internally to allow this item to be preserved between
+ * different hero states.
+ *
+ * \return The carried object or nullptr.
+ */</doc>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='50' u='c' c='_ZN7Solarus4Hero12JumpingStateC1ERS0_iibb'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='55' u='c' c='_ZN7Solarus4Hero11StairsStateC1ERS0_RKSt10shared_ptrIKNS_6StairsEENS4_3WayE'/>

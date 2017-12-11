@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='73' type='bool Solarus::HeroSprites::is_walking() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='242' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='650' ll='652' type='bool Solarus::HeroSprites::is_walking() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='646'>/**
+ * \brief Returns whether the sprites have currently a walking animation.
+ * \return true if the sprites are walking
+ */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='243' u='c' c='_ZN7Solarus4Hero19PlayerMovementState23notify_movement_changedEv'/>

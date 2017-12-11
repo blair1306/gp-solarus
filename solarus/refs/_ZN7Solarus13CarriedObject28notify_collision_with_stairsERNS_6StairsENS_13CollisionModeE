@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='97' type='void Solarus::CarriedObject::notify_collision_with_stairs(Solarus::Stairs &amp; stairs, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='302' c='_ZN7Solarus6Entity28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='661' ll='669' type='void Solarus::CarriedObject::notify_collision_with_stairs(Solarus::Stairs &amp; stairs, Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='656'>/**
+ * \brief This function is called when some stairs detect a collision with this entity.
+ * \param stairs the stairs entity
+ * \param collision_mode the collision mode that detected the event
+ */</doc>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='661'>/* collision_mode */</doc>

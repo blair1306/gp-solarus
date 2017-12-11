@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='287' type='bool Solarus::Entity::test_collision_origin_point(const Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='852' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1776' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1936' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1992' ll='1995' type='bool Solarus::Entity::test_collision_origin_point(const Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1984'>/**
+ * \brief Returns whether the origin point of an entity is overlapping this entity&apos;s rectangle.
+ *
+ * The layer is not checked.
+ *
+ * \param entity The entity.
+ * \return \c true if the entity&apos;s origin point is overlapping the this entity&apos;s rectangle
+ */</doc>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='133' type='int Solarus::Hero::get_real_movement_direction8()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='943' ll='990' type='int Solarus::Hero::get_real_movement_direction8()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1166' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='931'>/**
+ * \brief Returns the actual direction of the hero&apos;s movement.
+ *
+ * This function returns the actual direction of the hero&apos;s movement, which can be different from the one
+ * defined by the directional keys pressed by the player because we consider obstacles here.
+ * If he does not want to move, -1 is returned. If he is trying to move but cannot because of obstacles,
+ * the direction he is trying to move toward is returned.
+ * This function is not used to compute the hero&apos;s movement (PlayerMovement does that) but only
+ * to decide what direction to give to its sprites once the movement is already computed.
+ *
+ * \return the hero&apos;s actual direction between 0 and 7, or -1 if he is stopped
+ */</doc>

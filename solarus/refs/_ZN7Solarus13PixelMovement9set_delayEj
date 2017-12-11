@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='44' type='void Solarus::PixelMovement::set_delay(uint32_t delay)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1906' u='c' c='_ZN7Solarus10LuaContext28pixel_movement_api_set_delayEP9lua_State'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='132' u='c' c='_ZN7Solarus12JumpMovement9set_speedEi'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='135' u='c' c='_ZN7Solarus12JumpMovement9set_speedEi'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='295' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='438' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='116' ll='118' type='void Solarus::PixelMovement::set_delay(uint32_t delay)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='112'>/**
+ * \brief Changes the delay between two moves.
+ * \param delay the new delay, in milliseconds
+ */</doc>

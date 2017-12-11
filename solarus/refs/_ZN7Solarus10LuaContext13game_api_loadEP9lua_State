@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='679' type='static int Solarus::LuaContext::game_api_load(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='46' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='200' ll='217' type='static int Solarus::LuaContext::game_api_load(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='195'>/**
+ * \brief Implementation of sol.game.load().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

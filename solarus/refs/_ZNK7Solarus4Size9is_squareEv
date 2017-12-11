@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='53' type='bool Solarus::Size::is_square() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='95' ll='97' type='bool Solarus::Size::is_square() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='91'>/**
+ * \brief Returns whether this width and height are the same.
+ * \return \c true if the width and height are equal.
+ */</doc>
+<use f='codebrowser/src/entities/Jumper.cpp' l='49' u='c' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='79' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>

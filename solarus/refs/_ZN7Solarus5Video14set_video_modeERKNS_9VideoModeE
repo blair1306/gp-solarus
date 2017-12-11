@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='63' type='static bool Solarus::Video::set_video_mode(const Solarus::VideoMode &amp; mode)'/>
+<use f='codebrowser/src/Settings.cpp' l='319' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='522' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='530' ll='533' type='static bool Solarus::Video::set_video_mode(const Solarus::VideoMode &amp; mode)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='525'>/**
+ * \brief Sets the video mode, keeping the fullscreen setting unchanged.
+ * \param mode The video mode to set.
+ * \return true in case of success, false if this mode is not supported.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='115' u='c' c='_ZN7Solarus10LuaContext18video_api_set_modeEP9lua_State'/>

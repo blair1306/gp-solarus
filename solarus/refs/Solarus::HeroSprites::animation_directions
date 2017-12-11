@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='200' type='const int [8][2]'/>
+<doc f='codebrowser/include/solarus/hero/HeroSprites.h' l='198'>// State.</doc>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='46' ll='55' type='const int [8][2]'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='706' u='r' c='_ZNK7Solarus11HeroSprites23get_animation_directionEii'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='708' u='r' c='_ZNK7Solarus11HeroSprites23get_animation_directionEii'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='712' u='r' c='_ZNK7Solarus11HeroSprites23get_animation_directionEii'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='766' u='r' c='_ZN7Solarus11HeroSprites24set_animation_direction8Ei'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='767' u='r' c='_ZN7Solarus11HeroSprites24set_animation_direction8Ei'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='34'>/**
+ * \brief Associates to each movement direction the possible directions of the hero&apos;s sprites.
+ *
+ * This array indicates the possible directions of the hero&apos;s animation (from 0 to 3, or -1 for no change)
+ * for each movement direction.
+ * Each combination of directional keys can be associated to one or two directions.
+ * When one direction is specified (i.e. the second one is set to -1), the hero&apos;s sprite always takes
+ * this direction.
+ * When two directions are specified,
+ * the hero sprite takes the first direction, unless it is already under the second one
+ * (then it stays in the second one). This permits a natural behavior for diagonal directions.
+ */</doc>

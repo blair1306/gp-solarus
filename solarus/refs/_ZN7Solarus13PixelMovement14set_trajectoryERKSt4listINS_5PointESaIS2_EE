@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='41' type='void Solarus::PixelMovement::set_trajectory(const std::list&lt;Point&gt; &amp; trajectory)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1845' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_set_trajectoryEP9lua_State'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='440' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='67' ll='73' type='void Solarus::PixelMovement::set_trajectory(const std::list&lt;Point&gt; &amp; trajectory)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='57'>/**
+ * \brief Sets the trajectory of this movement.
+ *
+ * This function can be called even if the object was moving with a previous trajectory.
+ * The old trajectory is replaced and the movement starts the from beginning of the
+ * new trajectory.
+ *
+ * \param trajectory a list of points describing the succession of translations that compose this movement,
+ * where each point is an xy value representing a translation
+ */</doc>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='109' u='c' c='_ZN12_GLOBAL__N_19list_testERN7Solarus15TestEnvironmentE'/>

@@ -1,0 +1,13 @@
+<dec f='include/physfs.h' l='1822' type='int PHYSFS_writeULE32(PHYSFS_File * file, PHYSFS_uint32 val)'/>
+<doc f='include/physfs.h' l='1810'>/**
+ * \fn int PHYSFS_writeULE32(PHYSFS_File *file, PHYSFS_uint32 val)
+ * \brief Convert and write an unsigned 32-bit littleendian value.
+ *
+ * Convenience function. Convert an unsigned 32-bit value from the platform&apos;s
+ *  native byte order to littleendian and write it to a file.
+ *
+ *    \param file PhysicsFS file handle to which to write.
+ *    \param val Value to convert and write.
+ *   \return zero on failure, non-zero on success. On failure, you can
+ *           find out what went wrong from PHYSFS_getLastError().
+ */</doc>

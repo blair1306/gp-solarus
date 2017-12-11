@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='106' type='bool Solarus::Entity::is_hero() const'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='103' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='354' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='232' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='122' ll='124' type='bool Solarus::Entity::is_hero() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='118'>/**
+ * \brief Returns whether this entity is the hero controlled by the player.
+ * \return true if this entity is the hero
+ */</doc>
+<use f='codebrowser/src/entities/Jumper.cpp' l='222' u='c' c='_ZN7Solarus6Jumper21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='220' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='300' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='347' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='171' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='222' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>

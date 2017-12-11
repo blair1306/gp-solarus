@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='76' type='void Solarus::Enemy::Enemy(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; breed, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='75'>// creation</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='80' ll='119' type='void Solarus::Enemy::Enemy(Solarus::Game &amp; , const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; breed, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='71'>/**
+ * \brief Creates an enemy.
+ * \param game The game.
+ * \param name Name identifying the enemy or an empty string.
+ * \param layer The layer on the map.
+ * \param xy Coordinates on the map.
+ * \param breed Breed of the enemy.
+ * \param treasure Treasure dropped when the enemy is killed.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_hints.h' l='215'/>
+<doc f='include/SDL2/SDL_hints.h' l='203'>/**
+ *  \brief  A variable controlling whether the idle timer is disabled on iOS.
+ *
+ *  When an iOS app does not receive touches for some time, the screen is
+ *  dimmed automatically. For games where the accelerometer is the only input
+ *  this is problematic. This functionality can be disabled by setting this
+ *  hint.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Enable idle timer
+ *    &quot;1&quot;       - Disable idle timer
+ */</doc>

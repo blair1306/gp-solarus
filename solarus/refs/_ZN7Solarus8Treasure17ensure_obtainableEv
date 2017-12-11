@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='61' type='void Solarus::Treasure::ensure_obtainable()'/>
+<def f='codebrowser/src/Treasure.cpp' l='85' ll='91' type='void Solarus::Treasure::ensure_obtainable()'/>
+<doc f='codebrowser/src/Treasure.cpp' l='74'>/**
+ * \brief Makes sure that the content of this treasure is allowed.
+ *
+ * If the item is not allowed, the treasure becomes empty.
+ * This function must be called before giving it to the player.
+ *
+ * This function is not called automatically because we want to decide to
+ * remove the treasure (or not) as late as possible. The obtainable property
+ * may indeed change after the creation of the treasure, for example if the
+ * player finds a new equipment item in the meantime.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='109' u='c' c='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>

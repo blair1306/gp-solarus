@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='96' type='const Solarus::ScopedLuaRef &amp; Solarus::Movement::get_finished_callback() const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='95'>// Lua</doc>
+<def f='codebrowser/src/movements/Movement.cpp' l='543' ll='545' type='const Solarus::ScopedLuaRef &amp; Solarus::Movement::get_finished_callback() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='538'>/**
+ * \brief Returns the Lua registry ref to the function to call when this
+ * movement finishes.
+ * \return The Lua ref to a function, or an empty ref.
+ */</doc>

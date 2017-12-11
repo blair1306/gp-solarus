@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='57' type='const SurfacePtr &amp; Solarus::Camera::get_surface()'/>
+<use f='codebrowser/src/Game.cpp' l='579' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Map.cpp' l='443' u='c' c='_ZN7Solarus3Map18get_camera_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='642' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEii'/>
+<use f='codebrowser/src/Map.cpp' l='670' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<use f='codebrowser/src/Map.cpp' l='734' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='269' ll='271' type='const SurfacePtr &amp; Solarus::Camera::get_surface()'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='265'>/**
+ * \brief Returns the surface where this camera draws entities.
+ * \return The camera surface.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1212' u='c' c='_ZN7Solarus8Entities4drawEv'/>

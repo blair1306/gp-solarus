@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='64' type='bool Solarus::DialogBoxSystem::has_more_lines() const'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='199' ll='201' type='bool Solarus::DialogBoxSystem::has_more_lines() const'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='212' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='237' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='246' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='282' u='c' c='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='194'>/**
+ * \brief Returns whether there are more lines remaining to display after the
+ * current 3 lines in the built-in dialog box.
+ * \return \c true if there are more lines.
+ */</doc>

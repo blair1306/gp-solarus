@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='181' type='void Solarus::Entity::set_optimization_distance(int distance)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1222' ll='1225' type='void Solarus::Entity::set_optimization_distance(int distance)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1214'>/**
+ * \brief Sets the optimization distance of this entity.
+ *
+ * Above this distance from the visible area, the engine may decide to
+ * skip updates.
+ *
+ * \param distance The optimization distance (0 means infinite).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1662' u='c' c='_ZN7Solarus10LuaContext36entity_api_set_optimization_distanceEP9lua_State'/>

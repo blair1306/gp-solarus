@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='102' type='void Solarus::Equipment::set_ability(Solarus::Ability ability, int level)'/>
+<def f='codebrowser/src/Equipment.cpp' l='605' ll='618' type='void Solarus::Equipment::set_ability(Solarus::Ability ability, int level)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='600'>/**
+ * \brief Sets the level of the specified ability.
+ * \param ability The ability to set.
+ * \param level The level of this ability.
+ */</doc>
+<use f='codebrowser/src/Savegame.cpp' l='145' u='c' c='_ZN7Solarus8Savegame18set_initial_valuesEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1155' u='c' c='_ZN7Solarus10LuaContext20game_api_set_abilityEP9lua_State'/>

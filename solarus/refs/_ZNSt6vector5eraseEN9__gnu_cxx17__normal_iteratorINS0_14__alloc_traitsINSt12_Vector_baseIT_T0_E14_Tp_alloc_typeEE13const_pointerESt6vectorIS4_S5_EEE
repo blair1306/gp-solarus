@@ -1,0 +1,19 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='1144' ll='1147' type='iterator std::vector::erase(const_iterator __position)'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='1129'>/**
+       *  @brief  Remove element at given position.
+       *  @param  __position  Iterator pointing to element to be erased.
+       *  @return  An iterator pointing to the next element (or end()).
+       *
+       *  This function will erase the element at the given position and thus
+       *  shorten the %vector by one.
+       *
+       *  Note This operation could be expensive and if it is
+       *  frequently used the user should consider using std::list.
+       *  The user is also cautioned that this function only erases
+       *  the element, and that if the element is itself a pointer,
+       *  the pointed-to memory is not touched in any way.  Managing
+       *  the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/gui/src/quests_model.cpp' l='164' u='c' c='_ZN10SolarusGui11QuestsModel12remove_questEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1371' u='c' c='_ZN7Solarus6Entity17clear_old_spritesEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2094' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>

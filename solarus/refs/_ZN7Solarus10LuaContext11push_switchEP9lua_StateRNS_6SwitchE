@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1111' type='static void Solarus::LuaContext::push_switch(lua_State * l, Solarus::Switch &amp; sw)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3348' ll='3350' type='static void Solarus::LuaContext::push_switch(lua_State * l, Solarus::Switch &amp; sw)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6113' u='c' c='_ZN7Solarus10LuaContext19switch_on_activatedERNS_6SwitchE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6131' u='c' c='_ZN7Solarus10LuaContext21switch_on_inactivatedERNS_6SwitchE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6149' u='c' c='_ZN7Solarus10LuaContext14switch_on_leftERNS_6SwitchE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3343'>/**
+ * \brief Pushes a switch userdata onto the stack.
+ * \param l A Lua context.
+ * \param sw A switch.
+ */</doc>

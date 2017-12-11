@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Separator.h' l='50' type='bool Solarus::Separator::is_vertical() const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='450' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='499' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='522' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2957' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Separator.cpp' l='66' ll='68' type='bool Solarus::Separator::is_vertical() const'/>
+<doc f='codebrowser/src/entities/Separator.cpp' l='62'>/**
+ * \brief Returns whether this is an vertical separator.
+ * \return \c true if this separator is vertical, \c false if it is horizontal.
+ */</doc>

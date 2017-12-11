@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='91' type='int Solarus::EquipmentItem::get_amount() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='428' ll='434' type='int Solarus::EquipmentItem::get_amount() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='476' u='c' c='_ZN7Solarus13EquipmentItem14set_max_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='424'>/**
+ * \brief Returns the current value of the amount associated to this item.
+ * \return The player&apos;s current amount of this item.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='214' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='460' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='625' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3844' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='593' u='c' c='_ZN7Solarus10LuaContext19item_api_has_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='616' u='c' c='_ZN7Solarus10LuaContext19item_api_get_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='662' u='c' c='_ZN7Solarus10LuaContext19item_api_add_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='687' u='c' c='_ZN7Solarus10LuaContext22item_api_remove_amountEP9lua_State'/>

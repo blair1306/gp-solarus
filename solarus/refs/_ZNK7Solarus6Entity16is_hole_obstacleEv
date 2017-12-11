@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='420' type='bool Solarus::Entity::is_hole_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='132' c='_ZNK7Solarus5Arrow16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='107' c='_ZNK7Solarus5Block16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='90' c='_ZNK7Solarus4Bomb16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='155' c='_ZNK7Solarus9Boomerang16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='533' c='_ZNK7Solarus13CarriedObject16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='726' c='_ZNK7Solarus12CustomEntity16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='378' c='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2414' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2510' ll='2512' type='bool Solarus::Entity::is_hole_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2503'>/**
+ * \brief Returns whether a hole is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \return true if the holes are currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1437' c='_ZNK7Solarus4Hero16is_hole_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='112' c='_ZNK7Solarus8Hookshot16is_hole_obstacleEv'/>

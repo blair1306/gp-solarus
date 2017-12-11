@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='47' type='bool Solarus::LuaTools::is_valid_lua_identifier(const std::string &amp; name)'/>
+<use f='codebrowser/src/Savegame.cpp' l='430' u='c' c='_ZN7Solarus8Savegame10set_stringERKSsS2_'/>
+<use f='codebrowser/src/Savegame.cpp' l='486' u='c' c='_ZN7Solarus8Savegame11set_integerERKSsi'/>
+<use f='codebrowser/src/Savegame.cpp' l='542' u='c' c='_ZN7Solarus8Savegame11set_booleanERKSsb'/>
+<use f='codebrowser/src/Savegame.cpp' l='555' u='c' c='_ZN7Solarus8Savegame5unsetERKSs'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2311' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3143' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4046' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4926' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5090' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5097' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='619' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='660' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='209' u='c' c='_ZN7Solarus10LuaContext30item_api_set_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='257' u='c' c='_ZN7Solarus10LuaContext37item_api_set_amount_savegame_variableEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='53' ll='65' type='bool Solarus::LuaTools::is_valid_lua_identifier(const std::string &amp; name)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='47'>/**
+ * \brief Returns whether the specified name is a valid Lua identifier.
+ * \param name The name to check.
+ * \return true if the name only contains alphanumeric characters or &apos;_&apos; and
+ * does not start with a digit.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='314' u='c' c='_ZN7Solarus12_GLOBAL__N_149entity_creation_check_savegame_variable_mandatoryEP9lua_StateiRKNS_10EntityDataERKSs'/>

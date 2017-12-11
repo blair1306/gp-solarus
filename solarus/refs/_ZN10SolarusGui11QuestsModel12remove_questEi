@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='68' type='bool SolarusGui::QuestsModel::remove_quest(int index)'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='157' ll='167' type='bool SolarusGui::QuestsModel::remove_quest(int quest_index)'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='151'>/**
+ * @brief Removes a quest from this model.
+ * @param quest_index Index of the quest to remove.
+ * @return @c true if the quest was removed, @c false if there is no quest
+ * with this index.
+ */</doc>
+<use f='codebrowser/gui/src/quests_view.cpp' l='104' u='c' c='_ZN10SolarusGui10QuestsView12remove_questEi'/>

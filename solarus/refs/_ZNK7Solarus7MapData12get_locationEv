@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='145' type='Solarus::Point Solarus::MapData::get_location() const'/>
+<use f='codebrowser/src/Map.cpp' l='298' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<def f='codebrowser/src/MapData.cpp' l='65' ll='67' type='Solarus::Point Solarus::MapData::get_location() const'/>
+<use f='codebrowser/src/MapData.cpp' l='913' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<use f='codebrowser/src/MapData.cpp' l='914' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<doc f='codebrowser/src/MapData.cpp' l='61'>/**
+ * \brief Returns the location of this map in its world.
+ * \return The location of the upper-left corner of the map in pixels.
+ */</doc>

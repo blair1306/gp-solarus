@@ -1,0 +1,16 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/TreasureState.h' l='29' ll='53'/>
+<size>112</size>
+<doc f='codebrowser/include/solarus/hero/TreasureState.h' l='26'>/**
+ * \brief The state &quot;Treasure&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero13TreasureStateC1ERS0_RKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero13TreasureState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero13TreasureState6updateEv'/>
+<fun r='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>
+<fun r='_ZNK7Solarus4Hero13TreasureState36get_previous_carried_object_behaviorEv'/>
+<fun r='_ZNK7Solarus4Hero13TreasureState23is_brandishing_treasureEv'/>
+<mbr r='Solarus::Hero::TreasureState::treasure' o='384' t='Solarus::Treasure'/>
+<mbr r='Solarus::Hero::TreasureState::treasure_sprite' o='640' t='SpritePtr'/>
+<mbr r='Solarus::Hero::TreasureState::callback_ref' o='768' t='Solarus::ScopedLuaRef'/>

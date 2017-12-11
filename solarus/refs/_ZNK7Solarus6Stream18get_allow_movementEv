@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='51' type='bool Solarus::Stream::get_allow_movement() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='331' u='c' c='_ZN7Solarus5Enemy18is_stream_obstacleERNS_6StreamE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='870' u='c' c='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1640' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2531' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='84' ll='86' type='bool Solarus::Stream::get_allow_movement() const'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='80'>/**
+ * \brief Returns whether the player can move the hero in this stream.
+ * \return \c true if the hero can move, \c false if this is a blocking stream.
+ */</doc>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='98' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='175' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='240' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='344' u='c' c='_ZNK7Solarus4Hero12RunningState21can_persist_on_streamERKNS_6StreamE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3541' u='c' c='_ZN7Solarus10LuaContext29stream_api_get_allow_movementEP9lua_State'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='57' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>

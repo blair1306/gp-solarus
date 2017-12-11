@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='69' type='0'/>
+<doc f='codebrowser/include/solarus/entities/Stairs.h' l='69'>/**&lt; for stairs inside a single floor, indicates that the entity is going upstairs;
+                      * for stairs between two floors, indicates that the entity is leaving this floor */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1734' u='r' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1738' u='r' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='210' u='r' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='216' u='r' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='219' u='r' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='102' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='211' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='253' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

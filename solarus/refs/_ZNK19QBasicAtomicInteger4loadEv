@@ -1,0 +1,27 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h' l='122' type='T QBasicAtomicInteger::load() const'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h' l='134' u='c' c='_ZNK13QGlobalStatic11isDestroyedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h' l='135' u='c' c='_ZNK13QGlobalStatic6existsEv'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h' l='120'>// Everything below is either implemented in ../arch/qatomic_XXX.h or (as fallback) in qgenericatomic.h</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='57' u='c' c='_ZN9QtPrivate8RefCount3refEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='68' u='c' c='_ZN9QtPrivate8RefCount5derefEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='91' u='c' c='_ZNK9QtPrivate8RefCount10isSharableEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='98' u='c' c='_ZNK9QtPrivate8RefCount8isStaticEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='103' u='c' c='_ZNK9QtPrivate8RefCount8isSharedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI5QListIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI7QVectorIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI6QQueueIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI6QStackIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI4QSetIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdI11QLinkedListIT_EE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdISt6vectorIT_SaIS1_EEE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1736' u='c' c='_ZN11QMetaTypeIdISt4listIT_SaIS1_EEE14qt_metatype_idEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h' l='509' u='c' c='_ZN14QSharedPointer11internalSetEPN15QtSharedPointer20ExternalRefCountDataEPT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h' l='514' u='c' c='_ZN14QSharedPointer11internalSetEPN15QtSharedPointer20ExternalRefCountDataEPT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h' l='527' u='c' c='_ZN14QSharedPointer11internalSetEPN15QtSharedPointer20ExternalRefCountDataEPT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h' l='553' u='c' c='_ZNK12QWeakPointer6isNullEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h' l='556' u='c' c='_ZNK12QWeakPointer4dataEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qbrush.h' l='164' u='c' c='_ZNK6QBrush10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='543' u='c' c='_ZNK8QVariant10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h' l='105' u='c' c='_ZN16QContiguousCache6detachEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h' l='106' u='c' c='_ZNK16QContiguousCache10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h' l='256' u='c' c='_ZN16QContiguousCache5clearEv'/>

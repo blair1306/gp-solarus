@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Map.h' l='164' type='void Solarus::Map::check_collision_with_detectors(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/include/solarus/Map.h' l='163'>// collisions with detectors (checked after a move)</doc>
+<def f='codebrowser/src/Map.cpp' l='1271' ll='1305' type='void Solarus::Map::check_collision_with_detectors(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/Map.cpp' l='1259'>/**
+ * \brief Checks the collisions between an entity and the detectors of the map.
+ *
+ * This function is called by an entity sensitive to the entity detectors
+ * when this entity has just moved on the map, or when a detector
+ * wants to check this entity.
+ * We check whether or not the entity overlaps an entity detector.
+ * If the map is suspended, this function does nothing.
+ *
+ * \param entity The entity that has just moved (this entity should have
+ * a movement sensible to the collisions).
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='2146' u='c' c='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>

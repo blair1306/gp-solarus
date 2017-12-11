@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='45' type='void Solarus::ExportableToLua::set_known_to_lua(bool known_to_lua)'/>
+<def f='codebrowser/src/lua/ExportableToLua.cpp' l='75' ll='77' type='void Solarus::ExportableToLua::set_known_to_lua(bool known_to_lua)'/>
+<doc f='codebrowser/src/lua/ExportableToLua.cpp' l='70'>/**
+ * \brief Sets whether this object was exported in the Lua side.
+ * \param known_to_lua \c true if this object was exported in the Lua side
+ * at least once.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1007' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>

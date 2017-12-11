@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='124' type='bool Solarus::TilesetData::pattern_exists(const std::string &amp; pattern_id) const'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='234' ll='236' type='bool Solarus::TilesetData::pattern_exists(const std::string &amp; pattern_id) const'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='309' u='c' c='_ZN7Solarus11TilesetData14set_pattern_idERKSsS2_'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='314' u='c' c='_ZN7Solarus11TilesetData14set_pattern_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='229'>/**
+ * \brief Returns whether there exists a tile pattern with the specified id.
+ * \param pattern_id The id to test.
+ * \return \c true if a tile pattern exists with this id in the tileset.
+ */</doc>

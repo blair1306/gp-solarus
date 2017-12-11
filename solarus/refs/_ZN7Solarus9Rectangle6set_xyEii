@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='75' type='void Solarus::Rectangle::set_xy(int x, int y)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='273' ll='276' type='void Solarus::Rectangle::set_xy(int x, int y)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='283' u='c' c='_ZN7Solarus9Rectangle6set_xyERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='292' u='c' c='_ZN7Solarus9Rectangle10set_centerEii'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='268'>/**
+ * \brief Sets the coordinates of the top-left corner of this rectangle
+ * \param x the new x coordinate
+ * \param y the new y coordinate
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1668' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1674' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1691' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1698' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='481' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='488' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='442' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='208' u='c' c='_ZN12_GLOBAL__N_19test_moveERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='225' u='c' c='_ZN12_GLOBAL__N_115test_move_limitERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='230' u='c' c='_ZN12_GLOBAL__N_115test_move_limitERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>

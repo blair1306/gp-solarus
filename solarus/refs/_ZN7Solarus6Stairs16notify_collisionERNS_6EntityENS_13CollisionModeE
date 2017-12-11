@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='92' type='void Solarus::Stairs::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='143' ll='149' type='void Solarus::Stairs::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='138'>/**
+ * \brief This function is called when another entity overlaps this entity.
+ * \param entity_overlapping The other entity.
+ * \param collision_mode The collision mode that detected the collision.
+ */</doc>

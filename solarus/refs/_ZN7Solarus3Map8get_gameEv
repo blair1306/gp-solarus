@@ -1,0 +1,31 @@
+<dec f='codebrowser/include/solarus/Map.h' l='91' type='Solarus::Game &amp; Solarus::Map::get_game()'/>
+<use f='codebrowser/src/Map.cpp' l='89' u='c' c='_ZN7Solarus3Map11set_tilesetERKSs'/>
+<def f='codebrowser/src/Map.cpp' l='336' ll='338' type='Solarus::Game &amp; Solarus::Map::get_game()'/>
+<doc f='codebrowser/src/Map.cpp' l='329'>/**
+ * \brief Returns the game that loaded this map.
+ *
+ * This function should not be called before the map is loaded into a game.
+ *
+ * \return The game.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='316' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='442' u='c' c='_ZN7Solarus6Entity8get_gameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='451' u='c' c='_ZNK7Solarus6Entity8get_gameEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='122' u='c' c='_ZN7Solarus6Entity5State15get_lua_contextEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='130' u='c' c='_ZN7Solarus6Entity5State8get_gameEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='138' u='c' c='_ZNK7Solarus6Entity5State8get_gameEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5114' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='529' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='585' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='627' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='709' u='c' c='_ZN7Solarus10LuaContext14l_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='749' u='c' c='_ZN7Solarus10LuaContext12l_create_npcEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='957' u='c' c='_ZN7Solarus10LuaContext22l_create_crystal_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='986' u='c' c='_ZN7Solarus10LuaContext22l_create_shop_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1068' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1172' u='c' c='_ZN7Solarus10LuaContext22l_create_custom_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1404' u='c' c='_ZN7Solarus10LuaContext16map_api_get_gameEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1795' u='c' c='_ZN7Solarus10LuaContext25map_api_get_crystal_stateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1811' u='c' c='_ZN7Solarus10LuaContext25map_api_set_crystal_stateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1830' u='c' c='_ZN7Solarus10LuaContext28map_api_change_crystal_stateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2114' u='c' c='_ZN7Solarus10LuaContext16map_api_get_heroEP9lua_State'/>

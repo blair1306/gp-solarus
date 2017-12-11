@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='384' type='void Solarus::LuaContext::entity_on_state_changed(Solarus::Entity &amp; entity, const std::string &amp; state_name)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='401' u='c' c='_ZN7Solarus6Entity14notify_createdEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='197' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5956' ll='5966' type='void Solarus::LuaContext::entity_on_state_changed(Solarus::Entity &amp; entity, const std::string &amp; state_name)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5948'>/**
+ * \brief Calls the on_state_changed() method of a Lua entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \param state_name A name describing the new state.
+ */</doc>

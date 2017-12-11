@@ -1,0 +1,9 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='366'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='367' ll='370'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='371' ll='372'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='373'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='361'>// We can&apos;t get has_trivial_copy right without compiler help, so fail
+// conservatively. We will assume it&apos;s false except for: (1) types
+// for which is_pod is true. (2) std::pair of types with trivial copy
+// constructors. (3) array of a type with a trivial copy constructor.
+// (4) const versions thereof.</doc>

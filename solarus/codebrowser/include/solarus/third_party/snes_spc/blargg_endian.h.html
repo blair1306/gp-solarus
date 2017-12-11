@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>blargg_endian.h source code [codebrowser/include/solarus/third_party/snes_spc/blargg_endian.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/blargg_endian.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='blargg_endian.h.html'>blargg_endian.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// CPU Byte Order Utilities</i></td></tr>
+<tr><th id="2">2</th><td><i></i></td></tr>
+<tr><th id="3">3</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/BLARGG_ENDIAN">BLARGG_ENDIAN</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/BLARGG_ENDIAN" data-ref="_M/BLARGG_ENDIAN">BLARGG_ENDIAN</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="blargg_common.h.html">"blargg_common.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><i>// BLARGG_CPU_CISC: Defined if CPU has very few general-purpose registers (&lt; 16)</i></td></tr>
+<tr><th id="10">10</th><td><u>#<span data-ppcond="10">if</span> defined (<span class="macro" data-ref="_M/_M_IX86">_M_IX86</span>) || defined (<span class="macro" data-ref="_M/_M_IA64">_M_IA64</span>) || defined (<span class="macro" data-ref="_M/__i486__">__i486__</span>) || \</u></td></tr>
+<tr><th id="11">11</th><td><u>		defined (<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>) || defined (<span class="macro" data-ref="_M/__ia64__">__ia64__</span>) || defined (<span class="macro" data-ref="_M/__i386__">__i386__</span>)</u></td></tr>
+<tr><th id="12">12</th><td>	<u>#define <dfn class="macro" id="_M/BLARGG_CPU_X86" data-ref="_M/BLARGG_CPU_X86">BLARGG_CPU_X86</dfn> 1</u></td></tr>
+<tr><th id="13">13</th><td>	<u>#define <dfn class="macro" id="_M/BLARGG_CPU_CISC" data-ref="_M/BLARGG_CPU_CISC">BLARGG_CPU_CISC</dfn> 1</u></td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="10">endif</span></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">if</span> defined (<span class="macro" data-ref="_M/__powerpc__">__powerpc__</span>) || defined (<span class="macro" data-ref="_M/__ppc__">__ppc__</span>) || defined (<span class="macro" data-ref="_M/__POWERPC__">__POWERPC__</span>) || defined (<span class="macro" data-ref="_M/__powerc">__powerc</span>)</u></td></tr>
+<tr><th id="17">17</th><td>	<u>#define BLARGG_CPU_POWERPC 1</u></td></tr>
+<tr><th id="18">18</th><td>	<u>#define BLARGG_CPU_RISC 1</u></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="16">endif</span></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>// BLARGG_BIG_ENDIAN, BLARGG_LITTLE_ENDIAN: Determined automatically, otherwise only</i></td></tr>
+<tr><th id="22">22</th><td><i>// one may be #defined to 1. Only needed if something actually depends on byte order.</i></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<span class="macro" data-ref="_M/BLARGG_BIG_ENDIAN">BLARGG_BIG_ENDIAN</span>) &amp;&amp; !defined (<span class="macro" data-ref="_M/BLARGG_LITTLE_ENDIAN">BLARGG_LITTLE_ENDIAN</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifdef</span> <a class="macro" href="../../../../../include/features.h.html#365" data-ref="_M/__GLIBC__">__GLIBC__</a></u></td></tr>
+<tr><th id="25">25</th><td>	<i>// GCC handles this for us</i></td></tr>
+<tr><th id="26">26</th><td>	<u>#include <a href="../../../../../include/endian.h.html">&lt;endian.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td>	<u>#<span data-ppcond="27">if</span> <a class="macro" href="../../../../../include/x86_64-linux-gnu/bits/endian.h.html#7" title="1234" data-ref="_M/__BYTE_ORDER">__BYTE_ORDER</a> == <a class="macro" href="../../../../../include/endian.h.html#31" title="1234" data-ref="_M/__LITTLE_ENDIAN">__LITTLE_ENDIAN</a></u></td></tr>
+<tr><th id="28">28</th><td>		<u>#define <dfn class="macro" id="_M/BLARGG_LITTLE_ENDIAN" data-ref="_M/BLARGG_LITTLE_ENDIAN">BLARGG_LITTLE_ENDIAN</dfn> 1</u></td></tr>
+<tr><th id="29">29</th><td>	<u>#<span data-ppcond="27">elif</span> __BYTE_ORDER == __BIG_ENDIAN</u></td></tr>
+<tr><th id="30">30</th><td>		<u>#define BLARGG_BIG_ENDIAN 1</u></td></tr>
+<tr><th id="31">31</th><td>	<u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="24">else</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#if defined (LSB_FIRST) || defined (__LITTLE_ENDIAN__) || BLARGG_CPU_X86 || \</u></td></tr>
+<tr><th id="35">35</th><td><u>		(defined (LITTLE_ENDIAN) &amp;&amp; LITTLE_ENDIAN+0 != 1234)</u></td></tr>
+<tr><th id="36">36</th><td>	<u>#define BLARGG_LITTLE_ENDIAN 1</u></td></tr>
+<tr><th id="37">37</th><td><u>#endif</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#if defined (MSB_FIRST)     || defined (__BIG_ENDIAN__) || defined (WORDS_BIGENDIAN) || \</u></td></tr>
+<tr><th id="40">40</th><td><u>	defined (__sparc__)     ||  BLARGG_CPU_POWERPC || \</u></td></tr>
+<tr><th id="41">41</th><td><u>	(defined (BIG_ENDIAN) &amp;&amp; BIG_ENDIAN+0 != 4321)</u></td></tr>
+<tr><th id="42">42</th><td>	<u>#define BLARGG_BIG_ENDIAN 1</u></td></tr>
+<tr><th id="43">43</th><td><u>#elif !defined (__mips__)</u></td></tr>
+<tr><th id="44">44</th><td>	<i>// No endian specified; assume little-endian, since it's most common</i></td></tr>
+<tr><th id="45">45</th><td>	<u>#define BLARGG_LITTLE_ENDIAN 1</u></td></tr>
+<tr><th id="46">46</th><td><u>#endif</u></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="50">if</span> <a class="macro" href="#28" title="1" data-ref="_M/BLARGG_LITTLE_ENDIAN">BLARGG_LITTLE_ENDIAN</a> &amp;&amp; BLARGG_BIG_ENDIAN</u></td></tr>
+<tr><th id="51">51</th><td>	<u>#undef BLARGG_LITTLE_ENDIAN</u></td></tr>
+<tr><th id="52">52</th><td>	<u>#undef BLARGG_BIG_ENDIAN</u></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="50">endif</span></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z24blargg_verify_byte_orderv" title='blargg_verify_byte_order' data-ref="_Z24blargg_verify_byte_orderv">blargg_verify_byte_order</dfn>()</td></tr>
+<tr><th id="56">56</th><td>{</td></tr>
+<tr><th id="57">57</th><td>	<u>#<span data-ppcond="57">ifndef</span> <span class="macro" data-ref="_M/NDEBUG">NDEBUG</span></u></td></tr>
+<tr><th id="58">58</th><td>		<u>#if BLARGG_BIG_ENDIAN</u></td></tr>
+<tr><th id="59">59</th><td>			<em>volatile</em> <em>int</em> i = <var>1</var>;</td></tr>
+<tr><th id="60">60</th><td>			assert( *(<em>volatile</em> <em>char</em>*) &amp;i == <var>0</var> );</td></tr>
+<tr><th id="61">61</th><td>		<u>#elif BLARGG_LITTLE_ENDIAN</u></td></tr>
+<tr><th id="62">62</th><td>			<em>volatile</em> <em>int</em> i = <var>1</var>;</td></tr>
+<tr><th id="63">63</th><td>			assert( *(<em>volatile</em> <em>char</em>*) &amp;i != <var>0</var> );</td></tr>
+<tr><th id="64">64</th><td>		<u>#endif</u></td></tr>
+<tr><th id="65">65</th><td>	<u>#<span data-ppcond="57">endif</span></u></td></tr>
+<tr><th id="66">66</th><td>}</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>inline</b> <em>unsigned</em> <dfn class="decl def" id="_Z8get_le16PKv" title='get_le16' data-ref="_Z8get_le16PKv">get_le16</dfn>( <em>void</em> <em>const</em>* <dfn class="local col8 decl" id="28p" title='p' data-type='const void *' data-ref="28p">p</dfn> )</td></tr>
+<tr><th id="69">69</th><td>{</td></tr>
+<tr><th id="70">70</th><td>	<b>return</b>  (<em>unsigned</em>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col8 ref" href="#28p" title='p' data-ref="28p">p</a>) [<var>1</var>] &lt;&lt; <var>8</var> |</td></tr>
+<tr><th id="71">71</th><td>			(<em>unsigned</em>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col8 ref" href="#28p" title='p' data-ref="28p">p</a>) [<var>0</var>];</td></tr>
+<tr><th id="72">72</th><td>}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><b>inline</b> <em>unsigned</em> <dfn class="decl def" id="_Z8get_be16PKv" title='get_be16' data-ref="_Z8get_be16PKv">get_be16</dfn>( <em>void</em> <em>const</em>* <dfn class="local col9 decl" id="29p" title='p' data-type='const void *' data-ref="29p">p</dfn> )</td></tr>
+<tr><th id="75">75</th><td>{</td></tr>
+<tr><th id="76">76</th><td>	<b>return</b>  (<em>unsigned</em>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col9 ref" href="#29p" title='p' data-ref="29p">p</a>) [<var>0</var>] &lt;&lt; <var>8</var> |</td></tr>
+<tr><th id="77">77</th><td>			(<em>unsigned</em>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col9 ref" href="#29p" title='p' data-ref="29p">p</a>) [<var>1</var>];</td></tr>
+<tr><th id="78">78</th><td>}</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><b>inline</b> <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="decl def" id="_Z8get_le32PKv" title='get_le32' data-ref="_Z8get_le32PKv">get_le32</dfn>( <em>void</em> <em>const</em>* <dfn class="local col0 decl" id="30p" title='p' data-type='const void *' data-ref="30p">p</dfn> )</td></tr>
+<tr><th id="81">81</th><td>{</td></tr>
+<tr><th id="82">82</th><td>	<b>return</b>  (<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col0 ref" href="#30p" title='p' data-ref="30p">p</a>) [<var>3</var>] &lt;&lt; <var>24</var> |</td></tr>
+<tr><th id="83">83</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col0 ref" href="#30p" title='p' data-ref="30p">p</a>) [<var>2</var>] &lt;&lt; <var>16</var> |</td></tr>
+<tr><th id="84">84</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col0 ref" href="#30p" title='p' data-ref="30p">p</a>) [<var>1</var>] &lt;&lt;  <var>8</var> |</td></tr>
+<tr><th id="85">85</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col0 ref" href="#30p" title='p' data-ref="30p">p</a>) [<var>0</var>];</td></tr>
+<tr><th id="86">86</th><td>}</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><b>inline</b> <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="decl def" id="_Z8get_be32PKv" title='get_be32' data-ref="_Z8get_be32PKv">get_be32</dfn>( <em>void</em> <em>const</em>* <dfn class="local col1 decl" id="31p" title='p' data-type='const void *' data-ref="31p">p</dfn> )</td></tr>
+<tr><th id="89">89</th><td>{</td></tr>
+<tr><th id="90">90</th><td>	<b>return</b>  (<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col1 ref" href="#31p" title='p' data-ref="31p">p</a>) [<var>0</var>] &lt;&lt; <var>24</var> |</td></tr>
+<tr><th id="91">91</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col1 ref" href="#31p" title='p' data-ref="31p">p</a>) [<var>1</var>] &lt;&lt; <var>16</var> |</td></tr>
+<tr><th id="92">92</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col1 ref" href="#31p" title='p' data-ref="31p">p</a>) [<var>2</var>] &lt;&lt;  <var>8</var> |</td></tr>
+<tr><th id="93">93</th><td>			(<a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a>) ((<em>unsigned</em> <em>char</em> <em>const</em>*) <a class="local col1 ref" href="#31p" title='p' data-ref="31p">p</a>) [<var>3</var>];</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z8set_le16Pvj" title='set_le16' data-ref="_Z8set_le16Pvj">set_le16</dfn>( <em>void</em>* <dfn class="local col2 decl" id="32p" title='p' data-type='void *' data-ref="32p">p</dfn>, <em>unsigned</em> <dfn class="local col3 decl" id="33n" title='n' data-type='unsigned int' data-ref="33n">n</dfn> )</td></tr>
+<tr><th id="97">97</th><td>{</td></tr>
+<tr><th id="98">98</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col2 ref" href="#32p" title='p' data-ref="32p">p</a>) [<var>1</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col3 ref" href="#33n" title='n' data-ref="33n">n</a> &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="99">99</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col2 ref" href="#32p" title='p' data-ref="32p">p</a>) [<var>0</var>] = (<em>unsigned</em> <em>char</em>) <a class="local col3 ref" href="#33n" title='n' data-ref="33n">n</a>;</td></tr>
+<tr><th id="100">100</th><td>}</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z8set_be16Pvj" title='set_be16' data-ref="_Z8set_be16Pvj">set_be16</dfn>( <em>void</em>* <dfn class="local col4 decl" id="34p" title='p' data-type='void *' data-ref="34p">p</dfn>, <em>unsigned</em> <dfn class="local col5 decl" id="35n" title='n' data-type='unsigned int' data-ref="35n">n</dfn> )</td></tr>
+<tr><th id="103">103</th><td>{</td></tr>
+<tr><th id="104">104</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col4 ref" href="#34p" title='p' data-ref="34p">p</a>) [<var>0</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col5 ref" href="#35n" title='n' data-ref="35n">n</a> &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="105">105</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col4 ref" href="#34p" title='p' data-ref="34p">p</a>) [<var>1</var>] = (<em>unsigned</em> <em>char</em>) <a class="local col5 ref" href="#35n" title='n' data-ref="35n">n</a>;</td></tr>
+<tr><th id="106">106</th><td>}</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z8set_le32Pvj" title='set_le32' data-ref="_Z8set_le32Pvj">set_le32</dfn>( <em>void</em>* <dfn class="local col6 decl" id="36p" title='p' data-type='void *' data-ref="36p">p</dfn>, <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="local col7 decl" id="37n" title='n' data-type='blargg_ulong' data-ref="37n">n</dfn> )</td></tr>
+<tr><th id="109">109</th><td>{</td></tr>
+<tr><th id="110">110</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a>) [<var>0</var>] = (<em>unsigned</em> <em>char</em>) <a class="local col7 ref" href="#37n" title='n' data-ref="37n">n</a>;</td></tr>
+<tr><th id="111">111</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a>) [<var>1</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col7 ref" href="#37n" title='n' data-ref="37n">n</a> &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="112">112</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a>) [<var>2</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col7 ref" href="#37n" title='n' data-ref="37n">n</a> &gt;&gt; <var>16</var>);</td></tr>
+<tr><th id="113">113</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a>) [<var>3</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col7 ref" href="#37n" title='n' data-ref="37n">n</a> &gt;&gt; <var>24</var>);</td></tr>
+<tr><th id="114">114</th><td>}</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z8set_be32Pvj" title='set_be32' data-ref="_Z8set_be32Pvj">set_be32</dfn>( <em>void</em>* <dfn class="local col8 decl" id="38p" title='p' data-type='void *' data-ref="38p">p</dfn>, <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="local col9 decl" id="39n" title='n' data-type='blargg_ulong' data-ref="39n">n</dfn> )</td></tr>
+<tr><th id="117">117</th><td>{</td></tr>
+<tr><th id="118">118</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col8 ref" href="#38p" title='p' data-ref="38p">p</a>) [<var>3</var>] = (<em>unsigned</em> <em>char</em>) <a class="local col9 ref" href="#39n" title='n' data-ref="39n">n</a>;</td></tr>
+<tr><th id="119">119</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col8 ref" href="#38p" title='p' data-ref="38p">p</a>) [<var>2</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col9 ref" href="#39n" title='n' data-ref="39n">n</a> &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="120">120</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col8 ref" href="#38p" title='p' data-ref="38p">p</a>) [<var>1</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col9 ref" href="#39n" title='n' data-ref="39n">n</a> &gt;&gt; <var>16</var>);</td></tr>
+<tr><th id="121">121</th><td>	((<em>unsigned</em> <em>char</em>*) <a class="local col8 ref" href="#38p" title='p' data-ref="38p">p</a>) [<var>0</var>] = (<em>unsigned</em> <em>char</em>) (<a class="local col9 ref" href="#39n" title='n' data-ref="39n">n</a> &gt;&gt; <var>24</var>);</td></tr>
+<tr><th id="122">122</th><td>}</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="124">if</span> BLARGG_NONPORTABLE</u></td></tr>
+<tr><th id="125">125</th><td>	<i>// Optimized implementation if byte order is known</i></td></tr>
+<tr><th id="126">126</th><td>	<u>#if BLARGG_LITTLE_ENDIAN</u></td></tr>
+<tr><th id="127">127</th><td>		<u>#define GET_LE16( addr )        (*(BOOST::uint16_t*) (addr))</u></td></tr>
+<tr><th id="128">128</th><td>		<u>#define GET_LE32( addr )        (*(BOOST::uint32_t*) (addr))</u></td></tr>
+<tr><th id="129">129</th><td>		<u>#define SET_LE16( addr, data )  (void) (*(BOOST::uint16_t*) (addr) = (data))</u></td></tr>
+<tr><th id="130">130</th><td>		<u>#define SET_LE32( addr, data )  (void) (*(BOOST::uint32_t*) (addr) = (data))</u></td></tr>
+<tr><th id="131">131</th><td>	<u>#elif BLARGG_BIG_ENDIAN</u></td></tr>
+<tr><th id="132">132</th><td>		<u>#define GET_BE16( addr )        (*(BOOST::uint16_t*) (addr))</u></td></tr>
+<tr><th id="133">133</th><td>		<u>#define GET_BE32( addr )        (*(BOOST::uint32_t*) (addr))</u></td></tr>
+<tr><th id="134">134</th><td>		<u>#define SET_BE16( addr, data )  (void) (*(BOOST::uint16_t*) (addr) = (data))</u></td></tr>
+<tr><th id="135">135</th><td>		<u>#define SET_BE32( addr, data )  (void) (*(BOOST::uint32_t*) (addr) = (data))</u></td></tr>
+<tr><th id="136">136</th><td>		</td></tr>
+<tr><th id="137">137</th><td>		<u>#if BLARGG_CPU_POWERPC</u></td></tr>
+<tr><th id="138">138</th><td>			<i>// PowerPC has special byte-reversed instructions</i></td></tr>
+<tr><th id="139">139</th><td>			<u>#if defined (__MWERKS__)</u></td></tr>
+<tr><th id="140">140</th><td>				<u>#define GET_LE16( addr )        (__lhbrx( addr, 0 ))</u></td></tr>
+<tr><th id="141">141</th><td>				<u>#define GET_LE32( addr )        (__lwbrx( addr, 0 ))</u></td></tr>
+<tr><th id="142">142</th><td>				<u>#define SET_LE16( addr, in )    (__sthbrx( in, addr, 0 ))</u></td></tr>
+<tr><th id="143">143</th><td>				<u>#define SET_LE32( addr, in )    (__stwbrx( in, addr, 0 ))</u></td></tr>
+<tr><th id="144">144</th><td>			<u>#elif defined (__GNUC__)</u></td></tr>
+<tr><th id="145">145</th><td>				<u>#define GET_LE16( addr )        ({unsigned ppc_lhbrx_; asm( "lhbrx %0,0,%1" : "=r" (ppc_lhbrx_) : "r" (addr), "0" (ppc_lhbrx_) ); ppc_lhbrx_;})</u></td></tr>
+<tr><th id="146">146</th><td>				<u>#define GET_LE32( addr )        ({unsigned ppc_lwbrx_; asm( "lwbrx %0,0,%1" : "=r" (ppc_lwbrx_) : "r" (addr), "0" (ppc_lwbrx_) ); ppc_lwbrx_;})</u></td></tr>
+<tr><th id="147">147</th><td>				<u>#define SET_LE16( addr, in )    ({asm( "sthbrx %0,0,%1" : : "r" (in), "r" (addr) );})</u></td></tr>
+<tr><th id="148">148</th><td>				<u>#define SET_LE32( addr, in )    ({asm( "stwbrx %0,0,%1" : : "r" (in), "r" (addr) );})</u></td></tr>
+<tr><th id="149">149</th><td>			<u>#endif</u></td></tr>
+<tr><th id="150">150</th><td>		<u>#endif</u></td></tr>
+<tr><th id="151">151</th><td>	<u>#endif</u></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="124">endif</span></u></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="154">ifndef</span> <span class="macro" data-ref="_M/GET_LE16">GET_LE16</span></u></td></tr>
+<tr><th id="155">155</th><td>	<u>#define <dfn class="macro" id="_M/GET_LE16" data-ref="_M/GET_LE16">GET_LE16</dfn>( addr )        <a class="ref" href="#_Z8get_le16PKv" title='get_le16' data-ref="_Z8get_le16PKv">get_le16</a>( addr )</u></td></tr>
+<tr><th id="156">156</th><td>	<u>#define <dfn class="macro" id="_M/SET_LE16" data-ref="_M/SET_LE16">SET_LE16</dfn>( addr, data )  <a class="ref" href="#_Z8set_le16Pvj" title='set_le16' data-ref="_Z8set_le16Pvj">set_le16</a>( addr, data )</u></td></tr>
+<tr><th id="157">157</th><td><u>#<span data-ppcond="154">endif</span></u></td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="159">ifndef</span> <span class="macro" data-ref="_M/GET_LE32">GET_LE32</span></u></td></tr>
+<tr><th id="160">160</th><td>	<u>#define <dfn class="macro" id="_M/GET_LE32" data-ref="_M/GET_LE32">GET_LE32</dfn>( addr )        <a class="ref" href="#_Z8get_le32PKv" title='get_le32' data-ref="_Z8get_le32PKv">get_le32</a>( addr )</u></td></tr>
+<tr><th id="161">161</th><td>	<u>#define <dfn class="macro" id="_M/SET_LE32" data-ref="_M/SET_LE32">SET_LE32</dfn>( addr, data )  <a class="ref" href="#_Z8set_le32Pvj" title='set_le32' data-ref="_Z8set_le32Pvj">set_le32</a>( addr, data )</u></td></tr>
+<tr><th id="162">162</th><td><u>#<span data-ppcond="159">endif</span></u></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><u>#<span data-ppcond="164">ifndef</span> <span class="macro" data-ref="_M/GET_BE16">GET_BE16</span></u></td></tr>
+<tr><th id="165">165</th><td>	<u>#define <dfn class="macro" id="_M/GET_BE16" data-ref="_M/GET_BE16">GET_BE16</dfn>( addr )        <a class="ref" href="#_Z8get_be16PKv" title='get_be16' data-ref="_Z8get_be16PKv">get_be16</a>( addr )</u></td></tr>
+<tr><th id="166">166</th><td>	<u>#define <dfn class="macro" id="_M/SET_BE16" data-ref="_M/SET_BE16">SET_BE16</dfn>( addr, data )  <a class="ref" href="#_Z8set_be16Pvj" title='set_be16' data-ref="_Z8set_be16Pvj">set_be16</a>( addr, data )</u></td></tr>
+<tr><th id="167">167</th><td><u>#<span data-ppcond="164">endif</span></u></td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><u>#<span data-ppcond="169">ifndef</span> <span class="macro" data-ref="_M/GET_BE32">GET_BE32</span></u></td></tr>
+<tr><th id="170">170</th><td>	<u>#define <dfn class="macro" id="_M/GET_BE32" data-ref="_M/GET_BE32">GET_BE32</dfn>( addr )        <a class="ref" href="#_Z8get_be32PKv" title='get_be32' data-ref="_Z8get_be32PKv">get_be32</a>( addr )</u></td></tr>
+<tr><th id="171">171</th><td>	<u>#define <dfn class="macro" id="_M/SET_BE32" data-ref="_M/SET_BE32">SET_BE32</dfn>( addr, data )  <a class="ref" href="#_Z8set_be32Pvj" title='set_be32' data-ref="_Z8set_be32Pvj">set_be32</a>( addr, data )</u></td></tr>
+<tr><th id="172">172</th><td><u>#<span data-ppcond="169">endif</span></u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><i>// auto-selecting versions</i></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z6set_lePtj" title='set_le' data-ref="_Z6set_lePtj">set_le</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</a>* <dfn class="local col0 decl" id="40p" title='p' data-type='BOOST::uint16_t *' data-ref="40p">p</dfn>, <em>unsigned</em>     <dfn class="local col1 decl" id="41n" title='n' data-type='unsigned int' data-ref="41n">n</dfn> ) { <a class="macro" href="#156" title="set_le16( p, n )" data-ref="_M/SET_LE16">SET_LE16</a>( <a class="local col0 ref" href="#40p" title='p' data-ref="40p">p</a>, <a class="local col1 ref" href="#41n" title='n' data-ref="41n">n</a> ); }</td></tr>
+<tr><th id="177">177</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z6set_lePjj" title='set_le' data-ref="_Z6set_lePjj">set_le</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint32_t" title='BOOST::uint32_t' data-type='unsigned int' data-ref="BOOST::uint32_t">uint32_t</a>* <dfn class="local col2 decl" id="42p" title='p' data-type='BOOST::uint32_t *' data-ref="42p">p</dfn>, <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="local col3 decl" id="43n" title='n' data-type='blargg_ulong' data-ref="43n">n</dfn> ) { <a class="macro" href="#161" title="set_le32( p, n )" data-ref="_M/SET_LE32">SET_LE32</a>( <a class="local col2 ref" href="#42p" title='p' data-ref="42p">p</a>, <a class="local col3 ref" href="#43n" title='n' data-ref="43n">n</a> ); }</td></tr>
+<tr><th id="178">178</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z6set_bePtj" title='set_be' data-ref="_Z6set_bePtj">set_be</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</a>* <dfn class="local col4 decl" id="44p" title='p' data-type='BOOST::uint16_t *' data-ref="44p">p</dfn>, <em>unsigned</em>     <dfn class="local col5 decl" id="45n" title='n' data-type='unsigned int' data-ref="45n">n</dfn> ) { <a class="macro" href="#166" title="set_be16( p, n )" data-ref="_M/SET_BE16">SET_BE16</a>( <a class="local col4 ref" href="#44p" title='p' data-ref="44p">p</a>, <a class="local col5 ref" href="#45n" title='n' data-ref="45n">n</a> ); }</td></tr>
+<tr><th id="179">179</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z6set_bePjj" title='set_be' data-ref="_Z6set_bePjj">set_be</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint32_t" title='BOOST::uint32_t' data-type='unsigned int' data-ref="BOOST::uint32_t">uint32_t</a>* <dfn class="local col6 decl" id="46p" title='p' data-type='BOOST::uint32_t *' data-ref="46p">p</dfn>, <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="local col7 decl" id="47n" title='n' data-type='blargg_ulong' data-ref="47n">n</dfn> ) { <a class="macro" href="#171" title="set_be32( p, n )" data-ref="_M/SET_BE32">SET_BE32</a>( <a class="local col6 ref" href="#46p" title='p' data-ref="46p">p</a>, <a class="local col7 ref" href="#47n" title='n' data-ref="47n">n</a> ); }</td></tr>
+<tr><th id="180">180</th><td><b>inline</b> <em>unsigned</em>     <dfn class="decl def" id="_Z6get_lePt" title='get_le' data-ref="_Z6get_lePt">get_le</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</a>* <dfn class="local col8 decl" id="48p" title='p' data-type='BOOST::uint16_t *' data-ref="48p">p</dfn> ) { <b>return</b> <a class="macro" href="#155" title="get_le16( p )" data-ref="_M/GET_LE16">GET_LE16</a>( <a class="local col8 ref" href="#48p" title='p' data-ref="48p">p</a> ); }</td></tr>
+<tr><th id="181">181</th><td><b>inline</b> <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="decl def" id="_Z6get_lePj" title='get_le' data-ref="_Z6get_lePj">get_le</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint32_t" title='BOOST::uint32_t' data-type='unsigned int' data-ref="BOOST::uint32_t">uint32_t</a>* <dfn class="local col9 decl" id="49p" title='p' data-type='BOOST::uint32_t *' data-ref="49p">p</dfn> ) { <b>return</b> <a class="macro" href="#160" title="get_le32( p )" data-ref="_M/GET_LE32">GET_LE32</a>( <a class="local col9 ref" href="#49p" title='p' data-ref="49p">p</a> ); }</td></tr>
+<tr><th id="182">182</th><td><b>inline</b> <em>unsigned</em>     <dfn class="decl def" id="_Z6get_bePt" title='get_be' data-ref="_Z6get_bePt">get_be</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</a>* <dfn class="local col0 decl" id="50p" title='p' data-type='BOOST::uint16_t *' data-ref="50p">p</dfn> ) { <b>return</b> <a class="macro" href="#165" title="get_be16( p )" data-ref="_M/GET_BE16">GET_BE16</a>( <a class="local col0 ref" href="#50p" title='p' data-ref="50p">p</a> ); }</td></tr>
+<tr><th id="183">183</th><td><b>inline</b> <a class="typedef" href="blargg_common.h.html#blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</a> <dfn class="decl def" id="_Z6get_bePj" title='get_be' data-ref="_Z6get_bePj">get_be</dfn>( <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint32_t" title='BOOST::uint32_t' data-type='unsigned int' data-ref="BOOST::uint32_t">uint32_t</a>* <dfn class="local col1 decl" id="51p" title='p' data-type='BOOST::uint32_t *' data-ref="51p">p</dfn> ) { <b>return</b> <a class="macro" href="#170" title="get_be32( p )" data-ref="_M/GET_BE32">GET_BE32</a>( <a class="local col1 ref" href="#51p" title='p' data-ref="51p">p</a> ); }</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="186">186</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SNES_SPC.cpp.html'>codebrowser/src/third_party/snes_spc/SNES_SPC.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

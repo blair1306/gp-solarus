@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='54' type='4'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='31' u='r'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='138' u='r' c='_ZN7Solarus15CommandsEffects37is_action_key_acting_on_facing_entityEv'/>
+<doc f='codebrowser/include/solarus/CommandsEffects.h' l='54'>/**&lt; lift an object */</doc>
+<use f='codebrowser/src/entities/Bomb.cpp' l='174' u='r' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='188' u='r' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='334' u='r' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='392' u='r' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1903' u='r' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='236' u='r' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='275' u='r' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>

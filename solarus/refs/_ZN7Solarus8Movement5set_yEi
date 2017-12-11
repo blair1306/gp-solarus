@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='65' type='void Solarus::Movement::set_y(int y)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='415' u='c' c='_ZN7Solarus10LuaContext23start_movement_on_pointERKSt10shared_ptrINS_8MovementEEi'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='191' ll='193' type='void Solarus::Movement::set_y(int y)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='187'>/**
+ * \brief Sets the y position of the object controlled by this movement.
+ * \param y The new y position.
+ */</doc>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='107' type='bool Solarus::Entity::is_ground_observer() const'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='89' c='_ZNK7Solarus5Block18is_ground_observerEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='127' c='_ZNK7Solarus13CarriedObject18is_ground_observerEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1168' c='_ZNK7Solarus12CustomEntity18is_ground_observerEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='186' c='_ZNK7Solarus5Enemy18is_ground_observerEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='135' ll='137' type='bool Solarus::Entity::is_ground_observer() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='178' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='199' u='c' c='_ZNK7Solarus6Entity16get_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='216' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='411' u='c' c='_ZN7Solarus6Entity38notify_map_opening_transition_finishedEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='126'>/**
+ * \brief Returns whether this entity is sensible to the ground below it.
+ *
+ * This function returns \c false by default.
+ * If this function returns \c true,
+ * notify_ground_below_changed() will be called when it changes.
+ *
+ * \return \c true if this entity is sensible to its ground.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1321' c='_ZNK7Solarus4Hero18is_ground_observerEv'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='136' c='_ZNK7Solarus8Pickable18is_ground_observerEv'/>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1346' type='std::map&lt;TimerPtr, LuaTimerData&gt;'/>
+<offset>256</offset>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='127' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='137' u='m' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='137' u='m' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='140' u='m' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='141' u='m' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='187' u='m' c='_ZN7Solarus10LuaContext12remove_timerERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='187' u='m' c='_ZN7Solarus10LuaContext12remove_timerERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='188' u='m' c='_ZN7Solarus10LuaContext12remove_timerERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='212' c='_ZN7Solarus10LuaContext13remove_timersEi'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='225' u='m' c='_ZN7Solarus10LuaContext14destroy_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='234' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='250' u='m' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='251' u='m' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='252' u='m' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='254' u='m' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='254' u='m' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='268' c='_ZN7Solarus10LuaContext27notify_timers_map_suspendedEb'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='288' c='_ZN7Solarus10LuaContext27set_entity_timers_suspendedERNS_6EntityEb'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='310' u='m' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='311' u='m' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='542' u='m' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='543' u='m' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='571' u='m' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='572' u='m' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>

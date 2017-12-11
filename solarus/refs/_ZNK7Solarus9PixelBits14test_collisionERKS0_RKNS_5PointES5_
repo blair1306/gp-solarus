@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/PixelBits.h' l='43' type='bool Solarus::PixelBits::test_collision(const Solarus::PixelBits &amp; other, const Solarus::Point &amp; location1, const Solarus::Point &amp; location2) const'/>
+<use f='codebrowser/src/Sprite.cpp' l='669' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<def f='codebrowser/src/lowlevel/PixelBits.cpp' l='99' ll='237' type='bool Solarus::PixelBits::test_collision(const Solarus::PixelBits &amp; other, const Solarus::Point &amp; location1, const Solarus::Point &amp; location2) const'/>
+<doc f='codebrowser/src/lowlevel/PixelBits.cpp' l='91'>/**
+ * \brief Detects whether the image represented by these pixel bits is
+ * overlapping another image.
+ * \param other The other image.
+ * \param location1 Position of the upper-left corner of this image on the map.
+ * \param location2 Position of the upper-left corner of the other image.
+ * \return \c true if there is a collision.
+ */</doc>

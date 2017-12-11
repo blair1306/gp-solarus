@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaException.h' l='52' type='void Solarus::LuaException::LuaException(lua_State * l, const std::string &amp; error_message)'/>
+<def f='codebrowser/src/lua/LuaException.cpp' l='26' ll='32' type='void Solarus::LuaException::LuaException(lua_State * l, const std::string &amp; error_message)'/>
+<doc f='codebrowser/src/lua/LuaException.cpp' l='21'>/**
+ * \brief Creates a Lua exception with the specified error message.
+ * \param l The Lua state where the error occurred.
+ * \param error_message The error message.
+ */</doc>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='162' u='c' c='_ZN7Solarus8LuaTools5errorEP9lua_StateRKSs'/>

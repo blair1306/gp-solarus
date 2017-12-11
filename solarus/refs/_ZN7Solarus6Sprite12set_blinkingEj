@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='105' type='void Solarus::Sprite::set_blinking(uint32_t blink_delay)'/>
+<def f='codebrowser/src/Sprite.cpp' l='612' ll='619' type='void Solarus::Sprite::set_blinking(uint32_t blink_delay)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='607'>/**
+ * \brief Sets the blink delay of this sprite.
+ * \param blink_delay Blink delay of the sprite in milliseconds,
+ * or zero to stop blinking.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='471' u='c' c='_ZN7Solarus8Pickable12set_blinkingEb'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='475' u='c' c='_ZN7Solarus8Pickable12set_blinkingEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='589' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='592' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='595' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='597' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='616' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='619' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='622' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='624' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>

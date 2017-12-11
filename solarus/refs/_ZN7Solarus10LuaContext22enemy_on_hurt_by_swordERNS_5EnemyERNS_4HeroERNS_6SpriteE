@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='415' type='bool Solarus::LuaContext::enemy_on_hurt_by_sword(Solarus::Enemy &amp; enemy, Solarus::Hero &amp; hero, Solarus::Sprite &amp; enemy_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1233' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6492' ll='6503' type='bool Solarus::LuaContext::enemy_on_hurt_by_sword(Solarus::Enemy &amp; enemy, Solarus::Hero &amp; hero, Solarus::Sprite &amp; enemy_sprite)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6485'>/**
+ * \brief Calls the on_hurt_by_sword() method of a Lua enemy if it is defined.
+ * \param enemy An enemy.
+ * \param hero The hero whose sword is hitting the enemy.
+ * \param enemy_sprite Sprite of the enemy that gets hits.
+ * \return \c true if the method is defined.
+ */</doc>

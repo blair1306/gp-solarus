@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='285' type='bool Solarus::Entity::test_collision_rectangle(const Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='838' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1768' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1930' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1965' ll='1968' type='bool Solarus::Entity::test_collision_rectangle(const Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1957'>/**
+ * \brief Returns whether an entity&apos;s rectangle is overlapping this entity&apos;s rectangle.
+ *
+ * The layer is not checked.
+ *
+ * \param entity The entity.
+ * \return \c true if the entity&apos;s rectangle is overlapping this entity&apos;s rectangle.
+ */</doc>

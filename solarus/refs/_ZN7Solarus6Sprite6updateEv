@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='111' type='void Solarus::Sprite::update()'/>
+<doc f='codebrowser/include/solarus/Sprite.h' l='110'>// update and draw</doc>
+<inh f='codebrowser/include/solarus/Drawable.h' l='128' c='_ZN7Solarus8Drawable6updateEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='677' ll='756' type='void Solarus::Sprite::update()'/>
+<doc f='codebrowser/src/Sprite.cpp' l='672'>/**
+ * \brief Checks whether the frame has to be changed.
+ *
+ * If the frame changes, next_frame_date is updated.
+ */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='172' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3397' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='530' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='206' u='c' c='_ZN7Solarus12ShopTreasure6updateEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='207' u='c' c='_ZN7Solarus12ShopTreasure6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='816' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='819' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='827' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='831' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='838' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='842' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='100' u='c' c='_ZN7Solarus4Hero13TreasureState6updateEv'/>

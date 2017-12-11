@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='40' type='bool Solarus::CurrentQuest::is_initialized()'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='96' ll='98' type='bool Solarus::CurrentQuest::is_initialized()'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='92'>/**
+ * \brief Returns whether there is a current quest.
+ * \return \c true if there is a current quest.
+ */</doc>
+<use f='codebrowser/src/Settings.cpp' l='301' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='344' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>

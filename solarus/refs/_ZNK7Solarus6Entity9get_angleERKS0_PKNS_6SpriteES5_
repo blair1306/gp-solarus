@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='259' type='double Solarus::Entity::get_angle(const Solarus::Entity &amp; other, const Solarus::Sprite * this_sprite, const Solarus::Sprite * other_sprite) const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1045' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1296' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2871' ll='2894' type='double Solarus::Entity::get_angle(const Solarus::Entity &amp; other, const Solarus::Sprite * this_sprite, const Solarus::Sprite * other_sprite) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2861'>/**
+ * \brief Returns the angle of the vector between the origin of this entity or
+ * one of its sprite and the origin of another entity or one of its sprites.
+ * \param other The other entity.
+ * \param this_sprite Sprite of this entity to use instead of the entity itself
+ * or nullptr.
+ * \param other_sprite Sprite of the other entity to use instead of the entity
+ * itself or nullptr.
+ * \return The angle of the vector in radians, between 0 and Geometry::TWO_PI.
+ */</doc>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='264' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='229' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='210' u='c' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='210' type='static std::unique_ptr&lt;InputEvent&gt; Solarus::InputEvent::get_event()'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='209'>// retrieve the current event</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='409' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='412' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='243' ll='308' type='static std::unique_ptr&lt;InputEvent&gt; Solarus::InputEvent::get_event()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='235'>/**
+ * \brief Returns the first event from the event queue, or nullptr
+ * if there is no event.
+ * \return The current event to handle.
+ * If it is invalid, the event was suppressed but there may be more events
+ * in the queue.
+ * Returns nullptr if there is no more event in the queue.
+ */</doc>

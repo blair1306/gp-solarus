@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='145' type='std::string Solarus::HeroSprites::get_default_sword_sprite_id() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='129' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='277' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='291' ll='301' type='std::string Solarus::HeroSprites::get_default_sword_sprite_id() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='283'>/**
+ * \brief Returns the animation set id of the default sword sprite.
+ *
+ * The default sword sprite id is &quot;hero/swordX&quot; where X is the sword level,
+ * or no sprite if the sword level is 0.
+ *
+ * \return The default sword sprite animation set id.
+ */</doc>

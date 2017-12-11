@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='84' type='EntityVector Solarus::Entities::get_entities_with_prefix(Solarus::EntityType type, const std::string &amp; prefix)'/>
+<use f='codebrowser/src/entities/Door.cpp' l='211' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='216' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='362' ll='389' type='EntityVector Solarus::Entities::get_entities_with_prefix(Solarus::EntityType type, const std::string &amp; prefix)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='401' u='c' c='_ZN7Solarus8Entities31get_entities_with_prefix_sortedENS_10EntityTypeERKSs'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='355'>/**
+ * \brief Returns the entities of the map with the specified type and having
+ * the specified name prefix.
+ * \param type Type of entity.
+ * \param prefix Prefix of the name.
+ * \return The entities of this type and having this prefix in their name, in arbitrary order.
+ */</doc>
+<use f='codebrowser/src/entities/Stairs.cpp' l='353' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='359' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1849' u='c' c='_ZN7Solarus10LuaContext18map_api_open_doorsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1881' u='c' c='_ZN7Solarus10LuaContext19map_api_close_doorsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1913' u='c' c='_ZN7Solarus10LuaContext22map_api_set_doors_openEP9lua_State'/>

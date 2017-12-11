@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='317' type='void Solarus::Entity::notify_collision_with_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; enemy_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='404' c='_ZN7Solarus5Arrow27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='460' c='_ZN7Solarus13CarriedObject27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1143' c='_ZN7Solarus12CustomEntity27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='984' u='c' c='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='1015' c='_ZN7Solarus5Enemy27notify_collision_with_enemyERS0_RNS_6SpriteES3_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3191' ll='3192' type='void Solarus::Entity::notify_collision_with_enemy(Solarus::Enemy &amp; , Solarus::Sprite &amp; , Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3185'>/**
+ * \brief This function is called when an enemy&apos;s sprite collides with a sprite of this entity.
+ * \param enemy the enemy
+ * \param enemy_sprite the enemy&apos;s sprite that overlaps a sprite of this entity
+ * \param this_sprite this entity&apos;s sprite that overlaps the enemy&apos;s sprite
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3191'>/* enemy */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3191'>/* enemy_sprite */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3191'>/* this_sprite */</doc>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='138' c='_ZN7Solarus9Explosion27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1556' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='320' c='_ZN7Solarus8Hookshot27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>

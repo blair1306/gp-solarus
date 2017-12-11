@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='264' type='void Solarus::LuaContext::do_custom_entity_collision_callback(const Solarus::ScopedLuaRef &amp; callback_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; custom_entity_sprite, Solarus::Sprite &amp; other_entity_sprite)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='944' u='c' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5275' ll='5294' type='void Solarus::LuaContext::do_custom_entity_collision_callback(const Solarus::ScopedLuaRef &amp; callback_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; custom_entity_sprite, Solarus::Sprite &amp; other_entity_sprite)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5264'>/**
+ * \brief Executes a callback after a custom entity detected a pixel-precise
+ * collision.
+ * \param callback_ref Ref of the function to call.
+ * \param custom_entity A custom entity that detected a collision.
+ * \param other_entity The entity that was detected.
+ * \param custom_entity_sprite Sprite of the custom entity involved in the
+ * collision.
+ * \param other_entity_sprite Sprite of the detected entity involved in the
+ * collision.
+ */</doc>

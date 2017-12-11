@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='534' type='static int Solarus::LuaContext::language_api_get_language_name(lua_State * )'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='64' u='r' c='_ZN7Solarus10LuaContext24register_language_moduleEv'/>
+<def f='codebrowser/src/lua/LanguageApi.cpp' l='118' ll='140' type='static int Solarus::LuaContext::language_api_get_language_name(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LanguageApi.cpp' l='113'>/**
+ * \brief Implementation of sol.language.get_language_name().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

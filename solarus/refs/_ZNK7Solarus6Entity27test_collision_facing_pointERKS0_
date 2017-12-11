@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='288' type='bool Solarus::Entity::test_collision_facing_point(const Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='859' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1780' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1939' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2005' ll='2008' type='bool Solarus::Entity::test_collision_facing_point(const Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1997'>/**
+ * \brief Returns whether the facing point of an entity is overlapping this entity&apos;s rectangle.
+ *
+ * The layer is not checked.
+ *
+ * \param entity The entity.
+ * \return \c true if the entity&apos;s facing point is overlapping this entity&apos;s rectangle
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_render.h' l='705' type='int SDL_RenderDrawLines(SDL_Renderer * renderer, const SDL_Point * points, int count)'/>
+<doc f='include/SDL2/SDL_render.h' l='696'>/**
+ *  \brief Draw a series of connected lines on the current rendering target.
+ *
+ *  \param renderer The renderer which should draw multiple lines.
+ *  \param points The points along the lines
+ *  \param count The number of points, drawing count-1 lines
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='55' type='const std::string &amp; Solarus::Teletransporter::get_sound_id() const'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='116' ll='118' type='const std::string &amp; Solarus::Teletransporter::get_sound_id() const'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='111'>/**
+ * \brief Returns the sound to play when using this teletransporter.
+ * \return Id of the teletransporter&apos;s sound, or an empty string if no sound
+ * is played.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2826' u='c' c='_ZN7Solarus10LuaContext29teletransporter_api_get_soundEP9lua_State'/>

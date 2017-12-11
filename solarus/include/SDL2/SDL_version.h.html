@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_version.h source code [include/SDL2/SDL_version.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_version.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_version.h.html'>SDL_version.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_version.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  This header defines the current SDL version.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_version_h">_SDL_version_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_version_h" data-ref="_M/_SDL_version_h">_SDL_version_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="36">36</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="35">endif</span></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *  <span class="command">\brief</span> Information the version of SDL in use.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *  Represents the library's version as three levels: major revision</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *  (increments with massive changes, additions, and enhancements),</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *  minor revision (increments with backwards-compatible changes to the</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  major revision), and patchlevel (increments with fixes to the minor</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *  revision).</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_VERSION</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetVersion</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_version" title='SDL_version' data-ref="SDL_version"><a class="type" href="#SDL_version" title='SDL_version' data-ref="SDL_version">SDL_version</a></dfn></td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_version::major" title='SDL_version::major' data-ref="SDL_version::major">major</dfn>;        <i class="doc">/**&lt; major version */</i></td></tr>
+<tr><th id="54">54</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_version::minor" title='SDL_version::minor' data-ref="SDL_version::minor">minor</dfn>;        <i class="doc">/**&lt; minor version */</i></td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_version::patch" title='SDL_version::patch' data-ref="SDL_version::patch">patch</dfn>;        <i class="doc">/**&lt; update version */</i></td></tr>
+<tr><th id="56">56</th><td>} <dfn class="typedef" id="SDL_version" title='SDL_version' data-type='struct SDL_version' data-ref="SDL_version">SDL_version</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i>/* Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL</i></td></tr>
+<tr><th id="59">59</th><td><i>*/</i></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/SDL_MAJOR_VERSION" data-ref="_M/SDL_MAJOR_VERSION">SDL_MAJOR_VERSION</dfn>   2</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/SDL_MINOR_VERSION" data-ref="_M/SDL_MINOR_VERSION">SDL_MINOR_VERSION</dfn>   0</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/SDL_PATCHLEVEL" data-ref="_M/SDL_PATCHLEVEL">SDL_PATCHLEVEL</dfn>      2</u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *  <span class="command">\brief</span> Macro to determine SDL version program was compiled against.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> *  This macro fills in a SDL_version structure with the version of the</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *  library you compiled against. This is determined by what header the</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *  compiler uses. Note that if you dynamically linked the library, you might</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *  have a slightly newer or older version at runtime. That version can be</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *  determined with SDL_GetVersion(), which, unlike SDL_VERSION(),</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *  is not a macro.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span> A pointer to a SDL_version struct to initialize.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_version</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetVersion</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/SDL_VERSION" data-ref="_M/SDL_VERSION">SDL_VERSION</dfn>(x)                          \</u></td></tr>
+<tr><th id="80">80</th><td><u>{                                   \</u></td></tr>
+<tr><th id="81">81</th><td><u>    (x)-&gt;major = SDL_MAJOR_VERSION;                 \</u></td></tr>
+<tr><th id="82">82</th><td><u>    (x)-&gt;minor = SDL_MINOR_VERSION;                 \</u></td></tr>
+<tr><th id="83">83</th><td><u>    (x)-&gt;patch = SDL_PATCHLEVEL;                    \</u></td></tr>
+<tr><th id="84">84</th><td><u>}</u></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  This macro turns the version numbers into a numeric value:</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *  <span class="command">\verbatim</span></i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"><span class="verb">    (1,2,3) -&gt; (1203)</span></i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"><span class="verb"></span>    \endverbatim</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *  This assumes that there will never be more than 100 patchlevels.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="94">94</th><td><u>#define <dfn class="macro" id="_M/SDL_VERSIONNUM" data-ref="_M/SDL_VERSIONNUM">SDL_VERSIONNUM</dfn>(X, Y, Z)                     \</u></td></tr>
+<tr><th id="95">95</th><td><u>    ((X)*1000 + (Y)*100 + (Z))</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *  This is the version number macro for the current SDL version.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/SDL_COMPILEDVERSION" data-ref="_M/SDL_COMPILEDVERSION">SDL_COMPILEDVERSION</dfn> \</u></td></tr>
+<tr><th id="101">101</th><td><u>    SDL_VERSIONNUM(SDL_MAJOR_VERSION, SDL_MINOR_VERSION, SDL_PATCHLEVEL)</u></td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *  This macro will evaluate to true if compiled with SDL at least X.Y.Z.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="106">106</th><td><u>#define <dfn class="macro" id="_M/SDL_VERSION_ATLEAST" data-ref="_M/SDL_VERSION_ATLEAST">SDL_VERSION_ATLEAST</dfn>(X, Y, Z) \</u></td></tr>
+<tr><th id="107">107</th><td><u>    (SDL_COMPILEDVERSION &gt;= SDL_VERSIONNUM(X, Y, Z))</u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *  <span class="command">\brief</span> Get the version of SDL that is linked against your program.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *  If you are linking to SDL dynamically, then it is possible that the</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  current version will be different than the version you compiled against.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *  This function returns the current version, while SDL_VERSION() is a</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *  macro that tells you what version you compiled with.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *  <span class="command">\code</span></i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *<span class="verb">  SDL_version compiled;</span></i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  SDL_version linked;</span></i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"><span class="verb"></span> *<span class="verb"></span></i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  SDL_VERSION(&amp;compiled);</span></i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  SDL_GetVersion(&amp;linked);</span></i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  printf("We compiled against SDL version %d.%d.%d ...\n",</span></i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"><span class="verb"></span> *<span class="verb">         compiled.major, compiled.minor, compiled.patch);</span></i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  printf("But we linked against SDL version %d.%d.%d.\n",</span></i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"><span class="verb"></span> *<span class="verb">         linked.major, linked.minor, linked.patch);</span></i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"><span class="verb"></span> *  \endcode</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *  This function may be called safely at any time, even before SDL_Init().</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_VERSION</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="133">133</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetVersion" title='SDL_GetVersion' data-ref="SDL_GetVersion">SDL_GetVersion</dfn>(<a class="typedef" href="#SDL_version" title='SDL_version' data-type='struct SDL_version' data-ref="SDL_version">SDL_version</a> * <dfn class="local col2 decl" id="1702ver" title='ver' data-type='SDL_version *' data-ref="1702ver">ver</dfn>);</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *  <span class="command">\brief</span> Get the code revision of SDL that is linked against your program.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *  Returns an arbitrary string (a hash value) uniquely identifying the</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *  exact revision of the SDL library in use, and is only useful in comparing</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *  against other revisions. It is NOT an incrementing number.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="142">142</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRevision" title='SDL_GetRevision' data-ref="SDL_GetRevision">SDL_GetRevision</dfn>(<em>void</em>);</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *  <span class="command">\brief</span> Get the revision number of SDL that is linked against your program.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *  Returns a number uniquely identifying the exact revision of the SDL</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *  library in use. It is an incrementing number based on commits to</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *  hg.libsdl.org.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="151">151</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRevisionNumber" title='SDL_GetRevisionNumber' data-ref="SDL_GetRevisionNumber">SDL_GetRevisionNumber</dfn>(<em>void</em>);</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="155">155</th><td><u>#<span data-ppcond="155">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="156">156</th><td>}</td></tr>
+<tr><th id="157">157</th><td><u>#<span data-ppcond="155">endif</span></u></td></tr>
+<tr><th id="158">158</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_version_h */</u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

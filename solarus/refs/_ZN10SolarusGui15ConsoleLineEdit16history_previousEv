@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='42' type='void SolarusGui::ConsoleLineEdit::history_previous()'/>
+<use f='codebrowser/gui/moc_console_line_edit.cpp' l='82' u='c' c='_ZN10SolarusGui15ConsoleLineEdit18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='109' u='c' c='_ZN10SolarusGui15ConsoleLineEdit13keyPressEventEP9QKeyEvent'/>
+<def f='codebrowser/gui/src/console_line_edit.cpp' l='148' ll='160' type='void SolarusGui::ConsoleLineEdit::history_previous()'/>
+<doc f='codebrowser/gui/src/console_line_edit.cpp' l='143'>/**
+ * @brief Sets the text from the previous command in the history.
+ *
+ * Does nothing if there is no such command.
+ */</doc>

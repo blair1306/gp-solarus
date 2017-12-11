@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Dialog.h' l='41' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::Dialog::get_properties() const'/>
+<def f='codebrowser/src/Dialog.cpp' l='72' ll='74' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::Dialog::get_properties() const'/>
+<doc f='codebrowser/src/Dialog.cpp' l='68'>/**
+ * \brief Returns all custom properties of this dialog.
+ * \return The custom properties.
+ */</doc>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='49' u='c' c='_ZN7Solarus10LuaContext11push_dialogEP9lua_StateRKNS_6DialogE'/>

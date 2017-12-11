@@ -1,0 +1,133 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Enemy.h' l='48' ll='253'/>
+<size>440</size>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='32'>/**
+ * \brief Represents an enemy.
+ *
+ * This class stores the attack and defense properties of the enemy.
+ * Every enemy sprite must have at least the following animations
+ * and with the four main directions:
+ * - &quot;walking&quot;: used when the enemy is in its normal state
+ * - &quot;hurt&quot;: used when it was just hurt
+ * If the enemy can be immobilized (i.e. it is sensible to attacks that immobilize it),
+ * the following animations are also required:
+ * - &quot;immobilized&quot;: used while the enemy is immobilized
+ * - &quot;shaking&quot;: used when the immobilized enemy is about to get back to its normal state.
+ * The animation of its sprites automatically switches between those animations
+ * depending on its current movement and the attacks it is subject to.
+ * Additional animations may be defined.
+ */</doc>
+<smbr r='Solarus::Enemy::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<fun r='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<fun r='_ZNK7Solarus5Enemy8get_typeEv'/>
+<fun r='_ZNK7Solarus5Enemy18is_ground_observerEv'/>
+<fun r='_ZN7Solarus5Enemy15notify_creatingEv'/>
+<fun r='_ZN7Solarus5Enemy14notify_createdEv'/>
+<fun r='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<fun r='_ZNK7Solarus5Enemy9get_breedEv'/>
+<fun r='_ZNK7Solarus5Enemy10get_damageEv'/>
+<fun r='_ZN7Solarus5Enemy10set_damageEi'/>
+<fun r='_ZNK7Solarus5Enemy8get_lifeEv'/>
+<fun r='_ZN7Solarus5Enemy8set_lifeEi'/>
+<fun r='_ZNK7Solarus5Enemy14get_hurt_styleEv'/>
+<fun r='_ZN7Solarus5Enemy14set_hurt_styleENS0_9HurtStyleE'/>
+<fun r='_ZNK7Solarus5Enemy14get_can_attackEv'/>
+<fun r='_ZN7Solarus5Enemy14set_can_attackEb'/>
+<fun r='_ZNK7Solarus5Enemy14is_traversableEv'/>
+<fun r='_ZN7Solarus5Enemy15set_traversableEb'/>
+<fun r='_ZNK7Solarus5Enemy21get_obstacle_behaviorEv'/>
+<fun r='_ZN7Solarus5Enemy21set_obstacle_behaviorENS0_16ObstacleBehaviorE'/>
+<fun r='_ZNK7Solarus5Enemy25get_pushed_back_when_hurtEv'/>
+<fun r='_ZN7Solarus5Enemy25set_pushed_back_when_hurtEb'/>
+<fun r='_ZNK7Solarus5Enemy22get_push_hero_on_swordEv'/>
+<fun r='_ZN7Solarus5Enemy22set_push_hero_on_swordEb'/>
+<fun r='_ZNK7Solarus5Enemy25get_can_hurt_hero_runningEv'/>
+<fun r='_ZN7Solarus5Enemy25set_can_hurt_hero_runningEb'/>
+<fun r='_ZNK7Solarus5Enemy25get_minimum_shield_neededEv'/>
+<fun r='_ZN7Solarus5Enemy25set_minimum_shield_neededEi'/>
+<fun r='_ZNK7Solarus5Enemy22get_attack_consequenceENS_11EnemyAttackEPKNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy22set_attack_consequenceENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<fun r='_ZN7Solarus5Enemy29set_attack_consequence_spriteERKNS_6SpriteENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<fun r='_ZN7Solarus5Enemy26set_no_attack_consequencesEv'/>
+<fun r='_ZN7Solarus5Enemy33set_no_attack_consequences_spriteERKNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<fun r='_ZN7Solarus5Enemy38set_default_attack_consequences_spriteERKNS_6SpriteE'/>
+<fun r='_ZNK7Solarus5Enemy13get_animationEv'/>
+<fun r='_ZN7Solarus5Enemy13set_animationERKSs'/>
+<fun r='_ZN7Solarus5Enemy15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus5Enemy24is_destructible_obstacleERNS_12DestructibleE'/>
+<fun r='_ZN7Solarus5Enemy17is_block_obstacleERNS_5BlockE'/>
+<fun r='_ZN7Solarus5Enemy27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus5Enemy24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus5Enemy18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZNK7Solarus5Enemy20is_low_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus5Enemy25is_shallow_water_obstacleEv'/>
+<fun r='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus5Enemy19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<fun r='_ZN7Solarus5Enemy6updateEv'/>
+<fun r='_ZN7Solarus5Enemy13set_suspendedEb'/>
+<fun r='_ZN7Solarus5Enemy11draw_on_mapEv'/>
+<fun r='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<fun r='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<fun r='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus5Enemy31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy27notify_collision_with_enemyERS0_RNS_6SpriteES3_'/>
+<fun r='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy29attack_stopped_by_hero_shieldEv'/>
+<fun r='_ZN7Solarus5Enemy7restartEv'/>
+<fun r='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<fun r='_ZNK7Solarus5Enemy15is_invulnerableEv'/>
+<fun r='_ZNK7Solarus5Enemy13is_being_hurtEv'/>
+<fun r='_ZNK7Solarus5Enemy14is_immobilizedEv'/>
+<fun r='_ZNK7Solarus5Enemy9is_killedEv'/>
+<fun r='_ZNK7Solarus5Enemy27is_dying_animation_finishedEv'/>
+<fun r='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy4killEv'/>
+<fun r='_ZNK7Solarus5Enemy8is_dyingEv'/>
+<fun r='_ZNK7Solarus5Enemy12get_treasureEv'/>
+<fun r='_ZN7Solarus5Enemy12set_treasureERKNS_8TreasureE'/>
+<fun r='_ZN7Solarus5Enemy14clear_treasureEv'/>
+<smbr r='Solarus::Enemy::attack_names' t='const std::map&lt;EnemyAttack, std::string&gt;'/>
+<smbr r='Solarus::Enemy::hurt_style_names' t='const std::map&lt;HurtStyle, std::string&gt;'/>
+<smbr r='Solarus::Enemy::obstacle_behavior_names' t='const std::map&lt;ObstacleBehavior, std::string&gt;'/>
+<fun r='_ZN7Solarus5Enemy15play_hurt_soundEv'/>
+<fun r='_ZNK7Solarus5Enemy29is_sprite_finished_or_loopingEv'/>
+<fun r='_ZN7Solarus5Enemy10immobilizeEv'/>
+<fun r='_ZN7Solarus5Enemy16stop_immobilizedEv'/>
+<fun r='_ZN7Solarus5Enemy13custom_attackENS_11EnemyAttackEPNS_6SpriteE'/>
+<fun r='_ZN7Solarus5Enemy11notify_hurtERNS_6EntityENS_11EnemyAttackE'/>
+<fun r='_ZN7Solarus5Enemy11notify_deadEv'/>
+<fun r='_ZN7Solarus5Enemy18notify_immobilizedEv'/>
+<fun r='_ZNK7Solarus5Enemy8is_savedEv'/>
+<mbr r='Solarus::Enemy::breed' o='2048' t='std::string'/>
+<mbr r='Solarus::Enemy::damage_on_hero' o='2112' t='int'/>
+<mbr r='Solarus::Enemy::life' o='2144' t='int'/>
+<mbr r='Solarus::Enemy::hurt_style' o='2176' t='Solarus::Enemy::HurtStyle'/>
+<mbr r='Solarus::Enemy::pushed_back_when_hurt' o='2208' t='bool'/>
+<mbr r='Solarus::Enemy::push_hero_on_sword' o='2216' t='bool'/>
+<mbr r='Solarus::Enemy::can_hurt_hero_running' o='2224' t='bool'/>
+<mbr r='Solarus::Enemy::minimum_shield_needed' o='2240' t='int'/>
+<mbr r='Solarus::Enemy::attack_reactions' o='2304' t='std::map&lt;EnemyAttack, EnemyReaction&gt;'/>
+<mbr r='Solarus::Enemy::savegame_variable' o='2688' t='std::string'/>
+<mbr r='Solarus::Enemy::traversable' o='2752' t='bool'/>
+<mbr r='Solarus::Enemy::obstacle_behavior' o='2784' t='Solarus::Enemy::ObstacleBehavior'/>
+<mbr r='Solarus::Enemy::being_hurt' o='2816' t='bool'/>
+<mbr r='Solarus::Enemy::stop_hurt_date' o='2848' t='uint32_t'/>
+<mbr r='Solarus::Enemy::invulnerable' o='2880' t='bool'/>
+<mbr r='Solarus::Enemy::vulnerable_again_date' o='2912' t='uint32_t'/>
+<mbr r='Solarus::Enemy::can_attack' o='2944' t='bool'/>
+<mbr r='Solarus::Enemy::can_attack_again_date' o='2976' t='uint32_t'/>
+<mbr r='Solarus::Enemy::immobilized' o='3008' t='bool'/>
+<mbr r='Solarus::Enemy::start_shaking_date' o='3040' t='uint32_t'/>
+<mbr r='Solarus::Enemy::end_shaking_date' o='3072' t='uint32_t'/>
+<mbr r='Solarus::Enemy::dying_animation_started' o='3104' t='bool'/>
+<mbr r='Solarus::Enemy::treasure' o='3136' t='Solarus::Treasure'/>
+<mbr r='Solarus::Enemy::exploding' o='3392' t='bool'/>
+<mbr r='Solarus::Enemy::nb_explosions' o='3424' t='int'/>
+<mbr r='Solarus::Enemy::next_explosion_date' o='3456' t='uint32_t'/>

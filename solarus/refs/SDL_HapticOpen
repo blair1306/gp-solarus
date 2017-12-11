@@ -1,0 +1,23 @@
+<dec f='include/SDL2/SDL_haptic.h' l='843' type='SDL_Haptic * SDL_HapticOpen(int device_index)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='821'>/**
+ *  \brief Opens a Haptic device for usage.
+ *
+ *  The index passed as an argument refers to the N&apos;th Haptic device on this
+ *  system.
+ *
+ *  When opening a haptic device, its gain will be set to maximum and
+ *  autocenter will be disabled.  To modify these values use
+ *  SDL_HapticSetGain() and SDL_HapticSetAutocenter().
+ *
+ *  \param device_index Index of the device to open.
+ *  \return Device identifier or NULL on error.
+ *
+ *  \sa SDL_HapticIndex
+ *  \sa SDL_HapticOpenFromMouse
+ *  \sa SDL_HapticOpenFromJoystick
+ *  \sa SDL_HapticClose
+ *  \sa SDL_HapticSetGain
+ *  \sa SDL_HapticSetAutocenter
+ *  \sa SDL_HapticPause
+ *  \sa SDL_HapticStopAll
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='117' type='bool Solarus::Enemy::get_pushed_back_when_hurt() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='556' ll='558' type='bool Solarus::Enemy::get_pushed_back_when_hurt() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='552'>/**
+ * \brief Returns whether the enemy is pushed back when it gets hurt by the hero.
+ * \return \c true if the enemy is pushed back when it gets hurt.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4508' u='c' c='_ZN7Solarus10LuaContext34enemy_api_is_pushed_back_when_hurtEP9lua_State'/>

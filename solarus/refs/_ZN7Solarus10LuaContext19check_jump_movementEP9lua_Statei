@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1163' type='static std::shared_ptr&lt;JumpMovement&gt; Solarus::LuaContext::check_jump_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1677' ll='1681' type='static std::shared_ptr&lt;JumpMovement&gt; Solarus::LuaContext::check_jump_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1691' u='c' c='_ZN7Solarus10LuaContext32jump_movement_api_get_direction8EP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1705' u='c' c='_ZN7Solarus10LuaContext32jump_movement_api_set_direction8EP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1720' u='c' c='_ZN7Solarus10LuaContext30jump_movement_api_get_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1734' u='c' c='_ZN7Solarus10LuaContext30jump_movement_api_set_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1749' u='c' c='_ZN7Solarus10LuaContext27jump_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1763' u='c' c='_ZN7Solarus10LuaContext27jump_movement_api_set_speedEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1670'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * jump movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

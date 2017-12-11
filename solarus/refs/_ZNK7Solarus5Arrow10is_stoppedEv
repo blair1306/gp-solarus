@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='58' type='bool Solarus::Arrow::is_stopped() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='234' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='258' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='316' ll='318' type='bool Solarus::Arrow::is_stopped() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='325' u='c' c='_ZNK7Solarus5Arrow9is_flyingEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='354' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='312'>/**
+ * \brief Returns whether the arrow is stopped.
+ * \return true if the arrow is stopped
+ */</doc>

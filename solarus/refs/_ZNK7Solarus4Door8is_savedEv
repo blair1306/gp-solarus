@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='85' type='bool Solarus::Door::is_saved() const'/>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='84'>// Properties.</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='92' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='189' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<def f='codebrowser/src/entities/Door.cpp' l='279' ll='281' type='bool Solarus::Door::is_saved() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='532' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='567' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='665' u='c' c='_ZN7Solarus4Door4openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='699' u='c' c='_ZN7Solarus4Door5closeEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='275'>/**
+ * \brief Returns whether the state of this door is saved.
+ * \return \c true if this door is saved.
+ */</doc>

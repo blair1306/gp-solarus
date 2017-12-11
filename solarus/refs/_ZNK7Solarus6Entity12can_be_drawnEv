@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='111' type='bool Solarus::Entity::can_be_drawn() const'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='105' c='_ZNK7Solarus9Boomerang12can_be_drawnEv'/>
+<ovr f='codebrowser/src/entities/Camera.cpp' l='248' c='_ZNK7Solarus6Camera12can_be_drawnEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='251' ll='253' type='bool Solarus::Entity::can_be_drawn() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='243'>/**
+ * \brief Returns whether entities of this type can be drawn.
+ *
+ * This function returns \c true by default. Redefine it to return
+ * \c false if your type of entity has nothing to display.
+ *
+ * \return true if this type of entity can be drawn
+ */</doc>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='75' c='_ZNK7Solarus6Jumper12can_be_drawnEv'/>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='60' c='_ZNK7Solarus6Sensor12can_be_drawnEv'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='71' c='_ZNK7Solarus6Stairs12can_be_drawnEv'/>
+<ovr f='codebrowser/src/entities/Wall.cpp' l='81' c='_ZNK7Solarus4Wall12can_be_drawnEv'/>

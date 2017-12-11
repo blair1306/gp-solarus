@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='36' type='void SNES_SPC::reset()'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='34'>// Resets SPC to power-on state. This resets your output buffer, so you must
+	// call set_output() after this.</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='76' u='c' c='_ZN8SNES_SPC4initEv'/>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='203' ll='209' type='void SNES_SPC::reset()'/>
+<use f='codebrowser/src/third_party/snes_spc/spc.cpp' l='49' u='c' c='spc_reset'/>

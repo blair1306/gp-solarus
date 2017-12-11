@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1237' type='void Solarus::LuaContext::on_frame_changed(const std::string &amp; animation, int frame)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2086' ll='2093' type='void Solarus::LuaContext::on_frame_changed(const std::string &amp; animation, int frame)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2081'>/**
+ * \brief Calls the on_frame_changed() method of the object on top of the stack.
+ * \param animation Name of the sprite animation.
+ * \param frame The new frame.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='683' u='c' c='_ZN7Solarus10LuaContext23sprite_on_frame_changedERNS_6SpriteERKSsi'/>

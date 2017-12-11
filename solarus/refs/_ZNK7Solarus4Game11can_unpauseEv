@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='112' type='bool Solarus::Game::can_unpause() const'/>
+<use f='codebrowser/src/Game.cpp' l='308' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/Game.cpp' l='791' ll='795' type='bool Solarus::Game::can_unpause() const'/>
+<doc f='codebrowser/src/Game.cpp' l='787'>/**
+ * \brief Returns whether the player can currently unpause the game.
+ * \return \c true if the player can currently unpause the game.
+ */</doc>

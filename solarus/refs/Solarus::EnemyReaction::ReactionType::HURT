@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/EnemyReaction.h' l='42' type='0'/>
+<doc f='codebrowser/include/solarus/entities/EnemyReaction.h' l='42'>/**&lt; the enemy is hurt and loses some life points */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='710' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='711' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='712' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='713' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='716' u='r' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='728' u='r' c='_ZN7Solarus5Enemy38set_default_attack_consequences_spriteERKNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='730' u='r' c='_ZN7Solarus5Enemy38set_default_attack_consequences_spriteERKNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1214' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='26' u='r'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='60' u='r' c='_ZN7Solarus13EnemyReaction20set_general_reactionENS0_12ReactionTypeEi'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4707' u='r' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4738' u='r' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4763' u='r' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4795' u='r' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5036' u='r' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>

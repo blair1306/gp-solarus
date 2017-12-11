@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Separator.h source code [codebrowser/include/solarus/entities/Separator.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Separator "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/entities/Separator.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>entities</a>/<a href='Separator.h.html'>Separator.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2012 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_SEPARATOR_H">SOLARUS_SEPARATOR_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_SEPARATOR_H" data-ref="_M/SOLARUS_SEPARATOR_H">SOLARUS_SEPARATOR_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * <span class="command">\brief</span> An horizontal or vertical separation between two parts of the map.</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * The camera cannot cross this separation except when the hero touches it:</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * in this case, scrolling is performed.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * This entity allows to separate parts of the map like if there was several</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * maps.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type def" id="Solarus::Separator" title='Solarus::Separator' data-ref="Solarus::Separator">Separator</dfn>: <b>public</b> <a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a> {</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>  <b>public</b>:</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <em>static</em> <b>constexpr</b> <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a> <dfn class="decl" id="Solarus::Separator::ThisType" title='Solarus::Separator::ThisType' data-ref="Solarus::Separator::ThisType">ThisType</dfn> = <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a>::<a class="enum" href="EntityType.h.html#Solarus::EntityType::SEPARATOR" title='Solarus::EntityType::SEPARATOR' data-ref="Solarus::EntityType::SEPARATOR">SEPARATOR</a>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <dfn class="decl" id="_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE" title='Solarus::Separator::Separator' data-ref="_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE">Separator</dfn>(</td></tr>
+<tr><th id="41">41</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col1 decl" id="1name" title='name' data-type='const std::string &amp;' data-ref="1name">name</dfn>,</td></tr>
+<tr><th id="42">42</th><td>        <em>int</em> <dfn class="local col2 decl" id="2layer" title='layer' data-type='int' data-ref="2layer">layer</dfn>,</td></tr>
+<tr><th id="43">43</th><td>        <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col3 decl" id="3xy" title='xy' data-type='const Solarus::Point &amp;' data-ref="3xy">xy</dfn>,</td></tr>
+<tr><th id="44">44</th><td>        <em>const</em> <a class="type" href="../lowlevel/Size.h.html#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col4 decl" id="4size" title='size' data-type='const Solarus::Size &amp;' data-ref="4size">size</dfn></td></tr>
+<tr><th id="45">45</th><td>    );</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>    <b>virtual</b> <a class="type" href="EntityType.h.html#Solarus::EntityType" title='Solarus::EntityType' data-ref="Solarus::EntityType">EntityType</a> <dfn class="virtual decl" id="_ZNK7Solarus9Separator8get_typeEv" title='Solarus::Separator::get_type' data-ref="_ZNK7Solarus9Separator8get_typeEv">get_type</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus9Separator13is_horizontalEv" title='Solarus::Separator::is_horizontal' data-ref="_ZNK7Solarus9Separator13is_horizontalEv">is_horizontal</dfn>() <em>const</em>;</td></tr>
+<tr><th id="50">50</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus9Separator11is_verticalEv" title='Solarus::Separator::is_vertical' data-ref="_ZNK7Solarus9Separator11is_verticalEv">is_vertical</dfn>() <em>const</em>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus9Separator15is_obstacle_forERNS_6EntityE" title='Solarus::Separator::is_obstacle_for' data-ref="_ZN7Solarus9Separator15is_obstacle_forERNS_6EntityE">is_obstacle_for</dfn>(<a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col5 decl" id="5other" title='other' data-type='Solarus::Entity &amp;' data-ref="5other">other</dfn>) override;</td></tr>
+<tr><th id="53">53</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN7Solarus9Separator21test_collision_customERNS_6EntityE" title='Solarus::Separator::test_collision_custom' data-ref="_ZN7Solarus9Separator21test_collision_customERNS_6EntityE">test_collision_custom</dfn>(<a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col6 decl" id="6entity" title='entity' data-type='Solarus::Entity &amp;' data-ref="6entity">entity</dfn>) override;</td></tr>
+<tr><th id="54">54</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus9Separator16notify_collisionERNS_6EntityENS_13CollisionModeE" title='Solarus::Separator::notify_collision' data-ref="_ZN7Solarus9Separator16notify_collisionERNS_6EntityENS_13CollisionModeE">notify_collision</dfn>(</td></tr>
+<tr><th id="55">55</th><td>        <a class="type" href="Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col7 decl" id="7entity_overlapping" title='entity_overlapping' data-type='Solarus::Entity &amp;' data-ref="7entity_overlapping">entity_overlapping</dfn>,</td></tr>
+<tr><th id="56">56</th><td>        <a class="type" href="CollisionMode.h.html#Solarus::CollisionMode" title='Solarus::CollisionMode' data-ref="Solarus::CollisionMode">CollisionMode</a> <dfn class="local col8 decl" id="8collision_mode" title='collision_mode' data-type='Solarus::CollisionMode' data-ref="8collision_mode">collision_mode</dfn></td></tr>
+<tr><th id="57">57</th><td>    ) override;</td></tr>
+<tr><th id="58">58</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus9Separator17notify_activatingEi" title='Solarus::Separator::notify_activating' data-ref="_ZN7Solarus9Separator17notify_activatingEi">notify_activating</dfn>(<em>int</em> <dfn class="local col9 decl" id="9direction4" title='direction4' data-type='int' data-ref="9direction4">direction4</dfn>);</td></tr>
+<tr><th id="59">59</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus9Separator16notify_activatedEi" title='Solarus::Separator::notify_activated' data-ref="_ZN7Solarus9Separator16notify_activatedEi">notify_activated</dfn>(<em>int</em> <dfn class="local col0 decl" id="10direction4" title='direction4' data-type='int' data-ref="10direction4">direction4</dfn>);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Camera.cpp.html'>codebrowser/src/entities/Camera.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

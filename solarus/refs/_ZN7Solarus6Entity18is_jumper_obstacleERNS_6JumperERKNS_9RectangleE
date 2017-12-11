@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='348' type='bool Solarus::Entity::is_jumper_obstacle(Solarus::Jumper &amp; jumper, const Solarus::Rectangle &amp; candidate_position)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='200' c='_ZN7Solarus5Arrow18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='223' c='_ZN7Solarus9Boomerang18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='601' c='_ZN7Solarus13CarriedObject18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='573' c='_ZN7Solarus12CustomEntity18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='579' u='c' c='_ZN7Solarus12CustomEntity18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2713' ll='2715' type='bool Solarus::Entity::is_jumper_obstacle(Solarus::Jumper &amp; , const Solarus::Rectangle &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2706'>/**
+ * \brief Returns whether a jumper is currently considered as an obstacle by this entity.
+ * \param jumper A jumper.
+ * \param candidate_position Candidate position of this entity to test.
+ * \return \c true if the jumper is currently an obstacle for this entity at
+ * this candidate position.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2713'>/* jumper */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2713'>/* candidate_position */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1521' c='_ZN7Solarus4Hero18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='161' c='_ZN7Solarus8Hookshot18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='85' u='c' c='_ZN7Solarus6Jumper15is_obstacle_forERNS_6EntityERKNS_9RectangleE'/>

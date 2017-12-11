@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='509' type='static int Solarus::LuaContext::file_api_mkdir(lua_State * )'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='37' u='r' c='_ZN7Solarus10LuaContext20register_file_moduleEv'/>
+<def f='codebrowser/src/lua/FileApi.cpp' l='176' ll='192' type='static int Solarus::LuaContext::file_api_mkdir(lua_State * l)'/>
+<doc f='codebrowser/src/lua/FileApi.cpp' l='171'>/**
+ * \brief Implementation of sol.file.mkdir().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,24 @@
+<dec f='include/physfs.h' l='2329' type='void PHYSFS_utf8FromUcs2(const PHYSFS_uint16 * src, char * dst, PHYSFS_uint64 len)'/>
+<doc f='include/physfs.h' l='2306'>/**
+ * \fn void PHYSFS_utf8FromUcs2(const PHYSFS_uint16 *src, char *dst, PHYSFS_uint64 len)
+ * \brief Convert a UCS-2 string to a UTF-8 string.
+ *
+ * UCS-2 strings are 16-bits per character: \c TCHAR on Windows, when building
+ *  with Unicode support.
+ *
+ * To ensure that the destination buffer is large enough for the conversion,
+ *  please allocate a buffer that is double the size of the source buffer.
+ *  UTF-8 never uses more than 32-bits per character, so while it may shrink
+ *  a UCS-2 string, it may also expand it.
+ *
+ * Strings that don&apos;t fit in the destination buffer will be truncated, but
+ *  will always be null-terminated and never have an incomplete UTF-8
+ *  sequence at the end. If the buffer length is 0, this function does nothing.
+ *
+ * Please note that UCS-2 is not UTF-16; we do not support the &quot;surrogate&quot;
+ *  values at this time.
+ *
+ *   \param src Null-terminated source string in UCS-2 format.
+ *   \param dst Buffer to store converted UTF-8 string.
+ *   \param len Size, in bytes, of destination buffer.
+ */</doc>

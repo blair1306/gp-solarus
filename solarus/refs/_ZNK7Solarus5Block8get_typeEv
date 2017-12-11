@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='48' type='Solarus::EntityType Solarus::Block::get_type() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='104' c='_ZNK7Solarus6Entity8get_typeEv'/>
+<def f='codebrowser/src/entities/Block.cpp' l='81' ll='83' type='Solarus::EntityType Solarus::Block::get_type() const'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='77'>/**
+ * \brief Returns the type of entity.
+ * \return the type of entity
+ */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='439' u='c' c='_ZN7Solarus12CustomEntity17is_block_obstacleERNS_5BlockE'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='65' type='void Solarus::Equipment::add_money(int money_to_add)'/>
+<def f='codebrowser/src/Equipment.cpp' l='188' ll='193' type='void Solarus::Equipment::add_money(int money_to_add)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='180'>/**
+ * \brief Adds some money to the player.
+ *
+ * If the maximum amount of money is reached, no more money is added.
+ *
+ * \param money_to_add Amount of money to add.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='928' u='c' c='_ZN7Solarus10LuaContext18game_api_add_moneyEP9lua_State'/>

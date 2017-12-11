@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='205' type='void Solarus::Hero::avoid_collision(Solarus::Entity &amp; entity, int direction)'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='99' u='c' c='_ZN7Solarus5Chest14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='182' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1934' ll='1964' type='void Solarus::Hero::avoid_collision(Solarus::Entity &amp; entity, int direction)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1924'>/**
+ * \brief Makes the hero escape from an entity that is overlapping him.
+ *
+ * This function is called when an entity that just appeared may overlap the hero
+ * (e.g. a chest or a door).
+ *
+ * \param entity the entity that just appeared
+ * \param direction the direction of the hero relative to the entity
+ * (the hero will be moved into this direction): 0 to 3
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='251' type='Solarus::Color Solarus::LuaTools::opt_color_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Color &amp; default_value)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='993' ll='1014' type='Solarus::Color Solarus::LuaTools::opt_color_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Color &amp; default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='985'>/**
+ * \brief Like LuaTools::check_color_field() but with a default value.
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as a color.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='167' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

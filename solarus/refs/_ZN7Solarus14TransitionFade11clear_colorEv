@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/TransitionFade.h' l='43' type='void Solarus::TransitionFade::clear_color()'/>
+<def f='codebrowser/src/TransitionFade.cpp' l='116' ll='119' type='void Solarus::TransitionFade::clear_color()'/>
+<doc f='codebrowser/src/TransitionFade.cpp' l='109'>/**
+ * \brief Sets no foreground color for this fade transition.
+ *
+ * The transition effect will then change the opacity of the destination
+ * surface. This is only possible for software destination surfaces, so make
+ * sure you know what you are doing.
+ */</doc>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='235' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='274' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>

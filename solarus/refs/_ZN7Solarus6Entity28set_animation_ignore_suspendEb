@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='215' type='void Solarus::Entity::set_animation_ignore_suspend(bool ignore_suspend)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3351' ll='3360' type='void Solarus::Entity::set_animation_ignore_suspend(bool ignore_suspend)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3347'>/**
+ * \brief Makes this entity&apos;s sprites play their animation even when the game is suspended.
+ * \param ignore_suspend true to keep playing the sprites when the game is suspended
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='191' type='void Solarus::Hero::notify_collision_with_teletransporter(Solarus::Teletransporter &amp; teletransporter, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='300' c='_ZN7Solarus6Entity37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1588' ll='1605' type='void Solarus::Hero::notify_collision_with_teletransporter(Solarus::Teletransporter &amp; teletransporter, Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1583'>/**
+ * \brief This function is called when a teletransporter detects a collision with the hero.
+ * \param teletransporter the teletransporter
+ * \param collision_mode the collision mode that detected the event
+ */</doc>

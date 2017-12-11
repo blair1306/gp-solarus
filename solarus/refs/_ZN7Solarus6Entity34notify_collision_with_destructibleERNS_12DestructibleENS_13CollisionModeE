@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='299' type='void Solarus::Entity::notify_collision_with_destructible(Solarus::Destructible &amp; destructible, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='383' c='_ZN7Solarus5Arrow34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='984' c='_ZN7Solarus12CustomEntity34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='316' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3036' ll='3037' type='void Solarus::Entity::notify_collision_with_destructible(Solarus::Destructible &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3031'>/**
+ * \brief This function is called when a destructible item detects a non-pixel perfect collision with this entity.
+ * \param destructible the destructible item
+ * \param collision_mode the collision mode that detected the event
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3036'>/* destructible */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3036'>/* collision_mode */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1537' c='_ZN7Solarus4Hero34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='359' c='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>

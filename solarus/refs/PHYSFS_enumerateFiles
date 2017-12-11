@@ -1,0 +1,40 @@
+<dec f='include/physfs.h' l='1012' type='char ** PHYSFS_enumerateFiles(const char * dir)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='390' u='c' c='_ZN7Solarus10QuestFiles20data_files_enumerateERKSsbb'/>
+<doc f='include/physfs.h' l='974'>/**
+ * \fn char **PHYSFS_enumerateFiles(const char *dir)
+ * \brief Get a file listing of a search path&apos;s directory.
+ *
+ * Matching directories are interpolated. That is, if &quot;C:\mydir&quot; is in the
+ *  search path and contains a directory &quot;savegames&quot; that contains &quot;x.sav&quot;,
+ *  &quot;y.sav&quot;, and &quot;z.sav&quot;, and there is also a &quot;C:\userdir&quot; in the search path
+ *  that has a &quot;savegames&quot; subdirectory with &quot;w.sav&quot;, then the following code:
+ *
+ * \code
+ * char **rc = PHYSFS_enumerateFiles(&quot;savegames&quot;);
+ * char **i;
+ *
+ * for (i = rc; *i != NULL; i++)
+ *     printf(&quot; * We&apos;ve got [%s].\n&quot;, *i);
+ *
+ * PHYSFS_freeList(rc);
+ * \endcode
+ *
+ *  \...will print:
+ *
+ * \verbatim
+ * We&apos;ve got [x.sav].
+ * We&apos;ve got [y.sav].
+ * We&apos;ve got [z.sav].
+ * We&apos;ve got [w.sav].\endverbatim
+ *
+ * Feel free to sort the list however you like. We only promise there will
+ *  be no duplicates, but not what order the final list will come back in.
+ *
+ * Don&apos;t forget to call PHYSFS_freeList() with the return value from this
+ *  function when you are done with it.
+ *
+ *    \param dir directory in platform-independent notation to enumerate.
+ *   \return Null-terminated array of null-terminated strings.
+ *
+ * \sa PHYSFS_enumerateFilesCallback
+ */</doc>

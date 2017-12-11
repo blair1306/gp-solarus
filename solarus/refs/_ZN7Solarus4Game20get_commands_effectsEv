@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Game.h' l='72' type='Solarus::CommandsEffects &amp; Solarus::Game::get_commands_effects()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='101' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='183' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='225' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<def f='codebrowser/src/Game.cpp' l='217' ll='219' type='Solarus::CommandsEffects &amp; Solarus::Game::get_commands_effects()'/>
+<doc f='codebrowser/src/Game.cpp' l='213'>/**
+ * \brief Returns the current effect of the main keys (action, sword, pause, etc.).
+ * \return the current effect of the main keys
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='493' u='c' c='_ZN7Solarus6Entity20get_commands_effectsEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='162' u='c' c='_ZN7Solarus6Entity5State20get_commands_effectsEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1281' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1288' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1307' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>

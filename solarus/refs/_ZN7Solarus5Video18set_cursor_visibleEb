@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='74' type='static void Solarus::Video::set_cursor_visible(bool cursor_visible)'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='472' ll='478' type='static void Solarus::Video::set_cursor_visible(bool cursor_visible)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='468'>/**
+ * \brief Sets the mouse cursor to visible or invisible.
+ * \param cursor_visible true to make the cursor visible.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='234' u='c' c='_ZN7Solarus10LuaContext28video_api_set_cursor_visibleEP9lua_State'/>

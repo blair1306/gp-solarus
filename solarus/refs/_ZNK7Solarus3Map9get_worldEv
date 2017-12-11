@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='66' type='const std::string &amp; Solarus::Map::get_world() const'/>
+<use f='codebrowser/src/Game.cpp' l='423' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='423' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='112' u='c' c='_ZNK7Solarus3Map9has_worldEv'/>
+<def f='codebrowser/src/Map.cpp' l='119' ll='121' type='const std::string &amp; Solarus::Map::get_world() const'/>
+<doc f='codebrowser/src/Map.cpp' l='115'>/**
+ * \brief Returns the world where this map is.
+ * \return The world name or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1434' u='c' c='_ZN7Solarus10LuaContext17map_api_get_worldEP9lua_State'/>

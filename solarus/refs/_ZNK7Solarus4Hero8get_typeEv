@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='63' type='Solarus::EntityType Solarus::Hero::get_type() const'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='57'>/**
+     * \name Features.
+     *
+     * These functions, required by Entity, indicate
+     * the main properties of this type of entity.
+     */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='427' u='c' c='_ZN7Solarus12CustomEntity16is_hero_obstacleERNS_4HeroE'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='104' c='_ZNK7Solarus6Entity8get_typeEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='132' ll='134' type='Solarus::EntityType Solarus::Hero::get_type() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='128'>/**
+ * \brief Returns the type of entity.
+ * \return the type of entity
+ */</doc>

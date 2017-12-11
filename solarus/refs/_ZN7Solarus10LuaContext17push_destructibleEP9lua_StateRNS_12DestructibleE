@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1116' type='static void Solarus::LuaContext::push_destructible(lua_State * l, Solarus::Destructible &amp; destructible)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3990' ll='3992' type='static void Solarus::LuaContext::push_destructible(lua_State * l, Solarus::Destructible &amp; destructible)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6348' u='c' c='_ZN7Solarus10LuaContext22destructible_on_lookedERNS_12DestructibleE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6366' u='c' c='_ZN7Solarus10LuaContext19destructible_on_cutERNS_12DestructibleE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6384' u='c' c='_ZN7Solarus10LuaContext23destructible_on_liftingERNS_12DestructibleE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6402' u='c' c='_ZN7Solarus10LuaContext24destructible_on_explodedERNS_12DestructibleE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6420' u='c' c='_ZN7Solarus10LuaContext28destructible_on_regeneratingERNS_12DestructibleE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3985'>/**
+ * \brief Pushes a destructible userdata onto the stack.
+ * \param l A Lua context.
+ * \param destructible A destructible object.
+ */</doc>

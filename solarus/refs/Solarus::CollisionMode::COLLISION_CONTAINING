@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='30' type='2'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='30'>/**&lt; Collision if the entity&apos;s rectangle
+                                         * is inside the detector&apos;s rectangle. */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='844' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1772' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1773' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1932' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1769' u='r' c='_ZN7Solarus4Hero28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='44' u='r' c='_ZN7Solarus6SensorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1179' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5561' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5564' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

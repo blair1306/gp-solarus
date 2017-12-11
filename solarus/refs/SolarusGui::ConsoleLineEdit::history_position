@@ -1,0 +1,12 @@
+<dec f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='53' type='int'/>
+<offset>448</offset>
+<doc f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='53'>/**&lt; Current position in the history, between
+                              * 0 and history.size() - 1, or
+                              * history.size() if not navigating the history. */</doc>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='69' u='w' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='131' u='w' c='_ZN10SolarusGui15ConsoleLineEdit20set_history_positionEi'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='150' u='r' c='_ZN10SolarusGui15ConsoleLineEdit16history_previousEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='154' u='r' c='_ZN10SolarusGui15ConsoleLineEdit16history_previousEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='159' u='r' c='_ZN10SolarusGui15ConsoleLineEdit16history_previousEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='169' u='r' c='_ZN10SolarusGui15ConsoleLineEdit12history_nextEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='173' u='r' c='_ZN10SolarusGui15ConsoleLineEdit12history_nextEv'/>

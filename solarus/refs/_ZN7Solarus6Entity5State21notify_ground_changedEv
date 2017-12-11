@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='90' type='void Solarus::Entity::State::notify_ground_changed()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='613' ll='614' type='void Solarus::Entity::State::notify_ground_changed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='610'>/**
+ * \brief Notifies this state that the ground was just changed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1303' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>

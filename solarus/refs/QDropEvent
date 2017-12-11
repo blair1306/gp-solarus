@@ -1,0 +1,24 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='53' c='QEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='554' ll='585'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='588' c='QDragMoveEvent'/>
+<size>72</size>
+<fun r='_ZN10QDropEventC1ERK7QPointF6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE'/>
+<fun r='_ZN10QDropEventD1Ev'/>
+<fun r='_ZNK10QDropEvent3posEv'/>
+<fun r='_ZNK10QDropEvent4posFEv'/>
+<fun r='_ZNK10QDropEvent12mouseButtonsEv'/>
+<fun r='_ZNK10QDropEvent17keyboardModifiersEv'/>
+<fun r='_ZNK10QDropEvent15possibleActionsEv'/>
+<fun r='_ZNK10QDropEvent14proposedActionEv'/>
+<fun r='_ZN10QDropEvent20acceptProposedActionEv'/>
+<fun r='_ZNK10QDropEvent10dropActionEv'/>
+<fun r='_ZN10QDropEvent13setDropActionEN2Qt10DropActionE'/>
+<fun r='_ZNK10QDropEvent6sourceEv'/>
+<fun r='_ZNK10QDropEvent8mimeDataEv'/>
+<mbr r='QDropEvent::p' o='192' t='QPointF'/>
+<mbr r='QDropEvent::mouseState' o='320' t='Qt::MouseButtons'/>
+<mbr r='QDropEvent::modState' o='352' t='Qt::KeyboardModifiers'/>
+<mbr r='QDropEvent::act' o='384' t='Qt::DropActions'/>
+<mbr r='QDropEvent::drop_action' o='416' t='Qt::DropAction'/>
+<mbr r='QDropEvent::default_action' o='448' t='Qt::DropAction'/>
+<mbr r='QDropEvent::mdata' o='512' t='const QMimeData *'/>

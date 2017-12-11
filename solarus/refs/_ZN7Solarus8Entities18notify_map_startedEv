@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='132' type='void Solarus::Entities::notify_map_started()'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='131'>// Map events.</doc>
+<use f='codebrowser/src/Map.cpp' l='700' u='c' c='_ZN7Solarus3Map5startEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='693' ll='715' type='void Solarus::Entities::notify_map_started()'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='690'>/**
+ * \brief Notifies all entities of the map that the map has just become active.
+ */</doc>

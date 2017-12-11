@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='44' type='void SolarusGui::ConsoleLineEdit::command_executed(const QString &amp; command)'/>
+<use f='codebrowser/gui/moc_console_line_edit.cpp' l='84' u='c' c='_ZN10SolarusGui15ConsoleLineEdit18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='codebrowser/gui/src/console.cpp' l='146' u='c' c='_ZN10SolarusGui7Console23command_field_activatedEv'/>
+<def f='codebrowser/gui/src/console_line_edit.cpp' l='180' ll='206' type='void SolarusGui::ConsoleLineEdit::command_executed(const QString &amp; command)'/>
+<doc f='codebrowser/gui/src/console_line_edit.cpp' l='176'>/**
+ * @brief Adds a command to the history.
+ * @param command The command just executed.
+ */</doc>

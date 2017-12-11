@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/Game.h' l='118' type='void Solarus::Game::start_dialog(const std::string &amp; dialog_id, const Solarus::ScopedLuaRef &amp; info_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/include/solarus/Game.h' l='117'>// dialogs</doc>
+<def f='codebrowser/src/Game.cpp' l='749' ll='760' type='void Solarus::Game::start_dialog(const std::string &amp; dialog_id, const Solarus::ScopedLuaRef &amp; info_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/Game.cpp' l='736'>/**
+ * \brief Starts to show a dialog.
+ *
+ * No other dialog should be already running.
+ * If the dialog does not exist, a non-fatal error message is printed
+ * and no dialog is shown.
+ *
+ * \param dialog_id Id of the dialog to show.
+ * \param info_ref Lua ref to an optional info parameter to pass to the
+ * dialog box, or LUA_REFNIL.
+ * \param callback_ref Lua ref to a function to call when the dialog finishes,
+ * or an empty ref.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='434' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='119' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='581' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='278' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2503' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3764' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3798' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3842' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3847' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='465' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>

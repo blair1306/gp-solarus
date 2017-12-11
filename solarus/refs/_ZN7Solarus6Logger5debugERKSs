@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Logger.h' l='38' type='void Solarus::Logger::debug(const std::string &amp; message)'/>
+<def f='codebrowser/src/lowlevel/Logger.cpp' l='64' ll='67' type='void Solarus::Logger::debug(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Logger.cpp' l='60'>/**
+ * \brief Logs a debug message on stdout.
+ * \param message The message to log.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='786' u='c' c='_ZN7Solarus10LuaContext11print_stackEP9lua_State'/>

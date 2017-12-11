@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='98' type='bool Solarus::Savegame::is_integer(const std::string &amp; key) const'/>
+<def f='codebrowser/src/Savegame.cpp' l='442' ll='454' type='bool Solarus::Savegame::is_integer(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='437'>/**
+ * \brief Returns whether a saved value is an integer.
+ * \param key Name of the value to get.
+ * \return true if this value exists and is an integer.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='193' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='439' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='607' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='629' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>

@@ -1,0 +1,33 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1094' type='static void Solarus::LuaContext::push_item(lua_State * l, Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2486' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3950' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1176' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1227' u='c' c='_ZN7Solarus10LuaContext26game_api_get_item_assignedEP9lua_State'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='117' ll='120' type='static void Solarus::LuaContext::push_item(lua_State * l, Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='772' u='c' c='_ZN7Solarus10LuaContext15item_on_startedERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='786' u='c' c='_ZN7Solarus10LuaContext16item_on_finishedERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='811' u='c' c='_ZN7Solarus10LuaContext14item_on_updateERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='830' u='c' c='_ZN7Solarus10LuaContext17item_on_suspendedERNS_13EquipmentItemEb'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='848' u='c' c='_ZN7Solarus10LuaContext15item_on_createdERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='867' u='c' c='_ZN7Solarus10LuaContext19item_on_map_changedERNS_13EquipmentItemERNS_3MapE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='887' u='c' c='_ZN7Solarus10LuaContext24item_on_pickable_createdERNS_13EquipmentItemERNS_8PickableE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='906' u='c' c='_ZN7Solarus10LuaContext17item_on_obtainingERNS_13EquipmentItemERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='925' u='c' c='_ZN7Solarus10LuaContext16item_on_obtainedERNS_13EquipmentItemERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='944' u='c' c='_ZN7Solarus10LuaContext23item_on_variant_changedERNS_13EquipmentItemEi'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='963' u='c' c='_ZN7Solarus10LuaContext22item_on_amount_changedERNS_13EquipmentItemEi'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='981' u='c' c='_ZN7Solarus10LuaContext13item_on_usingERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1000' u='c' c='_ZN7Solarus10LuaContext20item_on_ability_usedERNS_13EquipmentItemENS_7AbilityE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1019' u='c' c='_ZN7Solarus10LuaContext23item_on_npc_interactionERNS_13EquipmentItemERNS_3NpcE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1041' u='c' c='_ZN7Solarus10LuaContext28item_on_npc_interaction_itemERNS_13EquipmentItemERNS_3NpcES2_'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1061' u='c' c='_ZN7Solarus10LuaContext26item_on_npc_collision_fireERNS_13EquipmentItemERNS_3NpcE'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='112'>/**
+ * \brief Pushes an equipment item userdata onto the stack.
+ * \param l A Lua context.
+ * \param item An item.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='322' u='c' c='_ZN7Solarus10LuaContext8run_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2169' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2188' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2323' u='c' c='_ZN7Solarus10LuaContext23on_npc_interaction_itemERNS_3NpcERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2360' u='c' c='_ZN7Solarus10LuaContext19on_interaction_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2461' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>

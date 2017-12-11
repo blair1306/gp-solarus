@@ -1,0 +1,18 @@
+<dec f='include/SDL2/SDL_joystick.h' l='218' type='Uint8 SDL_JoystickGetHat(SDL_Joystick * joystick, int hat)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='202'>/**
+ *  Get the current state of a POV hat on a joystick.
+ *
+ *  The hat indices start at index 0.
+ *
+ *  \return The return value is one of the following positions:
+ *           - ::SDL_HAT_CENTERED
+ *           - ::SDL_HAT_UP
+ *           - ::SDL_HAT_RIGHT
+ *           - ::SDL_HAT_DOWN
+ *           - ::SDL_HAT_LEFT
+ *           - ::SDL_HAT_RIGHTUP
+ *           - ::SDL_HAT_RIGHTDOWN
+ *           - ::SDL_HAT_LEFTUP
+ *           - ::SDL_HAT_LEFTDOWN
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='471' u='c' c='_ZN7Solarus10InputEvent24get_joypad_hat_directionEi'/>

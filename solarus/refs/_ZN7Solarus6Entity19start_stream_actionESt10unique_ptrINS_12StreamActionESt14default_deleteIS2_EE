@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='227' type='void Solarus::Entity::start_stream_action(std::unique_ptr&lt;StreamAction&gt; stream_action)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1600' ll='1605' type='void Solarus::Entity::start_stream_action(std::unique_ptr&lt;StreamAction&gt; stream_action)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1596'>/**
+ * \brief Makes this entity follow a stream.
+ * \param stream_action The stream action to start.
+ */</doc>
+<use f='codebrowser/src/entities/Stream.cpp' l='169' u='c' c='_ZN7Solarus6Stream8activateERNS_6EntityE'/>

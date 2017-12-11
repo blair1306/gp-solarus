@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='68' type='bool Solarus::Camera::is_traversing_separator() const'/>
+<use f='codebrowser/src/Game.cpp' l='861' u='c' c='_ZNK7Solarus4Game22is_suspended_by_cameraEv'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='388' ll='395' type='bool Solarus::Camera::is_traversing_separator() const'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='383'>/**
+ * \brief Returns whether this camera is currently scrolling on a separator.
+ * \return \c true if this camera is tracking an entity that traverses a
+ * separator.
+ */</doc>

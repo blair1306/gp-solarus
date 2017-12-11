@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1184' type='static bool Solarus::LuaContext::is_block(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3162' ll='3164' type='static bool Solarus::LuaContext::is_block(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3156'>/**
+ * \brief Returns whether a value is a userdata of type block.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a block.
+ */</doc>

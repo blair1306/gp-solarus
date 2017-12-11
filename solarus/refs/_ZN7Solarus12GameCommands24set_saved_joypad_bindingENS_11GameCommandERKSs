@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='94' type='void Solarus::GameCommands::set_saved_joypad_binding(Solarus::GameCommand command, const std::string &amp; joypad_string)'/>
+<use f='codebrowser/src/GameCommands.cpp' l='598' u='c' c='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<use f='codebrowser/src/GameCommands.cpp' l='608' u='c' c='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<def f='codebrowser/src/GameCommands.cpp' l='728' ll='733' type='void Solarus::GameCommands::set_saved_joypad_binding(Solarus::GameCommand command, const std::string &amp; joypad_string)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='722'>/**
+ * \brief Saves the low-level joypad action where the specified game command
+ * is mapped.
+ * \param command A game command.
+ * \return The joypad action to map to this game command in the savegame.
+ */</doc>

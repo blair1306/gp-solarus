@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='85' type='void Solarus::Game::notify_command_released(Solarus::GameCommand command)'/>
+<def f='codebrowser/src/Game.cpp' l='329' ll='346' type='void Solarus::Game::notify_command_released(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/Game.cpp' l='325'>/**
+ * \brief This function is called when a game command is released.
+ * \param command A game command.
+ */</doc>
+<use f='codebrowser/src/GameCommands.cpp' l='503' u='c' c='_ZN7Solarus12GameCommands21game_command_releasedENS_11GameCommandE'/>

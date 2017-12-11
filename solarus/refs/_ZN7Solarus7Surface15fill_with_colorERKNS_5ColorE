@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='84' type='void Solarus::Surface::fill_with_color(const Solarus::Color &amp; color)'/>
+<use f='codebrowser/src/Game.cpp' l='575' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Map.cpp' l='547' u='c' c='_ZN7Solarus3Map24build_background_surfaceEv'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='197' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='551' ll='554' type='void Solarus::Surface::fill_with_color(const Solarus::Color &amp; color)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='543'>/**
+ * \brief Fills the entire surface with the specified color.
+ *
+ * If the color has a non-opaque alpha component, then the color is
+ * alpha-blended onto the surface.
+ *
+ * \param color A color.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='576' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='198' u='c' c='_ZN7Solarus10LuaContext22surface_api_fill_colorEP9lua_State'/>

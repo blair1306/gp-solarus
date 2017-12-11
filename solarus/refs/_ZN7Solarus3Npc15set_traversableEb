@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='86' type='void Solarus::Npc::set_traversable(bool traversable)'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='152' ll='154' type='void Solarus::Npc::set_traversable(bool traversable)'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='145'>/**
+ * \brief Sets whether this NPC is traversable by other entities.
+ *
+ * Note that some entities can override this setting.
+ *
+ * \param traversable \c true to make this NPC traversable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3019' u='c' c='_ZN7Solarus10LuaContext23npc_api_set_traversableEP9lua_State'/>

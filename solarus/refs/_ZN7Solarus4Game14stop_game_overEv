@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='127' type='void Solarus::Game::stop_game_over()'/>
+<use f='codebrowser/src/Game.cpp' l='920' u='c' c='_ZN7Solarus4Game15start_game_overEv'/>
+<def f='codebrowser/src/Game.cpp' l='927' ll='939' type='void Solarus::Game::stop_game_over()'/>
+<doc f='codebrowser/src/Game.cpp' l='924'>/**
+ * \brief Cancels the current game-over sequence.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='560' u='c' c='_ZN7Solarus10LuaContext23game_api_stop_game_overEP9lua_State'/>

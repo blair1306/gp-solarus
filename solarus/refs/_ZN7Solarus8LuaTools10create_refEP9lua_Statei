@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='49' type='Solarus::ScopedLuaRef Solarus::LuaTools::create_ref(lua_State * l, int index)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1376' u='c' c='_ZNK7Solarus4Hero26make_solid_ground_callbackERKNS_5PointEi'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='86' ll='90' type='Solarus::ScopedLuaRef Solarus::LuaTools::create_ref(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='688' u='c' c='_ZN7Solarus8LuaTools14check_functionEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='79'>/**
+ * \brief Creates a reference to the Lua value at the specified index.
+ * \param l A Lua state.
+ * \param index An index in the Lua stack.
+ * \return The reference created, wrapped in an object that manages its
+ * lifetime.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='184' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='372' type='void Solarus::LuaContext::entity_on_removed(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='548' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5725' ll='5733' type='void Solarus::LuaContext::entity_on_removed(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5718'>/**
+ * \brief Calls the on_removed() method of a Lua map entity if it is defined.
+ *
+ * Also stops timers associated to the entity.
+ *
+ * \param entity A map entity.
+ */</doc>

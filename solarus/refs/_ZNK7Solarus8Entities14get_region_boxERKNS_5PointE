@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='112' type='Solarus::Rectangle Solarus::Entities::get_region_box(const Solarus::Point &amp; point) const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='492' u='c' c='_ZN7Solarus8Entities22get_entities_in_regionERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='506' ll='570' type='Solarus::Rectangle Solarus::Entities::get_region_box(const Solarus::Point &amp; point) const'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='498'>/**
+ * \brief Determines the bounding box of a same separator region.
+ *
+ * Regions are assumed to be rectangular (convex: no &quot;L&quot; shape).
+ *
+ * \param point A point.
+ * \return The box of the region.
+ */</doc>

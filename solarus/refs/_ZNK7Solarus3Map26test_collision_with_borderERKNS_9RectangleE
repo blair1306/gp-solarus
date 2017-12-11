@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='115' type='bool Solarus::Map::test_collision_with_border(const Solarus::Rectangle &amp; collision_box) const'/>
+<def f='codebrowser/src/Map.cpp' l='748' ll='752' type='bool Solarus::Map::test_collision_with_border(const Solarus::Rectangle &amp; collision_box) const'/>
+<doc f='codebrowser/src/Map.cpp' l='743'>/**
+ * \brief Tests whether a rectangle has overlaps the outside part of the map area.
+ * \param collision_box the rectangle to check
+ * \return true if a point of the rectangle is outside the map area
+ */</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='451' u='c' c='_ZN7Solarus5Arrow22has_reached_map_borderEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='278' u='c' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='305' u='c' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>

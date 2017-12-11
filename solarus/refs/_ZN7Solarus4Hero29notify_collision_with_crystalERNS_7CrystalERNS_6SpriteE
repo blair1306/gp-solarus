@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='199' type='void Solarus::Hero::notify_collision_with_crystal(Solarus::Crystal &amp; crystal, Solarus::Sprite &amp; sprite_overlapping)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='308' c='_ZN7Solarus6Entity29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1833' ll='1841' type='void Solarus::Hero::notify_collision_with_crystal(Solarus::Crystal &amp; crystal, Solarus::Sprite &amp; sprite_overlapping)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1827'>/**
+ * \brief This function is called when a the sprite of a crystal
+ * detects a pixel-precise collision with a sprite of this entity.
+ * \param crystal the crystal
+ * \param sprite_overlapping the sprite of the current entity that collides with the crystal
+ */</doc>

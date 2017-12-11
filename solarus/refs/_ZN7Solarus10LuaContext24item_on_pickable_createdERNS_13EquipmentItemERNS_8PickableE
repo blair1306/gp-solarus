@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='322' type='void Solarus::LuaContext::item_on_pickable_created(Solarus::EquipmentItem &amp; item, Solarus::Pickable &amp; pickable)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='379' u='c' c='_ZN7Solarus13EquipmentItem24notify_pickable_appearedERNS_8PickableE'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='880' ll='890' type='void Solarus::LuaContext::item_on_pickable_created(Solarus::EquipmentItem &amp; item, Solarus::Pickable &amp; pickable)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='872'>/**
+ * \brief Calls the on_pickable_created() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ * \param pickable The instance of pickable item that has just appeared.
+ */</doc>

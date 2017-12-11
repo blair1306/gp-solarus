@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='76' type='bool Solarus::Sprite::has_animation(const std::string &amp; animation_name) const'/>
+<def f='codebrowser/src/Sprite.cpp' l='312' ll='314' type='bool Solarus::Sprite::has_animation(const std::string &amp; animation_name) const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='307'>/**
+ * \brief Returns whether this sprite has an animation with the specified name.
+ * \param animation_name an animation name
+ * \return true if this animation exists
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='243' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='676' u='c' c='_ZN7Solarus4Door11set_openingEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='710' u='c' c='_ZN7Solarus4Door11set_closingEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='160' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='176' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1452' u='c' c='_ZN7Solarus11HeroSprites23set_animation_boomerangERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1469' u='c' c='_ZNK7Solarus11HeroSprites19has_tunic_animationERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1545' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1553' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1561' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1569' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1577' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='187' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='213' u='c' c='_ZN7Solarus10LuaContext24sprite_api_has_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='267' u='c' c='_ZN7Solarus10LuaContext29sprite_api_get_num_directionsEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='337' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='367' u='c' c='_ZN7Solarus10LuaContext26sprite_api_get_frame_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='423' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='462' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='503' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

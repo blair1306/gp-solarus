@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='67' type='int Solarus::CircleMovement::get_max_rotations() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1582' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_get_max_rotationsEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='269' ll='272' type='int Solarus::CircleMovement::get_max_rotations() const'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='260'>/**
+ * \brief Returns the number of rotations of the movement.
+ *
+ * When this number of rotations is reached, the movement stops.
+ * Note that if the radius changes gradually, the movement will continue
+ * for a while until the radius reaches zero.
+ *
+ * \return the number of rotations to make (0 means infinite rotations)
+ */</doc>

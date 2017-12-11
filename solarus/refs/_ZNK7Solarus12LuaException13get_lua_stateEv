@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaException.h' l='57' type='lua_State * Solarus::LuaException::get_lua_state() const'/>
+<def f='codebrowser/src/lua/LuaException.cpp' l='38' ll='40' type='lua_State * Solarus::LuaException::get_lua_state() const'/>
+<doc f='codebrowser/src/lua/LuaException.cpp' l='34'>/**
+ * \brief Returns The Lua context where the error occurred.
+ * \return The Lua context.
+ */</doc>

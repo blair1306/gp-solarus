@@ -1,0 +1,29 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='564' ll='566' type='iterator std::vector::end()'/>
+<use f='include/c++/4.9/bits/random.tcc' l='2902' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt21discrete_distributionIT_E'/>
+<use f='include/c++/4.9/bits/random.tcc' l='2935' u='c' c='_ZStrsRSt13basic_istreamIT0_T1_ERSt21discrete_distributionIT_E'/>
+<use f='include/c++/4.9/bits/random.tcc' l='3117' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt31piecewise_constant_distributionIT_E'/>
+<use f='include/c++/4.9/bits/random.tcc' l='3333' u='c' c='_ZStlsRSt13basic_ostreamIT0_T1_ERKSt29piecewise_linear_distributionIT_E'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='559'>/**
+       *  Returns a read/write iterator that points one past the last
+       *  element in the %vector.  Iteration is done in ordinary
+       *  element order.
+       */</doc>
+<use f='codebrowser/gui/src/quests_model.cpp' l='334' u='c' c='_ZN10SolarusGui11QuestsModel7do_sortENS0_9QuestSortEN2Qt9SortOrderE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='350' u='c' c='_ZN7Solarus8Entities31get_entities_with_prefix_sortedERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='402' u='c' c='_ZN7Solarus8Entities31get_entities_with_prefix_sortedENS_10EntityTypeERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='463' u='c' c='_ZNK7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='475' u='c' c='_ZN7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='584' u='c' c='_ZN7Solarus8Entities29get_entities_in_region_sortedERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='613' u='c' c='_ZN7Solarus8Entities27get_entities_by_type_sortedENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1255' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1257' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1258' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1366' u='c' c='_ZN7Solarus6Entity17clear_old_spritesEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='505' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='512' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='513' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='505' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='513' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='516' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2092' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2093' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>

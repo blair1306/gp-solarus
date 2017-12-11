@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='119' type='const std::string'/>
+<use f='codebrowser/src/Savegame.cpp' l='566' u='a' c='_ZNK7Solarus8Savegame17get_lua_type_nameEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='35' type='const std::string'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='119' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='129' u='r' c='_ZN7Solarus10LuaContext7is_gameEP9lua_Statei'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='141' u='r' c='_ZN7Solarus10LuaContext10check_gameEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='32'>/**
+ * Name of the Lua table representing the game module.
+ */</doc>

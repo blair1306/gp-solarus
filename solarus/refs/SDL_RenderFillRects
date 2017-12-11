@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_render.h' l='754' type='int SDL_RenderFillRects(SDL_Renderer * renderer, const SDL_Rect * rects, int count)'/>
+<doc f='include/SDL2/SDL_render.h' l='745'>/**
+ *  \brief Fill some number of rectangles on the current rendering target with the drawing color.
+ *
+ *  \param renderer The renderer which should fill multiple rectangles.
+ *  \param rects A pointer to an array of destination rectangles.
+ *  \param count The number of rectangles.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

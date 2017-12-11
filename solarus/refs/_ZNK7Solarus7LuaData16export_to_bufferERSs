@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='48' type='bool Solarus::LuaData::export_to_buffer(std::string &amp; buffer) const'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='113' ll='122' type='bool Solarus::LuaData::export_to_buffer(std::string &amp; buffer) const'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='106'>/**
+ * \brief Saves this object into memory as Lua.
+ * \param[out] buffer The buffer to write.
+ * Text will be encoded in UTF-8.
+ * \return \c true in case of success, \c false if the data
+ * could not be exported.
+ */</doc>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='47' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='75' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='36' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='67' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='46' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='45' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

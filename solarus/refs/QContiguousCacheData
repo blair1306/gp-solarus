@@ -1,0 +1,12 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h' l='54' ll='75'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h' l='78' c='QContiguousCacheTypedData'/>
+<size>24</size>
+<mbr r='QContiguousCacheData::ref' o='0' t='QBasicAtomicInt'/>
+<mbr r='QContiguousCacheData::alloc' o='32' t='int'/>
+<mbr r='QContiguousCacheData::count' o='64' t='int'/>
+<mbr r='QContiguousCacheData::start' o='96' t='int'/>
+<mbr r='QContiguousCacheData::offset' o='128' t='int'/>
+<mbr r='QContiguousCacheData::sharable' o='160' t='uint'/>
+<mbr r='QContiguousCacheData::reserved' o='161' t='uint'/>
+<fun r='_ZN20QContiguousCacheData12allocateDataEii'/>
+<fun r='_ZN20QContiguousCacheData8freeDataEPS_'/>

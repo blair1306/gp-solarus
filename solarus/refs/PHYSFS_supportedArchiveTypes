@@ -1,0 +1,29 @@
+<dec f='include/physfs.h' l='547' type='const PHYSFS_ArchiveInfo ** PHYSFS_supportedArchiveTypes()'/>
+<doc f='include/physfs.h' l='519'>/**
+ * \fn const PHYSFS_ArchiveInfo **PHYSFS_supportedArchiveTypes(void)
+ * \brief Get a list of supported archive types.
+ *
+ * Get a list of archive types supported by this implementation of PhysicFS.
+ *  These are the file formats usable for search path entries. This is for
+ *  informational purposes only. Note that the extension listed is merely
+ *  convention: if we list &quot;ZIP&quot;, you can open a PkZip-compatible archive
+ *  with an extension of &quot;XYZ&quot;, if you like.
+ *
+ * The returned value is an array of pointers to PHYSFS_ArchiveInfo structures,
+ *  with a NULL entry to signify the end of the list:
+ *
+ * \code
+ * PHYSFS_ArchiveInfo **i;
+ *
+ * for (i = PHYSFS_supportedArchiveTypes(); *i != NULL; i++)
+ * {
+ *     printf(&quot;Supported archive: [%s], which is [%s].\n&quot;,
+ *              (*i)-&gt;extension, (*i)-&gt;description);
+ * }
+ * \endcode
+ *
+ * The return values are pointers to static internal memory, and should
+ *  be considered READ ONLY, and never freed.
+ *
+ *   \return READ ONLY Null-terminated array of READ ONLY structures.
+ */</doc>

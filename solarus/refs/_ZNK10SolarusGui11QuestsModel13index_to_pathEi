@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='64' type='QString SolarusGui::QuestsModel::index_to_path(int quest_index) const'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='95' ll='102' type='QString SolarusGui::QuestsModel::index_to_path(int quest_index) const'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='90'>/**
+ * @brief Returns the quest path at the given index.
+ * @param quest_index Index of the quest to get.
+ * @return The path, or an empty string if the index is invalid.
+ */</doc>
+<use f='codebrowser/gui/src/quests_view.cpp' l='55' u='c' c='_ZNK10SolarusGui10QuestsView13index_to_pathEi'/>

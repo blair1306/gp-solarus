@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='139' type='bool Solarus::Map::test_collision_with_obstacles(int layer, const Solarus::Point &amp; point, Solarus::Entity &amp; entity_to_check)'/>
+<def f='codebrowser/src/Map.cpp' l='992' ll='998' type='bool Solarus::Map::test_collision_with_obstacles(int layer, const Solarus::Point &amp; point, Solarus::Entity &amp; entity_to_check)'/>
+<doc f='codebrowser/src/Map.cpp' l='984'>/**
+ * \brief Tests whether a point collides with the map obstacles.
+ * \param layer Layer of point to check.
+ * \param point Point to check.
+ * \param entity_to_check The entity to check (used to decide what is
+ * considered as obstacle)
+ * \return \c true if the point is overlapping an obstacle.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='814' u='c' c='_ZN7Solarus4Hero27is_facing_point_on_obstacleEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='90' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>

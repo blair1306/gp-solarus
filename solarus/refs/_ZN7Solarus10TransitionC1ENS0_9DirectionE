@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='101' type='void Solarus::Transition::Transition(Solarus::Transition::Direction direction)'/>
+<def f='codebrowser/src/Transition.cpp' l='38' ll='45' type='void Solarus::Transition::Transition(Transition::Direction direction)'/>
+<doc f='codebrowser/src/Transition.cpp' l='34'>/**
+ * \brief Creates a transition effect.
+ * \param direction direction of the transition effect (in or out)
+ */</doc>
+<use f='codebrowser/src/TransitionFade.cpp' l='34' u='c' c='_ZN7Solarus14TransitionFadeC1ENS_10Transition9DirectionERNS_7SurfaceE'/>
+<use f='codebrowser/src/TransitionImmediate.cpp' l='26' u='c' c='_ZN7Solarus19TransitionImmediateC1ENS_10Transition9DirectionE'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='33' u='c' c='_ZN7Solarus19TransitionScrollingC1ENS_10Transition9DirectionE'/>

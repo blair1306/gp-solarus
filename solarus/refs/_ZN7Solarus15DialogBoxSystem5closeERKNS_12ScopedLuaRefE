@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='56' type='void Solarus::DialogBoxSystem::close(const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='174' ll='192' type='void Solarus::DialogBoxSystem::close(const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='221' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='168'>/**
+ * \brief Closes the dialog box.
+ * \param status_ref Lua ref to a status value to return to the start_dialog
+ * callback, or an empty ref. &quot;skipped&quot; means that the dialog was canceled by
+ * the user.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='770' u='c' c='_ZN7Solarus4Game11stop_dialogERKNS_12ScopedLuaRefE'/>

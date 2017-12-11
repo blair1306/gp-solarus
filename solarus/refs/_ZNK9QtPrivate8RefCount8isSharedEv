@@ -1,0 +1,24 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h' l='101' ll='105' type='bool QtPrivate::RefCount::isShared() const'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='453' u='c' c='_ZN10QByteArray6detachEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='455' u='c' c='_ZNK10QByteArray10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='464' u='c' c='_ZN10QByteArray7reserveEi'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='475' u='c' c='_ZN10QByteArray7squeezeEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='402' u='c' c='_ZN7QStringpLE5QChar'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='804' u='c' c='_ZN7QString6detachEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='806' u='c' c='_ZNK7QString10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='999' u='c' c='_ZN7QString7reserveEi'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1010' u='c' c='_ZN7QString7squeezeEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='139' u='c' c='_ZN5QList6detachEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='144' u='c' c='_ZN5QList12detachSharedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='148' u='c' c='_ZNK5QList10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='453' u='c' c='_ZN5QList6insertENS_8iteratorERKT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='469' u='c' c='_ZN5QList5eraseENS_8iteratorE'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='509' u='c' c='_ZN5QList7reserveEi'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='519' u='c' c='_ZN5QList6appendERKT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='553' u='c' c='_ZN5QList7prependERKT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='587' u='c' c='_ZN5QList6insertEiRKT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='840' u='c' c='_ZN5QList5eraseENS_8iteratorES0_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='864' u='c' c='_ZN5QListpLERK5QListIT_E'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qhash.h' l='331' u='c' c='_ZN5QHash6detachEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qhash.h' l='332' u='c' c='_ZNK5QHash10isDetachedEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qhash.h' l='864' u='c' c='_ZN5QHash5eraseENS_8iteratorE'/>

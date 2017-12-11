@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='249' type='bool Solarus::LuaContext::do_custom_entity_traversable_test_function(const Solarus::ScopedLuaRef &amp; traversable_test_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1350' u='c' c='_ZNK7Solarus12CustomEntity15TraversableInfo14is_traversableERS0_RNS_6EntityE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5179' ll='5205' type='bool Solarus::LuaContext::do_custom_entity_traversable_test_function(const Solarus::ScopedLuaRef &amp; traversable_test_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5171'>/**
+ * \brief Calls the specified a Lua traversable test function.
+ * \param traversable_test_ref Lua ref to a traversable test function.
+ * \param custom_entity The custom entity that is testing if it can traverse
+ * or be traversed by another entity.
+ * \param other_entity The other entity.
+ * \return \c true if the traversable test function returned \c true.
+ */</doc>

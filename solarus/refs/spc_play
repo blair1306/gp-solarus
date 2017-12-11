@@ -1,0 +1,5 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='89' type='spc_err_t spc_play(SNES_SPC * , int count, short * out)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='87'>/* Plays for count samples and write samples to out. Discards samples if out
+is NULL. Count must be a multiple of 2 since output is stereo. */</doc>
+<use f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='54' u='c' c='_ZN7Solarus10SpcDecoder6decodeEPsi'/>
+<def f='codebrowser/src/third_party/snes_spc/spc.cpp' l='59' type='spc_err_t spc_play(SNES_SPC * s, int count, short * out)'/>

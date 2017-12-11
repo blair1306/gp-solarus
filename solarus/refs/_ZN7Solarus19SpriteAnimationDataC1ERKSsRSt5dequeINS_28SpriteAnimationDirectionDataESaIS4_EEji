@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='86' type='void Solarus::SpriteAnimationData::SpriteAnimationData(const std::string &amp; src_image, std::deque&lt;SpriteAnimationDirectionData&gt; &amp; directions, uint32_t frame_delay, int loop_on_frame)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='226' ll='234' type='void Solarus::SpriteAnimationData::SpriteAnimationData(const std::string &amp; src_image, std::deque&lt;SpriteAnimationDirectionData&gt; &amp; directions, uint32_t frame_delay, int loop_on_frame)'/>
+<use f='codebrowser/src/SpriteData.cpp' l='662' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='219'>/**
+ * \brief Creates a sprite animation.
+ * \param src_image The source image of this animation.
+ * \param directions Directions of this animation.
+ * \param frame_delay Delay in millisecond between two frames.
+ * \param loop_on_frame Frame to loop on after the last frame (or -1 to make no loop).
+ */</doc>

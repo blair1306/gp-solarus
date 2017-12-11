@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='76' type='void Solarus::Rectangle::set_xy(const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='282' ll='284' type='void Solarus::Rectangle::set_xy(const Solarus::Point &amp; xy)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='617' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='278'>/**
+ * \brief Sets the coordinates of the top-left corner of this rectangle.
+ * \param xy the new coordinates
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='298' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='901' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1660' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='105' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>

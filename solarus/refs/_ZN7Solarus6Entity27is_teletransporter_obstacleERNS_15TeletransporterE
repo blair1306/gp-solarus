@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='338' type='bool Solarus::Entity::is_teletransporter_obstacle(Solarus::Teletransporter &amp; teletransporter)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='91' c='_ZN7Solarus5Arrow27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='116' c='_ZN7Solarus5Block27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='74' c='_ZN7Solarus4Bomb27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='114' c='_ZN7Solarus9Boomerang27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='492' c='_ZN7Solarus13CarriedObject27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='449' c='_ZN7Solarus12CustomEntity27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='455' u='c' c='_ZN7Solarus12CustomEntity27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='305' c='_ZN7Solarus5Enemy27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2591' ll='2593' type='bool Solarus::Entity::is_teletransporter_obstacle(Solarus::Teletransporter &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2583'>/**
+ * \brief Returns whether a teletransporter is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param teletransporter a teletransporter
+ * \return true if the teletransporter is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2591'>/* teletransporter */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1480' c='_ZN7Solarus4Hero27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='80' c='_ZN7Solarus8Hookshot27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='208' u='c' c='_ZN7Solarus15Teletransporter15is_obstacle_forERNS_6EntityE'/>

@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_surface.h' l='210' type='int SDL_SetSurfaceRLE(SDL_Surface * surface, int flag)'/>
+<doc f='include/SDL2/SDL_surface.h' l='202'>/**
+ *  \brief Sets the RLE acceleration hint for a surface.
+ *
+ *  \return 0 on success, or -1 if the surface is not valid
+ *
+ *  \note If RLE is enabled, colorkey and alpha blending blits are much faster,
+ *        but the surface must be locked before directly accessing the pixels.
+ */</doc>

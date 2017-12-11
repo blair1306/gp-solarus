@@ -1,0 +1,16 @@
+<dec f='include/SDL2/SDL_hints.h' l='65'/>
+<doc f='include/SDL2/SDL_hints.h' l='50'>/**
+ *  \brief  A variable controlling how 3D acceleration is used to accelerate the SDL screen surface.
+ *
+ *  SDL can try to accelerate the SDL screen surface by using streaming
+ *  textures with a 3D rendering engine.  This variable controls whether and
+ *  how this is done.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Disable 3D acceleration
+ *    &quot;1&quot;       - Enable 3D acceleration, using the default renderer.
+ *    &quot;X&quot;       - Enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. &quot;direct3d&quot;, &quot;opengl&quot;, etc.)
+ *
+ *  By default SDL tries to make a best guess for each platform whether
+ *  to use acceleration or not.
+ */</doc>

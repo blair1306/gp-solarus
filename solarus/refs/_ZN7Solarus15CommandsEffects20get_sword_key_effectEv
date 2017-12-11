@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='93' type='Solarus::CommandsEffects::AttackKeyEffect Solarus::CommandsEffects::get_sword_key_effect()'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='149' ll='151' type='CommandsEffects::AttackKeyEffect Solarus::CommandsEffects::get_sword_key_effect()'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='183' u='c' c='_ZN7Solarus15CommandsEffects21save_sword_key_effectEv'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='145'>/**
+ * \brief Returns the current effect of the sword key.
+ * \return the current effect of the sword key
+ */</doc>
+<doc f='codebrowser/include/solarus/CommandsEffects.h' l='91'>// sword key</doc>
+<use f='codebrowser/src/Game.cpp' l='551' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='556' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='81' u='c' c='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1288' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>

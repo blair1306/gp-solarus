@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='52' type='bool Solarus::Size::is_flat() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='87' ll='89' type='bool Solarus::Size::is_flat() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.h' l='49'>////////////////////////////////////////////////////////////
+    // Miscellaneous functions</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='83'>/**
+ * \brief Returns whether this size is flat.
+ * \return \c true if the width or the height are zero.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='820' u='c' c='_ZN7Solarus5Video15get_window_sizeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='842' u='c' c='_ZN7Solarus5Video15set_window_sizeERKNS_4SizeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='918' u='c' c='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>

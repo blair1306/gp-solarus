@@ -1,0 +1,8 @@
+<dec f='include/luajit-2.0/lua.h' l='239' type='int lua_next(lua_State * L, int idx)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='246' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='519' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='537' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1231' u='c' c='_ZN7Solarus10LuaContext18userdata_close_luaEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='461' u='c' c='_ZN7Solarus10LuaContext16update_movementsEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1152' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_pathEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1836' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_set_trajectoryEP9lua_State'/>

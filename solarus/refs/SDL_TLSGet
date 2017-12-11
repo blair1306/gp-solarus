@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_thread.h' l='262' type='void * SDL_TLSGet(SDL_TLSID id)'/>
+<doc f='include/SDL2/SDL_thread.h' l='252'>/**
+ *  \brief Get the value associated with a thread local storage ID for the current thread.
+ *
+ *  \param id The thread local storage ID
+ *
+ *  \return The value associated with the ID for the current thread, or NULL if no value has been set.
+ *
+ *  \sa SDL_TLSCreate()
+ *  \sa SDL_TLSSet()
+ */</doc>

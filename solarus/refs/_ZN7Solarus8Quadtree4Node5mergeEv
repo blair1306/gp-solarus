@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='127' type='void Solarus::Quadtree::Node::merge()'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='405' u='c' c='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='461' ll='481' type='void Solarus::Quadtree::Node::merge()'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='456'>/**
+ * \brief Merges the four children cell into this one and destroys them.
+ *
+ * The children must already be leaves.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='91' type='Solarus::Rectangle Solarus::TilePatternData::get_frame() const'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='150' ll='153' type='Solarus::Rectangle Solarus::TilePatternData::get_frame() const'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='646' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='142'>/**
+ * \brief Returns the coordinates of this pattern in the tileset image file.
+ *
+ * This only makes sense for single-frame patterns.
+ *
+ * \return The coordinates of the single frame of this pattern.
+ * Returns an empty rectangle if the pattern is nil.
+ */</doc>

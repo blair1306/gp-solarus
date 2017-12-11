@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='60' type='bool Solarus::PathMovement::get_loop() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1201' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_get_loopEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='112' ll='114' type='bool Solarus::PathMovement::get_loop() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='108'>/**
+ * \brief Returns whether this movement loops when the end of the path is reached.
+ * \return true if the movement loops
+ */</doc>

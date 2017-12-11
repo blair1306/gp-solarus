@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='111' type='bool Solarus::Enemy::get_can_attack() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='492' ll='494' type='bool Solarus::Enemy::get_can_attack() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='488'>/**
+ * \brief Returns whether this enemy can currently attack the hero.
+ * \return true if this enemy can currently attack the hero
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4639' u='c' c='_ZN7Solarus10LuaContext24enemy_api_get_can_attackEP9lua_State'/>

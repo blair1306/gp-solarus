@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='46' type='bool Solarus::ExportableToLua::is_with_lua_table() const'/>
+<def f='codebrowser/src/lua/ExportableToLua.cpp' l='87' ll='89' type='bool Solarus::ExportableToLua::is_with_lua_table() const'/>
+<doc f='codebrowser/src/lua/ExportableToLua.cpp' l='79'>/**
+ * \brief Returns whether this userdata has an associated table in Lua.
+ *
+ * This is the case if __newindex was called at least once for the userdata.
+ * It might be \c true even if the userdata does not exist anymore in Lua.
+ *
+ * \return \c true if there is a Lua table for this userdata.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='510' u='c' c='_ZNK7Solarus10LuaContext18userdata_has_fieldERKNS_15ExportableToLuaEPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='544' u='c' c='_ZNK7Solarus10LuaContext18userdata_has_fieldERKNS_15ExportableToLuaERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1197' u='c' c='_ZN7Solarus10LuaContext25notify_userdata_destroyedERNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1273' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1346' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>

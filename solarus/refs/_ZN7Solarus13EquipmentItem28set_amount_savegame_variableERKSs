@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='59' type='void Solarus::EquipmentItem::set_amount_savegame_variable(const std::string &amp; amount_savegame_variable)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='154' ll='157' type='void Solarus::EquipmentItem::set_amount_savegame_variable(const std::string &amp; amount_savegame_variable)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='148'>/**
+ * \brief Sets the savegame variable that stores the value of the amount
+ * of this item (if any).
+ * \param amount_savegame_variable The savegame variable of the amount
+ * or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='263' u='c' c='_ZN7Solarus10LuaContext37item_api_set_amount_savegame_variableEP9lua_State'/>

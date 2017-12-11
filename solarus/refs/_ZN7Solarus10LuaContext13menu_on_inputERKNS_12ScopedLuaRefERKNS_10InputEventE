@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='284' type='bool Solarus::LuaContext::menu_on_input(const Solarus::ScopedLuaRef &amp; menu_ref, const Solarus::InputEvent &amp; event)'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='339' ll='358' type='bool Solarus::LuaContext::menu_on_input(const Solarus::ScopedLuaRef &amp; menu_ref, const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='480' u='c' c='_ZN7Solarus10LuaContext14menus_on_inputEiRKNS_10InputEventE'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='333'>/**
+ * \brief Calls an input callback method of a Lua menu.
+ * \param menu_ref A reference to the menu object.
+ * \param event The input event to forward.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

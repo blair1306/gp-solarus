@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='80' type='static uint32_t Solarus::PathMovement::speed_to_delay(int speed, int direction)'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='295' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='307' ll='314' type='static uint32_t Solarus::PathMovement::speed_to_delay(int speed, int direction)'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='438' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='302'>/**
+ * \brief Converts a speed into a delay in milliseconds between each pixel move.
+ * \param speed the speed in pixels per seconds, as specified in the constructor of PathMovement
+ * \param direction direction of the movement (0 to 7), used to adapt the computation if the movement is diagonal
+ */</doc>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SPC_DSP.h source code [codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="SPC_DSP "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='SPC_DSP.h.html'>SPC_DSP.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Fast SNES SPC-700 DSP emulator (about 3x speed of accurate one)</i></td></tr>
+<tr><th id="2">2</th><td><i></i></td></tr>
+<tr><th id="3">3</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/SPC_DSP_H">SPC_DSP_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/SPC_DSP_H" data-ref="_M/SPC_DSP_H">SPC_DSP_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="blargg_common.h.html">"blargg_common.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</dfn> {</td></tr>
+<tr><th id="10">10</th><td><b>public</b>:</td></tr>
+<tr><th id="11">11</th><td>	<b>typedef</b> <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint8_t" title='BOOST::uint8_t' data-type='unsigned char' data-ref="BOOST::uint8_t">uint8_t</a> <dfn class="typedef" id="SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	</td></tr>
+<tr><th id="13">13</th><td><i>// Setup</i></td></tr>
+<tr><th id="14">14</th><td><i>	</i></td></tr>
+<tr><th id="15">15</th><td><i>	// Initializes DSP and has it use the 64K RAM provided</i></td></tr>
+<tr><th id="16">16</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP4initEPv" title='SPC_DSP::init' data-ref="_ZN7SPC_DSP4initEPv">init</dfn>( <em>void</em>* <dfn class="local col5 decl" id="5ram_64k" title='ram_64k' data-type='void *' data-ref="5ram_64k">ram_64k</dfn> );</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>	<i>// Sets destination for output samples. If out is NULL or out_size is 0,</i></td></tr>
+<tr><th id="19">19</th><td><i>	// doesn't generate any.</i></td></tr>
+<tr><th id="20">20</th><td>	<b>typedef</b> <em>short</em> <dfn class="typedef" id="SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP10set_outputEPsi" title='SPC_DSP::set_output' data-ref="_ZN7SPC_DSP10set_outputEPsi">set_output</dfn>( <a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a>* <dfn class="local col6 decl" id="6out" title='out' data-type='sample_t *' data-ref="6out">out</dfn>, <em>int</em> <dfn class="local col7 decl" id="7out_size" title='out_size' data-type='int' data-ref="7out_size">out_size</dfn> );</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>	<i>// Number of samples written to output since it was last set, always</i></td></tr>
+<tr><th id="24">24</th><td><i>	// a multiple of 2. Undefined if more samples were generated than</i></td></tr>
+<tr><th id="25">25</th><td><i>	// output buffer could hold.</i></td></tr>
+<tr><th id="26">26</th><td>	<em>int</em> <a class="decl" href="#_ZNK7SPC_DSP12sample_countEv" title='SPC_DSP::sample_count' data-ref="_ZNK7SPC_DSP12sample_countEv">sample_count</a>() <em>const</em>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>// Emulation</i></td></tr>
+<tr><th id="29">29</th><td><i>	</i></td></tr>
+<tr><th id="30">30</th><td><i>	// Resets DSP to power-on state</i></td></tr>
+<tr><th id="31">31</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP5resetEv" title='SPC_DSP::reset' data-ref="_ZN7SPC_DSP5resetEv">reset</dfn>();</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<i>// Emulates pressing reset switch on SNES</i></td></tr>
+<tr><th id="34">34</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP10soft_resetEv" title='SPC_DSP::soft_reset' data-ref="_ZN7SPC_DSP10soft_resetEv">soft_reset</dfn>();</td></tr>
+<tr><th id="35">35</th><td>	</td></tr>
+<tr><th id="36">36</th><td>	<i>// Reads/writes DSP registers. For accuracy, you must first call spc_run_dsp()</i></td></tr>
+<tr><th id="37">37</th><td><i>	// to catch the DSP up to present.</i></td></tr>
+<tr><th id="38">38</th><td>	<em>int</em>  <a class="decl" href="#_ZNK7SPC_DSP4readEi" title='SPC_DSP::read' data-ref="_ZNK7SPC_DSP4readEi">read</a> ( <em>int</em> <dfn class="local col8 decl" id="8addr" title='addr' data-type='int' data-ref="8addr">addr</dfn> ) <em>const</em>;</td></tr>
+<tr><th id="39">39</th><td>	<em>void</em> <a class="decl" href="#_ZN7SPC_DSP5writeEii" title='SPC_DSP::write' data-ref="_ZN7SPC_DSP5writeEii">write</a>( <em>int</em> <dfn class="local col9 decl" id="9addr" title='addr' data-type='int' data-ref="9addr">addr</dfn>, <em>int</em> <dfn class="local col0 decl" id="10data" title='data' data-type='int' data-ref="10data">data</dfn> );</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>	<i>// Runs DSP for specified number of clocks (~1024000 per second). Every 32 clocks</i></td></tr>
+<tr><th id="42">42</th><td><i>	// a pair of samples is be generated.</i></td></tr>
+<tr><th id="43">43</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP3runEi" title='SPC_DSP::run' data-ref="_ZN7SPC_DSP3runEi">run</dfn>( <em>int</em> <dfn class="local col1 decl" id="11clock_count" title='clock_count' data-type='int' data-ref="11clock_count">clock_count</dfn> );</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>// Sound control</i></td></tr>
+<tr><th id="46">46</th><td><i></i></td></tr>
+<tr><th id="47">47</th><td><i>	// Mutes voices corresponding to non-zero bits in mask (overrides VxVOL with 0).</i></td></tr>
+<tr><th id="48">48</th><td><i>	// Reduces emulation accuracy.</i></td></tr>
+<tr><th id="49">49</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_DSP::::voice_count" title='SPC_DSP::::voice_count' data-ref="SPC_DSP::::voice_count">voice_count</dfn> = <var>8</var> };</td></tr>
+<tr><th id="50">50</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP11mute_voicesEi" title='SPC_DSP::mute_voices' data-ref="_ZN7SPC_DSP11mute_voicesEi">mute_voices</dfn>( <em>int</em> <dfn class="local col2 decl" id="12mask" title='mask' data-type='int' data-ref="12mask">mask</dfn> );</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>	<i>// If true, prevents channels and global volumes from being phase-negated</i></td></tr>
+<tr><th id="53">53</th><td>	<em>void</em> <a class="decl" href="#_ZN7SPC_DSP16disable_surroundEb" title='SPC_DSP::disable_surround' data-ref="_ZN7SPC_DSP16disable_surroundEb">disable_surround</a>( <em>bool</em> <dfn class="local col3 decl" id="13disable" title='disable' data-type='bool' data-ref="13disable">disable</dfn> = <b>true</b> );</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><i>// State</i></td></tr>
+<tr><th id="56">56</th><td><i>	</i></td></tr>
+<tr><th id="57">57</th><td><i>	// Resets DSP and uses supplied values to initialize registers</i></td></tr>
+<tr><th id="58">58</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_DSP::::register_count" title='SPC_DSP::::register_count' data-ref="SPC_DSP::::register_count">register_count</dfn> = <var>128</var> };</td></tr>
+<tr><th id="59">59</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP4loadEPKh" title='SPC_DSP::load' data-ref="_ZN7SPC_DSP4loadEPKh">load</dfn>( <a class="typedef" href="#SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</a> <em>const</em> <dfn class="local col4 decl" id="14regs" title='regs' data-type='const uint8_t *' data-ref="14regs">regs</dfn> [<a class="enum" href="#SPC_DSP::::register_count" title='SPC_DSP::::register_count' data-ref="SPC_DSP::::register_count">register_count</a>] );</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i>// DSP register addresses</i></td></tr>
+<tr><th id="62">62</th><td><i></i></td></tr>
+<tr><th id="63">63</th><td><i>	// Global registers</i></td></tr>
+<tr><th id="64">64</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="65">65</th><td>	    <dfn class="enum" id="SPC_DSP::::r_mvoll" title='SPC_DSP::::r_mvoll' data-ref="SPC_DSP::::r_mvoll">r_mvoll</dfn> = <var>0x0C</var>, <dfn class="enum" id="SPC_DSP::::r_mvolr" title='SPC_DSP::::r_mvolr' data-ref="SPC_DSP::::r_mvolr">r_mvolr</dfn> = <var>0x1C</var>,</td></tr>
+<tr><th id="66">66</th><td>	    <dfn class="enum" id="SPC_DSP::::r_evoll" title='SPC_DSP::::r_evoll' data-ref="SPC_DSP::::r_evoll">r_evoll</dfn> = <var>0x2C</var>, <dfn class="enum" id="SPC_DSP::::r_evolr" title='SPC_DSP::::r_evolr' data-ref="SPC_DSP::::r_evolr">r_evolr</dfn> = <var>0x3C</var>,</td></tr>
+<tr><th id="67">67</th><td>	    <dfn class="enum" id="SPC_DSP::::r_kon" title='SPC_DSP::::r_kon' data-ref="SPC_DSP::::r_kon">r_kon</dfn>   = <var>0x4C</var>, <dfn class="enum" id="SPC_DSP::::r_koff" title='SPC_DSP::::r_koff' data-ref="SPC_DSP::::r_koff">r_koff</dfn>  = <var>0x5C</var>,</td></tr>
+<tr><th id="68">68</th><td>	    <dfn class="enum" id="SPC_DSP::::r_flg" title='SPC_DSP::::r_flg' data-ref="SPC_DSP::::r_flg">r_flg</dfn>   = <var>0x6C</var>, <dfn class="enum" id="SPC_DSP::::r_endx" title='SPC_DSP::::r_endx' data-ref="SPC_DSP::::r_endx">r_endx</dfn>  = <var>0x7C</var>,</td></tr>
+<tr><th id="69">69</th><td>	    <dfn class="enum" id="SPC_DSP::::r_efb" title='SPC_DSP::::r_efb' data-ref="SPC_DSP::::r_efb">r_efb</dfn>   = <var>0x0D</var>, <dfn class="enum" id="SPC_DSP::::r_pmon" title='SPC_DSP::::r_pmon' data-ref="SPC_DSP::::r_pmon">r_pmon</dfn>  = <var>0x2D</var>,</td></tr>
+<tr><th id="70">70</th><td>	    <dfn class="enum" id="SPC_DSP::::r_non" title='SPC_DSP::::r_non' data-ref="SPC_DSP::::r_non">r_non</dfn>   = <var>0x3D</var>, <dfn class="enum" id="SPC_DSP::::r_eon" title='SPC_DSP::::r_eon' data-ref="SPC_DSP::::r_eon">r_eon</dfn>   = <var>0x4D</var>,</td></tr>
+<tr><th id="71">71</th><td>	    <dfn class="enum" id="SPC_DSP::::r_dir" title='SPC_DSP::::r_dir' data-ref="SPC_DSP::::r_dir">r_dir</dfn>   = <var>0x5D</var>, <dfn class="enum" id="SPC_DSP::::r_esa" title='SPC_DSP::::r_esa' data-ref="SPC_DSP::::r_esa">r_esa</dfn>   = <var>0x6D</var>,</td></tr>
+<tr><th id="72">72</th><td>	    <dfn class="enum" id="SPC_DSP::::r_edl" title='SPC_DSP::::r_edl' data-ref="SPC_DSP::::r_edl">r_edl</dfn>   = <var>0x7D</var>,</td></tr>
+<tr><th id="73">73</th><td>	    <dfn class="enum" id="SPC_DSP::::r_fir" title='SPC_DSP::::r_fir' data-ref="SPC_DSP::::r_fir">r_fir</dfn>   = <var>0x0F</var> <i>// 8 coefficients at 0x0F, 0x1F ... 0x7F</i></td></tr>
+<tr><th id="74">74</th><td>	};</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>	<i>// Voice registers</i></td></tr>
+<tr><th id="77">77</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="78">78</th><td>		<dfn class="enum" id="SPC_DSP::::v_voll" title='SPC_DSP::::v_voll' data-ref="SPC_DSP::::v_voll">v_voll</dfn>   = <var>0x00</var>, <dfn class="enum" id="SPC_DSP::::v_volr" title='SPC_DSP::::v_volr' data-ref="SPC_DSP::::v_volr">v_volr</dfn>   = <var>0x01</var>,</td></tr>
+<tr><th id="79">79</th><td>		<dfn class="enum" id="SPC_DSP::::v_pitchl" title='SPC_DSP::::v_pitchl' data-ref="SPC_DSP::::v_pitchl">v_pitchl</dfn> = <var>0x02</var>, <dfn class="enum" id="SPC_DSP::::v_pitchh" title='SPC_DSP::::v_pitchh' data-ref="SPC_DSP::::v_pitchh">v_pitchh</dfn> = <var>0x03</var>,</td></tr>
+<tr><th id="80">80</th><td>		<dfn class="enum" id="SPC_DSP::::v_srcn" title='SPC_DSP::::v_srcn' data-ref="SPC_DSP::::v_srcn">v_srcn</dfn>   = <var>0x04</var>, <dfn class="enum" id="SPC_DSP::::v_adsr0" title='SPC_DSP::::v_adsr0' data-ref="SPC_DSP::::v_adsr0">v_adsr0</dfn>  = <var>0x05</var>,</td></tr>
+<tr><th id="81">81</th><td>		<dfn class="enum" id="SPC_DSP::::v_adsr1" title='SPC_DSP::::v_adsr1' data-ref="SPC_DSP::::v_adsr1">v_adsr1</dfn>  = <var>0x06</var>, <dfn class="enum" id="SPC_DSP::::v_gain" title='SPC_DSP::::v_gain' data-ref="SPC_DSP::::v_gain">v_gain</dfn>   = <var>0x07</var>,</td></tr>
+<tr><th id="82">82</th><td>		<dfn class="enum" id="SPC_DSP::::v_envx" title='SPC_DSP::::v_envx' data-ref="SPC_DSP::::v_envx">v_envx</dfn>   = <var>0x08</var>, <dfn class="enum" id="SPC_DSP::::v_outx" title='SPC_DSP::::v_outx' data-ref="SPC_DSP::::v_outx">v_outx</dfn>   = <var>0x09</var></td></tr>
+<tr><th id="83">83</th><td>	};</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>public</b>:</td></tr>
+<tr><th id="86">86</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_DSP::::extra_size" title='SPC_DSP::::extra_size' data-ref="SPC_DSP::::extra_size">extra_size</dfn> = <var>16</var> };</td></tr>
+<tr><th id="87">87</th><td>	<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a>* <dfn class="decl def" id="_ZN7SPC_DSP5extraEv" title='SPC_DSP::extra' data-ref="_ZN7SPC_DSP5extraEv">extra</dfn>()               { <b>return</b> <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::extra" title='SPC_DSP::state_t::extra' data-ref="SPC_DSP::state_t::extra">extra</a>; }</td></tr>
+<tr><th id="88">88</th><td>	<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a> <em>const</em>* <dfn class="decl def" id="_ZNK7SPC_DSP7out_posEv" title='SPC_DSP::out_pos' data-ref="_ZNK7SPC_DSP7out_posEv">out_pos</dfn>() <em>const</em> { <b>return</b> <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::out" title='SPC_DSP::state_t::out' data-ref="SPC_DSP::state_t::out">out</a>; }</td></tr>
+<tr><th id="89">89</th><td><b>public</b>:</td></tr>
+<tr><th id="90">90</th><td>	<a class="macro" href="blargg_common.h.html#73" title="void* operator new ( size_t s ) throw () { return malloc( s ); } void operator delete ( void* p ) { free( p ); }" data-ref="_M/BLARGG_DISABLE_NOTHROW">BLARGG_DISABLE_NOTHROW</a></td></tr>
+<tr><th id="91">91</th><td>	</td></tr>
+<tr><th id="92">92</th><td>	<b>typedef</b> <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::int8_t" title='BOOST::int8_t' data-type='signed char' data-ref="BOOST::int8_t">int8_t</a>   <dfn class="typedef" id="SPC_DSP::int8_t" title='SPC_DSP::int8_t' data-type='BOOST::int8_t' data-ref="SPC_DSP::int8_t">int8_t</dfn>;</td></tr>
+<tr><th id="93">93</th><td>	<b>typedef</b> <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::int16_t" title='BOOST::int16_t' data-type='short' data-ref="BOOST::int16_t">int16_t</a> <dfn class="typedef" id="SPC_DSP::int16_t" title='SPC_DSP::int16_t' data-type='BOOST::int16_t' data-ref="SPC_DSP::int16_t">int16_t</dfn>;</td></tr>
+<tr><th id="94">94</th><td>	</td></tr>
+<tr><th id="95">95</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_DSP::::echo_hist_size" title='SPC_DSP::::echo_hist_size' data-ref="SPC_DSP::::echo_hist_size">echo_hist_size</dfn> = <var>8</var> };</td></tr>
+<tr><th id="96">96</th><td>	</td></tr>
+<tr><th id="97">97</th><td>	<b>enum</b> <dfn class="type def" id="SPC_DSP::env_mode_t" title='SPC_DSP::env_mode_t' data-ref="SPC_DSP::env_mode_t">env_mode_t</dfn> { <dfn class="enum" id="SPC_DSP::env_mode_t::env_release" title='SPC_DSP::env_mode_t::env_release' data-ref="SPC_DSP::env_mode_t::env_release">env_release</dfn>, <dfn class="enum" id="SPC_DSP::env_mode_t::env_attack" title='SPC_DSP::env_mode_t::env_attack' data-ref="SPC_DSP::env_mode_t::env_attack">env_attack</dfn>, <dfn class="enum" id="SPC_DSP::env_mode_t::env_decay" title='SPC_DSP::env_mode_t::env_decay' data-ref="SPC_DSP::env_mode_t::env_decay">env_decay</dfn>, <dfn class="enum" id="SPC_DSP::env_mode_t::env_sustain" title='SPC_DSP::env_mode_t::env_sustain' data-ref="SPC_DSP::env_mode_t::env_sustain">env_sustain</dfn> };</td></tr>
+<tr><th id="98">98</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_DSP::::brr_buf_size" title='SPC_DSP::::brr_buf_size' data-ref="SPC_DSP::::brr_buf_size">brr_buf_size</dfn> = <var>12</var> };</td></tr>
+<tr><th id="99">99</th><td>	<b>struct</b> <dfn class="type def" id="SPC_DSP::voice_t" title='SPC_DSP::voice_t' data-ref="SPC_DSP::voice_t">voice_t</dfn></td></tr>
+<tr><th id="100">100</th><td>	{</td></tr>
+<tr><th id="101">101</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::buf" title='SPC_DSP::voice_t::buf' data-ref="SPC_DSP::voice_t::buf">buf</dfn> [<a class="enum" href="#SPC_DSP::::brr_buf_size" title='SPC_DSP::::brr_buf_size' data-ref="SPC_DSP::::brr_buf_size">brr_buf_size</a>*<var>2</var>];<i>// decoded samples (twice the size to simplify wrap handling)</i></td></tr>
+<tr><th id="102">102</th><td>		<em>int</em>* <dfn class="decl" id="SPC_DSP::voice_t::buf_pos" title='SPC_DSP::voice_t::buf_pos' data-ref="SPC_DSP::voice_t::buf_pos">buf_pos</dfn>;           <i>// place in buffer where next samples will be decoded</i></td></tr>
+<tr><th id="103">103</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::interp_pos" title='SPC_DSP::voice_t::interp_pos' data-ref="SPC_DSP::voice_t::interp_pos">interp_pos</dfn>;         <i>// relative fractional position in sample (0x1000 = 1.0)</i></td></tr>
+<tr><th id="104">104</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::brr_addr" title='SPC_DSP::voice_t::brr_addr' data-ref="SPC_DSP::voice_t::brr_addr">brr_addr</dfn>;           <i>// address of current BRR block</i></td></tr>
+<tr><th id="105">105</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::brr_offset" title='SPC_DSP::voice_t::brr_offset' data-ref="SPC_DSP::voice_t::brr_offset">brr_offset</dfn>;         <i>// current decoding offset in BRR block</i></td></tr>
+<tr><th id="106">106</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::kon_delay" title='SPC_DSP::voice_t::kon_delay' data-ref="SPC_DSP::voice_t::kon_delay">kon_delay</dfn>;          <i>// KON delay/current setup phase</i></td></tr>
+<tr><th id="107">107</th><td>		<a class="type" href="#SPC_DSP::env_mode_t" title='SPC_DSP::env_mode_t' data-ref="SPC_DSP::env_mode_t">env_mode_t</a> <dfn class="decl" id="SPC_DSP::voice_t::env_mode" title='SPC_DSP::voice_t::env_mode' data-ref="SPC_DSP::voice_t::env_mode">env_mode</dfn>;</td></tr>
+<tr><th id="108">108</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::env" title='SPC_DSP::voice_t::env' data-ref="SPC_DSP::voice_t::env">env</dfn>;                <i>// current envelope level</i></td></tr>
+<tr><th id="109">109</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::hidden_env" title='SPC_DSP::voice_t::hidden_env' data-ref="SPC_DSP::voice_t::hidden_env">hidden_env</dfn>;         <i>// used by GAIN mode 7, very obscure quirk</i></td></tr>
+<tr><th id="110">110</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::volume" title='SPC_DSP::voice_t::volume' data-ref="SPC_DSP::voice_t::volume">volume</dfn> [<var>2</var>];         <i>// copy of volume from DSP registers, with surround disabled</i></td></tr>
+<tr><th id="111">111</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::voice_t::enabled" title='SPC_DSP::voice_t::enabled' data-ref="SPC_DSP::voice_t::enabled">enabled</dfn>;            <i>// -1 if enabled, 0 if muted</i></td></tr>
+<tr><th id="112">112</th><td>	};</td></tr>
+<tr><th id="113">113</th><td><b>private</b>:</td></tr>
+<tr><th id="114">114</th><td>	<b>struct</b> <dfn class="type def" id="SPC_DSP::state_t" title='SPC_DSP::state_t' data-ref="SPC_DSP::state_t">state_t</dfn></td></tr>
+<tr><th id="115">115</th><td>	{</td></tr>
+<tr><th id="116">116</th><td>		<a class="typedef" href="#SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</a> <dfn class="decl" id="SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</dfn> [<a class="enum" href="#SPC_DSP::::register_count" title='SPC_DSP::::register_count' data-ref="SPC_DSP::::register_count">register_count</a>];</td></tr>
+<tr><th id="117">117</th><td>		</td></tr>
+<tr><th id="118">118</th><td>		<i>// Echo history keeps most recent 8 samples (twice the size to simplify wrap handling)</i></td></tr>
+<tr><th id="119">119</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::echo_hist" title='SPC_DSP::state_t::echo_hist' data-ref="SPC_DSP::state_t::echo_hist">echo_hist</dfn> [<a class="enum" href="#SPC_DSP::::echo_hist_size" title='SPC_DSP::::echo_hist_size' data-ref="SPC_DSP::::echo_hist_size">echo_hist_size</a> * <var>2</var>] [<var>2</var>];</td></tr>
+<tr><th id="120">120</th><td>		<em>int</em> (*<dfn class="decl" id="SPC_DSP::state_t::echo_hist_pos" title='SPC_DSP::state_t::echo_hist_pos' data-ref="SPC_DSP::state_t::echo_hist_pos">echo_hist_pos</dfn>) [<var>2</var>]; <i>// &amp;echo_hist [0 to 7]</i></td></tr>
+<tr><th id="121">121</th><td>		</td></tr>
+<tr><th id="122">122</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::every_other_sample" title='SPC_DSP::state_t::every_other_sample' data-ref="SPC_DSP::state_t::every_other_sample">every_other_sample</dfn>; <i>// toggles every sample</i></td></tr>
+<tr><th id="123">123</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::kon" title='SPC_DSP::state_t::kon' data-ref="SPC_DSP::state_t::kon">kon</dfn>;                <i>// KON value when last checked</i></td></tr>
+<tr><th id="124">124</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::noise" title='SPC_DSP::state_t::noise' data-ref="SPC_DSP::state_t::noise">noise</dfn>;</td></tr>
+<tr><th id="125">125</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::echo_offset" title='SPC_DSP::state_t::echo_offset' data-ref="SPC_DSP::state_t::echo_offset">echo_offset</dfn>;        <i>// offset from ESA in echo buffer</i></td></tr>
+<tr><th id="126">126</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::echo_length" title='SPC_DSP::state_t::echo_length' data-ref="SPC_DSP::state_t::echo_length">echo_length</dfn>;        <i>// number of bytes that echo_offset will stop at</i></td></tr>
+<tr><th id="127">127</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::phase" title='SPC_DSP::state_t::phase' data-ref="SPC_DSP::state_t::phase">phase</dfn>;              <i>// next clock cycle to run (0-31)</i></td></tr>
+<tr><th id="128">128</th><td>		<em>unsigned</em> <dfn class="decl" id="SPC_DSP::state_t::counters" title='SPC_DSP::state_t::counters' data-ref="SPC_DSP::state_t::counters">counters</dfn> [<var>4</var>];</td></tr>
+<tr><th id="129">129</th><td>		</td></tr>
+<tr><th id="130">130</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::new_kon" title='SPC_DSP::state_t::new_kon' data-ref="SPC_DSP::state_t::new_kon">new_kon</dfn>;</td></tr>
+<tr><th id="131">131</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::t_koff" title='SPC_DSP::state_t::t_koff' data-ref="SPC_DSP::state_t::t_koff">t_koff</dfn>;</td></tr>
+<tr><th id="132">132</th><td>		</td></tr>
+<tr><th id="133">133</th><td>		<a class="type" href="#SPC_DSP::voice_t" title='SPC_DSP::voice_t' data-ref="SPC_DSP::voice_t">voice_t</a> <dfn class="decl" id="SPC_DSP::state_t::voices" title='SPC_DSP::state_t::voices' data-ref="SPC_DSP::state_t::voices">voices</dfn> [<a class="enum" href="#SPC_DSP::::voice_count" title='SPC_DSP::::voice_count' data-ref="SPC_DSP::::voice_count">voice_count</a>];</td></tr>
+<tr><th id="134">134</th><td>		</td></tr>
+<tr><th id="135">135</th><td>		<em>unsigned</em>* <dfn class="decl" id="SPC_DSP::state_t::counter_select" title='SPC_DSP::state_t::counter_select' data-ref="SPC_DSP::state_t::counter_select">counter_select</dfn> [<var>32</var>];</td></tr>
+<tr><th id="136">136</th><td>		</td></tr>
+<tr><th id="137">137</th><td>		<i>// non-emulation state</i></td></tr>
+<tr><th id="138">138</th><td>		<a class="typedef" href="#SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</a>* <dfn class="decl" id="SPC_DSP::state_t::ram" title='SPC_DSP::state_t::ram' data-ref="SPC_DSP::state_t::ram">ram</dfn>; <i>// 64K shared RAM between DSP and SMP</i></td></tr>
+<tr><th id="139">139</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::mute_mask" title='SPC_DSP::state_t::mute_mask' data-ref="SPC_DSP::state_t::mute_mask">mute_mask</dfn>;</td></tr>
+<tr><th id="140">140</th><td>		<em>int</em> <dfn class="decl" id="SPC_DSP::state_t::surround_threshold" title='SPC_DSP::state_t::surround_threshold' data-ref="SPC_DSP::state_t::surround_threshold">surround_threshold</dfn>;</td></tr>
+<tr><th id="141">141</th><td>		<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a>* <dfn class="decl" id="SPC_DSP::state_t::out" title='SPC_DSP::state_t::out' data-ref="SPC_DSP::state_t::out">out</dfn>;</td></tr>
+<tr><th id="142">142</th><td>		<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a>* <dfn class="decl" id="SPC_DSP::state_t::out_end" title='SPC_DSP::state_t::out_end' data-ref="SPC_DSP::state_t::out_end">out_end</dfn>;</td></tr>
+<tr><th id="143">143</th><td>		<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a>* <dfn class="decl" id="SPC_DSP::state_t::out_begin" title='SPC_DSP::state_t::out_begin' data-ref="SPC_DSP::state_t::out_begin">out_begin</dfn>;</td></tr>
+<tr><th id="144">144</th><td>		<a class="typedef" href="#SPC_DSP::sample_t" title='SPC_DSP::sample_t' data-type='short' data-ref="SPC_DSP::sample_t">sample_t</a> <dfn class="decl" id="SPC_DSP::state_t::extra" title='SPC_DSP::state_t::extra' data-ref="SPC_DSP::state_t::extra">extra</dfn> [<a class="enum" href="#SPC_DSP::::extra_size" title='SPC_DSP::::extra_size' data-ref="SPC_DSP::::extra_size">extra_size</a>];</td></tr>
+<tr><th id="145">145</th><td>	};</td></tr>
+<tr><th id="146">146</th><td>	<a class="type" href="#SPC_DSP::state_t" title='SPC_DSP::state_t' data-ref="SPC_DSP::state_t">state_t</a> <dfn class="decl" id="SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</dfn>;</td></tr>
+<tr><th id="147">147</th><td>	</td></tr>
+<tr><th id="148">148</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP12init_counterEv" title='SPC_DSP::init_counter' data-ref="_ZN7SPC_DSP12init_counterEv">init_counter</dfn>();</td></tr>
+<tr><th id="149">149</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP11run_counterEi" title='SPC_DSP::run_counter' data-ref="_ZN7SPC_DSP11run_counterEi">run_counter</dfn>( <em>int</em> );</td></tr>
+<tr><th id="150">150</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP17soft_reset_commonEv" title='SPC_DSP::soft_reset_common' data-ref="_ZN7SPC_DSP17soft_reset_commonEv">soft_reset_common</dfn>();</td></tr>
+<tr><th id="151">151</th><td>	<em>void</em> <dfn class="decl" id="_ZN7SPC_DSP13write_outlineEii" title='SPC_DSP::write_outline' data-ref="_ZN7SPC_DSP13write_outlineEii">write_outline</dfn>( <em>int</em> <dfn class="local col5 decl" id="15addr" title='addr' data-type='int' data-ref="15addr">addr</dfn>, <em>int</em> <dfn class="local col6 decl" id="16data" title='data' data-type='int' data-ref="16data">data</dfn> );</td></tr>
+<tr><th id="152">152</th><td>	<em>void</em> <a class="decl" href="#_ZN7SPC_DSP16update_voice_volEi" title='SPC_DSP::update_voice_vol' data-ref="_ZN7SPC_DSP16update_voice_volEi">update_voice_vol</a>( <em>int</em> <dfn class="local col7 decl" id="17addr" title='addr' data-type='int' data-ref="17addr">addr</dfn> );</td></tr>
+<tr><th id="153">153</th><td>};</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><u>#include <a href="../../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><b>inline</b> <em>int</em> <a class="type" href="#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<dfn class="decl def" id="_ZNK7SPC_DSP12sample_countEv" title='SPC_DSP::sample_count' data-ref="_ZNK7SPC_DSP12sample_countEv">sample_count</dfn>() <em>const</em> { <b>return</b> <em>int</em>(<a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::out" title='SPC_DSP::state_t::out' data-ref="SPC_DSP::state_t::out">out</a> - <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::out_begin" title='SPC_DSP::state_t::out_begin' data-ref="SPC_DSP::state_t::out_begin">out_begin</a>); }</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><b>inline</b> <em>int</em> <a class="type" href="#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<dfn class="decl def" id="_ZNK7SPC_DSP4readEi" title='SPC_DSP::read' data-ref="_ZNK7SPC_DSP4readEi">read</dfn>( <em>int</em> <dfn class="local col8 decl" id="18addr" title='addr' data-type='int' data-ref="18addr">addr</dfn> ) <em>const</em></td></tr>
+<tr><th id="160">160</th><td>{</td></tr>
+<tr><th id="161">161</th><td>	<a class="macro" href="../../../../../include/assert.h.html#50" title="(static_cast&lt;void&gt; (0))" data-ref="_M/assert">assert</a>( (<em>unsigned</em>) addr &lt; register_count );</td></tr>
+<tr><th id="162">162</th><td>	<b>return</b> <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</a> [<a class="local col8 ref" href="#18addr" title='addr' data-ref="18addr">addr</a>];</td></tr>
+<tr><th id="163">163</th><td>}</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><b>inline</b> <em>void</em> <a class="type" href="#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<dfn class="decl def" id="_ZN7SPC_DSP16update_voice_volEi" title='SPC_DSP::update_voice_vol' data-ref="_ZN7SPC_DSP16update_voice_volEi">update_voice_vol</dfn>( <em>int</em> <dfn class="local col9 decl" id="19addr" title='addr' data-type='int' data-ref="19addr">addr</dfn> )</td></tr>
+<tr><th id="166">166</th><td>{</td></tr>
+<tr><th id="167">167</th><td>	<em>int</em> <dfn class="local col0 decl" id="20l" title='l' data-type='int' data-ref="20l">l</dfn> = (<a class="typedef" href="#SPC_DSP::int8_t" title='SPC_DSP::int8_t' data-type='BOOST::int8_t' data-ref="SPC_DSP::int8_t">int8_t</a>) <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</a> [<a class="local col9 ref" href="#19addr" title='addr' data-ref="19addr">addr</a> + <a class="enum" href="#SPC_DSP::::v_voll" title='SPC_DSP::::v_voll' data-ref="SPC_DSP::::v_voll">v_voll</a>];</td></tr>
+<tr><th id="168">168</th><td>	<em>int</em> <dfn class="local col1 decl" id="21r" title='r' data-type='int' data-ref="21r">r</dfn> = (<a class="typedef" href="#SPC_DSP::int8_t" title='SPC_DSP::int8_t' data-type='BOOST::int8_t' data-ref="SPC_DSP::int8_t">int8_t</a>) <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</a> [<a class="local col9 ref" href="#19addr" title='addr' data-ref="19addr">addr</a> + <a class="enum" href="#SPC_DSP::::v_volr" title='SPC_DSP::::v_volr' data-ref="SPC_DSP::::v_volr">v_volr</a>];</td></tr>
+<tr><th id="169">169</th><td>	</td></tr>
+<tr><th id="170">170</th><td>	<b>if</b> ( <a class="local col0 ref" href="#20l" title='l' data-ref="20l">l</a> * <a class="local col1 ref" href="#21r" title='r' data-ref="21r">r</a> &lt; <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::surround_threshold" title='SPC_DSP::state_t::surround_threshold' data-ref="SPC_DSP::state_t::surround_threshold">surround_threshold</a> )</td></tr>
+<tr><th id="171">171</th><td>	{</td></tr>
+<tr><th id="172">172</th><td>		<i>// signs differ, so negate those that are negative</i></td></tr>
+<tr><th id="173">173</th><td>		<a class="local col0 ref" href="#20l" title='l' data-ref="20l">l</a> ^= <a class="local col0 ref" href="#20l" title='l' data-ref="20l">l</a> &gt;&gt; <var>7</var>;</td></tr>
+<tr><th id="174">174</th><td>		<a class="local col1 ref" href="#21r" title='r' data-ref="21r">r</a> ^= <a class="local col1 ref" href="#21r" title='r' data-ref="21r">r</a> &gt;&gt; <var>7</var>;</td></tr>
+<tr><th id="175">175</th><td>	}</td></tr>
+<tr><th id="176">176</th><td>	</td></tr>
+<tr><th id="177">177</th><td>	<a class="type" href="#SPC_DSP::voice_t" title='SPC_DSP::voice_t' data-ref="SPC_DSP::voice_t">voice_t</a>&amp; <dfn class="local col2 decl" id="22v" title='v' data-type='SPC_DSP::voice_t &amp;' data-ref="22v">v</dfn> = <a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::voices" title='SPC_DSP::state_t::voices' data-ref="SPC_DSP::state_t::voices">voices</a> [<a class="local col9 ref" href="#19addr" title='addr' data-ref="19addr">addr</a> &gt;&gt; <var>4</var>];</td></tr>
+<tr><th id="178">178</th><td>	<em>int</em> <dfn class="local col3 decl" id="23enabled" title='enabled' data-type='int' data-ref="23enabled">enabled</dfn> = <a class="local col2 ref" href="#22v" title='v' data-ref="22v">v</a>.<a class="ref" href="#SPC_DSP::voice_t::enabled" title='SPC_DSP::voice_t::enabled' data-ref="SPC_DSP::voice_t::enabled">enabled</a>;</td></tr>
+<tr><th id="179">179</th><td>	<a class="local col2 ref" href="#22v" title='v' data-ref="22v">v</a>.<a class="ref" href="#SPC_DSP::voice_t::volume" title='SPC_DSP::voice_t::volume' data-ref="SPC_DSP::voice_t::volume">volume</a> [<var>0</var>] = <a class="local col0 ref" href="#20l" title='l' data-ref="20l">l</a> &amp; <a class="local col3 ref" href="#23enabled" title='enabled' data-ref="23enabled">enabled</a>;</td></tr>
+<tr><th id="180">180</th><td>	<a class="local col2 ref" href="#22v" title='v' data-ref="22v">v</a>.<a class="ref" href="#SPC_DSP::voice_t::volume" title='SPC_DSP::voice_t::volume' data-ref="SPC_DSP::voice_t::volume">volume</a> [<var>1</var>] = <a class="local col1 ref" href="#21r" title='r' data-ref="21r">r</a> &amp; <a class="local col3 ref" href="#23enabled" title='enabled' data-ref="23enabled">enabled</a>;</td></tr>
+<tr><th id="181">181</th><td>}</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><b>inline</b> <em>void</em> <a class="type" href="#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<dfn class="decl def" id="_ZN7SPC_DSP5writeEii" title='SPC_DSP::write' data-ref="_ZN7SPC_DSP5writeEii">write</dfn>( <em>int</em> <dfn class="local col4 decl" id="24addr" title='addr' data-type='int' data-ref="24addr">addr</dfn>, <em>int</em> <dfn class="local col5 decl" id="25data" title='data' data-type='int' data-ref="25data">data</dfn> )</td></tr>
+<tr><th id="184">184</th><td>{</td></tr>
+<tr><th id="185">185</th><td>	<a class="macro" href="../../../../../include/assert.h.html#50" title="(static_cast&lt;void&gt; (0))" data-ref="_M/assert">assert</a>( (<em>unsigned</em>) addr &lt; register_count );</td></tr>
+<tr><th id="186">186</th><td>	</td></tr>
+<tr><th id="187">187</th><td>	<a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</a> [<a class="local col4 ref" href="#24addr" title='addr' data-ref="24addr">addr</a>] = (<a class="typedef" href="#SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</a>) <a class="local col5 ref" href="#25data" title='data' data-ref="25data">data</a>;</td></tr>
+<tr><th id="188">188</th><td>	<em>int</em> <dfn class="local col6 decl" id="26low" title='low' data-type='int' data-ref="26low">low</dfn> = <a class="local col4 ref" href="#24addr" title='addr' data-ref="24addr">addr</a> &amp; <var>0x0F</var>;</td></tr>
+<tr><th id="189">189</th><td>	<b>if</b> ( <a class="local col6 ref" href="#26low" title='low' data-ref="26low">low</a> &lt; <var>0x2</var> ) <i>// voice volumes</i></td></tr>
+<tr><th id="190">190</th><td>	{</td></tr>
+<tr><th id="191">191</th><td>		<a class="member" href="#_ZN7SPC_DSP16update_voice_volEi" title='SPC_DSP::update_voice_vol' data-ref="_ZN7SPC_DSP16update_voice_volEi">update_voice_vol</a>( <a class="local col6 ref" href="#26low" title='low' data-ref="26low">low</a> ^ <a class="local col4 ref" href="#24addr" title='addr' data-ref="24addr">addr</a> );</td></tr>
+<tr><th id="192">192</th><td>	}</td></tr>
+<tr><th id="193">193</th><td>	<b>else</b> <b>if</b> ( <a class="local col6 ref" href="#26low" title='low' data-ref="26low">low</a> == <var>0xC</var> )</td></tr>
+<tr><th id="194">194</th><td>	{</td></tr>
+<tr><th id="195">195</th><td>		<b>if</b> ( <a class="local col4 ref" href="#24addr" title='addr' data-ref="24addr">addr</a> == <a class="enum" href="#SPC_DSP::::r_kon" title='SPC_DSP::::r_kon' data-ref="SPC_DSP::::r_kon">r_kon</a> )</td></tr>
+<tr><th id="196">196</th><td>			<a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::new_kon" title='SPC_DSP::state_t::new_kon' data-ref="SPC_DSP::state_t::new_kon">new_kon</a> = (<a class="typedef" href="#SPC_DSP::uint8_t" title='SPC_DSP::uint8_t' data-type='BOOST::uint8_t' data-ref="SPC_DSP::uint8_t">uint8_t</a>) <a class="local col5 ref" href="#25data" title='data' data-ref="25data">data</a>;</td></tr>
+<tr><th id="197">197</th><td>		</td></tr>
+<tr><th id="198">198</th><td>		<b>if</b> ( <a class="local col4 ref" href="#24addr" title='addr' data-ref="24addr">addr</a> == <a class="enum" href="#SPC_DSP::::r_endx" title='SPC_DSP::::r_endx' data-ref="SPC_DSP::::r_endx">r_endx</a> ) <i>// always cleared, regardless of data written</i></td></tr>
+<tr><th id="199">199</th><td>			<a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::regs" title='SPC_DSP::state_t::regs' data-ref="SPC_DSP::state_t::regs">regs</a> [<a class="enum" href="#SPC_DSP::::r_endx" title='SPC_DSP::::r_endx' data-ref="SPC_DSP::::r_endx">r_endx</a>] = <var>0</var>;</td></tr>
+<tr><th id="200">200</th><td>	}</td></tr>
+<tr><th id="201">201</th><td>}</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><b>inline</b> <em>void</em> <a class="type" href="#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<dfn class="decl def" id="_ZN7SPC_DSP16disable_surroundEb" title='SPC_DSP::disable_surround' data-ref="_ZN7SPC_DSP16disable_surroundEb">disable_surround</dfn>( <em>bool</em> <dfn class="local col7 decl" id="27disable" title='disable' data-type='bool' data-ref="27disable">disable</dfn> )</td></tr>
+<tr><th id="204">204</th><td>{</td></tr>
+<tr><th id="205">205</th><td>	<a class="member" href="#SPC_DSP::m" title='SPC_DSP::m' data-ref="SPC_DSP::m">m</a>.<a class="ref" href="#SPC_DSP::state_t::surround_threshold" title='SPC_DSP::state_t::surround_threshold' data-ref="SPC_DSP::state_t::surround_threshold">surround_threshold</a> = <a class="local col7 ref" href="#27disable" title='disable' data-ref="27disable">disable</a> ? <var>0</var> : -<var>0x4000</var>;</td></tr>
+<tr><th id="206">206</th><td>}</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><u>#define <dfn class="macro" id="_M/SPC_NO_COPY_STATE_FUNCS" data-ref="_M/SPC_NO_COPY_STATE_FUNCS">SPC_NO_COPY_STATE_FUNCS</dfn> 1</u></td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><u>#define <dfn class="macro" id="_M/SPC_LESS_ACCURATE" data-ref="_M/SPC_LESS_ACCURATE">SPC_LESS_ACCURATE</dfn> 1</u></td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="213">213</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SNES_SPC.cpp.html'>codebrowser/src/third_party/snes_spc/SNES_SPC.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

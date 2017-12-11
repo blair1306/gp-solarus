@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='84' type='void Solarus::Equipment::add_magic(int magic_to_add)'/>
+<def f='codebrowser/src/Equipment.cpp' l='352' ll='357' type='void Solarus::Equipment::add_magic(int magic_to_add)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='344'>/**
+ * \brief Adds some magic points to the player.
+ *
+ * If the maximum value is reached, no more magic points are added.
+ *
+ * \param magic_to_add Number of magic points to add.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1042' u='c' c='_ZN7Solarus10LuaContext18game_api_add_magicEP9lua_State'/>

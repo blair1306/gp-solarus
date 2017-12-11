@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='82' type='blargg_err_t SNES_SPC::play(int count, sample_t * out)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='80'>// Plays for count samples and write samples to out. Discards samples if out
+	// is NULL. Count must be a multiple of 2 since output is stereo.</doc>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='336' ll='348' type='blargg_err_t SNES_SPC::play(int count, sample_t * out)'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='378' u='c' c='_ZN8SNES_SPC4skipEi'/>
+<use f='codebrowser/src/third_party/snes_spc/spc.cpp' l='59' u='c' c='spc_play'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='58' type='void Solarus::Tileset::add_tile_pattern(const std::string &amp; id, const Solarus::TilePatternData &amp; pattern_data)'/>
+<def f='codebrowser/src/entities/Tileset.cpp' l='61' ll='130' type='void Solarus::Tileset::add_tile_pattern(const std::string &amp; id, const Solarus::TilePatternData &amp; pattern_data)'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='145' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<doc f='codebrowser/src/entities/Tileset.cpp' l='53'>/**
+ * \brief Adds a new tile pattern to this tileset.
+ *
+ * This function is called while loading the tileset.
+ *
+ * \param id Id of this tile pattern.
+ * \param pattern_data Properties of the tile pattern to create.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='72' type='void Solarus::Hero::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1163' u='c' c='_ZN7Solarus8Entities13set_suspendedEb'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='355' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='155' ll='171' type='void Solarus::Hero::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='148'>/**
+ * \brief Suspends or resumes the animation and the movements of the hero.
+ *
+ * This function is called by the map when the game is suspended or resumed.
+ *
+ * \param suspended true to suspend the hero, false to resume it
+ */</doc>

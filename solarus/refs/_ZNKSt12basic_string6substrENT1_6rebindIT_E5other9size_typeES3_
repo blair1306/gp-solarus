@@ -1,0 +1,35 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='2224' ll='2227' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; std::basic_string::substr(size_type __pos = 0, size_type __n = npos) const'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='2212'>/**
+       *  @brief  Get a substring.
+       *  @param __pos  Index of first character (default 0).
+       *  @param __n  Number of characters in substring (default remainder).
+       *  @return  The new string.
+       *  @throw  std::out_of_range  If __pos &gt; size().
+       *
+       *  Construct and return a new string using the @a __n
+       *  characters starting at @a __pos.  If the string is too
+       *  short, use the remainder of the characters.  If @a __pos is
+       *  beyond the end of the string, out_of_range is thrown.
+      */</doc>
+<use f='codebrowser/src/Arguments.cpp' l='90' u='c' c='_ZNK7Solarus9Arguments18get_argument_valueERKSs'/>
+<use f='codebrowser/src/Arguments.cpp' l='91' u='c' c='_ZNK7Solarus9Arguments18get_argument_valueERKSs'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='162' u='c' c='_ZN7Solarus8LuaTools10check_enumEP9lua_StateiRKSt3mapIT_SsSt4lessIS4_ESaISt4pairIKS4_SsEEE'/>
+<use f='codebrowser/src/Game.cpp' l='433' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='59' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MainLoop.cpp' l='64' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='381' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='423' u='c' c='_ZNK7Solarus3Map20get_destination_sideEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1027' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1031' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1161' u='c' c='_ZNK7Solarus6Entity10has_prefixERKSs'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='82' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='84' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='86' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='88' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='718' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='719' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='775' u='c' c='_ZN7Solarus10LuaContext11print_stackEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1155' u='c' c='_ZN7Solarus10LuaContext19is_solarus_userdataEP9lua_StateiRSs'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='363' u='c' c='_ZN7Solarus10LuaContext17main_api_get_typeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='386' u='c' c='_ZN7Solarus12_GLOBAL__N_126entity_creation_check_enumEP9lua_StateiRKNS_10EntityDataERKSsRKSt3mapIT_SsSt4lessIS9_ESaISt4pairIKS9_SsEEE'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='297' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>

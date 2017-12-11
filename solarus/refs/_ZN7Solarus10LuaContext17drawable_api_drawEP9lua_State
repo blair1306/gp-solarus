@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='540' type='static int Solarus::LuaContext::drawable_api_draw(lua_State * )'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='133' ll='144' type='static int Solarus::LuaContext::drawable_api_draw(lua_State * l)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='128'>/**
+ * \brief Implementation of drawable:draw().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='61' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='51' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='85' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>

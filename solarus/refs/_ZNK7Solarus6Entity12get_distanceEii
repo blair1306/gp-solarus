@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='263' type='int Solarus::Entity::get_distance(int x, int y) const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2902' ll='2904' type='int Solarus::Entity::get_distance(int x, int y) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2896'>/**
+ * \brief Returns the distance between the origin of this entity and a point.
+ * \param x x coordinate of the point
+ * \param y y coordinate of the point
+ * \return the distance between this entity and the point in pixels
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1246' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_distanceEP9lua_State'/>

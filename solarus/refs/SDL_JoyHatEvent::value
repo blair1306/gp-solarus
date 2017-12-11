@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_events.h' l='305' type='Uint8'/>
+<offset>104</offset>
+<doc f='include/SDL2/SDL_events.h' l='305'>/**&lt; The hat position value.
+                         *   \sa ::SDL_HAT_LEFTUP ::SDL_HAT_UP ::SDL_HAT_RIGHTUP
+                         *   \sa ::SDL_HAT_LEFT ::SDL_HAT_CENTERED ::SDL_HAT_RIGHT
+                         *   \sa ::SDL_HAT_LEFTDOWN ::SDL_HAT_DOWN ::SDL_HAT_RIGHTDOWN
+                         *
+                         *   Note that zero means the POV is centered.
+                         */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1082' u='r' c='_ZNK7Solarus10InputEvent24get_joypad_hat_directionEv'/>

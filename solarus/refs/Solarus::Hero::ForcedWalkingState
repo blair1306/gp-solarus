@@ -1,0 +1,25 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='33' ll='64'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='28'>/**
+ * \brief State of the hero where he is walking with a predetermined path.
+ *
+ * The player does not control the hero in this state.
+ */</doc>
+<fun r='_ZN7Solarus4Hero18ForcedWalkingStateC1ERS0_RKSsbb'/>
+<fun r='_ZN7Solarus4Hero18ForcedWalkingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero18ForcedWalkingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero18ForcedWalkingState6updateEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState27can_start_gameover_sequenceEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState20can_avoid_deep_waterEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState14can_avoid_holeEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState13can_avoid_iceEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState14can_avoid_lavaEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState17can_avoid_prickleEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState25can_avoid_teletransporterEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_sensorEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_switchEv'/>
+<fun r='_ZNK7Solarus4Hero18ForcedWalkingState11can_be_hurtEPNS_6EntityE'/>
+<mbr r='Solarus::Hero::ForcedWalkingState::movement' o='384' t='std::shared_ptr&lt;PathMovement&gt;'/>

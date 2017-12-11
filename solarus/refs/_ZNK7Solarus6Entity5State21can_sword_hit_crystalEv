@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='138' type='bool Solarus::Entity::State::can_sword_hit_crystal() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='857' ll='859' type='bool Solarus::Entity::State::can_sword_hit_crystal() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='850'>/**
+ * \brief Returns whether crystals can be activated by the sword in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if crystals can be activated by the sword in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1801' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1837' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='271' c='_ZNK7Solarus4Hero12RunningState21can_sword_hit_crystalEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='115' c='_ZNK7Solarus4Hero15SpinAttackState21can_sword_hit_crystalEv'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='145' c='_ZNK7Solarus4Hero18SwordSwingingState21can_sword_hit_crystalEv'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='140' c='_ZNK7Solarus4Hero17SwordTappingState21can_sword_hit_crystalEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='92' type='void Solarus::EquipmentItem::set_amount(int amount)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='440' ll='449' type='void Solarus::EquipmentItem::set_amount(int amount)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='477' u='c' c='_ZN7Solarus13EquipmentItem14set_max_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='436'>/**
+ * \brief Sets the current value of the amount associated to this item.
+ * \param amount The player&apos;s new amount of this item.
+ */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='625' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='637' u='c' c='_ZN7Solarus10LuaContext19item_api_set_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='662' u='c' c='_ZN7Solarus10LuaContext19item_api_add_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='687' u='c' c='_ZN7Solarus10LuaContext22item_api_remove_amountEP9lua_State'/>

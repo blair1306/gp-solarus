@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='111' type='int Solarus::Quadtree::Node::get_num_elements() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='342' u='c' c='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='403' u='c' c='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='517' ll='539' type='int Solarus::Quadtree::Node::get_num_elements() const'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='513'>/**
+ * \brief Returns the number of elements whose center is under this node.
+ * \return The number of elements under this node.
+ */</doc>

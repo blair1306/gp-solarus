@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='157' type='const Solarus::Point &amp; Solarus::Entity::get_origin() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='95' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='156' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1169' ll='1171' type='const Solarus::Point &amp; Solarus::Entity::get_origin() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1164'>/**
+ * \brief Returns the origin point of the entity,
+ * relative to the top-left corner of its rectangle.
+ * \return the origin point
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='929' u='c' c='_ZN7Solarus10LuaContext21entity_api_get_originEP9lua_State'/>

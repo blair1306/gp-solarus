@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_scancode.h source code [include/SDL2/SDL_scancode.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_scancode.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_scancode.h.html'>SDL_scancode.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_scancode.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Defines keyboard scancodes.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_scancode_h">_SDL_scancode_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_scancode_h" data-ref="_M/_SDL_scancode_h">_SDL_scancode_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *  <span class="command">\brief</span> The SDL keyboard scancode representation.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *  Values of this type are used to represent keyboard keys, among other places</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *  in the <span class="command">\link</span><span class="verb"> SDL_Keysym::scancode key.keysym.scancode \endlink field of the</span></i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  SDL_Event structure.</span></i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"><span class="verb"></span> *<span class="verb"></span></i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  The values in this enumeration are based on the USB usage page standard:</span></i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"><span class="verb"></span> *<span class="verb">  <a href="http://www.usb.org/developers/devclass_docs/Hut1_12v2.pdf">http://www.usb.org/developers/devclass_docs/Hut1_12v2.pdf</a></span></i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"><span class="verb"></span><span class="verb"> *</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="43">43</th><td><span class="verb"></span><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="44">44</th><td>{</td></tr>
+<tr><th id="45">45</th><td>    <dfn class="enum" id="::SDL_SCANCODE_UNKNOWN" title='::SDL_SCANCODE_UNKNOWN' data-ref="::SDL_SCANCODE_UNKNOWN">SDL_SCANCODE_UNKNOWN</dfn> = <var>0</var>,</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">     *  <span class="command">\name</span> <span class="verb">Usage page 0x07</span></i></td></tr>
+<tr><th id="49">49</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">     *  These values are from usage page 0x07 (USB keyboard page).</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="52">52</th><td>    <i>/* @{ */</i></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <dfn class="enum" id="::SDL_SCANCODE_A" title='::SDL_SCANCODE_A' data-ref="::SDL_SCANCODE_A">SDL_SCANCODE_A</dfn> = <var>4</var>,</td></tr>
+<tr><th id="55">55</th><td>    <dfn class="enum" id="::SDL_SCANCODE_B" title='::SDL_SCANCODE_B' data-ref="::SDL_SCANCODE_B">SDL_SCANCODE_B</dfn> = <var>5</var>,</td></tr>
+<tr><th id="56">56</th><td>    <dfn class="enum" id="::SDL_SCANCODE_C" title='::SDL_SCANCODE_C' data-ref="::SDL_SCANCODE_C">SDL_SCANCODE_C</dfn> = <var>6</var>,</td></tr>
+<tr><th id="57">57</th><td>    <dfn class="enum" id="::SDL_SCANCODE_D" title='::SDL_SCANCODE_D' data-ref="::SDL_SCANCODE_D">SDL_SCANCODE_D</dfn> = <var>7</var>,</td></tr>
+<tr><th id="58">58</th><td>    <dfn class="enum" id="::SDL_SCANCODE_E" title='::SDL_SCANCODE_E' data-ref="::SDL_SCANCODE_E">SDL_SCANCODE_E</dfn> = <var>8</var>,</td></tr>
+<tr><th id="59">59</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F" title='::SDL_SCANCODE_F' data-ref="::SDL_SCANCODE_F">SDL_SCANCODE_F</dfn> = <var>9</var>,</td></tr>
+<tr><th id="60">60</th><td>    <dfn class="enum" id="::SDL_SCANCODE_G" title='::SDL_SCANCODE_G' data-ref="::SDL_SCANCODE_G">SDL_SCANCODE_G</dfn> = <var>10</var>,</td></tr>
+<tr><th id="61">61</th><td>    <dfn class="enum" id="::SDL_SCANCODE_H" title='::SDL_SCANCODE_H' data-ref="::SDL_SCANCODE_H">SDL_SCANCODE_H</dfn> = <var>11</var>,</td></tr>
+<tr><th id="62">62</th><td>    <dfn class="enum" id="::SDL_SCANCODE_I" title='::SDL_SCANCODE_I' data-ref="::SDL_SCANCODE_I">SDL_SCANCODE_I</dfn> = <var>12</var>,</td></tr>
+<tr><th id="63">63</th><td>    <dfn class="enum" id="::SDL_SCANCODE_J" title='::SDL_SCANCODE_J' data-ref="::SDL_SCANCODE_J">SDL_SCANCODE_J</dfn> = <var>13</var>,</td></tr>
+<tr><th id="64">64</th><td>    <dfn class="enum" id="::SDL_SCANCODE_K" title='::SDL_SCANCODE_K' data-ref="::SDL_SCANCODE_K">SDL_SCANCODE_K</dfn> = <var>14</var>,</td></tr>
+<tr><th id="65">65</th><td>    <dfn class="enum" id="::SDL_SCANCODE_L" title='::SDL_SCANCODE_L' data-ref="::SDL_SCANCODE_L">SDL_SCANCODE_L</dfn> = <var>15</var>,</td></tr>
+<tr><th id="66">66</th><td>    <dfn class="enum" id="::SDL_SCANCODE_M" title='::SDL_SCANCODE_M' data-ref="::SDL_SCANCODE_M">SDL_SCANCODE_M</dfn> = <var>16</var>,</td></tr>
+<tr><th id="67">67</th><td>    <dfn class="enum" id="::SDL_SCANCODE_N" title='::SDL_SCANCODE_N' data-ref="::SDL_SCANCODE_N">SDL_SCANCODE_N</dfn> = <var>17</var>,</td></tr>
+<tr><th id="68">68</th><td>    <dfn class="enum" id="::SDL_SCANCODE_O" title='::SDL_SCANCODE_O' data-ref="::SDL_SCANCODE_O">SDL_SCANCODE_O</dfn> = <var>18</var>,</td></tr>
+<tr><th id="69">69</th><td>    <dfn class="enum" id="::SDL_SCANCODE_P" title='::SDL_SCANCODE_P' data-ref="::SDL_SCANCODE_P">SDL_SCANCODE_P</dfn> = <var>19</var>,</td></tr>
+<tr><th id="70">70</th><td>    <dfn class="enum" id="::SDL_SCANCODE_Q" title='::SDL_SCANCODE_Q' data-ref="::SDL_SCANCODE_Q">SDL_SCANCODE_Q</dfn> = <var>20</var>,</td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="::SDL_SCANCODE_R" title='::SDL_SCANCODE_R' data-ref="::SDL_SCANCODE_R">SDL_SCANCODE_R</dfn> = <var>21</var>,</td></tr>
+<tr><th id="72">72</th><td>    <dfn class="enum" id="::SDL_SCANCODE_S" title='::SDL_SCANCODE_S' data-ref="::SDL_SCANCODE_S">SDL_SCANCODE_S</dfn> = <var>22</var>,</td></tr>
+<tr><th id="73">73</th><td>    <dfn class="enum" id="::SDL_SCANCODE_T" title='::SDL_SCANCODE_T' data-ref="::SDL_SCANCODE_T">SDL_SCANCODE_T</dfn> = <var>23</var>,</td></tr>
+<tr><th id="74">74</th><td>    <dfn class="enum" id="::SDL_SCANCODE_U" title='::SDL_SCANCODE_U' data-ref="::SDL_SCANCODE_U">SDL_SCANCODE_U</dfn> = <var>24</var>,</td></tr>
+<tr><th id="75">75</th><td>    <dfn class="enum" id="::SDL_SCANCODE_V" title='::SDL_SCANCODE_V' data-ref="::SDL_SCANCODE_V">SDL_SCANCODE_V</dfn> = <var>25</var>,</td></tr>
+<tr><th id="76">76</th><td>    <dfn class="enum" id="::SDL_SCANCODE_W" title='::SDL_SCANCODE_W' data-ref="::SDL_SCANCODE_W">SDL_SCANCODE_W</dfn> = <var>26</var>,</td></tr>
+<tr><th id="77">77</th><td>    <dfn class="enum" id="::SDL_SCANCODE_X" title='::SDL_SCANCODE_X' data-ref="::SDL_SCANCODE_X">SDL_SCANCODE_X</dfn> = <var>27</var>,</td></tr>
+<tr><th id="78">78</th><td>    <dfn class="enum" id="::SDL_SCANCODE_Y" title='::SDL_SCANCODE_Y' data-ref="::SDL_SCANCODE_Y">SDL_SCANCODE_Y</dfn> = <var>28</var>,</td></tr>
+<tr><th id="79">79</th><td>    <dfn class="enum" id="::SDL_SCANCODE_Z" title='::SDL_SCANCODE_Z' data-ref="::SDL_SCANCODE_Z">SDL_SCANCODE_Z</dfn> = <var>29</var>,</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <dfn class="enum" id="::SDL_SCANCODE_1" title='::SDL_SCANCODE_1' data-ref="::SDL_SCANCODE_1">SDL_SCANCODE_1</dfn> = <var>30</var>,</td></tr>
+<tr><th id="82">82</th><td>    <dfn class="enum" id="::SDL_SCANCODE_2" title='::SDL_SCANCODE_2' data-ref="::SDL_SCANCODE_2">SDL_SCANCODE_2</dfn> = <var>31</var>,</td></tr>
+<tr><th id="83">83</th><td>    <dfn class="enum" id="::SDL_SCANCODE_3" title='::SDL_SCANCODE_3' data-ref="::SDL_SCANCODE_3">SDL_SCANCODE_3</dfn> = <var>32</var>,</td></tr>
+<tr><th id="84">84</th><td>    <dfn class="enum" id="::SDL_SCANCODE_4" title='::SDL_SCANCODE_4' data-ref="::SDL_SCANCODE_4">SDL_SCANCODE_4</dfn> = <var>33</var>,</td></tr>
+<tr><th id="85">85</th><td>    <dfn class="enum" id="::SDL_SCANCODE_5" title='::SDL_SCANCODE_5' data-ref="::SDL_SCANCODE_5">SDL_SCANCODE_5</dfn> = <var>34</var>,</td></tr>
+<tr><th id="86">86</th><td>    <dfn class="enum" id="::SDL_SCANCODE_6" title='::SDL_SCANCODE_6' data-ref="::SDL_SCANCODE_6">SDL_SCANCODE_6</dfn> = <var>35</var>,</td></tr>
+<tr><th id="87">87</th><td>    <dfn class="enum" id="::SDL_SCANCODE_7" title='::SDL_SCANCODE_7' data-ref="::SDL_SCANCODE_7">SDL_SCANCODE_7</dfn> = <var>36</var>,</td></tr>
+<tr><th id="88">88</th><td>    <dfn class="enum" id="::SDL_SCANCODE_8" title='::SDL_SCANCODE_8' data-ref="::SDL_SCANCODE_8">SDL_SCANCODE_8</dfn> = <var>37</var>,</td></tr>
+<tr><th id="89">89</th><td>    <dfn class="enum" id="::SDL_SCANCODE_9" title='::SDL_SCANCODE_9' data-ref="::SDL_SCANCODE_9">SDL_SCANCODE_9</dfn> = <var>38</var>,</td></tr>
+<tr><th id="90">90</th><td>    <dfn class="enum" id="::SDL_SCANCODE_0" title='::SDL_SCANCODE_0' data-ref="::SDL_SCANCODE_0">SDL_SCANCODE_0</dfn> = <var>39</var>,</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RETURN" title='::SDL_SCANCODE_RETURN' data-ref="::SDL_SCANCODE_RETURN">SDL_SCANCODE_RETURN</dfn> = <var>40</var>,</td></tr>
+<tr><th id="93">93</th><td>    <dfn class="enum" id="::SDL_SCANCODE_ESCAPE" title='::SDL_SCANCODE_ESCAPE' data-ref="::SDL_SCANCODE_ESCAPE">SDL_SCANCODE_ESCAPE</dfn> = <var>41</var>,</td></tr>
+<tr><th id="94">94</th><td>    <dfn class="enum" id="::SDL_SCANCODE_BACKSPACE" title='::SDL_SCANCODE_BACKSPACE' data-ref="::SDL_SCANCODE_BACKSPACE">SDL_SCANCODE_BACKSPACE</dfn> = <var>42</var>,</td></tr>
+<tr><th id="95">95</th><td>    <dfn class="enum" id="::SDL_SCANCODE_TAB" title='::SDL_SCANCODE_TAB' data-ref="::SDL_SCANCODE_TAB">SDL_SCANCODE_TAB</dfn> = <var>43</var>,</td></tr>
+<tr><th id="96">96</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SPACE" title='::SDL_SCANCODE_SPACE' data-ref="::SDL_SCANCODE_SPACE">SDL_SCANCODE_SPACE</dfn> = <var>44</var>,</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MINUS" title='::SDL_SCANCODE_MINUS' data-ref="::SDL_SCANCODE_MINUS">SDL_SCANCODE_MINUS</dfn> = <var>45</var>,</td></tr>
+<tr><th id="99">99</th><td>    <dfn class="enum" id="::SDL_SCANCODE_EQUALS" title='::SDL_SCANCODE_EQUALS' data-ref="::SDL_SCANCODE_EQUALS">SDL_SCANCODE_EQUALS</dfn> = <var>46</var>,</td></tr>
+<tr><th id="100">100</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LEFTBRACKET" title='::SDL_SCANCODE_LEFTBRACKET' data-ref="::SDL_SCANCODE_LEFTBRACKET">SDL_SCANCODE_LEFTBRACKET</dfn> = <var>47</var>,</td></tr>
+<tr><th id="101">101</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RIGHTBRACKET" title='::SDL_SCANCODE_RIGHTBRACKET' data-ref="::SDL_SCANCODE_RIGHTBRACKET">SDL_SCANCODE_RIGHTBRACKET</dfn> = <var>48</var>,</td></tr>
+<tr><th id="102">102</th><td>    <dfn class="enum" id="::SDL_SCANCODE_BACKSLASH" title='::SDL_SCANCODE_BACKSLASH' data-ref="::SDL_SCANCODE_BACKSLASH">SDL_SCANCODE_BACKSLASH</dfn> = <var>49</var>, <i class="doc">/**&lt; Located at the lower left of the return</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">                                  *   key on ISO keyboards and at the right end</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">                                  *   of the QWERTY row on ANSI keyboards.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">                                  *   Produces REVERSE SOLIDUS (backslash) and</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc">                                  *   VERTICAL LINE in a US layout, REVERSE</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">                                  *   SOLIDUS and VERTICAL LINE in a UK Mac</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc">                                  *   layout, NUMBER SIGN and TILDE in a UK</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">                                  *   Windows layout, DOLLAR SIGN and POUND SIGN</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">                                  *   in a Swiss German layout, NUMBER SIGN and</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">                                  *   APOSTROPHE in a German layout, GRAVE</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">                                  *   ACCENT and POUND SIGN in a French Mac</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">                                  *   layout, and ASTERISK and MICRO SIGN in a</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">                                  *   French Windows layout.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">                                  */</i></td></tr>
+<tr><th id="116">116</th><td>    <dfn class="enum" id="::SDL_SCANCODE_NONUSHASH" title='::SDL_SCANCODE_NONUSHASH' data-ref="::SDL_SCANCODE_NONUSHASH">SDL_SCANCODE_NONUSHASH</dfn> = <var>50</var>, <i class="doc">/**&lt; ISO USB keyboards actually use this code</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">                                  *   instead of 49 for the same key, but all</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">                                  *   OSes I've seen treat the two codes</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">                                  *   identically. So, as an implementor, unless</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">                                  *   your keyboard generates both of those</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">                                  *   codes and your OS treats them differently,</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">                                  *   you should generate SDL_SCANCODE_BACKSLASH</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">                                  *   instead of this code. As a user, you</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">                                  *   should not rely on this code because SDL</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">                                  *   will never generate it with most (all?)</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc">                                  *   keyboards.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc">                                  */</i></td></tr>
+<tr><th id="128">128</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SEMICOLON" title='::SDL_SCANCODE_SEMICOLON' data-ref="::SDL_SCANCODE_SEMICOLON">SDL_SCANCODE_SEMICOLON</dfn> = <var>51</var>,</td></tr>
+<tr><th id="129">129</th><td>    <dfn class="enum" id="::SDL_SCANCODE_APOSTROPHE" title='::SDL_SCANCODE_APOSTROPHE' data-ref="::SDL_SCANCODE_APOSTROPHE">SDL_SCANCODE_APOSTROPHE</dfn> = <var>52</var>,</td></tr>
+<tr><th id="130">130</th><td>    <dfn class="enum" id="::SDL_SCANCODE_GRAVE" title='::SDL_SCANCODE_GRAVE' data-ref="::SDL_SCANCODE_GRAVE">SDL_SCANCODE_GRAVE</dfn> = <var>53</var>, <i class="doc">/**&lt; Located in the top left corner (on both ANSI</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc">                              *   and ISO keyboards). Produces GRAVE ACCENT and</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc">                              *   TILDE in a US Windows layout and in US and UK</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc">                              *   Mac layouts on ANSI keyboards, GRAVE ACCENT</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc">                              *   and NOT SIGN in a UK Windows layout, SECTION</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">                              *   SIGN and PLUS-MINUS SIGN in US and UK Mac</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc">                              *   layouts on ISO keyboards, SECTION SIGN and</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc">                              *   DEGREE SIGN in a Swiss German layout (Mac:</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc">                              *   only on ISO keyboards), CIRCUMFLEX ACCENT and</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc">                              *   DEGREE SIGN in a German layout (Mac: only on</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc">                              *   ISO keyboards), SUPERSCRIPT TWO and TILDE in a</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">                              *   French Windows layout, COMMERCIAL AT and</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">                              *   NUMBER SIGN in a French Mac layout on ISO</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">                              *   keyboards, and LESS-THAN SIGN and GREATER-THAN</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">                              *   SIGN in a Swiss German, German, or French Mac</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc">                              *   layout on ANSI keyboards.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">                              */</i></td></tr>
+<tr><th id="147">147</th><td>    <dfn class="enum" id="::SDL_SCANCODE_COMMA" title='::SDL_SCANCODE_COMMA' data-ref="::SDL_SCANCODE_COMMA">SDL_SCANCODE_COMMA</dfn> = <var>54</var>,</td></tr>
+<tr><th id="148">148</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PERIOD" title='::SDL_SCANCODE_PERIOD' data-ref="::SDL_SCANCODE_PERIOD">SDL_SCANCODE_PERIOD</dfn> = <var>55</var>,</td></tr>
+<tr><th id="149">149</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SLASH" title='::SDL_SCANCODE_SLASH' data-ref="::SDL_SCANCODE_SLASH">SDL_SCANCODE_SLASH</dfn> = <var>56</var>,</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CAPSLOCK" title='::SDL_SCANCODE_CAPSLOCK' data-ref="::SDL_SCANCODE_CAPSLOCK">SDL_SCANCODE_CAPSLOCK</dfn> = <var>57</var>,</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F1" title='::SDL_SCANCODE_F1' data-ref="::SDL_SCANCODE_F1">SDL_SCANCODE_F1</dfn> = <var>58</var>,</td></tr>
+<tr><th id="154">154</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F2" title='::SDL_SCANCODE_F2' data-ref="::SDL_SCANCODE_F2">SDL_SCANCODE_F2</dfn> = <var>59</var>,</td></tr>
+<tr><th id="155">155</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F3" title='::SDL_SCANCODE_F3' data-ref="::SDL_SCANCODE_F3">SDL_SCANCODE_F3</dfn> = <var>60</var>,</td></tr>
+<tr><th id="156">156</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F4" title='::SDL_SCANCODE_F4' data-ref="::SDL_SCANCODE_F4">SDL_SCANCODE_F4</dfn> = <var>61</var>,</td></tr>
+<tr><th id="157">157</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F5" title='::SDL_SCANCODE_F5' data-ref="::SDL_SCANCODE_F5">SDL_SCANCODE_F5</dfn> = <var>62</var>,</td></tr>
+<tr><th id="158">158</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F6" title='::SDL_SCANCODE_F6' data-ref="::SDL_SCANCODE_F6">SDL_SCANCODE_F6</dfn> = <var>63</var>,</td></tr>
+<tr><th id="159">159</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F7" title='::SDL_SCANCODE_F7' data-ref="::SDL_SCANCODE_F7">SDL_SCANCODE_F7</dfn> = <var>64</var>,</td></tr>
+<tr><th id="160">160</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F8" title='::SDL_SCANCODE_F8' data-ref="::SDL_SCANCODE_F8">SDL_SCANCODE_F8</dfn> = <var>65</var>,</td></tr>
+<tr><th id="161">161</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F9" title='::SDL_SCANCODE_F9' data-ref="::SDL_SCANCODE_F9">SDL_SCANCODE_F9</dfn> = <var>66</var>,</td></tr>
+<tr><th id="162">162</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F10" title='::SDL_SCANCODE_F10' data-ref="::SDL_SCANCODE_F10">SDL_SCANCODE_F10</dfn> = <var>67</var>,</td></tr>
+<tr><th id="163">163</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F11" title='::SDL_SCANCODE_F11' data-ref="::SDL_SCANCODE_F11">SDL_SCANCODE_F11</dfn> = <var>68</var>,</td></tr>
+<tr><th id="164">164</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F12" title='::SDL_SCANCODE_F12' data-ref="::SDL_SCANCODE_F12">SDL_SCANCODE_F12</dfn> = <var>69</var>,</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PRINTSCREEN" title='::SDL_SCANCODE_PRINTSCREEN' data-ref="::SDL_SCANCODE_PRINTSCREEN">SDL_SCANCODE_PRINTSCREEN</dfn> = <var>70</var>,</td></tr>
+<tr><th id="167">167</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SCROLLLOCK" title='::SDL_SCANCODE_SCROLLLOCK' data-ref="::SDL_SCANCODE_SCROLLLOCK">SDL_SCANCODE_SCROLLLOCK</dfn> = <var>71</var>,</td></tr>
+<tr><th id="168">168</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PAUSE" title='::SDL_SCANCODE_PAUSE' data-ref="::SDL_SCANCODE_PAUSE">SDL_SCANCODE_PAUSE</dfn> = <var>72</var>,</td></tr>
+<tr><th id="169">169</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INSERT" title='::SDL_SCANCODE_INSERT' data-ref="::SDL_SCANCODE_INSERT">SDL_SCANCODE_INSERT</dfn> = <var>73</var>, <i class="doc">/**&lt; insert on PC, help on some Mac keyboards (but</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc">                                   does send code 73, not 117) */</i></td></tr>
+<tr><th id="171">171</th><td>    <dfn class="enum" id="::SDL_SCANCODE_HOME" title='::SDL_SCANCODE_HOME' data-ref="::SDL_SCANCODE_HOME">SDL_SCANCODE_HOME</dfn> = <var>74</var>,</td></tr>
+<tr><th id="172">172</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PAGEUP" title='::SDL_SCANCODE_PAGEUP' data-ref="::SDL_SCANCODE_PAGEUP">SDL_SCANCODE_PAGEUP</dfn> = <var>75</var>,</td></tr>
+<tr><th id="173">173</th><td>    <dfn class="enum" id="::SDL_SCANCODE_DELETE" title='::SDL_SCANCODE_DELETE' data-ref="::SDL_SCANCODE_DELETE">SDL_SCANCODE_DELETE</dfn> = <var>76</var>,</td></tr>
+<tr><th id="174">174</th><td>    <dfn class="enum" id="::SDL_SCANCODE_END" title='::SDL_SCANCODE_END' data-ref="::SDL_SCANCODE_END">SDL_SCANCODE_END</dfn> = <var>77</var>,</td></tr>
+<tr><th id="175">175</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PAGEDOWN" title='::SDL_SCANCODE_PAGEDOWN' data-ref="::SDL_SCANCODE_PAGEDOWN">SDL_SCANCODE_PAGEDOWN</dfn> = <var>78</var>,</td></tr>
+<tr><th id="176">176</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RIGHT" title='::SDL_SCANCODE_RIGHT' data-ref="::SDL_SCANCODE_RIGHT">SDL_SCANCODE_RIGHT</dfn> = <var>79</var>,</td></tr>
+<tr><th id="177">177</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LEFT" title='::SDL_SCANCODE_LEFT' data-ref="::SDL_SCANCODE_LEFT">SDL_SCANCODE_LEFT</dfn> = <var>80</var>,</td></tr>
+<tr><th id="178">178</th><td>    <dfn class="enum" id="::SDL_SCANCODE_DOWN" title='::SDL_SCANCODE_DOWN' data-ref="::SDL_SCANCODE_DOWN">SDL_SCANCODE_DOWN</dfn> = <var>81</var>,</td></tr>
+<tr><th id="179">179</th><td>    <dfn class="enum" id="::SDL_SCANCODE_UP" title='::SDL_SCANCODE_UP' data-ref="::SDL_SCANCODE_UP">SDL_SCANCODE_UP</dfn> = <var>82</var>,</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td>    <dfn class="enum" id="::SDL_SCANCODE_NUMLOCKCLEAR" title='::SDL_SCANCODE_NUMLOCKCLEAR' data-ref="::SDL_SCANCODE_NUMLOCKCLEAR">SDL_SCANCODE_NUMLOCKCLEAR</dfn> = <var>83</var>, <i class="doc">/**&lt; num lock on PC, clear on Mac keyboards</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">                                     */</i></td></tr>
+<tr><th id="183">183</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_DIVIDE" title='::SDL_SCANCODE_KP_DIVIDE' data-ref="::SDL_SCANCODE_KP_DIVIDE">SDL_SCANCODE_KP_DIVIDE</dfn> = <var>84</var>,</td></tr>
+<tr><th id="184">184</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MULTIPLY" title='::SDL_SCANCODE_KP_MULTIPLY' data-ref="::SDL_SCANCODE_KP_MULTIPLY">SDL_SCANCODE_KP_MULTIPLY</dfn> = <var>85</var>,</td></tr>
+<tr><th id="185">185</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MINUS" title='::SDL_SCANCODE_KP_MINUS' data-ref="::SDL_SCANCODE_KP_MINUS">SDL_SCANCODE_KP_MINUS</dfn> = <var>86</var>,</td></tr>
+<tr><th id="186">186</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_PLUS" title='::SDL_SCANCODE_KP_PLUS' data-ref="::SDL_SCANCODE_KP_PLUS">SDL_SCANCODE_KP_PLUS</dfn> = <var>87</var>,</td></tr>
+<tr><th id="187">187</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_ENTER" title='::SDL_SCANCODE_KP_ENTER' data-ref="::SDL_SCANCODE_KP_ENTER">SDL_SCANCODE_KP_ENTER</dfn> = <var>88</var>,</td></tr>
+<tr><th id="188">188</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_1" title='::SDL_SCANCODE_KP_1' data-ref="::SDL_SCANCODE_KP_1">SDL_SCANCODE_KP_1</dfn> = <var>89</var>,</td></tr>
+<tr><th id="189">189</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_2" title='::SDL_SCANCODE_KP_2' data-ref="::SDL_SCANCODE_KP_2">SDL_SCANCODE_KP_2</dfn> = <var>90</var>,</td></tr>
+<tr><th id="190">190</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_3" title='::SDL_SCANCODE_KP_3' data-ref="::SDL_SCANCODE_KP_3">SDL_SCANCODE_KP_3</dfn> = <var>91</var>,</td></tr>
+<tr><th id="191">191</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_4" title='::SDL_SCANCODE_KP_4' data-ref="::SDL_SCANCODE_KP_4">SDL_SCANCODE_KP_4</dfn> = <var>92</var>,</td></tr>
+<tr><th id="192">192</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_5" title='::SDL_SCANCODE_KP_5' data-ref="::SDL_SCANCODE_KP_5">SDL_SCANCODE_KP_5</dfn> = <var>93</var>,</td></tr>
+<tr><th id="193">193</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_6" title='::SDL_SCANCODE_KP_6' data-ref="::SDL_SCANCODE_KP_6">SDL_SCANCODE_KP_6</dfn> = <var>94</var>,</td></tr>
+<tr><th id="194">194</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_7" title='::SDL_SCANCODE_KP_7' data-ref="::SDL_SCANCODE_KP_7">SDL_SCANCODE_KP_7</dfn> = <var>95</var>,</td></tr>
+<tr><th id="195">195</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_8" title='::SDL_SCANCODE_KP_8' data-ref="::SDL_SCANCODE_KP_8">SDL_SCANCODE_KP_8</dfn> = <var>96</var>,</td></tr>
+<tr><th id="196">196</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_9" title='::SDL_SCANCODE_KP_9' data-ref="::SDL_SCANCODE_KP_9">SDL_SCANCODE_KP_9</dfn> = <var>97</var>,</td></tr>
+<tr><th id="197">197</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_0" title='::SDL_SCANCODE_KP_0' data-ref="::SDL_SCANCODE_KP_0">SDL_SCANCODE_KP_0</dfn> = <var>98</var>,</td></tr>
+<tr><th id="198">198</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_PERIOD" title='::SDL_SCANCODE_KP_PERIOD' data-ref="::SDL_SCANCODE_KP_PERIOD">SDL_SCANCODE_KP_PERIOD</dfn> = <var>99</var>,</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td>    <dfn class="enum" id="::SDL_SCANCODE_NONUSBACKSLASH" title='::SDL_SCANCODE_NONUSBACKSLASH' data-ref="::SDL_SCANCODE_NONUSBACKSLASH">SDL_SCANCODE_NONUSBACKSLASH</dfn> = <var>100</var>, <i class="doc">/**&lt; This is the additional key that ISO</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc">                                        *   keyboards have over ANSI ones,</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc">                                        *   located between left shift and Y.</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc">                                        *   Produces GRAVE ACCENT and TILDE in a</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc">                                        *   US or UK Mac layout, REVERSE SOLIDUS</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc">                                        *   (backslash) and VERTICAL LINE in a</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc">                                        *   US or UK Windows layout, and</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc">                                        *   LESS-THAN SIGN and GREATER-THAN SIGN</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc">                                        *   in a Swiss German, German, or French</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc">                                        *   layout. */</i></td></tr>
+<tr><th id="210">210</th><td>    <dfn class="enum" id="::SDL_SCANCODE_APPLICATION" title='::SDL_SCANCODE_APPLICATION' data-ref="::SDL_SCANCODE_APPLICATION">SDL_SCANCODE_APPLICATION</dfn> = <var>101</var>, <i class="doc">/**&lt; windows contextual menu, compose */</i></td></tr>
+<tr><th id="211">211</th><td>    <dfn class="enum" id="::SDL_SCANCODE_POWER" title='::SDL_SCANCODE_POWER' data-ref="::SDL_SCANCODE_POWER">SDL_SCANCODE_POWER</dfn> = <var>102</var>, <i class="doc">/**&lt; The USB document says this is a status flag,</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc">                               *   not a physical key - but some Mac keyboards</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc">                               *   do have a power key. */</i></td></tr>
+<tr><th id="214">214</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_EQUALS" title='::SDL_SCANCODE_KP_EQUALS' data-ref="::SDL_SCANCODE_KP_EQUALS">SDL_SCANCODE_KP_EQUALS</dfn> = <var>103</var>,</td></tr>
+<tr><th id="215">215</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F13" title='::SDL_SCANCODE_F13' data-ref="::SDL_SCANCODE_F13">SDL_SCANCODE_F13</dfn> = <var>104</var>,</td></tr>
+<tr><th id="216">216</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F14" title='::SDL_SCANCODE_F14' data-ref="::SDL_SCANCODE_F14">SDL_SCANCODE_F14</dfn> = <var>105</var>,</td></tr>
+<tr><th id="217">217</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F15" title='::SDL_SCANCODE_F15' data-ref="::SDL_SCANCODE_F15">SDL_SCANCODE_F15</dfn> = <var>106</var>,</td></tr>
+<tr><th id="218">218</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F16" title='::SDL_SCANCODE_F16' data-ref="::SDL_SCANCODE_F16">SDL_SCANCODE_F16</dfn> = <var>107</var>,</td></tr>
+<tr><th id="219">219</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F17" title='::SDL_SCANCODE_F17' data-ref="::SDL_SCANCODE_F17">SDL_SCANCODE_F17</dfn> = <var>108</var>,</td></tr>
+<tr><th id="220">220</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F18" title='::SDL_SCANCODE_F18' data-ref="::SDL_SCANCODE_F18">SDL_SCANCODE_F18</dfn> = <var>109</var>,</td></tr>
+<tr><th id="221">221</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F19" title='::SDL_SCANCODE_F19' data-ref="::SDL_SCANCODE_F19">SDL_SCANCODE_F19</dfn> = <var>110</var>,</td></tr>
+<tr><th id="222">222</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F20" title='::SDL_SCANCODE_F20' data-ref="::SDL_SCANCODE_F20">SDL_SCANCODE_F20</dfn> = <var>111</var>,</td></tr>
+<tr><th id="223">223</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F21" title='::SDL_SCANCODE_F21' data-ref="::SDL_SCANCODE_F21">SDL_SCANCODE_F21</dfn> = <var>112</var>,</td></tr>
+<tr><th id="224">224</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F22" title='::SDL_SCANCODE_F22' data-ref="::SDL_SCANCODE_F22">SDL_SCANCODE_F22</dfn> = <var>113</var>,</td></tr>
+<tr><th id="225">225</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F23" title='::SDL_SCANCODE_F23' data-ref="::SDL_SCANCODE_F23">SDL_SCANCODE_F23</dfn> = <var>114</var>,</td></tr>
+<tr><th id="226">226</th><td>    <dfn class="enum" id="::SDL_SCANCODE_F24" title='::SDL_SCANCODE_F24' data-ref="::SDL_SCANCODE_F24">SDL_SCANCODE_F24</dfn> = <var>115</var>,</td></tr>
+<tr><th id="227">227</th><td>    <dfn class="enum" id="::SDL_SCANCODE_EXECUTE" title='::SDL_SCANCODE_EXECUTE' data-ref="::SDL_SCANCODE_EXECUTE">SDL_SCANCODE_EXECUTE</dfn> = <var>116</var>,</td></tr>
+<tr><th id="228">228</th><td>    <dfn class="enum" id="::SDL_SCANCODE_HELP" title='::SDL_SCANCODE_HELP' data-ref="::SDL_SCANCODE_HELP">SDL_SCANCODE_HELP</dfn> = <var>117</var>,</td></tr>
+<tr><th id="229">229</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MENU" title='::SDL_SCANCODE_MENU' data-ref="::SDL_SCANCODE_MENU">SDL_SCANCODE_MENU</dfn> = <var>118</var>,</td></tr>
+<tr><th id="230">230</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SELECT" title='::SDL_SCANCODE_SELECT' data-ref="::SDL_SCANCODE_SELECT">SDL_SCANCODE_SELECT</dfn> = <var>119</var>,</td></tr>
+<tr><th id="231">231</th><td>    <dfn class="enum" id="::SDL_SCANCODE_STOP" title='::SDL_SCANCODE_STOP' data-ref="::SDL_SCANCODE_STOP">SDL_SCANCODE_STOP</dfn> = <var>120</var>,</td></tr>
+<tr><th id="232">232</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AGAIN" title='::SDL_SCANCODE_AGAIN' data-ref="::SDL_SCANCODE_AGAIN">SDL_SCANCODE_AGAIN</dfn> = <var>121</var>,   <i class="doc">/**&lt; redo */</i></td></tr>
+<tr><th id="233">233</th><td>    <dfn class="enum" id="::SDL_SCANCODE_UNDO" title='::SDL_SCANCODE_UNDO' data-ref="::SDL_SCANCODE_UNDO">SDL_SCANCODE_UNDO</dfn> = <var>122</var>,</td></tr>
+<tr><th id="234">234</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CUT" title='::SDL_SCANCODE_CUT' data-ref="::SDL_SCANCODE_CUT">SDL_SCANCODE_CUT</dfn> = <var>123</var>,</td></tr>
+<tr><th id="235">235</th><td>    <dfn class="enum" id="::SDL_SCANCODE_COPY" title='::SDL_SCANCODE_COPY' data-ref="::SDL_SCANCODE_COPY">SDL_SCANCODE_COPY</dfn> = <var>124</var>,</td></tr>
+<tr><th id="236">236</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PASTE" title='::SDL_SCANCODE_PASTE' data-ref="::SDL_SCANCODE_PASTE">SDL_SCANCODE_PASTE</dfn> = <var>125</var>,</td></tr>
+<tr><th id="237">237</th><td>    <dfn class="enum" id="::SDL_SCANCODE_FIND" title='::SDL_SCANCODE_FIND' data-ref="::SDL_SCANCODE_FIND">SDL_SCANCODE_FIND</dfn> = <var>126</var>,</td></tr>
+<tr><th id="238">238</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MUTE" title='::SDL_SCANCODE_MUTE' data-ref="::SDL_SCANCODE_MUTE">SDL_SCANCODE_MUTE</dfn> = <var>127</var>,</td></tr>
+<tr><th id="239">239</th><td>    <dfn class="enum" id="::SDL_SCANCODE_VOLUMEUP" title='::SDL_SCANCODE_VOLUMEUP' data-ref="::SDL_SCANCODE_VOLUMEUP">SDL_SCANCODE_VOLUMEUP</dfn> = <var>128</var>,</td></tr>
+<tr><th id="240">240</th><td>    <dfn class="enum" id="::SDL_SCANCODE_VOLUMEDOWN" title='::SDL_SCANCODE_VOLUMEDOWN' data-ref="::SDL_SCANCODE_VOLUMEDOWN">SDL_SCANCODE_VOLUMEDOWN</dfn> = <var>129</var>,</td></tr>
+<tr><th id="241">241</th><td><i>/* not sure whether there's a reason to enable these */</i></td></tr>
+<tr><th id="242">242</th><td><i>/*     SDL_SCANCODE_LOCKINGCAPSLOCK = 130,  */</i></td></tr>
+<tr><th id="243">243</th><td><i>/*     SDL_SCANCODE_LOCKINGNUMLOCK = 131, */</i></td></tr>
+<tr><th id="244">244</th><td><i>/*     SDL_SCANCODE_LOCKINGSCROLLLOCK = 132, */</i></td></tr>
+<tr><th id="245">245</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_COMMA" title='::SDL_SCANCODE_KP_COMMA' data-ref="::SDL_SCANCODE_KP_COMMA">SDL_SCANCODE_KP_COMMA</dfn> = <var>133</var>,</td></tr>
+<tr><th id="246">246</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_EQUALSAS400" title='::SDL_SCANCODE_KP_EQUALSAS400' data-ref="::SDL_SCANCODE_KP_EQUALSAS400">SDL_SCANCODE_KP_EQUALSAS400</dfn> = <var>134</var>,</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL1" title='::SDL_SCANCODE_INTERNATIONAL1' data-ref="::SDL_SCANCODE_INTERNATIONAL1">SDL_SCANCODE_INTERNATIONAL1</dfn> = <var>135</var>, <i class="doc">/**&lt; used on Asian keyboards, see</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc">                                            footnotes in USB doc */</i></td></tr>
+<tr><th id="250">250</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL2" title='::SDL_SCANCODE_INTERNATIONAL2' data-ref="::SDL_SCANCODE_INTERNATIONAL2">SDL_SCANCODE_INTERNATIONAL2</dfn> = <var>136</var>,</td></tr>
+<tr><th id="251">251</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL3" title='::SDL_SCANCODE_INTERNATIONAL3' data-ref="::SDL_SCANCODE_INTERNATIONAL3">SDL_SCANCODE_INTERNATIONAL3</dfn> = <var>137</var>, <i class="doc">/**&lt; Yen */</i></td></tr>
+<tr><th id="252">252</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL4" title='::SDL_SCANCODE_INTERNATIONAL4' data-ref="::SDL_SCANCODE_INTERNATIONAL4">SDL_SCANCODE_INTERNATIONAL4</dfn> = <var>138</var>,</td></tr>
+<tr><th id="253">253</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL5" title='::SDL_SCANCODE_INTERNATIONAL5' data-ref="::SDL_SCANCODE_INTERNATIONAL5">SDL_SCANCODE_INTERNATIONAL5</dfn> = <var>139</var>,</td></tr>
+<tr><th id="254">254</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL6" title='::SDL_SCANCODE_INTERNATIONAL6' data-ref="::SDL_SCANCODE_INTERNATIONAL6">SDL_SCANCODE_INTERNATIONAL6</dfn> = <var>140</var>,</td></tr>
+<tr><th id="255">255</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL7" title='::SDL_SCANCODE_INTERNATIONAL7' data-ref="::SDL_SCANCODE_INTERNATIONAL7">SDL_SCANCODE_INTERNATIONAL7</dfn> = <var>141</var>,</td></tr>
+<tr><th id="256">256</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL8" title='::SDL_SCANCODE_INTERNATIONAL8' data-ref="::SDL_SCANCODE_INTERNATIONAL8">SDL_SCANCODE_INTERNATIONAL8</dfn> = <var>142</var>,</td></tr>
+<tr><th id="257">257</th><td>    <dfn class="enum" id="::SDL_SCANCODE_INTERNATIONAL9" title='::SDL_SCANCODE_INTERNATIONAL9' data-ref="::SDL_SCANCODE_INTERNATIONAL9">SDL_SCANCODE_INTERNATIONAL9</dfn> = <var>143</var>,</td></tr>
+<tr><th id="258">258</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG1" title='::SDL_SCANCODE_LANG1' data-ref="::SDL_SCANCODE_LANG1">SDL_SCANCODE_LANG1</dfn> = <var>144</var>, <i class="doc">/**&lt; Hangul/English toggle */</i></td></tr>
+<tr><th id="259">259</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG2" title='::SDL_SCANCODE_LANG2' data-ref="::SDL_SCANCODE_LANG2">SDL_SCANCODE_LANG2</dfn> = <var>145</var>, <i class="doc">/**&lt; Hanja conversion */</i></td></tr>
+<tr><th id="260">260</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG3" title='::SDL_SCANCODE_LANG3' data-ref="::SDL_SCANCODE_LANG3">SDL_SCANCODE_LANG3</dfn> = <var>146</var>, <i class="doc">/**&lt; Katakana */</i></td></tr>
+<tr><th id="261">261</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG4" title='::SDL_SCANCODE_LANG4' data-ref="::SDL_SCANCODE_LANG4">SDL_SCANCODE_LANG4</dfn> = <var>147</var>, <i class="doc">/**&lt; Hiragana */</i></td></tr>
+<tr><th id="262">262</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG5" title='::SDL_SCANCODE_LANG5' data-ref="::SDL_SCANCODE_LANG5">SDL_SCANCODE_LANG5</dfn> = <var>148</var>, <i class="doc">/**&lt; Zenkaku/Hankaku */</i></td></tr>
+<tr><th id="263">263</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG6" title='::SDL_SCANCODE_LANG6' data-ref="::SDL_SCANCODE_LANG6">SDL_SCANCODE_LANG6</dfn> = <var>149</var>, <i class="doc">/**&lt; reserved */</i></td></tr>
+<tr><th id="264">264</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG7" title='::SDL_SCANCODE_LANG7' data-ref="::SDL_SCANCODE_LANG7">SDL_SCANCODE_LANG7</dfn> = <var>150</var>, <i class="doc">/**&lt; reserved */</i></td></tr>
+<tr><th id="265">265</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG8" title='::SDL_SCANCODE_LANG8' data-ref="::SDL_SCANCODE_LANG8">SDL_SCANCODE_LANG8</dfn> = <var>151</var>, <i class="doc">/**&lt; reserved */</i></td></tr>
+<tr><th id="266">266</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LANG9" title='::SDL_SCANCODE_LANG9' data-ref="::SDL_SCANCODE_LANG9">SDL_SCANCODE_LANG9</dfn> = <var>152</var>, <i class="doc">/**&lt; reserved */</i></td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td>    <dfn class="enum" id="::SDL_SCANCODE_ALTERASE" title='::SDL_SCANCODE_ALTERASE' data-ref="::SDL_SCANCODE_ALTERASE">SDL_SCANCODE_ALTERASE</dfn> = <var>153</var>, <i class="doc">/**&lt; Erase-Eaze */</i></td></tr>
+<tr><th id="269">269</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SYSREQ" title='::SDL_SCANCODE_SYSREQ' data-ref="::SDL_SCANCODE_SYSREQ">SDL_SCANCODE_SYSREQ</dfn> = <var>154</var>,</td></tr>
+<tr><th id="270">270</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CANCEL" title='::SDL_SCANCODE_CANCEL' data-ref="::SDL_SCANCODE_CANCEL">SDL_SCANCODE_CANCEL</dfn> = <var>155</var>,</td></tr>
+<tr><th id="271">271</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CLEAR" title='::SDL_SCANCODE_CLEAR' data-ref="::SDL_SCANCODE_CLEAR">SDL_SCANCODE_CLEAR</dfn> = <var>156</var>,</td></tr>
+<tr><th id="272">272</th><td>    <dfn class="enum" id="::SDL_SCANCODE_PRIOR" title='::SDL_SCANCODE_PRIOR' data-ref="::SDL_SCANCODE_PRIOR">SDL_SCANCODE_PRIOR</dfn> = <var>157</var>,</td></tr>
+<tr><th id="273">273</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RETURN2" title='::SDL_SCANCODE_RETURN2' data-ref="::SDL_SCANCODE_RETURN2">SDL_SCANCODE_RETURN2</dfn> = <var>158</var>,</td></tr>
+<tr><th id="274">274</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SEPARATOR" title='::SDL_SCANCODE_SEPARATOR' data-ref="::SDL_SCANCODE_SEPARATOR">SDL_SCANCODE_SEPARATOR</dfn> = <var>159</var>,</td></tr>
+<tr><th id="275">275</th><td>    <dfn class="enum" id="::SDL_SCANCODE_OUT" title='::SDL_SCANCODE_OUT' data-ref="::SDL_SCANCODE_OUT">SDL_SCANCODE_OUT</dfn> = <var>160</var>,</td></tr>
+<tr><th id="276">276</th><td>    <dfn class="enum" id="::SDL_SCANCODE_OPER" title='::SDL_SCANCODE_OPER' data-ref="::SDL_SCANCODE_OPER">SDL_SCANCODE_OPER</dfn> = <var>161</var>,</td></tr>
+<tr><th id="277">277</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CLEARAGAIN" title='::SDL_SCANCODE_CLEARAGAIN' data-ref="::SDL_SCANCODE_CLEARAGAIN">SDL_SCANCODE_CLEARAGAIN</dfn> = <var>162</var>,</td></tr>
+<tr><th id="278">278</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CRSEL" title='::SDL_SCANCODE_CRSEL' data-ref="::SDL_SCANCODE_CRSEL">SDL_SCANCODE_CRSEL</dfn> = <var>163</var>,</td></tr>
+<tr><th id="279">279</th><td>    <dfn class="enum" id="::SDL_SCANCODE_EXSEL" title='::SDL_SCANCODE_EXSEL' data-ref="::SDL_SCANCODE_EXSEL">SDL_SCANCODE_EXSEL</dfn> = <var>164</var>,</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_00" title='::SDL_SCANCODE_KP_00' data-ref="::SDL_SCANCODE_KP_00">SDL_SCANCODE_KP_00</dfn> = <var>176</var>,</td></tr>
+<tr><th id="282">282</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_000" title='::SDL_SCANCODE_KP_000' data-ref="::SDL_SCANCODE_KP_000">SDL_SCANCODE_KP_000</dfn> = <var>177</var>,</td></tr>
+<tr><th id="283">283</th><td>    <dfn class="enum" id="::SDL_SCANCODE_THOUSANDSSEPARATOR" title='::SDL_SCANCODE_THOUSANDSSEPARATOR' data-ref="::SDL_SCANCODE_THOUSANDSSEPARATOR">SDL_SCANCODE_THOUSANDSSEPARATOR</dfn> = <var>178</var>,</td></tr>
+<tr><th id="284">284</th><td>    <dfn class="enum" id="::SDL_SCANCODE_DECIMALSEPARATOR" title='::SDL_SCANCODE_DECIMALSEPARATOR' data-ref="::SDL_SCANCODE_DECIMALSEPARATOR">SDL_SCANCODE_DECIMALSEPARATOR</dfn> = <var>179</var>,</td></tr>
+<tr><th id="285">285</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CURRENCYUNIT" title='::SDL_SCANCODE_CURRENCYUNIT' data-ref="::SDL_SCANCODE_CURRENCYUNIT">SDL_SCANCODE_CURRENCYUNIT</dfn> = <var>180</var>,</td></tr>
+<tr><th id="286">286</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CURRENCYSUBUNIT" title='::SDL_SCANCODE_CURRENCYSUBUNIT' data-ref="::SDL_SCANCODE_CURRENCYSUBUNIT">SDL_SCANCODE_CURRENCYSUBUNIT</dfn> = <var>181</var>,</td></tr>
+<tr><th id="287">287</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_LEFTPAREN" title='::SDL_SCANCODE_KP_LEFTPAREN' data-ref="::SDL_SCANCODE_KP_LEFTPAREN">SDL_SCANCODE_KP_LEFTPAREN</dfn> = <var>182</var>,</td></tr>
+<tr><th id="288">288</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_RIGHTPAREN" title='::SDL_SCANCODE_KP_RIGHTPAREN' data-ref="::SDL_SCANCODE_KP_RIGHTPAREN">SDL_SCANCODE_KP_RIGHTPAREN</dfn> = <var>183</var>,</td></tr>
+<tr><th id="289">289</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_LEFTBRACE" title='::SDL_SCANCODE_KP_LEFTBRACE' data-ref="::SDL_SCANCODE_KP_LEFTBRACE">SDL_SCANCODE_KP_LEFTBRACE</dfn> = <var>184</var>,</td></tr>
+<tr><th id="290">290</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_RIGHTBRACE" title='::SDL_SCANCODE_KP_RIGHTBRACE' data-ref="::SDL_SCANCODE_KP_RIGHTBRACE">SDL_SCANCODE_KP_RIGHTBRACE</dfn> = <var>185</var>,</td></tr>
+<tr><th id="291">291</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_TAB" title='::SDL_SCANCODE_KP_TAB' data-ref="::SDL_SCANCODE_KP_TAB">SDL_SCANCODE_KP_TAB</dfn> = <var>186</var>,</td></tr>
+<tr><th id="292">292</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_BACKSPACE" title='::SDL_SCANCODE_KP_BACKSPACE' data-ref="::SDL_SCANCODE_KP_BACKSPACE">SDL_SCANCODE_KP_BACKSPACE</dfn> = <var>187</var>,</td></tr>
+<tr><th id="293">293</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_A" title='::SDL_SCANCODE_KP_A' data-ref="::SDL_SCANCODE_KP_A">SDL_SCANCODE_KP_A</dfn> = <var>188</var>,</td></tr>
+<tr><th id="294">294</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_B" title='::SDL_SCANCODE_KP_B' data-ref="::SDL_SCANCODE_KP_B">SDL_SCANCODE_KP_B</dfn> = <var>189</var>,</td></tr>
+<tr><th id="295">295</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_C" title='::SDL_SCANCODE_KP_C' data-ref="::SDL_SCANCODE_KP_C">SDL_SCANCODE_KP_C</dfn> = <var>190</var>,</td></tr>
+<tr><th id="296">296</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_D" title='::SDL_SCANCODE_KP_D' data-ref="::SDL_SCANCODE_KP_D">SDL_SCANCODE_KP_D</dfn> = <var>191</var>,</td></tr>
+<tr><th id="297">297</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_E" title='::SDL_SCANCODE_KP_E' data-ref="::SDL_SCANCODE_KP_E">SDL_SCANCODE_KP_E</dfn> = <var>192</var>,</td></tr>
+<tr><th id="298">298</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_F" title='::SDL_SCANCODE_KP_F' data-ref="::SDL_SCANCODE_KP_F">SDL_SCANCODE_KP_F</dfn> = <var>193</var>,</td></tr>
+<tr><th id="299">299</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_XOR" title='::SDL_SCANCODE_KP_XOR' data-ref="::SDL_SCANCODE_KP_XOR">SDL_SCANCODE_KP_XOR</dfn> = <var>194</var>,</td></tr>
+<tr><th id="300">300</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_POWER" title='::SDL_SCANCODE_KP_POWER' data-ref="::SDL_SCANCODE_KP_POWER">SDL_SCANCODE_KP_POWER</dfn> = <var>195</var>,</td></tr>
+<tr><th id="301">301</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_PERCENT" title='::SDL_SCANCODE_KP_PERCENT' data-ref="::SDL_SCANCODE_KP_PERCENT">SDL_SCANCODE_KP_PERCENT</dfn> = <var>196</var>,</td></tr>
+<tr><th id="302">302</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_LESS" title='::SDL_SCANCODE_KP_LESS' data-ref="::SDL_SCANCODE_KP_LESS">SDL_SCANCODE_KP_LESS</dfn> = <var>197</var>,</td></tr>
+<tr><th id="303">303</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_GREATER" title='::SDL_SCANCODE_KP_GREATER' data-ref="::SDL_SCANCODE_KP_GREATER">SDL_SCANCODE_KP_GREATER</dfn> = <var>198</var>,</td></tr>
+<tr><th id="304">304</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_AMPERSAND" title='::SDL_SCANCODE_KP_AMPERSAND' data-ref="::SDL_SCANCODE_KP_AMPERSAND">SDL_SCANCODE_KP_AMPERSAND</dfn> = <var>199</var>,</td></tr>
+<tr><th id="305">305</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_DBLAMPERSAND" title='::SDL_SCANCODE_KP_DBLAMPERSAND' data-ref="::SDL_SCANCODE_KP_DBLAMPERSAND">SDL_SCANCODE_KP_DBLAMPERSAND</dfn> = <var>200</var>,</td></tr>
+<tr><th id="306">306</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_VERTICALBAR" title='::SDL_SCANCODE_KP_VERTICALBAR' data-ref="::SDL_SCANCODE_KP_VERTICALBAR">SDL_SCANCODE_KP_VERTICALBAR</dfn> = <var>201</var>,</td></tr>
+<tr><th id="307">307</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_DBLVERTICALBAR" title='::SDL_SCANCODE_KP_DBLVERTICALBAR' data-ref="::SDL_SCANCODE_KP_DBLVERTICALBAR">SDL_SCANCODE_KP_DBLVERTICALBAR</dfn> = <var>202</var>,</td></tr>
+<tr><th id="308">308</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_COLON" title='::SDL_SCANCODE_KP_COLON' data-ref="::SDL_SCANCODE_KP_COLON">SDL_SCANCODE_KP_COLON</dfn> = <var>203</var>,</td></tr>
+<tr><th id="309">309</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_HASH" title='::SDL_SCANCODE_KP_HASH' data-ref="::SDL_SCANCODE_KP_HASH">SDL_SCANCODE_KP_HASH</dfn> = <var>204</var>,</td></tr>
+<tr><th id="310">310</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_SPACE" title='::SDL_SCANCODE_KP_SPACE' data-ref="::SDL_SCANCODE_KP_SPACE">SDL_SCANCODE_KP_SPACE</dfn> = <var>205</var>,</td></tr>
+<tr><th id="311">311</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_AT" title='::SDL_SCANCODE_KP_AT' data-ref="::SDL_SCANCODE_KP_AT">SDL_SCANCODE_KP_AT</dfn> = <var>206</var>,</td></tr>
+<tr><th id="312">312</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_EXCLAM" title='::SDL_SCANCODE_KP_EXCLAM' data-ref="::SDL_SCANCODE_KP_EXCLAM">SDL_SCANCODE_KP_EXCLAM</dfn> = <var>207</var>,</td></tr>
+<tr><th id="313">313</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMSTORE" title='::SDL_SCANCODE_KP_MEMSTORE' data-ref="::SDL_SCANCODE_KP_MEMSTORE">SDL_SCANCODE_KP_MEMSTORE</dfn> = <var>208</var>,</td></tr>
+<tr><th id="314">314</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMRECALL" title='::SDL_SCANCODE_KP_MEMRECALL' data-ref="::SDL_SCANCODE_KP_MEMRECALL">SDL_SCANCODE_KP_MEMRECALL</dfn> = <var>209</var>,</td></tr>
+<tr><th id="315">315</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMCLEAR" title='::SDL_SCANCODE_KP_MEMCLEAR' data-ref="::SDL_SCANCODE_KP_MEMCLEAR">SDL_SCANCODE_KP_MEMCLEAR</dfn> = <var>210</var>,</td></tr>
+<tr><th id="316">316</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMADD" title='::SDL_SCANCODE_KP_MEMADD' data-ref="::SDL_SCANCODE_KP_MEMADD">SDL_SCANCODE_KP_MEMADD</dfn> = <var>211</var>,</td></tr>
+<tr><th id="317">317</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMSUBTRACT" title='::SDL_SCANCODE_KP_MEMSUBTRACT' data-ref="::SDL_SCANCODE_KP_MEMSUBTRACT">SDL_SCANCODE_KP_MEMSUBTRACT</dfn> = <var>212</var>,</td></tr>
+<tr><th id="318">318</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMMULTIPLY" title='::SDL_SCANCODE_KP_MEMMULTIPLY' data-ref="::SDL_SCANCODE_KP_MEMMULTIPLY">SDL_SCANCODE_KP_MEMMULTIPLY</dfn> = <var>213</var>,</td></tr>
+<tr><th id="319">319</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_MEMDIVIDE" title='::SDL_SCANCODE_KP_MEMDIVIDE' data-ref="::SDL_SCANCODE_KP_MEMDIVIDE">SDL_SCANCODE_KP_MEMDIVIDE</dfn> = <var>214</var>,</td></tr>
+<tr><th id="320">320</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_PLUSMINUS" title='::SDL_SCANCODE_KP_PLUSMINUS' data-ref="::SDL_SCANCODE_KP_PLUSMINUS">SDL_SCANCODE_KP_PLUSMINUS</dfn> = <var>215</var>,</td></tr>
+<tr><th id="321">321</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_CLEAR" title='::SDL_SCANCODE_KP_CLEAR' data-ref="::SDL_SCANCODE_KP_CLEAR">SDL_SCANCODE_KP_CLEAR</dfn> = <var>216</var>,</td></tr>
+<tr><th id="322">322</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_CLEARENTRY" title='::SDL_SCANCODE_KP_CLEARENTRY' data-ref="::SDL_SCANCODE_KP_CLEARENTRY">SDL_SCANCODE_KP_CLEARENTRY</dfn> = <var>217</var>,</td></tr>
+<tr><th id="323">323</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_BINARY" title='::SDL_SCANCODE_KP_BINARY' data-ref="::SDL_SCANCODE_KP_BINARY">SDL_SCANCODE_KP_BINARY</dfn> = <var>218</var>,</td></tr>
+<tr><th id="324">324</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_OCTAL" title='::SDL_SCANCODE_KP_OCTAL' data-ref="::SDL_SCANCODE_KP_OCTAL">SDL_SCANCODE_KP_OCTAL</dfn> = <var>219</var>,</td></tr>
+<tr><th id="325">325</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_DECIMAL" title='::SDL_SCANCODE_KP_DECIMAL' data-ref="::SDL_SCANCODE_KP_DECIMAL">SDL_SCANCODE_KP_DECIMAL</dfn> = <var>220</var>,</td></tr>
+<tr><th id="326">326</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KP_HEXADECIMAL" title='::SDL_SCANCODE_KP_HEXADECIMAL' data-ref="::SDL_SCANCODE_KP_HEXADECIMAL">SDL_SCANCODE_KP_HEXADECIMAL</dfn> = <var>221</var>,</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LCTRL" title='::SDL_SCANCODE_LCTRL' data-ref="::SDL_SCANCODE_LCTRL">SDL_SCANCODE_LCTRL</dfn> = <var>224</var>,</td></tr>
+<tr><th id="329">329</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LSHIFT" title='::SDL_SCANCODE_LSHIFT' data-ref="::SDL_SCANCODE_LSHIFT">SDL_SCANCODE_LSHIFT</dfn> = <var>225</var>,</td></tr>
+<tr><th id="330">330</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LALT" title='::SDL_SCANCODE_LALT' data-ref="::SDL_SCANCODE_LALT">SDL_SCANCODE_LALT</dfn> = <var>226</var>, <i class="doc">/**&lt; alt, option */</i></td></tr>
+<tr><th id="331">331</th><td>    <dfn class="enum" id="::SDL_SCANCODE_LGUI" title='::SDL_SCANCODE_LGUI' data-ref="::SDL_SCANCODE_LGUI">SDL_SCANCODE_LGUI</dfn> = <var>227</var>, <i class="doc">/**&lt; windows, command (apple), meta */</i></td></tr>
+<tr><th id="332">332</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RCTRL" title='::SDL_SCANCODE_RCTRL' data-ref="::SDL_SCANCODE_RCTRL">SDL_SCANCODE_RCTRL</dfn> = <var>228</var>,</td></tr>
+<tr><th id="333">333</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RSHIFT" title='::SDL_SCANCODE_RSHIFT' data-ref="::SDL_SCANCODE_RSHIFT">SDL_SCANCODE_RSHIFT</dfn> = <var>229</var>,</td></tr>
+<tr><th id="334">334</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RALT" title='::SDL_SCANCODE_RALT' data-ref="::SDL_SCANCODE_RALT">SDL_SCANCODE_RALT</dfn> = <var>230</var>, <i class="doc">/**&lt; alt gr, option */</i></td></tr>
+<tr><th id="335">335</th><td>    <dfn class="enum" id="::SDL_SCANCODE_RGUI" title='::SDL_SCANCODE_RGUI' data-ref="::SDL_SCANCODE_RGUI">SDL_SCANCODE_RGUI</dfn> = <var>231</var>, <i class="doc">/**&lt; windows, command (apple), meta */</i></td></tr>
+<tr><th id="336">336</th><td></td></tr>
+<tr><th id="337">337</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MODE" title='::SDL_SCANCODE_MODE' data-ref="::SDL_SCANCODE_MODE">SDL_SCANCODE_MODE</dfn> = <var>257</var>,    <i class="doc">/**&lt; I'm not sure if this is really not covered</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc">                                 *   by any of the above, but since there's a</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc">                                 *   special KMOD_MODE for it I'm adding it here</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc">                                 */</i></td></tr>
+<tr><th id="341">341</th><td></td></tr>
+<tr><th id="342">342</th><td>    <i>/* @} */</i><i>/* Usage page 0x07 */</i></td></tr>
+<tr><th id="343">343</th><td></td></tr>
+<tr><th id="344">344</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc">     *  <span class="command">\name</span> <span class="verb">Usage page 0x0C</span></i></td></tr>
+<tr><th id="346">346</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc">     *  These values are mapped from usage page 0x0C (USB consumer page).</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="349">349</th><td>    <i>/* @{ */</i></td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AUDIONEXT" title='::SDL_SCANCODE_AUDIONEXT' data-ref="::SDL_SCANCODE_AUDIONEXT">SDL_SCANCODE_AUDIONEXT</dfn> = <var>258</var>,</td></tr>
+<tr><th id="352">352</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AUDIOPREV" title='::SDL_SCANCODE_AUDIOPREV' data-ref="::SDL_SCANCODE_AUDIOPREV">SDL_SCANCODE_AUDIOPREV</dfn> = <var>259</var>,</td></tr>
+<tr><th id="353">353</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AUDIOSTOP" title='::SDL_SCANCODE_AUDIOSTOP' data-ref="::SDL_SCANCODE_AUDIOSTOP">SDL_SCANCODE_AUDIOSTOP</dfn> = <var>260</var>,</td></tr>
+<tr><th id="354">354</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AUDIOPLAY" title='::SDL_SCANCODE_AUDIOPLAY' data-ref="::SDL_SCANCODE_AUDIOPLAY">SDL_SCANCODE_AUDIOPLAY</dfn> = <var>261</var>,</td></tr>
+<tr><th id="355">355</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AUDIOMUTE" title='::SDL_SCANCODE_AUDIOMUTE' data-ref="::SDL_SCANCODE_AUDIOMUTE">SDL_SCANCODE_AUDIOMUTE</dfn> = <var>262</var>,</td></tr>
+<tr><th id="356">356</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MEDIASELECT" title='::SDL_SCANCODE_MEDIASELECT' data-ref="::SDL_SCANCODE_MEDIASELECT">SDL_SCANCODE_MEDIASELECT</dfn> = <var>263</var>,</td></tr>
+<tr><th id="357">357</th><td>    <dfn class="enum" id="::SDL_SCANCODE_WWW" title='::SDL_SCANCODE_WWW' data-ref="::SDL_SCANCODE_WWW">SDL_SCANCODE_WWW</dfn> = <var>264</var>,</td></tr>
+<tr><th id="358">358</th><td>    <dfn class="enum" id="::SDL_SCANCODE_MAIL" title='::SDL_SCANCODE_MAIL' data-ref="::SDL_SCANCODE_MAIL">SDL_SCANCODE_MAIL</dfn> = <var>265</var>,</td></tr>
+<tr><th id="359">359</th><td>    <dfn class="enum" id="::SDL_SCANCODE_CALCULATOR" title='::SDL_SCANCODE_CALCULATOR' data-ref="::SDL_SCANCODE_CALCULATOR">SDL_SCANCODE_CALCULATOR</dfn> = <var>266</var>,</td></tr>
+<tr><th id="360">360</th><td>    <dfn class="enum" id="::SDL_SCANCODE_COMPUTER" title='::SDL_SCANCODE_COMPUTER' data-ref="::SDL_SCANCODE_COMPUTER">SDL_SCANCODE_COMPUTER</dfn> = <var>267</var>,</td></tr>
+<tr><th id="361">361</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_SEARCH" title='::SDL_SCANCODE_AC_SEARCH' data-ref="::SDL_SCANCODE_AC_SEARCH">SDL_SCANCODE_AC_SEARCH</dfn> = <var>268</var>,</td></tr>
+<tr><th id="362">362</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_HOME" title='::SDL_SCANCODE_AC_HOME' data-ref="::SDL_SCANCODE_AC_HOME">SDL_SCANCODE_AC_HOME</dfn> = <var>269</var>,</td></tr>
+<tr><th id="363">363</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_BACK" title='::SDL_SCANCODE_AC_BACK' data-ref="::SDL_SCANCODE_AC_BACK">SDL_SCANCODE_AC_BACK</dfn> = <var>270</var>,</td></tr>
+<tr><th id="364">364</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_FORWARD" title='::SDL_SCANCODE_AC_FORWARD' data-ref="::SDL_SCANCODE_AC_FORWARD">SDL_SCANCODE_AC_FORWARD</dfn> = <var>271</var>,</td></tr>
+<tr><th id="365">365</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_STOP" title='::SDL_SCANCODE_AC_STOP' data-ref="::SDL_SCANCODE_AC_STOP">SDL_SCANCODE_AC_STOP</dfn> = <var>272</var>,</td></tr>
+<tr><th id="366">366</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_REFRESH" title='::SDL_SCANCODE_AC_REFRESH' data-ref="::SDL_SCANCODE_AC_REFRESH">SDL_SCANCODE_AC_REFRESH</dfn> = <var>273</var>,</td></tr>
+<tr><th id="367">367</th><td>    <dfn class="enum" id="::SDL_SCANCODE_AC_BOOKMARKS" title='::SDL_SCANCODE_AC_BOOKMARKS' data-ref="::SDL_SCANCODE_AC_BOOKMARKS">SDL_SCANCODE_AC_BOOKMARKS</dfn> = <var>274</var>,</td></tr>
+<tr><th id="368">368</th><td></td></tr>
+<tr><th id="369">369</th><td>    <i>/* @} */</i><i>/* Usage page 0x0C */</i></td></tr>
+<tr><th id="370">370</th><td></td></tr>
+<tr><th id="371">371</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="372">372</th><td><i class="doc">     *  <span class="command">\name</span> <span class="verb">Walther keys</span></i></td></tr>
+<tr><th id="373">373</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc">     *  These are values that Christian Walther added (for mac keyboard?).</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="376">376</th><td>    <i>/* @{ */</i></td></tr>
+<tr><th id="377">377</th><td></td></tr>
+<tr><th id="378">378</th><td>    <dfn class="enum" id="::SDL_SCANCODE_BRIGHTNESSDOWN" title='::SDL_SCANCODE_BRIGHTNESSDOWN' data-ref="::SDL_SCANCODE_BRIGHTNESSDOWN">SDL_SCANCODE_BRIGHTNESSDOWN</dfn> = <var>275</var>,</td></tr>
+<tr><th id="379">379</th><td>    <dfn class="enum" id="::SDL_SCANCODE_BRIGHTNESSUP" title='::SDL_SCANCODE_BRIGHTNESSUP' data-ref="::SDL_SCANCODE_BRIGHTNESSUP">SDL_SCANCODE_BRIGHTNESSUP</dfn> = <var>276</var>,</td></tr>
+<tr><th id="380">380</th><td>    <dfn class="enum" id="::SDL_SCANCODE_DISPLAYSWITCH" title='::SDL_SCANCODE_DISPLAYSWITCH' data-ref="::SDL_SCANCODE_DISPLAYSWITCH">SDL_SCANCODE_DISPLAYSWITCH</dfn> = <var>277</var>, <i class="doc">/**&lt; display mirroring/dual display</i></td></tr>
+<tr><th id="381">381</th><td><i class="doc">                                           switch, video mode switch */</i></td></tr>
+<tr><th id="382">382</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KBDILLUMTOGGLE" title='::SDL_SCANCODE_KBDILLUMTOGGLE' data-ref="::SDL_SCANCODE_KBDILLUMTOGGLE">SDL_SCANCODE_KBDILLUMTOGGLE</dfn> = <var>278</var>,</td></tr>
+<tr><th id="383">383</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KBDILLUMDOWN" title='::SDL_SCANCODE_KBDILLUMDOWN' data-ref="::SDL_SCANCODE_KBDILLUMDOWN">SDL_SCANCODE_KBDILLUMDOWN</dfn> = <var>279</var>,</td></tr>
+<tr><th id="384">384</th><td>    <dfn class="enum" id="::SDL_SCANCODE_KBDILLUMUP" title='::SDL_SCANCODE_KBDILLUMUP' data-ref="::SDL_SCANCODE_KBDILLUMUP">SDL_SCANCODE_KBDILLUMUP</dfn> = <var>280</var>,</td></tr>
+<tr><th id="385">385</th><td>    <dfn class="enum" id="::SDL_SCANCODE_EJECT" title='::SDL_SCANCODE_EJECT' data-ref="::SDL_SCANCODE_EJECT">SDL_SCANCODE_EJECT</dfn> = <var>281</var>,</td></tr>
+<tr><th id="386">386</th><td>    <dfn class="enum" id="::SDL_SCANCODE_SLEEP" title='::SDL_SCANCODE_SLEEP' data-ref="::SDL_SCANCODE_SLEEP">SDL_SCANCODE_SLEEP</dfn> = <var>282</var>,</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td>    <dfn class="enum" id="::SDL_SCANCODE_APP1" title='::SDL_SCANCODE_APP1' data-ref="::SDL_SCANCODE_APP1">SDL_SCANCODE_APP1</dfn> = <var>283</var>,</td></tr>
+<tr><th id="389">389</th><td>    <dfn class="enum" id="::SDL_SCANCODE_APP2" title='::SDL_SCANCODE_APP2' data-ref="::SDL_SCANCODE_APP2">SDL_SCANCODE_APP2</dfn> = <var>284</var>,</td></tr>
+<tr><th id="390">390</th><td></td></tr>
+<tr><th id="391">391</th><td>    <i>/* @} */</i><i>/* Walther keys */</i></td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td>    <i>/* Add any other keys here. */</i></td></tr>
+<tr><th id="394">394</th><td></td></tr>
+<tr><th id="395">395</th><td>    <dfn class="enum" id="::SDL_NUM_SCANCODES" title='::SDL_NUM_SCANCODES' data-ref="::SDL_NUM_SCANCODES">SDL_NUM_SCANCODES</dfn> = <var>512</var> <i class="doc">/**&lt; not a key, just marks the number of scancodes</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc">                                 for array bounds */</i></td></tr>
+<tr><th id="397">397</th><td>} <dfn class="typedef" id="SDL_Scancode" title='SDL_Scancode' data-type='enum SDL_Scancode' data-ref="SDL_Scancode">SDL_Scancode</dfn>;</td></tr>
+<tr><th id="398">398</th><td></td></tr>
+<tr><th id="399">399</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_scancode_h */</u></td></tr>
+<tr><th id="400">400</th><td></td></tr>
+<tr><th id="401">401</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="402">402</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

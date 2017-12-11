@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='213' type='bool Solarus::Entity::is_visible() const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1237' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1246' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1472' ll='1474' type='bool Solarus::Entity::is_visible() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1468'>/**
+ * \brief Returns whether this entity is currently visible.
+ * \return true if this entity is currently visible
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1515' u='c' c='_ZN7Solarus10LuaContext21entity_api_is_visibleEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='512' type='static int Solarus::LuaContext::menu_api_start(lua_State * )'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='38' u='r' c='_ZN7Solarus10LuaContext20register_menu_moduleEv'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='183' ll='201' type='static int Solarus::LuaContext::menu_api_start(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='178'>/**
+ * \brief Implementation of sol.menu.start().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

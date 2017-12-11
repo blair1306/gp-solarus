@@ -1,0 +1,24 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/StairsState.h' l='30' ll='70'/>
+<size>96</size>
+<doc f='codebrowser/include/solarus/hero/StairsState.h' l='27'>/**
+ * \brief The state &quot;Stairs&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero11StairsStateC1ERS0_RKSt10shared_ptrIKNS_6StairsEENS4_3WayE'/>
+<fun r='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero11StairsState7set_mapERNS_3MapE'/>
+<fun r='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<fun r='_ZN7Solarus4Hero11StairsState13set_suspendedEb'/>
+<fun r='_ZNK7Solarus4Hero11StairsState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero11StairsState24can_come_from_bad_groundEv'/>
+<fun r='_ZNK7Solarus4Hero11StairsState26is_teletransporter_delayedEv'/>
+<fun r='_ZNK7Solarus4Hero11StairsState30get_wanted_movement_direction8Ev'/>
+<fun r='_ZNK7Solarus4Hero11StairsState18get_carried_objectEv'/>
+<fun r='_ZNK7Solarus4Hero11StairsState36get_previous_carried_object_behaviorEv'/>
+<fun r='_ZN7Solarus4Hero11StairsState20notify_layer_changedEv'/>
+<mbr r='Solarus::Hero::StairsState::stairs' o='384' t='std::shared_ptr&lt;const Stairs&gt;'/>
+<mbr r='Solarus::Hero::StairsState::way' o='512' t='Stairs::Way'/>
+<mbr r='Solarus::Hero::StairsState::phase' o='544' t='int'/>
+<mbr r='Solarus::Hero::StairsState::next_phase_date' o='576' t='uint32_t'/>
+<mbr r='Solarus::Hero::StairsState::carried_object' o='640' t='std::shared_ptr&lt;CarriedObject&gt;'/>

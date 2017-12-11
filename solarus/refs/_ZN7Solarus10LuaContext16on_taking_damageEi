@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1246' type='bool Solarus::LuaContext::on_taking_damage(int damage)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5984' u='c' c='_ZN7Solarus10LuaContext21hero_on_taking_damageERNS_4HeroEi'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2216' ll='2224' type='bool Solarus::LuaContext::on_taking_damage(int damage)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2212'>/**
+ * \brief Calls the on_taking_damage() method of the object on top of the stack.
+ * \param damage The damage to take.
+ */</doc>

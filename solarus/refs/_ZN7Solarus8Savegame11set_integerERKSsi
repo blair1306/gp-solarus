@@ -1,0 +1,39 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='100' type='void Solarus::Savegame::set_integer(const std::string &amp; key, int value)'/>
+<use f='codebrowser/src/Equipment.cpp' l='149' u='c' c='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='177' u='c' c='_ZN7Solarus9Equipment9set_moneyEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='230' u='c' c='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='258' u='c' c='_ZN7Solarus9Equipment8set_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='316' u='c' c='_ZN7Solarus9Equipment13set_max_magicEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='341' u='c' c='_ZN7Solarus9Equipment9set_magicEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='607' u='c' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='410' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='446' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<use f='codebrowser/src/Savegame.cpp' l='136' u='c' c='_ZN7Solarus8Savegame18set_initial_valuesEv'/>
+<use f='codebrowser/src/Savegame.cpp' l='266' u='c' c='_ZN7Solarus8Savegame10l_newindexEP9lua_State'/>
+<def f='codebrowser/src/Savegame.cpp' l='484' ll='491' type='void Solarus::Savegame::set_integer(const std::string &amp; key, int value)'/>
+<doc f='codebrowser/src/Savegame.cpp' l='479'>/**
+ * \brief Sets an integer value saved.
+ * \param key Name of the value to set.
+ * \param value The integer value to associate with this key.
+ */</doc>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='99' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='100' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='101' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='102' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='103' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='104' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='117' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='118' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='119' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='120' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='121' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='122' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='123' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='124' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='125' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='129' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='130' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='172' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='192' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='609' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='674' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>

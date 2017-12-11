@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='85' type='void Solarus::Rectangle::add_height(int dh)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='349' ll='351' type='void Solarus::Rectangle::add_height(int dh)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='345'>/**
+ * \brief Adds a value to the height of this rectangle.
+ * \param dh the value to add
+ */</doc>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='77' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='83' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='95' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='101' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>

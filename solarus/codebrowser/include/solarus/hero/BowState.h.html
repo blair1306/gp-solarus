@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BowState.h source code [codebrowser/include/solarus/hero/BowState.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/hero/BowState.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>hero</a>/<a href='BowState.h.html'>BowState.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_HERO_BOW_STATE_H">SOLARUS_HERO_BOW_STATE_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_HERO_BOW_STATE_H" data-ref="_M/SOLARUS_HERO_BOW_STATE_H">SOLARUS_HERO_BOW_STATE_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="HeroState.h.html">"solarus/hero/HeroState.h"</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * <span class="command">\brief</span> The state "bow" of the hero.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td><b>class</b> <a class="type" href="../entities/Hero.h.html#Solarus::Hero" title='Solarus::Hero' data-ref="Solarus::Hero">Hero</a>::<dfn class="type def" id="Solarus::Hero::BowState" title='Solarus::Hero::BowState' data-ref="Solarus::Hero::BowState">BowState</dfn>: <b>public</b> <a class="type" href="HeroState.h.html#Solarus::HeroState" title='Solarus::HeroState' data-ref="Solarus::HeroState">HeroState</a> {</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td>  <b>public</b>:</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>    <b>explicit</b> <dfn class="decl" id="_ZN7Solarus4Hero8BowStateC1ERS0_" title='Solarus::Hero::BowState::BowState' data-ref="_ZN7Solarus4Hero8BowStateC1ERS0_">BowState</dfn>(<a class="type" href="../entities/Hero.h.html#Solarus::Hero" title='Solarus::Hero' data-ref="Solarus::Hero">Hero</a>&amp; <dfn class="local col6 decl" id="16hero" title='hero' data-type='Solarus::Hero &amp;' data-ref="16hero">hero</dfn>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero8BowState5startEPKNS_6Entity5StateE" title='Solarus::Hero::BowState::start' data-ref="_ZN7Solarus4Hero8BowState5startEPKNS_6Entity5StateE">start</dfn>(<em>const</em> <a class="type" href="../entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>* <dfn class="local col7 decl" id="17previous_state" title='previous_state' data-type='const Solarus::Entity::State *' data-ref="17previous_state">previous_state</dfn>) override;</td></tr>
+<tr><th id="34">34</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero8BowState6updateEv" title='Solarus::Hero::BowState::update' data-ref="_ZN7Solarus4Hero8BowState6updateEv">update</dfn>() override;</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero8BowState16can_avoid_streamERKNS_6StreamE" title='Solarus::Hero::BowState::can_avoid_stream' data-ref="_ZNK7Solarus4Hero8BowState16can_avoid_streamERKNS_6StreamE">can_avoid_stream</dfn>(<em>const</em> <a class="type" href="../entities/Stream.h.html#Solarus::Stream" title='Solarus::Stream' data-ref="Solarus::Stream">Stream</a>&amp; <dfn class="local col8 decl" id="18stream" title='stream' data-type='const Solarus::Stream &amp;' data-ref="18stream">stream</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Hero.cpp.html'>codebrowser/src/entities/Hero.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

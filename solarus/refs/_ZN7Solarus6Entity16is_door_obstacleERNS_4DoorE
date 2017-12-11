@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='346' type='bool Solarus::Entity::is_door_obstacle(Solarus::Door &amp; door)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='545' c='_ZN7Solarus12CustomEntity16is_door_obstacleERNS_4DoorE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='555' u='c' c='_ZN7Solarus12CustomEntity16is_door_obstacleERNS_4DoorE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='116' u='c' c='_ZN7Solarus4Door15is_obstacle_forERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2690' ll='2692' type='bool Solarus::Entity::is_door_obstacle(Solarus::Door &amp; door)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2681'>/**
+ * \brief Returns whether a door is currently considered as an obstacle
+ * by this entity.
+ *
+ * By default, this function returns \c true unless the door is open.
+ *
+ * \param door A door.
+ * \return \c true if the door is currently an obstacle for this entity.
+ */</doc>

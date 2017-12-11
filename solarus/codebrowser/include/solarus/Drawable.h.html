@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Drawable.h source code [codebrowser/include/solarus/Drawable.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Drawable "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/Drawable.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>include</a>/<a href='./'>solarus</a>/<a href='Drawable.h.html'>Drawable.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_DRAWABLE_H">SOLARUS_DRAWABLE_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_DRAWABLE_H" data-ref="_M/SOLARUS_DRAWABLE_H">SOLARUS_DRAWABLE_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="lowlevel/BlendMode.h.html">"solarus/lowlevel/BlendMode.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="lowlevel/Point.h.html">"solarus/lowlevel/Point.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="lowlevel/Size.h.html">"solarus/lowlevel/Size.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="lowlevel/SurfacePtr.h.html">"solarus/lowlevel/SurfacePtr.h"</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="lua/ExportableToLua.h.html">"solarus/lua/ExportableToLua.h"</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="lua/ScopedLuaRef.h.html">"solarus/lua/ScopedLuaRef.h"</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../../include/c++/4.9/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <a class="type" href="entities/Entity.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement" id="Solarus::Movement">Movement</a>;</td></tr>
+<tr><th id="32">32</th><td><b>class</b> <a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition" id="Solarus::Transition">Transition</a>;</td></tr>
+<tr><th id="33">33</th><td><b>class</b> <a class="type" href="lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle" id="Solarus::Rectangle">Rectangle</a>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">\brief</span> An object that can be drawn on a surface with additional effects.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * Possible additional effects are movements and transitions.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * Lua callbacks may be associated to the end of these effects.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="41">41</th><td><b>class</b> <dfn class="type def" id="Solarus::Drawable" title='Solarus::Drawable' data-ref="Solarus::Drawable">Drawable</dfn>: <b>public</b> <a class="type" href="lua/ExportableToLua.h.html#Solarus::ExportableToLua" title='Solarus::ExportableToLua' data-ref="Solarus::ExportableToLua">ExportableToLua</a> {</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>  <b>public</b>:</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN7Solarus8DrawableD1Ev" title='Solarus::Drawable::~Drawable' data-ref="_ZN7Solarus8DrawableD1Ev">~Drawable</dfn>();</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>    <b>virtual</b> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="virtual decl" id="_ZNK7Solarus8Drawable10get_originEv" title='Solarus::Drawable::get_origin' data-ref="_ZNK7Solarus8Drawable10get_originEv">get_origin</dfn>() <em>const</em>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc">     * <span class="command">\brief</span> Returns the size of this drawable.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">     * <span class="command">\return</span> The size of this drawable.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="53">53</th><td>    <b>virtual</b> <a class="type" href="lowlevel/Size.h.html#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <dfn class="virtual decl" id="_ZNK7Solarus8Drawable8get_sizeEv" title='Solarus::Drawable::get_size' data-ref="_ZNK7Solarus8Drawable8get_sizeEv">get_size</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <i>// dynamic effects</i></td></tr>
+<tr><th id="56">56</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE" title='Solarus::Drawable::start_movement' data-ref="_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE">start_movement</dfn>(<em>const</em> <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="entities/Entity.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>&gt;&amp; <dfn class="local col9 decl" id="1309movement" title='movement' data-type='const std::shared_ptr&lt;Movement&gt; &amp;' data-ref="1309movement">movement</dfn>);</td></tr>
+<tr><th id="57">57</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable13stop_movementEv" title='Solarus::Drawable::stop_movement' data-ref="_ZN7Solarus8Drawable13stop_movementEv">stop_movement</dfn>();</td></tr>
+<tr><th id="58">58</th><td>    <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="entities/Entity.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>&gt;&amp; <dfn class="decl" id="_ZN7Solarus8Drawable12get_movementEv" title='Solarus::Drawable::get_movement' data-ref="_ZN7Solarus8Drawable12get_movementEv">get_movement</dfn>();</td></tr>
+<tr><th id="59">59</th><td>    <em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="decl" id="_ZNK7Solarus8Drawable6get_xyEv" title='Solarus::Drawable::get_xy' data-ref="_ZNK7Solarus8Drawable6get_xyEv">get_xy</dfn>() <em>const</em>;</td></tr>
+<tr><th id="60">60</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable6set_xyERKNS_5PointE" title='Solarus::Drawable::set_xy' data-ref="_ZN7Solarus8Drawable6set_xyERKNS_5PointE">set_xy</dfn>(<em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col0 decl" id="1310xy" title='xy' data-type='const Solarus::Point &amp;' data-ref="1310xy">xy</dfn>);</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE" title='Solarus::Drawable::start_transition' data-ref="_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE">start_transition</dfn>(</td></tr>
+<tr><th id="63">63</th><td>        <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>&gt; <dfn class="local col1 decl" id="1311transition" title='transition' data-type='std::unique_ptr&lt;Transition&gt;' data-ref="1311transition">transition</dfn>,</td></tr>
+<tr><th id="64">64</th><td>        <em>const</em> <a class="type" href="lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col2 decl" id="1312callback_ref" title='callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="1312callback_ref">callback_ref</dfn></td></tr>
+<tr><th id="65">65</th><td>    );</td></tr>
+<tr><th id="66">66</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable15stop_transitionEv" title='Solarus::Drawable::stop_transition' data-ref="_ZN7Solarus8Drawable15stop_transitionEv">stop_transition</dfn>();</td></tr>
+<tr><th id="67">67</th><td>    <a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>* <dfn class="decl" id="_ZN7Solarus8Drawable14get_transitionEv" title='Solarus::Drawable::get_transition' data-ref="_ZN7Solarus8Drawable14get_transitionEv">get_transition</dfn>();</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>    <i>// drawing with effects</i></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEE" title='Solarus::Drawable::draw' data-ref="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEE">draw</dfn>(<em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col3 decl" id="1313dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1313dst_surface">dst_surface</dfn>);</td></tr>
+<tr><th id="72">72</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEEii" title='Solarus::Drawable::draw' data-ref="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEEii">draw</dfn>(<em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col4 decl" id="1314dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1314dst_surface">dst_surface</dfn>, <em>int</em> <dfn class="local col5 decl" id="1315x" title='x' data-type='int' data-ref="1315x">x</dfn>, <em>int</em> <dfn class="local col6 decl" id="1316y" title='y' data-type='int' data-ref="1316y">y</dfn>);</td></tr>
+<tr><th id="73">73</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" title='Solarus::Drawable::draw' data-ref="_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE">draw</dfn>(<em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col7 decl" id="1317dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1317dst_surface">dst_surface</dfn>, <em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col8 decl" id="1318dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1318dst_position">dst_position</dfn>);</td></tr>
+<tr><th id="74">74</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEE" title='Solarus::Drawable::draw_region' data-ref="_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEE">draw_region</dfn>(<em>const</em> <a class="type" href="lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col9 decl" id="1319region" title='region' data-type='const Solarus::Rectangle &amp;' data-ref="1319region">region</dfn>, <em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col0 decl" id="1320dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1320dst_surface">dst_surface</dfn>);</td></tr>
+<tr><th id="75">75</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" title='Solarus::Drawable::draw_region' data-ref="_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE">draw_region</dfn>(<em>const</em> <a class="type" href="lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col1 decl" id="1321region" title='region' data-type='const Solarus::Rectangle &amp;' data-ref="1321region">region</dfn>,</td></tr>
+<tr><th id="76">76</th><td>        <em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col2 decl" id="1322dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1322dst_surface">dst_surface</dfn>, <em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col3 decl" id="1323dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1323dst_position">dst_position</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     * <span class="command">\brief</span> Draws this object without applying dynamic effects.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     * Redefine this function to draw your object onto the destination</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     * surface.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">dst_surface</span> The destination surface.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">dst_position</span> Coordinates on the destination surface.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="87">87</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus8Drawable8raw_drawERNS_7SurfaceERKNS_5PointE" title='Solarus::Drawable::raw_draw' data-ref="_ZN7Solarus8Drawable8raw_drawERNS_7SurfaceERKNS_5PointE">raw_draw</dfn>(</td></tr>
+<tr><th id="88">88</th><td>        <a class="type" href="lowlevel/Surface.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>&amp; <dfn class="local col4 decl" id="1324dst_surface" title='dst_surface' data-type='Solarus::Surface &amp;' data-ref="1324dst_surface">dst_surface</dfn>,</td></tr>
+<tr><th id="89">89</th><td>        <em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col5 decl" id="1325dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1325dst_position">dst_position</dfn></td></tr>
+<tr><th id="90">90</th><td>    ) = <var>0</var>;</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">     * <span class="command">\brief</span> Draws a subrectangle of this object without applying dynamic</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">     * effects.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">     * Redefine this function to draw your object onto the destination</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">     * surface.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">region</span> The subrectangle to draw in this object.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">dst_surface</span> The destination surface.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">dst_position</span> Coordinates on the destination surface.</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="103">103</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE" title='Solarus::Drawable::raw_draw_region' data-ref="_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE">raw_draw_region</dfn>(</td></tr>
+<tr><th id="104">104</th><td>        <em>const</em> <a class="type" href="lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col6 decl" id="1326region" title='region' data-type='const Solarus::Rectangle &amp;' data-ref="1326region">region</dfn>,</td></tr>
+<tr><th id="105">105</th><td>        <a class="type" href="lowlevel/Surface.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>&amp; <dfn class="local col7 decl" id="1327dst_surface" title='dst_surface' data-type='Solarus::Surface &amp;' data-ref="1327dst_surface">dst_surface</dfn>,</td></tr>
+<tr><th id="106">106</th><td>        <em>const</em> <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col8 decl" id="1328dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1328dst_position">dst_position</dfn></td></tr>
+<tr><th id="107">107</th><td>    ) = <var>0</var>;</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc">     * <span class="command">\brief</span> Draws a transition effect on this drawable object.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">     * Redefine this function to apply the transition effect on the surface</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">     * of your object.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc">     * <span class="command">\param</span> <span class="arg">transition</span> The transition effect to apply.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc">     * TODO Since there is get_transition_surface() now, this function can probably be removed.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="119">119</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus8Drawable15draw_transitionERNS_10TransitionE" title='Solarus::Drawable::draw_transition' data-ref="_ZN7Solarus8Drawable15draw_transitionERNS_10TransitionE">draw_transition</dfn>(<a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>&amp; <dfn class="local col9 decl" id="1329transition" title='transition' data-type='Solarus::Transition &amp;' data-ref="1329transition">transition</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">     * <span class="command">\brief</span> Returns the surface where transitions on this drawable object</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc">     * are applied.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc">     * <span class="command">\return</span> The surface for transitions.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="126">126</th><td>    <b>virtual</b> <a class="type" href="lowlevel/Surface.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>&amp; <dfn class="virtual decl" id="_ZN7Solarus8Drawable22get_transition_surfaceEv" title='Solarus::Drawable::get_transition_surface' data-ref="_ZN7Solarus8Drawable22get_transition_surfaceEv">get_transition_surface</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus8Drawable6updateEv" title='Solarus::Drawable::update' data-ref="_ZN7Solarus8Drawable6updateEv">update</dfn>();</td></tr>
+<tr><th id="129">129</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus8Drawable12is_suspendedEv" title='Solarus::Drawable::is_suspended' data-ref="_ZNK7Solarus8Drawable12is_suspendedEv">is_suspended</dfn>() <em>const</em>;</td></tr>
+<tr><th id="130">130</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus8Drawable13set_suspendedEb" title='Solarus::Drawable::set_suspended' data-ref="_ZN7Solarus8Drawable13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col0 decl" id="1330suspended" title='suspended' data-type='bool' data-ref="1330suspended">suspended</dfn>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>    <a class="type" href="lowlevel/BlendMode.h.html#Solarus::BlendMode" title='Solarus::BlendMode' data-ref="Solarus::BlendMode">BlendMode</a> <dfn class="decl" id="_ZNK7Solarus8Drawable14get_blend_modeEv" title='Solarus::Drawable::get_blend_mode' data-ref="_ZNK7Solarus8Drawable14get_blend_modeEv">get_blend_mode</dfn>() <em>const</em>;</td></tr>
+<tr><th id="133">133</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus8Drawable14set_blend_modeENS_9BlendModeE" title='Solarus::Drawable::set_blend_mode' data-ref="_ZN7Solarus8Drawable14set_blend_modeENS_9BlendModeE">set_blend_mode</dfn>(<a class="type" href="lowlevel/BlendMode.h.html#Solarus::BlendMode" title='Solarus::BlendMode' data-ref="Solarus::BlendMode">BlendMode</a> <dfn class="local col1 decl" id="1331blend_mode" title='blend_mode' data-type='Solarus::BlendMode' data-ref="1331blend_mode">blend_mode</dfn>);</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>  <b>protected</b>:</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>    <dfn class="decl" id="_ZN7Solarus8DrawableC1Ev" title='Solarus::Drawable::Drawable' data-ref="_ZN7Solarus8DrawableC1Ev">Drawable</dfn>();</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>  <b>private</b>:</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>    <a class="type" href="lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="Solarus::Drawable::xy" title='Solarus::Drawable::xy' data-ref="Solarus::Drawable::xy">xy</dfn>;                     <i class="doc">/**&lt; Current position of this object</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">                                   * (result of movements). */</i></td></tr>
+<tr><th id="143">143</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="entities/Entity.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>&gt;</td></tr>
+<tr><th id="144">144</th><td>        <dfn class="decl" id="Solarus::Drawable::movement" title='Solarus::Drawable::movement' data-ref="Solarus::Drawable::movement">movement</dfn>;                 <i class="doc">/**&lt; A movement applied or nullptr. */</i></td></tr>
+<tr><th id="145">145</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>&gt;</td></tr>
+<tr><th id="146">146</th><td>        <dfn class="decl" id="Solarus::Drawable::transition" title='Solarus::Drawable::transition' data-ref="Solarus::Drawable::transition">transition</dfn>;               <i class="doc">/**&lt; A transition applied or nullptr. */</i></td></tr>
+<tr><th id="147">147</th><td>    <a class="type" href="lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a> <dfn class="decl" id="Solarus::Drawable::transition_callback_ref" title='Solarus::Drawable::transition_callback_ref' data-ref="Solarus::Drawable::transition_callback_ref">transition_callback_ref</dfn>;</td></tr>
+<tr><th id="148">148</th><td>                                  <i class="doc">/**&lt; Lua registry ref of a function to call</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">                                   * when the transition finishes */</i></td></tr>
+<tr><th id="150">150</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Drawable::suspended" title='Solarus::Drawable::suspended' data-ref="Solarus::Drawable::suspended">suspended</dfn>;               <i class="doc">/**&lt; Whether this object is suspended. */</i></td></tr>
+<tr><th id="151">151</th><td>    <a class="type" href="lowlevel/BlendMode.h.html#Solarus::BlendMode" title='Solarus::BlendMode' data-ref="Solarus::BlendMode">BlendMode</a> <dfn class="decl" id="Solarus::Drawable::blend_mode" title='Solarus::Drawable::blend_mode' data-ref="Solarus::Drawable::blend_mode">blend_mode</dfn>;         <i class="doc">/**&lt; How to draw this object on a surface. */</i></td></tr>
+<tr><th id="152">152</th><td>};</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td>}</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

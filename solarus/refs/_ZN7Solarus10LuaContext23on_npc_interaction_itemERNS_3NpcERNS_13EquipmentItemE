@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1257' type='bool Solarus::LuaContext::on_npc_interaction_item(Solarus::Npc &amp; npc, Solarus::EquipmentItem &amp; item_used)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1042' u='c' c='_ZN7Solarus10LuaContext28item_on_npc_interaction_itemERNS_13EquipmentItemERNS_3NpcES2_'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2318' ll='2335' type='bool Solarus::LuaContext::on_npc_interaction_item(Solarus::Npc &amp; npc, Solarus::EquipmentItem &amp; item_used)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2312'>/**
+ * \brief Calls the on_npc_interaction_item() method of the object on top of the stack.
+ * \param npc An NPC.
+ * \param item_used The equipment item used.
+ * \return true if an interaction occurred.
+ */</doc>

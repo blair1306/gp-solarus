@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='291' type='bool Solarus::Entity::test_collision_sprites(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1951' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2052' ll='2075' type='bool Solarus::Entity::test_collision_sprites(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2043'>/**
+ * \brief Returns whether a sprite of this entity collides with a sprite of another one.
+ *
+ * The layer is not checked.
+ * The test is pixel-precise.
+ *
+ * \param entity The entity.
+ * \return \c true if sprites of both entities overlap.
+ */</doc>

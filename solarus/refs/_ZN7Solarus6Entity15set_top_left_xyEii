@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='165' type='void Solarus::Entity::set_top_left_xy(int x, int y)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='780' ll='783' type='void Solarus::Entity::set_top_left_xy(int x, int y)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='790' u='c' c='_ZN7Solarus6Entity15set_top_left_xyERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='772'>/**
+ * \brief Sets the position of the entity.
+ *
+ * This function sets the coordinates of the rectangle&apos;s top-left corner.
+ *
+ * \param x x position of the entity
+ * \param y y position of the entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='655' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='37' u='c' c='_ZN12_GLOBAL__N_117test_path_to_heroERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='39' u='c' c='_ZN12_GLOBAL__N_117test_path_to_heroERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='139' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='203' type='void Solarus::LuaContext::userdata_close_lua()'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='185' u='c' c='_ZN7Solarus10LuaContext4exitEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1226' ll='1243' type='void Solarus::LuaContext::userdata_close_lua()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1220'>/**
+ * \brief Tells all userdata that Lua is closing.
+ *
+ * This must be done when Lua is about to be closed,
+ * so that they can continue to live normally in C++.
+ */</doc>

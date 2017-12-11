@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='134' type='bool Solarus::Hero::is_moving_towards(int direction4) const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1003' ll='1017' type='bool Solarus::Hero::is_moving_towards(int direction4) const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1743' u='c' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='992'>/**
+ * \brief Returns whether the hero is moving towards the specified direction
+ * among the four main directions.
+ *
+ * If the hero is not moving, false is returned.
+ * If he is making a diagonal move, this function considers that he is moving
+ * towards both directions.
+ *
+ * \param direction4 one of the four main directions (0 to 3)
+ * \return true if the hero is moving in that direction, even if he is actually doing a diagonal move
+ */</doc>
+<use f='codebrowser/src/entities/Jumper.cpp' l='114' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='115' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='142' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='228' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='164' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='172' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='953' type='static int Solarus::LuaContext::destructible_api_get_can_be_cut(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='407' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4139' ll='4149' type='static int Solarus::LuaContext::destructible_api_get_can_be_cut(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4134'>/**
+ * \brief Implementation of destructible:get_can_be_cut().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

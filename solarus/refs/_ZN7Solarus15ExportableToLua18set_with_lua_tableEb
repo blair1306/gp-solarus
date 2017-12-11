@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='47' type='void Solarus::ExportableToLua::set_with_lua_table(bool with_lua_table)'/>
+<def f='codebrowser/src/lua/ExportableToLua.cpp' l='95' ll='97' type='void Solarus::ExportableToLua::set_with_lua_table(bool with_lua_table)'/>
+<doc f='codebrowser/src/lua/ExportableToLua.cpp' l='91'>/**
+ * \brief Sets whether this userdata has an associated table in Lua.
+ * \param with_lua_table \c true if there is a Lua table for this userdata.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1276' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>

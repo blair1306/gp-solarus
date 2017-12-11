@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='123' type='void Solarus::CustomEntity::add_collision_test(Solarus::CollisionMode collision_test, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='770' ll='784' type='void Solarus::CustomEntity::add_collision_test(Solarus::CollisionMode collision_test, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='763'>/**
+ * \brief Registers a function to be called when the specified test detects a
+ * collision.
+ * \param collision_test A built-in collision test.
+ * \param callback_ref Lua ref to a function to call when this collision is
+ * detected.
+ */</doc>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='122'>// Collisions.</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5584' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

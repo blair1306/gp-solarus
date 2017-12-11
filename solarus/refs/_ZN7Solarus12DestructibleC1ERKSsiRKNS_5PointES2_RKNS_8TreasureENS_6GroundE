@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='46' type='void Solarus::Destructible::Destructible(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; animation_set_id, const Solarus::Treasure &amp; treasure, Solarus::Ground modified_ground)'/>
+<doc f='codebrowser/include/solarus/entities/Destructible.h' l='45'>// Creation and destruction.</doc>
+<def f='codebrowser/src/entities/Destructible.cpp' l='50' ll='76' type='void Solarus::Destructible::Destructible(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; animation_set_id, const Solarus::Treasure &amp; treasure, Solarus::Ground modified_ground)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='41'>/**
+ * \brief Creates a new destructible item with the specified subtype.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer Layer where to create the entity.
+ * \param xy Coordinates where to create the entity.
+ * \param animation_set_id Sprite animation set id for this destructible object.
+ * \param treasure The treasure contained in this object.
+ * \param modified_ground Ground defined by this entity (usually Ground::WALL).
+ */</doc>

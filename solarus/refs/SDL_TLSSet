@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_thread.h' l='276' type='int SDL_TLSSet(SDL_TLSID id, const void * value, void (*)(void *) destructor)'/>
+<doc f='include/SDL2/SDL_thread.h' l='264'>/**
+ *  \brief Set the value associated with a thread local storage ID for the current thread.
+ *
+ *  \param id The thread local storage ID
+ *  \param value The value to associate with the ID for the current thread
+ *  \param destructor A function called when the thread exits, to free the value.
+ *
+ *  \return 0 on success, -1 on error
+ *
+ *  \sa SDL_TLSCreate()
+ *  \sa SDL_TLSGet()
+ */</doc>

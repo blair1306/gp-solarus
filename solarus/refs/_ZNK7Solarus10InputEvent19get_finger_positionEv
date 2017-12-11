@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='296' type='Solarus::Point Solarus::InputEvent::get_finger_position() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1303' ll='1312' type='Solarus::Point Solarus::InputEvent::get_finger_position() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1296'>/**
+ * \brief Gets the x and y position of this finger event, if any.
+ * Values are in quest size coordinates.
+ * \param[out] finger_xy The x and y position of the finger in this finger event.
+ * \return \c false if the finger was not inside the quest displaying during
+ * this event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1908' u='c' c='_ZN7Solarus10LuaContext17on_finger_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1941' u='c' c='_ZN7Solarus10LuaContext18on_finger_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1974' u='c' c='_ZN7Solarus10LuaContext15on_finger_movedERKNS_10InputEventE'/>

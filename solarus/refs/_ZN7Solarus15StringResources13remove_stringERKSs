@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='42' type='bool Solarus::StringResources::remove_string(const std::string &amp; key)'/>
+<def f='codebrowser/src/StringResources.cpp' l='110' ll='112' type='bool Solarus::StringResources::remove_string(const std::string &amp; key)'/>
+<use f='codebrowser/src/StringResources.cpp' l='135' u='c' c='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<doc f='codebrowser/src/StringResources.cpp' l='105'>/**
+ * \brief Removes a string.
+ * \param key Key of the string to remove.
+ * \return \c true in case of success.
+ */</doc>

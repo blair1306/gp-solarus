@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='411' type='void Solarus::LuaContext::enemy_on_collision_enemy(Solarus::Enemy &amp; enemy, Solarus::Enemy &amp; other_enemy, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1019' u='c' c='_ZN7Solarus5Enemy27notify_collision_with_enemyERS0_RNS_6SpriteES3_'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6452' ll='6462' type='void Solarus::LuaContext::enemy_on_collision_enemy(Solarus::Enemy &amp; enemy, Solarus::Enemy &amp; other_enemy, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6442'>/**
+ * \brief Calls the on_collision_enemy() method of a Lua enemy.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param enemy An enemy.
+ * \param other_enemy Another enemy colliding with the first one.
+ * \param other_sprite Colliding sprite of the other enemy.
+ * \param this_sprite Colliding sprite of the first enemy.
+ */</doc>

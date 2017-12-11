@@ -1,0 +1,12 @@
+<def f='include/SDL2/SDL_rwops.h' l='52' ll='143'/>
+<size>72</size>
+<doc f='include/SDL2/SDL_rwops.h' l='49'>/**
+ * This is the read/write operation structure -- very basic.
+ */</doc>
+<mbr r='SDL_RWops::size' o='0' t='Sint64 (*)(struct SDL_RWops *)'/>
+<mbr r='SDL_RWops::seek' o='64' t='Sint64 (*)(struct SDL_RWops *, Sint64, int)'/>
+<mbr r='SDL_RWops::read' o='128' t='size_t (*)(struct SDL_RWops *, void *, size_t, size_t)'/>
+<mbr r='SDL_RWops::write' o='192' t='size_t (*)(struct SDL_RWops *, const void *, size_t, size_t)'/>
+<mbr r='SDL_RWops::close' o='256' t='int (*)(struct SDL_RWops *)'/>
+<mbr r='SDL_RWops::type' o='320' t='Uint32'/>
+<mbr r='SDL_RWops::hidden' o='384' t='union (anonymous union at /usr/include/SDL2/SDL_rwops.h:94:5)'/>

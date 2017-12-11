@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='159' type='void Solarus::Hero::reset_target_solid_ground_callback()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='557' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1403' ll='1406' type='void Solarus::Hero::reset_target_solid_ground_callback()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1396'>/**
+ * \brief Forgets the function indicating where the hero was supposed to go
+ * back if he falls into a hole or some other bad ground.
+ *
+ * The hero will now get back to the last solid ground instead of going back
+ * to a custom position.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1839' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1879' u='c' c='_ZN7Solarus10LuaContext27hero_api_reset_solid_groundEP9lua_State'/>

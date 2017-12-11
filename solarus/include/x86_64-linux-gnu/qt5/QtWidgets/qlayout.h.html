@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qlayout.h source code [include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QLayout "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtWidgets</a>/<a href='qlayout.h.html'>qlayout.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="5">5</th><td><i>**</i></td></tr>
+<tr><th id="6">6</th><td><i>** This file is part of the QtWidgets module of the Qt Toolkit.</i></td></tr>
+<tr><th id="7">7</th><td><i>**</i></td></tr>
+<tr><th id="8">8</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="9">9</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="10">10</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="11">11</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="12">12</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="13">13</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="14">14</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="15">15</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i>**</i></td></tr>
+<tr><th id="17">17</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="18">18</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="19">19</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="21">21</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="22">22</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="23">23</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="24">24</th><td><i>**</i></td></tr>
+<tr><th id="25">25</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="26">26</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="27">27</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="28">28</th><td><i>**</i></td></tr>
+<tr><th id="29">29</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="30">30</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="31">31</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="32">32</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="33">33</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="34">34</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="35">35</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="36">36</th><td><i>**</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="39">39</th><td><i>**</i></td></tr>
+<tr><th id="40">40</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">ifndef</span> <span class="macro" data-ref="_M/QLAYOUT_H">QLAYOUT_H</span></u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/QLAYOUT_H" data-ref="_M/QLAYOUT_H">QLAYOUT_H</dfn></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="../QtCore/qobject.h.html">&lt;QtCore/qobject.h&gt;</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="qlayoutitem.h.html">&lt;QtWidgets/qlayoutitem.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td><u>#include <a href="qsizepolicy.h.html">&lt;QtWidgets/qsizepolicy.h&gt;</a></u></td></tr>
+<tr><th id="48">48</th><td><u>#include <a href="../QtCore/qrect.h.html">&lt;QtCore/qrect.h&gt;</a></u></td></tr>
+<tr><th id="49">49</th><td><u>#include <a href="../QtCore/qmargins.h.html">&lt;QtCore/qmargins.h&gt;</a></u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#include &lt;limits.h&gt;</u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><a class="macro" href="../QtCore/qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><b>class</b> <a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a>;</td></tr>
+<tr><th id="57">57</th><td><b>class</b> <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize" id="QSize">QSize</a>;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>class</b> <dfn class="type" id="QLayoutPrivate" title='QLayoutPrivate' data-ref="QLayoutPrivate">QLayoutPrivate</dfn>;</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><b>class</b> <a class="macro" href="../QtCore/qglobal.h.html#314" title="__attribute__((visibility(&quot;default&quot;)))" data-ref="_M/Q_WIDGETS_EXPORT">Q_WIDGETS_EXPORT</a> <dfn class="type def" id="QLayout" title='QLayout' data-ref="QLayout">QLayout</dfn> : <b>public</b> <a class="type" href="../QtCore/qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a>, <b>public</b> <a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a></td></tr>
+<tr><th id="63">63</th><td>{</td></tr>
+<tr><th id="64">64</th><td>    <a class="macro" href="../QtCore/qobjectdefs.h.html#150" title="public: template &lt;typename ThisObject&gt; inline void qt_check_for_QOBJECT_macro(const ThisObject &amp;_q_argument) const { int i = qYouForgotTheQ_OBJECT_Macro(this, &amp;_q_argument); i = i + 1; } static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); static inline QString tr(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } static inline QString trUtf8(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } virtual int qt_metacall(QMetaObject::Call, int, void **); private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</a></td></tr>
+<tr><th id="65">65</th><td>    <a class="macro" href="../QtCore/qglobal.h.html#947" title="inline QLayoutPrivate* d_func() { return reinterpret_cast&lt;QLayoutPrivate *&gt;(qGetPtrHelper(d_ptr)); } inline const QLayoutPrivate* d_func() const { return reinterpret_cast&lt;const QLayoutPrivate *&gt;(qGetPtrHelper(d_ptr)); } friend class QLayoutPrivate;" data-ref="_M/Q_DECLARE_PRIVATE">Q_DECLARE_PRIVATE</a>(QLayout)</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <a class="macro" href="../QtCore/qobjectdefs.h.html#93" title="" data-ref="_M/Q_ENUMS">Q_ENUMS</a>(SizeConstraint)</td></tr>
+<tr><th id="68">68</th><td>    <a class="macro" href="../QtCore/qobjectdefs.h.html#89" title="" data-ref="_M/Q_PROPERTY">Q_PROPERTY</a>(<em>int</em> margin READ margin WRITE setMargin)</td></tr>
+<tr><th id="69">69</th><td>    <a class="macro" href="../QtCore/qobjectdefs.h.html#89" title="" data-ref="_M/Q_PROPERTY">Q_PROPERTY</a>(<em>int</em> spacing READ spacing WRITE setSpacing)</td></tr>
+<tr><th id="70">70</th><td>    <a class="macro" href="../QtCore/qobjectdefs.h.html#89" title="" data-ref="_M/Q_PROPERTY">Q_PROPERTY</a>(SizeConstraint sizeConstraint READ sizeConstraint WRITE setSizeConstraint)</td></tr>
+<tr><th id="71">71</th><td><b>public</b>:</td></tr>
+<tr><th id="72">72</th><td>    <b>enum</b> <dfn class="type def" id="QLayout::SizeConstraint" title='QLayout::SizeConstraint' data-ref="QLayout::SizeConstraint">SizeConstraint</dfn> {</td></tr>
+<tr><th id="73">73</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetDefaultConstraint" title='QLayout::SizeConstraint::SetDefaultConstraint' data-ref="QLayout::SizeConstraint::SetDefaultConstraint">SetDefaultConstraint</dfn>,</td></tr>
+<tr><th id="74">74</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetNoConstraint" title='QLayout::SizeConstraint::SetNoConstraint' data-ref="QLayout::SizeConstraint::SetNoConstraint">SetNoConstraint</dfn>,</td></tr>
+<tr><th id="75">75</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetMinimumSize" title='QLayout::SizeConstraint::SetMinimumSize' data-ref="QLayout::SizeConstraint::SetMinimumSize">SetMinimumSize</dfn>,</td></tr>
+<tr><th id="76">76</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetFixedSize" title='QLayout::SizeConstraint::SetFixedSize' data-ref="QLayout::SizeConstraint::SetFixedSize">SetFixedSize</dfn>,</td></tr>
+<tr><th id="77">77</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetMaximumSize" title='QLayout::SizeConstraint::SetMaximumSize' data-ref="QLayout::SizeConstraint::SetMaximumSize">SetMaximumSize</dfn>,</td></tr>
+<tr><th id="78">78</th><td>        <dfn class="enum" id="QLayout::SizeConstraint::SetMinAndMaxSize" title='QLayout::SizeConstraint::SetMinAndMaxSize' data-ref="QLayout::SizeConstraint::SetMinAndMaxSize">SetMinAndMaxSize</dfn></td></tr>
+<tr><th id="79">79</th><td>    };</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <dfn class="decl" id="_ZN7QLayoutC1EP7QWidget" title='QLayout::QLayout' data-ref="_ZN7QLayoutC1EP7QWidget">QLayout</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col4 decl" id="10264parent" title='parent' data-type='QWidget *' data-ref="10264parent">parent</dfn>);</td></tr>
+<tr><th id="82">82</th><td>    <dfn class="decl" id="_ZN7QLayoutC1Ev" title='QLayout::QLayout' data-ref="_ZN7QLayoutC1Ev">QLayout</dfn>();</td></tr>
+<tr><th id="83">83</th><td>    <dfn class="virtual decl" id="_ZN7QLayoutD1Ev" title='QLayout::~QLayout' data-ref="_ZN7QLayoutD1Ev">~QLayout</dfn>();</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7QLayout6marginEv" title='QLayout::margin' data-ref="_ZNK7QLayout6marginEv">margin</dfn>() <em>const</em>;</td></tr>
+<tr><th id="86">86</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7QLayout7spacingEv" title='QLayout::spacing' data-ref="_ZNK7QLayout7spacingEv">spacing</dfn>() <em>const</em>;</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout9setMarginEi" title='QLayout::setMargin' data-ref="_ZN7QLayout9setMarginEi">setMargin</dfn>(<em>int</em>);</td></tr>
+<tr><th id="89">89</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout10setSpacingEi" title='QLayout::setSpacing' data-ref="_ZN7QLayout10setSpacingEi">setSpacing</dfn>(<em>int</em>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout18setContentsMarginsEiiii" title='QLayout::setContentsMargins' data-ref="_ZN7QLayout18setContentsMarginsEiiii">setContentsMargins</dfn>(<em>int</em> <dfn class="local col5 decl" id="10265left" title='left' data-type='int' data-ref="10265left">left</dfn>, <em>int</em> <dfn class="local col6 decl" id="10266top" title='top' data-type='int' data-ref="10266top">top</dfn>, <em>int</em> <dfn class="local col7 decl" id="10267right" title='right' data-type='int' data-ref="10267right">right</dfn>, <em>int</em> <dfn class="local col8 decl" id="10268bottom" title='bottom' data-type='int' data-ref="10268bottom">bottom</dfn>);</td></tr>
+<tr><th id="92">92</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout18setContentsMarginsERK8QMargins" title='QLayout::setContentsMargins' data-ref="_ZN7QLayout18setContentsMarginsERK8QMargins">setContentsMargins</dfn>(<em>const</em> <a class="type" href="../QtCore/qmargins.h.html#QMargins" title='QMargins' data-ref="QMargins">QMargins</a> &amp;<dfn class="local col9 decl" id="10269margins" title='margins' data-type='const QMargins &amp;' data-ref="10269margins">margins</dfn>);</td></tr>
+<tr><th id="93">93</th><td>    <em>void</em> <dfn class="decl" id="_ZNK7QLayout18getContentsMarginsEPiS0_S0_S0_" title='QLayout::getContentsMargins' data-ref="_ZNK7QLayout18getContentsMarginsEPiS0_S0_S0_">getContentsMargins</dfn>(<em>int</em> *<dfn class="local col0 decl" id="10270left" title='left' data-type='int *' data-ref="10270left">left</dfn>, <em>int</em> *<dfn class="local col1 decl" id="10271top" title='top' data-type='int *' data-ref="10271top">top</dfn>, <em>int</em> *<dfn class="local col2 decl" id="10272right" title='right' data-type='int *' data-ref="10272right">right</dfn>, <em>int</em> *<dfn class="local col3 decl" id="10273bottom" title='bottom' data-type='int *' data-ref="10273bottom">bottom</dfn>) <em>const</em>;</td></tr>
+<tr><th id="94">94</th><td>    <a class="type" href="../QtCore/qmargins.h.html#QMargins" title='QMargins' data-ref="QMargins">QMargins</a> <dfn class="decl" id="_ZNK7QLayout15contentsMarginsEv" title='QLayout::contentsMargins' data-ref="_ZNK7QLayout15contentsMarginsEv">contentsMargins</dfn>() <em>const</em>;</td></tr>
+<tr><th id="95">95</th><td>    <a class="type" href="../QtCore/qrect.h.html#QRect" title='QRect' data-ref="QRect">QRect</a> <dfn class="decl" id="_ZNK7QLayout12contentsRectEv" title='QLayout::contentsRect' data-ref="_ZNK7QLayout12contentsRectEv">contentsRect</dfn>() <em>const</em>;</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE" title='QLayout::setAlignment' data-ref="_ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE">setAlignment</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col4 decl" id="10274w" title='w' data-type='QWidget *' data-ref="10274w">w</dfn>, <span class="namespace">Qt::</span><a class="typedef" href="../QtCore/qnamespace.h.html#255" title='Qt::Alignment' data-type='QFlags&lt;Qt::AlignmentFlag&gt;' data-ref="Qt::Alignment">Alignment</a> <dfn class="local col5 decl" id="10275alignment" title='alignment' data-type='Qt::Alignment' data-ref="10275alignment">alignment</dfn>);</td></tr>
+<tr><th id="98">98</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE" title='QLayout::setAlignment' data-ref="_ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE">setAlignment</dfn>(<a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a> *<dfn class="local col6 decl" id="10276l" title='l' data-type='QLayout *' data-ref="10276l">l</dfn>, <span class="namespace">Qt::</span><a class="typedef" href="../QtCore/qnamespace.h.html#255" title='Qt::Alignment' data-type='QFlags&lt;Qt::AlignmentFlag&gt;' data-ref="Qt::Alignment">Alignment</a> <dfn class="local col7 decl" id="10277alignment" title='alignment' data-type='Qt::Alignment' data-ref="10277alignment">alignment</dfn>);</td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="99">ifdef</span> <span class="macro" data-ref="_M/Q_NO_USING_KEYWORD">Q_NO_USING_KEYWORD</span></u></td></tr>
+<tr><th id="100">100</th><td>    <b>inline</b> <em>void</em> setAlignment(Qt::Alignment alignment) { QLayoutItem::setAlignment(alignment); }</td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="99">else</span></u></td></tr>
+<tr><th id="102">102</th><td>    <b>using</b> <a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a>::setAlignment;</td></tr>
+<tr><th id="103">103</th><td><u>#<span data-ppcond="99">endif</span></u></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout17setSizeConstraintENS_14SizeConstraintE" title='QLayout::setSizeConstraint' data-ref="_ZN7QLayout17setSizeConstraintENS_14SizeConstraintE">setSizeConstraint</dfn>(<a class="type" href="#QLayout::SizeConstraint" title='QLayout::SizeConstraint' data-ref="QLayout::SizeConstraint">SizeConstraint</a>);</td></tr>
+<tr><th id="106">106</th><td>    <a class="type" href="#QLayout::SizeConstraint" title='QLayout::SizeConstraint' data-ref="QLayout::SizeConstraint">SizeConstraint</a> <dfn class="decl" id="_ZNK7QLayout14sizeConstraintEv" title='QLayout::sizeConstraint' data-ref="_ZNK7QLayout14sizeConstraintEv">sizeConstraint</dfn>() <em>const</em>;</td></tr>
+<tr><th id="107">107</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout10setMenuBarEP7QWidget" title='QLayout::setMenuBar' data-ref="_ZN7QLayout10setMenuBarEP7QWidget">setMenuBar</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col8 decl" id="10278w" title='w' data-type='QWidget *' data-ref="10278w">w</dfn>);</td></tr>
+<tr><th id="108">108</th><td>    <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="decl" id="_ZNK7QLayout7menuBarEv" title='QLayout::menuBar' data-ref="_ZNK7QLayout7menuBarEv">menuBar</dfn>() <em>const</em>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>    <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="decl" id="_ZNK7QLayout12parentWidgetEv" title='QLayout::parentWidget' data-ref="_ZNK7QLayout12parentWidgetEv">parentWidget</dfn>() <em>const</em>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>    <em>void</em> <dfn class="virtual decl" id="_ZN7QLayout10invalidateEv" title='QLayout::invalidate' data-ref="_ZN7QLayout10invalidateEv">invalidate</dfn>();</td></tr>
+<tr><th id="113">113</th><td>    <a class="type" href="../QtCore/qrect.h.html#QRect" title='QRect' data-ref="QRect">QRect</a> <dfn class="virtual decl" id="_ZNK7QLayout8geometryEv" title='QLayout::geometry' data-ref="_ZNK7QLayout8geometryEv">geometry</dfn>() <em>const</em>;</td></tr>
+<tr><th id="114">114</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7QLayout8activateEv" title='QLayout::activate' data-ref="_ZN7QLayout8activateEv">activate</dfn>();</td></tr>
+<tr><th id="115">115</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout6updateEv" title='QLayout::update' data-ref="_ZN7QLayout6updateEv">update</dfn>();</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout9addWidgetEP7QWidget" title='QLayout::addWidget' data-ref="_ZN7QLayout9addWidgetEP7QWidget">addWidget</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col9 decl" id="10279w" title='w' data-type='QWidget *' data-ref="10279w">w</dfn>);</td></tr>
+<tr><th id="118">118</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7QLayout7addItemEP11QLayoutItem" title='QLayout::addItem' data-ref="_ZN7QLayout7addItemEP11QLayoutItem">addItem</dfn>(<a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *) = <var>0</var>;</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout12removeWidgetEP7QWidget" title='QLayout::removeWidget' data-ref="_ZN7QLayout12removeWidgetEP7QWidget">removeWidget</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col0 decl" id="10280w" title='w' data-type='QWidget *' data-ref="10280w">w</dfn>);</td></tr>
+<tr><th id="121">121</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout10removeItemEP11QLayoutItem" title='QLayout::removeItem' data-ref="_ZN7QLayout10removeItemEP11QLayoutItem">removeItem</dfn>(<a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *);</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>    <span class="namespace">Qt::</span><a class="typedef" href="../QtCore/qnamespace.h.html#207" title='Qt::Orientations' data-type='QFlags&lt;Qt::Orientation&gt;' data-ref="Qt::Orientations">Orientations</a> <dfn class="virtual decl" id="_ZNK7QLayout19expandingDirectionsEv" title='QLayout::expandingDirections' data-ref="_ZNK7QLayout19expandingDirectionsEv">expandingDirections</dfn>() <em>const</em>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="virtual decl" id="_ZNK7QLayout11minimumSizeEv" title='QLayout::minimumSize' data-ref="_ZNK7QLayout11minimumSizeEv">minimumSize</dfn>() <em>const</em>;</td></tr>
+<tr><th id="125">125</th><td>    <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="virtual decl" id="_ZNK7QLayout11maximumSizeEv" title='QLayout::maximumSize' data-ref="_ZNK7QLayout11maximumSizeEv">maximumSize</dfn>() <em>const</em>;</td></tr>
+<tr><th id="126">126</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7QLayout11setGeometryERK5QRect" title='QLayout::setGeometry' data-ref="_ZN7QLayout11setGeometryERK5QRect">setGeometry</dfn>(<em>const</em> <a class="type" href="../QtCore/qrect.h.html#QRect" title='QRect' data-ref="QRect">QRect</a>&amp;);</td></tr>
+<tr><th id="127">127</th><td>    <b>virtual</b> <a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *<dfn class="virtual decl" id="_ZNK7QLayout6itemAtEi" title='QLayout::itemAt' data-ref="_ZNK7QLayout6itemAtEi">itemAt</dfn>(<em>int</em> <dfn class="local col1 decl" id="10281index" title='index' data-type='int' data-ref="10281index">index</dfn>) <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="128">128</th><td>    <b>virtual</b> <a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *<dfn class="virtual decl" id="_ZN7QLayout6takeAtEi" title='QLayout::takeAt' data-ref="_ZN7QLayout6takeAtEi">takeAt</dfn>(<em>int</em> <dfn class="local col2 decl" id="10282index" title='index' data-type='int' data-ref="10282index">index</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="129">129</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZNK7QLayout7indexOfEP7QWidget" title='QLayout::indexOf' data-ref="_ZNK7QLayout7indexOfEP7QWidget">indexOf</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *) <em>const</em>;</td></tr>
+<tr><th id="130">130</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZNK7QLayout5countEv" title='QLayout::count' data-ref="_ZNK7QLayout5countEv">count</dfn>() <em>const</em> = <var>0</var>;</td></tr>
+<tr><th id="131">131</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZNK7QLayout7isEmptyEv" title='QLayout::isEmpty' data-ref="_ZNK7QLayout7isEmptyEv">isEmpty</dfn>() <em>const</em>;</td></tr>
+<tr><th id="132">132</th><td>    <a class="type" href="qsizepolicy.h.html#QSizePolicy" title='QSizePolicy' data-ref="QSizePolicy">QSizePolicy</a>::<a class="typedef" href="qsizepolicy.h.html#92" title='QSizePolicy::ControlTypes' data-type='QFlags&lt;QSizePolicy::ControlType&gt;' data-ref="QSizePolicy::ControlTypes">ControlTypes</a> <dfn class="virtual decl" id="_ZNK7QLayout12controlTypesEv" title='QLayout::controlTypes' data-ref="_ZNK7QLayout12controlTypesEv">controlTypes</dfn>() <em>const</em>;</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <i>// ### Qt 6 make this function virtual</i></td></tr>
+<tr><th id="135">135</th><td>    <a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *<dfn class="decl" id="_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE" title='QLayout::replaceWidget' data-ref="_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE">replaceWidget</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col3 decl" id="10283from" title='from' data-type='QWidget *' data-ref="10283from">from</dfn>, <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col4 decl" id="10284to" title='to' data-type='QWidget *' data-ref="10284to">to</dfn>, <span class="namespace">Qt::</span><a class="typedef" href="../QtCore/qnamespace.h.html#1406" title='Qt::FindChildOptions' data-type='QFlags&lt;Qt::FindChildOption&gt;' data-ref="Qt::FindChildOptions">FindChildOptions</a> <dfn class="local col5 decl" id="10285options" title='options' data-type='Qt::FindChildOptions' data-ref="10285options">options</dfn> = <a class="ref fake" href="../QtCore/qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><span class="namespace">Qt::</span><a class="enum" href="../QtCore/qnamespace.h.html#Qt::FindChildOption::FindChildrenRecursively" title='Qt::FindChildOption::FindChildrenRecursively' data-ref="Qt::FindChildOption::FindChildrenRecursively">FindChildrenRecursively</a>);</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7QLayout19totalHeightForWidthEi" title='QLayout::totalHeightForWidth' data-ref="_ZNK7QLayout19totalHeightForWidthEi">totalHeightForWidth</dfn>(<em>int</em> <dfn class="local col6 decl" id="10286w" title='w' data-type='int' data-ref="10286w">w</dfn>) <em>const</em>;</td></tr>
+<tr><th id="138">138</th><td>    <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="decl" id="_ZNK7QLayout16totalMinimumSizeEv" title='QLayout::totalMinimumSize' data-ref="_ZNK7QLayout16totalMinimumSizeEv">totalMinimumSize</dfn>() <em>const</em>;</td></tr>
+<tr><th id="139">139</th><td>    <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="decl" id="_ZNK7QLayout16totalMaximumSizeEv" title='QLayout::totalMaximumSize' data-ref="_ZNK7QLayout16totalMaximumSizeEv">totalMaximumSize</dfn>() <em>const</em>;</td></tr>
+<tr><th id="140">140</th><td>    <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="decl" id="_ZNK7QLayout13totalSizeHintEv" title='QLayout::totalSizeHint' data-ref="_ZNK7QLayout13totalSizeHintEv">totalSizeHint</dfn>() <em>const</em>;</td></tr>
+<tr><th id="141">141</th><td>    <a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a> *<dfn class="virtual decl" id="_ZN7QLayout6layoutEv" title='QLayout::layout' data-ref="_ZN7QLayout6layoutEv">layout</dfn>();</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout10setEnabledEb" title='QLayout::setEnabled' data-ref="_ZN7QLayout10setEnabledEb">setEnabled</dfn>(<em>bool</em>);</td></tr>
+<tr><th id="144">144</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7QLayout9isEnabledEv" title='QLayout::isEnabled' data-ref="_ZNK7QLayout9isEnabledEv">isEnabled</dfn>() <em>const</em>;</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>    <em>static</em> <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> <dfn class="decl" id="_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize" title='QLayout::closestAcceptableSize' data-ref="_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize">closestAcceptableSize</dfn>(<em>const</em> <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col7 decl" id="10287w" title='w' data-type='const QWidget *' data-ref="10287w">w</dfn>, <em>const</em> <a class="type" href="../QtCore/qsize.h.html#QSize" title='QSize' data-ref="QSize">QSize</a> &amp;<dfn class="local col8 decl" id="10288s" title='s' data-type='const QSize &amp;' data-ref="10288s">s</dfn>);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><b>protected</b>:</td></tr>
+<tr><th id="150">150</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout11widgetEventEP6QEvent" title='QLayout::widgetEvent' data-ref="_ZN7QLayout11widgetEventEP6QEvent">widgetEvent</dfn>(<a class="type" href="../QtCore/qcoreevent.h.html#QEvent" title='QEvent' data-ref="QEvent">QEvent</a> *);</td></tr>
+<tr><th id="151">151</th><td>    <em>void</em> <dfn class="virtual decl" id="_ZN7QLayout10childEventEP11QChildEvent" title='QLayout::childEvent' data-ref="_ZN7QLayout10childEventEP11QChildEvent">childEvent</dfn>(<a class="type" href="../QtCore/qcoreevent.h.html#QChildEvent" title='QChildEvent' data-ref="QChildEvent">QChildEvent</a> *<dfn class="local col9 decl" id="10289e" title='e' data-type='QChildEvent *' data-ref="10289e">e</dfn>);</td></tr>
+<tr><th id="152">152</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout14addChildLayoutEPS_" title='QLayout::addChildLayout' data-ref="_ZN7QLayout14addChildLayoutEPS_">addChildLayout</dfn>(<a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a> *<dfn class="local col0 decl" id="10290l" title='l' data-type='QLayout *' data-ref="10290l">l</dfn>);</td></tr>
+<tr><th id="153">153</th><td>    <em>void</em> <dfn class="decl" id="_ZN7QLayout14addChildWidgetEP7QWidget" title='QLayout::addChildWidget' data-ref="_ZN7QLayout14addChildWidgetEP7QWidget">addChildWidget</dfn>(<a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a> *<dfn class="local col1 decl" id="10291w" title='w' data-type='QWidget *' data-ref="10291w">w</dfn>);</td></tr>
+<tr><th id="154">154</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7QLayout11adoptLayoutEPS_" title='QLayout::adoptLayout' data-ref="_ZN7QLayout11adoptLayoutEPS_">adoptLayout</dfn>(<a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a> *<dfn class="local col2 decl" id="10292layout" title='layout' data-type='QLayout *' data-ref="10292layout">layout</dfn>);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>    <a class="type" href="../QtCore/qrect.h.html#QRect" title='QRect' data-ref="QRect">QRect</a> <dfn class="decl" id="_ZNK7QLayout13alignmentRectERK5QRect" title='QLayout::alignmentRect' data-ref="_ZNK7QLayout13alignmentRectERK5QRect">alignmentRect</dfn>(<em>const</em> <a class="type" href="../QtCore/qrect.h.html#QRect" title='QRect' data-ref="QRect">QRect</a>&amp;) <em>const</em>;</td></tr>
+<tr><th id="157">157</th><td><b>protected</b>:</td></tr>
+<tr><th id="158">158</th><td>    <dfn class="decl" id="_ZN7QLayoutC1ER14QLayoutPrivatePS_P7QWidget" title='QLayout::QLayout' data-ref="_ZN7QLayoutC1ER14QLayoutPrivatePS_P7QWidget">QLayout</dfn>(<a class="type" href="#QLayoutPrivate" title='QLayoutPrivate' data-ref="QLayoutPrivate">QLayoutPrivate</a> &amp;<dfn class="local col3 decl" id="10293d" title='d' data-type='QLayoutPrivate &amp;' data-ref="10293d">d</dfn>, <a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a>*, <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a>*);</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><b>private</b>:</td></tr>
+<tr><th id="161">161</th><td>    <a class="macro" href="../QtCore/qglobal.h.html#1003" title="QLayout(const QLayout &amp;) = delete; QLayout &amp;operator=(const QLayout &amp;) = delete;" data-ref="_M/Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<dfn class="decl def" id="_ZN7QLayoutC1ERKS_" title='QLayout::QLayout' data-ref="_ZN7QLayoutC1ERKS_"><a class="type" href="#QLayout" title='QLayout' data-ref="QLayout"><a class="type" href="#QLayout" title='QLayout' data-ref="QLayout"><a class="type" href="#QLayout" title='QLayout' data-ref="QLayout">QLayout</a></a></a></dfn>)</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7QLayout23activateRecursiveHelperEP11QLayoutItem" title='QLayout::activateRecursiveHelper' data-ref="_ZN7QLayout23activateRecursiveHelperEP11QLayoutItem">activateRecursiveHelper</dfn>(<a class="type" href="qlayoutitem.h.html#QLayoutItem" title='QLayoutItem' data-ref="QLayoutItem">QLayoutItem</a> *<dfn class="local col4 decl" id="10294item" title='item' data-type='QLayoutItem *' data-ref="10294item">item</dfn>);</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>    <b>friend</b> <b>class</b> <a class="type" href="../QtCore/qobject.h.html#QApplicationPrivate" title='QApplicationPrivate' data-ref="QApplicationPrivate">QApplicationPrivate</a>;</td></tr>
+<tr><th id="166">166</th><td>    <b>friend</b> <b>class</b> <a class="type" href="qwidget.h.html#QWidget" title='QWidget' data-ref="QWidget">QWidget</a>;</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>};</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><a class="macro" href="../QtCore/qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i>//### support old includes</i></td></tr>
+<tr><th id="173">173</th><td><u>#include <a href="qboxlayout.h.html">&lt;QtWidgets/qboxlayout.h&gt;</a></u></td></tr>
+<tr><th id="174">174</th><td><u>#include <a href="qgridlayout.h.html">&lt;QtWidgets/qgridlayout.h&gt;</a></u></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><u>#<span data-ppcond="42">endif</span> // QLAYOUT_H</u></td></tr>
+<tr><th id="177">177</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/solarus_gui_lib_automoc.cpp.html'>codebrowser/gui/solarus_gui_lib_automoc.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

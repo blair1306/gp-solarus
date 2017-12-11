@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='73' type='void Solarus::Rectangle::set_height(int height)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='264' ll='266' type='void Solarus::Rectangle::set_height(int height)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='310' u='c' c='_ZN7Solarus9Rectangle8set_sizeEii'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='350' u='c' c='_ZN7Solarus9Rectangle10add_heightEi'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='74' u='c' c='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='260'>/**
+ * \brief Sets the height of this rectangle.
+ * \param height the new height
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='832' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='836' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='93' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='101' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='305' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='309' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='111' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='119' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='84' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='88' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>

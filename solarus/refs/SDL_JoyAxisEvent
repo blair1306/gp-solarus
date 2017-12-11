@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='267' ll='278'/>
+<size>20</size>
+<doc f='include/SDL2/SDL_events.h' l='264'>/**
+ *  \brief Joystick axis motion event structure (event.jaxis.*)
+ */</doc>
+<mbr r='SDL_JoyAxisEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_JoyAxisEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_JoyAxisEvent::which' o='64' t='SDL_JoystickID'/>
+<mbr r='SDL_JoyAxisEvent::axis' o='96' t='Uint8'/>
+<mbr r='SDL_JoyAxisEvent::padding1' o='104' t='Uint8'/>
+<mbr r='SDL_JoyAxisEvent::padding2' o='112' t='Uint8'/>
+<mbr r='SDL_JoyAxisEvent::padding3' o='120' t='Uint8'/>
+<mbr r='SDL_JoyAxisEvent::value' o='128' t='Sint16'/>
+<mbr r='SDL_JoyAxisEvent::padding4' o='144' t='Uint16'/>

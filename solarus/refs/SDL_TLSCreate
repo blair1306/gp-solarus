@@ -1,0 +1,31 @@
+<dec f='include/SDL2/SDL_thread.h' l='250' type='SDL_TLSID SDL_TLSCreate()'/>
+<doc f='include/SDL2/SDL_thread.h' l='220'>/**
+ *  \brief Create an identifier that is globally visible to all threads but refers to data that is thread-specific.
+ *
+ *  \return The newly created thread local storage identifier, or 0 on error
+ *
+ *  \code
+ *  static SDL_SpinLock tls_lock;
+ *  static SDL_TLSID thread_local_storage;
+ * 
+ *  void SetMyThreadData(void *value)
+ *  {
+ *      if (!thread_local_storage) {
+ *          SDL_AtomicLock(&amp;tls_lock);
+ *          if (!thread_local_storage) {
+ *              thread_local_storage = SDL_TLSCreate();
+ *          }
+ *          SDL_AtomicUnLock(&amp;tls_lock);
+ *      }
+ *      SDL_TLSSet(thread_local_storage, value);
+ *  }
+ *  
+ *  void *GetMyThreadData(void)
+ *  {
+ *      return SDL_TLSGet(thread_local_storage);
+ *  }
+ *  \endcode
+ *
+ *  \sa SDL_TLSGet()
+ *  \sa SDL_TLSSet()
+ */</doc>

@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='83' type='void Solarus::LuaTools::check_type(lua_State * l, int arg_index, int expected_type)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='236' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/EntityData.cpp' l='758' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/MapData.cpp' l='844' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='42' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='595' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/StringResources.cpp' l='157' u='c' c='_ZN7Solarus15StringResources6l_textEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5077' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1259' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1337' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='228' ll='237' type='void Solarus::LuaTools::check_type(lua_State * l, int arg_index, int expected_type)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='687' u='c' c='_ZN7Solarus8LuaTools14check_functionEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='923' u='c' c='_ZN7Solarus8LuaTools11check_colorEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='222'>/**
+ * \brief Like luaL_checktype() but throws a LuaException in case of error.
+ * \param l A Lua state.
+ * \param arg_index Index of an argument in the stack.
+ * \param expected_type A Lua type value.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1702' u='c' c='_ZN7Solarus10LuaContext19map_api_move_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='191' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='213' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='262' u='c' c='_ZN7Solarus10LuaContext19menu_api_is_startedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1147' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_pathEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1831' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_set_trajectoryEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1837' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_set_trajectoryEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='150' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

@@ -1,0 +1,17 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1111' type='int SDL_HapticSetGain(SDL_Haptic * haptic, int gain)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1095'>/**
+ *  \brief Sets the global gain of the device.
+ *
+ *  Device must support the ::SDL_HAPTIC_GAIN feature.
+ *
+ *  The user may specify the maximum gain by setting the environment variable
+ *  SDL_HAPTIC_GAIN_MAX which should be between 0 and 100.  All calls to
+ *  SDL_HapticSetGain() will scale linearly using SDL_HAPTIC_GAIN_MAX as the
+ *  maximum.
+ *
+ *  \param haptic Haptic device to set the gain on.
+ *  \param gain Value to set the gain to, should be between 0 and 100.
+ *  \return 0 on success or -1 on error.
+ *
+ *  \sa SDL_HapticQuery
+ */</doc>

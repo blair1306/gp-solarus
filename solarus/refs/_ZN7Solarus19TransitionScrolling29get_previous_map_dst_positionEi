@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/TransitionScrolling.h' l='55' type='Solarus::Rectangle Solarus::TransitionScrolling::get_previous_map_dst_position(int scrolling_direction)'/>
+<def f='codebrowser/src/TransitionScrolling.cpp' l='47' ll='65' type='Solarus::Rectangle Solarus::TransitionScrolling::get_previous_map_dst_position(int scrolling_direction)'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='106' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='107' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<doc f='codebrowser/src/TransitionScrolling.cpp' l='42'>/**
+ * \brief Returns where the previous map should be blitted on
+ * both_maps_surface, for the specified scrolling direction.
+ * \param scrolling_direction The scrolling direction (0 to 3).
+ */</doc>

@@ -1,0 +1,25 @@
+<def f='codebrowser/include/solarus/lua/LuaData.h' l='31' ll='55'/>
+<ovr f='codebrowser/include/solarus/QuestProperties.h' l='41' c='Solarus::QuestProperties'/>
+<size>8</size>
+<doc f='codebrowser/include/solarus/lua/LuaData.h' l='28'>/**
+ * \brief Abstract class for data the can be loaded and optionally saved as Lua.
+ */</doc>
+<fun r='_ZN7Solarus7LuaDataC1Ev'/>
+<fun r='_ZN7Solarus7LuaDataD1Ev'/>
+<fun r='_ZN7Solarus7LuaData15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus7LuaData13export_to_luaERSo'/>
+<fun r='_ZN7Solarus7LuaData18import_from_bufferERKSsS2_'/>
+<fun r='_ZN7Solarus7LuaData16import_from_fileERKSs'/>
+<fun r='_ZN7Solarus7LuaData22import_from_quest_fileERKSsb'/>
+<fun r='_ZNK7Solarus7LuaData16export_to_bufferERSs'/>
+<fun r='_ZNK7Solarus7LuaData14export_to_fileERKSs'/>
+<fun r='_ZN7Solarus7LuaData13escape_stringESs'/>
+<fun r='_ZN7Solarus7LuaData23escape_multiline_stringESs'/>
+<fun r='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>
+<ovr f='codebrowser/include/solarus/DialogResources.h' l='54' c='Solarus::DialogResources'/>
+<ovr f='codebrowser/include/solarus/QuestResources.h' l='44' c='Solarus::QuestResources'/>
+<ovr f='codebrowser/include/solarus/StringResources.h' l='29' c='Solarus::StringResources'/>
+<ovr f='codebrowser/include/solarus/EntityData.h' l='37' c='Solarus::EntityData'/>
+<ovr f='codebrowser/include/solarus/MapData.h' l='137' c='Solarus::MapData'/>
+<ovr f='codebrowser/include/solarus/SpriteData.h' l='123' c='Solarus::SpriteData'/>
+<ovr f='codebrowser/include/solarus/entities/TilesetData.h' l='113' c='Solarus::TilesetData'/>

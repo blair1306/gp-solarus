@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='79' type='static bool Solarus::Video::parse_size(const std::string &amp; size_string, Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='88' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='95' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='102' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='273' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='711' ll='736' type='static bool Solarus::Video::parse_size(const std::string &amp; size_string, Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='704'>/**
+ * \brief Gets the width and the height values from a size string of the form
+ * &quot;320x240&quot;.
+ * \param size_string The input string.
+ * \param size The resulting size. Unchanged in case of failure.
+ * \return true in case of success, false if the string is not a valid size.
+ */</doc>

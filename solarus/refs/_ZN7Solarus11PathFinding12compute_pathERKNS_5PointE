@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='49' type='std::string Solarus::PathFinding::compute_path(const Solarus::Point &amp; offset)'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='76' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='90' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='107' ll='230' type='std::string Solarus::PathFinding::compute_path(const Solarus::Point &amp; offset)'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='100'>/**
+ * \brief Tries to find a path from the source point to the target point
+ * plus an offset.
+ * \param offset Translation to add to the target.
+ * \return the path found, or an empty string if no path was found
+ * (because there is no path or the target is too far)
+ */</doc>

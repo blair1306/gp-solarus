@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='225' type='void Solarus::LuaContext::remove_menus(int context_index)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1588' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='791' u='c' c='_ZN7Solarus10LuaContext16item_on_finishedERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='422' u='c' c='_ZN7Solarus10LuaContext16main_on_finishedEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2211' u='c' c='_ZN7Solarus10LuaContext15map_on_finishedERNS_3MapE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='90' ll='116' type='void Solarus::LuaContext::remove_menus(int context_index)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='246' u='c' c='_ZN7Solarus10LuaContext17menu_api_stop_allEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='300' u='c' c='_ZN7Solarus10LuaContext16menu_on_finishedERKNS_12ScopedLuaRefE'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='83'>/**
+ * \brief Unregisters all menus associated to a context.
+ *
+ * This function can be called safely even while iterating on the menus list.
+ *
+ * \param context_index Index of a table or userdata containing menus.
+ */</doc>

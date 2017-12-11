@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/SolarusFatal.h' l='33' type='void Solarus::SolarusFatal::SolarusFatal(const std::string &amp; error_message)'/>
+<def f='codebrowser/src/SolarusFatal.cpp' l='25' ll='28' type='void Solarus::SolarusFatal::SolarusFatal(const std::string &amp; error_message)'/>
+<doc f='codebrowser/src/SolarusFatal.cpp' l='21'>/**
+ * \brief Creates a fatal error that should stop Solarus.
+ * \param error_message A message describing the error.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='141' u='c' c='_ZN7Solarus5Debug3dieERKSs'/>

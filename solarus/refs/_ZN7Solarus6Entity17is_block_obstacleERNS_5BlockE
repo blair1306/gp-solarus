@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='337' type='bool Solarus::Entity::is_block_obstacle(Solarus::Block &amp; block)'/>
+<use f='codebrowser/src/entities/Block.cpp' l='100' u='c' c='_ZN7Solarus5Block15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='437' c='_ZN7Solarus12CustomEntity17is_block_obstacleERNS_5BlockE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='443' u='c' c='_ZN7Solarus12CustomEntity17is_block_obstacleERNS_5BlockE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='290' c='_ZN7Solarus5Enemy17is_block_obstacleERNS_5BlockE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2579' ll='2581' type='bool Solarus::Entity::is_block_obstacle(Solarus::Block &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2571'>/**
+ * \brief Returns whether a block is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param block a block
+ * \return true if the block is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2579'>/* block */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1468' c='_ZN7Solarus4Hero17is_block_obstacleERNS_5BlockE'/>

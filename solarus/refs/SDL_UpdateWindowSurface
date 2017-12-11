@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='697' type='int SDL_UpdateWindowSurface(SDL_Window * window)'/>
+<doc f='include/SDL2/SDL_video.h' l='689'>/**
+ *  \brief Copy the window surface to the screen.
+ *
+ *  \return 0 on success, or -1 on error.
+ *
+ *  \sa SDL_GetWindowSurface()
+ *  \sa SDL_UpdateWindowSurfaceRects()
+ */</doc>

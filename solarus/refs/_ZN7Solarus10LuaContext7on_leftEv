@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1253' type='void Solarus::LuaContext::on_left()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6150' u='c' c='_ZN7Solarus10LuaContext14switch_on_leftERNS_6SwitchE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6201' u='c' c='_ZN7Solarus10LuaContext14sensor_on_leftERNS_6SensorE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2293' ll='2298' type='void Solarus::LuaContext::on_left()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2290'>/**
+ * \brief Calls the on_left() method of the object on top of the stack.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='87' type='void Solarus::CommandsEffects::save_action_key_effect()'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='114' ll='116' type='void Solarus::CommandsEffects::save_action_key_effect()'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='109'>/**
+ * \brief Saves the current effect of the action key.
+ *
+ * Call restore_action_key_effect() to restore the action key saved here.
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='102' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='833' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>

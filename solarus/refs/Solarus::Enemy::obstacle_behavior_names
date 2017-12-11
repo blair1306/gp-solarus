@@ -1,0 +1,5 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='196' type='const std::map&lt;ObstacleBehavior, std::string&gt;'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='196'>/**&lt; Lua names of the ObstacleBehavior enum. */</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='65' ll='69' type='const std::map&lt;Enemy::ObstacleBehavior, std::string&gt;'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4984' u='m' c='_ZN7Solarus10LuaContext31enemy_api_get_obstacle_behaviorEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4999' u='r' c='_ZN7Solarus10LuaContext31enemy_api_set_obstacle_behaviorEP9lua_State'/>

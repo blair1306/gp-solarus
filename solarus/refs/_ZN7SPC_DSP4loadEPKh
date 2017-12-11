@@ -1,0 +1,5 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='59' type='void SPC_DSP::load(const uint8_t * regs)'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='241' u='c' c='_ZN8SNES_SPC8load_spcEPKvl'/>
+<def f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='684' ll='701' type='void SPC_DSP::load(const uint8_t * regs)'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='703' u='c' c='_ZN7SPC_DSP5resetEv'/>
+<use f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='43' u='c' c='spc_dsp_load'/>

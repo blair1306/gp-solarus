@@ -1,0 +1,29 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Tile.h' l='45' ll='66'/>
+<size>272</size>
+<doc f='codebrowser/include/solarus/entities/Tile.h' l='30'>/**
+ * \brief A small fixed piece of the map, optimized for collisions and drawing.
+ *
+ * A tile is composed of a tile pattern that can be repeated.
+ * Its pattern may be animated. It can be an obstacle or not.
+ *
+ * Tiles are optimized to allow fast detection of obstacles and
+ * fast rendering of the non-animated ones.
+ * The cost of these optimizations is that their presence on the map, their
+ * position, their size and their obstacle property are fixed.
+ * Tiles are added when the map is loaded and they are removed when the map
+ * is destroyed.
+ *
+ * If you need to dynamically enable or disable a tile, see DynamicTile.
+ */</doc>
+<smbr r='Solarus::Tile::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4TileC1ERKNS_8TileInfoE'/>
+<fun r='_ZNK7Solarus4Tile8get_typeEv'/>
+<fun r='_ZNK7Solarus4Tile24is_drawn_at_its_positionEv'/>
+<fun r='_ZN7Solarus4Tile11draw_on_mapEv'/>
+<fun r='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZNK7Solarus4Tile16get_tile_patternEv'/>
+<fun r='_ZNK7Solarus4Tile19get_tile_pattern_idEv'/>
+<fun r='_ZNK7Solarus4Tile11is_animatedEv'/>
+<mbr r='Solarus::Tile::tile_pattern_id' o='2048' t='const std::string'/>
+<mbr r='Solarus::Tile::tile_pattern' o='2112' t='const Solarus::TilePattern &amp;'/>

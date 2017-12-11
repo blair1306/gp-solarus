@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1328' type='static int Solarus::LuaContext::l_create_crystal_block(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='951' ll='973' type='static int Solarus::LuaContext::l_create_crystal_block(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1285' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='946'>/**
+ * \brief Creates a crystal block on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='296' type='void Solarus::Entity::check_collision_with_detectors(Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2166' ll='2174' type='void Solarus::Entity::check_collision_with_detectors(Solarus::Sprite &amp; sprite)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3409' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2161'>/**
+ * \brief Checks pixel-precise collisions between a particular sprite of this
+ * entity and the detectors of the map.
+ * \param sprite the sprite to check
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='821' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='823' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>

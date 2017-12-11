@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='48' type='const Solarus::PixelFilter * Solarus::VideoMode::get_software_filter() const'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='416' u='c' c='_ZN7Solarus5Video23is_acceleration_enabledEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='571' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='659' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/lowlevel/VideoMode.cpp' l='70' ll='72' type='const Solarus::PixelFilter * Solarus::VideoMode::get_software_filter() const'/>
+<doc f='codebrowser/src/lowlevel/VideoMode.cpp' l='66'>/**
+ * \brief Returns the software filter applied to the quest image in this mode.
+ * \return Software filter or nullptr.
+ */</doc>

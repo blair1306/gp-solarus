@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_cpuinfo.h' l='90' type='int SDL_GetCPUCacheLineSize()'/>
+<doc f='include/SDL2/SDL_cpuinfo.h' l='84'>/**
+ *  This function returns the L1 cache line size of the CPU
+ *
+ *  This is useful for determining multi-threaded structure padding
+ *  or SIMD prefetch sizes.
+ */</doc>

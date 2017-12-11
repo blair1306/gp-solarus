@@ -1,0 +1,20 @@
+<dec f='include/physfs.h' l='1052' type='int PHYSFS_isDirectory(const char * fname)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='269' u='c' c='_ZN7Solarus10QuestFiles16data_file_existsERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='393' u='c' c='_ZN7Solarus10QuestFiles20data_files_enumerateERKSsbb'/>
+<doc f='include/physfs.h' l='1035'>/**
+ * \fn int PHYSFS_isDirectory(const char *fname)
+ * \brief Determine if a file in the search path is really a directory.
+ *
+ * Determine if the first occurence of (fname) in the search path is
+ *  really a directory entry.
+ *
+ * Note that entries that are symlinks are ignored if
+ *  PHYSFS_permitSymbolicLinks(1) hasn&apos;t been called, so you
+ *  might end up further down in the search path than expected.
+ *
+ *    \param fname filename in platform-independent notation.
+ *   \return non-zero if filename exists and is a directory.  zero otherwise.
+ *
+ * \sa PHYSFS_exists
+ * \sa PHYSFS_isSymbolicLink
+ */</doc>

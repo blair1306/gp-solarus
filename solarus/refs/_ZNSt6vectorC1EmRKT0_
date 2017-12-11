@@ -1,0 +1,13 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='276' ll='279' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(size_type __n, const allocator_type &amp; __a = allocator_type())'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='268'>/**
+       *  @brief  Creates a %vector with default constructed elements.
+       *  @param  __n  The number of elements to initially create.
+       *  @param  __a  An allocator.
+       *
+       *  This constructor fills the %vector with @a __n default
+       *  constructed elements.
+       */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='445' u='c' c='_ZN7Solarus5Music10decode_spcEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='468' u='c' c='_ZN7Solarus5Music9decode_itEji'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='138' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='306' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>

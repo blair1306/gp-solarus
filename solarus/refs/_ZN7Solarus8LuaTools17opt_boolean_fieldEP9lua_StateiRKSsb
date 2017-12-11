@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='174' type='bool Solarus::LuaTools::opt_boolean_field(lua_State * l, int table_index, const std::string &amp; key, bool default_value)'/>
+<use f='codebrowser/src/EntityData.cpp' l='807' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='584' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='653' ll='672' type='bool Solarus::LuaTools::opt_boolean_field(lua_State * l, int table_index, const std::string &amp; key, bool default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='642'>/**
+ * \brief Like check_boolean_field() but with a default value.
+ *
+ * This function acts like lua_getfield() followed by lua_toboolean().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as a string.
+ */</doc>

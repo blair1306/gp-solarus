@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='57' type='bool Solarus::QuestResources::exists(Solarus::ResourceType resource_type, const std::string &amp; id) const'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='134' u='c' c='_ZN7Solarus12CurrentQuest15resource_existsENS_12ResourceTypeERKSs'/>
+<def f='codebrowser/src/QuestResources.cpp' l='98' ll='102' type='bool Solarus::QuestResources::exists(Solarus::ResourceType resource_type, const std::string &amp; id) const'/>
+<use f='codebrowser/src/QuestResources.cpp' l='172' u='c' c='_ZN7Solarus14QuestResources6renameENS_12ResourceTypeERKSsS3_'/>
+<use f='codebrowser/src/QuestResources.cpp' l='175' u='c' c='_ZN7Solarus14QuestResources6renameENS_12ResourceTypeERKSsS3_'/>
+<use f='codebrowser/src/QuestResources.cpp' l='218' u='c' c='_ZN7Solarus14QuestResources15set_descriptionENS_12ResourceTypeERKSsS3_'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='91'>/**
+ * \brief Returns whether there exists an element with the specified id.
+ * \param resource_type A type of resource.
+ * \param id The id to look for.
+ * \return \c true if there exists an element with the specified id in this
+ * resource type.
+ */</doc>

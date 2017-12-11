@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='67' type='static bool Solarus::Music::is_initialized()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='112' u='c' c='_ZN7Solarus5Music4quitEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='124' ll='126' type='static bool Solarus::Music::is_initialized()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='368' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='507' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='605' u='c' c='_ZN7Solarus5Music4stopEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='654' u='c' c='_ZN7Solarus5Music9is_pausedEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='669' u='c' c='_ZN7Solarus5Music10set_pausedEb'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='120'>/**
+ * \brief Returns whether the music system is initialized.
+ * \return \c true if the music system is initialized.
+ */</doc>

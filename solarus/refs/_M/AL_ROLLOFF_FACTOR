@@ -1,0 +1,11 @@
+<dec f='include/AL/al.h' l='286'/>
+<doc f='include/AL/al.h' l='276'>/**
+ * Source rolloff factor.
+ * Type:    ALfloat
+ * Range:   [0.0 - ]
+ * Default: 1.0
+ *
+ * Multiplier to exaggerate or diminish distance attenuation.
+ *
+ * At 0.0, no distance attenuation ever occurs.
+ */</doc>

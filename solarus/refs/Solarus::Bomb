@@ -1,0 +1,42 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Bomb.h' l='29' ll='60'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/Bomb.h' l='26'>/**
+ * \brief A bomb that will explode soon.
+ */</doc>
+<smbr r='Solarus::Bomb::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<fun r='_ZNK7Solarus4Bomb8get_typeEv'/>
+<fun r='_ZN7Solarus4Bomb18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus4Bomb27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Bomb22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus4Bomb16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Bomb31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<fun r='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<fun r='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus4Bomb13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Bomb6updateEv'/>
+<fun r='_ZN7Solarus4Bomb7explodeEv'/>
+<mbr r='Solarus::Bomb::explosion_date' o='2048' t='uint32_t'/>
+<fun r='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<fun r='_ZNK7Solarus4Bomb8get_typeEv'/>
+<fun r='_ZN7Solarus4Bomb18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus4Bomb27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Bomb22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Bomb18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus4Bomb16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Bomb31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<fun r='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<fun r='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus4Bomb13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Bomb6updateEv'/>
+<fun r='_ZN7Solarus4Bomb7explodeEv'/>

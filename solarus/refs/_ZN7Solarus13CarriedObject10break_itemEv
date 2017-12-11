@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='69' type='void Solarus::CarriedObject::break_item()'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='229' ll='261' type='void Solarus::CarriedObject::break_item()'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='281' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='303' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='384' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='404' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='433' u='c' c='_ZN7Solarus13CarriedObject23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='483' u='c' c='_ZN7Solarus13CarriedObject21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='636' u='c' c='_ZN7Solarus13CarriedObject28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='652' u='c' c='_ZN7Solarus13CarriedObject29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='226'>/**
+ * \brief Destroys the item while it is being thrown.
+ */</doc>

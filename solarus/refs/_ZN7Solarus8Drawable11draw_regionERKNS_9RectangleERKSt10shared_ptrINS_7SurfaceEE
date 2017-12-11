@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='74' type='void Solarus::Drawable::draw_region(const Solarus::Rectangle &amp; region, const SurfacePtr &amp; dst_surface)'/>
+<def f='codebrowser/src/Drawable.cpp' l='248' ll='253' type='void Solarus::Drawable::draw_region(const Solarus::Rectangle &amp; region, const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='243'>/**
+ * \brief Draws a subrectangle of this object, applying dynamic effects.
+ * \param region The rectangle to draw in this object.
+ * \param dst_surface The destination surface.
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='229' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>

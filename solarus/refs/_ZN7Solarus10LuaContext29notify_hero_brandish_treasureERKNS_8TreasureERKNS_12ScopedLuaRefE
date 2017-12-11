@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='153' type='void Solarus::LuaContext::notify_hero_brandish_treasure(const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='77' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2475' ll='2505' type='void Solarus::LuaContext::notify_hero_brandish_treasure(const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2466'>/**
+ * \brief Notifies Lua that the hero is brandishing a treasure.
+ *
+ * Lua then manages the treasure&apos;s dialog if any.
+ *
+ * \param treasure The treasure being brandished.
+ * \param callback_ref Lua ref to a function to call when the
+ * treasure&apos;s dialog finishes (possibly an empty ref).
+ */</doc>

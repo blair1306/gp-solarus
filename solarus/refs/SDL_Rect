@@ -1,0 +1,16 @@
+<def f='include/SDL2/SDL_rect.h' l='63' ll='67'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_rect.h' l='53'>/**
+ *  \brief A rectangle, with the origin at the upper left.
+ *
+ *  \sa SDL_RectEmpty
+ *  \sa SDL_RectEquals
+ *  \sa SDL_HasIntersection
+ *  \sa SDL_IntersectRect
+ *  \sa SDL_UnionRect
+ *  \sa SDL_EnclosePoints
+ */</doc>
+<mbr r='SDL_Rect::x' o='0' t='int'/>
+<mbr r='SDL_Rect::y' o='32' t='int'/>
+<mbr r='SDL_Rect::w' o='64' t='int'/>
+<mbr r='SDL_Rect::h' o='96' t='int'/>

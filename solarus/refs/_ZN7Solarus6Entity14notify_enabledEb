@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='185' type='void Solarus::Entity::notify_enabled(bool enabled)'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='93' c='_ZN7Solarus5Chest14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='95' u='c' c='_ZN7Solarus5Chest14notify_enabledEb'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1257' c='_ZN7Solarus12CustomEntity14notify_enabledEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1259' u='c' c='_ZN7Solarus12CustomEntity14notify_enabledEb'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='913' c='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='915' u='c' c='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2285' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2309' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2317' ll='2327' type='void Solarus::Entity::notify_enabled(bool )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2313'>/**
+ * \brief Notifies this entity that it was just enabled or disabled.
+ * \param enabled \c true if the entity is now enabled.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2317'>/* enabled */</doc>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='337' c='_ZN7Solarus6Stairs14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='339' u='c' c='_ZN7Solarus6Stairs14notify_enabledEb'/>

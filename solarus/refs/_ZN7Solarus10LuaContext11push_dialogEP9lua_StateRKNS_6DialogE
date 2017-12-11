@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1089' type='static void Solarus::LuaContext::push_dialog(lua_State * l, const Solarus::Dialog &amp; dialog)'/>
+<def f='codebrowser/src/lua/LanguageApi.cpp' l='35' ll='54' type='static void Solarus::LuaContext::push_dialog(lua_State * l, const Solarus::Dialog &amp; dialog)'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='200' u='c' c='_ZN7Solarus10LuaContext23language_api_get_dialogEP9lua_State'/>
+<doc f='codebrowser/src/lua/LanguageApi.cpp' l='30'>/**
+ * \brief Pushes a dialog onto the stack.
+ * \param l A Lua context.
+ * \param dialog A dialog.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1494' u='c' c='_ZN7Solarus10LuaContext17on_dialog_startedERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1509' u='c' c='_ZN7Solarus10LuaContext18on_dialog_finishedERKNS_6DialogE'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='40' type='std::string &amp; Solarus::StringResources::get_string(const std::string &amp; key)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='271' u='c' c='_ZN7Solarus12CurrentQuest10get_stringERKSs'/>
+<def f='codebrowser/src/StringResources.cpp' l='78' ll='85' type='std::string &amp; Solarus::StringResources::get_string(const std::string &amp; key)'/>
+<use f='codebrowser/src/StringResources.cpp' l='134' u='c' c='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<doc f='codebrowser/src/StringResources.cpp' l='70'>/**
+ * \brief Returns the string with the specified key.
+ *
+ * Non-const version.
+ *
+ * \param key A string key. It must exist.
+ * \return The string with this key.
+ */</doc>

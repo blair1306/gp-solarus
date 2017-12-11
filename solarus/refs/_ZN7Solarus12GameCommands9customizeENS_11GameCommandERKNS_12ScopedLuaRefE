@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='60' type='void Solarus::GameCommands::customize(Solarus::GameCommand command, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/GameCommands.cpp' l='766' ll='773' type='void Solarus::GameCommands::customize(Solarus::GameCommand command, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='754'>/**
+ * \brief Sets the specified command to be customized.
+ *
+ * After this function is called, the next keyboard or joypad event received will
+ * not be treated normally; it will be considered as the new keyboard or joypad
+ * binding for this game key. Then, keyboard and joypad events will be treated
+ * normally again.
+ *
+ * \param command The command to customize.
+ * \param callback_ref Lua ref to a function to call when the customization
+ * finishes, or an empty ref.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1472' u='c' c='_ZN7Solarus10LuaContext32game_api_capture_command_bindingEP9lua_State'/>

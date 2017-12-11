@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroState.h' l='41' type='bool Solarus::HeroState::is_jumper_obstacle(const Solarus::Jumper &amp; jumper, const Solarus::Rectangle &amp; candidate_position) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='108' c='_ZNK7Solarus6Entity5State18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<def f='codebrowser/src/hero/HeroState.cpp' l='110' ll='182' type='bool Solarus::HeroState::is_jumper_obstacle(const Solarus::Jumper &amp; jumper, const Solarus::Rectangle &amp; candidate_position) const'/>
+<doc f='codebrowser/src/hero/HeroState.cpp' l='102'>/**
+ * \brief Returns whether a jumper is considered as an obstacle in this state
+ * for the hero at the specified position.
+ * \param jumper A jumper.
+ * \param candidate_position Position of the hero to test.
+ * \return \c true if the jumper is an obstacle in this state with this
+ * hero position.
+ */</doc>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='152' c='_ZNK7Solarus4Hero13HookshotState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>

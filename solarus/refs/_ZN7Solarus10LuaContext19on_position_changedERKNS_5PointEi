@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1284' type='void Solarus::LuaContext::on_position_changed(const Solarus::Point &amp; xy, int layer)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5824' u='c' c='_ZN7Solarus10LuaContext26entity_on_position_changedERNS_6EntityERKNS_5PointEi'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2690' ll='2698' type='void Solarus::LuaContext::on_position_changed(const Solarus::Point &amp; xy, int layer)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2685'>/**
+ * \brief Calls the on_position_changed() method of the object on top of the stack.
+ * \param xy The new position.
+ * \param layer The new layer.
+ */</doc>

@@ -1,0 +1,11 @@
+<def f='include/c++/4.9/ostream' l='165' ll='167' type='__ostream_type &amp; std::basic_ostream::operator&lt;&lt;(long __n)'/>
+<doc f='include/c++/4.9/ostream' l='157'>/**
+       *  @brief Integer arithmetic inserters
+       *  @param  __n A variable of builtin integral type.
+       *  @return  @c *this if successful
+       *
+       *  These functions use the stream&apos;s current locale (specifically, the
+       *  @c num_get facet) to perform numeric formatting.
+      */</doc>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='168' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='499' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>

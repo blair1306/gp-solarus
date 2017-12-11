@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='215' type='static bool Solarus::InputEvent::is_control_down()'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='343' ll='347' type='static bool Solarus::InputEvent::is_control_down()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='336'>/**
+ * \brief Returns whether the CTRL key is currently down.
+ *
+ * There is no distinction between the right and left CTRL keys in this function.
+ *
+ * \return true if the CTRL key is currently down
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='116' u='c' c='_ZN7Solarus10LuaContext27input_api_get_key_modifiersEP9lua_State'/>

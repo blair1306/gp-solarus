@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='146' type='std::string Solarus::HeroSprites::get_default_sword_sound_id() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='133' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='325' u='c' c='_ZN7Solarus11HeroSprites18set_sword_sound_idERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='336' ll='346' type='std::string Solarus::HeroSprites::get_default_sword_sound_id() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='328'>/**
+ * \brief Returns the id of default sound to play when using the sword.
+ *
+ * The default sword sound is &quot;swordX&quot; where X is the sword level,
+ * or no sound if the sword level is 0.
+ *
+ * \return The default sword sound id.
+ */</doc>

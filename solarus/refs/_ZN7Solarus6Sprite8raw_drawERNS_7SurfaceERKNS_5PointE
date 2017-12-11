@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='112' type='void Solarus::Sprite::raw_draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='87' c='_ZN7Solarus8Drawable8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/Sprite.cpp' l='765' ll='786' type='void Solarus::Sprite::raw_draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='758'>/**
+ * \brief Draws the sprite on a surface, with its current animation,
+ * direction and frame.
+ * \param dst_surface The destination surface.
+ * \param dst_position Coordinates on the destination surface
+ * (the origin will be placed at this position).
+ */</doc>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='139' type='bool Solarus::Entity::State::can_take_jumper() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='882' ll='884' type='bool Solarus::Entity::State::can_take_jumper() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='872'>/**
+ * \brief Returns whether the entity can trigger a jumper in this state.
+ *
+ * If false is returned, jumpers have no effect (but they are obstacle for
+ * the entity).
+ *
+ * Returns false by default.
+ *
+ * \return \c true if the entity can use jumpers in this state.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='127' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='297' c='_ZNK7Solarus4Hero19PlayerMovementState15can_take_jumperEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='218' c='_ZNK7Solarus4Hero12RunningState15can_take_jumperEv'/>

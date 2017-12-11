@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='103' type='void Solarus::Stairs::update_dynamic_tiles()'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='104' u='c' c='_ZN7Solarus6Stairs15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='341' u='c' c='_ZN7Solarus6Stairs14notify_enabledEb'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='351' ll='364' type='void Solarus::Stairs::update_dynamic_tiles()'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='344'>/**
+ * \brief Enables or disables the dynamic tiles related to these stairs.
+ *
+ * The dynamic tiles impacted by this function are the ones whose prefix is
+ * the stairs&apos;s name
+ * followed by &quot;_enabled&quot; or &quot;_disabled&quot;, depending on the stairs state.
+ */</doc>

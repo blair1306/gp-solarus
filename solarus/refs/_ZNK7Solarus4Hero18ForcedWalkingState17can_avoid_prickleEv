@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='53' type='bool Solarus::Hero::ForcedWalkingState::can_avoid_prickle() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='87' c='_ZNK7Solarus6Entity5State17can_avoid_prickleEv'/>
+<def f='codebrowser/src/hero/ForcedWalkingState.cpp' l='139' ll='141' type='bool Solarus::Hero::ForcedWalkingState::can_avoid_prickle() const'/>
+<doc f='codebrowser/src/hero/ForcedWalkingState.cpp' l='135'>/**
+ * \brief Returns whether the hero ignores the effect of prickles in this state.
+ * \return true if the hero ignores the effect of prickles in the current state
+ */</doc>

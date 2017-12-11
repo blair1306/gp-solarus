@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/System.h' l='37' type='static void Solarus::System::initialize(const Solarus::Arguments &amp; args)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='149' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/System.cpp' l='44' ll='64' type='static void Solarus::System::initialize(const Solarus::Arguments &amp; args)'/>
+<doc f='codebrowser/src/lowlevel/System.cpp' l='36'>/**
+ * \brief Initializes the basic low-level system.
+ *
+ * Initializes the audio system, the video system,
+ * the data file system, etc.
+ *
+ * \param args Command-line arguments.
+ */</doc>

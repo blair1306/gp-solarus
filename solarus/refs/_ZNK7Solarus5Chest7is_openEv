@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='60' type='bool Solarus::Chest::is_open() const'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='72' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='130' ll='132' type='bool Solarus::Chest::is_open() const'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='381' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='126'>/**
+ * \brief Returns whether the player has found the treasure in this chest.
+ * \return true if the chest is open
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1852' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3067' u='c' c='_ZN7Solarus10LuaContext17chest_api_is_openEP9lua_State'/>

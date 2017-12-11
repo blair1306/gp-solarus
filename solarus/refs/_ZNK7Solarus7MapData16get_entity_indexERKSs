@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='177' type='Solarus::EntityIndex Solarus::MapData::get_entity_index(const std::string &amp; name) const'/>
+<def f='codebrowser/src/MapData.cpp' l='549' ll='558' type='Solarus::EntityIndex Solarus::MapData::get_entity_index(const std::string &amp; name) const'/>
+<use f='codebrowser/src/MapData.cpp' l='568' u='c' c='_ZNK7Solarus7MapData18get_entity_by_nameERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='587' u='c' c='_ZN7Solarus7MapData18get_entity_by_nameERKSs'/>
+<doc f='codebrowser/src/MapData.cpp' l='543'>/**
+ * \brief Returns the layer and index of an entity given its name.
+ * \param name Name of the entity to get.
+ * \return The layer and index of this entity.
+ * Returns an invalid index if there is no such entity.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='63' type='bool Solarus::DialogResources::has_dialog(const std::string &amp; dialog_id) const'/>
+<def f='codebrowser/src/DialogResources.cpp' l='128' ll='130' type='bool Solarus::DialogResources::has_dialog(const std::string &amp; dialog_id) const'/>
+<use f='codebrowser/src/DialogResources.cpp' l='203' u='c' c='_ZN7Solarus15DialogResources13set_dialog_idERKSsS2_'/>
+<use f='codebrowser/src/DialogResources.cpp' l='208' u='c' c='_ZN7Solarus15DialogResources13set_dialog_idERKSsS2_'/>
+<use f='codebrowser/src/DialogResources.cpp' l='275' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='123'>/**
+ * \brief Returns whether there exists a dialog with the specified id.
+ * \param dialog_id The id to test.
+ * \return \c true if a dialog exists with this id.
+ */</doc>

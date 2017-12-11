@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='44' type='uint32_t Solarus::Timer::get_initial_duration() const'/>
+<def f='codebrowser/src/Timer.cpp' l='130' ll='132' type='uint32_t Solarus::Timer::get_initial_duration() const'/>
+<doc f='codebrowser/src/Timer.cpp' l='126'>/**
+ * \brief Returns the initial duration of this timer.
+ * \return The initial duration in milliseconds.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='325' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>

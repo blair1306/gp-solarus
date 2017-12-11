@@ -1,0 +1,32 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='903' ll='1014'/>
+<size>104</size>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_iterable' o='0' t='const void *'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_iterator' o='64' t='void *'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_metaType_id' o='128' t='int'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_metaType_flags' o='160' t='uint'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_iteratorCapabilities' o='192' t='uint'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_size' o='256' t='sizeFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_at' o='320' t='atFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_moveToBegin' o='384' t='moveIteratorFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_moveToEnd' o='448' t='moveIteratorFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_advance' o='512' t='advanceFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_get' o='576' t='getFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_destroyIter' o='640' t='destroyIterFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_equalIter' o='704' t='equalIterFunc'/>
+<mbr r='QtMetaTypePrivate::QSequentialIterableImpl::_copyIter' o='768' t='copyIterFunc'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl8sizeImplEPKv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl6atImplEPKvi'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl15moveToBeginImplEPKvPPv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl13moveToEndImplEPKvPPv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl7getImplEPKPvij'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImplC1EPKT_'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImplC1Ev'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl11moveToBeginEv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl9moveToEndEv'/>
+<fun r='_ZNK17QtMetaTypePrivate23QSequentialIterableImpl5equalERKS0_'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl7advanceEi'/>
+<fun r='_ZNK17QtMetaTypePrivate23QSequentialIterableImpl10getCurrentEv'/>
+<fun r='_ZNK17QtMetaTypePrivate23QSequentialIterableImpl2atEi'/>
+<fun r='_ZNK17QtMetaTypePrivate23QSequentialIterableImpl4sizeEv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl11destroyIterEv'/>
+<fun r='_ZN17QtMetaTypePrivate23QSequentialIterableImpl4copyERKS0_'/>

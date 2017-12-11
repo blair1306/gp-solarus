@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='69' type='bool Solarus::Destructible::get_can_explode() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='388' u='c' c='_ZN7Solarus5Arrow34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='191' ll='193' type='bool Solarus::Destructible::get_can_explode() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='272' u='c' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='366' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='374' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='400' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='186'>/**
+ * \brief Returns whether this object explodes after a delay when the hero
+ * lifts it.
+ * \return \c true if this object can explode.
+ */</doc>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='363' u='c' c='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4178' u='c' c='_ZN7Solarus10LuaContext32destructible_api_get_can_explodeEP9lua_State'/>

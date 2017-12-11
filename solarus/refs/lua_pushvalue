@@ -1,0 +1,17 @@
+<dec f='include/luajit-2.0/lua.h' l='122' type='void lua_pushvalue(lua_State * L, int idx)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2526' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='458' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='276' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='619' u='c' c='_ZN7Solarus10LuaContext11find_methodEiPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='912' u='c' c='_ZN7Solarus10LuaContext13register_typeERKSsPK8luaL_RegS5_S5_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1057' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1282' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1295' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1297' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1357' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1371' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1376' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='88' u='c' c='_ZN7Solarus8LuaTools10create_refEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1338' u='c' c='_ZN7Solarus10LuaContext26l_get_map_entity_or_globalEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='386' u='c' c='_ZN7Solarus10LuaContext23start_movement_on_pointERKSt10shared_ptrINS_8MovementEEi'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1927' u='c' c='_ZN7Solarus10LuaContext28movement_on_position_changedERNS_8MovementERKNS_5PointE'/>

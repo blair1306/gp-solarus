@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='40' type='64'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='40'>/**&lt; Collision if an entity&apos;s sprite has pixels
+                                         * overlapping pixels of the detector&apos;s sprite. */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='45' u='r' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='74' u='r' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='888' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='942' u='r' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='273' u='r' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='85' u='r' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='178' u='r' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='115' u='r' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1681' u='r' c='_ZN7Solarus6Entity19set_collision_modesEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1813' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1867' u='r' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1950' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='40' u='r' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='34' u='r' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='66' u='r' c='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='83' u='r' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1194' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5576' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

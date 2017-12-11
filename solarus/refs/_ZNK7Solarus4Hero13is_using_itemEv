@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='241' type='bool Solarus::Hero::is_using_item() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2303' ll='2306' type='bool Solarus::Hero::is_using_item() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2299'>/**
+ * \brief Returns whether the hero is currently using an equipment item.
+ * \return true if the hero is using an equipment item.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='749' u='c' c='_ZN7Solarus10LuaContext21item_api_set_finishedEP9lua_State'/>

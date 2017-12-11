@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='272' type='void Solarus::Entity::add_collision_mode(Solarus::CollisionMode collision_mode)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='799' u='c' c='_ZN7Solarus12CustomEntity18add_collision_testERKNS_12ScopedLuaRefES3_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='268' u='c' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='273' u='c' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1691' ll='1694' type='void Solarus::Entity::add_collision_mode(Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1687'>/**
+ * \brief Adds a collision mode to be detected this entity.
+ * \param collision_mode The collision mode to add.
+ */</doc>

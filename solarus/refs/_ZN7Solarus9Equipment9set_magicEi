@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='83' type='void Solarus::Equipment::set_magic(int magic)'/>
+<def f='codebrowser/src/Equipment.cpp' l='338' ll='342' type='void Solarus::Equipment::set_magic(int magic)'/>
+<use f='codebrowser/src/Equipment.cpp' l='356' u='c' c='_ZN7Solarus9Equipment9add_magicEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='372' u='c' c='_ZN7Solarus9Equipment12remove_magicEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='380' u='c' c='_ZN7Solarus9Equipment17restore_all_magicEv'/>
+<doc f='codebrowser/src/Equipment.cpp' l='329'>/**
+ * \brief Sets the current number of magic points of the player.
+ *
+ * If the value is lower than zero, it is replaced by zero.
+ * If the value is greater than get_max_life(), it is replaced by that value.
+ *
+ * \param magic The player&apos;s new number of magic points.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1021' u='c' c='_ZN7Solarus10LuaContext18game_api_set_magicEP9lua_State'/>

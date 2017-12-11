@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Map.h' l='64' type='const std::string &amp; Solarus::Map::get_music_id() const'/>
+<def f='codebrowser/src/Map.cpp' l='100' ll='102' type='const std::string &amp; Solarus::Map::get_music_id() const'/>
+<doc f='codebrowser/src/Map.cpp' l='96'>/**
+ * \brief Returns the id of the music associated to this map.
+ * \return The id of the music, possibly Music::none or Music::unchanged.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1601' u='c' c='_ZN7Solarus10LuaContext17map_api_get_musicEP9lua_State'/>

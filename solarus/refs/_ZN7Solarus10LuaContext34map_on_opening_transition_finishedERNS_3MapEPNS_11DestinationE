@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='360' type='void Solarus::LuaContext::map_on_opening_transition_finished(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<use f='codebrowser/src/Map.cpp' l='740' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2350' ll='2360' type='void Solarus::LuaContext::map_on_opening_transition_finished(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2342'>/**
+ * \brief Calls the on_opening_transition_finished() method of a Lua map.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param map A map.
+ * \param destination The destination point used (nullptr if it is a special one).
+ */</doc>

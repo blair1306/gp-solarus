@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='142' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Entity::State::get_carried_object() const'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='1092' u='c' c='_ZNK7Solarus6Entity5State16is_carrying_itemEv'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1102' ll='1104' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Entity::State::get_carried_object() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1095'>/**
+ * \brief Returns the item currently carried by the entity in this state, if any.
+ *
+ * Redefine this function to make the entity able to carry an item in this state.
+ *
+ * \return the item carried by the entity, or nullptr
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='145' u='c' c='_ZN7Solarus4Hero18get_carried_objectEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2375' u='c' c='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='230' c='_ZNK7Solarus4Hero13CarryingState18get_carried_objectEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='320' c='_ZNK7Solarus4Hero12JumpingState18get_carried_objectEv'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='332' c='_ZNK7Solarus4Hero11StairsState18get_carried_objectEv'/>

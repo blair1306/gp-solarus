@@ -1,0 +1,39 @@
+<dec f='include/physfs.h' l='2258' type='void PHYSFS_enumerateFilesCallback(const char * dir, PHYSFS_EnumFilesCallback c, void * d)'/>
+<doc f='include/physfs.h' l='2220'>/**
+ * \fn void PHYSFS_enumerateFilesCallback(const char *dir, PHYSFS_EnumFilesCallback c, void *d)
+ * \brief Get a file listing of a search path&apos;s directory, using an application-defined callback.
+ *
+ * Internally, PHYSFS_enumerateFiles() just calls this function and then builds
+ *  a list before returning to the application, so functionality is identical
+ *  except for how the information is represented to the application.
+ *
+ * Unlike PHYSFS_enumerateFiles(), this function does not return an array.
+ *  Rather, it calls a function specified by the application once per
+ *  element of the search path:
+ *
+ * \code
+ *
+ * static void printDir(void *data, const char *origdir, const char *fname)
+ * {
+ *     printf(&quot; * We&apos;ve got [%s] in [%s].\n&quot;, fname, origdir);
+ * }
+ *
+ * // ...
+ * PHYSFS_enumerateFilesCallback(&quot;/some/path&quot;, printDir, NULL);
+ * \endcode
+ *
+ * Items sent to the callback are not guaranteed to be in any order whatsoever.
+ *  There is no sorting done at this level, and if you need that, you should
+ *  probably use PHYSFS_enumerateFiles() instead, which guarantees
+ *  alphabetical sorting. This form reports whatever is discovered in each
+ *  archive before moving on to the next. Even within one archive, we can&apos;t
+ *  guarantee what order it will discover data. &lt;em&gt;Any sorting you find in
+ *  these callbacks is just pure luck. Do not rely on it.&lt;/em&gt;
+ *
+ *    \param dir Directory, in platform-independent notation, to enumerate.
+ *    \param c Callback function to notify about search path elements.
+ *    \param d Application-defined data passed to callback. Can be NULL.
+ *
+ * \sa PHYSFS_EnumFilesCallback
+ * \sa PHYSFS_enumerateFiles
+ */</doc>

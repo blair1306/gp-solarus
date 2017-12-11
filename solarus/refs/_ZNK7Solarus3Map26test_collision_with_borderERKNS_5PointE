@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Map.h' l='114' type='bool Solarus::Map::test_collision_with_border(const Solarus::Point &amp; point) const'/>
+<def f='codebrowser/include/solarus/Map.h' l='250' ll='253' type='bool Solarus::Map::test_collision_with_border(const Solarus::Point &amp; point) const'/>
+<doc f='codebrowser/include/solarus/Map.h' l='245'>/**
+ * \brief Tests whether a point is outside the map area.
+ * \param point point to check.
+ * \return true if this point is outside the map area.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1082' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='228' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1097' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='233' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>

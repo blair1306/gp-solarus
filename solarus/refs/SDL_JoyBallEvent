@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='283' ll='294'/>
+<size>20</size>
+<doc f='include/SDL2/SDL_events.h' l='280'>/**
+ *  \brief Joystick trackball motion event structure (event.jball.*)
+ */</doc>
+<mbr r='SDL_JoyBallEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_JoyBallEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_JoyBallEvent::which' o='64' t='SDL_JoystickID'/>
+<mbr r='SDL_JoyBallEvent::ball' o='96' t='Uint8'/>
+<mbr r='SDL_JoyBallEvent::padding1' o='104' t='Uint8'/>
+<mbr r='SDL_JoyBallEvent::padding2' o='112' t='Uint8'/>
+<mbr r='SDL_JoyBallEvent::padding3' o='120' t='Uint8'/>
+<mbr r='SDL_JoyBallEvent::xrel' o='128' t='Sint16'/>
+<mbr r='SDL_JoyBallEvent::yrel' o='144' t='Sint16'/>

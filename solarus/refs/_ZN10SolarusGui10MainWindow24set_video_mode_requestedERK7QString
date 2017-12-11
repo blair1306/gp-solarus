@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/main_window.h' l='61' type='void SolarusGui::MainWindow::set_video_mode_requested(const QString &amp; video_mode_name)'/>
+<use f='codebrowser/gui/moc_main_window.cpp' l='150' u='c' c='_ZN10SolarusGui10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='143' u='c' c='_ZN10SolarusGui10MainWindow16initialize_menusEv'/>
+<def f='codebrowser/gui/src/main_window.cpp' l='581' ll='596' type='void SolarusGui::MainWindow::set_video_mode_requested(const QString &amp; video_mode_name)'/>
+<doc f='codebrowser/gui/src/main_window.cpp' l='577'>/**
+ * @brief Slot called when the user wants to change the video mode.
+ * @param video_mode_name The new video mode.
+ */</doc>

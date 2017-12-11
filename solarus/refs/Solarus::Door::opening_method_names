@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='108' type='const std::map&lt;OpeningMethod, std::string&gt;'/>
+<def f='codebrowser/src/entities/Door.cpp' l='43' ll='49' type='const std::map&lt;Door::OpeningMethod, std::string&gt;'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='40'>/**
+ * \brief Lua name of each value of the OpeningMethod enum.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1064' u='r' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

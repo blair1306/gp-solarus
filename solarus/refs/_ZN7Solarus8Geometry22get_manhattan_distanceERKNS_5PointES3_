@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='73' type='int Solarus::Geometry::get_manhattan_distance(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<def f='codebrowser/include/solarus/lowlevel/Geometry.h' l='137' ll='142' type='int Solarus::Geometry::get_manhattan_distance(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Geometry.h' l='131'>/**
+ * \brief Returns the Manhattan distance of two points, measured in number of pixels.
+ * \param point1 First point
+ * \param point2 Second point
+ * \return The Manhattan distance between these points
+ */</doc>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='123' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='184' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='193' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>

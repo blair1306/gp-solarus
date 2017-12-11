@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='94' type='void Solarus::Sprite::set_suspended(bool suspended)'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='130' c='_ZN7Solarus8Drawable13set_suspendedEb'/>
+<def f='codebrowser/src/Sprite.cpp' l='501' ll='518' type='void Solarus::Sprite::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/Sprite.cpp' l='529' u='c' c='_ZN7Solarus6Sprite18set_ignore_suspendEb'/>
+<doc f='codebrowser/src/Sprite.cpp' l='494'>/**
+ * \brief Suspends or resumes the animation.
+ *
+ * Nothing is done if the parameter specified does not change.
+ *
+ * \param suspended true to suspend the animation, false to resume it
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='337' u='c' c='_ZN7Solarus13CarriedObject13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2278' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2302' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3314' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='492' u='c' c='_ZN7Solarus8Pickable13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='913' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='916' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='917' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='921' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='924' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='927' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1430' u='c' c='_ZN7Solarus10LuaContext24entity_api_create_spriteEP9lua_State'/>

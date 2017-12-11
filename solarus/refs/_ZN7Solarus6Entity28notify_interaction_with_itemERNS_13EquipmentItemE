@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='327' type='bool Solarus::Entity::notify_interaction_with_item(Solarus::EquipmentItem &amp; item)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1160' c='_ZN7Solarus12CustomEntity28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3252' ll='3254' type='bool Solarus::Entity::notify_interaction_with_item(Solarus::EquipmentItem &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3235'>/**
+ * \brief Notifies this entity that the player is interacting with it by
+ * using an equipment item.
+ *
+ * Only possible if this entity detects collisions of type
+ * CollisionMode::COLLISION_FACING.
+ *
+ * This function is called when the player uses an equipment item
+ * while the hero is facing this entity.
+ *
+ * By default, nothing happens.
+ * Redefine your function in the subclasses to make your entity react to an
+ * equipment item.
+ *
+ * \param item The equipment item used.
+ * \return \c true if an interaction occurred.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3252'>/* item */</doc>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='334' c='_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='51' u='c' c='_ZN7Solarus4Hero14UsingItemState5startEPKNS_6Entity5StateE'/>

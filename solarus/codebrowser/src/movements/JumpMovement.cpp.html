@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JumpMovement.cpp source code [codebrowser/src/movements/JumpMovement.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/movements/JumpMovement.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>movements</a>/<a href='JumpMovement.cpp.html'>JumpMovement.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/movements/JumpMovement.h.html">"solarus/movements/JumpMovement.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/lua/LuaContext.h.html">"solarus/lua/LuaContext.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../include/c++/4.9/algorithm.html">&lt;algorithm&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../include/c++/4.9/sstream.html">&lt;sstream&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\brief</span> Trajectory of the basic jump movement for each direction.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="Solarus::JumpMovement::basic_trajectories" title='Solarus::JumpMovement::basic_trajectories' data-ref="Solarus::JumpMovement::basic_trajectories">basic_trajectories</dfn>[<var>8</var>] = {</td></tr>
+<tr><th id="29">29</th><td>  <q>"1 0"</q>,    <i>// right</i></td></tr>
+<tr><th id="30">30</th><td>  <q>"1 -1"</q>,   <i>// right-up</i></td></tr>
+<tr><th id="31">31</th><td>  <q>"0 -1"</q>,   <i>// up</i></td></tr>
+<tr><th id="32">32</th><td>  <q>"-1 -1"</q>,  <i>// left-up</i></td></tr>
+<tr><th id="33">33</th><td>  <q>"-1 0"</q>,   <i>// left</i></td></tr>
+<tr><th id="34">34</th><td>  <q>"-1 1"</q>,   <i>// left-down</i></td></tr>
+<tr><th id="35">35</th><td>  <q>"0 1"</q>,    <i>// down</i></td></tr>
+<tr><th id="36">36</th><td>  <q>"1 1"</q>     <i>// right-down</i></td></tr>
+<tr><th id="37">37</th><td>};</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">\brief</span> Creates a jump movement.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction8</span> of the movement (0 to 7)</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">distance</span> distance of the jump in pixels</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">speed</span> speed of the movement in pixels per second (0: default, based on the jump length)</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> true to make the movement ignore obstacles</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="46">46</th><td><a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZN7Solarus12JumpMovementC1Eiiib" title='Solarus::JumpMovement::JumpMovement' data-ref="_ZN7Solarus12JumpMovementC1Eiiib">JumpMovement</dfn>(<em>int</em> <dfn class="local col1 decl" id="1direction8" title='direction8' data-type='int' data-ref="1direction8">direction8</dfn>, <em>int</em> <dfn class="local col2 decl" id="2distance" title='distance' data-type='int' data-ref="2distance">distance</dfn>, <em>int</em> <dfn class="local col3 decl" id="3speed" title='speed' data-type='int' data-ref="3speed">speed</dfn>, <em>bool</em> <dfn class="local col4 decl" id="4ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="4ignore_obstacles">ignore_obstacles</dfn>):</td></tr>
+<tr><th id="47">47</th><td>  <a class="type" href="../../include/solarus/movements/PixelMovement.h.html#Solarus::PixelMovement" title='Solarus::PixelMovement' data-ref="Solarus::PixelMovement">PixelMovement</a><a class="ref" href="../../include/solarus/movements/PixelMovement.h.html#_ZN7Solarus13PixelMovementC1ERKSsjbb" title='Solarus::PixelMovement::PixelMovement' data-ref="_ZN7Solarus13PixelMovementC1ERKSsjbb">(</a><a class="ref fake" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>""</q>, <var>10</var>, <b>false</b>, <a class="local col4 ref" href="#4ignore_obstacles" title='ignore_obstacles' data-ref="4ignore_obstacles">ignore_obstacles</a>),</td></tr>
+<tr><th id="48">48</th><td>  <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::direction8" title='Solarus::JumpMovement::direction8' data-ref="Solarus::JumpMovement::direction8">direction8</a>(<a class="local col1 ref" href="#1direction8" title='direction8' data-ref="1direction8">direction8</a>),</td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::distance" title='Solarus::JumpMovement::distance' data-ref="Solarus::JumpMovement::distance">distance</a>(<a class="local col2 ref" href="#2distance" title='distance' data-ref="2distance">distance</a>),</td></tr>
+<tr><th id="50">50</th><td>  <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::speed" title='Solarus::JumpMovement::speed' data-ref="Solarus::JumpMovement::speed">speed</a>(<var>0</var>),</td></tr>
+<tr><th id="51">51</th><td>  <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::jump_height" title='Solarus::JumpMovement::jump_height' data-ref="Solarus::JumpMovement::jump_height">jump_height</a>(<var>0</var>) {</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>  <b>if</b> (<a class="local col1 ref" href="#1direction8" title='direction8' data-ref="1direction8">direction8</a> &lt; <var>0</var> || <a class="local col1 ref" href="#1direction8" title='direction8' data-ref="1direction8">direction8</a> &gt;= <var>8</var>) {</td></tr>
+<tr><th id="54">54</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostringstream" title='std::ostringstream' data-type='basic_ostringstream&lt;char&gt;' data-ref="std::ostringstream">ostringstream</a> <a class="ref fake" href="../../../include/c++/4.9/sstream.html#_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode" title='std::basic_ostringstream::basic_ostringstream&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode"></a><dfn class="local col5 decl" id="5oss" title='oss' data-type='std::ostringstream' data-ref="5oss">oss</dfn>;</td></tr>
+<tr><th id="55">55</th><td>    <a class="local col5 ref" href="#5oss" title='oss' data-ref="5oss">oss</a> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"Invalid jump direction: "</q> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZNSt13basic_ostreamlsEi" title='std::basic_ostream::operator&lt;&lt;' data-ref="_ZNSt13basic_ostreamlsEi">&lt;&lt;</a> <a class="local col1 ref" href="#1direction8" title='direction8' data-ref="1direction8">direction8</a>;</td></tr>
+<tr><th id="56">56</th><td>    <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug3dieERKSs" title='Solarus::Debug::die' data-ref="_ZN7Solarus5Debug3dieERKSs">die</a>(<a class="local col5 ref" href="#5oss" title='oss' data-ref="5oss">oss</a>.<a class="ref" href="../../../include/c++/4.9/sstream.html#_ZNKSt19basic_ostringstream3strEv" title='std::basic_ostringstream::str' data-ref="_ZNKSt19basic_ostringstream3strEv">str</a>());</td></tr>
+<tr><th id="57">57</th><td>  }</td></tr>
+<tr><th id="58">58</th><td>  <a class="member" href="#_ZN7Solarus12JumpMovement9set_speedEi" title='Solarus::JumpMovement::set_speed' data-ref="_ZN7Solarus12JumpMovement9set_speedEi">set_speed</a>(<a class="local col3 ref" href="#3speed" title='speed' data-ref="3speed">speed</a>);</td></tr>
+<tr><th id="59">59</th><td>}</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * <span class="command">\brief</span> Starts or restarts this movement.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="64">64</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZN7Solarus12JumpMovement7restartEv" title='Solarus::JumpMovement::restart' data-ref="_ZN7Solarus12JumpMovement7restartEv">restart</dfn>() {</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostringstream" title='std::ostringstream' data-type='basic_ostringstream&lt;char&gt;' data-ref="std::ostringstream">ostringstream</a> <a class="ref fake" href="../../../include/c++/4.9/sstream.html#_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode" title='std::basic_ostringstream::basic_ostringstream&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt19basic_ostringstreamC1ESt13_Ios_Openmode"></a><dfn class="local col6 decl" id="6oss" title='oss' data-type='std::ostringstream' data-ref="6oss">oss</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>  <b>for</b> (<em>int</em> <dfn class="local col7 decl" id="7i" title='i' data-type='int' data-ref="7i">i</dfn> = <var>0</var>; <a class="local col7 ref" href="#7i" title='i' data-ref="7i">i</a> &lt; <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::distance" title='Solarus::JumpMovement::distance' data-ref="Solarus::JumpMovement::distance">distance</a>; <a class="local col7 ref" href="#7i" title='i' data-ref="7i">i</a>++) {</td></tr>
+<tr><th id="69">69</th><td>    <a class="local col6 ref" href="#6oss" title='oss' data-ref="6oss">oss</a> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZStlsRSt13basic_ostreamIT_T0_ERKSbIS0_S1_T1_E" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIT_T0_ERKSbIS0_S1_T1_E">&lt;&lt;</a> <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::basic_trajectories" title='Solarus::JumpMovement::basic_trajectories' data-ref="Solarus::JumpMovement::basic_trajectories">basic_trajectories</a>[<a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::direction8" title='Solarus::JumpMovement::direction8' data-ref="Solarus::JumpMovement::direction8">direction8</a>] <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"  "</q>;</td></tr>
+<tr><th id="70">70</th><td>  }</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>  <a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZN7Solarus13PixelMovement14set_trajectoryERKSs" title='Solarus::PixelMovement::set_trajectory' data-ref="_ZN7Solarus13PixelMovement14set_trajectoryERKSs">set_trajectory</a>(<a class="local col6 ref" href="#6oss" title='oss' data-ref="6oss">oss</a>.<a class="ref" href="../../../include/c++/4.9/sstream.html#_ZNKSt19basic_ostringstream3strEv" title='std::basic_ostringstream::str' data-ref="_ZNKSt19basic_ostringstream3strEv">str</a>());</td></tr>
+<tr><th id="73">73</th><td>}</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction of this movement.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * <span class="command">\return</span> the direction (0 to 7)</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="79">79</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZNK7Solarus12JumpMovement14get_direction8Ev" title='Solarus::JumpMovement::get_direction8' data-ref="_ZNK7Solarus12JumpMovement14get_direction8Ev">get_direction8</dfn>() <em>const</em> {</td></tr>
+<tr><th id="80">80</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::direction8" title='Solarus::JumpMovement::direction8' data-ref="Solarus::JumpMovement::direction8">direction8</a>;</td></tr>
+<tr><th id="81">81</th><td>}</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * <span class="command">\brief</span> Changes the direction of this movement.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * The movement is restarted.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction8</span> the new direction (0 to 7)</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="90">90</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZN7Solarus12JumpMovement14set_direction8Ei" title='Solarus::JumpMovement::set_direction8' data-ref="_ZN7Solarus12JumpMovement14set_direction8Ei">set_direction8</dfn>(<em>int</em> <dfn class="local col8 decl" id="8direction8" title='direction8' data-type='int' data-ref="8direction8">direction8</dfn>) {</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::direction8" title='Solarus::JumpMovement::direction8' data-ref="Solarus::JumpMovement::direction8">direction8</a> = <a class="local col8 ref" href="#8direction8" title='direction8' data-ref="8direction8">direction8</a>;</td></tr>
+<tr><th id="93">93</th><td>  <a class="member" href="#_ZN7Solarus12JumpMovement7restartEv" title='Solarus::JumpMovement::restart' data-ref="_ZN7Solarus12JumpMovement7restartEv">restart</a>();</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * <span class="command">\brief</span> Returns the distance of the jump.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * <span class="command">\return</span> the distance in pixels</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="100">100</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZNK7Solarus12JumpMovement12get_distanceEv" title='Solarus::JumpMovement::get_distance' data-ref="_ZNK7Solarus12JumpMovement12get_distanceEv">get_distance</dfn>() <em>const</em> {</td></tr>
+<tr><th id="101">101</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::distance" title='Solarus::JumpMovement::distance' data-ref="Solarus::JumpMovement::distance">distance</a>;</td></tr>
+<tr><th id="102">102</th><td>}</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * <span class="command">\brief</span> Changes the distance of the jump.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * The movement is restarted.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">distance</span> the new distance in pixels</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="111">111</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZN7Solarus12JumpMovement12set_distanceEi" title='Solarus::JumpMovement::set_distance' data-ref="_ZN7Solarus12JumpMovement12set_distanceEi">set_distance</dfn>(<em>int</em> <dfn class="local col9 decl" id="9distance" title='distance' data-type='int' data-ref="9distance">distance</dfn>) {</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::distance" title='Solarus::JumpMovement::distance' data-ref="Solarus::JumpMovement::distance">distance</a> = <a class="local col9 ref" href="#9distance" title='distance' data-ref="9distance">distance</a>;</td></tr>
+<tr><th id="114">114</th><td>  <a class="member" href="#_ZN7Solarus12JumpMovement7restartEv" title='Solarus::JumpMovement::restart' data-ref="_ZN7Solarus12JumpMovement7restartEv">restart</a>();</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * <span class="command">\brief</span> Returns the speed of the movement.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * <span class="command">\return</span> the speed in pixels per second</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="121">121</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZNK7Solarus12JumpMovement9get_speedEv" title='Solarus::JumpMovement::get_speed' data-ref="_ZNK7Solarus12JumpMovement9get_speedEv">get_speed</dfn>() <em>const</em> {</td></tr>
+<tr><th id="122">122</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::speed" title='Solarus::JumpMovement::speed' data-ref="Solarus::JumpMovement::speed">speed</a>;</td></tr>
+<tr><th id="123">123</th><td>}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> * <span class="command">\brief</span> Sets the speed of the movement.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">speed</span> the speed in pixels per second (0 means auto, based on the length of the jump)</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="129">129</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="decl def" id="_ZN7Solarus12JumpMovement9set_speedEi" title='Solarus::JumpMovement::set_speed' data-ref="_ZN7Solarus12JumpMovement9set_speedEi">set_speed</dfn>(<em>int</em> <dfn class="local col0 decl" id="10speed" title='speed' data-type='int' data-ref="10speed">speed</dfn>) {</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>  <b>if</b> (<a class="local col0 ref" href="#10speed" title='speed' data-ref="10speed">speed</a> == <var>0</var>) {</td></tr>
+<tr><th id="132">132</th><td>    <a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZN7Solarus13PixelMovement9set_delayEj" title='Solarus::PixelMovement::set_delay' data-ref="_ZN7Solarus13PixelMovement9set_delayEj">set_delay</a>(<span class="namespace">std::</span><a class="ref" href="../../../include/c++/4.9/bits/algorithmfwd.h.html#_ZSt3maxRKT_S1_" title='std::max' data-ref="_ZSt3maxRKT_S1_">max</a>(<var>4</var>, <var>14</var> - <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::distance" title='Solarus::JumpMovement::distance' data-ref="Solarus::JumpMovement::distance">distance</a> / <var>10</var>));</td></tr>
+<tr><th id="133">133</th><td>  }</td></tr>
+<tr><th id="134">134</th><td>  <b>else</b> {</td></tr>
+<tr><th id="135">135</th><td>    <a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZN7Solarus13PixelMovement9set_delayEj" title='Solarus::PixelMovement::set_delay' data-ref="_ZN7Solarus13PixelMovement9set_delayEj">set_delay</a>(<var>1000</var> / <a class="local col0 ref" href="#10speed" title='speed' data-ref="10speed">speed</a>);</td></tr>
+<tr><th id="136">136</th><td>  }</td></tr>
+<tr><th id="137">137</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::speed" title='Solarus::JumpMovement::speed' data-ref="Solarus::JumpMovement::speed">speed</a> = <a class="local col0 ref" href="#10speed" title='speed' data-ref="10speed">speed</a>;</td></tr>
+<tr><th id="138">138</th><td>  <a class="member" href="#_ZN7Solarus12JumpMovement7restartEv" title='Solarus::JumpMovement::restart' data-ref="_ZN7Solarus12JumpMovement7restartEv">restart</a>();</td></tr>
+<tr><th id="139">139</th><td>}</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction a sprite controlled by this movement should take.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * <span class="command">\return</span> the direction to use to display the object controlled by this movement (0 to 3)</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus12JumpMovement24get_displayed_direction4Ev" title='Solarus::JumpMovement::get_displayed_direction4' data-ref="_ZNK7Solarus12JumpMovement24get_displayed_direction4Ev">get_displayed_direction4</dfn>() <em>const</em> {</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>  <em>static</em> <b>constexpr</b> <em>int</em> <dfn class="local col1 decl" id="11displayed_directions" title='displayed_directions' data-type='const int [8]' data-ref="11displayed_directions">displayed_directions</dfn>[] = {<var>0</var>, <var>0</var>, <var>1</var>, <var>2</var>, <var>2</var>, <var>2</var>, <var>3</var>, <var>0</var>};</td></tr>
+<tr><th id="148">148</th><td>  <b>return</b> <a class="local col1 ref" href="#11displayed_directions" title='displayed_directions' data-ref="11displayed_directions">displayed_directions</a>[<a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::direction8" title='Solarus::JumpMovement::direction8' data-ref="Solarus::JumpMovement::direction8">direction8</a>];</td></tr>
+<tr><th id="149">149</th><td>}</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * <span class="command">\brief</span> Returns the coordinates where an object controlled by this movement</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * should be displayed.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * The movement is applied to the shadow of the entity and</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * this function returns the coordinates where the entity should be displayed instead.</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * <span class="command">\return</span> the coordinates to use to display the object controlled by this movement</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="160">160</th><td><a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus12JumpMovement16get_displayed_xyEv" title='Solarus::JumpMovement::get_displayed_xy' data-ref="_ZNK7Solarus12JumpMovement16get_displayed_xyEv">get_displayed_xy</dfn>() <em>const</em> {</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>  <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="local col2 decl" id="12displayed_xy" title='displayed_xy' data-type='Solarus::Point' data-ref="12displayed_xy">displayed_xy</dfn> = <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="163">163</th><td>  <a class="local col2 ref" href="#12displayed_xy" title='displayed_xy' data-ref="12displayed_xy">displayed_xy</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::y" title='Solarus::Point::y' data-ref="Solarus::Point::y">y</a> -= <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::jump_height" title='Solarus::JumpMovement::jump_height' data-ref="Solarus::JumpMovement::jump_height">jump_height</a>; <i>// display the entity over its shadow</i></td></tr>
+<tr><th id="164">164</th><td>  <b>return</b> <a class="local col2 ref" href="#12displayed_xy" title='displayed_xy' data-ref="12displayed_xy">displayed_xy</a>;</td></tr>
+<tr><th id="165">165</th><td>}</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * <span class="command">\brief</span> This function is called when a step of the trajectory just occured.</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> * If updates the height of the jump when a step of the basic movement is made.</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">step_index</span> index of the step in the trajectory (the first one is 0)</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">success</span> true if the move was made, false if there was an obstacle</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="175">175</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus12JumpMovement16notify_step_doneEib" title='Solarus::JumpMovement::notify_step_done' data-ref="_ZN7Solarus12JumpMovement16notify_step_doneEib">notify_step_done</dfn>(<em>int</em> <dfn class="local col3 decl" id="13step_index" title='step_index' data-type='int' data-ref="13step_index">step_index</dfn>, <em>bool</em> <i>/* success */</i>) {</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>  <b>if</b> (<a class="local col3 ref" href="#13step_index" title='step_index' data-ref="13step_index">step_index</a> == <var>1</var> || <a class="local col3 ref" href="#13step_index" title='step_index' data-ref="13step_index">step_index</a> == <a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZNK7Solarus13PixelMovement10get_lengthEv" title='Solarus::PixelMovement::get_length' data-ref="_ZNK7Solarus13PixelMovement10get_lengthEv">get_length</a>()) {</td></tr>
+<tr><th id="178">178</th><td>    <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::jump_height" title='Solarus::JumpMovement::jump_height' data-ref="Solarus::JumpMovement::jump_height">jump_height</a> = <var>0</var>;</td></tr>
+<tr><th id="179">179</th><td>  }</td></tr>
+<tr><th id="180">180</th><td>  <b>else</b> {</td></tr>
+<tr><th id="181">181</th><td>    <em>const</em> <em>int</em> <dfn class="local col4 decl" id="14jump_sign" title='jump_sign' data-type='const int' data-ref="14jump_sign">jump_sign</dfn> = (<a class="local col3 ref" href="#13step_index" title='step_index' data-ref="13step_index">step_index</a> &lt;= <a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZNK7Solarus13PixelMovement10get_lengthEv" title='Solarus::PixelMovement::get_length' data-ref="_ZNK7Solarus13PixelMovement10get_lengthEv">get_length</a>() / <var>2</var>) ? <var>1</var> : -<var>1</var>;</td></tr>
+<tr><th id="182">182</th><td>    <em>const</em> <em>int</em> <dfn class="local col5 decl" id="15jump_unit" title='jump_unit' data-type='const int' data-ref="15jump_unit">jump_unit</dfn> = (<a class="member" href="../../include/solarus/movements/PixelMovement.h.html#_ZNK7Solarus13PixelMovement10get_lengthEv" title='Solarus::PixelMovement::get_length' data-ref="_ZNK7Solarus13PixelMovement10get_lengthEv">get_length</a>() &lt;= <var>16</var>) ? <var>2</var> : <var>1</var>;</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td>    <a class="member" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement::jump_height" title='Solarus::JumpMovement::jump_height' data-ref="Solarus::JumpMovement::jump_height">jump_height</a> += <a class="local col4 ref" href="#14jump_sign" title='jump_sign' data-ref="14jump_sign">jump_sign</a> * <a class="local col5 ref" href="#15jump_unit" title='jump_unit' data-ref="15jump_unit">jump_unit</a>;</td></tr>
+<tr><th id="185">185</th><td>  }</td></tr>
+<tr><th id="186">186</th><td>}</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * <span class="command">\brief</span> Returns the name identifying this type in Lua.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> * <span class="command">\return</span> the name identifying this type in Lua</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="192">192</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="type" href="../../include/solarus/movements/JumpMovement.h.html#Solarus::JumpMovement" title='Solarus::JumpMovement' data-ref="Solarus::JumpMovement">JumpMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus12JumpMovement17get_lua_type_nameEv" title='Solarus::JumpMovement::get_lua_type_name' data-ref="_ZNK7Solarus12JumpMovement17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> {</td></tr>
+<tr><th id="193">193</th><td>  <b>return</b> <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>::<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext::movement_jump_module_name" title='Solarus::LuaContext::movement_jump_module_name' data-ref="Solarus::LuaContext::movement_jump_module_name">movement_jump_module_name</a>;</td></tr>
+<tr><th id="194">194</th><td>}</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td>}</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

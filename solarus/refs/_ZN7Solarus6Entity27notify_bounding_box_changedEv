@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='156' type='void Solarus::Entity::notify_bounding_box_changed()'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='103' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='132' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='197' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='863' u='c' c='_ZN7Solarus6Entity19notify_size_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='936' ll='941' type='void Solarus::Entity::notify_bounding_box_changed()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1324' u='c' c='_ZN7Solarus6Entity13create_spriteERKSsS2_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1640' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='930'>/**
+ * \brief Notifies this entity that its bounding box may have changed.
+ *
+ * This function should be called when the value of get_bounding_box() or
+ * get_max_bounding_box() changes.
+ */</doc>

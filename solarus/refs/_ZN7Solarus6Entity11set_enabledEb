@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='184' type='void Solarus::Entity::set_enabled(bool enable)'/>
+<use f='codebrowser/src/entities/Door.cpp' l='213' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='218' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='51' u='c' c='_ZN7Solarus11DynamicTileC1ERKSsiRKNS_5PointERKNS_4SizeERKNS_7TilesetES2_b'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2251' ll='2311' type='void Solarus::Entity::set_enabled(bool enabled)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2247'>/**
+ * \brief Enables or disables this entity.
+ * \param enabled true to enable the entity, false to disable it
+ */</doc>
+<use f='codebrowser/src/entities/Stairs.cpp' l='356' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='362' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='867' u='c' c='_ZN7Solarus10LuaContext22entity_api_set_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2134' u='c' c='_ZN7Solarus10LuaContext28map_api_set_entities_enabledEP9lua_State'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='105' type='bool Solarus::Entity::State::can_persist_on_stream(const Solarus::Stream &amp; stream) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='756' ll='758' type='bool Solarus::Entity::State::can_persist_on_stream(const Solarus::Stream &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='746'>/**
+ * \brief Returns whether this state can continue when taking a stream.
+ *
+ * This function only matters if the stream is applied in this state, that is,
+ * when can_avoid_stream() is \c false.
+ *
+ * \param stream A stream.
+ * \return \c true if this state can continue, \c false if the entity should
+ * get back to FreeState.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='756'>/* stream */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1714' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='341' c='_ZNK7Solarus4Hero12RunningState21can_persist_on_streamERKNS_6StreamE'/>

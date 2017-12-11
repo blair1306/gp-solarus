@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='96' type='int Solarus::Equipment::get_item_slot(const Solarus::EquipmentItem &amp; item) const'/>
+<def f='codebrowser/src/Equipment.cpp' l='527' ll='537' type='int Solarus::Equipment::get_item_slot(const Solarus::EquipmentItem &amp; item) const'/>
+<doc f='codebrowser/src/Equipment.cpp' l='522'>/**
+ * \brief Returns the slot (1 or 2) where the specified item is currently assigned.
+ * \param item The item to find.
+ * \return The slot of this item, or 0 if this item is not assigned
+ */</doc>
+<use f='codebrowser/src/EquipmentItem.cpp' l='414' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>

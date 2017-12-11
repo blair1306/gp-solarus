@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='73' type='void Solarus::Movement::notify_obstacle_reached()'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='411' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='282' ll='292' type='void Solarus::Movement::notify_obstacle_reached()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='278'>/**
+ * \brief Notifies this movement that it just failed to apply
+ * because of obstacles.
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='184' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<ovr f='codebrowser/src/movements/RandomMovement.cpp' l='175' c='_ZN7Solarus14RandomMovement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='177' u='c' c='_ZN7Solarus14RandomMovement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='90' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='407' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='637' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

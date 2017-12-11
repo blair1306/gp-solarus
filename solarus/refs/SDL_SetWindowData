@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_video.h' l='475' type='void * SDL_SetWindowData(SDL_Window * window, const char * name, void * userdata)'/>
+<doc f='include/SDL2/SDL_video.h' l='462'>/**
+ *  \brief Associate an arbitrary named pointer with a window.
+ *
+ *  \param window   The window to associate with the pointer.
+ *  \param name     The name of the pointer.
+ *  \param userdata The associated pointer.
+ *
+ *  \return The previous value associated with &apos;name&apos;
+ *
+ *  \note The name is case-sensitive.
+ *
+ *  \sa SDL_GetWindowData()
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/FontResource.h' l='42' type='static SurfacePtr Solarus::FontResource::get_bitmap_font(const std::string &amp; font_id)'/>
+<def f='codebrowser/src/lowlevel/FontResource.cpp' l='170' ll='180' type='static SurfacePtr Solarus::FontResource::get_bitmap_font(const std::string &amp; font_id)'/>
+<doc f='codebrowser/src/lowlevel/FontResource.cpp' l='165'>/**
+ * \brief Returns the surface image of a bitmap font.
+ * \param font_id Id of the bitmap font to get. It must exist.
+ * \return The bitmap.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='467' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>

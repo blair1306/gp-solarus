@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='413' type='void Solarus::LuaContext::enemy_on_custom_attack_received(Solarus::Enemy &amp; enemy, Solarus::EnemyAttack attack, Solarus::Sprite * sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1541' u='c' c='_ZN7Solarus5Enemy13custom_attackENS_11EnemyAttackEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6473' ll='6483' type='void Solarus::LuaContext::enemy_on_custom_attack_received(Solarus::Enemy &amp; enemy, Solarus::EnemyAttack attack, Solarus::Sprite * sprite)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6464'>/**
+ * \brief Calls the on_custom_attack_received() method of a Lua enemy.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param enemy An enemy.
+ * \param attack The attack received.
+ * \param sprite The sprite that receives the attack if any.
+ */</doc>

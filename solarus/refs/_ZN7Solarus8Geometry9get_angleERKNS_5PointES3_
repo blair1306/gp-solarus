@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='75' type='double Solarus::Geometry::get_angle(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2858' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='72' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/lowlevel/Geometry.cpp' l='75' ll='77' type='double Solarus::Geometry::get_angle(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<doc f='codebrowser/src/lowlevel/Geometry.cpp' l='69'>/**
+ * \brief Returns the angle of the vector formed by two points.
+ * \param point1 First point.
+ * \param point2 Second point.
+ * \return The angle in radians, between 0 and TWO_PI.
+ */</doc>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='128' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='167' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='203' type='void Solarus::Hero::notify_collision_with_bomb(Solarus::Bomb &amp; bomb, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='312' c='_ZN7Solarus6Entity26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1893' ll='1906' type='void Solarus::Hero::notify_collision_with_bomb(Solarus::Bomb &amp; bomb, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1888'>/**
+ * \brief This function is called when a bomb detects a collision with this entity.
+ * \param bomb the bomb
+ * \param collision_mode the collision mode that detected the event
+ */</doc>

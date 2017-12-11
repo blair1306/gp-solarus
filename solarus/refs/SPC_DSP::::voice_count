@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='49' type='8'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='133'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='45'>// Sound control
+
+	// Mutes voices corresponding to non-zero bits in mask (overrides VxVOL with 0).
+	// Reduces emulation accuracy.</doc>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='634' u='r' c='_ZN7SPC_DSP11mute_voicesEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='691' u='r' c='_ZN7SPC_DSP4loadEPKh'/>

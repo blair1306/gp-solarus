@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='112' type='void Solarus::EntityData::set_string(const std::string &amp; key, const std::string &amp; value)'/>
+<def f='codebrowser/src/EntityData.cpp' l='570' ll='580' type='void Solarus::EntityData::set_string(const std::string &amp; key, const std::string &amp; value)'/>
+<use f='codebrowser/src/EntityData.cpp' l='786' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<doc f='codebrowser/src/EntityData.cpp' l='565'>/**
+ * \brief Sets the value of a string field of this entity.
+ * \param key Key of the field to set. It must exist and be a string.
+ * \param value The string value.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='64' type='void Solarus::Destructible::set_destruction_sound(const std::string &amp; destruction_sound)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='136' ll='138' type='void Solarus::Destructible::set_destruction_sound(const std::string &amp; destruction_sound_id)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='132'>/**
+ * \brief Sets the id of the sound to play when this item is destroyed.
+ * \param destruction_sound_id The destruction sound id or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4095' u='c' c='_ZN7Solarus10LuaContext38destructible_api_set_destruction_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='592' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

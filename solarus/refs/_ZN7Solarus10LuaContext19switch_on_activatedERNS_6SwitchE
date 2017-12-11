@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='392' type='void Solarus::LuaContext::switch_on_activated(Solarus::Switch &amp; sw)'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='153' u='c' c='_ZN7Solarus6Switch8activateEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6107' ll='6116' type='void Solarus::LuaContext::switch_on_activated(Solarus::Switch &amp; sw)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6100'>/**
+ * \brief Calls the on_activated() method of a Lua switch.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sw A switch.
+ */</doc>

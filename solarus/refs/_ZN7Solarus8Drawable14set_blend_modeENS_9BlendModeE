@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='133' type='void Solarus::Drawable::set_blend_mode(Solarus::BlendMode blend_mode)'/>
+<def f='codebrowser/src/Drawable.cpp' l='286' ll='288' type='void Solarus::Drawable::set_blend_mode(Solarus::BlendMode blend_mode)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='282'>/**
+ * \brief Sets the blend mode of this drawable object.
+ * \param blend_mode The blend mode.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='779' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='848' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='544' u='c' c='_ZN7Solarus11TextSurface8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='559' u='c' c='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='201' u='c' c='_ZN7Solarus10LuaContext27drawable_api_set_blend_modeEP9lua_State'/>

@@ -1,0 +1,7 @@
+<dec f='include/libmodplug/modplug.h' l='100' type='void ModPlug_GetSettings(ModPlug_Settings * settings)'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='31' u='c' c='_ZN7Solarus9ItDecoderC1Ev'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='155' u='c' c='_ZNK7Solarus9ItDecoder5loopsEv'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='166' u='c' c='_ZN7Solarus9ItDecoder9set_loopsEb'/>
+<doc f='include/libmodplug/modplug.h' l='97'>/* Get and set the mod decoder settings.  All options, except for channels, bits-per-sample,
+ * sampling rate, and loop count, will take effect immediately.  Those options which don&apos;t
+ * take effect immediately will take effect the next time you load a mod. */</doc>

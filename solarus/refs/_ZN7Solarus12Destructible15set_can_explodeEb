@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='70' type='void Solarus::Destructible::set_can_explode(bool can_explode)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='200' ll='204' type='void Solarus::Destructible::set_can_explode(bool can_explode)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='195'>/**
+ * \brief Sets whether this object explodes after a delay when the hero
+ * lifts it.
+ * \param can_explode \c true if this object can explode.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4196' u='c' c='_ZN7Solarus10LuaContext32destructible_api_set_can_explodeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='595' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

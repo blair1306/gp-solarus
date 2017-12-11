@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='61' type='Solarus::Point Solarus::Camera::get_position_to_track(const Solarus::Point &amp; tracked_xy) const'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='308' ll='314' type='Solarus::Point Solarus::Camera::get_position_to_track(const Solarus::Point &amp; tracked_xy) const'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='302'>/**
+ * \brief Returns the position this camera should take to track the specified point.
+ * \param tracked_xy A point in map coordinates.
+ * \return Where this camera should be placed to be focused on this point,
+ * respecting separators and map limits.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2682' u='c' c='_ZN7Solarus10LuaContext32camera_api_get_position_to_trackEP9lua_State'/>

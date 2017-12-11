@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='260' type='static void Solarus::InputEvent::simulate_key_released(Solarus::InputEvent::KeyboardKey key)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='873' ll='881' type='static void Solarus::InputEvent::simulate_key_released(Solarus::InputEvent::KeyboardKey key)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='869'>/**
+ * \brief Simulates releasing a keyboard key.
+ * \param key The key to simulate.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='375' u='c' c='_ZN7Solarus10LuaContext31input_api_simulate_key_releasedEP9lua_State'/>

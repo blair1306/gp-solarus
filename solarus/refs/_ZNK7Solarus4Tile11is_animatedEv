@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Tile.h' l='59' type='bool Solarus::Tile::is_animated() const'/>
+<def f='codebrowser/src/entities/Tile.cpp' l='119' ll='121' type='bool Solarus::Tile::is_animated() const'/>
+<doc f='codebrowser/src/entities/Tile.cpp' l='110'>/**
+ * \brief Returns whether the pattern is animated.
+ *
+ * Non-animated tiles may be rendered faster by using intermediate surfaces
+ * that are drawn only once.
+ * This function should return false if the tile pattern is always drawn the same way.
+ *
+ * \return true if the pattern of this tile is animated
+ */</doc>

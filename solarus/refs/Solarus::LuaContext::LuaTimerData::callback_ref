@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1042' type='Solarus::ScopedLuaRef'/>
+<offset>0</offset>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1042'>/**&lt; Lua ref of the function to call after the timer. */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='128' u='m' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='140' u='w' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='188' u='m' c='_ZN7Solarus10LuaContext12remove_timerERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='215' u='m' c='_ZN7Solarus10LuaContext13remove_timersEi'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='237' u='r' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='312' u='m' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='313' u='a' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='544' u='m' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='573' u='m' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>

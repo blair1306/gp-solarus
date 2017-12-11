@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='47' type='const Solarus::Size &amp; Solarus::VideoMode::get_initial_window_size() const'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='878' u='c' c='_ZN7Solarus5Video17reset_window_sizeEv'/>
+<def f='codebrowser/src/lowlevel/VideoMode.cpp' l='62' ll='64' type='const Solarus::Size &amp; Solarus::VideoMode::get_initial_window_size() const'/>
+<doc f='codebrowser/src/lowlevel/VideoMode.cpp' l='58'>/**
+ * \brief Returns the default size of the window when selecting this mode.
+ * \return Default size of the window when selecting this video mode.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='70' type='void Solarus::Pickable::set_suspended(bool suspended)'/>
+<doc f='codebrowser/include/solarus/entities/Pickable.h' l='69'>// item state</doc>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='355' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='487' ll='514' type='void Solarus::Pickable::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='479'>/**
+ * \brief This function is called by the map when the game is suspended or resumed.
+ *
+ * This is a redefinition of Entity::set_suspended() to suspend the timer
+ * which makes the pickable item disappear after a few seconds.
+ *
+ * \param suspended true to suspend the entity, false to resume it
+ */</doc>

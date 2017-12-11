@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qstringlistmodel.h source code [include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QStringListModel "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qstringlistmodel.h.html'>qstringlistmodel.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="5">5</th><td><i>**</i></td></tr>
+<tr><th id="6">6</th><td><i>** This file is part of the QtGui module of the Qt Toolkit.</i></td></tr>
+<tr><th id="7">7</th><td><i>**</i></td></tr>
+<tr><th id="8">8</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="9">9</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="10">10</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="11">11</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="12">12</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="13">13</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="14">14</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="15">15</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i>**</i></td></tr>
+<tr><th id="17">17</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="18">18</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="19">19</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="21">21</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="22">22</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="23">23</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="24">24</th><td><i>**</i></td></tr>
+<tr><th id="25">25</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="26">26</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="27">27</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="28">28</th><td><i>**</i></td></tr>
+<tr><th id="29">29</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="30">30</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="31">31</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="32">32</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="33">33</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="34">34</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="35">35</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="36">36</th><td><i>**</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="39">39</th><td><i>**</i></td></tr>
+<tr><th id="40">40</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">ifndef</span> <span class="macro" data-ref="_M/QSTRINGLISTMODEL_H">QSTRINGLISTMODEL_H</span></u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/QSTRINGLISTMODEL_H" data-ref="_M/QSTRINGLISTMODEL_H">QSTRINGLISTMODEL_H</dfn></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="qabstractitemmodel.h.html">&lt;QtCore/qabstractitemmodel.h&gt;</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="qstringlist.h.html">&lt;QtCore/qstringlist.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="51">ifndef</span> <span class="macro" data-ref="_M/QT_NO_STRINGLISTMODEL">QT_NO_STRINGLISTMODEL</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>class</b> <a class="macro" href="qglobal.h.html#304" title="__attribute__((visibility(&quot;default&quot;)))" data-ref="_M/Q_CORE_EXPORT">Q_CORE_EXPORT</a> <dfn class="type def" id="QStringListModel" title='QStringListModel' data-ref="QStringListModel">QStringListModel</dfn> : <b>public</b> <a class="type" href="qabstractitemmodel.h.html#QAbstractListModel" title='QAbstractListModel' data-ref="QAbstractListModel">QAbstractListModel</a></td></tr>
+<tr><th id="54">54</th><td>{</td></tr>
+<tr><th id="55">55</th><td>    <a class="macro" href="qobjectdefs.h.html#150" title="public: template &lt;typename ThisObject&gt; inline void qt_check_for_QOBJECT_macro(const ThisObject &amp;_q_argument) const { int i = qYouForgotTheQ_OBJECT_Macro(this, &amp;_q_argument); i = i + 1; } static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); static inline QString tr(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } static inline QString trUtf8(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } virtual int qt_metacall(QMetaObject::Call, int, void **); private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</a></td></tr>
+<tr><th id="56">56</th><td><b>public</b>:</td></tr>
+<tr><th id="57">57</th><td>    <b>explicit</b> <dfn class="decl" id="_ZN16QStringListModelC1EP7QObject" title='QStringListModel::QStringListModel' data-ref="_ZN16QStringListModelC1EP7QObject">QStringListModel</dfn>(<a class="type" href="qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a> *<dfn class="local col5 decl" id="355parent" title='parent' data-type='QObject *' data-ref="355parent">parent</dfn> = <var>0</var>);</td></tr>
+<tr><th id="58">58</th><td>    <b>explicit</b> <dfn class="decl" id="_ZN16QStringListModelC1ERK11QStringListP7QObject" title='QStringListModel::QStringListModel' data-ref="_ZN16QStringListModelC1ERK11QStringListP7QObject">QStringListModel</dfn>(<em>const</em> <a class="type" href="qstringlist.h.html#QStringList" title='QStringList' data-ref="QStringList">QStringList</a> &amp;<dfn class="local col6 decl" id="356strings" title='strings' data-type='const QStringList &amp;' data-ref="356strings">strings</dfn>, <a class="type" href="qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a> *<dfn class="local col7 decl" id="357parent" title='parent' data-type='QObject *' data-ref="357parent">parent</dfn> = <var>0</var>);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>    <em>int</em> <dfn class="virtual decl" id="_ZNK16QStringListModel8rowCountERK11QModelIndex" title='QStringListModel::rowCount' data-ref="_ZNK16QStringListModel8rowCountERK11QModelIndex">rowCount</dfn>(<em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col8 decl" id="358parent" title='parent' data-type='const QModelIndex &amp;' data-ref="358parent">parent</dfn> = <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a><a class="ref" href="qabstractitemmodel.h.html#_ZN11QModelIndexC1Ev" title='QModelIndex::QModelIndex' data-ref="_ZN11QModelIndexC1Ev">(</a>)) <em>const</em>;</td></tr>
+<tr><th id="61">61</th><td>    <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> <dfn class="virtual decl" id="_ZNK16QStringListModel7siblingEiiRK11QModelIndex" title='QStringListModel::sibling' data-ref="_ZNK16QStringListModel7siblingEiiRK11QModelIndex">sibling</dfn>(<em>int</em> <dfn class="local col9 decl" id="359row" title='row' data-type='int' data-ref="359row">row</dfn>, <em>int</em> <dfn class="local col0 decl" id="360column" title='column' data-type='int' data-ref="360column">column</dfn>, <em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col1 decl" id="361idx" title='idx' data-type='const QModelIndex &amp;' data-ref="361idx">idx</dfn>) <em>const</em>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>    <a class="type" href="qvariant.h.html#QVariant" title='QVariant' data-ref="QVariant">QVariant</a> <dfn class="virtual decl" id="_ZNK16QStringListModel4dataERK11QModelIndexi" title='QStringListModel::data' data-ref="_ZNK16QStringListModel4dataERK11QModelIndexi">data</dfn>(<em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col2 decl" id="362index" title='index' data-type='const QModelIndex &amp;' data-ref="362index">index</dfn>, <em>int</em> <dfn class="local col3 decl" id="363role" title='role' data-type='int' data-ref="363role">role</dfn>) <em>const</em>;</td></tr>
+<tr><th id="64">64</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti" title='QStringListModel::setData' data-ref="_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti">setData</dfn>(<em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col4 decl" id="364index" title='index' data-type='const QModelIndex &amp;' data-ref="364index">index</dfn>, <em>const</em> <a class="type" href="qvariant.h.html#QVariant" title='QVariant' data-ref="QVariant">QVariant</a> &amp;<dfn class="local col5 decl" id="365value" title='value' data-type='const QVariant &amp;' data-ref="365value">value</dfn>, <em>int</em> <dfn class="local col6 decl" id="366role" title='role' data-type='int' data-ref="366role">role</dfn> = <span class="namespace">Qt::</span><a class="enum" href="qnamespace.h.html#Qt::ItemDataRole::EditRole" title='Qt::ItemDataRole::EditRole' data-ref="Qt::ItemDataRole::EditRole">EditRole</a>);</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>    <span class="namespace">Qt::</span><a class="typedef" href="qnamespace.h.html#1466" title='Qt::ItemFlags' data-type='QFlags&lt;Qt::ItemFlag&gt;' data-ref="Qt::ItemFlags">ItemFlags</a> <dfn class="virtual decl" id="_ZNK16QStringListModel5flagsERK11QModelIndex" title='QStringListModel::flags' data-ref="_ZNK16QStringListModel5flagsERK11QModelIndex">flags</dfn>(<em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col7 decl" id="367index" title='index' data-type='const QModelIndex &amp;' data-ref="367index">index</dfn>) <em>const</em>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN16QStringListModel10insertRowsEiiRK11QModelIndex" title='QStringListModel::insertRows' data-ref="_ZN16QStringListModel10insertRowsEiiRK11QModelIndex">insertRows</dfn>(<em>int</em> <dfn class="local col8 decl" id="368row" title='row' data-type='int' data-ref="368row">row</dfn>, <em>int</em> <dfn class="local col9 decl" id="369count" title='count' data-type='int' data-ref="369count">count</dfn>, <em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col0 decl" id="370parent" title='parent' data-type='const QModelIndex &amp;' data-ref="370parent">parent</dfn> = <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a><a class="ref" href="qabstractitemmodel.h.html#_ZN11QModelIndexC1Ev" title='QModelIndex::QModelIndex' data-ref="_ZN11QModelIndexC1Ev">(</a>));</td></tr>
+<tr><th id="69">69</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN16QStringListModel10removeRowsEiiRK11QModelIndex" title='QStringListModel::removeRows' data-ref="_ZN16QStringListModel10removeRowsEiiRK11QModelIndex">removeRows</dfn>(<em>int</em> <dfn class="local col1 decl" id="371row" title='row' data-type='int' data-ref="371row">row</dfn>, <em>int</em> <dfn class="local col2 decl" id="372count" title='count' data-type='int' data-ref="372count">count</dfn>, <em>const</em> <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a> &amp;<dfn class="local col3 decl" id="373parent" title='parent' data-type='const QModelIndex &amp;' data-ref="373parent">parent</dfn> = <a class="type" href="qabstractitemmodel.h.html#QModelIndex" title='QModelIndex' data-ref="QModelIndex">QModelIndex</a><a class="ref" href="qabstractitemmodel.h.html#_ZN11QModelIndexC1Ev" title='QModelIndex::QModelIndex' data-ref="_ZN11QModelIndexC1Ev">(</a>));</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <em>void</em> <dfn class="virtual decl" id="_ZN16QStringListModel4sortEiN2Qt9SortOrderE" title='QStringListModel::sort' data-ref="_ZN16QStringListModel4sortEiN2Qt9SortOrderE">sort</dfn>(<em>int</em> <dfn class="local col4 decl" id="374column" title='column' data-type='int' data-ref="374column">column</dfn>, <span class="namespace">Qt::</span><a class="type" href="qnamespace.h.html#Qt::SortOrder" title='Qt::SortOrder' data-ref="Qt::SortOrder">SortOrder</a> <dfn class="local col5 decl" id="375order" title='order' data-type='Qt::SortOrder' data-ref="375order">order</dfn> = <span class="namespace">Qt::</span><a class="enum" href="qnamespace.h.html#Qt::SortOrder::AscendingOrder" title='Qt::SortOrder::AscendingOrder' data-ref="Qt::SortOrder::AscendingOrder">AscendingOrder</a>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>    <a class="type" href="qstringlist.h.html#QStringList" title='QStringList' data-ref="QStringList">QStringList</a> <dfn class="decl" id="_ZNK16QStringListModel10stringListEv" title='QStringListModel::stringList' data-ref="_ZNK16QStringListModel10stringListEv">stringList</dfn>() <em>const</em>;</td></tr>
+<tr><th id="74">74</th><td>    <em>void</em> <dfn class="decl" id="_ZN16QStringListModel13setStringListERK11QStringList" title='QStringListModel::setStringList' data-ref="_ZN16QStringListModel13setStringListERK11QStringList">setStringList</dfn>(<em>const</em> <a class="type" href="qstringlist.h.html#QStringList" title='QStringList' data-ref="QStringList">QStringList</a> &amp;<dfn class="local col6 decl" id="376strings" title='strings' data-type='const QStringList &amp;' data-ref="376strings">strings</dfn>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>    <span class="namespace">Qt::</span><a class="typedef" href="qnamespace.h.html#1416" title='Qt::DropActions' data-type='QFlags&lt;Qt::DropAction&gt;' data-ref="Qt::DropActions">DropActions</a> <dfn class="virtual decl" id="_ZNK16QStringListModel20supportedDropActionsEv" title='QStringListModel::supportedDropActions' data-ref="_ZNK16QStringListModel20supportedDropActionsEv">supportedDropActions</dfn>() <em>const</em>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><b>private</b>:</td></tr>
+<tr><th id="79">79</th><td>    <a class="macro" href="qglobal.h.html#1003" title="QStringListModel(const QStringListModel &amp;) = delete; QStringListModel &amp;operator=(const QStringListModel &amp;) = delete;" data-ref="_M/Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<dfn class="decl def" id="_ZN16QStringListModelC1ERKS_" title='QStringListModel::QStringListModel' data-ref="_ZN16QStringListModelC1ERKS_"><a class="type" href="#QStringListModel" title='QStringListModel' data-ref="QStringListModel"><a class="type" href="#QStringListModel" title='QStringListModel' data-ref="QStringListModel"><a class="type" href="#QStringListModel" title='QStringListModel' data-ref="QStringListModel">QStringListModel</a></a></a></dfn>)</td></tr>
+<tr><th id="80">80</th><td>    <a class="type" href="qstringlist.h.html#QStringList" title='QStringList' data-ref="QStringList">QStringList</a> <dfn class="decl" id="QStringListModel::lst" title='QStringListModel::lst' data-ref="QStringListModel::lst">lst</dfn>;</td></tr>
+<tr><th id="81">81</th><td>};</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="51">endif</span> // QT_NO_STRINGLISTMODEL</u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="42">endif</span> // QSTRINGLISTMODEL_H</u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/src/console_line_edit.cpp.html'>codebrowser/gui/src/console_line_edit.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

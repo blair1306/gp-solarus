@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_surface.h' l='369' type='int SDL_ConvertPixels(int width, int height, Uint32 src_format, const void * src, int src_pitch, Uint32 dst_format, void * dst, int dst_pitch)'/>
+<doc f='include/SDL2/SDL_surface.h' l='364'>/**
+ * \brief Copy a block of pixels of one format to another format
+ *
+ *  \return 0 on success, or -1 if there was an error
+ */</doc>

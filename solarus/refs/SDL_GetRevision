@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_version.h' l='142' type='const char * SDL_GetRevision()'/>
+<doc f='include/SDL2/SDL_version.h' l='135'>/**
+ *  \brief Get the code revision of SDL that is linked against your program.
+ *
+ *  Returns an arbitrary string (a hash value) uniquely identifying the
+ *  exact revision of the SDL library in use, and is only useful in comparing
+ *  against other revisions. It is NOT an incrementing number.
+ */</doc>

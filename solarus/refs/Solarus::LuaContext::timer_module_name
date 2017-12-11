@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='118' type='const std::string'/>
+<use f='codebrowser/src/Timer.cpp' l='201' u='a' c='_ZNK7Solarus5Timer17get_lua_type_nameEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='35' type='const std::string'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='68' u='r' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='78' u='r' c='_ZN7Solarus10LuaContext8is_timerEP9lua_Statei'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='90' u='r' c='_ZN7Solarus10LuaContext11check_timerEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='32'>/**
+ * Name of the Lua table representing the timer module.
+ */</doc>

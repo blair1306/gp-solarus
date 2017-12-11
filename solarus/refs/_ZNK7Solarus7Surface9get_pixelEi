@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='131' type='uint32_t Solarus::Surface::get_pixel(int index) const'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='904' ll='943' type='uint32_t Solarus::Surface::get_pixel(int index) const'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='956' u='c' c='_ZNK7Solarus7Surface20is_pixel_transparentEi'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='895'>/**
+ * \brief Returns a pixel value of this surface.
+ *
+ * The pixel format is preserved: if it is lower than 32 bpp, then the unused
+ * upper bits of the value are is padded with zeros.
+ *
+ * \param index Index of the pixel to get.
+ * \return The value of this pixel.
+ */</doc>

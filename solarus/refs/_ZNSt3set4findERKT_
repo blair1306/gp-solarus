@@ -1,0 +1,15 @@
+<def f='include/c++/4.9/bits/stl_set.h' l='700' ll='702' type='iterator std::set::find(const key_type &amp; __x)'/>
+<doc f='include/c++/4.9/bits/stl_set.h' l='689'>/**
+       *  @brief Tries to locate an element in a %set.
+       *  @param  __x  Element to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after element.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */</doc>
+<use f='codebrowser/src/entities/Wall.cpp' l='93' u='c' c='_ZN7Solarus4Wall15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='73' u='c' c='_ZN7Solarus10LuaContext12has_drawableERKSt10shared_ptrINS_8DrawableEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='443' u='c' c='_ZN7Solarus10LuaContext18warning_deprecatedERKSsS2_'/>

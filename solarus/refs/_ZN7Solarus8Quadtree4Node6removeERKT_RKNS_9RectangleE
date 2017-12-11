@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='101' type='bool Solarus::Quadtree::Node::remove(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='372' ll='409' type='bool Solarus::Quadtree::Node::remove(const T &amp; element, const Solarus::Rectangle &amp; bounding_box)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='363'>/**
+ * \brief Removes an element from this node if its bounding box intersects it.
+ *
+ * Merges nodes when necessary.
+ *
+ * \param element The element to remove.
+ * \param bounding_box Bounding box of the element.
+ * \return \c true in the element was found and removed.
+ */</doc>

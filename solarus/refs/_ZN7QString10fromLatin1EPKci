@@ -1,0 +1,4 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='485' ll='489' type='static QString QString::fromLatin1(const char * str, int size = -1)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='499' u='c' c='_ZN7QString10fromLatin1ERK10QByteArray'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='809' u='c' c='_ZN7QStringaSE13QLatin1String'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='484'>// note - this are all inline so we can benefit from strlen() compile time optimizations</doc>

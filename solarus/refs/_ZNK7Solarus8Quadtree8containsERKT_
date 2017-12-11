@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='65' type='bool Solarus::Quadtree::contains(const T &amp; element) const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='106' u='c' c='_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='224' ll='229' type='bool Solarus::Quadtree::contains(const T &amp; element) const'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='218'>/**
+ * \brief Returns whether an element is in the quadtree.
+ * \param element The element to check.
+ * \return \c true if it is in the quadtree, even if it is
+ * outside the quadtree space.
+ */</doc>

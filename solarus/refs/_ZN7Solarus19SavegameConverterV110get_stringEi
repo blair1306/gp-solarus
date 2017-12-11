@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/SavegameConverterV1.h' l='43' type='std::string Solarus::SavegameConverterV1::get_string(int index)'/>
+<doc f='codebrowser/include/solarus/SavegameConverterV1.h' l='42'>// data</doc>
+<def f='codebrowser/src/SavegameConverterV1.cpp' l='54' ll='56' type='std::string Solarus::SavegameConverterV1::get_string(int index)'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='89' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='90' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='91' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='105' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='106' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='108' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='109' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='110' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='111' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='112' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='113' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='114' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='115' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='116' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='128' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='179' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<doc f='codebrowser/src/SavegameConverterV1.cpp' l='48'>/**
+ * \brief Returns a string value saved.
+ * \param index index of the value to get, between 0 and 63
+ * (see enum StringIndex for their definition).
+ * \return The string value saved at this index.
+ */</doc>

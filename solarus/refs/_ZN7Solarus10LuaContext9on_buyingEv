@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1262' type='bool Solarus::LuaContext::on_buying()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6312' u='c' c='_ZN7Solarus10LuaContext23shop_treasure_on_buyingERNS_12ShopTreasureE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2410' ll='2425' type='bool Solarus::LuaContext::on_buying()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2406'>/**
+ * \brief Calls the on_buying() method of the object on top of the stack.
+ * \return true if the player is allowed to buy the item.
+ */</doc>

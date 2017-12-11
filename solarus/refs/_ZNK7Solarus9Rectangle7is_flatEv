@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='58' type='bool Solarus::Rectangle::is_flat() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='232' ll='234' type='bool Solarus::Rectangle::is_flat() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='422' u='c' c='_ZNK7Solarus9Rectangle8overlapsERKS0_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='422' u='c' c='_ZNK7Solarus9Rectangle8overlapsERKS0_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='228'>/**
+ * \brief Returns whether this rectangle is flat.
+ * \return true if the width or the height is 0.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='660' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='50' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='919' u='c' c='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>

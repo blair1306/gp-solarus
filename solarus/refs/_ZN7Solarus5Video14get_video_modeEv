@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='60' type='static const Solarus::VideoMode &amp; Solarus::Video::get_video_mode()'/>
+<use f='codebrowser/src/Settings.cpp' l='291' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='605' ll='610' type='static const Solarus::VideoMode &amp; Solarus::Video::get_video_mode()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='601'>/**
+ * \brief Returns the current video mode.
+ * \return The video mode.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='96' u='c' c='_ZN7Solarus10LuaContext18video_api_get_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='114' u='c' c='_ZN7Solarus10LuaContext18video_api_set_modeEP9lua_State'/>

@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_touch.h' l='66' type='SDL_TouchID SDL_GetTouchDevice(int index)'/>
+<doc f='include/SDL2/SDL_touch.h' l='63'>/**
+ *  \brief Get the touch ID with the given index, or 0 if the index is invalid.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='427' u='c' c='_ZN7Solarus10InputEvent14is_finger_downEi'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='539' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_positionEiRNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='565' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_pressureEiRf'/>

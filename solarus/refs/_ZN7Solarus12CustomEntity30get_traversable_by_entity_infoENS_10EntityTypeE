@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='245' type='const Solarus::CustomEntity::TraversableInfo &amp; Solarus::CustomEntity::get_traversable_by_entity_info(Solarus::EntityType type)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='138' ll='148' type='const CustomEntity::TraversableInfo &amp; Solarus::CustomEntity::get_traversable_by_entity_info(Solarus::EntityType type)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='159' u='c' c='_ZN7Solarus12CustomEntity24is_traversable_by_entityERNS_6EntityE'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='132'>/**
+ * \brief Returns the info about whether this custom entity can be traversed
+ * by a type of entity.
+ * \param type Type of entity to test.
+ * \return The corresponding traversable property.
+ */</doc>

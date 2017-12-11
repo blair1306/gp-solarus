@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='106' type='void Solarus::CommandsEffects::save_pause_key_effect()'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='233' ll='235' type='void Solarus::CommandsEffects::save_pause_key_effect()'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='228'>/**
+ * \brief Saves the current effect of the pause key.
+ *
+ * Call restore_pause_key_effect to restore the pause key saved here.
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='106' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>

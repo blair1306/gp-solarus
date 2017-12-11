@@ -1,0 +1,24 @@
+<def f='include/vorbis/vorbisfile.h' l='111' ll='146'/>
+<size>944</size>
+<mbr r='OggVorbis_File::datasource' o='0' t='void *'/>
+<mbr r='OggVorbis_File::seekable' o='64' t='int'/>
+<mbr r='OggVorbis_File::offset' o='128' t='ogg_int64_t'/>
+<mbr r='OggVorbis_File::end' o='192' t='ogg_int64_t'/>
+<mbr r='OggVorbis_File::oy' o='256' t='ogg_sync_state'/>
+<mbr r='OggVorbis_File::links' o='512' t='int'/>
+<mbr r='OggVorbis_File::offsets' o='576' t='ogg_int64_t *'/>
+<mbr r='OggVorbis_File::dataoffsets' o='640' t='ogg_int64_t *'/>
+<mbr r='OggVorbis_File::serialnos' o='704' t='long *'/>
+<mbr r='OggVorbis_File::pcmlengths' o='768' t='ogg_int64_t *'/>
+<mbr r='OggVorbis_File::vi' o='832' t='vorbis_info *'/>
+<mbr r='OggVorbis_File::vc' o='896' t='vorbis_comment *'/>
+<mbr r='OggVorbis_File::pcm_offset' o='960' t='ogg_int64_t'/>
+<mbr r='OggVorbis_File::ready_state' o='1024' t='int'/>
+<mbr r='OggVorbis_File::current_serialno' o='1088' t='long'/>
+<mbr r='OggVorbis_File::current_link' o='1152' t='int'/>
+<mbr r='OggVorbis_File::bittrack' o='1216' t='double'/>
+<mbr r='OggVorbis_File::samptrack' o='1280' t='double'/>
+<mbr r='OggVorbis_File::os' o='1344' t='ogg_stream_state'/>
+<mbr r='OggVorbis_File::vd' o='4608' t='vorbis_dsp_state'/>
+<mbr r='OggVorbis_File::vb' o='5760' t='vorbis_block'/>
+<mbr r='OggVorbis_File::callbacks' o='7296' t='ov_callbacks'/>

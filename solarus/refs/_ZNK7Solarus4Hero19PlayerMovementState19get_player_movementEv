@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='69' type='std::shared_ptr&lt;const PlayerMovement&gt; Solarus::Hero::PlayerMovementState::get_player_movement() const'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='68' ll='70' type='std::shared_ptr&lt;const PlayerMovement&gt; Solarus::Hero::PlayerMovementState::get_player_movement() const'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='202' u='c' c='_ZNK7Solarus4Hero19PlayerMovementState20can_control_movementEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='215' u='c' c='_ZNK7Solarus4Hero19PlayerMovementState30get_wanted_movement_direction8Ev'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='60'>/**
+ * \brief Returns the movement of the hero controlled by the player.
+ *
+ * This movement is applied to the hero until the end of this state or until
+ * someone sets another movement.
+ *
+ * \return The player movement.
+ */</doc>

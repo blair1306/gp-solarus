@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='181' type='bool Solarus::Enemy::is_invulnerable() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1163' ll='1165' type='bool Solarus::Enemy::is_invulnerable() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1159'>/**
+ * \brief Returns whether this enemy is currently invulnerable.
+ * \return \c true if this enemy cannot be hurt for now.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5034' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5054' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

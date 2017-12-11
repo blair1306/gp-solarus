@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/SwordLoadingState.h' l='32' type='void Solarus::Hero::SwordLoadingState::SwordLoadingState(Solarus::Hero &amp; hero)'/>
+<def f='codebrowser/src/hero/SwordLoadingState.cpp' l='39' ll='44' type='void Solarus::Hero::SwordLoadingState::SwordLoadingState(Solarus::Hero &amp; hero)'/>
+<doc f='codebrowser/src/hero/SwordLoadingState.cpp' l='35'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ */</doc>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='86' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='95' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>

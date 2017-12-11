@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='52' type='int Solarus::ScopedLuaRef::get() const'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='138' ll='140' type='int Solarus::ScopedLuaRef::get() const'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='134'>/**
+ * \brief Returns the ref.
+ * \return The encapsulated ref, possibly LUA_REFNIL or LUA_NOREF.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='128' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='128' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='130' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>

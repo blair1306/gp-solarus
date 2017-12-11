@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='298' type='void Solarus::Entity::check_position()'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3028' ll='3029' type='void Solarus::Entity::check_position()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3523' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3023'>/**
+ * \brief This function is called when the position, movement or state changes.
+ *
+ * Subclasses can redefine it to perform some checks.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1081' c='_ZN7Solarus4Hero14check_positionEv'/>

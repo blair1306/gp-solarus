@@ -1,0 +1,28 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/PushingState.h' l='30' ll='65'/>
+<size>72</size>
+<doc f='codebrowser/include/solarus/hero/PushingState.h' l='27'>/**
+ * \brief The state &quot;Pushing&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero12PushingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero12PushingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12PushingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero12PushingState15can_start_swordEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState24is_moving_grabbed_entityEv'/>
+<fun r='_ZN7Solarus4Hero12PushingState31notify_grabbed_entity_collisionEv'/>
+<fun r='_ZN7Solarus4Hero12PushingState24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus4Hero12PushingState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero12PushingState23notify_position_changedEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero12PushingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero12PushingState25is_shallow_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero12PushingState19is_prickle_obstacleEv'/>
+<fun r='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<mbr r='Solarus::Hero::PushingState::pushing_direction4' o='352' t='int'/>
+<mbr r='Solarus::Hero::PushingState::pushed_entity' o='384' t='Solarus::Entity *'/>
+<mbr r='Solarus::Hero::PushingState::pushing_movement' o='448' t='std::shared_ptr&lt;PathMovement&gt;'/>

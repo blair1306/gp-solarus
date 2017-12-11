@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='64' type='void Solarus::CarriedObject::set_animation_stopped()'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='149' ll='155' type='void Solarus::CarriedObject::set_animation_stopped()'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='143'>/**
+ * \brief Makes the item sprite stop moving.
+ *
+ * This function is called when the hero stops walking while carrying the item.
+ * The item also stops moving.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1096' u='c' c='_ZN7Solarus11HeroSprites30set_animation_stopped_carryingEv'/>

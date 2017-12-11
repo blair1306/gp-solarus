@@ -1,0 +1,39 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='66' type='bool Solarus::QuestFiles::data_file_exists(const std::string &amp; file_name, bool language_specific = false)'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='228' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='291' u='c' c='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<use f='codebrowser/gui/src/settings.cpp' l='56' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<use f='codebrowser/src/Savegame.cpp' l='108' u='c' c='_ZN7Solarus8Savegame10initializeEv'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='34' u='c' c='_ZN7Solarus19SavegameConverterV1C1ERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='157' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='66' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='70' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='74' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='77' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='80' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='83' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='86' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='89' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='266' u='c' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='270' u='c' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='274' u='c' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='206' u='c' c='_ZN7Solarus10QuestFiles12quest_existsEv'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='254' ll='270' type='bool Solarus::QuestFiles::data_file_exists(const std::string &amp; file_name, bool language_specific = false)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='245'>/**
+ * \brief Returns whether a file exists in the quest data directory or
+ * in Solarus write directory, and is not a directory.
+ * \param file_name A file name relative to the quest data directory,
+ * to the current language directory or to Solarus write directory.
+ * \param language_specific \c true if the file is relative to the current
+ * language directory.
+ * \return \c true if this file exists and is not a directory.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='285' u='c' c='_ZN7Solarus5Sound6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='448' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='227' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='142' u='c' c='_ZN7Solarus10LuaContext15file_api_existsEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='168' u='c' c='_ZN7Solarus10LuaContext15game_api_existsEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='674' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='680' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='95' u='c' c='_ZN7Solarus7LuaData22import_from_quest_fileERKSsb'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='269' u='c' c='_ZN7Solarus10LuaContext22main_api_load_settingsEP9lua_State'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='73' u='c' c='main'/>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_assert.h source code [include/SDL2/SDL_assert.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_assert.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_assert.h.html'>SDL_assert.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/_SDL_assert_h">_SDL_assert_h</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/_SDL_assert_h" data-ref="_M/_SDL_assert_h">_SDL_assert_h</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="SDL_config.h.html">"SDL_config.h"</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="28">28</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="29">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="30">30</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="29">endif</span></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">ifndef</span> <span class="macro" data-ref="_M/SDL_ASSERT_LEVEL">SDL_ASSERT_LEVEL</span></u></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="34">ifdef</span> <span class="macro" data-ref="_M/SDL_DEFAULT_ASSERT_LEVEL">SDL_DEFAULT_ASSERT_LEVEL</span></u></td></tr>
+<tr><th id="35">35</th><td><u>#define SDL_ASSERT_LEVEL SDL_DEFAULT_ASSERT_LEVEL</u></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="34">elif</span> defined(<span class="macro" data-ref="_M/_DEBUG">_DEBUG</span>) || defined(<span class="macro" data-ref="_M/DEBUG">DEBUG</span>) || \</u></td></tr>
+<tr><th id="37">37</th><td><u>      (defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/__OPTIMIZE__">__OPTIMIZE__</span>))</u></td></tr>
+<tr><th id="38">38</th><td><u>#define SDL_ASSERT_LEVEL 2</u></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="34">else</span></u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/SDL_ASSERT_LEVEL" data-ref="_M/SDL_ASSERT_LEVEL">SDL_ASSERT_LEVEL</dfn> 1</u></td></tr>
+<tr><th id="41">41</th><td><u>#<span data-ppcond="34">endif</span></u></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="33">endif</span> /* SDL_ASSERT_LEVEL */</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/*</i></td></tr>
+<tr><th id="45">45</th><td><i>These are macros and not first class functions so that the debugger breaks</i></td></tr>
+<tr><th id="46">46</th><td><i>on the assertion line and not in some random guts of SDL, and so each</i></td></tr>
+<tr><th id="47">47</th><td><i>assert can have unique static variables associated with it.</i></td></tr>
+<tr><th id="48">48</th><td><i>*/</i></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="50">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>)</u></td></tr>
+<tr><th id="51">51</th><td><i>/* Don't include intrin.h here because it contains C++ code */</i></td></tr>
+<tr><th id="52">52</th><td>    <b>extern</b> <em>void</em> <b>__cdecl</b> __debugbreak(<em>void</em>);</td></tr>
+<tr><th id="53">53</th><td>    <u>#define SDL_TriggerBreakpoint() __debugbreak()</u></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="50">elif</span> (defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; (defined(<span class="macro" data-ref="_M/__i386__">__i386__</span>) || defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>)))</u></td></tr>
+<tr><th id="55">55</th><td>    <u>#define <dfn class="macro" id="_M/SDL_TriggerBreakpoint" data-ref="_M/SDL_TriggerBreakpoint">SDL_TriggerBreakpoint</dfn>() __asm__ __volatile__ ( "int $3\n\t" )</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="50">elif</span> defined(HAVE_SIGNAL_H)</u></td></tr>
+<tr><th id="57">57</th><td>    <u>#include &lt;signal.h&gt;</u></td></tr>
+<tr><th id="58">58</th><td>    <u>#define SDL_TriggerBreakpoint() raise(SIGTRAP)</u></td></tr>
+<tr><th id="59">59</th><td><u>#else</u></td></tr>
+<tr><th id="60">60</th><td>    <i>/* How do we trigger breakpoints on this platform? */</i></td></tr>
+<tr><th id="61">61</th><td>    <u>#define SDL_TriggerBreakpoint()</u></td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="50">endif</span></u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="64">if</span> defined(<span class="macro" data-ref="_M/__STDC_VERSION__">__STDC_VERSION__</span>) &amp;&amp; (__STDC_VERSION__ &gt;= 199901L) /* C99 supports __func__ as a standard. */</u></td></tr>
+<tr><th id="65">65</th><td><u>#   define SDL_FUNCTION __func__</u></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="64">elif</span> ((<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &gt;= 2) || defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>))</u></td></tr>
+<tr><th id="67">67</th><td><u>#   define <dfn class="macro" id="_M/SDL_FUNCTION" data-ref="_M/SDL_FUNCTION">SDL_FUNCTION</dfn> __FUNCTION__</u></td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="64">else</span></u></td></tr>
+<tr><th id="69">69</th><td><u>#   define SDL_FUNCTION "???"</u></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="64">endif</span></u></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/SDL_FILE" data-ref="_M/SDL_FILE">SDL_FILE</dfn>    __FILE__</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/SDL_LINE" data-ref="_M/SDL_LINE">SDL_LINE</dfn>    __LINE__</u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><i>/*</i></td></tr>
+<tr><th id="75">75</th><td><i>sizeof (x) makes the compiler still parse the expression even without</i></td></tr>
+<tr><th id="76">76</th><td><i>assertions enabled, so the code is always checked at compile time, but</i></td></tr>
+<tr><th id="77">77</th><td><i>doesn't actually generate code for it, so there are no side effects or</i></td></tr>
+<tr><th id="78">78</th><td><i>expensive checks at run time, just the constant size of what x WOULD be,</i></td></tr>
+<tr><th id="79">79</th><td><i>which presumably gets optimized out as unused.</i></td></tr>
+<tr><th id="80">80</th><td><i>This also solves the problem of...</i></td></tr>
+<tr><th id="81">81</th><td><i></i></td></tr>
+<tr><th id="82">82</th><td><i>    int somevalue = blah();</i></td></tr>
+<tr><th id="83">83</th><td><i>    SDL_assert(somevalue == 1);</i></td></tr>
+<tr><th id="84">84</th><td><i></i></td></tr>
+<tr><th id="85">85</th><td><i>...which would cause compiles to complain that somevalue is unused if we</i></td></tr>
+<tr><th id="86">86</th><td><i>disable assertions.</i></td></tr>
+<tr><th id="87">87</th><td><i>*/</i></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="89">ifdef</span> <span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>  /* stupid /W4 warnings. */</u></td></tr>
+<tr><th id="90">90</th><td><u>#define SDL_NULL_WHILE_LOOP_CONDITION (-1 == __LINE__)</u></td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="89">else</span></u></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/SDL_NULL_WHILE_LOOP_CONDITION" data-ref="_M/SDL_NULL_WHILE_LOOP_CONDITION">SDL_NULL_WHILE_LOOP_CONDITION</dfn> (0)</u></td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="89">endif</span></u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/SDL_disabled_assert" data-ref="_M/SDL_disabled_assert">SDL_disabled_assert</dfn>(condition) \</u></td></tr>
+<tr><th id="96">96</th><td><u>    do { (void) sizeof ((condition)); } while (SDL_NULL_WHILE_LOOP_CONDITION)</u></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="99">99</th><td>{</td></tr>
+<tr><th id="100">100</th><td>    <dfn class="enum" id="::SDL_ASSERTION_RETRY" title='::SDL_ASSERTION_RETRY' data-ref="::SDL_ASSERTION_RETRY">SDL_ASSERTION_RETRY</dfn>,  <i class="doc">/**&lt; Retry the assert immediately. */</i></td></tr>
+<tr><th id="101">101</th><td>    <dfn class="enum" id="::SDL_ASSERTION_BREAK" title='::SDL_ASSERTION_BREAK' data-ref="::SDL_ASSERTION_BREAK">SDL_ASSERTION_BREAK</dfn>,  <i class="doc">/**&lt; Make the debugger trigger a breakpoint. */</i></td></tr>
+<tr><th id="102">102</th><td>    <dfn class="enum" id="::SDL_ASSERTION_ABORT" title='::SDL_ASSERTION_ABORT' data-ref="::SDL_ASSERTION_ABORT">SDL_ASSERTION_ABORT</dfn>,  <i class="doc">/**&lt; Terminate the program. */</i></td></tr>
+<tr><th id="103">103</th><td>    <dfn class="enum" id="::SDL_ASSERTION_IGNORE" title='::SDL_ASSERTION_IGNORE' data-ref="::SDL_ASSERTION_IGNORE">SDL_ASSERTION_IGNORE</dfn>,  <i class="doc">/**&lt; Ignore the assert. */</i></td></tr>
+<tr><th id="104">104</th><td>    <dfn class="enum" id="::SDL_ASSERTION_ALWAYS_IGNORE" title='::SDL_ASSERTION_ALWAYS_IGNORE' data-ref="::SDL_ASSERTION_ALWAYS_IGNORE">SDL_ASSERTION_ALWAYS_IGNORE</dfn>  <i class="doc">/**&lt; Ignore the assert from now on. */</i></td></tr>
+<tr><th id="105">105</th><td>} <dfn class="typedef" id="SDL_assert_state" title='SDL_assert_state' data-type='enum SDL_assert_state' data-ref="SDL_assert_state">SDL_assert_state</dfn>;</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_assert_data" title='SDL_assert_data' data-ref="SDL_assert_data"><a class="type" href="#SDL_assert_data" title='SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</a></dfn></td></tr>
+<tr><th id="108">108</th><td>{</td></tr>
+<tr><th id="109">109</th><td>    <em>int</em> <dfn class="decl" id="SDL_assert_data::always_ignore" title='SDL_assert_data::always_ignore' data-ref="SDL_assert_data::always_ignore">always_ignore</dfn>;</td></tr>
+<tr><th id="110">110</th><td>    <em>unsigned</em> <em>int</em> <dfn class="decl" id="SDL_assert_data::trigger_count" title='SDL_assert_data::trigger_count' data-ref="SDL_assert_data::trigger_count">trigger_count</dfn>;</td></tr>
+<tr><th id="111">111</th><td>    <em>const</em> <em>char</em> *<dfn class="decl" id="SDL_assert_data::condition" title='SDL_assert_data::condition' data-ref="SDL_assert_data::condition">condition</dfn>;</td></tr>
+<tr><th id="112">112</th><td>    <em>const</em> <em>char</em> *<dfn class="decl" id="SDL_assert_data::filename" title='SDL_assert_data::filename' data-ref="SDL_assert_data::filename">filename</dfn>;</td></tr>
+<tr><th id="113">113</th><td>    <em>int</em> <dfn class="decl" id="SDL_assert_data::linenum" title='SDL_assert_data::linenum' data-ref="SDL_assert_data::linenum">linenum</dfn>;</td></tr>
+<tr><th id="114">114</th><td>    <em>const</em> <em>char</em> *<dfn class="decl" id="SDL_assert_data::function" title='SDL_assert_data::function' data-ref="SDL_assert_data::function">function</dfn>;</td></tr>
+<tr><th id="115">115</th><td>    <em>const</em> <b>struct</b> <a class="type" href="#SDL_assert_data" title='SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</a> *<dfn class="decl" id="SDL_assert_data::next" title='SDL_assert_data::next' data-ref="SDL_assert_data::next">next</dfn>;</td></tr>
+<tr><th id="116">116</th><td>} <dfn class="typedef" id="SDL_assert_data" title='SDL_assert_data' data-type='struct SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</dfn>;</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="118">if</span> (<a class="macro" href="#40" title="1" data-ref="_M/SDL_ASSERT_LEVEL">SDL_ASSERT_LEVEL</a> &gt; 0)</u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><i>/* Never call this directly. Use the SDL_assert* macros. */</i></td></tr>
+<tr><th id="121">121</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_assert_state" title='SDL_assert_state' data-type='enum SDL_assert_state' data-ref="SDL_assert_state">SDL_assert_state</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReportAssertion" title='SDL_ReportAssertion' data-ref="SDL_ReportAssertion">SDL_ReportAssertion</dfn>(<a class="typedef" href="#SDL_assert_data" title='SDL_assert_data' data-type='struct SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</a> *,</td></tr>
+<tr><th id="122">122</th><td>                                                             <em>const</em> <em>char</em> *,</td></tr>
+<tr><th id="123">123</th><td>                                                             <em>const</em> <em>char</em> *, <em>int</em>)</td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="124">if</span> defined(<span class="macro" data-ref="_M/__clang__">__clang__</span>)</u></td></tr>
+<tr><th id="125">125</th><td><u>#<span data-ppcond="125">if</span> <span class="macro" title="" data-ref="_M/__has_feature">__has_feature</span>(attribute_analyzer_noreturn)</u></td></tr>
+<tr><th id="126">126</th><td><i>/* this tells Clang's static analysis that we're a custom assert function,</i></td></tr>
+<tr><th id="127">127</th><td><i>   and that the analyzer should assume the condition was always true past this</i></td></tr>
+<tr><th id="128">128</th><td><i>   SDL_assert test. */</i></td></tr>
+<tr><th id="129">129</th><td>   <b>__attribute__</b>((analyzer_noreturn))</td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="125">endif</span></u></td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="124">endif</span></u></td></tr>
+<tr><th id="132">132</th><td>;</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i>/* the do {} while(0) avoids dangling else problems:</i></td></tr>
+<tr><th id="135">135</th><td><i>    if (x) SDL_assert(y); else blah();</i></td></tr>
+<tr><th id="136">136</th><td><i>       ... without the do/while, the "else" could attach to this macro's "if".</i></td></tr>
+<tr><th id="137">137</th><td><i>   We try to handle just the minimum we need here in a macro...the loop,</i></td></tr>
+<tr><th id="138">138</th><td><i>   the static vars, and break points. The heavy lifting is handled in</i></td></tr>
+<tr><th id="139">139</th><td><i>   SDL_ReportAssertion(), in SDL_assert.c.</i></td></tr>
+<tr><th id="140">140</th><td><i>*/</i></td></tr>
+<tr><th id="141">141</th><td><u>#define <dfn class="macro" id="_M/SDL_enabled_assert" data-ref="_M/SDL_enabled_assert">SDL_enabled_assert</dfn>(condition) \</u></td></tr>
+<tr><th id="142">142</th><td><u>    do { \</u></td></tr>
+<tr><th id="143">143</th><td><u>        while ( !(condition) ) { \</u></td></tr>
+<tr><th id="144">144</th><td><u>            static struct SDL_assert_data assert_data = { \</u></td></tr>
+<tr><th id="145">145</th><td><u>                0, 0, #condition, 0, 0, 0, 0 \</u></td></tr>
+<tr><th id="146">146</th><td><u>            }; \</u></td></tr>
+<tr><th id="147">147</th><td><u>            const SDL_assert_state state = SDL_ReportAssertion(&amp;assert_data, \</u></td></tr>
+<tr><th id="148">148</th><td><u>                                                               SDL_FUNCTION, \</u></td></tr>
+<tr><th id="149">149</th><td><u>                                                               SDL_FILE, \</u></td></tr>
+<tr><th id="150">150</th><td><u>                                                               SDL_LINE); \</u></td></tr>
+<tr><th id="151">151</th><td><u>            if (state == SDL_ASSERTION_RETRY) { \</u></td></tr>
+<tr><th id="152">152</th><td><u>                continue; /* go again. */ \</u></td></tr>
+<tr><th id="153">153</th><td><u>            } else if (state == SDL_ASSERTION_BREAK) { \</u></td></tr>
+<tr><th id="154">154</th><td><u>                SDL_TriggerBreakpoint(); \</u></td></tr>
+<tr><th id="155">155</th><td><u>            } \</u></td></tr>
+<tr><th id="156">156</th><td><u>            break; /* not retrying. */ \</u></td></tr>
+<tr><th id="157">157</th><td><u>        } \</u></td></tr>
+<tr><th id="158">158</th><td><u>    } while (SDL_NULL_WHILE_LOOP_CONDITION)</u></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="118">endif</span>  /* enabled assertions support code */</u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i>/* Enable various levels of assertions. */</i></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="163">if</span> <a class="macro" href="#40" title="1" data-ref="_M/SDL_ASSERT_LEVEL">SDL_ASSERT_LEVEL</a> == 0   /* assertions disabled */</u></td></tr>
+<tr><th id="164">164</th><td><u>#   define SDL_assert(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="165">165</th><td><u>#   define SDL_assert_release(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="166">166</th><td><u>#   define SDL_assert_paranoid(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="167">167</th><td><u>#<span data-ppcond="163">elif</span> <a class="macro" href="#40" title="1" data-ref="_M/SDL_ASSERT_LEVEL">SDL_ASSERT_LEVEL</a> == 1  /* release settings. */</u></td></tr>
+<tr><th id="168">168</th><td><u>#   define <dfn class="macro" id="_M/SDL_assert" data-ref="_M/SDL_assert">SDL_assert</dfn>(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="169">169</th><td><u>#   define <dfn class="macro" id="_M/SDL_assert_release" data-ref="_M/SDL_assert_release">SDL_assert_release</dfn>(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="170">170</th><td><u>#   define <dfn class="macro" id="_M/SDL_assert_paranoid" data-ref="_M/SDL_assert_paranoid">SDL_assert_paranoid</dfn>(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="171">171</th><td><u>#<span data-ppcond="163">elif</span> SDL_ASSERT_LEVEL == 2  /* normal settings. */</u></td></tr>
+<tr><th id="172">172</th><td><u>#   define SDL_assert(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="173">173</th><td><u>#   define SDL_assert_release(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="174">174</th><td><u>#   define SDL_assert_paranoid(condition) SDL_disabled_assert(condition)</u></td></tr>
+<tr><th id="175">175</th><td><u>#elif SDL_ASSERT_LEVEL == 3  /* paranoid settings. */</u></td></tr>
+<tr><th id="176">176</th><td><u>#   define SDL_assert(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="177">177</th><td><u>#   define SDL_assert_release(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="178">178</th><td><u>#   define SDL_assert_paranoid(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="179">179</th><td><u>#else</u></td></tr>
+<tr><th id="180">180</th><td><u>#   error Unknown assertion level.</u></td></tr>
+<tr><th id="181">181</th><td><u>#<span data-ppcond="163">endif</span></u></td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><i>/* this assertion is never disabled at any level. */</i></td></tr>
+<tr><th id="184">184</th><td><u>#define <dfn class="macro" id="_M/SDL_assert_always" data-ref="_M/SDL_assert_always">SDL_assert_always</dfn>(condition) SDL_enabled_assert(condition)</u></td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><b>typedef</b> <a class="typedef" href="#SDL_assert_state" title='SDL_assert_state' data-type='enum SDL_assert_state' data-ref="SDL_assert_state">SDL_assert_state</a> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> *<dfn class="typedef" id="SDL_AssertionHandler" title='SDL_AssertionHandler' data-type='SDL_assert_state (*)(const SDL_assert_data *, void *)' data-ref="SDL_AssertionHandler">SDL_AssertionHandler</dfn>)(</td></tr>
+<tr><th id="188">188</th><td>                                 <em>const</em> <a class="typedef" href="#SDL_assert_data" title='SDL_assert_data' data-type='struct SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</a>* <dfn class="local col4 decl" id="1334data" title='data' data-type='const SDL_assert_data *' data-ref="1334data">data</dfn>, <em>void</em>* <dfn class="local col5 decl" id="1335userdata" title='userdata' data-type='void *' data-ref="1335userdata">userdata</dfn>);</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *  <span class="command">\brief</span> Set an application-defined assertion handler.</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *  This allows an app to show its own assertion UI and/or force the</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *  response to an assertion failure. If the app doesn't provide this, SDL</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *  will try to do the right thing, popping up a system-specific GUI dialog,</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *  and probably minimizing any fullscreen windows.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> *  This callback may fire from any thread, but it runs wrapped in a mutex, so</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *  it will only fire from one thread at a time.</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *  Setting the callback to NULL restores SDL's original internal handler.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> *  This callback is NOT reset to SDL's internal handler upon SDL_Quit()!</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> *  <span class="command">\return</span> SDL_assert_state value of how to handle the assertion failure.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">handler</span> Callback function, called when an assertion fails.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">userdata</span> A pointer passed to the callback as-is.</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="210">210</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetAssertionHandler" title='SDL_SetAssertionHandler' data-ref="SDL_SetAssertionHandler">SDL_SetAssertionHandler</dfn>(</td></tr>
+<tr><th id="211">211</th><td>                                            <a class="typedef" href="#SDL_AssertionHandler" title='SDL_AssertionHandler' data-type='SDL_assert_state (*)(const SDL_assert_data *, void *)' data-ref="SDL_AssertionHandler">SDL_AssertionHandler</a> <dfn class="local col6 decl" id="1336handler" title='handler' data-type='SDL_AssertionHandler' data-ref="1336handler">handler</dfn>,</td></tr>
+<tr><th id="212">212</th><td>                                            <em>void</em> *<dfn class="local col7 decl" id="1337userdata" title='userdata' data-type='void *' data-ref="1337userdata">userdata</dfn>);</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> *  <span class="command">\brief</span> Get the default assertion handler.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> *  This returns the function pointer that is called by default when an</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> *   assertion is triggered. This is an internal function provided by SDL,</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *   that is used for assertions when SDL_SetAssertionHandler() hasn't been</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> *   used to provide a different function.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> *  <span class="command">\return</span> The default SDL_AssertionHandler that is called when an assert triggers.</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="224">224</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_AssertionHandler" title='SDL_AssertionHandler' data-type='SDL_assert_state (*)(const SDL_assert_data *, void *)' data-ref="SDL_AssertionHandler">SDL_AssertionHandler</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDefaultAssertionHandler" title='SDL_GetDefaultAssertionHandler' data-ref="SDL_GetDefaultAssertionHandler">SDL_GetDefaultAssertionHandler</dfn>(<em>void</em>);</td></tr>
+<tr><th id="225">225</th><td></td></tr>
+<tr><th id="226">226</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> *  <span class="command">\brief</span> Get the current assertion handler.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> *  This returns the function pointer that is called when an assertion is</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *   triggered. This is either the value last passed to</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> *   SDL_SetAssertionHandler(), or if no application-specified function is</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> *   set, is equivalent to calling SDL_GetDefaultAssertionHandler().</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *   <span class="command">\param</span> <span class="arg">puserdata</span> Pointer to a void*, which will store the "userdata"</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *                    pointer that was passed to SDL_SetAssertionHandler().</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *                    This value will always be NULL for the default handler.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *                    If you don't care about this data, it is safe to pass</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> *                    a NULL pointer to this function to ignore it.</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *  <span class="command">\return</span> The SDL_AssertionHandler that is called when an assert triggers.</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="241">241</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_AssertionHandler" title='SDL_AssertionHandler' data-type='SDL_assert_state (*)(const SDL_assert_data *, void *)' data-ref="SDL_AssertionHandler">SDL_AssertionHandler</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetAssertionHandler" title='SDL_GetAssertionHandler' data-ref="SDL_GetAssertionHandler">SDL_GetAssertionHandler</dfn>(<em>void</em> **<dfn class="local col8 decl" id="1338puserdata" title='puserdata' data-type='void **' data-ref="1338puserdata">puserdata</dfn>);</td></tr>
+<tr><th id="242">242</th><td></td></tr>
+<tr><th id="243">243</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> *  <span class="command">\brief</span> Get a list of all assertion failures.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> *  Get all assertions triggered since last call to SDL_ResetAssertionReport(),</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *  or the start of the program.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> *  The proper way to examine this data looks something like this:</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> *  <span class="tag">&lt;code&gt;</span></i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> *  const SDL_assert_data *item = SDL_GetAssertionReport();</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> *  while (item) {</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> *      printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s<span class="command">.\n</span>",</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> *             item-&gt;condition, item-&gt;function, item-&gt;filename,</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *             item-&gt;linenum, item-&gt;trigger_count,</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> *             item-&gt;always_ignore ? "yes" : "no");</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> *      item = item-&gt;next;</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> *  }</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> *  <span class="tag">&lt;/code&gt;</span></i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> *  <span class="command">\return</span> List of all assertions.</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_ResetAssertionReport</i></td></tr>
+<tr><th id="264">264</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="265">265</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <a class="typedef" href="#SDL_assert_data" title='SDL_assert_data' data-type='struct SDL_assert_data' data-ref="SDL_assert_data">SDL_assert_data</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetAssertionReport" title='SDL_GetAssertionReport' data-ref="SDL_GetAssertionReport">SDL_GetAssertionReport</dfn>(<em>void</em>);</td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *  <span class="command">\brief</span> Reset the list of all assertion failures.</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> *  Reset list of all assertions triggered.</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetAssertionReport</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="274">274</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ResetAssertionReport" title='SDL_ResetAssertionReport' data-ref="SDL_ResetAssertionReport">SDL_ResetAssertionReport</dfn>(<em>void</em>);</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="277">277</th><td><u>#<span data-ppcond="277">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="278">278</th><td>}</td></tr>
+<tr><th id="279">279</th><td><u>#<span data-ppcond="277">endif</span></u></td></tr>
+<tr><th id="280">280</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="281">281</th><td></td></tr>
+<tr><th id="282">282</th><td><u>#<span data-ppcond="22">endif</span> /* _SDL_assert_h */</u></td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="285">285</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

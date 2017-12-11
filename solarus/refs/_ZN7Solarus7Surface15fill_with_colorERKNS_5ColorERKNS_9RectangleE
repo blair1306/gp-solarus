@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='85' type='void Solarus::Surface::fill_with_color(const Solarus::Color &amp; color, const Solarus::Rectangle &amp; where)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='618' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='621' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='624' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='627' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Map.cpp' l='593' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='595' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='601' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='603' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='553' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='565' ll='572' type='void Solarus::Surface::fill_with_color(const Solarus::Color &amp; color, const Solarus::Rectangle &amp; where)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='556'>/**
+ * \brief Fills the rectangle at given coordinates with the specified color.
+ *
+ * If the color has a non-opaque alpha component, then the color is
+ * alpha-blended onto the surface.
+ *
+ * \param color A color.
+ * \param where The rectangle to fill.
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='195' u='c' c='_ZN7Solarus10LuaContext22surface_api_fill_colorEP9lua_State'/>

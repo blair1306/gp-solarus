@@ -1,0 +1,40 @@
+<def f='codebrowser/include/solarus/DialogBoxSystem.h' l='42' ll='81'/>
+<size>184</size>
+<doc f='codebrowser/include/solarus/DialogBoxSystem.h' l='35'>/**
+ * \brief Manages the dialog box where dialogs can be displayed.
+ *
+ * A very basic built-in dialog box is used by default, but the quest
+ * script can define its own one instead.
+ * This class handles both cases.
+ */</doc>
+<fun r='_ZN7Solarus15DialogBoxSystemC1ERNS_4GameE'/>
+<fun r='_ZN7Solarus15DialogBoxSystem8get_gameEv'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem10is_enabledEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<fun r='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem13get_dialog_idEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem14has_more_linesEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<mbr r='Solarus::DialogBoxSystem::game' o='0' t='Solarus::Game &amp;'/>
+<mbr r='Solarus::DialogBoxSystem::dialog_id' o='64' t='std::string'/>
+<mbr r='Solarus::DialogBoxSystem::dialog' o='128' t='Solarus::Dialog'/>
+<mbr r='Solarus::DialogBoxSystem::callback_ref' o='640' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::DialogBoxSystem::built_in' o='768' t='bool'/>
+<smbr r='Solarus::DialogBoxSystem::nb_visible_lines' t='const int'/>
+<mbr r='Solarus::DialogBoxSystem::remaining_lines' o='832' t='std::list&lt;std::string&gt;'/>
+<mbr r='Solarus::DialogBoxSystem::line_surfaces' o='960' t='std::shared_ptr&lt;TextSurface&gt; [3]'/>
+<mbr r='Solarus::DialogBoxSystem::text_position' o='1344' t='Solarus::Point'/>
+<mbr r='Solarus::DialogBoxSystem::is_question' o='1408' t='bool'/>
+<mbr r='Solarus::DialogBoxSystem::selected_first_answer' o='1416' t='bool'/>
+<fun r='_ZN7Solarus15DialogBoxSystemC1ERNS_4GameE'/>
+<fun r='_ZN7Solarus15DialogBoxSystem8get_gameEv'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem10is_enabledEv'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem13get_dialog_idEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<fun r='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<fun r='_ZNK7Solarus15DialogBoxSystem14has_more_linesEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<fun r='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus15DialogBoxSystem4drawERKSt10shared_ptrINS_7SurfaceEE'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='100' type='bool Solarus::Entity::State::is_teletransporter_obstacle(const Solarus::Teletransporter &amp; teletransporter) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='698' ll='701' type='bool Solarus::Entity::State::is_teletransporter_obstacle(const Solarus::Teletransporter &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='690'>/**
+ * \brief Returns whether a teletransporter is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \param teletransporter a teletransporter
+ * \return true if the teletransporter is an obstacle in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1481' u='c' c='_ZN7Solarus4Hero27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='162' c='_ZNK7Solarus4Hero9HurtState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='210' c='_ZNK7Solarus4Hero15SpinAttackState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='191' c='_ZNK7Solarus4Hero18SwordSwingingState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='176' c='_ZNK7Solarus4Hero17SwordTappingState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>

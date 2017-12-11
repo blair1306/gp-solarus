@@ -1,0 +1,28 @@
+<dec f='include/physfs.h' l='2018' type='int PHYSFS_setAllocator(const PHYSFS_Allocator * allocator)'/>
+<doc f='include/physfs.h' l='1991'>/**
+ * \fn int PHYSFS_setAllocator(const PHYSFS_Allocator *allocator)
+ * \brief Hook your own allocation routines into PhysicsFS.
+ *
+ * (This is for limited, hardcore use. If you don&apos;t immediately see a need
+ *  for it, you can probably ignore this forever.)
+ *
+ * By default, PhysicsFS will use whatever is reasonable for a platform
+ *  to manage dynamic memory (usually ANSI C malloc/realloc/calloc/free, but
+ *  some platforms might use something else), but in some uncommon cases, the
+ *  app might want more control over the library&apos;s memory management. This
+ *  lets you redirect PhysicsFS to use your own allocation routines instead.
+ *  You can only call this function before PHYSFS_init(); if the library is
+ *  initialized, it&apos;ll reject your efforts to change the allocator mid-stream.
+ *  You may call this function after PHYSFS_deinit() if you are willing to
+ *  shut down the library and restart it with a new allocator; this is a safe
+ *  and supported operation. The allocator remains intact between deinit/init
+ *  calls. If you want to return to the platform&apos;s default allocator, pass a
+ *  NULL in here.
+ *
+ * If you aren&apos;t immediately sure what to do with this function, you can
+ *  safely ignore it altogether.
+ *
+ *    \param allocator Structure containing your allocator&apos;s entry points.
+ *   \return zero on failure, non-zero on success. This call only fails
+ *           when used between PHYSFS_init() and PHYSFS_deinit() calls.
+ */</doc>

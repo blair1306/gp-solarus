@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='89' type='const std::string &amp; Solarus::QuestFiles::get_quest_write_dir()'/>
+<use f='codebrowser/src/Savegame.cpp' l='104' u='c' c='_ZN7Solarus8Savegame10initializeEv'/>
+<use f='codebrowser/src/Settings.cpp' l='151' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='241' u='c' c='_ZN7Solarus8Settings4saveERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='229' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='423' ll='425' type='const std::string &amp; Solarus::QuestFiles::get_quest_write_dir()'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='475' u='c' c='_ZN7Solarus10QuestFiles24get_full_quest_write_dirEv'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='417'>/**
+ * \brief Returns the subdirectory where files specific to the quest are
+ * saved, like savegames and configuration files.
+ * \return The quest write directory, relative to the Solarus write directory,
+ * or an empty string if it has not been set yet.
+ */</doc>
+<use f='codebrowser/src/lua/FileApi.cpp' l='76' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='164' u='c' c='_ZN7Solarus10LuaContext15game_api_existsEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='185' u='c' c='_ZN7Solarus10LuaContext15game_api_deleteEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='205' u='c' c='_ZN7Solarus10LuaContext13game_api_loadEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='229' u='c' c='_ZN7Solarus10LuaContext13game_api_saveEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='226' u='c' c='_ZN7Solarus10LuaContext28main_api_get_quest_write_dirEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='264' u='c' c='_ZN7Solarus10LuaContext22main_api_load_settingsEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='292' u='c' c='_ZN7Solarus10LuaContext22main_api_save_settingsEP9lua_State'/>

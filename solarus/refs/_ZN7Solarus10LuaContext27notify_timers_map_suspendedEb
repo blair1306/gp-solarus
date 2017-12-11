@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='215' type='void Solarus::LuaContext::notify_timers_map_suspended(bool suspended)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext20notify_map_suspendedERNS_3MapEb'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='266' ll='274' type='void Solarus::LuaContext::notify_timers_map_suspended(bool suspended)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='261'>/**
+ * \brief This function is called when the game (if any) is being suspended
+ * or resumed.
+ * \param suspended true if the game is suspended, false if it is resumed.
+ */</doc>

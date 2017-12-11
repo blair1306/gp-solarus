@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='144' type='void Solarus::Enemy::set_animation(const std::string &amp; animation)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='759' ll='764' type='void Solarus::Enemy::set_animation(const std::string &amp; animation)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='791' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='827' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1137' u='c' c='_ZN7Solarus5Enemy7restartEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1288' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='752'>/**
+ * \brief Changes the animation of this enemy&apos;s sprites.
+ *
+ * This function is useful when the enemy has several sprites.
+ *
+ * \param animation name of the animation to set
+ */</doc>

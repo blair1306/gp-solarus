@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='804' type='static int Solarus::LuaContext::map_api_get_entities_in_rectangle(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='150' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2042' ll='2059' type='static int Solarus::LuaContext::map_api_get_entities_in_rectangle(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2037'>/**
+ * \brief Implementation of map:get_entities_in_rectangle().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='63' type='void Solarus::Map::set_tileset(const std::string &amp; tileset_id)'/>
+<def f='codebrowser/src/Map.cpp' l='87' ll='94' type='void Solarus::Map::set_tileset(const std::string &amp; tileset_id)'/>
+<doc f='codebrowser/src/Map.cpp' l='78'>/**
+ * \brief Changes the tileset used to draw this map.
+ *
+ * The new tileset must be compatible with the previous one,
+ * i.e. every tile of the previous tileset must exist in the new one
+ * and have the same properties.
+ *
+ * \param tileset_id Id of the new tileset.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1628' u='c' c='_ZN7Solarus10LuaContext19map_api_set_tilesetEP9lua_State'/>

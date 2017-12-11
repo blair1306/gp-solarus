@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PathMovement.h source code [codebrowser/include/solarus/movements/PathMovement.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::PathMovement "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/movements/PathMovement.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>movements</a>/<a href='PathMovement.h.html'>PathMovement.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_PATH_MOVEMENT_H">SOLARUS_PATH_MOVEMENT_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_PATH_MOVEMENT_H" data-ref="_M/SOLARUS_PATH_MOVEMENT_H">SOLARUS_PATH_MOVEMENT_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="PixelMovement.h.html">"solarus/movements/PixelMovement.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../../include/c++/4.9/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * <span class="command">\brief</span> Movement of an entity that follows a predetermined path.</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * The path is a succession of basic moves, where each basic move</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * is an 8-pixel trajectory towards one of the 8 main directions.</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * The movement may or may not stop on obstacles.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * This movement can be used only on a map entity.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * A "path" refers to a succession of small 8-pixel trajectories.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * The notion of path is specific to PathMovement and its subclasses</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * (like PathFindingMovement and RandomPathMovement).</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * A "trajectory" is a move of 8 pixels in the sense of the PixelMovement</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * class.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * A path is composed of several trajectories. The notion of trajectory is</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * hidden from the public interface of PathMovement.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * TODO don't inherit PixelMovement</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="45">45</th><td><b>class</b> <a class="macro" href="../Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <dfn class="type def" id="Solarus::PathMovement" title='Solarus::PathMovement' data-ref="Solarus::PathMovement">PathMovement</dfn>: <b>public</b> <a class="type" href="PixelMovement.h.html#Solarus::PixelMovement" title='Solarus::PixelMovement' data-ref="Solarus::PixelMovement">PixelMovement</a> {</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>  <b>public</b>:</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <dfn class="decl" id="_ZN7Solarus12PathMovementC1ERKSsibbb" title='Solarus::PathMovement::PathMovement' data-ref="_ZN7Solarus12PathMovementC1ERKSsibbb">PathMovement</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col8 decl" id="218path" title='path' data-type='const std::string &amp;' data-ref="218path">path</dfn>, <em>int</em> <dfn class="local col9 decl" id="219speed" title='speed' data-type='int' data-ref="219speed">speed</dfn>, <em>bool</em> <dfn class="local col0 decl" id="220loop" title='loop' data-type='bool' data-ref="220loop">loop</dfn>, <em>bool</em> <dfn class="local col1 decl" id="221ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="221ignore_obstacles">ignore_obstacles</dfn>, <em>bool</em> <dfn class="local col2 decl" id="222snap_to_grid" title='snap_to_grid' data-type='bool' data-ref="222snap_to_grid">snap_to_grid</dfn>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus12PathMovement24notify_object_controlledEv" title='Solarus::PathMovement::notify_object_controlled' data-ref="_ZN7Solarus12PathMovement24notify_object_controlledEv">notify_object_controlled</dfn>() override;</td></tr>
+<tr><th id="52">52</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus12PathMovement6updateEv" title='Solarus::PathMovement::update' data-ref="_ZN7Solarus12PathMovement6updateEv">update</dfn>() override;</td></tr>
+<tr><th id="53">53</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus12PathMovement13set_suspendedEb" title='Solarus::PathMovement::set_suspended' data-ref="_ZN7Solarus12PathMovement13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col3 decl" id="223suspended" title='suspended' data-type='bool' data-ref="223suspended">suspended</dfn>) override;</td></tr>
+<tr><th id="54">54</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus12PathMovement11is_finishedEv" title='Solarus::PathMovement::is_finished' data-ref="_ZNK7Solarus12PathMovement11is_finishedEv">is_finished</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="decl" id="_ZNK7Solarus12PathMovement8get_pathEv" title='Solarus::PathMovement::get_path' data-ref="_ZNK7Solarus12PathMovement8get_pathEv">get_path</dfn>() <em>const</em>;</td></tr>
+<tr><th id="57">57</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement8set_pathERKSs" title='Solarus::PathMovement::set_path' data-ref="_ZN7Solarus12PathMovement8set_pathERKSs">set_path</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col4 decl" id="224path" title='path' data-type='const std::string &amp;' data-ref="224path">path</dfn>);</td></tr>
+<tr><th id="58">58</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement9get_speedEv" title='Solarus::PathMovement::get_speed' data-ref="_ZNK7Solarus12PathMovement9get_speedEv">get_speed</dfn>() <em>const</em>;</td></tr>
+<tr><th id="59">59</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement9set_speedEi" title='Solarus::PathMovement::set_speed' data-ref="_ZN7Solarus12PathMovement9set_speedEi">set_speed</dfn>(<em>int</em> <dfn class="local col5 decl" id="225speed" title='speed' data-type='int' data-ref="225speed">speed</dfn>);</td></tr>
+<tr><th id="60">60</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement8get_loopEv" title='Solarus::PathMovement::get_loop' data-ref="_ZNK7Solarus12PathMovement8get_loopEv">get_loop</dfn>() <em>const</em>;</td></tr>
+<tr><th id="61">61</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement8set_loopEb" title='Solarus::PathMovement::set_loop' data-ref="_ZN7Solarus12PathMovement8set_loopEb">set_loop</dfn>(<em>bool</em> <dfn class="local col6 decl" id="226loop" title='loop' data-type='bool' data-ref="226loop">loop</dfn>);</td></tr>
+<tr><th id="62">62</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement16get_snap_to_gridEv" title='Solarus::PathMovement::get_snap_to_grid' data-ref="_ZNK7Solarus12PathMovement16get_snap_to_gridEv">get_snap_to_grid</dfn>() <em>const</em>;</td></tr>
+<tr><th id="63">63</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement16set_snap_to_gridEb" title='Solarus::PathMovement::set_snap_to_grid' data-ref="_ZN7Solarus12PathMovement16set_snap_to_gridEb">set_snap_to_grid</dfn>(<em>bool</em> <dfn class="local col7 decl" id="227snap_to_grid" title='snap_to_grid' data-type='bool' data-ref="227snap_to_grid">snap_to_grid</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>    <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="_ZNK7Solarus12PathMovement13get_xy_changeEv" title='Solarus::PathMovement::get_xy_change' data-ref="_ZNK7Solarus12PathMovement13get_xy_changeEv">get_xy_change</dfn>() <em>const</em>;</td></tr>
+<tr><th id="66">66</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement21get_current_directionEv" title='Solarus::PathMovement::get_current_direction' data-ref="_ZNK7Solarus12PathMovement21get_current_directionEv">get_current_direction</dfn>() <em>const</em>;</td></tr>
+<tr><th id="67">67</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement26get_total_distance_coveredEv" title='Solarus::PathMovement::get_total_distance_covered' data-ref="_ZNK7Solarus12PathMovement26get_total_distance_coveredEv">get_total_distance_covered</dfn>() <em>const</em>;</td></tr>
+<tr><th id="68">68</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZNK7Solarus12PathMovement24get_displayed_direction4Ev" title='Solarus::PathMovement::get_displayed_direction4' data-ref="_ZNK7Solarus12PathMovement24get_displayed_direction4Ev">get_displayed_direction4</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>    <em>static</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="_ZN7Solarus12PathMovement18create_random_pathEv" title='Solarus::PathMovement::create_random_path' data-ref="_ZN7Solarus12PathMovement18create_random_pathEv">create_random_path</dfn>();</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <b>virtual</b> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="virtual decl" id="_ZNK7Solarus12PathMovement17get_lua_type_nameEv" title='Solarus::PathMovement::get_lua_type_name' data-ref="_ZNK7Solarus12PathMovement17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>  <b>protected</b>:</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus12PathMovement16notify_step_doneEib" title='Solarus::PathMovement::notify_step_done' data-ref="_ZN7Solarus12PathMovement16notify_step_doneEib">notify_step_done</dfn>(<em>int</em> <dfn class="local col8 decl" id="228step_index" title='step_index' data-type='int' data-ref="228step_index">step_index</dfn>, <em>bool</em> <dfn class="local col9 decl" id="229success" title='success' data-type='bool' data-ref="229success">success</dfn>) override;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>  <b>private</b>:</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>    <em>static</em> <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="_ZN7Solarus12PathMovement14speed_to_delayEii" title='Solarus::PathMovement::speed_to_delay' data-ref="_ZN7Solarus12PathMovement14speed_to_delayEii">speed_to_delay</dfn>(<em>int</em> <dfn class="local col0 decl" id="230speed" title='speed' data-type='int' data-ref="230speed">speed</dfn>, <em>int</em> <dfn class="local col1 decl" id="231direction" title='direction' data-type='int' data-ref="231direction">direction</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement26start_next_elementary_moveEv" title='Solarus::PathMovement::start_next_elementary_move' data-ref="_ZN7Solarus12PathMovement26start_next_elementary_moveEv">start_next_elementary_move</dfn>();</td></tr>
+<tr><th id="83">83</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus12PathMovement35is_current_elementary_move_finishedEv" title='Solarus::PathMovement::is_current_elementary_move_finished' data-ref="_ZNK7Solarus12PathMovement35is_current_elementary_move_finishedEv">is_current_elementary_move_finished</dfn>() <em>const</em>;</td></tr>
+<tr><th id="84">84</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement7restartEv" title='Solarus::PathMovement::restart' data-ref="_ZN7Solarus12PathMovement7restartEv">restart</dfn>();</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement4snapEv" title='Solarus::PathMovement::snap' data-ref="_ZN7Solarus12PathMovement4snapEv">snap</dfn>();</td></tr>
+<tr><th id="87">87</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_" title='Solarus::PathMovement::set_snapping_trajectory' data-ref="_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_">set_snapping_trajectory</dfn>(<em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col2 decl" id="232src" title='src' data-type='const Solarus::Point &amp;' data-ref="232src">src</dfn>, <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col3 decl" id="233dst" title='dst' data-type='const Solarus::Point &amp;' data-ref="233dst">dst</dfn>);</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::PathMovement::initial_path" title='Solarus::PathMovement::initial_path' data-ref="Solarus::PathMovement::initial_path">initial_path</dfn>;          <i class="doc">/**&lt; the path: each character is a direction ('0' to '7')</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">                                        * and corresponds to a trajectory of 8 pixels (performed by PixelMovement) */</i></td></tr>
+<tr><th id="91">91</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::PathMovement::remaining_path" title='Solarus::PathMovement::remaining_path' data-ref="Solarus::PathMovement::remaining_path">remaining_path</dfn>;        <i class="doc">/**&lt; the remaining part of the path */</i></td></tr>
+<tr><th id="92">92</th><td>    <em>int</em> <dfn class="decl" id="Solarus::PathMovement::current_direction" title='Solarus::PathMovement::current_direction' data-ref="Solarus::PathMovement::current_direction">current_direction</dfn>;             <i class="doc">/**&lt; current element in the path (0 to 7) */</i></td></tr>
+<tr><th id="93">93</th><td>    <em>int</em> <dfn class="decl" id="Solarus::PathMovement::total_distance_covered" title='Solarus::PathMovement::total_distance_covered' data-ref="Solarus::PathMovement::total_distance_covered">total_distance_covered</dfn>;        <i class="doc">/**&lt; total number of pixels covered (each element of the path counts for 8) */</i></td></tr>
+<tr><th id="94">94</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::PathMovement::stopped_by_obstacle" title='Solarus::PathMovement::stopped_by_obstacle' data-ref="Solarus::PathMovement::stopped_by_obstacle">stopped_by_obstacle</dfn>;          <i class="doc">/**&lt; true if the movement was stopped by an obstacle */</i></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td>    <em>int</em> <dfn class="decl" id="Solarus::PathMovement::speed" title='Solarus::PathMovement::speed' data-ref="Solarus::PathMovement::speed">speed</dfn>;                         <i class="doc">/**&lt; the movement speed in pixels per second (corrected for diagonal moves) */</i></td></tr>
+<tr><th id="97">97</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::PathMovement::loop" title='Solarus::PathMovement::loop' data-ref="Solarus::PathMovement::loop">loop</dfn>;                         <i class="doc">/**&lt; should the path restart from the beginning once finished? */</i></td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td>    <i>// snapping</i></td></tr>
+<tr><th id="100">100</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::PathMovement::snap_to_grid" title='Solarus::PathMovement::snap_to_grid' data-ref="Solarus::PathMovement::snap_to_grid">snap_to_grid</dfn>;                 <i class="doc">/**&lt; indicates that the entity must be aligned to the grid before moving */</i></td></tr>
+<tr><th id="101">101</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::PathMovement::snapping" title='Solarus::PathMovement::snapping' data-ref="Solarus::PathMovement::snapping">snapping</dfn>;                     <i class="doc">/**&lt; indicates that the entity is currently being aligned to the grid */</i></td></tr>
+<tr><th id="102">102</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::PathMovement::stop_snapping_date" title='Solarus::PathMovement::stop_snapping_date' data-ref="Solarus::PathMovement::stop_snapping_date">stop_snapping_date</dfn>;       <i class="doc">/**&lt; date when we stop trying to snap the entity if it is unsuccessful */</i></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>    <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a></td></tr>
+<tr><th id="105">105</th><td>        <dfn class="decl" id="Solarus::PathMovement::elementary_moves" title='Solarus::PathMovement::elementary_moves' data-ref="Solarus::PathMovement::elementary_moves">elementary_moves</dfn>[];            <i class="doc">/**&lt; 8 pixel trajectory (in the PixelMovement sense) for each direction (0 to 7) */</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>};</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>}</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Arrow.cpp.html'>codebrowser/src/entities/Arrow.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

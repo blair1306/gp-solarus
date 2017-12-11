@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='140' type='void Solarus::Enemy::set_default_attack_consequences_sprite(const Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='724' ll='733' type='void Solarus::Enemy::set_default_attack_consequences_sprite(const Solarus::Sprite &amp; sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='719'>/**
+ * \brief Set some default values for the reactions of the attacks
+ * on a particular sprite of this enemy.
+ * \param sprite a sprite of this enemy
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4834' u='c' c='_ZN7Solarus10LuaContext48enemy_api_set_default_attack_consequences_spriteEP9lua_State'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='72' type='void Solarus::Movement::notify_position_changed()'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='72'>// called whenever x or y is changed</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='408' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='223' u='c' c='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='264' ll='276' type='void Solarus::Movement::notify_position_changed()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='260'>/**
+ * \brief Notifies this movement that the coordinates controlled by it
+ * have just been changed.
+ */</doc>

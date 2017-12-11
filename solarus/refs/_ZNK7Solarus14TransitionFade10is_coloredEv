@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/TransitionFade.h' l='40' type='bool Solarus::TransitionFade::is_colored() const'/>
+<def f='codebrowser/src/TransitionFade.cpp' l='81' ll='83' type='bool Solarus::TransitionFade::is_colored() const'/>
+<doc f='codebrowser/src/TransitionFade.cpp' l='75'>/**
+ * \brief Returns whether this fade transition uses a foreground color.
+ * \return \c true if there is a foreground color,
+ * \c false if the transition changes the opacity of the destination surface
+ * (only possible for sotware destination surfaces).
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='67' type='bool Solarus::Destructible::get_can_be_cut() const'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='172' ll='174' type='bool Solarus::Destructible::get_can_be_cut() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='271' u='c' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='350' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='168'>/**
+ * \brief Returns whether this object can be cut with the sword.
+ * \return \c true if this object can be cut with the sword.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4144' u='c' c='_ZN7Solarus10LuaContext31destructible_api_get_can_be_cutEP9lua_State'/>

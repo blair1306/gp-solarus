@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='52' type='const Solarus::Rectangle &amp; Solarus::SpriteAnimationDirection::get_frame(int frame) const'/>
+<use f='codebrowser/src/Sprite.cpp' l='432' u='c' c='_ZNK7Solarus6Sprite27get_current_frame_rectangleEv'/>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='63' ll='72' type='const Solarus::Rectangle &amp; Solarus::SpriteAnimationDirection::get_frame(int frame) const'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='85' u='c' c='_ZN7Solarus24SpriteAnimationDirection4drawERNS_7SurfaceERKNS_5PointEiS2_'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='58'>/**
+ * \brief Returns the rectangle representing the specified frame on the source image.
+ * \param frame a frame number
+ * \return the rectangle of this frame
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='525' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

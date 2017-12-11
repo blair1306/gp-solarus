@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='67' type='int Solarus::PathMovement::get_total_distance_covered() const'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='176' u='c' c='_ZN7Solarus4Hero12PullingState23notify_position_changedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='186' u='c' c='_ZN7Solarus4Hero12PushingState23notify_position_changedEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='350' ll='352' type='int Solarus::PathMovement::get_total_distance_covered() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='345'>/**
+ * \brief Returns the total distance covered by this movement.
+ * \return the total distance in pixels (diagonal moves count for the same distance as non-diagonal moves),
+ * not including the possible initial snapping phase
+ */</doc>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='44' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='62' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='71' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='117' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='128' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='153' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='167' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

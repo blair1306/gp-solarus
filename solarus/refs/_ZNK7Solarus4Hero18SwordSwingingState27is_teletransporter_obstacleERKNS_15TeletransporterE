@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/SwordSwingingState.h' l='42' type='bool Solarus::Hero::SwordSwingingState::is_teletransporter_obstacle(const Solarus::Teletransporter &amp; teletransporter) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='100' c='_ZNK7Solarus6Entity5State27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<def f='codebrowser/src/hero/SwordSwingingState.cpp' l='191' ll='196' type='bool Solarus::Hero::SwordSwingingState::is_teletransporter_obstacle(const Solarus::Teletransporter &amp; ) const'/>
+<doc f='codebrowser/src/hero/SwordSwingingState.cpp' l='186'>/**
+ * \brief Returns whether a teletransporter is considered as an obstacle in this state.
+ * \param teletransporter a teletransporter
+ * \return true if the teletransporter is an obstacle in this state
+ */</doc>

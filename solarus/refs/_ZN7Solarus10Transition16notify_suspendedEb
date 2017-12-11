@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='111' type='void Solarus::Transition::notify_suspended(bool suspended)'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='107'>/**
+     * \brief Notifies the transition effect that it was just suspended
+     * or resumed.
+     */</doc>
+<use f='codebrowser/src/Transition.cpp' l='159' u='c' c='_ZN7Solarus10Transition13set_suspendedEb'/>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='144' c='_ZN7Solarus14TransitionFade16notify_suspendedEb'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='57' c='_ZN7Solarus19TransitionImmediate16notify_suspendedEb'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='183' c='_ZN7Solarus19TransitionScrolling16notify_suspendedEb'/>

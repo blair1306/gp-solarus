@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='70' type='Solarus::Point Solarus::Sprite::get_origin() const'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='47' c='_ZNK7Solarus8Drawable10get_originEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='185' ll='192' type='Solarus::Point Solarus::Sprite::get_origin() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='777' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='783' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='812' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<doc f='codebrowser/src/Sprite.cpp' l='180'>/**
+ * \brief Returns the origin point of a frame for the current animation and
+ * the current direction.
+ * \return The origin point of a frame.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='2777' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1568' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>

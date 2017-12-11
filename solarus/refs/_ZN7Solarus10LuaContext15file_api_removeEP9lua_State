@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='508' type='static int Solarus::LuaContext::file_api_remove(lua_State * )'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='36' u='r' c='_ZN7Solarus10LuaContext20register_file_moduleEv'/>
+<def f='codebrowser/src/lua/FileApi.cpp' l='153' ll='169' type='static int Solarus::LuaContext::file_api_remove(lua_State * l)'/>
+<doc f='codebrowser/src/lua/FileApi.cpp' l='148'>/**
+ * \brief Implementation of sol.file.remove().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

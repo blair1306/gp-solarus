@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='52' type='static SDL_Renderer * Solarus::Video::get_renderer()'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='272' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='366' ll='368' type='static SDL_Renderer * Solarus::Video::get_renderer()'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='892' u='c' c='_ZN7Solarus5Video12get_viewportEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='909' u='c' c='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='939' u='c' c='_ZN7Solarus5Video29renderer_to_quest_coordinatesERKNS_5PointERS1_'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='362'>/**
+ * \brief Returns the main renderer.
+ * \return The main renderer, or nullptr if there is no window.
+ */</doc>

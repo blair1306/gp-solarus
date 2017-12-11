@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='68' type='bool Solarus::CarriedObject::is_being_thrown() const'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='214' ll='216' type='bool Solarus::CarriedObject::is_being_thrown() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='567' u='c' c='_ZN7Solarus13CarriedObject18is_switch_obstacleERNS_6SwitchE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='586' u='c' c='_ZN7Solarus13CarriedObject19is_crystal_obstacleERNS_7CrystalE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='632' u='c' c='_ZN7Solarus13CarriedObject28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='648' u='c' c='_ZN7Solarus13CarriedObject29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='210'>/**
+ * \brief Returns whether the item is being thrown.
+ * \return true if the item is being thrown
+ */</doc>

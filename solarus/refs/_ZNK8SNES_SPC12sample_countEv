@@ -1,0 +1,5 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='32' type='int SNES_SPC::sample_count() const'/>
+<def f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='256' type='int SNES_SPC::sample_count() const'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='31'>// Number of samples written to output since last set</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='327' u='c' c='_ZN8SNES_SPC10save_extraEv'/>
+<use f='codebrowser/src/third_party/snes_spc/spc.cpp' l='48' u='c' c='spc_sample_count'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='67' type='void Solarus::EquipmentItem::set_brandish_when_picked(bool brandish_when_picked)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='226' ll='228' type='void Solarus::EquipmentItem::set_brandish_when_picked(bool brandish_when_picked)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='220'>/**
+ * \brief Sets whether this item is brandished when the hero picks it
+ * on the ground.
+ * \param brandish_when_picked true to make the hero brandish the item after
+ * he picks it.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='391' u='c' c='_ZN7Solarus10LuaContext33item_api_set_brandish_when_pickedEP9lua_State'/>

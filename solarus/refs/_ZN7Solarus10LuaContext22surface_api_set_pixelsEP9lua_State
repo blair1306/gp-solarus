@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='560' type='static int Solarus::LuaContext::surface_api_set_pixels(lua_State * )'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='50' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='260' ll='266' type='static int Solarus::LuaContext::surface_api_set_pixels(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='255'>/**
+ * \brief Implementation of surface:set_pixels().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

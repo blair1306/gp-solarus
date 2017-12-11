@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='376' type='void Solarus::LuaContext::entity_on_post_draw(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1276' u='c' c='_ZN7Solarus12CustomEntity11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='906' u='c' c='_ZN7Solarus5Enemy11draw_on_mapEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5796' ll='5805' type='void Solarus::LuaContext::entity_on_post_draw(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5789'>/**
+ * \brief Calls the on_post_draw() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ */</doc>

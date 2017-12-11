@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='57' type='bool Solarus::Quadtree::remove(const T &amp; element)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='131' ll='149' type='bool Solarus::Quadtree::remove(const T &amp; element)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='179' u='c' c='_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='126'>/**
+ * \brief Removes an element from the quadtree.
+ * \param element The element to remove.
+ * \return \c true in case of success.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1115' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>

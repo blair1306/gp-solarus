@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_surface.h' l='453' type='int SDL_UpperBlit(SDL_Surface * src, const SDL_Rect * srcrect, SDL_Surface * dst, SDL_Rect * dstrect)'/>
+<doc f='include/SDL2/SDL_surface.h' l='449'>/**
+ *  This is the public blit function, SDL_BlitSurface(), and it performs
+ *  rectangle validation and clipping before passing it to SDL_LowerBlit()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='673' macro='1' u='c'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='702' macro='1' u='c'/>

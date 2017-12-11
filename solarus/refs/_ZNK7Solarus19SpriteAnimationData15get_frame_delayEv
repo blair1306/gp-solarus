@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='94' type='uint32_t Solarus::SpriteAnimationData::get_frame_delay() const'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='76' u='c' c='_ZN7Solarus18SpriteAnimationSet13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<def f='codebrowser/src/SpriteData.cpp' l='264' ll='266' type='uint32_t Solarus::SpriteAnimationData::get_frame_delay() const'/>
+<use f='codebrowser/src/SpriteData.cpp' l='725' u='c' c='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<use f='codebrowser/src/SpriteData.cpp' l='726' u='c' c='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='260'>/**
+ * \brief Returns the frame delay of this animation.
+ * \return The frame delay.
+ */</doc>

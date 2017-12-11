@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='260' type='E Solarus::LuaTools::check_enum(lua_State * l, int index)'/>
+<def f='codebrowser/include/solarus/lua/LuaTools.inl' l='29' ll='34' type='E Solarus::LuaTools::check_enum(lua_State * l, int index)'/>
+<use f='codebrowser/src/EntityData.cpp' l='289' u='c' c='_ZN7Solarus12_GLOBAL__N_120l_create_entity_dataEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='806' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='59' u='c' c='_ZN7Solarus12_GLOBAL__N_118l_resource_elementEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='199' u='c' c='_ZN7Solarus10LuaContext27drawable_api_set_blend_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2776' u='c' c='_ZN7Solarus10LuaContext42destination_api_set_starting_location_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2882' u='c' c='_ZN7Solarus10LuaContext34teletransporter_api_set_transitionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4741' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4798' u='c' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5391' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5450' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5502' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_can_traverse_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5520' u='c' c='_ZN7Solarus10LuaContext41custom_entity_api_set_can_traverse_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5652' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_set_modified_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1116' u='c' c='_ZN7Solarus10LuaContext20game_api_has_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1134' u='c' c='_ZN7Solarus10LuaContext20game_api_get_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1152' u='c' c='_ZN7Solarus10LuaContext20game_api_set_abilityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2027' u='c' c='_ZN7Solarus10LuaContext28map_api_get_entities_by_typeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2166' u='c' c='_ZN7Solarus10LuaContext21map_api_create_entityEP9lua_State'/>

@@ -1,0 +1,19 @@
+<def f='include/c++/4.9/bits/unique_ptr.h' l='277' ll='282' type='unique_ptr&lt;_Tp, _Dp&gt; &amp; std::unique_ptr::operator=(nullptr_t )'/>
+<doc f='include/c++/4.9/bits/unique_ptr.h' l='276'>/// Reset the %unique_ptr to empty, invoking the deleter if necessary.</doc>
+<use f='codebrowser/src/Drawable.cpp' l='136' u='c' c='_ZN7Solarus8Drawable15stop_transitionEv'/>
+<use f='codebrowser/src/Drawable.cpp' l='160' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='412' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='267' u='c' c='_ZN7Solarus3Map6unloadEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1612' u='c' c='_ZN7Solarus6Entity18stop_stream_actionEv'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='63' u='c' c='_ZN7Solarus9ItDecoder6unloadEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='113' u='c' c='_ZN7Solarus5Music4quitEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='114' u='c' c='_ZN7Solarus5Music4quitEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='115' u='c' c='_ZN7Solarus5Music4quitEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='335' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='345' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='378' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='105' u='c' c='_ZN7Solarus10OggDecoder6unloadEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='497' u='c' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='500' u='c' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='512' u='c' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/shaders/ShaderContext.cpp' l='79' u='c' c='_ZN7Solarus13ShaderContext13create_shaderERKSs'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='66' type='bool Solarus::Transition::needs_previous_surface() const'/>
+<use f='codebrowser/src/Game.cpp' l='411' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Transition.cpp' l='136' ll='138' type='bool Solarus::Transition::needs_previous_surface() const'/>
+<doc f='codebrowser/src/Transition.cpp' l='132'>/**
+ * \brief Returns whether this transition effect needs the previous surface.
+ * \return false
+ */</doc>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='118' c='_ZNK7Solarus19TransitionScrolling22needs_previous_surfaceEv'/>

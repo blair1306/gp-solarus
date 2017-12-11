@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='150' type='SDL_Keycode SDL_GetKeyFromName(const char * name)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='143'>/**
+ *  \brief Get a key code from a human-readable name
+ *
+ *  \return key code, or SDLK_UNKNOWN if the name wasn&apos;t recognized
+ *
+ *  \sa SDL_Keycode
+ */</doc>

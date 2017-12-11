@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='545' type='static int Solarus::LuaContext::drawable_api_fade_out(lua_State * )'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='251' ll='283' type='static int Solarus::LuaContext::drawable_api_fade_out(lua_State * l)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='246'>/**
+ * \brief Implementation of drawable:fade_out().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='66' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='56' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='90' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lowlevel/Logger.h' l='36' type='void Solarus::Logger::print(const std::string &amp; message, std::ostream &amp; out = std::cout)'/>
+<def f='codebrowser/src/lowlevel/Logger.cpp' l='54' ll='58' type='void Solarus::Logger::print(const std::string &amp; message, std::ostream &amp; out = std::cout)'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='66' u='c' c='_ZN7Solarus6Logger5debugERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='75' u='c' c='_ZN7Solarus6Logger4infoERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='85' u='c' c='_ZN7Solarus6Logger7warningERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='86' u='c' c='_ZN7Solarus6Logger7warningERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='96' u='c' c='_ZN7Solarus6Logger5errorERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='97' u='c' c='_ZN7Solarus6Logger5errorERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='107' u='c' c='_ZN7Solarus6Logger5fatalERKSs'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='108' u='c' c='_ZN7Solarus6Logger5fatalERKSs'/>
+<doc f='codebrowser/src/lowlevel/Logger.cpp' l='45'>/**
+ * \brief Logs a message on the given output stream.
+ *
+ * The message is prepended by &quot;[Solarus] [t] &quot; where t is the current
+ * simulated time.
+ *
+ * \param message The message to log.
+ * \param out The output stream.
+ */</doc>

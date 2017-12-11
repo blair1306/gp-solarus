@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_Filter.h' l='23' type='256'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_Filter.cpp' l='24' u='r' c='_ZN10SPC_FilterC1Ev'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_Filter.h' l='21'>// Sets gain (volume), where gain_unit is normal. Gains greater than gain_unit
+	// are fine, since output is clamped to 16-bit sample range.</doc>

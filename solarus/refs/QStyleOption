@@ -1,0 +1,32 @@
+<def f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='64' ll='99'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='101' c='QStyleOptionFocusRect'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='116' c='QStyleOptionFrame'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='146' c='QStyleOptionTabWidgetFrame'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='174' c='QStyleOptionTabBarBase'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='195' c='QStyleOptionHeader'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='223' c='QStyleOptionButton'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='248' c='QStyleOptionTab'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='291' c='QStyleOptionToolBar'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='316' c='QStyleOptionProgressBar'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='341' c='QStyleOptionMenuItem'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='369' c='QStyleOptionDockWidget'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='392' c='QStyleOptionViewItem'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='447' c='QStyleOptionToolBox'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='472' c='QStyleOptionRubberBand'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='490' c='QStyleOptionComplex'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h' l='649' c='QStyleOptionGraphicsItem'/>
+<size>64</size>
+<mbr r='QStyleOption::version' o='0' t='int'/>
+<mbr r='QStyleOption::type' o='32' t='int'/>
+<mbr r='QStyleOption::state' o='64' t='QStyle::State'/>
+<mbr r='QStyleOption::direction' o='96' t='Qt::LayoutDirection'/>
+<mbr r='QStyleOption::rect' o='128' t='QRect'/>
+<mbr r='QStyleOption::fontMetrics' o='256' t='QFontMetrics'/>
+<mbr r='QStyleOption::palette' o='320' t='QPalette'/>
+<mbr r='QStyleOption::styleObject' o='448' t='QObject *'/>
+<fun r='_ZN12QStyleOptionC1Eii'/>
+<fun r='_ZN12QStyleOptionC1ERKS_'/>
+<fun r='_ZN12QStyleOptionD1Ev'/>
+<fun r='_ZN12QStyleOption4initEPK7QWidget'/>
+<fun r='_ZN12QStyleOption8initFromEPK7QWidget'/>
+<fun r='_ZN12QStyleOptionaSERKS_'/>

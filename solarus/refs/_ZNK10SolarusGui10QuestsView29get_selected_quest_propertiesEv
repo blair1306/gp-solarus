@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='47' type='Solarus::QuestProperties SolarusGui::QuestsView::get_selected_quest_properties() const'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='516' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='112' ll='119' type='Solarus::QuestProperties SolarusGui::QuestsView::get_selected_quest_properties() const'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='107'>/**
+ * @brief Returns the properties of the selected quest.
+ * @return The quest properties, or a default-constructed object
+ * if no quest is selected.
+ */</doc>

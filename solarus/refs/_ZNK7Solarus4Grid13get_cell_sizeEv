@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='42' type='const Solarus::Size &amp; Solarus::Grid::get_cell_size() const'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='107' ll='110' type='const Solarus::Size &amp; Solarus::Grid::get_cell_size() const'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='103'>/**
+ * \brief Returns the size of a cell of the grid.
+ * \return The size of a cell.
+ */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='174' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='235' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>

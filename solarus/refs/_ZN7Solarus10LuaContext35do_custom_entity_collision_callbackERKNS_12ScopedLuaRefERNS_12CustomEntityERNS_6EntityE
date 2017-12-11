@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='259' type='void Solarus::LuaContext::do_custom_entity_collision_callback(const Solarus::ScopedLuaRef &amp; callback_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='922' u='c' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5248' ll='5262' type='void Solarus::LuaContext::do_custom_entity_collision_callback(const Solarus::ScopedLuaRef &amp; callback_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5242'>/**
+ * \brief Executes a callback after a custom entity detected a collision.
+ * \param callback_ref Ref of the function to call.
+ * \param custom_entity A custom entity that detected a collision.
+ * \param other_entity The entity that was detected.
+ */</doc>

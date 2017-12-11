@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_assert.h' l='224' type='SDL_AssertionHandler SDL_GetDefaultAssertionHandler()'/>
+<doc f='include/SDL2/SDL_assert.h' l='214'>/**
+ *  \brief Get the default assertion handler.
+ *
+ *  This returns the function pointer that is called by default when an
+ *   assertion is triggered. This is an internal function provided by SDL,
+ *   that is used for assertions when SDL_SetAssertionHandler() hasn&apos;t been
+ *   used to provide a different function.
+ *
+ *  \return The default SDL_AssertionHandler that is called when an assert triggers.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='56' type='void Solarus::Hookshot::go_back()'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='198' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='265' ll='270' type='void Solarus::Hookshot::go_back()'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='310' u='c' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='339' u='c' c='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='365' u='c' c='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='395' u='c' c='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='412' u='c' c='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='262'>/**
+ * \brief Makes the hookshot go back towards the hero.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='317' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

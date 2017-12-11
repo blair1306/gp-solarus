@@ -1,0 +1,24 @@
+<dec f='include/physfs.h' l='754' type='int PHYSFS_setWriteDir(const char * newDir)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='85' u='c' c='_ZN7Solarus10QuestFiles12_GLOBAL__N_121set_solarus_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='94' u='c' c='_ZN7Solarus10QuestFiles12_GLOBAL__N_121set_solarus_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='452' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='464' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<doc f='include/physfs.h' l='735'>/**
+ * \fn int PHYSFS_setWriteDir(const char *newDir)
+ * \brief Tell PhysicsFS where it may write files.
+ *
+ * Set a new write dir. This will override the previous setting.
+ *
+ * This call will fail (and fail to change the write dir) if the current
+ *  write dir still has files open in it.
+ *
+ *   \param newDir The new directory to be the root of the write dir,
+ *                   specified in platform-dependent notation. Setting to NULL
+ *                   disables the write dir, so no files can be opened for
+ *                   writing via PhysicsFS.
+ *  \return non-zero on success, zero on failure. All attempts to open a file
+ *           for writing via PhysicsFS will fail until this call succeeds.
+ *           Specifics of the error can be gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_getWriteDir
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='83' type='void SolarusGui::QuestsModel::do_sort(SolarusGui::QuestsModel::QuestSort sort, Qt::SortOrder order = Qt::AscendingOrder)'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='314' u='c' c='_ZN10SolarusGui11QuestsModel4sortENS0_9QuestSortEN2Qt9SortOrderE'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='324' u='c' c='_ZN10SolarusGui11QuestsModel4sortEiN2Qt9SortOrderE'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='332' ll='350' type='void SolarusGui::QuestsModel::do_sort(SolarusGui::QuestsModel::QuestSort sortType, Qt::SortOrder order = Qt::AscendingOrder)'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='327'>/**
+ * @brief Do the actual sort, without notifying the view
+ * @param sortType Way to sort the quests in the list by
+ * @param order Order to sort the quests in the list by
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='273' type='void Solarus::LuaContext::main_on_started()'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='272'>// Main loop events (sol.main).</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='169' u='c' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<def f='codebrowser/src/lua/MainApi.cpp' l='405' ll='410' type='void Solarus::LuaContext::main_on_started()'/>
+<doc f='codebrowser/src/lua/MainApi.cpp' l='398'>/**
+ * \brief Calls sol.main.on_started() if it exists.
+ *
+ * This function is called when the engine requests Lua to show an
+ * initial screen, i.e. at the beginning of the program
+ * or when the program is reset.
+ */</doc>

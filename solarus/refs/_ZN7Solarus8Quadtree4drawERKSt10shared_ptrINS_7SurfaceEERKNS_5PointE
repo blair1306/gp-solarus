@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='67' type='void Solarus::Quadtree::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='236' ll='240' type='void Solarus::Quadtree::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='231'>/**
+ * \brief Draws the quadtree on a surface for debugging purposes.
+ * \param dst_surface The destination surface.
+ * \param dst_position Where to draw on that surface.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1289' u='c' c='_ZN7Solarus8Entities4drawEv'/>

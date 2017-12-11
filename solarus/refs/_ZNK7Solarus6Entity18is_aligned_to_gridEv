@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='172' type='bool Solarus::Entity::is_aligned_to_grid() const'/>
+<use f='codebrowser/src/Map.cpp' l='1174' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='947' ll='949' type='bool Solarus::Entity::is_aligned_to_grid() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='943'>/**
+ * \brief Returns whether the entity&apos;s bounding box is aligned with the 8*8 grid of the map.
+ * \return true if the entity&apos;s bounding box is aligned
+ */</doc>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='63' u='c' c='_ZN7Solarus11PathFindingC1ERNS_3MapERNS_6EntityES4_'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='67' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='263' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='270' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='140' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

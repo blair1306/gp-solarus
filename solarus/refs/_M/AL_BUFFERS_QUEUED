@@ -1,0 +1,9 @@
+<dec f='include/AL/al.h' l='250'/>
+<doc f='include/AL/al.h' l='243'>/**
+ * Source Buffer Queue size (query only).
+ * Type: ALint
+ *
+ * The number of buffers queued using alSourceQueueBuffers, minus the buffers
+ * removed with alSourceUnqueueBuffers.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='617' u='c'/>

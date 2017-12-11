@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='89' type='bool Solarus::Rectangle::contains(int x, int y) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='377' ll='380' type='bool Solarus::Rectangle::contains(int x, int y) const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='388' u='c' c='_ZNK7Solarus9Rectangle8containsERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='397' u='c' c='_ZNK7Solarus9Rectangle8containsERKS0_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='398' u='c' c='_ZNK7Solarus9Rectangle8containsERKS0_'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='546' u='c' c='_ZNK7Solarus6Entity8overlapsEii'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='371'>/**
+ * \brief Returns whether the specified point is inside this rectangle.
+ * \param x x coordinate of the point
+ * \param y y coordinate of the point
+ * \return true if the point is in this rectangle
+ */</doc>
+<use f='codebrowser/src/entities/Jumper.cpp' l='359' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='362' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='369' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='373' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='64' type='Solarus::Transition::Direction Solarus::Transition::get_direction() const'/>
+<use f='codebrowser/src/Game.cpp' l='410' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Transition.cpp' l='105' ll='107' type='Transition::Direction Solarus::Transition::get_direction() const'/>
+<use f='codebrowser/src/Transition.cpp' l='126' u='c' c='_ZN7Solarus10Transition20set_previous_surfaceEPNS_7SurfaceE'/>
+<doc f='codebrowser/src/Transition.cpp' l='101'>/**
+ * \brief Returns the direction of this transition effect.
+ * \returns the direction of this transition effect.
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='72' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='136' u='c' c='_ZNK7Solarus19TransitionScrolling11is_finishedEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='214' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='80' type='const std::map&lt;OpeningMethod, std::string&gt;'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='38' ll='42' type='const std::map&lt;Chest::OpeningMethod, std::string&gt;'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='35'>/**
+ * \brief Lua name of each value of the OpeningMethod enum.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='623' u='r' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>

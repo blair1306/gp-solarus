@@ -1,0 +1,10 @@
+<dec f='include/c++/4.9/exception' l='68' type='const char * std::exception::what() const'/>
+<doc f='include/c++/4.9/exception' l='66'>/** Returns a C-style character string describing the general cause
+     *  of the current error.  */</doc>
+<ovr f='include/c++/4.9/ext/concurrence.h' l='71' c='__gnu_cxx::__concurrence_lock_error::what'/>
+<ovr f='include/c++/4.9/ext/concurrence.h' l='79' c='__gnu_cxx::__concurrence_unlock_error::what'/>
+<ovr f='include/c++/4.9/ext/concurrence.h' l='87' c='__gnu_cxx::__concurrence_broadcast_error::what'/>
+<ovr f='include/c++/4.9/ext/concurrence.h' l='95' c='__gnu_cxx::__concurrence_wait_error::what'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='117' u='c' c='_ZN7Solarus8LuaTools25exception_boundary_handleEP9lua_StateOT_'/>
+<ovr f='codebrowser/src/SolarusFatal.cpp' l='34' c='_ZNK7Solarus12SolarusFatal4whatEv'/>
+<ovr f='codebrowser/src/lua/LuaException.cpp' l='46' c='_ZNK7Solarus12LuaException4whatEv'/>

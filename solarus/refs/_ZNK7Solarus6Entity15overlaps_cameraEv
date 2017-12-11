@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='251' type='bool Solarus::Entity::overlaps_camera() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2760' ll='2790' type='bool Solarus::Entity::overlaps_camera() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2755'>/**
+ * \brief Returns whether the bounding box or a sprite of this entity overlaps
+ * the visible part of the map
+ * \return true if the entity is in the visible part of the map
+ */</doc>

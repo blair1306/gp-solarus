@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='56' type='2'/>
+<doc f='codebrowser/include/solarus/lowlevel/Music.h' l='56'>/**&lt; Impulse Tracker module. */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='175' u='r' c='_ZN7Solarus5Music16get_num_channelsEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='191' u='r' c='_ZN7Solarus5Music18get_channel_volumeEi'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='207' u='r' c='_ZN7Solarus5Music18set_channel_volumeEii'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='222' u='r' c='_ZN7Solarus5Music9get_tempoEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='237' u='r' c='_ZN7Solarus5Music9set_tempoEi'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='271' u='r' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='409' c='_ZN7Solarus5Music14update_playingEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='546' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='634' c='_ZN7Solarus5Music4stopEv'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='249' u='r' c='_ZN7Solarus10LuaContext32audio_api_get_music_num_channelsEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='269' u='r' c='_ZN7Solarus10LuaContext34audio_api_get_music_channel_volumeEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='295' u='r' c='_ZN7Solarus10LuaContext34audio_api_set_music_channel_volumeEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='319' u='r' c='_ZN7Solarus10LuaContext25audio_api_get_music_tempoEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='339' u='r' c='_ZN7Solarus10LuaContext25audio_api_set_music_tempoEP9lua_State'/>

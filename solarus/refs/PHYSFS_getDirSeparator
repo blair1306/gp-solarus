@@ -1,0 +1,14 @@
+<dec f='include/physfs.h' l='600' type='const char * PHYSFS_getDirSeparator()'/>
+<doc f='include/physfs.h' l='587'>/**
+ * \fn const char *PHYSFS_getDirSeparator(void)
+ * \brief Get platform-dependent dir separator string.
+ *
+ * This returns &quot;\\&quot; on win32, &quot;/&quot; on Unix, and &quot;:&quot; on MacOS. It may be more
+ *  than one character, depending on the platform, and your code should take
+ *  that into account. Note that this is only useful for setting up the
+ *  search/write paths, since access into those dirs always use &apos;/&apos;
+ *  (platform-independent notation) to separate directories. This is also
+ *  handy for getting platform-independent access when using stdio calls.
+ *
+ *   \return READ ONLY null-terminated string of platform&apos;s dir separator.
+ */</doc>

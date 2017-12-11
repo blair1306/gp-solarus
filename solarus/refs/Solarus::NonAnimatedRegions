@@ -1,0 +1,23 @@
+<def f='codebrowser/include/solarus/entities/NonAnimatedRegions.h' l='38' ll='71'/>
+<size>160</size>
+<doc f='codebrowser/include/solarus/entities/NonAnimatedRegions.h' l='30'>/**
+ * \brief Manages the tiles that are in non-animated regions.
+ *
+ * A non-animated region is a rectangle of the map that contains no animated
+ * tile. The tiles in such rectangles of the map can be pre-drawn once for all
+ * on an intermediate surface for performance. Furthermore, this intermediate
+ * surface is drawn lazily when the camera moves.
+ */</doc>
+<fun r='_ZN7Solarus18NonAnimatedRegionsC1ERNS_3MapEi'/>
+<fun r='_ZN7Solarus18NonAnimatedRegions8add_tileERKNS_8TileInfoE'/>
+<fun r='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<fun r='_ZN7Solarus18NonAnimatedRegions22notify_tileset_changedEv'/>
+<fun r='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<fun r='_ZNK7Solarus18NonAnimatedRegions22overlaps_animated_tileERKNS_8TileInfoE'/>
+<fun r='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<mbr r='Solarus::NonAnimatedRegions::map' o='0' t='Solarus::Map &amp;'/>
+<mbr r='Solarus::NonAnimatedRegions::layer' o='64' t='int'/>
+<mbr r='Solarus::NonAnimatedRegions::tiles' o='128' t='std::vector&lt;TileInfo&gt;'/>
+<mbr r='Solarus::NonAnimatedRegions::are_squares_animated' o='320' t='std::vector&lt;bool&gt;'/>
+<mbr r='Solarus::NonAnimatedRegions::non_animated_tiles' o='640' t='Grid&lt;Solarus::TileInfo&gt;'/>
+<mbr r='Solarus::NonAnimatedRegions::optimized_tiles_surfaces' o='1088' t='std::vector&lt;SurfacePtr&gt;'/>

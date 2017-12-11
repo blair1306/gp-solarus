@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='227' type='const char * SDL_GetVideoDriver(int index)'/>
+<doc f='include/SDL2/SDL_video.h' l='219'>/**
+ *  \brief Get the name of a built in video driver.
+ *
+ *  \note The video drivers are presented in the order in which they are
+ *        normally checked during initialization.
+ *
+ *  \sa SDL_GetNumVideoDrivers()
+ */</doc>

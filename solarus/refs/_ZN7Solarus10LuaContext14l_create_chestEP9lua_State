@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1318' type='static int Solarus::LuaContext::l_create_chest(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='612' ll='669' type='static int Solarus::LuaContext::l_create_chest(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1275' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='607'>/**
+ * \brief Creates a chest on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

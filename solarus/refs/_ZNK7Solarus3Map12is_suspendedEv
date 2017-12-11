@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Map.h' l='172' type='bool Solarus::Map::is_suspended() const'/>
+<def f='codebrowser/src/Map.cpp' l='492' ll='494' type='bool Solarus::Map::is_suspended() const'/>
+<doc f='codebrowser/src/Map.cpp' l='488'>/**
+ * \brief Returns whether the map is currently suspended.
+ * \return true if the map is suspended.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='524' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>

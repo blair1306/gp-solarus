@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='78' type='bool Solarus::Movement::is_stopped() const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='77'>// movement</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='411' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1006' u='c' c='_ZNK7Solarus4Hero17is_moving_towardsEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='311' u='c' c='_ZN7Solarus14CircleMovement8set_loopEj'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='467' u='c' c='_ZNK7Solarus14CircleMovement11is_finishedEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='330' ll='332' type='bool Solarus::Movement::is_stopped() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='326'>/**
+ * \brief Returns whether the movement is stopped.
+ * \return true if the object is stopped, false otherwise
+ */</doc>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='280' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='61' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='69' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='245' u='c' c='_ZN7Solarus16StraightMovement9set_angleEd'/>

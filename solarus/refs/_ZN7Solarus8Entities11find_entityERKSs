@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='80' type='EntityPtr Solarus::Entities::find_entity(const std::string &amp; name)'/>
+<use f='codebrowser/src/Game.cpp' l='445' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='390' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='273' u='c' c='_ZN7Solarus8Entities10get_entityERKSs'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='290' ll='304' type='EntityPtr Solarus::Entities::find_entity(const std::string &amp; name)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1085' u='c' c='_ZN7Solarus8Entities13remove_entityERKSs'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='283'>/**
+ * \brief Returns the entity with the specified name,
+ * or nullptr if it does not exist.
+ * \param name Name of the entity to find.
+ * \return The entity requested, or nullptr if there is no entity with the
+ * given name.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1344' u='c' c='_ZN7Solarus10LuaContext26l_get_map_entity_or_globalEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1934' u='c' c='_ZN7Solarus10LuaContext18map_api_get_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1957' u='c' c='_ZN7Solarus10LuaContext18map_api_has_entityEP9lua_State'/>

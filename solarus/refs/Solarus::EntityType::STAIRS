@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='56' type='19'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='56'>/**&lt; stairs between two maps or inside a single map */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='229' u='r'/>
+<use f='codebrowser/include/solarus/entities/Stairs.h' l='48'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='53' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='86' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='138' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='544' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1289' u='r'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='97' type='void Solarus::Pickable::check_bad_ground()'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='361' ll='421' type='void Solarus::Pickable::check_bad_ground()'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='551' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='355'>/**
+ * \brief Reacts to the ground of the pickable.
+ *
+ * It is removed if it is on water, lava or a hole.
+ * It goes to the lower layer if the ground is empty.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='103' type='void Solarus::EntityData::set_layer(int layer)'/>
+<def f='codebrowser/src/EntityData.cpp' l='479' ll='481' type='void Solarus::EntityData::set_layer(int layer)'/>
+<use f='codebrowser/src/EntityData.cpp' l='766' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<doc f='codebrowser/src/EntityData.cpp' l='475'>/**
+ * \brief Sets the layer of this entity on the map.
+ * \param layer The layer.
+ */</doc>
+<use f='codebrowser/src/MapData.cpp' l='358' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>

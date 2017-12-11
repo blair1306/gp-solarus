@@ -1,0 +1,20 @@
+<dec f='include/SDL2/SDL_surface.h' l='118' type='SDL_Surface * SDL_CreateRGBSurface(Uint32 flags, int width, int height, int depth, Uint32 Rmask, Uint32 Gmask, Uint32 Bmask, Uint32 Amask)'/>
+<doc f='include/SDL2/SDL_surface.h' l='100'>/**
+ *  Allocate and free an RGB surface.
+ *
+ *  If the depth is 4 or 8 bits, an empty palette is allocated for the surface.
+ *  If the depth is greater than 8 bits, the pixel format is set using the
+ *  flags &apos;[RGB]mask&apos;.
+ *
+ *  If the function runs out of memory, it will return NULL.
+ *
+ *  \param flags The \c flags are obsolete and should be set to 0.
+ *  \param width The width in pixels of the surface to create.
+ *  \param height The height in pixels of the surface to create.
+ *  \param depth The depth in bits of the surface to create.
+ *  \param Rmask The red mask of the surface to create.
+ *  \param Gmask The green mask of the surface to create.
+ *  \param Bmask The blue mask of the surface to create.
+ *  \param Amask The alpha mask of the surface to create.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='468' u='c' c='_ZN7Solarus7Surface23create_software_surfaceEv'/>

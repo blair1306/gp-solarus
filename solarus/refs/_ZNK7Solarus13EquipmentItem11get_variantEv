@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='88' type='int Solarus::EquipmentItem::get_variant() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='509' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='389' ll='395' type='int Solarus::EquipmentItem::get_variant() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='382'>/**
+ * \brief Returns the possession state of this item.
+ *
+ * The item must be saved.
+ *
+ * \return The possessed variant of this item.
+ */</doc>
+<use f='codebrowser/src/EquipmentItemUsage.cpp' l='33' u='c' c='_ZN7Solarus18EquipmentItemUsageC1ERNS_4GameERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='213' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='459' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='623' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2592' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1201' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='534' u='c' c='_ZN7Solarus10LuaContext20item_api_has_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='553' u='c' c='_ZN7Solarus10LuaContext20item_api_get_variantEP9lua_State'/>

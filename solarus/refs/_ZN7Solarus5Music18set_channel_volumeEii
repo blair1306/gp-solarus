@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='75' type='static void Solarus::Music::set_channel_volume(int channel, int volume)'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='205' ll='211' type='static void Solarus::Music::set_channel_volume(int channel, int volume)'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='197'>/**
+ * \brief Sets the volume of a channel of the current music.
+ *
+ * This function is only supported for .it musics.
+ *
+ * \param channel Index of a channel.
+ * \param volume The volume to set.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='304' u='c' c='_ZN7Solarus10LuaContext34audio_api_set_music_channel_volumeEP9lua_State'/>

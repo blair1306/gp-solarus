@@ -1,0 +1,15 @@
+<def f='codebrowser/include/solarus/MapData.h' l='67' ll='70' type='void Solarus::EntityIndex::EntityIndex(int layer, int order)'/>
+<doc f='codebrowser/include/solarus/MapData.h' l='62'>/**
+     * \brief Creates an index.
+     * \param layer The layer.
+     * \param order The order in that layer.
+     */</doc>
+<use f='codebrowser/src/MapData.cpp' l='363' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='412' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='426' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='441' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='464' u='c' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='488' u='c' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='673' u='c' c='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='193' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='81' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>

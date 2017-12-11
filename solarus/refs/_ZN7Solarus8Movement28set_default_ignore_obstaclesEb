@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='111' type='void Solarus::Movement::set_default_ignore_obstacles(bool ignore_obstacles)'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='110'>// obstacles (only when the movement is applied to an entity)</doc>
+<def f='codebrowser/src/movements/Movement.cpp' l='491' ll='495' type='void Solarus::Movement::set_default_ignore_obstacles(bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='487'>/**
+ * \brief Sets whether this movement has the property to traverse obstacles.
+ * \param ignore_obstacles true to ignore obstacles
+ */</doc>

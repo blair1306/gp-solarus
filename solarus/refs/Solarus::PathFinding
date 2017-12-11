@@ -1,0 +1,33 @@
+<def f='codebrowser/include/solarus/movements/PathFinding.h' l='39' ll='93'/>
+<size>136</size>
+<doc f='codebrowser/include/solarus/movements/PathFinding.h' l='32'>/**
+ * \brief Implementation of the A* algorithm to compute a path.
+ *
+ * In the current implementation, the computed path always corresponds to a
+ * shape of 16*16. If the entity to move is bigger, some obstacles may prevent
+ * it from following the computed path.
+ */</doc>
+<fun r='_ZN7Solarus11PathFindingC1ERNS_3MapERNS_6EntityES4_'/>
+<fun r='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<fun r='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<fun r='_ZNK7Solarus11PathFinding16get_square_indexERKNS_5PointE'/>
+<fun r='_ZNK7Solarus11PathFinding24is_node_transition_validERKNS0_4NodeEi'/>
+<fun r='_ZN7Solarus11PathFinding16add_index_sortedEPNS0_4NodeE'/>
+<fun r='_ZN7Solarus11PathFinding12rebuild_pathEPKNS0_4NodeE'/>
+<smbr r='Solarus::PathFinding::neighbours_locations' t='const Solarus::Point []'/>
+<smbr r='Solarus::PathFinding::transition_collision_boxes' t='const Solarus::Rectangle []'/>
+<mbr r='Solarus::PathFinding::map' o='0' t='Solarus::Map &amp;'/>
+<mbr r='Solarus::PathFinding::source_entity' o='64' t='Solarus::Entity &amp;'/>
+<mbr r='Solarus::PathFinding::target_entity' o='128' t='Solarus::Entity &amp;'/>
+<mbr r='Solarus::PathFinding::closed_list' o='192' t='std::map&lt;int, Node&gt;'/>
+<mbr r='Solarus::PathFinding::open_list' o='576' t='std::map&lt;int, Node&gt;'/>
+<mbr r='Solarus::PathFinding::open_list_indices' o='960' t='std::list&lt;int&gt;'/>
+<smbr r='Solarus::PathFinding::neighbours_locations' t='const Solarus::Point [8]'/>
+<smbr r='Solarus::PathFinding::transition_collision_boxes' t='const Solarus::Rectangle [8]'/>
+<fun r='_ZN7Solarus11PathFindingC1ERNS_3MapERNS_6EntityES4_'/>
+<fun r='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<fun r='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<fun r='_ZNK7Solarus11PathFinding16get_square_indexERKNS_5PointE'/>
+<fun r='_ZN7Solarus11PathFinding16add_index_sortedEPNS0_4NodeE'/>
+<fun r='_ZN7Solarus11PathFinding12rebuild_pathEPKNS0_4NodeE'/>
+<fun r='_ZNK7Solarus11PathFinding24is_node_transition_validERKNS0_4NodeEi'/>

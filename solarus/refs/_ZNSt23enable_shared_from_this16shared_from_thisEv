@@ -1,0 +1,25 @@
+<def f='include/c++/4.9/bits/shared_ptr.h' l='545' ll='547' type='shared_ptr&lt;_Tp&gt; std::enable_shared_from_this::shared_from_this()'/>
+<use f='codebrowser/src/Sprite.cpp' l='782' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='851' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='93' u='c' c='_ZN7Solarus24SpriteAnimationDirection4drawERNS_7SurfaceERKNS_5PointEiS2_'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='231' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='338' u='c' c='_ZN7Solarus5Arrow9attach_toERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='228' u='c' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='160' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='371' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='674' u='c' c='_ZN7Solarus8Entities14bring_to_frontERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='685' u='c' c='_ZN7Solarus8Entities13bring_to_backERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1064' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1304' u='c' c='_ZN7Solarus8Entities16set_entity_layerERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1335' u='c' c='_ZN7Solarus8Entities34notify_entity_bounding_box_changedERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='552' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1598' u='c' c='_ZN7Solarus4Hero37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1745' u='c' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='188' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='306' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='33' u='c' c='_ZN7Solarus12StreamActionC1ERNS_6StreamERNS_6EntityE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='34' u='c' c='_ZN7Solarus12StreamActionC1ERNS_6StreamERNS_6EntityE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='97' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='313' u='c' c='_ZN7Solarus4Hero19PlayerMovementState23notify_jumper_activatedERNS_6JumperE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='716' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1020' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>

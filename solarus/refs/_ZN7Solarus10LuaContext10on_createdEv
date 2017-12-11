@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1277' type='void Solarus::LuaContext::on_created()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5714' u='c' c='_ZN7Solarus10LuaContext17entity_on_createdERNS_6EntityE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='849' u='c' c='_ZN7Solarus10LuaContext15item_on_createdERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2618' ll='2623' type='void Solarus::LuaContext::on_created()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2615'>/**
+ * \brief Calls the on_created() method of the object on top of the stack.
+ */</doc>

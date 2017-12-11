@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='231' type='bool Solarus::InputEvent::is_keyboard_event() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='591' ll='595' type='bool Solarus::InputEvent::is_keyboard_event() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='779' u='c' c='_ZNK7Solarus10InputEvent13is_with_shiftEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='793' u='c' c='_ZNK7Solarus10InputEvent15is_with_controlEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='807' u='c' c='_ZNK7Solarus10InputEvent11is_with_altEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='824' u='c' c='_ZNK7Solarus10InputEvent16get_keyboard_keyEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='587'>/**
+ * \brief Returns whether this event is a keyboard event.
+ * \return true if this is a keyboard event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1545' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

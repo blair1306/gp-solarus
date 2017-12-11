@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='63' type='Solarus::Game * Solarus::Transition::get_game() const'/>
+<def f='codebrowser/src/Transition.cpp' l='97' ll='99' type='Solarus::Game * Solarus::Transition::get_game() const'/>
+<doc f='codebrowser/src/Transition.cpp' l='90'>/**
+ * \brief Returns the current game.
+ *
+ * Some transition effects need a game to run.
+ *
+ * \return The current game or nullptr.
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='76' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='81' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>

@@ -1,0 +1,14 @@
+<dec f='include/physfs.h' l='1508' type='PHYSFS_sint64 PHYSFS_swapSBE64(PHYSFS_sint64 val)'/>
+<doc f='include/physfs.h' l='1495'>/**
+ * \fn PHYSFS_sint64 PHYSFS_swapSBE64(PHYSFS_sint64 val)
+ * \brief Swap bigendian signed 64 to platform&apos;s native byte order.
+ *
+ * Take a 64-bit signed value in bigendian format and convert it to
+ *  the platform&apos;s native byte order.
+ *
+ *    \param val value to convert
+ *   \return converted value.
+ *
+ * \warning Remember, PHYSFS_uint64 is only 32 bits on platforms without
+ *          any sort of 64-bit support.
+ */</doc>

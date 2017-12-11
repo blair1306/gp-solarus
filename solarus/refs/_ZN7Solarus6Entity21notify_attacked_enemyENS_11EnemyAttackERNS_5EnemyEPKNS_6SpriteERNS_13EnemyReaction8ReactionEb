@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='318' type='void Solarus::Entity::notify_attacked_enemy(Solarus::EnemyAttack attack, Solarus::Enemy &amp; victim, const Solarus::Sprite * victim_sprite, EnemyReaction::Reaction &amp; result, bool killed)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='415' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='349' c='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='475' c='_ZN7Solarus13CarriedObject21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1259' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3205' ll='3211' type='void Solarus::Entity::notify_attacked_enemy(Solarus::EnemyAttack , Solarus::Enemy &amp; , const Solarus::Sprite * , EnemyReaction::Reaction &amp; , bool )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3194'>/**
+ * \brief Notifies this entity that it has just attacked an enemy.
+ *
+ * This function is called even if this attack was not successful.
+ *
+ * \param attack The attack.
+ * \param victim The enemy just hurt.
+ * \param victim_sprite The enemy&apos;s sprite that was touched or nullptr.
+ * \param result How the enemy has reacted to the attack.
+ * \param killed Whether the attack has just killed the enemy.
+ */</doc>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='163' c='_ZN7Solarus9Explosion21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='2026' c='_ZN7Solarus4Hero21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='331' c='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='144' type='std::string Solarus::HeroSprites::get_default_tunic_sprite_id() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='118' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='200' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='221' ll='227' type='std::string Solarus::HeroSprites::get_default_tunic_sprite_id() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='214'>/**
+ * \brief Returns the animation set id of the default tunic sprite.
+ *
+ * The default tunic sprite id is &quot;hero/tunicX&quot; where X is the tunic level.
+ *
+ * \return The default tunic sprite animation set id.
+ */</doc>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/Map.h' l='84' type='const CameraPtr &amp; Solarus::Map::get_camera() const'/>
+<def f='codebrowser/include/solarus/Map.h' l='289' ll='292' type='const CameraPtr &amp; Solarus::Map::get_camera() const'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='149' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<doc f='codebrowser/include/solarus/Map.h' l='83'>// camera</doc>
+<doc f='codebrowser/include/solarus/Map.h' l='285'>/**
+ * \brief Returns the camera of the map.
+ * \return The camera, or nullptr if there is no camera.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='494' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='496' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='577' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Game.cpp' l='860' u='c' c='_ZNK7Solarus4Game22is_suspended_by_cameraEv'/>
+<use f='codebrowser/src/Map.cpp' l='439' u='c' c='_ZN7Solarus3Map18get_camera_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='568' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='638' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEii'/>
+<use f='codebrowser/src/Map.cpp' l='666' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<use f='codebrowser/src/Map.cpp' l='732' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='91' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2762' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1879' u='c' c='_ZN7Solarus4Hero31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='166' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='215' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='60' u='c' c='_ZN7Solarus4Tile11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='114' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1644' u='c' c='_ZN7Solarus10LuaContext18map_api_get_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1669' u='c' c='_ZN7Solarus10LuaContext27map_api_get_camera_positionEP9lua_State'/>

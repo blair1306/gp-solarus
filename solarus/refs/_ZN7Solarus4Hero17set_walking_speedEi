@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='131' type='void Solarus::Hero::set_walking_speed(int walking_speed)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='258' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='377' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='895' u='c' c='_ZN7Solarus4Hero24set_normal_walking_speedEi'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='911' ll='917' type='void Solarus::Hero::set_walking_speed(int walking_speed)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1218' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1279' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2146' u='c' c='_ZN7Solarus4Hero11start_grassEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2161' u='c' c='_ZN7Solarus4Hero19start_shallow_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2247' u='c' c='_ZN7Solarus4Hero10start_holeEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='907'>/**
+ * \brief Sets the speed to apply to the hero&apos;s movements when he is walking.
+ * \param walking_speed the new walking speed
+ */</doc>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='47' u='c' c='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='60' u='c' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='81' u='c' c='_ZN7Solarus4Hero13SwimmingState6updateEv'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='145' u='c' c='_ZN7Solarus4Hero13SwimmingState15try_swim_fasterEv'/>

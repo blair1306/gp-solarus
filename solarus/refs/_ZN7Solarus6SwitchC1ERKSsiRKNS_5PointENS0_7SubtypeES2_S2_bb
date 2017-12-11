@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='55' type='void Solarus::Switch::Switch(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, Solarus::Switch::Subtype subtype, const std::string &amp; sprite_name, const std::string &amp; sound_id, bool needs_block, bool inactivate_when_leaving)'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='50' ll='85' type='void Solarus::Switch::Switch(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, Solarus::Switch::Subtype subtype, const std::string &amp; sprite_name, const std::string &amp; sound_id, bool needs_block, bool inactivate_when_leaving)'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='37'>/**
+ * \brief Constructor.
+ * \param name Name of the entity.
+ * \param layer Layer of the entity.
+ * \param xy Coordinates the entity.
+ * \param subtype The subtype of switch.
+ * \param sprite_name Sprite animation set id to use, or an empty string.
+ * \param sound_id Sound to play when activating the switch,
+ * or an empty string.
+ * \param needs_block \c true if a block is required to activate this switch.
+ * \param inactivate_when_leaving \c true to inactivate the switch when the
+ * hero or the block leaves it.
+ */</doc>

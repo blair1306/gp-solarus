@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='150' type='bool Solarus::LuaContext::notify_input(const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='458' u='c' c='_ZN7Solarus8MainLoop12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='228' ll='242' type='bool Solarus::LuaContext::notify_input(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='220'>/**
+ * \brief Notifies Lua that an input event has just occurred.
+ *
+ * The appropriate callback in sol.main is notified.
+ *
+ * \param event The input event to handle.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

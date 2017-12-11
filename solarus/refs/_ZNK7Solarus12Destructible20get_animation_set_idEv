@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='62' type='const std::string &amp; Solarus::Destructible::get_animation_set_id() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='73' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='120' ll='122' type='const std::string &amp; Solarus::Destructible::get_animation_set_id() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='404' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='116'>/**
+ * \brief Returns the animation set of this destructible object.
+ * \return The animations of the sprite.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='141' type='bool Solarus::Entity::State::is_carrying_item() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1091' ll='1093' type='bool Solarus::Entity::State::is_carrying_item() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1083'>/**
+ * \brief Returns whether the entity is currently carrying an item in this state.
+ *
+ * This function returns true if get_carried_object() is not nullptr.
+ * Redefine get_carried_object() if the entity is able to carry an item in this state.
+ *
+ * \return true if the entity is currently carrying an item in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2374' u='c' c='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>

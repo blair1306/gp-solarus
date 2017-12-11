@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='47' type='10'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='47'>/**&lt; a dynamic tile (that can be enabled or disabled) */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='45' u='r'/>
+<use f='codebrowser/include/solarus/entities/DynamicTile.h' l='42'/>
+<use f='codebrowser/src/entities/Door.cpp' l='211' u='r' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='216' u='r' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='41' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='78' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='128' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='354' u='r' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='360' u='r' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='435' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4294' u='r' c='_ZN7Solarus10LuaContext15is_dynamic_tileEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4306' u='r' c='_ZN7Solarus10LuaContext18check_dynamic_tileEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1280' u='r'/>

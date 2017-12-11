@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1206' type='void Solarus::LuaContext::on_started()'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1205'>// Events.</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1570' u='c' c='_ZN7Solarus10LuaContext15game_on_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='773' u='c' c='_ZN7Solarus10LuaContext15item_on_startedERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1386' ll='1391' type='void Solarus::LuaContext::on_started()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1383'>/**
+ * \brief Calls the on_started() method of the object on top of the stack.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='408' u='c' c='_ZN7Solarus10LuaContext15main_on_startedEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='289' u='c' c='_ZN7Solarus10LuaContext15menu_on_startedERKNS_12ScopedLuaRefE'/>

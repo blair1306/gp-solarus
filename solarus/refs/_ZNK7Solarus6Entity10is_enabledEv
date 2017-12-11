@@ -1,0 +1,42 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='183' type='bool Solarus::Entity::is_enabled() const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='505' ll='507' type='bool Solarus::Entity::is_enabled() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='501'>/**
+ * \brief Returns whether this entity is enabled.
+ * \return true if this entity is enabled
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='871' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1111' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1278' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1299' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1323' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1340' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1369' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1386' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1415' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1435' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='419' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1237' u='c' c='_ZN7Solarus12CustomEntity6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='214' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='226' u='c' c='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='254' u='c' c='_ZN7Solarus5Enemy15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='773' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1152' u='c' c='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1236' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1245' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='221' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1514' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2140' u='c' c='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2168' u='c' c='_ZN7Solarus6Entity30check_collision_with_detectorsERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3314' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3319' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3322' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3327' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='146' u='c' c='_ZN7Solarus6Stairs16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='356' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='362' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='156' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='167' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='217' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='151' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='851' u='c' c='_ZN7Solarus10LuaContext21entity_api_is_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='171' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='329' type='void Solarus::LuaContext::item_on_npc_interaction(Solarus::EquipmentItem &amp; item, Solarus::Npc &amp; npc)'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='320' u='c' c='_ZN7Solarus3Npc28call_script_hero_interactionEv'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='1013' ll='1022' type='void Solarus::LuaContext::item_on_npc_interaction(Solarus::EquipmentItem &amp; item, Solarus::Npc &amp; npc)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='1005'>/**
+ * \brief Calls the on_npc_interaction() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ * \param npc An NPC.
+ */</doc>

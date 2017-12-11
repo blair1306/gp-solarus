@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='364' type='int SDL_GetTextureBlendMode(SDL_Texture * texture, SDL_BlendMode * blendMode)'/>
+<doc f='include/SDL2/SDL_render.h' l='354'>/**
+ *  \brief Get the blend mode used for texture copy operations.
+ *
+ *  \param texture   The texture to query.
+ *  \param blendMode A pointer filled in with the current blend mode.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid.
+ *
+ *  \sa SDL_SetTextureBlendMode()
+ */</doc>

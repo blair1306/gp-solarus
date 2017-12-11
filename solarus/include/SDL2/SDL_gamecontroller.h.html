@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_gamecontroller.h source code [include/SDL2/SDL_gamecontroller.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_gamecontroller.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_gamecontroller.h.html'>SDL_gamecontroller.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_gamecontroller.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Include file for SDL game controller event handling</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_gamecontroller_h">_SDL_gamecontroller_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_gamecontroller_h" data-ref="_M/_SDL_gamecontroller_h">_SDL_gamecontroller_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_rwops.h.html">"SDL_rwops.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="SDL_joystick.h.html">"SDL_joystick.h"</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="37">37</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="38">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="38">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * <span class="command"> \file</span> SDL_gamecontroller.h</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  In order to use these functions, SDL_Init() must have been called</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *  with the ::SDL_INIT_JOYSTICK flag.  This causes SDL to scan the system</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *  for game controllers, and load appropriate drivers.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *  If you would like to receive controller updates while the application</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *  is in the background, you should set the following hint before calling</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *  SDL_Init(): SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/* The gamecontroller structure used to identify an SDL game controller */</i></td></tr>
+<tr><th id="55">55</th><td><b>struct</b> <dfn class="type" id="_SDL_GameController" title='_SDL_GameController' data-ref="_SDL_GameController">_SDL_GameController</dfn>;</td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_SDL_GameController" title='_SDL_GameController' data-ref="_SDL_GameController">_SDL_GameController</a> <dfn class="typedef" id="SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="60">60</th><td>{</td></tr>
+<tr><th id="61">61</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BINDTYPE_NONE" title='::SDL_CONTROLLER_BINDTYPE_NONE' data-ref="::SDL_CONTROLLER_BINDTYPE_NONE">SDL_CONTROLLER_BINDTYPE_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="62">62</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BINDTYPE_BUTTON" title='::SDL_CONTROLLER_BINDTYPE_BUTTON' data-ref="::SDL_CONTROLLER_BINDTYPE_BUTTON">SDL_CONTROLLER_BINDTYPE_BUTTON</dfn>,</td></tr>
+<tr><th id="63">63</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BINDTYPE_AXIS" title='::SDL_CONTROLLER_BINDTYPE_AXIS' data-ref="::SDL_CONTROLLER_BINDTYPE_AXIS">SDL_CONTROLLER_BINDTYPE_AXIS</dfn>,</td></tr>
+<tr><th id="64">64</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BINDTYPE_HAT" title='::SDL_CONTROLLER_BINDTYPE_HAT' data-ref="::SDL_CONTROLLER_BINDTYPE_HAT">SDL_CONTROLLER_BINDTYPE_HAT</dfn></td></tr>
+<tr><th id="65">65</th><td>} <dfn class="typedef" id="SDL_GameControllerBindType" title='SDL_GameControllerBindType' data-type='enum SDL_GameControllerBindType' data-ref="SDL_GameControllerBindType">SDL_GameControllerBindType</dfn>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *  Get the SDL joystick layer binding for this controller button/axis mapping</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_GameControllerButtonBind" title='SDL_GameControllerButtonBind' data-ref="SDL_GameControllerButtonBind"><a class="type" href="#SDL_GameControllerButtonBind" title='SDL_GameControllerButtonBind' data-ref="SDL_GameControllerButtonBind">SDL_GameControllerButtonBind</a></dfn></td></tr>
+<tr><th id="71">71</th><td>{</td></tr>
+<tr><th id="72">72</th><td>    <a class="typedef" href="#SDL_GameControllerBindType" title='SDL_GameControllerBindType' data-type='enum SDL_GameControllerBindType' data-ref="SDL_GameControllerBindType">SDL_GameControllerBindType</a> <dfn class="decl" id="SDL_GameControllerButtonBind::bindType" title='SDL_GameControllerButtonBind::bindType' data-ref="SDL_GameControllerButtonBind::bindType">bindType</dfn>;</td></tr>
+<tr><th id="73">73</th><td>    <b>union</b></td></tr>
+<tr><th id="74">74</th><td>    {</td></tr>
+<tr><th id="75">75</th><td>        <em>int</em> <dfn class="decl" id="SDL_GameControllerButtonBind::(anonymous)::button" title='SDL_GameControllerButtonBind::(anonymous union)::button' data-ref="SDL_GameControllerButtonBind::(anonymous)::button">button</dfn>;</td></tr>
+<tr><th id="76">76</th><td>        <em>int</em> <dfn class="decl" id="SDL_GameControllerButtonBind::(anonymous)::axis" title='SDL_GameControllerButtonBind::(anonymous union)::axis' data-ref="SDL_GameControllerButtonBind::(anonymous)::axis">axis</dfn>;</td></tr>
+<tr><th id="77">77</th><td>        <b>struct</b> {</td></tr>
+<tr><th id="78">78</th><td>            <em>int</em> <dfn class="decl" id="SDL_GameControllerButtonBind::(anonymousunion)::(anonymous)::hat" title='SDL_GameControllerButtonBind::(anonymous union)::(anonymous struct)::hat' data-ref="SDL_GameControllerButtonBind::(anonymousunion)::(anonymous)::hat">hat</dfn>;</td></tr>
+<tr><th id="79">79</th><td>            <em>int</em> <dfn class="decl" id="SDL_GameControllerButtonBind::(anonymousunion)::(anonymous)::hat_mask" title='SDL_GameControllerButtonBind::(anonymous union)::(anonymous struct)::hat_mask' data-ref="SDL_GameControllerButtonBind::(anonymousunion)::(anonymous)::hat_mask">hat_mask</dfn>;</td></tr>
+<tr><th id="80">80</th><td>        } <dfn class="decl" id="SDL_GameControllerButtonBind::(anonymous)::hat" title='SDL_GameControllerButtonBind::(anonymous union)::hat' data-ref="SDL_GameControllerButtonBind::(anonymous)::hat">hat</dfn>;</td></tr>
+<tr><th id="81">81</th><td>    } <dfn class="decl" id="SDL_GameControllerButtonBind::value" title='SDL_GameControllerButtonBind::value' data-ref="SDL_GameControllerButtonBind::value">value</dfn>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>} <dfn class="typedef" id="SDL_GameControllerButtonBind" title='SDL_GameControllerButtonBind' data-type='struct SDL_GameControllerButtonBind' data-ref="SDL_GameControllerButtonBind">SDL_GameControllerButtonBind</dfn>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  To count the number of game controllers in the system for the following:</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *  int nJoysticks = SDL_NumJoysticks();</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *  int nGameControllers = 0;</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *  for ( int i = 0; i &lt; nJoysticks; i++ ) {</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *      if ( SDL_IsGameController(i) ) {</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *          nGameControllers++;</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *      }</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *  }</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *  Using the SDL_HINT_GAMECONTROLLERCONFIG hint or the SDL_GameControllerAddMapping you can add support for controllers SDL is unaware of or cause an existing controller to have a different binding. The format is:</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *  guid,name,mappings</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *  Where GUID is the string value from SDL_JoystickGetGUIDString(), name is the human readable string for the device and mappings are controller mappings to joystick ones.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *  Under Windows there is a reserved GUID of "xinput" that covers any XInput devices.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *  The mapping format for joystick is:</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *      bX - a joystick button, index X</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *      hX.Y - hat X with value Y</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *      aX - axis X of the joystick</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *  Buttons can be used as a controller axis and vice versa.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *  This string shows an example of a valid mapping for a controller</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *  "341a3608000000000000504944564944,Afterglow PS3 Controller,a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,leftstick:b10,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,lefttrigger:b6,righttrigger:b7",</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  Load a set of mappings from a seekable SDL data stream (memory or file), filtered by the current SDL_GetPlatform()</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *  A community sourced database of controllers is available at <a href="https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt">https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt</a></i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> *  If<span class="command"> \c</span> <span class="arg">freerw</span> is non-zero, the stream will be closed after being read.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * <span class="command">\return</span> number of mappings added, -1 on error</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="120">120</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerAddMappingsFromRW" title='SDL_GameControllerAddMappingsFromRW' data-ref="SDL_GameControllerAddMappingsFromRW">SDL_GameControllerAddMappingsFromRW</dfn>( <a class="typedef" href="SDL_rwops.h.html#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col9 decl" id="789rw" title='rw' data-type='SDL_RWops *' data-ref="789rw">rw</dfn>, <em>int</em> <dfn class="local col0 decl" id="790freerw" title='freerw' data-type='int' data-ref="790freerw">freerw</dfn> );</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *  Load a set of mappings from a file, filtered by the current SDL_GetPlatform()</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *  Convenience macro.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="127">127</th><td><u>#define <dfn class="macro" id="_M/SDL_GameControllerAddMappingsFromFile" data-ref="_M/SDL_GameControllerAddMappingsFromFile">SDL_GameControllerAddMappingsFromFile</dfn>(file)   SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile(file, "rb"), 1)</u></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *  Add or update an existing mapping configuration</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * <span class="command">\return</span> 1 if mapping is added, 0 if updated, -1 on error</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="134">134</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerAddMapping" title='SDL_GameControllerAddMapping' data-ref="SDL_GameControllerAddMapping">SDL_GameControllerAddMapping</dfn>( <em>const</em> <em>char</em>* <dfn class="local col1 decl" id="791mappingString" title='mappingString' data-type='const char *' data-ref="791mappingString">mappingString</dfn> );</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *  Get a mapping string for a GUID</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *  <span class="command">\return</span> the mapping string.  Must be freed with SDL_free.  Returns NULL if no mapping is available</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="141">141</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>char</em> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerMappingForGUID" title='SDL_GameControllerMappingForGUID' data-ref="SDL_GameControllerMappingForGUID">SDL_GameControllerMappingForGUID</dfn>( <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickGUID" title='SDL_JoystickGUID' data-type='struct SDL_JoystickGUID' data-ref="SDL_JoystickGUID">SDL_JoystickGUID</a> <dfn class="local col2 decl" id="792guid" title='guid' data-type='SDL_JoystickGUID' data-ref="792guid">guid</dfn> );</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *  Get a mapping string for an open GameController</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *  <span class="command">\return</span> the mapping string.  Must be freed with SDL_free.  Returns NULL if no mapping is available</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="148">148</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>char</em> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerMapping" title='SDL_GameControllerMapping' data-ref="SDL_GameControllerMapping">SDL_GameControllerMapping</dfn>( <a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> * <dfn class="local col3 decl" id="793gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="793gamecontroller">gamecontroller</dfn> );</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *  Is the joystick on this index supported by the game controller interface?</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="153">153</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_IsGameController" title='SDL_IsGameController' data-ref="SDL_IsGameController">SDL_IsGameController</dfn>(<em>int</em> <dfn class="local col4 decl" id="794joystick_index" title='joystick_index' data-type='int' data-ref="794joystick_index">joystick_index</dfn>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *  Get the implementation dependent name of a game controller.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *  This can be called before any controllers are opened.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *  If no name can be found, this function returns NULL.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="161">161</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerNameForIndex" title='SDL_GameControllerNameForIndex' data-ref="SDL_GameControllerNameForIndex">SDL_GameControllerNameForIndex</dfn>(<em>int</em> <dfn class="local col5 decl" id="795joystick_index" title='joystick_index' data-type='int' data-ref="795joystick_index">joystick_index</dfn>);</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> *  Open a game controller for use.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *  The index passed as an argument refers to the N'th game controller on the system.</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *  This index is the value which will identify this controller in future controller</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *  events.</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *  <span class="command">\return</span> A controller identifier, or NULL if an error occurred.</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="171">171</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerOpen" title='SDL_GameControllerOpen' data-ref="SDL_GameControllerOpen">SDL_GameControllerOpen</dfn>(<em>int</em> <dfn class="local col6 decl" id="796joystick_index" title='joystick_index' data-type='int' data-ref="796joystick_index">joystick_index</dfn>);</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> *  Return the name for this currently opened controller</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="176">176</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerName" title='SDL_GameControllerName' data-ref="SDL_GameControllerName">SDL_GameControllerName</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col7 decl" id="797gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="797gamecontroller">gamecontroller</dfn>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *  Returns SDL_TRUE if the controller has been opened and currently connected,</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *  or SDL_FALSE if it has not.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="182">182</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetAttached" title='SDL_GameControllerGetAttached' data-ref="SDL_GameControllerGetAttached">SDL_GameControllerGetAttached</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col8 decl" id="798gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="798gamecontroller">gamecontroller</dfn>);</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *  Get the underlying joystick object used by a controller</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="187">187</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_joystick.h.html#SDL_Joystick" title='SDL_Joystick' data-type='struct _SDL_Joystick' data-ref="SDL_Joystick">SDL_Joystick</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetJoystick" title='SDL_GameControllerGetJoystick' data-ref="SDL_GameControllerGetJoystick">SDL_GameControllerGetJoystick</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col9 decl" id="799gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="799gamecontroller">gamecontroller</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> *  Enable/disable controller event polling.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *  If controller events are disabled, you must call SDL_GameControllerUpdate()</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *  yourself and check the state of the controller when you want controller</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *  information.</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *  The state can be one of ::SDL_QUERY, ::SDL_ENABLE or ::SDL_IGNORE.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="198">198</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerEventState" title='SDL_GameControllerEventState' data-ref="SDL_GameControllerEventState">SDL_GameControllerEventState</dfn>(<em>int</em> <dfn class="local col0 decl" id="800state" title='state' data-type='int' data-ref="800state">state</dfn>);</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *  Update the current state of the open game controllers.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> *  This is called automatically by the event loop if any game controller</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> *  events are enabled.</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="206">206</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerUpdate" title='SDL_GameControllerUpdate' data-ref="SDL_GameControllerUpdate">SDL_GameControllerUpdate</dfn>(<em>void</em>);</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> *  The list of axes available from a controller</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="212">212</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="213">213</th><td>{</td></tr>
+<tr><th id="214">214</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_INVALID" title='::SDL_CONTROLLER_AXIS_INVALID' data-ref="::SDL_CONTROLLER_AXIS_INVALID">SDL_CONTROLLER_AXIS_INVALID</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="215">215</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_LEFTX" title='::SDL_CONTROLLER_AXIS_LEFTX' data-ref="::SDL_CONTROLLER_AXIS_LEFTX">SDL_CONTROLLER_AXIS_LEFTX</dfn>,</td></tr>
+<tr><th id="216">216</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_LEFTY" title='::SDL_CONTROLLER_AXIS_LEFTY' data-ref="::SDL_CONTROLLER_AXIS_LEFTY">SDL_CONTROLLER_AXIS_LEFTY</dfn>,</td></tr>
+<tr><th id="217">217</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_RIGHTX" title='::SDL_CONTROLLER_AXIS_RIGHTX' data-ref="::SDL_CONTROLLER_AXIS_RIGHTX">SDL_CONTROLLER_AXIS_RIGHTX</dfn>,</td></tr>
+<tr><th id="218">218</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_RIGHTY" title='::SDL_CONTROLLER_AXIS_RIGHTY' data-ref="::SDL_CONTROLLER_AXIS_RIGHTY">SDL_CONTROLLER_AXIS_RIGHTY</dfn>,</td></tr>
+<tr><th id="219">219</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_TRIGGERLEFT" title='::SDL_CONTROLLER_AXIS_TRIGGERLEFT' data-ref="::SDL_CONTROLLER_AXIS_TRIGGERLEFT">SDL_CONTROLLER_AXIS_TRIGGERLEFT</dfn>,</td></tr>
+<tr><th id="220">220</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_TRIGGERRIGHT" title='::SDL_CONTROLLER_AXIS_TRIGGERRIGHT' data-ref="::SDL_CONTROLLER_AXIS_TRIGGERRIGHT">SDL_CONTROLLER_AXIS_TRIGGERRIGHT</dfn>,</td></tr>
+<tr><th id="221">221</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_AXIS_MAX" title='::SDL_CONTROLLER_AXIS_MAX' data-ref="::SDL_CONTROLLER_AXIS_MAX">SDL_CONTROLLER_AXIS_MAX</dfn></td></tr>
+<tr><th id="222">222</th><td>} <dfn class="typedef" id="SDL_GameControllerAxis" title='SDL_GameControllerAxis' data-type='enum SDL_GameControllerAxis' data-ref="SDL_GameControllerAxis">SDL_GameControllerAxis</dfn>;</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> *  turn this string into a axis mapping</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="227">227</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GameControllerAxis" title='SDL_GameControllerAxis' data-type='enum SDL_GameControllerAxis' data-ref="SDL_GameControllerAxis">SDL_GameControllerAxis</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetAxisFromString" title='SDL_GameControllerGetAxisFromString' data-ref="SDL_GameControllerGetAxisFromString">SDL_GameControllerGetAxisFromString</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="801pchString" title='pchString' data-type='const char *' data-ref="801pchString">pchString</dfn>);</td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *  turn this axis enum into a string mapping</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="232">232</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetStringForAxis" title='SDL_GameControllerGetStringForAxis' data-ref="SDL_GameControllerGetStringForAxis">SDL_GameControllerGetStringForAxis</dfn>(<a class="typedef" href="#SDL_GameControllerAxis" title='SDL_GameControllerAxis' data-type='enum SDL_GameControllerAxis' data-ref="SDL_GameControllerAxis">SDL_GameControllerAxis</a> <dfn class="local col2 decl" id="802axis" title='axis' data-type='SDL_GameControllerAxis' data-ref="802axis">axis</dfn>);</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *  Get the SDL joystick layer binding for this controller button mapping</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="237">237</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GameControllerButtonBind" title='SDL_GameControllerButtonBind' data-type='struct SDL_GameControllerButtonBind' data-ref="SDL_GameControllerButtonBind">SDL_GameControllerButtonBind</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a></td></tr>
+<tr><th id="238">238</th><td><dfn class="decl" id="SDL_GameControllerGetBindForAxis" title='SDL_GameControllerGetBindForAxis' data-ref="SDL_GameControllerGetBindForAxis">SDL_GameControllerGetBindForAxis</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col3 decl" id="803gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="803gamecontroller">gamecontroller</dfn>,</td></tr>
+<tr><th id="239">239</th><td>                                 <a class="typedef" href="#SDL_GameControllerAxis" title='SDL_GameControllerAxis' data-type='enum SDL_GameControllerAxis' data-ref="SDL_GameControllerAxis">SDL_GameControllerAxis</a> <dfn class="local col4 decl" id="804axis" title='axis' data-type='SDL_GameControllerAxis' data-ref="804axis">axis</dfn>);</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> *  Get the current state of an axis control on a game controller.</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> *  The state is a value ranging from -32768 to 32767.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> *  The axis indices start at index 0.</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="248">248</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Sint16" title='Sint16' data-type='int16_t' data-ref="Sint16">Sint16</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a></td></tr>
+<tr><th id="249">249</th><td><dfn class="decl" id="SDL_GameControllerGetAxis" title='SDL_GameControllerGetAxis' data-ref="SDL_GameControllerGetAxis">SDL_GameControllerGetAxis</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col5 decl" id="805gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="805gamecontroller">gamecontroller</dfn>,</td></tr>
+<tr><th id="250">250</th><td>                          <a class="typedef" href="#SDL_GameControllerAxis" title='SDL_GameControllerAxis' data-type='enum SDL_GameControllerAxis' data-ref="SDL_GameControllerAxis">SDL_GameControllerAxis</a> <dfn class="local col6 decl" id="806axis" title='axis' data-type='SDL_GameControllerAxis' data-ref="806axis">axis</dfn>);</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> *  The list of buttons available from a controller</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="255">255</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="256">256</th><td>{</td></tr>
+<tr><th id="257">257</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_INVALID" title='::SDL_CONTROLLER_BUTTON_INVALID' data-ref="::SDL_CONTROLLER_BUTTON_INVALID">SDL_CONTROLLER_BUTTON_INVALID</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="258">258</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_A" title='::SDL_CONTROLLER_BUTTON_A' data-ref="::SDL_CONTROLLER_BUTTON_A">SDL_CONTROLLER_BUTTON_A</dfn>,</td></tr>
+<tr><th id="259">259</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_B" title='::SDL_CONTROLLER_BUTTON_B' data-ref="::SDL_CONTROLLER_BUTTON_B">SDL_CONTROLLER_BUTTON_B</dfn>,</td></tr>
+<tr><th id="260">260</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_X" title='::SDL_CONTROLLER_BUTTON_X' data-ref="::SDL_CONTROLLER_BUTTON_X">SDL_CONTROLLER_BUTTON_X</dfn>,</td></tr>
+<tr><th id="261">261</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_Y" title='::SDL_CONTROLLER_BUTTON_Y' data-ref="::SDL_CONTROLLER_BUTTON_Y">SDL_CONTROLLER_BUTTON_Y</dfn>,</td></tr>
+<tr><th id="262">262</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_BACK" title='::SDL_CONTROLLER_BUTTON_BACK' data-ref="::SDL_CONTROLLER_BUTTON_BACK">SDL_CONTROLLER_BUTTON_BACK</dfn>,</td></tr>
+<tr><th id="263">263</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_GUIDE" title='::SDL_CONTROLLER_BUTTON_GUIDE' data-ref="::SDL_CONTROLLER_BUTTON_GUIDE">SDL_CONTROLLER_BUTTON_GUIDE</dfn>,</td></tr>
+<tr><th id="264">264</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_START" title='::SDL_CONTROLLER_BUTTON_START' data-ref="::SDL_CONTROLLER_BUTTON_START">SDL_CONTROLLER_BUTTON_START</dfn>,</td></tr>
+<tr><th id="265">265</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_LEFTSTICK" title='::SDL_CONTROLLER_BUTTON_LEFTSTICK' data-ref="::SDL_CONTROLLER_BUTTON_LEFTSTICK">SDL_CONTROLLER_BUTTON_LEFTSTICK</dfn>,</td></tr>
+<tr><th id="266">266</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_RIGHTSTICK" title='::SDL_CONTROLLER_BUTTON_RIGHTSTICK' data-ref="::SDL_CONTROLLER_BUTTON_RIGHTSTICK">SDL_CONTROLLER_BUTTON_RIGHTSTICK</dfn>,</td></tr>
+<tr><th id="267">267</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_LEFTSHOULDER" title='::SDL_CONTROLLER_BUTTON_LEFTSHOULDER' data-ref="::SDL_CONTROLLER_BUTTON_LEFTSHOULDER">SDL_CONTROLLER_BUTTON_LEFTSHOULDER</dfn>,</td></tr>
+<tr><th id="268">268</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_RIGHTSHOULDER" title='::SDL_CONTROLLER_BUTTON_RIGHTSHOULDER' data-ref="::SDL_CONTROLLER_BUTTON_RIGHTSHOULDER">SDL_CONTROLLER_BUTTON_RIGHTSHOULDER</dfn>,</td></tr>
+<tr><th id="269">269</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_DPAD_UP" title='::SDL_CONTROLLER_BUTTON_DPAD_UP' data-ref="::SDL_CONTROLLER_BUTTON_DPAD_UP">SDL_CONTROLLER_BUTTON_DPAD_UP</dfn>,</td></tr>
+<tr><th id="270">270</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_DPAD_DOWN" title='::SDL_CONTROLLER_BUTTON_DPAD_DOWN' data-ref="::SDL_CONTROLLER_BUTTON_DPAD_DOWN">SDL_CONTROLLER_BUTTON_DPAD_DOWN</dfn>,</td></tr>
+<tr><th id="271">271</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_DPAD_LEFT" title='::SDL_CONTROLLER_BUTTON_DPAD_LEFT' data-ref="::SDL_CONTROLLER_BUTTON_DPAD_LEFT">SDL_CONTROLLER_BUTTON_DPAD_LEFT</dfn>,</td></tr>
+<tr><th id="272">272</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_DPAD_RIGHT" title='::SDL_CONTROLLER_BUTTON_DPAD_RIGHT' data-ref="::SDL_CONTROLLER_BUTTON_DPAD_RIGHT">SDL_CONTROLLER_BUTTON_DPAD_RIGHT</dfn>,</td></tr>
+<tr><th id="273">273</th><td>    <dfn class="enum" id="::SDL_CONTROLLER_BUTTON_MAX" title='::SDL_CONTROLLER_BUTTON_MAX' data-ref="::SDL_CONTROLLER_BUTTON_MAX">SDL_CONTROLLER_BUTTON_MAX</dfn></td></tr>
+<tr><th id="274">274</th><td>} <dfn class="typedef" id="SDL_GameControllerButton" title='SDL_GameControllerButton' data-type='enum SDL_GameControllerButton' data-ref="SDL_GameControllerButton">SDL_GameControllerButton</dfn>;</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc"> *  turn this string into a button mapping</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="279">279</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GameControllerButton" title='SDL_GameControllerButton' data-type='enum SDL_GameControllerButton' data-ref="SDL_GameControllerButton">SDL_GameControllerButton</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetButtonFromString" title='SDL_GameControllerGetButtonFromString' data-ref="SDL_GameControllerGetButtonFromString">SDL_GameControllerGetButtonFromString</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="807pchString" title='pchString' data-type='const char *' data-ref="807pchString">pchString</dfn>);</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> *  turn this button enum into a string mapping</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="284">284</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetStringForButton" title='SDL_GameControllerGetStringForButton' data-ref="SDL_GameControllerGetStringForButton">SDL_GameControllerGetStringForButton</dfn>(<a class="typedef" href="#SDL_GameControllerButton" title='SDL_GameControllerButton' data-type='enum SDL_GameControllerButton' data-ref="SDL_GameControllerButton">SDL_GameControllerButton</a> <dfn class="local col8 decl" id="808button" title='button' data-type='SDL_GameControllerButton' data-ref="808button">button</dfn>);</td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *  Get the SDL joystick layer binding for this controller button mapping</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="289">289</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GameControllerButtonBind" title='SDL_GameControllerButtonBind' data-type='struct SDL_GameControllerButtonBind' data-ref="SDL_GameControllerButtonBind">SDL_GameControllerButtonBind</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a></td></tr>
+<tr><th id="290">290</th><td><dfn class="decl" id="SDL_GameControllerGetBindForButton" title='SDL_GameControllerGetBindForButton' data-ref="SDL_GameControllerGetBindForButton">SDL_GameControllerGetBindForButton</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col9 decl" id="809gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="809gamecontroller">gamecontroller</dfn>,</td></tr>
+<tr><th id="291">291</th><td>                                   <a class="typedef" href="#SDL_GameControllerButton" title='SDL_GameControllerButton' data-type='enum SDL_GameControllerButton' data-ref="SDL_GameControllerButton">SDL_GameControllerButton</a> <dfn class="local col0 decl" id="810button" title='button' data-type='SDL_GameControllerButton' data-ref="810button">button</dfn>);</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> *  Get the current state of a button on a game controller.</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> *  The button indices start at index 0.</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="299">299</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerGetButton" title='SDL_GameControllerGetButton' data-ref="SDL_GameControllerGetButton">SDL_GameControllerGetButton</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col1 decl" id="811gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="811gamecontroller">gamecontroller</dfn>,</td></tr>
+<tr><th id="300">300</th><td>                                                          <a class="typedef" href="#SDL_GameControllerButton" title='SDL_GameControllerButton' data-type='enum SDL_GameControllerButton' data-ref="SDL_GameControllerButton">SDL_GameControllerButton</a> <dfn class="local col2 decl" id="812button" title='button' data-type='SDL_GameControllerButton' data-ref="812button">button</dfn>);</td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> *  Close a controller previously opened with SDL_GameControllerOpen().</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="305">305</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GameControllerClose" title='SDL_GameControllerClose' data-ref="SDL_GameControllerClose">SDL_GameControllerClose</dfn>(<a class="typedef" href="#SDL_GameController" title='SDL_GameController' data-type='struct _SDL_GameController' data-ref="SDL_GameController">SDL_GameController</a> *<dfn class="local col3 decl" id="813gamecontroller" title='gamecontroller' data-type='SDL_GameController *' data-ref="813gamecontroller">gamecontroller</dfn>);</td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="309">309</th><td><u>#<span data-ppcond="309">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="310">310</th><td>}</td></tr>
+<tr><th id="311">311</th><td><u>#<span data-ppcond="309">endif</span></u></td></tr>
+<tr><th id="312">312</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="313">313</th><td></td></tr>
+<tr><th id="314">314</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_gamecontroller_h */</u></td></tr>
+<tr><th id="315">315</th><td></td></tr>
+<tr><th id="316">316</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="317">317</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='119' type='int [16][2]'/>
+<offset>1024</offset>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='118'>// Echo history keeps most recent 8 samples (twice the size to simplify wrap handling)</doc>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='563' u='a' c='_ZN7SPC_DSP3runEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='564' u='r' c='_ZN7SPC_DSP3runEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='670' u='r' c='_ZN7SPC_DSP17soft_reset_commonEv'/>

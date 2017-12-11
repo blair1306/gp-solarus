@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='212' type='int Solarus::LuaTools::check_layer_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Map &amp; map)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='812' ll='829' type='int Solarus::LuaTools::check_layer_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='801'>/**
+ * \brief Checks that a table field is a valid layer and returns it.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::check_layer().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param map The map whose number of layer matters.
+ * \return The wanted field as a layer.
+ */</doc>

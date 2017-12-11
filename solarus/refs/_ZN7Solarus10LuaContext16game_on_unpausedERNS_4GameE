@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='341' type='void Solarus::LuaContext::game_on_unpaused(Solarus::Game &amp; game)'/>
+<use f='codebrowser/src/Game.cpp' l='841' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1674' ll='1683' type='void Solarus::LuaContext::game_on_unpaused(Solarus::Game &amp; game)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1667'>/**
+ * \brief Calls the on_unpaused() method of a Lua game.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param game A game.
+ */</doc>

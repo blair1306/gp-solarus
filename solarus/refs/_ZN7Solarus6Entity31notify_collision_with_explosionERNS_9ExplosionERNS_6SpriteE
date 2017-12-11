@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='314' type='void Solarus::Entity::notify_collision_with_explosion(Solarus::Explosion &amp; explosion, Solarus::Sprite &amp; sprite_overlapping)'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='134' c='_ZN7Solarus4Bomb31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1117' c='_ZN7Solarus12CustomEntity31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='267' c='_ZN7Solarus4Door31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='993' c='_ZN7Solarus5Enemy31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3166' ll='3167' type='void Solarus::Entity::notify_collision_with_explosion(Solarus::Explosion &amp; , Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3160'>/**
+ * \brief This function is called when an explosion&apos;s sprite
+ * detects a pixel-perfect collision with a sprite of this entity.
+ * \param explosion the explosion
+ * \param sprite_overlapping the sprite of the current entity that collides with the explosion
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3166'>/* explosion */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3166'>/* sprite_overlapping */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='95' u='c' c='_ZN7Solarus9Explosion16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1913' c='_ZN7Solarus4Hero31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>

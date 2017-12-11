@@ -1,0 +1,26 @@
+<def f='codebrowser/include/solarus/entities/TilesetData.h' l='70' ll='108'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/entities/TilesetData.h' l='67'>/**
+ * \brief Stores the properties of a tile pattern.
+ */</doc>
+<fun r='_ZN7Solarus15TilePatternDataC1Ev'/>
+<fun r='_ZN7Solarus15TilePatternDataC1ERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus15TilePatternData10get_groundEv'/>
+<fun r='_ZN7Solarus15TilePatternData10set_groundENS_6GroundE'/>
+<fun r='_ZNK7Solarus15TilePatternData17get_default_layerEv'/>
+<fun r='_ZN7Solarus15TilePatternData17set_default_layerEi'/>
+<fun r='_ZNK7Solarus15TilePatternData13get_scrollingEv'/>
+<fun r='_ZN7Solarus15TilePatternData13set_scrollingENS_13TileScrollingE'/>
+<fun r='_ZNK7Solarus15TilePatternData15get_repeat_modeEv'/>
+<fun r='_ZN7Solarus15TilePatternData15set_repeat_modeENS_21TilePatternRepeatModeE'/>
+<fun r='_ZNK7Solarus15TilePatternData14is_multi_frameEv'/>
+<fun r='_ZNK7Solarus15TilePatternData14get_num_framesEv'/>
+<fun r='_ZNK7Solarus15TilePatternData9get_frameEv'/>
+<fun r='_ZN7Solarus15TilePatternData9set_frameERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus15TilePatternData10get_framesEv'/>
+<fun r='_ZN7Solarus15TilePatternData10set_framesERKSt6vectorINS_9RectangleESaIS2_EE'/>
+<mbr r='Solarus::TilePatternData::ground' o='0' t='Solarus::Ground'/>
+<mbr r='Solarus::TilePatternData::default_layer' o='32' t='int'/>
+<mbr r='Solarus::TilePatternData::scrolling' o='64' t='Solarus::TileScrolling'/>
+<mbr r='Solarus::TilePatternData::repeat_mode' o='96' t='Solarus::TilePatternRepeatMode'/>
+<mbr r='Solarus::TilePatternData::frames' o='128' t='std::vector&lt;Rectangle&gt;'/>

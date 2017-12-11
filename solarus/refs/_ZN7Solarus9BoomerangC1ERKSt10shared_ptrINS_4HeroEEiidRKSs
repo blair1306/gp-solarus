@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='40' type='void Solarus::Boomerang::Boomerang(const HeroPtr &amp; hero, int max_distance, int speed, double angle, const std::string &amp; sprite_name)'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='43' ll='91' type='void Solarus::Boomerang::Boomerang(const HeroPtr &amp; hero, int max_distance, int speed, double angle, const std::string &amp; sprite_name)'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='35'>/**
+ * \brief Creates a boomerang.
+ * \param hero the hero
+ * \param max_distance maximum distance of the movement in pixels
+ * \param speed speed of the movement in pixels per second
+ * \param angle the angle of the boomerang trajectory in radians
+ * \param sprite_name animation set id representing the boomerang
+ */</doc>

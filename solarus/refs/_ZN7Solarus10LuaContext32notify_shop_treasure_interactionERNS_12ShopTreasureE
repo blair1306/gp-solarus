@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='152' type='void Solarus::LuaContext::notify_shop_treasure_interaction(Solarus::ShopTreasure &amp; shop_treasure)'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='192' u='c' c='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3758' ll='3769' type='void Solarus::LuaContext::notify_shop_treasure_interaction(Solarus::ShopTreasure &amp; shop_treasure)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3751'>/**
+ * \brief Notifies Lua that the hero interacts with a shop treasure.
+ *
+ * Lua then manages the dialogs shown to the player.
+ *
+ * \param shop_treasure A shop treasure.
+ */</doc>

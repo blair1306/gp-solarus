@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='82' type='void Solarus::Rectangle::add_x(int dx)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='325' ll='327' type='void Solarus::Rectangle::add_x(int dx)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='359' u='c' c='_ZN7Solarus9Rectangle6add_xyEii'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='321'>/**
+ * \brief Adds a value to the x coordinate of this rectangle.
+ * \param dx the value to add
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='183' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='188' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='780' u='c' c='_ZN7Solarus4Hero18is_facing_obstacleEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='788' u='c' c='_ZN7Solarus4Hero18is_facing_obstacleEv'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='74' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='90' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='92' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='108' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='77' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>

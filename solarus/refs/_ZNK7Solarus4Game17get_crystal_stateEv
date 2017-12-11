@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Game.h' l='98' type='bool Solarus::Game::get_crystal_state() const'/>
+<doc f='codebrowser/include/solarus/Game.h' l='97'>// world</doc>
+<def f='codebrowser/src/Game.cpp' l='677' ll='679' type='bool Solarus::Game::get_crystal_state() const'/>
+<doc f='codebrowser/src/Game.cpp' l='670'>/**
+ * \brief Returns the state of the crystal blocks.
+ *
+ * Returns false if the orange blocks are lowered or true if the blue blocks are lowered.
+ *
+ * \return the state of the crystals or this world
+ */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='72' u='c' c='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='165' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='51' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='188' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1795' u='c' c='_ZN7Solarus10LuaContext25map_api_get_crystal_stateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1812' u='c' c='_ZN7Solarus10LuaContext25map_api_set_crystal_stateEP9lua_State'/>

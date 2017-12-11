@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Map.h' l='67' type='void Solarus::Map::set_world(const std::string &amp; world)'/>
+<def f='codebrowser/src/Map.cpp' l='127' ll='129' type='void Solarus::Map::set_world(const std::string &amp; world)'/>
+<use f='codebrowser/src/Map.cpp' l='305' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<doc f='codebrowser/src/Map.cpp' l='123'>/**
+ * \brief Returns the world where this map is.
+ * \param world The world name or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1463' u='c' c='_ZN7Solarus10LuaContext17map_api_set_worldEP9lua_State'/>

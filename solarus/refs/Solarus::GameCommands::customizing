@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='109' type='bool'/>
+<offset>1216</offset>
+<doc f='codebrowser/include/solarus/GameCommands.h' l='109'>/**&lt; Indicates that the next keyboard or
+                                          * joypad event will be considered as the
+                                          * new binding for a game command. */</doc>
+<use f='codebrowser/src/GameCommands.cpp' l='84' u='w' c='_ZN7Solarus12GameCommandsC1ERNS_4GameE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='199' u='r' c='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='206' u='w' c='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='244' u='r' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='251' u='w' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='318' u='r' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='329' u='w' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='441' u='r' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='468' u='w' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='770' u='w' c='_ZN7Solarus12GameCommands9customizeENS_11GameCommandERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='780' u='r' c='_ZNK7Solarus12GameCommands14is_customizingEv'/>

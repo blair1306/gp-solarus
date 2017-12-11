@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_timer.h' l='104' type='SDL_bool SDL_RemoveTimer(SDL_TimerID id)'/>
+<doc f='include/SDL2/SDL_timer.h' l='97'>/**
+ * \brief Remove a timer knowing its ID.
+ *
+ * \return A boolean value indicating success or failure.
+ *
+ * \warning It is not safe to remove a timer multiple times.
+ */</doc>

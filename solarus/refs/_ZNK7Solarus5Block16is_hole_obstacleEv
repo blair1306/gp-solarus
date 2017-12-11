@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='52' type='bool Solarus::Block::is_hole_obstacle() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='420' c='_ZNK7Solarus6Entity16is_hole_obstacleEv'/>
+<def f='codebrowser/src/entities/Block.cpp' l='107' ll='109' type='bool Solarus::Block::is_hole_obstacle() const'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='103'>/**
+ * \brief Returns whether a hole is currently considered as an obstacle for this entity.
+ * \return true if the holes are currently an obstacle for this entity
+ */</doc>

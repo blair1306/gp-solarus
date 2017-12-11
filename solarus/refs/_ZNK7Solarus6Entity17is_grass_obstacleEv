@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='416' type='bool Solarus::Entity::is_grass_obstacle() const'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='702' c='_ZNK7Solarus12CustomEntity17is_grass_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2411' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2477' ll='2479' type='bool Solarus::Entity::is_grass_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2469'>/**
+ * \brief Returns whether grass ground is currently considered as an
+ * obstacle by this entity.
+ *
+ * This function returns \c false by default.
+ *
+ * \return \c true if grass ground is currently obstacle for this entity.
+ */</doc>

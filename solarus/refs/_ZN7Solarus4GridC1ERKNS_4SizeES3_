@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='39' type='void Solarus::Grid::Grid&lt;T&gt;(const Solarus::Size &amp; grid_size, const Solarus::Size &amp; cell_size)'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='70' ll='92' type='void Solarus::Grid::Grid&lt;T&gt;(const Solarus::Size &amp; grid_size, const Solarus::Size &amp; cell_size)'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='64'>/**
+ * \brief Constructor.
+ * \param grid_size Size of the grid to create.
+ * \param cell_size Size of a cell of the grid. It is allowed that the size of
+ * the grid is not a multiple of the cell size.
+ */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='34' u='c' c='_ZN7Solarus18NonAnimatedRegionsC1ERNS_3MapEi'/>

@@ -1,0 +1,17 @@
+<dec f='include/physfs.h' l='1675' type='int PHYSFS_readSLE64(PHYSFS_File * file, PHYSFS_sint64 * val)'/>
+<doc f='include/physfs.h' l='1659'>/**
+ * \fn int PHYSFS_readSLE64(PHYSFS_File *file, PHYSFS_sint64 *val)
+ * \brief Read and convert a signed 64-bit littleendian value.
+ *
+ * Convenience function. Read a signed 64-bit littleendian value from a
+ *  file and convert it to the platform&apos;s native byte order.
+ *
+ *    \param file PhysicsFS file handle from which to read.
+ *    \param val pointer to where value should be stored.
+ *   \return zero on failure, non-zero on success. If successful, (*val) will
+ *           store the result. On failure, you can find out what went wrong
+ *           from PHYSFS_getLastError().
+ *
+ * \warning Remember, PHYSFS_sint64 is only 32 bits on platforms without
+ *          any sort of 64-bit support.
+ */</doc>

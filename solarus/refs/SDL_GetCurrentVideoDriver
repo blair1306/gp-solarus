@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_video.h' l='263' type='const char * SDL_GetCurrentVideoDriver()'/>
+<doc f='include/SDL2/SDL_video.h' l='254'>/**
+ *  \brief Returns the name of the currently initialized video driver.
+ *
+ *  \return The name of the current video driver or NULL if no driver
+ *          has been initialized
+ *
+ *  \sa SDL_GetNumVideoDrivers()
+ *  \sa SDL_GetVideoDriver()
+ */</doc>

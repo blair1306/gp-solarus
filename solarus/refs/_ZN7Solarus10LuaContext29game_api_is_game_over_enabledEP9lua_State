@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='692' type='static int Solarus::LuaContext::game_api_is_game_over_enabled(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='64' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='508' ll='522' type='static int Solarus::LuaContext::game_api_is_game_over_enabled(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='503'>/**
+ * \brief Implementation of game:is_game_over_enabled().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='67' type='void Solarus::Teletransporter::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='265' ll='268' type='void Solarus::Teletransporter::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='260'>/**
+ * \brief This function is called by the engine when an entity overlaps the teletransporter.
+ * \param entity_overlapping the entity overlapping the detector
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>

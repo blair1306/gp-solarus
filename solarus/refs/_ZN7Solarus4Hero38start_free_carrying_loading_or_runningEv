@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='258' type='void Solarus::Hero::start_free_carrying_loading_or_running()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2362' ll='2380' type='void Solarus::Hero::start_free_carrying_loading_or_running()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2706' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2711' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2718' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2734' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2355'>/**
+ * \brief Lets the hero walk.
+ *
+ * If the hero is carrying item in the current state, the item is preserved.
+ * If the hero is loading his sword in the current state, this continues.
+ * If the hero is running in the current state, he continues to run.
+ */</doc>

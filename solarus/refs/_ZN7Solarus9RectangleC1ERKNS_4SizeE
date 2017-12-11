@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='47' type='void Solarus::Rectangle::Rectangle(const Solarus::Size &amp; size)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='48' ll='50' type='void Solarus::Rectangle::Rectangle(const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='44'>/**
+ * \brief Creates a rectangle, specifying its size.
+ * \param size the rectangle&apos;s size
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='781' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='47' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='571' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='780' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_Renderer'/>

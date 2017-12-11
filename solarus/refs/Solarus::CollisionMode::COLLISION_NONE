@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='26' type='0'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='26'>/**&lt; No collision will be detected
+                                         * (the detector doesn&apos;t detect any entity). */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='774' u='r' c='_ZN7Solarus12CustomEntity18add_collision_testENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='892' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1360' u='r' c='_ZN7Solarus12CustomEntity13CollisionInfoC1Ev'/>
+<use f='codebrowser/src/entities/Door.cpp' l='170' u='r' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1346' u='r' c='_ZN7Solarus5Enemy4killEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='77' u='r' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1671' u='r' c='_ZNK7Solarus6Entity11is_detectorEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1926' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1174' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5555' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

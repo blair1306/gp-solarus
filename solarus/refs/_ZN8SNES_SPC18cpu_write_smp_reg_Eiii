@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='220' type='void SNES_SPC::cpu_write_smp_reg_(int data, rel_time_t , int addr)'/>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='286' ll='385' type='void SNES_SPC::cpu_write_smp_reg_(int data, rel_time_t time, int addr)'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='392' u='c' c='_ZN8SNES_SPC17cpu_write_smp_regEiii'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='323' u='c' c='_ZN8SNES_SPC10run_until_Ei'/>

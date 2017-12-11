@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='110' type='void Solarus::Entities::get_entities_in_region(const Solarus::Point &amp; xy, EntityVector &amp; result)'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='109'>// By separator region.</doc>
+<def f='codebrowser/src/entities/Entities.cpp' l='487' ll='496' type='void Solarus::Entities::get_entities_in_region(const Solarus::Point &amp; xy, EntityVector &amp; result)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='583' u='c' c='_ZN7Solarus8Entities29get_entities_in_region_sortedERKNS_5PointERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='478'>/**
+ * \brief Returns all entities in the same separator region as the given point.
+ *
+ * Regions are assumed to be rectangular (convex: no &quot;L&quot; shape).
+ *
+ * \param[in] xy A point.
+ * \param[out] result The entities in the same region as the point,
+ * where regions are delimited by separators and map limits.
+ */</doc>

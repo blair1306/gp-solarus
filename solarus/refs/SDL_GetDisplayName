@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_video.h' l='279' type='const char * SDL_GetDisplayName(int displayIndex)'/>
+<doc f='include/SDL2/SDL_video.h' l='272'>/**
+ *  \brief Get the name of a display in UTF-8 encoding
+ *
+ *  \return The name of a display, or NULL for an invalid display index.
+ *
+ *  \sa SDL_GetNumVideoDisplays()
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='70' type='void Solarus::HeroSprites::blink(uint32_t duration)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2171' u='c' c='_ZN7Solarus4Hero25notify_game_over_finishedEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='140' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='584' ll='606' type='void Solarus::HeroSprites::blink(uint32_t duration)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='579'>/**
+ * \brief Makes the hero blink for a while.
+ * \param duration Delay before stopping blinking.
+ * 0 means infinite.
+ */</doc>
+<use f='codebrowser/src/hero/HurtState.cpp' l='69' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2143' u='c' c='_ZN7Solarus10LuaContext21hero_api_set_blinkingEP9lua_State'/>

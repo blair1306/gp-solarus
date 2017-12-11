@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='49' type='static bool Solarus::Video::is_initialized()'/>
+<use f='codebrowser/src/Settings.cpp' l='290' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='313' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='261' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='301' u='c' c='_ZN7Solarus5Video4quitEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='350' ll='352' type='static bool Solarus::Video::is_initialized()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='346'>/**
+ * \brief Returns whether the video system is initialized.
+ * \return \c true if video is initialized.
+ */</doc>

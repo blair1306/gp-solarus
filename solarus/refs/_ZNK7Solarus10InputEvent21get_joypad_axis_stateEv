@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='271' type='int Solarus::InputEvent::get_joypad_axis_state() const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='183' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1004' ll='1020' type='int Solarus::InputEvent::get_joypad_axis_state() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1034' u='c' c='_ZNK7Solarus10InputEvent23is_joypad_axis_centeredEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1384' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1388' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='995'>/**
+ * \brief Returns the new state of the axis that was moved during
+ * this joypad axis event.
+ *
+ * If this is not a joypad axis event, 0 is returned.
+ *
+ * \return the new state of the axis moved during this joypad axis event:
+ * -1 (left or up), 0 (centered) or 1 (right or down)
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1769' u='c' c='_ZN7Solarus10LuaContext20on_joypad_axis_movedERKNS_10InputEventE'/>

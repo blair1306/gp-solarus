@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='175' type='void Solarus::Enemy::attack_hero(Solarus::Hero &amp; hero, Solarus::Sprite * this_sprite)'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='174'>// attack the hero</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1033' ll='1075' type='void Solarus::Enemy::attack_hero(Solarus::Hero &amp; hero, Solarus::Sprite * this_sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1024'>/**
+ * \brief Attacks the hero if possible.
+ *
+ * This function is called when there is a collision between the enemy and the hero.
+ *
+ * \param hero The hero to attack.
+ * \param this_sprite The sprite of this enemy that detected the collision with the hero,
+ * or nullptr if it was not a pixel-precise collision.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1578' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>

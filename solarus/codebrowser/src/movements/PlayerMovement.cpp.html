@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PlayerMovement.cpp source code [codebrowser/src/movements/PlayerMovement.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/movements/PlayerMovement.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>movements</a>/<a href='PlayerMovement.cpp.html'>PlayerMovement.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/movements/PlayerMovement.h.html">"solarus/movements/PlayerMovement.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/entities/Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/entities/Stream.h.html">"solarus/entities/Stream.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../include/solarus/entities/StreamAction.h.html">"solarus/entities/StreamAction.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../include/solarus/lowlevel/Geometry.h.html">"solarus/lowlevel/Geometry.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../include/solarus/Game.h.html">"solarus/Game.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../include/solarus/GameCommands.h.html">"solarus/GameCommands.h"</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * <span class="command">\brief</span> Constructor.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">moving_speed</span> movement speed</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="32">32</th><td><a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZN7Solarus14PlayerMovementC1Ei" title='Solarus::PlayerMovement::PlayerMovement' data-ref="_ZN7Solarus14PlayerMovementC1Ei">PlayerMovement</dfn>(<em>int</em> <dfn class="local col1 decl" id="1moving_speed" title='moving_speed' data-type='int' data-ref="1moving_speed">moving_speed</dfn>):</td></tr>
+<tr><th id="33">33</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a><a class="ref" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovementC1Ebb" title='Solarus::StraightMovement::StraightMovement' data-ref="_ZN7Solarus16StraightMovementC1Ebb">(</a><b>false</b>, <b>true</b>),</td></tr>
+<tr><th id="34">34</th><td>  <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::moving_speed" title='Solarus::PlayerMovement::moving_speed' data-ref="Solarus::PlayerMovement::moving_speed">moving_speed</a>(<a class="local col1 ref" href="#1moving_speed" title='moving_speed' data-ref="1moving_speed">moving_speed</a>),</td></tr>
+<tr><th id="35">35</th><td>  <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a>(-<var>1</var>),</td></tr>
+<tr><th id="36">36</th><td>  <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::blocked_by_stream" title='Solarus::PlayerMovement::blocked_by_stream' data-ref="Solarus::PlayerMovement::blocked_by_stream">blocked_by_stream</a>(<b>false</b>) {</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\brief</span> Updates this movement.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus14PlayerMovement6updateEv" title='Solarus::PlayerMovement::update' data-ref="_ZN7Solarus14PlayerMovement6updateEv">update</dfn>() {</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>  <a class="type" href="../../include/solarus/movements/StraightMovement.h.html#Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</a>::<a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement6updateEv" title='Solarus::StraightMovement::update' data-ref="_ZN7Solarus16StraightMovement6updateEv">update</a>();</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>  <em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>* <dfn class="local col2 decl" id="2entity" title='entity' data-type='const Solarus::Entity *' data-ref="2entity">entity</dfn> = <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>();</td></tr>
+<tr><th id="48">48</th><td>  <b>if</b> (<a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a> == <b>nullptr</b> || !<a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9is_on_mapEv" title='Solarus::Entity::is_on_map' data-ref="_ZNK7Solarus6Entity9is_on_mapEv">is_on_map</a>()) {</td></tr>
+<tr><th id="49">49</th><td>    <b>return</b>; <i>// the entity is not ready yet</i></td></tr>
+<tr><th id="50">50</th><td>  }</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>  <i>// See if a stream blocks the control from the player.</i></td></tr>
+<tr><th id="53">53</th><td><i>  // If yes, we will set the speed to zero but keep the direction</i></td></tr>
+<tr><th id="54">54</th><td><i>  // wanted by the player.</i></td></tr>
+<tr><th id="55">55</th><td>  <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::blocked_by_stream" title='Solarus::PlayerMovement::blocked_by_stream' data-ref="Solarus::PlayerMovement::blocked_by_stream">blocked_by_stream</a> =</td></tr>
+<tr><th id="56">56</th><td>      <a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity17has_stream_actionEv" title='Solarus::Entity::has_stream_action' data-ref="_ZNK7Solarus6Entity17has_stream_actionEv">has_stream_action</a>() &amp;&amp;</td></tr>
+<tr><th id="57">57</th><td>      !<a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity17get_stream_actionEv" title='Solarus::Entity::get_stream_action' data-ref="_ZNK7Solarus6Entity17get_stream_actionEv">get_stream_action</a>()-&gt;<a class="ref" href="../../include/solarus/entities/StreamAction.h.html#_ZNK7Solarus12StreamAction10get_streamEv" title='Solarus::StreamAction::get_stream' data-ref="_ZNK7Solarus12StreamAction10get_streamEv">get_stream</a>().<a class="ref" href="../../include/solarus/entities/Stream.h.html#_ZNK7Solarus6Stream18get_allow_movementEv" title='Solarus::Stream::get_allow_movement' data-ref="_ZNK7Solarus6Stream18get_allow_movementEv">get_allow_movement</a>();</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>  <i>// Someone may have stopped the movement</i></td></tr>
+<tr><th id="60">60</th><td><i>  // (e.g. Hero::reset_movement()).</i></td></tr>
+<tr><th id="61">61</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10is_stoppedEv" title='Solarus::Movement::is_stopped' data-ref="_ZNK7Solarus8Movement10is_stoppedEv">is_stopped</a>() &amp;&amp;</td></tr>
+<tr><th id="62">62</th><td>      <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> != -<var>1</var> &amp;&amp;</td></tr>
+<tr><th id="63">63</th><td>      !<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::blocked_by_stream" title='Solarus::PlayerMovement::blocked_by_stream' data-ref="Solarus::PlayerMovement::blocked_by_stream">blocked_by_stream</a></td></tr>
+<tr><th id="64">64</th><td>  ) {</td></tr>
+<tr><th id="65">65</th><td>    <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> = -<var>1</var>;</td></tr>
+<tr><th id="66">66</th><td>    <a class="member" href="#_ZN7Solarus14PlayerMovement16compute_movementEv" title='Solarus::PlayerMovement::compute_movement' data-ref="_ZN7Solarus14PlayerMovement16compute_movementEv">compute_movement</a>();</td></tr>
+<tr><th id="67">67</th><td>  }</td></tr>
+<tr><th id="68">68</th><td>  <b>else</b> {</td></tr>
+<tr><th id="69">69</th><td>    <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10is_stoppedEv" title='Solarus::Movement::is_stopped' data-ref="_ZNK7Solarus8Movement10is_stoppedEv">is_stopped</a>() &amp;&amp; <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::blocked_by_stream" title='Solarus::PlayerMovement::blocked_by_stream' data-ref="Solarus::PlayerMovement::blocked_by_stream">blocked_by_stream</a>) {</td></tr>
+<tr><th id="70">70</th><td>      <a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement4stopEv" title='Solarus::StraightMovement::stop' data-ref="_ZN7Solarus16StraightMovement4stopEv">stop</a>();</td></tr>
+<tr><th id="71">71</th><td>    }</td></tr>
+<tr><th id="72">72</th><td>    <i>// Check if the wanted direction has changed.</i></td></tr>
+<tr><th id="73">73</th><td>    <em>const</em> <a class="type" href="../../include/solarus/GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <dfn class="local col3 decl" id="3commands" title='commands' data-type='const Solarus::GameCommands &amp;' data-ref="3commands">commands</dfn> = <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>()-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity8get_gameEv" title='Solarus::Entity::get_game' data-ref="_ZN7Solarus6Entity8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZN7Solarus4Game12get_commandsEv">get_commands</a>();</td></tr>
+<tr><th id="74">74</th><td>    <em>int</em> <dfn class="local col4 decl" id="4wanted_direction8" title='wanted_direction8' data-type='int' data-ref="4wanted_direction8">wanted_direction8</dfn> = <a class="local col3 ref" href="#3commands" title='commands' data-ref="3commands">commands</a>.<a class="ref" href="../../include/solarus/GameCommands.h.html#_ZNK7Solarus12GameCommands21get_wanted_direction8Ev" title='Solarus::GameCommands::get_wanted_direction8' data-ref="_ZNK7Solarus12GameCommands21get_wanted_direction8Ev">get_wanted_direction8</a>();</td></tr>
+<tr><th id="75">75</th><td>    <b>if</b> (<a class="local col4 ref" href="#4wanted_direction8" title='wanted_direction8' data-ref="4wanted_direction8">wanted_direction8</a> != <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> &amp;&amp; !<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement12is_suspendedEv" title='Solarus::Movement::is_suspended' data-ref="_ZNK7Solarus8Movement12is_suspendedEv">is_suspended</a>()) {</td></tr>
+<tr><th id="76">76</th><td>      <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> = <a class="local col4 ref" href="#4wanted_direction8" title='wanted_direction8' data-ref="4wanted_direction8">wanted_direction8</a>;</td></tr>
+<tr><th id="77">77</th><td>      <a class="member" href="#_ZN7Solarus14PlayerMovement16compute_movementEv" title='Solarus::PlayerMovement::compute_movement' data-ref="_ZN7Solarus14PlayerMovement16compute_movementEv">compute_movement</a>();</td></tr>
+<tr><th id="78">78</th><td>    }</td></tr>
+<tr><th id="79">79</th><td>  }</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction this movement is trying to move towards.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * <span class="command">\return</span> the direction (0 to 7), or -1 if the player is not trying to go</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * to a direction or the movement is disabled</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="87">87</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZNK7Solarus14PlayerMovement21get_wanted_direction8Ev" title='Solarus::PlayerMovement::get_wanted_direction8' data-ref="_ZNK7Solarus14PlayerMovement21get_wanted_direction8Ev">get_wanted_direction8</dfn>() <em>const</em> {</td></tr>
+<tr><th id="88">88</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a>;</td></tr>
+<tr><th id="89">89</th><td>}</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * <span class="command">\brief</span> Returns the moving speed of the entity.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * <span class="command">\return</span> the moving speed of the entity</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="95">95</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZNK7Solarus14PlayerMovement16get_moving_speedEv" title='Solarus::PlayerMovement::get_moving_speed' data-ref="_ZNK7Solarus14PlayerMovement16get_moving_speedEv">get_moving_speed</dfn>() <em>const</em> {</td></tr>
+<tr><th id="96">96</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::moving_speed" title='Solarus::PlayerMovement::moving_speed' data-ref="Solarus::PlayerMovement::moving_speed">moving_speed</a>;</td></tr>
+<tr><th id="97">97</th><td>}</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * <span class="command">\brief</span> Sets the moving speed of the entity.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">moving_speed</span> the moving speed of the entity</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="103">103</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZN7Solarus14PlayerMovement16set_moving_speedEi" title='Solarus::PlayerMovement::set_moving_speed' data-ref="_ZN7Solarus14PlayerMovement16set_moving_speedEi">set_moving_speed</dfn>(<em>int</em> <dfn class="local col5 decl" id="5moving_speed" title='moving_speed' data-type='int' data-ref="5moving_speed">moving_speed</dfn>) {</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::moving_speed" title='Solarus::PlayerMovement::moving_speed' data-ref="Solarus::PlayerMovement::moving_speed">moving_speed</a> = <a class="local col5 ref" href="#5moving_speed" title='moving_speed' data-ref="5moving_speed">moving_speed</a>;</td></tr>
+<tr><th id="106">106</th><td>  <a class="member" href="#_ZN7Solarus14PlayerMovement20set_wanted_directionEv" title='Solarus::PlayerMovement::set_wanted_direction' data-ref="_ZN7Solarus14PlayerMovement20set_wanted_directionEv">set_wanted_direction</a>();</td></tr>
+<tr><th id="107">107</th><td>  <a class="member" href="#_ZN7Solarus14PlayerMovement16compute_movementEv" title='Solarus::PlayerMovement::compute_movement' data-ref="_ZN7Solarus14PlayerMovement16compute_movementEv">compute_movement</a>();</td></tr>
+<tr><th id="108">108</th><td>}</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * <span class="command">\brief</span> Determines the direction defined by the directional keys currently pressed</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * and computes the corresponding movement.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="114">114</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZN7Solarus14PlayerMovement20set_wanted_directionEv" title='Solarus::PlayerMovement::set_wanted_direction' data-ref="_ZN7Solarus14PlayerMovement20set_wanted_directionEv">set_wanted_direction</dfn>() {</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>() != <b>nullptr</b> &amp;&amp; <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>()-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9is_on_mapEv" title='Solarus::Entity::is_on_map' data-ref="_ZNK7Solarus6Entity9is_on_mapEv">is_on_map</a>()) {</td></tr>
+<tr><th id="117">117</th><td>    <a class="type" href="../../include/solarus/GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <dfn class="local col6 decl" id="6commands" title='commands' data-type='Solarus::GameCommands &amp;' data-ref="6commands">commands</dfn> = <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</a>()-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity8get_gameEv" title='Solarus::Entity::get_game' data-ref="_ZN7Solarus6Entity8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZN7Solarus4Game12get_commandsEv">get_commands</a>();</td></tr>
+<tr><th id="118">118</th><td>    <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> = <a class="local col6 ref" href="#6commands" title='commands' data-ref="6commands">commands</a>.<a class="ref" href="../../include/solarus/GameCommands.h.html#_ZNK7Solarus12GameCommands21get_wanted_direction8Ev" title='Solarus::GameCommands::get_wanted_direction8' data-ref="_ZNK7Solarus12GameCommands21get_wanted_direction8Ev">get_wanted_direction8</a>();</td></tr>
+<tr><th id="119">119</th><td>  }</td></tr>
+<tr><th id="120">120</th><td>  <b>else</b> {</td></tr>
+<tr><th id="121">121</th><td>    <a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> = -<var>1</var>;</td></tr>
+<tr><th id="122">122</th><td>  }</td></tr>
+<tr><th id="123">123</th><td>}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> * <span class="command">\brief</span> Changes the movement of the entity depending on the direction wanted.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * This function is called when the direction is changed.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="130">130</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement" title='Solarus::PlayerMovement' data-ref="Solarus::PlayerMovement">PlayerMovement</a>::<dfn class="decl def" id="_ZN7Solarus14PlayerMovement16compute_movementEv" title='Solarus::PlayerMovement::compute_movement' data-ref="_ZN7Solarus14PlayerMovement16compute_movementEv">compute_movement</dfn>() {</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>  <i>// Compute the speed vector corresponding to the direction wanted by the player</i></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> == -<var>1</var>) {</td></tr>
+<tr><th id="135">135</th><td>    <i>// No wanted movement.</i></td></tr>
+<tr><th id="136">136</th><td>    <a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement4stopEv" title='Solarus::StraightMovement::stop' data-ref="_ZN7Solarus16StraightMovement4stopEv">stop</a>();</td></tr>
+<tr><th id="137">137</th><td>  }</td></tr>
+<tr><th id="138">138</th><td>  <b>else</b> { <i>// The directional keys currently pressed define a valid movement.</i></td></tr>
+<tr><th id="139">139</th><td>    <b>if</b> (<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::blocked_by_stream" title='Solarus::PlayerMovement::blocked_by_stream' data-ref="Solarus::PlayerMovement::blocked_by_stream">blocked_by_stream</a>) {</td></tr>
+<tr><th id="140">140</th><td>      <a class="virtual member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement4stopEv" title='Solarus::StraightMovement::stop' data-ref="_ZN7Solarus16StraightMovement4stopEv">stop</a>();</td></tr>
+<tr><th id="141">141</th><td>    }</td></tr>
+<tr><th id="142">142</th><td>    <b>else</b> {</td></tr>
+<tr><th id="143">143</th><td>      <a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_speedEd" title='Solarus::StraightMovement::set_speed' data-ref="_ZN7Solarus16StraightMovement9set_speedEd">set_speed</a>(<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::moving_speed" title='Solarus::PlayerMovement::moving_speed' data-ref="Solarus::PlayerMovement::moving_speed">moving_speed</a>);</td></tr>
+<tr><th id="144">144</th><td>    }</td></tr>
+<tr><th id="145">145</th><td>    <a class="member" href="../../include/solarus/movements/StraightMovement.h.html#_ZN7Solarus16StraightMovement9set_angleEd" title='Solarus::StraightMovement::set_angle' data-ref="_ZN7Solarus16StraightMovement9set_angleEd">set_angle</a>(<span class="namespace">Geometry::</span><a class="ref" href="../../include/solarus/lowlevel/Geometry.h.html#_ZN7Solarus8Geometry18degrees_to_radiansEd" title='Solarus::Geometry::degrees_to_radians' data-ref="_ZN7Solarus8Geometry18degrees_to_radiansEd">degrees_to_radians</a>(<a class="member" href="../../include/solarus/movements/PlayerMovement.h.html#Solarus::PlayerMovement::direction8" title='Solarus::PlayerMovement::direction8' data-ref="Solarus::PlayerMovement::direction8">direction8</a> * <var>45</var>));</td></tr>
+<tr><th id="146">146</th><td>  }</td></tr>
+<tr><th id="147">147</th><td>}</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td>}</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,33 @@
+<def f='include/c++/4.9/bits/unique_ptr.h' l='248' ll='254' type='unique_ptr&lt;_Tp, _Dp&gt; &amp; std::unique_ptr::operator=(unique_ptr&lt;_Tp, _Dp&gt; &amp;&amp; __u)'/>
+<def f='include/c++/4.9/bits/unique_ptr.h' l='264' ll='274' type='typename enable_if&lt;__and_&lt;is_convertible&lt;typename unique_ptr&lt;_Up, _Ep&gt;::pointer, pointer&gt;, __not_&lt;is_array&lt;_Up&gt; &gt; &gt;::value, unique_ptr&lt;_Tp, _Dp&gt; &amp;&gt;::type std::unique_ptr::operator=(unique_ptr&lt;_Up, _Ep&gt; &amp;&amp; __u)'/>
+<doc f='include/c++/4.9/bits/unique_ptr.h' l='242'>/** @brief Move assignment operator.
+       *
+       * @param __u  The object to transfer ownership from.
+       *
+       * Invokes the deleter first if this object owns a pointer.
+       */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='123' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/Game.cpp' l='71' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='395' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='478' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='518' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='887' u='c' c='_ZN7Solarus4Game7restartEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='174' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/MainLoop.cpp' l='412' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='480' u='c' c='_ZN7Solarus8MainLoop6updateEv'/>
+<use f='codebrowser/src/Map.cpp' l='309' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='170' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='767' u='c' c='_ZN7Solarus8Entities17initialize_layersEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1604' u='c' c='_ZN7Solarus6Entity19start_stream_actionESt10unique_ptrINS_12StreamActionESt14default_deleteIS2_EE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3518' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='122' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='49' u='c' c='_ZN7Solarus9ItDecoder4loadERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='100' u='c' c='_ZN7Solarus5Music10initializeEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='101' u='c' c='_ZN7Solarus5Music10initializeEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='102' u='c' c='_ZN7Solarus5Music10initializeEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='340' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='46' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='151' u='c' c='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='279' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='467' u='c' c='_ZN7Solarus7Surface23create_software_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='570' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>

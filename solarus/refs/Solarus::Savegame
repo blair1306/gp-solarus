@@ -1,0 +1,83 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/Savegame.h' l='38' ll='147'/>
+<size>184</size>
+<doc f='codebrowser/include/solarus/Savegame.h' l='33'>/**
+ * \brief Manages the game data saved.
+ *
+ * This class provides read and write access to the saved data.
+ */</doc>
+<smbr r='Solarus::Savegame::SAVEGAME_VERSION' t='const int'/>
+<smbr r='Solarus::Savegame::KEY_SAVEGAME_VERSION' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_STARTING_MAP' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_STARTING_POINT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_ACTION' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_ATTACK' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_ITEM_1' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_ITEM_2' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_PAUSE' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_RIGHT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_UP' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_LEFT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_KEYBOARD_DOWN' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_ACTION' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_ATTACK' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_ITEM_1' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_ITEM_2' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_PAUSE' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_RIGHT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_UP' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_LEFT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_JOYPAD_DOWN' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_CURRENT_LIFE' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_CURRENT_MONEY' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_CURRENT_MAGIC' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_MAX_LIFE' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_MAX_MONEY' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_MAX_MAGIC' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ITEM_SLOT_1' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ITEM_SLOT_2' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_TUNIC' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_SWORD' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_SWORD_KNOWLEDGE' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_SHIELD' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_LIFT' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_SWIM' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_JUMP_OVER_WATER' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_RUN' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_DETECT_WEAK_WALLS' t='const std::string'/>
+<smbr r='Solarus::Savegame::KEY_ABILITY_GET_BACK_FROM_DEATH' t='const std::string'/>
+<fun r='_ZN7Solarus8SavegameC1ERNS_8MainLoopERKSs'/>
+<fun r='_ZNK7Solarus8Savegame8is_emptyEv'/>
+<fun r='_ZN7Solarus8Savegame10initializeEv'/>
+<fun r='_ZN7Solarus8Savegame4saveEv'/>
+<fun r='_ZNK7Solarus8Savegame13get_file_nameEv'/>
+<fun r='_ZNK7Solarus8Savegame9is_stringERKSs'/>
+<fun r='_ZNK7Solarus8Savegame10get_stringERKSs'/>
+<fun r='_ZN7Solarus8Savegame10set_stringERKSsS2_'/>
+<fun r='_ZNK7Solarus8Savegame10is_integerERKSs'/>
+<fun r='_ZNK7Solarus8Savegame11get_integerERKSs'/>
+<fun r='_ZN7Solarus8Savegame11set_integerERKSsi'/>
+<fun r='_ZNK7Solarus8Savegame10is_booleanERKSs'/>
+<fun r='_ZNK7Solarus8Savegame11get_booleanERKSs'/>
+<fun r='_ZN7Solarus8Savegame11set_booleanERKSsb'/>
+<fun r='_ZN7Solarus8Savegame5unsetERKSs'/>
+<fun r='_ZN7Solarus8Savegame18set_initial_valuesEv'/>
+<fun r='_ZN7Solarus8Savegame29set_default_keyboard_controlsEv'/>
+<fun r='_ZN7Solarus8Savegame27set_default_joypad_controlsEv'/>
+<fun r='_ZN7Solarus8Savegame13get_main_loopEv'/>
+<fun r='_ZN7Solarus8Savegame15get_lua_contextEv'/>
+<fun r='_ZN7Solarus8Savegame13get_equipmentEv'/>
+<fun r='_ZNK7Solarus8Savegame13get_equipmentEv'/>
+<fun r='_ZN7Solarus8Savegame8get_gameEv'/>
+<fun r='_ZN7Solarus8Savegame8set_gameEPNS_4GameE'/>
+<fun r='_ZN7Solarus8Savegame19notify_game_startedEv'/>
+<fun r='_ZN7Solarus8Savegame20notify_game_finishedEv'/>
+<fun r='_ZNK7Solarus8Savegame17get_lua_type_nameEv'/>
+<mbr r='Solarus::Savegame::saved_values' o='320' t='std::map&lt;std::string, SavedValue&gt;'/>
+<mbr r='Solarus::Savegame::empty' o='704' t='bool'/>
+<mbr r='Solarus::Savegame::file_name' o='768' t='std::string'/>
+<mbr r='Solarus::Savegame::main_loop' o='832' t='Solarus::MainLoop &amp;'/>
+<mbr r='Solarus::Savegame::equipment' o='896' t='Solarus::Equipment'/>
+<mbr r='Solarus::Savegame::game' o='1408' t='Solarus::Game *'/>
+<fun r='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<fun r='_ZN7Solarus8Savegame10l_newindexEP9lua_State'/>

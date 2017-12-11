@@ -1,0 +1,89 @@
+<inh f='codebrowser/include/solarus/Drawable.h' l='41' c='Solarus::Drawable'/>
+<def f='codebrowser/include/solarus/Sprite.h' l='48' ll='168'/>
+<size>216</size>
+<doc f='codebrowser/include/solarus/Sprite.h' l='35'>/**
+ * \brief Represents an animated sprite.
+ *
+ * A sprite is represented as a set of animations
+ * (i.e. an instance of SpriteAnimationSet),
+ * a current animation,
+ * a current direction and a current frame.
+ * Several sprites can have the same animation set (i.e. they share
+ * the same SpriteAnimationSet object).
+ *
+ * A sprite can be drawn directly on a surface, or it can
+ * be attached to a map entity.
+ */</doc>
+<fun r='_ZN7Solarus6Sprite10initializeEv'/>
+<fun r='_ZN7Solarus6Sprite4quitEv'/>
+<fun r='_ZN7Solarus6SpriteC1ERKSs'/>
+<fun r='_ZN7Solarus6Sprite11set_tilesetERKNS_7TilesetE'/>
+<fun r='_ZNK7Solarus6Sprite20get_animation_set_idEv'/>
+<fun r='_ZNK7Solarus6Sprite17get_animation_setEv'/>
+<fun r='_ZN7Solarus6Sprite23enable_pixel_collisionsEv'/>
+<fun r='_ZNK7Solarus6Sprite28are_pixel_collisions_enabledEv'/>
+<fun r='_ZNK7Solarus6Sprite8get_sizeEv'/>
+<fun r='_ZNK7Solarus6Sprite12get_max_sizeEv'/>
+<fun r='_ZNK7Solarus6Sprite10get_originEv'/>
+<fun r='_ZNK7Solarus6Sprite20get_max_bounding_boxEv'/>
+<fun r='_ZNK7Solarus6Sprite21get_current_animationEv'/>
+<fun r='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<fun r='_ZNK7Solarus6Sprite13has_animationERKSs'/>
+<fun r='_ZNK7Solarus6Sprite21get_current_directionEv'/>
+<fun r='_ZNK7Solarus6Sprite17get_nb_directionsEv'/>
+<fun r='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<fun r='_ZNK7Solarus6Sprite13get_nb_framesEv'/>
+<fun r='_ZNK7Solarus6Sprite17get_current_frameEv'/>
+<fun r='_ZN7Solarus6Sprite17set_current_frameEib'/>
+<fun r='_ZNK7Solarus6Sprite27get_current_frame_rectangleEv'/>
+<fun r='_ZNK7Solarus6Sprite15get_frame_delayEv'/>
+<fun r='_ZN7Solarus6Sprite15set_frame_delayEj'/>
+<fun r='_ZNK7Solarus6Sprite19get_next_frame_dateEv'/>
+<fun r='_ZN7Solarus6Sprite19set_synchronized_toERKSt10shared_ptrIS0_E'/>
+<fun r='_ZNK7Solarus6Sprite20is_animation_startedEv'/>
+<fun r='_ZN7Solarus6Sprite15start_animationEv'/>
+<fun r='_ZN7Solarus6Sprite17restart_animationEv'/>
+<fun r='_ZN7Solarus6Sprite14stop_animationEv'/>
+<fun r='_ZN7Solarus6Sprite13set_suspendedEb'/>
+<fun r='_ZN7Solarus6Sprite18set_ignore_suspendEb'/>
+<fun r='_ZNK7Solarus6Sprite9is_pausedEv'/>
+<fun r='_ZN7Solarus6Sprite10set_pausedEb'/>
+<fun r='_ZNK7Solarus6Sprite20is_animation_loopingEv'/>
+<fun r='_ZNK7Solarus6Sprite21is_animation_finishedEv'/>
+<fun r='_ZNK7Solarus6Sprite21is_last_frame_reachedEv'/>
+<fun r='_ZNK7Solarus6Sprite17has_frame_changedEv'/>
+<fun r='_ZNK7Solarus6Sprite11is_blinkingEv'/>
+<fun r='_ZN7Solarus6Sprite12set_blinkingEj'/>
+<fun r='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<fun r='_ZN7Solarus6Sprite6updateEv'/>
+<fun r='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus6Sprite15draw_transitionERNS_10TransitionE'/>
+<fun r='_ZN7Solarus6Sprite22get_transition_surfaceEv'/>
+<fun r='_ZNK7Solarus6Sprite21get_finished_callbackEv'/>
+<fun r='_ZN7Solarus6Sprite21set_finished_callbackERKNS_12ScopedLuaRefE'/>
+<fun r='_ZNK7Solarus6Sprite17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus6Sprite17get_animation_setERKSs'/>
+<fun r='_ZNK7Solarus6Sprite14get_next_frameEv'/>
+<fun r='_ZNK7Solarus6Sprite24get_intermediate_surfaceEv'/>
+<fun r='_ZN7Solarus6Sprite17set_frame_changedEb'/>
+<fun r='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<smbr r='Solarus::Sprite::all_animation_sets' t='std::map&lt;std::string, SpriteAnimationSet *&gt;'/>
+<mbr r='Solarus::Sprite::animation_set_id' o='768' t='const std::string'/>
+<mbr r='Solarus::Sprite::animation_set' o='832' t='Solarus::SpriteAnimationSet &amp;'/>
+<mbr r='Solarus::Sprite::current_animation_name' o='896' t='std::string'/>
+<mbr r='Solarus::Sprite::current_animation' o='960' t='Solarus::SpriteAnimation *'/>
+<mbr r='Solarus::Sprite::current_direction' o='1024' t='int'/>
+<mbr r='Solarus::Sprite::current_frame' o='1056' t='int'/>
+<mbr r='Solarus::Sprite::frame_changed' o='1088' t='bool'/>
+<mbr r='Solarus::Sprite::frame_delay' o='1120' t='uint32_t'/>
+<mbr r='Solarus::Sprite::next_frame_date' o='1152' t='uint32_t'/>
+<mbr r='Solarus::Sprite::ignore_suspend' o='1184' t='bool'/>
+<mbr r='Solarus::Sprite::paused' o='1192' t='bool'/>
+<mbr r='Solarus::Sprite::finished' o='1200' t='bool'/>
+<mbr r='Solarus::Sprite::synchronize_to' o='1216' t='SpritePtr'/>
+<mbr r='Solarus::Sprite::intermediate_surface' o='1344' t='SurfacePtr'/>
+<mbr r='Solarus::Sprite::blink_delay' o='1472' t='uint32_t'/>
+<mbr r='Solarus::Sprite::blink_is_sprite_visible' o='1504' t='bool'/>
+<mbr r='Solarus::Sprite::blink_next_change_date' o='1536' t='uint32_t'/>
+<mbr r='Solarus::Sprite::finished_callback_ref' o='1600' t='Solarus::ScopedLuaRef'/>

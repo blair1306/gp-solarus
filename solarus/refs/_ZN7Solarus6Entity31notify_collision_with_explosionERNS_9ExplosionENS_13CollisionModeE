@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='313' type='void Solarus::Entity::notify_collision_with_explosion(Solarus::Explosion &amp; explosion, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1108' c='_ZN7Solarus12CustomEntity31notify_collision_with_explosionERNS_9ExplosionENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3156' ll='3158' type='void Solarus::Entity::notify_collision_with_explosion(Solarus::Explosion &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3151'>/**
+ * \brief This function is called when an explosion detects a collision with this entity.
+ * \param explosion the explosion
+ * \param collision_mode the collision mode that detected the event
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3156'>/* explosion */</doc>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='89' c='_ZN7Solarus6Sensor31notify_collision_with_explosionERNS_9ExplosionENS_13CollisionModeE'/>

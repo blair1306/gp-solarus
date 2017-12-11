@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='73' type='bool Solarus::Entity::State::can_control_movement() const'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='72'>// movement</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='470' ll='472' type='bool Solarus::Entity::State::can_control_movement() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='462'>/**
+ * \brief Returns whether the player can control his movements in the current state.
+ *
+ * This function returns true if and only if the current movement of the entity is
+ * an instance of PlayerMovement.
+ *
+ * \return true if the player can control his movements
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='875' u='c' c='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='199' c='_ZNK7Solarus4Hero19PlayerMovementState20can_control_movementEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1294' type='void Solarus::LuaContext::on_custom_attack_received(Solarus::EnemyAttack attack, Solarus::Sprite * sprite)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6481' u='c' c='_ZN7Solarus10LuaContext31enemy_on_custom_attack_receivedERNS_5EnemyENS_11EnemyAttackEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2817' ll='2830' type='void Solarus::LuaContext::on_custom_attack_received(Solarus::EnemyAttack attack, Solarus::Sprite * sprite)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2812'>/**
+ * \brief Calls the on_custom_attack_received() method of the object on top of the stack.
+ * \param attack The attack received.
+ * \param sprite The sprite that receives the attack if any.
+ */</doc>

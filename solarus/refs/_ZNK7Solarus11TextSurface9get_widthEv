@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='104' type='int Solarus::TextSurface::get_width() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='352' ll='359' type='int Solarus::TextSurface::get_width() const'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='379' u='c' c='_ZNK7Solarus11TextSurface8get_sizeEv'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='348'>/**
+ * \brief Returns the width of the surface containing the text.
+ * \return the width in pixels
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='482' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_get_sizeEP9lua_State'/>

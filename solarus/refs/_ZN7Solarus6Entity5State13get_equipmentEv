@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='158' type='Solarus::Equipment &amp; Solarus::Entity::State::get_equipment()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='145' ll='147' type='Solarus::Equipment &amp; Solarus::Entity::State::get_equipment()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='141'>/**
+ * \brief Returns the current equipment.
+ * \return the equipment
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='149' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='95' u='c' c='_ZN7Solarus9HeroState27notify_item_command_pressedEi'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='61' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='67' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='82' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='57' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='163' u='c' c='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='46' u='c' c='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='204' u='c' c='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='51' u='c' c='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>

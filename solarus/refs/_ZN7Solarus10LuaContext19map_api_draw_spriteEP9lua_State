@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='791' type='static int Solarus::LuaContext::map_api_draw_sprite(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='137' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1767' ll='1783' type='static int Solarus::LuaContext::map_api_draw_sprite(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1762'>/**
+ * \brief Implementation of map:draw_sprite().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

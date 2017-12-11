@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='36' type='16'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='36'>/**&lt; Collision if any entity&apos;s facing point (i.e. in any of
+                                         * the four main directions) is inside the detector&apos;s rectangle. */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='865' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1789' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1790' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1941' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1737' u='r' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='46' u='r' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1188' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5570' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

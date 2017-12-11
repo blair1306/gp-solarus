@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='324' type='void Solarus::Hero::try_snap_to_facing_entity()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2001' ll='2021' type='void Solarus::Hero::try_snap_to_facing_entity()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1996'>/**
+ * \brief Snaps the hero to the entity he is facing.
+ *
+ * The hero is snapped if there is no collision and if he is not too far.
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='96' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>

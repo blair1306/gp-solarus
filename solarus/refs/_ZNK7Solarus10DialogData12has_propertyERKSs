@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='39' type='bool Solarus::DialogData::has_property(const std::string &amp; key) const'/>
+<def f='codebrowser/src/DialogResources.cpp' l='60' ll='66' type='bool Solarus::DialogData::has_property(const std::string &amp; key) const'/>
+<use f='codebrowser/src/DialogResources.cpp' l='75' u='c' c='_ZNK7Solarus10DialogData12get_propertyERKSs'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='55'>/**
+ * \brief Returns a property exists in this dialog.
+ * \param key Key of the property to check.
+ * \return true if a property exists with this key.
+ */</doc>

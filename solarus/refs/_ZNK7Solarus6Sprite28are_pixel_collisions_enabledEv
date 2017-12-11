@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='65' type='bool Solarus::Sprite::are_pixel_collisions_enabled() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='156' ll='158' type='bool Solarus::Sprite::are_pixel_collisions_enabled() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='645' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='651' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<doc f='codebrowser/src/Sprite.cpp' l='152'>/**
+ * \brief Returns whether the pixel-perfect collisions are enabled for the animation set of this sprite.
+ * \return true if the pixel-perfect collisions are enabled
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='1831' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1846' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1885' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1900' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2155' u='c' c='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3401' u='c' c='_ZN7Solarus6Entity6updateEv'/>

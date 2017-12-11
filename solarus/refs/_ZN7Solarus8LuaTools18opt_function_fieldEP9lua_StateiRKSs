@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='195' type='Solarus::ScopedLuaRef Solarus::LuaTools::opt_function_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='737' ll='755' type='Solarus::ScopedLuaRef Solarus::LuaTools::opt_function_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='730'>/**
+ * \brief Like LuaTools::check_function_field() but the field is optional.
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \return The wanted field as a Lua ref to the function, or an empty ref.
+ */</doc>

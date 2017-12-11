@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='155' type='Solarus::ScopedLuaRef Solarus::Hero::make_solid_ground_callback(const Solarus::Point &amp; xy, int layer) const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1362' ll='1379' type='Solarus::ScopedLuaRef Solarus::Hero::make_solid_ground_callback(const Solarus::Point &amp; xy, int layer) const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1353'>/**
+ * \brief Creates a Lua function that returns the given coordinates and layer.
+ *
+ * This function can be used as callback for specifying the solid ground position.
+ *
+ * \param xy Coordinates the function should return.
+ * \param layer Layer the function should return.
+ * \return Lua ref to a function that returns this solid position.
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='60' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1861' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='65' type='void Solarus::EquipmentItem::set_can_disappear(bool can_disappear)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='207' ll='209' type='void Solarus::EquipmentItem::set_can_disappear(bool can_disappear)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='202'>/**
+ * \brief Returns whether this item disappears after a few seconds
+ * when it is dropped by an enemy or a destructible entity.
+ * \param can_disappear true if this item can disappear.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='359' u='c' c='_ZN7Solarus10LuaContext26item_api_set_can_disappearEP9lua_State'/>

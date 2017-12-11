@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='195'/>
+<doc f='include/SDL2/SDL_hints.h' l='186'>/**
+*  \brief  A variable controlling whether relative mouse mode is implemented using mouse warping
+*
+*  This variable can be set to the following values:
+*    &quot;0&quot;       - Relative mouse mode uses raw input
+*    &quot;1&quot;       - Relative mouse mode uses mouse warping
+*
+*  By default SDL will use raw input for relative mouse mode
+*/</doc>

@@ -1,0 +1,22 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' c='QInputEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='302' ll='350'/>
+<size>64</size>
+<fun r='_ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt'/>
+<fun r='_ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt'/>
+<fun r='_ZN9QKeyEventD1Ev'/>
+<fun r='_ZNK9QKeyEvent3keyEv'/>
+<fun r='_ZNK9QKeyEvent7matchesEN12QKeySequence11StandardKeyE'/>
+<fun r='_ZNK9QKeyEvent9modifiersEv'/>
+<fun r='_ZNK9QKeyEvent4textEv'/>
+<fun r='_ZNK9QKeyEvent12isAutoRepeatEv'/>
+<fun r='_ZNK9QKeyEvent5countEv'/>
+<fun r='_ZNK9QKeyEvent14nativeScanCodeEv'/>
+<fun r='_ZNK9QKeyEvent16nativeVirtualKeyEv'/>
+<fun r='_ZNK9QKeyEvent15nativeModifiersEv'/>
+<mbr r='QKeyEvent::txt' o='256' t='QString'/>
+<mbr r='QKeyEvent::k' o='320' t='int'/>
+<mbr r='QKeyEvent::nScanCode' o='352' t='quint32'/>
+<mbr r='QKeyEvent::nVirtualKey' o='384' t='quint32'/>
+<mbr r='QKeyEvent::nModifiers' o='416' t='quint32'/>
+<mbr r='QKeyEvent::c' o='448' t='ushort'/>
+<mbr r='QKeyEvent::autor' o='464' t='ushort'/>

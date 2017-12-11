@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='389' type='bool Solarus::LuaContext::chest_on_opened(Solarus::Chest &amp; chest, const Solarus::Treasure &amp; treasure)'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='394' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6088' ll='6098' type='bool Solarus::LuaContext::chest_on_opened(Solarus::Chest &amp; chest, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6079'>/**
+ * \brief Calls the on_opened() method of a Lua chest.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param chest A chest.
+ * \param treasure The treasure obtained.
+ * \return \c true if the on_opened() method is defined.
+ */</doc>

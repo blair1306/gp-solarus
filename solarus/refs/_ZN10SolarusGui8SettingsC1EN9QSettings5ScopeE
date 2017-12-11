@@ -1,0 +1,23 @@
+<dec f='codebrowser/gui/include/solarus/gui/settings.h' l='32' type='void SolarusGui::Settings::Settings(QSettings::Scope scope = UserScope)'/>
+<use f='codebrowser/gui/src/console.cpp' l='389' u='c' c='_ZNK10SolarusGui7Console36get_quest_lua_commands_from_settingsEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='72' u='c' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='192' u='c' c='_ZN10SolarusGui15ConsoleLineEdit16command_executedERK7QString'/>
+<use f='codebrowser/gui/src/main.cpp' l='132' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='135' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='57' u='c' c='_ZN10SolarusGui10MainWindowC1EP7QWidget'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='169' u='c' c='_ZN10SolarusGui10MainWindow18update_filter_menuEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='199' u='c' c='_ZN10SolarusGui10MainWindow24update_fullscreen_actionEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='210' u='c' c='_ZN10SolarusGui10MainWindow32update_video_acceleration_actionEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='294' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='316' u='c' c='_ZN10SolarusGui10MainWindow32on_action_remove_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='351' u='c' c='_ZN10SolarusGui10MainWindow30on_action_play_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='381' u='c' c='_ZN10SolarusGui10MainWindow30on_action_fullscreen_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='403' u='c' c='_ZN10SolarusGui10MainWindow38on_action_video_acceleration_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='488' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='566' u='c' c='_ZN10SolarusGui10MainWindow24setting_changed_in_questERK7QStringRK8QVariant'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='583' u='c' c='_ZN10SolarusGui10MainWindow24set_video_mode_requestedERK7QString'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='81' u='c' c='_ZNK10SolarusGui11QuestRunner16create_argumentsERK7QString'/>
+<def f='codebrowser/gui/src/settings.cpp' l='27' ll='30' type='void SolarusGui::Settings::Settings(QSettings::Scope scope = UserScope)'/>
+<doc f='codebrowser/gui/src/settings.cpp' l='24'>/**
+ * @brief Creates a Solarus settings object.
+ */</doc>

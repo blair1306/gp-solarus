@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='233' type='bool Solarus::LuaTools::is_color(lua_State * l, int index)'/>
+<doc f='codebrowser/include/solarus/lua/LuaTools.h' l='232'>// Color</doc>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='890' ll='908' type='bool Solarus::LuaTools::is_color(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='955' u='c' c='_ZN7Solarus8LuaTools17check_color_fieldEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='1005' u='c' c='_ZN7Solarus8LuaTools15opt_color_fieldEP9lua_StateiRKSsRKNS_5ColorE'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='884'>/**
+ * \brief Returns whether a value is a color.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value is a color, that is, an array with three integers.
+ */</doc>

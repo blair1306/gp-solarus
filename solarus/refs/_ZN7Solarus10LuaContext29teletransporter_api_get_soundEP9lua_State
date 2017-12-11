@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='904' type='static int Solarus::LuaContext::teletransporter_api_get_sound(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='239' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2821' ll='2836' type='static int Solarus::LuaContext::teletransporter_api_get_sound(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2816'>/**
+ * \brief Implementation of teletransporter:get_sound().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

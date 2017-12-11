@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Game.h' l='123' type='void Solarus::Game::stop_dialog(const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<def f='codebrowser/src/Game.cpp' l='768' ll='771' type='void Solarus::Game::stop_dialog(const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<doc f='codebrowser/src/Game.cpp' l='762'>/**
+ * \brief Stops the dialog currently running if any.
+ * \param status_ref Lua ref to a status value to return to the start_dialog
+ * callback, or an empty ref. &quot;skipped&quot; means that the dialog was canceled by
+ * the user.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='497' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>

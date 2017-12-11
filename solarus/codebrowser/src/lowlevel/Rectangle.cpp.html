@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rectangle.cpp source code [codebrowser/src/lowlevel/Rectangle.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/lowlevel/Rectangle.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>lowlevel</a>/<a href='Rectangle.cpp.html'>Rectangle.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/lowlevel/Rectangle.h.html">"solarus/lowlevel/Rectangle.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../../include/c++/4.9/ostream.html">&lt;ostream&gt;</a></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command">\brief</span> Prints a rectangle to an output stream.</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">stream</span> The stream.</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">rectangle</span> A rectangle.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\return</span> The output stream.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostream" title='std::ostream' data-type='basic_ostream&lt;char&gt;' data-ref="std::ostream">ostream</a>&amp; <dfn class="decl def" id="_ZN7SolaruslsERSoRKNS_9RectangleE" title='Solarus::operator&lt;&lt;' data-ref="_ZN7SolaruslsERSoRKNS_9RectangleE"><b>operator</b>&lt;&lt;</dfn>(<span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostream" title='std::ostream' data-type='basic_ostream&lt;char&gt;' data-ref="std::ostream">ostream</a>&amp; <dfn class="local col1 decl" id="1stream" title='stream' data-type='std::ostream &amp;' data-ref="1stream">stream</dfn>, <em>const</em> <a class="type" href="../../include/solarus/lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col2 decl" id="2rectangle" title='rectangle' data-type='const Solarus::Rectangle &amp;' data-ref="2rectangle">rectangle</dfn>) {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>  <a class="local col1 ref" href="#1stream" title='stream' data-ref="1stream">stream</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#_ZN7SolaruslsERSoRKNS_5PointE" title='Solarus::operator&lt;&lt;' data-ref="_ZN7SolaruslsERSoRKNS_5PointE">&lt;&lt;</a> <a class="local col2 ref" href="#2rectangle" title='rectangle' data-ref="2rectangle">rectangle</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZNK7Solarus9Rectangle6get_xyEv" title='Solarus::Rectangle::get_xy' data-ref="_ZNK7Solarus9Rectangle6get_xyEv">get_xy</a>() <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"x"</q> <a class="ref" href="../../include/solarus/lowlevel/Size.h.html#_ZN7SolaruslsERSoRKNS_4SizeE" title='Solarus::operator&lt;&lt;' data-ref="_ZN7SolaruslsERSoRKNS_4SizeE">&lt;&lt;</a> <a class="local col2 ref" href="#2rectangle" title='rectangle' data-ref="2rectangle">rectangle</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZNK7Solarus9Rectangle8get_sizeEv" title='Solarus::Rectangle::get_size' data-ref="_ZNK7Solarus9Rectangle8get_sizeEv">get_size</a>();</td></tr>
+<tr><th id="31">31</th><td>  <b>return</b> <a class="local col1 ref" href="#1stream" title='stream' data-ref="1stream">stream</a>;</td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

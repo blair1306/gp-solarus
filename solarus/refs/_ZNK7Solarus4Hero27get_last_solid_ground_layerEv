@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='154' type='int Solarus::Hero::get_last_solid_ground_layer() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1339' ll='1341' type='int Solarus::Hero::get_last_solid_ground_layer() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1334'>/**
+ * \brief Returns the layer of the last of solid ground where the hero was.
+ * \return The last solid ground layer, or
+ * 0 if the hero never was on solid ground on this map yet.
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='62' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='88' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1906' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1919' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>

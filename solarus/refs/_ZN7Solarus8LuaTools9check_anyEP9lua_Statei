@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='88' type='void Solarus::LuaTools::check_any(lua_State * l, int arg_index)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1260' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1261' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1338' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='244' ll='251' type='void Solarus::LuaTools::check_any(lua_State * l, int arg_index)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='239'>/**
+ * \brief Like luaL_checkany() but throws a LuaException in case of error.
+ * \param l A Lua state.
+ * \param arg_index Index of an argument in the stack.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_events.h' l='629' type='int SDL_PushEvent(SDL_Event * event)'/>
+<doc f='include/SDL2/SDL_events.h' l='623'>/**
+ *  \brief Add an event to the event queue.
+ *
+ *  \return 1 on success, 0 if the event was filtered, or -1 if the event queue
+ *          was full or there was some other error.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='866' u='c' c='_ZN7Solarus10InputEvent20simulate_key_pressedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='880' u='c' c='_ZN7Solarus10InputEvent21simulate_key_releasedENS0_11KeyboardKeyE'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='94' type='int Solarus::EquipmentItem::get_max_amount() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='445' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='455' ll='461' type='int Solarus::EquipmentItem::get_max_amount() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='451'>/**
+ * \brief Returns the maximum value of the amount associated to this item.
+ * \return The maximum amount of this item.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3844' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='707' u='c' c='_ZN7Solarus10LuaContext23item_api_get_max_amountEP9lua_State'/>

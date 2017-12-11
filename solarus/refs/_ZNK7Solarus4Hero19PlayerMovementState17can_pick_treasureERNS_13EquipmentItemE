@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='60' type='bool Solarus::Hero::PlayerMovementState::can_pick_treasure(Solarus::EquipmentItem &amp; item) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='134' c='_ZNK7Solarus6Entity5State17can_pick_treasureERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='285' ll='287' type='bool Solarus::Hero::PlayerMovementState::can_pick_treasure(Solarus::EquipmentItem &amp; ) const'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='280'>/**
+ * \brief Returns whether the hero can pick a treasure in this state.
+ * \param item The equipment item to obtain.
+ * \return true if the hero can pick that treasure in this state.
+ */</doc>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='285'>/* item */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='182' c='_ZNK7Solarus4Hero13SwimmingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='173' c='_ZNK7Solarus4Hero17SwordLoadingState17can_pick_treasureERNS_13EquipmentItemE'/>

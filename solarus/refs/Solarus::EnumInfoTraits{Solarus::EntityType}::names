@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityTypeInfo.h' l='32' type='const EnumInfo&lt;EntityType&gt;::names_type'/>
+<use f='codebrowser/src/EntityData.cpp' l='847' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<def f='codebrowser/src/entities/EntityTypeInfo.cpp' l='27' ll='59' type='const EnumInfo&lt;EntityType&gt;::names_type'/>
+<doc f='codebrowser/src/entities/EntityTypeInfo.cpp' l='24'>/**
+ * \brief Lua name of each map entity type.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='68' c='_ZN7Solarus12_GLOBAL__N_130get_entity_internal_type_namesEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='84' c='_ZN7Solarus12_GLOBAL__N_134get_entity_internal_type_names_setEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='169' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>

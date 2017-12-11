@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='156' type='bool Solarus::Enemy::is_shallow_water_obstacle() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='417' c='_ZNK7Solarus6Entity25is_shallow_water_obstacleEv'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='370' ll='372' type='bool Solarus::Enemy::is_shallow_water_obstacle() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='366'>/**
+ * \brief Returns whether a shallow water tile is currently considered as an obstacle by this entity.
+ * \return true if the shallow water tiles are currently an obstacle for this entity
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='74' type='void Solarus::Hero::notify_command_released(Solarus::GameCommand command)'/>
+<use f='codebrowser/src/Game.cpp' l='342' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='117' c='_ZN7Solarus6Entity23notify_command_releasedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='425' ll='427' type='void Solarus::Hero::notify_command_released(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='420'>/**
+ * \brief This function is called when a game command is released
+ * if the game is not suspended.
+ * \param command The command released.
+ */</doc>

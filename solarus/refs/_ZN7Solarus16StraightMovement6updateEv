@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='39' type='void Solarus::StraightMovement::update()'/>
+<ovr f='codebrowser/src/movements/PlayerMovement.cpp' l='43' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='45' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<ovr f='codebrowser/src/movements/RandomMovement.cpp' l='144' c='_ZN7Solarus14RandomMovement6updateEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='146' u='c' c='_ZN7Solarus14RandomMovement6updateEv'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='56' c='_ZN7Solarus8Movement6updateEv'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='648' ll='680' type='void Solarus::StraightMovement::update()'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='643'>/**
+ * \brief Updates the position of the object controlled by this movement.
+ *
+ * This function is called repeatedly.
+ */</doc>
+<ovr f='codebrowser/src/movements/TargetMovement.cpp' l='129' c='_ZN7Solarus14TargetMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='150' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='63' type='bool Solarus::Boomerang::is_crystal_obstacle(Solarus::Crystal &amp; crystal)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='344' c='_ZN7Solarus6Entity19is_crystal_obstacleERNS_7CrystalE'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='207' ll='209' type='bool Solarus::Boomerang::is_crystal_obstacle(Solarus::Crystal &amp; )'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='202'>/**
+ * \brief Returns whether a crystal is currently considered as an obstacle for this entity.
+ * \param crystal a crystal
+ * \return true if the crystal is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='207'>/* crystal */</doc>

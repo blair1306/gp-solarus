@@ -1,0 +1,50 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='161' type='int Solarus::Entity::get_top_left_y() const'/>
+<use f='codebrowser/src/Map.cpp' l='645' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEii'/>
+<use f='codebrowser/src/Map.cpp' l='680' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='62' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='113' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='125' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='132' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='220' u='c' c='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='98' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='355' u='c' c='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='390' u='c' c='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='425' u='c' c='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='837' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='525' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='526' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='744' ll='746' type='int Solarus::Entity::get_top_left_y() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='753' u='c' c='_ZNK7Solarus6Entity15get_top_left_xyEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='966' u='c' c='_ZNK7Solarus6Entity20is_aligned_to_grid_yEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1001' u='c' c='_ZN7Solarus6Entity21set_aligned_to_grid_yEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2959' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2960' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2973' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2974' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='740'>/**
+ * \brief Returns the y position of the entity&apos;s top-left corner.
+ * \return the y position of the entity&apos;s top-left corner
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1124' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1670' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1676' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1693' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1700' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1945' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1955' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2007' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2008' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='202' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='203' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='359' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='364' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='370' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='374' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='227' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='233' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='236' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='304' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='308' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='81' u='c' c='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='120' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='372' u='c' c='_ZN7Solarus12PathMovement4snapEv'/>

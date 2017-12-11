@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='116' type='std::shared_ptr&lt;const Stairs&gt; Solarus::Hero::get_stairs_overlapping() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='683' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='849' ll='861' type='std::shared_ptr&lt;const Stairs&gt; Solarus::Hero::get_stairs_overlapping() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='845'>/**
+ * \brief Returns the stairs the hero may be currently overlapping.
+ * \return the stairs the hero is currently overlapping, or nullptr
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='64' type='Solarus::QuestFiles::DataFileLocation Solarus::QuestFiles::data_file_get_location(const std::string &amp; file_name)'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='219' ll='243' type='Solarus::QuestFiles::DataFileLocation Solarus::QuestFiles::data_file_get_location(const std::string &amp; file_name)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='209'>/**
+ * \brief Returns the physical location of a data file.
+ *
+ * This function is not often necessary since the whole point of this class
+ * is to access files independently of their real file location
+ * (in the quest write directory, in the data directory or in the data archive).
+ *
+ * \param file_name The file to look for.
+ * \return Where it is actually located, or LOCATION_NONE if not found.
+ */</doc>
+<use f='codebrowser/src/lua/FileApi.cpp' l='85' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>

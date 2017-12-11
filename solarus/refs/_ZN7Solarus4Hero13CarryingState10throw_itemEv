@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/CarryingState.h' l='52' type='void Solarus::Hero::CarryingState::throw_item()'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='75' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='169' u='c' c='_ZN7Solarus4Hero13CarryingState29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/hero/CarryingState.cpp' l='181' ll='186' type='void Solarus::Hero::CarryingState::throw_item()'/>
+<doc f='codebrowser/src/hero/CarryingState.cpp' l='175'>/**
+ * \brief Throws the item carried.
+ *
+ * This function is called when the player presses the action key
+ * or when another state becomes the current state.
+ */</doc>

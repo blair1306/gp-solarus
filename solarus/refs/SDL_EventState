@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_events.h' l='702' type='Uint8 SDL_EventState(Uint32 type, int state)'/>
+<doc f='include/SDL2/SDL_events.h' l='693'>/**
+ *  This function allows you to set the state of processing certain events.
+ *   - If \c state is set to ::SDL_IGNORE, that event will be automatically
+ *     dropped from the event queue and will not event be filtered.
+ *   - If \c state is set to ::SDL_ENABLE, that event will be processed
+ *     normally.
+ *   - If \c state is set to ::SDL_QUERY, SDL_EventState() will return the
+ *     current processing state of the specified event.
+ */</doc>

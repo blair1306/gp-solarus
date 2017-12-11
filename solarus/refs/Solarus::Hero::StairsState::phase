@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='63' type='int'/>
+<offset>544</offset>
+<doc f='codebrowser/include/solarus/hero/StairsState.h' l='63'>/**&lt; when walking on stairs between two floors, indicates the current
+                                        * phase of the animations (0: not started, 1: initial animation,
+                                        * 2: diagonal animation, 3: final animation) */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='49' u='w' c='_ZN7Solarus4Hero11StairsStateC1ERS0_RKSt10shared_ptrIKNS_6StairsEENS4_3WayE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='168' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='171' u='w' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='232' u='w' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='239' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='250' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

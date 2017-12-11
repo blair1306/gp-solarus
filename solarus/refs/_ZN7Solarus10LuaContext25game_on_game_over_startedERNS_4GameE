@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='348' type='bool Solarus::LuaContext::game_on_game_over_started(Solarus::Game &amp; game)'/>
+<use f='codebrowser/src/Game.cpp' l='916' u='c' c='_ZN7Solarus4Game15start_game_overEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1740' ll='1751' type='bool Solarus::LuaContext::game_on_game_over_started(Solarus::Game &amp; game)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1732'>/**
+ * \brief Calls the on_game_over_started() method of a Lua game.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param game A game.
+ * \return true if the game:on_game_over_started() method is defined.
+ */</doc>

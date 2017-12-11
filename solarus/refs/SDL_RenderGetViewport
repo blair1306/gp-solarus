@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_render.h' l='525' type='void SDL_RenderGetViewport(SDL_Renderer * renderer, SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='520'>/**
+ *  \brief Get the drawing area for the current target.
+ *
+ *  \sa SDL_RenderSetViewport()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='892' u='c' c='_ZN7Solarus5Video12get_viewportEv'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='108' type='Solarus::Point Solarus::Entity::get_ground_point() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='185' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='205' u='c' c='_ZNK7Solarus6Entity16get_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='228' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='236' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1114' ll='1119' type='Solarus::Point Solarus::Entity::get_ground_point() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1110'>/**
+ * \brief Returns the point used to determine which ground is below this entity.
+ * \return The point used to determine the ground (relative to the map).
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1097' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1634' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='173' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='236' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1062' u='c' c='_ZN7Solarus10LuaContext30entity_api_get_ground_positionEP9lua_State'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='72' type='bool Solarus::Switch::is_activated() const'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='134' ll='136' type='bool Solarus::Switch::is_activated() const'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='230' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='301' u='c' c='_ZN7Solarus6Switch12try_activateERNS_4HeroE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='318' u='c' c='_ZN7Solarus6Switch12try_activateERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='335' u='c' c='_ZN7Solarus6Switch12try_activateERNS_5ArrowE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='350' u='c' c='_ZN7Solarus6Switch12try_activateEv'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='129'>/**
+ * \brief Returns whether this switch is currently activated.
+ *
+ * \return true if the switch is activated
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3362' u='c' c='_ZN7Solarus10LuaContext23switch_api_is_activatedEP9lua_State'/>

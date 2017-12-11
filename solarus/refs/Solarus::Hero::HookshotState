@@ -1,0 +1,26 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/HookshotState.h' l='30' ll='60'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/hero/HookshotState.h' l='27'>/**
+ * \brief The state &quot;hookshot&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero13HookshotStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero13HookshotState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState20can_avoid_deep_waterEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState14can_avoid_holeEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState13can_avoid_iceEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState14can_avoid_lavaEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState17can_avoid_prickleEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState25can_avoid_teletransporterEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState18is_stairs_obstacleERKNS_6StairsE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState18is_sensor_obstacleERKNS_6SensorE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState16can_avoid_switchEv'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero13HookshotState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus4Hero13HookshotState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<mbr r='Solarus::Hero::HookshotState::hookshot' o='384' t='std::shared_ptr&lt;Hookshot&gt;'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='249' type='void Solarus::CustomEntity::notify_collision_from(Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='975' ll='979' type='void Solarus::CustomEntity::notify_collision_from(Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1050' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1068' u='c' c='_ZN7Solarus12CustomEntity29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1120' u='c' c='_ZN7Solarus12CustomEntity31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1129' u='c' c='_ZN7Solarus12CustomEntity26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1146' u='c' c='_ZN7Solarus12CustomEntity27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='968'>/**
+ * \brief Notifies this custom entity that another entity has detected a
+ * pixel-precise collision with it.
+ * \param other_entity The other entity.
+ * \param other_sprite Sprite of the other entity involved in the collision.
+ * \param this_sprite Sprite of this custom entity entity involved in the collision.
+ */</doc>

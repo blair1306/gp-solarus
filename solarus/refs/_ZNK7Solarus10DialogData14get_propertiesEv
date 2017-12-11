@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='38' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::DialogData::get_properties() const'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='196' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<def f='codebrowser/src/DialogResources.cpp' l='51' ll='53' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::DialogData::get_properties() const'/>
+<use f='codebrowser/src/DialogResources.cpp' l='313' u='c' c='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='47'>/**
+ * \brief Returns all custom properties of this dialog.
+ * \return The custom properties.
+ */</doc>

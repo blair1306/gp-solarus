@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/StreamAction.h' l='46' type='bool Solarus::StreamAction::is_active() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1577' u='c' c='_ZNK7Solarus6Entity17has_stream_actionEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3427' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='216' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<def f='codebrowser/src/entities/StreamAction.cpp' l='68' ll='70' type='bool Solarus::StreamAction::is_active() const'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='79' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='144' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='206' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<doc f='codebrowser/src/entities/StreamAction.cpp' l='63'>/**
+ * \brief Returns whether the action is currently active.
+ * The action is inactive if the stream effect was completely applied,
+ * or if the stream of the entity are destroyed or disabled.
+ */</doc>

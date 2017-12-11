@@ -1,0 +1,19 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/DialogResources.h' l='54' ll='79'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/DialogResources.h' l='51'>/**
+ * \brief Stores the content of a dialog data file.
+ */</doc>
+<fun r='_ZN7Solarus15DialogResourcesC1Ev'/>
+<fun r='_ZN7Solarus15DialogResources5clearEv'/>
+<fun r='_ZNK7Solarus15DialogResources11get_dialogsEv'/>
+<fun r='_ZNK7Solarus15DialogResources10has_dialogERKSs'/>
+<fun r='_ZNK7Solarus15DialogResources10get_dialogERKSs'/>
+<fun r='_ZN7Solarus15DialogResources10get_dialogERKSs'/>
+<fun r='_ZN7Solarus15DialogResources10add_dialogERKSsRKNS_10DialogDataE'/>
+<fun r='_ZN7Solarus15DialogResources13remove_dialogERKSs'/>
+<fun r='_ZN7Solarus15DialogResources13set_dialog_idERKSsS2_'/>
+<fun r='_ZN7Solarus15DialogResources15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<fun r='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<mbr r='Solarus::DialogResources::dialogs' o='64' t='std::map&lt;std::string, DialogData&gt;'/>

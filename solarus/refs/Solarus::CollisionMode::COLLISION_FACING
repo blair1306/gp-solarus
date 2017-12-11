@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='34' type='8'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='34'>/**&lt; Collision if the entity&apos;s facing point corresponding to
+                                         * its current direction is inside the detector&apos;s rectangle. */</doc>
+<use f='codebrowser/src/entities/Block.cpp' l='70' u='r' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='46' u='r' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='68' u='r' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='47' u='r' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='72' u='r' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='817' u='r' c='_ZN7Solarus12CustomEntity21clear_collision_testsEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='858' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='906' u='r' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='268' u='r' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='85' u='r' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='178' u='r' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1780' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1786' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1938' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1815' u='r' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1895' u='r' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='43' u='r' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='68' u='r' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='220' u='r' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='64' u='r' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='80' u='r' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1185' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5567' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>

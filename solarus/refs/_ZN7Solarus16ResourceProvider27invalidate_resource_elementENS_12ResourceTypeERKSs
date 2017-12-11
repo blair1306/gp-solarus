@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/ResourceProvider.h' l='45' type='void Solarus::ResourceProvider::invalidate_resource_element(Solarus::ResourceType resource_type, const std::string &amp; element_id)'/>
+<doc f='codebrowser/include/solarus/ResourceProvider.h' l='43'>// TODO other types of resources</doc>
+<def f='codebrowser/src/ResourceProvider.cpp' l='56' ll='69' type='void Solarus::ResourceProvider::invalidate_resource_element(Solarus::ResourceType resource_type, const std::string &amp; element_id)'/>
+<doc f='codebrowser/src/ResourceProvider.cpp' l='48'>/**
+ * \brief Notifies the resource provider that cached data (if any) is no longer valid.
+ *
+ * This function must be called when a resource element has changed on disk.
+ *
+ * \param resource_type Type of resource that has changed.
+ * \param element_id Resource element that has changed.
+ */</doc>

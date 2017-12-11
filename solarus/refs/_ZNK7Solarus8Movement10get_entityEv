@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='49' type='Solarus::Entity * Solarus::Movement::get_entity() const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='48'>// object controlled</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='632' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='405' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='406' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='70' ll='72' type='Solarus::Entity * Solarus::Movement::get_entity() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='65'>/**
+ * \brief Returns the entity controlled by this movement (if any).
+ * \return the entity controlled by this movement, or nullptr if this movement
+ * is not attached to a map entity
+ */</doc>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='67' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='83' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='83' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='166' u='c' c='_ZN7Solarus12PathMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='255' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='371' u='c' c='_ZN7Solarus12PathMovement4snapEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='372' u='c' c='_ZN7Solarus12PathMovement4snapEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='177' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='177' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='47' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='73' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='116' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='116' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='117' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='118' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='399' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='628' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

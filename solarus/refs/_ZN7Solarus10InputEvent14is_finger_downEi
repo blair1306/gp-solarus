@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='222' type='static bool Solarus::InputEvent::is_finger_down(int finger_id)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='424' ll='433' type='static bool Solarus::InputEvent::is_finger_down(int finger_id)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='419'>/**
+ * \brief Returns whether a finger is currently pressing the screen.
+ * \param finger_id A finger ID.
+ * \return \c true if this finger is currently down.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='269' u='c' c='_ZN7Solarus10LuaContext27input_api_is_finger_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='288' u='c' c='_ZN7Solarus10LuaContext28input_api_is_finger_releasedEP9lua_State'/>

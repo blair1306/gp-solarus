@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='46' type='const std::string &amp; Solarus::VideoMode::get_name() const'/>
+<use f='codebrowser/src/Settings.cpp' l='291' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='431' u='c' c='_ZN7Solarus5Video17is_mode_supportedERKNS_9VideoModeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='431' u='c' c='_ZN7Solarus5Video17is_mode_supportedERKNS_9VideoModeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='506' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='506' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='547' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='547' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='594' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='636' u='c' c='_ZN7Solarus5Video22get_video_mode_by_nameERKSs'/>
+<def f='codebrowser/src/lowlevel/VideoMode.cpp' l='54' ll='56' type='const std::string &amp; Solarus::VideoMode::get_name() const'/>
+<doc f='codebrowser/src/lowlevel/VideoMode.cpp' l='50'>/**
+ * \brief Returns the Lua name of this video mode.
+ * \return The video mode name.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='98' u='c' c='_ZN7Solarus10LuaContext18video_api_get_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='114' u='c' c='_ZN7Solarus10LuaContext18video_api_set_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='151' u='c' c='_ZN7Solarus10LuaContext19video_api_get_modesEP9lua_State'/>

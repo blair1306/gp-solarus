@@ -1,0 +1,18 @@
+<def f='include/physfs.h' l='398' ll='403'/>
+<size>3</size>
+<doc f='include/physfs.h' l='385'>/**
+ * \struct PHYSFS_Version
+ * \brief Information the version of PhysicsFS in use.
+ *
+ * Represents the library&apos;s version as three levels: major revision
+ *  (increments with massive changes, additions, and enhancements),
+ *  minor revision (increments with backwards-compatible changes to the
+ *  major revision), and patchlevel (increments with fixes to the minor
+ *  revision).
+ *
+ * \sa PHYSFS_VERSION
+ * \sa PHYSFS_getLinkedVersion
+ */</doc>
+<mbr r='PHYSFS_Version::major' o='0' t='PHYSFS_uint8'/>
+<mbr r='PHYSFS_Version::minor' o='8' t='PHYSFS_uint8'/>
+<mbr r='PHYSFS_Version::patch' o='16' t='PHYSFS_uint8'/>

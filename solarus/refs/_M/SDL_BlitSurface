@@ -1,0 +1,60 @@
+<dec f='include/SDL2/SDL_surface.h' l='447'/>
+<doc f='include/SDL2/SDL_surface.h' l='390'>/**
+ *  Performs a fast blit from the source surface to the destination surface.
+ *
+ *  This assumes that the source and destination rectangles are
+ *  the same size.  If either \c srcrect or \c dstrect are NULL, the entire
+ *  surface (\c src or \c dst) is copied.  The final blit rectangles are saved
+ *  in \c srcrect and \c dstrect after all clipping is performed.
+ *
+ *  \return If the blit is successful, it returns 0, otherwise it returns -1.
+ *
+ *  The blit function should not be called on a locked surface.
+ *
+ *  The blit semantics for surfaces with and without blending and colorkey
+ *  are defined as follows:
+ *  \verbatim
+    RGBA-&gt;RGB:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source alpha-channel and per-surface alpha)
+        SDL_SRCCOLORKEY ignored.
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB.
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        RGB values of the source color key, ignoring alpha in the
+        comparison.
+
+    RGB-&gt;RGBA:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source per-surface alpha)
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB, set destination alpha to source per-surface alpha value.
+      both:
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        source color key.
+
+    RGBA-&gt;RGBA:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source alpha-channel and per-surface alpha)
+        SDL_SRCCOLORKEY ignored.
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy all of RGBA to the destination.
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        RGB values of the source color key, ignoring alpha in the
+        comparison.
+
+    RGB-&gt;RGB:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source per-surface alpha)
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB.
+      both:
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        source color key.
+    \endverbatim
+ *
+ *  You should call SDL_BlitSurface() unless you know exactly how SDL
+ *  blitting works internally and how to use the other blit functions.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='673' u='c'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='702' u='c'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='211' type='void Solarus::Entity::notify_sprite_frame_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int frame)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1453' ll='1454' type='void Solarus::Entity::notify_sprite_frame_changed(Solarus::Sprite &amp; , const std::string &amp; , int )'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3412' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1444'>/**
+ * \brief Notifies this entity that the frame of one of its sprites has just changed.
+ *
+ * By default, nothing is done.
+ *
+ * \param sprite the sprite
+ * \param animation the current animation
+ * \param frame the new frame
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1453'>/* sprite */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1453'>/* animation */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1453'>/* frame */</doc>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='79' c='_ZN7Solarus9Explosion27notify_sprite_frame_changedERNS_6SpriteERKSsi'/>

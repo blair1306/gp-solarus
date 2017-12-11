@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='214' type='static bool Solarus::InputEvent::is_shift_down()'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='330' ll='334' type='static bool Solarus::InputEvent::is_shift_down()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='323'>/**
+ * \brief Returns whether the SHIFT key is currently down.
+ *
+ * There is no distinction between the right and left SHIFT keys in this function.
+ *
+ * \return true if the SHIFT key is currently down
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='115' u='c' c='_ZN7Solarus10LuaContext27input_api_get_key_modifiersEP9lua_State'/>

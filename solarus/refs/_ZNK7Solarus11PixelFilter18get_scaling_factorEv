@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/PixelFilter.h' l='39' type='int Solarus::PixelFilter::get_scaling_factor() const'/>
+<ovr f='codebrowser/src/lowlevel/Hq2xFilter.cpp' l='33' c='_ZNK7Solarus10Hq2xFilter18get_scaling_factorEv'/>
+<doc f='codebrowser/include/solarus/lowlevel/PixelFilter.h' l='35'>/**
+     * \brief Returns the scaling factor of this algorithm.
+     * \return The scaling factor.
+     */</doc>
+<ovr f='codebrowser/src/lowlevel/Hq3xFilter.cpp' l='33' c='_ZNK7Solarus10Hq3xFilter18get_scaling_factorEv'/>
+<ovr f='codebrowser/src/lowlevel/Hq4xFilter.cpp' l='36' c='_ZNK7Solarus10Hq4xFilter18get_scaling_factorEv'/>
+<ovr f='codebrowser/src/lowlevel/Scale2xFilter.cpp' l='31' c='_ZNK7Solarus13Scale2xFilter18get_scaling_factorEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='741' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='573' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>

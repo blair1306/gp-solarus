@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='128' type='const std::string'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='47' type='const std::string'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='145' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='706' u='r' c='_ZN7Solarus10LuaContext20is_straight_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='719' u='r' c='_ZN7Solarus10LuaContext23check_straight_movementEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='44'>/**
+ * Name of the Lua table representing the straight movement module.
+ */</doc>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='687' u='a' c='_ZNK7Solarus16StraightMovement17get_lua_type_nameEv'/>

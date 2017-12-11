@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RelativeMovement.h source code [codebrowser/include/solarus/movements/RelativeMovement.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::RelativeMovement "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/movements/RelativeMovement.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>movements</a>/<a href='RelativeMovement.h.html'>RelativeMovement.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_RELATIVE_MOVEMENT_H">SOLARUS_RELATIVE_MOVEMENT_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_RELATIVE_MOVEMENT_H" data-ref="_M/SOLARUS_RELATIVE_MOVEMENT_H">SOLARUS_RELATIVE_MOVEMENT_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../entities/EntityPtr.h.html">"solarus/entities/EntityPtr.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="Movement.h.html">"solarus/movements/Movement.h"</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * <span class="command">\brief</span> Movement of an entity attached to another entity.</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * At each moment, the entity is placed at a position</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * relative to the entity followed.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * If the movement is sensible to obstacles, it becomes finished as</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * soon as the entity cannot be placed at the requested position.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="34">34</th><td><b>class</b> <dfn class="type def" id="Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</dfn>: <b>public</b> <a class="type" href="Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a> {</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>  <b>public</b>:</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <dfn class="decl" id="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEEiib" title='Solarus::RelativeMovement::RelativeMovement' data-ref="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEEiib">RelativeMovement</dfn>(</td></tr>
+<tr><th id="39">39</th><td>        <em>const</em> <a class="typedef" href="../entities/EntityPtr.h.html#Solarus::EntityPtr" title='Solarus::EntityPtr' data-type='std::shared_ptr&lt;Entity&gt;' data-ref="Solarus::EntityPtr">EntityPtr</a>&amp; <dfn class="local col4 decl" id="234entity_followed" title='entity_followed' data-type='const EntityPtr &amp;' data-ref="234entity_followed">entity_followed</dfn>,</td></tr>
+<tr><th id="40">40</th><td>        <em>int</em> <dfn class="local col5 decl" id="235x" title='x' data-type='int' data-ref="235x">x</dfn>,</td></tr>
+<tr><th id="41">41</th><td>        <em>int</em> <dfn class="local col6 decl" id="236y" title='y' data-type='int' data-ref="236y">y</dfn>,</td></tr>
+<tr><th id="42">42</th><td>        <em>bool</em> <dfn class="local col7 decl" id="237ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="237ignore_obstacles">ignore_obstacles</dfn></td></tr>
+<tr><th id="43">43</th><td>    );</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <dfn class="decl" id="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb" title='Solarus::RelativeMovement::RelativeMovement' data-ref="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb">RelativeMovement</dfn>(</td></tr>
+<tr><th id="46">46</th><td>        <em>const</em> <a class="typedef" href="../entities/EntityPtr.h.html#Solarus::EntityPtr" title='Solarus::EntityPtr' data-type='std::shared_ptr&lt;Entity&gt;' data-ref="Solarus::EntityPtr">EntityPtr</a>&amp; <dfn class="local col8 decl" id="238entity_followed" title='entity_followed' data-type='const EntityPtr &amp;' data-ref="238entity_followed">entity_followed</dfn>,</td></tr>
+<tr><th id="47">47</th><td>        <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col9 decl" id="239entity_offset" title='entity_offset' data-type='const Solarus::Point &amp;' data-ref="239entity_offset">entity_offset</dfn>,</td></tr>
+<tr><th id="48">48</th><td>        <em>bool</em> <dfn class="local col0 decl" id="240ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="240ignore_obstacles">ignore_obstacles</dfn></td></tr>
+<tr><th id="49">49</th><td>    );</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus16RelativeMovement11is_finishedEv" title='Solarus::RelativeMovement::is_finished' data-ref="_ZNK7Solarus16RelativeMovement11is_finishedEv">is_finished</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="52">52</th><td>    <b>virtual</b> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="virtual decl" id="_ZNK7Solarus16RelativeMovement16get_displayed_xyEv" title='Solarus::RelativeMovement::get_displayed_xy' data-ref="_ZNK7Solarus16RelativeMovement16get_displayed_xyEv">get_displayed_xy</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>  <b>protected</b>:</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus16RelativeMovement6updateEv" title='Solarus::RelativeMovement::update' data-ref="_ZN7Solarus16RelativeMovement6updateEv">update</dfn>() override;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>  <b>private</b>:</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>    <a class="typedef" href="../entities/EntityPtr.h.html#Solarus::EntityPtr" title='Solarus::EntityPtr' data-type='std::shared_ptr&lt;Entity&gt;' data-ref="Solarus::EntityPtr">EntityPtr</a> <dfn class="decl" id="Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</dfn>;      <i class="doc">/**&lt; The entity followed by this movement or nullptr. */</i></td></tr>
+<tr><th id="61">61</th><td>    <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="Solarus::RelativeMovement::entity_offset" title='Solarus::RelativeMovement::entity_offset' data-ref="Solarus::RelativeMovement::entity_offset">entity_offset</dfn>;         <i class="doc">/**&lt; coordinate of where this entity should be placed,</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">                                        * relative to the entity followed */</i></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</dfn>;                     <i class="doc">/**&lt; indicates that the movement is stopped because of obstacles */</i></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>};</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>}</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Arrow.cpp.html'>codebrowser/src/entities/Arrow.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

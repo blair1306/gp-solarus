@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='68' type='bool Solarus::operator!=(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='118' ll='120' type='bool Solarus::operator!=(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='112'>/**
+ * \brief Returns whether two sizes are different.
+ * \param lhs A size.
+ * \param rhs Another size.
+ * \return \c true if the sizes are not equal.
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='279' u='c' c='_ZN7Solarus6Camera19notify_size_changedEv'/>

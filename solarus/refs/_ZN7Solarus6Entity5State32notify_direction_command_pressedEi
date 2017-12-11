@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='59' type='void Solarus::Entity::State::notify_direction_command_pressed(int direction4)'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='293' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='297' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='301' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='305' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='396' ll='397' type='void Solarus::Entity::State::notify_direction_command_pressed(int )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='392'>/**
+ * \brief Notifies this state that a directional command was just pressed.
+ * \param direction4 direction of the command (0 to 3)
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='396'>/* direction4 */</doc>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='160' c='_ZN7Solarus4Hero12RunningState32notify_direction_command_pressedEi'/>

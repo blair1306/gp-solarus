@@ -1,0 +1,11 @@
+<def f='include/c++/4.9/sstream' l='365' ll='367' type='void std::basic_istringstream::str(const __string_type &amp; __s)'/>
+<doc f='include/c++/4.9/sstream' l='359'>/**
+       *  @brief  Setting a new buffer.
+       *  @param  __s  The string to use as a new sequence.
+       *
+       *  Calls @c rdbuf()-&gt;str(s).
+      */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1029' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='82' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='90' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='728' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>

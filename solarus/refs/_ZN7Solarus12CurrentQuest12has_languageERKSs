@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='48' type='bool Solarus::CurrentQuest::has_language(const std::string &amp; language_code)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='154' ll='157' type='bool Solarus::CurrentQuest::has_language(const std::string &amp; language_code)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='169' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='149'>/**
+ * \brief Returns whether a language exists for the current quest.
+ * \param language_code Code of the language to test.
+ * \return \c true if this language exists.
+ */</doc>
+<use f='codebrowser/src/Settings.cpp' l='348' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='104' u='c' c='_ZN7Solarus10LuaContext25language_api_set_languageEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='124' u='c' c='_ZN7Solarus10LuaContext30language_api_get_language_nameEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='47' type='Solarus::Savegame &amp; Solarus::EquipmentItem::get_savegame()'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='67' ll='69' type='Solarus::Savegame &amp; Solarus::EquipmentItem::get_savegame()'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='84' u='c' c='_ZN7Solarus13EquipmentItem15get_lua_contextEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='410' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='446' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='63'>/**
+ * \brief Returns the savegame.
+ * \return The savegame.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='147' u='c' c='_ZN7Solarus10LuaContext17item_api_get_gameEP9lua_State'/>

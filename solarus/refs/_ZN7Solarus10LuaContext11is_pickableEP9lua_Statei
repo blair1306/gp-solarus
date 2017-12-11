@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1194' type='static bool Solarus::LuaContext::is_pickable(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3876' ll='3878' type='static bool Solarus::LuaContext::is_pickable(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3870'>/**
+ * \brief Returns whether a value is a userdata of type pickable.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a pickable.
+ */</doc>

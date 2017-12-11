@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1273' type='void Solarus::LuaContext::on_obtaining(const Solarus::Treasure &amp; treasure)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='907' u='c' c='_ZN7Solarus10LuaContext17item_on_obtainingERNS_13EquipmentItemERKNS_8TreasureE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2561' ll='2573' type='void Solarus::LuaContext::on_obtaining(const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2557'>/**
+ * \brief Calls the on_obtaining() method of the object on top of the stack.
+ * \param treasure The treasure being obtained.
+ */</doc>

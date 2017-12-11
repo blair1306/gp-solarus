@@ -1,0 +1,44 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1173' type='static HeroPtr Solarus::LuaContext::check_hero(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1722' ll='1726' type='static std::shared_ptr&lt;Hero&gt; Solarus::LuaContext::check_hero(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1745' u='c' c='_ZN7Solarus10LuaContext17hero_api_teleportEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1769' u='c' c='_ZN7Solarus10LuaContext22hero_api_get_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1784' u='c' c='_ZN7Solarus10LuaContext22hero_api_set_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1801' u='c' c='_ZN7Solarus10LuaContext26hero_api_get_walking_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1816' u='c' c='_ZN7Solarus10LuaContext26hero_api_set_walking_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1833' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1877' u='c' c='_ZN7Solarus10LuaContext27hero_api_reset_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1893' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1943' u='c' c='_ZN7Solarus10LuaContext22hero_api_get_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1960' u='c' c='_ZN7Solarus10LuaContext22hero_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1985' u='c' c='_ZN7Solarus10LuaContext28hero_api_get_tunic_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2002' u='c' c='_ZN7Solarus10LuaContext28hero_api_set_tunic_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2021' u='c' c='_ZN7Solarus10LuaContext28hero_api_get_sword_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2038' u='c' c='_ZN7Solarus10LuaContext28hero_api_set_sword_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2055' u='c' c='_ZN7Solarus10LuaContext27hero_api_get_sword_sound_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2072' u='c' c='_ZN7Solarus10LuaContext27hero_api_set_sword_sound_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2089' u='c' c='_ZN7Solarus10LuaContext29hero_api_get_shield_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2106' u='c' c='_ZN7Solarus10LuaContext29hero_api_set_shield_sprite_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2123' u='c' c='_ZN7Solarus10LuaContext20hero_api_is_blinkingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2138' u='c' c='_ZN7Solarus10LuaContext21hero_api_set_blinkingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2161' u='c' c='_ZN7Solarus10LuaContext22hero_api_is_invincibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2176' u='c' c='_ZN7Solarus10LuaContext23hero_api_set_invincibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2194' u='c' c='_ZN7Solarus10LuaContext15hero_api_freezeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2210' u='c' c='_ZN7Solarus10LuaContext17hero_api_unfreezeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2226' u='c' c='_ZN7Solarus10LuaContext13hero_api_walkEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2245' u='c' c='_ZN7Solarus10LuaContext21hero_api_start_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2263' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2286' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_jumpingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2305' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2345' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_victoryEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2362' u='c' c='_ZN7Solarus10LuaContext24hero_api_start_boomerangEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2383' u='c' c='_ZN7Solarus10LuaContext18hero_api_start_bowEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2399' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_hookshotEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2415' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_runningEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2435' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1715'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * hero and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The hero.
+ */</doc>

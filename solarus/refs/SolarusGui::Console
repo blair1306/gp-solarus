@@ -1,0 +1,45 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='126' c='QWidget'/>
+<def f='codebrowser/gui/include/solarus/gui/console.h' l='33' ll='76'/>
+<size>120</size>
+<doc f='codebrowser/gui/include/solarus/gui/console.h' l='29'>/**
+ * @brief Quest execution log viewer and interactive console to execute Lua
+ * commands.
+ */</doc>
+<fun r='_ZNK10SolarusGui7Console26qt_check_for_QOBJECT_macroERKT_'/>
+<smbr r='SolarusGui::Console::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui7Console10metaObjectEv'/>
+<fun r='_ZN10SolarusGui7Console11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui7Console2trEPKcS2_i'/>
+<fun r='_ZN10SolarusGui7Console6trUtf8EPKcS2_i'/>
+<fun r='_ZN10SolarusGui7Console11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui7Console18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui7ConsoleC1EP7QWidget'/>
+<fun r='_ZN10SolarusGui7Console16set_quest_runnerERNS_11QuestRunnerE'/>
+<fun r='_ZNK10SolarusGui7Console18is_command_enabledEv'/>
+<fun r='_ZN10SolarusGui7Console19set_command_enabledEb'/>
+<fun r='_ZN10SolarusGui7Console15execute_commandERK7QString'/>
+<fun r='_ZN10SolarusGui7Console24setting_changed_in_questERK7QStringRK8QVariant'/>
+<fun r='_ZN10SolarusGui7Console23command_result_receivedEiRK7QStringbS3_'/>
+<fun r='_ZN10SolarusGui7Console13quest_runningEv'/>
+<fun r='_ZN10SolarusGui7Console14quest_finishedEv'/>
+<fun r='_ZN10SolarusGui7Console21quest_output_producedERK11QStringList'/>
+<fun r='_ZN10SolarusGui7Console23command_field_activatedEv'/>
+<fun r='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<fun r='_ZN10SolarusGui7Console21detect_command_resultERK7QStringS3_'/>
+<fun r='_ZN10SolarusGui7Console21detect_setting_changeERK7QStringS3_'/>
+<fun r='_ZN10SolarusGui7Console15colorize_outputERK7QStringS3_'/>
+<fun r='_ZNK10SolarusGui7Console36get_quest_lua_commands_from_settingsEv'/>
+<fun r='_ZN10SolarusGui7Console14apply_settingsEv'/>
+<mbr r='SolarusGui::Console::ui' o='384' t='Ui::Console'/>
+<mbr r='SolarusGui::Console::quest_runner' o='576' t='QPointer&lt;SolarusGui::QuestRunner&gt;'/>
+<mbr r='SolarusGui::Console::pending_commands' o='704' t='QMap&lt;int, QString&gt;'/>
+<mbr r='SolarusGui::Console::output_command_id' o='768' t='int'/>
+<mbr r='SolarusGui::Console::output_command_result' o='832' t='QString'/>
+<mbr r='SolarusGui::Console::command_enabled' o='896' t='bool'/>
+<fun r='_ZN10SolarusGui7Console18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='SolarusGui::Console::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui7Console10metaObjectEv'/>
+<fun r='_ZN10SolarusGui7Console11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui7Console11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui7Console24setting_changed_in_questERK7QStringRK8QVariant'/>
+<fun r='_ZN10SolarusGui7Console23command_result_receivedEiRK7QStringbS3_'/>

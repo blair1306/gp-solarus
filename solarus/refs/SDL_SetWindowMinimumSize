@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_video.h' l='560' type='void SDL_SetWindowMinimumSize(SDL_Window * window, int min_w, int min_h)'/>
+<doc f='include/SDL2/SDL_video.h' l='547'>/**
+ *  \brief Set the minimum size of a window&apos;s client area.
+ *
+ *  \param window    The window to set a new minimum size.
+ *  \param min_w     The minimum width of the window, must be &gt;0
+ *  \param min_h     The minimum height of the window, must be &gt;0
+ *
+ *  \note You can&apos;t change the minimum size of a fullscreen window, it
+ *        automatically matches the size of the display mode.
+ *
+ *  \sa SDL_GetWindowMinimumSize()
+ *  \sa SDL_SetWindowMaximumSize()
+ */</doc>

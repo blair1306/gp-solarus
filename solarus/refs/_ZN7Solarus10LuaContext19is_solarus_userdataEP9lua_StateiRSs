@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1129' type='static bool Solarus::LuaContext::is_solarus_userdata(lua_State * l, int index, std::string &amp; module_name)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1128' ll='1160' type='static bool Solarus::LuaContext::is_solarus_userdata(lua_State * l, int index, std::string &amp; module_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1120'>/**
+ * \brief Returns whether a value is a userdata from Solarus.
+ * \param[in] l A Lua context.
+ * \param[in] index An index in the stack.
+ * \param[out] module_name Name of the userdata metatable in the registry,
+ * if found.
+ * \return \c true if the value is a userdata from Solarus.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='356' u='c' c='_ZN7Solarus10LuaContext17main_api_get_typeEP9lua_State'/>

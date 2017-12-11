@@ -1,0 +1,11 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h' l='64' type='void QStringList::QStringList()'/>
+<use f='codebrowser/gui/src/console.cpp' l='390' u='c' c='_ZNK10SolarusGui7Console36get_quest_lua_commands_from_settingsEv'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='68' u='c' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h' l='221' u='c' c='_ZN11QFileDialog14getOpenFileUrlEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h' l='236' u='c' c='_ZN11QFileDialog14getSaveFileUrlEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h' l='247' u='c' c='_ZN11QFileDialog23getExistingDirectoryUrlEP7QWidgetRK7QStringRK4QUrl6QFlagsINS_6OptionEERK11QStringList'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h' l='262' u='c' c='_ZN11QFileDialog15getOpenFileUrlsEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='79' u='c' c='_ZNK10SolarusGui11QuestRunner16create_argumentsERK7QString'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='188' u='c' c='_ZN10SolarusGui11QuestRunner30standard_output_data_availableEv'/>
+<use f='codebrowser/gui/src/quests_item_delegate.cpp' l='154' u='c' c='_ZNK10SolarusGui18QuestsItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='175' u='c' c='_ZNK10SolarusGui11QuestsModel9get_pathsEv'/>

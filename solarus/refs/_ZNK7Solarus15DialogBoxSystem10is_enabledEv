@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='49' type='bool Solarus::DialogBoxSystem::is_enabled() const'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='65' ll='68' type='bool Solarus::DialogBoxSystem::is_enabled() const'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='94' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='176' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='269' u='c' c='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='61'>/**
+ * \brief Returns whether the dialog box is currently active.
+ * \return true if the dialog box is enabled
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='733' u='c' c='_ZNK7Solarus4Game17is_dialog_enabledEv'/>

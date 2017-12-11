@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='116' type='void Solarus::Enemy::set_obstacle_behavior(Solarus::Enemy::ObstacleBehavior obstacle_behavior)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='520' ll='522' type='void Solarus::Enemy::set_obstacle_behavior(Solarus::Enemy::ObstacleBehavior obstacle_behavior)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='516'>/**
+ * \brief Sets the behavior with obstacles for this enemy.
+ * \param obstacle_behavior the behavior with obstacles
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5001' u='c' c='_ZN7Solarus10LuaContext31enemy_api_set_obstacle_behaviorEP9lua_State'/>

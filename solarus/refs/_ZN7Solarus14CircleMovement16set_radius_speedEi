@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='58' type='void Solarus::CircleMovement::set_radius_speed(int radius_speed)'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='62' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1479' u='c' c='_ZN7Solarus10LuaContext36circle_movement_api_set_radius_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='142' ll='158' type='void Solarus::CircleMovement::set_radius_speed(int radius_speed)'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='134'>/**
+ * \brief Sets the radius to be updated immediately or gradually towards its wanted value.
+ *
+ * Use set_radius() to specify the wanted value.
+ *
+ * \param radius_speed Speed of the radius variation (number of pixels per second),
+ * or 0 to update it immediately.
+ */</doc>

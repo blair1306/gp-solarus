@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='98' type='bool Solarus::Movement::are_lua_notifications_enabled() const'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='267' u='c' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='285' u='c' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='301' u='c' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='316' u='c' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='567' ll='569' type='bool Solarus::Movement::are_lua_notifications_enabled() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='558'>/**
+ * \brief Returns whether Lua events and callbacks are enabled for this movement.
+ *
+ * If no, the finished callback and events
+ * movement:on_position_changed(), movement:on_obstacle_reached(),
+ * movement:on_changed() and movement:on_finished() won&apos;t be called.
+ *
+ * \return Whether Lua notifications are currently enabled.
+ */</doc>

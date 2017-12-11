@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Map.h' l='76' type='int Solarus::Map::get_width8() const'/>
+<def f='codebrowser/src/Map.cpp' l='202' ll='204' type='int Solarus::Map::get_width8() const'/>
+<doc f='codebrowser/src/Map.cpp' l='195'>/**
+ * \brief Returns the map width in number of 8*8 squares.
+ *
+ * This is equivalent to get_width() / 8.
+ *
+ * \return the map width in number of 8*8 squares
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='162' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='164' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='62' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='149' u='c' c='_ZNK7Solarus18NonAnimatedRegions22overlaps_animated_tileERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='151' u='c' c='_ZNK7Solarus18NonAnimatedRegions22overlaps_animated_tileERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='278' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='242' u='c' c='_ZNK7Solarus11PathFinding16get_square_indexERKNS_5PointE'/>

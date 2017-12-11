@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='186' type='void Solarus::Enemy::try_hurt(Solarus::EnemyAttack attack, Solarus::Entity &amp; source, Solarus::Sprite * this_sprite)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='408' u='c' c='_ZN7Solarus5Arrow27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='342' u='c' c='_ZN7Solarus9Boomerang27notify_collision_with_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='468' u='c' c='_ZN7Solarus13CarriedObject27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1006' u='c' c='_ZN7Solarus5Enemy26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1177' ll='1266' type='void Solarus::Enemy::try_hurt(Solarus::EnemyAttack attack, Solarus::Entity &amp; source, Solarus::Sprite * this_sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1167'>/**
+ * \brief Makes the enemy receive an attack.
+ *
+ * He might resist to the attack or get hurt.
+ *
+ * \param attack type of attack
+ * \param source the entity attacking the enemy (often the hero)
+ * \param this_sprite the sprite of this enemy that received the attack, or nullptr
+ * if the attack comes from a non pixel-precise collision test
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='156' u='c' c='_ZN7Solarus9Explosion16try_attack_enemyERNS_5EnemyERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1562' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='324' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5037' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5061' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

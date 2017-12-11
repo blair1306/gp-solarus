@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EnemyReaction.h' l='67' type='const Solarus::EnemyReaction::Reaction &amp; Solarus::EnemyReaction::get_reaction(const Solarus::Sprite * sprite) const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='632' u='c' c='_ZNK7Solarus5Enemy22get_attack_consequenceENS_11EnemyAttackEPKNS_6SpriteE'/>
+<def f='codebrowser/src/entities/EnemyReaction.cpp' l='87' ll='97' type='const EnemyReaction::Reaction &amp; Solarus::EnemyReaction::get_reaction(const Solarus::Sprite * sprite) const'/>
+<doc f='codebrowser/src/entities/EnemyReaction.cpp' l='82'>/**
+ * \brief Returns the reaction to an attack on a sprite.
+ * \param sprite the sprite that receives the attack
+ * \return the corresponding reaction
+ */</doc>

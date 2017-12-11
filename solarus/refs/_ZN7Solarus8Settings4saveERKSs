@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='40' type='bool Solarus::Settings::save(const std::string &amp; file_name)'/>
+<use f='codebrowser/gui/src/settings.cpp' l='97' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<def f='codebrowser/src/Settings.cpp' l='239' ll='281' type='bool Solarus::Settings::save(const std::string &amp; file_name)'/>
+<doc f='codebrowser/src/Settings.cpp' l='234'>/**
+ * \brief Attempts to save the built-in settings to a file.
+ * \param file_name Settings file to write, relative to the quest write directory.
+ * \return \c true if settings were successfully saved.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='298' u='c' c='_ZN7Solarus10LuaContext22main_api_save_settingsEP9lua_State'/>

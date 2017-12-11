@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='125' type='void Solarus::Entity::notify_creating()'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='68' c='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='70' u='c' c='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1222' c='_ZN7Solarus12CustomEntity15notify_creatingEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1224' u='c' c='_ZN7Solarus12CustomEntity15notify_creatingEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='193' c='_ZN7Solarus5Enemy15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='369' u='c' c='_ZN7Solarus6Entity21finish_initializationEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='385' ll='387' type='void Solarus::Entity::notify_creating()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='376'>/**
+ * \brief Notifies this entity that it is being created on a map.
+ *
+ * At this point, the map is already loaded and running,
+ * including if the entity was created from the map data file.
+ * Here, you can perform initializations that your entity need to do once the
+ * map is known and running.
+ * The entity:on_created() event will be called after this.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='505' c='_ZN7Solarus4Hero15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='507' u='c' c='_ZN7Solarus4Hero15notify_creatingEv'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='101' c='_ZN7Solarus6Stairs15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='103' u='c' c='_ZN7Solarus6Stairs15notify_creatingEv'/>
+<ovr f='codebrowser/src/entities/Teletransporter.cpp' l='75' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='77' u='c' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>

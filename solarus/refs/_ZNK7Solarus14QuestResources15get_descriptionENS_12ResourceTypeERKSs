@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='79' type='std::string Solarus::QuestResources::get_description(Solarus::ResourceType resource_type, const std::string &amp; id) const'/>
+<use f='codebrowser/src/QuestResources.cpp' l='178' u='c' c='_ZN7Solarus14QuestResources6renameENS_12ResourceTypeERKSsS3_'/>
+<def f='codebrowser/src/QuestResources.cpp' l='191' ll='203' type='std::string Solarus::QuestResources::get_description(Solarus::ResourceType resource_type, const std::string &amp; id) const'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='184'>/**
+ * \brief Returns the description of a resource element.
+ * \param resource_type A type of resource.
+ * \param id Id of the element to get.
+ * \return description The element description.
+ * Returns an empty string if the element does not exist.
+ */</doc>

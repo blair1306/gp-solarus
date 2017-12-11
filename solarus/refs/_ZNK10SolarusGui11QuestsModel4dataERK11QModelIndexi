@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='60' type='QVariant SolarusGui::QuestsModel::data(const QModelIndex &amp; index, int role = Qt::DisplayRole) const'/>
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='185' c='_ZNK18QAbstractItemModel4dataERK11QModelIndexi'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='53' ll='72' type='QVariant SolarusGui::QuestsModel::data(const QModelIndex &amp; index, int role = Qt::DisplayRole) const'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='47'>/**
+ * @brief Returns the data of an item for the given role.
+ * @param index Index of the item to get.
+ * @param role Kind of data to get.
+ * @return The data for this item and this role.
+ */</doc>

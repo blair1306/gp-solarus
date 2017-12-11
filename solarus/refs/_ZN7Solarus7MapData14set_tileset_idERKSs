@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='159' type='void Solarus::MapData::set_tileset_id(const std::string &amp; tileset_id)'/>
+<def f='codebrowser/src/MapData.cpp' l='243' ll='245' type='void Solarus::MapData::set_tileset_id(const std::string &amp; tileset_id)'/>
+<use f='codebrowser/src/MapData.cpp' l='872' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<doc f='codebrowser/src/MapData.cpp' l='238'>/**
+ * \brief Sets the tileset used to draw this map.
+ * \param tileset_id The tileset id.
+ * An empty string means that the tileset is not set yet.
+ */</doc>

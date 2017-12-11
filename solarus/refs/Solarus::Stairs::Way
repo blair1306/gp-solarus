@@ -1,0 +1,8 @@
+<def f='codebrowser/include/solarus/entities/Stairs.h' l='68' ll='73'/>
+<doc f='codebrowser/include/solarus/entities/Stairs.h' l='61'>/**
+     * \brief Indicates the way an entity is walking on stairs.
+     * - For stairs inside a single floor, 0 means that the hero is going upstairs
+     *   and 1 means that he is going downstairs.
+     * - For stairs between two different floors, 0 means that the hero is on the stairs
+     *   of the old map and 1 means that he is on the stairs on the new map.
+     */</doc>

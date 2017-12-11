@@ -1,0 +1,31 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='326' type='bool Solarus::Entity::notify_action_command_pressed()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='325'>// Interactions.</doc>
+<ovr f='codebrowser/src/entities/Block.cpp' l='190' c='_ZN7Solarus5Block29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='184' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='417' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='111' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1152' c='_ZN7Solarus12CustomEntity29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='388' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='556' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3231' ll='3233' type='bool Solarus::Entity::notify_action_command_pressed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3213'>/**
+ * \brief Notifies this entity that the player is interacting with it by
+ * pressing the action command.
+ *
+ * Only possible if this entity detects collisions of type
+ * CollisionMode::COLLISION_FACING.
+ *
+ * This function is called when the player presses the action command
+ * while the hero is facing this entity, unless the action command effect
+ * does not allow the hero to interact with the entity, like while he is
+ * carrying an object.
+ *
+ * By default, nothing happens.
+ * Redefine your function in the subclasses to make the hero interact with
+ * this entity.
+ *
+ * \return \c true if an interaction happened.
+ */</doc>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='255' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='187' c='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='106' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>

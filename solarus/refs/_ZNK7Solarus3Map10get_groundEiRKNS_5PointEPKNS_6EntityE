@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Map.h' l='155' type='Solarus::Ground Solarus::Map::get_ground(int layer, const Solarus::Point &amp; xy, const Solarus::Entity * entity_to_check) const'/>
+<use f='codebrowser/src/Map.cpp' l='1058' u='c' c='_ZNK7Solarus3Map10get_groundEiiiPKNS_6EntityE'/>
+<def f='codebrowser/src/Map.cpp' l='1072' ll='1120' type='Solarus::Ground Solarus::Map::get_ground(int layer, const Solarus::Point &amp; xy, const Solarus::Entity * entity_to_check) const'/>
+<doc f='codebrowser/src/Map.cpp' l='1061'>/**
+ * \brief Returns the ground at the specified point.
+ *
+ * Static tiles and dynamic entities are all taken into account here.
+ *
+ * \param layer Layer of the point.
+ * \param xy Coordinates of the point.
+ * \param entity_to_check The entity you want to know the ground of (if any).
+ * Used to make sure that the entity&apos;s own modified ground does not count.
+ * \return The ground at this place.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='204' u='c' c='_ZNK7Solarus6Entity16get_ground_belowEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='235' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>

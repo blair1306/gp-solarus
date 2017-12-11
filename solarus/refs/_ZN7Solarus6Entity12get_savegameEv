@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='366' type='Solarus::Savegame &amp; Solarus::Entity::get_savegame()'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='188' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='390' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='190' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='533' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='568' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='602' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='666' u='c' c='_ZN7Solarus4Door4openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='700' u='c' c='_ZN7Solarus4Door5closeEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1407' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='508' ll='510' type='Solarus::Savegame &amp; Solarus::Entity::get_savegame()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='504'>/**
+ * \brief Returns the savegame.
+ * \return The savegame.
+ */</doc>

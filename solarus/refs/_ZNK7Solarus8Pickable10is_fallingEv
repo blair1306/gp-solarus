@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='65' type='bool Solarus::Pickable::is_falling() const'/>
+<doc f='codebrowser/include/solarus/entities/Pickable.h' l='64'>// properties</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='245' u='c' c='_ZN7Solarus8Pickable19initialize_movementEv'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='254' ll='256' type='bool Solarus::Pickable::is_falling() const'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='534' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='250'>/**
+ * \brief Returns whether the entity is currently falling.
+ * \return true if the entity is currently falling
+ */</doc>

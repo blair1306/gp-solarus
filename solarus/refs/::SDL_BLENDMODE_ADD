@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_blendmode.h' l='47' type='2'/>
+<doc f='include/SDL2/SDL_blendmode.h' l='47'>/**&lt; additive blending
+                                              dstRGB = (srcRGB * srcA) + dstRGB
+                                              dstA = dstA */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='1000' u='r' c='_ZNK7Solarus7Surface18get_sdl_blend_modeEv'/>

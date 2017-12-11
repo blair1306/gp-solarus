@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='65' type='25'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='65'>/**&lt; a boomerang thrown */</doc>
+<use f='codebrowser/include/solarus/entities/Boomerang.h' l='38'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='31' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='96' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='147' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='307' u='r' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='540' u='r' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='65' u='a' c='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='550' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>

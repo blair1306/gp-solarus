@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='57' type='bool Solarus::GameCommands::is_command_pressed(Solarus::GameCommand command) const'/>
+<def f='codebrowser/src/GameCommands.cpp' l='130' ll='132' type='bool Solarus::GameCommands::is_command_pressed(Solarus::GameCommand command) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='143' u='c' c='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='146' u='c' c='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='149' u='c' c='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='152' u='c' c='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='322' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='446' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='453' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='459' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='462' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='122'>/**
+ * \brief Returns whether the specified game command is pressed.
+ *
+ * The command can be activated from the keyboard or the joypad.
+ *
+ * \param command A game command.
+ * \return true if this game command is currently pressed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2476' u='c' c='_ZN7Solarus4Hero13start_runningEv'/>
+<use f='codebrowser/src/hero/GrabbingState.cpp' l='63' u='c' c='_ZN7Solarus4Hero13GrabbingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='79' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='84' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='244' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='153' u='c' c='_ZNK7Solarus4Hero12RunningState23is_pressing_running_keyEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='77' u='c' c='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='84' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='88' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1491' u='c' c='_ZN7Solarus10LuaContext27game_api_is_command_pressedEP9lua_State'/>

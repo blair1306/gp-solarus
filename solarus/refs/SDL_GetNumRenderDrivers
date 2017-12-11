@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_render.h' l='144' type='int SDL_GetNumRenderDrivers()'/>
+<doc f='include/SDL2/SDL_render.h' l='133'>/**
+ *  \brief Get the number of 2D rendering drivers available for the current
+ *         display.
+ *
+ *  A render driver is a set of code that handles rendering and texture
+ *  management on a particular display.  Normally there is only one, but
+ *  some drivers may have several available with different capabilities.
+ *
+ *  \sa SDL_GetRenderDriverInfo()
+ *  \sa SDL_CreateRenderer()
+ */</doc>

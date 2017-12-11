@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='224' type='void Solarus::Hero::hurt(Solarus::Entity &amp; source, Solarus::Sprite * source_sprite, int life_points)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1071' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1920' u='c' c='_ZN7Solarus4Hero31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2101' ll='2112' type='void Solarus::Hero::hurt(Solarus::Entity &amp; source, Solarus::Sprite * source_sprite, int damage)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2093'>/**
+ * \brief Hurts the hero, an entity being the source of the attack.
+ * \param source An entity that hurts the hero (usually an enemy).
+ * \param source_sprite Sprite of the source entity that is hurting the hero
+ * or nullptr.
+ * \param damage Number of life points to remove
+ * (this number may be reduced later by the tunic on by hero:on_taking_damage()).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2459' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>

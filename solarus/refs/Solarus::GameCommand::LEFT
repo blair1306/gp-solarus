@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/GameCommand.h' l='38' type='7'/>
+<use f='codebrowser/src/GameCommands.cpp' l='41' u='r'/>
+<use f='codebrowser/src/GameCommands.cpp' l='149' u='r' c='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<use f='codebrowser/src/GameCommands.cpp' l='630' u='r' c='_ZNK7Solarus12GameCommands38get_keyboard_binding_savegame_variableENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='656' u='r' c='_ZNK7Solarus12GameCommands36get_joypad_binding_savegame_variableENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='300' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='347' c='_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1324' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>

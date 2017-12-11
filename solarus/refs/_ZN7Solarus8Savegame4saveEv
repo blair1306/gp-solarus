@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='91' type='void Solarus::Savegame::save()'/>
+<def f='codebrowser/src/Savegame.cpp' l='284' ll='306' type='void Solarus::Savegame::save()'/>
+<doc f='codebrowser/src/Savegame.cpp' l='281'>/**
+ * \brief Saves the data into a file.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='233' u='c' c='_ZN7Solarus10LuaContext13game_api_saveEP9lua_State'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='85' type='void Solarus::TextSurface::set_alignment(Solarus::TextSurface::HorizontalAlignment horizontal_alignment, Solarus::TextSurface::VerticalAlignment vertical_alignment)'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='159' ll='171' type='void Solarus::TextSurface::set_alignment(Solarus::TextSurface::HorizontalAlignment horizontal_alignment, Solarus::TextSurface::VerticalAlignment vertical_alignment)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='152'>/**
+ * \brief Sets the text alignment.
+ * \param horizontal_alignment horizontal alignment of the text: ALIGN_LEFT,
+ * ALIGN_CENTER or ALIGN_RIGHT
+ * \param vertical_alignment vertical alignment of the text: ALIGN_TOP,
+ * ALIGN_MIDDLE or ALIGN_BOTTOM
+ */</doc>

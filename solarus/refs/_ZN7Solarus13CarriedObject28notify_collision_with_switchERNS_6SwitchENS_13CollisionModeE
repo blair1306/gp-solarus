@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='95' type='void Solarus::CarriedObject::notify_collision_with_switch(Solarus::Switch &amp; sw, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='305' c='_ZN7Solarus6Entity28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='629' ll='638' type='void Solarus::CarriedObject::notify_collision_with_switch(Solarus::Switch &amp; sw, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='624'>/**
+ * \brief This function is called when a switch detects a collision with this entity.
+ * \param sw the switch
+ * \param collision_mode the collision mode that detected the event
+ */</doc>

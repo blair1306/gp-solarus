@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='41' type='bool Solarus::StringResources::add_string(const std::string &amp; key, const std::string &amp; string)'/>
+<def f='codebrowser/src/StringResources.cpp' l='93' ll='103' type='bool Solarus::StringResources::add_string(const std::string &amp; key, const std::string &amp; string)'/>
+<use f='codebrowser/src/StringResources.cpp' l='136' u='c' c='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<use f='codebrowser/src/StringResources.cpp' l='162' u='c' c='_ZN7Solarus15StringResources6l_textEP9lua_State'/>
+<doc f='codebrowser/src/StringResources.cpp' l='87'>/**
+ * \brief Adds a string.
+ * \param key Key of the new string.
+ * \param string The string to add.
+ * \return \c true in case of success.
+ */</doc>

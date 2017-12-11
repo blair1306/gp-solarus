@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='58' type='Stairs::Way'/>
+<offset>512</offset>
+<doc f='codebrowser/include/solarus/hero/StairsState.h' l='58'>/**&lt; indicates the way the hero is taking the stairs:
+                                        * - for stairs inside a single floor, NORMAL_WAY means that the hero is going upstairs
+                                        * and REVERSE_WAY means the contrary;
+                                        * - for stairs between two floors, NORMAL_WAY means that the hero is on the stairs
+                                        *   of the old map and REVERSE_WAY means that he is on the stairs on the new map */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='48' u='w' c='_ZN7Solarus4Hero11StairsStateC1ERS0_RKSt10shared_ptrIKNS_6StairsEENS4_3WayE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='83' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='102' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='110' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='111' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='169' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='185' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='211' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='238' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='253' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

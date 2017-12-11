@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='94' type='const std::vector&lt;Rectangle&gt; &amp; Solarus::TilePatternData::get_frames() const'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='68' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='172' ll='174' type='const std::vector&lt;Rectangle&gt; &amp; Solarus::TilePatternData::get_frames() const'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='659' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='167'>/**
+ * \brief Returns the coordinates of each frame of this pattern in the tileset
+ * image file.
+ * \return The coordinates of the frame(s) of this pattern.
+ */</doc>

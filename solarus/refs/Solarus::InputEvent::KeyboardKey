@@ -1,0 +1,12 @@
+<def f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='56' ll='185'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='45'>/**
+     * Enumeration of keyboard keys.
+     * This is a Solarus dedicated enumeration.
+     * To make the SDL encapsulation easier, this enumeration is compatible
+     * with the SDL_Keycode enumeration from SDL.
+     * If you intend to replace SDL by another library one day, the API of the
+     * Input class will not have to change
+     * (only its implementation will).
+     * The numeric values of the enumeration can be changed without breaking
+     * savegames because savegames use a string name to store the commands.
+     */</doc>

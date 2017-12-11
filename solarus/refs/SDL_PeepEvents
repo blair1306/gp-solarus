@@ -1,0 +1,19 @@
+<dec f='include/SDL2/SDL_events.h' l='573' type='int SDL_PeepEvents(SDL_Event * events, int numevents, SDL_eventaction action, Uint32 minType, Uint32 maxType)'/>
+<doc f='include/SDL2/SDL_events.h' l='555'>/**
+ *  Checks the event queue for messages and optionally returns them.
+ *
+ *  If \c action is ::SDL_ADDEVENT, up to \c numevents events will be added to
+ *  the back of the event queue.
+ *
+ *  If \c action is ::SDL_PEEKEVENT, up to \c numevents events at the front
+ *  of the event queue, within the specified minimum and maximum type,
+ *  will be returned and will not be removed from the queue.
+ *
+ *  If \c action is ::SDL_GETEVENT, up to \c numevents events at the front
+ *  of the event queue, within the specified minimum and maximum type,
+ *  will be returned and will be removed from the queue.
+ *
+ *  \return The number of events actually stored, or -1 if there was an error.
+ *
+ *  This function is thread-safe.
+ */</doc>

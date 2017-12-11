@@ -1,0 +1,66 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Hookshot.h' l='29' ll='86'/>
+<size>288</size>
+<doc f='codebrowser/include/solarus/entities/Hookshot.h' l='26'>/**
+ * \brief The hookshot thrown by the hero.
+ */</doc>
+<smbr r='Solarus::Hookshot::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<fun r='_ZNK7Solarus8Hookshot8get_typeEv'/>
+<fun r='_ZN7Solarus8Hookshot27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus8Hookshot18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus8Hookshot18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZNK7Solarus8Hookshot22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus8Hookshot18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus8Hookshot19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus8Hookshot18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Hookshot6updateEv'/>
+<fun r='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<fun r='_ZNK7Solarus8Hookshot9is_flyingEv'/>
+<fun r='_ZNK7Solarus8Hookshot13is_going_backEv'/>
+<fun r='_ZN7Solarus8Hookshot7go_backEv'/>
+<fun r='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_chestERNS_5ChestE'/>
+<fun r='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_blockERNS_5BlockE'/>
+<fun r='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<mbr r='Solarus::Hookshot::next_sound_date' o='2048' t='uint32_t'/>
+<mbr r='Solarus::Hookshot::has_to_go_back' o='2080' t='bool'/>
+<mbr r='Solarus::Hookshot::going_back' o='2088' t='bool'/>
+<mbr r='Solarus::Hookshot::entity_reached' o='2112' t='Solarus::Entity *'/>
+<mbr r='Solarus::Hookshot::link_sprite' o='2176' t='SpritePtr'/>
+<fun r='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<fun r='_ZNK7Solarus8Hookshot8get_typeEv'/>
+<fun r='_ZN7Solarus8Hookshot27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus8Hookshot18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus8Hookshot18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZNK7Solarus8Hookshot22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus8Hookshot18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus8Hookshot18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus8Hookshot19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus8Hookshot18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Hookshot6updateEv'/>
+<fun r='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<fun r='_ZNK7Solarus8Hookshot9is_flyingEv'/>
+<fun r='_ZNK7Solarus8Hookshot13is_going_backEv'/>
+<fun r='_ZN7Solarus8Hookshot7go_backEv'/>
+<fun r='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<fun r='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_chestERNS_5ChestE'/>
+<fun r='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus8Hookshot27notify_collision_with_blockERNS_5BlockE'/>
+<fun r='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>

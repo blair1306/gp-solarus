@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='99' type='bool Solarus::Sprite::is_animation_finished() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='469' u='c' c='_ZNK7Solarus6Sprite20is_animation_startedEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='586' ll='588' type='bool Solarus::Sprite::is_animation_finished() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='729' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='773' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='805' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<doc f='codebrowser/src/Sprite.cpp' l='577'>/**
+ * \brief Returns true if the animation is finished.
+ *
+ * The animation is finished after the last frame is reached
+ * and if the frame delay is not zero (a frame delay
+ * of zero should be used only for 1-frame animations).
+ *
+ * \return true if the animation is finished
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='316' u='c' c='_ZNK7Solarus13CarriedObject9is_brokenEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='173' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='510' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='535' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='527' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1450' u='c' c='_ZNK7Solarus5Enemy27is_dying_animation_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1500' u='c' c='_ZNK7Solarus5Enemy29is_sprite_finished_or_loopingEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3413' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='68' u='c' c='_ZN7Solarus9Explosion6updateEv'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='58' u='c' c='_ZN7Solarus4Fire6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='776' u='c' c='_ZNK7Solarus11HeroSprites21is_animation_finishedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='853' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>

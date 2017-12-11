@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='403' type='void Solarus::Entity::update_ground_observers()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='402'>// Ground.</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1216' u='c' c='_ZN7Solarus12CustomEntity19set_modified_groundENS_6GroundE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='457' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='170' ll='191' type='void Solarus::Entity::update_ground_observers()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='556' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='611' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1653' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2324' u='c' c='_ZN7Solarus6Entity14notify_enabledEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='163'>/**
+ * \brief Inform entities sensible to their ground that it may have just
+ * changed because of this entity.
+ *
+ * This does the work even if this entity is not a ground modifier,
+ * because this is necessary in case it just stopped being one.
+ */</doc>

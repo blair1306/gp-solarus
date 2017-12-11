@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='71' type='Solarus::Rectangle Solarus::Camera::apply_separators(const Solarus::Rectangle &amp; area) const'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='435' ll='530' type='Solarus::Rectangle Solarus::Camera::apply_separators(const Solarus::Rectangle &amp; area) const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='545' u='c' c='_ZNK7Solarus6Camera31apply_separators_and_map_boundsERKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='430'>/**
+ * \brief Ensures that a rectangle does not cross separators.
+ * \param area The rectangle to check.
+ * \return A rectangle corresponding to the first one but stopping on separators.
+ */</doc>

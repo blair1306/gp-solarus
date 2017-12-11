@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RelativeMovement.cpp source code [codebrowser/src/movements/RelativeMovement.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/movements/RelativeMovement.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>movements</a>/<a href='RelativeMovement.cpp.html'>RelativeMovement.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/movements/RelativeMovement.h.html">"solarus/movements/RelativeMovement.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/entities/Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> * <span class="command">\brief</span> Creates a follow movement.</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity_followed</span> the entity to follow</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">x</span> x coordinate of where this entity should be placed (relative to the entity followed)</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">y</span> y coordinate of where this entity should be placed (relative to the entity followed)</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> true to make the movement ignore obstacles</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="30">30</th><td><a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a>::<dfn class="decl def" id="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEEiib" title='Solarus::RelativeMovement::RelativeMovement' data-ref="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEEiib">RelativeMovement</dfn>(</td></tr>
+<tr><th id="31">31</th><td>    <em>const</em> <a class="typedef" href="../../include/solarus/entities/EntityPtr.h.html#Solarus::EntityPtr" title='Solarus::EntityPtr' data-type='std::shared_ptr&lt;Entity&gt;' data-ref="Solarus::EntityPtr">EntityPtr</a>&amp; <dfn class="local col1 decl" id="1entity_followed" title='entity_followed' data-type='const EntityPtr &amp;' data-ref="1entity_followed">entity_followed</dfn>,</td></tr>
+<tr><th id="32">32</th><td>    <em>int</em> <dfn class="local col2 decl" id="2x" title='x' data-type='int' data-ref="2x">x</dfn>,</td></tr>
+<tr><th id="33">33</th><td>    <em>int</em> <dfn class="local col3 decl" id="3y" title='y' data-type='int' data-ref="3y">y</dfn>,</td></tr>
+<tr><th id="34">34</th><td>    <em>bool</em> <dfn class="local col4 decl" id="4ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="4ignore_obstacles">ignore_obstacles</dfn>):</td></tr>
+<tr><th id="35">35</th><td>  <a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a><a class="ref" href="#_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb" title='Solarus::RelativeMovement::RelativeMovement' data-ref="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb">(</a><a class="local col1 ref" href="#1entity_followed" title='entity_followed' data-ref="1entity_followed">entity_followed</a>, <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a><a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7Solarus5PointC1Eii" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1Eii">(</a><a class="local col2 ref" href="#2x" title='x' data-ref="2x">x</a>,<a class="local col3 ref" href="#3y" title='y' data-ref="3y">y</a>), <a class="local col4 ref" href="#4ignore_obstacles" title='ignore_obstacles' data-ref="4ignore_obstacles">ignore_obstacles</a>) {</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * <span class="command">\brief</span> Creates a relative movement.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity_followed</span> the entity to follow</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity_offset</span> coordinate of where this entity should be placed (relative to the entity followed)</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> true to make the movement ignore obstacles</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="44">44</th><td><a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a>::<dfn class="decl def" id="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb" title='Solarus::RelativeMovement::RelativeMovement' data-ref="_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb">RelativeMovement</dfn>(</td></tr>
+<tr><th id="45">45</th><td>    <em>const</em> <a class="typedef" href="../../include/solarus/entities/EntityPtr.h.html#Solarus::EntityPtr" title='Solarus::EntityPtr' data-type='std::shared_ptr&lt;Entity&gt;' data-ref="Solarus::EntityPtr">EntityPtr</a>&amp; <dfn class="local col5 decl" id="5entity_followed" title='entity_followed' data-type='const EntityPtr &amp;' data-ref="5entity_followed">entity_followed</dfn>,</td></tr>
+<tr><th id="46">46</th><td>    <em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col6 decl" id="6entity_offset" title='entity_offset' data-type='const Solarus::Point &amp;' data-ref="6entity_offset">entity_offset</dfn>,</td></tr>
+<tr><th id="47">47</th><td>    <em>bool</em> <dfn class="local col7 decl" id="7ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="7ignore_obstacles">ignore_obstacles</dfn>):</td></tr>
+<tr><th id="48">48</th><td>  <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a><a class="ref" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8MovementC1Eb" title='Solarus::Movement::Movement' data-ref="_ZN7Solarus8MovementC1Eb">(</a><a class="local col7 ref" href="#7ignore_obstacles" title='ignore_obstacles' data-ref="7ignore_obstacles">ignore_obstacles</a>),</td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a><a class="ref" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1ERKSt10shared_ptrIT_E" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1ERKSt10shared_ptrIT_E">(</a><a class="local col5 ref" href="#5entity_followed" title='entity_followed' data-ref="5entity_followed">entity_followed</a>),</td></tr>
+<tr><th id="50">50</th><td>  <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_offset" title='Solarus::RelativeMovement::entity_offset' data-ref="Solarus::RelativeMovement::entity_offset">entity_offset</a><a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1ERKS0_">(</a><a class="local col6 ref" href="#6entity_offset" title='entity_offset' data-ref="6entity_offset">entity_offset</a>),</td></tr>
+<tr><th id="51">51</th><td>  <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a>(<b>false</b>) {</td></tr>
+<tr><th id="52">52</th><td>}</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the movement is finished.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * <span class="command">\return</span> true if there was a collision or the entity followed disappeared</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="58">58</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus16RelativeMovement11is_finishedEv" title='Solarus::RelativeMovement::is_finished' data-ref="_ZNK7Solarus16RelativeMovement11is_finishedEv">is_finished</dfn>() <em>const</em> {</td></tr>
+<tr><th id="59">59</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a>;</td></tr>
+<tr><th id="60">60</th><td>}</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * <span class="command">\brief</span> Updates the position.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="65">65</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a>::<dfn class="virtual decl def" id="_ZN7Solarus16RelativeMovement6updateEv" title='Solarus::RelativeMovement::update' data-ref="_ZN7Solarus16RelativeMovement6updateEv">update</dfn>() {</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a> <a class="ref" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZSteqRKSt10shared_ptrIT_EDn" title='std::operator==' data-ref="_ZSteqRKSt10shared_ptrIT_EDn">==</a> <b>nullptr</b>) {</td></tr>
+<tr><th id="68">68</th><td>    <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a> = <b>true</b>;</td></tr>
+<tr><th id="69">69</th><td>    <b>return</b>;</td></tr>
+<tr><th id="70">70</th><td>  }</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a><a class="ref" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#_ZNKSt12__shared_ptrptEv" title='std::__shared_ptr::operator-&gt;' data-ref="_ZNKSt12__shared_ptrptEv">-&gt;</a><a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16is_being_removedEv" title='Solarus::Entity::is_being_removed' data-ref="_ZNK7Solarus6Entity16is_being_removedEv">is_being_removed</a>()) {</td></tr>
+<tr><th id="73">73</th><td>    <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a> = <b>true</b>;</td></tr>
+<tr><th id="74">74</th><td>    <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a> <a class="ref" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZNSt10shared_ptraSEOSt10shared_ptrIT_E" title='std::shared_ptr::operator=' data-ref="_ZNSt10shared_ptraSEOSt10shared_ptrIT_E">=</a> <a class="ref fake" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1EDn" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1EDn"></a><b>nullptr</b>;</td></tr>
+<tr><th id="75">75</th><td>  }</td></tr>
+<tr><th id="76">76</th><td>  <b>else</b> {</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="local col8 decl" id="8next" title='next' data-type='Solarus::Point' data-ref="8next">next</dfn> = <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a><a class="ref" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#_ZNKSt12__shared_ptrptEv" title='std::__shared_ptr::operator-&gt;' data-ref="_ZNKSt12__shared_ptrptEv">-&gt;</a><a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity6get_xyEv" title='Solarus::Entity::get_xy' data-ref="_ZNK7Solarus6Entity6get_xyEv">get_xy</a>() <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7SolarusplERKNS_5PointES2_" title='Solarus::operator+' data-ref="_ZN7SolarusplERKNS_5PointES2_">+</a> <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_offset" title='Solarus::RelativeMovement::entity_offset' data-ref="Solarus::RelativeMovement::entity_offset">entity_offset</a>;</td></tr>
+<tr><th id="79">79</th><td>    <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="local col9 decl" id="9dnext" title='dnext' data-type='Solarus::Point' data-ref="9dnext">dnext</dfn> = <a class="local col8 ref" href="#8next" title='next' data-ref="8next">next</a> <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7SolarusmiERKNS_5PointES2_" title='Solarus::operator-' data-ref="_ZN7SolarusmiERKNS_5PointES2_">-</a> <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement21are_obstacles_ignoredEv" title='Solarus::Movement::are_obstacles_ignored' data-ref="_ZNK7Solarus8Movement21are_obstacles_ignoredEv">are_obstacles_ignored</a>()) {</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>      <b>if</b> (!<a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a> &amp;&amp; (<a class="local col9 ref" href="#9dnext" title='dnext' data-ref="9dnext">dnext</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::x" title='Solarus::Point::x' data-ref="Solarus::Point::x">x</a> != <var>0</var> || <a class="local col9 ref" href="#9dnext" title='dnext' data-ref="9dnext">dnext</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::y" title='Solarus::Point::y' data-ref="Solarus::Point::y">y</a> != <var>0</var>)) {</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>        <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE" title='Solarus::Movement::test_collision_with_obstacles' data-ref="_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE">test_collision_with_obstacles</a>(<a class="local col9 ref" href="#9dnext" title='dnext' data-ref="9dnext">dnext</a>)) {</td></tr>
+<tr><th id="86">86</th><td>          <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8Movement6set_xyERKNS_5PointE" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyERKNS_5PointE">set_xy</a>(<a class="local col8 ref" href="#8next" title='next' data-ref="8next">next</a>);</td></tr>
+<tr><th id="87">87</th><td>        }</td></tr>
+<tr><th id="88">88</th><td>        <b>else</b> {</td></tr>
+<tr><th id="89">89</th><td>          <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::finished" title='Solarus::RelativeMovement::finished' data-ref="Solarus::RelativeMovement::finished">finished</a> = <b>true</b>;</td></tr>
+<tr><th id="90">90</th><td>          <a class="virtual member" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8Movement23notify_obstacle_reachedEv" title='Solarus::Movement::notify_obstacle_reached' data-ref="_ZN7Solarus8Movement23notify_obstacle_reachedEv">notify_obstacle_reached</a>();</td></tr>
+<tr><th id="91">91</th><td>        }</td></tr>
+<tr><th id="92">92</th><td>      }</td></tr>
+<tr><th id="93">93</th><td>    }</td></tr>
+<tr><th id="94">94</th><td>    <b>else</b> {</td></tr>
+<tr><th id="95">95</th><td>      <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZN7Solarus8Movement6set_xyERKNS_5PointE" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyERKNS_5PointE">set_xy</a>(<a class="local col8 ref" href="#8next" title='next' data-ref="8next">next</a>);</td></tr>
+<tr><th id="96">96</th><td>    }</td></tr>
+<tr><th id="97">97</th><td>  }</td></tr>
+<tr><th id="98">98</th><td>}</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * <span class="command">\brief</span> Returns the coordinates where an object controlled by this movement</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * should be displayed.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * <span class="command">\return</span> the coordinates to use to display the object controlled by this movement</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <a class="type" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement" title='Solarus::RelativeMovement' data-ref="Solarus::RelativeMovement">RelativeMovement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus16RelativeMovement16get_displayed_xyEv" title='Solarus::RelativeMovement::get_displayed_xy' data-ref="_ZNK7Solarus16RelativeMovement16get_displayed_xyEv">get_displayed_xy</dfn>() <em>const</em> {</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a> <a class="ref" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZSteqRKSt10shared_ptrIT_EDn" title='std::operator==' data-ref="_ZSteqRKSt10shared_ptrIT_EDn">==</a> <b>nullptr</b>) {</td></tr>
+<tr><th id="108">108</th><td>    <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="109">109</th><td>  }</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>  <i>// if the followed entity is displayed at a different position than its real position,</i></td></tr>
+<tr><th id="112">112</th><td><i>  // we apply the same difference when displaying this entity</i></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>  <em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col0 decl" id="10followed_xy" title='followed_xy' data-type='const Solarus::Point &amp;' data-ref="10followed_xy">followed_xy</dfn> = <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a><a class="ref" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#_ZNKSt12__shared_ptrptEv" title='std::__shared_ptr::operator-&gt;' data-ref="_ZNKSt12__shared_ptrptEv">-&gt;</a><a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity6get_xyEv" title='Solarus::Entity::get_xy' data-ref="_ZNK7Solarus6Entity6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="115">115</th><td>  <em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col1 decl" id="11followed_displayed_xy" title='followed_displayed_xy' data-type='const Solarus::Point &amp;' data-ref="11followed_displayed_xy">followed_displayed_xy</dfn> = <a class="member" href="../../include/solarus/movements/RelativeMovement.h.html#Solarus::RelativeMovement::entity_followed" title='Solarus::RelativeMovement::entity_followed' data-ref="Solarus::RelativeMovement::entity_followed">entity_followed</a><a class="ref" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#_ZNKSt12__shared_ptrptEv" title='std::__shared_ptr::operator-&gt;' data-ref="_ZNKSt12__shared_ptrptEv">-&gt;</a><a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16get_displayed_xyEv" title='Solarus::Entity::get_displayed_xy' data-ref="_ZNK7Solarus6Entity16get_displayed_xyEv">get_displayed_xy</a>();</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>  <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="local col2 decl" id="12dxy" title='dxy' data-type='Solarus::Point' data-ref="12dxy">dxy</dfn> = <a class="local col1 ref" href="#11followed_displayed_xy" title='followed_displayed_xy' data-ref="11followed_displayed_xy">followed_displayed_xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7SolarusmiERKNS_5PointES2_" title='Solarus::operator-' data-ref="_ZN7SolarusmiERKNS_5PointES2_">-</a> <a class="local col0 ref" href="#10followed_xy" title='followed_xy' data-ref="10followed_xy">followed_xy</a>;</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>() <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7SolarusplERKNS_5PointES2_" title='Solarus::operator+' data-ref="_ZN7SolarusplERKNS_5PointES2_">+</a> <a class="local col2 ref" href="#12dxy" title='dxy' data-ref="12dxy">dxy</a>;</td></tr>
+<tr><th id="120">120</th><td>}</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>}</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

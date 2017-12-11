@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='421' type='void Solarus::LuaContext::custom_entity_on_ground_below_changed(Solarus::CustomEntity &amp; custom_entity, Solarus::Ground ground_below)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1192' u='c' c='_ZN7Solarus12CustomEntity27notify_ground_below_changedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6605' ll='6615' type='void Solarus::LuaContext::custom_entity_on_ground_below_changed(Solarus::CustomEntity &amp; custom_entity, Solarus::Ground ground_below)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6597'>/**
+ * \brief Calls the on_ground_below_changed() method of a Lua custom entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param custom_entity A custom entity.
+ * \param ground_below The new ground below this entity.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='126' type='Solarus::Surface &amp; Solarus::Drawable::get_transition_surface()'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='121'>/**
+     * \brief Returns the surface where transitions on this drawable object
+     * are applied.
+     * \return The surface for transitions.
+     */</doc>
+<ovr f='codebrowser/src/Sprite.cpp' l='871' c='_ZN7Solarus6Sprite22get_transition_surfaceEv'/>
+<ovr f='codebrowser/src/lowlevel/Surface.cpp' l='891' c='_ZN7Solarus7Surface22get_transition_surfaceEv'/>
+<ovr f='codebrowser/src/lowlevel/TextSurface.cpp' l='579' c='_ZN7Solarus11TextSurface22get_transition_surfaceEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='233' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='272' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>

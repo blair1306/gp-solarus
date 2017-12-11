@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1135' type='static TimerPtr Solarus::LuaContext::check_timer(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='88' ll='92' type='static TimerPtr Solarus::LuaContext::check_timer(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='401' u='c' c='_ZN7Solarus10LuaContext14timer_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='435' u='c' c='_ZN7Solarus10LuaContext23timer_api_is_with_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='450' u='c' c='_ZN7Solarus10LuaContext24timer_api_set_with_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='467' u='c' c='_ZN7Solarus10LuaContext22timer_api_is_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='482' u='c' c='_ZN7Solarus10LuaContext23timer_api_set_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='499' u='c' c='_ZN7Solarus10LuaContext31timer_api_is_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='516' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='539' u='c' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='567' u='c' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='81'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * timer and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the timer
+ */</doc>

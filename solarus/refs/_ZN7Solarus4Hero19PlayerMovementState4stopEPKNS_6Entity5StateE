@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='46' type='void Solarus::Hero::PlayerMovementState::stop(const Solarus::Entity::State * next_state)'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='63' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='65' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='56' c='_ZN7Solarus4Hero9FreeState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='58' u='c' c='_ZN7Solarus4Hero9FreeState4stopEPKNS_6Entity5StateE'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='45' c='_ZN7Solarus6Entity5State4stopEPKS1_'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='112' ll='120' type='void Solarus::Hero::PlayerMovementState::stop(const Solarus::Entity::State * next_state)'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='103'>/**
+ * \brief Ends this state.
+ *
+ * This function is called automatically when this state is not the active state anymore.
+ * You should here close everything the start() function has opened.
+ * The destructor will be called at the next cycle.
+ *
+ * \param next_state The next state (for information).
+ */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='55' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='57' u='c' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>

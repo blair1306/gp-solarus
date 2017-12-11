@@ -1,0 +1,29 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/BackToSolidGroundState.h' l='29' ll='67'/>
+<size>80</size>
+<doc f='codebrowser/include/solarus/hero/BackToSolidGroundState.h' l='26'>/**
+ * \brief The state &quot;back to solid ground&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<fun r='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero22BackToSolidGroundState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<fun r='_ZN7Solarus4Hero22BackToSolidGroundState13set_suspendedEb'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState27can_start_gameover_sequenceEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState10is_visibleEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState22are_collisions_ignoredEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState20can_avoid_deep_waterEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState14can_avoid_holeEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState13can_avoid_iceEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState14can_avoid_lavaEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState17can_avoid_prickleEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState25can_avoid_teletransporterEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_sensorEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_switchEv'/>
+<fun r='_ZNK7Solarus4Hero22BackToSolidGroundState19can_avoid_explosionEv'/>
+<mbr r='Solarus::Hero::BackToSolidGroundState::target_position' o='384' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::Hero::BackToSolidGroundState::end_delay' o='512' t='uint32_t'/>
+<mbr r='Solarus::Hero::BackToSolidGroundState::end_date' o='544' t='uint32_t'/>
+<mbr r='Solarus::Hero::BackToSolidGroundState::with_sound' o='576' t='bool'/>

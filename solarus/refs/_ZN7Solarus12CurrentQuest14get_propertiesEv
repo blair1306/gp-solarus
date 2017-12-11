@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='42' type='Solarus::QuestProperties &amp; Solarus::CurrentQuest::get_properties()'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='136' u='c' c='_ZN10SolarusGui11QuestsModel9add_questERK7QString'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='47' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='105' ll='111' type='Solarus::QuestProperties &amp; Solarus::CurrentQuest::get_properties()'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='101'>/**
+ * \brief Returns the properties of current quest.
+ * \return The current quest properties.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='514' u='c' c='_ZN7Solarus8MainLoop21load_quest_propertiesEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='153' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='114' u='c' c='_ZN7Solarus10LuaContext26main_api_get_quest_versionEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='134' u='c' c='_ZN7Solarus10LuaContext25main_api_get_quest_formatEP9lua_State'/>

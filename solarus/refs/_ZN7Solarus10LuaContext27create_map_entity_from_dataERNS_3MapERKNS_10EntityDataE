@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='247' type='bool Solarus::LuaContext::create_map_entity_from_data(Solarus::Map &amp; map, const Solarus::EntityData &amp; entity_data)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='198' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1307' ll='1321' type='bool Solarus::LuaContext::create_map_entity_from_data(Solarus::Map &amp; map, const Solarus::EntityData &amp; entity_data)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2172' u='c' c='_ZN7Solarus10LuaContext21map_api_create_entityEP9lua_State'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1297'>/**
+ * \brief Creates on the current map an entity from the specified data.
+ *
+ * Pushes onto the Lua stack the created entity.
+ * In case of error, pushes nothing and returns \c false.
+ *
+ * \param map The map where to create an entity.
+ * \param entity_data Description of the entity to create.
+ * \return \c true if the entity was successfully created.
+ */</doc>

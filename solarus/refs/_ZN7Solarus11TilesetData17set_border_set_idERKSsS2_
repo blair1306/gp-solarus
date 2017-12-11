@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='141' type='bool Solarus::TilesetData::set_border_set_id(const std::string &amp; old_border_set_id, const std::string &amp; new_border_set_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='419' ll='437' type='bool Solarus::TilesetData::set_border_set_id(const std::string &amp; old_border_set_id, const std::string &amp; new_border_set_id)'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='412'>/**
+ * \brief Changes the id of a border set in the tileset.
+ * \param old_border_set_id Old id of the border set.
+ * \param new_border_set_id New id to set.
+ * \return \c true in case of success.
+ * In case of failure, the old border set is unchanged.
+ */</doc>

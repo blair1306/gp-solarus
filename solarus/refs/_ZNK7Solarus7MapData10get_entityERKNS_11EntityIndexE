@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='175' type='const Solarus::EntityData &amp; Solarus::MapData::get_entity(const Solarus::EntityIndex &amp; index) const'/>
+<def f='codebrowser/src/MapData.cpp' l='516' ll='523' type='const Solarus::EntityData &amp; Solarus::MapData::get_entity(const Solarus::EntityIndex &amp; index) const'/>
+<use f='codebrowser/src/MapData.cpp' l='573' u='c' c='_ZNK7Solarus7MapData18get_entity_by_nameERKSs'/>
+<doc f='codebrowser/src/MapData.cpp' l='510'>/**
+ * \brief Returns the entity at the given index.
+ * \param index Index of the entity to get on the map.
+ * \return The entity data.
+ * The object remains valid until entities are added or removed.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='193' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='133' type='bool Solarus::Entity::State::can_start_sword() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1044' ll='1046' type='bool Solarus::Entity::State::can_start_sword() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1037'>/**
+ * \brief Returns whether the entity can swing his sword in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity can swing his sword in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2563' u='c' c='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='192' c='_ZNK7Solarus4Hero13CarryingState15can_start_swordEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='160' c='_ZNK7Solarus4Hero9FreeState15can_start_swordEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='130' c='_ZNK7Solarus4Hero12PushingState15can_start_swordEv'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='111' c='_ZNK7Solarus4Hero18SwordSwingingState15can_start_swordEv'/>

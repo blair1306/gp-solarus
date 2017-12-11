@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Dialog.h' l='39' type='void Solarus::Dialog::set_text(const std::string &amp; text)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='194' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<def f='codebrowser/src/Dialog.cpp' l='64' ll='66' type='void Solarus::Dialog::set_text(const std::string &amp; text)'/>
+<doc f='codebrowser/src/Dialog.cpp' l='57'>/**
+ * \brief Sets the text of this dialog.
+ *
+ * Lines must be separated by &apos;\n&apos;. The last line of text may end with &apos;\n&apos;.
+ *
+ * \param text the text of this dialog
+ */</doc>

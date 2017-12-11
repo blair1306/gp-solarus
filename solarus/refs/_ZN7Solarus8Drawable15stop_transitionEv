@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='66' type='void Solarus::Drawable::stop_transition()'/>
+<use f='codebrowser/src/Drawable.cpp' l='45' u='c' c='_ZN7Solarus8DrawableD1Ev'/>
+<use f='codebrowser/src/Drawable.cpp' l='121' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/Drawable.cpp' l='134' ll='138' type='void Solarus::Drawable::stop_transition()'/>
+<doc f='codebrowser/src/Drawable.cpp' l='129'>/**
+ * \brief Stops the transition effect applied to this object, if any.
+ *
+ * The transition is deleted and the Lua callback (if any) is canceled.
+ */</doc>

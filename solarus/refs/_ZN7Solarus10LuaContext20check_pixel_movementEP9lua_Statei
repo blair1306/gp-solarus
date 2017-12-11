@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1165' type='static std::shared_ptr&lt;PixelMovement&gt; Solarus::LuaContext::check_pixel_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1787' ll='1791' type='static std::shared_ptr&lt;PixelMovement&gt; Solarus::LuaContext::check_pixel_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1801' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_get_trajectoryEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1830' u='c' c='_ZN7Solarus10LuaContext33pixel_movement_api_set_trajectoryEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1859' u='c' c='_ZN7Solarus10LuaContext27pixel_movement_api_get_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1873' u='c' c='_ZN7Solarus10LuaContext27pixel_movement_api_set_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1890' u='c' c='_ZN7Solarus10LuaContext28pixel_movement_api_get_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1904' u='c' c='_ZN7Solarus10LuaContext28pixel_movement_api_set_delayEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1780'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * pixel movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

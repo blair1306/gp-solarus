@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='809' type='static int Solarus::LuaContext::map_api_create_entity(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='177' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2162' ll='2176' type='static int Solarus::LuaContext::map_api_create_entity(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2157'>/**
+ * \brief Implementation of all entity creation functions: map_api_create_*.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

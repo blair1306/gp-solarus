@@ -1,0 +1,12 @@
+<dec f='codebrowser/gui/include/solarus/gui/main_window.h' l='60' type='void SolarusGui::MainWindow::setting_changed_in_quest(const QString &amp; key, const QVariant &amp; value)'/>
+<use f='codebrowser/gui/moc_main_window.cpp' l='149' u='c' c='_ZN10SolarusGui10MainWindow18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='90' u='a' c='_ZN10SolarusGui10MainWindowC1EP7QWidget'/>
+<def f='codebrowser/gui/src/main_window.cpp' l='562' ll='575' type='void SolarusGui::MainWindow::setting_changed_in_quest(const QString &amp; key, const QVariant &amp; value)'/>
+<doc f='codebrowser/gui/src/main_window.cpp' l='554'>/**
+ * @brief Slot called when a setting changes in the currently running quest.
+ *
+ * The GUI is updated to reflect and remember the new setting.
+ *
+ * @param key Name of the system setting that has just changed.
+ * @param value The new value.
+ */</doc>

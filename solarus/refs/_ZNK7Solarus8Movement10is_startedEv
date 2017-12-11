@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='79' type='bool Solarus::Movement::is_started() const'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='458' c='_ZNK7Solarus14CircleMovement10is_startedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='331' u='c' c='_ZNK7Solarus8Movement10is_stoppedEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='342' ll='344' type='bool Solarus::Movement::is_started() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='334'>/**
+ * \brief Returns whether the object is moving.
+ *
+ * Subclasses of Movement should redefine this function to indicate
+ * whether the object is moving.
+ *
+ * \return true if the object is moving, false otherwise
+ */</doc>
+<ovr f='codebrowser/src/movements/PixelMovement.cpp' l='263' c='_ZNK7Solarus13PixelMovement10is_startedEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='179' c='_ZNK7Solarus16StraightMovement10is_startedEv'/>

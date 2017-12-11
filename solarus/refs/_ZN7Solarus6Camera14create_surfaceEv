@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='76' type='void Solarus::Camera::create_surface()'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='231' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='260' ll='263' type='void Solarus::Camera::create_surface()'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='280' u='c' c='_ZN7Solarus6Camera19notify_size_changedEv'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='255'>/**
+ * \brief Initializes the surface where this camera draws entities.
+ *
+ * This function should be called when the camera size is changed.
+ */</doc>

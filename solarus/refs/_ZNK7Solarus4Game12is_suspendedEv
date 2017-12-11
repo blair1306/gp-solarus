@@ -1,0 +1,31 @@
+<dec f='codebrowser/include/solarus/Game.h' l='108' type='bool Solarus::Game::is_suspended() const'/>
+<doc f='codebrowser/include/solarus/Game.h' l='108'>// true if at least one of the 5 functions above returns true</doc>
+<use f='codebrowser/src/Equipment.cpp' l='106' u='c' c='_ZN7Solarus9Equipment6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='319' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='340' u='c' c='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<def f='codebrowser/src/Game.cpp' l='717' ll='726' type='bool Solarus::Game::is_suspended() const'/>
+<use f='codebrowser/src/Game.cpp' l='782' u='c' c='_ZNK7Solarus4Game9can_pauseEv'/>
+<doc f='codebrowser/src/Game.cpp' l='704'>/**
+ * \brief Returns whether the game is suspended.
+ *
+ * This is true in the following cases:
+ * - the game is paused,
+ * - or a dialog a being dispayed,
+ * - or a transition between two maps is playing,
+ * - or the game over sequence is active,
+ * - or the camera is moving,
+ * - or a script explicitly suspended the game.
+ *
+ * \return true if the game is suspended
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='505' u='c' c='_ZN7Solarus3Map15check_suspendedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1209' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='115' u='c' c='_ZN7Solarus6Sensor8activateERNS_4HeroE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='171' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext21game_api_is_suspendedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1295' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1301' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1314' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1320' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1326' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1332' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>

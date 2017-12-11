@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1255' type='bool Solarus::LuaContext::on_interaction_item(Solarus::EquipmentItem &amp; item_used)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5943' u='c' c='_ZN7Solarus10LuaContext26entity_on_interaction_itemERNS_6EntityERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2356' ll='2372' type='bool Solarus::LuaContext::on_interaction_item(Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2351'>/**
+ * \brief Calls the on_interaction_item() method of the object on top of the stack.
+ * \param item_used The equipment item used.
+ * \return true if an interaction occurred.
+ */</doc>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='85' type='static EntityPtr Solarus::Enemy::create(Solarus::Game &amp; game, const std::string &amp; breed, const std::string &amp; savegame_variable, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const Solarus::Treasure &amp; treasure)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='140' ll='172' type='static EntityPtr Solarus::Enemy::create(Solarus::Game &amp; game, const std::string &amp; breed, const std::string &amp; savegame_variable, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='121'>/**
+ * \brief Creates an enemy.
+ *
+ * This method acts like a constructor, and usually returns an enemy.
+ * However, if the enemy is already dead and cannot be killed again,
+ * this function returns:
+ * - nullptr if the enemy has no treasure (or its treasure was already picked)
+ * - or a pickable treasure if the enemy has one
+ *
+ * \param game the current game
+ * \param breed breed of the enemy to create
+ * \param name a name identifying the enemy
+ * \param savegame_variable name of the boolean variable indicating that the enemy is dead
+ * \param layer layer of the enemy on the map
+ * \param xy Coordinates of the enemy on the map.
+ * \param direction initial direction of the enemy on the map (0 to 3)
+ * \param treasure the pickable item that the enemy drops
+ * \return the enemy created (may also be a Pickable or nullptr)
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5115' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='710' u='c' c='_ZN7Solarus10LuaContext14l_create_enemyEP9lua_State'/>

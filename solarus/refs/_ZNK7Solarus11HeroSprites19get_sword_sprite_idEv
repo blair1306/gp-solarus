@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='61' type='const std::string &amp; Solarus::HeroSprites::get_sword_sprite_id() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='357' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1560' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1799' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1836' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='349' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='233' ll='236' type='const std::string &amp; Solarus::HeroSprites::get_sword_sprite_id() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='229'>/**
+ * \brief Returns the animation set id used for the sword sprite.
+ * \return The sword sprite animation set id.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2023' u='c' c='_ZN7Solarus10LuaContext28hero_api_get_sword_sprite_idEP9lua_State'/>

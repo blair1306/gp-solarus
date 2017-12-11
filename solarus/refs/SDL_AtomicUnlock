@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_atomic.h' l='112' type='void SDL_AtomicUnlock(SDL_SpinLock * lock)'/>
+<doc f='include/SDL2/SDL_atomic.h' l='107'>/**
+ * \brief Unlock a spin lock by setting it to 0. Always returns immediately
+ *
+ * \param lock Points to the lock.
+ */</doc>

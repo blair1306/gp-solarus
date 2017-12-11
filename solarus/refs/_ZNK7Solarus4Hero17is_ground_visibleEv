@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='150' type='bool Solarus::Hero::is_ground_visible() const'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='143'>/**
+     * \name Ground under the hero.
+     *
+     * Functions to handle the ground of the tiles under the hero.
+     * Depending on the kind of ground, a special sprite may be displayed under him (grass, shallow water)
+     * or something bad can happen (deep water, holes).
+     */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='233' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1310' ll='1315' type='bool Solarus::Hero::is_ground_visible() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1306'>/**
+ * \brief Returns whether the hero is in a state such that
+ * a ground can be displayed under him.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='537' u='c' c='_ZNK7Solarus11HeroSprites17is_ground_visibleEv'/>

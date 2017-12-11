@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='80' type='void Solarus::Equipment::set_max_magic(int max_magic)'/>
+<def f='codebrowser/src/Equipment.cpp' l='312' ll='319' type='void Solarus::Equipment::set_max_magic(int max_magic)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='304'>/**
+ * \brief Sets the maximum number of magic points.
+ *
+ * Exits with an error message if the value specified
+ * if not valid.
+ *
+ * \param max_magic the maximum level of magic
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1101' u='c' c='_ZN7Solarus10LuaContext22game_api_set_max_magicEP9lua_State'/>

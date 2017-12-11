@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='230' type='void Solarus::Entity::notify_obstacle_reached()'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='257' c='_ZN7Solarus5Block23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='262' u='c' c='_ZN7Solarus5Block23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='274' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='430' c='_ZN7Solarus13CarriedObject23notify_obstacle_reachedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1621' ll='1626' type='void Solarus::Entity::notify_obstacle_reached()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1615'>/**
+ * \brief Notifies this entity that it has just failed to change its position
+ * because of obstacles.
+ *
+ * This function is called only when the movement is not suspended.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1045' c='_ZN7Solarus4Hero23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1047' u='c' c='_ZN7Solarus4Hero23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='302' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='290' u='c' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1095' type='static void Solarus::LuaContext::push_movement(lua_State * l, Solarus::Movement &amp; movement)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='333' u='c' c='_ZN7Solarus10LuaContext25drawable_api_get_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2707' u='c' c='_ZN7Solarus10LuaContext19on_obstacle_reachedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2719' u='c' c='_ZN7Solarus10LuaContext19on_movement_startedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2731' u='c' c='_ZN7Solarus10LuaContext19on_movement_changedERNS_8MovementE'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='362' ll='365' type='static void Solarus::LuaContext::push_movement(lua_State * l, Solarus::Movement &amp; movement)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='384' u='c' c='_ZN7Solarus10LuaContext23start_movement_on_pointERKSt10shared_ptrINS_8MovementEEi'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='440' u='c' c='_ZN7Solarus10LuaContext22stop_movement_on_pointERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='544' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1923' u='c' c='_ZN7Solarus10LuaContext28movement_on_position_changedERNS_8MovementERKNS_5PointE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1963' u='c' c='_ZN7Solarus10LuaContext28movement_on_obstacle_reachedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1981' u='c' c='_ZN7Solarus10LuaContext19movement_on_changedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1999' u='c' c='_ZN7Solarus10LuaContext20movement_on_finishedERNS_8MovementE'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='357'>/**
+ * \brief Pushes a movement userdata onto the stack.
+ * \param l a Lua context
+ * \param movement a movement
+ */</doc>

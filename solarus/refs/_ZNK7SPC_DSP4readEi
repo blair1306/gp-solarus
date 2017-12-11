@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='38' type='int SPC_DSP::read(int addr) const'/>
+<def f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='159' ll='163' type='int SPC_DSP::read(int addr) const'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='145' u='c' c='_ZN8SNES_SPC8dsp_readEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='162' u='c' c='_ZN8SNES_SPC9dsp_writeEii'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='36'>// Reads/writes DSP registers. For accuracy, you must first call spc_run_dsp()
+	// to catch the DSP up to present.</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='250' u='c' c='_ZN8SNES_SPC10clear_echoEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='252' u='c' c='_ZN8SNES_SPC10clear_echoEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='253' u='c' c='_ZN8SNES_SPC10clear_echoEv'/>
+<use f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='38' u='c' c='spc_dsp_read'/>

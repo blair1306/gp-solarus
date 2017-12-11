@@ -1,0 +1,22 @@
+<dec f='include/SDL2/SDL_surface.h' l='161' type='int SDL_LockSurface(SDL_Surface * surface)'/>
+<doc f='include/SDL2/SDL_surface.h' l='142'>/**
+ *  \brief Sets up a surface for directly accessing the pixels.
+ *
+ *  Between calls to SDL_LockSurface() / SDL_UnlockSurface(), you can write
+ *  to and read from \c surface-&gt;pixels, using the pixel format stored in
+ *  \c surface-&gt;format.  Once you are done accessing the surface, you should
+ *  use SDL_UnlockSurface() to release it.
+ *
+ *  Not all surfaces require locking.  If SDL_MUSTLOCK(surface) evaluates
+ *  to 0, then you can read and write to the surface at any time, and the
+ *  pixel format of the surface will not change.
+ *
+ *  No operating system or library calls should be made between lock/unlock
+ *  pairs, as critical system locks may be held during this time.
+ *
+ *  SDL_LockSurface() returns 0, or -1 if the surface couldn&apos;t be locked.
+ *
+ *  \sa SDL_UnlockSurface()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='758' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='759' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>

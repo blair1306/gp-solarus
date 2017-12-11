@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='73' type='void Solarus::Block::set_pullable(bool pullable)'/>
+<def f='codebrowser/src/entities/Block.cpp' l='373' ll='375' type='void Solarus::Block::set_pullable(bool pullable)'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='368'>/**
+ * \brief Sets whether this block can be pulled.
+ * \param pullable \c true to make the block pullable, independently of the
+ * maximum moves.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3262' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pullableEP9lua_State'/>

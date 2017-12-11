@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='129' type='bool Solarus::Drawable::is_suspended() const'/>
+<use f='codebrowser/src/Drawable.cpp' l='70' u='c' c='_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/Drawable.cpp' l='126' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/Drawable.cpp' l='181' ll='183' type='bool Solarus::Drawable::is_suspended() const'/>
+<doc f='codebrowser/src/Drawable.cpp' l='177'>/**
+ * \brief Returns whether this drawable is suspended.
+ * \return \c true if this drawable is suspended.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='503' u='c' c='_ZN7Solarus6Sprite13set_suspendedEb'/>
+<use f='codebrowser/src/Sprite.cpp' l='681' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='698' u='c' c='_ZN7Solarus6Sprite6updateEv'/>

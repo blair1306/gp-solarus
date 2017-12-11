@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='115' type='void Solarus::Entity::State::notify_attacked_enemy(Solarus::EnemyAttack attack, Solarus::Enemy &amp; victim, const Solarus::Sprite * victim_sprite, EnemyReaction::Reaction &amp; result, bool killed)'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='114'>// enemies</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='908' ll='914' type='void Solarus::Entity::State::notify_attacked_enemy(Solarus::EnemyAttack , Solarus::Enemy &amp; , const Solarus::Sprite * , EnemyReaction::Reaction &amp; , bool )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='897'>/**
+ * \brief Notifies this state that the entity has just attacked an enemy.
+ *
+ * This function is called even if this attack was not successful.
+ *
+ * \param attack The attack.
+ * \param victim The enemy just hurt.
+ * \param victim_sprite The enemy&apos;s sprite that was touched or nullptr.
+ * \param result How the enemy has reacted to the attack.
+ * \param killed Whether the attack has just killed the enemy.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2033' u='c' c='_ZN7Solarus4Hero21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='245' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='128' c='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='142' u='c' c='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='216' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='198' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

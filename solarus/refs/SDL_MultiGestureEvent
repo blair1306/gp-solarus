@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='404' ll='415'/>
+<size>40</size>
+<doc f='include/SDL2/SDL_events.h' l='401'>/**
+ *  \brief Multiple Finger Gesture Event (event.mgesture.*)
+ */</doc>
+<mbr r='SDL_MultiGestureEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_MultiGestureEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_MultiGestureEvent::touchId' o='64' t='SDL_TouchID'/>
+<mbr r='SDL_MultiGestureEvent::dTheta' o='128' t='float'/>
+<mbr r='SDL_MultiGestureEvent::dDist' o='160' t='float'/>
+<mbr r='SDL_MultiGestureEvent::x' o='192' t='float'/>
+<mbr r='SDL_MultiGestureEvent::y' o='224' t='float'/>
+<mbr r='SDL_MultiGestureEvent::numFingers' o='256' t='Uint16'/>
+<mbr r='SDL_MultiGestureEvent::padding' o='272' t='Uint16'/>

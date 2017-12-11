@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_video.h' l='443' type='void SDL_SetWindowTitle(SDL_Window * window, const char * title)'/>
+<doc f='include/SDL2/SDL_video.h' l='438'>/**
+ *  \brief Set the title of a window, in UTF-8 format.
+ *
+ *  \sa SDL_GetWindowTitle()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='701' u='c' c='_ZN7Solarus5Video16set_window_titleERKSs'/>

@@ -1,0 +1,14 @@
+<inh f='codebrowser/include/solarus/movements/PixelMovement.h' l='32' c='Solarus::PixelMovement'/>
+<def f='codebrowser/include/solarus/movements/FallingOnFloorMovement.h' l='36' ll='42'/>
+<size>168</size>
+<doc f='codebrowser/include/solarus/movements/FallingOnFloorMovement.h' l='26'>/**
+ * \brief Movement of something that falls on the floor and slightly bounces.
+ *
+ * This is used for objects that fall on the floor and
+ * bounce one or several times before they stop.
+ * This movement is typically used by the pickable treasures
+ * that appear when the player kills an enemy.
+ *
+ * TODO kill this class
+ */</doc>
+<fun r='_ZN7Solarus22FallingOnFloorMovementC1ENS_13FallingHeightE'/>

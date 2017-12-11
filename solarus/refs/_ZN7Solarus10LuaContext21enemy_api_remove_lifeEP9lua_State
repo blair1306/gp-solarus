@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='968' type='static int Solarus::LuaContext::enemy_api_remove_life(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='448' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4454' ll='4464' type='static int Solarus::LuaContext::enemy_api_remove_life(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4449'>/**
+ * \brief Implementation of enemy:remove_life().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

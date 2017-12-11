@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/TreasureState.h' l='33' type='void Solarus::Hero::TreasureState::TreasureState(Solarus::Hero &amp; hero, const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2392' u='c' c='_ZN7Solarus4Hero14start_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/hero/TreasureState.cpp' l='38' ll='51' type='void Solarus::Hero::TreasureState::TreasureState(Solarus::Hero &amp; hero, const Solarus::Treasure &amp; treasure, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/hero/TreasureState.cpp' l='31'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param treasure The treasure to give to the hero. It must be obtainable.
+ * \param callback_ref Lua ref to a function to call when the
+ * treasure&apos;s dialog finishes (possibly an empty ref).
+ */</doc>

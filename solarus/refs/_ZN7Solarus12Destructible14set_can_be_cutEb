@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='68' type='void Solarus::Destructible::set_can_be_cut(bool can_be_cut)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='180' ll='184' type='void Solarus::Destructible::set_can_be_cut(bool can_be_cut)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='176'>/**
+ * \brief Sets whether this object can be cut with the sword.
+ * \param can_be_cut \c true if this object can be cut with the sword.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4162' u='c' c='_ZN7Solarus10LuaContext31destructible_api_set_can_be_cutEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='594' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

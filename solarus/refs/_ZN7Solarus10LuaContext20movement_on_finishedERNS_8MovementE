@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='313' type='void Solarus::LuaContext::movement_on_finished(Solarus::Movement &amp; movement)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1993' ll='2002' type='void Solarus::LuaContext::movement_on_finished(Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1986'>/**
+ * \brief Calls the on_finished() method of a Lua movement.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param movement A movement.
+ */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='318' u='c' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>

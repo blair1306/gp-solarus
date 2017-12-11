@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='229' type='uint8_t * SNES_SPC::run_until_(time_t end_time)'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='261' u='c' c='_ZN8SNES_SPC9read_portEii'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='267' u='c' c='_ZN8SNES_SPC10write_portEiii'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='538' u='c' c='_ZN8SNES_SPC9end_frameEi'/>
+<def f='codebrowser/include/solarus/third_party/snes_spc/SPC_CPU.h' l='163' macro='1' type='BOOST::uint8_t * SNES_SPC::run_until_(time_t end_time)'/>
+<doc f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='507'>//// Run
+
+// Prefix and suffix for CPU emulator function</doc>

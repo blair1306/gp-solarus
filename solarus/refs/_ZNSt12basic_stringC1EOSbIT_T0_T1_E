@@ -1,0 +1,18 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='512' ll='523' type='void std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;(basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp;&amp; __str)'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='505'>/**
+       *  @brief  Move construct string.
+       *  @param  __str  Source string.
+       *
+       *  The newly-created string contains the exact contents of @a __str.
+       *  @a __str is a valid, but unspecified string.
+       **/</doc>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='50' u='c' c='_ZN7Solarus15SpriteAnimationC1ERKSsRKSt6vectorINS_24SpriteAnimationDirectionESaIS4_EEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='265' u='c' c='_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='242' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='377' u='c' c='_ZN7Solarus5Sound4loadEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='64' u='c' c='_ZN7Solarus11TextSurfaceC1EiiNS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2268' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1041' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='207' u='c' c='_ZN7Solarus7LuaData13escape_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='235' u='c' c='_ZN7Solarus7LuaData23escape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='255' u='c' c='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>

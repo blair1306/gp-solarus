@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='97' type='void Solarus::Entity::notify_being_removed()'/>
+<use f='codebrowser/src/Game.cpp' l='145' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='212' u='c' c='_ZN7Solarus8Entities21notify_entity_removedERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1068' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='546' ll='562' type='void Solarus::Entity::notify_being_removed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='539'>/**
+ * \brief Notifies this entity that it is about to be removed.
+ *
+ * This function is called when the entity has just been added
+ * to the list of entities that will be removed from the map
+ * and deleted from the memory as soon as possible.
+ */</doc>

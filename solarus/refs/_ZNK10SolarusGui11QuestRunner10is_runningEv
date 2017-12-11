@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quest_runner.h' l='37' type='bool SolarusGui::QuestRunner::is_running() const'/>
+<use f='codebrowser/gui/src/console.cpp' l='139' u='c' c='_ZN10SolarusGui7Console23command_field_activatedEv'/>
+<use f='codebrowser/gui/src/console.cpp' l='435' u='c' c='_ZN10SolarusGui7Console14apply_settingsEv'/>
+<def f='codebrowser/gui/src/quest_runner.cpp' l='129' ll='132' type='bool SolarusGui::QuestRunner::is_running() const'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='212' u='c' c='_ZN10SolarusGui11QuestRunner15execute_commandERK7QString'/>
+<doc f='codebrowser/gui/src/quest_runner.cpp' l='125'>/**
+ * @brief Returns whether the quest is running.
+ * @return @c true if the quest is running.
+ */</doc>

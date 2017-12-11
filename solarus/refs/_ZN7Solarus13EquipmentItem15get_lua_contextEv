@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='49' type='Solarus::LuaContext &amp; Solarus::EquipmentItem::get_lua_context()'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='83' ll='85' type='Solarus::LuaContext &amp; Solarus::EquipmentItem::get_lua_context()'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='289' u='c' c='_ZN7Solarus13EquipmentItem6updateEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='298' u='c' c='_ZN7Solarus13EquipmentItem13set_suspendedEb'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='307' u='c' c='_ZN7Solarus13EquipmentItem10initializeEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='317' u='c' c='_ZN7Solarus13EquipmentItem5startEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='325' u='c' c='_ZN7Solarus13EquipmentItem4exitEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='334' u='c' c='_ZN7Solarus13EquipmentItem18notify_map_changedERNS_3MapE'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='343' u='c' c='_ZN7Solarus13EquipmentItem22notify_variant_changedEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='352' u='c' c='_ZN7Solarus13EquipmentItem21notify_amount_changedEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='360' u='c' c='_ZN7Solarus13EquipmentItem12notify_usingEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='369' u='c' c='_ZN7Solarus13EquipmentItem19notify_ability_usedENS_7AbilityE'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='379' u='c' c='_ZN7Solarus13EquipmentItem24notify_pickable_appearedERNS_8PickableE'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='79'>/**
+ * \brief Returns the shared Lua context.
+ * \return The Lua context where all scripts are run.
+ */</doc>

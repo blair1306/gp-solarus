@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='85' type='void spc_clear_echo(SNES_SPC * )'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='84'>/* Clears echo region. Useful after loading an SPC as many have garbage in echo. */</doc>
+<use f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='40' u='c' c='_ZN7Solarus10SpcDecoder4loadEPsm'/>
+<def f='codebrowser/src/third_party/snes_spc/spc.cpp' l='58' type='void spc_clear_echo(SNES_SPC * s)'/>

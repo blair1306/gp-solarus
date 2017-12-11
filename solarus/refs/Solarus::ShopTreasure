@@ -1,0 +1,42 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/ShopTreasure.h' l='40' ll='93'/>
+<size>504</size>
+<doc f='codebrowser/include/solarus/entities/ShopTreasure.h' l='32'>/**
+ * \brief A treasure the hero can buy in a shop.
+ *
+ * The treasure is automatically drawn with its icon,
+ * the amount and the price. When the hero presses the action
+ * key in front of it, a dialog is automatically showed and
+ * the hero can buy the item.
+ */</doc>
+<smbr r='Solarus::ShopTreasure::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<fun r='_ZN7Solarus12ShopTreasure6createERNS_4GameERKSsiRKNS_5PointERKNS_8TreasureEiS4_S4_'/>
+<fun r='_ZNK7Solarus12ShopTreasure8get_typeEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure12get_treasureEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure9get_priceEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure13get_dialog_idEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure16is_sword_ignoredEv'/>
+<fun r='_ZN7Solarus12ShopTreasure15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus12ShopTreasure6updateEv'/>
+<fun r='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<mbr r='Solarus::ShopTreasure::treasure' o='2048' t='Solarus::Treasure'/>
+<mbr r='Solarus::ShopTreasure::price' o='2304' t='int'/>
+<mbr r='Solarus::ShopTreasure::dialog_id' o='2368' t='std::string'/>
+<mbr r='Solarus::ShopTreasure::treasure_sprite' o='2432' t='SpritePtr'/>
+<mbr r='Solarus::ShopTreasure::rupee_icon_sprite' o='2560' t='SpritePtr'/>
+<mbr r='Solarus::ShopTreasure::price_digits' o='2688' t='Solarus::TextSurface'/>
+<fun r='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<fun r='_ZN7Solarus12ShopTreasure6createERNS_4GameERKSsiRKNS_5PointERKNS_8TreasureEiS4_S4_'/>
+<fun r='_ZNK7Solarus12ShopTreasure8get_typeEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure12get_treasureEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure9get_priceEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure13get_dialog_idEv'/>
+<fun r='_ZNK7Solarus12ShopTreasure16is_sword_ignoredEv'/>
+<fun r='_ZN7Solarus12ShopTreasure15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus12ShopTreasure6updateEv'/>
+<fun r='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>

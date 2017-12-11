@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='246' type='bool Solarus::InputEvent::is_keyboard_key_released(const Solarus::InputEvent::KeyboardKey * keys) const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='735' ll='746' type='bool Solarus::InputEvent::is_keyboard_key_released(const Solarus::InputEvent::KeyboardKey * keys) const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='755' u='c' c='_ZNK7Solarus10InputEvent34is_keyboard_direction_key_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='729'>/**
+ * \brief Returns whether this event is a keyboard event
+ * corresponding to releasing one of the specified keys.
+ * \param keys an array of the keys to test, terminated by KEY_NONE
+ * \return true if this event corresponds to releasing one of those keys
+ */</doc>

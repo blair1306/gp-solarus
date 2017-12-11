@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='108' type='void Solarus::Enemy::set_life(int life)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='464' ll='470' type='void Solarus::Enemy::set_life(int life)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='961' u='c' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='460'>/**
+ * \brief Sets the number of health points of the enemy.
+ * \param life number of health points of the enemy
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4426' u='c' c='_ZN7Solarus10LuaContext18enemy_api_set_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4443' u='c' c='_ZN7Solarus10LuaContext18enemy_api_add_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4460' u='c' c='_ZN7Solarus10LuaContext21enemy_api_remove_lifeEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='707' type='static int Solarus::LuaContext::game_api_add_max_life(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='79' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='862' ll='877' type='static int Solarus::LuaContext::game_api_add_max_life(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='857'>/**
+ * \brief Implementation of game:add_max_life().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='45' type='int Solarus::TilePattern::get_width() const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='797' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<def f='codebrowser/src/entities/TilePattern.cpp' l='60' ll='62' type='int Solarus::TilePattern::get_width() const'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='175' u='c' c='_ZNK7Solarus11TilePattern12fill_surfaceERKSt10shared_ptrINS_7SurfaceEERKNS_9RectangleERKNS_7TilesetERKNS_5PointE'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='177' u='c' c='_ZNK7Solarus11TilePattern12fill_surfaceERKSt10shared_ptrINS_7SurfaceEERKNS_9RectangleERKNS_7TilesetERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/TilePattern.cpp' l='56'>/**
+ * \brief Returns the width of the tile pattern.
+ * \return The width of the pattern.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='441' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>

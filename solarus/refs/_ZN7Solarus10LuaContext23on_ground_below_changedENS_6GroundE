@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1301' type='void Solarus::LuaContext::on_ground_below_changed(Solarus::Ground ground_below)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6613' u='c' c='_ZN7Solarus10LuaContext37custom_entity_on_ground_below_changedERNS_12CustomEntityENS_6GroundE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2917' ll='2928' type='void Solarus::LuaContext::on_ground_below_changed(Solarus::Ground ground_below)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2913'>/**
+ * \brief Calls the on_ground_below_changed() method of the object on top of the stack.
+ * \param ground_below The new ground below the object.
+ */</doc>

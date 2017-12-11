@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='228' type='void Solarus::LuaContext::update_menus()'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='209' u='c' c='_ZN7Solarus10LuaContext6updateEv'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='158' ll='176' type='void Solarus::LuaContext::update_menus()'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='152'>/**
+ * \brief Checks all menus and removes the ones that have to be removed.
+ *
+ * Note that the on_update() is called by the context of each menu, not
+ * by this function.
+ */</doc>

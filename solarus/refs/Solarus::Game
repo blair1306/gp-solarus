@@ -1,0 +1,75 @@
+<def f='codebrowser/include/solarus/Game.h' l='50' ll='180'/>
+<size>360</size>
+<doc f='codebrowser/include/solarus/Game.h' l='45'>/**
+ * \brief Represents the game currently running.
+ *
+ * The game shows the current map and handles all game elements.
+ */</doc>
+<fun r='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<fun r='_ZN7Solarus4GameC1ERKS0_'/>
+<fun r='_ZN7Solarus4GameaSERKS0_'/>
+<fun r='_ZN7Solarus4Game5startEv'/>
+<fun r='_ZN7Solarus4Game4stopEv'/>
+<fun r='_ZN7Solarus4Game7restartEv'/>
+<fun r='_ZN7Solarus4Game13get_main_loopEv'/>
+<fun r='_ZN7Solarus4Game15get_lua_contextEv'/>
+<fun r='_ZN7Solarus4Game21get_resource_providerEv'/>
+<fun r='_ZN7Solarus4Game8get_heroEv'/>
+<fun r='_ZN7Solarus4Game12get_commandsEv'/>
+<fun r='_ZNK7Solarus4Game12get_commandsEv'/>
+<fun r='_ZN7Solarus4Game20get_commands_effectsEv'/>
+<fun r='_ZN7Solarus4Game12get_savegameEv'/>
+<fun r='_ZNK7Solarus4Game12get_savegameEv'/>
+<fun r='_ZN7Solarus4Game13get_equipmentEv'/>
+<fun r='_ZNK7Solarus4Game13get_equipmentEv'/>
+<fun r='_ZN7Solarus4Game12notify_inputERKNS_10InputEventE'/>
+<fun r='_ZN7Solarus4Game6updateEv'/>
+<fun r='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus4Game24simulate_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus4Game25simulate_command_releasedENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus4Game15has_current_mapEv'/>
+<fun r='_ZN7Solarus4Game15get_current_mapEv'/>
+<fun r='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<fun r='_ZNK7Solarus4Game17get_crystal_stateEv'/>
+<fun r='_ZN7Solarus4Game20change_crystal_stateEv'/>
+<fun r='_ZNK7Solarus4Game9is_pausedEv'/>
+<fun r='_ZNK7Solarus4Game17is_dialog_enabledEv'/>
+<fun r='_ZNK7Solarus4Game21is_playing_transitionEv'/>
+<fun r='_ZNK7Solarus4Game20is_showing_game_overEv'/>
+<fun r='_ZNK7Solarus4Game22is_suspended_by_cameraEv'/>
+<fun r='_ZNK7Solarus4Game22is_suspended_by_scriptEv'/>
+<fun r='_ZNK7Solarus4Game12is_suspendedEv'/>
+<fun r='_ZNK7Solarus4Game9can_pauseEv'/>
+<fun r='_ZNK7Solarus4Game11can_unpauseEv'/>
+<fun r='_ZNK7Solarus4Game16is_pause_allowedEv'/>
+<fun r='_ZN7Solarus4Game17set_pause_allowedEb'/>
+<fun r='_ZN7Solarus4Game10set_pausedEb'/>
+<fun r='_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_'/>
+<fun r='_ZN7Solarus4Game11stop_dialogERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Game15start_game_overEv'/>
+<fun r='_ZN7Solarus4Game14stop_game_overEv'/>
+<fun r='_ZN7Solarus4Game23set_suspended_by_scriptEb'/>
+<mbr r='Solarus::Game::main_loop' o='0' t='Solarus::MainLoop &amp;'/>
+<mbr r='Solarus::Game::savegame' o='64' t='std::shared_ptr&lt;Savegame&gt;'/>
+<mbr r='Solarus::Game::hero' o='192' t='HeroPtr'/>
+<mbr r='Solarus::Game::pause_allowed' o='320' t='bool'/>
+<mbr r='Solarus::Game::paused' o='328' t='bool'/>
+<mbr r='Solarus::Game::dialog_box' o='384' t='Solarus::DialogBoxSystem'/>
+<mbr r='Solarus::Game::showing_game_over' o='1856' t='bool'/>
+<mbr r='Solarus::Game::suspended_by_script' o='1864' t='bool'/>
+<mbr r='Solarus::Game::started' o='1872' t='bool'/>
+<mbr r='Solarus::Game::restarting' o='1880' t='bool'/>
+<mbr r='Solarus::Game::commands' o='1920' t='std::unique_ptr&lt;GameCommands&gt;'/>
+<mbr r='Solarus::Game::commands_effects' o='1984' t='Solarus::CommandsEffects'/>
+<mbr r='Solarus::Game::current_map' o='2304' t='std::shared_ptr&lt;Map&gt;'/>
+<mbr r='Solarus::Game::next_map' o='2432' t='std::shared_ptr&lt;Map&gt;'/>
+<mbr r='Solarus::Game::previous_map_surface' o='2560' t='SurfacePtr'/>
+<mbr r='Solarus::Game::transition_style' o='2688' t='Transition::Style'/>
+<mbr r='Solarus::Game::transition' o='2752' t='std::unique_ptr&lt;Transition&gt;'/>
+<mbr r='Solarus::Game::crystal_state' o='2816' t='bool'/>
+<fun r='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<fun r='_ZN7Solarus4Game18update_transitionsEv'/>
+<fun r='_ZN7Solarus4Game24update_gameover_sequenceEv'/>
+<fun r='_ZN7Solarus4Game18notify_map_changedEv'/>

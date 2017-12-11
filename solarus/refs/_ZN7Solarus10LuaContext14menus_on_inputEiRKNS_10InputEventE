@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='295' type='bool Solarus::LuaContext::menus_on_input(int context_index, const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1787' u='c' c='_ZN7Solarus10LuaContext13game_on_inputERNS_4GameERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='464' u='c' c='_ZN7Solarus10LuaContext13main_on_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2269' u='c' c='_ZN7Solarus10LuaContext12map_on_inputERNS_3MapERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='347' u='c' c='_ZN7Solarus10LuaContext13menu_on_inputERKNS_12ScopedLuaRefERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='463' ll='485' type='bool Solarus::LuaContext::menus_on_input(int context_index, const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='457'>/**
+ * \brief Calls the on_input() method of the menus associated to a context.
+ * \param context_index Index of an object with menus.
+ * \param event The input event to handle.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

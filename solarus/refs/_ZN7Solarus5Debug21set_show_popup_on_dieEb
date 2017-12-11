@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Debug.h' l='39' type='void Solarus::Debug::set_show_popup_on_die(bool show)'/>
+<def f='codebrowser/src/lowlevel/Debug.cpp' l='48' ll='50' type='void Solarus::Debug::set_show_popup_on_die(bool show)'/>
+<doc f='codebrowser/src/lowlevel/Debug.cpp' l='43'>/**
+ * \brief Sets whether a dialog should pop when Solarus dies.
+ * \param show Whether a dialog should pop when Solarus dies.
+ * The default is \c true.
+ */</doc>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='37' u='c' c='_ZN7Solarus15TestEnvironmentC1EiPPc'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='204' type='void Solarus::Hero::notify_collision_with_explosion(Solarus::Explosion &amp; explosion, Solarus::Sprite &amp; sprite_overlapping)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='314' c='_ZN7Solarus6Entity31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1913' ll='1922' type='void Solarus::Hero::notify_collision_with_explosion(Solarus::Explosion &amp; explosion, Solarus::Sprite &amp; sprite_overlapping)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1908'>/**
+ * \brief This function is called when an explosion&apos;s sprite detects a collision with a sprite of the hero.
+ * \param explosion the explosion
+ * \param sprite_overlapping the sprite of the hero that collides with the explosion
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='75' type='void Solarus::ShopTreasure::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='168' ll='182' type='void Solarus::ShopTreasure::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='160'>/**
+ * \brief This function is called by the engine when an entity overlaps the shop item.
+ *
+ * If the entity is the hero, we allow him to buy the item.
+ *
+ * \param entity_overlapping the entity overlapping the detector
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>

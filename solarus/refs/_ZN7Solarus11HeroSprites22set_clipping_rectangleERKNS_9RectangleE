@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='74' type='void Solarus::HeroSprites::set_clipping_rectangle(const Solarus::Rectangle &amp; clipping_rectangle = Solarus::Rectangle())'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='558' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='642' ll='644' type='void Solarus::HeroSprites::set_clipping_rectangle(const Solarus::Rectangle &amp; clipping_rectangle = Solarus::Rectangle())'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='635'>/**
+ * \brief Sets a rectangle of the map where the drawing of the hero&apos;s sprite will be restricted to.
+ *
+ * A (0,0,0,0) rectangle means that the sprite is not restricted to a subarea of the map.
+ *
+ * \param clipping_rectangle a subarea of the map to restrict the drawing to
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='110' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='225' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

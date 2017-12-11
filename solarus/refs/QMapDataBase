@@ -1,0 +1,17 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qmap.h' l='167' ll='187'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qmap.h' l='190' c='QMapData'/>
+<size>40</size>
+<mbr r='QMapDataBase::ref' o='0' t='QtPrivate::RefCount'/>
+<mbr r='QMapDataBase::size' o='32' t='int'/>
+<mbr r='QMapDataBase::header' o='64' t='QMapNodeBase'/>
+<mbr r='QMapDataBase::mostLeftNode' o='256' t='QMapNodeBase *'/>
+<fun r='_ZN12QMapDataBase10rotateLeftEP12QMapNodeBase'/>
+<fun r='_ZN12QMapDataBase11rotateRightEP12QMapNodeBase'/>
+<fun r='_ZN12QMapDataBase9rebalanceEP12QMapNodeBase'/>
+<fun r='_ZN12QMapDataBase20freeNodeAndRebalanceEP12QMapNodeBase'/>
+<fun r='_ZN12QMapDataBase18recalcMostLeftNodeEv'/>
+<fun r='_ZN12QMapDataBase10createNodeEiiP12QMapNodeBaseb'/>
+<fun r='_ZN12QMapDataBase8freeTreeEP12QMapNodeBasei'/>
+<smbr r='QMapDataBase::shared_null' t='const QMapDataBase'/>
+<fun r='_ZN12QMapDataBase10createDataEv'/>
+<fun r='_ZN12QMapDataBase8freeDataEPS_'/>

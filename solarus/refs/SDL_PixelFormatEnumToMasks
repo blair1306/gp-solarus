@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_pixels.h' l='309' type='SDL_bool SDL_PixelFormatEnumToMasks(Uint32 format, int * bpp, Uint32 * Rmask, Uint32 * Gmask, Uint32 * Bmask, Uint32 * Amask)'/>
+<doc f='include/SDL2/SDL_pixels.h' l='302'>/**
+ *  \brief Convert one of the enumerated pixel formats to a bpp and RGBA masks.
+ *
+ *  \return SDL_TRUE, or SDL_FALSE if the conversion wasn&apos;t possible.
+ *
+ *  \sa SDL_MasksToPixelFormatEnum()
+ */</doc>

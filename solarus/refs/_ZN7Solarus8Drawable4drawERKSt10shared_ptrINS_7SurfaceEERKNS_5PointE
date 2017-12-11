@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='73' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<use f='codebrowser/src/Drawable.cpp' l='213' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Drawable.cpp' l='224' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEEii'/>
+<def f='codebrowser/src/Drawable.cpp' l='233' ll='241' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='227'>/**
+ * \brief Draws this object, applying dynamic effects.
+ * \param dst_surface the destination surface
+ * \param dst_position position on this surface
+ * (will be added to the position obtained by previous movements)
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='583' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='223' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='226' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='210' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>

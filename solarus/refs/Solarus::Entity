@@ -1,0 +1,325 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='84' ll='499'/>
+<ovr f='codebrowser/include/solarus/entities/Camera.h' l='42' c='Solarus::Camera'/>
+<ovr f='codebrowser/include/solarus/entities/Hero.h' l='46' c='Solarus::Hero'/>
+<size>256</size>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='73'>/**
+ * \brief Abstract class for all objects placed on a map.
+ *
+ * Example of entities include tiles, enemies, the hero,
+ * non-playing characters, doors, chests, etc.
+ * Each entity has:
+ * - a bounding box that represents its position on the map (a rectangle),
+ * - a layer on the map,
+ * - an origin point, relative to the rectangle&apos;s top-left corner.
+ * Some entities can also have a name, a movement and some sprites.
+ */</doc>
+<fun r='_ZN7Solarus6EntityD1Ev'/>
+<fun r='_ZN7Solarus6Entity15remove_from_mapEv'/>
+<fun r='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<fun r='_ZNK7Solarus6Entity16is_being_removedEv'/>
+<fun r='_ZNK7Solarus6Entity8get_typeEv'/>
+<fun r='_ZNK7Solarus6Entity17get_lua_type_nameEv'/>
+<fun r='_ZNK7Solarus6Entity7is_heroEv'/>
+<fun r='_ZNK7Solarus6Entity18is_ground_observerEv'/>
+<fun r='_ZNK7Solarus6Entity16get_ground_pointEv'/>
+<fun r='_ZNK7Solarus6Entity18is_ground_modifierEv'/>
+<fun r='_ZNK7Solarus6Entity19get_modified_groundEv'/>
+<fun r='_ZNK7Solarus6Entity12can_be_drawnEv'/>
+<fun r='_ZNK7Solarus6Entity19is_drawn_in_y_orderEv'/>
+<fun r='_ZN7Solarus6Entity20set_drawn_in_y_orderEb'/>
+<fun r='_ZNK7Solarus6Entity24is_drawn_at_its_positionEv'/>
+<fun r='_ZN7Solarus6Entity22notify_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus6Entity23notify_command_releasedENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus6Entity14is_initializedEv'/>
+<fun r='_ZNK7Solarus6Entity9is_on_mapEv'/>
+<fun r='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<fun r='_ZNK7Solarus6Entity7get_mapEv'/>
+<fun r='_ZN7Solarus6Entity18notify_map_startedEv'/>
+<fun r='_ZN7Solarus6Entity15notify_creatingEv'/>
+<fun r='_ZN7Solarus6Entity14notify_createdEv'/>
+<fun r='_ZN7Solarus6Entity38notify_map_opening_transition_finishedEv'/>
+<fun r='_ZN7Solarus6Entity22notify_tileset_changedEv'/>
+<fun r='_ZN7Solarus6Entity8get_gameEv'/>
+<fun r='_ZNK7Solarus6Entity8get_gameEv'/>
+<fun r='_ZNK7Solarus6Entity9get_layerEv'/>
+<fun r='_ZN7Solarus6Entity9set_layerEi'/>
+<fun r='_ZNK7Solarus6Entity16get_ground_belowEv'/>
+<fun r='_ZNK7Solarus6Entity5get_xEv'/>
+<fun r='_ZNK7Solarus6Entity5get_yEv'/>
+<fun r='_ZN7Solarus6Entity5set_xEi'/>
+<fun r='_ZN7Solarus6Entity5set_yEi'/>
+<fun r='_ZNK7Solarus6Entity6get_xyEv'/>
+<fun r='_ZN7Solarus6Entity6set_xyERKNS_5PointE'/>
+<fun r='_ZN7Solarus6Entity6set_xyEii'/>
+<fun r='_ZNK7Solarus6Entity16get_displayed_xyEv'/>
+<fun r='_ZNK7Solarus6Entity9get_widthEv'/>
+<fun r='_ZNK7Solarus6Entity10get_heightEv'/>
+<fun r='_ZNK7Solarus6Entity8get_sizeEv'/>
+<fun r='_ZN7Solarus6Entity8set_sizeEii'/>
+<fun r='_ZN7Solarus6Entity8set_sizeERKNS_4SizeE'/>
+<fun r='_ZN7Solarus6Entity19notify_size_changedEv'/>
+<fun r='_ZNK7Solarus6Entity16get_bounding_boxEv'/>
+<fun r='_ZN7Solarus6Entity16set_bounding_boxERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>
+<fun r='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<fun r='_ZN7Solarus6Entity27notify_bounding_box_changedEv'/>
+<fun r='_ZNK7Solarus6Entity10get_originEv'/>
+<fun r='_ZN7Solarus6Entity10set_originEii'/>
+<fun r='_ZN7Solarus6Entity10set_originERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity14get_top_left_xEv'/>
+<fun r='_ZNK7Solarus6Entity14get_top_left_yEv'/>
+<fun r='_ZNK7Solarus6Entity15get_top_left_xyEv'/>
+<fun r='_ZN7Solarus6Entity14set_top_left_xEi'/>
+<fun r='_ZN7Solarus6Entity14set_top_left_yEi'/>
+<fun r='_ZN7Solarus6Entity15set_top_left_xyEii'/>
+<fun r='_ZN7Solarus6Entity15set_top_left_xyERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<fun r='_ZNK7Solarus6Entity18get_touching_pointEi'/>
+<fun r='_ZNK7Solarus6Entity16get_center_pointEv'/>
+<fun r='_ZNK7Solarus6Entity18is_aligned_to_gridEv'/>
+<fun r='_ZNK7Solarus6Entity20is_aligned_to_grid_xEv'/>
+<fun r='_ZNK7Solarus6Entity20is_aligned_to_grid_yEv'/>
+<fun r='_ZN7Solarus6Entity19set_aligned_to_gridEv'/>
+<fun r='_ZN7Solarus6Entity21set_aligned_to_grid_xEv'/>
+<fun r='_ZN7Solarus6Entity21set_aligned_to_grid_yEv'/>
+<fun r='_ZNK7Solarus6Entity25get_optimization_distanceEv'/>
+<fun r='_ZNK7Solarus6Entity26get_optimization_distance2Ev'/>
+<fun r='_ZN7Solarus6Entity25set_optimization_distanceEi'/>
+<fun r='_ZNK7Solarus6Entity10is_enabledEv'/>
+<fun r='_ZN7Solarus6Entity11set_enabledEb'/>
+<fun r='_ZN7Solarus6Entity14notify_enabledEb'/>
+<fun r='_ZNK7Solarus6Entity8get_nameEv'/>
+<fun r='_ZN7Solarus6Entity8set_nameERKSs'/>
+<fun r='_ZNK7Solarus6Entity8has_nameEv'/>
+<fun r='_ZNK7Solarus6Entity10has_prefixERKSs'/>
+<fun r='_ZNK7Solarus6Entity13get_directionEv'/>
+<fun r='_ZN7Solarus6Entity13set_directionEi'/>
+<fun r='_ZN7Solarus6Entity24notify_direction_changedEv'/>
+<fun r='_ZNK7Solarus6Entity10has_spriteEv'/>
+<fun r='_ZNK7Solarus6Entity10get_spriteERKSs'/>
+<fun r='_ZNK7Solarus6Entity11get_spritesEv'/>
+<fun r='_ZNK7Solarus6Entity17get_named_spritesEv'/>
+<fun r='_ZN7Solarus6Entity13create_spriteERKSsS2_'/>
+<fun r='_ZN7Solarus6Entity13remove_spriteERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity13clear_spritesEv'/>
+<fun r='_ZN7Solarus6Entity20bring_sprite_to_backERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity21bring_sprite_to_frontERNS_6SpriteE'/>
+<fun r='_ZNK7Solarus6Entity23get_default_sprite_nameEv'/>
+<fun r='_ZN7Solarus6Entity23set_default_sprite_nameERKSs'/>
+<fun r='_ZN7Solarus6Entity27notify_sprite_frame_changedERNS_6SpriteERKSsi'/>
+<fun r='_ZN7Solarus6Entity32notify_sprite_animation_finishedERNS_6SpriteERKSs'/>
+<fun r='_ZNK7Solarus6Entity10is_visibleEv'/>
+<fun r='_ZN7Solarus6Entity11set_visibleEb'/>
+<fun r='_ZN7Solarus6Entity28set_animation_ignore_suspendEb'/>
+<fun r='_ZN7Solarus6Entity12get_movementEv'/>
+<fun r='_ZNK7Solarus6Entity12get_movementEv'/>
+<fun r='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<fun r='_ZN7Solarus6Entity14clear_movementEv'/>
+<fun r='_ZNK7Solarus6Entity34are_movement_notifications_enabledEv'/>
+<fun r='_ZN7Solarus6Entity34set_movement_notifications_enabledEb'/>
+<fun r='_ZNK7Solarus6Entity17has_stream_actionEv'/>
+<fun r='_ZNK7Solarus6Entity17get_stream_actionEv'/>
+<fun r='_ZN7Solarus6Entity17get_stream_actionEv'/>
+<fun r='_ZN7Solarus6Entity19start_stream_actionESt10unique_ptrINS_12StreamActionESt14default_deleteIS2_EE'/>
+<fun r='_ZN7Solarus6Entity18stop_stream_actionEv'/>
+<fun r='_ZN7Solarus6Entity23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<fun r='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<fun r='_ZN7Solarus6Entity27notify_ground_below_changedEv'/>
+<fun r='_ZN7Solarus6Entity23notify_movement_startedEv'/>
+<fun r='_ZN7Solarus6Entity24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus6Entity23notify_movement_changedEv'/>
+<fun r='_ZN7Solarus6Entity16notify_moving_byERS0_'/>
+<fun r='_ZN7Solarus6Entity15notify_moved_byERS0_'/>
+<fun r='_ZN7Solarus6Entity17get_facing_entityEv'/>
+<fun r='_ZNK7Solarus6Entity17get_facing_entityEv'/>
+<fun r='_ZN7Solarus6Entity17set_facing_entityEPS0_'/>
+<fun r='_ZN7Solarus6Entity28notify_facing_entity_changedEPS0_'/>
+<fun r='_ZN7Solarus6Entity20direction_to_xy_moveEi'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity8overlapsEii'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKS0_'/>
+<fun r='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<fun r='_ZNK7Solarus6Entity18is_origin_point_inERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity18is_facing_point_inERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity20is_touching_point_inERKNS_9RectangleEi'/>
+<fun r='_ZNK7Solarus6Entity12is_center_inERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity9get_angleEii'/>
+<fun r='_ZNK7Solarus6Entity9get_angleERKS0_'/>
+<fun r='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<fun r='_ZNK7Solarus6Entity12get_distanceEii'/>
+<fun r='_ZNK7Solarus6Entity12get_distanceERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity12get_distanceERKS0_'/>
+<fun r='_ZNK7Solarus6Entity17is_in_same_regionERKS0_'/>
+<fun r='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity11is_detectorEv'/>
+<fun r='_ZN7Solarus6Entity19set_collision_modesEi'/>
+<fun r='_ZN7Solarus6Entity18add_collision_modeENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity18has_collision_modeENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity23enable_pixel_collisionsEv'/>
+<fun r='_ZNK7Solarus6Entity32has_layer_independent_collisionsEv'/>
+<fun r='_ZN7Solarus6Entity32set_layer_independent_collisionsEb'/>
+<fun r='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<fun r='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<fun r='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<fun r='_ZNK7Solarus6Entity24test_collision_rectangleERKS0_'/>
+<fun r='_ZNK7Solarus6Entity21test_collision_insideERKS0_'/>
+<fun r='_ZNK7Solarus6Entity27test_collision_origin_pointERKS0_'/>
+<fun r='_ZNK7Solarus6Entity27test_collision_facing_pointERKS0_'/>
+<fun r='_ZNK7Solarus6Entity23test_collision_touchingERKS0_'/>
+<fun r='_ZNK7Solarus6Entity21test_collision_centerERKS0_'/>
+<fun r='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>
+<fun r='_ZN7Solarus6Entity21test_collision_customERS0_'/>
+<fun r='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>
+<fun r='_ZN7Solarus6Entity30check_collision_with_detectorsERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity14check_positionEv'/>
+<fun r='_ZN7Solarus6Entity34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_streamERNS_6StreamEii'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity27notify_collision_with_chestERNS_5ChestE'/>
+<fun r='_ZN7Solarus6Entity27notify_collision_with_blockERNS_5BlockE'/>
+<fun r='_ZN7Solarus6Entity31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity31notify_collision_with_explosionERNS_9ExplosionENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<fun r='_ZN7Solarus6Entity27notify_collision_with_enemyERNS_5EnemyE'/>
+<fun r='_ZN7Solarus6Entity27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus6Entity21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZN7Solarus6Entity29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus6Entity28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus6Entity22start_movement_by_heroEv'/>
+<fun r='_ZN7Solarus6Entity21stop_movement_by_heroEv'/>
+<fun r='_ZN7Solarus6Entity23get_sword_tapping_soundEv'/>
+<fun r='_ZN7Solarus6Entity15is_obstacle_forERS0_'/>
+<fun r='_ZN7Solarus6Entity15is_obstacle_forERS0_RKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<fun r='_ZN7Solarus6Entity16is_hero_obstacleERNS_4HeroE'/>
+<fun r='_ZN7Solarus6Entity17is_block_obstacleERNS_5BlockE'/>
+<fun r='_ZN7Solarus6Entity27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus6Entity18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus6Entity18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZN7Solarus6Entity18is_sensor_obstacleERNS_6SensorE'/>
+<fun r='_ZN7Solarus6Entity18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus6Entity24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus6Entity19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus6Entity15is_npc_obstacleERNS_3NpcE'/>
+<fun r='_ZN7Solarus6Entity16is_door_obstacleERNS_4DoorE'/>
+<fun r='_ZN7Solarus6Entity17is_enemy_obstacleERNS_5EnemyE'/>
+<fun r='_ZN7Solarus6Entity18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus6Entity24is_destructible_obstacleERNS_12DestructibleE'/>
+<fun r='_ZN7Solarus6Entity21is_separator_obstacleERNS_9SeparatorE'/>
+<fun r='_ZNK7Solarus6Entity16is_sword_ignoredEv'/>
+<fun r='_ZNK7Solarus6Entity12is_suspendedEv'/>
+<fun r='_ZN7Solarus6Entity13set_suspendedEb'/>
+<fun r='_ZN7Solarus6Entity6updateEv'/>
+<fun r='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<fun r='_ZN7Solarus6Entity12get_entitiesEv'/>
+<fun r='_ZNK7Solarus6Entity12get_entitiesEv'/>
+<fun r='_ZN7Solarus6Entity13get_equipmentEv'/>
+<fun r='_ZNK7Solarus6Entity13get_equipmentEv'/>
+<fun r='_ZN7Solarus6Entity20get_commands_effectsEv'/>
+<fun r='_ZN7Solarus6Entity12get_commandsEv'/>
+<fun r='_ZN7Solarus6Entity12get_savegameEv'/>
+<fun r='_ZNK7Solarus6Entity12get_savegameEv'/>
+<fun r='_ZN7Solarus6Entity8get_heroEv'/>
+<fun r='_ZNK7Solarus6Entity9get_stateEv'/>
+<fun r='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<fun r='_ZNK7Solarus6Entity14get_state_nameEv'/>
+<fun r='_ZN7Solarus6Entity12update_stateEv'/>
+<fun r='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZN7Solarus6EntityC1ERKS0_'/>
+<fun r='_ZN7Solarus6EntityaSERKS0_'/>
+<fun r='_ZNK7Solarus6Entity18get_when_suspendedEv'/>
+<fun r='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<fun r='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<fun r='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Entity16notify_collisionERS0_RNS_6SpriteES3_'/>
+<fun r='_ZNK7Solarus6Entity23is_traversable_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity16is_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity20is_low_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity17is_grass_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity25is_shallow_water_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity15is_ice_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus6Entity18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus6Entity21finish_initializationEv'/>
+<fun r='_ZN7Solarus6Entity19clear_old_movementsEv'/>
+<fun r='_ZN7Solarus6Entity17clear_old_spritesEv'/>
+<mbr r='Solarus::Entity::main_loop' o='320' t='Solarus::MainLoop *'/>
+<mbr r='Solarus::Entity::map' o='384' t='Solarus::Map *'/>
+<mbr r='Solarus::Entity::layer' o='448' t='int'/>
+<mbr r='Solarus::Entity::bounding_box' o='480' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Entity::ground_below' o='608' t='Solarus::Ground'/>
+<mbr r='Solarus::Entity::origin' o='640' t='Solarus::Point'/>
+<mbr r='Solarus::Entity::name' o='704' t='std::string'/>
+<mbr r='Solarus::Entity::direction' o='768' t='int'/>
+<mbr r='Solarus::Entity::sprites' o='832' t='std::vector&lt;NamedSprite&gt;'/>
+<mbr r='Solarus::Entity::default_sprite_name' o='1024' t='std::string'/>
+<mbr r='Solarus::Entity::visible' o='1088' t='bool'/>
+<mbr r='Solarus::Entity::drawn_in_y_order' o='1096' t='bool'/>
+<mbr r='Solarus::Entity::movement' o='1152' t='std::shared_ptr&lt;Movement&gt;'/>
+<mbr r='Solarus::Entity::old_movements' o='1280' t='std::vector&lt;std::shared_ptr&lt;Movement&gt; &gt;'/>
+<mbr r='Solarus::Entity::movement_notifications_enabled' o='1472' t='bool'/>
+<mbr r='Solarus::Entity::facing_entity' o='1536' t='Solarus::Entity *'/>
+<mbr r='Solarus::Entity::collision_modes' o='1600' t='int'/>
+<mbr r='Solarus::Entity::layer_independent_collisions' o='1632' t='bool'/>
+<mbr r='Solarus::Entity::stream_action' o='1664' t='std::unique_ptr&lt;StreamAction&gt;'/>
+<mbr r='Solarus::Entity::state' o='1728' t='std::unique_ptr&lt;State&gt;'/>
+<mbr r='Solarus::Entity::old_states' o='1792' t='std::list&lt;std::unique_ptr&lt;State&gt; &gt;'/>
+<mbr r='Solarus::Entity::initialized' o='1920' t='bool'/>
+<mbr r='Solarus::Entity::being_removed' o='1928' t='bool'/>
+<mbr r='Solarus::Entity::enabled' o='1936' t='bool'/>
+<mbr r='Solarus::Entity::suspended' o='1944' t='bool'/>
+<mbr r='Solarus::Entity::when_suspended' o='1952' t='uint32_t'/>
+<mbr r='Solarus::Entity::optimization_distance' o='1984' t='int'/>
+<mbr r='Solarus::Entity::optimization_distance2' o='2016' t='int'/>
+<smbr r='Solarus::Entity::default_optimization_distance' t='const int'/>
+<fun r='_ZNK7Solarus6Entity10is_enabledEv'/>
+<fun r='_ZNK7Solarus6Entity16is_being_removedEv'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Entity8overlapsEii'/>
+<fun r='_ZNK7Solarus6Entity8overlapsERKS0_'/>
+<ovr f='codebrowser/include/solarus/entities/Pickable.h' l='35' c='Solarus::Pickable'/>
+<ovr f='codebrowser/include/solarus/entities/Destination.h' l='30' c='Solarus::Destination'/>
+<ovr f='codebrowser/include/solarus/entities/CarriedObject.h' l='35' c='Solarus::CarriedObject'/>
+<ovr f='codebrowser/include/solarus/entities/Arrow.h' l='29' c='Solarus::Arrow'/>
+<ovr f='codebrowser/include/solarus/entities/Explosion.h' l='32' c='Solarus::Explosion'/>
+<ovr f='codebrowser/include/solarus/entities/Enemy.h' l='48' c='Solarus::Enemy'/>
+<ovr f='codebrowser/include/solarus/entities/Stairs.h' l='44' c='Solarus::Stairs'/>
+<ovr f='codebrowser/include/solarus/entities/Switch.h' l='38' c='Solarus::Switch'/>
+<ovr f='codebrowser/include/solarus/entities/Crystal.h' l='32' c='Solarus::Crystal'/>
+<ovr f='codebrowser/include/solarus/entities/Destructible.h' l='39' c='Solarus::Destructible'/>
+<ovr f='codebrowser/include/solarus/entities/Npc.h' l='48' c='Solarus::Npc'/>
+<ovr f='codebrowser/include/solarus/entities/Block.h' l='32' c='Solarus::Block'/>
+<ovr f='codebrowser/include/solarus/entities/Bomb.h' l='29' c='Solarus::Bomb'/>
+<ovr f='codebrowser/include/solarus/entities/Stream.h' l='33' c='Solarus::Stream'/>
+<ovr f='codebrowser/include/solarus/entities/Boomerang.h' l='34' c='Solarus::Boomerang'/>
+<ovr f='codebrowser/include/solarus/entities/Separator.h' l='34' c='Solarus::Separator'/>
+<ovr f='codebrowser/include/solarus/entities/Sensor.h' l='33' c='Solarus::Sensor'/>
+<ovr f='codebrowser/include/solarus/entities/Chest.h' l='33' c='Solarus::Chest'/>
+<ovr f='codebrowser/include/solarus/entities/CrystalBlock.h' l='32' c='Solarus::CrystalBlock'/>
+<ovr f='codebrowser/include/solarus/entities/CustomEntity.h' l='36' c='Solarus::CustomEntity'/>
+<ovr f='codebrowser/include/solarus/entities/Door.h' l='44' c='Solarus::Door'/>
+<ovr f='codebrowser/include/solarus/entities/Fire.h' l='31' c='Solarus::Fire'/>
+<ovr f='codebrowser/include/solarus/entities/Jumper.h' l='32' c='Solarus::Jumper'/>
+<ovr f='codebrowser/include/solarus/entities/Teletransporter.h' l='34' c='Solarus::Teletransporter'/>
+<ovr f='codebrowser/include/solarus/entities/DynamicTile.h' l='38' c='Solarus::DynamicTile'/>
+<ovr f='codebrowser/include/solarus/entities/Tile.h' l='45' c='Solarus::Tile'/>
+<ovr f='codebrowser/include/solarus/entities/Hookshot.h' l='29' c='Solarus::Hookshot'/>
+<ovr f='codebrowser/include/solarus/entities/ShopTreasure.h' l='40' c='Solarus::ShopTreasure'/>
+<ovr f='codebrowser/include/solarus/entities/Wall.h' l='34' c='Solarus::Wall'/>

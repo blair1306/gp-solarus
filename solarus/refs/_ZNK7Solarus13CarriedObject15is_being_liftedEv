@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='67' type='bool Solarus::CarriedObject::is_being_lifted() const'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='206' ll='208' type='bool Solarus::CarriedObject::is_being_lifted() const'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='202'>/**
+ * \brief Returns whether the item is being lifted.
+ * \return true if the item is being lifted
+ */</doc>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='103' u='c' c='_ZN7Solarus4Hero12LiftingState6updateEv'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='225' type='const Solarus::StreamAction * Solarus::Entity::get_stream_action() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1584' ll='1586' type='const Solarus::StreamAction * Solarus::Entity::get_stream_action() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1580'>/**
+ * \brief Returns the stream action currently applied if any.
+ * \return The stream action of this entity or nullptr.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='870' u='c' c='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2531' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2558' u='c' c='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='57' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>

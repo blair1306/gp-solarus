@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/containers/Grid.h' l='51' type='void Solarus::Grid::get_elements(const Solarus::Rectangle &amp; where, std::vector&lt;T&gt; &amp; elements) const'/>
+<def f='codebrowser/include/solarus/containers/Grid.h' l='161' ll='196' type='void Solarus::Grid::get_elements(const Solarus::Rectangle &amp; where, std::vector&lt;T&gt; &amp; elements) const'/>
+<doc f='codebrowser/include/solarus/containers/Grid.h' l='153'>/**
+ * \brief Returns all elements in the specified rectangle.
+ *
+ * Elements that are in several cells are returned only once.
+ *
+ * \param where The area to get.
+ * \param[out] elements The vector to fill.
+ */</doc>

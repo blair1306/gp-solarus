@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='95' type='static Solarus::Rectangle Solarus::Video::get_viewport()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='888' ll='895' type='static Solarus::Rectangle Solarus::Video::get_viewport()'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='905' u='c' c='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='881'>/**
+ * \brief Gets the viewport of the renderer.
+ * The viewport is the logical drawing area of the renderer.
+ * x and y indicate the possible black bars.
+ * \return The viewport, in renderer logical coordinates (before window scaling).
+ * Use SDL_RenderGetScale() to convert it to window coordinates.
+ */</doc>

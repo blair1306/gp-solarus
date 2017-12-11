@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_joystick.h' l='228' type='int SDL_JoystickGetBall(SDL_Joystick * joystick, int ball, int * dx, int * dy)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='221'>/**
+ *  Get the ball axis change since the last poll.
+ *
+ *  \return 0, or -1 if you passed it invalid parameters.
+ *
+ *  The ball indices start at index 0.
+ */</doc>

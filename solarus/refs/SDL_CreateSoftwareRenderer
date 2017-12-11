@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='204' type='SDL_Renderer * SDL_CreateSoftwareRenderer(SDL_Surface * surface)'/>
+<doc f='include/SDL2/SDL_render.h' l='194'>/**
+ *  \brief Create a 2D software rendering context for a surface.
+ *
+ *  \param surface The surface where rendering is done.
+ *
+ *  \return A valid rendering context or NULL if there was an error.
+ *
+ *  \sa SDL_CreateRenderer()
+ *  \sa SDL_DestroyRenderer()
+ */</doc>

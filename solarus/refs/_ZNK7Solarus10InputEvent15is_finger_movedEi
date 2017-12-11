@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='293' type='bool Solarus::InputEvent::is_finger_moved(int finger_id) const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1276' ll='1280' type='bool Solarus::InputEvent::is_finger_moved(int finger_id) const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1270'>/**
+ * \brief Returns whether this event is a finger event.
+ * corresponding to moving a specific finger.
+ * \param finger_id The finger ID to test.
+ * \return true if this event corresponds to moving that finger button.
+ */</doc>

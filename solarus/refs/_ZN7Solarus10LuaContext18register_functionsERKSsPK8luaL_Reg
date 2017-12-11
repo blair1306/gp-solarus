@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1055' type='void Solarus::LuaContext::register_functions(const std::string &amp; module_name, const luaL_Reg * functions)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1054'>// Initialization of modules.</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='54' u='c' c='_ZN7Solarus10LuaContext21register_audio_moduleEv'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='40' u='c' c='_ZN7Solarus10LuaContext20register_file_moduleEv'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='54' u='c' c='_ZN7Solarus10LuaContext21register_input_moduleEv'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='71' u='c' c='_ZN7Solarus10LuaContext24register_language_moduleEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='835' ll='843' type='void Solarus::LuaContext::register_functions(const std::string &amp; module_name, const luaL_Reg * functions)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='828'>/**
+ * \brief Defines some C++ functions into a Lua table.
+ * \param module_name name of the table that will contain the functions
+ * (e.g. &quot;sol.main&quot;).
+ * \param functions list of functions to define in the table
+ * (must end with {nullptr, nullptr}).
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='61' u='c' c='_ZN7Solarus10LuaContext20register_main_moduleEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='45' u='c' c='_ZN7Solarus10LuaContext20register_menu_moduleEv'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='54' u='c' c='_ZN7Solarus10LuaContext21register_video_moduleEv'/>

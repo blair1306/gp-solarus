@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1146' type='static bool Solarus::LuaContext::is_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='324' ll='334' type='static bool Solarus::LuaContext::is_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='345' u='c' c='_ZN7Solarus10LuaContext14check_movementEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='318'>/**
+ * \brief Returns whether a value is a userdata of type movement.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a entity.
+ */</doc>

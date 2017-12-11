@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h' l='250' type='480'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h' l='246'>// Note that 0x100 will clash with Qt::TextSingleLine = 0x100 due to what the comment above
+        // this enum declaration states. However, since Qt::AlignBaseline is only used by layouts,
+        // it doesn&apos;t make sense to pass Qt::AlignBaseline to QPainter::drawText(), so there
+        // shouldn&apos;t really be any ambiguity between the two overlapping enum values.</doc>

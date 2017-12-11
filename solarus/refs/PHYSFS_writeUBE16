@@ -1,0 +1,13 @@
+<dec f='include/physfs.h' l='1792' type='int PHYSFS_writeUBE16(PHYSFS_File * file, PHYSFS_uint16 val)'/>
+<doc f='include/physfs.h' l='1780'>/**
+ * \fn int PHYSFS_writeUBE16(PHYSFS_File *file, PHYSFS_uint16 val)
+ * \brief Convert and write an unsigned 16-bit bigendian value.
+ *
+ * Convenience function. Convert an unsigned 16-bit value from the platform&apos;s
+ *  native byte order to bigendian and write it to a file.
+ *
+ *    \param file PhysicsFS file handle to which to write.
+ *    \param val Value to convert and write.
+ *   \return zero on failure, non-zero on success. On failure, you can
+ *           find out what went wrong from PHYSFS_getLastError().
+ */</doc>

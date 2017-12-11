@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='56' type='void Solarus::Movement::update()'/>
+<use f='codebrowser/src/Drawable.cpp' l='170' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='55'>// update</doc>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='56'>// called repeatedly</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='3422' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='210' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='463' u='c' c='_ZN7Solarus10LuaContext16update_movementsEv'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='319' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='389' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='412' ll='421' type='void Solarus::Movement::update()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='406'>/**
+ * \brief Updates the position of the object controlled by this movement.
+ *
+ * This function is called repeatedly.
+ * You can redefine this function.
+ */</doc>
+<ovr f='codebrowser/src/movements/PixelMovement.cpp' l='170' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='189' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<ovr f='codebrowser/src/movements/RelativeMovement.cpp' l='65' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='648' c='_ZN7Solarus16StraightMovement6updateEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='679' u='c' c='_ZN7Solarus16StraightMovement6updateEv'/>

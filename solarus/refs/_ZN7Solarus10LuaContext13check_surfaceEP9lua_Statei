@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1139' type='static SurfacePtr Solarus::LuaContext::check_surface(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='137' u='c' c='_ZN7Solarus10LuaContext17drawable_api_drawEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='161' u='c' c='_ZN7Solarus10LuaContext24drawable_api_draw_regionEP9lua_State'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='89' ll='93' type='static SurfacePtr Solarus::LuaContext::check_surface(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='154' u='c' c='_ZN7Solarus10LuaContext20surface_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='170' u='c' c='_ZN7Solarus10LuaContext17surface_api_clearEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='186' u='c' c='_ZN7Solarus10LuaContext22surface_api_fill_colorEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='213' u='c' c='_ZN7Solarus10LuaContext23surface_api_get_opacityEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='230' u='c' c='_ZN7Solarus10LuaContext23surface_api_set_opacityEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='247' u='c' c='_ZN7Solarus10LuaContext22surface_api_get_pixelsEP9lua_State'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='82'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * surface and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the surface
+ */</doc>

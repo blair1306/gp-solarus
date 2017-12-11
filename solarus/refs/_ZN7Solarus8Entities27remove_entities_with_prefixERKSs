@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='121' type='void Solarus::Entities::remove_entities_with_prefix(const std::string &amp; prefix)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1095' ll='1101' type='void Solarus::Entities::remove_entities_with_prefix(const std::string &amp; prefix)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1091'>/**
+ * \brief Removes all entities of a type whose name starts with the specified prefix.
+ * \param prefix Prefix of the name of the entities to remove.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2152' u='c' c='_ZN7Solarus10LuaContext23map_api_remove_entitiesEP9lua_State'/>

@@ -1,0 +1,36 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='154' type='void Solarus::HeroSprites::set_tunic_animation(const std::string &amp; animation)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='196' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1050' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1055' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1070' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1093' u='c' c='_ZN7Solarus11HeroSprites30set_animation_stopped_carryingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1108' u='c' c='_ZN7Solarus11HeroSprites30set_animation_stopped_swimmingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1138' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1144' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1159' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1184' u='c' c='_ZN7Solarus11HeroSprites30set_animation_walking_carryingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1200' u='c' c='_ZN7Solarus11HeroSprites27set_animation_swimming_slowEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1213' u='c' c='_ZN7Solarus11HeroSprites27set_animation_swimming_fastEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1228' u='c' c='_ZN7Solarus11HeroSprites30set_animation_walking_diagonalEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1239' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1275' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1297' u='c' c='_ZN7Solarus11HeroSprites25set_animation_spin_attackEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1309' u='c' c='_ZN7Solarus11HeroSprites31set_animation_super_spin_attackEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1321' u='c' c='_ZN7Solarus11HeroSprites22set_animation_grabbingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1331' u='c' c='_ZN7Solarus11HeroSprites21set_animation_pullingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1341' u='c' c='_ZN7Solarus11HeroSprites21set_animation_pushingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1351' u='c' c='_ZN7Solarus11HeroSprites21set_animation_liftingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1361' u='c' c='_ZN7Solarus11HeroSprites21set_animation_jumpingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1376' u='c' c='_ZN7Solarus11HeroSprites18set_animation_hurtEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1388' u='c' c='_ZN7Solarus11HeroSprites21set_animation_fallingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1399' u='c' c='_ZN7Solarus11HeroSprites22set_animation_brandishEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1411' u='c' c='_ZN7Solarus11HeroSprites21set_animation_victoryEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1449' u='c' c='_ZN7Solarus11HeroSprites23set_animation_boomerangERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1488' ll='1491' type='void Solarus::HeroSprites::set_tunic_animation(const std::string &amp; animation)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1481'>/**
+ * \brief Changes the animation of the tunic sprite.
+ *
+ * Cancels the Lua callback if any.
+ *
+ * \param animation The animation name of the tunic sprite.
+ */</doc>

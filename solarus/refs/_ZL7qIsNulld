@@ -1,0 +1,11 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='763' type='bool qIsNull(double d)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='764' ll='773' type='bool qIsNull(double d)'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='758'>/*
+   This function tests a double for a null value. It doesn&apos;t
+   check whether the actual value is 0 or close to 0, but whether
+   it is binary 0, disregarding sign.
+*/</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsize.h' l='281' u='c' c='_ZNK6QSizeF6isNullEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsize.h' l='281' u='c' c='_ZNK6QSizeF6isNullEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qpoint.h' l='287' u='c' c='_ZNK7QPointF6isNullEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qpoint.h' l='287' u='c' c='_ZNK7QPointF6isNullEv'/>

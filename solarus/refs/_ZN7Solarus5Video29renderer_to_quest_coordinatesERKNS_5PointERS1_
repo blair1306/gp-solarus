@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='97' type='static bool Solarus::Video::renderer_to_quest_coordinates(const Solarus::Point &amp; renderer_xy, Solarus::Point &amp; quest_xy)'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1210' u='c' c='_ZNK7Solarus10InputEvent18get_mouse_positionERNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='932' ll='958' type='static bool Solarus::Video::renderer_to_quest_coordinates(const Solarus::Point &amp; renderer_xy, Solarus::Point &amp; quest_xy)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='926'>/**
+ * \brief Converts logical renderer coordinates to quest size coordinates.
+ * \param[in] renderer_xy A position in renderer coordinates, without window scaling.
+ * \param[out] quest_xy The corresponding value in quest coordinates.
+ * \return \c false if the position is not inside the renderer.
+ */</doc>

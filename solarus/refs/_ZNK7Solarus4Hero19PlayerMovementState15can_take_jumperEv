@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='61' type='bool Solarus::Hero::PlayerMovementState::can_take_jumper() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='139' c='_ZNK7Solarus6Entity5State15can_take_jumperEv'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='297' ll='299' type='bool Solarus::Hero::PlayerMovementState::can_take_jumper() const'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='289'>/**
+ * \brief Returns whether can trigger a jumper in this state.
+ *
+ * If false is returned, jumpers have no effect (but they are obstacle for
+ * the hero).
+ *
+ * \return \c true if the hero can use jumpers in this state.
+ */</doc>

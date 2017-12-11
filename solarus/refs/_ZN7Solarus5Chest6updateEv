@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='76' type='void Solarus::Chest::update()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='356' c='_ZN7Solarus6Entity6updateEv'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='379' ll='412' type='void Solarus::Chest::update()'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='372'>/**
+ * \brief Updates the chest.
+ *
+ * This function is called repeatedly by the map.
+ * This is a redefinition of Entity::update()
+ * the handle the chest opening.
+ */</doc>

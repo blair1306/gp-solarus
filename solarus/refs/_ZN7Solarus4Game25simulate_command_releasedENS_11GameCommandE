@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='89' type='void Solarus::Game::simulate_command_released(Solarus::GameCommand command)'/>
+<def f='codebrowser/src/Game.cpp' l='953' ll='955' type='void Solarus::Game::simulate_command_released(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/Game.cpp' l='949'>/**
+ * \brief Simulates releasing a game command.
+ * \param command The command to simulate.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1550' u='c' c='_ZN7Solarus10LuaContext34game_api_simulate_command_releasedEP9lua_State'/>

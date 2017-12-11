@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='95' type='bool Solarus::Savegame::is_string(const std::string &amp; key) const'/>
+<doc f='codebrowser/include/solarus/Savegame.h' l='94'>// data</doc>
+<def f='codebrowser/src/Savegame.cpp' l='385' ll='397' type='bool Solarus::Savegame::is_string(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='380'>/**
+ * \brief Returns whether a saved value is a string.
+ * \param key Name of the value to get.
+ * \return true if this value exists and is a string.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='197' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='443' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='611' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='632' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>

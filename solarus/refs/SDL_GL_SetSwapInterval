@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_video.h' l='940' type='int SDL_GL_SetSwapInterval(int interval)'/>
+<doc f='include/SDL2/SDL_video.h' l='928'>/**
+ *  \brief Set the swap interval for the current OpenGL context.
+ *
+ *  \param interval 0 for immediate updates, 1 for updates synchronized with the
+ *                  vertical retrace. If the system supports it, you may
+ *                  specify -1 to allow late swaps to happen immediately
+ *                  instead of waiting for the next retrace.
+ *
+ *  \return 0 on success, or -1 if setting the swap interval is not supported.
+ *
+ *  \sa SDL_GL_GetSwapInterval()
+ */</doc>

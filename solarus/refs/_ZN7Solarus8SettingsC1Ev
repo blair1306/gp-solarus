@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='37' type='void Solarus::Settings::Settings()'/>
+<use f='codebrowser/gui/src/settings.cpp' l='55' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<def f='codebrowser/src/Settings.cpp' l='43' ll='46' type='void Solarus::Settings::Settings()'/>
+<doc f='codebrowser/src/Settings.cpp' l='40'>/**
+ * \brief Creates empty settings.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='270' u='c' c='_ZN7Solarus10LuaContext22main_api_load_settingsEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='296' u='c' c='_ZN7Solarus10LuaContext22main_api_save_settingsEP9lua_State'/>

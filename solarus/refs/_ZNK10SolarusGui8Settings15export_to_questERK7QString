@@ -1,0 +1,13 @@
+<dec f='codebrowser/gui/include/solarus/gui/settings.h' l='34' type='void SolarusGui::Settings::export_to_quest(const QString &amp; quest_path) const'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='352' u='c' c='_ZN10SolarusGui10MainWindow30on_action_play_quest_triggeredEv'/>
+<def f='codebrowser/gui/src/settings.cpp' l='42' ll='98' type='void SolarusGui::Settings::export_to_quest(const QString &amp; quest_path) const'/>
+<doc f='codebrowser/gui/src/settings.cpp' l='32'>/**
+ * @brief Export GUI settings to the Solarus settings.dat file of a quest.
+ *
+ * System settings like audio volume and the video mode are written to
+ * settings.dat.
+ * It allows quests that use settings.dat to apply what the user chose
+ * in the GUI.
+ *
+ * @param quest_path Path of the quest where to write a settings file.
+ */</doc>

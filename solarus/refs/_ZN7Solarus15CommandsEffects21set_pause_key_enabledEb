@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='105' type='void Solarus::CommandsEffects::set_pause_key_enabled(bool enable)'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='224' ll='226' type='void Solarus::CommandsEffects::set_pause_key_enabled(bool enable)'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='270' u='c' c='_ZN7Solarus15CommandsEffects20set_all_keys_enabledEb'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='220'>/**
+ * \brief Sets whether the pause key is enabled.
+ * \param enable true to enable the pause key, false to disable it
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='820' u='c' c='_ZN7Solarus4Game17set_pause_allowedEb'/>

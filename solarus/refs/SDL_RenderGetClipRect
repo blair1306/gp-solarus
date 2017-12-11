@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_render.h' l='551' type='void SDL_RenderGetClipRect(SDL_Renderer * renderer, SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='542'>/**
+ *  \brief Get the clip rectangle for the current target.
+ *
+ *  \param renderer The renderer from which clip rectangle should be queried.
+ *  \param rect   A pointer filled in with the current clip rectangle, or
+ *                an empty rectangle if clipping is disabled.
+ *
+ *  \sa SDL_RenderSetClipRect()
+ */</doc>

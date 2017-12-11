@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/BorderSet.h' l='40' type='bool Solarus::BorderSet::has_pattern(Solarus::BorderKind border_kind) const'/>
+<def f='codebrowser/src/entities/BorderSet.cpp' l='64' ll='67' type='bool Solarus::BorderSet::has_pattern(Solarus::BorderKind border_kind) const'/>
+<doc f='codebrowser/src/entities/BorderSet.cpp' l='59'>/**
+ * \brief Returns whether a pattern is defined for the given border.
+ * \param border_kind Which border to get.
+ * \return \c true if there is a pattern for this border kind.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='301' type='int Solarus::InputEvent::get_direction() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='300'>// functions common to keyboard, joypad and mouse</doc>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1352' ll='1396' type='int Solarus::InputEvent::get_direction() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1343'>/**
+ * \brief Returns the direction that was pressed or released
+ * during this keyboard or joypad event.
+ *
+ * If this is not a keyboard or joypad event, or if
+ * the control was not a direction, -1 is returned.
+ *
+ * \return the direction (0 to 7) or -1 if there is no direction
+ */</doc>

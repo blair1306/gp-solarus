@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Movement.cpp source code [codebrowser/src/movements/Movement.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/movements/Movement.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>movements</a>/<a href='Movement.cpp.html'>Movement.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/movements/Movement.h.html">"solarus/movements/Movement.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/entities/Entity.h.html">"solarus/entities/Entity.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/lua/LuaContext.h.html">"solarus/lua/LuaContext.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../include/solarus/Map.h.html">"solarus/Map.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../include/solarus/Drawable.h.html">"solarus/Drawable.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../include/luajit-2.0/lua.hpp.html">&lt;lua.hpp&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * <span class="command">\brief</span> Constructor.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="31">31</th><td><a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8MovementC1Ev" title='Solarus::Movement::Movement' data-ref="_ZN7Solarus8MovementC1Ev">Movement</dfn>():</td></tr>
+<tr><th id="32">32</th><td>  <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a><a class="ref" href="#_ZN7Solarus8MovementC1Eb" title='Solarus::Movement::Movement' data-ref="_ZN7Solarus8MovementC1Eb">(</a><b>false</b>) {</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * <span class="command">\brief</span> Constructor.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> When there is a map and the movement is attached to</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * an entity of this map, indicates whether the movement should ignore</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * obstacles.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="42">42</th><td><a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8MovementC1Eb" title='Solarus::Movement::Movement' data-ref="_ZN7Solarus8MovementC1Eb">Movement</dfn>(<em>bool</em> <dfn class="local col1 decl" id="1ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="1ignore_obstacles">ignore_obstacles</dfn>):</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>(<b>nullptr</b>),</td></tr>
+<tr><th id="45">45</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a>(<b>nullptr</b>),</td></tr>
+<tr><th id="46">46</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a><a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7Solarus5PointC1Eii" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1Eii">(</a><var>0</var>, <var>0</var>),</td></tr>
+<tr><th id="47">47</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::last_move_date" title='Solarus::Movement::last_move_date' data-ref="Solarus::Movement::last_move_date">last_move_date</a>(<var>0</var>),</td></tr>
+<tr><th id="48">48</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished" title='Solarus::Movement::finished' data-ref="Solarus::Movement::finished">finished</a>(<b>false</b>),</td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::lua_notifications_enabled" title='Solarus::Movement::lua_notifications_enabled' data-ref="Solarus::Movement::lua_notifications_enabled">lua_notifications_enabled</a>(<b>true</b>),</td></tr>
+<tr><th id="50">50</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::suspended" title='Solarus::Movement::suspended' data-ref="Solarus::Movement::suspended">suspended</a>(<b>false</b>),</td></tr>
+<tr><th id="51">51</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::when_suspended" title='Solarus::Movement::when_suspended' data-ref="Solarus::Movement::when_suspended">when_suspended</a>(<var>0</var>),</td></tr>
+<tr><th id="52">52</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::last_collision_box_on_obstacle" title='Solarus::Movement::last_collision_box_on_obstacle' data-ref="Solarus::Movement::last_collision_box_on_obstacle">last_collision_box_on_obstacle</a><a class="ref" href="../../include/solarus/lowlevel/Rectangle.inl.html#_ZN7Solarus9RectangleC1Eii" title='Solarus::Rectangle::Rectangle' data-ref="_ZN7Solarus9RectangleC1Eii">(</a>-<var>1</var>, -<var>1</var>),</td></tr>
+<tr><th id="53">53</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::default_ignore_obstacles" title='Solarus::Movement::default_ignore_obstacles' data-ref="Solarus::Movement::default_ignore_obstacles">default_ignore_obstacles</a>(<a class="local col1 ref" href="#1ignore_obstacles" title='ignore_obstacles' data-ref="1ignore_obstacles">ignore_obstacles</a>),</td></tr>
+<tr><th id="54">54</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a>(<a class="local col1 ref" href="#1ignore_obstacles" title='ignore_obstacles' data-ref="1ignore_obstacles">ignore_obstacles</a>),</td></tr>
+<tr><th id="55">55</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished_callback_ref" title='Solarus::Movement::finished_callback_ref' data-ref="Solarus::Movement::finished_callback_ref">finished_callback_ref</a><a class="ref" href="../../include/solarus/lua/ScopedLuaRef.h.html#_ZN7Solarus12ScopedLuaRefC1Ev" title='Solarus::ScopedLuaRef::ScopedLuaRef' data-ref="_ZN7Solarus12ScopedLuaRefC1Ev">(</a>) {</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>}</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * <span class="command">\brief</span> Destructor.</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="62">62</th><td><a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8MovementD1Ev" title='Solarus::Movement::~Movement' data-ref="_ZN7Solarus8MovementD1Ev">~Movement</dfn>() {</td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * <span class="command">\brief</span> Returns the entity controlled by this movement (if any).</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * <span class="command">\return</span> the entity controlled by this movement, or nullptr if this movement</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * is not attached to a map entity</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="70">70</th><td><a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>* <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement10get_entityEv" title='Solarus::Movement::get_entity' data-ref="_ZNK7Solarus8Movement10get_entityEv">get_entity</dfn>() <em>const</em> {</td></tr>
+<tr><th id="71">71</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>;</td></tr>
+<tr><th id="72">72</th><td>}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * <span class="command">\brief</span> Sets the entity to be controlled by this movement object.</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * This entity can be nullptr if your movement applies to something else than a map entity.</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * However, some subclasses of Movement may require a non nullptr entity because they</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * implement movements that depend on the map content (e.g. to handle the collisions).</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity</span> The entity to control, or nullptr if the movement should not be</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * attached to a map entity.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="84">84</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement10set_entityEPNS_6EntityE" title='Solarus::Movement::set_entity' data-ref="_ZN7Solarus8Movement10set_entityEPNS_6EntityE">set_entity</dfn>(<a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>* <dfn class="local col2 decl" id="2entity" title='entity' data-type='Solarus::Entity *' data-ref="2entity">entity</dfn>) {</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a> == <b>nullptr</b>, <q>"This movement is already assigned to a drawable"</q>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> = <a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>  <b>if</b> (<a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a> == <b>nullptr</b>) {</td></tr>
+<tr><th id="91">91</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::operator=' data-ref="_ZN7Solarus5PointaSEOS0_">=</a> <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7Solarus5PointC1Eii" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1Eii">{</a> <var>0</var>, <var>0</var> };</td></tr>
+<tr><th id="92">92</th><td>  }</td></tr>
+<tr><th id="93">93</th><td>  <b>else</b> {</td></tr>
+<tr><th id="94">94</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::operator=' data-ref="_ZN7Solarus5PointaSEOS0_">=</a> <a class="local col2 ref" href="#2entity" title='entity' data-ref="2entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity6get_xyEv" title='Solarus::Entity::get_xy' data-ref="_ZNK7Solarus6Entity6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="95">95</th><td>    <a class="virtual member" href="#_ZN7Solarus8Movement23notify_movement_changedEv" title='Solarus::Movement::notify_movement_changed' data-ref="_ZN7Solarus8Movement23notify_movement_changedEv">notify_movement_changed</a>();</td></tr>
+<tr><th id="96">96</th><td>  }</td></tr>
+<tr><th id="97">97</th><td>  <a class="virtual member" href="#_ZN7Solarus8Movement24notify_object_controlledEv" title='Solarus::Movement::notify_object_controlled' data-ref="_ZN7Solarus8Movement24notify_object_controlledEv">notify_object_controlled</a>();</td></tr>
+<tr><th id="98">98</th><td>}</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * <span class="command">\brief</span> Returns the drawable controlled by this movement (if any).</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * <span class="command">\return</span> The drawable controlled by this movement, or nullptr if this movement</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * is not attached to a drawable.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><a class="type" href="../../include/solarus/Drawable.h.html#Solarus::Drawable" title='Solarus::Drawable' data-ref="Solarus::Drawable">Drawable</a>* <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement12get_drawableEv" title='Solarus::Movement::get_drawable' data-ref="_ZNK7Solarus8Movement12get_drawableEv">get_drawable</dfn>() <em>const</em> {</td></tr>
+<tr><th id="106">106</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * <span class="command">\brief</span> Sets the drawable to be controlled by this movement object.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * This entity can be nullptr if your movement applies to something else than a drawable.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">drawable</span> The drawable to control, or nullptr if the movement should not be</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * attached to a drawable.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE" title='Solarus::Movement::set_drawable' data-ref="_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE">set_drawable</dfn>(<a class="type" href="../../include/solarus/Drawable.h.html#Solarus::Drawable" title='Solarus::Drawable' data-ref="Solarus::Drawable">Drawable</a>* <dfn class="local col3 decl" id="3drawable" title='drawable' data-type='Solarus::Drawable *' data-ref="3drawable">drawable</dfn>) {</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> == <b>nullptr</b>, <q>"This movement is already assigned to an entity"</q>);</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a> = <a class="local col3 ref" href="#3drawable" title='drawable' data-ref="3drawable">drawable</a>;</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>  <b>if</b> (<a class="local col3 ref" href="#3drawable" title='drawable' data-ref="3drawable">drawable</a> == <b>nullptr</b>) {</td></tr>
+<tr><th id="124">124</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::operator=' data-ref="_ZN7Solarus5PointaSEOS0_">=</a> <a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7Solarus5PointC1Eii" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1Eii">{</a> <var>0</var>, <var>0</var> };</td></tr>
+<tr><th id="125">125</th><td>  }</td></tr>
+<tr><th id="126">126</th><td>  <b>else</b> {</td></tr>
+<tr><th id="127">127</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::operator=' data-ref="_ZN7Solarus5PointaSERKS0_">=</a> <a class="local col3 ref" href="#3drawable" title='drawable' data-ref="3drawable">drawable</a>-&gt;<a class="ref" href="../../include/solarus/Drawable.h.html#_ZNK7Solarus8Drawable6get_xyEv" title='Solarus::Drawable::get_xy' data-ref="_ZNK7Solarus8Drawable6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="128">128</th><td>    <a class="virtual member" href="#_ZN7Solarus8Movement23notify_movement_changedEv" title='Solarus::Movement::notify_movement_changed' data-ref="_ZN7Solarus8Movement23notify_movement_changedEv">notify_movement_changed</a>();</td></tr>
+<tr><th id="129">129</th><td>  }</td></tr>
+<tr><th id="130">130</th><td>  <a class="virtual member" href="#_ZN7Solarus8Movement24notify_object_controlledEv" title='Solarus::Movement::notify_object_controlled' data-ref="_ZN7Solarus8Movement24notify_object_controlledEv">notify_object_controlled</a>();</td></tr>
+<tr><th id="131">131</th><td>}</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that the object it controls has changed.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * Does nothing by default.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="138">138</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement24notify_object_controlledEv" title='Solarus::Movement::notify_object_controlled' data-ref="_ZN7Solarus8Movement24notify_object_controlledEv">notify_object_controlled</dfn>() {</td></tr>
+<tr><th id="139">139</th><td>}</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * <span class="command">\brief</span> Returns the x position of the object controlled by this movement.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * <span class="command">\return</span> the x position of the object controlled by this movement</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement5get_xEv" title='Solarus::Movement::get_x' data-ref="_ZNK7Solarus8Movement5get_xEv">get_x</dfn>() <em>const</em> {</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>().<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::x" title='Solarus::Point::x' data-ref="Solarus::Point::x">x</a>;</td></tr>
+<tr><th id="148">148</th><td>}</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * <span class="command">\brief</span> Returns the y position of the object controlled by this movement.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * <span class="command">\return</span> the y position of the object controlled by this movement</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="154">154</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement5get_yEv" title='Solarus::Movement::get_y' data-ref="_ZNK7Solarus8Movement5get_yEv">get_y</dfn>() <em>const</em> {</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>().<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::y" title='Solarus::Point::y' data-ref="Solarus::Point::y">y</a>;</td></tr>
+<tr><th id="157">157</th><td>}</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * <span class="command">\brief</span> Returns the coordinates of the object controlled by this movement.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * <span class="command">\return</span> The coordinates of the object controlled by this movement.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="163">163</th><td><a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</dfn>() <em>const</em> {</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="166">166</th><td>    <i>// The object controlled is a map entity.</i></td></tr>
+<tr><th id="167">167</th><td>    <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity6get_xyEv" title='Solarus::Entity::get_xy' data-ref="_ZNK7Solarus6Entity6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="168">168</th><td>  }</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="171">171</th><td>    <i>// The object controlled is a drawable.</i></td></tr>
+<tr><th id="172">172</th><td>    <b>return</b> <a class="ref fake" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1ERKS0_"></a><a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a>-&gt;<a class="ref" href="../../include/solarus/Drawable.h.html#_ZNK7Solarus8Drawable6get_xyEv" title='Solarus::Drawable::get_xy' data-ref="_ZNK7Solarus8Drawable6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="173">173</th><td>  }</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td>  <i>// The object controlled is a point.</i></td></tr>
+<tr><th id="176">176</th><td>  <b>return</b> <a class="ref fake" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1ERKS0_"></a><a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a>;</td></tr>
+<tr><th id="177">177</th><td>}</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * <span class="command">\brief</span> Sets the x position of the object controlled by this movement.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">x</span> The new x position</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="183">183</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement5set_xEi" title='Solarus::Movement::set_x' data-ref="_ZN7Solarus8Movement5set_xEi">set_x</dfn>(<em>int</em> <dfn class="local col4 decl" id="4x" title='x' data-type='int' data-ref="4x">x</dfn>) {</td></tr>
+<tr><th id="184">184</th><td>  <a class="member" href="#_ZN7Solarus8Movement6set_xyEii" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyEii">set_xy</a>(<a class="local col4 ref" href="#4x" title='x' data-ref="4x">x</a>, <a class="member" href="#_ZNK7Solarus8Movement5get_yEv" title='Solarus::Movement::get_y' data-ref="_ZNK7Solarus8Movement5get_yEv">get_y</a>());</td></tr>
+<tr><th id="185">185</th><td>}</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * <span class="command">\brief</span> Sets the y position of the object controlled by this movement.</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">y</span> The new y position.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement5set_yEi" title='Solarus::Movement::set_y' data-ref="_ZN7Solarus8Movement5set_yEi">set_y</dfn>(<em>int</em> <dfn class="local col5 decl" id="5y" title='y' data-type='int' data-ref="5y">y</dfn>) {</td></tr>
+<tr><th id="192">192</th><td>  <a class="member" href="#_ZN7Solarus8Movement6set_xyEii" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyEii">set_xy</a>(<a class="member" href="#_ZNK7Solarus8Movement5get_xEv" title='Solarus::Movement::get_x' data-ref="_ZNK7Solarus8Movement5get_xEv">get_x</a>(), <a class="local col5 ref" href="#5y" title='y' data-ref="5y">y</a>);</td></tr>
+<tr><th id="193">193</th><td>}</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> * <span class="command">\brief</span> Sets the position of the object controlled by this movement.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">x</span> The new x position.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">y</span> The new y position.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="200">200</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement6set_xyEii" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyEii">set_xy</dfn>(<em>int</em> <dfn class="local col6 decl" id="6x" title='x' data-type='int' data-ref="6x">x</dfn>, <em>int</em> <dfn class="local col7 decl" id="7y" title='y' data-type='int' data-ref="7y">y</dfn>) {</td></tr>
+<tr><th id="201">201</th><td>  <a class="member" href="#_ZN7Solarus8Movement6set_xyERKNS_5PointE" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyERKNS_5PointE">set_xy</a>(<a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a><a class="ref" href="../../include/solarus/lowlevel/Point.inl.html#_ZN7Solarus5PointC1Eii" title='Solarus::Point::Point' data-ref="_ZN7Solarus5PointC1Eii">(</a><a class="local col6 ref" href="#6x" title='x' data-ref="6x">x</a>, <a class="local col7 ref" href="#7y" title='y' data-ref="7y">y</a>));</td></tr>
+<tr><th id="202">202</th><td>}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * <span class="command">\brief</span> Sets the position of the object controlled by this movement.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">xy</span> The new coordinates.</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="208">208</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement6set_xyERKNS_5PointE" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyERKNS_5PointE">set_xy</dfn>(<em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col8 decl" id="8xy" title='xy' data-type='const Solarus::Point &amp;' data-ref="8xy">xy</dfn>) {</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="211">211</th><td>    <i>// The object controlled is a map entity.</i></td></tr>
+<tr><th id="212">212</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity6set_xyERKNS_5PointE" title='Solarus::Entity::set_xy' data-ref="_ZN7Solarus6Entity6set_xyERKNS_5PointE">set_xy</a>(<a class="local col8 ref" href="#8xy" title='xy' data-ref="8xy">xy</a>);</td></tr>
+<tr><th id="213">213</th><td>  }</td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td>  <b>else</b> <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="216">216</th><td>    <i>// The object controlled is a drawable.</i></td></tr>
+<tr><th id="217">217</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::drawable" title='Solarus::Movement::drawable' data-ref="Solarus::Movement::drawable">drawable</a>-&gt;<a class="ref" href="../../include/solarus/Drawable.h.html#_ZN7Solarus8Drawable6set_xyERKNS_5PointE" title='Solarus::Drawable::set_xy' data-ref="_ZN7Solarus8Drawable6set_xyERKNS_5PointE">set_xy</a>(<a class="local col8 ref" href="#8xy" title='xy' data-ref="8xy">xy</a>);</td></tr>
+<tr><th id="218">218</th><td>  }</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td>  <i>// The object controlled is a point.</i></td></tr>
+<tr><th id="221">221</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::xy" title='Solarus::Movement::xy' data-ref="Solarus::Movement::xy">xy</a> <a class="ref" href="../../include/solarus/lowlevel/Point.h.html#30" title='Solarus::Point::operator=' data-ref="_ZN7Solarus5PointaSERKS0_">=</a> <a class="local col8 ref" href="#8xy" title='xy' data-ref="8xy">xy</a>;</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>  <a class="virtual member" href="#_ZN7Solarus8Movement23notify_position_changedEv" title='Solarus::Movement::notify_position_changed' data-ref="_ZN7Solarus8Movement23notify_position_changedEv">notify_position_changed</a>();</td></tr>
+<tr><th id="224">224</th><td>  <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::last_move_date" title='Solarus::Movement::last_move_date' data-ref="Solarus::Movement::last_move_date">last_move_date</a> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="225">225</th><td>}</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> * <span class="command">\brief</span> Moves the object on x.</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dx</span> number of pixels of the move</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="231">231</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement11translate_xEi" title='Solarus::Movement::translate_x' data-ref="_ZN7Solarus8Movement11translate_xEi">translate_x</dfn>(<em>int</em> <dfn class="local col9 decl" id="9dx" title='dx' data-type='int' data-ref="9dx">dx</dfn>) {</td></tr>
+<tr><th id="232">232</th><td>  <a class="member" href="#_ZN7Solarus8Movement12translate_xyEii" title='Solarus::Movement::translate_xy' data-ref="_ZN7Solarus8Movement12translate_xyEii">translate_xy</a>(<a class="local col9 ref" href="#9dx" title='dx' data-ref="9dx">dx</a>, <var>0</var>);</td></tr>
+<tr><th id="233">233</th><td>}</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> * <span class="command">\brief</span> Moves the object on y.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dy</span> number of pixels of the move</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="239">239</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement11translate_yEi" title='Solarus::Movement::translate_y' data-ref="_ZN7Solarus8Movement11translate_yEi">translate_y</dfn>(<em>int</em> <dfn class="local col0 decl" id="10dy" title='dy' data-type='int' data-ref="10dy">dy</dfn>) {</td></tr>
+<tr><th id="240">240</th><td>  <a class="member" href="#_ZN7Solarus8Movement12translate_xyEii" title='Solarus::Movement::translate_xy' data-ref="_ZN7Solarus8Movement12translate_xyEii">translate_xy</a>(<var>0</var>, <a class="local col0 ref" href="#10dy" title='dy' data-ref="10dy">dy</a>);</td></tr>
+<tr><th id="241">241</th><td>}</td></tr>
+<tr><th id="242">242</th><td></td></tr>
+<tr><th id="243">243</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> * <span class="command">\brief</span> Moves the object.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dx</span> number of pixels of the move on x</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dy</span> number of pixels of the move on y</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="248">248</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement12translate_xyEii" title='Solarus::Movement::translate_xy' data-ref="_ZN7Solarus8Movement12translate_xyEii">translate_xy</dfn>(<em>int</em> <dfn class="local col1 decl" id="11dx" title='dx' data-type='int' data-ref="11dx">dx</dfn>, <em>int</em> <dfn class="local col2 decl" id="12dy" title='dy' data-type='int' data-ref="12dy">dy</dfn>) {</td></tr>
+<tr><th id="249">249</th><td>  <a class="member" href="#_ZN7Solarus8Movement6set_xyEii" title='Solarus::Movement::set_xy' data-ref="_ZN7Solarus8Movement6set_xyEii">set_xy</a>(<a class="member" href="#_ZNK7Solarus8Movement5get_xEv" title='Solarus::Movement::get_x' data-ref="_ZNK7Solarus8Movement5get_xEv">get_x</a>() + <a class="local col1 ref" href="#11dx" title='dx' data-ref="11dx">dx</a>, <a class="member" href="#_ZNK7Solarus8Movement5get_yEv" title='Solarus::Movement::get_y' data-ref="_ZNK7Solarus8Movement5get_yEv">get_y</a>() + <a class="local col2 ref" href="#12dy" title='dy' data-ref="12dy">dy</a>);</td></tr>
+<tr><th id="250">250</th><td>}</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> * <span class="command">\brief</span> Moves the object.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dxy</span> number of pixel of the move on x and y</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="256">256</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement12translate_xyERKNS_5PointE" title='Solarus::Movement::translate_xy' data-ref="_ZN7Solarus8Movement12translate_xyERKNS_5PointE">translate_xy</dfn>(<em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col3 decl" id="13dxy" title='dxy' data-type='const Solarus::Point &amp;' data-ref="13dxy">dxy</dfn>) {</td></tr>
+<tr><th id="257">257</th><td>  <a class="member" href="#_ZN7Solarus8Movement12translate_xyEii" title='Solarus::Movement::translate_xy' data-ref="_ZN7Solarus8Movement12translate_xyEii">translate_xy</a>(<a class="local col3 ref" href="#13dxy" title='dxy' data-ref="13dxy">dxy</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::x" title='Solarus::Point::x' data-ref="Solarus::Point::x">x</a>, <a class="local col3 ref" href="#13dxy" title='dxy' data-ref="13dxy">dxy</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::y" title='Solarus::Point::y' data-ref="Solarus::Point::y">y</a>);</td></tr>
+<tr><th id="258">258</th><td>}</td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that the coordinates controlled by it</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> * have just been changed.</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="264">264</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement23notify_position_changedEv" title='Solarus::Movement::notify_position_changed' data-ref="_ZN7Solarus8Movement23notify_position_changedEv">notify_position_changed</dfn>() {</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td>  <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>* <dfn class="local col4 decl" id="14lua_context" title='lua_context' data-type='Solarus::LuaContext *' data-ref="14lua_context">lua_context</dfn> = <a class="member" href="../../include/solarus/lua/ExportableToLua.h.html#_ZNK7Solarus15ExportableToLua15get_lua_contextEv" title='Solarus::ExportableToLua::get_lua_context' data-ref="_ZNK7Solarus15ExportableToLua15get_lua_contextEv">get_lua_context</a>();</td></tr>
+<tr><th id="267">267</th><td>  <b>if</b> (<a class="local col4 ref" href="#14lua_context" title='lua_context' data-ref="14lua_context">lua_context</a> != <b>nullptr</b> &amp;&amp; <a class="member" href="#_ZNK7Solarus8Movement29are_lua_notifications_enabledEv" title='Solarus::Movement::are_lua_notifications_enabled' data-ref="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv">are_lua_notifications_enabled</a>()) {</td></tr>
+<tr><th id="268">268</th><td>    <a class="local col4 ref" href="#14lua_context" title='lua_context' data-ref="14lua_context">lua_context</a>-&gt;<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#_ZN7Solarus10LuaContext28movement_on_position_changedERNS_8MovementERKNS_5PointE" title='Solarus::LuaContext::movement_on_position_changed' data-ref="_ZN7Solarus10LuaContext28movement_on_position_changedERNS_8MovementERKNS_5PointE">movement_on_position_changed</a>(<span class='refarg'>*<b>this</b></span>, <a class="member" href="#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>());</td></tr>
+<tr><th id="269">269</th><td>  }</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b>) {</td></tr>
+<tr><th id="272">272</th><td>    <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16is_being_removedEv" title='Solarus::Entity::is_being_removed' data-ref="_ZNK7Solarus6Entity16is_being_removedEv">is_being_removed</a>()) {</td></tr>
+<tr><th id="273">273</th><td>      <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="virtual ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity23notify_position_changedEv" title='Solarus::Entity::notify_position_changed' data-ref="_ZN7Solarus6Entity23notify_position_changedEv">notify_position_changed</a>();</td></tr>
+<tr><th id="274">274</th><td>    }</td></tr>
+<tr><th id="275">275</th><td>  }</td></tr>
+<tr><th id="276">276</th><td>}</td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that it just failed to apply</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> * because of obstacles.</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="282">282</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement23notify_obstacle_reachedEv" title='Solarus::Movement::notify_obstacle_reached' data-ref="_ZN7Solarus8Movement23notify_obstacle_reachedEv">notify_obstacle_reached</dfn>() {</td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td>  <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>* <dfn class="local col5 decl" id="15lua_context" title='lua_context' data-type='Solarus::LuaContext *' data-ref="15lua_context">lua_context</dfn> = <a class="member" href="../../include/solarus/lua/ExportableToLua.h.html#_ZNK7Solarus15ExportableToLua15get_lua_contextEv" title='Solarus::ExportableToLua::get_lua_context' data-ref="_ZNK7Solarus15ExportableToLua15get_lua_contextEv">get_lua_context</a>();</td></tr>
+<tr><th id="285">285</th><td>  <b>if</b> (<a class="local col5 ref" href="#15lua_context" title='lua_context' data-ref="15lua_context">lua_context</a> != <b>nullptr</b> &amp;&amp; <a class="member" href="#_ZNK7Solarus8Movement29are_lua_notifications_enabledEv" title='Solarus::Movement::are_lua_notifications_enabled' data-ref="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv">are_lua_notifications_enabled</a>()) {</td></tr>
+<tr><th id="286">286</th><td>    <a class="local col5 ref" href="#15lua_context" title='lua_context' data-ref="15lua_context">lua_context</a>-&gt;<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#_ZN7Solarus10LuaContext28movement_on_obstacle_reachedERNS_8MovementE" title='Solarus::LuaContext::movement_on_obstacle_reached' data-ref="_ZN7Solarus10LuaContext28movement_on_obstacle_reachedERNS_8MovementE">movement_on_obstacle_reached</a>(<span class='refarg'>*<b>this</b></span>);</td></tr>
+<tr><th id="287">287</th><td>  }</td></tr>
+<tr><th id="288">288</th><td></td></tr>
+<tr><th id="289">289</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b> &amp;&amp; !<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16is_being_removedEv" title='Solarus::Entity::is_being_removed' data-ref="_ZNK7Solarus6Entity16is_being_removedEv">is_being_removed</a>()) {</td></tr>
+<tr><th id="290">290</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="virtual ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity23notify_obstacle_reachedEv" title='Solarus::Entity::notify_obstacle_reached' data-ref="_ZN7Solarus6Entity23notify_obstacle_reachedEv">notify_obstacle_reached</a>();</td></tr>
+<tr><th id="291">291</th><td>  }</td></tr>
+<tr><th id="292">292</th><td>}</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that its characteristics (like speed or angle)</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> * have changed.</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="298">298</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement23notify_movement_changedEv" title='Solarus::Movement::notify_movement_changed' data-ref="_ZN7Solarus8Movement23notify_movement_changedEv">notify_movement_changed</dfn>() {</td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td>  <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>* <dfn class="local col6 decl" id="16lua_context" title='lua_context' data-type='Solarus::LuaContext *' data-ref="16lua_context">lua_context</dfn> = <a class="member" href="../../include/solarus/lua/ExportableToLua.h.html#_ZNK7Solarus15ExportableToLua15get_lua_contextEv" title='Solarus::ExportableToLua::get_lua_context' data-ref="_ZNK7Solarus15ExportableToLua15get_lua_contextEv">get_lua_context</a>();</td></tr>
+<tr><th id="301">301</th><td>  <b>if</b> (<a class="local col6 ref" href="#16lua_context" title='lua_context' data-ref="16lua_context">lua_context</a> != <b>nullptr</b> &amp;&amp; <a class="member" href="#_ZNK7Solarus8Movement29are_lua_notifications_enabledEv" title='Solarus::Movement::are_lua_notifications_enabled' data-ref="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv">are_lua_notifications_enabled</a>()) {</td></tr>
+<tr><th id="302">302</th><td>    <a class="local col6 ref" href="#16lua_context" title='lua_context' data-ref="16lua_context">lua_context</a>-&gt;<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#_ZN7Solarus10LuaContext19movement_on_changedERNS_8MovementE" title='Solarus::LuaContext::movement_on_changed' data-ref="_ZN7Solarus10LuaContext19movement_on_changedERNS_8MovementE">movement_on_changed</a>(<span class='refarg'>*<b>this</b></span>);</td></tr>
+<tr><th id="303">303</th><td>  }</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b> &amp;&amp; !<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16is_being_removedEv" title='Solarus::Entity::is_being_removed' data-ref="_ZNK7Solarus6Entity16is_being_removedEv">is_being_removed</a>()) {</td></tr>
+<tr><th id="306">306</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="virtual ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity23notify_movement_changedEv" title='Solarus::Entity::notify_movement_changed' data-ref="_ZN7Solarus6Entity23notify_movement_changedEv">notify_movement_changed</a>();</td></tr>
+<tr><th id="307">307</th><td>  }</td></tr>
+<tr><th id="308">308</th><td>}</td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this movement that it has just finished.</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="313">313</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement24notify_movement_finishedEv" title='Solarus::Movement::notify_movement_finished' data-ref="_ZN7Solarus8Movement24notify_movement_finishedEv">notify_movement_finished</dfn>() {</td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td>  <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>* <dfn class="local col7 decl" id="17lua_context" title='lua_context' data-type='Solarus::LuaContext *' data-ref="17lua_context">lua_context</dfn> = <a class="member" href="../../include/solarus/lua/ExportableToLua.h.html#_ZNK7Solarus15ExportableToLua15get_lua_contextEv" title='Solarus::ExportableToLua::get_lua_context' data-ref="_ZNK7Solarus15ExportableToLua15get_lua_contextEv">get_lua_context</a>();</td></tr>
+<tr><th id="316">316</th><td>  <b>if</b> (<a class="local col7 ref" href="#17lua_context" title='lua_context' data-ref="17lua_context">lua_context</a> != <b>nullptr</b> &amp;&amp; <a class="member" href="#_ZNK7Solarus8Movement29are_lua_notifications_enabledEv" title='Solarus::Movement::are_lua_notifications_enabled' data-ref="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv">are_lua_notifications_enabled</a>()) {</td></tr>
+<tr><th id="317">317</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished_callback_ref" title='Solarus::Movement::finished_callback_ref' data-ref="Solarus::Movement::finished_callback_ref">finished_callback_ref</a>.<a class="ref" href="../../include/solarus/lua/ScopedLuaRef.h.html#_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs" title='Solarus::ScopedLuaRef::clear_and_call' data-ref="_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs">clear_and_call</a>(<a class="ref fake" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"movement callback"</q>);</td></tr>
+<tr><th id="318">318</th><td>    <a class="local col7 ref" href="#17lua_context" title='lua_context' data-ref="17lua_context">lua_context</a>-&gt;<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#_ZN7Solarus10LuaContext20movement_on_finishedERNS_8MovementE" title='Solarus::LuaContext::movement_on_finished' data-ref="_ZN7Solarus10LuaContext20movement_on_finishedERNS_8MovementE">movement_on_finished</a>(<span class='refarg'>*<b>this</b></span>);</td></tr>
+<tr><th id="319">319</th><td>  }</td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> != <b>nullptr</b> &amp;&amp; !<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16is_being_removedEv" title='Solarus::Entity::is_being_removed' data-ref="_ZNK7Solarus6Entity16is_being_removedEv">is_being_removed</a>()) {</td></tr>
+<tr><th id="322">322</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="virtual ref" href="../../include/solarus/entities/Entity.h.html#_ZN7Solarus6Entity24notify_movement_finishedEv" title='Solarus::Entity::notify_movement_finished' data-ref="_ZN7Solarus6Entity24notify_movement_finishedEv">notify_movement_finished</a>();</td></tr>
+<tr><th id="323">323</th><td>  }</td></tr>
+<tr><th id="324">324</th><td>}</td></tr>
+<tr><th id="325">325</th><td></td></tr>
+<tr><th id="326">326</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the movement is stopped.</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> * <span class="command">\return</span> true if the object is stopped, false otherwise</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="330">330</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement10is_stoppedEv" title='Solarus::Movement::is_stopped' data-ref="_ZNK7Solarus8Movement10is_stoppedEv">is_stopped</dfn>() <em>const</em> {</td></tr>
+<tr><th id="331">331</th><td>  <b>return</b> !<a class="virtual member" href="#_ZNK7Solarus8Movement10is_startedEv" title='Solarus::Movement::is_started' data-ref="_ZNK7Solarus8Movement10is_startedEv">is_started</a>();</td></tr>
+<tr><th id="332">332</th><td>}</td></tr>
+<tr><th id="333">333</th><td></td></tr>
+<tr><th id="334">334</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the object is moving.</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> * Subclasses of Movement should redefine this function to indicate</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> * whether the object is moving.</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> * <span class="command">\return</span> true if the object is moving, false otherwise</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="342">342</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus8Movement10is_startedEv" title='Solarus::Movement::is_started' data-ref="_ZNK7Solarus8Movement10is_startedEv">is_started</dfn>() <em>const</em> {</td></tr>
+<tr><th id="343">343</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="344">344</th><td>}</td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> * <span class="command">\brief</span> Stops the movement.</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc"> * When this function returns, is_started() should be false.</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="351">351</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement4stopEv" title='Solarus::Movement::stop' data-ref="_ZN7Solarus8Movement4stopEv">stop</dfn>() {</td></tr>
+<tr><th id="352">352</th><td></td></tr>
+<tr><th id="353">353</th><td>}</td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this movement is finished.</i></td></tr>
+<tr><th id="357">357</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="358">358</th><td><i class="doc"> * You can redefine this function if your movement has an end.</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc"> * <span class="command">\return</span> true if this movement is finished</i></td></tr>
+<tr><th id="361">361</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="362">362</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus8Movement11is_finishedEv" title='Solarus::Movement::is_finished' data-ref="_ZNK7Solarus8Movement11is_finishedEv">is_finished</dfn>() <em>const</em> {</td></tr>
+<tr><th id="363">363</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="364">364</th><td>}</td></tr>
+<tr><th id="365">365</th><td></td></tr>
+<tr><th id="366">366</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="367">367</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the movement is suspended.</i></td></tr>
+<tr><th id="368">368</th><td><i class="doc"> * <span class="command">\return</span> true if the movement is suspended</i></td></tr>
+<tr><th id="369">369</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="370">370</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement12is_suspendedEv" title='Solarus::Movement::is_suspended' data-ref="_ZNK7Solarus8Movement12is_suspendedEv">is_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="371">371</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::suspended" title='Solarus::Movement::suspended' data-ref="Solarus::Movement::suspended">suspended</a>;</td></tr>
+<tr><th id="372">372</th><td>}</td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> * <span class="command">\brief</span> Suspends or resumes the movement.</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc"> * This function is called by the entity to suspend or resume its movement.</i></td></tr>
+<tr><th id="378">378</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="379">379</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true to suspend the movement, false to resume it</i></td></tr>
+<tr><th id="380">380</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="381">381</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement13set_suspendedEb" title='Solarus::Movement::set_suspended' data-ref="_ZN7Solarus8Movement13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col8 decl" id="18suspended" title='suspended' data-type='bool' data-ref="18suspended">suspended</dfn>) {</td></tr>
+<tr><th id="382">382</th><td></td></tr>
+<tr><th id="383">383</th><td>  <b>if</b> (<a class="local col8 ref" href="#18suspended" title='suspended' data-ref="18suspended">suspended</a> != <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::suspended" title='Solarus::Movement::suspended' data-ref="Solarus::Movement::suspended">suspended</a>) {</td></tr>
+<tr><th id="384">384</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::suspended" title='Solarus::Movement::suspended' data-ref="Solarus::Movement::suspended">suspended</a> = <a class="local col8 ref" href="#18suspended" title='suspended' data-ref="18suspended">suspended</a>;</td></tr>
+<tr><th id="385">385</th><td></td></tr>
+<tr><th id="386">386</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col9 decl" id="19now" title='now' data-type='uint32_t' data-ref="19now">now</dfn> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td>    <b>if</b> (<a class="local col8 ref" href="#18suspended" title='suspended' data-ref="18suspended">suspended</a>) {</td></tr>
+<tr><th id="389">389</th><td>      <i>// the movement is being suspended</i></td></tr>
+<tr><th id="390">390</th><td>      <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::when_suspended" title='Solarus::Movement::when_suspended' data-ref="Solarus::Movement::when_suspended">when_suspended</a> = <a class="local col9 ref" href="#19now" title='now' data-ref="19now">now</a>;</td></tr>
+<tr><th id="391">391</th><td>    }</td></tr>
+<tr><th id="392">392</th><td>  }</td></tr>
+<tr><th id="393">393</th><td>}</td></tr>
+<tr><th id="394">394</th><td></td></tr>
+<tr><th id="395">395</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc"> * <span class="command">\brief</span> Returns the date when this movement was suspended.</i></td></tr>
+<tr><th id="397">397</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="398">398</th><td><i class="doc"> * This function should be called only while the movement is suspended.</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc"> * <span class="command">\return</span> the date when this movement started to be suspended</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="402">402</th><td><a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement18get_when_suspendedEv" title='Solarus::Movement::get_when_suspended' data-ref="_ZNK7Solarus8Movement18get_when_suspendedEv">get_when_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="403">403</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::when_suspended" title='Solarus::Movement::when_suspended' data-ref="Solarus::Movement::when_suspended">when_suspended</a>;</td></tr>
+<tr><th id="404">404</th><td>}</td></tr>
+<tr><th id="405">405</th><td></td></tr>
+<tr><th id="406">406</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="407">407</th><td><i class="doc"> * <span class="command">\brief</span> Updates the position of the object controlled by this movement.</i></td></tr>
+<tr><th id="408">408</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="409">409</th><td><i class="doc"> * This function is called repeatedly.</i></td></tr>
+<tr><th id="410">410</th><td><i class="doc"> * You can redefine this function.</i></td></tr>
+<tr><th id="411">411</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="412">412</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZN7Solarus8Movement6updateEv" title='Solarus::Movement::update' data-ref="_ZN7Solarus8Movement6updateEv">update</dfn>() {</td></tr>
+<tr><th id="413">413</th><td></td></tr>
+<tr><th id="414">414</th><td>  <b>if</b> (!<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished" title='Solarus::Movement::finished' data-ref="Solarus::Movement::finished">finished</a> &amp;&amp; <a class="virtual member" href="#_ZNK7Solarus8Movement11is_finishedEv" title='Solarus::Movement::is_finished' data-ref="_ZNK7Solarus8Movement11is_finishedEv">is_finished</a>()) {</td></tr>
+<tr><th id="415">415</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished" title='Solarus::Movement::finished' data-ref="Solarus::Movement::finished">finished</a> = <b>true</b>;</td></tr>
+<tr><th id="416">416</th><td>    <a class="virtual member" href="#_ZN7Solarus8Movement24notify_movement_finishedEv" title='Solarus::Movement::notify_movement_finished' data-ref="_ZN7Solarus8Movement24notify_movement_finishedEv">notify_movement_finished</a>();</td></tr>
+<tr><th id="417">417</th><td>  }</td></tr>
+<tr><th id="418">418</th><td>  <b>else</b> <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished" title='Solarus::Movement::finished' data-ref="Solarus::Movement::finished">finished</a> &amp;&amp; !<a class="virtual member" href="#_ZNK7Solarus8Movement11is_finishedEv" title='Solarus::Movement::is_finished' data-ref="_ZNK7Solarus8Movement11is_finishedEv">is_finished</a>()) {</td></tr>
+<tr><th id="419">419</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished" title='Solarus::Movement::finished' data-ref="Solarus::Movement::finished">finished</a> = <b>false</b>;</td></tr>
+<tr><th id="420">420</th><td>  }</td></tr>
+<tr><th id="421">421</th><td>}</td></tr>
+<tr><th id="422">422</th><td></td></tr>
+<tr><th id="423">423</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="424">424</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity would collide with the map</i></td></tr>
+<tr><th id="425">425</th><td><i class="doc"> * if it was moved a few pixels from its position.</i></td></tr>
+<tr><th id="426">426</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="427">427</th><td><i class="doc"> * If the movement is not attached to an entity of a map,</i></td></tr>
+<tr><th id="428">428</th><td><i class="doc"> * or if obstacles are ignored, false is always returned.</i></td></tr>
+<tr><th id="429">429</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="430">430</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dx</span> x distance between the current position and the position to check</i></td></tr>
+<tr><th id="431">431</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dy</span> y distance between the current position and the position to check</i></td></tr>
+<tr><th id="432">432</th><td><i class="doc"> * <span class="command">\return</span> true if the entity would overlap the map obstacles in this position</i></td></tr>
+<tr><th id="433">433</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="434">434</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement29test_collision_with_obstaclesEii" title='Solarus::Movement::test_collision_with_obstacles' data-ref="_ZNK7Solarus8Movement29test_collision_with_obstaclesEii">test_collision_with_obstacles</dfn>(<em>int</em> <dfn class="local col0 decl" id="20dx" title='dx' data-type='int' data-ref="20dx">dx</dfn>, <em>int</em> <dfn class="local col1 decl" id="21dy" title='dy' data-type='int' data-ref="21dy">dy</dfn>) <em>const</em> {</td></tr>
+<tr><th id="435">435</th><td></td></tr>
+<tr><th id="436">436</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a> == <b>nullptr</b> || <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a>) {</td></tr>
+<tr><th id="437">437</th><td>    <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="438">438</th><td>  }</td></tr>
+<tr><th id="439">439</th><td></td></tr>
+<tr><th id="440">440</th><td>  <a class="type" href="../../include/solarus/Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&amp; <dfn class="local col2 decl" id="22map" title='map' data-type='Solarus::Map &amp;' data-ref="22map">map</dfn> = <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity7get_mapEv" title='Solarus::Entity::get_map' data-ref="_ZNK7Solarus6Entity7get_mapEv">get_map</a>();</td></tr>
+<tr><th id="441">441</th><td></td></tr>
+<tr><th id="442">442</th><td>  <i>// place the collision box where we want to check the collisions</i></td></tr>
+<tr><th id="443">443</th><td>  <a class="type" href="../../include/solarus/lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a> <dfn class="local col3 decl" id="23collision_box" title='collision_box' data-type='Solarus::Rectangle' data-ref="23collision_box">collision_box</dfn> = <a class="ref fake" href="../../include/solarus/lowlevel/Rectangle.h.html#36" title='Solarus::Rectangle::Rectangle' data-ref="_ZN7Solarus9RectangleC1ERKS0_"></a><a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity16get_bounding_boxEv" title='Solarus::Entity::get_bounding_box' data-ref="_ZNK7Solarus6Entity16get_bounding_boxEv">get_bounding_box</a>();</td></tr>
+<tr><th id="444">444</th><td>  <a class="local col3 ref" href="#23collision_box" title='collision_box' data-ref="23collision_box">collision_box</a>.<a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#_ZN7Solarus9Rectangle6add_xyEii" title='Solarus::Rectangle::add_xy' data-ref="_ZN7Solarus9Rectangle6add_xyEii">add_xy</a>(<a class="local col0 ref" href="#20dx" title='dx' data-ref="20dx">dx</a>, <a class="local col1 ref" href="#21dy" title='dy' data-ref="21dy">dy</a>);</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td>  <em>bool</em> <dfn class="local col4 decl" id="24collision" title='collision' data-type='bool' data-ref="24collision">collision</dfn> = <a class="local col2 ref" href="#22map" title='map' data-ref="22map">map</a>.<a class="ref" href="../../include/solarus/Map.h.html#_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE" title='Solarus::Map::test_collision_with_obstacles' data-ref="_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE">test_collision_with_obstacles</a>(<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a>-&gt;<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9get_layerEv" title='Solarus::Entity::get_layer' data-ref="_ZNK7Solarus6Entity9get_layerEv">get_layer</a>(), <a class="local col3 ref" href="#23collision_box" title='collision_box' data-ref="23collision_box">collision_box</a>, <span class='refarg'>*<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::entity" title='Solarus::Movement::entity' data-ref="Solarus::Movement::entity">entity</a></span>);</td></tr>
+<tr><th id="447">447</th><td></td></tr>
+<tr><th id="448">448</th><td>  <b>if</b> (<a class="local col4 ref" href="#24collision" title='collision' data-ref="24collision">collision</a>) {</td></tr>
+<tr><th id="449">449</th><td>    <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::last_collision_box_on_obstacle" title='Solarus::Movement::last_collision_box_on_obstacle' data-ref="Solarus::Movement::last_collision_box_on_obstacle">last_collision_box_on_obstacle</a> <a class="ref" href="../../include/solarus/lowlevel/Rectangle.h.html#36" title='Solarus::Rectangle::operator=' data-ref="_ZN7Solarus9RectangleaSERKS0_">=</a> <a class="local col3 ref" href="#23collision_box" title='collision_box' data-ref="23collision_box">collision_box</a>;</td></tr>
+<tr><th id="450">450</th><td>  }</td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td>  <b>return</b> <a class="local col4 ref" href="#24collision" title='collision' data-ref="24collision">collision</a>;</td></tr>
+<tr><th id="453">453</th><td>}</td></tr>
+<tr><th id="454">454</th><td></td></tr>
+<tr><th id="455">455</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="456">456</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity would collide with the map</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc"> * if it was moved a few pixels from its position.</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="459">459</th><td><i class="doc"> * If the movement is not attached to an entity of a map,</i></td></tr>
+<tr><th id="460">460</th><td><i class="doc"> * or if obstacles are ignored, false is always returned.</i></td></tr>
+<tr><th id="461">461</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="462">462</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dxy</span> distance between the current position and the position to check</i></td></tr>
+<tr><th id="463">463</th><td><i class="doc"> * <span class="command">\return</span> true if the entity would overlap the map obstacles in this position</i></td></tr>
+<tr><th id="464">464</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="465">465</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE" title='Solarus::Movement::test_collision_with_obstacles' data-ref="_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE">test_collision_with_obstacles</dfn>(<em>const</em> <a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col5 decl" id="25dxy" title='dxy' data-type='const Solarus::Point &amp;' data-ref="25dxy">dxy</dfn>) <em>const</em> {</td></tr>
+<tr><th id="466">466</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus8Movement29test_collision_with_obstaclesEii" title='Solarus::Movement::test_collision_with_obstacles' data-ref="_ZNK7Solarus8Movement29test_collision_with_obstaclesEii">test_collision_with_obstacles</a>(<a class="local col5 ref" href="#25dxy" title='dxy' data-ref="25dxy">dxy</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::x" title='Solarus::Point::x' data-ref="Solarus::Point::x">x</a>, <a class="local col5 ref" href="#25dxy" title='dxy' data-ref="25dxy">dxy</a>.<a class="ref" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point::y" title='Solarus::Point::y' data-ref="Solarus::Point::y">y</a>);</td></tr>
+<tr><th id="467">467</th><td>}</td></tr>
+<tr><th id="468">468</th><td></td></tr>
+<tr><th id="469">469</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc"> * <span class="command">\brief</span> Returns the collision box of the last collision check that detected an obstacle.</i></td></tr>
+<tr><th id="471">471</th><td><i class="doc"> * <span class="command">\return</span> the collision box of the last collision detected, or (-1, -1) if no obstacle was detected</i></td></tr>
+<tr><th id="472">472</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="473">473</th><td><em>const</em> <a class="type" href="../../include/solarus/lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement34get_last_collision_box_on_obstacleEv" title='Solarus::Movement::get_last_collision_box_on_obstacle' data-ref="_ZNK7Solarus8Movement34get_last_collision_box_on_obstacleEv">get_last_collision_box_on_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="474">474</th><td></td></tr>
+<tr><th id="475">475</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::last_collision_box_on_obstacle" title='Solarus::Movement::last_collision_box_on_obstacle' data-ref="Solarus::Movement::last_collision_box_on_obstacle">last_collision_box_on_obstacle</a>;</td></tr>
+<tr><th id="476">476</th><td>}</td></tr>
+<tr><th id="477">477</th><td></td></tr>
+<tr><th id="478">478</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="479">479</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this movement currently ignores obstacles.</i></td></tr>
+<tr><th id="480">480</th><td><i class="doc"> * <span class="command">\return</span> true if the obstacles are ignored</i></td></tr>
+<tr><th id="481">481</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="482">482</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement21are_obstacles_ignoredEv" title='Solarus::Movement::are_obstacles_ignored' data-ref="_ZNK7Solarus8Movement21are_obstacles_ignoredEv">are_obstacles_ignored</dfn>() <em>const</em> {</td></tr>
+<tr><th id="483">483</th><td></td></tr>
+<tr><th id="484">484</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a>;</td></tr>
+<tr><th id="485">485</th><td>}</td></tr>
+<tr><th id="486">486</th><td></td></tr>
+<tr><th id="487">487</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc"> * <span class="command">\brief</span> Sets whether this movement has the property to traverse obstacles.</i></td></tr>
+<tr><th id="489">489</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> true to ignore obstacles</i></td></tr>
+<tr><th id="490">490</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="491">491</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement28set_default_ignore_obstaclesEb" title='Solarus::Movement::set_default_ignore_obstacles' data-ref="_ZN7Solarus8Movement28set_default_ignore_obstaclesEb">set_default_ignore_obstacles</dfn>(<em>bool</em> <dfn class="local col6 decl" id="26ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="26ignore_obstacles">ignore_obstacles</dfn>) {</td></tr>
+<tr><th id="492">492</th><td></td></tr>
+<tr><th id="493">493</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::default_ignore_obstacles" title='Solarus::Movement::default_ignore_obstacles' data-ref="Solarus::Movement::default_ignore_obstacles">default_ignore_obstacles</a> = <a class="local col6 ref" href="#26ignore_obstacles" title='ignore_obstacles' data-ref="26ignore_obstacles">ignore_obstacles</a>;</td></tr>
+<tr><th id="494">494</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a> = <a class="local col6 ref" href="#26ignore_obstacles" title='ignore_obstacles' data-ref="26ignore_obstacles">ignore_obstacles</a>;</td></tr>
+<tr><th id="495">495</th><td>}</td></tr>
+<tr><th id="496">496</th><td></td></tr>
+<tr><th id="497">497</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc"> * <span class="command">\brief</span> Overrides temporarily the ability of this movement to traverse obstacles.</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="500">500</th><td><i class="doc"> * Use restore_default_ignore_obstacles() to restore the normal property of the movement.</i></td></tr>
+<tr><th id="501">501</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="502">502</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">ignore_obstacles</span> true to ignore obstacles</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="504">504</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement20set_ignore_obstaclesEb" title='Solarus::Movement::set_ignore_obstacles' data-ref="_ZN7Solarus8Movement20set_ignore_obstaclesEb">set_ignore_obstacles</dfn>(<em>bool</em> <dfn class="local col7 decl" id="27ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="27ignore_obstacles">ignore_obstacles</dfn>) {</td></tr>
+<tr><th id="505">505</th><td></td></tr>
+<tr><th id="506">506</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a> = <a class="local col7 ref" href="#27ignore_obstacles" title='ignore_obstacles' data-ref="27ignore_obstacles">ignore_obstacles</a>;</td></tr>
+<tr><th id="507">507</th><td>}</td></tr>
+<tr><th id="508">508</th><td></td></tr>
+<tr><th id="509">509</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="510">510</th><td><i class="doc"> * <span class="command">\brief</span> Restores the normal value of ignore_obstacles.</i></td></tr>
+<tr><th id="511">511</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="512">512</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement32restore_default_ignore_obstaclesEv" title='Solarus::Movement::restore_default_ignore_obstacles' data-ref="_ZN7Solarus8Movement32restore_default_ignore_obstaclesEv">restore_default_ignore_obstacles</dfn>() {</td></tr>
+<tr><th id="513">513</th><td></td></tr>
+<tr><th id="514">514</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::current_ignore_obstacles" title='Solarus::Movement::current_ignore_obstacles' data-ref="Solarus::Movement::current_ignore_obstacles">current_ignore_obstacles</a> = <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::default_ignore_obstacles" title='Solarus::Movement::default_ignore_obstacles' data-ref="Solarus::Movement::default_ignore_obstacles">default_ignore_obstacles</a>;</td></tr>
+<tr><th id="515">515</th><td>}</td></tr>
+<tr><th id="516">516</th><td></td></tr>
+<tr><th id="517">517</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="518">518</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction a sprite controlled by this movement should take.</i></td></tr>
+<tr><th id="519">519</th><td><i class="doc"> * <span class="command">\return</span> the direction to use to display the object controlled by this movement (0 to 3)</i></td></tr>
+<tr><th id="520">520</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="521">521</th><td><em>int</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus8Movement24get_displayed_direction4Ev" title='Solarus::Movement::get_displayed_direction4' data-ref="_ZNK7Solarus8Movement24get_displayed_direction4Ev">get_displayed_direction4</dfn>() <em>const</em> {</td></tr>
+<tr><th id="522">522</th><td>  <b>return</b> <var>3</var>; <i>// by default, look down</i></td></tr>
+<tr><th id="523">523</th><td>}</td></tr>
+<tr><th id="524">524</th><td></td></tr>
+<tr><th id="525">525</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="526">526</th><td><i class="doc"> * <span class="command">\brief</span> Returns the coordinates where an object controlled by this movement</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc"> * should be displayed.</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc"> * By default, it returns the coordinates of the object itself. Redefine this function</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc"> * if you want the object to be displayed at different coordinates than its real position.</i></td></tr>
+<tr><th id="531">531</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="532">532</th><td><i class="doc"> * <span class="command">\return</span> the coordinates to use to display the object controlled by this movement</i></td></tr>
+<tr><th id="533">533</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="534">534</th><td><a class="type" href="../../include/solarus/lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus8Movement16get_displayed_xyEv" title='Solarus::Movement::get_displayed_xy' data-ref="_ZNK7Solarus8Movement16get_displayed_xyEv">get_displayed_xy</dfn>() <em>const</em> {</td></tr>
+<tr><th id="535">535</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus8Movement6get_xyEv" title='Solarus::Movement::get_xy' data-ref="_ZNK7Solarus8Movement6get_xyEv">get_xy</a>();</td></tr>
+<tr><th id="536">536</th><td>}</td></tr>
+<tr><th id="537">537</th><td></td></tr>
+<tr><th id="538">538</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="539">539</th><td><i class="doc"> * <span class="command">\brief</span> Returns the Lua registry ref to the function to call when this</i></td></tr>
+<tr><th id="540">540</th><td><i class="doc"> * movement finishes.</i></td></tr>
+<tr><th id="541">541</th><td><i class="doc"> * <span class="command">\return</span> The Lua ref to a function, or an empty ref.</i></td></tr>
+<tr><th id="542">542</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="543">543</th><td><em>const</em> <a class="type" href="../../include/solarus/lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement21get_finished_callbackEv" title='Solarus::Movement::get_finished_callback' data-ref="_ZNK7Solarus8Movement21get_finished_callbackEv">get_finished_callback</dfn>() <em>const</em> {</td></tr>
+<tr><th id="544">544</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished_callback_ref" title='Solarus::Movement::finished_callback_ref' data-ref="Solarus::Movement::finished_callback_ref">finished_callback_ref</a>;</td></tr>
+<tr><th id="545">545</th><td>}</td></tr>
+<tr><th id="546">546</th><td></td></tr>
+<tr><th id="547">547</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="548">548</th><td><i class="doc"> * <span class="command">\brief</span> Sets the function to call when this movement finishes.</i></td></tr>
+<tr><th id="549">549</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">finished_callback_ref</span> The Lua ref to a function, or an empty ref.</i></td></tr>
+<tr><th id="550">550</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="551">551</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement21set_finished_callbackERKNS_12ScopedLuaRefE" title='Solarus::Movement::set_finished_callback' data-ref="_ZN7Solarus8Movement21set_finished_callbackERKNS_12ScopedLuaRefE">set_finished_callback</dfn>(<em>const</em> <a class="type" href="../../include/solarus/lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col8 decl" id="28finished_callback_ref" title='finished_callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="28finished_callback_ref">finished_callback_ref</dfn>) {</td></tr>
+<tr><th id="552">552</th><td></td></tr>
+<tr><th id="553">553</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="member" href="../../include/solarus/lua/ExportableToLua.h.html#_ZNK7Solarus15ExportableToLua15get_lua_contextEv" title='Solarus::ExportableToLua::get_lua_context' data-ref="_ZNK7Solarus15ExportableToLua15get_lua_contextEv">get_lua_context</a>() != <b>nullptr</b>, <q>"Undefined Lua context"</q>);</td></tr>
+<tr><th id="554">554</th><td></td></tr>
+<tr><th id="555">555</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::finished_callback_ref" title='Solarus::Movement::finished_callback_ref' data-ref="Solarus::Movement::finished_callback_ref">finished_callback_ref</a> <a class="ref" href="../../include/solarus/lua/ScopedLuaRef.h.html#_ZN7Solarus12ScopedLuaRefaSERKS0_" title='Solarus::ScopedLuaRef::operator=' data-ref="_ZN7Solarus12ScopedLuaRefaSERKS0_">=</a> <a class="local col8 ref" href="#28finished_callback_ref" title='finished_callback_ref' data-ref="28finished_callback_ref">finished_callback_ref</a>;</td></tr>
+<tr><th id="556">556</th><td>}</td></tr>
+<tr><th id="557">557</th><td></td></tr>
+<tr><th id="558">558</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether Lua events and callbacks are enabled for this movement.</i></td></tr>
+<tr><th id="560">560</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="561">561</th><td><i class="doc"> * If no, the finished callback and events</i></td></tr>
+<tr><th id="562">562</th><td><i class="doc"> * movement:on_position_changed(), movement:on_obstacle_reached(),</i></td></tr>
+<tr><th id="563">563</th><td><i class="doc"> * movement:on_changed() and movement:on_finished() won't be called.</i></td></tr>
+<tr><th id="564">564</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="565">565</th><td><i class="doc"> * <span class="command">\return</span> Whether Lua notifications are currently enabled.</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="567">567</th><td><em>bool</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv" title='Solarus::Movement::are_lua_notifications_enabled' data-ref="_ZNK7Solarus8Movement29are_lua_notifications_enabledEv">are_lua_notifications_enabled</dfn>() <em>const</em> {</td></tr>
+<tr><th id="568">568</th><td>  <b>return</b> <a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::lua_notifications_enabled" title='Solarus::Movement::lua_notifications_enabled' data-ref="Solarus::Movement::lua_notifications_enabled">lua_notifications_enabled</a>;</td></tr>
+<tr><th id="569">569</th><td>}</td></tr>
+<tr><th id="570">570</th><td></td></tr>
+<tr><th id="571">571</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="572">572</th><td><i class="doc"> * <span class="command">\brief</span> Sets whether Lua events and callbacks are enabled for this movement.</i></td></tr>
+<tr><th id="573">573</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="574">574</th><td><i class="doc"> * If no, the finished callback and events</i></td></tr>
+<tr><th id="575">575</th><td><i class="doc"> * movement:on_position_changed(), movement:on_obstacle_reached(),</i></td></tr>
+<tr><th id="576">576</th><td><i class="doc"> * movement:on_changed() and movement:on_finished() won't be called.</i></td></tr>
+<tr><th id="577">577</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">notify</span><span class="command"> \c</span> <span class="arg">true</span> to enable Lua notifications.</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="580">580</th><td><em>void</em> <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="decl def" id="_ZN7Solarus8Movement29set_lua_notifications_enabledEb" title='Solarus::Movement::set_lua_notifications_enabled' data-ref="_ZN7Solarus8Movement29set_lua_notifications_enabledEb">set_lua_notifications_enabled</dfn>(<em>bool</em> <dfn class="local col9 decl" id="29notify" title='notify' data-type='bool' data-ref="29notify">notify</dfn>) {</td></tr>
+<tr><th id="581">581</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement::lua_notifications_enabled" title='Solarus::Movement::lua_notifications_enabled' data-ref="Solarus::Movement::lua_notifications_enabled">lua_notifications_enabled</a> = <a class="local col9 ref" href="#29notify" title='notify' data-ref="29notify">notify</a>;</td></tr>
+<tr><th id="582">582</th><td>}</td></tr>
+<tr><th id="583">583</th><td></td></tr>
+<tr><th id="584">584</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="585">585</th><td><i class="doc"> * <span class="command">\brief</span> Returns the name identifying this type in Lua.</i></td></tr>
+<tr><th id="586">586</th><td><i class="doc"> * <span class="command">\return</span> the name identifying this type in Lua</i></td></tr>
+<tr><th id="587">587</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="588">588</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="type" href="../../include/solarus/movements/Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a>::<dfn class="virtual decl def" id="_ZNK7Solarus8Movement17get_lua_type_nameEv" title='Solarus::Movement::get_lua_type_name' data-ref="_ZNK7Solarus8Movement17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> {</td></tr>
+<tr><th id="589">589</th><td>  <b>return</b> <a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>::<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext::movement_module_name" title='Solarus::LuaContext::movement_module_name' data-ref="Solarus::LuaContext::movement_module_name">movement_module_name</a>;</td></tr>
+<tr><th id="590">590</th><td>}</td></tr>
+<tr><th id="591">591</th><td></td></tr>
+<tr><th id="592">592</th><td>}</td></tr>
+<tr><th id="593">593</th><td></td></tr>
+<tr><th id="594">594</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

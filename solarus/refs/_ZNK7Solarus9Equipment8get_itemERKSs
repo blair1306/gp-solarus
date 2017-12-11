@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='92' type='const Solarus::EquipmentItem &amp; Solarus::Equipment::get_item(const std::string &amp; item_name) const'/>
+<def f='codebrowser/src/Equipment.cpp' l='439' ll='445' type='const Solarus::EquipmentItem &amp; Solarus::Equipment::get_item(const std::string &amp; item_name) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='486' u='c' c='_ZNK7Solarus9Equipment17get_item_assignedEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='434'>/**
+ * \brief Returns an equipment item.
+ * \param item_name Name of the item to get.
+ * \return The corresponding item.
+ */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='457' u='c' c='_ZNK7Solarus4Door8can_openEv'/>

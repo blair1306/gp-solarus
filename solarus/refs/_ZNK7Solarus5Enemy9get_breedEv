@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='104' type='const std::string &amp; Solarus::Enemy::get_breed() const'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='103'>// Enemy properties.</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='235' ll='237' type='const std::string &amp; Solarus::Enemy::get_breed() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='231'>/**
+ * \brief Returns the breed of this enemy.
+ * \return The breed.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4395' u='c' c='_ZN7Solarus10LuaContext19enemy_api_get_breedEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='340' u='c' c='_ZN7Solarus10LuaContext9run_enemyERNS_5EnemyE'/>

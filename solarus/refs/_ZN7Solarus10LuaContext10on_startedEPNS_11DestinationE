@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1241' type='void Solarus::LuaContext::on_started(Solarus::Destination * destination)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2132' ll='2143' type='void Solarus::LuaContext::on_started(Solarus::Destination * destination)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2128'>/**
+ * \brief Calls the on_started() method of the object on top of the stack.
+ * \param destination The destination point used (nullptr if it&apos;s a special one).
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2193' u='c' c='_ZN7Solarus10LuaContext14map_on_startedERNS_3MapEPNS_11DestinationE'/>

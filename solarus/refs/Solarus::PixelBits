@@ -1,0 +1,17 @@
+<def f='codebrowser/include/solarus/lowlevel/PixelBits.h' l='37' ll='60'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/lowlevel/PixelBits.h' l='30'>/**
+ * \brief Provides pixel-perfect collision checks for a surface.
+ *
+ * This class stores efficiently the location of the non-transparent pixels of a surface.
+ * For each pixel of the image, a bit indicates whether this pixel is transparent.
+ * This class perform fast pixel-perfect collision checks.
+ */</doc>
+<fun r='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<fun r='_ZNK7Solarus9PixelBits5printEv'/>
+<fun r='_ZNK7Solarus9PixelBits10print_maskEj'/>
+<mbr r='Solarus::PixelBits::width' o='0' t='int'/>
+<mbr r='Solarus::PixelBits::height' o='32' t='int'/>
+<mbr r='Solarus::PixelBits::nb_integers_per_row' o='64' t='int'/>
+<mbr r='Solarus::PixelBits::bits' o='128' t='std::vector&lt;std::vector&lt;uint32_t&gt; &gt;'/>

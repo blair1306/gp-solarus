@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='43' type='Solarus::Point &amp; Solarus::Point::operator+=(const Solarus::Point &amp; other)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='44' ll='48' type='Solarus::Point &amp; Solarus::Point::operator+=(const Solarus::Point &amp; other)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.h' l='40'>////////////////////////////////////////////////////////////
+    // Operators</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='39'>/**
+ * \brief Adds another point to this one.
+ * \param other Another point.
+ * \return The current point after modification.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='660' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='666' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='846' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='140' u='c' c='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2880' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2885' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2109' u='c' c='_ZN7Solarus4Hero4hurtERNS_6EntityEPNS_6SpriteEi'/>
+<use f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='51' u='c' c='_ZNK7Solarus28ParallaxScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='401' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='179' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='327' u='c' c='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='436' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>

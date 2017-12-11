@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='163' ll='174'/>
+<size>24</size>
+<doc f='include/SDL2/SDL_events.h' l='160'>/**
+ *  \brief Window state change event data (event.window.*)
+ */</doc>
+<mbr r='SDL_WindowEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_WindowEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_WindowEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_WindowEvent::event' o='96' t='Uint8'/>
+<mbr r='SDL_WindowEvent::padding1' o='104' t='Uint8'/>
+<mbr r='SDL_WindowEvent::padding2' o='112' t='Uint8'/>
+<mbr r='SDL_WindowEvent::padding3' o='120' t='Uint8'/>
+<mbr r='SDL_WindowEvent::data1' o='128' t='Sint32'/>
+<mbr r='SDL_WindowEvent::data2' o='160' t='Sint32'/>

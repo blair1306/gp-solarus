@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='622' type='static int Solarus::LuaContext::random_movement_api_get_angle(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='156' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='895' ll='902' type='static int Solarus::LuaContext::random_movement_api_get_angle(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='890'>/**
+ * \brief Implementation of random_movement:get_angle().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

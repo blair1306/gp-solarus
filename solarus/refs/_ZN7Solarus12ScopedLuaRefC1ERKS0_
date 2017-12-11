@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='43' type='void Solarus::ScopedLuaRef::ScopedLuaRef(const Solarus::ScopedLuaRef &amp; other)'/>
+<use f='codebrowser/include/solarus/lua/LuaContext.h' l='1032' u='c' c='_ZN7Solarus10LuaContext11LuaMenuDataC1ERKNS_12ScopedLuaRefEPKv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='178' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1314' u='c' c='_ZN7Solarus12CustomEntity15TraversableInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1381' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextENS_13CollisionModeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1400' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefES6_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1401' u='c' c='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefES6_'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='47' u='c' c='_ZN7Solarus4Hero13TreasureStateC1ERS0_RKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='75' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='39' u='c' c='_ZN7Solarus4Hero12VictoryStateC1ERS0_RKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='82' u='c' c='_ZN7Solarus5MusicC1ERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='376' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='109' u='c' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='134' u='c' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='219' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='49' ll='54' type='void Solarus::ScopedLuaRef::ScopedLuaRef(const Solarus::ScopedLuaRef &amp; other)'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='42'>/**
+ * \brief Copy constructor.
+ *
+ * This creates a new reference to the same Lua value.
+ *
+ * \param other The object to copy.
+ */</doc>

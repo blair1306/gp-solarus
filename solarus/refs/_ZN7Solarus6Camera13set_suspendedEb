@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='53' type='void Solarus::Camera::set_suspended(bool suspended)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='355' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='324' ll='326' type='void Solarus::Camera::set_suspended(bool )'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='316'>/**
+ * \copydoc Entity::set_suspended()
+ *
+ * Reimplemented from Entity to do nothing, in particular to avoid suspending
+ * the camera movement.
+ *
+ * TODO rename set_suspended() to notify_suspended() / notify_unsuspended().
+ */</doc>
+<doc f='codebrowser/src/entities/Camera.cpp' l='324'>/* suspended */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='84' type='void Solarus::GameCommands::set_saved_keyboard_binding(Solarus::GameCommand command, InputEvent::KeyboardKey key)'/>
+<use f='codebrowser/src/GameCommands.cpp' l='545' u='c' c='_ZN7Solarus12GameCommands20set_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='555' u='c' c='_ZN7Solarus12GameCommands20set_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<def f='codebrowser/src/GameCommands.cpp' l='684' ll='690' type='void Solarus::GameCommands::set_saved_keyboard_binding(Solarus::GameCommand command, InputEvent::KeyboardKey keyboard_key)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='677'>/**
+ * \brief Saves the low-level keyboard command where the specified game key is
+ * mapped.
+ * \param command A game command.
+ * \param keyboard_key The keyboard key to map to this game command in the
+ * savegame.
+ */</doc>

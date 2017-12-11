@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='135' type='bool Solarus::SpriteData::add_animation(const std::string &amp; animation_name, const Solarus::SpriteAnimationData &amp; animation)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='488' ll='502' type='bool Solarus::SpriteData::add_animation(const std::string &amp; animation_name, const Solarus::SpriteAnimationData &amp; animation)'/>
+<use f='codebrowser/src/SpriteData.cpp' l='550' u='c' c='_ZN7Solarus10SpriteData18set_animation_nameERKSsS2_'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='482'>/**
+ * \brief Adds an animation to this sprite.
+ * \param animation_name Name of the animation to add.
+ * \param animation The animation to add.
+ * \return \c true in case of success.
+ */</doc>

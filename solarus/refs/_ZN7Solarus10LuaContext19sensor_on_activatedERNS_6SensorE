@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='395' type='void Solarus::LuaContext::sensor_on_activated(Solarus::Sensor &amp; sensor)'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='111' u='c' c='_ZN7Solarus6Sensor8activateERNS_4HeroE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6161' ll='6170' type='void Solarus::LuaContext::sensor_on_activated(Solarus::Sensor &amp; sensor)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6154'>/**
+ * \brief Calls the on_activated() method of a Lua sensor.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sensor A sensor.
+ */</doc>

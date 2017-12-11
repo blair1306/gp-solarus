@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1147' type='static std::shared_ptr&lt;Movement&gt; Solarus::LuaContext::check_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='343' ll='355' type='static std::shared_ptr&lt;Movement&gt; Solarus::LuaContext::check_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='462' u='c' c='_ZN7Solarus10LuaContext16update_movementsEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='557' u='c' c='_ZN7Solarus10LuaContext19movement_api_get_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='574' u='c' c='_ZN7Solarus10LuaContext19movement_api_set_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='594' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='630' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='661' u='c' c='_ZN7Solarus10LuaContext33movement_api_get_ignore_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='676' u='c' c='_ZN7Solarus10LuaContext33movement_api_set_ignore_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='693' u='c' c='_ZN7Solarus10LuaContext27movement_api_get_direction4EP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='336'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * movement (of any subtype) and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the sprite
+ */</doc>

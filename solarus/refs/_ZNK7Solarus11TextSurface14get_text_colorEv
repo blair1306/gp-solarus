@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='89' type='const Solarus::Color &amp; Solarus::TextSurface::get_text_color() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='199' ll='201' type='const Solarus::Color &amp; Solarus::TextSurface::get_text_color() const'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='195'>/**
+ * \brief Returns the color of the text.
+ * \return The text color.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='356' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_get_colorEP9lua_State'/>

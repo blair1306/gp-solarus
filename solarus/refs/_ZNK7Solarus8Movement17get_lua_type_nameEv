@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='100' type='const std::string &amp; Solarus::Movement::get_lua_type_name() const'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='488' c='_ZNK7Solarus14CircleMovement17get_lua_type_nameEv'/>
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='53' c='_ZNK7Solarus15ExportableToLua17get_lua_type_nameEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='588' ll='590' type='const std::string &amp; Solarus::Movement::get_lua_type_name() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='584'>/**
+ * \brief Returns the name identifying this type in Lua.
+ * \return the name identifying this type in Lua
+ */</doc>
+<ovr f='codebrowser/src/movements/PixelMovement.cpp' l='280' c='_ZNK7Solarus13PixelMovement17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='686' c='_ZNK7Solarus16StraightMovement17get_lua_type_nameEv'/>

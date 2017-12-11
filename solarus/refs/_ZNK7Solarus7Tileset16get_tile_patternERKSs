@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='53' type='const Solarus::TilePattern &amp; Solarus::Tileset::get_tile_pattern(const std::string &amp; id) const'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='49' u='c' c='_ZN7Solarus11DynamicTileC1ERKSsiRKNS_5PointERKNS_4SizeERKNS_7TilesetES2_b'/>
+<def f='codebrowser/src/entities/Tileset.cpp' l='210' ll='219' type='const Solarus::TilePattern &amp; Solarus::Tileset::get_tile_pattern(const std::string &amp; id) const'/>
+<doc f='codebrowser/src/entities/Tileset.cpp' l='205'>/**
+ * \brief Returns a tile pattern from this tileset.
+ * \param id Id of the tile pattern to get.
+ * \return The tile pattern with this id.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='424' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>

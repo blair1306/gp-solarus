@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='92' type='const std::string &amp; Solarus::GameCommands::get_joypad_binding_savegame_variable(Solarus::GameCommand command) const'/>
+<def f='codebrowser/src/GameCommands.cpp' l='644' ll='661' type='const std::string &amp; Solarus::GameCommands::get_joypad_binding_savegame_variable(Solarus::GameCommand command) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='718' u='c' c='_ZNK7Solarus12GameCommands24get_saved_joypad_bindingENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='731' u='c' c='_ZN7Solarus12GameCommands24set_saved_joypad_bindingENS_11GameCommandERKSs'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='637'>/**
+ * \brief Returns the name of the savegame variable that stores the joypad
+ * mapping of a game command.
+ * \param command A game command.
+ * \return The savegame variable that stores the joypad action mapped to this
+ * game command, or an empty string if this command is GameCommand::NONE.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_atomic.h' l='211' type='int SDL_AtomicAdd(SDL_atomic_t * a, int v)'/>
+<doc f='include/SDL2/SDL_atomic.h' l='204'>/**
+ * \brief Add to an atomic variable.
+ *
+ * \return The previous value of the atomic variable.
+ *
+ * \note This same style can be used for any number operation
+ */</doc>

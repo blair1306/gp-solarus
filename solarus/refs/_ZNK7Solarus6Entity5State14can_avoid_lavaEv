@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='86' type='bool Solarus::Entity::State::can_avoid_lava() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='572' ll='574' type='bool Solarus::Entity::State::can_avoid_lava() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='565'>/**
+ * \brief Returns whether the entity ignores the effect of lava in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of lava in the current state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1257' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='214' c='_ZNK7Solarus4Hero22BackToSolidGroundState14can_avoid_lavaEv'/>
+<ovr f='codebrowser/src/hero/FallingState.cpp' l='98' c='_ZNK7Solarus4Hero12FallingState14can_avoid_lavaEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='131' c='_ZNK7Solarus4Hero18ForcedWalkingState14can_avoid_lavaEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='102' c='_ZNK7Solarus4Hero13HookshotState14can_avoid_lavaEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='235' c='_ZNK7Solarus4Hero12JumpingState14can_avoid_lavaEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='311' c='_ZNK7Solarus4Hero12RunningState14can_avoid_lavaEv'/>

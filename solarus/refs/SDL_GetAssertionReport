@@ -1,0 +1,23 @@
+<dec f='include/SDL2/SDL_assert.h' l='265' type='const SDL_assert_data * SDL_GetAssertionReport()'/>
+<doc f='include/SDL2/SDL_assert.h' l='243'>/**
+ *  \brief Get a list of all assertion failures.
+ *
+ *  Get all assertions triggered since last call to SDL_ResetAssertionReport(),
+ *  or the start of the program.
+ *
+ *  The proper way to examine this data looks something like this:
+ *
+ *  &lt;code&gt;
+ *  const SDL_assert_data *item = SDL_GetAssertionReport();
+ *  while (item) {
+ *      printf(&quot;&apos;%s&apos;, %s (%s:%d), triggered %u times, always ignore: %s.\n&quot;,
+ *             item-&gt;condition, item-&gt;function, item-&gt;filename,
+ *             item-&gt;linenum, item-&gt;trigger_count,
+ *             item-&gt;always_ignore ? &quot;yes&quot; : &quot;no&quot;);
+ *      item = item-&gt;next;
+ *  }
+ *  &lt;/code&gt;
+ *
+ *  \return List of all assertions.
+ *  \sa SDL_ResetAssertionReport
+ */</doc>

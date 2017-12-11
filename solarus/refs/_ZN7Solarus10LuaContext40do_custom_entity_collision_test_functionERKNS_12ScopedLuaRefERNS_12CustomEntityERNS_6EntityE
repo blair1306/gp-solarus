@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='254' type='bool Solarus::LuaContext::do_custom_entity_collision_test_function(const Solarus::ScopedLuaRef &amp; collision_test_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='880' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5214' ll='5240' type='bool Solarus::LuaContext::do_custom_entity_collision_test_function(const Solarus::ScopedLuaRef &amp; collision_test_ref, Solarus::CustomEntity &amp; custom_entity, Solarus::Entity &amp; other_entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5207'>/**
+ * \brief Calls the specified a Lua collision test function.
+ * \param collision_test_ref Lua ref to a collision test function.
+ * \param custom_entity The custom entity that is testing the collision.
+ * \param other_entity The entity to test a collision with.
+ * \return \c true if the collision test function returned \c true.
+ */</doc>

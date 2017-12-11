@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/FallingState.h' l='31' type='void Solarus::Hero::FallingState::FallingState(Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='259' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='378' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2215' u='c' c='_ZN7Solarus4Hero10start_holeEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2228' u='c' c='_ZN7Solarus4Hero10start_holeEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2691' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<def f='codebrowser/src/hero/FallingState.cpp' l='31' ll='34' type='void Solarus::Hero::FallingState::FallingState(Solarus::Hero &amp; hero)'/>
+<doc f='codebrowser/src/hero/FallingState.cpp' l='27'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ */</doc>

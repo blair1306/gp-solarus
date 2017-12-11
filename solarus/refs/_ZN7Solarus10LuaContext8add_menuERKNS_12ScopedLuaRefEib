@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='220' type='void Solarus::LuaContext::add_menu(const Solarus::ScopedLuaRef &amp; menu_ref, int context_index, bool on_top)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='219'>// Menus.</doc>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='58' ll='81' type='void Solarus::LuaContext::add_menu(const Solarus::ScopedLuaRef &amp; menu_ref, int context_index, bool on_top)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='197' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='48'>/**
+ * \brief Registers a menu into a context (table or a userdata).
+ *
+ * This function can be called safely even while iterating on the menus list.
+ *
+ * \param menu_ref Lua ref of the menu to add.
+ * \param context_index Index of the table or userdata in the stack.
+ * \param on_top \c true to place this menu on top of existing one in the
+ * same context, \c false to place it behind.
+ */</doc>

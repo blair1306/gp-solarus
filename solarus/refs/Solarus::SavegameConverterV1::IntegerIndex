@@ -1,0 +1,10 @@
+<def f='codebrowser/include/solarus/SavegameConverterV1.h' l='97' ll='200'/>
+<doc f='codebrowser/include/solarus/SavegameConverterV1.h' l='88'>/**
+     * \brief Index of each integer saved in the file.
+     *
+     * Do not change these numbers, otherwise you might break
+     * the existing savegames.
+     * Values before 1023 are used by the engine. Scripts only have a
+     * read-only access to them.
+     * Values above 1024 are available for the maps in reading and writing.
+     */</doc>

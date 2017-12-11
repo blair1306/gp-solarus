@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='437' type='Solarus::Rectangle'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='527' u='m' c='_ZNK7Solarus6Entity8overlapsERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='536' u='m' c='_ZNK7Solarus6Entity8overlapsERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='546' u='m' c='_ZNK7Solarus6Entity8overlapsEii'/>
+<offset>480</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='437'>/**&lt; This rectangle represents the position of the entity of the map and is
+                                                 * used for the collision tests. It corresponds to the bounding box of the entity.
+                                                 * It can be different from the sprite&apos;s rectangle of the entity.
+                                                 * For example, the hero&apos;s bounding box is a 16*16 rectangle, but its sprite may be
+                                                 * a 24*32 rectangle. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='65' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='664' u='m' c='_ZNK7Solarus6Entity5get_xEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='672' u='m' c='_ZNK7Solarus6Entity5get_yEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='683' u='m' c='_ZN7Solarus6Entity5set_xEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='694' u='m' c='_ZN7Solarus6Entity5set_yEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='737' u='m' c='_ZNK7Solarus6Entity14get_top_left_xEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='745' u='m' c='_ZNK7Solarus6Entity14get_top_left_yEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='761' u='m' c='_ZN7Solarus6Entity14set_top_left_xEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='769' u='m' c='_ZN7Solarus6Entity14set_top_left_yEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='816' u='m' c='_ZNK7Solarus6Entity9get_widthEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='824' u='m' c='_ZNK7Solarus6Entity10get_heightEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='832' u='m' c='_ZNK7Solarus6Entity8get_sizeEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='844' u='m' c='_ZN7Solarus6Entity8set_sizeEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='878' u='a' c='_ZNK7Solarus6Entity16get_bounding_boxEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='890' u='w' c='_ZN7Solarus6Entity16set_bounding_boxERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1126' u='m' c='_ZNK7Solarus6Entity16get_center_pointEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1181' u='m' c='_ZN7Solarus6Entity10set_originEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2767' u='r' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>

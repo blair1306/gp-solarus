@@ -1,0 +1,59 @@
+<def f='include/c++/4.9/ostream' l='107' ll='114' type='__ostream_type &amp; std::basic_ostream::operator&lt;&lt;(__ostream_type &amp;(*)(__ostream_type &amp;) __pf)'/>
+<doc f='include/c++/4.9/ostream' l='100'>/**
+       *  @brief  Interface for manipulators.
+       *
+       *  Manipulators such as @c std::endl and @c std::hex use these
+       *  functions in constructs like &quot;std::cout &lt;&lt; std::endl&quot;.  For more
+       *  information, see the iomanip header.
+      */</doc>
+<use f='codebrowser/gui/src/main.cpp' l='112' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='127' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='140' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='146' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='149' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/gui/src/main.cpp' l='154' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19add_questEiPPc'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='57' u='c' c='_ZN7Solarus6Logger5printERKSsRSo'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='149' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='244' u='c' c='_ZNK7Solarus9PixelBits5printEv'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='264' u='c' c='_ZNK7Solarus9PixelBits5printEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2956' u='c' c='_ZN7Solarus10LuaContext8l_loaderEP9lua_State'/>
+<use f='codebrowser/src/main/Main.cpp' l='67' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='65' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='63' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='61' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='59' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='57' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='55' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='53' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='51' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='49' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='48' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='45' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='43' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='41' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='41' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='54' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='54' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='52' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='82' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='82' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='81' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='81' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='80' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='74' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='74' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='73' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='73' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='72' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='52' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='52' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='51' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='52' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='52' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='51' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='51' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='50' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

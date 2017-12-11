@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_video.h' l='671' type='int SDL_SetWindowFullscreen(SDL_Window * window, Uint32 flags)'/>
+<doc f='include/SDL2/SDL_video.h' l='663'>/**
+ *  \brief Set a window&apos;s fullscreen state.
+ *
+ *  \return 0 on success, or -1 if setting the display mode failed.
+ *
+ *  \sa SDL_SetWindowDisplayMode()
+ *  \sa SDL_GetWindowDisplayMode()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='309' u='c' c='_ZN7Solarus5Video4quitEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='581' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>

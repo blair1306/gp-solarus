@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='256' type='bool Solarus::InputEvent::is_character_pressed() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='841' ll='844' type='bool Solarus::InputEvent::is_character_pressed() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='837'>/**
+ * \brief Returns whether this event is a text event.
+ * \return true if this event corresponds to entered text.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1554' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

@@ -1,0 +1,14 @@
+<def f='codebrowser/include/solarus/entities/EnemyReaction.h' l='34' ll='74'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/entities/EnemyReaction.h' l='29'>/**
+ * \brief Describes how an enemy reacts when it receives an attack.
+ *
+ * The reaction may be different between different sprites of the enemy.
+ */</doc>
+<fun r='_ZN7Solarus13EnemyReactionC1Ev'/>
+<fun r='_ZN7Solarus13EnemyReaction20set_default_reactionEv'/>
+<fun r='_ZN7Solarus13EnemyReaction20set_general_reactionENS0_12ReactionTypeEi'/>
+<fun r='_ZN7Solarus13EnemyReaction19set_sprite_reactionEPKNS_6SpriteENS0_12ReactionTypeEi'/>
+<fun r='_ZNK7Solarus13EnemyReaction12get_reactionEPKNS_6SpriteE'/>
+<mbr r='Solarus::EnemyReaction::general_reaction' o='0' t='Solarus::EnemyReaction::Reaction'/>
+<mbr r='Solarus::EnemyReaction::sprite_reactions' o='64' t='std::map&lt;const Sprite *, Reaction&gt;'/>

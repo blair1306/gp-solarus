@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='46' type='int Solarus::LuaTools::get_positive_index(lua_State * l, int index)'/>
+<doc f='codebrowser/include/solarus/lua/LuaTools.h' l='45'>// Helpers.</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='611' u='c' c='_ZN7Solarus10LuaContext11find_methodEiPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1078' u='c' c='_ZN7Solarus10LuaContext11is_userdataEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1112' u='c' c='_ZN7Solarus10LuaContext14check_userdataEP9lua_StateiRKSs'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='37' ll='45' type='int Solarus::LuaTools::get_positive_index(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='892' u='c' c='_ZN7Solarus8LuaTools8is_colorEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='921' u='c' c='_ZN7Solarus8LuaTools11check_colorEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='28'>/**
+ * \brief For an index in the Lua stack, returns an equivalent positive index.
+ *
+ * Pseudo-indexes are unchanged.
+ *
+ * \param l A Lua state.
+ * \param index An index in the stack.
+ * \return The corresponding positive index.
+ */</doc>

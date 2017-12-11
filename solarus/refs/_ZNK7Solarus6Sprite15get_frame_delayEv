@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='84' type='uint32_t Solarus::Sprite::get_frame_delay() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='218' ll='220' type='uint32_t Solarus::Sprite::get_frame_delay() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='406' u='c' c='_ZN7Solarus6Sprite17set_current_frameEib'/>
+<use f='codebrowser/src/Sprite.cpp' l='511' u='c' c='_ZN7Solarus6Sprite13set_suspendedEb'/>
+<use f='codebrowser/src/Sprite.cpp' l='556' u='c' c='_ZN7Solarus6Sprite10set_pausedEb'/>
+<use f='codebrowser/src/Sprite.cpp' l='700' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='713' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='737' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='208'>/**
+ * \brief Returns the frame delay of the current animation.
+ *
+ * A value of 0 (only for 1-frame animations) means that the
+ * animation must continue to be drawn: in this case,
+ * is_animation_finished() always returns false.
+ *
+ * \return The delay between two frames for the current animation
+ * in milliseconds.
+ */</doc>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='127' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>

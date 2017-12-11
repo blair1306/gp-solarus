@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='44' type='void Solarus::Rectangle::Rectangle()'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='23' ll='25' type='void Solarus::Rectangle::Rectangle()'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='475' u='c' c='_ZN7Solarus9RectangleaNERKS0_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='507' u='c' c='_ZN7Solarus9RectangleoRERKS0_'/>
+<use f='codebrowser/include/solarus/hero/HeroSprites.h' l='75' u='c' c='_ZN7Solarus11HeroSprites22set_clipping_rectangleERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='20'>/**
+ * \brief Creates a rectangle, without specifying its properties.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='429' u='c' c='_ZNK7Solarus6Sprite27get_current_frame_rectangleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='81' u='c' c='_ZN7Solarus11HeroSpritesC1ERNS_4HeroERNS_9EquipmentE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='470' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='866' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='33' u='c' c='_ZN12_GLOBAL__N_17ElementC1Ev'/>

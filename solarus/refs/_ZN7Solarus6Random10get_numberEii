@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Random.h' l='33' type='int Solarus::Random::get_number(int x, int y)'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='154' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='154' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<use f='codebrowser/src/lowlevel/Random.cpp' l='47' u='c' c='_ZN7Solarus6Random10get_numberEj'/>
+<def f='codebrowser/src/lowlevel/Random.cpp' l='56' ll='72' type='int Solarus::Random::get_number(int x, int y)'/>
+<doc f='codebrowser/src/lowlevel/Random.cpp' l='50'>/**
+ * \brief Returns a random integer number in [x, y[ with a uniform distribution.
+ * \param x The inferior bound.
+ * \param y The superior bound.
+ * \return A random integer number in [x, y[.
+ */</doc>

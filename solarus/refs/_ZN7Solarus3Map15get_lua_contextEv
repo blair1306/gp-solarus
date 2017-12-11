@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Map.h' l='92' type='Solarus::LuaContext &amp; Solarus::Map::get_lua_context()'/>
+<def f='codebrowser/src/Map.cpp' l='325' ll='327' type='Solarus::LuaContext &amp; Solarus::Map::get_lua_context()'/>
+<use f='codebrowser/src/Map.cpp' l='460' u='c' c='_ZN7Solarus3Map13set_suspendedEb'/>
+<use f='codebrowser/src/Map.cpp' l='470' u='c' c='_ZN7Solarus3Map12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/Map.cpp' l='485' u='c' c='_ZN7Solarus3Map6updateEv'/>
+<use f='codebrowser/src/Map.cpp' l='536' u='c' c='_ZN7Solarus3Map4drawEv'/>
+<use f='codebrowser/src/Map.cpp' l='701' u='c' c='_ZN7Solarus3Map5startEv'/>
+<use f='codebrowser/src/Map.cpp' l='711' u='c' c='_ZN7Solarus3Map5leaveEv'/>
+<use f='codebrowser/src/Map.cpp' l='740' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<doc f='codebrowser/src/Map.cpp' l='318'>/**
+ * \brief Returns the shared Lua context.
+ *
+ * This function should not be called before the map is loaded into a game.
+ *
+ * \return The Lua context where all scripts are run.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='190' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>

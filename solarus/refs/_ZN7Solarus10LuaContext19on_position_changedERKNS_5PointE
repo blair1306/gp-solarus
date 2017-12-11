@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1238' type='void Solarus::LuaContext::on_position_changed(const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2099' ll='2106' type='void Solarus::LuaContext::on_position_changed(const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2095'>/**
+ * \brief Calls the on_position_changed() method of the object on top of the stack.
+ * \param xy The new coordinates.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1945' u='c' c='_ZN7Solarus10LuaContext28movement_on_position_changedERNS_8MovementERKNS_5PointE'/>

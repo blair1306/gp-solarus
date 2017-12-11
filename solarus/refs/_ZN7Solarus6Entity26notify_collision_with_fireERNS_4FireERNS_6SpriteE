@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='315' type='void Solarus::Entity::notify_collision_with_fire(Solarus::Fire &amp; fire, Solarus::Sprite &amp; sprite_overlapping)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1126' c='_ZN7Solarus12CustomEntity26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='1004' c='_ZN7Solarus5Enemy26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3175' ll='3176' type='void Solarus::Entity::notify_collision_with_fire(Solarus::Fire &amp; , Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3169'>/**
+ * \brief Notifies this entity that a sprite of fire
+ * detects a pixel-perfect collision with a sprite of this entity.
+ * \param fire the fire
+ * \param sprite_overlapping the sprite of the current entity that collides with the fire
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3175'>/* fire */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3175'>/* sprite_overlapping */</doc>
+<use f='codebrowser/src/entities/Fire.cpp' l='74' u='c' c='_ZN7Solarus4Fire16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>

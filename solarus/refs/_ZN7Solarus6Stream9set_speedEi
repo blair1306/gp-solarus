@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='50' type='void Solarus::Stream::set_speed(int speed)'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='76' ll='78' type='void Solarus::Stream::set_speed(int speed)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='72'>/**
+ * \brief Sets the speed of this stream.
+ * \param speed The speed in pixels per second.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3525' u='c' c='_ZN7Solarus10LuaContext20stream_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1034' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>

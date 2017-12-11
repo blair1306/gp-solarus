@@ -1,0 +1,741 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_events.h source code [include/SDL2/SDL_events.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_events.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_events.h.html'>SDL_events.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_events.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Include file for SDL event handling.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_events_h">_SDL_events_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_events_h" data-ref="_M/_SDL_events_h">_SDL_events_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_video.h.html">"SDL_video.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="SDL_keyboard.h.html">"SDL_keyboard.h"</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="SDL_mouse.h.html">"SDL_mouse.h"</a></u></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="SDL_joystick.h.html">"SDL_joystick.h"</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="SDL_gamecontroller.h.html">"SDL_gamecontroller.h"</a></u></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="SDL_quit.h.html">"SDL_quit.h"</a></u></td></tr>
+<tr><th id="39">39</th><td><u>#include <a href="SDL_gesture.h.html">"SDL_gesture.h"</a></u></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="SDL_touch.h.html">"SDL_touch.h"</a></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="44">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="44">endif</span></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i>/* General keyboard/mouse state definitions */</i></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/SDL_RELEASED" data-ref="_M/SDL_RELEASED">SDL_RELEASED</dfn>    0</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/SDL_PRESSED" data-ref="_M/SDL_PRESSED">SDL_PRESSED</dfn> 1</u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * <span class="command">\brief</span> The types of events that can be delivered.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="55">55</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="56">56</th><td>{</td></tr>
+<tr><th id="57">57</th><td>    <dfn class="enum" id="::SDL_FIRSTEVENT" title='::SDL_FIRSTEVENT' data-ref="::SDL_FIRSTEVENT">SDL_FIRSTEVENT</dfn>     = <var>0</var>,     <i class="doc">/**&lt; Unused (do not remove) */</i></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <i>/* Application events */</i></td></tr>
+<tr><th id="60">60</th><td>    <dfn class="enum" id="::SDL_QUIT" title='::SDL_QUIT' data-ref="::SDL_QUIT">SDL_QUIT</dfn>           = <var>0x100</var>, <i class="doc">/**&lt; User-requested quit */</i></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>    <i>/* These application events have special meaning on iOS, see README-ios.txt for details */</i></td></tr>
+<tr><th id="63">63</th><td>    <dfn class="enum" id="::SDL_APP_TERMINATING" title='::SDL_APP_TERMINATING' data-ref="::SDL_APP_TERMINATING">SDL_APP_TERMINATING</dfn>,        <i class="doc">/**&lt; The application is being terminated by the OS</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">                                     Called on iOS in applicationWillTerminate()</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">                                     Called on Android in onDestroy()</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="67">67</th><td>    <dfn class="enum" id="::SDL_APP_LOWMEMORY" title='::SDL_APP_LOWMEMORY' data-ref="::SDL_APP_LOWMEMORY">SDL_APP_LOWMEMORY</dfn>,          <i class="doc">/**&lt; The application is low on memory, free memory if possible.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc">                                     Called on iOS in applicationDidReceiveMemoryWarning()</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">                                     Called on Android in onLowMemory()</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="::SDL_APP_WILLENTERBACKGROUND" title='::SDL_APP_WILLENTERBACKGROUND' data-ref="::SDL_APP_WILLENTERBACKGROUND">SDL_APP_WILLENTERBACKGROUND</dfn>, <i class="doc">/**&lt; The application is about to enter the background</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">                                     Called on iOS in applicationWillResignActive()</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">                                     Called on Android in onPause()</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="75">75</th><td>    <dfn class="enum" id="::SDL_APP_DIDENTERBACKGROUND" title='::SDL_APP_DIDENTERBACKGROUND' data-ref="::SDL_APP_DIDENTERBACKGROUND">SDL_APP_DIDENTERBACKGROUND</dfn>, <i class="doc">/**&lt; The application did enter the background and may not get CPU for some time</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">                                     Called on iOS in applicationDidEnterBackground()</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">                                     Called on Android in onPause()</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="79">79</th><td>    <dfn class="enum" id="::SDL_APP_WILLENTERFOREGROUND" title='::SDL_APP_WILLENTERFOREGROUND' data-ref="::SDL_APP_WILLENTERFOREGROUND">SDL_APP_WILLENTERFOREGROUND</dfn>, <i class="doc">/**&lt; The application is about to enter the foreground</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">                                     Called on iOS in applicationWillEnterForeground()</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">                                     Called on Android in onResume()</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="83">83</th><td>    <dfn class="enum" id="::SDL_APP_DIDENTERFOREGROUND" title='::SDL_APP_DIDENTERFOREGROUND' data-ref="::SDL_APP_DIDENTERFOREGROUND">SDL_APP_DIDENTERFOREGROUND</dfn>, <i class="doc">/**&lt; The application is now interactive</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">                                     Called on iOS in applicationDidBecomeActive()</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">                                     Called on Android in onResume()</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">                                */</i></td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <i>/* Window events */</i></td></tr>
+<tr><th id="89">89</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT" title='::SDL_WINDOWEVENT' data-ref="::SDL_WINDOWEVENT">SDL_WINDOWEVENT</dfn>    = <var>0x200</var>, <i class="doc">/**&lt; Window state change */</i></td></tr>
+<tr><th id="90">90</th><td>    <dfn class="enum" id="::SDL_SYSWMEVENT" title='::SDL_SYSWMEVENT' data-ref="::SDL_SYSWMEVENT">SDL_SYSWMEVENT</dfn>,             <i class="doc">/**&lt; System specific event */</i></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <i>/* Keyboard events */</i></td></tr>
+<tr><th id="93">93</th><td>    <dfn class="enum" id="::SDL_KEYDOWN" title='::SDL_KEYDOWN' data-ref="::SDL_KEYDOWN">SDL_KEYDOWN</dfn>        = <var>0x300</var>, <i class="doc">/**&lt; Key pressed */</i></td></tr>
+<tr><th id="94">94</th><td>    <dfn class="enum" id="::SDL_KEYUP" title='::SDL_KEYUP' data-ref="::SDL_KEYUP">SDL_KEYUP</dfn>,                  <i class="doc">/**&lt; Key released */</i></td></tr>
+<tr><th id="95">95</th><td>    <dfn class="enum" id="::SDL_TEXTEDITING" title='::SDL_TEXTEDITING' data-ref="::SDL_TEXTEDITING">SDL_TEXTEDITING</dfn>,            <i class="doc">/**&lt; Keyboard text editing (composition) */</i></td></tr>
+<tr><th id="96">96</th><td>    <dfn class="enum" id="::SDL_TEXTINPUT" title='::SDL_TEXTINPUT' data-ref="::SDL_TEXTINPUT">SDL_TEXTINPUT</dfn>,              <i class="doc">/**&lt; Keyboard text input */</i></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <i>/* Mouse events */</i></td></tr>
+<tr><th id="99">99</th><td>    <dfn class="enum" id="::SDL_MOUSEMOTION" title='::SDL_MOUSEMOTION' data-ref="::SDL_MOUSEMOTION">SDL_MOUSEMOTION</dfn>    = <var>0x400</var>, <i class="doc">/**&lt; Mouse moved */</i></td></tr>
+<tr><th id="100">100</th><td>    <dfn class="enum" id="::SDL_MOUSEBUTTONDOWN" title='::SDL_MOUSEBUTTONDOWN' data-ref="::SDL_MOUSEBUTTONDOWN">SDL_MOUSEBUTTONDOWN</dfn>,        <i class="doc">/**&lt; Mouse button pressed */</i></td></tr>
+<tr><th id="101">101</th><td>    <dfn class="enum" id="::SDL_MOUSEBUTTONUP" title='::SDL_MOUSEBUTTONUP' data-ref="::SDL_MOUSEBUTTONUP">SDL_MOUSEBUTTONUP</dfn>,          <i class="doc">/**&lt; Mouse button released */</i></td></tr>
+<tr><th id="102">102</th><td>    <dfn class="enum" id="::SDL_MOUSEWHEEL" title='::SDL_MOUSEWHEEL' data-ref="::SDL_MOUSEWHEEL">SDL_MOUSEWHEEL</dfn>,             <i class="doc">/**&lt; Mouse wheel motion */</i></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>    <i>/* Joystick events */</i></td></tr>
+<tr><th id="105">105</th><td>    <dfn class="enum" id="::SDL_JOYAXISMOTION" title='::SDL_JOYAXISMOTION' data-ref="::SDL_JOYAXISMOTION">SDL_JOYAXISMOTION</dfn>  = <var>0x600</var>, <i class="doc">/**&lt; Joystick axis motion */</i></td></tr>
+<tr><th id="106">106</th><td>    <dfn class="enum" id="::SDL_JOYBALLMOTION" title='::SDL_JOYBALLMOTION' data-ref="::SDL_JOYBALLMOTION">SDL_JOYBALLMOTION</dfn>,          <i class="doc">/**&lt; Joystick trackball motion */</i></td></tr>
+<tr><th id="107">107</th><td>    <dfn class="enum" id="::SDL_JOYHATMOTION" title='::SDL_JOYHATMOTION' data-ref="::SDL_JOYHATMOTION">SDL_JOYHATMOTION</dfn>,           <i class="doc">/**&lt; Joystick hat position change */</i></td></tr>
+<tr><th id="108">108</th><td>    <dfn class="enum" id="::SDL_JOYBUTTONDOWN" title='::SDL_JOYBUTTONDOWN' data-ref="::SDL_JOYBUTTONDOWN">SDL_JOYBUTTONDOWN</dfn>,          <i class="doc">/**&lt; Joystick button pressed */</i></td></tr>
+<tr><th id="109">109</th><td>    <dfn class="enum" id="::SDL_JOYBUTTONUP" title='::SDL_JOYBUTTONUP' data-ref="::SDL_JOYBUTTONUP">SDL_JOYBUTTONUP</dfn>,            <i class="doc">/**&lt; Joystick button released */</i></td></tr>
+<tr><th id="110">110</th><td>    <dfn class="enum" id="::SDL_JOYDEVICEADDED" title='::SDL_JOYDEVICEADDED' data-ref="::SDL_JOYDEVICEADDED">SDL_JOYDEVICEADDED</dfn>,         <i class="doc">/**&lt; A new joystick has been inserted into the system */</i></td></tr>
+<tr><th id="111">111</th><td>    <dfn class="enum" id="::SDL_JOYDEVICEREMOVED" title='::SDL_JOYDEVICEREMOVED' data-ref="::SDL_JOYDEVICEREMOVED">SDL_JOYDEVICEREMOVED</dfn>,       <i class="doc">/**&lt; An opened joystick has been removed */</i></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>    <i>/* Game controller events */</i></td></tr>
+<tr><th id="114">114</th><td>    <dfn class="enum" id="::SDL_CONTROLLERAXISMOTION" title='::SDL_CONTROLLERAXISMOTION' data-ref="::SDL_CONTROLLERAXISMOTION">SDL_CONTROLLERAXISMOTION</dfn>  = <var>0x650</var>, <i class="doc">/**&lt; Game controller axis motion */</i></td></tr>
+<tr><th id="115">115</th><td>    <dfn class="enum" id="::SDL_CONTROLLERBUTTONDOWN" title='::SDL_CONTROLLERBUTTONDOWN' data-ref="::SDL_CONTROLLERBUTTONDOWN">SDL_CONTROLLERBUTTONDOWN</dfn>,          <i class="doc">/**&lt; Game controller button pressed */</i></td></tr>
+<tr><th id="116">116</th><td>    <dfn class="enum" id="::SDL_CONTROLLERBUTTONUP" title='::SDL_CONTROLLERBUTTONUP' data-ref="::SDL_CONTROLLERBUTTONUP">SDL_CONTROLLERBUTTONUP</dfn>,            <i class="doc">/**&lt; Game controller button released */</i></td></tr>
+<tr><th id="117">117</th><td>    <dfn class="enum" id="::SDL_CONTROLLERDEVICEADDED" title='::SDL_CONTROLLERDEVICEADDED' data-ref="::SDL_CONTROLLERDEVICEADDED">SDL_CONTROLLERDEVICEADDED</dfn>,         <i class="doc">/**&lt; A new Game controller has been inserted into the system */</i></td></tr>
+<tr><th id="118">118</th><td>    <dfn class="enum" id="::SDL_CONTROLLERDEVICEREMOVED" title='::SDL_CONTROLLERDEVICEREMOVED' data-ref="::SDL_CONTROLLERDEVICEREMOVED">SDL_CONTROLLERDEVICEREMOVED</dfn>,       <i class="doc">/**&lt; An opened Game controller has been removed */</i></td></tr>
+<tr><th id="119">119</th><td>    <dfn class="enum" id="::SDL_CONTROLLERDEVICEREMAPPED" title='::SDL_CONTROLLERDEVICEREMAPPED' data-ref="::SDL_CONTROLLERDEVICEREMAPPED">SDL_CONTROLLERDEVICEREMAPPED</dfn>,      <i class="doc">/**&lt; The controller mapping was updated */</i></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <i>/* Touch events */</i></td></tr>
+<tr><th id="122">122</th><td>    <dfn class="enum" id="::SDL_FINGERDOWN" title='::SDL_FINGERDOWN' data-ref="::SDL_FINGERDOWN">SDL_FINGERDOWN</dfn>      = <var>0x700</var>,</td></tr>
+<tr><th id="123">123</th><td>    <dfn class="enum" id="::SDL_FINGERUP" title='::SDL_FINGERUP' data-ref="::SDL_FINGERUP">SDL_FINGERUP</dfn>,</td></tr>
+<tr><th id="124">124</th><td>    <dfn class="enum" id="::SDL_FINGERMOTION" title='::SDL_FINGERMOTION' data-ref="::SDL_FINGERMOTION">SDL_FINGERMOTION</dfn>,</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>    <i>/* Gesture events */</i></td></tr>
+<tr><th id="127">127</th><td>    <dfn class="enum" id="::SDL_DOLLARGESTURE" title='::SDL_DOLLARGESTURE' data-ref="::SDL_DOLLARGESTURE">SDL_DOLLARGESTURE</dfn>   = <var>0x800</var>,</td></tr>
+<tr><th id="128">128</th><td>    <dfn class="enum" id="::SDL_DOLLARRECORD" title='::SDL_DOLLARRECORD' data-ref="::SDL_DOLLARRECORD">SDL_DOLLARRECORD</dfn>,</td></tr>
+<tr><th id="129">129</th><td>    <dfn class="enum" id="::SDL_MULTIGESTURE" title='::SDL_MULTIGESTURE' data-ref="::SDL_MULTIGESTURE">SDL_MULTIGESTURE</dfn>,</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>    <i>/* Clipboard events */</i></td></tr>
+<tr><th id="132">132</th><td>    <dfn class="enum" id="::SDL_CLIPBOARDUPDATE" title='::SDL_CLIPBOARDUPDATE' data-ref="::SDL_CLIPBOARDUPDATE">SDL_CLIPBOARDUPDATE</dfn> = <var>0x900</var>, <i class="doc">/**&lt; The clipboard changed */</i></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <i>/* Drag and drop events */</i></td></tr>
+<tr><th id="135">135</th><td>    <dfn class="enum" id="::SDL_DROPFILE" title='::SDL_DROPFILE' data-ref="::SDL_DROPFILE">SDL_DROPFILE</dfn>        = <var>0x1000</var>, <i class="doc">/**&lt; The system requests a file open */</i></td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>    <i>/* Render events */</i></td></tr>
+<tr><th id="138">138</th><td>    <dfn class="enum" id="::SDL_RENDER_TARGETS_RESET" title='::SDL_RENDER_TARGETS_RESET' data-ref="::SDL_RENDER_TARGETS_RESET">SDL_RENDER_TARGETS_RESET</dfn> = <var>0x2000</var>, <i class="doc">/**&lt; The render targets have been reset */</i></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td>    <i class="doc">/** Events ::SDL_USEREVENT through ::SDL_LASTEVENT are for your use,</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">     *  and should be allocated with SDL_RegisterEvents()</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="143">143</th><td>    <dfn class="enum" id="::SDL_USEREVENT" title='::SDL_USEREVENT' data-ref="::SDL_USEREVENT">SDL_USEREVENT</dfn>    = <var>0x8000</var>,</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">     *  This last event is only for bounding internal arrays</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="148">148</th><td>    <dfn class="enum" id="::SDL_LASTEVENT" title='::SDL_LASTEVENT' data-ref="::SDL_LASTEVENT">SDL_LASTEVENT</dfn>    = <var>0xFFFF</var></td></tr>
+<tr><th id="149">149</th><td>} <dfn class="typedef" id="SDL_EventType" title='SDL_EventType' data-type='enum SDL_EventType' data-ref="SDL_EventType">SDL_EventType</dfn>;</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *  <span class="command">\brief</span> Fields shared by every event</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="154">154</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_CommonEvent" title='SDL_CommonEvent' data-ref="SDL_CommonEvent"><a class="type" href="#SDL_CommonEvent" title='SDL_CommonEvent' data-ref="SDL_CommonEvent">SDL_CommonEvent</a></dfn></td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_CommonEvent::type" title='SDL_CommonEvent::type' data-ref="SDL_CommonEvent::type">type</dfn>;</td></tr>
+<tr><th id="157">157</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_CommonEvent::timestamp" title='SDL_CommonEvent::timestamp' data-ref="SDL_CommonEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="158">158</th><td>} <dfn class="typedef" id="SDL_CommonEvent" title='SDL_CommonEvent' data-type='struct SDL_CommonEvent' data-ref="SDL_CommonEvent">SDL_CommonEvent</dfn>;</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> *  <span class="command">\brief</span> Window state change event data (event.window.*)</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="163">163</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_WindowEvent" title='SDL_WindowEvent' data-ref="SDL_WindowEvent"><a class="type" href="#SDL_WindowEvent" title='SDL_WindowEvent' data-ref="SDL_WindowEvent">SDL_WindowEvent</a></dfn></td></tr>
+<tr><th id="164">164</th><td>{</td></tr>
+<tr><th id="165">165</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_WindowEvent::type" title='SDL_WindowEvent::type' data-ref="SDL_WindowEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_WINDOWEVENT */</i></td></tr>
+<tr><th id="166">166</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_WindowEvent::timestamp" title='SDL_WindowEvent::timestamp' data-ref="SDL_WindowEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="167">167</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_WindowEvent::windowID" title='SDL_WindowEvent::windowID' data-ref="SDL_WindowEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The associated window */</i></td></tr>
+<tr><th id="168">168</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_WindowEvent::event" title='SDL_WindowEvent::event' data-ref="SDL_WindowEvent::event">event</dfn>;        <i class="doc">/**&lt; ::SDL_WindowEventID */</i></td></tr>
+<tr><th id="169">169</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_WindowEvent::padding1" title='SDL_WindowEvent::padding1' data-ref="SDL_WindowEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="170">170</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_WindowEvent::padding2" title='SDL_WindowEvent::padding2' data-ref="SDL_WindowEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="171">171</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_WindowEvent::padding3" title='SDL_WindowEvent::padding3' data-ref="SDL_WindowEvent::padding3">padding3</dfn>;</td></tr>
+<tr><th id="172">172</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_WindowEvent::data1" title='SDL_WindowEvent::data1' data-ref="SDL_WindowEvent::data1">data1</dfn>;       <i class="doc">/**&lt; event dependent data */</i></td></tr>
+<tr><th id="173">173</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_WindowEvent::data2" title='SDL_WindowEvent::data2' data-ref="SDL_WindowEvent::data2">data2</dfn>;       <i class="doc">/**&lt; event dependent data */</i></td></tr>
+<tr><th id="174">174</th><td>} <dfn class="typedef" id="SDL_WindowEvent" title='SDL_WindowEvent' data-type='struct SDL_WindowEvent' data-ref="SDL_WindowEvent">SDL_WindowEvent</dfn>;</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *  <span class="command">\brief</span> Keyboard button event structure (event.key.*)</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="179">179</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_KeyboardEvent" title='SDL_KeyboardEvent' data-ref="SDL_KeyboardEvent"><a class="type" href="#SDL_KeyboardEvent" title='SDL_KeyboardEvent' data-ref="SDL_KeyboardEvent">SDL_KeyboardEvent</a></dfn></td></tr>
+<tr><th id="180">180</th><td>{</td></tr>
+<tr><th id="181">181</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_KeyboardEvent::type" title='SDL_KeyboardEvent::type' data-ref="SDL_KeyboardEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_KEYDOWN or ::SDL_KEYUP */</i></td></tr>
+<tr><th id="182">182</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_KeyboardEvent::timestamp" title='SDL_KeyboardEvent::timestamp' data-ref="SDL_KeyboardEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="183">183</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_KeyboardEvent::windowID" title='SDL_KeyboardEvent::windowID' data-ref="SDL_KeyboardEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The window with keyboard focus, if any */</i></td></tr>
+<tr><th id="184">184</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_KeyboardEvent::state" title='SDL_KeyboardEvent::state' data-ref="SDL_KeyboardEvent::state">state</dfn>;        <i class="doc">/**&lt; ::SDL_PRESSED or ::SDL_RELEASED */</i></td></tr>
+<tr><th id="185">185</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_KeyboardEvent::repeat" title='SDL_KeyboardEvent::repeat' data-ref="SDL_KeyboardEvent::repeat">repeat</dfn>;       <i class="doc">/**&lt; Non-zero if this is a key repeat */</i></td></tr>
+<tr><th id="186">186</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_KeyboardEvent::padding2" title='SDL_KeyboardEvent::padding2' data-ref="SDL_KeyboardEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="187">187</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_KeyboardEvent::padding3" title='SDL_KeyboardEvent::padding3' data-ref="SDL_KeyboardEvent::padding3">padding3</dfn>;</td></tr>
+<tr><th id="188">188</th><td>    <a class="typedef" href="SDL_keyboard.h.html#SDL_Keysym" title='SDL_Keysym' data-type='struct SDL_Keysym' data-ref="SDL_Keysym">SDL_Keysym</a> <dfn class="decl" id="SDL_KeyboardEvent::keysym" title='SDL_KeyboardEvent::keysym' data-ref="SDL_KeyboardEvent::keysym">keysym</dfn>;  <i class="doc">/**&lt; The key that was pressed or released */</i></td></tr>
+<tr><th id="189">189</th><td>} <dfn class="typedef" id="SDL_KeyboardEvent" title='SDL_KeyboardEvent' data-type='struct SDL_KeyboardEvent' data-ref="SDL_KeyboardEvent">SDL_KeyboardEvent</dfn>;</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><u>#define <dfn class="macro" id="_M/SDL_TEXTEDITINGEVENT_TEXT_SIZE" data-ref="_M/SDL_TEXTEDITINGEVENT_TEXT_SIZE">SDL_TEXTEDITINGEVENT_TEXT_SIZE</dfn> (32)</u></td></tr>
+<tr><th id="192">192</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *  <span class="command">\brief</span> Keyboard text editing event structure (event.edit.*)</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="195">195</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_TextEditingEvent" title='SDL_TextEditingEvent' data-ref="SDL_TextEditingEvent"><a class="type" href="#SDL_TextEditingEvent" title='SDL_TextEditingEvent' data-ref="SDL_TextEditingEvent">SDL_TextEditingEvent</a></dfn></td></tr>
+<tr><th id="196">196</th><td>{</td></tr>
+<tr><th id="197">197</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextEditingEvent::type" title='SDL_TextEditingEvent::type' data-ref="SDL_TextEditingEvent::type">type</dfn>;                                <i class="doc">/**&lt; ::SDL_TEXTEDITING */</i></td></tr>
+<tr><th id="198">198</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextEditingEvent::timestamp" title='SDL_TextEditingEvent::timestamp' data-ref="SDL_TextEditingEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="199">199</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextEditingEvent::windowID" title='SDL_TextEditingEvent::windowID' data-ref="SDL_TextEditingEvent::windowID">windowID</dfn>;                            <i class="doc">/**&lt; The window with keyboard focus, if any */</i></td></tr>
+<tr><th id="200">200</th><td>    <em>char</em> <dfn class="decl" id="SDL_TextEditingEvent::text" title='SDL_TextEditingEvent::text' data-ref="SDL_TextEditingEvent::text">text</dfn>[<a class="macro" href="#191" title="(32)" data-ref="_M/SDL_TEXTEDITINGEVENT_TEXT_SIZE">SDL_TEXTEDITINGEVENT_TEXT_SIZE</a>];  <i class="doc">/**&lt; The editing text */</i></td></tr>
+<tr><th id="201">201</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_TextEditingEvent::start" title='SDL_TextEditingEvent::start' data-ref="SDL_TextEditingEvent::start">start</dfn>;                               <i class="doc">/**&lt; The start cursor of selected editing text */</i></td></tr>
+<tr><th id="202">202</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_TextEditingEvent::length" title='SDL_TextEditingEvent::length' data-ref="SDL_TextEditingEvent::length">length</dfn>;                              <i class="doc">/**&lt; The length of selected editing text */</i></td></tr>
+<tr><th id="203">203</th><td>} <dfn class="typedef" id="SDL_TextEditingEvent" title='SDL_TextEditingEvent' data-type='struct SDL_TextEditingEvent' data-ref="SDL_TextEditingEvent">SDL_TextEditingEvent</dfn>;</td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><u>#define <dfn class="macro" id="_M/SDL_TEXTINPUTEVENT_TEXT_SIZE" data-ref="_M/SDL_TEXTINPUTEVENT_TEXT_SIZE">SDL_TEXTINPUTEVENT_TEXT_SIZE</dfn> (32)</u></td></tr>
+<tr><th id="207">207</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> *  <span class="command">\brief</span> Keyboard text input event structure (event.text.*)</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="210">210</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_TextInputEvent" title='SDL_TextInputEvent' data-ref="SDL_TextInputEvent"><a class="type" href="#SDL_TextInputEvent" title='SDL_TextInputEvent' data-ref="SDL_TextInputEvent">SDL_TextInputEvent</a></dfn></td></tr>
+<tr><th id="211">211</th><td>{</td></tr>
+<tr><th id="212">212</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextInputEvent::type" title='SDL_TextInputEvent::type' data-ref="SDL_TextInputEvent::type">type</dfn>;                              <i class="doc">/**&lt; ::SDL_TEXTINPUT */</i></td></tr>
+<tr><th id="213">213</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextInputEvent::timestamp" title='SDL_TextInputEvent::timestamp' data-ref="SDL_TextInputEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="214">214</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TextInputEvent::windowID" title='SDL_TextInputEvent::windowID' data-ref="SDL_TextInputEvent::windowID">windowID</dfn>;                          <i class="doc">/**&lt; The window with keyboard focus, if any */</i></td></tr>
+<tr><th id="215">215</th><td>    <em>char</em> <dfn class="decl" id="SDL_TextInputEvent::text" title='SDL_TextInputEvent::text' data-ref="SDL_TextInputEvent::text">text</dfn>[<a class="macro" href="#206" title="(32)" data-ref="_M/SDL_TEXTINPUTEVENT_TEXT_SIZE">SDL_TEXTINPUTEVENT_TEXT_SIZE</a>];  <i class="doc">/**&lt; The input text */</i></td></tr>
+<tr><th id="216">216</th><td>} <dfn class="typedef" id="SDL_TextInputEvent" title='SDL_TextInputEvent' data-type='struct SDL_TextInputEvent' data-ref="SDL_TextInputEvent">SDL_TextInputEvent</dfn>;</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *  <span class="command">\brief</span> Mouse motion event structure (event.motion.*)</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="221">221</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_MouseMotionEvent" title='SDL_MouseMotionEvent' data-ref="SDL_MouseMotionEvent"><a class="type" href="#SDL_MouseMotionEvent" title='SDL_MouseMotionEvent' data-ref="SDL_MouseMotionEvent">SDL_MouseMotionEvent</a></dfn></td></tr>
+<tr><th id="222">222</th><td>{</td></tr>
+<tr><th id="223">223</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::type" title='SDL_MouseMotionEvent::type' data-ref="SDL_MouseMotionEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_MOUSEMOTION */</i></td></tr>
+<tr><th id="224">224</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::timestamp" title='SDL_MouseMotionEvent::timestamp' data-ref="SDL_MouseMotionEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="225">225</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::windowID" title='SDL_MouseMotionEvent::windowID' data-ref="SDL_MouseMotionEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The window with mouse focus, if any */</i></td></tr>
+<tr><th id="226">226</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::which" title='SDL_MouseMotionEvent::which' data-ref="SDL_MouseMotionEvent::which">which</dfn>;       <i class="doc">/**&lt; The mouse instance id, or SDL_TOUCH_MOUSEID */</i></td></tr>
+<tr><th id="227">227</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::state" title='SDL_MouseMotionEvent::state' data-ref="SDL_MouseMotionEvent::state">state</dfn>;       <i class="doc">/**&lt; The current button state */</i></td></tr>
+<tr><th id="228">228</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::x" title='SDL_MouseMotionEvent::x' data-ref="SDL_MouseMotionEvent::x">x</dfn>;           <i class="doc">/**&lt; X coordinate, relative to window */</i></td></tr>
+<tr><th id="229">229</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::y" title='SDL_MouseMotionEvent::y' data-ref="SDL_MouseMotionEvent::y">y</dfn>;           <i class="doc">/**&lt; Y coordinate, relative to window */</i></td></tr>
+<tr><th id="230">230</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::xrel" title='SDL_MouseMotionEvent::xrel' data-ref="SDL_MouseMotionEvent::xrel">xrel</dfn>;        <i class="doc">/**&lt; The relative motion in the X direction */</i></td></tr>
+<tr><th id="231">231</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseMotionEvent::yrel" title='SDL_MouseMotionEvent::yrel' data-ref="SDL_MouseMotionEvent::yrel">yrel</dfn>;        <i class="doc">/**&lt; The relative motion in the Y direction */</i></td></tr>
+<tr><th id="232">232</th><td>} <dfn class="typedef" id="SDL_MouseMotionEvent" title='SDL_MouseMotionEvent' data-type='struct SDL_MouseMotionEvent' data-ref="SDL_MouseMotionEvent">SDL_MouseMotionEvent</dfn>;</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *  <span class="command">\brief</span> Mouse button event structure (event.button.*)</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="237">237</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_MouseButtonEvent" title='SDL_MouseButtonEvent' data-ref="SDL_MouseButtonEvent"><a class="type" href="#SDL_MouseButtonEvent" title='SDL_MouseButtonEvent' data-ref="SDL_MouseButtonEvent">SDL_MouseButtonEvent</a></dfn></td></tr>
+<tr><th id="238">238</th><td>{</td></tr>
+<tr><th id="239">239</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::type" title='SDL_MouseButtonEvent::type' data-ref="SDL_MouseButtonEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_MOUSEBUTTONDOWN or ::SDL_MOUSEBUTTONUP */</i></td></tr>
+<tr><th id="240">240</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::timestamp" title='SDL_MouseButtonEvent::timestamp' data-ref="SDL_MouseButtonEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="241">241</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::windowID" title='SDL_MouseButtonEvent::windowID' data-ref="SDL_MouseButtonEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The window with mouse focus, if any */</i></td></tr>
+<tr><th id="242">242</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::which" title='SDL_MouseButtonEvent::which' data-ref="SDL_MouseButtonEvent::which">which</dfn>;       <i class="doc">/**&lt; The mouse instance id, or SDL_TOUCH_MOUSEID */</i></td></tr>
+<tr><th id="243">243</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_MouseButtonEvent::button" title='SDL_MouseButtonEvent::button' data-ref="SDL_MouseButtonEvent::button">button</dfn>;       <i class="doc">/**&lt; The mouse button index */</i></td></tr>
+<tr><th id="244">244</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_MouseButtonEvent::state" title='SDL_MouseButtonEvent::state' data-ref="SDL_MouseButtonEvent::state">state</dfn>;        <i class="doc">/**&lt; ::SDL_PRESSED or ::SDL_RELEASED */</i></td></tr>
+<tr><th id="245">245</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_MouseButtonEvent::clicks" title='SDL_MouseButtonEvent::clicks' data-ref="SDL_MouseButtonEvent::clicks">clicks</dfn>;       <i class="doc">/**&lt; 1 for single-click, 2 for double-click, etc. */</i></td></tr>
+<tr><th id="246">246</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_MouseButtonEvent::padding1" title='SDL_MouseButtonEvent::padding1' data-ref="SDL_MouseButtonEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="247">247</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::x" title='SDL_MouseButtonEvent::x' data-ref="SDL_MouseButtonEvent::x">x</dfn>;           <i class="doc">/**&lt; X coordinate, relative to window */</i></td></tr>
+<tr><th id="248">248</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseButtonEvent::y" title='SDL_MouseButtonEvent::y' data-ref="SDL_MouseButtonEvent::y">y</dfn>;           <i class="doc">/**&lt; Y coordinate, relative to window */</i></td></tr>
+<tr><th id="249">249</th><td>} <dfn class="typedef" id="SDL_MouseButtonEvent" title='SDL_MouseButtonEvent' data-type='struct SDL_MouseButtonEvent' data-ref="SDL_MouseButtonEvent">SDL_MouseButtonEvent</dfn>;</td></tr>
+<tr><th id="250">250</th><td></td></tr>
+<tr><th id="251">251</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> *  <span class="command">\brief</span> Mouse wheel event structure (event.wheel.*)</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="254">254</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_MouseWheelEvent" title='SDL_MouseWheelEvent' data-ref="SDL_MouseWheelEvent"><a class="type" href="#SDL_MouseWheelEvent" title='SDL_MouseWheelEvent' data-ref="SDL_MouseWheelEvent">SDL_MouseWheelEvent</a></dfn></td></tr>
+<tr><th id="255">255</th><td>{</td></tr>
+<tr><th id="256">256</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::type" title='SDL_MouseWheelEvent::type' data-ref="SDL_MouseWheelEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_MOUSEWHEEL */</i></td></tr>
+<tr><th id="257">257</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::timestamp" title='SDL_MouseWheelEvent::timestamp' data-ref="SDL_MouseWheelEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="258">258</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::windowID" title='SDL_MouseWheelEvent::windowID' data-ref="SDL_MouseWheelEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The window with mouse focus, if any */</i></td></tr>
+<tr><th id="259">259</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::which" title='SDL_MouseWheelEvent::which' data-ref="SDL_MouseWheelEvent::which">which</dfn>;       <i class="doc">/**&lt; The mouse instance id, or SDL_TOUCH_MOUSEID */</i></td></tr>
+<tr><th id="260">260</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::x" title='SDL_MouseWheelEvent::x' data-ref="SDL_MouseWheelEvent::x">x</dfn>;           <i class="doc">/**&lt; The amount scrolled horizontally, positive to the right and negative to the left */</i></td></tr>
+<tr><th id="261">261</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_MouseWheelEvent::y" title='SDL_MouseWheelEvent::y' data-ref="SDL_MouseWheelEvent::y">y</dfn>;           <i class="doc">/**&lt; The amount scrolled vertically, positive away from the user and negative toward the user */</i></td></tr>
+<tr><th id="262">262</th><td>} <dfn class="typedef" id="SDL_MouseWheelEvent" title='SDL_MouseWheelEvent' data-type='struct SDL_MouseWheelEvent' data-ref="SDL_MouseWheelEvent">SDL_MouseWheelEvent</dfn>;</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc"> *  <span class="command">\brief</span> Joystick axis motion event structure (event.jaxis.*)</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="267">267</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_JoyAxisEvent" title='SDL_JoyAxisEvent' data-ref="SDL_JoyAxisEvent"><a class="type" href="#SDL_JoyAxisEvent" title='SDL_JoyAxisEvent' data-ref="SDL_JoyAxisEvent">SDL_JoyAxisEvent</a></dfn></td></tr>
+<tr><th id="268">268</th><td>{</td></tr>
+<tr><th id="269">269</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyAxisEvent::type" title='SDL_JoyAxisEvent::type' data-ref="SDL_JoyAxisEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_JOYAXISMOTION */</i></td></tr>
+<tr><th id="270">270</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyAxisEvent::timestamp" title='SDL_JoyAxisEvent::timestamp' data-ref="SDL_JoyAxisEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="271">271</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_JoyAxisEvent::which" title='SDL_JoyAxisEvent::which' data-ref="SDL_JoyAxisEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="272">272</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyAxisEvent::axis" title='SDL_JoyAxisEvent::axis' data-ref="SDL_JoyAxisEvent::axis">axis</dfn>;         <i class="doc">/**&lt; The joystick axis index */</i></td></tr>
+<tr><th id="273">273</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyAxisEvent::padding1" title='SDL_JoyAxisEvent::padding1' data-ref="SDL_JoyAxisEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="274">274</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyAxisEvent::padding2" title='SDL_JoyAxisEvent::padding2' data-ref="SDL_JoyAxisEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="275">275</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyAxisEvent::padding3" title='SDL_JoyAxisEvent::padding3' data-ref="SDL_JoyAxisEvent::padding3">padding3</dfn>;</td></tr>
+<tr><th id="276">276</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint16" title='Sint16' data-type='int16_t' data-ref="Sint16">Sint16</a> <dfn class="decl" id="SDL_JoyAxisEvent::value" title='SDL_JoyAxisEvent::value' data-ref="SDL_JoyAxisEvent::value">value</dfn>;       <i class="doc">/**&lt; The axis value (range: -32768 to 32767) */</i></td></tr>
+<tr><th id="277">277</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="decl" id="SDL_JoyAxisEvent::padding4" title='SDL_JoyAxisEvent::padding4' data-ref="SDL_JoyAxisEvent::padding4">padding4</dfn>;</td></tr>
+<tr><th id="278">278</th><td>} <dfn class="typedef" id="SDL_JoyAxisEvent" title='SDL_JoyAxisEvent' data-type='struct SDL_JoyAxisEvent' data-ref="SDL_JoyAxisEvent">SDL_JoyAxisEvent</dfn>;</td></tr>
+<tr><th id="279">279</th><td></td></tr>
+<tr><th id="280">280</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *  <span class="command">\brief</span> Joystick trackball motion event structure (event.jball.*)</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="283">283</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_JoyBallEvent" title='SDL_JoyBallEvent' data-ref="SDL_JoyBallEvent"><a class="type" href="#SDL_JoyBallEvent" title='SDL_JoyBallEvent' data-ref="SDL_JoyBallEvent">SDL_JoyBallEvent</a></dfn></td></tr>
+<tr><th id="284">284</th><td>{</td></tr>
+<tr><th id="285">285</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyBallEvent::type" title='SDL_JoyBallEvent::type' data-ref="SDL_JoyBallEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_JOYBALLMOTION */</i></td></tr>
+<tr><th id="286">286</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyBallEvent::timestamp" title='SDL_JoyBallEvent::timestamp' data-ref="SDL_JoyBallEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="287">287</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_JoyBallEvent::which" title='SDL_JoyBallEvent::which' data-ref="SDL_JoyBallEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="288">288</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyBallEvent::ball" title='SDL_JoyBallEvent::ball' data-ref="SDL_JoyBallEvent::ball">ball</dfn>;         <i class="doc">/**&lt; The joystick trackball index */</i></td></tr>
+<tr><th id="289">289</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyBallEvent::padding1" title='SDL_JoyBallEvent::padding1' data-ref="SDL_JoyBallEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="290">290</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyBallEvent::padding2" title='SDL_JoyBallEvent::padding2' data-ref="SDL_JoyBallEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="291">291</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyBallEvent::padding3" title='SDL_JoyBallEvent::padding3' data-ref="SDL_JoyBallEvent::padding3">padding3</dfn>;</td></tr>
+<tr><th id="292">292</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint16" title='Sint16' data-type='int16_t' data-ref="Sint16">Sint16</a> <dfn class="decl" id="SDL_JoyBallEvent::xrel" title='SDL_JoyBallEvent::xrel' data-ref="SDL_JoyBallEvent::xrel">xrel</dfn>;        <i class="doc">/**&lt; The relative motion in the X direction */</i></td></tr>
+<tr><th id="293">293</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint16" title='Sint16' data-type='int16_t' data-ref="Sint16">Sint16</a> <dfn class="decl" id="SDL_JoyBallEvent::yrel" title='SDL_JoyBallEvent::yrel' data-ref="SDL_JoyBallEvent::yrel">yrel</dfn>;        <i class="doc">/**&lt; The relative motion in the Y direction */</i></td></tr>
+<tr><th id="294">294</th><td>} <dfn class="typedef" id="SDL_JoyBallEvent" title='SDL_JoyBallEvent' data-type='struct SDL_JoyBallEvent' data-ref="SDL_JoyBallEvent">SDL_JoyBallEvent</dfn>;</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> *  <span class="command">\brief</span> Joystick hat position change event structure (event.jhat.*)</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="299">299</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_JoyHatEvent" title='SDL_JoyHatEvent' data-ref="SDL_JoyHatEvent"><a class="type" href="#SDL_JoyHatEvent" title='SDL_JoyHatEvent' data-ref="SDL_JoyHatEvent">SDL_JoyHatEvent</a></dfn></td></tr>
+<tr><th id="300">300</th><td>{</td></tr>
+<tr><th id="301">301</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyHatEvent::type" title='SDL_JoyHatEvent::type' data-ref="SDL_JoyHatEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_JOYHATMOTION */</i></td></tr>
+<tr><th id="302">302</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyHatEvent::timestamp" title='SDL_JoyHatEvent::timestamp' data-ref="SDL_JoyHatEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="303">303</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_JoyHatEvent::which" title='SDL_JoyHatEvent::which' data-ref="SDL_JoyHatEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="304">304</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyHatEvent::hat" title='SDL_JoyHatEvent::hat' data-ref="SDL_JoyHatEvent::hat">hat</dfn>;          <i class="doc">/**&lt; The joystick hat index */</i></td></tr>
+<tr><th id="305">305</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyHatEvent::value" title='SDL_JoyHatEvent::value' data-ref="SDL_JoyHatEvent::value">value</dfn>;        <i class="doc">/**&lt; The hat position value.</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc">                         *   <span class="command">\sa</span> ::SDL_HAT_LEFTUP ::SDL_HAT_UP ::SDL_HAT_RIGHTUP</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc">                         *   <span class="command">\sa</span> ::SDL_HAT_LEFT ::SDL_HAT_CENTERED ::SDL_HAT_RIGHT</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc">                         *   <span class="command">\sa</span> ::SDL_HAT_LEFTDOWN ::SDL_HAT_DOWN ::SDL_HAT_RIGHTDOWN</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc">                         *</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc">                         *   Note that zero means the POV is centered.</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc">                         */</i></td></tr>
+<tr><th id="312">312</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyHatEvent::padding1" title='SDL_JoyHatEvent::padding1' data-ref="SDL_JoyHatEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="313">313</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyHatEvent::padding2" title='SDL_JoyHatEvent::padding2' data-ref="SDL_JoyHatEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="314">314</th><td>} <dfn class="typedef" id="SDL_JoyHatEvent" title='SDL_JoyHatEvent' data-type='struct SDL_JoyHatEvent' data-ref="SDL_JoyHatEvent">SDL_JoyHatEvent</dfn>;</td></tr>
+<tr><th id="315">315</th><td></td></tr>
+<tr><th id="316">316</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> *  <span class="command">\brief</span> Joystick button event structure (event.jbutton.*)</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="319">319</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_JoyButtonEvent" title='SDL_JoyButtonEvent' data-ref="SDL_JoyButtonEvent"><a class="type" href="#SDL_JoyButtonEvent" title='SDL_JoyButtonEvent' data-ref="SDL_JoyButtonEvent">SDL_JoyButtonEvent</a></dfn></td></tr>
+<tr><th id="320">320</th><td>{</td></tr>
+<tr><th id="321">321</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyButtonEvent::type" title='SDL_JoyButtonEvent::type' data-ref="SDL_JoyButtonEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_JOYBUTTONDOWN or ::SDL_JOYBUTTONUP */</i></td></tr>
+<tr><th id="322">322</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyButtonEvent::timestamp" title='SDL_JoyButtonEvent::timestamp' data-ref="SDL_JoyButtonEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="323">323</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_JoyButtonEvent::which" title='SDL_JoyButtonEvent::which' data-ref="SDL_JoyButtonEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="324">324</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyButtonEvent::button" title='SDL_JoyButtonEvent::button' data-ref="SDL_JoyButtonEvent::button">button</dfn>;       <i class="doc">/**&lt; The joystick button index */</i></td></tr>
+<tr><th id="325">325</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyButtonEvent::state" title='SDL_JoyButtonEvent::state' data-ref="SDL_JoyButtonEvent::state">state</dfn>;        <i class="doc">/**&lt; ::SDL_PRESSED or ::SDL_RELEASED */</i></td></tr>
+<tr><th id="326">326</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyButtonEvent::padding1" title='SDL_JoyButtonEvent::padding1' data-ref="SDL_JoyButtonEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="327">327</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_JoyButtonEvent::padding2" title='SDL_JoyButtonEvent::padding2' data-ref="SDL_JoyButtonEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="328">328</th><td>} <dfn class="typedef" id="SDL_JoyButtonEvent" title='SDL_JoyButtonEvent' data-type='struct SDL_JoyButtonEvent' data-ref="SDL_JoyButtonEvent">SDL_JoyButtonEvent</dfn>;</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> *  <span class="command">\brief</span> Joystick device event structure (event.jdevice.*)</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="333">333</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_JoyDeviceEvent" title='SDL_JoyDeviceEvent' data-ref="SDL_JoyDeviceEvent"><a class="type" href="#SDL_JoyDeviceEvent" title='SDL_JoyDeviceEvent' data-ref="SDL_JoyDeviceEvent">SDL_JoyDeviceEvent</a></dfn></td></tr>
+<tr><th id="334">334</th><td>{</td></tr>
+<tr><th id="335">335</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyDeviceEvent::type" title='SDL_JoyDeviceEvent::type' data-ref="SDL_JoyDeviceEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_JOYDEVICEADDED or ::SDL_JOYDEVICEREMOVED */</i></td></tr>
+<tr><th id="336">336</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_JoyDeviceEvent::timestamp" title='SDL_JoyDeviceEvent::timestamp' data-ref="SDL_JoyDeviceEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="337">337</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_JoyDeviceEvent::which" title='SDL_JoyDeviceEvent::which' data-ref="SDL_JoyDeviceEvent::which">which</dfn>;       <i class="doc">/**&lt; The joystick device index for the ADDED event, instance id for the REMOVED event */</i></td></tr>
+<tr><th id="338">338</th><td>} <dfn class="typedef" id="SDL_JoyDeviceEvent" title='SDL_JoyDeviceEvent' data-type='struct SDL_JoyDeviceEvent' data-ref="SDL_JoyDeviceEvent">SDL_JoyDeviceEvent</dfn>;</td></tr>
+<tr><th id="339">339</th><td></td></tr>
+<tr><th id="340">340</th><td></td></tr>
+<tr><th id="341">341</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> *  <span class="command">\brief</span> Game controller axis motion event structure (event.caxis.*)</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="344">344</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_ControllerAxisEvent" title='SDL_ControllerAxisEvent' data-ref="SDL_ControllerAxisEvent"><a class="type" href="#SDL_ControllerAxisEvent" title='SDL_ControllerAxisEvent' data-ref="SDL_ControllerAxisEvent">SDL_ControllerAxisEvent</a></dfn></td></tr>
+<tr><th id="345">345</th><td>{</td></tr>
+<tr><th id="346">346</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerAxisEvent::type" title='SDL_ControllerAxisEvent::type' data-ref="SDL_ControllerAxisEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_CONTROLLERAXISMOTION */</i></td></tr>
+<tr><th id="347">347</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerAxisEvent::timestamp" title='SDL_ControllerAxisEvent::timestamp' data-ref="SDL_ControllerAxisEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="348">348</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_ControllerAxisEvent::which" title='SDL_ControllerAxisEvent::which' data-ref="SDL_ControllerAxisEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="349">349</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerAxisEvent::axis" title='SDL_ControllerAxisEvent::axis' data-ref="SDL_ControllerAxisEvent::axis">axis</dfn>;         <i class="doc">/**&lt; The controller axis (SDL_GameControllerAxis) */</i></td></tr>
+<tr><th id="350">350</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerAxisEvent::padding1" title='SDL_ControllerAxisEvent::padding1' data-ref="SDL_ControllerAxisEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="351">351</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerAxisEvent::padding2" title='SDL_ControllerAxisEvent::padding2' data-ref="SDL_ControllerAxisEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="352">352</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerAxisEvent::padding3" title='SDL_ControllerAxisEvent::padding3' data-ref="SDL_ControllerAxisEvent::padding3">padding3</dfn>;</td></tr>
+<tr><th id="353">353</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint16" title='Sint16' data-type='int16_t' data-ref="Sint16">Sint16</a> <dfn class="decl" id="SDL_ControllerAxisEvent::value" title='SDL_ControllerAxisEvent::value' data-ref="SDL_ControllerAxisEvent::value">value</dfn>;       <i class="doc">/**&lt; The axis value (range: -32768 to 32767) */</i></td></tr>
+<tr><th id="354">354</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="decl" id="SDL_ControllerAxisEvent::padding4" title='SDL_ControllerAxisEvent::padding4' data-ref="SDL_ControllerAxisEvent::padding4">padding4</dfn>;</td></tr>
+<tr><th id="355">355</th><td>} <dfn class="typedef" id="SDL_ControllerAxisEvent" title='SDL_ControllerAxisEvent' data-type='struct SDL_ControllerAxisEvent' data-ref="SDL_ControllerAxisEvent">SDL_ControllerAxisEvent</dfn>;</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td></td></tr>
+<tr><th id="358">358</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc"> *  <span class="command">\brief</span> Game controller button event structure (event.cbutton.*)</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="361">361</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_ControllerButtonEvent" title='SDL_ControllerButtonEvent' data-ref="SDL_ControllerButtonEvent"><a class="type" href="#SDL_ControllerButtonEvent" title='SDL_ControllerButtonEvent' data-ref="SDL_ControllerButtonEvent">SDL_ControllerButtonEvent</a></dfn></td></tr>
+<tr><th id="362">362</th><td>{</td></tr>
+<tr><th id="363">363</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerButtonEvent::type" title='SDL_ControllerButtonEvent::type' data-ref="SDL_ControllerButtonEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_CONTROLLERBUTTONDOWN or ::SDL_CONTROLLERBUTTONUP */</i></td></tr>
+<tr><th id="364">364</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerButtonEvent::timestamp" title='SDL_ControllerButtonEvent::timestamp' data-ref="SDL_ControllerButtonEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="365">365</th><td>    <a class="typedef" href="SDL_joystick.h.html#SDL_JoystickID" title='SDL_JoystickID' data-type='Sint32' data-ref="SDL_JoystickID">SDL_JoystickID</a> <dfn class="decl" id="SDL_ControllerButtonEvent::which" title='SDL_ControllerButtonEvent::which' data-ref="SDL_ControllerButtonEvent::which">which</dfn>; <i class="doc">/**&lt; The joystick instance id */</i></td></tr>
+<tr><th id="366">366</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerButtonEvent::button" title='SDL_ControllerButtonEvent::button' data-ref="SDL_ControllerButtonEvent::button">button</dfn>;       <i class="doc">/**&lt; The controller button (SDL_GameControllerButton) */</i></td></tr>
+<tr><th id="367">367</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerButtonEvent::state" title='SDL_ControllerButtonEvent::state' data-ref="SDL_ControllerButtonEvent::state">state</dfn>;        <i class="doc">/**&lt; ::SDL_PRESSED or ::SDL_RELEASED */</i></td></tr>
+<tr><th id="368">368</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerButtonEvent::padding1" title='SDL_ControllerButtonEvent::padding1' data-ref="SDL_ControllerButtonEvent::padding1">padding1</dfn>;</td></tr>
+<tr><th id="369">369</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_ControllerButtonEvent::padding2" title='SDL_ControllerButtonEvent::padding2' data-ref="SDL_ControllerButtonEvent::padding2">padding2</dfn>;</td></tr>
+<tr><th id="370">370</th><td>} <dfn class="typedef" id="SDL_ControllerButtonEvent" title='SDL_ControllerButtonEvent' data-type='struct SDL_ControllerButtonEvent' data-ref="SDL_ControllerButtonEvent">SDL_ControllerButtonEvent</dfn>;</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td></td></tr>
+<tr><th id="373">373</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc"> *  <span class="command">\brief</span> Controller device event structure (event.cdevice.*)</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="376">376</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_ControllerDeviceEvent" title='SDL_ControllerDeviceEvent' data-ref="SDL_ControllerDeviceEvent"><a class="type" href="#SDL_ControllerDeviceEvent" title='SDL_ControllerDeviceEvent' data-ref="SDL_ControllerDeviceEvent">SDL_ControllerDeviceEvent</a></dfn></td></tr>
+<tr><th id="377">377</th><td>{</td></tr>
+<tr><th id="378">378</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerDeviceEvent::type" title='SDL_ControllerDeviceEvent::type' data-ref="SDL_ControllerDeviceEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_CONTROLLERDEVICEADDED, ::SDL_CONTROLLERDEVICEREMOVED, or ::SDL_CONTROLLERDEVICEREMAPPED */</i></td></tr>
+<tr><th id="379">379</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_ControllerDeviceEvent::timestamp" title='SDL_ControllerDeviceEvent::timestamp' data-ref="SDL_ControllerDeviceEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="380">380</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_ControllerDeviceEvent::which" title='SDL_ControllerDeviceEvent::which' data-ref="SDL_ControllerDeviceEvent::which">which</dfn>;       <i class="doc">/**&lt; The joystick device index for the ADDED event, instance id for the REMOVED or REMAPPED event */</i></td></tr>
+<tr><th id="381">381</th><td>} <dfn class="typedef" id="SDL_ControllerDeviceEvent" title='SDL_ControllerDeviceEvent' data-type='struct SDL_ControllerDeviceEvent' data-ref="SDL_ControllerDeviceEvent">SDL_ControllerDeviceEvent</dfn>;</td></tr>
+<tr><th id="382">382</th><td></td></tr>
+<tr><th id="383">383</th><td></td></tr>
+<tr><th id="384">384</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="385">385</th><td><i class="doc"> *  <span class="command">\brief</span> Touch finger event structure (event.tfinger.*)</i></td></tr>
+<tr><th id="386">386</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="387">387</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_TouchFingerEvent" title='SDL_TouchFingerEvent' data-ref="SDL_TouchFingerEvent"><a class="type" href="#SDL_TouchFingerEvent" title='SDL_TouchFingerEvent' data-ref="SDL_TouchFingerEvent">SDL_TouchFingerEvent</a></dfn></td></tr>
+<tr><th id="388">388</th><td>{</td></tr>
+<tr><th id="389">389</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TouchFingerEvent::type" title='SDL_TouchFingerEvent::type' data-ref="SDL_TouchFingerEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_FINGERMOTION or ::SDL_FINGERDOWN or ::SDL_FINGERUP */</i></td></tr>
+<tr><th id="390">390</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_TouchFingerEvent::timestamp" title='SDL_TouchFingerEvent::timestamp' data-ref="SDL_TouchFingerEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="391">391</th><td>    <a class="typedef" href="SDL_touch.h.html#SDL_TouchID" title='SDL_TouchID' data-type='Sint64' data-ref="SDL_TouchID">SDL_TouchID</a> <dfn class="decl" id="SDL_TouchFingerEvent::touchId" title='SDL_TouchFingerEvent::touchId' data-ref="SDL_TouchFingerEvent::touchId">touchId</dfn>; <i class="doc">/**&lt; The touch device id */</i></td></tr>
+<tr><th id="392">392</th><td>    <a class="typedef" href="SDL_touch.h.html#SDL_FingerID" title='SDL_FingerID' data-type='Sint64' data-ref="SDL_FingerID">SDL_FingerID</a> <dfn class="decl" id="SDL_TouchFingerEvent::fingerId" title='SDL_TouchFingerEvent::fingerId' data-ref="SDL_TouchFingerEvent::fingerId">fingerId</dfn>;</td></tr>
+<tr><th id="393">393</th><td>    <em>float</em> <dfn class="decl" id="SDL_TouchFingerEvent::x" title='SDL_TouchFingerEvent::x' data-ref="SDL_TouchFingerEvent::x">x</dfn>;            <i class="doc">/**&lt; Normalized in the range 0...1 */</i></td></tr>
+<tr><th id="394">394</th><td>    <em>float</em> <dfn class="decl" id="SDL_TouchFingerEvent::y" title='SDL_TouchFingerEvent::y' data-ref="SDL_TouchFingerEvent::y">y</dfn>;            <i class="doc">/**&lt; Normalized in the range 0...1 */</i></td></tr>
+<tr><th id="395">395</th><td>    <em>float</em> <dfn class="decl" id="SDL_TouchFingerEvent::dx" title='SDL_TouchFingerEvent::dx' data-ref="SDL_TouchFingerEvent::dx">dx</dfn>;           <i class="doc">/**&lt; Normalized in the range 0...1 */</i></td></tr>
+<tr><th id="396">396</th><td>    <em>float</em> <dfn class="decl" id="SDL_TouchFingerEvent::dy" title='SDL_TouchFingerEvent::dy' data-ref="SDL_TouchFingerEvent::dy">dy</dfn>;           <i class="doc">/**&lt; Normalized in the range 0...1 */</i></td></tr>
+<tr><th id="397">397</th><td>    <em>float</em> <dfn class="decl" id="SDL_TouchFingerEvent::pressure" title='SDL_TouchFingerEvent::pressure' data-ref="SDL_TouchFingerEvent::pressure">pressure</dfn>;     <i class="doc">/**&lt; Normalized in the range 0...1 */</i></td></tr>
+<tr><th id="398">398</th><td>} <dfn class="typedef" id="SDL_TouchFingerEvent" title='SDL_TouchFingerEvent' data-type='struct SDL_TouchFingerEvent' data-ref="SDL_TouchFingerEvent">SDL_TouchFingerEvent</dfn>;</td></tr>
+<tr><th id="399">399</th><td></td></tr>
+<tr><th id="400">400</th><td></td></tr>
+<tr><th id="401">401</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="402">402</th><td><i class="doc"> *  <span class="command">\brief</span> Multiple Finger Gesture Event (event.mgesture.*)</i></td></tr>
+<tr><th id="403">403</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="404">404</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_MultiGestureEvent" title='SDL_MultiGestureEvent' data-ref="SDL_MultiGestureEvent"><a class="type" href="#SDL_MultiGestureEvent" title='SDL_MultiGestureEvent' data-ref="SDL_MultiGestureEvent">SDL_MultiGestureEvent</a></dfn></td></tr>
+<tr><th id="405">405</th><td>{</td></tr>
+<tr><th id="406">406</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MultiGestureEvent::type" title='SDL_MultiGestureEvent::type' data-ref="SDL_MultiGestureEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_MULTIGESTURE */</i></td></tr>
+<tr><th id="407">407</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_MultiGestureEvent::timestamp" title='SDL_MultiGestureEvent::timestamp' data-ref="SDL_MultiGestureEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="408">408</th><td>    <a class="typedef" href="SDL_touch.h.html#SDL_TouchID" title='SDL_TouchID' data-type='Sint64' data-ref="SDL_TouchID">SDL_TouchID</a> <dfn class="decl" id="SDL_MultiGestureEvent::touchId" title='SDL_MultiGestureEvent::touchId' data-ref="SDL_MultiGestureEvent::touchId">touchId</dfn>; <i class="doc">/**&lt; The touch device index */</i></td></tr>
+<tr><th id="409">409</th><td>    <em>float</em> <dfn class="decl" id="SDL_MultiGestureEvent::dTheta" title='SDL_MultiGestureEvent::dTheta' data-ref="SDL_MultiGestureEvent::dTheta">dTheta</dfn>;</td></tr>
+<tr><th id="410">410</th><td>    <em>float</em> <dfn class="decl" id="SDL_MultiGestureEvent::dDist" title='SDL_MultiGestureEvent::dDist' data-ref="SDL_MultiGestureEvent::dDist">dDist</dfn>;</td></tr>
+<tr><th id="411">411</th><td>    <em>float</em> <dfn class="decl" id="SDL_MultiGestureEvent::x" title='SDL_MultiGestureEvent::x' data-ref="SDL_MultiGestureEvent::x">x</dfn>;</td></tr>
+<tr><th id="412">412</th><td>    <em>float</em> <dfn class="decl" id="SDL_MultiGestureEvent::y" title='SDL_MultiGestureEvent::y' data-ref="SDL_MultiGestureEvent::y">y</dfn>;</td></tr>
+<tr><th id="413">413</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="decl" id="SDL_MultiGestureEvent::numFingers" title='SDL_MultiGestureEvent::numFingers' data-ref="SDL_MultiGestureEvent::numFingers">numFingers</dfn>;</td></tr>
+<tr><th id="414">414</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="decl" id="SDL_MultiGestureEvent::padding" title='SDL_MultiGestureEvent::padding' data-ref="SDL_MultiGestureEvent::padding">padding</dfn>;</td></tr>
+<tr><th id="415">415</th><td>} <dfn class="typedef" id="SDL_MultiGestureEvent" title='SDL_MultiGestureEvent' data-type='struct SDL_MultiGestureEvent' data-ref="SDL_MultiGestureEvent">SDL_MultiGestureEvent</dfn>;</td></tr>
+<tr><th id="416">416</th><td></td></tr>
+<tr><th id="417">417</th><td></td></tr>
+<tr><th id="418">418</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc"> * <span class="command">\brief</span> Dollar Gesture Event (event.dgesture.*)</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="421">421</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_DollarGestureEvent" title='SDL_DollarGestureEvent' data-ref="SDL_DollarGestureEvent"><a class="type" href="#SDL_DollarGestureEvent" title='SDL_DollarGestureEvent' data-ref="SDL_DollarGestureEvent">SDL_DollarGestureEvent</a></dfn></td></tr>
+<tr><th id="422">422</th><td>{</td></tr>
+<tr><th id="423">423</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_DollarGestureEvent::type" title='SDL_DollarGestureEvent::type' data-ref="SDL_DollarGestureEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_DOLLARGESTURE */</i></td></tr>
+<tr><th id="424">424</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_DollarGestureEvent::timestamp" title='SDL_DollarGestureEvent::timestamp' data-ref="SDL_DollarGestureEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="425">425</th><td>    <a class="typedef" href="SDL_touch.h.html#SDL_TouchID" title='SDL_TouchID' data-type='Sint64' data-ref="SDL_TouchID">SDL_TouchID</a> <dfn class="decl" id="SDL_DollarGestureEvent::touchId" title='SDL_DollarGestureEvent::touchId' data-ref="SDL_DollarGestureEvent::touchId">touchId</dfn>; <i class="doc">/**&lt; The touch device id */</i></td></tr>
+<tr><th id="426">426</th><td>    <a class="typedef" href="SDL_gesture.h.html#SDL_GestureID" title='SDL_GestureID' data-type='Sint64' data-ref="SDL_GestureID">SDL_GestureID</a> <dfn class="decl" id="SDL_DollarGestureEvent::gestureId" title='SDL_DollarGestureEvent::gestureId' data-ref="SDL_DollarGestureEvent::gestureId">gestureId</dfn>;</td></tr>
+<tr><th id="427">427</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_DollarGestureEvent::numFingers" title='SDL_DollarGestureEvent::numFingers' data-ref="SDL_DollarGestureEvent::numFingers">numFingers</dfn>;</td></tr>
+<tr><th id="428">428</th><td>    <em>float</em> <dfn class="decl" id="SDL_DollarGestureEvent::error" title='SDL_DollarGestureEvent::error' data-ref="SDL_DollarGestureEvent::error">error</dfn>;</td></tr>
+<tr><th id="429">429</th><td>    <em>float</em> <dfn class="decl" id="SDL_DollarGestureEvent::x" title='SDL_DollarGestureEvent::x' data-ref="SDL_DollarGestureEvent::x">x</dfn>;            <i class="doc">/**&lt; Normalized center of gesture */</i></td></tr>
+<tr><th id="430">430</th><td>    <em>float</em> <dfn class="decl" id="SDL_DollarGestureEvent::y" title='SDL_DollarGestureEvent::y' data-ref="SDL_DollarGestureEvent::y">y</dfn>;            <i class="doc">/**&lt; Normalized center of gesture */</i></td></tr>
+<tr><th id="431">431</th><td>} <dfn class="typedef" id="SDL_DollarGestureEvent" title='SDL_DollarGestureEvent' data-type='struct SDL_DollarGestureEvent' data-ref="SDL_DollarGestureEvent">SDL_DollarGestureEvent</dfn>;</td></tr>
+<tr><th id="432">432</th><td></td></tr>
+<tr><th id="433">433</th><td></td></tr>
+<tr><th id="434">434</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="435">435</th><td><i class="doc"> *  <span class="command">\brief</span> An event used to request a file open by the system (event.drop.*)</i></td></tr>
+<tr><th id="436">436</th><td><i class="doc"> *         This event is disabled by default, you can enable it with SDL_EventState()</i></td></tr>
+<tr><th id="437">437</th><td><i class="doc"> *  <span class="command">\note</span> If you enable this event, you must free the filename in the event.</i></td></tr>
+<tr><th id="438">438</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="439">439</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_DropEvent" title='SDL_DropEvent' data-ref="SDL_DropEvent"><a class="type" href="#SDL_DropEvent" title='SDL_DropEvent' data-ref="SDL_DropEvent">SDL_DropEvent</a></dfn></td></tr>
+<tr><th id="440">440</th><td>{</td></tr>
+<tr><th id="441">441</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_DropEvent::type" title='SDL_DropEvent::type' data-ref="SDL_DropEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_DROPFILE */</i></td></tr>
+<tr><th id="442">442</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_DropEvent::timestamp" title='SDL_DropEvent::timestamp' data-ref="SDL_DropEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="443">443</th><td>    <em>char</em> *<dfn class="decl" id="SDL_DropEvent::file" title='SDL_DropEvent::file' data-ref="SDL_DropEvent::file">file</dfn>;         <i class="doc">/**&lt; The file name, which should be freed with SDL_free() */</i></td></tr>
+<tr><th id="444">444</th><td>} <dfn class="typedef" id="SDL_DropEvent" title='SDL_DropEvent' data-type='struct SDL_DropEvent' data-ref="SDL_DropEvent">SDL_DropEvent</dfn>;</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td></td></tr>
+<tr><th id="447">447</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc"> *  <span class="command">\brief</span> The "quit requested" event</i></td></tr>
+<tr><th id="449">449</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="450">450</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_QuitEvent" title='SDL_QuitEvent' data-ref="SDL_QuitEvent"><a class="type" href="#SDL_QuitEvent" title='SDL_QuitEvent' data-ref="SDL_QuitEvent">SDL_QuitEvent</a></dfn></td></tr>
+<tr><th id="451">451</th><td>{</td></tr>
+<tr><th id="452">452</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_QuitEvent::type" title='SDL_QuitEvent::type' data-ref="SDL_QuitEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_QUIT */</i></td></tr>
+<tr><th id="453">453</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_QuitEvent::timestamp" title='SDL_QuitEvent::timestamp' data-ref="SDL_QuitEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="454">454</th><td>} <dfn class="typedef" id="SDL_QuitEvent" title='SDL_QuitEvent' data-type='struct SDL_QuitEvent' data-ref="SDL_QuitEvent">SDL_QuitEvent</dfn>;</td></tr>
+<tr><th id="455">455</th><td></td></tr>
+<tr><th id="456">456</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc"> *  <span class="command">\brief</span> OS Specific event</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="459">459</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_OSEvent" title='SDL_OSEvent' data-ref="SDL_OSEvent"><a class="type" href="#SDL_OSEvent" title='SDL_OSEvent' data-ref="SDL_OSEvent">SDL_OSEvent</a></dfn></td></tr>
+<tr><th id="460">460</th><td>{</td></tr>
+<tr><th id="461">461</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_OSEvent::type" title='SDL_OSEvent::type' data-ref="SDL_OSEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_QUIT */</i></td></tr>
+<tr><th id="462">462</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_OSEvent::timestamp" title='SDL_OSEvent::timestamp' data-ref="SDL_OSEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="463">463</th><td>} <dfn class="typedef" id="SDL_OSEvent" title='SDL_OSEvent' data-type='struct SDL_OSEvent' data-ref="SDL_OSEvent">SDL_OSEvent</dfn>;</td></tr>
+<tr><th id="464">464</th><td></td></tr>
+<tr><th id="465">465</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="466">466</th><td><i class="doc"> *  <span class="command">\brief</span> A user-defined event type (event.user.*)</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="468">468</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_UserEvent" title='SDL_UserEvent' data-ref="SDL_UserEvent"><a class="type" href="#SDL_UserEvent" title='SDL_UserEvent' data-ref="SDL_UserEvent">SDL_UserEvent</a></dfn></td></tr>
+<tr><th id="469">469</th><td>{</td></tr>
+<tr><th id="470">470</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_UserEvent::type" title='SDL_UserEvent::type' data-ref="SDL_UserEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_USEREVENT through ::SDL_LASTEVENT-1 */</i></td></tr>
+<tr><th id="471">471</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_UserEvent::timestamp" title='SDL_UserEvent::timestamp' data-ref="SDL_UserEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="472">472</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_UserEvent::windowID" title='SDL_UserEvent::windowID' data-ref="SDL_UserEvent::windowID">windowID</dfn>;    <i class="doc">/**&lt; The associated window if any */</i></td></tr>
+<tr><th id="473">473</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint32" title='Sint32' data-type='int32_t' data-ref="Sint32">Sint32</a> <dfn class="decl" id="SDL_UserEvent::code" title='SDL_UserEvent::code' data-ref="SDL_UserEvent::code">code</dfn>;        <i class="doc">/**&lt; User defined event code */</i></td></tr>
+<tr><th id="474">474</th><td>    <em>void</em> *<dfn class="decl" id="SDL_UserEvent::data1" title='SDL_UserEvent::data1' data-ref="SDL_UserEvent::data1">data1</dfn>;        <i class="doc">/**&lt; User defined data pointer */</i></td></tr>
+<tr><th id="475">475</th><td>    <em>void</em> *<dfn class="decl" id="SDL_UserEvent::data2" title='SDL_UserEvent::data2' data-ref="SDL_UserEvent::data2">data2</dfn>;        <i class="doc">/**&lt; User defined data pointer */</i></td></tr>
+<tr><th id="476">476</th><td>} <dfn class="typedef" id="SDL_UserEvent" title='SDL_UserEvent' data-type='struct SDL_UserEvent' data-ref="SDL_UserEvent">SDL_UserEvent</dfn>;</td></tr>
+<tr><th id="477">477</th><td></td></tr>
+<tr><th id="478">478</th><td></td></tr>
+<tr><th id="479">479</th><td><b>struct</b> <dfn class="type" id="SDL_SysWMmsg" title='SDL_SysWMmsg' data-ref="SDL_SysWMmsg">SDL_SysWMmsg</dfn>;</td></tr>
+<tr><th id="480">480</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#SDL_SysWMmsg" title='SDL_SysWMmsg' data-ref="SDL_SysWMmsg">SDL_SysWMmsg</a> <dfn class="typedef" id="SDL_SysWMmsg" title='SDL_SysWMmsg' data-type='struct SDL_SysWMmsg' data-ref="SDL_SysWMmsg">SDL_SysWMmsg</dfn>;</td></tr>
+<tr><th id="481">481</th><td></td></tr>
+<tr><th id="482">482</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="483">483</th><td><i class="doc"> *  <span class="command">\brief</span> A video driver dependent system event (event.syswm.*)</i></td></tr>
+<tr><th id="484">484</th><td><i class="doc"> *         This event is disabled by default, you can enable it with SDL_EventState()</i></td></tr>
+<tr><th id="485">485</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="486">486</th><td><i class="doc"> *  <span class="command">\note</span> If you want to use this event, you should include SDL_syswm.h.</i></td></tr>
+<tr><th id="487">487</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="488">488</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_SysWMEvent" title='SDL_SysWMEvent' data-ref="SDL_SysWMEvent"><a class="type" href="#SDL_SysWMEvent" title='SDL_SysWMEvent' data-ref="SDL_SysWMEvent">SDL_SysWMEvent</a></dfn></td></tr>
+<tr><th id="489">489</th><td>{</td></tr>
+<tr><th id="490">490</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_SysWMEvent::type" title='SDL_SysWMEvent::type' data-ref="SDL_SysWMEvent::type">type</dfn>;        <i class="doc">/**&lt; ::SDL_SYSWMEVENT */</i></td></tr>
+<tr><th id="491">491</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_SysWMEvent::timestamp" title='SDL_SysWMEvent::timestamp' data-ref="SDL_SysWMEvent::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="492">492</th><td>    <a class="typedef" href="#SDL_SysWMmsg" title='SDL_SysWMmsg' data-type='struct SDL_SysWMmsg' data-ref="SDL_SysWMmsg">SDL_SysWMmsg</a> *<dfn class="decl" id="SDL_SysWMEvent::msg" title='SDL_SysWMEvent::msg' data-ref="SDL_SysWMEvent::msg">msg</dfn>;  <i class="doc">/**&lt; driver dependent data, defined in SDL_syswm.h */</i></td></tr>
+<tr><th id="493">493</th><td>} <dfn class="typedef" id="SDL_SysWMEvent" title='SDL_SysWMEvent' data-type='struct SDL_SysWMEvent' data-ref="SDL_SysWMEvent">SDL_SysWMEvent</dfn>;</td></tr>
+<tr><th id="494">494</th><td></td></tr>
+<tr><th id="495">495</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="496">496</th><td><i class="doc"> *  <span class="command">\brief</span> General event structure</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="498">498</th><td><b>typedef</b> <b>union</b> <dfn class="type def" id="SDL_Event" title='SDL_Event' data-ref="SDL_Event"><a class="type" href="#SDL_Event" title='SDL_Event' data-ref="SDL_Event">SDL_Event</a></dfn></td></tr>
+<tr><th id="499">499</th><td>{</td></tr>
+<tr><th id="500">500</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_Event::type" title='SDL_Event::type' data-ref="SDL_Event::type">type</dfn>;                    <i class="doc">/**&lt; Event type, shared with all events */</i></td></tr>
+<tr><th id="501">501</th><td>    <a class="typedef" href="#SDL_CommonEvent" title='SDL_CommonEvent' data-type='struct SDL_CommonEvent' data-ref="SDL_CommonEvent">SDL_CommonEvent</a> <dfn class="decl" id="SDL_Event::common" title='SDL_Event::common' data-ref="SDL_Event::common">common</dfn>;         <i class="doc">/**&lt; Common event data */</i></td></tr>
+<tr><th id="502">502</th><td>    <a class="typedef" href="#SDL_WindowEvent" title='SDL_WindowEvent' data-type='struct SDL_WindowEvent' data-ref="SDL_WindowEvent">SDL_WindowEvent</a> <dfn class="decl" id="SDL_Event::window" title='SDL_Event::window' data-ref="SDL_Event::window">window</dfn>;         <i class="doc">/**&lt; Window event data */</i></td></tr>
+<tr><th id="503">503</th><td>    <a class="typedef" href="#SDL_KeyboardEvent" title='SDL_KeyboardEvent' data-type='struct SDL_KeyboardEvent' data-ref="SDL_KeyboardEvent">SDL_KeyboardEvent</a> <dfn class="decl" id="SDL_Event::key" title='SDL_Event::key' data-ref="SDL_Event::key">key</dfn>;          <i class="doc">/**&lt; Keyboard event data */</i></td></tr>
+<tr><th id="504">504</th><td>    <a class="typedef" href="#SDL_TextEditingEvent" title='SDL_TextEditingEvent' data-type='struct SDL_TextEditingEvent' data-ref="SDL_TextEditingEvent">SDL_TextEditingEvent</a> <dfn class="decl" id="SDL_Event::edit" title='SDL_Event::edit' data-ref="SDL_Event::edit">edit</dfn>;      <i class="doc">/**&lt; Text editing event data */</i></td></tr>
+<tr><th id="505">505</th><td>    <a class="typedef" href="#SDL_TextInputEvent" title='SDL_TextInputEvent' data-type='struct SDL_TextInputEvent' data-ref="SDL_TextInputEvent">SDL_TextInputEvent</a> <dfn class="decl" id="SDL_Event::text" title='SDL_Event::text' data-ref="SDL_Event::text">text</dfn>;        <i class="doc">/**&lt; Text input event data */</i></td></tr>
+<tr><th id="506">506</th><td>    <a class="typedef" href="#SDL_MouseMotionEvent" title='SDL_MouseMotionEvent' data-type='struct SDL_MouseMotionEvent' data-ref="SDL_MouseMotionEvent">SDL_MouseMotionEvent</a> <dfn class="decl" id="SDL_Event::motion" title='SDL_Event::motion' data-ref="SDL_Event::motion">motion</dfn>;    <i class="doc">/**&lt; Mouse motion event data */</i></td></tr>
+<tr><th id="507">507</th><td>    <a class="typedef" href="#SDL_MouseButtonEvent" title='SDL_MouseButtonEvent' data-type='struct SDL_MouseButtonEvent' data-ref="SDL_MouseButtonEvent">SDL_MouseButtonEvent</a> <dfn class="decl" id="SDL_Event::button" title='SDL_Event::button' data-ref="SDL_Event::button">button</dfn>;    <i class="doc">/**&lt; Mouse button event data */</i></td></tr>
+<tr><th id="508">508</th><td>    <a class="typedef" href="#SDL_MouseWheelEvent" title='SDL_MouseWheelEvent' data-type='struct SDL_MouseWheelEvent' data-ref="SDL_MouseWheelEvent">SDL_MouseWheelEvent</a> <dfn class="decl" id="SDL_Event::wheel" title='SDL_Event::wheel' data-ref="SDL_Event::wheel">wheel</dfn>;      <i class="doc">/**&lt; Mouse wheel event data */</i></td></tr>
+<tr><th id="509">509</th><td>    <a class="typedef" href="#SDL_JoyAxisEvent" title='SDL_JoyAxisEvent' data-type='struct SDL_JoyAxisEvent' data-ref="SDL_JoyAxisEvent">SDL_JoyAxisEvent</a> <dfn class="decl" id="SDL_Event::jaxis" title='SDL_Event::jaxis' data-ref="SDL_Event::jaxis">jaxis</dfn>;         <i class="doc">/**&lt; Joystick axis event data */</i></td></tr>
+<tr><th id="510">510</th><td>    <a class="typedef" href="#SDL_JoyBallEvent" title='SDL_JoyBallEvent' data-type='struct SDL_JoyBallEvent' data-ref="SDL_JoyBallEvent">SDL_JoyBallEvent</a> <dfn class="decl" id="SDL_Event::jball" title='SDL_Event::jball' data-ref="SDL_Event::jball">jball</dfn>;         <i class="doc">/**&lt; Joystick ball event data */</i></td></tr>
+<tr><th id="511">511</th><td>    <a class="typedef" href="#SDL_JoyHatEvent" title='SDL_JoyHatEvent' data-type='struct SDL_JoyHatEvent' data-ref="SDL_JoyHatEvent">SDL_JoyHatEvent</a> <dfn class="decl" id="SDL_Event::jhat" title='SDL_Event::jhat' data-ref="SDL_Event::jhat">jhat</dfn>;           <i class="doc">/**&lt; Joystick hat event data */</i></td></tr>
+<tr><th id="512">512</th><td>    <a class="typedef" href="#SDL_JoyButtonEvent" title='SDL_JoyButtonEvent' data-type='struct SDL_JoyButtonEvent' data-ref="SDL_JoyButtonEvent">SDL_JoyButtonEvent</a> <dfn class="decl" id="SDL_Event::jbutton" title='SDL_Event::jbutton' data-ref="SDL_Event::jbutton">jbutton</dfn>;     <i class="doc">/**&lt; Joystick button event data */</i></td></tr>
+<tr><th id="513">513</th><td>    <a class="typedef" href="#SDL_JoyDeviceEvent" title='SDL_JoyDeviceEvent' data-type='struct SDL_JoyDeviceEvent' data-ref="SDL_JoyDeviceEvent">SDL_JoyDeviceEvent</a> <dfn class="decl" id="SDL_Event::jdevice" title='SDL_Event::jdevice' data-ref="SDL_Event::jdevice">jdevice</dfn>;     <i class="doc">/**&lt; Joystick device change event data */</i></td></tr>
+<tr><th id="514">514</th><td>    <a class="typedef" href="#SDL_ControllerAxisEvent" title='SDL_ControllerAxisEvent' data-type='struct SDL_ControllerAxisEvent' data-ref="SDL_ControllerAxisEvent">SDL_ControllerAxisEvent</a> <dfn class="decl" id="SDL_Event::caxis" title='SDL_Event::caxis' data-ref="SDL_Event::caxis">caxis</dfn>;      <i class="doc">/**&lt; Game Controller axis event data */</i></td></tr>
+<tr><th id="515">515</th><td>    <a class="typedef" href="#SDL_ControllerButtonEvent" title='SDL_ControllerButtonEvent' data-type='struct SDL_ControllerButtonEvent' data-ref="SDL_ControllerButtonEvent">SDL_ControllerButtonEvent</a> <dfn class="decl" id="SDL_Event::cbutton" title='SDL_Event::cbutton' data-ref="SDL_Event::cbutton">cbutton</dfn>;  <i class="doc">/**&lt; Game Controller button event data */</i></td></tr>
+<tr><th id="516">516</th><td>    <a class="typedef" href="#SDL_ControllerDeviceEvent" title='SDL_ControllerDeviceEvent' data-type='struct SDL_ControllerDeviceEvent' data-ref="SDL_ControllerDeviceEvent">SDL_ControllerDeviceEvent</a> <dfn class="decl" id="SDL_Event::cdevice" title='SDL_Event::cdevice' data-ref="SDL_Event::cdevice">cdevice</dfn>;  <i class="doc">/**&lt; Game Controller device event data */</i></td></tr>
+<tr><th id="517">517</th><td>    <a class="typedef" href="#SDL_QuitEvent" title='SDL_QuitEvent' data-type='struct SDL_QuitEvent' data-ref="SDL_QuitEvent">SDL_QuitEvent</a> <dfn class="decl" id="SDL_Event::quit" title='SDL_Event::quit' data-ref="SDL_Event::quit">quit</dfn>;             <i class="doc">/**&lt; Quit request event data */</i></td></tr>
+<tr><th id="518">518</th><td>    <a class="typedef" href="#SDL_UserEvent" title='SDL_UserEvent' data-type='struct SDL_UserEvent' data-ref="SDL_UserEvent">SDL_UserEvent</a> <dfn class="decl" id="SDL_Event::user" title='SDL_Event::user' data-ref="SDL_Event::user">user</dfn>;             <i class="doc">/**&lt; Custom event data */</i></td></tr>
+<tr><th id="519">519</th><td>    <a class="typedef" href="#SDL_SysWMEvent" title='SDL_SysWMEvent' data-type='struct SDL_SysWMEvent' data-ref="SDL_SysWMEvent">SDL_SysWMEvent</a> <dfn class="decl" id="SDL_Event::syswm" title='SDL_Event::syswm' data-ref="SDL_Event::syswm">syswm</dfn>;           <i class="doc">/**&lt; System dependent window event data */</i></td></tr>
+<tr><th id="520">520</th><td>    <a class="typedef" href="#SDL_TouchFingerEvent" title='SDL_TouchFingerEvent' data-type='struct SDL_TouchFingerEvent' data-ref="SDL_TouchFingerEvent">SDL_TouchFingerEvent</a> <dfn class="decl" id="SDL_Event::tfinger" title='SDL_Event::tfinger' data-ref="SDL_Event::tfinger">tfinger</dfn>;   <i class="doc">/**&lt; Touch finger event data */</i></td></tr>
+<tr><th id="521">521</th><td>    <a class="typedef" href="#SDL_MultiGestureEvent" title='SDL_MultiGestureEvent' data-type='struct SDL_MultiGestureEvent' data-ref="SDL_MultiGestureEvent">SDL_MultiGestureEvent</a> <dfn class="decl" id="SDL_Event::mgesture" title='SDL_Event::mgesture' data-ref="SDL_Event::mgesture">mgesture</dfn>; <i class="doc">/**&lt; Gesture event data */</i></td></tr>
+<tr><th id="522">522</th><td>    <a class="typedef" href="#SDL_DollarGestureEvent" title='SDL_DollarGestureEvent' data-type='struct SDL_DollarGestureEvent' data-ref="SDL_DollarGestureEvent">SDL_DollarGestureEvent</a> <dfn class="decl" id="SDL_Event::dgesture" title='SDL_Event::dgesture' data-ref="SDL_Event::dgesture">dgesture</dfn>; <i class="doc">/**&lt; Gesture event data */</i></td></tr>
+<tr><th id="523">523</th><td>    <a class="typedef" href="#SDL_DropEvent" title='SDL_DropEvent' data-type='struct SDL_DropEvent' data-ref="SDL_DropEvent">SDL_DropEvent</a> <dfn class="decl" id="SDL_Event::drop" title='SDL_Event::drop' data-ref="SDL_Event::drop">drop</dfn>;             <i class="doc">/**&lt; Drag and drop event data */</i></td></tr>
+<tr><th id="524">524</th><td></td></tr>
+<tr><th id="525">525</th><td>    <i>/* This is necessary for ABI compatibility between Visual C++ and GCC</i></td></tr>
+<tr><th id="526">526</th><td><i>       Visual C++ will respect the push pack pragma and use 52 bytes for</i></td></tr>
+<tr><th id="527">527</th><td><i>       this structure, and GCC will use the alignment of the largest datatype</i></td></tr>
+<tr><th id="528">528</th><td><i>       within the union, which is 8 bytes.</i></td></tr>
+<tr><th id="529">529</th><td><i></i></td></tr>
+<tr><th id="530">530</th><td><i>       So... we'll add padding to force the size to be 56 bytes for both.</i></td></tr>
+<tr><th id="531">531</th><td><i>    */</i></td></tr>
+<tr><th id="532">532</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="decl" id="SDL_Event::padding" title='SDL_Event::padding' data-ref="SDL_Event::padding">padding</dfn>[<var>56</var>];</td></tr>
+<tr><th id="533">533</th><td>} <dfn class="typedef" id="SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</dfn>;</td></tr>
+<tr><th id="534">534</th><td></td></tr>
+<tr><th id="535">535</th><td></td></tr>
+<tr><th id="536">536</th><td><i>/* Function prototypes */</i></td></tr>
+<tr><th id="537">537</th><td></td></tr>
+<tr><th id="538">538</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="539">539</th><td><i class="doc"> *  Pumps the event loop, gathering events from the input devices.</i></td></tr>
+<tr><th id="540">540</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="541">541</th><td><i class="doc"> *  This function updates the event queue and internal input device state.</i></td></tr>
+<tr><th id="542">542</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="543">543</th><td><i class="doc"> *  This should only be run in the thread that sets the video mode.</i></td></tr>
+<tr><th id="544">544</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="545">545</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_PumpEvents" title='SDL_PumpEvents' data-ref="SDL_PumpEvents">SDL_PumpEvents</dfn>(<em>void</em>);</td></tr>
+<tr><th id="546">546</th><td></td></tr>
+<tr><th id="547">547</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="548">548</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="549">549</th><td>{</td></tr>
+<tr><th id="550">550</th><td>    <dfn class="enum" id="::SDL_ADDEVENT" title='::SDL_ADDEVENT' data-ref="::SDL_ADDEVENT">SDL_ADDEVENT</dfn>,</td></tr>
+<tr><th id="551">551</th><td>    <dfn class="enum" id="::SDL_PEEKEVENT" title='::SDL_PEEKEVENT' data-ref="::SDL_PEEKEVENT">SDL_PEEKEVENT</dfn>,</td></tr>
+<tr><th id="552">552</th><td>    <dfn class="enum" id="::SDL_GETEVENT" title='::SDL_GETEVENT' data-ref="::SDL_GETEVENT">SDL_GETEVENT</dfn></td></tr>
+<tr><th id="553">553</th><td>} <dfn class="typedef" id="SDL_eventaction" title='SDL_eventaction' data-type='enum SDL_eventaction' data-ref="SDL_eventaction">SDL_eventaction</dfn>;</td></tr>
+<tr><th id="554">554</th><td></td></tr>
+<tr><th id="555">555</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="556">556</th><td><i class="doc"> *  Checks the event queue for messages and optionally returns them.</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc"> *  If<span class="command"> \c</span> <span class="arg">action</span> is ::SDL_ADDEVENT, up to<span class="command"> \c</span> <span class="arg">numevents</span> events will be added to</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> *  the back of the event queue.</i></td></tr>
+<tr><th id="560">560</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="561">561</th><td><i class="doc"> *  If<span class="command"> \c</span> <span class="arg">action</span> is ::SDL_PEEKEVENT, up to<span class="command"> \c</span> <span class="arg">numevents</span> events at the front</i></td></tr>
+<tr><th id="562">562</th><td><i class="doc"> *  of the event queue, within the specified minimum and maximum type,</i></td></tr>
+<tr><th id="563">563</th><td><i class="doc"> *  will be returned and will not be removed from the queue.</i></td></tr>
+<tr><th id="564">564</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="565">565</th><td><i class="doc"> *  If<span class="command"> \c</span> <span class="arg">action</span> is ::SDL_GETEVENT, up to<span class="command"> \c</span> <span class="arg">numevents</span> events at the front</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc"> *  of the event queue, within the specified minimum and maximum type,</i></td></tr>
+<tr><th id="567">567</th><td><i class="doc"> *  will be returned and will be removed from the queue.</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="569">569</th><td><i class="doc"> *  <span class="command">\return</span> The number of events actually stored, or -1 if there was an error.</i></td></tr>
+<tr><th id="570">570</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="571">571</th><td><i class="doc"> *  This function is thread-safe.</i></td></tr>
+<tr><th id="572">572</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="573">573</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_PeepEvents" title='SDL_PeepEvents' data-ref="SDL_PeepEvents">SDL_PeepEvents</dfn>(<a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col4 decl" id="824events" title='events' data-type='SDL_Event *' data-ref="824events">events</dfn>, <em>int</em> <dfn class="local col5 decl" id="825numevents" title='numevents' data-type='int' data-ref="825numevents">numevents</dfn>,</td></tr>
+<tr><th id="574">574</th><td>                                           <a class="typedef" href="#SDL_eventaction" title='SDL_eventaction' data-type='enum SDL_eventaction' data-ref="SDL_eventaction">SDL_eventaction</a> <dfn class="local col6 decl" id="826action" title='action' data-type='SDL_eventaction' data-ref="826action">action</dfn>,</td></tr>
+<tr><th id="575">575</th><td>                                           <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col7 decl" id="827minType" title='minType' data-type='Uint32' data-ref="827minType">minType</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col8 decl" id="828maxType" title='maxType' data-type='Uint32' data-ref="828maxType">maxType</dfn>);</td></tr>
+<tr><th id="576">576</th><td><i>/* @} */</i></td></tr>
+<tr><th id="577">577</th><td></td></tr>
+<tr><th id="578">578</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> *  Checks to see if certain event types are in the event queue.</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="581">581</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasEvent" title='SDL_HasEvent' data-ref="SDL_HasEvent">SDL_HasEvent</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col9 decl" id="829type" title='type' data-type='Uint32' data-ref="829type">type</dfn>);</td></tr>
+<tr><th id="582">582</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasEvents" title='SDL_HasEvents' data-ref="SDL_HasEvents">SDL_HasEvents</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col0 decl" id="830minType" title='minType' data-type='Uint32' data-ref="830minType">minType</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col1 decl" id="831maxType" title='maxType' data-type='Uint32' data-ref="831maxType">maxType</dfn>);</td></tr>
+<tr><th id="583">583</th><td></td></tr>
+<tr><th id="584">584</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="585">585</th><td><i class="doc"> *  This function clears events from the event queue</i></td></tr>
+<tr><th id="586">586</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="587">587</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_FlushEvent" title='SDL_FlushEvent' data-ref="SDL_FlushEvent">SDL_FlushEvent</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col2 decl" id="832type" title='type' data-type='Uint32' data-ref="832type">type</dfn>);</td></tr>
+<tr><th id="588">588</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_FlushEvents" title='SDL_FlushEvents' data-ref="SDL_FlushEvents">SDL_FlushEvents</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col3 decl" id="833minType" title='minType' data-type='Uint32' data-ref="833minType">minType</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col4 decl" id="834maxType" title='maxType' data-type='Uint32' data-ref="834maxType">maxType</dfn>);</td></tr>
+<tr><th id="589">589</th><td></td></tr>
+<tr><th id="590">590</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="591">591</th><td><i class="doc"> *  <span class="command">\brief</span> Polls for currently pending events.</i></td></tr>
+<tr><th id="592">592</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="593">593</th><td><i class="doc"> *  <span class="command">\return</span> 1 if there are any pending events, or 0 if there are none available.</i></td></tr>
+<tr><th id="594">594</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="595">595</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">event</span> If not NULL, the next event is removed from the queue and</i></td></tr>
+<tr><th id="596">596</th><td><i class="doc"> *               stored in that area.</i></td></tr>
+<tr><th id="597">597</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="598">598</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_PollEvent" title='SDL_PollEvent' data-ref="SDL_PollEvent">SDL_PollEvent</dfn>(<a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col5 decl" id="835event" title='event' data-type='SDL_Event *' data-ref="835event">event</dfn>);</td></tr>
+<tr><th id="599">599</th><td></td></tr>
+<tr><th id="600">600</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="601">601</th><td><i class="doc"> *  <span class="command">\brief</span> Waits indefinitely for the next available event.</i></td></tr>
+<tr><th id="602">602</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="603">603</th><td><i class="doc"> *  <span class="command">\return</span> 1, or 0 if there was an error while waiting for events.</i></td></tr>
+<tr><th id="604">604</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="605">605</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">event</span> If not NULL, the next event is removed from the queue and</i></td></tr>
+<tr><th id="606">606</th><td><i class="doc"> *               stored in that area.</i></td></tr>
+<tr><th id="607">607</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="608">608</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WaitEvent" title='SDL_WaitEvent' data-ref="SDL_WaitEvent">SDL_WaitEvent</dfn>(<a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col6 decl" id="836event" title='event' data-type='SDL_Event *' data-ref="836event">event</dfn>);</td></tr>
+<tr><th id="609">609</th><td></td></tr>
+<tr><th id="610">610</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="611">611</th><td><i class="doc"> *  <span class="command">\brief</span> Waits until the specified timeout (in milliseconds) for the next</i></td></tr>
+<tr><th id="612">612</th><td><i class="doc"> *         available event.</i></td></tr>
+<tr><th id="613">613</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="614">614</th><td><i class="doc"> *  <span class="command">\return</span> 1, or 0 if there was an error while waiting for events.</i></td></tr>
+<tr><th id="615">615</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="616">616</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">event</span> If not NULL, the next event is removed from the queue and</i></td></tr>
+<tr><th id="617">617</th><td><i class="doc"> *               stored in that area.</i></td></tr>
+<tr><th id="618">618</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">timeout</span> The timeout (in milliseconds) to wait for next event.</i></td></tr>
+<tr><th id="619">619</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="620">620</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WaitEventTimeout" title='SDL_WaitEventTimeout' data-ref="SDL_WaitEventTimeout">SDL_WaitEventTimeout</dfn>(<a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col7 decl" id="837event" title='event' data-type='SDL_Event *' data-ref="837event">event</dfn>,</td></tr>
+<tr><th id="621">621</th><td>                                                 <em>int</em> <dfn class="local col8 decl" id="838timeout" title='timeout' data-type='int' data-ref="838timeout">timeout</dfn>);</td></tr>
+<tr><th id="622">622</th><td></td></tr>
+<tr><th id="623">623</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="624">624</th><td><i class="doc"> *  <span class="command">\brief</span> Add an event to the event queue.</i></td></tr>
+<tr><th id="625">625</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="626">626</th><td><i class="doc"> *  <span class="command">\return</span> 1 on success, 0 if the event was filtered, or -1 if the event queue</i></td></tr>
+<tr><th id="627">627</th><td><i class="doc"> *          was full or there was some other error.</i></td></tr>
+<tr><th id="628">628</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="629">629</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_PushEvent" title='SDL_PushEvent' data-ref="SDL_PushEvent">SDL_PushEvent</dfn>(<a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col9 decl" id="839event" title='event' data-type='SDL_Event *' data-ref="839event">event</dfn>);</td></tr>
+<tr><th id="630">630</th><td></td></tr>
+<tr><th id="631">631</th><td><b>typedef</b> <em>int</em> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="typedef" id="SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</dfn>) (<em>void</em> *<dfn class="local col0 decl" id="840userdata" title='userdata' data-type='void *' data-ref="840userdata">userdata</dfn>, <a class="typedef" href="#SDL_Event" title='SDL_Event' data-type='union SDL_Event' data-ref="SDL_Event">SDL_Event</a> * <dfn class="local col1 decl" id="841event" title='event' data-type='SDL_Event *' data-ref="841event">event</dfn>);</td></tr>
+<tr><th id="632">632</th><td></td></tr>
+<tr><th id="633">633</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="634">634</th><td><i class="doc"> *  Sets up a filter to process all events before they change internal state and</i></td></tr>
+<tr><th id="635">635</th><td><i class="doc"> *  are posted to the internal event queue.</i></td></tr>
+<tr><th id="636">636</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="637">637</th><td><i class="doc"> *  The filter is prototyped as:</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc"> *  <span class="command">\code</span></i></td></tr>
+<tr><th id="639">639</th><td><i class="doc"> *<span class="verb">      int SDL_EventFilter(void *userdata, SDL_Event * event);</span></i></td></tr>
+<tr><th id="640">640</th><td><i class="doc"><span class="verb"></span> *  \endcode</i></td></tr>
+<tr><th id="641">641</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="642">642</th><td><i class="doc"> *  If the filter returns 1, then the event will be added to the internal queue.</i></td></tr>
+<tr><th id="643">643</th><td><i class="doc"> *  If it returns 0, then the event will be dropped from the queue, but the</i></td></tr>
+<tr><th id="644">644</th><td><i class="doc"> *  internal state will still be updated.  This allows selective filtering of</i></td></tr>
+<tr><th id="645">645</th><td><i class="doc"> *  dynamically arriving events.</i></td></tr>
+<tr><th id="646">646</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="647">647</th><td><i class="doc"> *  <span class="command">\warning</span>  Be very careful of what you do in the event filter function, as</i></td></tr>
+<tr><th id="648">648</th><td><i class="doc"> *            it may run in a different thread!</i></td></tr>
+<tr><th id="649">649</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="650">650</th><td><i class="doc"> *  There is one caveat when dealing with the ::SDL_QuitEvent event type.  The</i></td></tr>
+<tr><th id="651">651</th><td><i class="doc"> *  event filter is only called when the window manager desires to close the</i></td></tr>
+<tr><th id="652">652</th><td><i class="doc"> *  application window.  If the event filter returns 1, then the window will</i></td></tr>
+<tr><th id="653">653</th><td><i class="doc"> *  be closed, otherwise the window will remain open if possible.</i></td></tr>
+<tr><th id="654">654</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="655">655</th><td><i class="doc"> *  If the quit event is generated by an interrupt signal, it will bypass the</i></td></tr>
+<tr><th id="656">656</th><td><i class="doc"> *  internal queue and be delivered to the application at the next event poll.</i></td></tr>
+<tr><th id="657">657</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="658">658</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetEventFilter" title='SDL_SetEventFilter' data-ref="SDL_SetEventFilter">SDL_SetEventFilter</dfn>(<a class="typedef" href="#SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</a> <dfn class="local col2 decl" id="842filter" title='filter' data-type='SDL_EventFilter' data-ref="842filter">filter</dfn>,</td></tr>
+<tr><th id="659">659</th><td>                                                <em>void</em> *<dfn class="local col3 decl" id="843userdata" title='userdata' data-type='void *' data-ref="843userdata">userdata</dfn>);</td></tr>
+<tr><th id="660">660</th><td></td></tr>
+<tr><th id="661">661</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="662">662</th><td><i class="doc"> *  Return the current event filter - can be used to "chain" filters.</i></td></tr>
+<tr><th id="663">663</th><td><i class="doc"> *  If there is no event filter set, this function returns SDL_FALSE.</i></td></tr>
+<tr><th id="664">664</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="665">665</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetEventFilter" title='SDL_GetEventFilter' data-ref="SDL_GetEventFilter">SDL_GetEventFilter</dfn>(<a class="typedef" href="#SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</a> * <dfn class="local col4 decl" id="844filter" title='filter' data-type='SDL_EventFilter *' data-ref="844filter">filter</dfn>,</td></tr>
+<tr><th id="666">666</th><td>                                                    <em>void</em> **<dfn class="local col5 decl" id="845userdata" title='userdata' data-type='void **' data-ref="845userdata">userdata</dfn>);</td></tr>
+<tr><th id="667">667</th><td></td></tr>
+<tr><th id="668">668</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="669">669</th><td><i class="doc"> *  Add a function which is called when an event is added to the queue.</i></td></tr>
+<tr><th id="670">670</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="671">671</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AddEventWatch" title='SDL_AddEventWatch' data-ref="SDL_AddEventWatch">SDL_AddEventWatch</dfn>(<a class="typedef" href="#SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</a> <dfn class="local col6 decl" id="846filter" title='filter' data-type='SDL_EventFilter' data-ref="846filter">filter</dfn>,</td></tr>
+<tr><th id="672">672</th><td>                                               <em>void</em> *<dfn class="local col7 decl" id="847userdata" title='userdata' data-type='void *' data-ref="847userdata">userdata</dfn>);</td></tr>
+<tr><th id="673">673</th><td></td></tr>
+<tr><th id="674">674</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="675">675</th><td><i class="doc"> *  Remove an event watch function added with SDL_AddEventWatch()</i></td></tr>
+<tr><th id="676">676</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="677">677</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_DelEventWatch" title='SDL_DelEventWatch' data-ref="SDL_DelEventWatch">SDL_DelEventWatch</dfn>(<a class="typedef" href="#SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</a> <dfn class="local col8 decl" id="848filter" title='filter' data-type='SDL_EventFilter' data-ref="848filter">filter</dfn>,</td></tr>
+<tr><th id="678">678</th><td>                                               <em>void</em> *<dfn class="local col9 decl" id="849userdata" title='userdata' data-type='void *' data-ref="849userdata">userdata</dfn>);</td></tr>
+<tr><th id="679">679</th><td></td></tr>
+<tr><th id="680">680</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="681">681</th><td><i class="doc"> *  Run the filter function on the current event queue, removing any</i></td></tr>
+<tr><th id="682">682</th><td><i class="doc"> *  events for which the filter returns 0.</i></td></tr>
+<tr><th id="683">683</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="684">684</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_FilterEvents" title='SDL_FilterEvents' data-ref="SDL_FilterEvents">SDL_FilterEvents</dfn>(<a class="typedef" href="#SDL_EventFilter" title='SDL_EventFilter' data-type='int (*)(void *, SDL_Event *)' data-ref="SDL_EventFilter">SDL_EventFilter</a> <dfn class="local col0 decl" id="850filter" title='filter' data-type='SDL_EventFilter' data-ref="850filter">filter</dfn>,</td></tr>
+<tr><th id="685">685</th><td>                                              <em>void</em> *<dfn class="local col1 decl" id="851userdata" title='userdata' data-type='void *' data-ref="851userdata">userdata</dfn>);</td></tr>
+<tr><th id="686">686</th><td></td></tr>
+<tr><th id="687">687</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="688">688</th><td><u>#define <dfn class="macro" id="_M/SDL_QUERY" data-ref="_M/SDL_QUERY">SDL_QUERY</dfn>   -1</u></td></tr>
+<tr><th id="689">689</th><td><u>#define <dfn class="macro" id="_M/SDL_IGNORE" data-ref="_M/SDL_IGNORE">SDL_IGNORE</dfn>   0</u></td></tr>
+<tr><th id="690">690</th><td><u>#define <dfn class="macro" id="_M/SDL_DISABLE" data-ref="_M/SDL_DISABLE">SDL_DISABLE</dfn>  0</u></td></tr>
+<tr><th id="691">691</th><td><u>#define <dfn class="macro" id="_M/SDL_ENABLE" data-ref="_M/SDL_ENABLE">SDL_ENABLE</dfn>   1</u></td></tr>
+<tr><th id="692">692</th><td></td></tr>
+<tr><th id="693">693</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="694">694</th><td><i class="doc"> *  This function allows you to set the state of processing certain events.</i></td></tr>
+<tr><th id="695">695</th><td><i class="doc"> *   - If<span class="command"> \c</span> <span class="arg">state</span> is set to ::SDL_IGNORE, that event will be automatically</i></td></tr>
+<tr><th id="696">696</th><td><i class="doc"> *     dropped from the event queue and will not event be filtered.</i></td></tr>
+<tr><th id="697">697</th><td><i class="doc"> *   - If<span class="command"> \c</span> <span class="arg">state</span> is set to ::SDL_ENABLE, that event will be processed</i></td></tr>
+<tr><th id="698">698</th><td><i class="doc"> *     normally.</i></td></tr>
+<tr><th id="699">699</th><td><i class="doc"> *   - If<span class="command"> \c</span> <span class="arg">state</span> is set to ::SDL_QUERY, SDL_EventState() will return the</i></td></tr>
+<tr><th id="700">700</th><td><i class="doc"> *     current processing state of the specified event.</i></td></tr>
+<tr><th id="701">701</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="702">702</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_EventState" title='SDL_EventState' data-ref="SDL_EventState">SDL_EventState</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col2 decl" id="852type" title='type' data-type='Uint32' data-ref="852type">type</dfn>, <em>int</em> <dfn class="local col3 decl" id="853state" title='state' data-type='int' data-ref="853state">state</dfn>);</td></tr>
+<tr><th id="703">703</th><td><i>/* @} */</i></td></tr>
+<tr><th id="704">704</th><td><u>#define <dfn class="macro" id="_M/SDL_GetEventState" data-ref="_M/SDL_GetEventState">SDL_GetEventState</dfn>(type) SDL_EventState(type, SDL_QUERY)</u></td></tr>
+<tr><th id="705">705</th><td></td></tr>
+<tr><th id="706">706</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="707">707</th><td><i class="doc"> *  This function allocates a set of user-defined events, and returns</i></td></tr>
+<tr><th id="708">708</th><td><i class="doc"> *  the beginning event number for that set of events.</i></td></tr>
+<tr><th id="709">709</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="710">710</th><td><i class="doc"> *  If there aren't enough user-defined events left, this function</i></td></tr>
+<tr><th id="711">711</th><td><i class="doc"> *  returns (Uint32)-1</i></td></tr>
+<tr><th id="712">712</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="713">713</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RegisterEvents" title='SDL_RegisterEvents' data-ref="SDL_RegisterEvents">SDL_RegisterEvents</dfn>(<em>int</em> <dfn class="local col4 decl" id="854numevents" title='numevents' data-type='int' data-ref="854numevents">numevents</dfn>);</td></tr>
+<tr><th id="714">714</th><td></td></tr>
+<tr><th id="715">715</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="716">716</th><td><u>#<span data-ppcond="716">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="717">717</th><td>}</td></tr>
+<tr><th id="718">718</th><td><u>#<span data-ppcond="716">endif</span></u></td></tr>
+<tr><th id="719">719</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="720">720</th><td></td></tr>
+<tr><th id="721">721</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_events_h */</u></td></tr>
+<tr><th id="722">722</th><td></td></tr>
+<tr><th id="723">723</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="724">724</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

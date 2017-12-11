@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='87' type='void Solarus::Rectangle::add_xy(const Solarus::Point &amp; other)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='367' ll='369' type='void Solarus::Rectangle::add_xy(const Solarus::Point &amp; dxy)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='363'>/**
+ * \brief Adds something to both coordinates of this rectangle.
+ * \param dxy coordinates that should be added to the current&apos;s
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='822' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='112' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='922' u='c' c='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='923' u='c' c='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='346' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='959' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='969' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='977' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='428' u='c' c='_ZNK7Solarus11HeroSprites20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='305' u='c' c='_ZNK7Solarus11PathFinding24is_node_transition_validERKNS0_4NodeEi'/>

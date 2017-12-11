@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='35' type='const std::string &amp; Solarus::DialogData::get_text() const'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='194' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<def f='codebrowser/src/DialogResources.cpp' l='35' ll='37' type='const std::string &amp; Solarus::DialogData::get_text() const'/>
+<use f='codebrowser/src/DialogResources.cpp' l='316' u='c' c='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='31'>/**
+ * \brief Returns the whole text of this dialog.
+ * \return the text of this dialog
+ */</doc>

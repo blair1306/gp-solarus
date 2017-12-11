@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='71' type='void Solarus::Teletransporter::transport_hero(Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1602' u='c' c='_ZN7Solarus4Hero37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='274' ll='329' type='void Solarus::Teletransporter::transport_hero(Solarus::Hero &amp; hero)'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='270'>/**
+ * \brief Makes the teletransporter move the hero to the destination.
+ * \param hero the hero
+ */</doc>
+<use f='codebrowser/src/hero/FallingState.cpp' l='76' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='220' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

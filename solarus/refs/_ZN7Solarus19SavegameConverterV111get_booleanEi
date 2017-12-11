@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SavegameConverterV1.h' l='45' type='bool Solarus::SavegameConverterV1::get_boolean(int index)'/>
+<def f='codebrowser/src/SavegameConverterV1.cpp' l='76' ll='80' type='bool Solarus::SavegameConverterV1::get_boolean(int index)'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='197' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<doc f='codebrowser/src/SavegameConverterV1.cpp' l='71'>/**
+ * \brief Returns a boolean value saved.
+ * \param index index of the value to get, between 0 and 32767
+ * \return the boolean value saved at this index
+ */</doc>

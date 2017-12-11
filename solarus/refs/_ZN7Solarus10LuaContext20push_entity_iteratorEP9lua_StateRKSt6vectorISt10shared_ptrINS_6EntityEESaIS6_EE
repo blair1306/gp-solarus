@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1099' type='static void Solarus::LuaContext::push_entity_iterator(lua_State * l, const EntityVector &amp; entities)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='633' ll='650' type='static void Solarus::LuaContext::push_entity_iterator(lua_State * l, const EntityVector &amp; entities)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='625'>/**
+ * \brief Pushes a list of entities as an iterator onto the stack.
+ *
+ * The iterator is pushed onto the stack as one value of type function.
+ *
+ * \param l A Lua context.
+ * \param entity A list of entities. The iterator preserves their order.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1978' u='c' c='_ZN7Solarus10LuaContext20map_api_get_entitiesEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2032' u='c' c='_ZN7Solarus10LuaContext28map_api_get_entities_by_typeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2056' u='c' c='_ZN7Solarus10LuaContext33map_api_get_entities_in_rectangleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2098' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>

@@ -1,0 +1,34 @@
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='42' c='Solarus::Movement'/>
+<def f='codebrowser/include/solarus/movements/PixelMovement.h' l='32' ll='84'/>
+<ovr f='codebrowser/include/solarus/movements/PathMovement.h' l='45' c='Solarus::PathMovement'/>
+<size>168</size>
+<doc f='codebrowser/include/solarus/movements/PixelMovement.h' l='29'>/**
+ * \brief Movement of an entity that follows a predetermined sequence of pixel-precise moves.
+ */</doc>
+<fun r='_ZN7Solarus13PixelMovementC1ERKSsjbb'/>
+<fun r='_ZNK7Solarus13PixelMovement14get_trajectoryEv'/>
+<fun r='_ZN7Solarus13PixelMovement14set_trajectoryERKSt4listINS_5PointESaIS2_EE'/>
+<fun r='_ZN7Solarus13PixelMovement14set_trajectoryERKSs'/>
+<fun r='_ZNK7Solarus13PixelMovement9get_delayEv'/>
+<fun r='_ZN7Solarus13PixelMovement9set_delayEj'/>
+<fun r='_ZNK7Solarus13PixelMovement8get_loopEv'/>
+<fun r='_ZN7Solarus13PixelMovement8set_loopEb'/>
+<fun r='_ZNK7Solarus13PixelMovement10is_startedEv'/>
+<fun r='_ZNK7Solarus13PixelMovement11is_finishedEv'/>
+<fun r='_ZNK7Solarus13PixelMovement10get_lengthEv'/>
+<fun r='_ZN7Solarus13PixelMovement6updateEv'/>
+<fun r='_ZN7Solarus13PixelMovement13set_suspendedEb'/>
+<fun r='_ZNK7Solarus13PixelMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus13PixelMovement16notify_step_doneEib'/>
+<fun r='_ZN7Solarus13PixelMovement14make_next_stepEv'/>
+<fun r='_ZN7Solarus13PixelMovement7restartEv'/>
+<mbr r='Solarus::PixelMovement::trajectory' o='896' t='std::list&lt;Point&gt;'/>
+<mbr r='Solarus::PixelMovement::trajectory_string' o='1024' t='std::string'/>
+<mbr r='Solarus::PixelMovement::next_move_date' o='1088' t='uint32_t'/>
+<mbr r='Solarus::PixelMovement::delay' o='1120' t='uint32_t'/>
+<mbr r='Solarus::PixelMovement::loop' o='1152' t='bool'/>
+<mbr r='Solarus::PixelMovement::trajectory_iterator' o='1216' t='std::list&lt;Point&gt;::iterator'/>
+<mbr r='Solarus::PixelMovement::nb_steps_done' o='1280' t='int'/>
+<mbr r='Solarus::PixelMovement::finished' o='1312' t='bool'/>
+<ovr f='codebrowser/include/solarus/movements/FallingOnFloorMovement.h' l='36' c='Solarus::FallingOnFloorMovement'/>
+<ovr f='codebrowser/include/solarus/movements/JumpMovement.h' l='31' c='Solarus::JumpMovement'/>

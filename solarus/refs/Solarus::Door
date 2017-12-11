@@ -1,0 +1,65 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Door.h' l='44' ll='148'/>
+<size>312</size>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='27'>/**
+ * \brief A door that may be open or closed.
+ *
+ * It can be opened by one of the following methods depending on your choice:
+ * - by pressing the action key,
+ * - by pressing the action key when a specific savegame variable is set,
+ * - by pressing the action key when the player has a specific equipment item,
+ * - with an explosion,
+ * - or only explicitly by a Lua script.
+ *
+ * The state of a door can be saved.
+ * However, transitional states (opening and closing) are not saved:
+ * opening is saved as open and closing is saved as closed.
+ *
+ * TODO For opening method OPENING_BY_INTERACTION_IF_ITEM, allow to interact
+ * with the item command.
+ */</doc>
+<smbr r='Solarus::Door::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<fun r='_ZNK7Solarus4Door8get_typeEv'/>
+<fun r='_ZN7Solarus4Door15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus4Door13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Door6updateEv'/>
+<fun r='_ZN7Solarus4Door11draw_on_mapEv'/>
+<fun r='_ZN7Solarus4Door23get_sword_tapping_soundEv'/>
+<fun r='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Door16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus4Door31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZNK7Solarus4Door8is_savedEv'/>
+<fun r='_ZNK7Solarus4Door21get_savegame_variableEv'/>
+<fun r='_ZNK7Solarus4Door18get_opening_methodEv'/>
+<fun r='_ZN7Solarus4Door18set_opening_methodENS0_13OpeningMethodE'/>
+<fun r='_ZNK7Solarus4Door23is_interaction_requiredEv'/>
+<fun r='_ZNK7Solarus4Door21get_opening_conditionEv'/>
+<fun r='_ZN7Solarus4Door21set_opening_conditionERKSs'/>
+<fun r='_ZNK7Solarus4Door29is_opening_condition_consumedEv'/>
+<fun r='_ZN7Solarus4Door30set_opening_condition_consumedEb'/>
+<fun r='_ZNK7Solarus4Door25get_cannot_open_dialog_idEv'/>
+<fun r='_ZN7Solarus4Door25set_cannot_open_dialog_idERKSs'/>
+<fun r='_ZNK7Solarus4Door8can_openEv'/>
+<fun r='_ZNK7Solarus4Door7is_openEv'/>
+<fun r='_ZNK7Solarus4Door10is_openingEv'/>
+<fun r='_ZNK7Solarus4Door9is_closedEv'/>
+<fun r='_ZNK7Solarus4Door10is_closingEv'/>
+<fun r='_ZNK7Solarus4Door11is_changingEv'/>
+<fun r='_ZN7Solarus4Door4openEv'/>
+<fun r='_ZN7Solarus4Door5closeEv'/>
+<fun r='_ZN7Solarus4Door8set_openEb'/>
+<smbr r='Solarus::Door::opening_method_names' t='const std::map&lt;OpeningMethod, std::string&gt;'/>
+<fun r='_ZN7Solarus4Door11set_openingEv'/>
+<fun r='_ZN7Solarus4Door11set_closingEv'/>
+<fun r='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<fun r='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<mbr r='Solarus::Door::savegame_variable' o='2048' t='const std::string'/>
+<mbr r='Solarus::Door::opening_method' o='2112' t='Solarus::Door::OpeningMethod'/>
+<mbr r='Solarus::Door::opening_condition' o='2176' t='std::string'/>
+<mbr r='Solarus::Door::opening_condition_consumed' o='2240' t='bool'/>
+<mbr r='Solarus::Door::cannot_open_dialog_id' o='2304' t='std::string'/>
+<mbr r='Solarus::Door::state' o='2368' t='Solarus::Door::State'/>
+<mbr r='Solarus::Door::initialized' o='2400' t='bool'/>
+<mbr r='Solarus::Door::next_hint_sound_date' o='2432' t='uint32_t'/>

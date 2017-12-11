@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='98' type='bool Solarus::Entity::State::is_prickle_obstacle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='675' ll='677' type='bool Solarus::Entity::State::is_prickle_obstacle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='668'>/**
+ * \brief Returns whether prickles are considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if prickles are considered as obstacles in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1454' u='c' c='_ZNK7Solarus4Hero19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='291' c='_ZNK7Solarus4Hero12PullingState19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='313' c='_ZNK7Solarus4Hero12PushingState19is_prickle_obstacleEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='201' c='_ZNK7Solarus4Hero15SpinAttackState19is_prickle_obstacleEv'/>

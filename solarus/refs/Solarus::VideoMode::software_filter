@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='58' type='std::unique_ptr&lt;PixelFilter&gt;'/>
+<offset>128</offset>
+<doc f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='57'>// Pixel filter (in CPU or GPU).</doc>
+<doc f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='58'>/**&lt; Software scaling pixel filter to use or nullptr. */</doc>
+<use f='codebrowser/src/lowlevel/VideoMode.cpp' l='43' u='w' c='_ZN7Solarus9VideoModeC1ERKSsRKNS_4SizeESt10unique_ptrINS_11PixelFilterESt14default_deleteIS7_EES6_INS_6ShaderES8_ISB_EE'/>
+<use f='codebrowser/src/lowlevel/VideoMode.cpp' l='71' u='m' c='_ZNK7Solarus9VideoMode19get_software_filterEv'/>

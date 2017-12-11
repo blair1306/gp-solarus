@@ -1,0 +1,11 @@
+<dec f='include/physfs.h' l='1385' type='PHYSFS_uint16 PHYSFS_swapULE16(PHYSFS_uint16 val)'/>
+<doc f='include/physfs.h' l='1375'>/**
+ * \fn PHYSFS_uint16 PHYSFS_swapULE16(PHYSFS_uint16 val)
+ * \brief Swap littleendian unsigned 16 to platform&apos;s native byte order.
+ *
+ * Take a 16-bit unsigned value in littleendian format and convert it to
+ *  the platform&apos;s native byte order.
+ *
+ *    \param val value to convert
+ *   \return converted value.
+ */</doc>

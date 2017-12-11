@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_video.h' l='589' type='void SDL_SetWindowMaximumSize(SDL_Window * window, int max_w, int max_h)'/>
+<doc f='include/SDL2/SDL_video.h' l='576'>/**
+ *  \brief Set the maximum size of a window&apos;s client area.
+ *
+ *  \param window    The window to set a new maximum size.
+ *  \param max_w     The maximum width of the window, must be &gt;0
+ *  \param max_h     The maximum height of the window, must be &gt;0
+ *
+ *  \note You can&apos;t change the maximum size of a fullscreen window, it
+ *        automatically matches the size of the display mode.
+ *
+ *  \sa SDL_GetWindowMaximumSize()
+ *  \sa SDL_SetWindowMinimumSize()
+ */</doc>

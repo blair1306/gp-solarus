@@ -1,0 +1,16 @@
+<dec f='include/SDL2/SDL_render.h' l='380' type='int SDL_UpdateTexture(SDL_Texture * texture, const SDL_Rect * rect, const void * pixels, int pitch)'/>
+<doc f='include/SDL2/SDL_render.h' l='367'>/**
+ *  \brief Update the given texture rectangle with new pixel data.
+ *
+ *  \param texture   The texture to update
+ *  \param rect      A pointer to the rectangle of pixels to update, or NULL to
+ *                   update the entire texture.
+ *  \param pixels    The raw pixel data.
+ *  \param pitch     The number of bytes between rows of pixel data.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid.
+ *
+ *  \note This is a fairly slow function.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='291' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='819' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

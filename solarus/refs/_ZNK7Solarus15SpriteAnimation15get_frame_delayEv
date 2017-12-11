@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteAnimation.h' l='56' type='uint32_t Solarus::SpriteAnimation::get_frame_delay() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='281' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/SpriteAnimation.cpp' l='93' ll='95' type='uint32_t Solarus::SpriteAnimation::get_frame_delay() const'/>
+<doc f='codebrowser/src/SpriteAnimation.cpp' l='89'>/**
+ * \brief Returns the delay between two frames for this sprite animation.
+ * \return the frame delay in milliseconds
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='375' u='c' c='_ZN7Solarus10LuaContext26sprite_api_get_frame_delayEP9lua_State'/>

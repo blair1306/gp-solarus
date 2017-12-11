@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='130' type='bool Solarus::TilesetData::set_pattern_id(const std::string &amp; old_pattern_id, const std::string &amp; new_pattern_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='306' ll='324' type='bool Solarus::TilesetData::set_pattern_id(const std::string &amp; old_pattern_id, const std::string &amp; new_pattern_id)'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='299'>/**
+ * \brief Changes the id of a pattern in the tileset.
+ * \param old_pattern_id Old id of the pattern.
+ * \param new_pattern_id New id to set.
+ * \return \c true in case of success.
+ * In case of failure, the old pattern is unchanged.
+ */</doc>

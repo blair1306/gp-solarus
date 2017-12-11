@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='71' type='bool Solarus::CarriedObject::is_broken() const'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='315' ll='317' type='bool Solarus::CarriedObject::is_broken() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='398' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='432' u='c' c='_ZN7Solarus13CarriedObject23notify_obstacle_reachedEv'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='311'>/**
+ * \brief Returns whether the item is broken.
+ * \return true if the item is broken
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='154' u='c' c='_ZN7Solarus4Hero13CarryingState6updateEv'/>

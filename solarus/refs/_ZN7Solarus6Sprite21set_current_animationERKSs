@@ -1,0 +1,78 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='75' type='void Solarus::Sprite::set_current_animation(const std::string &amp; animation_name)'/>
+<use f='codebrowser/src/Sprite.cpp' l='109' u='c' c='_ZN7Solarus6SpriteC1ERKSs'/>
+<def f='codebrowser/src/Sprite.cpp' l='274' ll='305' type='void Solarus::Sprite::set_current_animation(const std::string &amp; animation_name)'/>
+<use f='codebrowser/src/Sprite.cpp' l='941' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='266'>/**
+ * \brief Sets the current animation of the sprite.
+ *
+ * If the sprite is already playing another animation, this animation is interrupted.
+ * If the sprite is already playing the same animation, nothing is done.
+ *
+ * \param animation_name name of the new animation of the sprite
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='195' u='c' c='_ZNK7Solarus8Treasure13create_spriteEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='275' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='243' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='105' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='111' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='153' u='c' c='_ZN7Solarus13CarriedObject21set_animation_stoppedEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='167' u='c' c='_ZN7Solarus13CarriedObject21set_animation_walkingEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='185' u='c' c='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='244' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='390' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='393' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='73' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='155' u='c' c='_ZN7Solarus5Chest8set_openEb'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='161' u='c' c='_ZN7Solarus5Chest8set_openEb'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='76' u='c' c='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='169' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='54' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='57' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='196' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='199' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='451' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='527' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='537' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='176' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='678' u='c' c='_ZN7Solarus4Door11set_openingEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='712' u='c' c='_ZN7Solarus4Door11set_closingEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='762' u='c' c='_ZN7Solarus5Enemy13set_animationERKSs'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='55' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='368' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='394' u='c' c='_ZN7Solarus3Npc24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='168' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='185' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='72' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='172' u='c' c='_ZN7Solarus6Switch13set_activatedEb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='175' u='c' c='_ZN7Solarus6Switch13set_activatedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='124' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='272' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='390' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1036' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_commonEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1051' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1071' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1073' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1078' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1123' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_commonEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1140' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1161' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1163' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1168' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1242' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1251' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1278' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1285' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1298' u='c' c='_ZN7Solarus11HeroSprites25set_animation_spin_attackEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1310' u='c' c='_ZN7Solarus11HeroSprites31set_animation_super_spin_attackEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1364' u='c' c='_ZN7Solarus11HeroSprites21set_animation_jumpingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1414' u='c' c='_ZN7Solarus11HeroSprites21set_animation_victoryEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1428' u='c' c='_ZN7Solarus11HeroSprites29set_animation_prepare_runningEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1438' u='c' c='_ZN7Solarus11HeroSprites21set_animation_runningEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1453' u='c' c='_ZN7Solarus11HeroSprites23set_animation_boomerangERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1510' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1554' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1562' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1570' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1578' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1611' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='194' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

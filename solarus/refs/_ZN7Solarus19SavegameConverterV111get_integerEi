@@ -1,0 +1,36 @@
+<dec f='codebrowser/include/solarus/SavegameConverterV1.h' l='44' type='uint32_t Solarus::SavegameConverterV1::get_integer(int index)'/>
+<def f='codebrowser/src/SavegameConverterV1.cpp' l='67' ll='69' type='uint32_t Solarus::SavegameConverterV1::get_integer(int index)'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='96' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='99' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='100' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='101' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='102' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='103' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='104' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='117' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='118' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='119' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='120' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='121' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='122' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='123' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='124' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='125' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='129' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='130' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='140' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='146' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='152' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='158' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='164' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='170' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='188' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<doc f='codebrowser/src/SavegameConverterV1.cpp' l='58'>/**
+ * \brief Returns a integer value saved.
+ *
+ * Values between 0 and 1023 are used by the engine (the C++ code)
+ * and values between 1024 and 2047 are available to the map scripts.
+ * \param index index of the value to get, between 0 and 2047
+ * (see enum IntegerIndex for their definition)
+ * \return the integer value saved at this index
+ */</doc>

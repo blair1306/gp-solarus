@@ -1,0 +1,25 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='236' type='bool QString::isEmpty() const'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='793' ll='794' type='bool QString::isEmpty() const'/>
+<use f='codebrowser/gui/ui_about_dialog.h' l='44' u='c' c='_ZN10SolarusGui14Ui_AboutDialog7setupUiEP7QDialog'/>
+<use f='codebrowser/gui/ui_console.h' l='33' u='c' c='_ZN10SolarusGui10Ui_Console7setupUiEP7QWidget'/>
+<use f='codebrowser/gui/ui_main_window.h' l='107' u='c' c='_ZN10SolarusGui13Ui_MainWindow7setupUiEP11QMainWindow'/>
+<use f='codebrowser/gui/src/console.cpp' l='169' u='c' c='_ZN10SolarusGui7Console15execute_commandERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='185' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='205' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='205' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='215' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='231' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<use f='codebrowser/gui/src/console.cpp' l='349' u='c' c='_ZN10SolarusGui7Console15colorize_outputERK7QStringS3_'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='65' u='c' c='_ZN10SolarusGui10MainWindowC1EP7QWidget'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='277' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='346' u='c' c='_ZN10SolarusGui10MainWindow30on_action_play_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='463' u='c' c='_ZN10SolarusGui10MainWindow16update_run_questEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='481' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='525' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='537' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='144' u='c' c='_ZN10SolarusGui11QuestRunner5startERK7QString'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='193' u='c' c='_ZN10SolarusGui11QuestRunner30standard_output_data_availableEv'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='216' u='c' c='_ZN10SolarusGui11QuestRunner15execute_commandERK7QString'/>
+<use f='codebrowser/gui/src/quests_item_delegate.cpp' l='138' u='c' c='_ZNK10SolarusGui18QuestsItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex'/>
+<use f='codebrowser/gui/src/quests_item_delegate.cpp' l='161' u='c' c='_ZNK10SolarusGui18QuestsItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex'/>
+<use f='codebrowser/gui/src/quests_item_delegate.cpp' l='164' u='c' c='_ZNK10SolarusGui18QuestsItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex'/>

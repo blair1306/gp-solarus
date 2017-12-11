@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='347' type='bool Solarus::Entity::is_enemy_obstacle(Solarus::Enemy &amp; enemy)'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='143' c='_ZN7Solarus5Block17is_enemy_obstacleERNS_5EnemyE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='619' c='_ZN7Solarus13CarriedObject17is_enemy_obstacleERNS_5EnemyE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='561' c='_ZN7Solarus12CustomEntity17is_enemy_obstacleERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='567' u='c' c='_ZN7Solarus12CustomEntity17is_enemy_obstacleERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='258' u='c' c='_ZN7Solarus5Enemy15is_obstacle_forERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2702' ll='2704' type='bool Solarus::Entity::is_enemy_obstacle(Solarus::Enemy &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2694'>/**
+ * \brief Returns whether an enemy is currently considered as an obstacle by this entity.
+ *
+ * This function returns false by default.
+ *
+ * \param enemy an enemy
+ * \return true if the enemy is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2702'>/* enemy */</doc>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='191' c='_ZN7Solarus3Npc17is_enemy_obstacleERNS_5EnemyE'/>

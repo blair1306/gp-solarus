@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='83' type='bool Solarus::Entity::State::can_avoid_deep_water() const'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='82'>// ground</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='539' ll='541' type='bool Solarus::Entity::State::can_avoid_deep_water() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='532'>/**
+ * \brief Returns whether the entity ignores the effect of deep water in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of deep water in the current state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1223' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='190' c='_ZNK7Solarus4Hero22BackToSolidGroundState20can_avoid_deep_waterEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='107' c='_ZNK7Solarus4Hero18ForcedWalkingState20can_avoid_deep_waterEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='78' c='_ZNK7Solarus4Hero13HookshotState20can_avoid_deep_waterEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='211' c='_ZNK7Solarus4Hero12JumpingState20can_avoid_deep_waterEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='295' c='_ZNK7Solarus4Hero12RunningState20can_avoid_deep_waterEv'/>

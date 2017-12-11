@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Bomb.h' l='35' type='void Solarus::Bomb::Bomb(const std::string &amp; name, int layer, const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/src/entities/Bomb.cpp' l='42' ll='52' type='void Solarus::Bomb::Bomb(const std::string &amp; name, int layer, const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/entities/Bomb.cpp' l='33'>/**
+ * \brief Constructor.
+ *
+ * Creates a bomb.
+ *
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer layer of the entity to create
+ * \param xy Coordinates of the entity to create.
+ */</doc>

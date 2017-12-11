@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='358' type='void Solarus::LuaContext::map_on_draw(Solarus::Map &amp; map, const SurfacePtr &amp; dst_surface)'/>
+<use f='codebrowser/src/Map.cpp' l='536' u='c' c='_ZN7Solarus3Map4drawEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2243' ll='2251' type='void Solarus::LuaContext::map_on_draw(Solarus::Map &amp; map, const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2235'>/**
+ * \brief Calls the on_draw() method of a Lua map if it is defined.
+ *
+ * Also calls the method on its menus.
+ *
+ * \param map A map.
+ * \param dst_surface The destination surface.
+ */</doc>

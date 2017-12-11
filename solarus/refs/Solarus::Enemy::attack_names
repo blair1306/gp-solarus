@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='194' type='const std::map&lt;EnemyAttack, std::string&gt;'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='194'>/**&lt; Lua names of the EnemyAttack enum. */</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='48' ll='57' type='const std::map&lt;EnemyAttack, std::string&gt;'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='684' c='_ZN7Solarus5Enemy26set_no_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='695' c='_ZN7Solarus5Enemy33set_no_attack_consequences_spriteERKNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='706' c='_ZN7Solarus5Enemy31set_default_attack_consequencesEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='726' c='_ZN7Solarus5Enemy38set_default_attack_consequences_spriteERKNS_6SpriteE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4704' u='r' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4728' u='r' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4760' u='r' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4785' u='r' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2820' u='m' c='_ZN7Solarus10LuaContext25on_custom_attack_receivedENS_11EnemyAttackEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2856' u='m' c='_ZN7Solarus10LuaContext7on_hurtENS_11EnemyAttackE'/>

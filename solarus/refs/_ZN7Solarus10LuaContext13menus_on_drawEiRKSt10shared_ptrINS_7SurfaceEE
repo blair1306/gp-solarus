@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='294' type='void Solarus::LuaContext::menus_on_draw(int context_index, const SurfacePtr &amp; dst_surface)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1626' u='c' c='_ZN7Solarus10LuaContext12game_on_drawERNS_4GameERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='447' u='c' c='_ZN7Solarus10LuaContext12main_on_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2249' u='c' c='_ZN7Solarus10LuaContext11map_on_drawERNS_3MapERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='329' u='c' c='_ZN7Solarus10LuaContext12menu_on_drawERKNS_12ScopedLuaRefERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='438' ll='455' type='void Solarus::LuaContext::menus_on_draw(int context_index, const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='433'>/**
+ * \brief Calls the on_draw() method of the menus associated to a context.
+ * \param context_index Index of an object with menus.
+ * \param dst_surface The destination surface to draw.
+ */</doc>

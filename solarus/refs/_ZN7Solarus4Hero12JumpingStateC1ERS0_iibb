@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/JumpingState.h' l='34' type='void Solarus::Hero::JumpingState::JumpingState(Solarus::Hero &amp; hero, int direction8, int distance, bool ignore_obstacles, bool with_sound)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2427' u='c' c='_ZN7Solarus4Hero13start_jumpingEiibb'/>
+<def f='codebrowser/src/hero/JumpingState.cpp' l='38' ll='58' type='void Solarus::Hero::JumpingState::JumpingState(Solarus::Hero &amp; hero, int direction8, int distance, bool ignore_obstacles, bool with_sound)'/>
+<doc f='codebrowser/src/hero/JumpingState.cpp' l='30'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param direction8 Direction of the jump (0 to 7).
+ * \param distance Distance of the jump in pixels.
+ * \param ignore_obstacles \c true to make the movement ignore obstacles.
+ * \param with_sound \c true to play the &quot;jump&quot; sound.
+ */</doc>

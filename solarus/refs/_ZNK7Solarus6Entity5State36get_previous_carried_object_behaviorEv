@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='143' type='CarriedObject::Behavior Solarus::Entity::State::get_previous_carried_object_behavior() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1113' ll='1115' type='CarriedObject::Behavior Solarus::Entity::State::get_previous_carried_object_behavior() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1106'>/**
+ * \brief Returns the action to do with an item previously carried by the entity when this state starts.
+ *
+ * Returns CarriedObject::BEHAVIOR_THROW by default.
+ *
+ * \return the action to do with a previous carried object when this state starts
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='72' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='237' c='_ZNK7Solarus4Hero13CarryingState36get_previous_carried_object_behaviorEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='186' c='_ZNK7Solarus4Hero9FreeState36get_previous_carried_object_behaviorEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='100' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='328' c='_ZNK7Solarus4Hero12JumpingState36get_previous_carried_object_behaviorEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='77' u='c' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='133' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='339' c='_ZNK7Solarus4Hero11StairsState36get_previous_carried_object_behaviorEv'/>
+<ovr f='codebrowser/src/hero/TreasureState.cpp' l='126' c='_ZNK7Solarus4Hero13TreasureState36get_previous_carried_object_behaviorEv'/>

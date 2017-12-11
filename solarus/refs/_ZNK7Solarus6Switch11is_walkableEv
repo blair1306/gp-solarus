@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='69' type='bool Solarus::Switch::is_walkable() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1783' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='76' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='109' ll='111' type='bool Solarus::Switch::is_walkable() const'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='218' u='c' c='_ZN7Solarus6Switch6updateEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='299' u='c' c='_ZN7Solarus6Switch12try_activateERNS_4HeroE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='317' u='c' c='_ZN7Solarus6Switch12try_activateERNS_5BlockE'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='105'>/**
+ * \brief Returns whether this switch is a walkable switch.
+ * \return \c true if the subtype of this switch is WALKABLE.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3426' u='c' c='_ZN7Solarus10LuaContext22switch_api_is_walkableEP9lua_State'/>

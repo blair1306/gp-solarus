@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/Game.h' l='69' type='const HeroPtr &amp; Solarus::Game::get_hero()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='152' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Equipment.cpp' l='615' u='c' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<def f='codebrowser/src/Game.cpp' l='193' ll='195' type='const HeroPtr &amp; Solarus::Game::get_hero()'/>
+<doc f='codebrowser/src/Game.cpp' l='189'>/**
+ * \brief Returns the hero.
+ * \return the hero
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='233' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='149' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2537' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3857' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='602' u='c' c='_ZN7Solarus10LuaContext17game_api_get_heroEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='748' u='c' c='_ZN7Solarus10LuaContext21item_api_set_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2114' u='c' c='_ZN7Solarus10LuaContext16map_api_get_heroEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='495' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='518' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='104' u='c' c='_ZN7Solarus15TestEnvironment8get_heroEv'/>

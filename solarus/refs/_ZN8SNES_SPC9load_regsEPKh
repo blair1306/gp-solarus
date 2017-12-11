@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='210' type='void SNES_SPC::load_regs(const uint8_t * in)'/>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='125' ll='136' type='void SNES_SPC::load_regs(const uint8_t * in)'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='143' u='c' c='_ZN8SNES_SPC10ram_loadedEv'/>
+<doc f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='124'>// Loads registers from unified 16-byte format</doc>

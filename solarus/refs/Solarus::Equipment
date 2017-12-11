@@ -1,0 +1,95 @@
+<def f='codebrowser/include/solarus/Equipment.h' l='43' ll='116'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/Equipment.h' l='35'>/**
+ * \brief Represents the hero&apos;s equipment.
+ *
+ * This class gives access to the equipment data saved and the properties of
+ * items.
+ * You should call this class to get information about the current equipment
+ * (sword, money, items...) and to modify it.
+ */</doc>
+<fun r='_ZN7Solarus9EquipmentC1ERNS_8SavegameE'/>
+<fun r='_ZN7Solarus9Equipment12get_savegameEv'/>
+<fun r='_ZN7Solarus9Equipment8get_gameEv'/>
+<fun r='_ZN7Solarus9Equipment19notify_game_startedEv'/>
+<fun r='_ZN7Solarus9Equipment20notify_game_finishedEv'/>
+<fun r='_ZN7Solarus9Equipment18notify_map_changedERNS_3MapE'/>
+<fun r='_ZN7Solarus9Equipment6updateEv'/>
+<fun r='_ZN7Solarus9Equipment13set_suspendedEb'/>
+<fun r='_ZNK7Solarus9Equipment13get_max_moneyEv'/>
+<fun r='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<fun r='_ZNK7Solarus9Equipment9get_moneyEv'/>
+<fun r='_ZN7Solarus9Equipment9set_moneyEi'/>
+<fun r='_ZN7Solarus9Equipment9add_moneyEi'/>
+<fun r='_ZN7Solarus9Equipment12remove_moneyEi'/>
+<fun r='_ZNK7Solarus9Equipment12get_max_lifeEv'/>
+<fun r='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<fun r='_ZNK7Solarus9Equipment8get_lifeEv'/>
+<fun r='_ZN7Solarus9Equipment8set_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment8add_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment11remove_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment16restore_all_lifeEv'/>
+<fun r='_ZNK7Solarus9Equipment13get_max_magicEv'/>
+<fun r='_ZN7Solarus9Equipment13set_max_magicEi'/>
+<fun r='_ZNK7Solarus9Equipment9get_magicEv'/>
+<fun r='_ZN7Solarus9Equipment9set_magicEi'/>
+<fun r='_ZN7Solarus9Equipment9add_magicEi'/>
+<fun r='_ZN7Solarus9Equipment12remove_magicEi'/>
+<fun r='_ZN7Solarus9Equipment17restore_all_magicEv'/>
+<fun r='_ZN7Solarus9Equipment10load_itemsEv'/>
+<fun r='_ZNK7Solarus9Equipment11item_existsERKSs'/>
+<fun r='_ZN7Solarus9Equipment8get_itemERKSs'/>
+<fun r='_ZNK7Solarus9Equipment8get_itemERKSs'/>
+<fun r='_ZN7Solarus9Equipment17get_item_assignedEi'/>
+<fun r='_ZNK7Solarus9Equipment17get_item_assignedEi'/>
+<fun r='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus9Equipment13get_item_slotERKNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus9Equipment11has_abilityENS_7AbilityEi'/>
+<fun r='_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE'/>
+<fun r='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<fun r='_ZN7Solarus9Equipment19notify_ability_usedENS_7AbilityE'/>
+<mbr r='Solarus::Equipment::savegame' o='0' t='Solarus::Savegame &amp;'/>
+<mbr r='Solarus::Equipment::suspended' o='64' t='bool'/>
+<mbr r='Solarus::Equipment::items' o='128' t='std::map&lt;std::string, std::shared_ptr&lt;EquipmentItem&gt; &gt;'/>
+<fun r='_ZNK7Solarus9Equipment29get_ability_savegame_variableENS_7AbilityE'/>
+<fun r='_ZN7Solarus9EquipmentC1ERNS_8SavegameE'/>
+<fun r='_ZN7Solarus9Equipment12get_savegameEv'/>
+<fun r='_ZN7Solarus9Equipment8get_gameEv'/>
+<fun r='_ZN7Solarus9Equipment19notify_game_startedEv'/>
+<fun r='_ZN7Solarus9Equipment20notify_game_finishedEv'/>
+<fun r='_ZN7Solarus9Equipment18notify_map_changedERNS_3MapE'/>
+<fun r='_ZN7Solarus9Equipment6updateEv'/>
+<fun r='_ZN7Solarus9Equipment13set_suspendedEb'/>
+<fun r='_ZNK7Solarus9Equipment13get_max_moneyEv'/>
+<fun r='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<fun r='_ZNK7Solarus9Equipment9get_moneyEv'/>
+<fun r='_ZN7Solarus9Equipment9set_moneyEi'/>
+<fun r='_ZN7Solarus9Equipment9add_moneyEi'/>
+<fun r='_ZN7Solarus9Equipment12remove_moneyEi'/>
+<fun r='_ZNK7Solarus9Equipment12get_max_lifeEv'/>
+<fun r='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<fun r='_ZNK7Solarus9Equipment8get_lifeEv'/>
+<fun r='_ZN7Solarus9Equipment8set_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment8add_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment11remove_lifeEi'/>
+<fun r='_ZN7Solarus9Equipment16restore_all_lifeEv'/>
+<fun r='_ZNK7Solarus9Equipment13get_max_magicEv'/>
+<fun r='_ZN7Solarus9Equipment13set_max_magicEi'/>
+<fun r='_ZNK7Solarus9Equipment9get_magicEv'/>
+<fun r='_ZN7Solarus9Equipment9set_magicEi'/>
+<fun r='_ZN7Solarus9Equipment9add_magicEi'/>
+<fun r='_ZN7Solarus9Equipment12remove_magicEi'/>
+<fun r='_ZN7Solarus9Equipment17restore_all_magicEv'/>
+<fun r='_ZN7Solarus9Equipment10load_itemsEv'/>
+<fun r='_ZNK7Solarus9Equipment11item_existsERKSs'/>
+<fun r='_ZN7Solarus9Equipment8get_itemERKSs'/>
+<fun r='_ZNK7Solarus9Equipment8get_itemERKSs'/>
+<fun r='_ZN7Solarus9Equipment17get_item_assignedEi'/>
+<fun r='_ZNK7Solarus9Equipment17get_item_assignedEi'/>
+<fun r='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus9Equipment13get_item_slotERKNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus9Equipment29get_ability_savegame_variableENS_7AbilityE'/>
+<fun r='_ZNK7Solarus9Equipment11has_abilityENS_7AbilityEi'/>
+<fun r='_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE'/>
+<fun r='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<fun r='_ZN7Solarus9Equipment19notify_ability_usedENS_7AbilityE'/>

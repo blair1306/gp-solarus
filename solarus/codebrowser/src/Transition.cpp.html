@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Transition.cpp source code [codebrowser/src/Transition.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/Transition.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='Transition.cpp.html'>Transition.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../include/solarus/Transition.h.html">"solarus/Transition.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../include/solarus/TransitionImmediate.h.html">"solarus/TransitionImmediate.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../include/solarus/TransitionFade.h.html">"solarus/TransitionFade.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../include/solarus/TransitionScrolling.h.html">"solarus/TransitionScrolling.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits">EnumInfoTraits</a>&lt;<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>&gt;::<dfn class="decl def" id="Solarus::EnumInfoTraits{Solarus::Transition::Style}::pretty_name" title='Solarus::EnumInfoTraits&lt;Solarus::Transition::Style&gt;::pretty_name' data-ref="Solarus::EnumInfoTraits{Solarus::Transition::Style}::pretty_name">pretty_name</dfn> = <a class="ref fake" href="../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"transition style"</q>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>const</em> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfo" title='Solarus::EnumInfo' data-ref="Solarus::EnumInfo">EnumInfo</a>&lt;<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>&gt;::<a class="typedef" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfo{Solarus::Transition::Style}::names_type" title='Solarus::EnumInfo&lt;Solarus::Transition::Style&gt;::names_type' data-type='std::map&lt;Style, std::string&gt;' data-ref="Solarus::EnumInfo{Solarus::Transition::Style}::names_type">names_type</a> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits">EnumInfoTraits</a>&lt;<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>&gt;::<dfn class="decl def" id="Solarus::EnumInfoTraits{Solarus::Transition::Style}::names" title='Solarus::EnumInfoTraits&lt;Solarus::Transition::Style&gt;::names' data-ref="Solarus::EnumInfoTraits{Solarus::Transition::Style}::names">names</dfn> = <a class="ref fake" href="../../include/c++/4.9/bits/stl_map.h.html#_ZNSt3mapC1ESt16initializer_listISt4pairIKT_T0_EERKT1_RKT2_" title='std::map::map&lt;_Key, _Tp, _Compare, _Alloc&gt;' data-ref="_ZNSt3mapC1ESt16initializer_listISt4pairIKT_T0_EERKT1_RKT2_"></a>{</td></tr>
+<tr><th id="29">29</th><td>    { <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::IMMEDIATE" title='Solarus::Transition::Style::IMMEDIATE' data-ref="Solarus::Transition::Style::IMMEDIATE">IMMEDIATE</a>, <q>"immediate"</q> },</td></tr>
+<tr><th id="30">30</th><td>    { <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::FADE" title='Solarus::Transition::Style::FADE' data-ref="Solarus::Transition::Style::FADE">FADE</a>, <q>"fade"</q> },</td></tr>
+<tr><th id="31">31</th><td>    { <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::SCROLLING" title='Solarus::Transition::Style::SCROLLING' data-ref="Solarus::Transition::Style::SCROLLING">SCROLLING</a>, <q>"scrolling"</q> }</td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * <span class="command">\brief</span> Creates a transition effect.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction</span> direction of the transition effect (in or out)</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="38">38</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZN7Solarus10TransitionC1ENS0_9DirectionE" title='Solarus::Transition::Transition' data-ref="_ZN7Solarus10TransitionC1ENS0_9DirectionE">Transition</dfn>(<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Direction" title='Solarus::Transition::Direction' data-ref="Solarus::Transition::Direction">Direction</a> <dfn class="local col8 decl" id="8direction" title='direction' data-type='Transition::Direction' data-ref="8direction">direction</dfn>):</td></tr>
+<tr><th id="39">39</th><td>  <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::game" title='Solarus::Transition::game' data-ref="Solarus::Transition::game">game</a>(<b>nullptr</b>),</td></tr>
+<tr><th id="40">40</th><td>  <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::direction" title='Solarus::Transition::direction' data-ref="Solarus::Transition::direction">direction</a>(<a class="local col8 ref" href="#8direction" title='direction' data-ref="8direction">direction</a>),</td></tr>
+<tr><th id="41">41</th><td>  <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::previous_surface" title='Solarus::Transition::previous_surface' data-ref="Solarus::Transition::previous_surface">previous_surface</a>(<b>nullptr</b>),</td></tr>
+<tr><th id="42">42</th><td>  <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::suspended" title='Solarus::Transition::suspended' data-ref="Solarus::Transition::suspended">suspended</a>(<b>false</b>),</td></tr>
+<tr><th id="43">43</th><td>  <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::when_suspended" title='Solarus::Transition::when_suspended' data-ref="Solarus::Transition::when_suspended">when_suspended</a>(<var>0</var>) {</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * <span class="command">\brief</span> Destructor.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="50">50</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="virtual decl def" id="_ZN7Solarus10TransitionD1Ev" title='Solarus::Transition::~Transition' data-ref="_ZN7Solarus10TransitionD1Ev">~Transition</dfn>() {</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * <span class="command">\brief</span> Creates a transition effect with the specified type and direction.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">style</span> style of the transition: Transition::IMMEDIATE, Transition::FADE, etc.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction</span> Direction of the transition.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">dst_surface</span> The surface that will receive the transition</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * (used by some kinds of transitions).</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">game</span> The current game if any (used by some kinds of transitions).</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * <span class="command">\return</span> the transition created</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="62">62</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>* <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZN7Solarus10Transition6createENS0_5StyleENS0_9DirectionERNS_7SurfaceEPNS_4GameE" title='Solarus::Transition::create' data-ref="_ZN7Solarus10Transition6createENS0_5StyleENS0_9DirectionERNS_7SurfaceEPNS_4GameE">create</dfn>(</td></tr>
+<tr><th id="63">63</th><td>    <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a> <dfn class="local col9 decl" id="9style" title='style' data-type='Transition::Style' data-ref="9style">style</dfn>,</td></tr>
+<tr><th id="64">64</th><td>    <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Direction" title='Solarus::Transition::Direction' data-ref="Solarus::Transition::Direction">Direction</a> <dfn class="local col0 decl" id="10direction" title='direction' data-type='Transition::Direction' data-ref="10direction">direction</dfn>,</td></tr>
+<tr><th id="65">65</th><td>    <a class="type" href="../include/solarus/Transition.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>&amp; <dfn class="local col1 decl" id="11dst_surface" title='dst_surface' data-type='Solarus::Surface &amp;' data-ref="11dst_surface">dst_surface</dfn>,</td></tr>
+<tr><th id="66">66</th><td>    <a class="type" href="../include/solarus/Transition.h.html#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>* <dfn class="local col2 decl" id="12game" title='game' data-type='Solarus::Game *' data-ref="12game">game</dfn>) {</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>  <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>* <dfn class="local col3 decl" id="13transition" title='transition' data-type='Solarus::Transition *' data-ref="13transition">transition</dfn> = <b>nullptr</b>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>  <b>switch</b> (<a class="local col9 ref" href="#9style" title='style' data-ref="9style">style</a>) {</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>  <b>case</b> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::IMMEDIATE" title='Solarus::Transition::Style::IMMEDIATE' data-ref="Solarus::Transition::Style::IMMEDIATE">IMMEDIATE</a>:</td></tr>
+<tr><th id="73">73</th><td>    <a class="local col3 ref" href="#13transition" title='transition' data-ref="13transition">transition</a> = <b>new</b> <a class="type" href="../include/solarus/TransitionImmediate.h.html#Solarus::TransitionImmediate" title='Solarus::TransitionImmediate' data-ref="Solarus::TransitionImmediate">TransitionImmediate</a><a class="ref" href="../include/solarus/TransitionImmediate.h.html#_ZN7Solarus19TransitionImmediateC1ENS_10Transition9DirectionE" title='Solarus::TransitionImmediate::TransitionImmediate' data-ref="_ZN7Solarus19TransitionImmediateC1ENS_10Transition9DirectionE">(</a><a class="local col0 ref" href="#10direction" title='direction' data-ref="10direction">direction</a>);</td></tr>
+<tr><th id="74">74</th><td>    <b>break</b>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>  <b>case</b> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::FADE" title='Solarus::Transition::Style::FADE' data-ref="Solarus::Transition::Style::FADE">FADE</a>:</td></tr>
+<tr><th id="77">77</th><td>    <a class="local col3 ref" href="#13transition" title='transition' data-ref="13transition">transition</a> = <b>new</b> <a class="type" href="../include/solarus/TransitionFade.h.html#Solarus::TransitionFade" title='Solarus::TransitionFade' data-ref="Solarus::TransitionFade">TransitionFade</a><a class="ref" href="../include/solarus/TransitionFade.h.html#_ZN7Solarus14TransitionFadeC1ENS_10Transition9DirectionERNS_7SurfaceE" title='Solarus::TransitionFade::TransitionFade' data-ref="_ZN7Solarus14TransitionFadeC1ENS_10Transition9DirectionERNS_7SurfaceE">(</a><a class="local col0 ref" href="#10direction" title='direction' data-ref="10direction">direction</a>, <a class="local col1 ref" href="#11dst_surface" title='dst_surface' data-ref="11dst_surface">dst_surface</a>);</td></tr>
+<tr><th id="78">78</th><td>    <b>break</b>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>  <b>case</b> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Style::SCROLLING" title='Solarus::Transition::Style::SCROLLING' data-ref="Solarus::Transition::Style::SCROLLING">SCROLLING</a>:</td></tr>
+<tr><th id="81">81</th><td>    <a class="local col3 ref" href="#13transition" title='transition' data-ref="13transition">transition</a> = <b>new</b> <a class="type" href="../include/solarus/TransitionScrolling.h.html#Solarus::TransitionScrolling" title='Solarus::TransitionScrolling' data-ref="Solarus::TransitionScrolling">TransitionScrolling</a><a class="ref" href="../include/solarus/TransitionScrolling.h.html#_ZN7Solarus19TransitionScrollingC1ENS_10Transition9DirectionE" title='Solarus::TransitionScrolling::TransitionScrolling' data-ref="_ZN7Solarus19TransitionScrollingC1ENS_10Transition9DirectionE">(</a><a class="local col0 ref" href="#10direction" title='direction' data-ref="10direction">direction</a>);</td></tr>
+<tr><th id="82">82</th><td>    <b>break</b>;</td></tr>
+<tr><th id="83">83</th><td>  }</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>  <a class="local col3 ref" href="#13transition" title='transition' data-ref="13transition">transition</a>-&gt;<a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::game" title='Solarus::Transition::game' data-ref="Solarus::Transition::game">game</a> = <a class="local col2 ref" href="#12game" title='game' data-ref="12game">game</a>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>  <b>return</b> <a class="local col3 ref" href="#13transition" title='transition' data-ref="13transition">transition</a>;</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current game.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * Some transition effects need a game to run.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * <span class="command">\return</span> The current game or nullptr.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="97">97</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>* <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZNK7Solarus10Transition8get_gameEv" title='Solarus::Transition::get_game' data-ref="_ZNK7Solarus10Transition8get_gameEv">get_game</dfn>() <em>const</em> {</td></tr>
+<tr><th id="98">98</th><td>  <b>return</b> <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::game" title='Solarus::Transition::game' data-ref="Solarus::Transition::game">game</a>;</td></tr>
+<tr><th id="99">99</th><td>}</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction of this transition effect.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * <span class="command">\returns</span> the direction of this transition effect.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Direction" title='Solarus::Transition::Direction' data-ref="Solarus::Transition::Direction">Direction</a> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZNK7Solarus10Transition13get_directionEv" title='Solarus::Transition::get_direction' data-ref="_ZNK7Solarus10Transition13get_directionEv">get_direction</dfn>() <em>const</em> {</td></tr>
+<tr><th id="106">106</th><td>  <b>return</b> <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::direction" title='Solarus::Transition::direction' data-ref="Solarus::Transition::direction">direction</a>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * <span class="command">\brief</span> Returns the surface to show during the closing transition</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * that was played before this opening transition.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * <span class="command">\return</span> The previous surface or nullptr.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="114">114</th><td><a class="type" href="../include/solarus/Transition.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>* <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZNK7Solarus10Transition20get_previous_surfaceEv" title='Solarus::Transition::get_previous_surface' data-ref="_ZNK7Solarus10Transition20get_previous_surfaceEv">get_previous_surface</dfn>() <em>const</em> {</td></tr>
+<tr><th id="115">115</th><td>  <b>return</b> <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::previous_surface" title='Solarus::Transition::previous_surface' data-ref="Solarus::Transition::previous_surface">previous_surface</a>;</td></tr>
+<tr><th id="116">116</th><td>}</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * <span class="command">\brief</span> Indicates the surface that was shown during the closing transition</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * that was played before this opening transition.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">previous_surface</span> The previous surface or nullptr.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="123">123</th><td><em>void</em> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZN7Solarus10Transition20set_previous_surfaceEPNS_7SurfaceE" title='Solarus::Transition::set_previous_surface' data-ref="_ZN7Solarus10Transition20set_previous_surfaceEPNS_7SurfaceE">set_previous_surface</dfn>(<a class="type" href="../include/solarus/Transition.h.html#Solarus::Surface" title='Solarus::Surface' data-ref="Solarus::Surface">Surface</a>* <dfn class="local col4 decl" id="14previous_surface" title='previous_surface' data-type='Solarus::Surface *' data-ref="14previous_surface">previous_surface</dfn>) {</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbPKc" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbPKc">check_assertion</a>(<a class="local col4 ref" href="#14previous_surface" title='previous_surface' data-ref="14previous_surface">previous_surface</a> == <b>nullptr</b></td></tr>
+<tr><th id="126">126</th><td>      || <a class="member" href="#_ZNK7Solarus10Transition13get_directionEv" title='Solarus::Transition::get_direction' data-ref="_ZNK7Solarus10Transition13get_directionEv">get_direction</a>() != <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition::Direction" title='Solarus::Transition::Direction' data-ref="Solarus::Transition::Direction">Direction</a>::<a class="enum" href="../include/solarus/Transition.h.html#Solarus::Transition::Direction::CLOSING" title='Solarus::Transition::Direction::CLOSING' data-ref="Solarus::Transition::Direction::CLOSING">CLOSING</a>,</td></tr>
+<tr><th id="127">127</th><td>      <q>"Cannot show a previous surface with an closing transition effect"</q>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td>  <b>this</b>-&gt;<a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::previous_surface" title='Solarus::Transition::previous_surface' data-ref="Solarus::Transition::previous_surface">previous_surface</a> = <a class="local col4 ref" href="#14previous_surface" title='previous_surface' data-ref="14previous_surface">previous_surface</a>;</td></tr>
+<tr><th id="130">130</th><td>}</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this transition effect needs the previous surface.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * <span class="command">\return</span> false</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="136">136</th><td><em>bool</em> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="virtual decl def" id="_ZNK7Solarus10Transition22needs_previous_surfaceEv" title='Solarus::Transition::needs_previous_surface' data-ref="_ZNK7Solarus10Transition22needs_previous_surfaceEv">needs_previous_surface</dfn>() <em>const</em> {</td></tr>
+<tr><th id="137">137</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="138">138</th><td>}</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this transition is currently suspended.</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * <span class="command">\return</span> true if this transition is suspended.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="144">144</th><td><em>bool</em> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZNK7Solarus10Transition12is_suspendedEv" title='Solarus::Transition::is_suspended' data-ref="_ZNK7Solarus10Transition12is_suspendedEv">is_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="145">145</th><td>  <b>return</b> <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::suspended" title='Solarus::Transition::suspended' data-ref="Solarus::Transition::suspended">suspended</a>;</td></tr>
+<tr><th id="146">146</th><td>}</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * <span class="command">\brief</span> Suspends or resumes this transition.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true to suspend it, false to resume it.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="152">152</th><td><em>void</em> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZN7Solarus10Transition13set_suspendedEb" title='Solarus::Transition::set_suspended' data-ref="_ZN7Solarus10Transition13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col5 decl" id="15suspended" title='suspended' data-type='bool' data-ref="15suspended">suspended</dfn>) {</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td>  <b>if</b> (<a class="local col5 ref" href="#15suspended" title='suspended' data-ref="15suspended">suspended</a> != <b>this</b>-&gt;<a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::suspended" title='Solarus::Transition::suspended' data-ref="Solarus::Transition::suspended">suspended</a>) {</td></tr>
+<tr><th id="155">155</th><td>    <b>this</b>-&gt;<a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::suspended" title='Solarus::Transition::suspended' data-ref="Solarus::Transition::suspended">suspended</a> = <a class="local col5 ref" href="#15suspended" title='suspended' data-ref="15suspended">suspended</a>;</td></tr>
+<tr><th id="156">156</th><td>    <b>if</b> (<a class="local col5 ref" href="#15suspended" title='suspended' data-ref="15suspended">suspended</a>) {</td></tr>
+<tr><th id="157">157</th><td>      <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::when_suspended" title='Solarus::Transition::when_suspended' data-ref="Solarus::Transition::when_suspended">when_suspended</a> = <a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="158">158</th><td>    }</td></tr>
+<tr><th id="159">159</th><td>    <a class="virtual member" href="../include/solarus/Transition.h.html#_ZN7Solarus10Transition16notify_suspendedEb" title='Solarus::Transition::notify_suspended' data-ref="_ZN7Solarus10Transition16notify_suspendedEb">notify_suspended</a>(<a class="local col5 ref" href="#15suspended" title='suspended' data-ref="15suspended">suspended</a>);</td></tr>
+<tr><th id="160">160</th><td>  }</td></tr>
+<tr><th id="161">161</th><td>}</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * <span class="command">\brief</span> Returns the date when this transition was suspended if it is.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> * <span class="command">\return</span> The date when this transition was suspended or 0.</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="167">167</th><td><a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="type" href="../include/solarus/Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<dfn class="decl def" id="_ZNK7Solarus10Transition18get_when_suspendedEv" title='Solarus::Transition::get_when_suspended' data-ref="_ZNK7Solarus10Transition18get_when_suspendedEv">get_when_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="168">168</th><td>  <b>return</b> <a class="member" href="../include/solarus/Transition.h.html#Solarus::Transition::when_suspended" title='Solarus::Transition::when_suspended' data-ref="Solarus::Transition::when_suspended">when_suspended</a>;</td></tr>
+<tr><th id="169">169</th><td>}</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>}</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

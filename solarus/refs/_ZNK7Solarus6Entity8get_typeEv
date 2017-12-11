@@ -1,0 +1,62 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='104' type='Solarus::EntityType Solarus::Entity::get_type() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='100'>/**
+     * \brief Returns the type of entity.
+     * \return The type of entity.
+     */</doc>
+<use f='codebrowser/src/Game.cpp' l='447' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='392' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='82' c='_ZNK7Solarus5Arrow8get_typeEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='238' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='241' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='81' c='_ZNK7Solarus5Block8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='58' c='_ZNK7Solarus4Bomb8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='97' c='_ZNK7Solarus9Boomerang8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Camera.cpp' l='241' c='_ZNK7Solarus6Camera8get_typeEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='119' c='_ZNK7Solarus13CarriedObject8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='85' c='_ZNK7Solarus5Chest8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='61' c='_ZNK7Solarus7Crystal8get_typeEv'/>
+<ovr f='codebrowser/src/entities/CrystalBlock.cpp' l='66' c='_ZNK7Solarus12CrystalBlock8get_typeEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='89' c='_ZNK7Solarus12CustomEntity8get_typeEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='159' u='c' c='_ZN7Solarus12CustomEntity24is_traversable_by_entityERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Destination.cpp' l='58' c='_ZNK7Solarus11Destination8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='82' c='_ZNK7Solarus12Destructible8get_typeEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='373' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='105' c='_ZNK7Solarus4Door8get_typeEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='256' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/DynamicTile.cpp' l='58' c='_ZNK7Solarus11DynamicTile8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='178' c='_ZNK7Solarus5Enemy8get_typeEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='380' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='963' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='971' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1111' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1188' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1311' u='c' c='_ZN7Solarus8Entities16set_entity_layerERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1351' u='c' c='_ZN7Solarus8Entities22overlaps_raised_blocksEiRKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='115' u='c' c='_ZNK7Solarus6Entity17get_lua_type_nameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='123' u='c' c='_ZNK7Solarus6Entity7is_heroEv'/>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='56' c='_ZNK7Solarus9Explosion8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Fire.cpp' l='46' c='_ZNK7Solarus4Fire8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='132' c='_ZNK7Solarus4Hero8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='71' c='_ZNK7Solarus8Hookshot8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='67' c='_ZNK7Solarus6Jumper8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='100' c='_ZNK7Solarus3Npc8get_typeEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='240' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='73' c='_ZNK7Solarus8Pickable8get_typeEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='307' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='314' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='540' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='541' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='52' c='_ZNK7Solarus6Sensor8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Separator.cpp' l='50' c='_ZNK7Solarus9Separator8get_typeEv'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='111' c='_ZNK7Solarus12ShopTreasure8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='63' c='_ZNK7Solarus6Stairs8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Stream.cpp' l='60' c='_ZNK7Solarus6Stream8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='91' c='_ZNK7Solarus6Switch8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Teletransporter.cpp' l='107' c='_ZNK7Solarus15Teletransporter8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Tile.cpp' l='44' c='_ZNK7Solarus4Tile8get_typeEv'/>
+<ovr f='codebrowser/src/entities/Wall.cpp' l='73' c='_ZNK7Solarus4Wall8get_typeEv'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='93' u='c' c='_ZN7Solarus4Wall15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='95' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='98' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='250' u='c' c='_ZNK7Solarus4Hero12RunningState11can_be_hurtEPNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='753' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_typeEP9lua_State'/>

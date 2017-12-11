@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='96' type='static Solarus::Point Solarus::Video::window_to_quest_coordinates(const Solarus::Point &amp; window_xy)'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='524' u='c' c='_ZN7Solarus10InputEvent25get_global_mouse_positionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='546' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_positionEiRNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1311' u='c' c='_ZNK7Solarus10InputEvent19get_finger_positionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1327' u='c' c='_ZNK7Solarus10InputEvent19get_finger_distanceEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='903' ll='924' type='static Solarus::Point Solarus::Video::window_to_quest_coordinates(const Solarus::Point &amp; window_xy)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='897'>/**
+ * \brief Converts window coordinates to quest size coordinates.
+ * \param window_xy A position relative to the window, not including
+ * the title bar.
+ * \return The position in quest size coordinate.
+ */</doc>

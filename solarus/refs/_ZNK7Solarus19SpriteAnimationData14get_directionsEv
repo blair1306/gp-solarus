@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='103' type='const std::deque&lt;SpriteAnimationDirectionData&gt; &amp; Solarus::SpriteAnimationData::get_directions() const'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='81' u='c' c='_ZN7Solarus18SpriteAnimationSet13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<def f='codebrowser/src/SpriteData.cpp' l='339' ll='342' type='const std::deque&lt;SpriteAnimationDirectionData&gt; &amp; Solarus::SpriteAnimationData::get_directions() const'/>
+<use f='codebrowser/src/SpriteData.cpp' l='734' u='c' c='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='335'>/**
+ * \brief Returns all directions of this animation.
+ * \return The directions.
+ */</doc>

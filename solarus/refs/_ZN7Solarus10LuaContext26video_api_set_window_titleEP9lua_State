@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='472' type='static int Solarus::LuaContext::video_api_set_window_title(lua_State * )'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='38' u='r' c='_ZN7Solarus10LuaContext21register_video_moduleEv'/>
+<def f='codebrowser/src/lua/VideoApi.cpp' l='78' ll='86' type='static int Solarus::LuaContext::video_api_set_window_title(lua_State * l)'/>
+<doc f='codebrowser/src/lua/VideoApi.cpp' l='73'>/**
+ * \brief Implementation of sol.video.set_window_title().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

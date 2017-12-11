@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='71' type='double Solarus::Geometry::get_distance(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<def f='codebrowser/include/solarus/lowlevel/Geometry.h' l='115' ll='118' type='double Solarus::Geometry::get_distance(const Solarus::Point &amp; point1, const Solarus::Point &amp; point2)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Geometry.h' l='109'>/**
+ * \brief Returns the distance between two points.
+ * \param point1 First point.
+ * \param point2 Second point.
+ * \return The distance in pixels.
+ */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='517' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2912' u='c' c='_ZNK7Solarus6Entity12get_distanceERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2922' u='c' c='_ZNK7Solarus6Entity12get_distanceERKS0_'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='668' u='c' c='_ZN7Solarus16StraightMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='177' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

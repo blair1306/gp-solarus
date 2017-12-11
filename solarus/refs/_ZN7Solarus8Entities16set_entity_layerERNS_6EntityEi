@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='125' type='void Solarus::Entities::set_entity_layer(Solarus::Entity &amp; entity, int layer)'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='266' u='c' c='_ZN7Solarus9Boomerang6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='284' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='407' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1298' ll='1322' type='void Solarus::Entities::set_entity_layer(Solarus::Entity &amp; entity, int layer)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1293'>/**
+ * \brief Changes the layer of an entity.
+ * \param entity An entity.
+ * \param layer The new layer.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='594' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='657' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='667' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1133' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='398' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='101' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='220' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='106' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='186' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='988' u='c' c='_ZN7Solarus10LuaContext23entity_api_set_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1152' u='c' c='_ZN7Solarus10LuaContext20entity_api_set_layerEP9lua_State'/>

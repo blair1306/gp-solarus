@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='125' type='double Solarus::LuaTools::opt_number(lua_State * l, int index, double default_value)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='424' ll='433' type='double Solarus::LuaTools::opt_number(lua_State * l, int index, double default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='413'>/**
+ * \brief Like LuaTools::check_number() but with a default value.
+ *
+ * This function acts like luaL_optnumber() except that it throws a
+ * LuaException in case of error.
+ *
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \param default_value The default value to return if the value is \c nil.
+ * \return The wanted value as a double.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='276' type='bool Solarus::InputEvent::is_joypad_hat_centered() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1130' ll='1134' type='bool Solarus::InputEvent::is_joypad_hat_centered() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1427' u='c' c='_ZNK7Solarus10InputEvent20is_direction_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1458' u='c' c='_ZNK7Solarus10InputEvent11is_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1121'>/**
+ * \brief Returns whether the hat that was moved during this
+ * joypad hat event is now at its initial position
+ * (i.e. it was released).
+ *
+ * If this is not a joypad hat event, false is returned.
+ *
+ * \return true if the hat is back to its initial position
+ */</doc>

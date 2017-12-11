@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_rwops.h' l='74' type='size_t (*)(struct SDL_RWops *, void *, size_t, size_t)'/>
+<offset>128</offset>
+<doc f='include/SDL2/SDL_rwops.h' l='68'>/**
+     *  Read up to \c maxnum objects each of size \c size from the data
+     *  stream to the area pointed at by \c ptr.
+     *
+     *  \return the number of objects read, or 0 at error or end of file.
+     */</doc>

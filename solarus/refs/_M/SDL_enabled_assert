@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_assert.h' l='141'/>
+<doc f='include/SDL2/SDL_assert.h' l='134'>/* the do {} while(0) avoids dangling else problems:
+    if (x) SDL_assert(y); else blah();
+       ... without the do/while, the &quot;else&quot; could attach to this macro&apos;s &quot;if&quot;.
+   We try to handle just the minimum we need here in a macro...the loop,
+   the static vars, and break points. The heavy lifting is handled in
+   SDL_ReportAssertion(), in SDL_assert.c.
+*/</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='623' type='static int Solarus::LuaContext::random_movement_api_get_max_distance(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='157' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='909' ll='916' type='static int Solarus::LuaContext::random_movement_api_get_max_distance(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='904'>/**
+ * \brief Implementation of random_movement:get_max_distance().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

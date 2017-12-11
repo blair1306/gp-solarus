@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='94' type='const std::string &amp; Solarus::Door::get_cannot_open_dialog_id() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='243' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Door.cpp' l='475' ll='477' type='const std::string &amp; Solarus::Door::get_cannot_open_dialog_id() const'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='468'>/**
+ * \brief Returns the id of the dialog to show when the player presses the action
+ * command on the door but cannot open it (i.e. if can_open() is false).
+ *
+ * \return The id of the &quot;cannot open&quot; dialog for this door
+ * (an empty string means no dialog).
+ */</doc>

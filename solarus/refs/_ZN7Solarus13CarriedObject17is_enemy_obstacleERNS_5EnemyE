@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='93' type='bool Solarus::CarriedObject::is_enemy_obstacle(Solarus::Enemy &amp; enemy)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='347' c='_ZN7Solarus6Entity17is_enemy_obstacleERNS_5EnemyE'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='619' ll='622' type='bool Solarus::CarriedObject::is_enemy_obstacle(Solarus::Enemy &amp; )'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='614'>/**
+ * \brief Returns whether an enemy character is considered as an obstacle for this entity.
+ * \param enemy an enemy
+ * \return true if this enemy is considered as an obstacle for this entity.
+ */</doc>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='619'>/* enemy */</doc>

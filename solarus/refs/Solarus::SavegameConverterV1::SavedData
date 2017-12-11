@@ -1,0 +1,14 @@
+<def f='codebrowser/include/solarus/SavegameConverterV1.h' l='213' ll='217'/>
+<size>16384</size>
+<doc f='codebrowser/include/solarus/SavegameConverterV1.h' l='204'>/**
+     * \brief Contains the data saved.
+     *
+     * This structure contains the data saved (16 Ko of data are stored).
+     * The system can save some strings, integers and boolean values.
+     * Some strings and integers are reserved to the engine.
+     * See StringIndex and IntegerIndex for the meaning of each string and
+     * integer defined by the engine.
+     */</doc>
+<mbr r='Solarus::SavegameConverterV1::SavedData::strings' o='0' t='char [64][64]'/>
+<mbr r='Solarus::SavegameConverterV1::SavedData::integers' o='32768' t='uint32_t [2048]'/>
+<mbr r='Solarus::SavegameConverterV1::SavedData::booleans' o='98304' t='uint32_t [1024]'/>

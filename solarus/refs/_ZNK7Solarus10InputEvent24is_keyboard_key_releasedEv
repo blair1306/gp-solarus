@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='244' type='bool Solarus::InputEvent::is_keyboard_key_released() const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='173' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='711' ll='715' type='bool Solarus::InputEvent::is_keyboard_key_released() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='725' u='c' c='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='765' u='c' c='_ZNK7Solarus10InputEvent38is_keyboard_non_direction_key_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1455' u='c' c='_ZNK7Solarus10InputEvent11is_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='706'>/**
+ * \brief Returns whether this event is a keyboard event
+ * corresponding to releasing a key.
+ * \return true if this is a key released event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1550' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

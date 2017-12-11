@@ -1,0 +1,73 @@
+<def f='codebrowser/include/solarus/CommandsEffects.h' l='42' ll='132'/>
+<size>36</size>
+<doc f='codebrowser/include/solarus/CommandsEffects.h' l='27'>/**
+ * \brief Associate to each game key its current effect on the game.
+ *
+ * This class associates to each game key (the action key,
+ * the sword key, the pause key, and the two equipment item keys)
+ * the current effect of pressing that key.
+ *
+ * When the user presses one of those keys, the engine calls
+ * this class to determine what should happen (e.g. swing the sword,
+ * open a chest, save the game, use an item, etc.).
+ * This class is also used by the HUD to display the five icons
+ * representing those keys.
+ *
+ * TODO make a single enum for all commands
+ */</doc>
+<fun r='_ZN7Solarus15CommandsEffectsC1Ev'/>
+<fun r='_ZN7Solarus15CommandsEffects21get_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_action_key_effectENS0_15ActionKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects21is_action_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects22set_action_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects22save_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects25restore_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects37is_action_key_acting_on_facing_entityEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20get_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_sword_key_effectENS0_15AttackKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects20is_sword_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_sword_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects21save_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects24restore_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20get_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_pause_key_effectENS0_14PauseKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects20is_pause_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_pause_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects21save_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects24restore_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21are_item_keys_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_item_keys_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_all_keys_enabledEb'/>
+<mbr r='Solarus::CommandsEffects::action_key_effect' o='0' t='Solarus::CommandsEffects::ActionKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::action_key_effect_saved' o='32' t='Solarus::CommandsEffects::ActionKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::action_key_enabled' o='64' t='bool'/>
+<mbr r='Solarus::CommandsEffects::sword_key_effect' o='96' t='Solarus::CommandsEffects::AttackKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::sword_key_effect_saved' o='128' t='Solarus::CommandsEffects::AttackKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::sword_key_enabled' o='160' t='bool'/>
+<mbr r='Solarus::CommandsEffects::pause_key_effect' o='192' t='Solarus::CommandsEffects::PauseKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::pause_key_effect_saved' o='224' t='Solarus::CommandsEffects::PauseKeyEffect'/>
+<mbr r='Solarus::CommandsEffects::pause_key_enabled' o='256' t='bool'/>
+<mbr r='Solarus::CommandsEffects::item_keys_enabled' o='264' t='bool'/>
+<fun r='_ZN7Solarus15CommandsEffectsC1Ev'/>
+<fun r='_ZN7Solarus15CommandsEffects21get_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_action_key_effectENS0_15ActionKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects21is_action_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects22set_action_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects22save_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects25restore_action_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects37is_action_key_acting_on_facing_entityEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20get_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_sword_key_effectENS0_15AttackKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects20is_sword_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_sword_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects21save_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects24restore_sword_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20get_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_pause_key_effectENS0_14PauseKeyEffectE'/>
+<fun r='_ZN7Solarus15CommandsEffects20is_pause_key_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_pause_key_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects21save_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects24restore_pause_key_effectEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21are_item_keys_enabledEv'/>
+<fun r='_ZN7Solarus15CommandsEffects21set_item_keys_enabledEb'/>
+<fun r='_ZN7Solarus15CommandsEffects20set_all_keys_enabledEb'/>

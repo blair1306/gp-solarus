@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Game.h' l='176' type='void Solarus::Game::update_transitions()'/>
+<use f='codebrowser/src/Game.cpp' l='356' u='c' c='_ZN7Solarus4Game6updateEv'/>
+<def f='codebrowser/src/Game.cpp' l='381' ll='537' type='void Solarus::Game::update_transitions()'/>
+<doc f='codebrowser/src/Game.cpp' l='373'>/**
+ * \brief Handles the transitions.
+ *
+ * This functions changes the map when needed and plays the
+ * transitions between the two maps. This function is called
+ * by the update() function.
+ * Note that the two maps can actually be the same.
+ */</doc>

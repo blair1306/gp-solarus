@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='166' type='int Solarus::MapData::get_num_tiles(int layer) const'/>
+<def f='codebrowser/src/MapData.cpp' l='299' ll='304' type='int Solarus::MapData::get_num_tiles(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='312' u='c' c='_ZNK7Solarus7MapData24get_num_dynamic_entitiesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='362' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='400' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='401' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='462' u='c' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='486' u='c' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='672' u='c' c='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<use f='codebrowser/src/MapData.cpp' l='704' u='c' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='705' u='c' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<doc f='codebrowser/src/MapData.cpp' l='294'>/**
+ * \brief Returns the number of tiles on a layer of this map.
+ * \param layer A layer.
+ * \return The number of tiles on that layer.
+ */</doc>

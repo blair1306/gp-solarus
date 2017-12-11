@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_mouse.h' l='195' type='int SDL_ShowCursor(int toggle)'/>
+<doc f='include/SDL2/SDL_mouse.h' l='187'>/**
+ *  \brief Toggle whether or not the cursor is shown.
+ *
+ *  \param toggle 1 to show the cursor, 0 to hide it, -1 to query the current
+ *                state.
+ *
+ *  \return 1 if the cursor is shown, or 0 if the cursor is hidden.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='586' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>

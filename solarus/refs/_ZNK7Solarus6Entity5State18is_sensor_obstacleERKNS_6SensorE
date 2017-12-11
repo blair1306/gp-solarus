@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='107' type='bool Solarus::Entity::State::is_sensor_obstacle(const Solarus::Sensor &amp; sensor) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='798' ll='800' type='bool Solarus::Entity::State::is_sensor_obstacle(const Solarus::Sensor &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='790'>/**
+ * \brief Returns whether a sensor is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \param sensor a sensor
+ * \return true if the sensor is an obstacle in this state
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='798'>/* sensor */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1506' u='c' c='_ZN7Solarus4Hero18is_sensor_obstacleERNS_6SensorE'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='145' c='_ZNK7Solarus4Hero13HookshotState18is_sensor_obstacleERKNS_6SensorE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='179' c='_ZNK7Solarus4Hero9HurtState18is_sensor_obstacleERKNS_6SensorE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='277' c='_ZNK7Solarus4Hero12JumpingState18is_sensor_obstacleERKNS_6SensorE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='352' c='_ZNK7Solarus4Hero12RunningState18is_sensor_obstacleERKNS_6SensorE'/>

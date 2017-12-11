@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Map.h' l='175' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/src/Map.cpp' l='623' ll='626' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/Map.cpp' l='618'>/**
+ * \brief Draws a drawable object on the camera surface.
+ * \param drawable The drawable object to draw.
+ * \param xy Coordinates of the drawable&apos;s origin point in the map.
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='452' u='c' c='_ZN7Solarus13CarriedObject11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3467' u='c' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='242' u='c' c='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='590' u='c' c='_ZN7Solarus8Pickable11draw_on_mapEv'/>

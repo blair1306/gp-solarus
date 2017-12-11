@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='71' type='void Solarus::Movement::translate_xy(const Solarus::Point &amp; dxy)'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='256' ll='258' type='void Solarus::Movement::translate_xy(const Solarus::Point &amp; dxy)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='252'>/**
+ * \brief Moves the object.
+ * \param dxy number of pixel of the move on x and y
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='218' u='c' c='_ZN7Solarus13PixelMovement14make_next_stepEv'/>

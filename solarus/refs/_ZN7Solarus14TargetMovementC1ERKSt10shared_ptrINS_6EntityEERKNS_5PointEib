@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/TargetMovement.h' l='46' type='void Solarus::TargetMovement::TargetMovement(const EntityPtr &amp; target_entity, const Solarus::Point &amp; xy, int moving_speed, bool ignore_obstacles)'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='50' u='c' c='_ZN7Solarus14TargetMovementC1ERKSt10shared_ptrINS_6EntityEEiiib'/>
+<def f='codebrowser/src/movements/TargetMovement.cpp' l='59' ll='74' type='void Solarus::TargetMovement::TargetMovement(const EntityPtr &amp; target_entity, const Solarus::Point &amp; target, int moving_speed, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/TargetMovement.cpp' l='52'>/**
+ * \brief Creates a new target movement toward an entity or a fixed point.
+ * \param target_entity The entity to target or nullptr.
+ * \param target the target point, or offset in the case of an entity.
+ * \param moving_speed Speed of the movement when not stopped.
+ * \param ignore_obstacles \c true to ignore obstacles (if on a map).
+ */</doc>

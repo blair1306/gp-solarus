@@ -1,0 +1,15 @@
+<dec f='include/physfs.h' l='1274' type='int PHYSFS_seek(PHYSFS_File * handle, PHYSFS_uint64 pos)'/>
+<doc f='include/physfs.h' l='1260'>/**
+ * \fn int PHYSFS_seek(PHYSFS_File *handle, PHYSFS_uint64 pos)
+ * \brief Seek to a new position within a PhysicsFS filehandle.
+ *
+ * The next read or write will occur at that place. Seeking past the
+ *  beginning or end of the file is not allowed, and causes an error.
+ *
+ *   \param handle handle returned from PHYSFS_open*().
+ *   \param pos number of bytes from start of file to seek to.
+ *  \return nonzero on success, zero on error. Specifics of the error can be
+ *          gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_tell
+ */</doc>

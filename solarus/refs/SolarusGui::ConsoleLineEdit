@@ -1,0 +1,31 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h' l='65' c='QLineEdit'/>
+<def f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='32' ll='61'/>
+<size>80</size>
+<doc f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='27'>/**
+ * @brief A line field to execute Lua commands to the quest.
+ *
+ * Manages the history of commands.
+ */</doc>
+<fun r='_ZNK10SolarusGui15ConsoleLineEdit26qt_check_for_QOBJECT_macroERKT_'/>
+<smbr r='SolarusGui::ConsoleLineEdit::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui15ConsoleLineEdit10metaObjectEv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit2trEPKcS2_i'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit6trUtf8EPKcS2_i'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit11qt_metacallEN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit20set_history_positionEi'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit16history_previousEv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit12history_nextEv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit16command_executedERK7QString'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit13keyPressEventEP9QKeyEvent'/>
+<mbr r='SolarusGui::ConsoleLineEdit::history' o='384' t='QStringList'/>
+<mbr r='SolarusGui::ConsoleLineEdit::history_position' o='448' t='int'/>
+<mbr r='SolarusGui::ConsoleLineEdit::current_command' o='512' t='QString'/>
+<mbr r='SolarusGui::ConsoleLineEdit::completer_model' o='576' t='QStringListModel *'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv'/>
+<smbr r='SolarusGui::ConsoleLineEdit::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZNK10SolarusGui15ConsoleLineEdit10metaObjectEv'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit11qt_metacastEPKc'/>
+<fun r='_ZN10SolarusGui15ConsoleLineEdit11qt_metacallEN11QMetaObject4CallEiPPv'/>

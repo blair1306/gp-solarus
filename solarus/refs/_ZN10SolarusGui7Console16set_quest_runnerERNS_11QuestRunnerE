@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='40' type='void SolarusGui::Console::set_quest_runner(SolarusGui::QuestRunner &amp; quest_runner)'/>
+<def f='codebrowser/gui/src/console.cpp' l='83' ll='97' type='void SolarusGui::Console::set_quest_runner(SolarusGui::QuestRunner &amp; quest_runner)'/>
+<doc f='codebrowser/gui/src/console.cpp' l='79'>/**
+ * @brief Connects this console to a quest runner.
+ * @param quest_runner The quest runner.
+ */</doc>
+<use f='codebrowser/gui/src/main_window.cpp' l='51' u='c' c='_ZN10SolarusGui10MainWindowC1EP7QWidget'/>

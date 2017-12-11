@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_ttf.h' l='74' type='void TTF_ByteSwappedUNICODE(int swapped)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='70'>/* This function tells the library whether UNICODE text is generally
+   byteswapped.  A UNICODE BOM character in a string will override
+   this setting for the remainder of that string.
+*/</doc>

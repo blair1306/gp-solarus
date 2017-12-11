@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='169' type='void Solarus::LuaContext::run_map(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<use f='codebrowser/src/Map.cpp' l='701' u='c' c='_ZN7Solarus3Map5startEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='253' ll='293' type='void Solarus::LuaContext::run_map(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='244'>/**
+ * \brief Notifies Lua that a map has just been started.
+ *
+ * The Lua file of this map is automatically loaded.
+ *
+ * \param map The map started.
+ * \param destination The destination point used if it&apos;s a normal one,
+ * nullptr otherwise.
+ */</doc>

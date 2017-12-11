@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_events.h' l='713' type='Uint32 SDL_RegisterEvents(int numevents)'/>
+<doc f='include/SDL2/SDL_events.h' l='706'>/**
+ *  This function allocates a set of user-defined events, and returns
+ *  the beginning event number for that set of events.
+ *
+ *  If there aren&apos;t enough user-defined events left, this function
+ *  returns (Uint32)-1
+ */</doc>

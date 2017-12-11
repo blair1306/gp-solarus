@@ -1,0 +1,14 @@
+<def f='include/c++/4.9/bits/basic_ios.h' l='115' ll='116' type='void * std::basic_ios::operator void *() const'/>
+<doc f='include/c++/4.9/bits/basic_ios.h' l='109'>/**
+       *  @brief  The quick-and-easy status check.
+       *
+       *  This allows you to write constructs such as
+       *  &lt;code&gt;if (!a_stream) ...&lt;/code&gt; and &lt;code&gt;while (a_stream) ...&lt;/code&gt;
+      */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='143' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/MainLoop.cpp' l='547' u='c' c='_ZN7Solarus8MainLoop22initialize_lua_consoleEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1030' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='74' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='83' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='91' u='c' c='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='92' u='c' c='_ZN7Solarus13PixelMovement14set_trajectoryERKSs'/>

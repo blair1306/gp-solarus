@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='99' type='SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='91'>/**
+ *  \brief Get the key code corresponding to the given scancode according
+ *         to the current keyboard layout.
+ *
+ *  See ::SDL_Keycode for details.
+ *
+ *  \sa SDL_GetKeyName()
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1188' type='static bool Solarus::LuaContext::is_stream(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3437' ll='3439' type='static bool Solarus::LuaContext::is_stream(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3431'>/**
+ * \brief Returns whether a value is a userdata of type stream.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a stream.
+ */</doc>

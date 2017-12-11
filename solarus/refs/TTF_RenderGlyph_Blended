@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_ttf.h' l='230' type='SDL_Surface * TTF_RenderGlyph_Blended(TTF_Font * font, Uint16 ch, SDL_Color fg)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='224'>/* Create a 32-bit ARGB surface and render the given glyph at high quality,
+   using alpha blending to dither the font with the given color.
+   The glyph is rendered without any padding or centering in the X
+   direction, and aligned normally in the Y direction.
+   This function returns the new surface, or NULL if there was an error.
+*/</doc>

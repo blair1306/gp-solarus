@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='140' type='bool Solarus::TilesetData::remove_border_set(const std::string &amp; border_set_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='407' ll='410' type='bool Solarus::TilesetData::remove_border_set(const std::string &amp; border_set_id)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='433' u='c' c='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='402'>/**
+ * \brief Removes a border set from the tileset.
+ * \param border_set_id Id of the border set to remove.
+ * \return \c true in case of success.
+ */</doc>

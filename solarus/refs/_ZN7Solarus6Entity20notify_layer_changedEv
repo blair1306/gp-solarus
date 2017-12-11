@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='232' type='void Solarus::Entity::notify_layer_changed()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='586' u='c' c='_ZN7Solarus6Entity9set_layerEi'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='594' ll='619' type='void Solarus::Entity::notify_layer_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='589'>/**
+ * \brief This function is called when the layer of this entity has just changed.
+ *
+ * Redefine it if you need to be notified.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1148' c='_ZN7Solarus4Hero20notify_layer_changedEv'/>

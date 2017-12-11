@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='48' type='Solarus::ScopedLuaRef &amp; Solarus::ScopedLuaRef::operator=(Solarus::ScopedLuaRef &amp;&amp; other)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='219' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='60' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='165' u='c' c='_ZN7Solarus10LuaContext20audio_api_play_musicEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='228' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='267' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1843' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1861' u='c' c='_ZN7Solarus10LuaContext26hero_api_save_solid_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='459' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='463' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='494' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='106' ll='115' type='Solarus::ScopedLuaRef &amp; Solarus::ScopedLuaRef::operator=(Solarus::ScopedLuaRef &amp;&amp; other)'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='101'>/**
+ * \brief Move assignment operator.
+ * \param other The object to move.
+ * \return The current ref after modification.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='184' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

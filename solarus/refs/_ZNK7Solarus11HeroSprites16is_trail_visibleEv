@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='141' type='bool Solarus::HeroSprites::is_trail_visible() const'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='528' ll='530' type='bool Solarus::HeroSprites::is_trail_visible() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='744' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='837' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='879' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='986' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1017' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='524'>/**
+ * \brief Returns whether the trail of dust is currently displayed.
+ * \return true if the trail of dust is currently displayed
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='298' type='float Solarus::InputEvent::get_finger_pressure() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1334' ll='1339' type='float Solarus::InputEvent::get_finger_pressure() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1330'>/**
+ * \brief Gets the pressure of this finger event, if any.
+ * \return The pressure of this finger event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1909' u='c' c='_ZN7Solarus10LuaContext17on_finger_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1942' u='c' c='_ZN7Solarus10LuaContext18on_finger_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1976' u='c' c='_ZN7Solarus10LuaContext15on_finger_movedERKNS_10InputEventE'/>

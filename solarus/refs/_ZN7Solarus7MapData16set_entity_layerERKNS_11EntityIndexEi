@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='169' type='Solarus::EntityIndex Solarus::MapData::set_entity_layer(const Solarus::EntityIndex &amp; src_index, int dst_layer)'/>
+<def f='codebrowser/src/MapData.cpp' l='345' ll='380' type='Solarus::EntityIndex Solarus::MapData::set_entity_layer(const Solarus::EntityIndex &amp; src_index, int dst_layer)'/>
+<doc f='codebrowser/src/MapData.cpp' l='339'>/**
+ * \brief Changes the layer of an entity.
+ * \param src_index The current index of the entity to change.
+ * \param dst_layer The new layer to set.
+ * \return The new index of the entity.
+ */</doc>

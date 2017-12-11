@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='85' type='void Solarus::Sprite::set_frame_delay(uint32_t frame_delay)'/>
+<def f='codebrowser/src/Sprite.cpp' l='231' ll='233' type='void Solarus::Sprite::set_frame_delay(uint32_t frame_delay)'/>
+<use f='codebrowser/src/Sprite.cpp' l='281' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<doc f='codebrowser/src/Sprite.cpp' l='222'>/**
+ * \brief Sets the frame delay of the current animation.
+ *
+ * A value of 0 (only for 1-frame animations) means that the
+ * animation will continue to be drawn.
+ *
+ * \param frame_delay The delay between two frames for the current animation
+ * in milliseconds.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='401' u='c' c='_ZN7Solarus10LuaContext26sprite_api_set_frame_delayEP9lua_State'/>

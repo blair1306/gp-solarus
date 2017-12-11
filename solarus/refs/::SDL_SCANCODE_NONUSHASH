@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_scancode.h' l='116' type='50'/>
+<doc f='include/SDL2/SDL_scancode.h' l='116'>/**&lt; ISO USB keyboards actually use this code
+                                  *   instead of 49 for the same key, but all
+                                  *   OSes I&apos;ve seen treat the two codes
+                                  *   identically. So, as an implementor, unless
+                                  *   your keyboard generates both of those
+                                  *   codes and your OS treats them differently,
+                                  *   you should generate SDL_SCANCODE_BACKSLASH
+                                  *   instead of this code. As a user, you
+                                  *   should not rely on this code because SDL
+                                  *   will never generate it with most (all?)
+                                  *   keyboards.
+                                  */</doc>

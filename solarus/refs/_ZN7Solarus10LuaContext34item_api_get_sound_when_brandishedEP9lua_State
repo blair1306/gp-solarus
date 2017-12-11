@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='758' type='static int Solarus::LuaContext::item_api_get_sound_when_brandished(lua_State * )'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='63' u='r' c='_ZN7Solarus10LuaContext20register_item_moduleEv'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='484' ll='498' type='static int Solarus::LuaContext::item_api_get_sound_when_brandished(lua_State * l)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='479'>/**
+ * \brief Implementation of item:get_sound_when_brandished().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

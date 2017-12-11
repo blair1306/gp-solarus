@@ -1,0 +1,14 @@
+<def f='codebrowser/include/solarus/lowlevel/OggDecoder.h' l='30' ll='59'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/lowlevel/OggDecoder.h' l='27'>/**
+ * \brief Encapsulates the Ogg Vorbis music decoding.
+ */</doc>
+<fun r='_ZN7Solarus10OggDecoderC1Ev'/>
+<fun r='_ZN7Solarus10OggDecoder4loadEOSsb'/>
+<fun r='_ZN7Solarus10OggDecoder6unloadEv'/>
+<fun r='_ZN7Solarus10OggDecoder6decodeEji'/>
+<mbr r='Solarus::OggDecoder::ogg_file' o='0' t='OggFileUniquePtr'/>
+<mbr r='Solarus::OggDecoder::ogg_mem' o='64' t='Sound::SoundFromMemory'/>
+<mbr r='Solarus::OggDecoder::ogg_info' o='256' t='vorbis_info *'/>
+<mbr r='Solarus::OggDecoder::loop_start_pcm' o='320' t='ogg_int64_t'/>
+<mbr r='Solarus::OggDecoder::loop_end_pcm' o='384' t='ogg_int64_t'/>

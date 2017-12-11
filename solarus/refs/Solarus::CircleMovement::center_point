@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='80' type='Solarus::Point'/>
+<offset>1024</offset>
+<doc f='codebrowser/include/solarus/movements/CircleMovement.h' l='80'>/**&lt; absolute coordinates of the center if only a point is used,
+                                                     * or coordinates relative to the center entity otherwise */</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='67' u='w' c='_ZN7Solarus14CircleMovement10set_centerERKNS_5PointE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='86' u='w' c='_ZN7Solarus14CircleMovement10set_centerERKSt10shared_ptrINS_6EntityEEii'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='323' u='m' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='324' u='m' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='399' u='r' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>

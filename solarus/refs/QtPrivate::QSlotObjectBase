@@ -1,0 +1,15 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h' l='109' ll='137'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h' l='140' c='QtPrivate::QSlotObject'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h' l='164' c='QtPrivate::QStaticSlotObject'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h' l='189' c='QtPrivate::QFunctorSlotObject'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h' l='108'>// internal base class (interface) containing functions required to call a slot managed by a pointer to function.</doc>
+<mbr r='QtPrivate::QSlotObjectBase::m_ref' o='0' t='QAtomicInt'/>
+<mbr r='QtPrivate::QSlotObjectBase::m_impl' o='64' t='const ImplFn'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBaseC1EPFviPS0_P7QObjectPPvPbE'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBase3refEv'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBase16destroyIfLastRefEv'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBase7compareEPPv'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBase4callEP7QObjectPPv'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBaseD1Ev'/>
+<fun r='_ZN9QtPrivate15QSlotObjectBaseC1ERKS0_'/>

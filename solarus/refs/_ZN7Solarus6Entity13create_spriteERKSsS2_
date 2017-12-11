@@ -1,0 +1,40 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='201' type='SpritePtr Solarus::Entity::create_sprite(const std::string &amp; animation_set_id, const std::string &amp; sprite_name = &quot;&quot;)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='48' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='73' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='47' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='57' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='103' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='110' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='71' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='50' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='52' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='44' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='79' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/Destination.cpp' l='50' u='c' c='_ZN7Solarus11DestinationC1ERKSsiRKNS_5PointEiS2_b'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='73' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='87' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1400' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1313' ll='1326' type='SpritePtr Solarus::Entity::create_sprite(const std::string &amp; animation_set_id, const std::string &amp; sprite_name = &quot;&quot;)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1307'>/**
+ * \brief Creates a sprite and adds it to this entity.
+ * \param animation_set_id Id of the sprite&apos;s animation set to use.
+ * \param sprite_name Name to identify the sprite or an empty string.
+ * \return The sprite created.
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='43' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='36' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='52' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='113' u='c' c='_ZN7Solarus3Npc17initialize_spriteERKSsi'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='159' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='173' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='51' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='71' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='68' u='c' c='_ZN7Solarus15TeletransporterC1ERKSsiRKNS_5PointERKNS_4SizeES2_S2_NS_10Transition5StyleES2_S2_'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='123' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='141' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='151' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='193' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='265' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='384' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1608' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1427' u='c' c='_ZN7Solarus10LuaContext24entity_api_create_spriteEP9lua_State'/>

@@ -1,0 +1,16 @@
+<def f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='35' ll='61'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/lowlevel/VideoMode.h' l='30'>/**
+ * \brief Represents a method to display the quest content on the screen.
+ *
+ * The video mode may include a scaling algorithm.
+ */</doc>
+<fun r='_ZN7Solarus9VideoModeC1ERKSsRKNS_4SizeESt10unique_ptrINS_11PixelFilterESt14default_deleteIS7_EES6_INS_6ShaderES8_ISB_EE'/>
+<fun r='_ZNK7Solarus9VideoMode8get_nameEv'/>
+<fun r='_ZNK7Solarus9VideoMode23get_initial_window_sizeEv'/>
+<fun r='_ZNK7Solarus9VideoMode19get_software_filterEv'/>
+<fun r='_ZNK7Solarus9VideoMode19get_hardware_filterEv'/>
+<mbr r='Solarus::VideoMode::name' o='0' t='std::string'/>
+<mbr r='Solarus::VideoMode::initial_window_size' o='64' t='Solarus::Size'/>
+<mbr r='Solarus::VideoMode::software_filter' o='128' t='std::unique_ptr&lt;PixelFilter&gt;'/>
+<mbr r='Solarus::VideoMode::hardware_filter' o='192' t='std::unique_ptr&lt;Shader&gt;'/>

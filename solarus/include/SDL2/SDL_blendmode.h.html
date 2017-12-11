@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_blendmode.h source code [include/SDL2/SDL_blendmode.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_blendmode.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_blendmode.h.html'>SDL_blendmode.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_blendmode.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Header file declaring the SDL_BlendMode enumeration</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_blendmode_h">_SDL_blendmode_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_blendmode_h" data-ref="_M/_SDL_blendmode_h">_SDL_blendmode_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="34">34</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="33">endif</span></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *  <span class="command">\brief</span> The blend mode used in SDL_RenderCopy() and drawing operations.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>    <dfn class="enum" id="::SDL_BLENDMODE_NONE" title='::SDL_BLENDMODE_NONE' data-ref="::SDL_BLENDMODE_NONE">SDL_BLENDMODE_NONE</dfn> = <var>0x00000000</var>,     <i class="doc">/**&lt; no blending</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc">                                              dstRGBA = srcRGBA */</i></td></tr>
+<tr><th id="44">44</th><td>    <dfn class="enum" id="::SDL_BLENDMODE_BLEND" title='::SDL_BLENDMODE_BLEND' data-ref="::SDL_BLENDMODE_BLEND">SDL_BLENDMODE_BLEND</dfn> = <var>0x00000001</var>,    <i class="doc">/**&lt; alpha blending</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">                                              dstRGB = (srcRGB * srcA) + (dstRGB * (1-srcA))</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc">                                              dstA = srcA + (dstA * (1-srcA)) */</i></td></tr>
+<tr><th id="47">47</th><td>    <dfn class="enum" id="::SDL_BLENDMODE_ADD" title='::SDL_BLENDMODE_ADD' data-ref="::SDL_BLENDMODE_ADD">SDL_BLENDMODE_ADD</dfn> = <var>0x00000002</var>,      <i class="doc">/**&lt; additive blending</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc">                                              dstRGB = (srcRGB * srcA) + dstRGB</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc">                                              dstA = dstA */</i></td></tr>
+<tr><th id="50">50</th><td>    <dfn class="enum" id="::SDL_BLENDMODE_MOD" title='::SDL_BLENDMODE_MOD' data-ref="::SDL_BLENDMODE_MOD">SDL_BLENDMODE_MOD</dfn> = <var>0x00000004</var>       <i class="doc">/**&lt; color modulate</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">                                              dstRGB = srcRGB * dstRGB</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">                                              dstA = dstA */</i></td></tr>
+<tr><th id="53">53</th><td>} <dfn class="typedef" id="SDL_BlendMode" title='SDL_BlendMode' data-type='enum SDL_BlendMode' data-ref="SDL_BlendMode">SDL_BlendMode</dfn>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="57">57</th><td>}</td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="59">59</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_video_h */</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

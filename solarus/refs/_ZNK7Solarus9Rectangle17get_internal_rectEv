@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='104' type='const SDL_Rect * Solarus::Rectangle::get_internal_rect() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='445' ll='447' type='const SDL_Rect * Solarus::Rectangle::get_internal_rect() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='478' u='c' c='_ZN7Solarus9RectangleaNERKS0_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='510' u='c' c='_ZN7Solarus9RectangleoRERKS0_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='437'>/**
+ * \brief returns the sdl rectangle encapsulated by this object.
+ *
+ * This function must be used only by other low-level classes
+ * (typically surface) as it is library dependent.
+ *
+ * \return the internal rectangle encapsulated
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='537' u='c' c='_ZN7Solarus7Surface5clearERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='675' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='704' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='838' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='849' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='850' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='868' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

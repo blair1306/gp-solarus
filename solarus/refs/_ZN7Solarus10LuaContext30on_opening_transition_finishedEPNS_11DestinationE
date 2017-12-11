@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1242' type='void Solarus::LuaContext::on_opening_transition_finished(Solarus::Destination * destination)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2149' ll='2160' type='void Solarus::LuaContext::on_opening_transition_finished(Solarus::Destination * destination)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2145'>/**
+ * \brief Calls the on_opening_transition_finished() method of the object on top of the stack.
+ * \param destination The destination point used (nullptr if it&apos;s a special one).
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2358' u='c' c='_ZN7Solarus10LuaContext34map_on_opening_transition_finishedERNS_3MapEPNS_11DestinationE'/>

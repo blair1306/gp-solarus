@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_hints.h' l='428' type='void SDL_DelHintCallback(const char * name, SDL_HintCallback callback, void * userdata)'/>
+<doc f='include/SDL2/SDL_hints.h' l='421'>/**
+ *  \brief Remove a function watching a particular hint
+ *
+ *  \param name The hint being watched
+ *  \param callback The function being called when the hint value changes
+ *  \param userdata A pointer being passed to the callback function
+ */</doc>

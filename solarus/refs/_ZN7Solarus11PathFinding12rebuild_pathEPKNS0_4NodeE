@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='80' type='std::string Solarus::PathFinding::rebuild_path(const Solarus::PathFinding::Node * final_node)'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='167' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='282' ll='292' type='std::string Solarus::PathFinding::rebuild_path(const Solarus::PathFinding::Node * final_node)'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='277'>/**
+ * \brief Builds the string representation of the path found by the algorithm.
+ * \param closed_list The closed list of A*.
+ * \return final_node The final node of the path.
+ */</doc>

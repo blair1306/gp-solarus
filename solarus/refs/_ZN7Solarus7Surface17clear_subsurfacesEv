@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='144' type='void Solarus::Surface::clear_subsurfaces()'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='495' u='c' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='594' u='c' c='_ZN7Solarus7Surface14add_subsurfaceERKSt10shared_ptrIS0_ERKNS_9RectangleERKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='603' ll='606' type='void Solarus::Surface::clear_subsurfaces()'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='663' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='600'>/**
+ * \brief clear the internal SubSurface queue.
+ */</doc>

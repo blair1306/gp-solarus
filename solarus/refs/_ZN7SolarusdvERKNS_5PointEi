@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='74' type='Solarus::Point Solarus::operator/(const Solarus::Point &amp; point, int divisor)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='170' ll='172' type='Solarus::Point Solarus::operator/(const Solarus::Point &amp; point, int divisor)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='164'>/**
+ * \brief Divides a point by a number.
+ * \param point A point.
+ * \param divisor The divisor.
+ * \return A point with coordinates divided by the divisor.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1185' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='140' u='c' c='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='51' u='c' c='_ZNK7Solarus28ParallaxScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='65' type='static void Solarus::Sound::load_all()'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='259' ll='274' type='static void Solarus::Sound::load_all()'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='256'>/**
+ * \brief Loads and decodes all sounds listed in the game database.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='112' u='c' c='_ZN7Solarus10LuaContext24audio_api_preload_soundsEP9lua_State'/>

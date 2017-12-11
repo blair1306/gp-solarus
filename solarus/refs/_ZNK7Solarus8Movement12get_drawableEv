@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='51' type='Solarus::Drawable * Solarus::Movement::get_drawable() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='638' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='105' ll='107' type='Solarus::Drawable * Solarus::Movement::get_drawable() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='100'>/**
+ * \brief Returns the drawable controlled by this movement (if any).
+ * \return The drawable controlled by this movement, or nullptr if this movement
+ * is not attached to a drawable.
+ */</doc>

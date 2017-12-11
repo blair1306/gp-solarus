@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_audio.h' l='436' type='int SDL_BuildAudioCVT(SDL_AudioCVT * cvt, SDL_AudioFormat src_format, Uint8 src_channels, int src_rate, SDL_AudioFormat dst_format, Uint8 dst_channels, int dst_rate)'/>
+<doc f='include/SDL2/SDL_audio.h' l='427'>/**
+ *  This function takes a source format and rate and a destination format
+ *  and rate, and initializes the \c cvt structure with information needed
+ *  by SDL_ConvertAudio() to convert a buffer of audio data from one format
+ *  to the other.
+ *
+ *  \return -1 if the format conversion is not supported, 0 if there&apos;s
+ *  no conversion needed, or 1 if the audio filter is set up.
+ */</doc>

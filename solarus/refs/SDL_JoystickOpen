@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_joystick.h' l='96' type='SDL_Joystick * SDL_JoystickOpen(int device_index)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='88'>/**
+ *  Open a joystick for use.
+ *  The index passed as an argument refers tothe N&apos;th joystick on the system.
+ *  This index is the value which will identify this joystick in future joystick
+ *  events.
+ *
+ *  \return A joystick identifier, or NULL if an error occurred.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='918' u='c' c='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>

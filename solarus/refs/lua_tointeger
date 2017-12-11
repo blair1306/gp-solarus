@@ -1,0 +1,13 @@
+<dec f='include/luajit-2.0/lua.h' l='147' type='lua_Integer lua_tointeger(lua_State * L, int idx)'/>
+<use f='codebrowser/src/Savegame.cpp' l='266' u='c' c='_ZN7Solarus8Savegame10l_newindexEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='684' u='c' c='_ZN7Solarus10LuaContext28l_named_sprite_iterator_nextEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='685' u='c' c='_ZN7Solarus10LuaContext28l_named_sprite_iterator_nextEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='674' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='274' u='c' c='_ZN7Solarus8LuaTools9check_intEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='300' u='c' c='_ZN7Solarus8LuaTools15check_int_fieldEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='356' u='c' c='_ZN7Solarus8LuaTools13opt_int_fieldEP9lua_StateiRKSsi'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='798' u='c' c='_ZN7Solarus8LuaTools11check_layerEP9lua_StateiRKNS_3MapE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='826' u='c' c='_ZN7Solarus8LuaTools17check_layer_fieldEP9lua_StateiRKSsRKNS_3MapE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='879' u='c' c='_ZN7Solarus8LuaTools15opt_layer_fieldEP9lua_StateiRKSsRKNS_3MapEi'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1374' u='c' c='_ZN7Solarus10LuaContext22l_entity_iterator_nextEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1375' u='c' c='_ZN7Solarus10LuaContext22l_entity_iterator_nextEP9lua_State'/>

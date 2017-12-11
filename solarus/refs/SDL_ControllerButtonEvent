@@ -1,0 +1,12 @@
+<def f='include/SDL2/SDL_events.h' l='361' ll='370'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_events.h' l='358'>/**
+ *  \brief Game controller button event structure (event.cbutton.*)
+ */</doc>
+<mbr r='SDL_ControllerButtonEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_ControllerButtonEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_ControllerButtonEvent::which' o='64' t='SDL_JoystickID'/>
+<mbr r='SDL_ControllerButtonEvent::button' o='96' t='Uint8'/>
+<mbr r='SDL_ControllerButtonEvent::state' o='104' t='Uint8'/>
+<mbr r='SDL_ControllerButtonEvent::padding1' o='112' t='Uint8'/>
+<mbr r='SDL_ControllerButtonEvent::padding2' o='120' t='Uint8'/>

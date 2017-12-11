@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='135' type='bool Solarus::Hero::is_direction_locked() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1030' ll='1032' type='bool Solarus::Hero::is_direction_locked() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1170' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1019'>/**
+ * \brief Returns whether the animation direction is locked.
+ *
+ * When this function returns false, which is the case most of the time,
+ * it means that the animation direction is set to the movement direction.
+ * When it returns true, it means that the animation direction is fixed
+ * and do not depends on the movement direction anymore (this is the case
+ * when the hero is loading his sword).
+ *
+ * \return true if the animation direction is locked
+ */</doc>

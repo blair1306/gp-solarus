@@ -1,0 +1,11 @@
+<def f='include/SDL2/SDL_events.h' l='195' ll='203'/>
+<size>52</size>
+<doc f='include/SDL2/SDL_events.h' l='192'>/**
+ *  \brief Keyboard text editing event structure (event.edit.*)
+ */</doc>
+<mbr r='SDL_TextEditingEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_TextEditingEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_TextEditingEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_TextEditingEvent::text' o='96' t='char [32]'/>
+<mbr r='SDL_TextEditingEvent::start' o='352' t='Sint32'/>
+<mbr r='SDL_TextEditingEvent::length' o='384' t='Sint32'/>

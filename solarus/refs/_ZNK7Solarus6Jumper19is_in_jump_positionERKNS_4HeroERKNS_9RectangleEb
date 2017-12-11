@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='58' type='bool Solarus::Jumper::is_in_jump_position(const Solarus::Hero &amp; hero, const Solarus::Rectangle &amp; candidate_position, bool extended_region) const'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='97' ll='210' type='bool Solarus::Jumper::is_in_jump_position(const Solarus::Hero &amp; hero, const Solarus::Rectangle &amp; candidate_position, bool extended_region) const'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='226' u='c' c='_ZN7Solarus6Jumper21test_collision_customERNS_6EntityE'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='88'>/**
+ * \brief Returns whether the hero is correctly placed to
+ * start jumping with this jumper.
+ * \param hero The hero.
+ * \param candidate_position The candidate bounding box.
+ * \param extended_region Whether you want to consider the extended jumper
+ * beyond its bounding box, or to keep it restricted to its bounding box.
+ * \return \c true if the hero is correctly placed to start a jump.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='137' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='139' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='155' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='153' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>

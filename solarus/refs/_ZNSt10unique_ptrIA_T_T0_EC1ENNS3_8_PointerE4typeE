@@ -1,0 +1,7 @@
+<def f='include/c++/4.9/bits/unique_ptr.h' l='425' ll='429' type='void std::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;::unique_ptr&lt;type-parameter-0-0 [], type-parameter-0-1&gt;(pointer __p)'/>
+<doc f='include/c++/4.9/bits/unique_ptr.h' l='419'>/** Takes ownership of a pointer.
+       *
+       * @param __p  A pointer to an array of @c element_type
+       *
+       * The deleter will be value-initialized.
+       */</doc>

@@ -1,0 +1,128 @@
+<def f='codebrowser/include/solarus/hero/HeroSprites.h' l='46' ll='221'/>
+<size>288</size>
+<doc f='codebrowser/include/solarus/hero/HeroSprites.h' l='36'>/**
+ * \brief Manages the animations of the hero&apos;s main sprites.
+ *
+ * This class handles the animations of the hero&apos;s main sprites: the tunic,
+ * the sword, the sword stars, the shield, the shadow and the ground.
+ * It also handles the sprite-dependent sounds such as the sword sound.
+ *
+ * This class does not know anything about the hero&apos;s internal state:
+ * it is the role of the state to call this class to display the appropriate animation.
+ */</doc>
+<fun r='_ZN7Solarus11HeroSpritesC1ERNS_4HeroERNS_9EquipmentE'/>
+<fun r='_ZN7Solarus11HeroSprites6updateEv'/>
+<fun r='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<fun r='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<fun r='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<fun r='_ZN7Solarus11HeroSprites18notify_map_startedEv'/>
+<fun r='_ZN7Solarus11HeroSprites22notify_tileset_changedEv'/>
+<fun r='_ZNK7Solarus11HeroSprites19get_tunic_sprite_idEv'/>
+<fun r='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<fun r='_ZNK7Solarus11HeroSprites19get_sword_sprite_idEv'/>
+<fun r='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<fun r='_ZNK7Solarus11HeroSprites18get_sword_sound_idEv'/>
+<fun r='_ZN7Solarus11HeroSprites18set_sword_sound_idERKSs'/>
+<fun r='_ZNK7Solarus11HeroSprites20get_shield_sprite_idEv'/>
+<fun r='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<fun r='_ZNK7Solarus11HeroSprites20get_max_bounding_boxEv'/>
+<fun r='_ZN7Solarus11HeroSprites5blinkEj'/>
+<fun r='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<fun r='_ZNK7Solarus11HeroSprites11is_blinkingEv'/>
+<fun r='_ZNK7Solarus11HeroSprites10is_walkingEv'/>
+<fun r='_ZN7Solarus11HeroSprites22set_clipping_rectangleERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus11HeroSprites23get_animation_directionEii'/>
+<fun r='_ZNK7Solarus11HeroSprites23get_animation_directionEv'/>
+<fun r='_ZNK7Solarus11HeroSprites24get_animation_direction8Ev'/>
+<fun r='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<fun r='_ZN7Solarus11HeroSprites24set_animation_direction8Ei'/>
+<fun r='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<fun r='_ZNK7Solarus11HeroSprites21is_animation_finishedEv'/>
+<fun r='_ZNK7Solarus11HeroSprites17get_current_frameEv'/>
+<fun r='_ZN7Solarus11HeroSprites24save_animation_directionEv'/>
+<fun r='_ZN7Solarus11HeroSprites27restore_animation_directionEv'/>
+<fun r='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<fun r='_ZNK7Solarus11HeroSprites19has_tunic_animationERKSs'/>
+<fun r='_ZNK7Solarus11HeroSprites19get_tunic_animationEv'/>
+<fun r='_ZN7Solarus11HeroSprites28set_animation_stopped_commonEv'/>
+<fun r='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<fun r='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<fun r='_ZN7Solarus11HeroSprites30set_animation_stopped_carryingEv'/>
+<fun r='_ZN7Solarus11HeroSprites30set_animation_stopped_swimmingEv'/>
+<fun r='_ZN7Solarus11HeroSprites28set_animation_walking_commonEv'/>
+<fun r='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<fun r='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<fun r='_ZN7Solarus11HeroSprites30set_animation_walking_carryingEv'/>
+<fun r='_ZN7Solarus11HeroSprites27set_animation_swimming_slowEv'/>
+<fun r='_ZN7Solarus11HeroSprites27set_animation_swimming_fastEv'/>
+<fun r='_ZN7Solarus11HeroSprites30set_animation_walking_diagonalEi'/>
+<fun r='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<fun r='_ZN7Solarus11HeroSprites16play_sword_soundEv'/>
+<fun r='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<fun r='_ZN7Solarus11HeroSprites25set_animation_spin_attackEv'/>
+<fun r='_ZN7Solarus11HeroSprites31set_animation_super_spin_attackEv'/>
+<fun r='_ZN7Solarus11HeroSprites22set_animation_grabbingEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_pullingEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_pushingEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_liftingEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_jumpingEv'/>
+<fun r='_ZN7Solarus11HeroSprites18set_animation_hurtEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_fallingEv'/>
+<fun r='_ZN7Solarus11HeroSprites22set_animation_brandishEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_victoryEv'/>
+<fun r='_ZN7Solarus11HeroSprites29set_animation_prepare_runningEv'/>
+<fun r='_ZN7Solarus11HeroSprites21set_animation_runningEv'/>
+<fun r='_ZN7Solarus11HeroSprites23set_animation_boomerangERKSs'/>
+<fun r='_ZN7Solarus11HeroSprites13set_animationERKSs'/>
+<fun r='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<fun r='_ZN7Solarus11HeroSprites14destroy_groundEv'/>
+<fun r='_ZN7Solarus11HeroSprites17play_ground_soundEv'/>
+<fun r='_ZN7Solarus11HeroSprites15set_lifted_itemERKSt10shared_ptrINS_13CarriedObjectEE'/>
+<fun r='_ZNK7Solarus11HeroSprites10is_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites16is_sword_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites22is_sword_stars_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites17is_shield_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites16is_trail_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites17is_ground_visibleEv'/>
+<fun r='_ZNK7Solarus11HeroSprites27get_default_tunic_sprite_idEv'/>
+<fun r='_ZNK7Solarus11HeroSprites27get_default_sword_sprite_idEv'/>
+<fun r='_ZNK7Solarus11HeroSprites26get_default_sword_sound_idEv'/>
+<fun r='_ZNK7Solarus11HeroSprites28get_default_shield_sprite_idEv'/>
+<fun r='_ZN7Solarus11HeroSprites21stop_displaying_swordEv'/>
+<fun r='_ZN7Solarus11HeroSprites27stop_displaying_sword_starsEv'/>
+<fun r='_ZN7Solarus11HeroSprites22stop_displaying_shieldEv'/>
+<fun r='_ZN7Solarus11HeroSprites21stop_displaying_trailEv'/>
+<fun r='_ZN7Solarus11HeroSprites19set_tunic_animationERKSs'/>
+<fun r='_ZN7Solarus11HeroSprites19set_tunic_animationERKSsRKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus11HeroSprites15get_lua_contextEv'/>
+<fun r='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<fun r='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<mbr r='Solarus::HeroSprites::hero' o='0' t='Solarus::Hero &amp;'/>
+<mbr r='Solarus::HeroSprites::equipment' o='64' t='Solarus::Equipment &amp;'/>
+<mbr r='Solarus::HeroSprites::tunic_sprite_id' o='128' t='std::string'/>
+<mbr r='Solarus::HeroSprites::has_default_tunic_sprite' o='192' t='bool'/>
+<mbr r='Solarus::HeroSprites::tunic_sprite' o='256' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::sword_sprite_id' o='384' t='std::string'/>
+<mbr r='Solarus::HeroSprites::has_default_sword_sprite' o='448' t='bool'/>
+<mbr r='Solarus::HeroSprites::sword_sprite' o='512' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::sword_stars_sprite' o='640' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::sword_sound_id' o='768' t='std::string'/>
+<mbr r='Solarus::HeroSprites::has_default_sword_sound' o='832' t='bool'/>
+<mbr r='Solarus::HeroSprites::shield_sprite_id' o='896' t='std::string'/>
+<mbr r='Solarus::HeroSprites::has_default_shield_sprite' o='960' t='bool'/>
+<mbr r='Solarus::HeroSprites::shield_sprite' o='1024' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::shadow_sprite' o='1152' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::ground_sprite' o='1280' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::trail_sprite' o='1408' t='SpritePtr'/>
+<mbr r='Solarus::HeroSprites::ground_sound_id' o='1536' t='std::string'/>
+<smbr r='Solarus::HeroSprites::animation_directions' t='const int [8][2]'/>
+<mbr r='Solarus::HeroSprites::animation_direction_saved' o='1600' t='int'/>
+<mbr r='Solarus::HeroSprites::when_suspended' o='1632' t='uint32_t'/>
+<mbr r='Solarus::HeroSprites::blinking' o='1664' t='bool'/>
+<mbr r='Solarus::HeroSprites::end_blink_date' o='1696' t='uint32_t'/>
+<mbr r='Solarus::HeroSprites::walking' o='1728' t='bool'/>
+<mbr r='Solarus::HeroSprites::clipping_rectangle' o='1760' t='Solarus::Rectangle'/>
+<mbr r='Solarus::HeroSprites::lifted_item' o='1920' t='std::shared_ptr&lt;CarriedObject&gt;'/>
+<mbr r='Solarus::HeroSprites::animation_callback_ref' o='2048' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::HeroSprites::sprites_bounding_box' o='2176' t='Solarus::Rectangle'/>

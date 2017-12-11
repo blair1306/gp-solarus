@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='61' type='int Solarus::Movement::get_x() const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='60'>// position</doc>
+<def f='codebrowser/src/movements/Movement.cpp' l='145' ll='148' type='int Solarus::Movement::get_x() const'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='192' u='c' c='_ZN7Solarus8Movement5set_yEi'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='249' u='c' c='_ZN7Solarus8Movement12translate_xyEii'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='141'>/**
+ * \brief Returns the x position of the object controlled by this movement.
+ * \return the x position of the object controlled by this movement
+ */</doc>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='38' u='c' c='_ZN12_GLOBAL__N_110basic_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='56' u='c' c='_ZN12_GLOBAL__N_19loop_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='84' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='95' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='117' u='c' c='_ZN12_GLOBAL__N_19list_testERN7Solarus15TestEnvironmentE'/>

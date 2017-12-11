@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1312' type='static int Solarus::LuaContext::l_shop_treasure_question_dialog_finished(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3795' u='r' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3810' ll='3868' type='static int Solarus::LuaContext::l_shop_treasure_question_dialog_finished(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3804'>/**
+ * \brief Callback function executed after the question dialog of
+ * a shop treasure.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

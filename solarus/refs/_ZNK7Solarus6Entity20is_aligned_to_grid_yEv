@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='174' type='bool Solarus::Entity::is_aligned_to_grid_y() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='948' u='c' c='_ZNK7Solarus6Entity18is_aligned_to_gridEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='965' ll='967' type='bool Solarus::Entity::is_aligned_to_grid_y() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='960'>/**
+ * \brief Returns whether the entity&apos;s top-left corner is aligned
+ * vertically with the 8*8 grid of the map.
+ * \return true if the entity&apos;s top-left corner is aligned vertically
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='178' u='c' c='_ZN7Solarus4Hero12PullingState23notify_position_changedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='188' u='c' c='_ZN7Solarus4Hero12PushingState23notify_position_changedEv'/>

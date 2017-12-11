@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Explosion.h' l='38' type='void Solarus::Explosion::Explosion(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, bool with_damage)'/>
+<def f='codebrowser/src/entities/Explosion.cpp' l='36' ll='50' type='void Solarus::Explosion::Explosion(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, bool with_damage)'/>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='29'>/**
+ * \brief Creates an explosion.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer layer of the explosion
+ * \param xy coordinates of the center of the explosion
+ * \param with_damage true to hurt the hero and the enemies
+ */</doc>

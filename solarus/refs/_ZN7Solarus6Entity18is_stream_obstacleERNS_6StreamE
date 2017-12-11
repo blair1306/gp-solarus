@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='339' type='bool Solarus::Entity::is_stream_obstacle(Solarus::Stream &amp; stream)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='98' c='_ZN7Solarus5Arrow18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='65' c='_ZN7Solarus4Bomb18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='121' c='_ZN7Solarus9Boomerang18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='499' c='_ZN7Solarus13CarriedObject18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='461' c='_ZN7Solarus12CustomEntity18is_stream_obstacleERNS_6StreamE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='467' u='c' c='_ZN7Solarus12CustomEntity18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='328' c='_ZN7Solarus5Enemy18is_stream_obstacleERNS_6StreamE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2604' ll='2606' type='bool Solarus::Entity::is_stream_obstacle(Solarus::Stream &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2595'>/**
+ * \brief Returns whether a stream is currently considered as an obstacle by
+ * this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param stream A stream.
+ * \return \c true if the stream is currently an obstacle for this entity.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2604'>/* stream */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1487' c='_ZN7Solarus4Hero18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='87' c='_ZN7Solarus8Hookshot18is_stream_obstacleERNS_6StreamE'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='285' c='_ZN7Solarus8Pickable18is_stream_obstacleERNS_6StreamE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='151' u='c' c='_ZN7Solarus6Stream15is_obstacle_forERNS_6EntityE'/>

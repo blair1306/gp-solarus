@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='42' type='void Solarus::PixelMovement::set_trajectory(const std::string &amp; trajectory_string)'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='72' u='c' c='_ZN7Solarus12JumpMovement7restartEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='296' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='46' u='c' c='_ZN7Solarus13PixelMovementC1ERKSsjbb'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='85' ll='102' type='void Solarus::PixelMovement::set_trajectory(const std::string &amp; trajectory_string)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='75'>/**
+ * \brief Sets the trajectory of this movement from a string.
+ *
+ * This function can be called even if the object was moving with a previous trajectory.
+ * The old trajectory is replaced and the movement starts the from beginning of the
+ * new trajectory.
+ *
+ * \param trajectory_string a string describing the succession of translations that compose this movement,
+ * with the syntax &quot;dx1 dy1  dx2 dy2  dx3 dy3 ...&quot; (the number of spaces between values does not matter)
+ */</doc>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='87' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>

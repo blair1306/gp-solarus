@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='66' type='void Solarus::Hero::PlayerMovementState::PlayerMovementState(Solarus::Hero &amp; hero, const std::string &amp; state_name)'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='37' u='c' c='_ZN7Solarus4Hero13CarryingStateC1ERS0_RKSt10shared_ptrINS_13CarriedObjectEE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='33' u='c' c='_ZN7Solarus4Hero9FreeStateC1ERS0_'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='33' ll='40' type='void Solarus::Hero::PlayerMovementState::PlayerMovementState(Solarus::Hero &amp; hero, const std::string &amp; state_name)'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='28'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param state_name A name describing this state.
+ */</doc>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='32' u='c' c='_ZN7Solarus4Hero13SwimmingStateC1ERS0_'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='40' u='c' c='_ZN7Solarus4Hero17SwordLoadingStateC1ERS0_'/>

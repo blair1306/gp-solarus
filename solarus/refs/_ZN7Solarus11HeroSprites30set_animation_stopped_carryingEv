@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='97' type='void Solarus::HeroSprites::set_animation_stopped_carrying()'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='216' u='c' c='_ZN7Solarus4Hero13CarryingState21set_animation_stoppedEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1090' ll='1099' type='void Solarus::HeroSprites::set_animation_stopped_carrying()'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1084'>/**
+ * \brief Starts the &quot;stopped&quot; animation with sprites that represent
+ * the hero carrying something.
+ *
+ * If the hero actually carries an item, the carried object also takes a &quot;stopped&quot; animation.
+ */</doc>

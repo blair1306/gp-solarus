@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='46' type='void Solarus::PixelMovement::set_loop(bool loop)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1876' u='c' c='_ZN7Solarus10LuaContext27pixel_movement_api_set_loopEP9lua_State'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='439' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='135' ll='142' type='void Solarus::PixelMovement::set_loop(bool loop)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='128'>/**
+ * \brief Sets whether this movement loops when the end of the trajectory is reached.
+ *
+ * Is the movement was finished and loop is set to true, the movement restarts.
+ *
+ * \param loop true to make the movement loop
+ */</doc>

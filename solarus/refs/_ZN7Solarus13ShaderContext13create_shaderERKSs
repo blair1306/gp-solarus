@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/ShaderContext.h' l='38' type='static std::unique_ptr&lt;Shader&gt; Solarus::ShaderContext::create_shader(const std::string &amp; shader_name)'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='222' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<def f='codebrowser/src/lowlevel/shaders/ShaderContext.cpp' l='59' ll='83' type='static std::unique_ptr&lt;Shader&gt; Solarus::ShaderContext::create_shader(const std::string &amp; shader_name)'/>
+<doc f='codebrowser/src/lowlevel/shaders/ShaderContext.cpp' l='54'>/**
+ * \brief Construct a shader from a name.
+ * \param shader_name The name of the shader to load.
+ * \return The created shader, or nullptr if the shader fails to compile.
+ */</doc>

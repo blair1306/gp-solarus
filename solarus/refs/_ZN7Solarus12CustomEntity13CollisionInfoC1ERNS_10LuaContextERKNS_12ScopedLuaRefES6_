@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='222' type='void Solarus::CustomEntity::CollisionInfo::CollisionInfo(Solarus::LuaContext &amp; lua_context, const Solarus::ScopedLuaRef &amp; custom_test_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1393' ll='1404' type='void Solarus::CustomEntity::CollisionInfo::CollisionInfo(Solarus::LuaContext &amp; lua_context, const Solarus::ScopedLuaRef &amp; custom_test_ref, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1386'>/**
+ * \brief Creates a collision test info.
+ * \param lua_context The Lua context.
+ * \param collision_test_ref Lua ref to a custom collision test.
+ * \param callback_ref Lua ref to a function to call when this collision is
+ * detected.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/RandomMovement.h' l='37' type='void Solarus::RandomMovement::RandomMovement(int speed, int max_radius)'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='33' u='c' c='_ZN7Solarus14RandomMovementC1Ei'/>
+<def f='codebrowser/src/movements/RandomMovement.cpp' l='42' ll='50' type='void Solarus::RandomMovement::RandomMovement(int speed, int max_radius)'/>
+<doc f='codebrowser/src/movements/RandomMovement.cpp' l='37'>/**
+ * \brief Constructor.
+ * \param speed Speed of the movement in pixels per seconds.
+ * \param max_radius if the object goes further than this distance, it will come back
+ */</doc>

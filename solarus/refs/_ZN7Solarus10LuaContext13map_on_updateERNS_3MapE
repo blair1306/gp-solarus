@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='357' type='void Solarus::LuaContext::map_on_update(Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/Map.cpp' l='485' u='c' c='_ZN7Solarus3Map6updateEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2222' ll='2233' type='void Solarus::LuaContext::map_on_update(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2215'>/**
+ * \brief Calls the on_update() method of a Lua map.
+ *
+ * Also calls the method on its menus.
+ *
+ * \param map A map.
+ */</doc>

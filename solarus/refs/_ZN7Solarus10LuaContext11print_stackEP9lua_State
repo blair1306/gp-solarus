@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1051' type='void Solarus::LuaContext::print_stack(lua_State * l)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='743' ll='787' type='void Solarus::LuaContext::print_stack(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='739'>/**
+ * \brief Prints on a line the content of the Lua stack for debugging purposes.
+ * \param l A Lua state.
+ */</doc>

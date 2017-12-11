@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='266' type='bool Solarus::Entity::is_in_same_region(const Solarus::Entity &amp; other) const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2934' ll='2937' type='bool Solarus::Entity::is_in_same_region(const Solarus::Entity &amp; other) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2925'>/**
+ * \brief Returns whether this entity is in the same region as another one.
+ *
+ * Regions are defined by the position of separators on the map.
+ * The region of entities is the one of their center point.
+ *
+ * \param other Another entity.
+ * \return \c true if both entities are in the same region.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1679' u='c' c='_ZN7Solarus10LuaContext28entity_api_is_in_same_regionEP9lua_State'/>

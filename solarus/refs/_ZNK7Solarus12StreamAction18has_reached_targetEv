@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/StreamAction.h' l='56' type='bool Solarus::StreamAction::has_reached_target() const'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='253' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<def f='codebrowser/src/entities/StreamAction.cpp' l='265' ll='268' type='bool Solarus::StreamAction::has_reached_target() const'/>
+<doc f='codebrowser/src/entities/StreamAction.cpp' l='261'>/**
+ * \brief Returns whether the entity moved has finished to follow the stream.
+ * \return \c true if the target point is reached.
+ */</doc>

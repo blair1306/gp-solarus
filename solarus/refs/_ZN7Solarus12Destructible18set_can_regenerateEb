@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='72' type='void Solarus::Destructible::set_can_regenerate(bool can_regenerate)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='220' ll='222' type='void Solarus::Destructible::set_can_regenerate(bool can_regenerate)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='215'>/**
+ * \brief Sets whether this object regenerates after a delay when it is
+ * destroyed.
+ * \param can_regenerate \c true if this object can regenerate.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4230' u='c' c='_ZN7Solarus10LuaContext35destructible_api_set_can_regenerateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='596' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

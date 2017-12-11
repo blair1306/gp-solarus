@@ -1,0 +1,40 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='141' type='static Solarus::LuaContext &amp; Solarus::LuaContext::get_lua_context(lua_State * l)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='364' u='c' c='_ZN7Solarus10LuaContext16drawable_meta_gcEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2519' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3813' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='210' u='c' c='_ZN7Solarus10LuaContext13game_api_loadEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='454' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='494' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='71' ll='79' type='static Solarus::LuaContext &amp; Solarus::LuaContext::get_lua_context(lua_State * l)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1008' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1216' u='c' c='_ZN7Solarus10LuaContext25notify_userdata_destroyedERNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1305' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1309' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1342' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='66'>/**
+ * \brief Returns the LuaContext object that encapsulates a Lua state.
+ * \param l A Lua state.
+ * \return The LuaContext object encapsulating this Lua state.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='183' u='c' c='_ZN7Solarus10LuaContext14main_api_resetEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='197' u='c' c='_ZN7Solarus10LuaContext13main_api_exitEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1664' u='c' c='_ZN7Solarus10LuaContext27map_api_get_camera_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1694' u='c' c='_ZN7Solarus10LuaContext19map_api_move_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1771' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2172' u='c' c='_ZN7Solarus10LuaContext21map_api_create_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='195' u='c' c='_ZN7Solarus10LuaContext14menu_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='211' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='246' u='c' c='_ZN7Solarus10LuaContext17menu_api_stop_allEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='260' u='c' c='_ZN7Solarus10LuaContext19menu_api_is_startedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='477' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='592' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='628' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='128' u='c' c='_ZN7Solarus10LuaContext17sprite_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='139' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='195' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='348' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='400' u='c' c='_ZN7Solarus10LuaContext14timer_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='421' u='c' c='_ZN7Solarus10LuaContext18timer_api_stop_allEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='514' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='541' u='c' c='_ZN7Solarus10LuaContext28timer_api_get_remaining_timeEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='570' u='c' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>

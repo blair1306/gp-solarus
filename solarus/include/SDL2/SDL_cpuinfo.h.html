@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_cpuinfo.h source code [include/SDL2/SDL_cpuinfo.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_cpuinfo.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_cpuinfo.h.html'>SDL_cpuinfo.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_cpuinfo.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  CPU feature detection for SDL.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_cpuinfo_h">_SDL_cpuinfo_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_cpuinfo_h" data-ref="_M/_SDL_cpuinfo_h">_SDL_cpuinfo_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i>/* Need to do this here because intrin.h has C++ code in it */</i></td></tr>
+<tr><th id="34">34</th><td><i>/* Visual Studio 2005 has a bug where intrin.h conflicts with winnt.h */</i></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; (_MSC_VER &gt;= 1500)</u></td></tr>
+<tr><th id="36">36</th><td><u>#include &lt;intrin.h&gt;</u></td></tr>
+<tr><th id="37">37</th><td><u>#ifndef _WIN64</u></td></tr>
+<tr><th id="38">38</th><td><u>#define __MMX__</u></td></tr>
+<tr><th id="39">39</th><td><u>#define __3dNOW__</u></td></tr>
+<tr><th id="40">40</th><td><u>#endif</u></td></tr>
+<tr><th id="41">41</th><td><u>#define __SSE__</u></td></tr>
+<tr><th id="42">42</th><td><u>#define __SSE2__</u></td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="35">elif</span> defined(<span class="macro" data-ref="_M/__MINGW64_VERSION_MAJOR">__MINGW64_VERSION_MAJOR</span>)</u></td></tr>
+<tr><th id="44">44</th><td><u>#include &lt;intrin.h&gt;</u></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="35">else</span></u></td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="46">ifdef</span> <span class="macro" data-ref="_M/__ALTIVEC__">__ALTIVEC__</span></u></td></tr>
+<tr><th id="47">47</th><td><u>#if HAVE_ALTIVEC_H &amp;&amp; !defined(__APPLE_ALTIVEC__)</u></td></tr>
+<tr><th id="48">48</th><td><u>#include &lt;altivec.h&gt;</u></td></tr>
+<tr><th id="49">49</th><td><u>#undef pixel</u></td></tr>
+<tr><th id="50">50</th><td><u>#endif</u></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="46">endif</span></u></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="52">ifdef</span> <span class="macro" data-ref="_M/__MMX__">__MMX__</span></u></td></tr>
+<tr><th id="53">53</th><td><u>#include &lt;mmintrin.h&gt;</u></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="52">endif</span></u></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="55">ifdef</span> <span class="macro" data-ref="_M/__3dNOW__">__3dNOW__</span></u></td></tr>
+<tr><th id="56">56</th><td><u>#include &lt;mm3dnow.h&gt;</u></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="55">endif</span></u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="58">ifdef</span> <span class="macro" data-ref="_M/__SSE__">__SSE__</span></u></td></tr>
+<tr><th id="59">59</th><td><u>#include &lt;xmmintrin.h&gt;</u></td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="58">endif</span></u></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="61">ifdef</span> <span class="macro" data-ref="_M/__SSE2__">__SSE2__</span></u></td></tr>
+<tr><th id="62">62</th><td><u>#include &lt;emmintrin.h&gt;</u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="61">endif</span></u></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="35">endif</span></u></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="67">67</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="68">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="69">69</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="68">endif</span></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i>/* This is a guess for the cacheline size used for padding.</i></td></tr>
+<tr><th id="73">73</th><td><i> * Most x86 processors have a 64 byte cache line.</i></td></tr>
+<tr><th id="74">74</th><td><i> * The 64-bit PowerPC processors have a 128 byte cache line.</i></td></tr>
+<tr><th id="75">75</th><td><i> * We'll use the larger value to be generally safe.</i></td></tr>
+<tr><th id="76">76</th><td><i> */</i></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/SDL_CACHELINE_SIZE" data-ref="_M/SDL_CACHELINE_SIZE">SDL_CACHELINE_SIZE</dfn>  128</u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *  This function returns the number of CPU cores available.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="82">82</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetCPUCount" title='SDL_GetCPUCount' data-ref="SDL_GetCPUCount">SDL_GetCPUCount</dfn>(<em>void</em>);</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *  This function returns the L1 cache line size of the CPU</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  This is useful for determining multi-threaded structure padding</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *  or SIMD prefetch sizes.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="90">90</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetCPUCacheLineSize" title='SDL_GetCPUCacheLineSize' data-ref="SDL_GetCPUCacheLineSize">SDL_GetCPUCacheLineSize</dfn>(<em>void</em>);</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *  This function returns true if the CPU has the RDTSC instruction.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="95">95</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasRDTSC" title='SDL_HasRDTSC' data-ref="SDL_HasRDTSC">SDL_HasRDTSC</dfn>(<em>void</em>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *  This function returns true if the CPU has AltiVec features.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="100">100</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasAltiVec" title='SDL_HasAltiVec' data-ref="SDL_HasAltiVec">SDL_HasAltiVec</dfn>(<em>void</em>);</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *  This function returns true if the CPU has MMX features.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasMMX" title='SDL_HasMMX' data-ref="SDL_HasMMX">SDL_HasMMX</dfn>(<em>void</em>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *  This function returns true if the CPU has 3DNow! features.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="110">110</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_Has3DNow" title='SDL_Has3DNow' data-ref="SDL_Has3DNow">SDL_Has3DNow</dfn>(<em>void</em>);</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  This function returns true if the CPU has SSE features.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="115">115</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasSSE" title='SDL_HasSSE' data-ref="SDL_HasSSE">SDL_HasSSE</dfn>(<em>void</em>);</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *  This function returns true if the CPU has SSE2 features.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="120">120</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasSSE2" title='SDL_HasSSE2' data-ref="SDL_HasSSE2">SDL_HasSSE2</dfn>(<em>void</em>);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *  This function returns true if the CPU has SSE3 features.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="125">125</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasSSE3" title='SDL_HasSSE3' data-ref="SDL_HasSSE3">SDL_HasSSE3</dfn>(<em>void</em>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *  This function returns true if the CPU has SSE4.1 features.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="130">130</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasSSE41" title='SDL_HasSSE41' data-ref="SDL_HasSSE41">SDL_HasSSE41</dfn>(<em>void</em>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *  This function returns true if the CPU has SSE4.2 features.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="135">135</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasSSE42" title='SDL_HasSSE42' data-ref="SDL_HasSSE42">SDL_HasSSE42</dfn>(<em>void</em>);</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *  This function returns true if the CPU has AVX features.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="140">140</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasAVX" title='SDL_HasAVX' data-ref="SDL_HasAVX">SDL_HasAVX</dfn>(<em>void</em>);</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *  This function returns the amount of RAM configured in the system, in MB.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetSystemRAM" title='SDL_GetSystemRAM' data-ref="SDL_GetSystemRAM">SDL_GetSystemRAM</dfn>(<em>void</em>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="149">149</th><td><u>#<span data-ppcond="149">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="150">150</th><td>}</td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="149">endif</span></u></td></tr>
+<tr><th id="152">152</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_cpuinfo_h */</u></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

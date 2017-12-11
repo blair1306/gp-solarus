@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='60' type='void Solarus::HeroSprites::set_tunic_sprite_id(const std::string &amp; sprite_id)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='118' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='175' ll='212' type='void Solarus::HeroSprites::set_tunic_sprite_id(const std::string &amp; sprite_id)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='171'>/**
+ * \brief Sets the animation set id to use for the tunic sprite.
+ * \param sprite_id The tunic sprite animation set id.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2007' u='c' c='_ZN7Solarus10LuaContext28hero_api_set_tunic_sprite_idEP9lua_State'/>

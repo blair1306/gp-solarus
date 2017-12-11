@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='144' type='bool Solarus::Map::has_empty_ground(int layer, const Solarus::Rectangle &amp; collision_box) const'/>
+<def f='codebrowser/src/Map.cpp' l='1009' ll='1030' type='bool Solarus::Map::has_empty_ground(int layer, const Solarus::Rectangle &amp; collision_box) const'/>
+<doc f='codebrowser/src/Map.cpp' l='1000'>/**
+ * \brief Returns whether there is empty ground in the specified rectangle.
+ *
+ * Only the borders of the rectangle are checked.
+ *
+ * \param layer The layer.
+ * \param collision_box The rectangle to test.
+ * \return \c true if there is at least one empty tile in this rectangle.
+ */</doc>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='209' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>

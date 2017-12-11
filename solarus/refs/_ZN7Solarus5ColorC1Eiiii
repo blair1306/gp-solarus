@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/lowlevel/Color.h' l='35' type='void Solarus::Color::Color(int r, int g, int b, int a = 255)'/>
+<def f='codebrowser/include/solarus/lowlevel/Color.inl' l='40' ll='45' type='void Solarus::Color::Color(int r, int g, int b, int a = 255)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Color.inl' l='33'>/**
+ * \brief Creates a color with the specified RGBA values.
+ * \param r The red component (0 to 255)
+ * \param g The green component (0 to 255)
+ * \param b The blue component (0 to 255)
+ * \param a The alpha component (0 to 255, 255 is opaque).
+ */</doc>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='272' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='195' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='21' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='22' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='23' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='24' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='25' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='26' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='27' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='28' u='c'/>
+<use f='codebrowser/src/lowlevel/Color.cpp' l='29' u='c'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='928' u='c' c='_ZN7Solarus8LuaTools11check_colorEP9lua_Statei'/>

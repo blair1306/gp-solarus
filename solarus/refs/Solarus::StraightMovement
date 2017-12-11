@@ -1,0 +1,52 @@
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='42' c='Solarus::Movement'/>
+<def f='codebrowser/include/solarus/movements/StraightMovement.h' l='32' ll='111'/>
+<ovr f='codebrowser/include/solarus/movements/TargetMovement.h' l='34' c='Solarus::TargetMovement'/>
+<size>176</size>
+<doc f='codebrowser/include/solarus/movements/StraightMovement.h' l='28'>/**
+ * \brief A straight movement represented as a speed vector
+ * whose properties (speed and angle) can be changed.
+ */</doc>
+<fun r='_ZN7Solarus16StraightMovementC1Ebb'/>
+<fun r='_ZN7Solarus16StraightMovement24notify_object_controlledEv'/>
+<fun r='_ZN7Solarus16StraightMovement6updateEv'/>
+<fun r='_ZN7Solarus16StraightMovement13set_suspendedEb'/>
+<fun r='_ZNK7Solarus16StraightMovement15has_to_move_nowEv'/>
+<fun r='_ZNK7Solarus16StraightMovement11get_x_speedEv'/>
+<fun r='_ZNK7Solarus16StraightMovement11get_y_speedEv'/>
+<fun r='_ZNK7Solarus16StraightMovement9get_speedEv'/>
+<fun r='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<fun r='_ZN7Solarus16StraightMovement11set_y_speedEd'/>
+<fun r='_ZN7Solarus16StraightMovement9set_speedEd'/>
+<fun r='_ZNK7Solarus16StraightMovement9get_angleEv'/>
+<fun r='_ZN7Solarus16StraightMovement9set_angleEd'/>
+<fun r='_ZNK7Solarus16StraightMovement16get_max_distanceEv'/>
+<fun r='_ZN7Solarus16StraightMovement16set_max_distanceEi'/>
+<fun r='_ZNK7Solarus16StraightMovement9is_smoothEv'/>
+<fun r='_ZN7Solarus16StraightMovement10set_smoothEb'/>
+<fun r='_ZNK7Solarus16StraightMovement24get_displayed_direction4Ev'/>
+<fun r='_ZNK7Solarus16StraightMovement10is_startedEv'/>
+<fun r='_ZNK7Solarus16StraightMovement11is_finishedEv'/>
+<fun r='_ZN7Solarus16StraightMovement12set_finishedEv'/>
+<fun r='_ZN7Solarus16StraightMovement4stopEv'/>
+<fun r='_ZNK7Solarus16StraightMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus16StraightMovement20set_next_move_date_xEj'/>
+<fun r='_ZN7Solarus16StraightMovement20set_next_move_date_yEj'/>
+<fun r='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<fun r='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<fun r='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<fun r='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<mbr r='Solarus::StraightMovement::angle' o='896' t='double'/>
+<mbr r='Solarus::StraightMovement::x_speed' o='960' t='double'/>
+<mbr r='Solarus::StraightMovement::y_speed' o='1024' t='double'/>
+<mbr r='Solarus::StraightMovement::next_move_date_x' o='1088' t='uint32_t'/>
+<mbr r='Solarus::StraightMovement::next_move_date_y' o='1120' t='uint32_t'/>
+<mbr r='Solarus::StraightMovement::x_delay' o='1152' t='uint32_t'/>
+<mbr r='Solarus::StraightMovement::y_delay' o='1184' t='uint32_t'/>
+<mbr r='Solarus::StraightMovement::x_move' o='1216' t='int'/>
+<mbr r='Solarus::StraightMovement::y_move' o='1248' t='int'/>
+<mbr r='Solarus::StraightMovement::initial_xy' o='1280' t='Solarus::Point'/>
+<mbr r='Solarus::StraightMovement::max_distance' o='1344' t='int'/>
+<mbr r='Solarus::StraightMovement::finished' o='1376' t='bool'/>
+<mbr r='Solarus::StraightMovement::smooth' o='1384' t='bool'/>
+<ovr f='codebrowser/include/solarus/movements/PlayerMovement.h' l='32' c='Solarus::PlayerMovement'/>
+<ovr f='codebrowser/include/solarus/movements/RandomMovement.h' l='32' c='Solarus::RandomMovement'/>

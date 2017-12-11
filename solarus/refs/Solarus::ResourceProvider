@@ -1,0 +1,12 @@
+<def f='codebrowser/include/solarus/ResourceProvider.h' l='36' ll='50'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/ResourceProvider.h' l='30'>/**
+ * \brief Provides fast access to quest resources.
+ *
+ * Maintains a cache of already loaded quest resources
+ * so that next accesses are faster.
+ */</doc>
+<fun r='_ZN7Solarus16ResourceProviderC1Ev'/>
+<fun r='_ZN7Solarus16ResourceProvider11get_tilesetERKSs'/>
+<fun r='_ZN7Solarus16ResourceProvider27invalidate_resource_elementENS_12ResourceTypeERKSs'/>
+<mbr r='Solarus::ResourceProvider::tileset_cache' o='0' t='std::map&lt;std::string, std::unique_ptr&lt;Tileset&gt; &gt;'/>

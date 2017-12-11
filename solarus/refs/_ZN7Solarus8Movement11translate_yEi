@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='69' type='void Solarus::Movement::translate_y(int dy)'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='239' ll='241' type='void Solarus::Movement::translate_y(int dy)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='235'>/**
+ * \brief Moves the object on y.
+ * \param dy number of pixels of the move
+ */</doc>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='468' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='472' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='516' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='622' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

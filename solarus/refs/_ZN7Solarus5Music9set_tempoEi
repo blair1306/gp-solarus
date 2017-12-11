@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='77' type='static void Solarus::Music::set_tempo(int tempo)'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='235' ll='241' type='static void Solarus::Music::set_tempo(int tempo)'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='228'>/**
+ * \brief Sets the tempo of the current music.
+ *
+ * This function is only supported for .it musics.
+ *
+ * \param tempo The tempo to set.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='343' u='c' c='_ZN7Solarus10LuaContext25audio_api_set_music_tempoEP9lua_State'/>

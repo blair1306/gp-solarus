@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/QuestProperties.h' l='79' type='std::string'/>
+<offset>128</offset>
+<doc f='codebrowser/include/solarus/QuestProperties.h' l='79'>/**&lt; Directory where to save files of
+                                        * the quest, relative to
+                                        * FileTools::get_base_write_dir(). */</doc>
+<use f='codebrowser/src/QuestProperties.cpp' l='156' u='r' c='_ZNK7Solarus15QuestProperties13export_to_luaERSo'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='193' u='r' c='_ZNK7Solarus15QuestProperties19get_quest_write_dirEv'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='201' u='w' c='_ZN7Solarus15QuestProperties19set_quest_write_dirERKSs'/>

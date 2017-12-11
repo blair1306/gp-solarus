@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='211' type='void Solarus::LuaContext::remove_timer(const TimerPtr &amp; timer)'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='186' ll='191' type='void Solarus::LuaContext::remove_timer(const TimerPtr &amp; timer)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='402' u='c' c='_ZN7Solarus10LuaContext14timer_api_stopEP9lua_State'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='179'>/**
+ * \brief Unregisters a timer associated to a context.
+ *
+ * This function can be called safely even while iterating on the timer list.
+ *
+ * \param timer A timer.
+ */</doc>

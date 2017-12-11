@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='51' type='const Solarus::SpriteAnimation &amp; Solarus::SpriteAnimationSet::get_animation(const std::string &amp; animation_name) const'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='126' ll='135' type='const Solarus::SpriteAnimation &amp; Solarus::SpriteAnimationSet::get_animation(const std::string &amp; animation_name) const'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='121'>/**
+ * \brief Returns an animation.
+ * \param animation_name Name of the animation to get.
+ * \return The specified animation.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='274' u='c' c='_ZN7Solarus10LuaContext29sprite_api_get_num_directionsEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='344' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='374' u='c' c='_ZN7Solarus10LuaContext26sprite_api_get_frame_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='430' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='469' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='510' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

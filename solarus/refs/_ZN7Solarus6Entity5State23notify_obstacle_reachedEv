@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='79' type='void Solarus::Entity::State::notify_obstacle_reached()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='522' ll='523' type='void Solarus::Entity::State::notify_obstacle_reached()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='518'>/**
+ * \brief Notifies this state that the entity has just failed to change its
+ * position because of obstacles.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1049' u='c' c='_ZN7Solarus4Hero23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='129' c='_ZN7Solarus4Hero9FreeState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='131' u='c' c='_ZN7Solarus4Hero9FreeState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='188' c='_ZN7Solarus4Hero13HookshotState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='156' c='_ZN7Solarus4Hero12PullingState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='166' c='_ZN7Solarus4Hero12PushingState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='173' c='_ZN7Solarus4Hero12RunningState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='175' u='c' c='_ZN7Solarus4Hero12RunningState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='230' c='_ZN7Solarus4Hero15SpinAttackState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='110' c='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='112' u='c' c='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='202' c='_ZN7Solarus4Hero18SwordSwingingState23notify_obstacle_reachedEv'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='187' c='_ZN7Solarus4Hero17SwordTappingState23notify_obstacle_reachedEv'/>

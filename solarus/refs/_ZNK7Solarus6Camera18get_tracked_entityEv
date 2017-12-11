@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='66' type='EntityPtr Solarus::Camera::get_tracked_entity() const'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='361' ll='368' type='EntityPtr Solarus::Camera::get_tracked_entity() const'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='356'>/**
+ * \brief Returns the entity currently tracked by this camera if any.
+ * \return The tracked entity, or nullptr if the camera is not in tracking
+ * state.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1883' u='c' c='_ZN7Solarus4Hero31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2701' u='c' c='_ZN7Solarus10LuaContext29camera_api_get_tracked_entityEP9lua_State'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='95' type='void Solarus::Entity::~Entity()'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='94'>// Destruction.</doc>
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='40' c='_ZN7Solarus15ExportableToLuaD1Ev'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='97' ll='105' type='void Solarus::Entity::~Entity()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='92'>/**
+ * \brief Destructor.
+ *
+ * The sprite and the movement of the entity are deleted (if any).
+ */</doc>

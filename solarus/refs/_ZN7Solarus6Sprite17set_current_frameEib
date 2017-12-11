@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='82' type='void Solarus::Sprite::set_current_frame(int current_frame, bool notify_script = true)'/>
+<use f='codebrowser/src/Sprite.cpp' l='293' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='360' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<def f='codebrowser/src/Sprite.cpp' l='403' ll='420' type='void Solarus::Sprite::set_current_frame(int current_frame, bool notify_script = true)'/>
+<use f='codebrowser/src/Sprite.cpp' l='483' u='c' c='_ZN7Solarus6Sprite17restart_animationEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='391'>/**
+ * \brief Sets the current frame of the sprite&apos;s animation.
+ *
+ * If the animation was finished, it is restarted.
+ * If the animation is suspended, it remains suspended
+ * but the specified frame is drawn.
+ *
+ * \param current_frame The current frame.
+ * \param notify_script \c true to notify the Lua sprite if any.
+ * Don&apos;t set notify_script to \c false unless you do the notification
+ * yourself later.
+ */</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='59' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='820' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='833' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='315' u='c' c='_ZN7Solarus10LuaContext20sprite_api_set_frameEP9lua_State'/>

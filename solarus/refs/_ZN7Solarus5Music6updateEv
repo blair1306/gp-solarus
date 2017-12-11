@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='68' type='static void Solarus::Music::update()'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='366' ll='382' type='static void Solarus::Music::update()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='361'>/**
+ * \brief Updates the music system.
+ *
+ * When a music is playing, this function continues the streaming.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='341' u='c' c='_ZN7Solarus5Sound6updateEv'/>

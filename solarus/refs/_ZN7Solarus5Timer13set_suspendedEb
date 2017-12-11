@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='40' type='void Solarus::Timer::set_suspended(bool suspended)'/>
+<def f='codebrowser/src/Timer.cpp' l='72' ll='93' type='void Solarus::Timer::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/Timer.cpp' l='113' u='c' c='_ZN7Solarus5Timer22set_suspended_with_mapEb'/>
+<use f='codebrowser/src/Timer.cpp' l='192' u='c' c='_ZN7Solarus5Timer20notify_map_suspendedEb'/>
+<doc f='codebrowser/src/Timer.cpp' l='64'>/**
+ * \brief Suspends or resumes the timer.
+ *
+ * It is okay to call this function when is_suspended_with_map() is true:
+ * this means that you temporarily override the automatic suspending behavior.
+ *
+ * \param suspended true to suspend the timer, false to resume it.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='174' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='291' u='c' c='_ZN7Solarus10LuaContext27set_entity_timers_suspendedERNS_6EntityEb'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='485' u='c' c='_ZN7Solarus10LuaContext23timer_api_set_suspendedEP9lua_State'/>

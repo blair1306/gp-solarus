@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='65' type='static const std::string &amp; Solarus::GameCommands::get_command_name(Solarus::GameCommand command)'/>
+<def f='codebrowser/src/GameCommands.cpp' l='827' ll='830' type='static const std::string &amp; Solarus::GameCommands::get_command_name(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='822'>/**
+ * \brief Returns the name of a game command.
+ * \param command a game command.
+ * \return The name of this command, or an empty string if the command is GameCommand::NONE.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2006' u='c' c='_ZN7Solarus10LuaContext18on_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2028' u='c' c='_ZN7Solarus10LuaContext19on_command_releasedENS_11GameCommandE'/>

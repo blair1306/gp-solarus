@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='176' type='Solarus::EntityData &amp; Solarus::MapData::get_entity(const Solarus::EntityIndex &amp; index)'/>
+<use f='codebrowser/src/MapData.cpp' l='398' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='426' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='441' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='461' u='c' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='485' u='c' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<def f='codebrowser/src/MapData.cpp' l='534' ll='541' type='Solarus::EntityData &amp; Solarus::MapData::get_entity(const Solarus::EntityIndex &amp; index)'/>
+<use f='codebrowser/src/MapData.cpp' l='592' u='c' c='_ZN7Solarus7MapData18get_entity_by_nameERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='621' u='c' c='_ZN7Solarus7MapData15set_entity_nameERKNS_11EntityIndexERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='759' u='c' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>
+<doc f='codebrowser/src/MapData.cpp' l='525'>/**
+ * \brief Returns the entity at the given layer and index.
+ *
+ * Non-const version.
+ *
+ * \param index Index of the entity to get on the map.
+ * \return The entity data.
+ * The object remains valid until entities are added or removed.
+ */</doc>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='82' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>

@@ -1,0 +1,58 @@
+<def f='codebrowser/include/solarus/GameCommands.h' l='45' ll='128'/>
+<size>176</size>
+<doc f='codebrowser/include/solarus/GameCommands.h' l='33'>/**
+ * \brief Stores the mapping between the in-game high-level commands
+ * and their keyboard and joypad bindings.
+ *
+ * This class receives the low-level keyboard and joypad events that occur
+ * during the game and then notifies the appropriate objects that a built-in
+ * game command was pressed or released.
+ * What we call a game command is a high-level notion such as &quot;action&quot; or
+ * &quot;attack&quot;.
+ * The corresponding low-level input event can be a keyboard event or a
+ * joypad event.
+ */</doc>
+<fun r='_ZN7Solarus12GameCommandsC1ERNS_4GameE'/>
+<fun r='_ZNK7Solarus12GameCommands20get_keyboard_bindingENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands20set_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus12GameCommands18get_joypad_bindingENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<fun r='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<fun r='_ZNK7Solarus12GameCommands18is_command_pressedENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus12GameCommands21get_wanted_direction8Ev'/>
+<fun r='_ZN7Solarus12GameCommands9customizeENS_11GameCommandERKNS_12ScopedLuaRefE'/>
+<fun r='_ZNK7Solarus12GameCommands14is_customizingEv'/>
+<fun r='_ZNK7Solarus12GameCommands24get_command_to_customizeEv'/>
+<fun r='_ZN7Solarus12GameCommands22is_joypad_string_validERKSs'/>
+<fun r='_ZN7Solarus12GameCommands16get_command_nameENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands19get_command_by_nameERKSs'/>
+<smbr r='Solarus::GameCommands::command_names' t='const std::map&lt;GameCommand, std::string&gt;'/>
+<fun r='_ZN7Solarus12GameCommands20game_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands21game_command_releasedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands12get_savegameEv'/>
+<fun r='_ZNK7Solarus12GameCommands12get_savegameEv'/>
+<fun r='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<fun r='_ZN7Solarus12GameCommands21keyboard_key_releasedENS_10InputEvent11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus12GameCommands38get_keyboard_binding_savegame_variableENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus12GameCommands26get_saved_keyboard_bindingENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands26set_saved_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus12GameCommands25get_command_from_keyboardENS_10InputEvent11KeyboardKeyE'/>
+<fun r='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<fun r='_ZN7Solarus12GameCommands22joypad_button_releasedEi'/>
+<fun r='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<fun r='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<fun r='_ZNK7Solarus12GameCommands36get_joypad_binding_savegame_variableENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus12GameCommands24get_saved_joypad_bindingENS_11GameCommandE'/>
+<fun r='_ZN7Solarus12GameCommands24set_saved_joypad_bindingENS_11GameCommandERKSs'/>
+<fun r='_ZNK7Solarus12GameCommands23get_command_from_joypadERKSs'/>
+<fun r='_ZN7Solarus12GameCommands25do_customization_callbackEv'/>
+<mbr r='Solarus::GameCommands::game' o='0' t='Solarus::Game &amp;'/>
+<mbr r='Solarus::GameCommands::keyboard_mapping' o='64' t='std::map&lt;InputEvent::KeyboardKey, GameCommand&gt;'/>
+<mbr r='Solarus::GameCommands::joypad_mapping' o='448' t='std::map&lt;std::string, GameCommand&gt;'/>
+<mbr r='Solarus::GameCommands::commands_pressed' o='832' t='std::set&lt;GameCommand&gt;'/>
+<mbr r='Solarus::GameCommands::customizing' o='1216' t='bool'/>
+<mbr r='Solarus::GameCommands::command_to_customize' o='1248' t='Solarus::GameCommand'/>
+<mbr r='Solarus::GameCommands::customize_callback_ref' o='1280' t='Solarus::ScopedLuaRef'/>
+<smbr r='Solarus::GameCommands::direction_masks' t='const uint16_t [4]'/>
+<smbr r='Solarus::GameCommands::masks_to_directions8' t='const int [16]'/>
+<smbr r='Solarus::GameCommands::direction_names' t='const std::string [4]'/>

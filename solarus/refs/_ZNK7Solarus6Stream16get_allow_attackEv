@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='53' type='bool Solarus::Stream::get_allow_attack() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2558' u='c' c='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='101' ll='103' type='bool Solarus::Stream::get_allow_attack() const'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='97'>/**
+ * \brief Returns whether the hero can use the sword in this stream.
+ * \return \c true if the hero can use the sword.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3573' u='c' c='_ZN7Solarus10LuaContext27stream_api_get_allow_attackEP9lua_State'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='74' type='void Solarus::Equipment::add_life(int life_to_add)'/>
+<def f='codebrowser/src/Equipment.cpp' l='269' ll='274' type='void Solarus::Equipment::add_life(int life_to_add)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='261'>/**
+ * \brief Gives some life to the player.
+ *
+ * If the maximum life is reached, no more life is added.
+ *
+ * \param life_to_add Level of life to add.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='792' u='c' c='_ZN7Solarus10LuaContext17game_api_add_lifeEP9lua_State'/>

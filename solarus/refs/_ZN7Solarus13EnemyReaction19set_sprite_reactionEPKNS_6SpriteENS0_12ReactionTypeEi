@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EnemyReaction.h' l='66' type='void Solarus::EnemyReaction::set_sprite_reaction(const Solarus::Sprite * sprite, Solarus::EnemyReaction::ReactionType reaction, int life_lost = 0)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='676' u='c' c='_ZN7Solarus5Enemy29set_attack_consequence_spriteERKNS_6SpriteENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<def f='codebrowser/src/entities/EnemyReaction.cpp' l='71' ll='80' type='void Solarus::EnemyReaction::set_sprite_reaction(const Solarus::Sprite * sprite, Solarus::EnemyReaction::ReactionType reaction, int life_lost = 0)'/>
+<doc f='codebrowser/src/entities/EnemyReaction.cpp' l='65'>/**
+ * \brief Makes the enemy reacts differently when the attack is received by a particular sprite.
+ * \param sprite a sprite of the enemy (if nullptr, this is equivalent to set_general_reaction)
+ * \param reaction the reaction to make when this specific sprites receives an attack
+ * \param life_lost number of life points to remove (only for reaction HURT)
+ */</doc>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AbilityInfo.cpp source code [codebrowser/src/AbilityInfo.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/AbilityInfo.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='AbilityInfo.cpp.html'>AbilityInfo.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../include/solarus/AbilityInfo.h.html">"solarus/AbilityInfo.h"</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits">EnumInfoTraits</a>&lt;<a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>&gt;::<dfn class="decl def" id="Solarus::EnumInfoTraits{Solarus::Ability}::pretty_name" title='Solarus::EnumInfoTraits&lt;Solarus::Ability&gt;::pretty_name' data-ref="Solarus::EnumInfoTraits{Solarus::Ability}::pretty_name">pretty_name</dfn> = <a class="ref fake" href="../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"ability"</q>;</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><em>const</em> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfo" title='Solarus::EnumInfo' data-ref="Solarus::EnumInfo">EnumInfo</a>&lt;<a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>&gt;::<a class="typedef" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfo{Solarus::Ability}::names_type" title='Solarus::EnumInfo&lt;Solarus::Ability&gt;::names_type' data-type='std::map&lt;Ability, std::string&gt;' data-ref="Solarus::EnumInfo{Solarus::Ability}::names_type">names_type</a> <a class="type" href="../include/solarus/EnumInfo.h.html#Solarus::EnumInfoTraits" title='Solarus::EnumInfoTraits' data-ref="Solarus::EnumInfoTraits">EnumInfoTraits</a>&lt;<a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>&gt;::<dfn class="decl def" id="Solarus::EnumInfoTraits{Solarus::Ability}::names" title='Solarus::EnumInfoTraits&lt;Solarus::Ability&gt;::names' data-ref="Solarus::EnumInfoTraits{Solarus::Ability}::names">names</dfn> = <a class="ref fake" href="../../include/c++/4.9/bits/stl_map.h.html#_ZNSt3mapC1ESt16initializer_listISt4pairIKT_T0_EERKT1_RKT2_" title='std::map::map&lt;_Key, _Tp, _Compare, _Alloc&gt;' data-ref="_ZNSt3mapC1ESt16initializer_listISt4pairIKT_T0_EERKT1_RKT2_"></a>{</td></tr>
+<tr><th id="24">24</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::TUNIC" title='Solarus::Ability::TUNIC' data-ref="Solarus::Ability::TUNIC">TUNIC</a>, <q>"tunic"</q> },</td></tr>
+<tr><th id="25">25</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::SWORD" title='Solarus::Ability::SWORD' data-ref="Solarus::Ability::SWORD">SWORD</a>, <q>"sword"</q> },</td></tr>
+<tr><th id="26">26</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::SWORD_KNOWLEDGE" title='Solarus::Ability::SWORD_KNOWLEDGE' data-ref="Solarus::Ability::SWORD_KNOWLEDGE">SWORD_KNOWLEDGE</a>, <q>"sword_knowledge"</q> },</td></tr>
+<tr><th id="27">27</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::SHIELD" title='Solarus::Ability::SHIELD' data-ref="Solarus::Ability::SHIELD">SHIELD</a>, <q>"shield"</q> },</td></tr>
+<tr><th id="28">28</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::LIFT" title='Solarus::Ability::LIFT' data-ref="Solarus::Ability::LIFT">LIFT</a>, <q>"lift"</q> },</td></tr>
+<tr><th id="29">29</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::SWIM" title='Solarus::Ability::SWIM' data-ref="Solarus::Ability::SWIM">SWIM</a>, <q>"swim"</q> },</td></tr>
+<tr><th id="30">30</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::JUMP_OVER_WATER" title='Solarus::Ability::JUMP_OVER_WATER' data-ref="Solarus::Ability::JUMP_OVER_WATER">JUMP_OVER_WATER</a>, <q>"jump_over_water"</q> },</td></tr>
+<tr><th id="31">31</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::RUN" title='Solarus::Ability::RUN' data-ref="Solarus::Ability::RUN">RUN</a>, <q>"run"</q> },</td></tr>
+<tr><th id="32">32</th><td>    { <a class="type" href="../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../include/solarus/Ability.h.html#Solarus::Ability::DETECT_WEAK_WALLS" title='Solarus::Ability::DETECT_WEAK_WALLS' data-ref="Solarus::Ability::DETECT_WEAK_WALLS">DETECT_WEAK_WALLS</a>, <q>"detect_weak_walls"</q> }</td></tr>
+<tr><th id="33">33</th><td>};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

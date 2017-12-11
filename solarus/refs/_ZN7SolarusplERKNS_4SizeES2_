@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='71' type='Solarus::Size Solarus::operator+(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='128' ll='130' type='Solarus::Size Solarus::operator+(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.h' l='70'>// Arithmetic operators</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='122'>/**
+ * \brief Adds two sizes.
+ * \param lhs A size.
+ * \param rhs Another size.
+ * \return The sum of both sizes.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='902' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Map.h' l='62' type='const std::string &amp; Solarus::Map::get_tileset_id() const'/>
+<def f='codebrowser/src/Map.cpp' l='74' ll='76' type='const std::string &amp; Solarus::Map::get_tileset_id() const'/>
+<doc f='codebrowser/src/Map.cpp' l='70'>/**
+ * \brief Returns the id of the tileset associated to this map.
+ * \return the id of the tileset
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1586' u='c' c='_ZN7Solarus10LuaContext19map_api_get_tilesetEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='59' type='bool Solarus::SpriteAnimationDirection::are_pixel_collisions_enabled() const'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='219' u='c' c='_ZNK7Solarus15SpriteAnimation28are_pixel_collisions_enabledEv'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='110' u='c' c='_ZN7Solarus24SpriteAnimationDirection23enable_pixel_collisionsERNS_7SurfaceE'/>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='129' ll='131' type='bool Solarus::SpriteAnimationDirection::are_pixel_collisions_enabled() const'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='125'>/**
+ * \brief Returns whether the pixel-perfect collisions are enabled for this direction.
+ * \return true if the pixel-perfect collisions are enabled
+ */</doc>

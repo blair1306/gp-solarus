@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='46' type='Solarus::Game * Solarus::EquipmentItem::get_game()'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='59' ll='61' type='Solarus::Game * Solarus::EquipmentItem::get_game()'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='55'>/**
+ * \brief If this equipment item is currently running in a game, return that game.
+ * \return A game or nullptr.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2530' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2536' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='162' u='c' c='_ZN7Solarus10LuaContext16item_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='748' u='c' c='_ZN7Solarus10LuaContext21item_api_set_finishedEP9lua_State'/>

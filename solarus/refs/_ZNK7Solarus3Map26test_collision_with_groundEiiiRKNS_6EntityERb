@@ -1,0 +1,34 @@
+<dec f='codebrowser/include/solarus/Map.h' l='116' type='bool Solarus::Map::test_collision_with_ground(int layer, int x, int y, const Solarus::Entity &amp; entity_to_check, bool &amp; found_diagonal_wall) const'/>
+<def f='codebrowser/src/Map.cpp' l='773' ll='845' type='bool Solarus::Map::test_collision_with_ground(int layer, int x, int y, const Solarus::Entity &amp; entity_to_check, bool &amp; found_diagonal_wall) const'/>
+<use f='codebrowser/src/Map.cpp' l='911' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='912' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='913' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='914' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='920' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='921' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='922' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='923' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='936' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='937' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='943' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='944' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='973' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiiiRNS_6EntityE'/>
+<doc f='codebrowser/src/Map.cpp' l='754'>/**
+ * \brief Tests whether a point collides with the ground of the map.
+ *
+ * The ground is the terrain of the point. It is defined by the tiles and
+ * by the presence of entities that may change it
+ * (like dynamic tiles and destructible items).
+ *
+ * This method also returns true if the point is outside the map.
+ *
+ * \param layer Layer of the point.
+ * \param x X of the point in pixels.
+ * \param y Y of the point in pixels.
+ * \param entity_to_check The entity to check (used to decide what grounds are
+ * considered as obstacle).
+ * \param [out] found_diagonal_wall \c true if the ground under this point was
+ * a diagonal wall, unchanged otherwise.
+ * Your algorithm may decide to check more points if there is a diagonal wall.
+ * \return \c true if this point is on an obstacle.
+ */</doc>

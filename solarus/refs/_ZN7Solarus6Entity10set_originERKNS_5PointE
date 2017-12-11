@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='159' type='void Solarus::Entity::set_origin(const Solarus::Point &amp; origin)'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='95' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1190' ll='1192' type='void Solarus::Entity::set_origin(const Solarus::Point &amp; origin)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1185'>/**
+ * \brief Sets the origin point of the entity,
+ * relative to the top-left corner of its rectangle.
+ * \param origin x and y coordinates of the origin
+ */</doc>

@@ -1,0 +1,16 @@
+<dec f='include/c++/4.9/bits/basic_string.h' l='488' type='void std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;(const _CharT * __s, size_type __n, const _Alloc &amp; __a = _Alloc())'/>
+<def f='include/c++/4.9/bits/basic_string.tcc' l='204' ll='208' type='void std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;(const _CharT * __s, size_type __n, const _Alloc &amp; __a = _Alloc())'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='479'>/**
+       *  @brief  Construct string initialized by a character %array.
+       *  @param  __s  Source character %array.
+       *  @param  __n  Number of characters to copy.
+       *  @param  __a  Allocator to use (default is default allocator).
+       *
+       *  NB: @a __s must have at least @a __n characters, &amp;apos;\\0&amp;apos;
+       *  has no special meaning.
+       */</doc>
+<doc f='include/c++/4.9/bits/basic_string.tcc' l='203'>// TBD: DPG annotate</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1225' u='c' c='_ZNK7QString11toStdStringEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='311' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='394' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='408' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>

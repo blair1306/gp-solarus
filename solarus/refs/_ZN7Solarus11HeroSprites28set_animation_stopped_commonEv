@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='94' type='void Solarus::HeroSprites::set_animation_stopped_common()'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1032' ll='1039' type='void Solarus::HeroSprites::set_animation_stopped_common()'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1046' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1066' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1092' u='c' c='_ZN7Solarus11HeroSprites30set_animation_stopped_carryingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1107' u='c' c='_ZN7Solarus11HeroSprites30set_animation_stopped_swimmingEv'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1026'>/**
+ * \brief This function is called when the sprites take a &quot;stopped&quot; animation.
+ *
+ * It makes instructions common to all states having a &quot;stopped&quot; animation.
+ * (e.g. free or carrying).
+ */</doc>

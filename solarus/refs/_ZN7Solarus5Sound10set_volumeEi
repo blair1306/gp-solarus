@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='75' type='static void Solarus::Sound::set_volume(int volume)'/>
+<use f='codebrowser/src/Settings.cpp' l='334' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='214' u='c' c='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='314' ll='319' type='static void Solarus::Sound::set_volume(int volume)'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='310'>/**
+ * \brief Sets the volume of sound effects.
+ * \param volume the new volume (0 to 100)
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='79' u='c' c='_ZN7Solarus10LuaContext26audio_api_set_sound_volumeEP9lua_State'/>

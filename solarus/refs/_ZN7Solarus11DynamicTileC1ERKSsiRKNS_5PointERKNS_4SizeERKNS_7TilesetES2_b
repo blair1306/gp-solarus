@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/DynamicTile.h' l='44' type='void Solarus::DynamicTile::DynamicTile(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const Solarus::Tileset &amp; tileset, const std::string &amp; tile_pattern_id, bool enabled)'/>
+<def f='codebrowser/src/entities/DynamicTile.cpp' l='38' ll='52' type='void Solarus::DynamicTile::DynamicTile(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const Solarus::Tileset &amp; tileset, const std::string &amp; tile_pattern_id, bool enabled)'/>
+<doc f='codebrowser/src/entities/DynamicTile.cpp' l='28'>/**
+ * \brief Creates a new dynamic tile on the map.
+ * \param name a name to identify this tile
+ * \param layer layer of the tile
+ * \param xy Coordinates of the tile on the map
+ * \param size Size of the tile (the pattern can be repeated)
+ * \param tileset The tileset to use.
+ * \param tile_pattern_id id of the tile pattern in the tileset
+ * \param enabled true to make the tile initially enabled.
+ */</doc>

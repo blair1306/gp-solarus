@@ -1,0 +1,12 @@
+<dec f='include/AL/al.h' l='262'/>
+<doc f='include/AL/al.h' l='252'>/**
+ * Source Buffer Queue processed count (query only).
+ * Type: ALint
+ *
+ * The number of queued buffers that have been fully processed, and can be
+ * removed with alSourceUnqueueBuffers.
+ *
+ * Looping sources will never fully process buffers because they will be set to
+ * play again for when the source loops.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='395' u='c'/>

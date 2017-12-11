@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Color.h' l='39' type='void Solarus::Color::get_components(uint8_t &amp; r, uint8_t &amp; g, uint8_t &amp; b, uint8_t &amp; a) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Color.inl' l='70' ll='77' type='void Solarus::Color::get_components(uint8_t &amp; r, uint8_t &amp; g, uint8_t &amp; b, uint8_t &amp; a) const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Color.inl' l='63'>/**
+ * \brief Gets the red, green, blue and alpha values of this color.
+ * \param[out] r Red component.
+ * \param[out] g Green component.
+ * \param[out] b Blue component.
+ * \param[out] a Alpha component.
+ */</doc>
+<use f='codebrowser/src/TransitionFade.cpp' l='193' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='632' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='378' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='834' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='981' u='c' c='_ZNK7Solarus7Surface15get_color_valueERKNS_5ColorE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='508' u='c' c='_ZN7Solarus11TextSurface11rebuild_ttfEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='969' u='c' c='_ZN7Solarus10LuaContext10push_colorEP9lua_StateRKNS_5ColorE'/>

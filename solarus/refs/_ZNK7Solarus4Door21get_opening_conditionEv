@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='90' type='const std::string &amp; Solarus::Door::get_opening_condition() const'/>
+<def f='codebrowser/src/entities/Door.cpp' l='340' ll='342' type='const std::string &amp; Solarus::Door::get_opening_condition() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='429' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='453' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='601' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='322'>/**
+ * \brief Returns the savegame variable or the equipment item name required to
+ * open this door.
+ *
+ * A savegame variable is returned if the opening mode is
+ * OpeningMethod::BY_INTERACTION_IF_SAVEGAME_VARIABLE.
+ * The hero is allowed to open the door if this saved value is either
+ * \c true, an integer greater than zero or a non-empty string.
+ *
+ * An equipment item&apos;s name is returned if the opening mode is
+ * OpeningMethod::BY_INTERACTION_IF_ITEM.
+ * The hero is allowed to open the door if he has that item and,
+ * for items with an amount, if the amount is greater than zero.
+ *
+ * For the other opening methods, this setting has no effect.
+ *
+ * \return The savegame variable or the equipment item name required.
+ */</doc>

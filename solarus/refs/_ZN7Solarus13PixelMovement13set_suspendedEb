@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='54' type='void Solarus::PixelMovement::set_suspended(bool suspended)'/>
+<ovr f='codebrowser/src/movements/PathMovement.cpp' l='184' c='_ZN7Solarus12PathMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='186' u='c' c='_ZN7Solarus12PathMovement13set_suspendedEb'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='58' c='_ZN7Solarus8Movement13set_suspendedEb'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='196' ll='205' type='void Solarus::PixelMovement::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='192'>/**
+ * \brief Suspends or resumes this movement.
+ * \param suspended true to suspend the movement, false to resume it
+ */</doc>

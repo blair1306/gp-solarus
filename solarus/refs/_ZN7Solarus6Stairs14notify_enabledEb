@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='93' type='void Solarus::Stairs::notify_enabled(bool enabled)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='185' c='_ZN7Solarus6Entity14notify_enabledEb'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='337' ll='342' type='void Solarus::Stairs::notify_enabled(bool enabled)'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='329'>/**
+ * \brief Notifies this entity that it was just enabled or disabled.
+ * \param enabled \c true if the entity is now enabled.
+ *
+ * All dynamic tiles whose prefix is &quot;stairsname_enabled&quot;
+ * and &quot;stairsame_disabled&quot; will be updated depending on the stairs state
+ * (where stairsname is the name of the stairs).
+ */</doc>

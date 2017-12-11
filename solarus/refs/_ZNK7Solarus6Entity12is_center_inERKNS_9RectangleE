@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='255' type='bool Solarus::Entity::is_center_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2040' u='c' c='_ZNK7Solarus6Entity21test_collision_centerERKS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2834' ll='2838' type='bool Solarus::Entity::is_center_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2828'>/**
+ * \brief Returns whether or not this entity&apos;s center is in
+ * the specified rectangle.
+ * \param rectangle the rectangle to check
+ * \return true if this entity&apos;s center is in the specified rectangle
+ */</doc>

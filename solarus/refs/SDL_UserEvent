@@ -1,0 +1,11 @@
+<def f='include/SDL2/SDL_events.h' l='468' ll='476'/>
+<size>32</size>
+<doc f='include/SDL2/SDL_events.h' l='465'>/**
+ *  \brief A user-defined event type (event.user.*)
+ */</doc>
+<mbr r='SDL_UserEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_UserEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_UserEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_UserEvent::code' o='96' t='Sint32'/>
+<mbr r='SDL_UserEvent::data1' o='128' t='void *'/>
+<mbr r='SDL_UserEvent::data2' o='192' t='void *'/>

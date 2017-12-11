@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='64' type='bool Solarus::Jumper::overlaps_jumping_region(const Solarus::Rectangle &amp; rectangle, bool extended_region) const'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='102' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='330' ll='380' type='bool Solarus::Jumper::overlaps_jumping_region(const Solarus::Rectangle &amp; rectangle, bool ) const'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='318'>/**
+ * \brief Returns whether a rectangle overlaps the active region of the jumper.
+ *
+ * For a horizontal or vertical jumper, the active region is the whole
+ * bounding box, that is, an 8-pixel thick horizontal or vertical strip.
+ * For a diagonal jumper, the active region is an 8-pixel thick diagonal strip.
+ *
+ * \param rectangle A rectangle.
+ * \param extended_region Whether you want to consider the extended jumper
+ * beyond its bounding box, or to keep it restricted to its bounding box.
+ * \return \c true if the rectangle overlaps the active region of the jumper.
+ */</doc>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='330'>/* extended_region */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='114' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='122' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>

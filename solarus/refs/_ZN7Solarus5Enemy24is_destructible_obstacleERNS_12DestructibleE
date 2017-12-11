@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='148' type='bool Solarus::Enemy::is_destructible_obstacle(Solarus::Destructible &amp; destructible)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='349' c='_ZN7Solarus6Entity24is_destructible_obstacleERNS_12DestructibleE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='277' ll='285' type='bool Solarus::Enemy::is_destructible_obstacle(Solarus::Destructible &amp; destructible)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='272'>/**
+ * \brief Returns whether a destructible item is currently considered as an obstacle for this entity.
+ * \param destructible a destructible item
+ * \return true if the destructible item is currently an obstacle this entity
+ */</doc>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='55' type='Solarus::Game * Solarus::MainLoop::get_game()'/>
+<def f='codebrowser/src/MainLoop.cpp' l='278' ll='280' type='Solarus::Game * Solarus::MainLoop::get_game()'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='274'>/**
+ * \brief Returns the current game if any.
+ * \return The game currently running or nullptr.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='261' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='263' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='491' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='515' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='143' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='362' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='521' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='62' u='c' c='_ZN7Solarus15TestEnvironment8get_gameEv'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='73' u='c' c='_ZN7Solarus15TestEnvironment8get_gameEv'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='75' u='c' c='_ZN7Solarus15TestEnvironment8get_gameEv'/>

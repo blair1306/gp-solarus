@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='66' type='bool Solarus::DialogResources::add_dialog(const std::string &amp; dialog_id, const Solarus::DialogData &amp; dialog)'/>
+<def f='codebrowser/src/DialogResources.cpp' l='171' ll='181' type='bool Solarus::DialogResources::add_dialog(const std::string &amp; dialog_id, const Solarus::DialogData &amp; dialog)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='215' u='c' c='_ZN7Solarus15DialogResources13set_dialog_idERKSsS2_'/>
+<use f='codebrowser/src/DialogResources.cpp' l='279' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='165'>/**
+ * \brief Adds a dialog.
+ * \param dialog_id Id of the new dialog.
+ * \param dialog The dialog to add.
+ * \return \c true in case of success.
+ */</doc>

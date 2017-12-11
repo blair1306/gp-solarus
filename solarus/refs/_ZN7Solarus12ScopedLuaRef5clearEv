@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='53' type='void Solarus::ScopedLuaRef::clear()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='179' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/Drawable.cpp' l='137' u='c' c='_ZN7Solarus8Drawable15stop_transitionEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='936' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='76' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='90' u='c' c='_ZN7Solarus4Hero13TreasureState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='70' u='c' c='_ZN7Solarus4Hero12VictoryState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='610' u='c' c='_ZN7Solarus5Music4stopEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='111' u='c' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='136' u='c' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='220' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='75' u='c' c='_ZN7Solarus12ScopedLuaRefD1Ev'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='85' u='c' c='_ZN7Solarus12ScopedLuaRefaSERKS0_'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='108' u='c' c='_ZN7Solarus12ScopedLuaRefaSEOS0_'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='147' ll='154' type='void Solarus::ScopedLuaRef::clear()'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='210' u='c' c='_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='142'>/**
+ * \brief Destroys the ref.
+ *
+ * This calls luaL_unref().
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='188' u='c' c='_ZN7Solarus10LuaContext12remove_timerERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='215' u='c' c='_ZN7Solarus10LuaContext13remove_timersEi'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='333' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>

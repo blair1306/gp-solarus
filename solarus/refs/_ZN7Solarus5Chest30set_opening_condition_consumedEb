@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='69' type='void Solarus::Chest::set_opening_condition_consumed(bool opening_condition_consumed)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='325' ll='327' type='void Solarus::Chest::set_opening_condition_consumed(bool opening_condition_consumed)'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='306'>/**
+ * \brief Sets whether opening this chest should consume the condition that
+ * was required.
+ *
+ * If this setting is \c true, here is the behavior when the hero opens
+ * the chest:
+ * - If the opening method is OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE,
+ *   then the required savegame variable is either:
+ *   - set to \c false if it is a boolean,
+ *   - decremented if it is an integer,
+ *   - set to an empty string if it is a string.
+ * - If the opening method is OPENING_BY_INTERACTION_IF_ITEM, then:
+ *   - if the required item has an amount, the amount is decremented.
+ *   - if the required item has no amount, its possession state is set to zero.
+ * - With other opening methods, this setting has no effect.
+ *
+ * \param opening_condition_consumed \c true if opening this chest should
+ * consume the condition that was required.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='660' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>

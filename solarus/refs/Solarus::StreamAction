@@ -1,0 +1,27 @@
+<def f='codebrowser/include/solarus/entities/StreamAction.h' l='38' ll='73'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/entities/StreamAction.h' l='31'>/**
+ * \brief Manages a map entity being moved by a stream.
+ *
+ * An object of this class should be created when an entity has to be moved
+ * by a stream, and can be destroyed when the effect of this stream on
+ * this entity is finished. You can call is_active() to know if this happens.
+ */</doc>
+<fun r='_ZN7Solarus12StreamActionC1ERNS_6StreamERNS_6EntityE'/>
+<fun r='_ZNK7Solarus12StreamAction10get_streamEv'/>
+<fun r='_ZNK7Solarus12StreamAction16get_entity_movedEv'/>
+<fun r='_ZNK7Solarus12StreamAction9is_activeEv'/>
+<fun r='_ZN7Solarus12StreamAction6updateEv'/>
+<fun r='_ZNK7Solarus12StreamAction12is_suspendedEv'/>
+<fun r='_ZN7Solarus12StreamAction13set_suspendedEb'/>
+<fun r='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<fun r='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<fun r='_ZNK7Solarus12StreamAction18has_reached_targetEv'/>
+<mbr r='Solarus::StreamAction::stream' o='0' t='std::shared_ptr&lt;Stream&gt;'/>
+<mbr r='Solarus::StreamAction::entity_moved' o='128' t='EntityPtr'/>
+<mbr r='Solarus::StreamAction::active' o='256' t='bool'/>
+<mbr r='Solarus::StreamAction::suspended' o='264' t='bool'/>
+<mbr r='Solarus::StreamAction::when_suspended' o='288' t='uint32_t'/>
+<mbr r='Solarus::StreamAction::target' o='320' t='Solarus::Point'/>
+<mbr r='Solarus::StreamAction::next_move_date' o='384' t='uint32_t'/>
+<mbr r='Solarus::StreamAction::delay' o='416' t='uint32_t'/>

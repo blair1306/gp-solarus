@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_hints.h' l='118'/>
+<doc f='include/SDL2/SDL_hints.h' l='108'>/**
+ *  \brief  A variable controlling the scaling quality
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot; or &quot;nearest&quot; - Nearest pixel sampling
+ *    &quot;1&quot; or &quot;linear&quot;  - Linear filtering (supported by OpenGL and Direct3D)
+ *    &quot;2&quot; or &quot;best&quot;    - Currently this is the same as &quot;linear&quot;
+ *
+ *  By default nearest pixel sampling is used
+ */</doc>

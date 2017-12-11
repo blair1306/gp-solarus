@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='103' type='void Solarus::CommandsEffects::set_pause_key_effect(Solarus::CommandsEffects::PauseKeyEffect pause_key_effect)'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='208' ll='210' type='void Solarus::CommandsEffects::set_pause_key_effect(CommandsEffects::PauseKeyEffect pause_key_effect)'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='204'>/**
+ * \brief Sets the current effect of the pause key.
+ * \param pause_key_effect the current effect of the pause key
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='107' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='837' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>
+<use f='codebrowser/src/Game.cpp' l='844' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>

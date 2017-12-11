@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SNES_SPC.h source code [codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="SNES_SPC "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='SNES_SPC.h.html'>SNES_SPC.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// SNES SPC-700 APU emulator</i></td></tr>
+<tr><th id="2">2</th><td><i></i></td></tr>
+<tr><th id="3">3</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/SNES_SPC_H">SNES_SPC_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/SNES_SPC_H" data-ref="_M/SNES_SPC_H">SNES_SPC_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="SPC_DSP.h.html">"SPC_DSP.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="blargg_endian.h.html">"blargg_endian.h"</a></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>struct</b> <dfn class="type def" id="SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</dfn> {</td></tr>
+<tr><th id="11">11</th><td><b>public</b>:</td></tr>
+<tr><th id="12">12</th><td>	<b>typedef</b> <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint8_t" title='BOOST::uint8_t' data-type='unsigned char' data-ref="BOOST::uint8_t">uint8_t</a> <dfn class="typedef" id="SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	</td></tr>
+<tr><th id="14">14</th><td>	<i>// Must be called once before using</i></td></tr>
+<tr><th id="15">15</th><td>	<a class="typedef" href="blargg_common.h.html#blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</a> <dfn class="decl" id="_ZN8SNES_SPC4initEv" title='SNES_SPC::init' data-ref="_ZN8SNES_SPC4initEv">init</dfn>();</td></tr>
+<tr><th id="16">16</th><td>	</td></tr>
+<tr><th id="17">17</th><td>	<i>// Sample pairs generated per second</i></td></tr>
+<tr><th id="18">18</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::sample_rate" title='SNES_SPC::::sample_rate' data-ref="SNES_SPC::::sample_rate">sample_rate</dfn> = <var>32000</var> };</td></tr>
+<tr><th id="19">19</th><td>	</td></tr>
+<tr><th id="20">20</th><td><i>// Emulator use</i></td></tr>
+<tr><th id="21">21</th><td><i>	</i></td></tr>
+<tr><th id="22">22</th><td><i>	// Sets IPL ROM data. Library does not include ROM data. Most SPC music files</i></td></tr>
+<tr><th id="23">23</th><td><i>	// don't need ROM, but a full emulator must provide this.</i></td></tr>
+<tr><th id="24">24</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::rom_size" title='SNES_SPC::::rom_size' data-ref="SNES_SPC::::rom_size">rom_size</dfn> = <var>0x40</var> };</td></tr>
+<tr><th id="25">25</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC8init_romEPKh" title='SNES_SPC::init_rom' data-ref="_ZN8SNES_SPC8init_romEPKh">init_rom</dfn>( <a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <em>const</em> <dfn class="local col2 decl" id="52rom" title='rom' data-type='const uint8_t *' data-ref="52rom">rom</dfn> [<a class="enum" href="#SNES_SPC::::rom_size" title='SNES_SPC::::rom_size' data-ref="SNES_SPC::::rom_size">rom_size</a>] );</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>	<i>// Sets destination for output samples</i></td></tr>
+<tr><th id="28">28</th><td>	<b>typedef</b> <em>short</em> <dfn class="typedef" id="SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC10set_outputEPsi" title='SNES_SPC::set_output' data-ref="_ZN8SNES_SPC10set_outputEPsi">set_output</dfn>( <a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a>* <dfn class="local col3 decl" id="53out" title='out' data-type='sample_t *' data-ref="53out">out</dfn>, <em>int</em> <dfn class="local col4 decl" id="54out_size" title='out_size' data-type='int' data-ref="54out_size">out_size</dfn> );</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>	<i>// Number of samples written to output since last set</i></td></tr>
+<tr><th id="32">32</th><td>	<em>int</em> <a class="decl" href="#_ZNK8SNES_SPC12sample_countEv" title='SNES_SPC::sample_count' data-ref="_ZNK8SNES_SPC12sample_countEv">sample_count</a>() <em>const</em>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<i>// Resets SPC to power-on state. This resets your output buffer, so you must</i></td></tr>
+<tr><th id="35">35</th><td><i>	// call set_output() after this.</i></td></tr>
+<tr><th id="36">36</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC5resetEv" title='SNES_SPC::reset' data-ref="_ZN8SNES_SPC5resetEv">reset</dfn>();</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>	<i>// Emulates pressing reset switch on SNES. This resets your output buffer, so</i></td></tr>
+<tr><th id="39">39</th><td><i>	// you must call set_output() after this.</i></td></tr>
+<tr><th id="40">40</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC10soft_resetEv" title='SNES_SPC::soft_reset' data-ref="_ZN8SNES_SPC10soft_resetEv">soft_reset</dfn>();</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<i>// 1024000 SPC clocks per second, sample pair every 32 clocks</i></td></tr>
+<tr><th id="43">43</th><td>	<b>typedef</b> <em>int</em> <dfn class="typedef" id="SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::clock_rate" title='SNES_SPC::::clock_rate' data-ref="SNES_SPC::::clock_rate">clock_rate</dfn> = <var>1024000</var> };</td></tr>
+<tr><th id="45">45</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::clocks_per_sample" title='SNES_SPC::::clocks_per_sample' data-ref="SNES_SPC::::clocks_per_sample">clocks_per_sample</dfn> = <var>32</var> };</td></tr>
+<tr><th id="46">46</th><td>	</td></tr>
+<tr><th id="47">47</th><td>	<i>// Emulated port read/write at specified time</i></td></tr>
+<tr><th id="48">48</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::port_count" title='SNES_SPC::::port_count' data-ref="SNES_SPC::::port_count">port_count</dfn> = <var>4</var> };</td></tr>
+<tr><th id="49">49</th><td>	<em>int</em>  <a class="decl" href="#_ZN8SNES_SPC9read_portEii" title='SNES_SPC::read_port' data-ref="_ZN8SNES_SPC9read_portEii">read_port</a> ( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a>, <em>int</em> <dfn class="local col5 decl" id="55port" title='port' data-type='int' data-ref="55port">port</dfn> );</td></tr>
+<tr><th id="50">50</th><td>	<em>void</em> <a class="decl" href="#_ZN8SNES_SPC10write_portEiii" title='SNES_SPC::write_port' data-ref="_ZN8SNES_SPC10write_portEiii">write_port</a>( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a>, <em>int</em> <dfn class="local col6 decl" id="56port" title='port' data-type='int' data-ref="56port">port</dfn>, <em>int</em> <dfn class="local col7 decl" id="57data" title='data' data-type='int' data-ref="57data">data</dfn> );</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>	<i>// Runs SPC to end_time and starts a new time frame at 0</i></td></tr>
+<tr><th id="53">53</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC9end_frameEi" title='SNES_SPC::end_frame' data-ref="_ZN8SNES_SPC9end_frameEi" id="_ZN8SNES_SPC9end_frameEi">end_frame</a>( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a> <dfn class="local col8 decl" id="58end_time" title='end_time' data-type='time_t' data-ref="58end_time">end_time</dfn> );</td></tr>
+<tr><th id="54">54</th><td>	</td></tr>
+<tr><th id="55">55</th><td><i>// Sound control</i></td></tr>
+<tr><th id="56">56</th><td><i>	</i></td></tr>
+<tr><th id="57">57</th><td><i>	// Mutes voices corresponding to non-zero bits in mask (issues repeated KOFF events).</i></td></tr>
+<tr><th id="58">58</th><td><i>	// Reduces emulation accuracy.</i></td></tr>
+<tr><th id="59">59</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::voice_count" title='SNES_SPC::::voice_count' data-ref="SNES_SPC::::voice_count">voice_count</dfn> = <var>8</var> };</td></tr>
+<tr><th id="60">60</th><td>	<em>void</em> <a class="decl" href="#_ZN8SNES_SPC11mute_voicesEi" title='SNES_SPC::mute_voices' data-ref="_ZN8SNES_SPC11mute_voicesEi">mute_voices</a>( <em>int</em> <dfn class="local col9 decl" id="59mask" title='mask' data-type='int' data-ref="59mask">mask</dfn> );</td></tr>
+<tr><th id="61">61</th><td>	</td></tr>
+<tr><th id="62">62</th><td>	<i>// If true, prevents channels and global volumes from being phase-negated.</i></td></tr>
+<tr><th id="63">63</th><td><i>	// Only supported by fast DSP.</i></td></tr>
+<tr><th id="64">64</th><td>	<em>void</em> <a class="decl" href="#_ZN8SNES_SPC16disable_surroundEb" title='SNES_SPC::disable_surround' data-ref="_ZN8SNES_SPC16disable_surroundEb">disable_surround</a>( <em>bool</em> <dfn class="local col0 decl" id="60disable" title='disable' data-type='bool' data-ref="60disable">disable</dfn> = <b>true</b> );</td></tr>
+<tr><th id="65">65</th><td>	</td></tr>
+<tr><th id="66">66</th><td>	<i>// Sets tempo, where tempo_unit = normal, tempo_unit / 2 = half speed, etc.</i></td></tr>
+<tr><th id="67">67</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::tempo_unit" title='SNES_SPC::::tempo_unit' data-ref="SNES_SPC::::tempo_unit">tempo_unit</dfn> = <var>0x100</var> };</td></tr>
+<tr><th id="68">68</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC9set_tempoEi" title='SNES_SPC::set_tempo' data-ref="_ZN8SNES_SPC9set_tempoEi">set_tempo</dfn>( <em>int</em> );</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i>// SPC music files</i></td></tr>
+<tr><th id="71">71</th><td><i></i></td></tr>
+<tr><th id="72">72</th><td><i>	// Loads SPC data into emulator</i></td></tr>
+<tr><th id="73">73</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::spc_min_file_size" title='SNES_SPC::::spc_min_file_size' data-ref="SNES_SPC::::spc_min_file_size">spc_min_file_size</dfn> = <var>0x10180</var> };</td></tr>
+<tr><th id="74">74</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::spc_file_size" title='SNES_SPC::::spc_file_size' data-ref="SNES_SPC::::spc_file_size">spc_file_size</dfn>     = <var>0x10200</var> };</td></tr>
+<tr><th id="75">75</th><td>	<a class="typedef" href="blargg_common.h.html#blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</a> <dfn class="decl" id="_ZN8SNES_SPC8load_spcEPKvl" title='SNES_SPC::load_spc' data-ref="_ZN8SNES_SPC8load_spcEPKvl">load_spc</dfn>( <em>void</em> <em>const</em>* <dfn class="local col1 decl" id="61in" title='in' data-type='const void *' data-ref="61in">in</dfn>, <em>long</em> <dfn class="local col2 decl" id="62size" title='size' data-type='long' data-ref="62size">size</dfn> );</td></tr>
+<tr><th id="76">76</th><td>	</td></tr>
+<tr><th id="77">77</th><td>	<i>// Clears echo region. Useful after loading an SPC as many have garbage in echo.</i></td></tr>
+<tr><th id="78">78</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC10clear_echoEv" title='SNES_SPC::clear_echo' data-ref="_ZN8SNES_SPC10clear_echoEv">clear_echo</dfn>();</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<i>// Plays for count samples and write samples to out. Discards samples if out</i></td></tr>
+<tr><th id="81">81</th><td><i>	// is NULL. Count must be a multiple of 2 since output is stereo.</i></td></tr>
+<tr><th id="82">82</th><td>	<a class="typedef" href="blargg_common.h.html#blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</a> <dfn class="decl" id="_ZN8SNES_SPC4playEiPs" title='SNES_SPC::play' data-ref="_ZN8SNES_SPC4playEiPs">play</dfn>( <em>int</em> <dfn class="local col3 decl" id="63count" title='count' data-type='int' data-ref="63count">count</dfn>, <a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a>* <dfn class="local col4 decl" id="64out" title='out' data-type='sample_t *' data-ref="64out">out</dfn> );</td></tr>
+<tr><th id="83">83</th><td>	</td></tr>
+<tr><th id="84">84</th><td>	<i>// Skips count samples. Several times faster than play() when using fast DSP.</i></td></tr>
+<tr><th id="85">85</th><td>	<a class="typedef" href="blargg_common.h.html#blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</a> <dfn class="decl" id="_ZN8SNES_SPC4skipEi" title='SNES_SPC::skip' data-ref="_ZN8SNES_SPC4skipEi">skip</dfn>( <em>int</em> <dfn class="local col5 decl" id="65count" title='count' data-type='int' data-ref="65count">count</dfn> );</td></tr>
+<tr><th id="86">86</th><td>	</td></tr>
+<tr><th id="87">87</th><td><i>// State save/load (only available with accurate DSP)</i></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="89">if</span> !<a class="macro" href="SPC_DSP.h.html#208" title="1" data-ref="_M/SPC_NO_COPY_STATE_FUNCS">SPC_NO_COPY_STATE_FUNCS</a></u></td></tr>
+<tr><th id="90">90</th><td>	<i>// Saves/loads state</i></td></tr>
+<tr><th id="91">91</th><td>	<b>enum</b> { state_size = <var>67</var> * <var>1024L</var> }; <i>// maximum space needed when saving</i></td></tr>
+<tr><th id="92">92</th><td>	<b>typedef</b> SPC_DSP::copy_func_t copy_func_t;</td></tr>
+<tr><th id="93">93</th><td>	<em>void</em> copy_state( <em>unsigned</em> <em>char</em>** io, copy_func_t );</td></tr>
+<tr><th id="94">94</th><td>	</td></tr>
+<tr><th id="95">95</th><td>	<i>// Writes minimal header to spc_out</i></td></tr>
+<tr><th id="96">96</th><td>	<em>static</em> <em>void</em> init_header( <em>void</em>* spc_out );</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>	<i>// Saves emulator state as SPC file data. Writes spc_file_size bytes to spc_out.</i></td></tr>
+<tr><th id="99">99</th><td><i>	// Does not set up SPC header; use init_header() for that.</i></td></tr>
+<tr><th id="100">100</th><td>	<em>void</em> save_spc( <em>void</em>* spc_out );</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>	<i>// Returns true if new key-on events occurred since last check. Useful for</i></td></tr>
+<tr><th id="103">103</th><td><i>	// trimming silence while saving an SPC.</i></td></tr>
+<tr><th id="104">104</th><td>	<em>bool</em> check_kon();</td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="89">endif</span></u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>public</b>:</td></tr>
+<tr><th id="108">108</th><td>	<a class="macro" href="blargg_common.h.html#73" title="void* operator new ( size_t s ) throw () { return malloc( s ); } void operator delete ( void* p ) { free( p ); }" data-ref="_M/BLARGG_DISABLE_NOTHROW">BLARGG_DISABLE_NOTHROW</a></td></tr>
+<tr><th id="109">109</th><td>	</td></tr>
+<tr><th id="110">110</th><td>	<b>typedef</b> <a class="type" href="blargg_common.h.html#BOOST" title='BOOST' data-ref="BOOST">BOOST</a>::<a class="typedef" href="blargg_common.h.html#BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</a> <dfn class="typedef" id="SNES_SPC::uint16_t" title='SNES_SPC::uint16_t' data-type='BOOST::uint16_t' data-ref="SNES_SPC::uint16_t">uint16_t</dfn>;</td></tr>
+<tr><th id="111">111</th><td>	</td></tr>
+<tr><th id="112">112</th><td>	<i>// Time relative to m_spc_time. Speeds up code a bit by eliminating need to</i></td></tr>
+<tr><th id="113">113</th><td><i>	// constantly add m_spc_time to time from CPU. CPU uses time that ends at</i></td></tr>
+<tr><th id="114">114</th><td><i>	// 0 to eliminate reloading end time every instruction. It pays off.</i></td></tr>
+<tr><th id="115">115</th><td>	<b>typedef</b> <em>int</em> <dfn class="typedef" id="SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</dfn>;</td></tr>
+<tr><th id="116">116</th><td>	</td></tr>
+<tr><th id="117">117</th><td>	<b>struct</b> <dfn class="type def" id="SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</dfn></td></tr>
+<tr><th id="118">118</th><td>	{</td></tr>
+<tr><th id="119">119</th><td>		<a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> <dfn class="decl" id="SNES_SPC::Timer::next_time" title='SNES_SPC::Timer::next_time' data-ref="SNES_SPC::Timer::next_time">next_time</dfn>; <i>// time of next event</i></td></tr>
+<tr><th id="120">120</th><td>		<em>int</em> <dfn class="decl" id="SNES_SPC::Timer::prescaler" title='SNES_SPC::Timer::prescaler' data-ref="SNES_SPC::Timer::prescaler">prescaler</dfn>;</td></tr>
+<tr><th id="121">121</th><td>		<em>int</em> <dfn class="decl" id="SNES_SPC::Timer::period" title='SNES_SPC::Timer::period' data-ref="SNES_SPC::Timer::period">period</dfn>;</td></tr>
+<tr><th id="122">122</th><td>		<em>int</em> <dfn class="decl" id="SNES_SPC::Timer::divider" title='SNES_SPC::Timer::divider' data-ref="SNES_SPC::Timer::divider">divider</dfn>;</td></tr>
+<tr><th id="123">123</th><td>		<em>int</em> <dfn class="decl" id="SNES_SPC::Timer::enabled" title='SNES_SPC::Timer::enabled' data-ref="SNES_SPC::Timer::enabled">enabled</dfn>;</td></tr>
+<tr><th id="124">124</th><td>		<em>int</em> <dfn class="decl" id="SNES_SPC::Timer::counter" title='SNES_SPC::Timer::counter' data-ref="SNES_SPC::Timer::counter">counter</dfn>;</td></tr>
+<tr><th id="125">125</th><td>	};</td></tr>
+<tr><th id="126">126</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::reg_count" title='SNES_SPC::::reg_count' data-ref="SNES_SPC::::reg_count">reg_count</dfn> = <var>0x10</var> };</td></tr>
+<tr><th id="127">127</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::timer_count" title='SNES_SPC::::timer_count' data-ref="SNES_SPC::::timer_count">timer_count</dfn> = <var>3</var> };</td></tr>
+<tr><th id="128">128</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::extra_size" title='SNES_SPC::::extra_size' data-ref="SNES_SPC::::extra_size">extra_size</dfn> = <a class="type" href="SPC_DSP.h.html#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a>::<a class="enum" href="SPC_DSP.h.html#SPC_DSP::::extra_size" title='SPC_DSP::::extra_size' data-ref="SPC_DSP::::extra_size">extra_size</a> };</td></tr>
+<tr><th id="129">129</th><td>	</td></tr>
+<tr><th id="130">130</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::signature_size" title='SNES_SPC::::signature_size' data-ref="SNES_SPC::::signature_size">signature_size</dfn> = <var>35</var> };</td></tr>
+<tr><th id="131">131</th><td>	</td></tr>
+<tr><th id="132">132</th><td><b>private</b>:</td></tr>
+<tr><th id="133">133</th><td>	<a class="type" href="SPC_DSP.h.html#SPC_DSP" title='SPC_DSP' data-ref="SPC_DSP">SPC_DSP</a> <dfn class="decl" id="SNES_SPC::dsp" title='SNES_SPC::dsp' data-ref="SNES_SPC::dsp">dsp</dfn>;</td></tr>
+<tr><th id="134">134</th><td>	</td></tr>
+<tr><th id="135">135</th><td>	<u>#<span data-ppcond="135">if</span> <a class="macro" href="SPC_DSP.h.html#210" title="1" data-ref="_M/SPC_LESS_ACCURATE">SPC_LESS_ACCURATE</a></u></td></tr>
+<tr><th id="136">136</th><td>		<em>static</em> <em>signed</em> <em>char</em> <em>const</em> <dfn class="decl" id="SNES_SPC::reg_times_" title='SNES_SPC::reg_times_' data-ref="SNES_SPC::reg_times_">reg_times_</dfn> [<var>256</var>];</td></tr>
+<tr><th id="137">137</th><td>		<em>signed</em> <em>char</em> <dfn class="decl" id="SNES_SPC::reg_times" title='SNES_SPC::reg_times' data-ref="SNES_SPC::reg_times">reg_times</dfn> [<var>256</var>];</td></tr>
+<tr><th id="138">138</th><td>	<u>#<span data-ppcond="135">endif</span></u></td></tr>
+<tr><th id="139">139</th><td>	</td></tr>
+<tr><th id="140">140</th><td>	<b>struct</b> <dfn class="type def" id="SNES_SPC::state_t" title='SNES_SPC::state_t' data-ref="SNES_SPC::state_t">state_t</dfn></td></tr>
+<tr><th id="141">141</th><td>	{</td></tr>
+<tr><th id="142">142</th><td>		<a class="type" href="#SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</a> <dfn class="decl" id="SNES_SPC::state_t::timers" title='SNES_SPC::state_t::timers' data-ref="SNES_SPC::state_t::timers">timers</dfn> [<a class="enum" href="#SNES_SPC::::timer_count" title='SNES_SPC::::timer_count' data-ref="SNES_SPC::::timer_count">timer_count</a>];</td></tr>
+<tr><th id="143">143</th><td>		</td></tr>
+<tr><th id="144">144</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::state_t::smp_regs" title='SNES_SPC::state_t::smp_regs' data-ref="SNES_SPC::state_t::smp_regs">smp_regs</dfn> [<var>2</var>] [<a class="enum" href="#SNES_SPC::::reg_count" title='SNES_SPC::::reg_count' data-ref="SNES_SPC::::reg_count">reg_count</a>];</td></tr>
+<tr><th id="145">145</th><td>		</td></tr>
+<tr><th id="146">146</th><td>		<b>struct</b></td></tr>
+<tr><th id="147">147</th><td>		{</td></tr>
+<tr><th id="148">148</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::pc" title='SNES_SPC::state_t::(anonymous struct)::pc' data-ref="SNES_SPC::state_t::(anonymous)::pc">pc</dfn>;</td></tr>
+<tr><th id="149">149</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::a" title='SNES_SPC::state_t::(anonymous struct)::a' data-ref="SNES_SPC::state_t::(anonymous)::a">a</dfn>;</td></tr>
+<tr><th id="150">150</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::x" title='SNES_SPC::state_t::(anonymous struct)::x' data-ref="SNES_SPC::state_t::(anonymous)::x">x</dfn>;</td></tr>
+<tr><th id="151">151</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::y" title='SNES_SPC::state_t::(anonymous struct)::y' data-ref="SNES_SPC::state_t::(anonymous)::y">y</dfn>;</td></tr>
+<tr><th id="152">152</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::psw" title='SNES_SPC::state_t::(anonymous struct)::psw' data-ref="SNES_SPC::state_t::(anonymous)::psw">psw</dfn>;</td></tr>
+<tr><th id="153">153</th><td>			<em>int</em> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::sp" title='SNES_SPC::state_t::(anonymous struct)::sp' data-ref="SNES_SPC::state_t::(anonymous)::sp">sp</dfn>;</td></tr>
+<tr><th id="154">154</th><td>		} <dfn class="decl" id="SNES_SPC::state_t::cpu_regs" title='SNES_SPC::state_t::cpu_regs' data-ref="SNES_SPC::state_t::cpu_regs">cpu_regs</dfn>;</td></tr>
+<tr><th id="155">155</th><td>		</td></tr>
+<tr><th id="156">156</th><td>		<a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a>  <dfn class="decl" id="SNES_SPC::state_t::dsp_time" title='SNES_SPC::state_t::dsp_time' data-ref="SNES_SPC::state_t::dsp_time">dsp_time</dfn>;</td></tr>
+<tr><th id="157">157</th><td>		<a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a>      <dfn class="decl" id="SNES_SPC::state_t::spc_time" title='SNES_SPC::state_t::spc_time' data-ref="SNES_SPC::state_t::spc_time">spc_time</dfn>;</td></tr>
+<tr><th id="158">158</th><td>		<em>bool</em>        <dfn class="decl" id="SNES_SPC::state_t::echo_accessed" title='SNES_SPC::state_t::echo_accessed' data-ref="SNES_SPC::state_t::echo_accessed">echo_accessed</dfn>;</td></tr>
+<tr><th id="159">159</th><td>		</td></tr>
+<tr><th id="160">160</th><td>		<em>int</em>         <dfn class="decl" id="SNES_SPC::state_t::tempo" title='SNES_SPC::state_t::tempo' data-ref="SNES_SPC::state_t::tempo">tempo</dfn>;</td></tr>
+<tr><th id="161">161</th><td>		<em>int</em>         <dfn class="decl" id="SNES_SPC::state_t::skipped_kon" title='SNES_SPC::state_t::skipped_kon' data-ref="SNES_SPC::state_t::skipped_kon">skipped_kon</dfn>;</td></tr>
+<tr><th id="162">162</th><td>		<em>int</em>         <dfn class="decl" id="SNES_SPC::state_t::skipped_koff" title='SNES_SPC::state_t::skipped_koff' data-ref="SNES_SPC::state_t::skipped_koff">skipped_koff</dfn>;</td></tr>
+<tr><th id="163">163</th><td>		<em>const</em> <em>char</em>* <dfn class="decl" id="SNES_SPC::state_t::cpu_error" title='SNES_SPC::state_t::cpu_error' data-ref="SNES_SPC::state_t::cpu_error">cpu_error</dfn>;</td></tr>
+<tr><th id="164">164</th><td>		</td></tr>
+<tr><th id="165">165</th><td>		<em>int</em>         <dfn class="decl" id="SNES_SPC::state_t::extra_clocks" title='SNES_SPC::state_t::extra_clocks' data-ref="SNES_SPC::state_t::extra_clocks">extra_clocks</dfn>;</td></tr>
+<tr><th id="166">166</th><td>		<a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a>*   <dfn class="decl" id="SNES_SPC::state_t::buf_begin" title='SNES_SPC::state_t::buf_begin' data-ref="SNES_SPC::state_t::buf_begin">buf_begin</dfn>;</td></tr>
+<tr><th id="167">167</th><td>		<a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a> <em>const</em>* <dfn class="decl" id="SNES_SPC::state_t::buf_end" title='SNES_SPC::state_t::buf_end' data-ref="SNES_SPC::state_t::buf_end">buf_end</dfn>;</td></tr>
+<tr><th id="168">168</th><td>		<a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a>*   <dfn class="decl" id="SNES_SPC::state_t::extra_pos" title='SNES_SPC::state_t::extra_pos' data-ref="SNES_SPC::state_t::extra_pos">extra_pos</dfn>;</td></tr>
+<tr><th id="169">169</th><td>		<a class="typedef" href="#SNES_SPC::sample_t" title='SNES_SPC::sample_t' data-type='short' data-ref="SNES_SPC::sample_t">sample_t</a>    <dfn class="decl" id="SNES_SPC::state_t::extra_buf" title='SNES_SPC::state_t::extra_buf' data-ref="SNES_SPC::state_t::extra_buf">extra_buf</dfn> [<a class="enum" href="#SNES_SPC::::extra_size" title='SNES_SPC::::extra_size' data-ref="SNES_SPC::::extra_size">extra_size</a>];</td></tr>
+<tr><th id="170">170</th><td>		</td></tr>
+<tr><th id="171">171</th><td>		<em>int</em>         <dfn class="decl" id="SNES_SPC::state_t::rom_enabled" title='SNES_SPC::state_t::rom_enabled' data-ref="SNES_SPC::state_t::rom_enabled">rom_enabled</dfn>;</td></tr>
+<tr><th id="172">172</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a>     <dfn class="decl" id="SNES_SPC::state_t::rom" title='SNES_SPC::state_t::rom' data-ref="SNES_SPC::state_t::rom">rom</dfn>    [<a class="enum" href="#SNES_SPC::::rom_size" title='SNES_SPC::::rom_size' data-ref="SNES_SPC::::rom_size">rom_size</a>];</td></tr>
+<tr><th id="173">173</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a>     <dfn class="decl" id="SNES_SPC::state_t::hi_ram" title='SNES_SPC::state_t::hi_ram' data-ref="SNES_SPC::state_t::hi_ram">hi_ram</dfn> [<a class="enum" href="#SNES_SPC::::rom_size" title='SNES_SPC::::rom_size' data-ref="SNES_SPC::::rom_size">rom_size</a>];</td></tr>
+<tr><th id="174">174</th><td>		</td></tr>
+<tr><th id="175">175</th><td>		<em>unsigned</em> <em>char</em> <dfn class="decl" id="SNES_SPC::state_t::cycle_table" title='SNES_SPC::state_t::cycle_table' data-ref="SNES_SPC::state_t::cycle_table">cycle_table</dfn> [<var>256</var>];</td></tr>
+<tr><th id="176">176</th><td>		</td></tr>
+<tr><th id="177">177</th><td>		<b>struct</b></td></tr>
+<tr><th id="178">178</th><td>		{</td></tr>
+<tr><th id="179">179</th><td>			<i>// padding to neutralize address overflow</i></td></tr>
+<tr><th id="180">180</th><td>			<b>union</b> {</td></tr>
+<tr><th id="181">181</th><td>				<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::state_t::(anonymousstruct)::(anonymous)::padding1" title='SNES_SPC::state_t::(anonymous struct)::(anonymous union)::padding1' data-ref="SNES_SPC::state_t::(anonymousstruct)::(anonymous)::padding1">padding1</dfn> [<var>0x100</var>];</td></tr>
+<tr><th id="182">182</th><td>				<a class="typedef" href="#SNES_SPC::uint16_t" title='SNES_SPC::uint16_t' data-type='BOOST::uint16_t' data-ref="SNES_SPC::uint16_t">uint16_t</a> <dfn class="decl" id="SNES_SPC::state_t::(anonymousstruct)::(anonymous)::align" title='SNES_SPC::state_t::(anonymous struct)::(anonymous union)::align' data-ref="SNES_SPC::state_t::(anonymousstruct)::(anonymous)::align">align</dfn>; <i>// makes compiler align data for 16-bit access</i></td></tr>
+<tr><th id="183">183</th><td>			} <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::padding1" title='SNES_SPC::state_t::(anonymous struct)::padding1' data-ref="SNES_SPC::state_t::(anonymous)::padding1">padding1</dfn> [<var>1</var>];</td></tr>
+<tr><th id="184">184</th><td>			<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::state_t::(anonymous)::ram" title='SNES_SPC::state_t::(anonymous struct)::ram' data-ref="SNES_SPC::state_t::(anonymous)::ram">ram</dfn> [<var>0x10000</var> + <var>0x100</var>];</td></tr>
+<tr><th id="185">185</th><td>		} <dfn class="decl" id="SNES_SPC::state_t::ram" title='SNES_SPC::state_t::ram' data-ref="SNES_SPC::state_t::ram">ram</dfn>;</td></tr>
+<tr><th id="186">186</th><td>	};</td></tr>
+<tr><th id="187">187</th><td>	<a class="type" href="#SNES_SPC::state_t" title='SNES_SPC::state_t' data-ref="SNES_SPC::state_t">state_t</a> <dfn class="decl" id="SNES_SPC::m" title='SNES_SPC::m' data-ref="SNES_SPC::m">m</dfn>;</td></tr>
+<tr><th id="188">188</th><td>	</td></tr>
+<tr><th id="189">189</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::rom_addr" title='SNES_SPC::::rom_addr' data-ref="SNES_SPC::::rom_addr">rom_addr</dfn> = <var>0xFFC0</var> };</td></tr>
+<tr><th id="190">190</th><td>	</td></tr>
+<tr><th id="191">191</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::skipping_time" title='SNES_SPC::::skipping_time' data-ref="SNES_SPC::::skipping_time">skipping_time</dfn> = <var>127</var> };</td></tr>
+<tr><th id="192">192</th><td>	</td></tr>
+<tr><th id="193">193</th><td>	<i>// Value that padding should be filled with</i></td></tr>
+<tr><th id="194">194</th><td>	<b>enum</b> { <dfn class="enum" id="SNES_SPC::::cpu_pad_fill" title='SNES_SPC::::cpu_pad_fill' data-ref="SNES_SPC::::cpu_pad_fill">cpu_pad_fill</dfn> = <var>0xFF</var> };</td></tr>
+<tr><th id="195">195</th><td>	</td></tr>
+<tr><th id="196">196</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="197">197</th><td>        <dfn class="enum" id="SNES_SPC::::r_test" title='SNES_SPC::::r_test' data-ref="SNES_SPC::::r_test">r_test</dfn>     = <var>0x0</var>, <dfn class="enum" id="SNES_SPC::::r_control" title='SNES_SPC::::r_control' data-ref="SNES_SPC::::r_control">r_control</dfn>  = <var>0x1</var>,</td></tr>
+<tr><th id="198">198</th><td>        <dfn class="enum" id="SNES_SPC::::r_dspaddr" title='SNES_SPC::::r_dspaddr' data-ref="SNES_SPC::::r_dspaddr">r_dspaddr</dfn>  = <var>0x2</var>, <dfn class="enum" id="SNES_SPC::::r_dspdata" title='SNES_SPC::::r_dspdata' data-ref="SNES_SPC::::r_dspdata">r_dspdata</dfn>  = <var>0x3</var>,</td></tr>
+<tr><th id="199">199</th><td>        <dfn class="enum" id="SNES_SPC::::r_cpuio0" title='SNES_SPC::::r_cpuio0' data-ref="SNES_SPC::::r_cpuio0">r_cpuio0</dfn>   = <var>0x4</var>, <dfn class="enum" id="SNES_SPC::::r_cpuio1" title='SNES_SPC::::r_cpuio1' data-ref="SNES_SPC::::r_cpuio1">r_cpuio1</dfn>   = <var>0x5</var>,</td></tr>
+<tr><th id="200">200</th><td>        <dfn class="enum" id="SNES_SPC::::r_cpuio2" title='SNES_SPC::::r_cpuio2' data-ref="SNES_SPC::::r_cpuio2">r_cpuio2</dfn>   = <var>0x6</var>, <dfn class="enum" id="SNES_SPC::::r_cpuio3" title='SNES_SPC::::r_cpuio3' data-ref="SNES_SPC::::r_cpuio3">r_cpuio3</dfn>   = <var>0x7</var>,</td></tr>
+<tr><th id="201">201</th><td>        <dfn class="enum" id="SNES_SPC::::r_f8" title='SNES_SPC::::r_f8' data-ref="SNES_SPC::::r_f8">r_f8</dfn>       = <var>0x8</var>, <dfn class="enum" id="SNES_SPC::::r_f9" title='SNES_SPC::::r_f9' data-ref="SNES_SPC::::r_f9">r_f9</dfn>       = <var>0x9</var>,</td></tr>
+<tr><th id="202">202</th><td>        <dfn class="enum" id="SNES_SPC::::r_t0target" title='SNES_SPC::::r_t0target' data-ref="SNES_SPC::::r_t0target">r_t0target</dfn> = <var>0xA</var>, <dfn class="enum" id="SNES_SPC::::r_t1target" title='SNES_SPC::::r_t1target' data-ref="SNES_SPC::::r_t1target">r_t1target</dfn> = <var>0xB</var>, <dfn class="enum" id="SNES_SPC::::r_t2target" title='SNES_SPC::::r_t2target' data-ref="SNES_SPC::::r_t2target">r_t2target</dfn> = <var>0xC</var>,</td></tr>
+<tr><th id="203">203</th><td>        <dfn class="enum" id="SNES_SPC::::r_t0out" title='SNES_SPC::::r_t0out' data-ref="SNES_SPC::::r_t0out">r_t0out</dfn>    = <var>0xD</var>, <dfn class="enum" id="SNES_SPC::::r_t1out" title='SNES_SPC::::r_t1out' data-ref="SNES_SPC::::r_t1out">r_t1out</dfn>    = <var>0xE</var>, <dfn class="enum" id="SNES_SPC::::r_t2out" title='SNES_SPC::::r_t2out' data-ref="SNES_SPC::::r_t2out">r_t2out</dfn>    = <var>0xF</var></td></tr>
+<tr><th id="204">204</th><td>	};</td></tr>
+<tr><th id="205">205</th><td>	</td></tr>
+<tr><th id="206">206</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC13timers_loadedEv" title='SNES_SPC::timers_loaded' data-ref="_ZN8SNES_SPC13timers_loadedEv">timers_loaded</dfn>();</td></tr>
+<tr><th id="207">207</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC10enable_romEi" title='SNES_SPC::enable_rom' data-ref="_ZN8SNES_SPC10enable_romEi" id="_ZN8SNES_SPC10enable_romEi">enable_rom</a>( <em>int</em> <dfn class="local col6 decl" id="66enable" title='enable' data-type='int' data-ref="66enable">enable</dfn> );</td></tr>
+<tr><th id="208">208</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC9reset_bufEv" title='SNES_SPC::reset_buf' data-ref="_ZN8SNES_SPC9reset_bufEv">reset_buf</dfn>();</td></tr>
+<tr><th id="209">209</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC10save_extraEv" title='SNES_SPC::save_extra' data-ref="_ZN8SNES_SPC10save_extraEv">save_extra</dfn>();</td></tr>
+<tr><th id="210">210</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC9load_regsEPKh" title='SNES_SPC::load_regs' data-ref="_ZN8SNES_SPC9load_regsEPKh">load_regs</dfn>( <a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <em>const</em> <dfn class="local col7 decl" id="67in" title='in' data-type='const uint8_t *' data-ref="67in">in</dfn> [<a class="enum" href="#SNES_SPC::::reg_count" title='SNES_SPC::::reg_count' data-ref="SNES_SPC::::reg_count">reg_count</a>] );</td></tr>
+<tr><th id="211">211</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC10ram_loadedEv" title='SNES_SPC::ram_loaded' data-ref="_ZN8SNES_SPC10ram_loadedEv">ram_loaded</dfn>();</td></tr>
+<tr><th id="212">212</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC11regs_loadedEv" title='SNES_SPC::regs_loaded' data-ref="_ZN8SNES_SPC11regs_loadedEv">regs_loaded</dfn>();</td></tr>
+<tr><th id="213">213</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC15reset_time_regsEv" title='SNES_SPC::reset_time_regs' data-ref="_ZN8SNES_SPC15reset_time_regsEv">reset_time_regs</dfn>();</td></tr>
+<tr><th id="214">214</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC12reset_commonEi" title='SNES_SPC::reset_common' data-ref="_ZN8SNES_SPC12reset_commonEi">reset_common</dfn>( <em>int</em> <dfn class="local col8 decl" id="68timer_counter_init" title='timer_counter_init' data-type='int' data-ref="68timer_counter_init">timer_counter_init</dfn> );</td></tr>
+<tr><th id="215">215</th><td>	</td></tr>
+<tr><th id="216">216</th><td>	<a class="type" href="#SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</a>* <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC10run_timer_EPNS_5TimerEi" title='SNES_SPC::run_timer_' data-ref="_ZN8SNES_SPC10run_timer_EPNS_5TimerEi" id="_ZN8SNES_SPC10run_timer_EPNS_5TimerEi">run_timer_</a>      ( <a class="type" href="#SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</a>* <dfn class="local col9 decl" id="69t" title='t' data-type='SNES_SPC::Timer *' data-ref="69t">t</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="217">217</th><td>	<a class="type" href="#SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</a>* <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC9run_timerEPNS_5TimerEi" title='SNES_SPC::run_timer' data-ref="_ZN8SNES_SPC9run_timerEPNS_5TimerEi" id="_ZN8SNES_SPC9run_timerEPNS_5TimerEi">run_timer</a>       ( <a class="type" href="#SNES_SPC::Timer" title='SNES_SPC::Timer' data-ref="SNES_SPC::Timer">Timer</a>* <dfn class="local col0 decl" id="70t" title='t' data-type='SNES_SPC::Timer *' data-ref="70t">t</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="218">218</th><td>	<em>int</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC8dsp_readEi" title='SNES_SPC::dsp_read' data-ref="_ZN8SNES_SPC8dsp_readEi" id="_ZN8SNES_SPC8dsp_readEi">dsp_read</a>           ( <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="219">219</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC9dsp_writeEii" title='SNES_SPC::dsp_write' data-ref="_ZN8SNES_SPC9dsp_writeEii" id="_ZN8SNES_SPC9dsp_writeEii">dsp_write</a>         ( <em>int</em> <dfn class="local col1 decl" id="71data" title='data' data-type='int' data-ref="71data">data</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="220">220</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC18cpu_write_smp_reg_Eiii" title='SNES_SPC::cpu_write_smp_reg_' data-ref="_ZN8SNES_SPC18cpu_write_smp_reg_Eiii" id="_ZN8SNES_SPC18cpu_write_smp_reg_Eiii">cpu_write_smp_reg_</a>( <em>int</em> <dfn class="local col2 decl" id="72data" title='data' data-type='int' data-ref="72data">data</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a>, <em>int</em> <dfn class="local col3 decl" id="73addr" title='addr' data-type='int' data-ref="73addr">addr</dfn> );</td></tr>
+<tr><th id="221">221</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC17cpu_write_smp_regEiii" title='SNES_SPC::cpu_write_smp_reg' data-ref="_ZN8SNES_SPC17cpu_write_smp_regEiii" id="_ZN8SNES_SPC17cpu_write_smp_regEiii">cpu_write_smp_reg</a> ( <em>int</em> <dfn class="local col4 decl" id="74data" title='data' data-type='int' data-ref="74data">data</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a>, <em>int</em> <dfn class="local col5 decl" id="75addr" title='addr' data-type='int' data-ref="75addr">addr</dfn> );</td></tr>
+<tr><th id="222">222</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC14cpu_write_highEiii" title='SNES_SPC::cpu_write_high' data-ref="_ZN8SNES_SPC14cpu_write_highEiii" id="_ZN8SNES_SPC14cpu_write_highEiii">cpu_write_high</a>    ( <em>int</em> <dfn class="local col6 decl" id="76data" title='data' data-type='int' data-ref="76data">data</dfn>, <em>int</em> <dfn class="local col7 decl" id="77i" title='i' data-type='int' data-ref="77i">i</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="223">223</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC9cpu_writeEiii" title='SNES_SPC::cpu_write' data-ref="_ZN8SNES_SPC9cpu_writeEiii" id="_ZN8SNES_SPC9cpu_writeEiii">cpu_write</a>         ( <em>int</em> <dfn class="local col8 decl" id="78data" title='data' data-type='int' data-ref="78data">data</dfn>, <em>int</em> <dfn class="local col9 decl" id="79addr" title='addr' data-type='int' data-ref="79addr">addr</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="224">224</th><td>	<em>int</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC16cpu_read_smp_regEii" title='SNES_SPC::cpu_read_smp_reg' data-ref="_ZN8SNES_SPC16cpu_read_smp_regEii" id="_ZN8SNES_SPC16cpu_read_smp_regEii">cpu_read_smp_reg</a>   ( <em>int</em> <dfn class="local col0 decl" id="80i" title='i' data-type='int' data-ref="80i">i</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="225">225</th><td>	<em>int</em> <a class="decl" href="../../../../src/third_party/snes_spc/SNES_SPC.cpp.html#_ZN8SNES_SPC8cpu_readEii" title='SNES_SPC::cpu_read' data-ref="_ZN8SNES_SPC8cpu_readEii" id="_ZN8SNES_SPC8cpu_readEii">cpu_read</a>           ( <em>int</em> <dfn class="local col1 decl" id="81addr" title='addr' data-type='int' data-ref="81addr">addr</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="226">226</th><td>	<em>unsigned</em> <a class="decl" href="SPC_CPU.h.html#_ZN8SNES_SPC11CPU_mem_bitEPKhi" title='SNES_SPC::CPU_mem_bit' data-ref="_ZN8SNES_SPC11CPU_mem_bitEPKhi" id="_ZN8SNES_SPC11CPU_mem_bitEPKhi">CPU_mem_bit</a>   ( <a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <em>const</em>* <dfn class="local col2 decl" id="82pc" title='pc' data-type='const uint8_t *' data-ref="82pc">pc</dfn>, <a class="typedef" href="#SNES_SPC::rel_time_t" title='SNES_SPC::rel_time_t' data-type='int' data-ref="SNES_SPC::rel_time_t">rel_time_t</a> );</td></tr>
+<tr><th id="227">227</th><td>	</td></tr>
+<tr><th id="228">228</th><td>	<em>bool</em> <dfn class="decl" id="_ZN8SNES_SPC17check_echo_accessEi" title='SNES_SPC::check_echo_access' data-ref="_ZN8SNES_SPC17check_echo_accessEi">check_echo_access</dfn> ( <em>int</em> <dfn class="local col3 decl" id="83addr" title='addr' data-type='int' data-ref="83addr">addr</dfn> );</td></tr>
+<tr><th id="229">229</th><td>	<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a>* <a class="decl" href="SPC_CPU.h.html#163" title='SNES_SPC::run_until_' data-ref="_ZN8SNES_SPC10run_until_Ei" id="_ZN8SNES_SPC10run_until_Ei">run_until_</a>( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a> <dfn class="local col4 decl" id="84end_time" title='end_time' data-type='time_t' data-ref="84end_time">end_time</dfn> );</td></tr>
+<tr><th id="230">230</th><td>	</td></tr>
+<tr><th id="231">231</th><td>	<b>struct</b> <dfn class="type def" id="SNES_SPC::spc_file_t" title='SNES_SPC::spc_file_t' data-ref="SNES_SPC::spc_file_t">spc_file_t</dfn></td></tr>
+<tr><th id="232">232</th><td>	{</td></tr>
+<tr><th id="233">233</th><td>		<em>char</em>    <dfn class="decl" id="SNES_SPC::spc_file_t::signature" title='SNES_SPC::spc_file_t::signature' data-ref="SNES_SPC::spc_file_t::signature">signature</dfn> [<a class="enum" href="#SNES_SPC::::signature_size" title='SNES_SPC::::signature_size' data-ref="SNES_SPC::::signature_size">signature_size</a>];</td></tr>
+<tr><th id="234">234</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::has_id666" title='SNES_SPC::spc_file_t::has_id666' data-ref="SNES_SPC::spc_file_t::has_id666">has_id666</dfn>;</td></tr>
+<tr><th id="235">235</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::version" title='SNES_SPC::spc_file_t::version' data-ref="SNES_SPC::spc_file_t::version">version</dfn>;</td></tr>
+<tr><th id="236">236</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::pcl" title='SNES_SPC::spc_file_t::pcl' data-ref="SNES_SPC::spc_file_t::pcl">pcl</dfn>, <dfn class="decl" id="SNES_SPC::spc_file_t::pch" title='SNES_SPC::spc_file_t::pch' data-ref="SNES_SPC::spc_file_t::pch">pch</dfn>;</td></tr>
+<tr><th id="237">237</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::a" title='SNES_SPC::spc_file_t::a' data-ref="SNES_SPC::spc_file_t::a">a</dfn>;</td></tr>
+<tr><th id="238">238</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::x" title='SNES_SPC::spc_file_t::x' data-ref="SNES_SPC::spc_file_t::x">x</dfn>;</td></tr>
+<tr><th id="239">239</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::y" title='SNES_SPC::spc_file_t::y' data-ref="SNES_SPC::spc_file_t::y">y</dfn>;</td></tr>
+<tr><th id="240">240</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::psw" title='SNES_SPC::spc_file_t::psw' data-ref="SNES_SPC::spc_file_t::psw">psw</dfn>;</td></tr>
+<tr><th id="241">241</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::sp" title='SNES_SPC::spc_file_t::sp' data-ref="SNES_SPC::spc_file_t::sp">sp</dfn>;</td></tr>
+<tr><th id="242">242</th><td>		<em>char</em>    <dfn class="decl" id="SNES_SPC::spc_file_t::text" title='SNES_SPC::spc_file_t::text' data-ref="SNES_SPC::spc_file_t::text">text</dfn> [<var>212</var>];</td></tr>
+<tr><th id="243">243</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::ram" title='SNES_SPC::spc_file_t::ram' data-ref="SNES_SPC::spc_file_t::ram">ram</dfn> [<var>0x10000</var>];</td></tr>
+<tr><th id="244">244</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::dsp" title='SNES_SPC::spc_file_t::dsp' data-ref="SNES_SPC::spc_file_t::dsp">dsp</dfn> [<var>128</var>];</td></tr>
+<tr><th id="245">245</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::unused" title='SNES_SPC::spc_file_t::unused' data-ref="SNES_SPC::spc_file_t::unused">unused</dfn> [<var>0x40</var>];</td></tr>
+<tr><th id="246">246</th><td>		<a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="decl" id="SNES_SPC::spc_file_t::ipl_rom" title='SNES_SPC::spc_file_t::ipl_rom' data-ref="SNES_SPC::spc_file_t::ipl_rom">ipl_rom</dfn> [<var>0x40</var>];</td></tr>
+<tr><th id="247">247</th><td>	};</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td>	<em>static</em> <em>char</em> <em>const</em> <dfn class="decl" id="SNES_SPC::signature" title='SNES_SPC::signature' data-ref="SNES_SPC::signature">signature</dfn> [<a class="enum" href="#SNES_SPC::::signature_size" title='SNES_SPC::::signature_size' data-ref="SNES_SPC::::signature_size">signature_size</a> + <var>1</var>];</td></tr>
+<tr><th id="250">250</th><td>	</td></tr>
+<tr><th id="251">251</th><td>	<em>void</em> <dfn class="decl" id="_ZN8SNES_SPC9save_regsEPh" title='SNES_SPC::save_regs' data-ref="_ZN8SNES_SPC9save_regsEPh">save_regs</dfn>( <a class="typedef" href="#SNES_SPC::uint8_t" title='SNES_SPC::uint8_t' data-type='BOOST::uint8_t' data-ref="SNES_SPC::uint8_t">uint8_t</a> <dfn class="local col5 decl" id="85out" title='out' data-type='uint8_t *' data-ref="85out">out</dfn> [<a class="enum" href="#SNES_SPC::::reg_count" title='SNES_SPC::::reg_count' data-ref="SNES_SPC::::reg_count">reg_count</a>] );</td></tr>
+<tr><th id="252">252</th><td>};</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><u>#include <a href="../../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><b>inline</b> <em>int</em> <a class="type" href="#SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</a>::<dfn class="decl def" id="_ZNK8SNES_SPC12sample_countEv" title='SNES_SPC::sample_count' data-ref="_ZNK8SNES_SPC12sample_countEv">sample_count</dfn>() <em>const</em> { <b>return</b> (<a class="member" href="#SNES_SPC::m" title='SNES_SPC::m' data-ref="SNES_SPC::m">m</a>.<a class="ref" href="#SNES_SPC::state_t::extra_clocks" title='SNES_SPC::state_t::extra_clocks' data-ref="SNES_SPC::state_t::extra_clocks">extra_clocks</a> &gt;&gt; <var>5</var>) * <var>2</var>; }</td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><b>inline</b> <em>int</em> <a class="type" href="#SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</a>::<dfn class="decl def" id="_ZN8SNES_SPC9read_portEii" title='SNES_SPC::read_port' data-ref="_ZN8SNES_SPC9read_portEii">read_port</dfn>( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a> <dfn class="local col6 decl" id="86t" title='t' data-type='time_t' data-ref="86t">t</dfn>, <em>int</em> <dfn class="local col7 decl" id="87port" title='port' data-type='int' data-ref="87port">port</dfn> )</td></tr>
+<tr><th id="259">259</th><td>{</td></tr>
+<tr><th id="260">260</th><td>	<a class="macro" href="../../../../../include/assert.h.html#50" title="(static_cast&lt;void&gt; (0))" data-ref="_M/assert">assert</a>( (<em>unsigned</em>) port &lt; port_count );</td></tr>
+<tr><th id="261">261</th><td>	<b>return</b> <a class="member" href="SPC_CPU.h.html#163" title='SNES_SPC::run_until_' data-ref="_ZN8SNES_SPC10run_until_Ei">run_until_</a>( <a class="local col6 ref" href="#86t" title='t' data-ref="86t">t</a> ) [<a class="local col7 ref" href="#87port" title='port' data-ref="87port">port</a>];</td></tr>
+<tr><th id="262">262</th><td>}</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><b>inline</b> <em>void</em> <a class="type" href="#SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</a>::<dfn class="decl def" id="_ZN8SNES_SPC10write_portEiii" title='SNES_SPC::write_port' data-ref="_ZN8SNES_SPC10write_portEiii">write_port</dfn>( <a class="typedef" href="#SNES_SPC::time_t" title='SNES_SPC::time_t' data-type='int' data-ref="SNES_SPC::time_t">time_t</a> <dfn class="local col8 decl" id="88t" title='t' data-type='time_t' data-ref="88t">t</dfn>, <em>int</em> <dfn class="local col9 decl" id="89port" title='port' data-type='int' data-ref="89port">port</dfn>, <em>int</em> <dfn class="local col0 decl" id="90data" title='data' data-type='int' data-ref="90data">data</dfn> )</td></tr>
+<tr><th id="265">265</th><td>{</td></tr>
+<tr><th id="266">266</th><td>	<a class="macro" href="../../../../../include/assert.h.html#50" title="(static_cast&lt;void&gt; (0))" data-ref="_M/assert">assert</a>( (<em>unsigned</em>) port &lt; port_count );</td></tr>
+<tr><th id="267">267</th><td>	<a class="member" href="SPC_CPU.h.html#163" title='SNES_SPC::run_until_' data-ref="_ZN8SNES_SPC10run_until_Ei">run_until_</a>( <a class="local col8 ref" href="#88t" title='t' data-ref="88t">t</a> ) [<var>0x10</var> + <a class="local col9 ref" href="#89port" title='port' data-ref="89port">port</a>] = <a class="local col0 ref" href="#90data" title='data' data-ref="90data">data</a>;</td></tr>
+<tr><th id="268">268</th><td>}</td></tr>
+<tr><th id="269">269</th><td></td></tr>
+<tr><th id="270">270</th><td><b>inline</b> <em>void</em> <a class="type" href="#SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</a>::<dfn class="decl def" id="_ZN8SNES_SPC11mute_voicesEi" title='SNES_SPC::mute_voices' data-ref="_ZN8SNES_SPC11mute_voicesEi">mute_voices</dfn>( <em>int</em> <dfn class="local col1 decl" id="91mask" title='mask' data-type='int' data-ref="91mask">mask</dfn> ) { <a class="member" href="#SNES_SPC::dsp" title='SNES_SPC::dsp' data-ref="SNES_SPC::dsp">dsp</a>.<a class="ref" href="SPC_DSP.h.html#_ZN7SPC_DSP11mute_voicesEi" title='SPC_DSP::mute_voices' data-ref="_ZN7SPC_DSP11mute_voicesEi">mute_voices</a>( <a class="local col1 ref" href="#91mask" title='mask' data-ref="91mask">mask</a> ); }</td></tr>
+<tr><th id="271">271</th><td>	</td></tr>
+<tr><th id="272">272</th><td><b>inline</b> <em>void</em> <a class="type" href="#SNES_SPC" title='SNES_SPC' data-ref="SNES_SPC">SNES_SPC</a>::<dfn class="decl def" id="_ZN8SNES_SPC16disable_surroundEb" title='SNES_SPC::disable_surround' data-ref="_ZN8SNES_SPC16disable_surroundEb">disable_surround</dfn>( <em>bool</em> <dfn class="local col2 decl" id="92disable" title='disable' data-type='bool' data-ref="92disable">disable</dfn> ) { <a class="member" href="#SNES_SPC::dsp" title='SNES_SPC::dsp' data-ref="SNES_SPC::dsp">dsp</a>.<a class="ref" href="SPC_DSP.h.html#_ZN7SPC_DSP16disable_surroundEb" title='SPC_DSP::disable_surround' data-ref="_ZN7SPC_DSP16disable_surroundEb">disable_surround</a>( <a class="local col2 ref" href="#92disable" title='disable' data-ref="92disable">disable</a> ); }</td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td><u>#<span data-ppcond="274">if</span> !<a class="macro" href="SPC_DSP.h.html#208" title="1" data-ref="_M/SPC_NO_COPY_STATE_FUNCS">SPC_NO_COPY_STATE_FUNCS</a></u></td></tr>
+<tr><th id="275">275</th><td><b>inline</b> <em>bool</em> SNES_SPC::check_kon() { <b>return</b> dsp.check_kon(); }</td></tr>
+<tr><th id="276">276</th><td><u>#<span data-ppcond="274">endif</span></u></td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="279">279</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SNES_SPC.cpp.html'>codebrowser/src/third_party/snes_spc/SNES_SPC.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

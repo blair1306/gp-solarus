@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='157' type='bool Solarus::LuaContext::notify_dialog_started(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='112' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='392' ll='398' type='bool Solarus::LuaContext::notify_dialog_started(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='384'>/**
+ * \brief Notifies Lua that a dialog starts.
+ * \param game The game.
+ * \param dialog The dialog that is becoming active.
+ * \param info_ref Lua ref to an optional info parameter to pass to
+ * Lua, or an empty ref.
+ * \return true if Lua handles the dialog, false otherwise.
+ */</doc>

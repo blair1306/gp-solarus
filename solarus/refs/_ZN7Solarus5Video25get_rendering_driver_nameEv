@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='57' type='static const std::string &amp; Solarus::Video::get_rendering_driver_name()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='390' ll='393' type='static const std::string &amp; Solarus::Video::get_rendering_driver_name()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='386'>/**
+ * \brief Get the default rendering driver for the current platform.
+ * \return a string containing the rendering driver name.
+ */</doc>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='151' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>

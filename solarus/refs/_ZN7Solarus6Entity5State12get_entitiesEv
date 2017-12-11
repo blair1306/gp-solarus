@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='154' type='Solarus::Entities &amp; Solarus::Entity::State::get_entities()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='113' ll='115' type='Solarus::Entities &amp; Solarus::Entity::State::get_entities()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='109'>/**
+ * \brief Returns the entities of the current map.
+ * \return the entities
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='101' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='104' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='96' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/BowState.cpp' l='56' u='c' c='_ZN7Solarus4Hero8BowState6updateEv'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='184' u='c' c='_ZN7Solarus4Hero13CarryingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='48' u='c' c='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='207' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='104' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='144' u='c' c='_ZN7Solarus4Hero12LiftingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='106' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='137' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='186' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

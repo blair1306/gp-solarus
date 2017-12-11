@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='32' type='4'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='32'>/**&lt; Collision if the entity&apos;s origin point
+                                         * is inside the detector&apos;s rectangle. */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='851' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1776' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1777' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1935' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1182' u='r' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>

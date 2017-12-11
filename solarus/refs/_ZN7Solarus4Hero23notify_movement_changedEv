@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='139' type='void Solarus::Hero::notify_movement_changed()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='236' c='_ZN7Solarus6Entity23notify_movement_changedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1159' ll='1186' type='void Solarus::Hero::notify_movement_changed()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1152'>/**
+ * \brief Updates the hero depending on its movement.
+ *
+ * This function is called when the hero&apos;s movement direction changes (for instance
+ * because the player pressed or released a directional key, or the hero just reached an obstacle).
+ * It updates the hero&apos;s animations and collisions according to the new movement.
+ */</doc>

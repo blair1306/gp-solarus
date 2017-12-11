@@ -1,0 +1,38 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1143' type='static SpritePtr Solarus::LuaContext::check_sprite(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1449' u='c' c='_ZN7Solarus10LuaContext24entity_api_remove_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1476' u='c' c='_ZN7Solarus10LuaContext32entity_api_bring_sprite_to_frontEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1495' u='c' c='_ZN7Solarus10LuaContext31entity_api_bring_sprite_to_backEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2455' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4759' u='c' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4784' u='c' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4832' u='c' c='_ZN7Solarus10LuaContext48enemy_api_set_default_attack_consequences_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4865' u='c' c='_ZN7Solarus10LuaContext31enemy_api_set_invincible_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1775' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_spriteEP9lua_State'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='100' ll='104' type='static SpritePtr Solarus::LuaContext::check_sprite(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='143' u='c' c='_ZN7Solarus10LuaContext28sprite_api_get_animation_setEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='160' u='c' c='_ZN7Solarus10LuaContext24sprite_api_get_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='177' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='210' u='c' c='_ZN7Solarus10LuaContext24sprite_api_has_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='226' u='c' c='_ZN7Solarus10LuaContext24sprite_api_get_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='241' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='265' u='c' c='_ZN7Solarus10LuaContext29sprite_api_get_num_directionsEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='289' u='c' c='_ZN7Solarus10LuaContext20sprite_api_get_frameEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='304' u='c' c='_ZN7Solarus10LuaContext20sprite_api_set_frameEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='329' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='365' u='c' c='_ZN7Solarus10LuaContext26sprite_api_get_frame_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='395' u='c' c='_ZN7Solarus10LuaContext26sprite_api_set_frame_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='415' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='454' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='493' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='541' u='c' c='_ZN7Solarus10LuaContext20sprite_api_is_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='557' u='c' c='_ZN7Solarus10LuaContext21sprite_api_set_pausedEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='574' u='c' c='_ZN7Solarus10LuaContext29sprite_api_set_ignore_suspendEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='591' u='c' c='_ZN7Solarus10LuaContext22sprite_api_synchronizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='594' u='c' c='_ZN7Solarus10LuaContext22sprite_api_synchronizeEP9lua_State'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='93'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * sprite and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The sprite.
+ */</doc>

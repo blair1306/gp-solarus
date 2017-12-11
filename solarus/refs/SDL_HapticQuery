@@ -1,0 +1,17 @@
+<dec f='include/SDL2/SDL_haptic.h' l='972' type='unsigned int SDL_HapticQuery(SDL_Haptic * haptic)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='956'>/**
+ *  \brief Gets the haptic devices supported features in bitwise matter.
+ *
+ *  Example:
+ *  \code
+ *  if (SDL_HapticQuery(haptic) &amp; SDL_HAPTIC_CONSTANT) {
+ *      printf(&quot;We have constant haptic effect!&quot;);
+ *  }
+ *  \endcode
+ *
+ *  \param haptic The haptic device to query.
+ *  \return Haptic features in bitwise manner (OR&apos;d).
+ *
+ *  \sa SDL_HapticNumEffects
+ *  \sa SDL_HapticEffectSupported
+ */</doc>

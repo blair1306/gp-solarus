@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='142' type='void Solarus::Surface::create_texture_from_surface()'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='270' ll='294' type='void Solarus::Surface::create_texture_from_surface()'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='812' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='265'>/**
+ * \brief Creates a hardware texture from the software surface.
+ *
+ * Also converts the software surface to a preferred format if necessary.
+ */</doc>

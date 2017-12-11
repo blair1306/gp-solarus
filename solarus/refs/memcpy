@@ -1,0 +1,16 @@
+<dec f='include/string.h' l='46' type='void * memcpy(void *restrict __dest, const void *restrict __src, size_t __n)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='882' u='c' c='_ZNK7QString12toWCharArrayEPw'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qlist.h' l='382' u='c' c='_ZN5QList14node_constructEPNS_4NodeERKT_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qvector.h' l='288' u='c' c='_ZN7QVector13copyConstructEPKT_S2_PS0_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qvector.h' l='507' u='c' c='_ZN7QVector11reallocDataEii6QFlagsIN10QArrayData16AllocationOptionEE'/>
+<doc f='include/string.h' l='45'>/* Copy N bytes of SRC to DEST.  */</doc>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='45' u='c' c='_ZN7Solarus19SavegameConverterV1C1ERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='70' u='c' c='_ZN7Solarus12_GLOBAL__N_17cb_readEPvmmS1_'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='87' u='c' c='_ZN8SNES_SPC10enable_romEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='88' u='c' c='_ZN8SNES_SPC10enable_romEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='73' u='c' c='_ZN8SNES_SPC4initEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='82' u='c' c='_ZN8SNES_SPC8init_romEPKh'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='127' u='c' c='_ZN8SNES_SPC9load_regsEPKh'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='128' u='c' c='_ZN8SNES_SPC9load_regsEPKh'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='237' u='c' c='_ZN8SNES_SPC8load_spcEPKvl'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='686' u='c' c='_ZN7SPC_DSP4loadEPKh'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='42' type='void Solarus::Settings::set_from_quest()'/>
+<def f='codebrowser/src/Settings.cpp' l='286' ll='306' type='void Solarus::Settings::set_from_quest()'/>
+<doc f='codebrowser/src/Settings.cpp' l='283'>/**
+ * \brief Sets these settings to the ones of the currently running quest.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='297' u='c' c='_ZN7Solarus10LuaContext22main_api_save_settingsEP9lua_State'/>

@@ -1,0 +1,10 @@
+<def f='codebrowser/include/solarus/MapData.h' l='37' ll='41'/>
+<size>88</size>
+<doc f='codebrowser/include/solarus/MapData.h' l='31'>/**
+ * \brief A list of entities on a layer of the map.
+ *
+ * The entity at index 0 is the most to the back.
+ * Tiles are always before all other entities in the list.
+ */</doc>
+<mbr r='Solarus::EntityDataList::entities' o='0' t='std::deque&lt;EntityData&gt;'/>
+<mbr r='Solarus::EntityDataList::num_tiles' o='640' t='int'/>

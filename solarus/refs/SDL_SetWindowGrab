@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='719' type='void SDL_SetWindowGrab(SDL_Window * window, SDL_bool grabbed)'/>
+<doc f='include/SDL2/SDL_video.h' l='711'>/**
+ *  \brief Set a window&apos;s input grab mode.
+ *
+ *  \param window The window for which the input grab mode should be set.
+ *  \param grabbed This is SDL_TRUE to grab input, and SDL_FALSE to release input.
+ *
+ *  \sa SDL_GetWindowGrab()
+ */</doc>

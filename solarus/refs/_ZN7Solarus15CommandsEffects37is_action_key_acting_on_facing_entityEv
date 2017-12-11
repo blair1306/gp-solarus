@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='89' type='bool Solarus::CommandsEffects::is_action_key_acting_on_facing_entity()'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='135' ll='141' type='bool Solarus::CommandsEffects::is_action_key_acting_on_facing_entity()'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='126'>/**
+ * \brief Returns whether the action key is currently taking effect
+ * on the entity the hero is facing.
+ *
+ * Such action key effects are ACTION_KEY_LOOK, ACTION_KEY_OPEN,
+ * ACTION_KEY_LIFT, ACTION_KEY_SPEAK and ACTION_KEY_GRAB.
+ *
+ * \return true if the action key is acting on the facing entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='755' u='c' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='102' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>

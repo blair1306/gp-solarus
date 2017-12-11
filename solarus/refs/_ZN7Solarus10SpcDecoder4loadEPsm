@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/SpcDecoder.h' l='45' type='void Solarus::SpcDecoder::load(int16_t * sound_data, size_t sound_size)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='539' u='c' c='_ZN7Solarus5Music5startEv'/>
+<def f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='36' ll='42' type='void Solarus::SpcDecoder::load(int16_t * sound_data, size_t sound_size)'/>
+<doc f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='31'>/**
+ * \brief Loads an SPC file from the memory.
+ * \param sound_data The memory area to read.
+ * \param sound_size Size of the memory area in bytes.
+ */</doc>

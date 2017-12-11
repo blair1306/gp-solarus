@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='69' type='void Solarus::Boomerang::go_back()'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='238' ll='243' type='void Solarus::Boomerang::go_back()'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='283' u='c' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='294' u='c' c='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='313' u='c' c='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='330' u='c' c='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='357' u='c' c='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='235'>/**
+ * \brief Makes the boomerang go back towards the hero.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='310' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

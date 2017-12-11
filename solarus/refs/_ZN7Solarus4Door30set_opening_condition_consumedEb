@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='93' type='void Solarus::Door::set_opening_condition_consumed(bool opening_condition_consumed)'/>
+<def f='codebrowser/src/entities/Door.cpp' l='409' ll='411' type='void Solarus::Door::set_opening_condition_consumed(bool opening_condition_consumed)'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='390'>/**
+ * \brief Sets whether opening this door should consume the condition that
+ * was required.
+ *
+ * If this setting is \c true, here is the behavior when the hero opens
+ * the door:
+ * - If the opening method is OpeningMethod::BY_INTERACTION_IF_SAVEGAME_VARIABLE,
+ *   then the required savegame variable is either:
+ *   - set to \c false if it is a boolean,
+ *   - decremented if it is an integer,
+ *   - set to an empty string if it is a string.
+ * - If the opening method is OpeningMethod::BY_INTERACTION_IF_ITEM, then:
+ *   - if the required item has an amount, the amount is decremented.
+ *   - if the required item has no amount, its possession state is set to zero.
+ * - With other opening methods, this setting has no effect.
+ *
+ * \param opening_condition_consumed \c true if opening this door should
+ * consume the condition that was required.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1097' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

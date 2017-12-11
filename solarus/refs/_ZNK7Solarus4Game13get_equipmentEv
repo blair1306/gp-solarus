@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Game.h' l='76' type='const Solarus::Equipment &amp; Solarus::Game::get_equipment() const'/>
+<def f='codebrowser/src/Game.cpp' l='255' ll='257' type='const Solarus::Equipment &amp; Solarus::Game::get_equipment() const'/>
+<use f='codebrowser/src/Game.cpp' l='784' u='c' c='_ZNK7Solarus4Game9can_pauseEv'/>
+<doc f='codebrowser/src/Game.cpp' l='248'>/**
+ * \brief Returns the equipment of the player.
+ *
+ * It is equivalent to get_savegame().get_equipment().
+ *
+ * \return The equipment.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='485' u='c' c='_ZNK7Solarus6Entity13get_equipmentEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='154' u='c' c='_ZNK7Solarus6Entity5State13get_equipmentEv'/>

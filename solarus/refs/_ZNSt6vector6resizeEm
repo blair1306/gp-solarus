@@ -1,0 +1,14 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='672' ll='679' type='void std::vector::resize(size_type __new_size)'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='663'>/**
+       *  @brief  Resizes the %vector to the specified number of elements.
+       *  @param  __new_size  Number of elements the %vector should contain.
+       *
+       *  This function will %resize the %vector to the specified
+       *  number of elements.  If the number is smaller than the
+       *  %vector&apos;s current size the %vector is truncated, otherwise
+       *  default constructed elements are appended.
+       */</doc>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='71' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='556' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='64' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='66' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>

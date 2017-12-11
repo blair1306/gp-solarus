@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='56' type='Solarus::EntityType Solarus::Destructible::get_type() const'/>
+<doc f='codebrowser/include/solarus/entities/Destructible.h' l='55'>// Properties overridden from Entity.</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='587' u='c' c='_ZN7Solarus12CustomEntity24is_destructible_obstacleERNS_12DestructibleE'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='104' c='_ZNK7Solarus6Entity8get_typeEv'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='82' ll='84' type='Solarus::EntityType Solarus::Destructible::get_type() const'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='78'>/**
+ * \brief Returns the type of entity.
+ * \return the type of entity
+ */</doc>

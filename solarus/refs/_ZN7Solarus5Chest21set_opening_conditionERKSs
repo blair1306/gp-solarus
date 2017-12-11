@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='67' type='void Solarus::Chest::set_opening_condition(const std::string &amp; opening_condition)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='279' ll='281' type='void Solarus::Chest::set_opening_condition(const std::string &amp; opening_condition)'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='260'>/**
+ * \brief Sets the savegame variable or the equipment item name required to
+ * open this chest.
+ *
+ * You must set a savegame variable if the opening mode is
+ * OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE.
+ * The hero will be allowed to open the chest if this saved value is either
+ * \c true, an integer greater than zero or a non-empty string.
+ *
+ * You must set an equipment item&apos;s name if the opening mode is
+ * OPENING_BY_INTERACTION_IF_ITEM.
+ * The hero will be allowed to open the chest if he has that item and,
+ * for items with an amount, if the amount is greater than zero.
+ *
+ * For the other opening methods, this setting has no effect.
+ *
+ * \param opening_condition The savegame variable or the equipment item name
+ * required.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='659' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>

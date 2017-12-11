@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='74' type='void Solarus::Transition::start()'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='71'>/**
+     * \brief Starts this transition effect.
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='125' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/Game.cpp' l='401' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='484' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='533' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='893' u='c' c='_ZN7Solarus4Game7restartEv'/>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='70' c='_ZN7Solarus14TransitionFade5startEv'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='32' c='_ZN7Solarus19TransitionImmediate5startEv'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='70' c='_ZN7Solarus19TransitionScrolling5startEv'/>

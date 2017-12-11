@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_hints.h' l='282'/>
+<doc f='include/SDL2/SDL_hints.h' l='274'>/**
+ *  \brief If set to 0 then never set the top most bit on a SDL Window, even if the video mode expects it.
+ *      This is a debugging aid for developers and not expected to be used by end users. The default is &quot;1&quot;
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - don&apos;t allow topmost
+ *    &quot;1&quot;       - allow topmost
+ */</doc>

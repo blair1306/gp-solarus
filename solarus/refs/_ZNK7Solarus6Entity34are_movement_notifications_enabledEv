@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='222' type='bool Solarus::Entity::are_movement_notifications_enabled() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='616' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1554' ll='1557' type='bool Solarus::Entity::are_movement_notifications_enabled() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1623' u='c' c='_ZN7Solarus6Entity23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1658' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2181' u='c' c='_ZN7Solarus6Entity23notify_movement_startedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2191' u='c' c='_ZN7Solarus6Entity24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2203' u='c' c='_ZN7Solarus6Entity23notify_movement_changedEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1545'>/**
+ * \brief Returns whether Lua movement events are enabled for this entity.
+ *
+ * If no, events entity:on_position_changed(), entity:on_obstacle_reached(),
+ * entity:on_movement_started(), entity:on_movement_changed() and
+ * entity:on_movement_finished() won&apos;t be called.
+ *
+ * \return Whether movement events are currently enabled.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1069' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>

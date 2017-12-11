@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='377' type='void Solarus::LuaContext::entity_on_position_changed(Solarus::Entity &amp; entity, const Solarus::Point &amp; xy, int layer)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='617' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1659' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1070' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5816' ll='5826' type='void Solarus::LuaContext::entity_on_position_changed(Solarus::Entity &amp; entity, const Solarus::Point &amp; xy, int layer)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5807'>/**
+ * \brief Calls the on_position_changed() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \param xy The new coordinates.
+ * \param layer The new layer.
+ */</doc>

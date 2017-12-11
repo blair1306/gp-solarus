@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='96' type='void Solarus::Destructible::set_suspended(bool suspended)'/>
+<doc f='codebrowser/include/solarus/entities/Destructible.h' l='95'>// Game loop.</doc>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='355' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='485' ll='493' type='void Solarus::Destructible::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='481'>/**
+ * \brief This function is called by the map when the game is suspended or resumed.
+ * \param suspended true to suspend the entity, false to resume it
+ */</doc>

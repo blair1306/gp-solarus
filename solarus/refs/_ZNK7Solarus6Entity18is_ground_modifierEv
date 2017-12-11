@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='109' type='bool Solarus::Entity::is_ground_modifier() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='456' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='147' ll='149' type='bool Solarus::Entity::is_ground_modifier() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='554' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='610' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1652' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2323' u='c' c='_ZN7Solarus6Entity14notify_enabledEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='139'>/**
+ * \brief Returns whether this entity overrides the ground
+ * of where it is placed.
+ *
+ * This is equivalent to get_modified_ground() != Ground::EMPTY.
+ *
+ * \return \c true if this entity changes the ground.
+ */</doc>

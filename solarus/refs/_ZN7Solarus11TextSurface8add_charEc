@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='102' type='void Solarus::TextSurface::add_char(char c)'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='344' ll='346' type='void Solarus::TextSurface::add_char(char c)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='337'>/**
+ * \brief Adds a character to the string drawn.
+ *
+ * This is equivalent to set_text(get_text() + c).
+ *
+ * \param c the character to add
+ */</doc>

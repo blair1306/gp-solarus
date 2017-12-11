@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='56' type='static bool Solarus::Video::is_acceleration_enabled()'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='186' u='c' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='337' u='c' c='_ZN7Solarus7Surface11set_opacityEh'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='363' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='631' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='817' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='164' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='412' ll='421' type='static bool Solarus::Video::is_acceleration_enabled()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='403'>/**
+ * \brief Returns whether 2D hardware acceleration is currently enabled.
+ *
+ * 2D acceleration is enabled if the system supports it, except when the
+ * current video mode needs to work in software mode
+ * (typically because of a pixel filter implemented in software).
+ *
+ * \return \c true if GPU acceleration is active.
+ */</doc>

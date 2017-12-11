@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='55' type='void Solarus::StraightMovement::set_smooth(bool smooth)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='832' u='c' c='_ZN7Solarus10LuaContext32straight_movement_api_set_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='957' u='c' c='_ZN7Solarus10LuaContext30random_movement_api_set_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1085' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_smoothEP9lua_State'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='353' ll='355' type='void Solarus::StraightMovement::set_smooth(bool smooth)'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='348'>/**
+ * \brief Sets whether the movement adjusts its trajectory when
+ * an obstacle is reached.
+ * \param smooth true if the movement is smooth
+ */</doc>

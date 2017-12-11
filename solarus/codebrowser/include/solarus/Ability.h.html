@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ability.h source code [codebrowser/include/solarus/Ability.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Ability "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/Ability.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>include</a>/<a href='./'>solarus</a>/<a href='Ability.h.html'>Ability.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_ABILITY_H">SOLARUS_ABILITY_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_ABILITY_H" data-ref="_M/SOLARUS_ABILITY_H">SOLARUS_ABILITY_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command">\brief</span> The different built-in abilities managed by the engine.</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="25">25</th><td><b>enum</b> <b>class</b> <dfn class="type def" id="Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</dfn> {</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>  <dfn class="enum" id="Solarus::Ability::TUNIC" title='Solarus::Ability::TUNIC' data-ref="Solarus::Ability::TUNIC">TUNIC</dfn>,                  <i class="doc">/**&lt; Tunic of the hero. Determines his sprite. */</i></td></tr>
+<tr><th id="28">28</th><td>  <dfn class="enum" id="Solarus::Ability::SWORD" title='Solarus::Ability::SWORD' data-ref="Solarus::Ability::SWORD">SWORD</dfn>,                  <i class="doc">/**&lt; Sword of the hero. 0 means no sword, a</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc">                           * greater values determine the sword sprite. */</i></td></tr>
+<tr><th id="30">30</th><td>  <dfn class="enum" id="Solarus::Ability::SWORD_KNOWLEDGE" title='Solarus::Ability::SWORD_KNOWLEDGE' data-ref="Solarus::Ability::SWORD_KNOWLEDGE">SWORD_KNOWLEDGE</dfn>,        <i class="doc">/**&lt; Allows to do the super spin attack. */</i></td></tr>
+<tr><th id="31">31</th><td>  <dfn class="enum" id="Solarus::Ability::SHIELD" title='Solarus::Ability::SHIELD' data-ref="Solarus::Ability::SHIELD">SHIELD</dfn>,                 <i class="doc">/**&lt; Allows to stop attacks from enemies. */</i></td></tr>
+<tr><th id="32">32</th><td>  <dfn class="enum" id="Solarus::Ability::LIFT" title='Solarus::Ability::LIFT' data-ref="Solarus::Ability::LIFT">LIFT</dfn>,                   <i class="doc">/**&lt; Lifting destructible objects. */</i></td></tr>
+<tr><th id="33">33</th><td>  <dfn class="enum" id="Solarus::Ability::SWIM" title='Solarus::Ability::SWIM' data-ref="Solarus::Ability::SWIM">SWIM</dfn>,                   <i class="doc">/**&lt; Swimming in deep water. */</i></td></tr>
+<tr><th id="34">34</th><td>  <dfn class="enum" id="Solarus::Ability::JUMP_OVER_WATER" title='Solarus::Ability::JUMP_OVER_WATER' data-ref="Solarus::Ability::JUMP_OVER_WATER">JUMP_OVER_WATER</dfn>,        <i class="doc">/**&lt; Automatically jumping when arriving in water</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc">                           * without the SWIM ability. */</i></td></tr>
+<tr><th id="36">36</th><td>  <dfn class="enum" id="Solarus::Ability::RUN" title='Solarus::Ability::RUN' data-ref="Solarus::Ability::RUN">RUN</dfn>,                    <i class="doc">/**&lt; Running faster. */</i></td></tr>
+<tr><th id="37">37</th><td>  <dfn class="enum" id="Solarus::Ability::DETECT_WEAK_WALLS" title='Solarus::Ability::DETECT_WEAK_WALLS' data-ref="Solarus::Ability::DETECT_WEAK_WALLS">DETECT_WEAK_WALLS</dfn>,      <i class="doc">/**&lt; Be notified of weak walls nearby. */</i></td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/AbilityInfo.cpp.html'>codebrowser/src/AbilityInfo.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,63 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1059' type='void Solarus::LuaContext::register_type(const std::string &amp; module_name, const luaL_Reg * functions, const luaL_Reg * methods, const luaL_Reg * metamethods)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='193' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='214' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='229' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='250' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='265' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='282' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='320' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='343' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='360' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='373' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='391' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='419' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='434' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='490' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='522' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='536' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='537' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='538' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='539' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='540' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='541' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='542' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='543' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='544' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='545' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='546' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='547' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='548' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='549' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='550' u='c' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='119' u='c' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='86' u='c' c='_ZN7Solarus10LuaContext20register_item_moduleEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='858' ll='921' type='void Solarus::LuaContext::register_type(const std::string &amp; module_name, const luaL_Reg * functions, const luaL_Reg * methods, const luaL_Reg * metamethods)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='845'>/**
+ * \brief Defines some C++ functions into a new Lua userdata type.
+ * \param module_name name of the table that will contain the functions
+ * (e.g. &quot;sol.game&quot;). It may already exist or not.
+ * This string will also identify the type.
+ * \param functions List of functions to define in the module table or nullptr.
+ * Must end with {nullptr, nullptr}.
+ * \param methods List of methods to define in the type or nullptr.
+ * Must end with {nullptr, nullptr}.
+ * \param metamethods List of metamethods to define in the metatable of the
+ * type or nullptr.
+ * Must end with {nullptr, nullptr}.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='165' u='c' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='124' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='144' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='163' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='181' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='201' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='215' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='230' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='259' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='277' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='295' u='c' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='80' u='c' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='69' u='c' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='103' u='c' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='68' u='c' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>

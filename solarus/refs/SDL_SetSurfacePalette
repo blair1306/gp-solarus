@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_surface.h' l='139' type='int SDL_SetSurfacePalette(SDL_Surface * surface, SDL_Palette * palette)'/>
+<doc f='include/SDL2/SDL_surface.h' l='132'>/**
+ *  \brief Set the palette used by a surface.
+ *
+ *  \return 0, or -1 if the surface format doesn&apos;t use a palette.
+ *
+ *  \note A single palette can be shared with many surfaces.
+ */</doc>

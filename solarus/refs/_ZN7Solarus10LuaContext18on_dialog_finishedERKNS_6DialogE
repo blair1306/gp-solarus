@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1216' type='void Solarus::LuaContext::on_dialog_finished(const Solarus::Dialog &amp; dialog)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1728' u='c' c='_ZN7Solarus10LuaContext23game_on_dialog_finishedERNS_4GameERKNS_6DialogE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1506' ll='1512' type='void Solarus::LuaContext::on_dialog_finished(const Solarus::Dialog &amp; dialog)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1502'>/**
+ * \brief Calls the on_dialog_finished() method of the object on top of the stack.
+ * \param dialog The dialog that has just finished.
+ */</doc>

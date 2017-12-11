@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='222' type='void Solarus::Hero::set_invincible(bool invincible, uint32_t duration)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2062' ll='2069' type='void Solarus::Hero::set_invincible(bool invincible, uint32_t duration)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2079' u='c' c='_ZN7Solarus4Hero20update_invincibilityEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2056'>/**
+ * \brief Sets the hero temporarily invincible or stops the invincibility.
+ * \param invincible \c true to make the hero invincible, \c false to stop.
+ * \param duration How long to stay invincible in milliseconds.
+ * 0 means infinite. No effect if \c invincible is \c false.
+ */</doc>
+<use f='codebrowser/src/hero/HurtState.cpp' l='67' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2180' u='c' c='_ZN7Solarus10LuaContext23hero_api_set_invincibleEP9lua_State'/>

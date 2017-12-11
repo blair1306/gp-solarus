@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Map.h' l='160' type='Solarus::Ground Solarus::Map::get_ground_from_entity(const Solarus::Entity &amp; entity, int x, int y) const'/>
+<def f='codebrowser/src/Map.cpp' l='1140' ll='1142' type='Solarus::Ground Solarus::Map::get_ground_from_entity(const Solarus::Entity &amp; entity, int x, int y) const'/>
+<doc f='codebrowser/src/Map.cpp' l='1122'>/**
+ * \brief Returns the modified ground of an entity at the specified point.
+ *
+ * The point is assumed to overlap the entity.
+ *
+ * The point only matters if the ground is diagonal.
+ * When an entity has a diagonal ground, only 8x8 squares on the diagonal of
+ * that entity are diagonal grounds, other ones are resolved Ground::WALL on a
+ * side and Ground::TRAVERSABLE or Ground::DEEP_WATER on the other side.
+ *
+ * A current limitation is that entities with diagonal grounds must be aligned
+ * to the 8x8 grid to work correctly.
+ *
+ * \param entity Entity whose modified ground to get.
+ * \param x X coordinate of the point.
+ * \param y Y coordinate of the point.
+ * \return The ground at this place.
+ */</doc>

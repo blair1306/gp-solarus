@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='113' type='bool Solarus::Hero::is_facing_direction4(int direction4) const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1056' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1057' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='823' ll='825' type='bool Solarus::Hero::is_facing_direction4(int direction4) const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1851' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='818'>/**
+ * \brief Returns whether the hero is looking towards the specified direction.
+ * \param direction4 a direction (0 to 3)
+ * \return true if the hero is looking towards the specified direction
+ */</doc>
+<use f='codebrowser/src/entities/Npc.cpp' l='229' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='56' type='const std::string &amp; Solarus::PathMovement::get_path() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1124' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_get_pathEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='75' ll='78' type='const std::string &amp; Solarus::PathMovement::get_path() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='71'>/**
+ * \brief Returns the path of this movement.
+ * \return the path
+ */</doc>

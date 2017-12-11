@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_touch.h' l='61' type='int SDL_GetNumTouchDevices()'/>
+<doc f='include/SDL2/SDL_touch.h' l='58'>/**
+ *  \brief Get the number of registered touch devices.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='426' u='c' c='_ZN7Solarus10InputEvent14is_finger_downEi'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='538' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_positionEiRNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='564' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_pressureEiRf'/>

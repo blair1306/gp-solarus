@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='132' type='bool Solarus::Entity::State::is_cutting_with_sword(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1033' ll='1035' type='bool Solarus::Entity::State::is_cutting_with_sword(Solarus::Entity &amp; )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1015'>/**
+ * \brief Tests whether the entity is cutting with his sword the specified entity
+ * for which a collision was detected.
+ *
+ * When the sword sprite collides with an entity,
+ * this function can be called to determine whether the entity is
+ * really cutting this particular entity precisely.
+ * This depends on the entity&apos;s state, his direction and his
+ * distance to the detector.
+ * This function assumes that there is already a collision
+ * between the sword sprite and the detector&apos;s sprite.
+ * This function should be called to check whether the
+ * entity wants to cut a bush or some grass.
+ * Returns false by default.
+ *
+ * \param entity The entity to check.
+ * \return \c true if the sword is cutting this entity.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1033'>/* detector */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1993' u='c' c='_ZNK7Solarus4Hero22is_striking_with_swordERNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='359' c='_ZN7Solarus4Hero12RunningState21is_cutting_with_swordERNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='141' c='_ZN7Solarus4Hero15SpinAttackState21is_cutting_with_swordERNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='152' c='_ZN7Solarus4Hero18SwordSwingingState21is_cutting_with_swordERNS_6EntityE'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='163' c='_ZN7Solarus4Hero17SwordTappingState21is_cutting_with_swordERNS_6EntityE'/>

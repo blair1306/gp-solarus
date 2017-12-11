@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='481' type='static int Solarus::LuaContext::video_api_set_cursor_visible(lua_State * )'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='47' u='r' c='_ZN7Solarus10LuaContext21register_video_moduleEv'/>
+<def f='codebrowser/src/lua/VideoApi.cpp' l='229' ll='238' type='static int Solarus::LuaContext::video_api_set_cursor_visible(lua_State * l)'/>
+<doc f='codebrowser/src/lua/VideoApi.cpp' l='224'>/**
+ * \brief Implementation of sol.video.set_fullscreen().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

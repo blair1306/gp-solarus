@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='272' type='bool Solarus::InputEvent::is_joypad_axis_centered() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1031' ll='1035' type='bool Solarus::InputEvent::is_joypad_axis_centered() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1380' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1426' u='c' c='_ZNK7Solarus10InputEvent20is_direction_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1457' u='c' c='_ZNK7Solarus10InputEvent11is_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1022'>/**
+ * \brief Returns whether the axis that was moved during this
+ * joypad axis event is now at its initial position
+ * (i.e. it was released).
+ *
+ * If this is not a joypad axis event, false is returned.
+ *
+ * \return true if the axis is back to its initial position
+ */</doc>

@@ -1,0 +1,41 @@
+<def f='codebrowser/include/solarus/lowlevel/Video.h' l='43' ll='105'/>
+<size>1</size>
+<doc f='codebrowser/include/solarus/lowlevel/Video.h' l='40'>/**
+ * \brief Draws the window and handles the video mode.
+ */</doc>
+<fun r='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<fun r='_ZN7Solarus5Video4quitEv'/>
+<fun r='_ZN7Solarus5Video14is_initializedEv'/>
+<fun r='_ZN7Solarus5Video10get_windowEv'/>
+<fun r='_ZN7Solarus5Video12get_rendererEv'/>
+<fun r='_ZN7Solarus5Video17get_render_targetEv'/>
+<fun r='_ZN7Solarus5Video16get_pixel_formatEv'/>
+<fun r='_ZN7Solarus5Video23is_acceleration_enabledEv'/>
+<fun r='_ZN7Solarus5Video25get_rendering_driver_nameEv'/>
+<fun r='_ZN7Solarus5Video11show_windowEv'/>
+<fun r='_ZN7Solarus5Video14get_video_modeEv'/>
+<fun r='_ZN7Solarus5Video15get_video_modesEv'/>
+<fun r='_ZN7Solarus5Video17is_mode_supportedERKNS_9VideoModeE'/>
+<fun r='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeE'/>
+<fun r='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<fun r='_ZN7Solarus5Video22set_default_video_modeEv'/>
+<fun r='_ZN7Solarus5Video17switch_video_modeEv'/>
+<fun r='_ZN7Solarus5Video22get_video_mode_by_nameERKSs'/>
+<fun r='_ZN7Solarus5Video13is_fullscreenEv'/>
+<fun r='_ZN7Solarus5Video14set_fullscreenEb'/>
+<fun r='_ZN7Solarus5Video17is_cursor_visibleEv'/>
+<fun r='_ZN7Solarus5Video18set_cursor_visibleEb'/>
+<fun r='_ZN7Solarus5Video16get_window_titleEv'/>
+<fun r='_ZN7Solarus5Video16set_window_titleERKSs'/>
+<fun r='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>
+<fun r='_ZN7Solarus5Video14get_quest_sizeEv'/>
+<fun r='_ZN7Solarus5Video20get_quest_size_rangeERNS_4SizeES2_S2_'/>
+<fun r='_ZN7Solarus5Video20set_quest_size_rangeERKNS_4SizeES3_S3_'/>
+<fun r='_ZN7Solarus5Video15get_window_sizeEv'/>
+<fun r='_ZN7Solarus5Video15set_window_sizeERKNS_4SizeE'/>
+<fun r='_ZN7Solarus5Video17reset_window_sizeEv'/>
+<fun r='_ZN7Solarus5Video12get_viewportEv'/>
+<fun r='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>
+<fun r='_ZN7Solarus5Video29renderer_to_quest_coordinatesERKNS_5PointERS1_'/>
+<fun r='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus5Video13shaded_renderERKSt10shared_ptrINS_7SurfaceEE'/>

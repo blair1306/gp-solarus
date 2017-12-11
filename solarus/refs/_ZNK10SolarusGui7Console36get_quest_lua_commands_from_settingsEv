@@ -1,0 +1,11 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='65' type='QStringList SolarusGui::Console::get_quest_lua_commands_from_settings() const'/>
+<def f='codebrowser/gui/src/console.cpp' l='387' ll='422' type='QStringList SolarusGui::Console::get_quest_lua_commands_from_settings() const'/>
+<use f='codebrowser/gui/src/console.cpp' l='439' u='c' c='_ZN10SolarusGui7Console14apply_settingsEv'/>
+<doc f='codebrowser/gui/src/console.cpp' l='379'>/**
+ * @brief Returns Lua commands that set the given settings in the Solarus API.
+ *
+ * System settings like audio volume and the video mode are returned as
+ * Lua commands.
+ * This function allows to apply to a running quest process
+ * what the user chose in the GUI.
+ */</doc>

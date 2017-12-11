@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='57' type='Solarus::LuaContext *'/>
+<offset>192</offset>
+<doc f='codebrowser/include/solarus/lua/ExportableToLua.h' l='57'>/**&lt; The Solarus Lua API, or nullptr if
+                                  * not currently exported to Lua. */</doc>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='27' u='w' c='_ZN7Solarus15ExportableToLuaC1Ev'/>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='38' u='r' c='_ZN7Solarus15ExportableToLuaD1Ev'/>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='39' u='r' c='_ZN7Solarus15ExportableToLuaD1Ev'/>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='48' u='r' c='_ZNK7Solarus15ExportableToLua15get_lua_contextEv'/>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='56' u='w' c='_ZN7Solarus15ExportableToLua15set_lua_contextEPNS_10LuaContextE'/>

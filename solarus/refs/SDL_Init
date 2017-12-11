@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL.h' l='129' type='int SDL_Init(Uint32 flags)'/>
+<doc f='include/SDL2/SDL.h' l='124'>/**
+ *  This function initializes  the subsystems specified by \c flags
+ *  Unless the ::SDL_INIT_NOPARACHUTE flag is set, it will install cleanup
+ *  signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+ */</doc>
+<use f='codebrowser/src/lowlevel/System.cpp' l='47' u='c' c='_ZN7Solarus6System10initializeERKNS_9ArgumentsE'/>

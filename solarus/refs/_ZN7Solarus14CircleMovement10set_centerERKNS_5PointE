@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='49' type='void Solarus::CircleMovement::set_center(const Solarus::Point &amp; center_point)'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='61' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<doc f='codebrowser/include/solarus/movements/CircleMovement.h' l='48'>// properties</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1411' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_centerEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='64' ll='69' type='void Solarus::CircleMovement::set_center(const Solarus::Point &amp; center_point)'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='322' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='57'>/**
+ * \brief Sets the center of the circles.
+ *
+ * The movement will make circles around the specified fixed point.
+ *
+ * \param center_point Center of the circles to make.
+ */</doc>

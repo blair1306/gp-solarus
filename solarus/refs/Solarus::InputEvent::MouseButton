@@ -1,0 +1,10 @@
+<def f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='196' ll='203'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='187'>/**
+     * Enumeration of mouse buttons.
+     * This is a Solarus dedicated enumeration.
+     * To make the SDL encapsulation easier, this enumeration is compatible
+     * with SDL_BUTTON definitions from SDL.
+     * If you intend to replace SDL by another library one day, the API of the
+     * Input class will not have to change
+     * (only its implementation will).
+     */</doc>

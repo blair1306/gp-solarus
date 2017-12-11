@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/Game.h' l='94' type='void Solarus::Game::set_current_map(const std::string &amp; map_id, const std::string &amp; destination_name, Transition::Style transition_style)'/>
+<use f='codebrowser/src/Game.cpp' l='111' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<def f='codebrowser/src/Game.cpp' l='628' ll='656' type='void Solarus::Game::set_current_map(const std::string &amp; map_id, const std::string &amp; destination_name, Transition::Style transition_style)'/>
+<doc f='codebrowser/src/Game.cpp' l='615'>/**
+ * \brief Changes the current map.
+ *
+ * Call this function when you want the hero to go to another map.
+ *
+ * \param map_id Id of the map to launch. It must exist.
+ * \param destination_name Name of the destination point you want to use.
+ * An empty string means the default one.
+ * You can also use &quot;_same&quot; to keep the hero&apos;s coordinates, or
+ * &quot;_side0&quot;, &quot;_side1&quot;, &quot;_side2&quot; or &quot;_side3&quot;
+ * to place the hero on a side of the map.
+ * \param transition_style Type of transition between the two maps.
+ */</doc>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='327' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1755' u='c' c='_ZN7Solarus10LuaContext17hero_api_teleportEP9lua_State'/>

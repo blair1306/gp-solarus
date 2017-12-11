@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Crystal.h' l='47' type='void Solarus::Crystal::activate(Solarus::Entity &amp; entity_activating)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='373' u='c' c='_ZN7Solarus5Arrow29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='328' u='c' c='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='651' u='c' c='_ZN7Solarus13CarriedObject29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Crystal.cpp' l='130' ll='147' type='void Solarus::Crystal::activate(Solarus::Entity &amp; entity_activating)'/>
+<doc f='codebrowser/src/entities/Crystal.cpp' l='126'>/**
+ * \brief Activates the crystal if the delay since the last activation allows it.
+ * \param entity_activating the entity that activates this crystal
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='117' u='c' c='_ZN7Solarus9Explosion29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1839' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='410' u='c' c='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>

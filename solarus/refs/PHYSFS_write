@@ -1,0 +1,15 @@
+<dec f='include/physfs.h' l='1224' type='PHYSFS_sint64 PHYSFS_write(PHYSFS_File * handle, const void * buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='333' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<doc f='include/physfs.h' l='1211'>/**
+ * \fn PHYSFS_sint64 PHYSFS_write(PHYSFS_File *handle, const void *buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount)
+ * \brief Write data to a PhysicsFS filehandle
+ *
+ * The file must be opened for writing.
+ *
+ *   \param handle retval from PHYSFS_openWrite() or PHYSFS_openAppend().
+ *   \param buffer buffer of bytes to write to (handle).
+ *   \param objSize size in bytes of objects being written to (handle).
+ *   \param objCount number of (objSize) objects to write to (handle).
+ *  \return number of objects written. PHYSFS_getLastError() can shed light on
+ *           the reason this might be &lt; (objCount). -1 if complete failure.
+ */</doc>

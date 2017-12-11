@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_audio.h' l='197' ll='210'/>
+<size>128</size>
+<doc f='include/SDL2/SDL_audio.h' l='196'>/* */</doc>
+<mbr r='SDL_AudioCVT::needed' o='0' t='int'/>
+<mbr r='SDL_AudioCVT::src_format' o='32' t='SDL_AudioFormat'/>
+<mbr r='SDL_AudioCVT::dst_format' o='48' t='SDL_AudioFormat'/>
+<mbr r='SDL_AudioCVT::rate_incr' o='64' t='double'/>
+<mbr r='SDL_AudioCVT::buf' o='128' t='Uint8 *'/>
+<mbr r='SDL_AudioCVT::len' o='192' t='int'/>
+<mbr r='SDL_AudioCVT::len_cvt' o='224' t='int'/>
+<mbr r='SDL_AudioCVT::len_mult' o='256' t='int'/>
+<mbr r='SDL_AudioCVT::len_ratio' o='288' t='double'/>
+<mbr r='SDL_AudioCVT::filters' o='352' t='SDL_AudioFilter [10]'/>
+<mbr r='SDL_AudioCVT::filter_index' o='992' t='int'/>

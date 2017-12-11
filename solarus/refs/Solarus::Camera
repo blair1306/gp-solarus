@@ -1,0 +1,33 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Camera.h' l='42' ll='81'/>
+<size>280</size>
+<doc f='codebrowser/include/solarus/entities/Camera.h' l='34'>/**
+ * \brief Manages the visible area of the map.
+ *
+ * The camera determines the visible area of the map.
+ * The camera may either be tracking an entity
+ * (usually the hero)
+ * or be controlled manually by a script.
+ */</doc>
+<smbr r='Solarus::Camera::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<fun r='_ZNK7Solarus6Camera8get_typeEv'/>
+<fun r='_ZNK7Solarus6Camera12can_be_drawnEv'/>
+<fun r='_ZN7Solarus6Camera13set_suspendedEb'/>
+<fun r='_ZN7Solarus6Camera23notify_movement_startedEv'/>
+<fun r='_ZN7Solarus6Camera19notify_size_changedEv'/>
+<fun r='_ZN7Solarus6Camera11get_surfaceEv'/>
+<fun r='_ZNK7Solarus6Camera22get_position_on_screenEv'/>
+<fun r='_ZN7Solarus6Camera22set_position_on_screenERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<fun r='_ZN7Solarus6Camera14start_trackingERKSt10shared_ptrINS_6EntityEE'/>
+<fun r='_ZN7Solarus6Camera12start_manualEv'/>
+<fun r='_ZNK7Solarus6Camera18get_tracked_entityEv'/>
+<fun r='_ZN7Solarus6Camera42notify_tracked_entity_traversing_separatorERNS_9SeparatorE'/>
+<fun r='_ZNK7Solarus6Camera23is_traversing_separatorEv'/>
+<fun r='_ZNK7Solarus6Camera16apply_map_boundsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus6Camera31apply_separators_and_map_boundsERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus6Camera14create_surfaceEv'/>
+<mbr r='Solarus::Camera::surface' o='2048' t='SurfacePtr'/>
+<mbr r='Solarus::Camera::position_on_screen' o='2176' t='Solarus::Point'/>

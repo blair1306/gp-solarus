@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/RandomPathMovement.h' l='40' type='bool Solarus::RandomPathMovement::is_finished() const'/>
+<inh f='codebrowser/include/solarus/movements/PathMovement.h' l='54' c='_ZNK7Solarus12PathMovement11is_finishedEv'/>
+<def f='codebrowser/src/movements/RandomPathMovement.cpp' l='52' ll='54' type='bool Solarus::RandomPathMovement::is_finished() const'/>
+<doc f='codebrowser/src/movements/RandomPathMovement.cpp' l='47'>/**
+ * \brief Returns whether the movement is finished.
+ * \return always false because the movement is restarted as soon as the path is finished
+ * or an obstacle is reached
+ */</doc>

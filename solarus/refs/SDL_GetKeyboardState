@@ -1,0 +1,17 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='77' type='const Uint8 * SDL_GetKeyboardState(int * numkeys)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='62'>/**
+ *  \brief Get a snapshot of the current state of the keyboard.
+ *
+ *  \param numkeys if non-NULL, receives the length of the returned array.
+ *
+ *  \return An array of key states. Indexes into this array are obtained by using ::SDL_Scancode values.
+ *
+ *  \b Example:
+ *  \code
+ *  const Uint8 *state = SDL_GetKeyboardState(NULL);
+ *  if ( state[SDL_SCANCODE_RETURN] )   {
+ *      printf(&quot;&lt;RETURN&gt; is pressed.\n&quot;);
+ *  }
+ *  \endcode
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='390' u='c' c='_ZN7Solarus10InputEvent11is_key_downENS0_11KeyboardKeyE'/>

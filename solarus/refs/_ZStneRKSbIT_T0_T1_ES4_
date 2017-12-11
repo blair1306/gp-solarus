@@ -1,0 +1,19 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='2550' ll='2553' type='bool std::operator!=(const basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; __lhs, const basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; __rhs)'/>
+<use f='codebrowser/src/EntityData.cpp' l='718' u='c' c='_ZNK7Solarus10EntityData14is_field_unsetERKSs'/>
+<use f='codebrowser/src/Game.cpp' l='423' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='639' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<use f='codebrowser/src/MapData.cpp' l='428' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='443' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='276' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='692' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/SpriteData.cpp' l='700' u='c' c='_ZNK7Solarus10SpriteData13export_to_luaERSo'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='329' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='329' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='338' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='547' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='114' u='c' c='_ZN7Solarus10LuaContext18video_api_set_modeEP9lua_State'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='51' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='79' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='71' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='50' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='49' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

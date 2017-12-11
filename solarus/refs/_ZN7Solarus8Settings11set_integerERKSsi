@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='50' type='void Solarus::Settings::set_integer(const std::string &amp; key, int value)'/>
+<use f='codebrowser/gui/src/settings.cpp' l='75' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<use f='codebrowser/gui/src/settings.cpp' l='81' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<def f='codebrowser/src/Settings.cpp' l='112' ll='115' type='void Solarus::Settings::set_integer(const std::string &amp; key, int value)'/>
+<use f='codebrowser/src/Settings.cpp' l='295' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='296' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<doc f='codebrowser/src/Settings.cpp' l='107'>/**
+ * \brief Sets an integer value.
+ * \param key Key of the value to set.
+ * \param value The new value.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='142' type='bool Solarus::SpriteData::set_default_animation_name(const std::string &amp; animation_name)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='569' ll='577' type='bool Solarus::SpriteData::set_default_animation_name(const std::string &amp; animation_name)'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='563'>/**
+ * \brief Changes the default animation.
+ * \param animation_name Name of the new default animation.
+ * \return \c true in case of success.
+ * In case of failure, the default animation is unchanged.
+ */</doc>

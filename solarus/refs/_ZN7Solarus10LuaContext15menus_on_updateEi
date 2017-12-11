@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='293' type='void Solarus::LuaContext::menus_on_update(int context_index)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1608' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='435' u='c' c='_ZN7Solarus10LuaContext14main_on_updateEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2231' u='c' c='_ZN7Solarus10LuaContext13map_on_updateERNS_3MapE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='314' u='c' c='_ZN7Solarus10LuaContext14menu_on_updateERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='414' ll='431' type='void Solarus::LuaContext::menus_on_update(int context_index)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='410'>/**
+ * \brief Calls the on_update() method of the menus associated to a context.
+ * \param context_index Index of an object with menus.
+ */</doc>

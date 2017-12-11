@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='64' type='void Solarus::Camera::start_manual()'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='337' u='c' c='_ZN7Solarus6Camera23notify_movement_startedEv'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='352' ll='354' type='void Solarus::Camera::start_manual()'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='349'>/**
+ * \brief Makes the camera stop tracking any entity.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2654' u='c' c='_ZN7Solarus10LuaContext23camera_api_start_manualEP9lua_State'/>

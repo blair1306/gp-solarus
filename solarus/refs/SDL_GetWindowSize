@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_video.h' l='544' type='void SDL_GetWindowSize(SDL_Window * window, int * w, int * h)'/>
+<doc f='include/SDL2/SDL_video.h' l='535'>/**
+ *  \brief Get the size of a window&apos;s client area.
+ *
+ *  \param window   The window to query.
+ *  \param w        Pointer to variable for storing the width, may be NULL
+ *  \param h        Pointer to variable for storing the height, may be NULL
+ *
+ *  \sa SDL_SetWindowSize()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='830' u='c' c='_ZN7Solarus5Video15get_window_sizeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='855' u='c' c='_ZN7Solarus5Video15set_window_sizeERKNS_4SizeE'/>

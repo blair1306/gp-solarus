@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='216' type='void Solarus::LuaContext::set_entity_timers_suspended(Solarus::Entity &amp; entity, bool suspended)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2282' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2306' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3327' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='284' ll='294' type='void Solarus::LuaContext::set_entity_timers_suspended(Solarus::Entity &amp; entity, bool suspended)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='276'>/**
+ * \brief Suspends or resumes the timers attached to a map entity.
+ *
+ * This is independent from the Timer::is_suspended_with_map() property.
+ *
+ * \param entity A map entity.
+ * \param suspended \c true to suspend its timers, \c false to resume them.
+ */</doc>

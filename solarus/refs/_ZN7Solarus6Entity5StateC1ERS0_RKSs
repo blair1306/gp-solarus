@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='147' type='void Solarus::Entity::State::State(Solarus::Entity &amp; entity, const std::string &amp; state_name)'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='70' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingStateC1ERNS_6CameraERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='216' u='c' c='_ZN7Solarus12_GLOBAL__N_111ManualStateC1ERNS_6CameraE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='43' ll='51' type='void Solarus::Entity::State::State(Solarus::Entity &amp; entity, const std::string &amp; state_name)'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='35'>/**
+ * \brief Creates a state.
+ *
+ * This constructor can be called only from the subclasses.
+ *
+ * \param entity The entity to control with this state.
+ * \param state_name A name describing this state.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='31' u='c' c='_ZN7Solarus9HeroStateC1ERNS_4HeroERKSs'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='39' type='int'/>
+<offset>640</offset>
+<doc f='codebrowser/include/solarus/MapData.h' l='39'>/**&lt; Number of tiles in the list.
+                                        * Dynamic entities are after this index. */</doc>
+<use f='codebrowser/src/MapData.cpp' l='303' u='r' c='_ZNK7Solarus7MapData13get_num_tilesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='375' u='w' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='376' u='w' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='722' u='w' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='767' u='w' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>

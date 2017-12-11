@@ -1,0 +1,20 @@
+<def f='codebrowser/include/solarus/MapData.h' l='50' ll='132'/>
+<size>8</size>
+<doc f='codebrowser/include/solarus/MapData.h' l='43'>/**
+ * \brief The layer and index of an entity in the map.
+ *
+ * This is how entities are identified on a map.
+ * There is also an additional index on the name for
+ * entities that have a name.
+ */</doc>
+<fun r='_ZN7Solarus11EntityIndexC1Ev'/>
+<fun r='_ZN7Solarus11EntityIndexC1Eii'/>
+<fun r='_ZNK7Solarus11EntityIndex8is_validEv'/>
+<fun r='_ZNK7Solarus11EntityIndexeqERKS0_'/>
+<fun r='_ZNK7Solarus11EntityIndexneERKS0_'/>
+<fun r='_ZNK7Solarus11EntityIndexleERKS0_'/>
+<fun r='_ZNK7Solarus11EntityIndexltERKS0_'/>
+<fun r='_ZNK7Solarus11EntityIndexgeERKS0_'/>
+<fun r='_ZNK7Solarus11EntityIndexgtERKS0_'/>
+<mbr r='Solarus::EntityIndex::layer' o='0' t='int'/>
+<mbr r='Solarus::EntityIndex::order' o='32' t='int'/>

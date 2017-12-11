@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='56' type='void SolarusGui::QuestsView::select_quest(const QString &amp; path)'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='66' u='c' c='_ZN10SolarusGui10MainWindowC1EP7QWidget'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='283' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='298' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='193' ll='200' type='void SolarusGui::QuestsView::select_quest(const QString &amp; path)'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='189'>/**
+ * @brief Selects the given quest if it is in the view.
+ * @param path Path of the quest to make selected.
+ */</doc>

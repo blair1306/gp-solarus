@@ -1,0 +1,12 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='63' type='QString SolarusGui::Console::colorize_output(const QString &amp; log_level, const QString &amp; message)'/>
+<use f='codebrowser/gui/src/console.cpp' l='230' u='c' c='_ZN10SolarusGui7Console12parse_outputERK7QString'/>
+<def f='codebrowser/gui/src/console.cpp' l='347' ll='377' type='QString SolarusGui::Console::colorize_output(const QString &amp; log_level, const QString &amp; message)'/>
+<doc f='codebrowser/gui/src/console.cpp' l='338'>/**
+ * @brief Returns a colorized version of a Solarus output line.
+ *
+ * Colors may be added.
+ *
+ * @param log_level The Solarus log level of the line.
+ * @param message The rest of the message.
+ * @return The HTML decorated line.
+ */</doc>

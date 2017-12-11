@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='89' type='std::string'/>
+<offset>1344</offset>
+<doc f='codebrowser/include/solarus/movements/PathMovement.h' l='89'>/**&lt; the path: each character is a direction (&apos;0&apos; to &apos;7&apos;)
+                                        * and corresponds to a trajectory of 8 pixels (performed by PixelMovement) */</doc>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='77' u='a' c='_ZNK7Solarus12PathMovement8get_pathEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='88' u='w' c='_ZN7Solarus12PathMovement8set_pathERKSs'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='211' u='r' c='_ZN7Solarus12PathMovement7restartEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='278' u='r' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='291' u='r' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='324' c='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1300' type='bool Solarus::LuaContext::on_attacking_hero(Solarus::Hero &amp; hero, Solarus::Sprite * attacker_sprite)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6592' u='c' c='_ZN7Solarus10LuaContext23enemy_on_attacking_heroERNS_5EnemyERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2897' ll='2911' type='bool Solarus::LuaContext::on_attacking_hero(Solarus::Hero &amp; hero, Solarus::Sprite * attacker_sprite)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2891'>/**
+ * \brief Calls the on_attacking_hero() method of the object on top of the stack.
+ * \param hero The hero attacked.
+ * \param attacker_sprite Sprite that caused the collision or nullptr.
+ * \return \c true if the method is defined.
+ */</doc>

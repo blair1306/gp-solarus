@@ -1,0 +1,11 @@
+<dec f='include/c++/4.9/bits/stl_vector.h' l='436' type='vector&lt;_Tp, _Alloc&gt; &amp; std::vector::operator=(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<def f='include/c++/4.9/bits/vector.tcc' l='165' ll='221' type='vector&lt;_Tp, _Alloc&gt; &amp; std::vector::operator=(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='427'>/**
+       *  @brief  %Vector assignment operator.
+       *  @param  __x  A %vector of identical element and allocator types.
+       *
+       *  All the elements of @a __x are copied, but any extra memory in
+       *  @a __x (for fast expansion) will not be copied.  Unlike the
+       *  copy constructor, the allocator object is not copied.
+       */</doc>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='185' u='c' c='_ZN7Solarus15TilePatternData10set_framesERKSt6vectorINS_9RectangleESaIS2_EE'/>

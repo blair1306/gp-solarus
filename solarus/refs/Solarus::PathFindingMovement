@@ -1,0 +1,19 @@
+<inh f='codebrowser/include/solarus/movements/PathMovement.h' l='45' c='Solarus::PathMovement'/>
+<def f='codebrowser/include/solarus/movements/PathFindingMovement.h' l='36' ll='57'/>
+<size>232</size>
+<doc f='codebrowser/include/solarus/movements/PathFindingMovement.h' l='28'>/**
+ * \brief Movement for an entity that looks for a path to another entity.
+ *
+ * This movement is typically used by enemies that try to reach the hero.
+ * The entity tries to find a path and to avoid the obstacles on the way.
+ * To this end, the PathFinding class (i.e. an implementation of the A* algorithm) is used.
+ * If the target entity is too far or not reachable, the movement is a random walk.
+ */</doc>
+<fun r='_ZN7Solarus19PathFindingMovementC1Ei'/>
+<fun r='_ZN7Solarus19PathFindingMovement10set_targetERKSt10shared_ptrINS_6EntityEE'/>
+<fun r='_ZNK7Solarus19PathFindingMovement11is_finishedEv'/>
+<fun r='_ZNK7Solarus19PathFindingMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<fun r='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<mbr r='Solarus::PathFindingMovement::target' o='1664' t='EntityPtr'/>
+<mbr r='Solarus::PathFindingMovement::next_recomputation_date' o='1792' t='uint32_t'/>

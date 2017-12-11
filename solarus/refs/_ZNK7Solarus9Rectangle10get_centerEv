@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='63' type='Solarus::Point Solarus::Rectangle::get_center() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='148' ll='153' type='Solarus::Point Solarus::Rectangle::get_center() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='73' u='c' c='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='77' u='c' c='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='266' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='431' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='498' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='144'>/**
+ * \brief Returns the center point of this rectangle.
+ * \return The center point.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='1126' u='c' c='_ZNK7Solarus6Entity16get_center_pointEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='128' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>

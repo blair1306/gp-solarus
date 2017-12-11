@@ -1,0 +1,21 @@
+<def f='include/physfs.h' l='376' ll='382'/>
+<size>32</size>
+<doc f='include/physfs.h' l='361'>/**
+ * \struct PHYSFS_ArchiveInfo
+ * \brief Information on various PhysicsFS-supported archives.
+ *
+ * This structure gives you details on what sort of archives are supported
+ *  by this implementation of PhysicsFS. Archives tend to be things like
+ *  ZIP files and such.
+ *
+ * \warning Not all binaries are created equal! PhysicsFS can be built with
+ *          or without support for various archives. You can check with
+ *          PHYSFS_supportedArchiveTypes() to see if your archive type is
+ *          supported.
+ *
+ * \sa PHYSFS_supportedArchiveTypes
+ */</doc>
+<mbr r='PHYSFS_ArchiveInfo::extension' o='0' t='const char *'/>
+<mbr r='PHYSFS_ArchiveInfo::description' o='64' t='const char *'/>
+<mbr r='PHYSFS_ArchiveInfo::author' o='128' t='const char *'/>
+<mbr r='PHYSFS_ArchiveInfo::url' o='192' t='const char *'/>

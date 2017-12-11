@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1134' type='static bool Solarus::LuaContext::is_timer(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='77' ll='79' type='static bool Solarus::LuaContext::is_timer(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='71'>/**
+ * \brief Returns whether a value is a userdata of type timer.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a timer.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='107' type='bool Solarus::SpriteAnimationData::move_direction(int direction_nb, int new_direction_nb)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='384' ll='413' type='bool Solarus::SpriteAnimationData::move_direction(int direction_nb, int new_direction_nb)'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='378'>/**
+ * @brief Moves a direction of this animation to a specified position.
+ * @param direction_nb Number of direction to move.
+ * @param new_direction_nb The new position of the direction.
+ * @return \c true in case of success.
+ */</doc>

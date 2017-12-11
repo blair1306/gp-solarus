@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='55' type='static SDL_PixelFormat * Solarus::Video::get_pixel_format()'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='141' u='c' c='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='242' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='282' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='466' u='c' c='_ZN7Solarus7Surface23create_software_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='982' u='c' c='_ZNK7Solarus7Surface15get_color_valueERKNS_5ColorE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='382' ll='384' type='static SDL_PixelFormat * Solarus::Video::get_pixel_format()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='378'>/**
+ * \brief Returns the pixel format to use.
+ * \return The pixel format to use.
+ */</doc>

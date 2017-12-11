@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1109' type='static void Solarus::LuaContext::push_chest(lua_State * l, Solarus::Chest &amp; chest)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3053' ll='3055' type='static void Solarus::LuaContext::push_chest(lua_State * l, Solarus::Chest &amp; chest)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6094' u='c' c='_ZN7Solarus10LuaContext15chest_on_openedERNS_5ChestERKNS_8TreasureE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3048'>/**
+ * \brief Pushes a chest userdata onto the stack.
+ * \param l A Lua context.
+ * \param chest A chest.
+ */</doc>

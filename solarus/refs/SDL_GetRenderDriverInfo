@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_render.h' l='158' type='int SDL_GetRenderDriverInfo(int index, SDL_RendererInfo * info)'/>
+<doc f='include/SDL2/SDL_render.h' l='146'>/**
+ *  \brief Get information about a specific 2D rendering driver for the current
+ *         display.
+ *
+ *  \param index The index of the driver to query information about.
+ *  \param info  A pointer to an SDL_RendererInfo struct to be filled with
+ *               information on the rendering driver.
+ *
+ *  \return 0 on success, -1 if the index was out of range.
+ *
+ *  \sa SDL_CreateRenderer()
+ */</doc>

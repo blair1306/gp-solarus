@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='52' type='void Solarus::Hero::PlayerMovementState::set_animation_walking()'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='222' c='_ZN7Solarus4Hero13CarryingState21set_animation_walkingEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='200' c='_ZN7Solarus4Hero9FreeState21set_animation_walkingEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='94' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='192' ll='193' type='void Solarus::Hero::PlayerMovementState::set_animation_walking()'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='246' u='c' c='_ZN7Solarus4Hero19PlayerMovementState23notify_movement_changedEv'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='189'>/**
+ * Gives the sprites the animation walking corresponding to this state.
+ */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='118' c='_ZN7Solarus4Hero13SwimmingState21set_animation_walkingEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='194' c='_ZN7Solarus4Hero17SwordLoadingState21set_animation_walkingEv'/>

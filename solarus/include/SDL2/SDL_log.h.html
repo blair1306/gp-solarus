@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_log.h source code [include/SDL2/SDL_log.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_log.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_log.h.html'>SDL_log.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_log.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Simple log messages with categories and priorities.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> *  By default logs are quiet, but if you're debugging SDL you might want:</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *      SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> *  Here's where the messages go on different platforms:</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *      Windows: debug output stream</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *      Android: log output</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *      Others: standard error output (stderr)</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">ifndef</span> <span class="macro" data-ref="_M/_SDL_log_h">_SDL_log_h</span></u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/_SDL_log_h" data-ref="_M/_SDL_log_h">_SDL_log_h</dfn></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="44">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="44">endif</span></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *  <span class="command">\brief</span> The maximum size of a log message</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *  Messages longer than the maximum size will be truncated</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/SDL_MAX_LOG_MESSAGE" data-ref="_M/SDL_MAX_LOG_MESSAGE">SDL_MAX_LOG_MESSAGE</dfn> 4096</u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *  <span class="command">\brief</span> The predefined log categories</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *  By default the application category is enabled at the INFO level,</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *  the assert category is enabled at the WARN level, test is enabled</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *  at the VERBOSE level and all other categories are enabled at the</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *  CRITICAL level.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="64">64</th><td><b>enum</b></td></tr>
+<tr><th id="65">65</th><td>{</td></tr>
+<tr><th id="66">66</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_APPLICATION" title='::SDL_LOG_CATEGORY_APPLICATION' data-ref="::SDL_LOG_CATEGORY_APPLICATION">SDL_LOG_CATEGORY_APPLICATION</dfn>,</td></tr>
+<tr><th id="67">67</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_ERROR" title='::SDL_LOG_CATEGORY_ERROR' data-ref="::SDL_LOG_CATEGORY_ERROR">SDL_LOG_CATEGORY_ERROR</dfn>,</td></tr>
+<tr><th id="68">68</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_ASSERT" title='::SDL_LOG_CATEGORY_ASSERT' data-ref="::SDL_LOG_CATEGORY_ASSERT">SDL_LOG_CATEGORY_ASSERT</dfn>,</td></tr>
+<tr><th id="69">69</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_SYSTEM" title='::SDL_LOG_CATEGORY_SYSTEM' data-ref="::SDL_LOG_CATEGORY_SYSTEM">SDL_LOG_CATEGORY_SYSTEM</dfn>,</td></tr>
+<tr><th id="70">70</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_AUDIO" title='::SDL_LOG_CATEGORY_AUDIO' data-ref="::SDL_LOG_CATEGORY_AUDIO">SDL_LOG_CATEGORY_AUDIO</dfn>,</td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_VIDEO" title='::SDL_LOG_CATEGORY_VIDEO' data-ref="::SDL_LOG_CATEGORY_VIDEO">SDL_LOG_CATEGORY_VIDEO</dfn>,</td></tr>
+<tr><th id="72">72</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RENDER" title='::SDL_LOG_CATEGORY_RENDER' data-ref="::SDL_LOG_CATEGORY_RENDER">SDL_LOG_CATEGORY_RENDER</dfn>,</td></tr>
+<tr><th id="73">73</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_INPUT" title='::SDL_LOG_CATEGORY_INPUT' data-ref="::SDL_LOG_CATEGORY_INPUT">SDL_LOG_CATEGORY_INPUT</dfn>,</td></tr>
+<tr><th id="74">74</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_TEST" title='::SDL_LOG_CATEGORY_TEST' data-ref="::SDL_LOG_CATEGORY_TEST">SDL_LOG_CATEGORY_TEST</dfn>,</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>    <i>/* Reserved for future SDL library use */</i></td></tr>
+<tr><th id="77">77</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED1" title='::SDL_LOG_CATEGORY_RESERVED1' data-ref="::SDL_LOG_CATEGORY_RESERVED1">SDL_LOG_CATEGORY_RESERVED1</dfn>,</td></tr>
+<tr><th id="78">78</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED2" title='::SDL_LOG_CATEGORY_RESERVED2' data-ref="::SDL_LOG_CATEGORY_RESERVED2">SDL_LOG_CATEGORY_RESERVED2</dfn>,</td></tr>
+<tr><th id="79">79</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED3" title='::SDL_LOG_CATEGORY_RESERVED3' data-ref="::SDL_LOG_CATEGORY_RESERVED3">SDL_LOG_CATEGORY_RESERVED3</dfn>,</td></tr>
+<tr><th id="80">80</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED4" title='::SDL_LOG_CATEGORY_RESERVED4' data-ref="::SDL_LOG_CATEGORY_RESERVED4">SDL_LOG_CATEGORY_RESERVED4</dfn>,</td></tr>
+<tr><th id="81">81</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED5" title='::SDL_LOG_CATEGORY_RESERVED5' data-ref="::SDL_LOG_CATEGORY_RESERVED5">SDL_LOG_CATEGORY_RESERVED5</dfn>,</td></tr>
+<tr><th id="82">82</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED6" title='::SDL_LOG_CATEGORY_RESERVED6' data-ref="::SDL_LOG_CATEGORY_RESERVED6">SDL_LOG_CATEGORY_RESERVED6</dfn>,</td></tr>
+<tr><th id="83">83</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED7" title='::SDL_LOG_CATEGORY_RESERVED7' data-ref="::SDL_LOG_CATEGORY_RESERVED7">SDL_LOG_CATEGORY_RESERVED7</dfn>,</td></tr>
+<tr><th id="84">84</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED8" title='::SDL_LOG_CATEGORY_RESERVED8' data-ref="::SDL_LOG_CATEGORY_RESERVED8">SDL_LOG_CATEGORY_RESERVED8</dfn>,</td></tr>
+<tr><th id="85">85</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED9" title='::SDL_LOG_CATEGORY_RESERVED9' data-ref="::SDL_LOG_CATEGORY_RESERVED9">SDL_LOG_CATEGORY_RESERVED9</dfn>,</td></tr>
+<tr><th id="86">86</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_RESERVED10" title='::SDL_LOG_CATEGORY_RESERVED10' data-ref="::SDL_LOG_CATEGORY_RESERVED10">SDL_LOG_CATEGORY_RESERVED10</dfn>,</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <i>/* Beyond this point is reserved for application use, e.g.</i></td></tr>
+<tr><th id="89">89</th><td><i>       enum {</i></td></tr>
+<tr><th id="90">90</th><td><i>           MYAPP_CATEGORY_AWESOME1 = SDL_LOG_CATEGORY_CUSTOM,</i></td></tr>
+<tr><th id="91">91</th><td><i>           MYAPP_CATEGORY_AWESOME2,</i></td></tr>
+<tr><th id="92">92</th><td><i>           MYAPP_CATEGORY_AWESOME3,</i></td></tr>
+<tr><th id="93">93</th><td><i>           ...</i></td></tr>
+<tr><th id="94">94</th><td><i>       };</i></td></tr>
+<tr><th id="95">95</th><td><i>     */</i></td></tr>
+<tr><th id="96">96</th><td>    <dfn class="enum" id="::SDL_LOG_CATEGORY_CUSTOM" title='::SDL_LOG_CATEGORY_CUSTOM' data-ref="::SDL_LOG_CATEGORY_CUSTOM">SDL_LOG_CATEGORY_CUSTOM</dfn></td></tr>
+<tr><th id="97">97</th><td>};</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *  <span class="command">\brief</span> The predefined log priorities</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="102">102</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="103">103</th><td>{</td></tr>
+<tr><th id="104">104</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_VERBOSE" title='::SDL_LOG_PRIORITY_VERBOSE' data-ref="::SDL_LOG_PRIORITY_VERBOSE">SDL_LOG_PRIORITY_VERBOSE</dfn> = <var>1</var>,</td></tr>
+<tr><th id="105">105</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_DEBUG" title='::SDL_LOG_PRIORITY_DEBUG' data-ref="::SDL_LOG_PRIORITY_DEBUG">SDL_LOG_PRIORITY_DEBUG</dfn>,</td></tr>
+<tr><th id="106">106</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_INFO" title='::SDL_LOG_PRIORITY_INFO' data-ref="::SDL_LOG_PRIORITY_INFO">SDL_LOG_PRIORITY_INFO</dfn>,</td></tr>
+<tr><th id="107">107</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_WARN" title='::SDL_LOG_PRIORITY_WARN' data-ref="::SDL_LOG_PRIORITY_WARN">SDL_LOG_PRIORITY_WARN</dfn>,</td></tr>
+<tr><th id="108">108</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_ERROR" title='::SDL_LOG_PRIORITY_ERROR' data-ref="::SDL_LOG_PRIORITY_ERROR">SDL_LOG_PRIORITY_ERROR</dfn>,</td></tr>
+<tr><th id="109">109</th><td>    <dfn class="enum" id="::SDL_LOG_PRIORITY_CRITICAL" title='::SDL_LOG_PRIORITY_CRITICAL' data-ref="::SDL_LOG_PRIORITY_CRITICAL">SDL_LOG_PRIORITY_CRITICAL</dfn>,</td></tr>
+<tr><th id="110">110</th><td>    <dfn class="enum" id="::SDL_NUM_LOG_PRIORITIES" title='::SDL_NUM_LOG_PRIORITIES' data-ref="::SDL_NUM_LOG_PRIORITIES">SDL_NUM_LOG_PRIORITIES</dfn></td></tr>
+<tr><th id="111">111</th><td>} <dfn class="typedef" id="SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</dfn>;</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *  <span class="command">\brief</span> Set the priority of all log categories</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogSetAllPriority" title='SDL_LogSetAllPriority' data-ref="SDL_LogSetAllPriority">SDL_LogSetAllPriority</dfn>(<a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <dfn class="local col7 decl" id="1507priority" title='priority' data-type='SDL_LogPriority' data-ref="1507priority">priority</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> *  <span class="command">\brief</span> Set the priority of a particular log category</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="122">122</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogSetPriority" title='SDL_LogSetPriority' data-ref="SDL_LogSetPriority">SDL_LogSetPriority</dfn>(<em>int</em> <dfn class="local col8 decl" id="1508category" title='category' data-type='int' data-ref="1508category">category</dfn>,</td></tr>
+<tr><th id="123">123</th><td>                                                <a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <dfn class="local col9 decl" id="1509priority" title='priority' data-type='SDL_LogPriority' data-ref="1509priority">priority</dfn>);</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *  <span class="command">\brief</span> Get the priority of a particular log category</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="128">128</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogGetPriority" title='SDL_LogGetPriority' data-ref="SDL_LogGetPriority">SDL_LogGetPriority</dfn>(<em>int</em> <dfn class="local col0 decl" id="1510category" title='category' data-type='int' data-ref="1510category">category</dfn>);</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *  <span class="command">\brief</span> Reset all priorities to default.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *  <span class="command">\note</span> This is called in SDL_Quit().</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="135">135</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogResetPriorities" title='SDL_LogResetPriorities' data-ref="SDL_LogResetPriorities">SDL_LogResetPriorities</dfn>(<em>void</em>);</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_CATEGORY_APPLICATION and SDL_LOG_PRIORITY_INFO</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="140">140</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_Log" title='SDL_Log' data-ref="SDL_Log">SDL_Log</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1511fmt" title='fmt' data-type='const char *' data-ref="1511fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_VERBOSE</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogVerbose" title='SDL_LogVerbose' data-ref="SDL_LogVerbose">SDL_LogVerbose</dfn>(<em>int</em> <dfn class="local col2 decl" id="1512category" title='category' data-type='int' data-ref="1512category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="1513fmt" title='fmt' data-type='const char *' data-ref="1513fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_DEBUG</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="150">150</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogDebug" title='SDL_LogDebug' data-ref="SDL_LogDebug">SDL_LogDebug</dfn>(<em>int</em> <dfn class="local col4 decl" id="1514category" title='category' data-type='int' data-ref="1514category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="1515fmt" title='fmt' data-type='const char *' data-ref="1515fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_INFO</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="155">155</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogInfo" title='SDL_LogInfo' data-ref="SDL_LogInfo">SDL_LogInfo</dfn>(<em>int</em> <dfn class="local col6 decl" id="1516category" title='category' data-type='int' data-ref="1516category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="1517fmt" title='fmt' data-type='const char *' data-ref="1517fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_WARN</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="160">160</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogWarn" title='SDL_LogWarn' data-ref="SDL_LogWarn">SDL_LogWarn</dfn>(<em>int</em> <dfn class="local col8 decl" id="1518category" title='category' data-type='int' data-ref="1518category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="1519fmt" title='fmt' data-type='const char *' data-ref="1519fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_ERROR</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="165">165</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogError" title='SDL_LogError' data-ref="SDL_LogError">SDL_LogError</dfn>(<em>int</em> <dfn class="local col0 decl" id="1520category" title='category' data-type='int' data-ref="1520category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1521fmt" title='fmt' data-type='const char *' data-ref="1521fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with SDL_LOG_PRIORITY_CRITICAL</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="170">170</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogCritical" title='SDL_LogCritical' data-ref="SDL_LogCritical">SDL_LogCritical</dfn>(<em>int</em> <dfn class="local col2 decl" id="1522category" title='category' data-type='int' data-ref="1522category">category</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="1523fmt" title='fmt' data-type='const char *' data-ref="1523fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with the specified category and priority.</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="175">175</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogMessage" title='SDL_LogMessage' data-ref="SDL_LogMessage">SDL_LogMessage</dfn>(<em>int</em> <dfn class="local col4 decl" id="1524category" title='category' data-type='int' data-ref="1524category">category</dfn>,</td></tr>
+<tr><th id="176">176</th><td>                                            <a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <dfn class="local col5 decl" id="1525priority" title='priority' data-type='SDL_LogPriority' data-ref="1525priority">priority</dfn>,</td></tr>
+<tr><th id="177">177</th><td>                                            <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="1526fmt" title='fmt' data-type='const char *' data-ref="1526fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *  <span class="command">\brief</span> Log a message with the specified category and priority.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="182">182</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogMessageV" title='SDL_LogMessageV' data-ref="SDL_LogMessageV">SDL_LogMessageV</dfn>(<em>int</em> <dfn class="local col7 decl" id="1527category" title='category' data-type='int' data-ref="1527category">category</dfn>,</td></tr>
+<tr><th id="183">183</th><td>                                             <a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <dfn class="local col8 decl" id="1528priority" title='priority' data-type='SDL_LogPriority' data-ref="1528priority">priority</dfn>,</td></tr>
+<tr><th id="184">184</th><td>                                             <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="1529fmt" title='fmt' data-type='const char *' data-ref="1529fmt">fmt</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col0 decl" id="1530ap" title='ap' data-type='__va_list_tag *' data-ref="1530ap">ap</dfn>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *  <span class="command">\brief</span> The prototype for the log output function</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="189">189</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="SDL_LogOutputFunction" title='SDL_LogOutputFunction' data-type='void (*)(void *, int, SDL_LogPriority, const char *)' data-ref="SDL_LogOutputFunction">SDL_LogOutputFunction</dfn>)(<em>void</em> *<dfn class="local col1 decl" id="1531userdata" title='userdata' data-type='void *' data-ref="1531userdata">userdata</dfn>, <em>int</em> <dfn class="local col2 decl" id="1532category" title='category' data-type='int' data-ref="1532category">category</dfn>, <a class="typedef" href="#SDL_LogPriority" title='SDL_LogPriority' data-type='enum SDL_LogPriority' data-ref="SDL_LogPriority">SDL_LogPriority</a> <dfn class="local col3 decl" id="1533priority" title='priority' data-type='SDL_LogPriority' data-ref="1533priority">priority</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="1534message" title='message' data-type='const char *' data-ref="1534message">message</dfn>);</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *  <span class="command">\brief</span> Get the current log output function.</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="194">194</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogGetOutputFunction" title='SDL_LogGetOutputFunction' data-ref="SDL_LogGetOutputFunction">SDL_LogGetOutputFunction</dfn>(<a class="typedef" href="#SDL_LogOutputFunction" title='SDL_LogOutputFunction' data-type='void (*)(void *, int, SDL_LogPriority, const char *)' data-ref="SDL_LogOutputFunction">SDL_LogOutputFunction</a> *<dfn class="local col5 decl" id="1535callback" title='callback' data-type='SDL_LogOutputFunction *' data-ref="1535callback">callback</dfn>, <em>void</em> **<dfn class="local col6 decl" id="1536userdata" title='userdata' data-type='void **' data-ref="1536userdata">userdata</dfn>);</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *  <span class="command">\brief</span> This function allows you to replace the default log output</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> *         function with one of your own.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="200">200</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_LogSetOutputFunction" title='SDL_LogSetOutputFunction' data-ref="SDL_LogSetOutputFunction">SDL_LogSetOutputFunction</dfn>(<a class="typedef" href="#SDL_LogOutputFunction" title='SDL_LogOutputFunction' data-type='void (*)(void *, int, SDL_LogPriority, const char *)' data-ref="SDL_LogOutputFunction">SDL_LogOutputFunction</a> <dfn class="local col7 decl" id="1537callback" title='callback' data-type='SDL_LogOutputFunction' data-ref="1537callback">callback</dfn>, <em>void</em> *<dfn class="local col8 decl" id="1538userdata" title='userdata' data-type='void *' data-ref="1538userdata">userdata</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="204">204</th><td><u>#<span data-ppcond="204">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="205">205</th><td>}</td></tr>
+<tr><th id="206">206</th><td><u>#<span data-ppcond="204">endif</span></u></td></tr>
+<tr><th id="207">207</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td><u>#<span data-ppcond="37">endif</span> /* _SDL_log_h */</u></td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="212">212</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='61' type='void Solarus::Entity::State::notify_item_command_pressed(int slot)'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='310' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='314' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='410' ll='411' type='void Solarus::Entity::State::notify_item_command_pressed(int )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='406'>/**
+ * \brief Notifies this state that an item command was just pressed.
+ * \param slot The slot activated (1 or 2).
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='410'>/* slot */</doc>
+<ovr f='codebrowser/src/hero/HeroState.cpp' l='92' c='_ZN7Solarus9HeroState27notify_item_command_pressedEi'/>

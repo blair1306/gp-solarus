@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/CollisionMode.h' l='42' type='128'/>
+<doc f='codebrowser/include/solarus/entities/CollisionMode.h' l='42'>/**&lt; Custom collision function, defined by a subclass of Entity. */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='73' u='r' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='799' u='r' c='_ZN7Solarus12CustomEntity18add_collision_testERKNS_12ScopedLuaRefES3_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='879' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='917' u='r' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='964' u='r' c='_ZN7Solarus12CustomEntity21notify_collision_fromERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1399' u='r' c='_ZN7Solarus12CustomEntity13CollisionInfoC1ERNS_10LuaContextERKNS_12ScopedLuaRefES6_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1797' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1798' u='r' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1947' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1757' u='r' c='_ZN7Solarus4Hero28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='43' u='r' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='43' u='r' c='_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='77' u='r' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='65' u='r' c='_ZN7Solarus15TeletransporterC1ERKSsiRKNS_5PointERKNS_4SizeES2_S2_NS_10Transition5StyleES2_S2_'/>

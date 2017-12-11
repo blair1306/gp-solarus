@@ -1,0 +1,9 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='66' type='bool SolarusGui::QuestsModel::has_quest(const QString &amp; quest_path)'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='109' ll='112' type='bool SolarusGui::QuestsModel::has_quest(const QString &amp; quest_path)'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='122' u='c' c='_ZN10SolarusGui11QuestsModel9add_questERK7QString'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='104'>/**
+ * @brief Returns whether the model contains the given quest path.
+ * @param quest_path Quest path to test.
+ * @return @c true if it is in the model.
+ */</doc>
+<use f='codebrowser/gui/src/quests_view.cpp' l='83' u='c' c='_ZN10SolarusGui10QuestsView9has_questERK7QString'/>

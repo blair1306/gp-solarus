@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Arguments.h' l='38' type='void Solarus::Arguments::Arguments(int argc, char ** argv)'/>
+<use f='codebrowser/gui/src/main.cpp' l='97' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19run_questEiPPc'/>
+<def f='codebrowser/src/Arguments.cpp' l='34' ll='44' type='void Solarus::Arguments::Arguments(int argc, char ** argv)'/>
+<doc f='codebrowser/src/Arguments.cpp' l='28'>/**
+ * \brief Creates an argument object from standard main() arguments.
+ * \param argc Number of command-line arguments.
+ * \param argv Command-line arguments. The first one, if any, is the name
+ * of the program.
+ */</doc>
+<use f='codebrowser/src/main/Main.cpp' l='109' u='c' c='main'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='33' u='c' c='_ZN7Solarus15TestEnvironmentC1EiPPc'/>

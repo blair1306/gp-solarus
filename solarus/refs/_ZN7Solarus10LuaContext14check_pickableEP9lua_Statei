@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1195' type='static std::shared_ptr&lt;Pickable&gt; Solarus::LuaContext::check_pickable(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3887' ll='3891' type='static std::shared_ptr&lt;Pickable&gt; Solarus::LuaContext::check_pickable(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3910' u='c' c='_ZN7Solarus10LuaContext32pickable_api_get_followed_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3932' u='c' c='_ZN7Solarus10LuaContext31pickable_api_get_falling_heightEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3947' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3880'>/**
+ * \brief Checks that the userdata at the specified index of the stack is an
+ * pickable and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The pickable.
+ */</doc>

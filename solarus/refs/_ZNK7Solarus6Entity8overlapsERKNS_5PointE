@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='248' type='bool Solarus::Entity::overlaps(const Solarus::Point &amp; point) const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='535' ll='537' type='bool Solarus::Entity::overlaps(const Solarus::Point &amp; point) const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='530'>/**
+ * \brief Returns whether or not a point overlaps this entity&apos;s bounding box.
+ * \param point point to check
+ * \return true if the point is in this entity&apos;s bounding box
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1109' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='185' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1634' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='278' u='c' c='_ZNK7Solarus6Jumper20is_point_in_diagonalERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='88' u='c' c='_ZN7Solarus9Separator21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='176' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='229' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='236' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='384' u='c' c='_ZN7Solarus4Hero12RunningState21is_cutting_with_swordERNS_6EntityE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='183' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21is_cutting_with_swordERNS_6EntityE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='180' type='void Solarus::Entities::notify_entity_removed(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='209' ll='214' type='void Solarus::Entities::notify_entity_removed(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='752' u='c' c='_ZN7Solarus8Entities19notify_map_finishedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1146' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='205'>/**
+ * \brief Notifies an entity that it is being removed.
+ * \param entity The entity being removed.
+ */</doc>

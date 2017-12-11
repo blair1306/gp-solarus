@@ -1,0 +1,37 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='152' type='std::string Solarus::LuaTools::opt_string_field(lua_State * l, int table_index, const std::string &amp; key, const std::string &amp; default_value)'/>
+<use f='codebrowser/src/EntityData.cpp' l='759' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/EntityData.cpp' l='781' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/MapData.cpp' l='852' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='855' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='46' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='52' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='54' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='57' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='59' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='62' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='64' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='66' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='68' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='71' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='73' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='75' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='591' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5078' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5084' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5085' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5087' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='554' ll='575' type='std::string Solarus::LuaTools::opt_string_field(lua_State * l, int table_index, const std::string &amp; key, const std::string &amp; default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='543'>/**
+ * \brief Like LuaTools::check_string_field() but with a default value.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::opt_string().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as a string.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='152' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='169' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='170' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='53' type='void Solarus::Entity::State::notify_command_pressed(Solarus::GameCommand command)'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='277' ll='320' type='void Solarus::Entity::State::notify_command_pressed(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='272'>/**
+ * \brief This function is called when a game command is pressed and the game
+ * is not suspended.
+ * \param command The command pressed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='417' u='c' c='_ZN7Solarus4Hero22notify_command_pressedENS_11GameCommandE'/>

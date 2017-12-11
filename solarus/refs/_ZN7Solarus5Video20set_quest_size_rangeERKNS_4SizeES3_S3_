@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='86' type='static void Solarus::Video::set_quest_size_range(const Solarus::Size &amp; normal_quest_size, const Solarus::Size &amp; min_quest_size, const Solarus::Size &amp; max_quest_size)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='528' u='c' c='_ZN7Solarus8MainLoop21load_quest_propertiesEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='772' ll='811' type='static void Solarus::Video::set_quest_size_range(const Solarus::Size &amp; normal_size, const Solarus::Size &amp; min_size, const Solarus::Size &amp; max_size)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='762'>/**
+ * \brief Sets the allowed range of quest sizes for this quest.
+ *
+ * This function sets the actual quest size and finishes the initialization
+ * by creating the window.
+ *
+ * \param normal_size Default size for this quest.
+ * \param min_size Minimum size for this quest.
+ * \param max_size Maximum size for this quest.
+ */</doc>

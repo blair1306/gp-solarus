@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='64' type='int Solarus::Rectangle::get_left() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='130' u='c' c='_ZNK7Solarus9Rectangle15get_bottom_leftEv'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='150' u='c' c='_ZNK7Solarus9Rectangle10get_centerEv'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='159' ll='161' type='int Solarus::Rectangle::get_left() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='171' u='c' c='_ZNK7Solarus9Rectangle9get_rightEv'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='190' u='c' c='_ZNK7Solarus9Rectangle12get_top_leftEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='439' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='504' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='155'>/**
+ * \brief Returns the left coordinate of this rectangle.
+ * \return The left coordinate.
+ */</doc>

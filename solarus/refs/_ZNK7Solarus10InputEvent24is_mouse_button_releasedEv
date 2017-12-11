@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='281' type='bool Solarus::InputEvent::is_mouse_button_released() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1166' ll='1169' type='bool Solarus::InputEvent::is_mouse_button_released() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1179' u='c' c='_ZNK7Solarus10InputEvent24is_mouse_button_releasedENS0_11MouseButtonE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1459' u='c' c='_ZNK7Solarus10InputEvent11is_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1161'>/**
+ * \brief Returns whether this event is a mouse event.
+ * corresponding to releasing any button.
+ * \return true if this event corresponds to releasing a mouse button.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1577' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

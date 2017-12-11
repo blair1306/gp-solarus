@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='49' type='const Solarus::Color &amp; Solarus::Tileset::get_background_color() const'/>
+<use f='codebrowser/src/Game.cpp' l='575' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Map.cpp' l='547' u='c' c='_ZN7Solarus3Map24build_background_surfaceEv'/>
+<def f='codebrowser/src/entities/Tileset.cpp' l='176' ll='178' type='const Solarus::Color &amp; Solarus::Tileset::get_background_color() const'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='236' u='c' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<doc f='codebrowser/src/entities/Tileset.cpp' l='172'>/**
+ * \brief Returns the background color of this tileset.
+ * \return The background color.
+ */</doc>

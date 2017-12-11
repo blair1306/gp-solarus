@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='105' type='void Solarus::Movement::Movement(bool ignore_obstacles)'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='35' u='c' c='_ZN7Solarus14CircleMovementC1Eb'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='32' u='c' c='_ZN7Solarus8MovementC1Ev'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='42' ll='57' type='void Solarus::Movement::Movement(bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='36'>/**
+ * \brief Constructor.
+ * \param ignore_obstacles When there is a map and the movement is attached to
+ * an entity of this map, indicates whether the movement should ignore
+ * obstacles.
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='39' u='c' c='_ZN7Solarus13PixelMovementC1ERKSsjbb'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='48' u='c' c='_ZN7Solarus16RelativeMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEb'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='35' u='c' c='_ZN7Solarus16StraightMovementC1Ebb'/>

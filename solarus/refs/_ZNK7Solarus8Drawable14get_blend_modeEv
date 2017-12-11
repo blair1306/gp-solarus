@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='132' type='Solarus::BlendMode Solarus::Drawable::get_blend_mode() const'/>
+<def f='codebrowser/src/Drawable.cpp' l='278' ll='280' type='Solarus::BlendMode Solarus::Drawable::get_blend_mode() const'/>
+<doc f='codebrowser/src/Drawable.cpp' l='274'>/**
+ * \brief Returns the blend mode of this drawable object.
+ * \return The blend mode.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='779' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='848' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='682' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='991' u='c' c='_ZNK7Solarus7Surface18get_sdl_blend_modeEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='544' u='c' c='_ZN7Solarus11TextSurface8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='559' u='c' c='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='182' u='c' c='_ZN7Solarus10LuaContext27drawable_api_get_blend_modeEP9lua_State'/>

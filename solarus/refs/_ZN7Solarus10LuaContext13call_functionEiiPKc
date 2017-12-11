@@ -1,0 +1,126 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='188' type='bool Solarus::LuaContext::call_function(int nb_arguments, int nb_results, const char * function_name)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='187'>// Calling Lua functions.</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2543' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='288' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='323' u='c' c='_ZN7Solarus10LuaContext8run_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='347' u='c' c='_ZN7Solarus10LuaContext9run_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='378' u='c' c='_ZN7Solarus10LuaContext17run_custom_entityERNS_12CustomEntityE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='427' u='c' c='_ZN7Solarus10LuaContext22notify_dialog_finishedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefES8_'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='649' ll='655' type='bool Solarus::LuaContext::call_function(int nb_arguments, int nb_results, const char * function_name)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1389' u='c' c='_ZN7Solarus10LuaContext10on_startedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1399' u='c' c='_ZN7Solarus10LuaContext11on_finishedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1409' u='c' c='_ZN7Solarus10LuaContext9on_updateEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1421' u='c' c='_ZN7Solarus10LuaContext7on_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1433' u='c' c='_ZN7Solarus10LuaContext11on_pre_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1445' u='c' c='_ZN7Solarus10LuaContext12on_post_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1457' u='c' c='_ZN7Solarus10LuaContext12on_suspendedEb'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1467' u='c' c='_ZN7Solarus10LuaContext9on_pausedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1477' u='c' c='_ZN7Solarus10LuaContext11on_unpausedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1496' u='c' c='_ZN7Solarus10LuaContext17on_dialog_startedERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1510' u='c' c='_ZN7Solarus10LuaContext18on_dialog_finishedERKNS_6DialogE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1520' u='c' c='_ZN7Solarus10LuaContext20on_game_over_startedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1532' u='c' c='_ZN7Solarus10LuaContext21on_game_over_finishedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1629' u='c' c='_ZN7Solarus10LuaContext14on_key_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1660' u='c' c='_ZN7Solarus10LuaContext20on_character_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1688' u='c' c='_ZN7Solarus10LuaContext15on_key_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1719' u='c' c='_ZN7Solarus10LuaContext24on_joypad_button_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1745' u='c' c='_ZN7Solarus10LuaContext25on_joypad_button_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1773' u='c' c='_ZN7Solarus10LuaContext20on_joypad_axis_movedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1801' u='c' c='_ZN7Solarus10LuaContext19on_joypad_hat_movedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1837' u='c' c='_ZN7Solarus10LuaContext23on_mouse_button_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1878' u='c' c='_ZN7Solarus10LuaContext24on_mouse_button_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1916' u='c' c='_ZN7Solarus10LuaContext17on_finger_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1949' u='c' c='_ZN7Solarus10LuaContext18on_finger_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1985' u='c' c='_ZN7Solarus10LuaContext15on_finger_movedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2007' u='c' c='_ZN7Solarus10LuaContext18on_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2029' u='c' c='_ZN7Solarus10LuaContext19on_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2050' u='c' c='_ZN7Solarus10LuaContext21on_animation_finishedERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2062' u='c' c='_ZN7Solarus10LuaContext20on_animation_changedERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2077' u='c' c='_ZN7Solarus10LuaContext20on_direction_changedERKSsi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2091' u='c' c='_ZN7Solarus10LuaContext16on_frame_changedERKSsi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2104' u='c' c='_ZN7Solarus10LuaContext19on_position_changedERKNS_5PointE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2114' u='c' c='_ZN7Solarus10LuaContext19on_obstacle_reachedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2124' u='c' c='_ZN7Solarus10LuaContext10on_changedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2141' u='c' c='_ZN7Solarus10LuaContext10on_startedEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2158' u='c' c='_ZN7Solarus10LuaContext30on_opening_transition_finishedEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2177' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2196' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2208' u='c' c='_ZN7Solarus10LuaContext16on_state_changedERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2220' u='c' c='_ZN7Solarus10LuaContext16on_taking_damageEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2232' u='c' c='_ZN7Solarus10LuaContext13on_activatingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2244' u='c' c='_ZN7Solarus10LuaContext13on_activatingEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2254' u='c' c='_ZN7Solarus10LuaContext12on_activatedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2266' u='c' c='_ZN7Solarus10LuaContext12on_activatedEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2276' u='c' c='_ZN7Solarus10LuaContext19on_activated_repeatEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2286' u='c' c='_ZN7Solarus10LuaContext14on_inactivatedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2296' u='c' c='_ZN7Solarus10LuaContext7on_leftEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2308' u='c' c='_ZN7Solarus10LuaContext18on_npc_interactionERNS_3NpcE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2324' u='c' c='_ZN7Solarus10LuaContext23on_npc_interaction_itemERNS_3NpcERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2344' u='c' c='_ZN7Solarus10LuaContext14on_interactionEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2361' u='c' c='_ZN7Solarus10LuaContext19on_interaction_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2382' u='c' c='_ZN7Solarus10LuaContext21on_npc_collision_fireERNS_3NpcE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2392' u='c' c='_ZN7Solarus10LuaContext17on_collision_fireEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2402' u='c' c='_ZN7Solarus10LuaContext22on_collision_explosionEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2414' u='c' c='_ZN7Solarus10LuaContext9on_buyingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2433' u='c' c='_ZN7Solarus10LuaContext9on_boughtEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2443' u='c' c='_ZN7Solarus10LuaContext9on_openedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2472' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2485' u='c' c='_ZN7Solarus10LuaContext9on_closedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2495' u='c' c='_ZN7Solarus10LuaContext9on_movingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2505' u='c' c='_ZN7Solarus10LuaContext8on_movedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2517' u='c' c='_ZN7Solarus10LuaContext14on_map_changedERNS_3MapE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2529' u='c' c='_ZN7Solarus10LuaContext19on_pickable_createdERNS_8PickableE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2541' u='c' c='_ZN7Solarus10LuaContext18on_variant_changedEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2553' u='c' c='_ZN7Solarus10LuaContext17on_amount_changedEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2571' u='c' c='_ZN7Solarus10LuaContext12on_obtainingERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2589' u='c' c='_ZN7Solarus10LuaContext11on_obtainedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2599' u='c' c='_ZN7Solarus10LuaContext8on_usingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2611' u='c' c='_ZN7Solarus10LuaContext15on_ability_usedENS_7AbilityE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2621' u='c' c='_ZN7Solarus10LuaContext10on_createdEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2631' u='c' c='_ZN7Solarus10LuaContext10on_removedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2641' u='c' c='_ZN7Solarus10LuaContext10on_enabledEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2651' u='c' c='_ZN7Solarus10LuaContext11on_disabledEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2661' u='c' c='_ZN7Solarus10LuaContext12on_restartedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2671' u='c' c='_ZN7Solarus10LuaContext11on_pre_drawEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2681' u='c' c='_ZN7Solarus10LuaContext12on_post_drawEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2696' u='c' c='_ZN7Solarus10LuaContext19on_position_changedERKNS_5PointEi'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2708' u='c' c='_ZN7Solarus10LuaContext19on_obstacle_reachedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2720' u='c' c='_ZN7Solarus10LuaContext19on_movement_startedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2732' u='c' c='_ZN7Solarus10LuaContext19on_movement_changedERNS_8MovementE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2742' u='c' c='_ZN7Solarus10LuaContext20on_movement_finishedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2758' u='c' c='_ZN7Solarus10LuaContext18on_collision_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2768' u='c' c='_ZN7Solarus10LuaContext9on_lookedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2778' u='c' c='_ZN7Solarus10LuaContext6on_cutEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2788' u='c' c='_ZN7Solarus10LuaContext10on_liftingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2798' u='c' c='_ZN7Solarus10LuaContext11on_explodedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2808' u='c' c='_ZN7Solarus10LuaContext15on_regeneratingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2824' u='c' c='_ZN7Solarus10LuaContext25on_custom_attack_receivedENS_11EnemyAttackEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2827' u='c' c='_ZN7Solarus10LuaContext25on_custom_attack_receivedENS_11EnemyAttackEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2843' u='c' c='_ZN7Solarus10LuaContext16on_hurt_by_swordERNS_4HeroERNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2857' u='c' c='_ZN7Solarus10LuaContext7on_hurtENS_11EnemyAttackE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2867' u='c' c='_ZN7Solarus10LuaContext8on_dyingEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2877' u='c' c='_ZN7Solarus10LuaContext7on_deadEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2887' u='c' c='_ZN7Solarus10LuaContext14on_immobilizedEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2907' u='c' c='_ZN7Solarus10LuaContext17on_attacking_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2926' u='c' c='_ZN7Solarus10LuaContext23on_ground_below_changedENS_6GroundE'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='631'>/**
+ * \brief Calls the Lua function with its arguments on top of the stack.
+ *
+ * This function is like lua_pcall, except that it additionally handles the
+ * error message if an error occurs in the Lua code (the error is printed).
+ * This function leaves the results on the stack if there is no error,
+ * and leaves nothing on the stack in case of error.
+ *
+ * \param nb_arguments number of arguments placed on the Lua stack above the
+ * function to call
+ * \param nb_results number of results expected (you get them on the stack if
+ * there is no error)
+ * \param function_name A name describing the Lua function (only used to print
+ * the error message if any).
+ * This is not a const std::string&amp; but a const char* on purpose to avoid
+ * costly conversions as this function is called very often.
+ * \return true in case of success
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1320' u='c' c='_ZN7Solarus10LuaContext27create_map_entity_from_dataERNS_3MapERKNS_10EntityDataE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1715' u='c' c='_ZN7Solarus10LuaContext19map_api_move_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='315' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>

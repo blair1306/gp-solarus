@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1182' type='static bool Solarus::LuaContext::is_chest(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3031' ll='3033' type='static bool Solarus::LuaContext::is_chest(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3025'>/**
+ * \brief Returns whether a value is a userdata of type chest.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a chest.
+ */</doc>

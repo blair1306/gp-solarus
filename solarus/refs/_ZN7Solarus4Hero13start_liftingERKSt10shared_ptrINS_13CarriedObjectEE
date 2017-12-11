@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='268' type='void Solarus::Hero::start_lifting(const std::shared_ptr&lt;CarriedObject&gt; &amp; item_to_lift)'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='192' u='c' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='401' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2460' ll='2462' type='void Solarus::Hero::start_lifting(const std::shared_ptr&lt;CarriedObject&gt; &amp; item_to_lift)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2456'>/**
+ * \brief Makes the hero lift a destructible item.
+ * \param item_to_lift The item to lift.
+ */</doc>
+<use f='codebrowser/src/entities/Npc.cpp' l='293' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>

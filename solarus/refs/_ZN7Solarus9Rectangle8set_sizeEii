@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='77' type='void Solarus::Rectangle::set_size(int width, int height)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='308' ll='311' type='void Solarus::Rectangle::set_size(int width, int height)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='318' u='c' c='_ZN7Solarus9Rectangle8set_sizeERKNS_4SizeE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='303'>/**
+ * \brief Sets the size of this rectangle.
+ * \param width the new width
+ * \param height the new height
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='844' u='c' c='_ZN7Solarus6Entity8set_sizeEii'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='107' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='50' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; top_left, const Solarus::Point &amp; bottom_right)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='82' ll='85' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; top_left, const Solarus::Point &amp; bottom_right)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='433' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='436' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='439' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='442' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='72'>/**
+ * \brief Creates a rectangle, specifying its properties.
+ *
+ * This is the equivalent of:
+ * Rectangle(top_left.x, top_left.y,
+ *           bottom_right.x - top_left.x , bottom_right.y - top_left.y)
+ *
+ * \param top_left coordinates of the top-left corner
+ * \param bottom_right coordinates of the bottom-right corner
+ */</doc>

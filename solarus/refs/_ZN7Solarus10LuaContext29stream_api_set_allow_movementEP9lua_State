@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='935' type='static int Solarus::LuaContext::stream_api_set_allow_movement(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='335' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3551' ll='3561' type='static int Solarus::LuaContext::stream_api_set_allow_movement(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3546'>/**
+ * \brief Implementation of stream:set_allow_movement().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

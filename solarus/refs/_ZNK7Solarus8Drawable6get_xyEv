@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='59' type='const Solarus::Point &amp; Solarus::Drawable::get_xy() const'/>
+<def f='codebrowser/src/Drawable.cpp' l='96' ll='98' type='const Solarus::Point &amp; Solarus::Drawable::get_xy() const'/>
+<doc f='codebrowser/src/Drawable.cpp' l='91'>/**
+ * \brief Returns the coordinates of this drawable object as defined by its
+ * movement.
+ * \return The coordinates of this drawable object.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='660' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='666' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='922' u='c' c='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2880' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2885' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1569' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2109' u='c' c='_ZN7Solarus4Hero4hurtERNS_6EntityEPNS_6SpriteEi'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='295' u='c' c='_ZN7Solarus10LuaContext19drawable_api_get_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='296' u='c' c='_ZN7Solarus10LuaContext19drawable_api_get_xyEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='127' u='c' c='_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='172' u='c' c='_ZNK7Solarus8Movement6get_xyEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='53' type='16'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='53'>/**&lt; a treasure the hero can buy in a shop */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='112' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='52' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='85' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='137' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/include/solarus/entities/ShopTreasure.h' l='44'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='374' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3726' u='r' c='_ZN7Solarus10LuaContext16is_shop_treasureEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3738' u='r' c='_ZN7Solarus10LuaContext19check_shop_treasureEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1286' u='r'/>

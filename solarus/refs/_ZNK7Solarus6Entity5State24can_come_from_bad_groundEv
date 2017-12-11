@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='89' type='bool Solarus::Entity::State::can_come_from_bad_ground() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='606' ll='608' type='bool Solarus::Entity::State::can_come_from_bad_ground() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='598'>/**
+ * \brief Returns whether the entity&apos;s current position can be considered
+ * as a place to come back after a bad ground (hole, deep water, etc).
+ *
+ * Returns is_touching_ground() by default.
+ *
+ * \return true if the entity can come back here
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1113' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='299' c='_ZNK7Solarus4Hero11StairsState24can_come_from_bad_groundEv'/>

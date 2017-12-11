@@ -1,0 +1,52 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='69' type='void Solarus::LuaTools::error(lua_State * l, const std::string &amp; message)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='264' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/DialogResources.cpp' l='272' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/DialogResources.cpp' l='276' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='814' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='819' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='658' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='96' u='c' c='_ZN7Solarus10LuaContext20audio_api_play_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='176' u='c' c='_ZN7Solarus10LuaContext20audio_api_play_musicEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1458' u='c' c='_ZN7Solarus10LuaContext24entity_api_remove_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5111' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='77' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='125' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='165' u='c' c='_ZN7Solarus10LuaContext15game_api_existsEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='186' u='c' c='_ZN7Solarus10LuaContext15game_api_deleteEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='206' u='c' c='_ZN7Solarus10LuaContext13game_api_loadEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='230' u='c' c='_ZN7Solarus10LuaContext13game_api_saveEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='250' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='445' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='449' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='483' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='487' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='536' u='c' c='_ZN7Solarus10LuaContext24game_api_start_game_overEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='557' u='c' c='_ZN7Solarus10LuaContext23game_api_stop_game_overEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1173' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1194' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1198' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='550' u='c' c='_ZN7Solarus10LuaContext20item_api_get_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='570' u='c' c='_ZN7Solarus10LuaContext20item_api_set_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='591' u='c' c='_ZN7Solarus10LuaContext19item_api_has_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='634' u='c' c='_ZN7Solarus10LuaContext19item_api_set_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='655' u='c' c='_ZN7Solarus10LuaContext19item_api_add_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='680' u='c' c='_ZN7Solarus10LuaContext22item_api_remove_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='704' u='c' c='_ZN7Solarus10LuaContext23item_api_get_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='724' u='c' c='_ZN7Solarus10LuaContext23item_api_set_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='131' u='c' c='_ZN7Solarus10LuaContext30language_api_get_language_nameEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='161' ll='163' type='void Solarus::LuaTools::error(lua_State * l, const std::string &amp; message)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='184' u='c' c='_ZN7Solarus8LuaTools9arg_errorEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='193' u='c' c='_ZN7Solarus8LuaTools9arg_errorEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='201' u='c' c='_ZN7Solarus8LuaTools9arg_errorEP9lua_StateiRKSs'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='153'>/**
+ * \brief Similar to luaL_error() but throws a LuaException.
+ *
+ * This function never returns.
+ *
+ * \param l A Lua state.
+ * \param message Error message.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='265' u='c' c='_ZN7Solarus10LuaContext22main_api_load_settingsEP9lua_State'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='293' u='c' c='_ZN7Solarus10LuaContext22main_api_save_settingsEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='173' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='187' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

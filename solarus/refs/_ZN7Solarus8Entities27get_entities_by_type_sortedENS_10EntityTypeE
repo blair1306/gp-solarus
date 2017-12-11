@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='90' type='EntityVector Solarus::Entities::get_entities_by_type_sorted(Solarus::EntityType type)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='608' ll='615' type='EntityVector Solarus::Entities::get_entities_by_type_sorted(Solarus::EntityType type)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='602'>/**
+ * \brief Like get_entities_by_type(EntityType),
+ * but sorts entities according to their Z index on the map.
+ * \param type An entity type.
+ * \return All entities of the type.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2030' u='c' c='_ZN7Solarus10LuaContext28map_api_get_entities_by_typeEP9lua_State'/>

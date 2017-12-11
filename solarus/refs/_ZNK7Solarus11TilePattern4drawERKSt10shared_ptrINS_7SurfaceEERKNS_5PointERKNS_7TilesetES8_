@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='68' type='void Solarus::TilePattern::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position, const Solarus::Tileset &amp; tileset, const Solarus::Point &amp; viewport) const'/>
+<doc f='codebrowser/include/solarus/entities/TilePattern.h' l='60'>/**
+     * \brief Draws the tile image on a surface.
+     * \param dst_surface The surface to draw.
+     * \param dst_position Position where the tile pattern should be drawn.
+     * \param tileset The tileset of this tile.
+     * \param viewport Coordinates of the top-left corner of dst_surface
+     * relative to the map (may be used for scrolling tiles).
+     */</doc>
+<ovr f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='129' c='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<ovr f='codebrowser/src/entities/SimpleTilePattern.cpp' l='44' c='_ZNK7Solarus17SimpleTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='180' u='c' c='_ZNK7Solarus11TilePattern12fill_surfaceERKSt10shared_ptrINS_7SurfaceEERKNS_9RectangleERKNS_7TilesetERKNS_5PointE'/>

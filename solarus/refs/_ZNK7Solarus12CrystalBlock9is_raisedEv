@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CrystalBlock.h' l='57' type='bool Solarus::CrystalBlock::is_raised() const'/>
+<def f='codebrowser/src/entities/CrystalBlock.cpp' l='74' ll='78' type='bool Solarus::CrystalBlock::is_raised() const'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='88' u='c' c='_ZN7Solarus12CrystalBlock15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='103' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/CrystalBlock.cpp' l='70'>/**
+ * \brief Returns whether this block is raised.
+ * \return true if this block is raised
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1360' u='c' c='_ZN7Solarus8Entities22overlaps_raised_blocksEiRKNS_9RectangleE'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='89' type='bool Solarus::Stairs::is_inside_floor() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='108' u='c' c='_ZN7Solarus5Arrow18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='131' u='c' c='_ZN7Solarus9Boomerang18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='665' u='c' c='_ZN7Solarus13CarriedObject28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1732' u='c' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='97' u='c' c='_ZN7Solarus8Hookshot18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='48' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='111' ll='113' type='bool Solarus::Stairs::is_inside_floor() const'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='207' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='244' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='254' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='107'>/**
+ * \brief Returns whether the subtype of these stairs is INSIDE_FLOOR.
+ * \return \c true if the subtype if INSIDE_FLOOR.
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='82' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='101' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='180' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='341' u='c' c='_ZNK7Solarus4Hero11StairsState36get_previous_carried_object_behaviorEv'/>

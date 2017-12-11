@@ -1,0 +1,30 @@
+<inh f='codebrowser/include/solarus/entities/TilePattern.h' l='39' c='Solarus::TilePattern'/>
+<def f='codebrowser/include/solarus/entities/AnimatedTilePattern.h' l='32' ll='74'/>
+<size>80</size>
+<doc f='codebrowser/include/solarus/entities/AnimatedTilePattern.h' l='26'>/**
+ * \brief Animated tile pattern.
+ *
+ * Unlike simple tile patterns that always display the same image,
+ * an animated tile pattern displays three frames alternatively.
+ */</doc>
+<fun r='_ZN7Solarus19AnimatedTilePatternC1ENS_6GroundENS0_17AnimationSequenceERKNS_4SizeEiiiiiib'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern10initializeEv'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern6updateEv'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern4quitEv'/>
+<fun r='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<fun r='_ZNK7Solarus19AnimatedTilePattern24is_drawn_at_its_positionEv'/>
+<smbr r='Solarus::AnimatedTilePattern::frame_counter' t='int'/>
+<smbr r='Solarus::AnimatedTilePattern::current_frames' t='int [3]'/>
+<smbr r='Solarus::AnimatedTilePattern::next_frame_date' t='uint32_t'/>
+<mbr r='Solarus::AnimatedTilePattern::sequence' o='160' t='const Solarus::AnimatedTilePattern::AnimationSequence'/>
+<mbr r='Solarus::AnimatedTilePattern::position_in_tileset' o='192' t='Solarus::Rectangle [3]'/>
+<mbr r='Solarus::AnimatedTilePattern::parallax' o='576' t='bool'/>
+<smbr r='Solarus::AnimatedTilePattern::frame_counter' t='int'/>
+<smbr r='Solarus::AnimatedTilePattern::current_frames' t='int [3]'/>
+<smbr r='Solarus::AnimatedTilePattern::next_frame_date' t='uint32_t'/>
+<fun r='_ZN7Solarus19AnimatedTilePatternC1ENS_6GroundENS0_17AnimationSequenceERKNS_4SizeEiiiiiib'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern10initializeEv'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern4quitEv'/>
+<fun r='_ZN7Solarus19AnimatedTilePattern6updateEv'/>
+<fun r='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<fun r='_ZNK7Solarus19AnimatedTilePattern24is_drawn_at_its_positionEv'/>

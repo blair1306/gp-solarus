@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/RunningState.h' l='37' type='void Solarus::Hero::RunningState::set_suspended(bool suspended)'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='51' c='_ZN7Solarus6Entity5State13set_suspendedEb'/>
+<def f='codebrowser/src/hero/RunningState.cpp' l='127' ll='136' type='void Solarus::Hero::RunningState::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/hero/RunningState.cpp' l='123'>/**
+ * \brief Notifies this state that the game was just suspended or resumed.
+ * \param suspended true if the game is suspended
+ */</doc>

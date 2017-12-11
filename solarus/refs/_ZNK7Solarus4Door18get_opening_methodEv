@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='87' type='Solarus::Door::OpeningMethod Solarus::Door::get_opening_method() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='269' u='c' c='_ZN7Solarus4Door31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Door.cpp' l='296' ll='298' type='Door::OpeningMethod Solarus::Door::get_opening_method() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='420' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='515' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='596' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='647' u='c' c='_ZN7Solarus4Door23get_sword_tapping_soundEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='292'>/**
+ * \brief Returns the opening method of this door.
+ * \return How this door can be opened.
+ */</doc>

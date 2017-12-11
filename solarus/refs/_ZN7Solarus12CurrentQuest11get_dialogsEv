@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='57' type='std::map&lt;std::string, Dialog&gt; &amp; Solarus::CurrentQuest::get_dialogs()'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='87' u='c' c='_ZN7Solarus12CurrentQuest4quitEv'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='180' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='278' ll='284' type='std::map&lt;std::string, Dialog&gt; &amp; Solarus::CurrentQuest::get_dialogs()'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='293' u='c' c='_ZN7Solarus12CurrentQuest13dialog_existsERKSs'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='307' u='c' c='_ZN7Solarus12CurrentQuest10get_dialogERKSs'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='274'>/**
+ * \brief Returns the dialog list of the current quest.
+ * \return The current quest dialog list.
+ */</doc>

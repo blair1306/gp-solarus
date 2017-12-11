@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='54' type='void Solarus::Equipment::notify_map_changed(Solarus::Map &amp; map)'/>
+<def f='codebrowser/src/Equipment.cpp' l='81' ll='88' type='void Solarus::Equipment::notify_map_changed(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='77'>/**
+ * \brief Notifies the equipment system has another map has just been started.
+ * \param map the new current map
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='667' u='c' c='_ZN7Solarus4Game18notify_map_changedEv'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='173' type='void Solarus::LuaContext::warning_deprecated(const std::string &amp; function_name, const std::string &amp; message)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='439' ll='451' type='void Solarus::LuaContext::warning_deprecated(const std::string &amp; function_name, const std::string &amp; message)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='431'>/**
+ * \brief Shows a warning message for a deprecated function of the Lua API.
+ *
+ * Does nothing if the message for this function was already shown once.
+ *
+ * \param function_name A deprecated Lua function.
+ * \param message A warning message explaining how to replace the call.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1664' u='c' c='_ZN7Solarus10LuaContext27map_api_get_camera_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1695' u='c' c='_ZN7Solarus10LuaContext19map_api_move_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1771' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_spriteEP9lua_State'/>

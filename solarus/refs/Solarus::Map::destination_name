@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Map.h' l='223' type='std::string'/>
+<offset>1344</offset>
+<doc f='codebrowser/include/solarus/Map.h' l='223'>/**&lt; Current destination point on the map,
+                                   * or &quot;_same&quot; to keep the hero&apos;s coordinates,
+                                   * or &quot;_side0&quot;, &quot;_side1&quot;, &quot;_side2&quot; or &quot;_side3&quot;
+                                   * to place the hero on a side of the map,
+                                   * or an empty string to use the one saved. */</doc>
+<use f='codebrowser/src/Map.cpp' l='56' u='w' c='_ZN7Solarus3MapC1ERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='350' u='w' c='_ZN7Solarus3Map15set_destinationERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='360' u='a' c='_ZNK7Solarus3Map20get_destination_nameEv'/>
+<use f='codebrowser/src/Map.cpp' l='380' u='r' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='381' u='m' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='388' u='m' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='390' u='r' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='395' u='r' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='423' u='m' c='_ZNK7Solarus3Map20get_destination_sideEv'/>
+<use f='codebrowser/src/Map.cpp' l='424' u='m' c='_ZNK7Solarus3Map20get_destination_sideEv'/>

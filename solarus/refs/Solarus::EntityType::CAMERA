@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='62' type='22'/>
+<use f='codebrowser/include/solarus/entities/Camera.h' l='46'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='60'>// entities created only during the game (not stored in maps)</doc>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='62'>/**&lt; the camera */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='973' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1127' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1188' u='r' c='_ZN7Solarus8Entities6updateEv'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='32' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='97' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='148' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='215' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2565' u='r' c='_ZN7Solarus10LuaContext9is_cameraEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2577' u='r' c='_ZN7Solarus10LuaContext12check_cameraEP9lua_Statei'/>

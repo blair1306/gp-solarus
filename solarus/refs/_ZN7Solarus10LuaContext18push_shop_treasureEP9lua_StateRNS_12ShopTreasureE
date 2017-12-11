@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1114' type='static void Solarus::LuaContext::push_shop_treasure(lua_State * l, Solarus::ShopTreasure &amp; shop_treasure)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3747' ll='3749' type='static void Solarus::LuaContext::push_shop_treasure(lua_State * l, Solarus::ShopTreasure &amp; shop_treasure)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3760' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3794' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6311' u='c' c='_ZN7Solarus10LuaContext23shop_treasure_on_buyingERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6330' u='c' c='_ZN7Solarus10LuaContext23shop_treasure_on_boughtERNS_12ShopTreasureE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3742'>/**
+ * \brief Pushes a shop treasure userdata onto the stack.
+ * \param l A Lua context.
+ * \param shop_treasure A shop treasure.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='230' type='void Solarus::Hero::hurt(int life_points)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2130' ll='2133' type='void Solarus::Hero::hurt(int damage)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2125'>/**
+ * \brief Hurts the hero, with no located source of the attack.
+ * \param damage Number of life points to remove
+ * (this number may be reduced later by the tunic on by hero:on_taking_damage()).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2440' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>

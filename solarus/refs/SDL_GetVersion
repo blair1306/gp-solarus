@@ -1,0 +1,25 @@
+<dec f='include/SDL2/SDL_version.h' l='133' type='void SDL_GetVersion(SDL_version * ver)'/>
+<doc f='include/SDL2/SDL_version.h' l='109'>/**
+ *  \brief Get the version of SDL that is linked against your program.
+ *
+ *  If you are linking to SDL dynamically, then it is possible that the
+ *  current version will be different than the version you compiled against.
+ *  This function returns the current version, while SDL_VERSION() is a
+ *  macro that tells you what version you compiled with.
+ *
+ *  \code
+ *  SDL_version compiled;
+ *  SDL_version linked;
+ *
+ *  SDL_VERSION(&amp;compiled);
+ *  SDL_GetVersion(&amp;linked);
+ *  printf(&quot;We compiled against SDL version %d.%d.%d ...\n&quot;,
+ *         compiled.major, compiled.minor, compiled.patch);
+ *  printf(&quot;But we linked against SDL version %d.%d.%d.\n&quot;,
+ *         linked.major, linked.minor, linked.patch);
+ *  \endcode
+ *
+ *  This function may be called safely at any time, even before SDL_Init().
+ *
+ *  \sa SDL_VERSION
+ */</doc>

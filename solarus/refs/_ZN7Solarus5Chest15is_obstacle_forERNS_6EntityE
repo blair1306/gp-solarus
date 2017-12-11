@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='73' type='bool Solarus::Chest::is_obstacle_for(Solarus::Entity &amp; other)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='333' c='_ZN7Solarus6Entity15is_obstacle_forERS0_'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='356' ll='358' type='bool Solarus::Chest::is_obstacle_for(Solarus::Entity &amp; )'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='350'>/**
+ * \brief Returns whether this entity is an obstacle for another one when
+ * it is enabled.
+ * \param other Another entity.
+ * \return \c true if this entity is an obstacle for the other one.
+ */</doc>
+<doc f='codebrowser/src/entities/Chest.cpp' l='356'>/* other */</doc>

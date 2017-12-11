@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='121' type='bool Solarus::Entity::is_on_map() const'/>
+<use f='codebrowser/src/Game.cpp' l='143' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='181' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='186' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='917' u='c' c='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='302' ll='304' type='bool Solarus::Entity::is_on_map() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='366' u='c' c='_ZN7Solarus6Entity21finish_initializationEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='552' u='c' c='_ZN7Solarus6Entity20notify_being_removedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='596' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='938' u='c' c='_ZN7Solarus6Entity27notify_bounding_box_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2135' u='c' c='_ZN7Solarus6Entity30check_collision_with_detectorsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2281' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2305' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2319' u='c' c='_ZN7Solarus6Entity14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3326' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3332' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='297'>/**
+ * \brief Returns whether this entity is on a map, that is,
+ * whether set_map() has been called.
+ * \return true if the entity is on a map
+ */</doc>
+<use f='codebrowser/src/entities/EntityState.cpp' l='196' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='544' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1062' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1083' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2170' u='c' c='_ZN7Solarus4Hero25notify_game_over_finishedEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='48' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='116' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>

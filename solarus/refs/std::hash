@@ -1,0 +1,87 @@
+<def f='include/c++/4.9/bits/functional_hash.h' l='61' ll='67'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='80' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='83' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='86' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='89' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='92' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='95' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='98' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='101' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='104' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='107' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='110' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='113' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='116' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='119' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='122' macro='1'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='163' ll='172'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='175' ll='184'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/functional_hash.h' l='187' ll='193'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/basic_string.h' l='3078' ll='3085'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/basic_string.h' l='3093' ll='3101'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/basic_string.h' l='3111' ll='3119'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/bits/basic_string.h' l='3126' ll='3134'/>
+<def f='include/c++/4.9/bits/stl_bvector.h' l='1189' ll='1195'/>
+<size>1</size>
+<doc f='include/c++/4.9/bits/basic_string.h' l='3077'>/// std::hash specialization for string.</doc>
+<doc f='include/c++/4.9/bits/basic_string.h' l='3092'>/// std::hash specialization for wstring.</doc>
+<doc f='include/c++/4.9/bits/basic_string.h' l='3110'>/// std::hash specialization for u16string.</doc>
+<doc f='include/c++/4.9/bits/basic_string.h' l='3125'>/// std::hash specialization for u32string.</doc>
+<doc f='include/c++/4.9/bits/functional_hash.h' l='60'>/// Partial specializations for pointer types.</doc>
+<doc f='include/c++/4.9/bits/functional_hash.h' l='162'>/// Specialization for float.</doc>
+<doc f='include/c++/4.9/bits/functional_hash.h' l='174'>/// Specialization for double.</doc>
+<doc f='include/c++/4.9/bits/functional_hash.h' l='186'>/// Specialization for long double.</doc>
+<doc f='include/c++/4.9/bits/stl_bvector.h' l='1187'>// DR 1182.
+  /// std::hash specialization for vector&lt;bool&gt;.</doc>
+<fun r='_ZNKSt4hashIPT_EclES1_'/>
+<fun r='_ZNKSt4hashIfEclEf'/>
+<fun r='_ZNKSt4hashIdEclEd'/>
+<fun r='_ZNKSt4hashIeEclEe'/>
+<fun r='_ZNKSt4hashISsEclERKSs'/>
+<fun r='_ZNKSt4hashISbIwSt11char_traitsIwESaIwEEEclERKS3_'/>
+<fun r='_ZNKSt4hashISbIDsSt11char_traitsIDsESaIDsEEEclERKS3_'/>
+<fun r='_ZNKSt4hashISbIDiSt11char_traitsIDiESaIDiEEEclERKS3_'/>
+<fun r='_ZNKSt4hashISt6vectorIbT_EEclERKS2_'/>
+<fun r='_ZNKSt4hashISt6vectorIbT_EEclERKS2_'/>
+<def f='include/c++/4.9/bits/unique_ptr.h' l='733' ll='743'/>
+<def f='include/c++/4.9/bits/shared_ptr_base.h' l='1541' ll='1548'/>
+<def f='include/c++/4.9/bits/shared_ptr.h' l='608' ll='615'/>
+<doc f='include/c++/4.9/bits/unique_ptr.h' l='732'>/// std::hash specialization for unique_ptr.</doc>
+<doc f='include/c++/4.9/bits/shared_ptr.h' l='607'>/// std::hash specialization for shared_ptr.</doc>
+<doc f='include/c++/4.9/bits/shared_ptr_base.h' l='1540'>/// std::hash specialization for __shared_ptr.</doc>
+<fun r='_ZNKSt4hashISt10unique_ptrIT_T0_EEclERKS3_'/>
+<fun r='_ZNKSt4hashISt12__shared_ptrIT_XT0_EEEclERKS2_'/>
+<fun r='_ZNKSt4hashISt10shared_ptrIT_EEclERKS2_'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/system_error' l='362' ll='372'/>
+<inh f='include/c++/4.9/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/4.9/thread' l='224' ll='231'/>
+<size>1</size>
+<doc f='include/c++/4.9/system_error' l='360'>// DR 1182.
+  /// std::hash specialization for error_code.</doc>
+<doc f='include/c++/4.9/thread' l='222'>// DR 889.
+  /// std::hash specialization for thread::id.</doc>
+<fun r='_ZNKSt4hashISt10error_codeEclERKS0_'/>
+<fun r='_ZNKSt4hashINSt6thread2idEEclERKS1_'/>

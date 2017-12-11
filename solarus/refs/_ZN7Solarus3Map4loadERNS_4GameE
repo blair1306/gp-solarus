@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Map.h' l='89' type='void Solarus::Map::load(Solarus::Game &amp; game)'/>
+<use f='codebrowser/src/Game.cpp' l='642' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<def f='codebrowser/src/Map.cpp' l='280' ll='316' type='void Solarus::Map::load(Solarus::Game &amp; game)'/>
+<doc f='codebrowser/src/Map.cpp' l='273'>/**
+ * \brief Loads the map into a game.
+ *
+ * Reads the description file of the map.
+ *
+ * \param game the game
+ */</doc>

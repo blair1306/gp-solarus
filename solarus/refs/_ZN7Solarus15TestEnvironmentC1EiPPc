@@ -1,0 +1,15 @@
+<dec f='codebrowser/tests/include/test_tools/TestEnvironment.h' l='51' type='void Solarus::TestEnvironment::TestEnvironment(int argc, char ** argv)'/>
+<def f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='32' ll='40' type='void Solarus::TestEnvironment::TestEnvironment(int argc, char ** argv)'/>
+<doc f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='29'>/**
+ * \brief Creates a test environment.
+ */</doc>
+<use f='codebrowser/tests/src/tests/Initialization.cpp' l='24' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='94' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='95' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='79' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='179' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='128' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='242' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/RunLuaTest.cpp' l='29' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='65' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='64' u='c' c='main'/>

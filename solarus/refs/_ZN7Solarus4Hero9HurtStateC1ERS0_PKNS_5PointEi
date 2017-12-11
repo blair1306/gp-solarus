@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/hero/HurtState.h' l='32' type='void Solarus::Hero::HurtState::HurtState(Solarus::Hero &amp; hero, const Solarus::Point * source_xy, int damage)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2111' u='c' c='_ZN7Solarus4Hero4hurtERNS_6EntityEPNS_6SpriteEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2122' u='c' c='_ZN7Solarus4Hero4hurtERKNS_5PointEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2132' u='c' c='_ZN7Solarus4Hero4hurtEi'/>
+<def f='codebrowser/src/hero/HurtState.cpp' l='41' ll='51' type='void Solarus::Hero::HurtState::HurtState(Solarus::Hero &amp; hero, const Solarus::Point * source_xy, int damage)'/>
+<doc f='codebrowser/src/hero/HurtState.cpp' l='32'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param source_xy Coordinates of the thing (usually an enemy) that hurts
+ * the hero, used to compute the trajectory of the hero.
+ * If nullptr, the hero won&apos;t move.
+ * \param damage Number of life poitns to remove
+ * (this number may be reduced by the tunic or by hero:on_taking_damage()).
+ */</doc>

@@ -1,0 +1,18 @@
+<dec f='include/physfs.h' l='695' type='const char * PHYSFS_getBaseDir()'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='136' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<doc f='include/physfs.h' l='679'>/**
+ * \fn const char *PHYSFS_getBaseDir(void)
+ * \brief Get the path where the application resides.
+ *
+ * Helper function.
+ *
+ * Get the &quot;base dir&quot;. This is the directory where the application was run
+ *  from, which is probably the installation directory, and may or may not
+ *  be the process&apos;s current working directory.
+ *
+ * You should probably use the base dir in your search path.
+ *
+ *  \return READ ONLY string of base dir in platform-dependent notation.
+ *
+ * \sa PHYSFS_getUserDir
+ */</doc>

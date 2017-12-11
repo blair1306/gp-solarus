@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='129' type='SDL_Scancode SDL_GetScancodeFromName(const char * name)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='122'>/**
+ *  \brief Get a scancode from a human-readable name
+ *
+ *  \return scancode, or SDL_SCANCODE_UNKNOWN if the name wasn&apos;t recognized
+ *
+ *  \sa SDL_Scancode
+ */</doc>

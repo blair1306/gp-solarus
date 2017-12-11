@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_pixels.h' l='350' type='SDL_Palette * SDL_AllocPalette(int ncolors)'/>
+<doc f='include/SDL2/SDL_pixels.h' l='340'>/**
+ *  \brief Create a palette structure with the specified number of color
+ *         entries.
+ *
+ *  \return A new palette, or NULL if there wasn&apos;t enough memory.
+ *
+ *  \note The palette entries are initialized to white.
+ *
+ *  \sa SDL_FreePalette()
+ */</doc>

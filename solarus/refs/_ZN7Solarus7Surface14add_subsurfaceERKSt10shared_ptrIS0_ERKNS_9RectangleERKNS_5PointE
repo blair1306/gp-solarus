@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='143' type='void Solarus::Surface::add_subsurface(const SurfacePtr &amp; src_surface, const Solarus::Rectangle &amp; region, const Solarus::Point &amp; dst_position)'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='580' ll='598' type='void Solarus::Surface::add_subsurface(const SurfacePtr &amp; src_surface, const Solarus::Rectangle &amp; region, const Solarus::Point &amp; dst_position)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='717' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='574'>/**
+ * \brief Add a SubSurface to draw on this surface.
+ * \param src_surface The Surface to draw.
+ * \param region The subrectangle to draw in the source surface.
+ * \param dst_position Coordinates on this surface.
+ */</doc>

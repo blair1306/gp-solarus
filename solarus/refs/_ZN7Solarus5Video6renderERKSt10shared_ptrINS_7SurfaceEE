@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='99' type='static void Solarus::Video::render(const SurfacePtr &amp; quest_surface)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='506' u='c' c='_ZN7Solarus8MainLoop4drawEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='648' ll='684' type='static void Solarus::Video::render(const SurfacePtr &amp; quest_surface)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='644'>/**
+ * \brief Draws the quest surface on the screen with the current video mode.
+ * \param quest_surface The quest surface to render on the screen.
+ */</doc>

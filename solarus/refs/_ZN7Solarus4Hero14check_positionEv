@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='187' type='void Solarus::Hero::check_position()'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='182'>/**
+     * \name Collisions.
+     *
+     * Handle collisions between the hero and other entities.
+     */</doc>
+<use f='codebrowser/src/entities/Destructible.cpp' l='361' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='577' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='599' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='691' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='733' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1066' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='298' c='_ZN7Solarus6Entity14check_positionEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1081' ll='1143' type='void Solarus::Hero::check_position()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1180' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1074'>/**
+ * \brief Checks collisions with detectors, determines the facing entity
+ * and the ground below the hero in its current position.
+ *
+ * This function is called when these checks have to be done again,
+ * e.g. when the position, the direction or the state of the hero changes.
+ */</doc>

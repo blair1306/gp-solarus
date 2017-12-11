@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='38' type='void Solarus::Block::Block(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name, bool can_be_pushed, bool can_be_pulled, int maximum_moves)'/>
+<def f='codebrowser/src/entities/Block.cpp' l='47' ll='75' type='void Solarus::Block::Block(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int direction, const std::string &amp; sprite_name, bool can_be_pushed, bool can_be_pulled, int maximum_moves)'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='34'>/**
+ * \brief Creates a block.
+ * \param name name identifying this block
+ * \param layer layer of the entity to create
+ * \param xy Coordinate of the entity to create.
+ * \param direction the only direction where the block can be moved
+ * or -1 to allow it to be pushed in any direction
+ * \param sprite_name animation set id of the sprite for this block
+ * \param can_be_pushed true to allow the hero to push this block
+ * \param can_be_pulled true to allow the hero to pull this block
+ * \param maximum_moves indicates how many times the block can
+ * be moved (0: none, 1: once, 2: infinite)
+ */</doc>

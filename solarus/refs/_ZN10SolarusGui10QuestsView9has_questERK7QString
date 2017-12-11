@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='43' type='bool SolarusGui::QuestsView::has_quest(const QString &amp; path)'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='281' u='c' c='_ZN10SolarusGui10MainWindow29on_action_add_quest_triggeredEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='81' ll='84' type='bool SolarusGui::QuestsView::has_quest(const QString &amp; path)'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='76'>/**
+ * @brief Returns whether the view contains the given quest path.
+ * @param quest_path Quest path to test.
+ * @return @c true if it is in the view.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='188' type='void Solarus::Hero::notify_collision_with_destructible(Solarus::Destructible &amp; destructible, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='299' c='_ZN7Solarus6Entity34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1537' ll='1540' type='void Solarus::Hero::notify_collision_with_destructible(Solarus::Destructible &amp; destructible, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1532'>/**
+ * \brief This function is called when a destructible item detects a non-pixel perfect collision with this entity.
+ * \param destructible the destructible item
+ * \param collision_mode the collision mode that detected the event
+ */</doc>

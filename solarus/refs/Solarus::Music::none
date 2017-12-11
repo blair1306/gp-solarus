@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='60' type='const std::string'/>
+<doc f='codebrowser/include/solarus/lowlevel/Music.h' l='60'>/**&lt; special id indicating that there is no music */</doc>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='39' type='const std::string'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='56' u='r' c='_ZN7Solarus5MusicC1Ev'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='248' u='a' c='_ZN7Solarus5Music20get_current_music_idEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='288' u='r' c='_ZN7Solarus5Music6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='338' u='r' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='358' u='r' c='_ZN7Solarus5Music12stop_playingEv'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='210' u='r' c='_ZN7Solarus10LuaContext19audio_api_get_musicEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1602' u='r' c='_ZN7Solarus10LuaContext17map_api_get_musicEP9lua_State'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Game.h' l='92' type='bool Solarus::Game::has_current_map() const'/>
+<doc f='codebrowser/include/solarus/Game.h' l='91'>// map</doc>
+<def f='codebrowser/src/Game.cpp' l='603' ll='605' type='bool Solarus::Game::has_current_map() const'/>
+<doc f='codebrowser/src/Game.cpp' l='595'>/**
+ * \brief Returns whether there is a current map in this game.
+ *
+ * This function always returns true except when the game is being created
+ * and no map is loaded yet.
+ *
+ * \return true if there is a map
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='577' u='c' c='_ZN7Solarus10LuaContext16game_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='363' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='522' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='83' u='c' c='_ZN7Solarus15TestEnvironment7get_mapEv'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='85' u='c' c='_ZN7Solarus15TestEnvironment7get_mapEv'/>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>blargg_common.h source code [codebrowser/include/solarus/third_party/snes_spc/blargg_common.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="BOOST,blargg_vector "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/blargg_common.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='blargg_common.h.html'>blargg_common.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Sets up common environment for Shay Green's libraries.</i></td></tr>
+<tr><th id="2">2</th><td><i>// To change configuration options, modify blargg_config.h, not this file.</i></td></tr>
+<tr><th id="3">3</th><td><i></i></td></tr>
+<tr><th id="4">4</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="5">ifndef</span> <span class="macro" data-ref="_M/BLARGG_COMMON_H">BLARGG_COMMON_H</span></u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/BLARGG_COMMON_H" data-ref="_M/BLARGG_COMMON_H">BLARGG_COMMON_H</dfn></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../../../../../include/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include &lt;limits.h&gt;</u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><u>#undef <a class="macro" href="#6" data-ref="_M/BLARGG_COMMON_H">BLARGG_COMMON_H</a></u></td></tr>
+<tr><th id="14">14</th><td><i>// allow blargg_config.h to #include blargg_common.h</i></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="blargg_config.h.html">"blargg_config.h"</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">ifndef</span> <span class="macro" data-ref="_M/BLARGG_COMMON_H">BLARGG_COMMON_H</span></u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/BLARGG_COMMON_H" data-ref="_M/BLARGG_COMMON_H">BLARGG_COMMON_H</dfn></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i>// BLARGG_RESTRICT: equivalent to restrict, where supported</i></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">if</span> defined (<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) || _MSC_VER &gt;= 1100</u></td></tr>
+<tr><th id="21">21</th><td>	<u>#define <dfn class="macro" id="_M/BLARGG_RESTRICT" data-ref="_M/BLARGG_RESTRICT">BLARGG_RESTRICT</dfn> __restrict</u></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="20">else</span></u></td></tr>
+<tr><th id="23">23</th><td>	<u>#define BLARGG_RESTRICT</u></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>// STATIC_CAST(T,expr): Used in place of static_cast&lt;T&gt; (expr)</i></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/STATIC_CAST">STATIC_CAST</span></u></td></tr>
+<tr><th id="28">28</th><td>	<u>#define <dfn class="macro" id="_M/STATIC_CAST" data-ref="_M/STATIC_CAST">STATIC_CAST</dfn>(T,expr) ((T) (expr))</u></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>// blargg_err_t (0 on success, otherwise error string)</i></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="32">ifndef</span> <span class="macro" data-ref="_M/blargg_err_t">blargg_err_t</span></u></td></tr>
+<tr><th id="33">33</th><td>	<b>typedef</b> <em>const</em> <em>char</em>* <dfn class="typedef" id="blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</dfn>;</td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="32">endif</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><i>// blargg_vector - very lightweight vector of POD types (no constructor/destructor)</i></td></tr>
+<tr><th id="37">37</th><td><b>template</b>&lt;<b>class</b> T&gt;</td></tr>
+<tr><th id="38">38</th><td><b>class</b> <dfn class="type def" id="blargg_vector" title='blargg_vector' data-ref="blargg_vector">blargg_vector</dfn> {</td></tr>
+<tr><th id="39">39</th><td>	T* <dfn class="decl" id="blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</dfn>;</td></tr>
+<tr><th id="41">41</th><td><b>public</b>:</td></tr>
+<tr><th id="42">42</th><td>	<dfn class="decl def" id="_ZN13blargg_vectorC1Ev" title='blargg_vector::blargg_vector&lt;T&gt;' data-ref="_ZN13blargg_vectorC1Ev">blargg_vector</dfn>() : <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a>( <var>0</var> ), <a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a>( <var>0</var> ) { }</td></tr>
+<tr><th id="43">43</th><td>	<dfn class="decl def" id="_ZN13blargg_vectorD1Ev" title='blargg_vector::~blargg_vector&lt;T&gt;' data-ref="_ZN13blargg_vectorD1Ev">~blargg_vector</dfn>() { free( <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a> ); }</td></tr>
+<tr><th id="44">44</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZNK13blargg_vector4sizeEv" title='blargg_vector::size' data-ref="_ZNK13blargg_vector4sizeEv">size</dfn>() <em>const</em> { <b>return</b> <a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a>; }</td></tr>
+<tr><th id="45">45</th><td>	T* <dfn class="decl def" id="_ZNK13blargg_vector5beginEv" title='blargg_vector::begin' data-ref="_ZNK13blargg_vector5beginEv">begin</dfn>() <em>const</em> { <b>return</b> <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a>; }</td></tr>
+<tr><th id="46">46</th><td>	T* <dfn class="decl def" id="_ZNK13blargg_vector3endEv" title='blargg_vector::end' data-ref="_ZNK13blargg_vector3endEv">end</dfn>() <em>const</em> { <b>return</b> <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a> + <a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a>; }</td></tr>
+<tr><th id="47">47</th><td>	<a class="typedef" href="#blargg_err_t" title='blargg_err_t' data-type='const char *' data-ref="blargg_err_t">blargg_err_t</a> <dfn class="decl def" id="_ZN13blargg_vector6resizeEm" title='blargg_vector::resize' data-ref="_ZN13blargg_vector6resizeEm">resize</dfn>( <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1n" title='n' data-type='size_t' data-ref="1n">n</dfn> )</td></tr>
+<tr><th id="48">48</th><td>	{</td></tr>
+<tr><th id="49">49</th><td>		<i>// TODO: blargg_common.cpp to hold this as an outline function, ugh</i></td></tr>
+<tr><th id="50">50</th><td>		<em>void</em>* <dfn class="local col2 decl" id="2p" title='p' data-type='void *' data-ref="2p">p</dfn> = realloc( <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a>, <a class="local col1 ref" href="#1n" title='n' data-ref="1n">n</a> * <b>sizeof</b> (T) );</td></tr>
+<tr><th id="51">51</th><td>		<b>if</b> ( <a class="local col2 ref" href="#2p" title='p' data-ref="2p">p</a> )</td></tr>
+<tr><th id="52">52</th><td>			<a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a> = (T*) <a class="local col2 ref" href="#2p" title='p' data-ref="2p">p</a>;</td></tr>
+<tr><th id="53">53</th><td>		<b>else</b> <b>if</b> ( <a class="local col1 ref" href="#1n" title='n' data-ref="1n">n</a> &gt; <a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a> ) <i>// realloc failure only a problem if expanding</i></td></tr>
+<tr><th id="54">54</th><td>			<b>return</b> <q>"Out of memory"</q>;</td></tr>
+<tr><th id="55">55</th><td>		<a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a> = <a class="local col1 ref" href="#1n" title='n' data-ref="1n">n</a>;</td></tr>
+<tr><th id="56">56</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="57">57</th><td>	}</td></tr>
+<tr><th id="58">58</th><td>	<em>void</em> <dfn class="decl def" id="_ZN13blargg_vector5clearEv" title='blargg_vector::clear' data-ref="_ZN13blargg_vector5clearEv">clear</dfn>() { <em>void</em>* <dfn class="local col3 decl" id="3p" title='p' data-type='void *' data-ref="3p">p</dfn> = <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a>; <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a> = <var>0</var>; <a class="member" href="#blargg_vector::size_" title='blargg_vector::size_' data-ref="blargg_vector::size_">size_</a> = <var>0</var>; <a class="ref" href="../../../../../include/stdlib.h.html#free" title='free' data-ref="free">free</a>( <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a> ); }</td></tr>
+<tr><th id="59">59</th><td>	T&amp; <dfn class="decl def" id="_ZNK13blargg_vectorixEm" title='blargg_vector::operator[]' data-ref="_ZNK13blargg_vectorixEm"><b>operator</b> []</dfn> ( <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="4n" title='n' data-type='size_t' data-ref="4n">n</dfn> ) <em>const</em></td></tr>
+<tr><th id="60">60</th><td>	{</td></tr>
+<tr><th id="61">61</th><td>		<a class="macro" href="../../../../../include/assert.h.html#50" title="(static_cast&lt;void&gt; (0))" data-ref="_M/assert">assert</a>( n &lt;= size_ ); <i>// &lt;= to allow past-the-end value</i></td></tr>
+<tr><th id="62">62</th><td>		<b>return</b> <a class="member" href="#blargg_vector::begin_" title='blargg_vector::begin_' data-ref="blargg_vector::begin_">begin_</a> [<a class="local col4 ref" href="#4n" title='n' data-ref="4n">n</a>];</td></tr>
+<tr><th id="63">63</th><td>	}</td></tr>
+<tr><th id="64">64</th><td>};</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="66">ifndef</span> <span class="macro" data-ref="_M/BLARGG_DISABLE_NOTHROW">BLARGG_DISABLE_NOTHROW</span></u></td></tr>
+<tr><th id="67">67</th><td>	<i>// throw spec mandatory in ISO C++ if operator new can return NULL</i></td></tr>
+<tr><th id="68">68</th><td>	<u>#<span data-ppcond="68">if</span> <span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 199711 || defined (<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="69">69</th><td>		<u>#define <dfn class="macro" id="_M/BLARGG_THROWS" data-ref="_M/BLARGG_THROWS">BLARGG_THROWS</dfn>( spec ) throw spec</u></td></tr>
+<tr><th id="70">70</th><td>	<u>#<span data-ppcond="68">else</span></u></td></tr>
+<tr><th id="71">71</th><td>		<u>#define BLARGG_THROWS( spec )</u></td></tr>
+<tr><th id="72">72</th><td>	<u>#<span data-ppcond="68">endif</span></u></td></tr>
+<tr><th id="73">73</th><td>	<u>#define <dfn class="macro" id="_M/BLARGG_DISABLE_NOTHROW" data-ref="_M/BLARGG_DISABLE_NOTHROW">BLARGG_DISABLE_NOTHROW</dfn> \</u></td></tr>
+<tr><th id="74">74</th><td><u>		void* operator new ( size_t s ) BLARGG_THROWS(()) { return malloc( s ); }\</u></td></tr>
+<tr><th id="75">75</th><td><u>		void operator delete ( void* p ) { free( p ); }</u></td></tr>
+<tr><th id="76">76</th><td>	<u>#define <dfn class="macro" id="_M/BLARGG_NEW" data-ref="_M/BLARGG_NEW">BLARGG_NEW</dfn> new</u></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="66">else</span></u></td></tr>
+<tr><th id="78">78</th><td>	<u>#include &lt;new&gt;</u></td></tr>
+<tr><th id="79">79</th><td>	<u>#define BLARGG_NEW new (std::nothrow)</u></td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="66">endif</span></u></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i>// BLARGG_4CHAR('a','b','c','d') = 'abcd' (four character integer constant)</i></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/BLARGG_4CHAR" data-ref="_M/BLARGG_4CHAR">BLARGG_4CHAR</dfn>( a, b, c, d ) \</u></td></tr>
+<tr><th id="84">84</th><td><u>	((a&amp;0xFF)*0x1000000L + (b&amp;0xFF)*0x10000L + (c&amp;0xFF)*0x100L + (d&amp;0xFF))</u></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i>// BOOST_STATIC_ASSERT( expr ): Generates compile error if expr is 0.</i></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="87">ifndef</span> <span class="macro" data-ref="_M/BOOST_STATIC_ASSERT">BOOST_STATIC_ASSERT</span></u></td></tr>
+<tr><th id="88">88</th><td>	<u>#<span data-ppcond="88">ifdef</span> <span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span></u></td></tr>
+<tr><th id="89">89</th><td>		<i>// MSVC6 (_MSC_VER &lt; 1300) fails for use of __LINE__ when /Zl is specified</i></td></tr>
+<tr><th id="90">90</th><td>		<u>#define BOOST_STATIC_ASSERT( expr ) \</u></td></tr>
+<tr><th id="91">91</th><td><u>			void blargg_failed_( int (*arg) [2 / (int) !!(expr) - 1] )</u></td></tr>
+<tr><th id="92">92</th><td>	<u>#<span data-ppcond="88">else</span></u></td></tr>
+<tr><th id="93">93</th><td>		<i>// Some other compilers fail when declaring same function multiple times in class,</i></td></tr>
+<tr><th id="94">94</th><td><i>		// so differentiate them by line</i></td></tr>
+<tr><th id="95">95</th><td>		<u>#define <dfn class="macro" id="_M/BOOST_STATIC_ASSERT" data-ref="_M/BOOST_STATIC_ASSERT">BOOST_STATIC_ASSERT</dfn>( expr ) \</u></td></tr>
+<tr><th id="96">96</th><td><u>			void blargg_failed_( int (*arg) [2 / !!(expr) - 1] [__LINE__] )</u></td></tr>
+<tr><th id="97">97</th><td>	<u>#<span data-ppcond="88">endif</span></u></td></tr>
+<tr><th id="98">98</th><td><u>#<span data-ppcond="87">endif</span></u></td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i>// BLARGG_COMPILER_HAS_BOOL: If 0, provides bool support for old compiler. If 1,</i></td></tr>
+<tr><th id="101">101</th><td><i>// compiler is assumed to support bool. If undefined, availability is determined.</i></td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="102">ifndef</span> <span class="macro" data-ref="_M/BLARGG_COMPILER_HAS_BOOL">BLARGG_COMPILER_HAS_BOOL</span></u></td></tr>
+<tr><th id="103">103</th><td>	<u>#<span data-ppcond="103">if</span> defined (<span class="macro" data-ref="_M/__MWERKS__">__MWERKS__</span>)</u></td></tr>
+<tr><th id="104">104</th><td>		<u>#if !__option(bool)</u></td></tr>
+<tr><th id="105">105</th><td>			<u>#define BLARGG_COMPILER_HAS_BOOL 0</u></td></tr>
+<tr><th id="106">106</th><td>		<u>#endif</u></td></tr>
+<tr><th id="107">107</th><td>	<u>#<span data-ppcond="103">elif</span> defined (<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>)</u></td></tr>
+<tr><th id="108">108</th><td>		<u>#if _MSC_VER &lt; 1100</u></td></tr>
+<tr><th id="109">109</th><td>			<u>#define BLARGG_COMPILER_HAS_BOOL 0</u></td></tr>
+<tr><th id="110">110</th><td>		<u>#endif</u></td></tr>
+<tr><th id="111">111</th><td>	<u>#<span data-ppcond="103">elif</span> defined (<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="112">112</th><td>		<i>// supports bool</i></td></tr>
+<tr><th id="113">113</th><td>	<u>#<span data-ppcond="103">elif</span> __cplusplus &lt; 199711</u></td></tr>
+<tr><th id="114">114</th><td>		<u>#define BLARGG_COMPILER_HAS_BOOL 0</u></td></tr>
+<tr><th id="115">115</th><td>	<u>#<span data-ppcond="103">endif</span></u></td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="102">endif</span></u></td></tr>
+<tr><th id="117">117</th><td><u>#<span data-ppcond="117">if</span> defined (<span class="macro" data-ref="_M/BLARGG_COMPILER_HAS_BOOL">BLARGG_COMPILER_HAS_BOOL</span>) &amp;&amp; !BLARGG_COMPILER_HAS_BOOL</u></td></tr>
+<tr><th id="118">118</th><td>	<i>// If you get errors here, modify your blargg_config.h file</i></td></tr>
+<tr><th id="119">119</th><td>	<b>typedef</b> <em>int</em> <em>bool</em>;</td></tr>
+<tr><th id="120">120</th><td>	<em>const</em> <em>bool</em> <b>true</b>  = <var>1</var>;</td></tr>
+<tr><th id="121">121</th><td>	<em>const</em> <em>bool</em> <b>false</b> = <var>0</var>;</td></tr>
+<tr><th id="122">122</th><td><u>#<span data-ppcond="117">endif</span></u></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><i>// blargg_long/blargg_ulong = at least 32 bits, int if it's big enough</i></td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><u>#<span data-ppcond="126">if</span> <span class="macro" title="2147483647" data-ref="_M/INT_MAX">INT_MAX</span> &lt; 0x7FFFFFFF || <span class="macro" title="9223372036854775807L" data-ref="_M/LONG_MAX">LONG_MAX</span> == 0x7FFFFFFF</u></td></tr>
+<tr><th id="127">127</th><td>	<b>typedef</b> <em>long</em> blargg_long;</td></tr>
+<tr><th id="128">128</th><td><u>#<span data-ppcond="126">else</span></u></td></tr>
+<tr><th id="129">129</th><td>	<b>typedef</b> <em>int</em> <dfn class="typedef" id="blargg_long" title='blargg_long' data-type='int' data-ref="blargg_long">blargg_long</dfn>;</td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="126">endif</span></u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><u>#<span data-ppcond="132">if</span> <span class="macro" title="(2147483647 *2U +1U)" data-ref="_M/UINT_MAX">UINT_MAX</span> &lt; 0xFFFFFFFF || <span class="macro" title="(9223372036854775807L *2UL+1UL)" data-ref="_M/ULONG_MAX">ULONG_MAX</span> == 0xFFFFFFFF</u></td></tr>
+<tr><th id="133">133</th><td>	<b>typedef</b> <em>unsigned</em> <em>long</em> blargg_ulong;</td></tr>
+<tr><th id="134">134</th><td><u>#<span data-ppcond="132">else</span></u></td></tr>
+<tr><th id="135">135</th><td>	<b>typedef</b> <em>unsigned</em> <dfn class="typedef" id="blargg_ulong" title='blargg_ulong' data-type='unsigned int' data-ref="blargg_ulong">blargg_ulong</dfn>;</td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="132">endif</span></u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i>// BOOST::int8_t etc.</i></td></tr>
+<tr><th id="139">139</th><td><i></i></td></tr>
+<tr><th id="140">140</th><td><i>// HAVE_STDINT_H: If defined, use &lt;stdint.h&gt; for int8_t etc.</i></td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="141">if</span> defined (<span class="macro" data-ref="_M/HAVE_STDINT_H">HAVE_STDINT_H</span>)</u></td></tr>
+<tr><th id="142">142</th><td>	<u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="143">143</th><td>	<u>#define BOOST</u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i>// HAVE_INTTYPES_H: If defined, use &lt;stdint.h&gt; for int8_t etc.</i></td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="141">elif</span> defined (<span class="macro" data-ref="_M/HAVE_INTTYPES_H">HAVE_INTTYPES_H</span>)</u></td></tr>
+<tr><th id="147">147</th><td>	<u>#include &lt;inttypes.h&gt;</u></td></tr>
+<tr><th id="148">148</th><td>	<u>#define BOOST</u></td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><u>#<span data-ppcond="141">else</span></u></td></tr>
+<tr><th id="151">151</th><td>	<b>struct</b> <dfn class="type def" id="BOOST" title='BOOST' data-ref="BOOST">BOOST</dfn></td></tr>
+<tr><th id="152">152</th><td>	{</td></tr>
+<tr><th id="153">153</th><td>		<u>#<span data-ppcond="153">if</span> <span class="macro" title="(127*2 +1)" data-ref="_M/UCHAR_MAX">UCHAR_MAX</span> == 0xFF &amp;&amp; <span class="macro" title="127" data-ref="_M/SCHAR_MAX">SCHAR_MAX</span> == 0x7F</u></td></tr>
+<tr><th id="154">154</th><td>			<b>typedef</b> <em>signed</em> <em>char</em>     <dfn class="typedef" id="BOOST::int8_t" title='BOOST::int8_t' data-type='signed char' data-ref="BOOST::int8_t">int8_t</dfn>;</td></tr>
+<tr><th id="155">155</th><td>			<b>typedef</b> <em>unsigned</em> <em>char</em>   <dfn class="typedef" id="BOOST::uint8_t" title='BOOST::uint8_t' data-type='unsigned char' data-ref="BOOST::uint8_t">uint8_t</dfn>;</td></tr>
+<tr><th id="156">156</th><td>		<u>#<span data-ppcond="153">else</span></u></td></tr>
+<tr><th id="157">157</th><td>			<i>// No suitable 8-bit type available</i></td></tr>
+<tr><th id="158">158</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h int8_t;</td></tr>
+<tr><th id="159">159</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h uint8_t;</td></tr>
+<tr><th id="160">160</th><td>		<u>#<span data-ppcond="153">endif</span></u></td></tr>
+<tr><th id="161">161</th><td>		</td></tr>
+<tr><th id="162">162</th><td>		<u>#<span data-ppcond="162">if</span> <span class="macro" title="(32767 *2 +1)" data-ref="_M/USHRT_MAX">USHRT_MAX</span> == 0xFFFF</u></td></tr>
+<tr><th id="163">163</th><td>			<b>typedef</b> <em>short</em>           <dfn class="typedef" id="BOOST::int16_t" title='BOOST::int16_t' data-type='short' data-ref="BOOST::int16_t">int16_t</dfn>;</td></tr>
+<tr><th id="164">164</th><td>			<b>typedef</b> <em>unsigned</em> <em>short</em>  <dfn class="typedef" id="BOOST::uint16_t" title='BOOST::uint16_t' data-type='unsigned short' data-ref="BOOST::uint16_t">uint16_t</dfn>;</td></tr>
+<tr><th id="165">165</th><td>		<u>#<span data-ppcond="162">else</span></u></td></tr>
+<tr><th id="166">166</th><td>			<i>// No suitable 16-bit type available</i></td></tr>
+<tr><th id="167">167</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h int16_t;</td></tr>
+<tr><th id="168">168</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h uint16_t;</td></tr>
+<tr><th id="169">169</th><td>		<u>#<span data-ppcond="162">endif</span></u></td></tr>
+<tr><th id="170">170</th><td>		</td></tr>
+<tr><th id="171">171</th><td>		<u>#<span data-ppcond="171">if</span> <span class="macro" title="(9223372036854775807L *2UL+1UL)" data-ref="_M/ULONG_MAX">ULONG_MAX</span> == 0xFFFFFFFF</u></td></tr>
+<tr><th id="172">172</th><td>			<b>typedef</b> <em>long</em>            int32_t;</td></tr>
+<tr><th id="173">173</th><td>			<b>typedef</b> <em>unsigned</em> <em>long</em>   uint32_t;</td></tr>
+<tr><th id="174">174</th><td>		<u>#<span data-ppcond="171">elif</span> <span class="macro" title="(2147483647 *2U +1U)" data-ref="_M/UINT_MAX">UINT_MAX</span> == 0xFFFFFFFF</u></td></tr>
+<tr><th id="175">175</th><td>			<b>typedef</b> <em>int</em>             <dfn class="typedef" id="BOOST::int32_t" title='BOOST::int32_t' data-type='int' data-ref="BOOST::int32_t">int32_t</dfn>;</td></tr>
+<tr><th id="176">176</th><td>			<b>typedef</b> <em>unsigned</em> <em>int</em>    <dfn class="typedef" id="BOOST::uint32_t" title='BOOST::uint32_t' data-type='unsigned int' data-ref="BOOST::uint32_t">uint32_t</dfn>;</td></tr>
+<tr><th id="177">177</th><td>		<u>#<span data-ppcond="171">else</span></u></td></tr>
+<tr><th id="178">178</th><td>			<i>// No suitable 32-bit type available</i></td></tr>
+<tr><th id="179">179</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h int32_t;</td></tr>
+<tr><th id="180">180</th><td>			<b>typedef</b> <b>struct</b> see_blargg_common_h uint32_t;</td></tr>
+<tr><th id="181">181</th><td>		<u>#<span data-ppcond="171">endif</span></u></td></tr>
+<tr><th id="182">182</th><td>	};</td></tr>
+<tr><th id="183">183</th><td><u>#<span data-ppcond="141">endif</span></u></td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><u>#<span data-ppcond="16">endif</span></u></td></tr>
+<tr><th id="186">186</th><td><u>#<span data-ppcond="5">endif</span></u></td></tr>
+<tr><th id="187">187</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SNES_SPC.cpp.html'>codebrowser/src/third_party/snes_spc/SNES_SPC.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

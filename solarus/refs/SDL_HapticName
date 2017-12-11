@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_haptic.h' l='819' type='const char * SDL_HapticName(int device_index)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='808'>/**
+ *  \brief Get the implementation dependent name of a Haptic device.
+ *
+ *  This can be called before any joysticks are opened.
+ *  If no name can be found, this function returns NULL.
+ *
+ *  \param device_index Index of the device to get its name.
+ *  \return Name of the device or NULL on error.
+ *
+ *  \sa SDL_NumHaptics
+ */</doc>

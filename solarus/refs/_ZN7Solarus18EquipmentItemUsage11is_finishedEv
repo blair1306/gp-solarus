@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EquipmentItemUsage.h' l='43' type='bool Solarus::EquipmentItemUsage::is_finished()'/>
+<def f='codebrowser/src/EquipmentItemUsage.cpp' l='68' ll='70' type='bool Solarus::EquipmentItemUsage::is_finished()'/>
+<doc f='codebrowser/src/EquipmentItemUsage.cpp' l='64'>/**
+ * \brief Returns whether this item has finished to be used.
+ * \return true if this item has finished to be used
+ */</doc>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='68' u='c' c='_ZN7Solarus4Hero14UsingItemState6updateEv'/>

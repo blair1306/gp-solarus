@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Game.h' l='126' type='void Solarus::Game::start_game_over()'/>
+<doc f='codebrowser/include/solarus/Game.h' l='125'>// game over</doc>
+<def f='codebrowser/src/Game.cpp' l='909' ll='922' type='void Solarus::Game::start_game_over()'/>
+<doc f='codebrowser/src/Game.cpp' l='906'>/**
+ * \brief Launches the game-over sequence.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='393' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='152' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='539' u='c' c='_ZN7Solarus10LuaContext24game_api_start_game_overEP9lua_State'/>

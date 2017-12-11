@@ -1,0 +1,97 @@
+<def f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='41' ll='330'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='35'>/**
+ * \brief Represents a low-level event.
+ *
+ * This low-level class provides an API for input events (keyboard, joypad and window events).
+ * It encapsulates the library-dependent events.
+ */</doc>
+<fun r='_ZN7Solarus10InputEvent10initializeEv'/>
+<fun r='_ZN7Solarus10InputEvent4quitEv'/>
+<fun r='_ZN7Solarus10InputEvent14is_initializedEv'/>
+<fun r='_ZN7Solarus10InputEvent9get_eventEv'/>
+<fun r='_ZN7Solarus10InputEvent14set_key_repeatEb'/>
+<fun r='_ZN7Solarus10InputEvent13is_shift_downEv'/>
+<fun r='_ZN7Solarus10InputEvent15is_control_downEv'/>
+<fun r='_ZN7Solarus10InputEvent11is_alt_downEv'/>
+<fun r='_ZN7Solarus10InputEvent15is_caps_lock_onEv'/>
+<fun r='_ZN7Solarus10InputEvent14is_num_lock_onEv'/>
+<fun r='_ZN7Solarus10InputEvent11is_key_downENS0_11KeyboardKeyE'/>
+<fun r='_ZN7Solarus10InputEvent21is_joypad_button_downEi'/>
+<fun r='_ZN7Solarus10InputEvent20is_mouse_button_downENS0_11MouseButtonE'/>
+<fun r='_ZN7Solarus10InputEvent14is_finger_downEi'/>
+<fun r='_ZN7Solarus10InputEvent21get_joypad_axis_stateEi'/>
+<fun r='_ZN7Solarus10InputEvent24get_joypad_hat_directionEi'/>
+<fun r='_ZN7Solarus10InputEvent25get_global_mouse_positionEv'/>
+<fun r='_ZN7Solarus10InputEvent26get_global_finger_positionEiRNS_5PointE'/>
+<fun r='_ZN7Solarus10InputEvent26get_global_finger_pressureEiRf'/>
+<fun r='_ZNK7Solarus10InputEvent8is_validEv'/>
+<fun r='_ZNK7Solarus10InputEvent17is_keyboard_eventEv'/>
+<fun r='_ZNK7Solarus10InputEvent15is_joypad_eventEv'/>
+<fun r='_ZNK7Solarus10InputEvent14is_mouse_eventEv'/>
+<fun r='_ZNK7Solarus10InputEvent15is_finger_eventEv'/>
+<fun r='_ZNK7Solarus10InputEvent15is_window_eventEv'/>
+<fun r='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedENS0_11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedEPKNS0_11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus10InputEvent33is_keyboard_direction_key_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent37is_keyboard_non_direction_key_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedENS0_11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedEPKNS0_11KeyboardKeyE'/>
+<fun r='_ZNK7Solarus10InputEvent34is_keyboard_direction_key_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent38is_keyboard_non_direction_key_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent13is_with_shiftEv'/>
+<fun r='_ZNK7Solarus10InputEvent15is_with_controlEv'/>
+<fun r='_ZNK7Solarus10InputEvent11is_with_altEv'/>
+<fun r='_ZNK7Solarus10InputEvent16get_keyboard_keyEv'/>
+<fun r='_ZNK7Solarus10InputEvent20is_character_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent13get_characterEv'/>
+<fun r='_ZN7Solarus10InputEvent20simulate_key_pressedENS0_11KeyboardKeyE'/>
+<fun r='_ZN7Solarus10InputEvent21simulate_key_releasedENS0_11KeyboardKeyE'/>
+<fun r='_ZN7Solarus10InputEvent17is_joypad_enabledEv'/>
+<fun r='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>
+<fun r='_ZNK7Solarus10InputEvent24is_joypad_button_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent25is_joypad_button_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent17get_joypad_buttonEv'/>
+<fun r='_ZNK7Solarus10InputEvent20is_joypad_axis_movedEv'/>
+<fun r='_ZNK7Solarus10InputEvent15get_joypad_axisEv'/>
+<fun r='_ZNK7Solarus10InputEvent21get_joypad_axis_stateEv'/>
+<fun r='_ZNK7Solarus10InputEvent23is_joypad_axis_centeredEv'/>
+<fun r='_ZNK7Solarus10InputEvent19is_joypad_hat_movedEv'/>
+<fun r='_ZNK7Solarus10InputEvent14get_joypad_hatEv'/>
+<fun r='_ZNK7Solarus10InputEvent24get_joypad_hat_directionEv'/>
+<fun r='_ZNK7Solarus10InputEvent22is_joypad_hat_centeredEv'/>
+<fun r='_ZNK7Solarus10InputEvent23is_mouse_button_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent23is_mouse_button_pressedENS0_11MouseButtonE'/>
+<fun r='_ZNK7Solarus10InputEvent24is_mouse_button_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent24is_mouse_button_releasedENS0_11MouseButtonE'/>
+<fun r='_ZNK7Solarus10InputEvent16get_mouse_buttonEv'/>
+<fun r='_ZNK7Solarus10InputEvent18get_mouse_positionERNS_5PointE'/>
+<fun r='_ZNK7Solarus10InputEvent17is_finger_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent17is_finger_pressedEi'/>
+<fun r='_ZNK7Solarus10InputEvent18is_finger_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent18is_finger_releasedEi'/>
+<fun r='_ZNK7Solarus10InputEvent15is_finger_movedEv'/>
+<fun r='_ZNK7Solarus10InputEvent15is_finger_movedEi'/>
+<fun r='_ZNK7Solarus10InputEvent10get_fingerEv'/>
+<fun r='_ZNK7Solarus10InputEvent19get_finger_positionEv'/>
+<fun r='_ZNK7Solarus10InputEvent19get_finger_distanceEv'/>
+<fun r='_ZNK7Solarus10InputEvent19get_finger_pressureEv'/>
+<fun r='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<fun r='_ZNK7Solarus10InputEvent10is_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent20is_direction_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent24is_non_direction_pressedEv'/>
+<fun r='_ZNK7Solarus10InputEvent11is_releasedEv'/>
+<fun r='_ZNK7Solarus10InputEvent17is_window_closingEv'/>
+<fun r='_ZN7Solarus10InputEventC1ERK9SDL_Event'/>
+<smbr r='Solarus::InputEvent::directional_keys' t='const Solarus::InputEvent::KeyboardKey []'/>
+<smbr r='Solarus::InputEvent::initialized' t='bool'/>
+<smbr r='Solarus::InputEvent::joypad_enabled' t='bool'/>
+<smbr r='Solarus::InputEvent::joystick' t='SDL_Joystick *'/>
+<smbr r='Solarus::InputEvent::joypad_axis_state' t='std::vector&lt;int&gt;'/>
+<smbr r='Solarus::InputEvent::keyboard_key_names' t='std::map&lt;KeyboardKey, std::string&gt;'/>
+<smbr r='Solarus::InputEvent::mouse_button_names' t='std::map&lt;MouseButton, std::string&gt;'/>
+<smbr r='Solarus::InputEvent::repeat_keyboard' t='bool'/>
+<smbr r='Solarus::InputEvent::keys_pressed' t='std::set&lt;SDL_Keycode&gt;'/>
+<mbr r='Solarus::InputEvent::internal_event' o='0' t='const SDL_Event'/>

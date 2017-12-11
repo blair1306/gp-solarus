@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='265' type='int Solarus::Entity::get_distance(const Solarus::Entity &amp; other) const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2921' ll='2923' type='int Solarus::Entity::get_distance(const Solarus::Entity &amp; other) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2915'>/**
+ * \brief Returns the distance between the origin of this entity
+ * and the origin of another entity.
+ * \param other the other entity
+ * \return the distance between the two entities in pixels
+ */</doc>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='197' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='201' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='544' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1250' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_distanceEP9lua_State'/>

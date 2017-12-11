@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_atomic.h' l='98' type='SDL_bool SDL_AtomicTryLock(SDL_SpinLock * lock)'/>
+<doc f='include/SDL2/SDL_atomic.h' l='91'>/**
+ * \brief Try to lock a spin lock by setting it to a non-zero value.
+ *
+ * \param lock Points to the lock.
+ *
+ * \return SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already held.
+ */</doc>

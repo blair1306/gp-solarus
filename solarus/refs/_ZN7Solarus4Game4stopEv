@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Game.h' l='62' type='void Solarus::Game::stop()'/>
+<def f='codebrowser/src/Game.cpp' l='135' ll='163' type='void Solarus::Game::stop()'/>
+<use f='codebrowser/src/Game.cpp' l='416' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<doc f='codebrowser/src/Game.cpp' l='130'>/**
+ * \brief Ends this game.
+ *
+ * Does nothing if the game is not started.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='198' u='c' c='_ZN7Solarus8MainLoopD1Ev'/>
+<use f='codebrowser/src/MainLoop.cpp' l='269' u='c' c='_ZN7Solarus8MainLoop13set_resettingEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='263' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>

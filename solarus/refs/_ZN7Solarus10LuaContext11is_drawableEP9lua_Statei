@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1136' type='static bool Solarus::LuaContext::is_drawable(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='39' ll='43' type='static bool Solarus::LuaContext::is_drawable(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='54' u='c' c='_ZN7Solarus10LuaContext14check_drawableEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='33'>/**
+ * \brief Returns whether a value is a userdata of a type.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a drawable.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='607' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>

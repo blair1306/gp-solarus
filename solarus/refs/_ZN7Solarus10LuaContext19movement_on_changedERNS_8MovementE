@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='312' type='void Solarus::LuaContext::movement_on_changed(Solarus::Movement &amp; movement)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1975' ll='1984' type='void Solarus::LuaContext::movement_on_changed(Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1968'>/**
+ * \brief Calls the on_changed() method of a Lua movement.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param movement A movement.
+ */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='302' u='c' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>

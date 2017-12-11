@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Quadtree.h source code [codebrowser/include/solarus/containers/Quadtree.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Quadtree "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/containers/Quadtree.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>containers</a>/<a href='Quadtree.h.html'>Quadtree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_QUADTREE_H">SOLARUS_QUADTREE_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_QUADTREE_H" data-ref="_M/SOLARUS_QUADTREE_H">SOLARUS_QUADTREE_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../lowlevel/Color.h.html">"solarus/lowlevel/Color.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../lowlevel/Rectangle.h.html">"solarus/lowlevel/Rectangle.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../lowlevel/Size.h.html">"solarus/lowlevel/Size.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../lowlevel/SurfacePtr.h.html">"solarus/lowlevel/SurfacePtr.h"</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../../../include/c++/4.9/array.html">&lt;array&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../../../include/c++/4.9/map.html">&lt;map&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../../../include/c++/4.9/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../../../include/c++/4.9/set.html">&lt;set&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="../../../../include/c++/4.9/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>class</b> <a class="type" href="../lowlevel/Color.h.html#Solarus::Color" title='Solarus::Color' data-ref="Solarus::Color" id="Solarus::Color">Color</a>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">\brief</span> A collection of objects spatially located in an adaptable 2D grid.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * The main goal of this container is to get objects in a given rectangle as</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * quickly as possible.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">T</span> Type of objects.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="44">44</th><td><b>class</b> <dfn class="type def" id="Solarus::Quadtree" title='Solarus::Quadtree' data-ref="Solarus::Quadtree">Quadtree</dfn> {</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>  <b>public</b>:</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>    <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8QuadtreeC1Ev" title='Solarus::Quadtree::Quadtree&lt;T&gt;' data-ref="_ZN7Solarus8QuadtreeC1Ev" id="_ZN7Solarus8QuadtreeC1Ev">Quadtree</a>();</td></tr>
+<tr><th id="49">49</th><td>    <b>explicit</b> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE" title='Solarus::Quadtree::Quadtree&lt;T&gt;' data-ref="_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE" id="_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE">Quadtree</a>(<em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col2 decl" id="1272space" title='space' data-type='const Solarus::Rectangle &amp;' data-ref="1272space">space</dfn>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree5clearEv" title='Solarus::Quadtree::clear' data-ref="_ZN7Solarus8Quadtree5clearEv" id="_ZN7Solarus8Quadtree5clearEv">clear</a>();</td></tr>
+<tr><th id="52">52</th><td>    <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE" title='Solarus::Quadtree::initialize' data-ref="_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE" id="_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE">initialize</a>(<em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col3 decl" id="1273space" title='space' data-type='const Solarus::Rectangle &amp;' data-ref="1273space">space</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree9get_spaceEv" title='Solarus::Quadtree::get_space' data-ref="_ZNK7Solarus8Quadtree9get_spaceEv" id="_ZNK7Solarus8Quadtree9get_spaceEv">get_space</a>() <em>const</em>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE" title='Solarus::Quadtree::add' data-ref="_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE" id="_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE">add</a>(<em>const</em> T&amp; <dfn class="local col4 decl" id="1274element" title='element' data-type='const T &amp;' data-ref="1274element">element</dfn>, <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col5 decl" id="1275bounding_box" title='bounding_box' data-type='const Solarus::Rectangle &amp;' data-ref="1275bounding_box">bounding_box</dfn>);</td></tr>
+<tr><th id="57">57</th><td>    <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree6removeERKT_" title='Solarus::Quadtree::remove' data-ref="_ZN7Solarus8Quadtree6removeERKT_" id="_ZN7Solarus8Quadtree6removeERKT_">remove</a>(<em>const</em> T&amp; <dfn class="local col6 decl" id="1276element" title='element' data-type='const T &amp;' data-ref="1276element">element</dfn>);</td></tr>
+<tr><th id="58">58</th><td>    <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE" title='Solarus::Quadtree::move' data-ref="_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE" id="_ZN7Solarus8Quadtree4moveERKT_RKNS_9RectangleE">move</a>(<em>const</em> T&amp; <dfn class="local col7 decl" id="1277element" title='element' data-type='const T &amp;' data-ref="1277element">element</dfn>, <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col8 decl" id="1278bounding_box" title='bounding_box' data-type='const Solarus::Rectangle &amp;' data-ref="1278bounding_box">bounding_box</dfn>);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;T&gt; <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree12get_elementsERKNS_9RectangleE" title='Solarus::Quadtree::get_elements' data-ref="_ZNK7Solarus8Quadtree12get_elementsERKNS_9RectangleE" id="_ZNK7Solarus8Quadtree12get_elementsERKNS_9RectangleE">get_elements</a>(</td></tr>
+<tr><th id="61">61</th><td>        <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col9 decl" id="1279where" title='where' data-type='const Solarus::Rectangle &amp;' data-ref="1279where">where</dfn></td></tr>
+<tr><th id="62">62</th><td>    ) <em>const</em>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <em>int</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree16get_num_elementsEv" title='Solarus::Quadtree::get_num_elements' data-ref="_ZNK7Solarus8Quadtree16get_num_elementsEv" id="_ZNK7Solarus8Quadtree16get_num_elementsEv">get_num_elements</a>() <em>const</em>;</td></tr>
+<tr><th id="65">65</th><td>    <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree8containsERKT_" title='Solarus::Quadtree::contains' data-ref="_ZNK7Solarus8Quadtree8containsERKT_" id="_ZNK7Solarus8Quadtree8containsERKT_">contains</a>(<em>const</em> T&amp; <dfn class="local col0 decl" id="1280element" title='element' data-type='const T &amp;' data-ref="1280element">element</dfn>) <em>const</em>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" title='Solarus::Quadtree::draw' data-ref="_ZN7Solarus8Quadtree4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" id="_ZN7Solarus8Quadtree4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE">draw</a>(<em>const</em> <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col1 decl" id="1281dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1281dst_surface">dst_surface</dfn>, <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col2 decl" id="1282dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1282dst_position">dst_position</dfn>);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>    <em>static</em> <b>constexpr</b> <em>int</em></td></tr>
+<tr><th id="70">70</th><td>        <dfn class="decl" id="Solarus::Quadtree::min_cell_size" title='Solarus::Quadtree::min_cell_size' data-ref="Solarus::Quadtree::min_cell_size">min_cell_size</dfn> = <var>16</var>;  <i class="doc">/**&lt; Don't split more if a cell is smaller than</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc">                              * this size. */</i></td></tr>
+<tr><th id="72">72</th><td>    <em>static</em> <b>constexpr</b> <em>int</em></td></tr>
+<tr><th id="73">73</th><td>        <dfn class="decl" id="Solarus::Quadtree::max_in_cell" title='Solarus::Quadtree::max_in_cell' data-ref="Solarus::Quadtree::max_in_cell">max_in_cell</dfn> = <var>8</var>;     <i class="doc">/**&lt; A cell is split if it exceeds this number</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">                              * when adding an element, unless the cell is</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">                              * too small. */</i></td></tr>
+<tr><th id="76">76</th><td>    <em>static</em> <b>constexpr</b> <em>int</em></td></tr>
+<tr><th id="77">77</th><td>        <dfn class="decl" id="Solarus::Quadtree::min_in_4_cells" title='Solarus::Quadtree::min_in_4_cells' data-ref="Solarus::Quadtree::min_in_4_cells">min_in_4_cells</dfn> = <var>4</var>;  <i class="doc">/**&lt; 4 sibling cells are merged if their total</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">                              * is below this number when removing an element. */</i></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>    <em>static</em> <b>constexpr</b> <em>bool</em> <dfn class="decl" id="Solarus::Quadtree::debug_quadtrees" title='Solarus::Quadtree::debug_quadtrees' data-ref="Solarus::Quadtree::debug_quadtrees">debug_quadtrees</dfn> = <b>false</b>;</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>  <b>private</b>:</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>    <b>class</b> <dfn class="type def" id="Solarus::Quadtree::Node" title='Solarus::Quadtree::Node' data-ref="Solarus::Quadtree::Node">Node</dfn> {</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>      <b>public</b>:</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>        <b>explicit</b> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE" title='Solarus::Quadtree::Node::Node' data-ref="_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE" id="_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE">Node</a>(<em>const</em> Quadtree&amp; <dfn class="local col3 decl" id="1283quadtree" title='quadtree' data-type='const Quadtree&lt;T&gt; &amp;' data-ref="1283quadtree">quadtree</dfn>);</td></tr>
+<tr><th id="89">89</th><td>        <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE" title='Solarus::Quadtree::Node::Node' data-ref="_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE" id="_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE">Node</a>(<em>const</em> Quadtree&amp; <dfn class="local col4 decl" id="1284quadtree" title='quadtree' data-type='const Quadtree&lt;T&gt; &amp;' data-ref="1284quadtree">quadtree</dfn>, <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col5 decl" id="1285cell" title='cell' data-type='const Solarus::Rectangle &amp;' data-ref="1285cell">cell</dfn>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node5clearEv" title='Solarus::Quadtree::Node::clear' data-ref="_ZN7Solarus8Quadtree4Node5clearEv" id="_ZN7Solarus8Quadtree4Node5clearEv">clear</a>();</td></tr>
+<tr><th id="92">92</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node10initializeERKNS_9RectangleE" title='Solarus::Quadtree::Node::initialize' data-ref="_ZN7Solarus8Quadtree4Node10initializeERKNS_9RectangleE" id="_ZN7Solarus8Quadtree4Node10initializeERKNS_9RectangleE">initialize</a>(<em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col6 decl" id="1286cell" title='cell' data-type='const Solarus::Rectangle &amp;' data-ref="1286cell">cell</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>        <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node8get_cellEv" title='Solarus::Quadtree::Node::get_cell' data-ref="_ZNK7Solarus8Quadtree4Node8get_cellEv" id="_ZNK7Solarus8Quadtree4Node8get_cellEv">get_cell</a>() <em>const</em>;</td></tr>
+<tr><th id="95">95</th><td>        <a class="type" href="../lowlevel/Size.h.html#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv" title='Solarus::Quadtree::Node::get_cell_size' data-ref="_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv" id="_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv">get_cell_size</a>() <em>const</em>;</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>        <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE" title='Solarus::Quadtree::Node::add' data-ref="_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE" id="_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE">add</a>(</td></tr>
+<tr><th id="98">98</th><td>            <em>const</em> T&amp; <dfn class="local col7 decl" id="1287element" title='element' data-type='const T &amp;' data-ref="1287element">element</dfn>,</td></tr>
+<tr><th id="99">99</th><td>            <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col8 decl" id="1288bounding_box" title='bounding_box' data-type='const Solarus::Rectangle &amp;' data-ref="1288bounding_box">bounding_box</dfn></td></tr>
+<tr><th id="100">100</th><td>        );</td></tr>
+<tr><th id="101">101</th><td>        <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE" title='Solarus::Quadtree::Node::remove' data-ref="_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE" id="_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE">remove</a>(</td></tr>
+<tr><th id="102">102</th><td>            <em>const</em> T&amp; <dfn class="local col9 decl" id="1289element" title='element' data-type='const T &amp;' data-ref="1289element">element</dfn>,</td></tr>
+<tr><th id="103">103</th><td>            <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col0 decl" id="1290bounding_box" title='bounding_box' data-type='const Solarus::Rectangle &amp;' data-ref="1290bounding_box">bounding_box</dfn></td></tr>
+<tr><th id="104">104</th><td>        );</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE" title='Solarus::Quadtree::Node::get_elements' data-ref="_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE" id="_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE">get_elements</a>(</td></tr>
+<tr><th id="107">107</th><td>            <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col1 decl" id="1291region" title='region' data-type='const Solarus::Rectangle &amp;' data-ref="1291region">region</dfn>,</td></tr>
+<tr><th id="108">108</th><td>            <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_set.h.html#std::set" title='std::set' data-ref="std::set">set</a>&lt;T&gt;&amp; <dfn class="local col2 decl" id="1292result" title='result' data-type='std::set&lt;T&gt; &amp;' data-ref="1292result">result</dfn></td></tr>
+<tr><th id="109">109</th><td>        ) <em>const</em>;</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>        <em>int</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node16get_num_elementsEv" title='Solarus::Quadtree::Node::get_num_elements' data-ref="_ZNK7Solarus8Quadtree4Node16get_num_elementsEv" id="_ZNK7Solarus8Quadtree4Node16get_num_elementsEv">get_num_elements</a>() <em>const</em>;</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" title='Solarus::Quadtree::Node::draw' data-ref="_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" id="_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE">draw</a>(</td></tr>
+<tr><th id="114">114</th><td>            <em>const</em> <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col3 decl" id="1293dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1293dst_surface">dst_surface</dfn>, <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col4 decl" id="1294dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1294dst_position">dst_position</dfn></td></tr>
+<tr><th id="115">115</th><td>        );</td></tr>
+<tr><th id="116">116</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" title='Solarus::Quadtree::Node::draw_rectangle' data-ref="_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE" id="_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE">draw_rectangle</a>(</td></tr>
+<tr><th id="117">117</th><td>            <em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col5 decl" id="1295rectangle" title='rectangle' data-type='const Solarus::Rectangle &amp;' data-ref="1295rectangle">rectangle</dfn>,</td></tr>
+<tr><th id="118">118</th><td>            <em>const</em> <a class="type" href="../lowlevel/Color.h.html#Solarus::Color" title='Solarus::Color' data-ref="Solarus::Color">Color</a>&amp; <dfn class="local col6 decl" id="1296line_color" title='line_color' data-type='const Solarus::Color &amp;' data-ref="1296line_color">line_color</dfn>,</td></tr>
+<tr><th id="119">119</th><td>            <em>const</em> <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col7 decl" id="1297dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1297dst_surface">dst_surface</dfn>,</td></tr>
+<tr><th id="120">120</th><td>            <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>&amp; <dfn class="local col8 decl" id="1298dst_position" title='dst_position' data-type='const Solarus::Point &amp;' data-ref="1298dst_position">dst_position</dfn></td></tr>
+<tr><th id="121">121</th><td>        );</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>      <b>private</b>:</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>        <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node8is_splitEv" title='Solarus::Quadtree::Node::is_split' data-ref="_ZNK7Solarus8Quadtree4Node8is_splitEv" id="_ZNK7Solarus8Quadtree4Node8is_splitEv">is_split</a>() <em>const</em>;</td></tr>
+<tr><th id="126">126</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node5splitEv" title='Solarus::Quadtree::Node::split' data-ref="_ZN7Solarus8Quadtree4Node5splitEv" id="_ZN7Solarus8Quadtree4Node5splitEv">split</a>();</td></tr>
+<tr><th id="127">127</th><td>        <em>void</em> <a class="decl" href="Quadtree.inl.html#_ZN7Solarus8Quadtree4Node5mergeEv" title='Solarus::Quadtree::Node::merge' data-ref="_ZN7Solarus8Quadtree4Node5mergeEv" id="_ZN7Solarus8Quadtree4Node5mergeEv">merge</a>();</td></tr>
+<tr><th id="128">128</th><td>        <em>bool</em> <a class="decl" href="Quadtree.inl.html#_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE" title='Solarus::Quadtree::Node::is_main_cell' data-ref="_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE" id="_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE">is_main_cell</a>(<em>const</em> <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <dfn class="local col9 decl" id="1299bounding_box" title='bounding_box' data-type='const Solarus::Rectangle &amp;' data-ref="1299bounding_box">bounding_box</dfn>) <em>const</em>;</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td>        <em>const</em> Quadtree&amp; <dfn class="decl" id="Solarus::Quadtree::Node::quadtree" title='Solarus::Quadtree::Node::quadtree' data-ref="Solarus::Quadtree::Node::quadtree">quadtree</dfn>;</td></tr>
+<tr><th id="131">131</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair">pair</a>&lt;T, <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&gt;&gt; <dfn class="decl" id="Solarus::Quadtree::Node::elements" title='Solarus::Quadtree::Node::elements' data-ref="Solarus::Quadtree::Node::elements">elements</dfn>;</td></tr>
+<tr><th id="132">132</th><td>        <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/array.html#std::array" title='std::array' data-ref="std::array">array</a>&lt;<span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="#Solarus::Quadtree::Node" title='Solarus::Quadtree::Node' data-ref="Solarus::Quadtree::Node">Node</a>&gt;, <var>4</var>&gt; <dfn class="decl" id="Solarus::Quadtree::Node::children" title='Solarus::Quadtree::Node::children' data-ref="Solarus::Quadtree::Node::children">children</dfn>;</td></tr>
+<tr><th id="133">133</th><td>        <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a> <dfn class="decl" id="Solarus::Quadtree::Node::cell" title='Solarus::Quadtree::Node::cell' data-ref="Solarus::Quadtree::Node::cell">cell</dfn>;</td></tr>
+<tr><th id="134">134</th><td>        <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="Solarus::Quadtree::Node::center" title='Solarus::Quadtree::Node::center' data-ref="Solarus::Quadtree::Node::center">center</dfn>;</td></tr>
+<tr><th id="135">135</th><td>        <a class="type" href="../lowlevel/Color.h.html#Solarus::Color" title='Solarus::Color' data-ref="Solarus::Color">Color</a> <dfn class="decl" id="Solarus::Quadtree::Node::color" title='Solarus::Quadtree::Node::color' data-ref="Solarus::Quadtree::Node::color">color</dfn>;</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>    };</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>    <b>struct</b> <dfn class="type def" id="Solarus::Quadtree::ElementInfo" title='Solarus::Quadtree::ElementInfo' data-ref="Solarus::Quadtree::ElementInfo">ElementInfo</dfn> {</td></tr>
+<tr><th id="140">140</th><td>        <a class="type" href="../lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a> <dfn class="decl" id="Solarus::Quadtree::ElementInfo::bounding_box" title='Solarus::Quadtree::ElementInfo::bounding_box' data-ref="Solarus::Quadtree::ElementInfo::bounding_box">bounding_box</dfn>;</td></tr>
+<tr><th id="141">141</th><td>    };</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_map.h.html#std::map" title='std::map' data-ref="std::map">map</a>&lt;T, <a class="type" href="#Solarus::Quadtree::ElementInfo" title='Solarus::Quadtree::ElementInfo' data-ref="Solarus::Quadtree::ElementInfo">ElementInfo</a>&gt; <dfn class="decl" id="Solarus::Quadtree::elements" title='Solarus::Quadtree::elements' data-ref="Solarus::Quadtree::elements">elements</dfn>;      <i class="doc">/**&lt; Elements in the quadtree and</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc">                                             * intersecting its space. */</i></td></tr>
+<tr><th id="145">145</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_set.h.html#std::set" title='std::set' data-ref="std::set">set</a>&lt;T&gt; <dfn class="decl" id="Solarus::Quadtree::elements_outside" title='Solarus::Quadtree::elements_outside' data-ref="Solarus::Quadtree::elements_outside">elements_outside</dfn>;           <i class="doc">/**&lt; Elements that were added to</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc">                                             * the quadtree but that are</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc">                                             * currently outside its space. */</i></td></tr>
+<tr><th id="148">148</th><td>    <a class="type" href="#Solarus::Quadtree::Node" title='Solarus::Quadtree::Node' data-ref="Solarus::Quadtree::Node">Node</a> <dfn class="decl" id="Solarus::Quadtree::root" title='Solarus::Quadtree::root' data-ref="Solarus::Quadtree::root">root</dfn>;                              <i class="doc">/** The root node of the tree. */</i></td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>};</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="153">153</th><td><b>using</b> <dfn class="typedef" id="Solarus::QuadtreeNode" title='Solarus::QuadtreeNode' data-type='typename Quadtree&lt;T&gt;::Node' data-ref="Solarus::QuadtreeNode">QuadtreeNode</dfn> = <b>typename</b> <a class="type" href="#Solarus::Quadtree" title='Solarus::Quadtree' data-ref="Solarus::Quadtree">Quadtree</a>&lt;T&gt;::Node;</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td>}</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><u>#include <a href="Quadtree.inl.html">"solarus/containers/Quadtree.inl"</a></u></td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

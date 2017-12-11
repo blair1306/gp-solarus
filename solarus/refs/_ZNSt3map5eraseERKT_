@@ -1,0 +1,39 @@
+<def f='include/c++/4.9/bits/stl_map.h' l='760' ll='762' type='size_type std::map::erase(const key_type &amp; __x)'/>
+<doc f='include/c++/4.9/bits/stl_map.h' l='749'>/**
+       *  @brief Erases elements according to the provided key.
+       *  @param  __x  Key of element to be erased.
+       *  @return  The number of elements erased.
+       *
+       *  This function erases all the elements located by the given key from
+       *  a %map.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/src/DialogResources.cpp' l='99' u='c' c='_ZN7Solarus10DialogData15remove_propertyERKSs'/>
+<use f='codebrowser/src/DialogResources.cpp' l='190' u='c' c='_ZN7Solarus15DialogResources13remove_dialogERKSs'/>
+<use f='codebrowser/src/GameCommands.cpp' l='548' u='c' c='_ZN7Solarus12GameCommands20set_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='601' u='c' c='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='104' u='c' c='_ZN7Solarus7MapData13set_min_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='109' u='c' c='_ZN7Solarus7MapData13set_min_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='151' u='c' c='_ZN7Solarus7MapData13set_max_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='156' u='c' c='_ZN7Solarus7MapData13set_max_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='640' u='c' c='_ZN7Solarus7MapData15set_entity_nameERKNS_11EntityIndexERKSs'/>
+<use f='codebrowser/src/MapData.cpp' l='763' u='c' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/QuestResources.cpp' l='156' u='c' c='_ZN7Solarus14QuestResources6removeENS_12ResourceTypeERKSs'/>
+<use f='codebrowser/src/ResourceProvider.cpp' l='63' u='c' c='_ZN7Solarus16ResourceProvider27invalidate_resource_elementENS_12ResourceTypeERKSs'/>
+<use f='codebrowser/src/Savegame.cpp' l='558' u='c' c='_ZN7Solarus8Savegame5unsetERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='133' u='c' c='_ZN7Solarus8Settings5unsetERKSs'/>
+<use f='codebrowser/src/SpriteData.cpp' l='511' u='c' c='_ZN7Solarus10SpriteData16remove_animationERKSs'/>
+<use f='codebrowser/src/StringResources.cpp' l='111' u='c' c='_ZN7Solarus15StringResources13remove_stringERKSs'/>
+<use f='codebrowser/src/entities/BorderSet.cpp' l='92' u='c' c='_ZN7Solarus9BorderSet11set_patternENS_10BorderKindERKSs'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='279' u='c' c='_ZN7Solarus12CustomEntity29reset_traversable_by_entitiesENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='419' u='c' c='_ZN7Solarus12CustomEntity27reset_can_traverse_entitiesENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='672' u='c' c='_ZN7Solarus12CustomEntity25reset_can_traverse_groundENS_6GroundE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1074' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1121' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='296' u='c' c='_ZN7Solarus11TilesetData14remove_patternERKSs'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='409' u='c' c='_ZN7Solarus11TilesetData17remove_border_setERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='189' u='c' c='_ZN7Solarus10LuaContext4exitEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1216' u='c' c='_ZN7Solarus10LuaContext25notify_userdata_destroyedERNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='156' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>

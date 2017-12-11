@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='55' type='const std::string &amp; Solarus::CurrentQuest::get_string(const std::string &amp; key)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='269' ll='272' type='const std::string &amp; Solarus::CurrentQuest::get_string(const std::string &amp; key)'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='263'>/**
+ * \brief Returns a string stored in the language-specific file
+ * &quot;text/strings.dat&quot; for the current language.
+ * \param key Id of the string to retrieve. It must exist.
+ * \return The corresponding localized string.
+ */</doc>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='180' u='c' c='_ZN7Solarus10LuaContext23language_api_get_stringEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='192' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='466' u='c' c='_ZN7Solarus10LuaContext29text_surface_api_set_text_keyEP9lua_State'/>

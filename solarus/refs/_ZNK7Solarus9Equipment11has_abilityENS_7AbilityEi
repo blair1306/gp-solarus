@@ -1,0 +1,44 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='100' type='bool Solarus::Equipment::has_ability(Solarus::Ability ability, int level = 1) const'/>
+<def f='codebrowser/src/Equipment.cpp' l='587' ll='589' type='bool Solarus::Equipment::has_ability(Solarus::Ability ability, int level = 1) const'/>
+<doc f='codebrowser/src/Equipment.cpp' l='581'>/**
+ * \brief Returns whether the player has at least the specified level of an ability.
+ * \param ability The ability to get.
+ * \param level The minimum level to check.
+ * \return \c true if the player has at least this level of the ability.
+ */</doc>
+<doc f='codebrowser/include/solarus/Equipment.h' l='98'>// built-in abilities
+    // TODO make notify_ability_changed</doc>
+<use f='codebrowser/src/Game.cpp' l='550' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='555' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='333' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='398' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='516' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1041' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2181' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2182' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2525' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2682' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='235' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='287' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='499' u='c' c='_ZNK7Solarus11HeroSprites16is_sword_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='509' u='c' c='_ZNK7Solarus11HeroSprites22is_sword_stars_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='519' u='c' c='_ZNK7Solarus11HeroSprites17is_shield_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='567' u='c' c='_ZN7Solarus11HeroSprites22stop_displaying_shieldEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='591' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='594' u='c' c='_ZN7Solarus11HeroSprites5blinkEj'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='618' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='621' u='c' c='_ZN7Solarus11HeroSprites13stop_blinkingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='915' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='920' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1048' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1076' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1136' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1160' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1167' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1247' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1283' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1363' u='c' c='_ZN7Solarus11HeroSprites21set_animation_jumpingEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='92' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='67' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='57' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1118' u='c' c='_ZN7Solarus10LuaContext20game_api_has_abilityEP9lua_State'/>

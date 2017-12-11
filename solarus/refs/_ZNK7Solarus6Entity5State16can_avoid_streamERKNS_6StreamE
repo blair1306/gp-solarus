@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='104' type='bool Solarus::Entity::State::can_avoid_stream(const Solarus::Stream &amp; stream) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='742' ll='744' type='bool Solarus::Entity::State::can_avoid_stream(const Solarus::Stream &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='737'>/**
+ * \brief Returns whether the entity ignores the effect of a stream in this state.
+ * \param stream A stream.
+ * \return \c true if the entity ignores the effect of the stream in this state.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='742'>/* stream */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1628' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='253' c='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/BoomerangState.cpp' l='111' c='_ZNK7Solarus4Hero14BoomerangState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/BowState.cpp' l='64' c='_ZNK7Solarus4Hero8BowState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='154' c='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='125' c='_ZNK7Solarus4Hero13HookshotState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='258' c='_ZNK7Solarus4Hero12JumpingState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='122' c='_ZNK7Solarus4Hero12PushingState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='334' c='_ZNK7Solarus4Hero12RunningState16can_avoid_streamERKNS_6StreamE'/>
+<ovr f='codebrowser/src/hero/UsingItemState.cpp' l='94' c='_ZNK7Solarus4Hero14UsingItemState16can_avoid_streamERKNS_6StreamE'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='62' type='bool Solarus::operator!=(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='102' ll='104' type='bool Solarus::operator!=(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='96'>/**
+ * \brief Returns whether two points are different.
+ * \param lhs A point.
+ * \param rhs Another point.
+ * \return \c true if the points are not equal.
+ */</doc>
+<use f='codebrowser/src/entities/Block.cpp' l='299' u='c' c='_ZN7Solarus5Block21stop_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1114' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='118' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='416' u='c' c='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='182' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='403' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='633' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='164' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

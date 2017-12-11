@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='437' type='static int Solarus::LuaContext::main_api_get_quest_format(lua_State * )'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='43' u='r' c='_ZN7Solarus10LuaContext20register_main_moduleEv'/>
+<def f='codebrowser/src/lua/MainApi.cpp' l='131' ll='139' type='static int Solarus::LuaContext::main_api_get_quest_format(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MainApi.cpp' l='126'>/**
+ * \brief Implementation of sol.main.get_quest_format().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

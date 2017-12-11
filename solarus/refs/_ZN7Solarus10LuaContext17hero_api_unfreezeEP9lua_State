@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='883' type='static int Solarus::LuaContext::hero_api_unfreeze(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='178' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2207' ll='2216' type='static int Solarus::LuaContext::hero_api_unfreeze(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2202'>/**
+ * \brief Implementation of hero:unfreeze().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

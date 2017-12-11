@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Game.h' l='70' type='Solarus::GameCommands &amp; Solarus::Game::get_commands()'/>
+<def f='codebrowser/src/Game.cpp' l='201' ll='203' type='Solarus::GameCommands &amp; Solarus::Game::get_commands()'/>
+<doc f='codebrowser/src/Game.cpp' l='197'>/**
+ * \brief Returns the game commands mapped to the keyboard and the joypad.
+ * \return The game commands.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='501' u='c' c='_ZN7Solarus6Entity12get_commandsEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='170' u='c' c='_ZN7Solarus6Entity5State12get_commandsEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1364' u='c' c='_ZN7Solarus10LuaContext37game_api_get_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1394' u='c' c='_ZN7Solarus10LuaContext37game_api_set_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1418' u='c' c='_ZN7Solarus10LuaContext35game_api_get_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1451' u='c' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1471' u='c' c='_ZN7Solarus10LuaContext32game_api_capture_command_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1490' u='c' c='_ZN7Solarus10LuaContext27game_api_is_command_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1507' u='c' c='_ZN7Solarus10LuaContext31game_api_get_commands_directionEP9lua_State'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='73' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='117' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>

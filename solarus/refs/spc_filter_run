@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='126' type='void spc_filter_run(SPC_Filter * , spc_sample_t * io, int count)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='125'>/* Filters count samples of stereo sound in place. Count must be a multiple of 2. */</doc>
+<use f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='58' u='c' c='_ZN7Solarus10SpcDecoder6decodeEPsi'/>
+<def f='codebrowser/src/third_party/snes_spc/spc.cpp' l='70' type='void spc_filter_run(SPC_Filter * f, spc_sample_t * p, int s)'/>

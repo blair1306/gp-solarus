@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='85' type='void Solarus::Pickable::draw_on_map()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='357' c='_ZN7Solarus6Entity11draw_on_mapEv'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='586' ll='595' type='void Solarus::Pickable::draw_on_map()'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='580'>/**
+ * \brief Draws the pickable item on the map.
+ *
+ * This is a redefinition of Entity::draw_on_map
+ * to draw the shadow independently of the item movement.
+ */</doc>

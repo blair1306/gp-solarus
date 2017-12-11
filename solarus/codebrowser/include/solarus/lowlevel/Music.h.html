@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Music.h source code [codebrowser/include/solarus/lowlevel/Music.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Music "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/lowlevel/Music.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>lowlevel</a>/<a href='Music.h.html'>Music.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_MUSIC_H">SOLARUS_MUSIC_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_MUSIC_H" data-ref="_M/SOLARUS_MUSIC_H">SOLARUS_MUSIC_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="Sound.h.html">"solarus/lowlevel/Sound.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../lua/ScopedLuaRef.h.html">"solarus/lua/ScopedLuaRef.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../../../include/c++/4.9/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>class</b> <dfn class="type" id="Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</dfn>;</td></tr>
+<tr><th id="30">30</th><td><b>class</b> <dfn class="type" id="Solarus::OggDecoder" title='Solarus::OggDecoder' data-ref="Solarus::OggDecoder">OggDecoder</dfn>;</td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type" id="Solarus::SpcDecoder" title='Solarus::SpcDecoder' data-ref="Solarus::SpcDecoder">SpcDecoder</dfn>;</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * <span class="command">\brief</span> Represents a music that can be played.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * A music should be in format .spc (Snes), .it (Impulse Tracker module) or .ogg.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * The .mp3 format will probably be supported in a future version.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * Only one music can be played at the same time.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * Before using this class, the audio system should have been</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * initialized, by calling Sound::initialize().</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * Sound and Music are the only classes that depends on audio libraries.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * TODO move the non-static parts to an internal private class.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * TODO make a subclass for each format?</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="46">46</th><td><b>class</b> <a class="macro" href="../Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <dfn class="type def" id="Solarus::Music" title='Solarus::Music' data-ref="Solarus::Music">Music</dfn> {</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>  <b>public</b>:</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc">     * The music file formats recognized.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="53">53</th><td>    <b>enum</b> <dfn class="type def" id="Solarus::Music::Format" title='Solarus::Music::Format' data-ref="Solarus::Music::Format">Format</dfn> {</td></tr>
+<tr><th id="54">54</th><td>      <dfn class="enum" id="Solarus::Music::Format::NO_FORMAT" title='Solarus::Music::Format::NO_FORMAT' data-ref="Solarus::Music::Format::NO_FORMAT">NO_FORMAT</dfn>,        <i class="doc">/**&lt; No music. */</i></td></tr>
+<tr><th id="55">55</th><td>      <dfn class="enum" id="Solarus::Music::Format::SPC" title='Solarus::Music::Format::SPC' data-ref="Solarus::Music::Format::SPC">SPC</dfn>,              <i class="doc">/**&lt; Original Snes music. */</i></td></tr>
+<tr><th id="56">56</th><td>      <dfn class="enum" id="Solarus::Music::Format::IT" title='Solarus::Music::Format::IT' data-ref="Solarus::Music::Format::IT">IT</dfn>,               <i class="doc">/**&lt; Impulse Tracker module. */</i></td></tr>
+<tr><th id="57">57</th><td>      <dfn class="enum" id="Solarus::Music::Format::OGG" title='Solarus::Music::Format::OGG' data-ref="Solarus::Music::Format::OGG">OGG</dfn>               <i class="doc">/**&lt; Ogg Vorbis. */</i></td></tr>
+<tr><th id="58">58</th><td>    };</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>    <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Music::none" title='Solarus::Music::none' data-ref="Solarus::Music::none">none</dfn>;               <i class="doc">/**&lt; special id indicating that there is no music */</i></td></tr>
+<tr><th id="61">61</th><td>    <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Music::unchanged" title='Solarus::Music::unchanged' data-ref="Solarus::Music::unchanged">unchanged</dfn>;          <i class="doc">/**&lt; special id indicating that the music is the same as before */</i></td></tr>
+<tr><th id="62">62</th><td>    <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&gt;</td></tr>
+<tr><th id="63">63</th><td>        <dfn class="decl" id="Solarus::Music::format_names" title='Solarus::Music::format_names' data-ref="Solarus::Music::format_names">format_names</dfn>;                            <i class="doc">/**&lt; Name of each format. */</i></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music10initializeEv" title='Solarus::Music::initialize' data-ref="_ZN7Solarus5Music10initializeEv">initialize</dfn>();</td></tr>
+<tr><th id="66">66</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music4quitEv" title='Solarus::Music::quit' data-ref="_ZN7Solarus5Music4quitEv">quit</dfn>();</td></tr>
+<tr><th id="67">67</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN7Solarus5Music14is_initializedEv" title='Solarus::Music::is_initialized' data-ref="_ZN7Solarus5Music14is_initializedEv">is_initialized</dfn>();</td></tr>
+<tr><th id="68">68</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music6updateEv" title='Solarus::Music::update' data-ref="_ZN7Solarus5Music6updateEv">update</dfn>();</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>    <em>static</em> <a class="type" href="#Solarus::Music::Format" title='Solarus::Music::Format' data-ref="Solarus::Music::Format">Format</a> <dfn class="decl" id="_ZN7Solarus5Music10get_formatEv" title='Solarus::Music::get_format' data-ref="_ZN7Solarus5Music10get_formatEv">get_format</dfn>();</td></tr>
+<tr><th id="71">71</th><td>    <em>static</em> <em>int</em> <dfn class="decl" id="_ZN7Solarus5Music10get_volumeEv" title='Solarus::Music::get_volume' data-ref="_ZN7Solarus5Music10get_volumeEv">get_volume</dfn>();</td></tr>
+<tr><th id="72">72</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music10set_volumeEi" title='Solarus::Music::set_volume' data-ref="_ZN7Solarus5Music10set_volumeEi">set_volume</dfn>(<em>int</em> <dfn class="local col4 decl" id="774volume" title='volume' data-type='int' data-ref="774volume">volume</dfn>);</td></tr>
+<tr><th id="73">73</th><td>    <em>static</em> <em>int</em> <dfn class="decl" id="_ZN7Solarus5Music16get_num_channelsEv" title='Solarus::Music::get_num_channels' data-ref="_ZN7Solarus5Music16get_num_channelsEv">get_num_channels</dfn>();</td></tr>
+<tr><th id="74">74</th><td>    <em>static</em> <em>int</em> <dfn class="decl" id="_ZN7Solarus5Music18get_channel_volumeEi" title='Solarus::Music::get_channel_volume' data-ref="_ZN7Solarus5Music18get_channel_volumeEi">get_channel_volume</dfn>(<em>int</em> <dfn class="local col5 decl" id="775channel" title='channel' data-type='int' data-ref="775channel">channel</dfn>);</td></tr>
+<tr><th id="75">75</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music18set_channel_volumeEii" title='Solarus::Music::set_channel_volume' data-ref="_ZN7Solarus5Music18set_channel_volumeEii">set_channel_volume</dfn>(<em>int</em> <dfn class="local col6 decl" id="776channel" title='channel' data-type='int' data-ref="776channel">channel</dfn>, <em>int</em> <dfn class="local col7 decl" id="777volume" title='volume' data-type='int' data-ref="777volume">volume</dfn>);</td></tr>
+<tr><th id="76">76</th><td>    <em>static</em> <em>int</em> <dfn class="decl" id="_ZN7Solarus5Music9get_tempoEv" title='Solarus::Music::get_tempo' data-ref="_ZN7Solarus5Music9get_tempoEv">get_tempo</dfn>();</td></tr>
+<tr><th id="77">77</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music9set_tempoEi" title='Solarus::Music::set_tempo' data-ref="_ZN7Solarus5Music9set_tempoEi">set_tempo</dfn>(<em>int</em> <dfn class="local col8 decl" id="778tempo" title='tempo' data-type='int' data-ref="778tempo">tempo</dfn>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE" title='Solarus::Music::find_music_file' data-ref="_ZN7Solarus5Music15find_music_fileERKSsRSsRNS0_6FormatE">find_music_file</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col9 decl" id="779music_id" title='music_id' data-type='const std::string &amp;' data-ref="779music_id">music_id</dfn>,</td></tr>
+<tr><th id="80">80</th><td>        <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col0 decl" id="780file_name" title='file_name' data-type='std::string &amp;' data-ref="780file_name">file_name</dfn>, <a class="type" href="#Solarus::Music::Format" title='Solarus::Music::Format' data-ref="Solarus::Music::Format">Format</a>&amp; <dfn class="local col1 decl" id="781format" title='format' data-type='Solarus::Music::Format &amp;' data-ref="781format">format</dfn>);</td></tr>
+<tr><th id="81">81</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN7Solarus5Music6existsERKSs" title='Solarus::Music::exists' data-ref="_ZN7Solarus5Music6existsERKSs">exists</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col2 decl" id="782music_id" title='music_id' data-type='const std::string &amp;' data-ref="782music_id">music_id</dfn>);</td></tr>
+<tr><th id="82">82</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music4playERKSsb" title='Solarus::Music::play' data-ref="_ZN7Solarus5Music4playERKSsb">play</dfn>(</td></tr>
+<tr><th id="83">83</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col3 decl" id="783music_id" title='music_id' data-type='const std::string &amp;' data-ref="783music_id">music_id</dfn>,</td></tr>
+<tr><th id="84">84</th><td>        <em>bool</em> <dfn class="local col4 decl" id="784loop" title='loop' data-type='bool' data-ref="784loop">loop</dfn></td></tr>
+<tr><th id="85">85</th><td>    );</td></tr>
+<tr><th id="86">86</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE" title='Solarus::Music::play' data-ref="_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE">play</dfn>(</td></tr>
+<tr><th id="87">87</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col5 decl" id="785music_id" title='music_id' data-type='const std::string &amp;' data-ref="785music_id">music_id</dfn>,</td></tr>
+<tr><th id="88">88</th><td>        <em>bool</em> <dfn class="local col6 decl" id="786loop" title='loop' data-type='bool' data-ref="786loop">loop</dfn>,</td></tr>
+<tr><th id="89">89</th><td>        <em>const</em> <a class="type" href="../lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col7 decl" id="787callback_ref" title='callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="787callback_ref">callback_ref</dfn></td></tr>
+<tr><th id="90">90</th><td>    );</td></tr>
+<tr><th id="91">91</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music12stop_playingEv" title='Solarus::Music::stop_playing' data-ref="_ZN7Solarus5Music12stop_playingEv">stop_playing</dfn>();</td></tr>
+<tr><th id="92">92</th><td>    <em>static</em> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="decl" id="_ZN7Solarus5Music20get_current_music_idEv" title='Solarus::Music::get_current_music_id' data-ref="_ZN7Solarus5Music20get_current_music_idEv">get_current_music_id</dfn>();</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>  <b>private</b>:</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td>    <dfn class="decl" id="_ZN7Solarus5MusicC1Ev" title='Solarus::Music::Music' data-ref="_ZN7Solarus5MusicC1Ev">Music</dfn>();</td></tr>
+<tr><th id="97">97</th><td>    <dfn class="decl" id="_ZN7Solarus5MusicC1ERKSsbRKNS_12ScopedLuaRefE" title='Solarus::Music::Music' data-ref="_ZN7Solarus5MusicC1ERKSsbRKNS_12ScopedLuaRefE">Music</dfn>(</td></tr>
+<tr><th id="98">98</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col8 decl" id="788music_id" title='music_id' data-type='const std::string &amp;' data-ref="788music_id">music_id</dfn>,</td></tr>
+<tr><th id="99">99</th><td>        <em>bool</em> <dfn class="local col9 decl" id="789loop" title='loop' data-type='bool' data-ref="789loop">loop</dfn>,</td></tr>
+<tr><th id="100">100</th><td>        <em>const</em> <a class="type" href="../lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col0 decl" id="790callback_ref" title='callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="790callback_ref">callback_ref</dfn></td></tr>
+<tr><th id="101">101</th><td>    );</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7Solarus5Music5startEv" title='Solarus::Music::start' data-ref="_ZN7Solarus5Music5startEv">start</dfn>();</td></tr>
+<tr><th id="104">104</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music4stopEv" title='Solarus::Music::stop' data-ref="_ZN7Solarus5Music4stopEv">stop</dfn>();</td></tr>
+<tr><th id="105">105</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7Solarus5Music9is_pausedEv" title='Solarus::Music::is_paused' data-ref="_ZN7Solarus5Music9is_pausedEv">is_paused</dfn>();</td></tr>
+<tr><th id="106">106</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music10set_pausedEb" title='Solarus::Music::set_paused' data-ref="_ZN7Solarus5Music10set_pausedEb">set_paused</dfn>(<em>bool</em> <dfn class="local col1 decl" id="791pause" title='pause' data-type='bool' data-ref="791pause">pause</dfn>);</td></tr>
+<tr><th id="107">107</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music12set_callbackERKNS_12ScopedLuaRefE" title='Solarus::Music::set_callback' data-ref="_ZN7Solarus5Music12set_callbackERKNS_12ScopedLuaRefE">set_callback</dfn>(<em>const</em> <a class="type" href="../lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col2 decl" id="792callback_ref" title='callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="792callback_ref">callback_ref</dfn>);</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music10decode_spcEji" title='Solarus::Music::decode_spc' data-ref="_ZN7Solarus5Music10decode_spcEji">decode_spc</dfn>(<a class="typedef" href="../../../../include/AL/al.h.html#ALuint" title='ALuint' data-type='unsigned int' data-ref="ALuint">ALuint</a> <dfn class="local col3 decl" id="793destination_buffer" title='destination_buffer' data-type='ALuint' data-ref="793destination_buffer">destination_buffer</dfn>, <a class="typedef" href="../../../../include/AL/al.h.html#ALsizei" title='ALsizei' data-type='int' data-ref="ALsizei">ALsizei</a> <dfn class="local col4 decl" id="794nb_samples" title='nb_samples' data-type='ALsizei' data-ref="794nb_samples">nb_samples</dfn>);</td></tr>
+<tr><th id="110">110</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music9decode_itEji" title='Solarus::Music::decode_it' data-ref="_ZN7Solarus5Music9decode_itEji">decode_it</dfn>(<a class="typedef" href="../../../../include/AL/al.h.html#ALuint" title='ALuint' data-type='unsigned int' data-ref="ALuint">ALuint</a> <dfn class="local col5 decl" id="795destination_buffer" title='destination_buffer' data-type='ALuint' data-ref="795destination_buffer">destination_buffer</dfn>, <a class="typedef" href="../../../../include/AL/al.h.html#ALsizei" title='ALsizei' data-type='int' data-ref="ALsizei">ALsizei</a> <dfn class="local col6 decl" id="796nb_samples" title='nb_samples' data-type='ALsizei' data-ref="796nb_samples">nb_samples</dfn>);</td></tr>
+<tr><th id="111">111</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus5Music10decode_oggEji" title='Solarus::Music::decode_ogg' data-ref="_ZN7Solarus5Music10decode_oggEji">decode_ogg</dfn>(<a class="typedef" href="../../../../include/AL/al.h.html#ALuint" title='ALuint' data-type='unsigned int' data-ref="ALuint">ALuint</a> <dfn class="local col7 decl" id="797destination_buffer" title='destination_buffer' data-type='ALuint' data-ref="797destination_buffer">destination_buffer</dfn>, <a class="typedef" href="../../../../include/AL/al.h.html#ALsizei" title='ALsizei' data-type='int' data-ref="ALsizei">ALsizei</a> <dfn class="local col8 decl" id="798nb_samples" title='nb_samples' data-type='ALsizei' data-ref="798nb_samples">nb_samples</dfn>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7Solarus5Music14update_playingEv" title='Solarus::Music::update_playing' data-ref="_ZN7Solarus5Music14update_playingEv">update_playing</dfn>();</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Music::id" title='Solarus::Music::id' data-ref="Solarus::Music::id">id</dfn>;                              <i class="doc">/**&lt; id of this music */</i></td></tr>
+<tr><th id="116">116</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Music::file_name" title='Solarus::Music::file_name' data-ref="Solarus::Music::file_name">file_name</dfn>;                       <i class="doc">/**&lt; name of the file to play */</i></td></tr>
+<tr><th id="117">117</th><td>    <a class="type" href="#Solarus::Music::Format" title='Solarus::Music::Format' data-ref="Solarus::Music::Format">Format</a> <dfn class="decl" id="Solarus::Music::format" title='Solarus::Music::format' data-ref="Solarus::Music::format">format</dfn>;                               <i class="doc">/**&lt; format of the music, detected from the file name */</i></td></tr>
+<tr><th id="118">118</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Music::loop" title='Solarus::Music::loop' data-ref="Solarus::Music::loop">loop</dfn>;                                   <i class="doc">/**&lt; Whether the music should loop. */</i></td></tr>
+<tr><th id="119">119</th><td>    <a class="type" href="../lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a> <dfn class="decl" id="Solarus::Music::callback_ref" title='Solarus::Music::callback_ref' data-ref="Solarus::Music::callback_ref">callback_ref</dfn>;                   <i class="doc">/**&lt; Lua ref to a function to call when the music finishes. */</i></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <em>static</em> <b>constexpr</b> <em>int</em> <dfn class="decl" id="Solarus::Music::nb_buffers" title='Solarus::Music::nb_buffers' data-ref="Solarus::Music::nb_buffers">nb_buffers</dfn> = <var>8</var>;</td></tr>
+<tr><th id="122">122</th><td>    <a class="typedef" href="../../../../include/AL/al.h.html#ALuint" title='ALuint' data-type='unsigned int' data-ref="ALuint">ALuint</a> <dfn class="decl" id="Solarus::Music::buffers" title='Solarus::Music::buffers' data-ref="Solarus::Music::buffers">buffers</dfn>[<a class="ref" href="#Solarus::Music::nb_buffers" title='Solarus::Music::nb_buffers' data-ref="Solarus::Music::nb_buffers">nb_buffers</a>];                  <i class="doc">/**&lt; multiple buffers used to stream the music */</i></td></tr>
+<tr><th id="123">123</th><td>    <a class="typedef" href="../../../../include/AL/al.h.html#ALuint" title='ALuint' data-type='unsigned int' data-ref="ALuint">ALuint</a> <dfn class="decl" id="Solarus::Music::source" title='Solarus::Music::source' data-ref="Solarus::Music::source">source</dfn>;                               <i class="doc">/**&lt; the OpenAL source streaming the buffers */</i></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="#Solarus::SpcDecoder" title='Solarus::SpcDecoder' data-ref="Solarus::SpcDecoder">SpcDecoder</a>&gt;</td></tr>
+<tr><th id="126">126</th><td>        <dfn class="decl" id="Solarus::Music::spc_decoder" title='Solarus::Music::spc_decoder' data-ref="Solarus::Music::spc_decoder">spc_decoder</dfn>;                             <i class="doc">/**&lt; The SPC decoder. */</i></td></tr>
+<tr><th id="127">127</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="#Solarus::ItDecoder" title='Solarus::ItDecoder' data-ref="Solarus::ItDecoder">ItDecoder</a>&gt;</td></tr>
+<tr><th id="128">128</th><td>        <dfn class="decl" id="Solarus::Music::it_decoder" title='Solarus::Music::it_decoder' data-ref="Solarus::Music::it_decoder">it_decoder</dfn>;                              <i class="doc">/**&lt; The IT decoder. */</i></td></tr>
+<tr><th id="129">129</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="#Solarus::OggDecoder" title='Solarus::OggDecoder' data-ref="Solarus::OggDecoder">OggDecoder</a>&gt;</td></tr>
+<tr><th id="130">130</th><td>        <dfn class="decl" id="Solarus::Music::ogg_decoder" title='Solarus::Music::ogg_decoder' data-ref="Solarus::Music::ogg_decoder">ogg_decoder</dfn>;                             <i class="doc">/**&lt; The OGG decoder. */</i></td></tr>
+<tr><th id="131">131</th><td>    <em>static</em> <em>float</em> <dfn class="decl" id="Solarus::Music::volume" title='Solarus::Music::volume' data-ref="Solarus::Music::volume">volume</dfn>;                         <i class="doc">/**&lt; volume of musics (0.0 to 1.0) */</i></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>    <em>static</em> <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="#Solarus::Music" title='Solarus::Music' data-ref="Solarus::Music">Music</a>&gt; <dfn class="decl" id="Solarus::Music::current_music" title='Solarus::Music::current_music' data-ref="Solarus::Music::current_music">current_music</dfn>; <i class="doc">/**&lt; the music currently played (if any) */</i></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>};</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>}</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/Game.cpp.html'>codebrowser/src/Game.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

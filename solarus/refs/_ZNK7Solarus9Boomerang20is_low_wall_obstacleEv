@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='55' type='bool Solarus::Boomerang::is_low_wall_obstacle() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='415' c='_ZNK7Solarus6Entity20is_low_wall_obstacleEv'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='139' ll='141' type='bool Solarus::Boomerang::is_low_wall_obstacle() const'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='134'>/**
+ * \brief Returns whether a low wall is currently considered as an obstacle
+ * by this entity.
+ * \return \c true if low walls are currently obstacle for this entity.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='75' type='void Solarus::Equipment::remove_life(int life_to_remove)'/>
+<def f='codebrowser/src/Equipment.cpp' l='281' ll='286' type='void Solarus::Equipment::remove_life(int life_to_remove)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='276'>/**
+ * \brief Removes some life from the player.
+ * \param life_to_remove Amount of life to remove.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2286' u='c' c='_ZN7Solarus4Hero13start_prickleEj'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='91' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='82' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='813' u='c' c='_ZN7Solarus10LuaContext20game_api_remove_lifeEP9lua_State'/>

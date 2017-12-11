@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='667' type='static int Solarus::LuaContext::jump_movement_api_get_speed(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='273' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1746' ll='1753' type='static int Solarus::LuaContext::jump_movement_api_get_speed(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1741'>/**
+ * \brief Implementation of jump_movement:get_speed().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='51' type='14'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='51'>/**&lt; a switch that lowers or raises the blue and orange blocks */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='192' u='r'/>
+<use f='codebrowser/include/solarus/entities/Crystal.h' l='36'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='35' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='72' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='122' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='542' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1284' u='r'/>

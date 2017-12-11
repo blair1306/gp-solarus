@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='64' type='void Solarus::Equipment::set_money(int money)'/>
+<use f='codebrowser/src/Equipment.cpp' l='154' u='c' c='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<def f='codebrowser/src/Equipment.cpp' l='174' ll='178' type='void Solarus::Equipment::set_money(int money)'/>
+<use f='codebrowser/src/Equipment.cpp' l='192' u='c' c='_ZN7Solarus9Equipment9add_moneyEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='207' u='c' c='_ZN7Solarus9Equipment12remove_moneyEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='166'>/**
+ * \brief Sets the player&apos;s current amount of money.
+ *
+ * If the amount is lower than zero, it is replaced by zero.
+ * If the amount is greater than get_max_money(), it is replaced by that value.
+ *
+ * \param money The player&apos;s new amount of money.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='907' u='c' c='_ZN7Solarus10LuaContext18game_api_set_moneyEP9lua_State'/>

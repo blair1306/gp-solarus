@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='217' type='void Solarus::LuaContext::do_timer_callback(const TimerPtr &amp; timer)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='242' u='c' c='_ZN7Solarus10LuaContext13update_timersEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='306' ll='337' type='void Solarus::LuaContext::do_timer_callback(const TimerPtr &amp; timer)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='329' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='383' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='580' u='c' c='_ZN7Solarus10LuaContext28timer_api_set_remaining_timeEP9lua_State'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='296'>/**
+ * \brief Executes the callback of a timer.
+ *
+ * Then, if the callback returns \c true, the timer is rescheduled,
+ * otherwise it is discarded.
+ *
+ * Does nothing if the timer is already finished.
+ *
+ * \param timer The timer to execute.
+ */</doc>

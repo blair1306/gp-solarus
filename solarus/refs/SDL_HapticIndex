@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_haptic.h' l='865' type='int SDL_HapticIndex(SDL_Haptic * haptic)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='856'>/**
+ *  \brief Gets the index of a haptic device.
+ *
+ *  \param haptic Haptic device to get the index of.
+ *  \return The index of the haptic device or -1 on error.
+ *
+ *  \sa SDL_HapticOpen
+ *  \sa SDL_HapticOpened
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='70' type='void Solarus::Hero::update()'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='65'>/**
+     * \name Game loop.
+     *
+     * Functions called by the game loop.
+     */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1181' u='c' c='_ZN7Solarus8Entities6updateEv'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='356' c='_ZN7Solarus6Entity6updateEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='178' ll='192' type='void Solarus::Hero::update()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='173'>/**
+ * \brief Updates the hero&apos;s position, movement and animation.
+ *
+ * This function is called repeatedly by the game loop.
+ */</doc>

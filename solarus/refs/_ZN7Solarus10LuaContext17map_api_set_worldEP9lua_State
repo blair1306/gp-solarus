@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='776' type='static int Solarus::LuaContext::map_api_set_world(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='122' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1451' ll='1467' type='static int Solarus::LuaContext::map_api_set_world(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1446'>/**
+ * \brief Implementation of map:set_world().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

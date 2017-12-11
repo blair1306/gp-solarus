@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Map.h' l='167' type='void Solarus::Map::check_collision_from_detector(Solarus::Entity &amp; detector, Solarus::Sprite &amp; detector_sprite)'/>
+<def f='codebrowser/src/Map.cpp' l='1362' ll='1395' type='void Solarus::Map::check_collision_from_detector(Solarus::Entity &amp; detector, Solarus::Sprite &amp; detector_sprite)'/>
+<doc f='codebrowser/src/Map.cpp' l='1351'>/**
+ * \brief Checks pixel-precise collisions between all entities and a
+ * particular sprite of a detector.
+ *
+ * This function is called when a detector wants to check entities,
+ * typically when its sprite has just changed.
+ * If the map is suspended, this function does nothing.
+ *
+ * \param detector A detector.
+ * \param detector_sprite The detector&apos;s sprite to check.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='3406' u='c' c='_ZN7Solarus6Entity6updateEv'/>

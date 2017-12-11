@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='45' type='bool Solarus::CurrentQuest::resource_exists(Solarus::ResourceType resource_type, const std::string &amp; id)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='132' ll='135' type='bool Solarus::CurrentQuest::resource_exists(Solarus::ResourceType resource_type, const std::string &amp; id)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='156' u='c' c='_ZN7Solarus12CurrentQuest12has_languageERKSs'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='125'>/**
+ * \brief Returns whether there exists an element with the specified id.
+ * \param resource_type A type of resource.
+ * \param id The id to look for.
+ * \return \c true if there resource_exists an element with the specified id in this
+ * resource type.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='87' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1751' u='c' c='_ZN7Solarus10LuaContext17hero_api_teleportEP9lua_State'/>

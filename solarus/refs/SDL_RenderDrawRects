@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_render.h' l='729' type='int SDL_RenderDrawRects(SDL_Renderer * renderer, const SDL_Rect * rects, int count)'/>
+<doc f='include/SDL2/SDL_render.h' l='720'>/**
+ *  \brief Draw some number of rectangles on the current rendering target.
+ *
+ *  \param renderer The renderer which should draw multiple rectangles.
+ *  \param rects A pointer to an array of destination rectangles.
+ *  \param count The number of rectangles.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

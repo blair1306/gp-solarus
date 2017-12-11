@@ -1,0 +1,37 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='96' type='void Solarus::Entity::remove_from_map()'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='287' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='390' u='c' c='_ZN7Solarus5Arrow34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='428' u='c' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Block.cpp' l='275' u='c' c='_ZN7Solarus5Block27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='281' u='c' c='_ZN7Solarus5Block27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='201' u='c' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='265' u='c' c='_ZN7Solarus4Bomb7explodeEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='298' u='c' c='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='247' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='256' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='292' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='298' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='399' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='418' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='514' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='866' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='534' ll='537' type='void Solarus::Entity::remove_from_map()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='528'>/**
+ * \brief Schedules this entity for removal.
+ *
+ * The entity will be removed from the map and destroyed.
+ * This function is equivalent to calling map-&gt;get_entities()-&gt;remove_entity(this).
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='69' u='c' c='_ZN7Solarus9Explosion6updateEv'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='59' u='c' c='_ZN7Solarus4Fire6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='676' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='203' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='302' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='406' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='414' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='439' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='573' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='106' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='61' u='c' c='_ZN7Solarus4Hero13HookshotState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='835' u='c' c='_ZN7Solarus10LuaContext17entity_api_removeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3859' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>

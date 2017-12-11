@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='65' type='void Solarus::Shader::load_lua_file(const std::string &amp; path)'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='121' u='c' c='_ZN7Solarus6Shader4loadERKSs'/>
+<def f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='135' ll='163' type='void Solarus::Shader::load_lua_file(const std::string &amp; path)'/>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='131'>/**
+ * \brief Load and parse the Lua file of the requested shader.
+ * \param path The path to the lua file, relative to the data folder.
+ */</doc>

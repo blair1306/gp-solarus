@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='120' type='const char * SDL_GetScancodeName(SDL_Scancode scancode)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='111'>/**
+ *  \brief Get a human-readable name for a scancode.
+ *
+ *  \return A pointer to the name for the scancode.
+ *          If the scancode doesn&apos;t have a name, this function returns
+ *          an empty string (&quot;&quot;).
+ *
+ *  \sa SDL_Scancode
+ */</doc>

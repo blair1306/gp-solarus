@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='390' type='void Solarus::LuaContext::block_on_moving(Solarus::Block &amp; block)'/>
+<use f='codebrowser/src/entities/Block.cpp' l='315' u='c' c='_ZN7Solarus5Block16notify_moving_byERNS_6EntityE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6050' ll='6059' type='void Solarus::LuaContext::block_on_moving(Solarus::Block &amp; block)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6043'>/**
+ * \brief Calls the on_moving() method of a Lua block.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param block a block.
+ */</doc>

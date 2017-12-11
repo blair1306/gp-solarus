@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1092' type='static void Solarus::LuaContext::push_text_surface(lua_State * l, Solarus::TextSurface &amp; text_surface)'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='134' ll='136' type='static void Solarus::LuaContext::push_text_surface(lua_State * l, Solarus::TextSurface &amp; text_surface)'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='197' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='129'>/**
+ * \brief Pushes a text surface userdata onto the stack.
+ * \param l a Lua context
+ * \param text_surface a text surface
+ */</doc>

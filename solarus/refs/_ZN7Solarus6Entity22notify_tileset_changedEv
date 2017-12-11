@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='128' type='void Solarus::Entity::notify_tileset_changed()'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='711' u='c' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='741' u='c' c='_ZN7Solarus8Entities22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='320' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='421' ll='426' type='void Solarus::Entity::notify_tileset_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='416'>/**
+ * \brief Notifies this entity that the tileset of the map has just changed.
+ *
+ * This is useful for tileset-dependent sprites such as doors and blocks.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='528' c='_ZN7Solarus4Hero22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='530' u='c' c='_ZN7Solarus4Hero22notify_tileset_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='956' u='c' c='_ZN7Solarus11HeroSprites22notify_tileset_changedEv'/>

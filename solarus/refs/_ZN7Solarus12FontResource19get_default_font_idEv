@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/FontResource.h' l='39' type='static std::string Solarus::FontResource::get_default_font_id()'/>
+<def f='codebrowser/src/lowlevel/FontResource.cpp' l='121' ll='132' type='static std::string Solarus::FontResource::get_default_font_id()'/>
+<doc f='codebrowser/src/lowlevel/FontResource.cpp' l='116'>/**
+ * \brief Returns the id of default font.
+ * \return Id of the first font in alphabetical order, or an empty string
+ * if there is no font at all.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='64' u='c' c='_ZN7Solarus11TextSurfaceC1EiiNS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='153' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>

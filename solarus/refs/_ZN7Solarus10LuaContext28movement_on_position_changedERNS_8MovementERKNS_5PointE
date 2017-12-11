@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='310' type='void Solarus::LuaContext::movement_on_position_changed(Solarus::Movement &amp; movement, const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='309'>// Movement events.</doc>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1919' ll='1948' type='void Solarus::LuaContext::movement_on_position_changed(Solarus::Movement &amp; movement, const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1911'>/**
+ * \brief Calls the on_position_changed() method of a Lua movement.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param movement A movement.
+ * \param xy The new coordinates.
+ */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='268' u='c' c='_ZN7Solarus8Movement23notify_position_changedEv'/>

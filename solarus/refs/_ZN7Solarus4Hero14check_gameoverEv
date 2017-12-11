@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='335' type='void Solarus::Hero::check_gameover()'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='334'>// life</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='190' u='c' c='_ZN7Solarus4Hero6updateEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='388' ll='395' type='void Solarus::Hero::check_gameover()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='383'>/**
+ * \brief Checks that the hero has still some life.
+ *
+ * If his life reaches zero, this function starts the gameover sequence.
+ */</doc>

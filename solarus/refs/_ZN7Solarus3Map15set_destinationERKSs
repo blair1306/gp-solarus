@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='107' type='void Solarus::Map::set_destination(const std::string &amp; destination_name)'/>
+<doc f='codebrowser/include/solarus/Map.h' l='106'>// current destination point</doc>
+<use f='codebrowser/src/Game.cpp' l='654' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<def f='codebrowser/src/Map.cpp' l='348' ll='351' type='void Solarus::Map::set_destination(const std::string &amp; destination_name)'/>
+<doc f='codebrowser/src/Map.cpp' l='340'>/**
+ * \brief Sets the current destination point of the map.
+ * \param destination_name Name of the destination point you want to use.
+ * An empty string means the default one.
+ * You can also use &quot;_same&quot; to keep the hero&apos;s coordinates, or
+ * &quot;_side0&quot;, &quot;_side1&quot;, &quot;_side2&quot; or &quot;_side3&quot;
+ * to place the hero on a side of the map.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='285' type='bool Solarus::LuaContext::menu_on_command_pressed(const Solarus::ScopedLuaRef &amp; menu_ref, Solarus::GameCommand command)'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='366' ll='383' type='bool Solarus::LuaContext::menu_on_command_pressed(const Solarus::ScopedLuaRef &amp; menu_ref, Solarus::GameCommand command)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='511' u='c' c='_ZN7Solarus10LuaContext24menus_on_command_pressedEiNS_11GameCommandE'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='360'>/**
+ * \brief Calls the on_command_pressed() method of a Lua menu.
+ * \param menu_ref A reference to the menu object.
+ * \param command The game command just pressed.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

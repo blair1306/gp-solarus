@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='34' type='void Solarus::Hero::StairsState::StairsState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;const Stairs&gt; &amp; stairs, Stairs::Way way)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='686' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1746' u='c' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<def f='codebrowser/src/hero/StairsState.cpp' l='41' ll='57' type='void Solarus::Hero::StairsState::StairsState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;const Stairs&gt; &amp; stairs, Stairs::Way way)'/>
+<doc f='codebrowser/src/hero/StairsState.cpp' l='35'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param stairs The stairs to take.
+ * \param way The way you are taking the stairs.
+ */</doc>

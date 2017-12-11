@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='336' type='void Solarus::LuaContext::game_on_finished(Solarus::Game &amp; game)'/>
+<use f='codebrowser/src/Game.cpp' l='156' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1581' ll='1590' type='void Solarus::LuaContext::game_on_finished(Solarus::Game &amp; game)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1574'>/**
+ * \brief Calls the on_finished() method of a Lua game if it is defined.
+ *
+ * Also stops timers and menus associated to the game.
+ *
+ * \param game A game.
+ */</doc>

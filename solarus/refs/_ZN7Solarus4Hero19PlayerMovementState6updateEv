@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='49' type='void Solarus::Hero::PlayerMovementState::update()'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='144' c='_ZN7Solarus4Hero13CarryingState6updateEv'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='146' u='c' c='_ZN7Solarus4Hero13CarryingState6updateEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='66' c='_ZN7Solarus4Hero9FreeState6updateEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='68' u='c' c='_ZN7Solarus4Hero9FreeState6updateEv'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='48' c='_ZN7Solarus6Entity5State6updateEv'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='141' ll='166' type='void Solarus::Hero::PlayerMovementState::update()'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='135'>/**
+ * \brief Updates this state.
+ *
+ * This function may change the state of the hero,
+ * so when you call it from a subclass, call is_current_state() then.
+ */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='67' c='_ZN7Solarus4Hero13SwimmingState6updateEv'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='69' u='c' c='_ZN7Solarus4Hero13SwimmingState6updateEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='61' c='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='63' u='c' c='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>

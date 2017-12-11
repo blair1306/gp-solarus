@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='68' type='const std::map&lt;GameCommand, std::string&gt;'/>
+<def f='codebrowser/src/GameCommands.cpp' l='32' ll='43' type='const std::map&lt;GameCommand, std::string&gt;'/>
+<use f='codebrowser/src/GameCommands.cpp' l='89' c='_ZN7Solarus12GameCommandsC1ERNS_4GameE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='829' u='m' c='_ZN7Solarus12GameCommands16get_command_nameENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='840' c='_ZN7Solarus12GameCommands19get_command_by_nameERKSs'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='29'>/**
+ * \brief Lua name of each value of the Command enum.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1268' u='r' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1362' u='r' c='_ZN7Solarus10LuaContext37game_api_get_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1388' u='r' c='_ZN7Solarus10LuaContext37game_api_set_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1416' u='r' c='_ZN7Solarus10LuaContext35game_api_get_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1441' u='r' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1468' u='r' c='_ZN7Solarus10LuaContext32game_api_capture_command_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1488' u='r' c='_ZN7Solarus10LuaContext27game_api_is_command_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1530' u='r' c='_ZN7Solarus10LuaContext33game_api_simulate_command_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1548' u='r' c='_ZN7Solarus10LuaContext34game_api_simulate_command_releasedEP9lua_State'/>

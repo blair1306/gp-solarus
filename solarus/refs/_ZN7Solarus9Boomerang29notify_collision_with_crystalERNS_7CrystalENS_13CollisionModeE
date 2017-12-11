@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Boomerang.h' l='78' type='void Solarus::Boomerang::notify_collision_with_crystal(Solarus::Crystal &amp; crystal, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='307' c='_ZN7Solarus6Entity29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Boomerang.cpp' l='324' ll='333' type='void Solarus::Boomerang::notify_collision_with_crystal(Solarus::Crystal &amp; crystal, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Boomerang.cpp' l='319'>/**
+ * \brief This function is called when a crystal detects a collision with this entity.
+ * \param crystal the crystal
+ * \param collision_mode the collision mode that detected the event
+ */</doc>

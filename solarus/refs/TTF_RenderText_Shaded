@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_ttf.h' l='182' type='SDL_Surface * TTF_RenderText_Shaded(TTF_Font * font, const char * text, SDL_Color fg, SDL_Color bg)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='177'>/* Create an 8-bit palettized surface and render the given text at
+   high quality with the given font and colors.  The 0 pixel is background,
+   while other pixels have varying degrees of the foreground color.
+   This function returns the new surface, or NULL if there was an error.
+*/</doc>

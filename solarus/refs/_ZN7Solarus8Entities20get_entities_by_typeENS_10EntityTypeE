@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='89' type='EntitySet Solarus::Entities::get_entities_by_type(Solarus::EntityType type)'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='88'>// By type.</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='369' u='c' c='_ZN7Solarus8Entities24get_entities_with_prefixENS_10EntityTypeERKSs'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='592' ll='600' type='EntitySet Solarus::Entities::get_entities_by_type(Solarus::EntityType type)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='610' u='c' c='_ZN7Solarus8Entities27get_entities_by_type_sortedENS_10EntityTypeE'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='587'>/**
+ * \brief Returns all entities of a type.
+ * \param type An entity type.
+ * \return All entities of the type.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='82' type='static void Solarus::Video::get_quest_size_range(Solarus::Size &amp; normal_quest_size, Solarus::Size &amp; min_quest_size, Solarus::Size &amp; max_quest_size)'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='752' ll='760' type='static void Solarus::Video::get_quest_size_range(Solarus::Size &amp; normal_size, Solarus::Size &amp; min_size, Solarus::Size &amp; max_size)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='746'>/**
+ * \brief Gets the allowed range of quest sizes for this quest.
+ * \param normal_size Gets the default size for this quest.
+ * \param min_size Gets the minimum size for this quest.
+ * \param max_size Gets the maximum size for this quest.
+ */</doc>

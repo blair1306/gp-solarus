@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='72' type='static void Solarus::Sound::update()'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='326' ll='342' type='static void Solarus::Sound::update()'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='321'>/**
+ * \brief Updates the audio (music and sound) system.
+ *
+ * This function is called repeatedly by the game.
+ */</doc>
+<use f='codebrowser/src/lowlevel/System.cpp' l='92' u='c' c='_ZN7Solarus6System6updateEv'/>

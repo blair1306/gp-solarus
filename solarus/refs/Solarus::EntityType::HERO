@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='63' type='23'/>
+<use f='codebrowser/include/solarus/entities/Hero.h' l='50'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='63'>/**&lt; the hero */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1009' u='r' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1051' u='r' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='123' u='r' c='_ZNK7Solarus6Entity7is_heroEv'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='44' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='100' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='150' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='50' u='a' c='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='194' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1712' u='r' c='_ZN7Solarus10LuaContext7is_heroEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1724' u='r' c='_ZN7Solarus10LuaContext10check_heroEP9lua_Statei'/>

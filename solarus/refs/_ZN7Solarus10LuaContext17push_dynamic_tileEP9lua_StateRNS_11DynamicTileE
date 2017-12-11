@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1117' type='static void Solarus::LuaContext::push_dynamic_tile(lua_State * l, Solarus::DynamicTile &amp; dynamic_tile)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4315' ll='4317' type='static void Solarus::LuaContext::push_dynamic_tile(lua_State * l, Solarus::DynamicTile &amp; dynamic_tile)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4310'>/**
+ * \brief Pushes a dynamic tile userdata onto the stack.
+ * \param l A Lua context.
+ * \param dynamic_tile A dynamic tile.
+ */</doc>

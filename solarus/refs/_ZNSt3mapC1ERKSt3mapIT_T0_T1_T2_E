@@ -1,0 +1,10 @@
+<def f='include/c++/4.9/bits/stl_map.h' l='182' ll='183' type='void std::map::map&lt;_Key, _Tp, _Compare, _Alloc&gt;(const map&lt;_Key, _Tp, _Compare, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/4.9/bits/stl_map.h' l='175'>/**
+       *  @brief  %Map copy constructor.
+       *  @param  __x  A %map of identical element and allocator types.
+       *
+       *  The newly-created %map uses a copy of the allocation object
+       *  used by @a __x.
+       */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='837' u='c' c='_ZN7Solarus10EntityData28get_entity_type_descriptionsEv'/>
+<use f='codebrowser/src/entities/BorderSet.cpp' l='37' u='c' c='_ZN7Solarus9BorderSetC1ERKSt3mapINS_10BorderKindESsSt4lessIS2_ESaISt4pairIKS2_SsEEEb'/>

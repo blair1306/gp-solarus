@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/System.h' l='45' type='static void Solarus::System::sleep(uint32_t duration)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='381' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='386' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<def f='codebrowser/src/lowlevel/System.cpp' l='143' ll='145' type='static void Solarus::System::sleep(uint32_t duration)'/>
+<doc f='codebrowser/src/lowlevel/System.cpp' l='136'>/**
+ * \brief Makes the program sleep during some time.
+ *
+ * Due to the OS scheduling, the real delay may be longer.
+ *
+ * \param duration duration of the sleep in milliseconds
+ */</doc>

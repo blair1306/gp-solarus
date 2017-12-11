@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='92' type='const std::string &amp; Solarus::HeroSprites::get_tunic_animation() const'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1476' ll='1479' type='const std::string &amp; Solarus::HeroSprites::get_tunic_animation() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1472'>/**
+ * \brief Returns the current animation of the tunic sprite.
+ * \return The animation name of the tunic sprite.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1945' u='c' c='_ZN7Solarus10LuaContext22hero_api_get_animationEP9lua_State'/>

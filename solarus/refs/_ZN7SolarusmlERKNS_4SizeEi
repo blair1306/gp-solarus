@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='74' type='Solarus::Size Solarus::operator*(const Solarus::Size &amp; size, int factor)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='148' ll='150' type='Solarus::Size Solarus::operator*(const Solarus::Size &amp; size, int factor)'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='159' u='c' c='_ZN7SolarusmlEiRKNS_4SizeE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='142'>/**
+ * \brief Multiplies a size by a value.
+ * \param size A size.
+ * \param factor The multiplication factor.
+ * \return A size with width and height multiplied by the factor.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1229' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='169' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='175' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='181' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='187' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='193' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='231' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='574' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>

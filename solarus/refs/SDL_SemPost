@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_mutex.h' l='150' type='int SDL_SemPost(SDL_sem * sem)'/>
+<doc f='include/SDL2/SDL_mutex.h' l='145'>/**
+ *  Atomically increases the semaphore&apos;s count (not blocking).
+ *
+ *  \return 0, or -1 on error.
+ */</doc>

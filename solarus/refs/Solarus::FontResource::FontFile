@@ -1,0 +1,9 @@
+<def f='codebrowser/include/solarus/lowlevel/FontResource.h' l='72' ll='80'/>
+<size>80</size>
+<doc f='codebrowser/include/solarus/lowlevel/FontResource.h' l='69'>/**
+     * This structure stores in memory the content of a font file.
+     */</doc>
+<mbr r='Solarus::FontResource::FontFile::file_name' o='0' t='std::string'/>
+<mbr r='Solarus::FontResource::FontFile::buffer' o='64' t='std::string'/>
+<mbr r='Solarus::FontResource::FontFile::bitmap_font' o='128' t='SurfacePtr'/>
+<mbr r='Solarus::FontResource::FontFile::outline_fonts' o='256' t='std::map&lt;int, OutlineFontReader&gt;'/>

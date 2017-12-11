@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='63' type='void Solarus::Camera::start_tracking(const EntityPtr &amp; entity)'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='235' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='345' ll='347' type='void Solarus::Camera::start_tracking(const EntityPtr &amp; tracked_entity)'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='341'>/**
+ * \brief Makes that the camera track the given entity.
+ * \param tracked_entity The entity to track.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2638' u='c' c='_ZN7Solarus10LuaContext25camera_api_start_trackingEP9lua_State'/>

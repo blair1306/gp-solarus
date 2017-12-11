@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='141' type='const char * SDL_GetKeyName(SDL_Keycode key)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='131'>/**
+ *  \brief Get a human-readable name for a key.
+ *
+ *  \return A pointer to a UTF-8 string that stays valid at least until the next
+ *          call to this function. If you need it around any longer, you must
+ *          copy it.  If the key doesn&apos;t have a name, this function returns an
+ *          empty string (&quot;&quot;).
+ *
+ *  \sa SDL_Key
+ */</doc>

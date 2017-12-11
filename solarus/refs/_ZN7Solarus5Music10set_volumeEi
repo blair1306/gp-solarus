@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='72' type='static void Solarus::Music::set_volume(int volume)'/>
+<use f='codebrowser/src/Settings.cpp' l='340' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='104' u='c' c='_ZN7Solarus5Music10initializeEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='154' ll='164' type='static void Solarus::Music::set_volume(int volume)'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='150'>/**
+ * \brief Sets the volume of musics.
+ * \param volume the new volume (0 to 100)
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='140' u='c' c='_ZN7Solarus10LuaContext26audio_api_set_music_volumeEP9lua_State'/>

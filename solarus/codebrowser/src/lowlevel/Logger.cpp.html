@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Logger.cpp source code [codebrowser/src/lowlevel/Logger.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/lowlevel/Logger.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>lowlevel</a>/<a href='Logger.cpp.html'>Logger.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/lowlevel/Logger.h.html">"solarus/lowlevel/Logger.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../../include/c++/4.9/fstream.html">&lt;fstream&gt;</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../../include/c++/4.9/iostream.html">&lt;iostream&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">Logger</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>  <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="tu decl def" id="Solarus::Logger::(anonymousnamespace)::error_log_file_name" title='Solarus::Logger::(anonymous namespace)::error_log_file_name' data-type='const std::string' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file_name">error_log_file_name</dfn> = <a class="ref fake" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"error.txt"</q>;</td></tr>
+<tr><th id="29">29</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ofstream" title='std::ofstream' data-type='basic_ofstream&lt;char&gt;' data-ref="std::ofstream">ofstream</a> <a class="ref fake" href="../../../include/c++/4.9/fstream.html#_ZNSt14basic_ofstreamC1Ev" title='std::basic_ofstream::basic_ofstream&lt;_CharT, _Traits&gt;' data-ref="_ZNSt14basic_ofstreamC1Ev"></a><dfn class="tu decl def" id="Solarus::Logger::(anonymousnamespace)::error_log_file" title='Solarus::Logger::(anonymous namespace)::error_log_file' data-type='std::ofstream' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file">error_log_file</dfn>;</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>  <i class="doc" data-doc="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">/**</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc" data-doc="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">   * <span class="command">\brief</span> Returns the error log file.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc" data-doc="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">   *</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc" data-doc="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">   * Opens it the first time this function is called.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc" data-doc="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">   */</i></td></tr>
+<tr><th id="36">36</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ofstream" title='std::ofstream' data-type='basic_ofstream&lt;char&gt;' data-ref="std::ofstream">ofstream</a>&amp; <dfn class="tu decl def" id="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv" title='Solarus::Logger::(anonymous namespace)::get_error_log_file' data-type='std::ofstream &amp; Solarus::Logger::(anonymous namespace)::get_error_log_file()' data-ref="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">get_error_log_file</dfn>() {</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <b>if</b> (!<a class="tu ref" href="#Solarus::Logger::(anonymousnamespace)::error_log_file" title='Solarus::Logger::(anonymous namespace)::error_log_file' data-use='m' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file">error_log_file</a>.<a class="ref" href="../../../include/c++/4.9/fstream.html#_ZNSt14basic_ofstream7is_openEv" title='std::basic_ofstream::is_open' data-ref="_ZNSt14basic_ofstream7is_openEv">is_open</a>()) {</td></tr>
+<tr><th id="39">39</th><td>      <a class="tu ref" href="#Solarus::Logger::(anonymousnamespace)::error_log_file" title='Solarus::Logger::(anonymous namespace)::error_log_file' data-use='m' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file">error_log_file</a>.<a class="ref" href="../../../include/c++/4.9/fstream.html#_ZNSt14basic_ofstream4openEPKcSt13_Ios_Openmode" title='std::basic_ofstream::open' data-ref="_ZNSt14basic_ofstream4openEPKcSt13_Ios_Openmode">open</a>(<a class="tu ref" href="#Solarus::Logger::(anonymousnamespace)::error_log_file_name" title='Solarus::Logger::(anonymous namespace)::error_log_file_name' data-use='m' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file_name">error_log_file_name</a>.<a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNKSt12basic_string5c_strEv" title='std::basic_string::c_str' data-ref="_ZNKSt12basic_string5c_strEv">c_str</a>());</td></tr>
+<tr><th id="40">40</th><td>    }</td></tr>
+<tr><th id="41">41</th><td>    <b>return</b> <a class="tu ref" href="#Solarus::Logger::(anonymousnamespace)::error_log_file" title='Solarus::Logger::(anonymous namespace)::error_log_file' data-use='a' data-ref="Solarus::Logger::(anonymousnamespace)::error_log_file">error_log_file</a>;</td></tr>
+<tr><th id="42">42</th><td>  }</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * <span class="command">\brief</span> Logs a message on the given output stream.</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * The message is prepended by "[Solarus] [t] " where t is the current</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * simulated time.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">out</span> The output stream.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="54">54</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col3 decl" id="283message" title='message' data-type='const std::string &amp;' data-ref="283message">message</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/iosfwd.html#std::ostream" title='std::ostream' data-type='basic_ostream&lt;char&gt;' data-ref="std::ostream">ostream</a>&amp; <dfn class="local col4 decl" id="284out" title='out' data-type='std::ostream &amp;' data-ref="284out">out</dfn>) {</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>  <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="285simulated_time" title='simulated_time' data-type='uint32_t' data-ref="285simulated_time">simulated_time</dfn> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="57">57</th><td>  <a class="local col4 ref" href="#284out" title='out' data-ref="284out">out</a> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"[Solarus] ["</q> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZNSt13basic_ostreamlsEj" title='std::basic_ostream::operator&lt;&lt;' data-ref="_ZNSt13basic_ostreamlsEj">&lt;&lt;</a> <a class="local col5 ref" href="#285simulated_time" title='simulated_time' data-ref="285simulated_time">simulated_time</a> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZStlsRSt13basic_ostreamIcT_EPKc" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIcT_EPKc">&lt;&lt;</a> <q>"] "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZStlsRSt13basic_ostreamIT_T0_ERKSbIS0_S1_T1_E" title='std::operator&lt;&lt;' data-ref="_ZStlsRSt13basic_ostreamIT_T0_ERKSbIS0_S1_T1_E">&lt;&lt;</a> <a class="local col3 ref" href="#283message" title='message' data-ref="283message">message</a> <a class="ref" href="../../../include/c++/4.9/ostream.html#_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E" title='std::basic_ostream::operator&lt;&lt;' data-ref="_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E">&lt;&lt;</a> <span class="namespace">std::</span><a class="ref" href="../../../include/c++/4.9/ostream.html#_ZSt4endlRSt13basic_ostreamIT_T0_E" title='std::endl' data-ref="_ZSt4endlRSt13basic_ostreamIT_T0_E">endl</a>;</td></tr>
+<tr><th id="58">58</th><td>}</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * <span class="command">\brief</span> Logs a debug message on stdout.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="64">64</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger5debugERKSs" title='Solarus::Logger::debug' data-ref="_ZN7Solarus6Logger5debugERKSs">debug</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col6 decl" id="286message" title='message' data-type='const std::string &amp;' data-ref="286message">message</dfn>) {</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<q>"Debug: "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.tcc.html#_ZStplPKT_RKSbIS_T0_T1_E" title='std::operator+' data-ref="_ZStplPKT_RKSbIS_T0_T1_E">+</a> <a class="local col6 ref" href="#286message" title='message' data-ref="286message">message</a>);</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">\brief</span> Logs an information message on stdout.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="73">73</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger4infoERKSs" title='Solarus::Logger::info' data-ref="_ZN7Solarus6Logger4infoERKSs">info</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col7 decl" id="287message" title='message' data-type='const std::string &amp;' data-ref="287message">message</dfn>) {</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<q>"Info: "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.tcc.html#_ZStplPKT_RKSbIS_T0_T1_E" title='std::operator+' data-ref="_ZStplPKT_RKSbIS_T0_T1_E">+</a> <a class="local col7 ref" href="#287message" title='message' data-ref="287message">message</a>);</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * <span class="command">\brief</span> Logs a warning message on stdout and error.txt.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="82">82</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger7warningERKSs" title='Solarus::Logger::warning' data-ref="_ZN7Solarus6Logger7warningERKSs">warning</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col8 decl" id="288message" title='message' data-type='const std::string &amp;' data-ref="288message">message</dfn>) {</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="local col9 decl" id="289prefixed_message" title='prefixed_message' data-type='std::string' data-ref="289prefixed_message">prefixed_message</dfn> = <q>"Warning: "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.tcc.html#_ZStplPKT_RKSbIS_T0_T1_E" title='std::operator+' data-ref="_ZStplPKT_RKSbIS_T0_T1_E">+</a> <a class="local col8 ref" href="#288message" title='message' data-ref="288message">message</a>;</td></tr>
+<tr><th id="85">85</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col9 ref" href="#289prefixed_message" title='prefixed_message' data-ref="289prefixed_message">prefixed_message</a>);</td></tr>
+<tr><th id="86">86</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col9 ref" href="#289prefixed_message" title='prefixed_message' data-ref="289prefixed_message">prefixed_message</a>, <span class='refarg'><a class="tu ref" href="#_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv" title='Solarus::Logger::(anonymous namespace)::get_error_log_file' data-use='c' data-ref="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">get_error_log_file</a>()</span>);</td></tr>
+<tr><th id="87">87</th><td>}</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * <span class="command">\brief</span> Logs an error message on stdout and error.txt.</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="93">93</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger5errorERKSs" title='Solarus::Logger::error' data-ref="_ZN7Solarus6Logger5errorERKSs">error</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col0 decl" id="290message" title='message' data-type='const std::string &amp;' data-ref="290message">message</dfn>) {</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="local col1 decl" id="291prefixed_message" title='prefixed_message' data-type='std::string' data-ref="291prefixed_message">prefixed_message</dfn> = <q>"Error: "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.tcc.html#_ZStplPKT_RKSbIS_T0_T1_E" title='std::operator+' data-ref="_ZStplPKT_RKSbIS_T0_T1_E">+</a> <a class="local col0 ref" href="#290message" title='message' data-ref="290message">message</a>;</td></tr>
+<tr><th id="96">96</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col1 ref" href="#291prefixed_message" title='prefixed_message' data-ref="291prefixed_message">prefixed_message</a>);</td></tr>
+<tr><th id="97">97</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col1 ref" href="#291prefixed_message" title='prefixed_message' data-ref="291prefixed_message">prefixed_message</a>, <span class='refarg'><a class="tu ref" href="#_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv" title='Solarus::Logger::(anonymous namespace)::get_error_log_file' data-use='c' data-ref="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">get_error_log_file</a>()</span>);</td></tr>
+<tr><th id="98">98</th><td>}</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * <span class="command">\brief</span> Logs a fatal error message on stdout and error.txt.</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">message</span> The message to log.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="104">104</th><td><a class="macro" href="../../include/solarus/Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <em>void</em> <dfn class="decl def" id="_ZN7Solarus6Logger5fatalERKSs" title='Solarus::Logger::fatal' data-ref="_ZN7Solarus6Logger5fatalERKSs">fatal</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col2 decl" id="292message" title='message' data-type='const std::string &amp;' data-ref="292message">message</dfn>) {</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>  <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="local col3 decl" id="293prefixed_message" title='prefixed_message' data-type='std::string' data-ref="293prefixed_message">prefixed_message</dfn> = <q>"Fatal: "</q> <a class="ref" href="../../../include/c++/4.9/bits/basic_string.tcc.html#_ZStplPKT_RKSbIS_T0_T1_E" title='std::operator+' data-ref="_ZStplPKT_RKSbIS_T0_T1_E">+</a> <a class="local col2 ref" href="#292message" title='message' data-ref="292message">message</a>;</td></tr>
+<tr><th id="107">107</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col3 ref" href="#293prefixed_message" title='prefixed_message' data-ref="293prefixed_message">prefixed_message</a>);</td></tr>
+<tr><th id="108">108</th><td>  <a class="ref" href="#_ZN7Solarus6Logger5printERKSsRSo" title='Solarus::Logger::print' data-ref="_ZN7Solarus6Logger5printERKSsRSo">print</a>(<a class="local col3 ref" href="#293prefixed_message" title='prefixed_message' data-ref="293prefixed_message">prefixed_message</a>, <span class='refarg'><a class="tu ref" href="#_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv" title='Solarus::Logger::(anonymous namespace)::get_error_log_file' data-use='c' data-ref="_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv">get_error_log_file</a>()</span>);</td></tr>
+<tr><th id="109">109</th><td>}</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>}  <i>// namespace Logger</i></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>}  <i>// namespace Solarus</i></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

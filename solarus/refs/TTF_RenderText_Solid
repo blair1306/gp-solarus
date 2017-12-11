@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_ttf.h' l='160' type='SDL_Surface * TTF_RenderText_Solid(TTF_Font * font, const char * text, SDL_Color fg)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='154'>/* Create an 8-bit palettized surface and render the given text at
+   fast quality with the given font and color.  The 0 pixel is the
+   colorkey, giving a transparent background, and the 1 pixel is set
+   to the text color.
+   This function returns the new surface, or NULL if there was an error.
+*/</doc>

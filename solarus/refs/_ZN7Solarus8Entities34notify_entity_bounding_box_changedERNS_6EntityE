@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='126' type='void Solarus::Entities::notify_entity_bounding_box_changed(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1329' ll='1337' type='void Solarus::Entities::notify_entity_bounding_box_changed(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1324'>/**
+ * \brief This function should be called whenever the size, coordinates or
+ * sprite bounding box of an entity changes.
+ * \param entity The entity modified.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='939' u='c' c='_ZN7Solarus6Entity27notify_bounding_box_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='593' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='634' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='656' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='666' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1063' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>

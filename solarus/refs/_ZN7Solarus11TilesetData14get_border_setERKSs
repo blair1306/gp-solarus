@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='137' type='Solarus::BorderSet &amp; Solarus::TilesetData::get_border_set(const std::string &amp; border_set_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='375' ll='382' type='Solarus::BorderSet &amp; Solarus::TilesetData::get_border_set(const std::string &amp; border_set_id)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='432' u='c' c='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='366'>/**
+ * \brief Returns the border set with the specified id.
+ *
+ * Non-const version.
+ *
+ * \param border_set_id A border set id. It must exist.
+ * \return The border_set with this id.
+ * The object remains valid until border sets are added or removed.
+ */</doc>

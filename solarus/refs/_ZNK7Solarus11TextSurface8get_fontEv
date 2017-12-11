@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='79' type='const std::string &amp; Solarus::TextSurface::get_font() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='84' ll='86' type='const std::string &amp; Solarus::TextSurface::get_font() const'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='80'>/**
+ * \brief Returns the id of the font used to draw this text.
+ * \return Id of a font.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='284' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_get_fontEP9lua_State'/>

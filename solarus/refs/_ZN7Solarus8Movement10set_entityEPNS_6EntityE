@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='50' type='void Solarus::Movement::set_entity(Solarus::Entity * entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1511' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1530' u='c' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='84' ll='98' type='void Solarus::Movement::set_entity(Solarus::Entity * entity)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='74'>/**
+ * \brief Sets the entity to be controlled by this movement object.
+ *
+ * This entity can be nullptr if your movement applies to something else than a map entity.
+ * However, some subclasses of Movement may require a non nullptr entity because they
+ * implement movements that depend on the map content (e.g. to handle the collisions).
+ *
+ * \param entity The entity to control, or nullptr if the movement should not be
+ * attached to a map entity.
+ */</doc>

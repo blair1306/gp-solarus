@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qtypetraits.h source code [include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QtPrivate::add_reference,QtPrivate::and_,QtPrivate::big_,QtPrivate::has_trivial_assign,QtPrivate::has_trivial_constructor,QtPrivate::has_trivial_copy,QtPrivate::has_trivial_destructor,QtPrivate::identity_,QtPrivate::if_,QtPrivate::integral_constant,QtPrivate::internal::ConvertHelper,QtPrivate::internal::is_class_or_union,QtPrivate::internal::is_enum_impl,QtPrivate::is_convertible,QtPrivate::is_enum,QtPrivate::is_floating_point,QtPrivate::is_integral,QtPrivate::is_pod,QtPrivate::is_pointer,QtPrivate::is_reference,QtPrivate::is_same,QtPrivate::is_signed,QtPrivate::is_unsigned,QtPrivate::not_,QtPrivate::not_c,QtPrivate::or_,QtPrivate::remove_const,QtPrivate::remove_cv,QtPrivate::remove_pointer,QtPrivate::remove_reference,QtPrivate::remove_volatile,QtPrivate::type_equals_ "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qtypetraits.h.html'>qtypetraits.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2012 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com, author Marc Mutz &lt;marc.mutz@kdab.com&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="5">5</th><td><i>**</i></td></tr>
+<tr><th id="6">6</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="7">7</th><td><i>**</i></td></tr>
+<tr><th id="8">8</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="9">9</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="10">10</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="11">11</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="12">12</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="13">13</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="14">14</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="15">15</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i>**</i></td></tr>
+<tr><th id="17">17</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="18">18</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="19">19</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="21">21</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="22">22</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="23">23</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="24">24</th><td><i>**</i></td></tr>
+<tr><th id="25">25</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="26">26</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="27">27</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="28">28</th><td><i>**</i></td></tr>
+<tr><th id="29">29</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="30">30</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="31">31</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="32">32</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="33">33</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="34">34</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="35">35</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="36">36</th><td><i>**</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="39">39</th><td><i>**</i></td></tr>
+<tr><th id="40">40</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="41">41</th><td><i></i></td></tr>
+<tr><th id="42">42</th><td><i>// BEGIN Google Code</i></td></tr>
+<tr><th id="43">43</th><td><i></i></td></tr>
+<tr><th id="44">44</th><td><i>// Copyright (c) 2006, Google Inc.</i></td></tr>
+<tr><th id="45">45</th><td><i>// All rights reserved.</i></td></tr>
+<tr><th id="46">46</th><td><i>//</i></td></tr>
+<tr><th id="47">47</th><td><i>// Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="48">48</th><td><i>// modification, are permitted provided that the following conditions are</i></td></tr>
+<tr><th id="49">49</th><td><i>// met:</i></td></tr>
+<tr><th id="50">50</th><td><i>//</i></td></tr>
+<tr><th id="51">51</th><td><i>//     * Redistributions of source code must retain the above copyright</i></td></tr>
+<tr><th id="52">52</th><td><i>// notice, this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="53">53</th><td><i>//     * Redistributions in binary form must reproduce the above</i></td></tr>
+<tr><th id="54">54</th><td><i>// copyright notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="55">55</th><td><i>// in the documentation and/or other materials provided with the</i></td></tr>
+<tr><th id="56">56</th><td><i>// distribution.</i></td></tr>
+<tr><th id="57">57</th><td><i>//     * Neither the name of Google Inc. nor the names of its</i></td></tr>
+<tr><th id="58">58</th><td><i>// contributors may be used to endorse or promote products derived from</i></td></tr>
+<tr><th id="59">59</th><td><i>// this software without specific prior written permission.</i></td></tr>
+<tr><th id="60">60</th><td><i>//</i></td></tr>
+<tr><th id="61">61</th><td><i>// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</i></td></tr>
+<tr><th id="62">62</th><td><i>// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="63">63</th><td><i>// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</i></td></tr>
+<tr><th id="64">64</th><td><i>// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</i></td></tr>
+<tr><th id="65">65</th><td><i>// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</i></td></tr>
+<tr><th id="66">66</th><td><i>// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</i></td></tr>
+<tr><th id="67">67</th><td><i>// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</i></td></tr>
+<tr><th id="68">68</th><td><i>// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</i></td></tr>
+<tr><th id="69">69</th><td><i>// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</i></td></tr>
+<tr><th id="70">70</th><td><i>// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</i></td></tr>
+<tr><th id="71">71</th><td><i>// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="72">72</th><td><i></i></td></tr>
+<tr><th id="73">73</th><td><i>// ----</i></td></tr>
+<tr><th id="74">74</th><td><i>//</i></td></tr>
+<tr><th id="75">75</th><td><i>// This code is compiled directly on many platforms, including client</i></td></tr>
+<tr><th id="76">76</th><td><i>// platforms like Windows, Mac, and embedded systems.  Before making</i></td></tr>
+<tr><th id="77">77</th><td><i>// any changes here, make sure that you're not breaking any platforms.</i></td></tr>
+<tr><th id="78">78</th><td><i>//</i></td></tr>
+<tr><th id="79">79</th><td><i>// Define a small subset of tr1 type traits. The traits we define are:</i></td></tr>
+<tr><th id="80">80</th><td><i>//   is_integral</i></td></tr>
+<tr><th id="81">81</th><td><i>//   is_floating_point</i></td></tr>
+<tr><th id="82">82</th><td><i>//   is_pointer</i></td></tr>
+<tr><th id="83">83</th><td><i>//   is_enum</i></td></tr>
+<tr><th id="84">84</th><td><i>//   is_reference</i></td></tr>
+<tr><th id="85">85</th><td><i>//   is_pod</i></td></tr>
+<tr><th id="86">86</th><td><i>//   has_trivial_constructor</i></td></tr>
+<tr><th id="87">87</th><td><i>//   has_trivial_copy</i></td></tr>
+<tr><th id="88">88</th><td><i>//   has_trivial_assign</i></td></tr>
+<tr><th id="89">89</th><td><i>//   has_trivial_destructor</i></td></tr>
+<tr><th id="90">90</th><td><i>//   remove_const</i></td></tr>
+<tr><th id="91">91</th><td><i>//   remove_volatile</i></td></tr>
+<tr><th id="92">92</th><td><i>//   remove_cv</i></td></tr>
+<tr><th id="93">93</th><td><i>//   remove_reference</i></td></tr>
+<tr><th id="94">94</th><td><i>//   add_reference</i></td></tr>
+<tr><th id="95">95</th><td><i>//   remove_pointer</i></td></tr>
+<tr><th id="96">96</th><td><i>//   is_same</i></td></tr>
+<tr><th id="97">97</th><td><i>//   is_convertible</i></td></tr>
+<tr><th id="98">98</th><td><i>// We can add more type traits as required.</i></td></tr>
+<tr><th id="99">99</th><td><i></i></td></tr>
+<tr><th id="100">100</th><td><i>// Changes from the original implementation:</i></td></tr>
+<tr><th id="101">101</th><td><i>//  - Move base types from template_util.h directly into this header.</i></td></tr>
+<tr><th id="102">102</th><td><i>//  - Use Qt macros for long long type differences on Windows.</i></td></tr>
+<tr><th id="103">103</th><td><i>//  - Enclose in QtPrivate namespace.</i></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><u>#include <a href="qglobal.h.html">"QtCore/qglobal.h"</a></u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="107">ifndef</span> <span class="macro" data-ref="_M/QTYPETRAITS_H">QTYPETRAITS_H</span></u></td></tr>
+<tr><th id="108">108</th><td><u>#define <dfn class="macro" id="_M/QTYPETRAITS_H" data-ref="_M/QTYPETRAITS_H">QTYPETRAITS_H</dfn></u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#include <a href="../../../c++/4.9/utility.html">&lt;utility&gt;</a>                  // For pair</u></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><a class="macro" href="qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><b>namespace</b> <span class="namespace">QtPrivate</span> {</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i>// Types small_ and big_ are guaranteed such that sizeof(small_) &lt;</i></td></tr>
+<tr><th id="117">117</th><td><i>// sizeof(big_)</i></td></tr>
+<tr><th id="118">118</th><td><b>typedef</b> <em>char</em> <dfn class="typedef" id="QtPrivate::small_" title='QtPrivate::small_' data-type='char' data-ref="QtPrivate::small_">small_</dfn>;</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::big_" title='QtPrivate::big_' data-ref="QtPrivate::big_">big_</dfn> {</td></tr>
+<tr><th id="121">121</th><td>  <em>char</em> <dfn class="decl" id="QtPrivate::big_::dummy" title='QtPrivate::big_::dummy' data-ref="QtPrivate::big_::dummy">dummy</dfn>[<var>2</var>];</td></tr>
+<tr><th id="122">122</th><td>};</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><i>// Identity metafunction.</i></td></tr>
+<tr><th id="125">125</th><td><b>template</b> &lt;<b>class</b> T&gt;</td></tr>
+<tr><th id="126">126</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::identity_" title='QtPrivate::identity_' data-ref="QtPrivate::identity_">identity_</dfn> {</td></tr>
+<tr><th id="127">127</th><td>  <b>typedef</b> T <dfn class="typedef" id="QtPrivate::identity_::type" title='QtPrivate::identity_::type' data-type='T' data-ref="QtPrivate::identity_::type">type</dfn>;</td></tr>
+<tr><th id="128">128</th><td>};</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><i>// integral_constant, defined in tr1, is a wrapper for an integer</i></td></tr>
+<tr><th id="131">131</th><td><i>// value. We don't really need this generality; we could get away</i></td></tr>
+<tr><th id="132">132</th><td><i>// with hardcoding the integer type to bool. We use the fully</i></td></tr>
+<tr><th id="133">133</th><td><i>// general integer_constant for compatibility with tr1.</i></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><b>template</b>&lt;<b>class</b> T, T v&gt;</td></tr>
+<tr><th id="136">136</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</dfn> {</td></tr>
+<tr><th id="137">137</th><td>  <em>static</em> <em>const</em> T <dfn class="decl" id="QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</dfn> = <a class="tu ref" href="#QtPrivate::integral_constant::v" title='QtPrivate::integral_constant::v' data-ref="QtPrivate::integral_constant::v">v</a>;</td></tr>
+<tr><th id="138">138</th><td>  <b>typedef</b> T <dfn class="typedef" id="QtPrivate::integral_constant::value_type" title='QtPrivate::integral_constant::value_type' data-type='T' data-ref="QtPrivate::integral_constant::value_type">value_type</dfn>;</td></tr>
+<tr><th id="139">139</th><td>  <b>typedef</b> <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;T, <a class="tu ref" href="#QtPrivate::integral_constant::v" title='QtPrivate::integral_constant::v' data-ref="QtPrivate::integral_constant::v">v</a>&gt; <dfn class="typedef" id="QtPrivate::integral_constant::type" title='QtPrivate::integral_constant::type' data-type='integral_constant&lt;T, v&gt;' data-ref="QtPrivate::integral_constant::type">type</dfn>;</td></tr>
+<tr><th id="140">140</th><td>};</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><b>template</b> &lt;<b>class</b> T, T v&gt; <em>const</em> T <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;T, <a class="tu ref" href="#v" title='v' data-ref="v">v</a>&gt;::<dfn class="decl def" id="QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</dfn>;</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i>// Abbreviations: true_type and false_type are structs that represent boolean</i></td></tr>
+<tr><th id="146">146</th><td><i>// true and false values. Also define the boost::mpl versions of those names,</i></td></tr>
+<tr><th id="147">147</th><td><i>// true_ and false_.</i></td></tr>
+<tr><th id="148">148</th><td><b>typedef</b> <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, <b>true</b>&gt;  <dfn class="typedef" id="QtPrivate::true_type" title='QtPrivate::true_type' data-type='integral_constant&lt;bool, true&gt;' data-ref="QtPrivate::true_type">true_type</dfn>;</td></tr>
+<tr><th id="149">149</th><td><b>typedef</b> <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, <b>false</b>&gt; <dfn class="typedef" id="QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</dfn>;</td></tr>
+<tr><th id="150">150</th><td><b>typedef</b> <a class="typedef" href="#QtPrivate::true_type" title='QtPrivate::true_type' data-type='integral_constant&lt;bool, true&gt;' data-ref="QtPrivate::true_type">true_type</a>  <dfn class="typedef" id="QtPrivate::true_" title='QtPrivate::true_' data-type='true_type' data-ref="QtPrivate::true_">true_</dfn>;</td></tr>
+<tr><th id="151">151</th><td><b>typedef</b> <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> <dfn class="typedef" id="QtPrivate::false_" title='QtPrivate::false_' data-type='false_type' data-ref="QtPrivate::false_">false_</dfn>;</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><i>// if_ is a templatized conditional statement.</i></td></tr>
+<tr><th id="154">154</th><td><i>// if_&lt;cond, A, B&gt; is a compile time evaluation of cond.</i></td></tr>
+<tr><th id="155">155</th><td><i>// if_&lt;&gt;::type contains A if cond is true, B otherwise.</i></td></tr>
+<tr><th id="156">156</th><td><b>template</b>&lt;<em>bool</em> cond, <b>typename</b> A, <b>typename</b> B&gt;</td></tr>
+<tr><th id="157">157</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::if_" title='QtPrivate::if_' data-ref="QtPrivate::if_">if_</dfn>{</td></tr>
+<tr><th id="158">158</th><td>  <b>typedef</b> A <dfn class="typedef" id="QtPrivate::if_::type" title='QtPrivate::if_::type' data-type='A' data-ref="QtPrivate::if_::type">type</dfn>;</td></tr>
+<tr><th id="159">159</th><td>};</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><b>template</b>&lt;<b>typename</b> A, <b>typename</b> B&gt;</td></tr>
+<tr><th id="162">162</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::if_" title='QtPrivate::if_' data-ref="QtPrivate::if_">if_</dfn>&lt;<b>false</b>, A, B&gt; {</td></tr>
+<tr><th id="163">163</th><td>  <b>typedef</b> B <dfn class="typedef" id="QtPrivate::if_{false,type-parameter-0-0,type-parameter-0-1}::type" title='QtPrivate::if_&lt;false, type-parameter-0-0, type-parameter-0-1&gt;::type' data-type='B' data-ref="QtPrivate::if_{false,type-parameter-0-0,type-parameter-0-1}::type">type</dfn>;</td></tr>
+<tr><th id="164">164</th><td>};</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><i>// type_equals_ is a template type comparator, similar to Loki IsSameType.</i></td></tr>
+<tr><th id="168">168</th><td><i>// type_equals_&lt;A, B&gt;::value is true iff "A" is the same type as "B".</i></td></tr>
+<tr><th id="169">169</th><td><i>//</i></td></tr>
+<tr><th id="170">170</th><td><i>// New code should prefer base::is_same, defined in base/type_traits.h.</i></td></tr>
+<tr><th id="171">171</th><td><i>// It is functionally identical, but is_same is the standard spelling.</i></td></tr>
+<tr><th id="172">172</th><td><b>template</b>&lt;<b>typename</b> A, <b>typename</b> B&gt;</td></tr>
+<tr><th id="173">173</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::type_equals_" title='QtPrivate::type_equals_' data-ref="QtPrivate::type_equals_">type_equals_</dfn> : <b>public</b> <a class="typedef" href="#QtPrivate::false_" title='QtPrivate::false_' data-type='false_type' data-ref="QtPrivate::false_">false_</a> {</td></tr>
+<tr><th id="174">174</th><td>};</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><b>template</b>&lt;<b>typename</b> A&gt;</td></tr>
+<tr><th id="177">177</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::type_equals_" title='QtPrivate::type_equals_' data-ref="QtPrivate::type_equals_">type_equals_</dfn>&lt;A, A&gt; : <b>public</b> <a class="typedef" href="#QtPrivate::true_" title='QtPrivate::true_' data-type='true_type' data-ref="QtPrivate::true_">true_</a> {</td></tr>
+<tr><th id="178">178</th><td>};</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><i>// and_ is a template &amp;&amp; operator.</i></td></tr>
+<tr><th id="181">181</th><td><i>// and_&lt;A, B&gt;::value evaluates "A::value &amp;&amp; B::value".</i></td></tr>
+<tr><th id="182">182</th><td><b>template</b>&lt;<b>typename</b> A, <b>typename</b> B&gt;</td></tr>
+<tr><th id="183">183</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::and_" title='QtPrivate::and_' data-ref="QtPrivate::and_">and_</dfn> : <b>public</b> <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, (A::value &amp;&amp; B::value)&gt; {</td></tr>
+<tr><th id="184">184</th><td>};</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>// or_ is a template || operator.</i></td></tr>
+<tr><th id="187">187</th><td><i>// or_&lt;A, B&gt;::value evaluates "A::value || B::value".</i></td></tr>
+<tr><th id="188">188</th><td><b>template</b>&lt;<b>typename</b> A, <b>typename</b> B&gt;</td></tr>
+<tr><th id="189">189</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::or_" title='QtPrivate::or_' data-ref="QtPrivate::or_">or_</dfn> : <b>public</b> <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, (A::value || B::value)&gt; {</td></tr>
+<tr><th id="190">190</th><td>};</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>;</td></tr>
+<tr><th id="193">193</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>;</td></tr>
+<tr><th id="194">194</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</a>;</td></tr>
+<tr><th id="195">195</th><td><i>// MSVC can't compile this correctly, and neither can gcc 3.3.5 (at least)</i></td></tr>
+<tr><th id="196">196</th><td><u>#<span data-ppcond="196">if</span> !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !(defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &lt;= 3)</u></td></tr>
+<tr><th id="197">197</th><td><i>// is_enum uses is_convertible, which is not available on MSVC.</i></td></tr>
+<tr><th id="198">198</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</a>;</td></tr>
+<tr><th id="199">199</th><td><u>#<span data-ppcond="196">endif</span></u></td></tr>
+<tr><th id="200">200</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_reference" title='QtPrivate::is_reference' data-ref="QtPrivate::is_reference">is_reference</a>;</td></tr>
+<tr><th id="201">201</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>;</td></tr>
+<tr><th id="202">202</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</a>;</td></tr>
+<tr><th id="203">203</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</a>;</td></tr>
+<tr><th id="204">204</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</a>;</td></tr>
+<tr><th id="205">205</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</a>;</td></tr>
+<tr><th id="206">206</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::remove_const" title='QtPrivate::remove_const' data-ref="QtPrivate::remove_const">remove_const</a>;</td></tr>
+<tr><th id="207">207</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::remove_volatile" title='QtPrivate::remove_volatile' data-ref="QtPrivate::remove_volatile">remove_volatile</a>;</td></tr>
+<tr><th id="208">208</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::remove_cv" title='QtPrivate::remove_cv' data-ref="QtPrivate::remove_cv">remove_cv</a>;</td></tr>
+<tr><th id="209">209</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::remove_reference" title='QtPrivate::remove_reference' data-ref="QtPrivate::remove_reference">remove_reference</a>;</td></tr>
+<tr><th id="210">210</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::add_reference" title='QtPrivate::add_reference' data-ref="QtPrivate::add_reference">add_reference</a>;</td></tr>
+<tr><th id="211">211</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <a class="type" href="#QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</a>;</td></tr>
+<tr><th id="212">212</th><td><b>template</b> &lt;<b>class</b> T, <b>class</b> U&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_same" title='QtPrivate::is_same' data-ref="QtPrivate::is_same">is_same</a>;</td></tr>
+<tr><th id="213">213</th><td><u>#<span data-ppcond="213">if</span> !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !(defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &lt;= 3)</u></td></tr>
+<tr><th id="214">214</th><td><b>template</b> &lt;<b>class</b> From, <b>class</b> To&gt; <b>struct</b> <a class="type" href="#QtPrivate::is_convertible" title='QtPrivate::is_convertible' data-ref="QtPrivate::is_convertible">is_convertible</a>;</td></tr>
+<tr><th id="215">215</th><td><u>#<span data-ppcond="213">endif</span></u></td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td><i>// is_integral is false except for the built-in integer types. A</i></td></tr>
+<tr><th id="218">218</th><td><i>// cv-qualified type is integral if and only if the underlying type is.</i></td></tr>
+<tr><th id="219">219</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</dfn> : <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> { };</td></tr>
+<tr><th id="220">220</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>bool</em>&gt; : true_type { };</td></tr>
+<tr><th id="221">221</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>char</em>&gt; : true_type { };</td></tr>
+<tr><th id="222">222</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>unsigned</em> <em>char</em>&gt; : true_type { };</td></tr>
+<tr><th id="223">223</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>signed</em> <em>char</em>&gt; : true_type { };</td></tr>
+<tr><th id="224">224</th><td><u>#<span data-ppcond="224">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>)</u></td></tr>
+<tr><th id="225">225</th><td><i>// wchar_t is not by default a distinct type from unsigned short in</i></td></tr>
+<tr><th id="226">226</th><td><i>// Microsoft C.</i></td></tr>
+<tr><th id="227">227</th><td><i>// See <a href="http://msdn2.microsoft.com/en-us/library/dh8che7s(VS.80).aspx">http://msdn2.microsoft.com/en-us/library/dh8che7s(VS.80).aspx</a></i></td></tr>
+<tr><th id="228">228</th><td><b>template</b>&lt;&gt; <b>struct</b> is_integral&lt;__wchar_t&gt; : true_type { };</td></tr>
+<tr><th id="229">229</th><td><u>#<span data-ppcond="224">else</span></u></td></tr>
+<tr><th id="230">230</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>wchar_t</em>&gt; : true_type { };</td></tr>
+<tr><th id="231">231</th><td><u>#<span data-ppcond="224">endif</span></u></td></tr>
+<tr><th id="232">232</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>short</em>&gt; : true_type { };</td></tr>
+<tr><th id="233">233</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>unsigned</em> <em>short</em>&gt; : true_type { };</td></tr>
+<tr><th id="234">234</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>int</em>&gt; : true_type { };</td></tr>
+<tr><th id="235">235</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>unsigned</em> <em>int</em>&gt; : true_type { };</td></tr>
+<tr><th id="236">236</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>long</em>&gt; : true_type { };</td></tr>
+<tr><th id="237">237</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>unsigned</em> <em>long</em>&gt; : true_type { };</td></tr>
+<tr><th id="238">238</th><td><u>#<span data-ppcond="238">if</span> defined(<span class="macro" data-ref="_M/Q_OS_WIN">Q_OS_WIN</span>) &amp;&amp; !defined(<a class="macro" href="qcompilerdetection.h.html#146" data-ref="_M/Q_CC_GNU">Q_CC_GNU</a>)</u></td></tr>
+<tr><th id="239">239</th><td><b>template</b>&lt;&gt; <b>struct</b> is_integral&lt;__int64&gt; : true_type { };</td></tr>
+<tr><th id="240">240</th><td><b>template</b>&lt;&gt; <b>struct</b> is_integral&lt;<em>unsigned</em> __int64&gt; : true_type { };</td></tr>
+<tr><th id="241">241</th><td><u>#<span data-ppcond="238">else</span></u></td></tr>
+<tr><th id="242">242</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>long</em> <em>long</em>&gt; : true_type { };</td></tr>
+<tr><th id="243">243</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>unsigned</em> <em>long</em> <em>long</em>&gt; : true_type { };</td></tr>
+<tr><th id="244">244</th><td><u>#<span data-ppcond="238">endif</span></u></td></tr>
+<tr><th id="245">245</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</dfn>&lt;<em>const</em> T&gt; : <a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>&lt;T&gt; { };</td></tr>
+<tr><th id="246">246</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</dfn>&lt;<em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>&lt;T&gt; { };</td></tr>
+<tr><th id="247">247</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</dfn>&lt;<em>const</em> <em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>&lt;T&gt; { };</td></tr>
+<tr><th id="248">248</th><td><u>#<span data-ppcond="248">if</span> defined (<a class="macro" href="qcompilerdetection.h.html#660" data-ref="_M/Q_COMPILER_UNICODE_STRINGS">Q_COMPILER_UNICODE_STRINGS</a>)</u></td></tr>
+<tr><th id="249">249</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>char16_t</em>&gt; : true_type { };</td></tr>
+<tr><th id="250">250</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral"><a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a></dfn>&lt;<em>char32_t</em>&gt; : true_type { };</td></tr>
+<tr><th id="251">251</th><td><u>#<span data-ppcond="248">endif</span></u></td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><i>// is_floating_point is false except for the built-in floating-point types.</i></td></tr>
+<tr><th id="254">254</th><td><i>// A cv-qualified type is integral if and only if the underlying type is.</i></td></tr>
+<tr><th id="255">255</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</dfn> : <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> { };</td></tr>
+<tr><th id="256">256</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point"><a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a></dfn>&lt;<em>float</em>&gt; : true_type { };</td></tr>
+<tr><th id="257">257</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point"><a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a></dfn>&lt;<em>double</em>&gt; : true_type { };</td></tr>
+<tr><th id="258">258</th><td><b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point"><a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a></dfn>&lt;<em>long</em> <em>double</em>&gt; : true_type { };</td></tr>
+<tr><th id="259">259</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</dfn>&lt;<em>const</em> T&gt;</td></tr>
+<tr><th id="260">260</th><td>    : <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>&lt;T&gt; { };</td></tr>
+<tr><th id="261">261</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</dfn>&lt;<em>volatile</em> T&gt;</td></tr>
+<tr><th id="262">262</th><td>    : <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>&lt;T&gt; { };</td></tr>
+<tr><th id="263">263</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</dfn>&lt;<em>const</em> <em>volatile</em> T&gt;</td></tr>
+<tr><th id="264">264</th><td>    : <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>&lt;T&gt; { };</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><i>// is_pointer is false except for pointer types. A cv-qualified type (e.g.</i></td></tr>
+<tr><th id="267">267</th><td><i>// "int* const", as opposed to "int const*") is cv-qualified if and only if</i></td></tr>
+<tr><th id="268">268</th><td><i>// the underlying type is.</i></td></tr>
+<tr><th id="269">269</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</dfn> : <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> { };</td></tr>
+<tr><th id="270">270</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</dfn>&lt;T*&gt; : <a class="typedef" href="#QtPrivate::true_type" title='QtPrivate::true_type' data-type='integral_constant&lt;bool, true&gt;' data-ref="QtPrivate::true_type">true_type</a> { };</td></tr>
+<tr><th id="271">271</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</dfn>&lt;<em>const</em> T&gt; : <a class="type" href="#QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</a>&lt;T&gt; { };</td></tr>
+<tr><th id="272">272</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</dfn>&lt;<em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</a>&lt;T&gt; { };</td></tr>
+<tr><th id="273">273</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</dfn>&lt;<em>const</em> <em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</a>&lt;T&gt; { };</td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td><u>#<span data-ppcond="275">if</span> !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !(defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &lt;= 3)</u></td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="278">278</th><td></td></tr>
+<tr><th id="279">279</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::internal::is_class_or_union" title='QtPrivate::internal::is_class_or_union' data-ref="QtPrivate::internal::is_class_or_union">is_class_or_union</dfn> {</td></tr>
+<tr><th id="280">280</th><td>  <b>template</b> &lt;<b>class</b> U&gt; <em>static</em> <a class="typedef" href="#QtPrivate::small_" title='QtPrivate::small_' data-type='char' data-ref="QtPrivate::small_">small_</a> <dfn class="decl" id="_ZN9QtPrivate8internal17is_class_or_union6testerEMT_FvvE" title='QtPrivate::internal::is_class_or_union::tester' data-ref="_ZN9QtPrivate8internal17is_class_or_union6testerEMT_FvvE">tester</dfn>(<em>void</em> (U::*)());</td></tr>
+<tr><th id="281">281</th><td>  <b>template</b> &lt;<b>class</b> U&gt; <em>static</em> <a class="type" href="#QtPrivate::big_" title='QtPrivate::big_' data-ref="QtPrivate::big_">big_</a> <dfn class="decl" id="_ZN9QtPrivate8internal17is_class_or_union6testerEz" title='QtPrivate::internal::is_class_or_union::tester' data-ref="_ZN9QtPrivate8internal17is_class_or_union6testerEz">tester</dfn>(...);</td></tr>
+<tr><th id="282">282</th><td>  <em>static</em> <em>const</em> <em>bool</em> <dfn class="decl" id="QtPrivate::internal::is_class_or_union::value" title='QtPrivate::internal::is_class_or_union::value' data-ref="QtPrivate::internal::is_class_or_union::value">value</dfn> = <b>sizeof</b>(tester&lt;T&gt;(<var>0</var>)) == <b>sizeof</b>(<a class="typedef" href="#QtPrivate::small_" title='QtPrivate::small_' data-type='char' data-ref="QtPrivate::small_">small_</a>);</td></tr>
+<tr><th id="283">283</th><td>};</td></tr>
+<tr><th id="284">284</th><td></td></tr>
+<tr><th id="285">285</th><td><i>// is_convertible chokes if the first argument is an array. That's why</i></td></tr>
+<tr><th id="286">286</th><td><i>// we use add_reference here.</i></td></tr>
+<tr><th id="287">287</th><td><b>template</b> &lt;<em>bool</em> NotUnum, <b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::internal::is_enum_impl" title='QtPrivate::internal::is_enum_impl' data-ref="QtPrivate::internal::is_enum_impl">is_enum_impl</dfn></td></tr>
+<tr><th id="288">288</th><td>    : <a class="type" href="#QtPrivate::is_convertible" title='QtPrivate::is_convertible' data-ref="QtPrivate::is_convertible">is_convertible</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::add_reference" title='QtPrivate::add_reference' data-ref="QtPrivate::add_reference">add_reference</a>&lt;T&gt;::type, <em>int</em>&gt; { };</td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::internal::is_enum_impl" title='QtPrivate::internal::is_enum_impl' data-ref="QtPrivate::internal::is_enum_impl">is_enum_impl</dfn>&lt;<b>true</b>, T&gt; : <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> { };</td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i>// Specified by TR1 [4.5.1] primary type categories.</i></td></tr>
+<tr><th id="295">295</th><td><i></i></td></tr>
+<tr><th id="296">296</th><td><i>// Implementation note:</i></td></tr>
+<tr><th id="297">297</th><td><i>//</i></td></tr>
+<tr><th id="298">298</th><td><i>// Each type is either void, integral, floating point, array, pointer,</i></td></tr>
+<tr><th id="299">299</th><td><i>// reference, member object pointer, member function pointer, enum,</i></td></tr>
+<tr><th id="300">300</th><td><i>// union or class. Out of these, only integral, floating point, reference,</i></td></tr>
+<tr><th id="301">301</th><td><i>// class and enum types are potentially convertible to int. Therefore,</i></td></tr>
+<tr><th id="302">302</th><td><i>// if a type is not a reference, integral, floating point or class and</i></td></tr>
+<tr><th id="303">303</th><td><i>// is convertible to int, it's a enum. Adding cv-qualification to a type</i></td></tr>
+<tr><th id="304">304</th><td><i>// does not change whether it's an enum.</i></td></tr>
+<tr><th id="305">305</th><td><i>//</i></td></tr>
+<tr><th id="306">306</th><td><i>// Is-convertible-to-int check is done only if all other checks pass,</i></td></tr>
+<tr><th id="307">307</th><td><i>// because it can't be used with some types (e.g. void or classes with</i></td></tr>
+<tr><th id="308">308</th><td><i>// inaccessible conversion operators).</i></td></tr>
+<tr><th id="309">309</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</dfn></td></tr>
+<tr><th id="310">310</th><td>    : <span class="namespace">internal::</span><a class="type" href="#QtPrivate::internal::is_enum_impl" title='QtPrivate::internal::is_enum_impl' data-ref="QtPrivate::internal::is_enum_impl">is_enum_impl</a>&lt;</td></tr>
+<tr><th id="311">311</th><td>          <a class="type" href="#QtPrivate::is_same" title='QtPrivate::is_same' data-ref="QtPrivate::is_same">is_same</a>&lt;T, <em>void</em>&gt;::value ||</td></tr>
+<tr><th id="312">312</th><td>              <a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="313">313</th><td>              <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="314">314</th><td>              <a class="type" href="#QtPrivate::is_reference" title='QtPrivate::is_reference' data-ref="QtPrivate::is_reference">is_reference</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="315">315</th><td>              <span class="namespace">internal::</span><a class="type" href="#QtPrivate::internal::is_class_or_union" title='QtPrivate::internal::is_class_or_union' data-ref="QtPrivate::internal::is_class_or_union">is_class_or_union</a>&lt;T&gt;::value,</td></tr>
+<tr><th id="316">316</th><td>          T&gt; { };</td></tr>
+<tr><th id="317">317</th><td></td></tr>
+<tr><th id="318">318</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</dfn>&lt;<em>const</em> T&gt; : <a class="type" href="#QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</a>&lt;T&gt; { };</td></tr>
+<tr><th id="319">319</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</dfn>&lt;<em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</a>&lt;T&gt; { };</td></tr>
+<tr><th id="320">320</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</dfn>&lt;<em>const</em> <em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</a>&lt;T&gt; { };</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td><u>#<span data-ppcond="275">endif</span></u></td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td><i>// is_reference is false except for reference types.</i></td></tr>
+<tr><th id="325">325</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_reference" title='QtPrivate::is_reference' data-ref="QtPrivate::is_reference">is_reference</dfn> : <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> {};</td></tr>
+<tr><th id="326">326</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_reference" title='QtPrivate::is_reference' data-ref="QtPrivate::is_reference">is_reference</dfn>&lt;T&amp;&gt; : <a class="typedef" href="#QtPrivate::true_type" title='QtPrivate::true_type' data-type='integral_constant&lt;bool, true&gt;' data-ref="QtPrivate::true_type">true_type</a> {};</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td><i>// We can't get is_pod right without compiler help, so fail conservatively.</i></td></tr>
+<tr><th id="330">330</th><td><i>// We will assume it's false except for arithmetic types, enumerations,</i></td></tr>
+<tr><th id="331">331</th><td><i>// pointers and cv-qualified versions thereof. Note that std::pair&lt;T,U&gt;</i></td></tr>
+<tr><th id="332">332</th><td><i>// is not a POD even if T and U are PODs.</i></td></tr>
+<tr><th id="333">333</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</dfn></td></tr>
+<tr><th id="334">334</th><td> : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, (<a class="type" href="#QtPrivate::is_integral" title='QtPrivate::is_integral' data-ref="QtPrivate::is_integral">is_integral</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="335">335</th><td>                            <a class="type" href="#QtPrivate::is_floating_point" title='QtPrivate::is_floating_point' data-ref="QtPrivate::is_floating_point">is_floating_point</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="336">336</th><td><u>#<span data-ppcond="336">if</span> !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !(defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &lt;= 3)</u></td></tr>
+<tr><th id="337">337</th><td>                            <i>// is_enum is not available on MSVC.</i></td></tr>
+<tr><th id="338">338</th><td>                            <a class="type" href="#QtPrivate::is_enum" title='QtPrivate::is_enum' data-ref="QtPrivate::is_enum">is_enum</a>&lt;T&gt;::value ||</td></tr>
+<tr><th id="339">339</th><td><u>#<span data-ppcond="336">endif</span></u></td></tr>
+<tr><th id="340">340</th><td>                            <a class="type" href="#QtPrivate::is_pointer" title='QtPrivate::is_pointer' data-ref="QtPrivate::is_pointer">is_pointer</a>&lt;T&gt;::value)&gt; { };</td></tr>
+<tr><th id="341">341</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</dfn>&lt;<em>const</em> T&gt; : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="342">342</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</dfn>&lt;<em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="343">343</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</dfn>&lt;<em>const</em> <em>volatile</em> T&gt; : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="344">344</th><td></td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td><i>// We can't get has_trivial_constructor right without compiler help, so</i></td></tr>
+<tr><th id="347">347</th><td><i>// fail conservatively. We will assume it's false except for: (1) types</i></td></tr>
+<tr><th id="348">348</th><td><i>// for which is_pod is true. (2) std::pair of types with trivial</i></td></tr>
+<tr><th id="349">349</th><td><i>// constructors. (3) array of a type with a trivial constructor.</i></td></tr>
+<tr><th id="350">350</th><td><i>// (4) const versions thereof.</i></td></tr>
+<tr><th id="351">351</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</dfn> : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="352">352</th><td><b>template</b> &lt;<b>class</b> T, <b>class</b> U&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</dfn>&lt;<span class="namespace">std::</span><a class="type" href="../../../c++/4.9/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair">pair</a>&lt;T, U&gt; &gt;</td></tr>
+<tr><th id="353">353</th><td>  : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>,</td></tr>
+<tr><th id="354">354</th><td>                      (<a class="type" href="#QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</a>&lt;T&gt;::value &amp;&amp;</td></tr>
+<tr><th id="355">355</th><td>                       <a class="type" href="#QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</a>&lt;U&gt;::value)&gt; { };</td></tr>
+<tr><th id="356">356</th><td><b>template</b> &lt;<b>class</b> A, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</dfn>&lt;A[<a class="tu ref" href="#QtPrivate::has_trivial_constructor{type-parameter-0-0[N]}::N" title='QtPrivate::has_trivial_constructor&lt;type-parameter-0-0 [N]&gt;::N' data-ref="QtPrivate::has_trivial_constructor{type-parameter-0-0[N]}::N">N</a>]&gt;</td></tr>
+<tr><th id="357">357</th><td>  : <a class="type" href="#QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</a>&lt;A&gt; { };</td></tr>
+<tr><th id="358">358</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</dfn>&lt;<em>const</em> T&gt;</td></tr>
+<tr><th id="359">359</th><td>  : <a class="type" href="#QtPrivate::has_trivial_constructor" title='QtPrivate::has_trivial_constructor' data-ref="QtPrivate::has_trivial_constructor">has_trivial_constructor</a>&lt;T&gt; { };</td></tr>
+<tr><th id="360">360</th><td></td></tr>
+<tr><th id="361">361</th><td><i>// We can't get has_trivial_copy right without compiler help, so fail</i></td></tr>
+<tr><th id="362">362</th><td><i>// conservatively. We will assume it's false except for: (1) types</i></td></tr>
+<tr><th id="363">363</th><td><i>// for which is_pod is true. (2) std::pair of types with trivial copy</i></td></tr>
+<tr><th id="364">364</th><td><i>// constructors. (3) array of a type with a trivial copy constructor.</i></td></tr>
+<tr><th id="365">365</th><td><i>// (4) const versions thereof.</i></td></tr>
+<tr><th id="366">366</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</dfn> : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="367">367</th><td><b>template</b> &lt;<b>class</b> T, <b>class</b> U&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</dfn>&lt;<span class="namespace">std::</span><a class="type" href="../../../c++/4.9/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair">pair</a>&lt;T, U&gt; &gt;</td></tr>
+<tr><th id="368">368</th><td>  : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>,</td></tr>
+<tr><th id="369">369</th><td>                      (<a class="type" href="#QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</a>&lt;T&gt;::value &amp;&amp;</td></tr>
+<tr><th id="370">370</th><td>                       <a class="type" href="#QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</a>&lt;U&gt;::value)&gt; { };</td></tr>
+<tr><th id="371">371</th><td><b>template</b> &lt;<b>class</b> A, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</dfn>&lt;A[<a class="tu ref" href="#QtPrivate::has_trivial_copy{type-parameter-0-0[N]}::N" title='QtPrivate::has_trivial_copy&lt;type-parameter-0-0 [N]&gt;::N' data-ref="QtPrivate::has_trivial_copy{type-parameter-0-0[N]}::N">N</a>]&gt;</td></tr>
+<tr><th id="372">372</th><td>  : <a class="type" href="#QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</a>&lt;A&gt; { };</td></tr>
+<tr><th id="373">373</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</dfn>&lt;<em>const</em> T&gt; : <a class="type" href="#QtPrivate::has_trivial_copy" title='QtPrivate::has_trivial_copy' data-ref="QtPrivate::has_trivial_copy">has_trivial_copy</a>&lt;T&gt; { };</td></tr>
+<tr><th id="374">374</th><td></td></tr>
+<tr><th id="375">375</th><td><i>// We can't get has_trivial_assign right without compiler help, so fail</i></td></tr>
+<tr><th id="376">376</th><td><i>// conservatively. We will assume it's false except for: (1) types</i></td></tr>
+<tr><th id="377">377</th><td><i>// for which is_pod is true. (2) std::pair of types with trivial copy</i></td></tr>
+<tr><th id="378">378</th><td><i>// constructors. (3) array of a type with a trivial assign constructor.</i></td></tr>
+<tr><th id="379">379</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</dfn> : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="380">380</th><td><b>template</b> &lt;<b>class</b> T, <b>class</b> U&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</dfn>&lt;<span class="namespace">std::</span><a class="type" href="../../../c++/4.9/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair">pair</a>&lt;T, U&gt; &gt;</td></tr>
+<tr><th id="381">381</th><td>  : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>,</td></tr>
+<tr><th id="382">382</th><td>                      (<a class="type" href="#QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</a>&lt;T&gt;::value &amp;&amp;</td></tr>
+<tr><th id="383">383</th><td>                       <a class="type" href="#QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</a>&lt;U&gt;::value)&gt; { };</td></tr>
+<tr><th id="384">384</th><td><b>template</b> &lt;<b>class</b> A, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</dfn>&lt;A[<a class="tu ref" href="#QtPrivate::has_trivial_assign{type-parameter-0-0[N]}::N" title='QtPrivate::has_trivial_assign&lt;type-parameter-0-0 [N]&gt;::N' data-ref="QtPrivate::has_trivial_assign{type-parameter-0-0[N]}::N">N</a>]&gt;</td></tr>
+<tr><th id="385">385</th><td>  : <a class="type" href="#QtPrivate::has_trivial_assign" title='QtPrivate::has_trivial_assign' data-ref="QtPrivate::has_trivial_assign">has_trivial_assign</a>&lt;A&gt; { };</td></tr>
+<tr><th id="386">386</th><td></td></tr>
+<tr><th id="387">387</th><td><i>// We can't get has_trivial_destructor right without compiler help, so</i></td></tr>
+<tr><th id="388">388</th><td><i>// fail conservatively. We will assume it's false except for: (1) types</i></td></tr>
+<tr><th id="389">389</th><td><i>// for which is_pod is true. (2) std::pair of types with trivial</i></td></tr>
+<tr><th id="390">390</th><td><i>// destructors. (3) array of a type with a trivial destructor.</i></td></tr>
+<tr><th id="391">391</th><td><i>// (4) const versions thereof.</i></td></tr>
+<tr><th id="392">392</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</dfn> : <a class="type" href="#QtPrivate::is_pod" title='QtPrivate::is_pod' data-ref="QtPrivate::is_pod">is_pod</a>&lt;T&gt; { };</td></tr>
+<tr><th id="393">393</th><td><b>template</b> &lt;<b>class</b> T, <b>class</b> U&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</dfn>&lt;<span class="namespace">std::</span><a class="type" href="../../../c++/4.9/bits/stl_pair.h.html#std::pair" title='std::pair' data-ref="std::pair">pair</a>&lt;T, U&gt; &gt;</td></tr>
+<tr><th id="394">394</th><td>  : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>,</td></tr>
+<tr><th id="395">395</th><td>                      (<a class="type" href="#QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</a>&lt;T&gt;::value &amp;&amp;</td></tr>
+<tr><th id="396">396</th><td>                       <a class="type" href="#QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</a>&lt;U&gt;::value)&gt; { };</td></tr>
+<tr><th id="397">397</th><td><b>template</b> &lt;<b>class</b> A, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</dfn>&lt;A[<a class="tu ref" href="#QtPrivate::has_trivial_destructor{type-parameter-0-0[N]}::N" title='QtPrivate::has_trivial_destructor&lt;type-parameter-0-0 [N]&gt;::N' data-ref="QtPrivate::has_trivial_destructor{type-parameter-0-0[N]}::N">N</a>]&gt;</td></tr>
+<tr><th id="398">398</th><td>  : <a class="type" href="#QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</a>&lt;A&gt; { };</td></tr>
+<tr><th id="399">399</th><td><b>template</b> &lt;<b>class</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</dfn>&lt;<em>const</em> T&gt;</td></tr>
+<tr><th id="400">400</th><td>  : <a class="type" href="#QtPrivate::has_trivial_destructor" title='QtPrivate::has_trivial_destructor' data-ref="QtPrivate::has_trivial_destructor">has_trivial_destructor</a>&lt;T&gt; { };</td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td><i>// Specified by TR1 [4.7.1]</i></td></tr>
+<tr><th id="403">403</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_const" title='QtPrivate::remove_const' data-ref="QtPrivate::remove_const">remove_const</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_const::type" title='QtPrivate::remove_const::type' data-type='T' data-ref="QtPrivate::remove_const::type">type</dfn>; };</td></tr>
+<tr><th id="404">404</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_const" title='QtPrivate::remove_const' data-ref="QtPrivate::remove_const">remove_const</dfn>&lt;T <em>const</em>&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_const{consttype-parameter-0-0}::type" title='QtPrivate::remove_const&lt;const type-parameter-0-0&gt;::type' data-type='T' data-ref="QtPrivate::remove_const{consttype-parameter-0-0}::type">type</dfn>; };</td></tr>
+<tr><th id="405">405</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_volatile" title='QtPrivate::remove_volatile' data-ref="QtPrivate::remove_volatile">remove_volatile</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_volatile::type" title='QtPrivate::remove_volatile::type' data-type='T' data-ref="QtPrivate::remove_volatile::type">type</dfn>; };</td></tr>
+<tr><th id="406">406</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_volatile" title='QtPrivate::remove_volatile' data-ref="QtPrivate::remove_volatile">remove_volatile</dfn>&lt;T <em>volatile</em>&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_volatile{volatiletype-parameter-0-0}::type" title='QtPrivate::remove_volatile&lt;volatile type-parameter-0-0&gt;::type' data-type='T' data-ref="QtPrivate::remove_volatile{volatiletype-parameter-0-0}::type">type</dfn>; };</td></tr>
+<tr><th id="407">407</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_cv" title='QtPrivate::remove_cv' data-ref="QtPrivate::remove_cv">remove_cv</dfn> {</td></tr>
+<tr><th id="408">408</th><td>  <b>typedef</b> <b>typename</b> <a class="type" href="#QtPrivate::remove_const" title='QtPrivate::remove_const' data-ref="QtPrivate::remove_const">remove_const</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::remove_volatile" title='QtPrivate::remove_volatile' data-ref="QtPrivate::remove_volatile">remove_volatile</a>&lt;T&gt;::type&gt;::type <dfn class="typedef" id="QtPrivate::remove_cv::type" title='QtPrivate::remove_cv::type' data-type='typename remove_const&lt;typename remove_volatile&lt;T&gt;::type&gt;::type' data-ref="QtPrivate::remove_cv::type">type</dfn>;</td></tr>
+<tr><th id="409">409</th><td>};</td></tr>
+<tr><th id="410">410</th><td></td></tr>
+<tr><th id="411">411</th><td></td></tr>
+<tr><th id="412">412</th><td><i>// Specified by TR1 [4.7.2] Reference modifications.</i></td></tr>
+<tr><th id="413">413</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_reference" title='QtPrivate::remove_reference' data-ref="QtPrivate::remove_reference">remove_reference</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_reference::type" title='QtPrivate::remove_reference::type' data-type='T' data-ref="QtPrivate::remove_reference::type">type</dfn>; };</td></tr>
+<tr><th id="414">414</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_reference" title='QtPrivate::remove_reference' data-ref="QtPrivate::remove_reference">remove_reference</dfn>&lt;T&amp;&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_reference{type-parameter-0-0&amp;}::type" title='QtPrivate::remove_reference&lt;type-parameter-0-0 &amp;&gt;::type' data-type='T' data-ref="QtPrivate::remove_reference{type-parameter-0-0&amp;}::type">type</dfn>; };</td></tr>
+<tr><th id="415">415</th><td></td></tr>
+<tr><th id="416">416</th><td><b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::add_reference" title='QtPrivate::add_reference' data-ref="QtPrivate::add_reference">add_reference</dfn> { <b>typedef</b> T&amp; <dfn class="typedef" id="QtPrivate::add_reference::type" title='QtPrivate::add_reference::type' data-type='T &amp;' data-ref="QtPrivate::add_reference::type">type</dfn>; };</td></tr>
+<tr><th id="417">417</th><td><b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::add_reference" title='QtPrivate::add_reference' data-ref="QtPrivate::add_reference">add_reference</dfn>&lt;T&amp;&gt; { <b>typedef</b> T&amp; <dfn class="typedef" id="QtPrivate::add_reference{type-parameter-0-0&amp;}::type" title='QtPrivate::add_reference&lt;type-parameter-0-0 &amp;&gt;::type' data-type='T &amp;' data-ref="QtPrivate::add_reference{type-parameter-0-0&amp;}::type">type</dfn>; };</td></tr>
+<tr><th id="418">418</th><td></td></tr>
+<tr><th id="419">419</th><td><i>// Specified by TR1 [4.7.4] Pointer modifications.</i></td></tr>
+<tr><th id="420">420</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_pointer::type" title='QtPrivate::remove_pointer::type' data-type='T' data-ref="QtPrivate::remove_pointer::type">type</dfn>; };</td></tr>
+<tr><th id="421">421</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</dfn>&lt;T*&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_pointer{type-parameter-0-0*}::type" title='QtPrivate::remove_pointer&lt;type-parameter-0-0 *&gt;::type' data-type='T' data-ref="QtPrivate::remove_pointer{type-parameter-0-0*}::type">type</dfn>; };</td></tr>
+<tr><th id="422">422</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</dfn>&lt;T* <em>const</em>&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_pointer{type-parameter-0-0*const}::type" title='QtPrivate::remove_pointer&lt;type-parameter-0-0 *const&gt;::type' data-type='T' data-ref="QtPrivate::remove_pointer{type-parameter-0-0*const}::type">type</dfn>; };</td></tr>
+<tr><th id="423">423</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</dfn>&lt;T* <em>volatile</em>&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_pointer{type-parameter-0-0*volatile}::type" title='QtPrivate::remove_pointer&lt;type-parameter-0-0 *volatile&gt;::type' data-type='T' data-ref="QtPrivate::remove_pointer{type-parameter-0-0*volatile}::type">type</dfn>; };</td></tr>
+<tr><th id="424">424</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::remove_pointer" title='QtPrivate::remove_pointer' data-ref="QtPrivate::remove_pointer">remove_pointer</dfn>&lt;T* <em>const</em> <em>volatile</em>&gt; {</td></tr>
+<tr><th id="425">425</th><td>  <b>typedef</b> T <dfn class="typedef" id="QtPrivate::remove_pointer{type-parameter-0-0*constvolatile}::type" title='QtPrivate::remove_pointer&lt;type-parameter-0-0 *const volatile&gt;::type' data-type='T' data-ref="QtPrivate::remove_pointer{type-parameter-0-0*constvolatile}::type">type</dfn>; };</td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><i>// Specified by TR1 [4.6] Relationships between types</i></td></tr>
+<tr><th id="428">428</th><td><b>template</b>&lt;<b>typename</b> T, <b>typename</b> U&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_same" title='QtPrivate::is_same' data-ref="QtPrivate::is_same">is_same</dfn> : <b>public</b> <a class="typedef" href="#QtPrivate::false_type" title='QtPrivate::false_type' data-type='integral_constant&lt;bool, false&gt;' data-ref="QtPrivate::false_type">false_type</a> { };</td></tr>
+<tr><th id="429">429</th><td><b>template</b>&lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::is_same" title='QtPrivate::is_same' data-ref="QtPrivate::is_same">is_same</dfn>&lt;T, T&gt; : <b>public</b> <a class="typedef" href="#QtPrivate::true_type" title='QtPrivate::true_type' data-type='integral_constant&lt;bool, true&gt;' data-ref="QtPrivate::true_type">true_type</a> { };</td></tr>
+<tr><th id="430">430</th><td></td></tr>
+<tr><th id="431">431</th><td><i>// Specified by TR1 [4.6] Relationships between types</i></td></tr>
+<tr><th id="432">432</th><td><u>#<span data-ppcond="432">if</span> !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !(defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; <span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &lt;= 3)</u></td></tr>
+<tr><th id="433">433</th><td><b>namespace</b> <span class="namespace">internal</span> {</td></tr>
+<tr><th id="434">434</th><td></td></tr>
+<tr><th id="435">435</th><td><i>// This class is an implementation detail for is_convertible, and you</i></td></tr>
+<tr><th id="436">436</th><td><i>// don't need to know how it works to use is_convertible. For those</i></td></tr>
+<tr><th id="437">437</th><td><i>// who care: we declare two different functions, one whose argument is</i></td></tr>
+<tr><th id="438">438</th><td><i>// of type To and one with a variadic argument list. We give them</i></td></tr>
+<tr><th id="439">439</th><td><i>// return types of different size, so we can use sizeof to trick the</i></td></tr>
+<tr><th id="440">440</th><td><i>// compiler into telling us which function it would have chosen if we</i></td></tr>
+<tr><th id="441">441</th><td><i>// had called it with an argument of type From.  See Alexandrescu's</i></td></tr>
+<tr><th id="442">442</th><td><i>// _Modern C++ Design_ for more details on this sort of trick.</i></td></tr>
+<tr><th id="443">443</th><td></td></tr>
+<tr><th id="444">444</th><td><b>template</b> &lt;<b>typename</b> From, <b>typename</b> To&gt;</td></tr>
+<tr><th id="445">445</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::internal::ConvertHelper" title='QtPrivate::internal::ConvertHelper' data-ref="QtPrivate::internal::ConvertHelper">ConvertHelper</dfn> {</td></tr>
+<tr><th id="446">446</th><td>  <em>static</em> <a class="typedef" href="#QtPrivate::small_" title='QtPrivate::small_' data-type='char' data-ref="QtPrivate::small_">small_</a> <dfn class="decl" id="_ZN9QtPrivate8internal13ConvertHelper4TestET0_" title='QtPrivate::internal::ConvertHelper::Test' data-ref="_ZN9QtPrivate8internal13ConvertHelper4TestET0_">Test</dfn>(To);</td></tr>
+<tr><th id="447">447</th><td>  <em>static</em> <a class="type" href="#QtPrivate::big_" title='QtPrivate::big_' data-ref="QtPrivate::big_">big_</a> <dfn class="decl" id="_ZN9QtPrivate8internal13ConvertHelper4TestEz" title='QtPrivate::internal::ConvertHelper::Test' data-ref="_ZN9QtPrivate8internal13ConvertHelper4TestEz">Test</dfn>(...);</td></tr>
+<tr><th id="448">448</th><td>  <em>static</em> From <dfn class="decl" id="_ZN9QtPrivate8internal13ConvertHelper6CreateEv" title='QtPrivate::internal::ConvertHelper::Create' data-ref="_ZN9QtPrivate8internal13ConvertHelper6CreateEv">Create</dfn>();</td></tr>
+<tr><th id="449">449</th><td>};</td></tr>
+<tr><th id="450">450</th><td>}  <i>// namespace internal</i></td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td><i>// Inherits from true_type if From is convertible to To, false_type otherwise.</i></td></tr>
+<tr><th id="453">453</th><td><b>template</b> &lt;<b>typename</b> From, <b>typename</b> To&gt;</td></tr>
+<tr><th id="454">454</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::is_convertible" title='QtPrivate::is_convertible' data-ref="QtPrivate::is_convertible">is_convertible</dfn></td></tr>
+<tr><th id="455">455</th><td>    : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>,</td></tr>
+<tr><th id="456">456</th><td>                        <b>sizeof</b>(<span class="namespace">internal::</span><a class="type" href="#QtPrivate::internal::ConvertHelper" title='QtPrivate::internal::ConvertHelper' data-ref="QtPrivate::internal::ConvertHelper">ConvertHelper</a>&lt;From, To&gt;::Test(</td></tr>
+<tr><th id="457">457</th><td>                                  <span class="namespace">internal::</span><a class="type" href="#QtPrivate::internal::ConvertHelper" title='QtPrivate::internal::ConvertHelper' data-ref="QtPrivate::internal::ConvertHelper">ConvertHelper</a>&lt;From, To&gt;::Create()))</td></tr>
+<tr><th id="458">458</th><td>                        == <b>sizeof</b>(<a class="typedef" href="#QtPrivate::small_" title='QtPrivate::small_' data-type='char' data-ref="QtPrivate::small_">small_</a>)&gt; {</td></tr>
+<tr><th id="459">459</th><td>};</td></tr>
+<tr><th id="460">460</th><td><u>#<span data-ppcond="432">endif</span></u></td></tr>
+<tr><th id="461">461</th><td></td></tr>
+<tr><th id="462">462</th><td><i>// END Google Code</i></td></tr>
+<tr><th id="463">463</th><td><i></i></td></tr>
+<tr><th id="464">464</th><td><i>// a metafunction to invert an integral_constant:</i></td></tr>
+<tr><th id="465">465</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="466">466</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::not_" title='QtPrivate::not_' data-ref="QtPrivate::not_">not_</dfn></td></tr>
+<tr><th id="467">467</th><td>    : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, !T::value&gt; {};</td></tr>
+<tr><th id="468">468</th><td></td></tr>
+<tr><th id="469">469</th><td><i>// same, with a bool argument:</i></td></tr>
+<tr><th id="470">470</th><td><b>template</b> &lt;<em>bool</em> B&gt;</td></tr>
+<tr><th id="471">471</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::not_c" title='QtPrivate::not_c' data-ref="QtPrivate::not_c">not_c</dfn></td></tr>
+<tr><th id="472">472</th><td>    : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, !<a class="tu ref" href="#QtPrivate::not_c::B" title='QtPrivate::not_c::B' data-use='r' data-ref="QtPrivate::not_c::B">B</a>&gt; {};</td></tr>
+<tr><th id="473">473</th><td></td></tr>
+<tr><th id="474">474</th><td><i>// Checks whether a type is unsigned (T must be convertible to unsigned int):</i></td></tr>
+<tr><th id="475">475</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="476">476</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</dfn></td></tr>
+<tr><th id="477">477</th><td>    : <a class="type" href="#QtPrivate::integral_constant" title='QtPrivate::integral_constant' data-ref="QtPrivate::integral_constant">integral_constant</a>&lt;<em>bool</em>, (T(<var>0</var>) &lt; T(-<var>1</var>))&gt; {};</td></tr>
+<tr><th id="478">478</th><td></td></tr>
+<tr><th id="479">479</th><td><i>// Checks whether a type is signed (T must be convertible to int):</i></td></tr>
+<tr><th id="480">480</th><td><b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="481">481</th><td><b>struct</b> <dfn class="type def" id="QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</dfn></td></tr>
+<tr><th id="482">482</th><td>    : <a class="type" href="#QtPrivate::not_" title='QtPrivate::not_' data-ref="QtPrivate::not_">not_</a>&lt; <a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;T&gt; &gt; {};</td></tr>
+<tr><th id="483">483</th><td></td></tr>
+<tr><th id="484">484</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_unsigned&lt;quint8&gt;::value)), &quot;( is_unsigned&lt;quint8&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#quint8" title='quint8' data-type='unsigned char' data-ref="quint8">quint8</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="485">485</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_unsigned&lt;qint8&gt;::value)), &quot;(!is_unsigned&lt;qint8&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#qint8" title='qint8' data-type='signed char' data-ref="qint8">qint8</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="486">486</th><td></td></tr>
+<tr><th id="487">487</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_signed&lt;quint8&gt;::value)), &quot;(!is_signed&lt;quint8&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#quint8" title='quint8' data-type='unsigned char' data-ref="quint8">quint8</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="488">488</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_signed&lt;qint8&gt;::value)), &quot;( is_signed&lt;qint8&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#qint8" title='qint8' data-type='signed char' data-ref="qint8">qint8</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="489">489</th><td></td></tr>
+<tr><th id="490">490</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_unsigned&lt;quint16&gt;::value)), &quot;( is_unsigned&lt;quint16&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#quint16" title='quint16' data-type='unsigned short' data-ref="quint16">quint16</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="491">491</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_unsigned&lt;qint16&gt;::value)), &quot;(!is_unsigned&lt;qint16&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#qint16" title='qint16' data-type='short' data-ref="qint16">qint16</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="492">492</th><td></td></tr>
+<tr><th id="493">493</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_signed&lt;quint16&gt;::value)), &quot;(!is_signed&lt;quint16&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#quint16" title='quint16' data-type='unsigned short' data-ref="quint16">quint16</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="494">494</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_signed&lt;qint16&gt;::value)), &quot;( is_signed&lt;qint16&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#qint16" title='qint16' data-type='short' data-ref="qint16">qint16</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="495">495</th><td></td></tr>
+<tr><th id="496">496</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_unsigned&lt;quint32&gt;::value)), &quot;( is_unsigned&lt;quint32&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#quint32" title='quint32' data-type='unsigned int' data-ref="quint32">quint32</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="497">497</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_unsigned&lt;qint32&gt;::value)), &quot;(!is_unsigned&lt;qint32&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#qint32" title='qint32' data-type='int' data-ref="qint32">qint32</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="498">498</th><td></td></tr>
+<tr><th id="499">499</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_signed&lt;quint32&gt;::value)), &quot;(!is_signed&lt;quint32&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#quint32" title='quint32' data-type='unsigned int' data-ref="quint32">quint32</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="500">500</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_signed&lt;qint32&gt;::value)), &quot;( is_signed&lt;qint32&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#qint32" title='qint32' data-type='int' data-ref="qint32">qint32</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="501">501</th><td></td></tr>
+<tr><th id="502">502</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_unsigned&lt;quint64&gt;::value)), &quot;( is_unsigned&lt;quint64&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#quint64" title='quint64' data-type='unsigned long long' data-ref="quint64">quint64</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="503">503</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_unsigned&lt;qint64&gt;::value)), &quot;(!is_unsigned&lt;qint64&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_unsigned" title='QtPrivate::is_unsigned' data-ref="QtPrivate::is_unsigned">is_unsigned</a>&lt;<a class="typedef" href="qglobal.h.html#qint64" title='qint64' data-type='long long' data-ref="qint64">qint64</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="504">504</th><td></td></tr>
+<tr><th id="505">505</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool((!is_signed&lt;quint64&gt;::value)), &quot;(!is_signed&lt;quint64&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>((!<a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#quint64" title='quint64' data-type='unsigned long long' data-ref="quint64">quint64</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="506">506</th><td><a class="macro" href="qglobal.h.html#687" title="static_assert(bool(( is_signed&lt;qint64&gt;::value)), &quot;( is_signed&lt;qint64&gt;::value)&quot;)" data-ref="_M/Q_STATIC_ASSERT">Q_STATIC_ASSERT</a>(( <a class="type" href="#QtPrivate::is_signed" title='QtPrivate::is_signed' data-ref="QtPrivate::is_signed">is_signed</a>&lt;<a class="typedef" href="qglobal.h.html#qint64" title='qint64' data-type='long long' data-ref="qint64">qint64</a>&gt;::<a class="ref" href="#QtPrivate::integral_constant::value" title='QtPrivate::integral_constant::value' data-ref="QtPrivate::integral_constant::value">value</a>));</td></tr>
+<tr><th id="507">507</th><td></td></tr>
+<tr><th id="508">508</th><td>} <i>// namespace QtPrivate</i></td></tr>
+<tr><th id="509">509</th><td></td></tr>
+<tr><th id="510">510</th><td><a class="macro" href="qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="511">511</th><td><u>#<span data-ppcond="107">endif</span>  // QTYPETRAITS_H</u></td></tr>
+<tr><th id="512">512</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/qrc_images.cpp.html'>codebrowser/gui/qrc_images.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

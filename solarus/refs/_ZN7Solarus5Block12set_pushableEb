@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='71' type='void Solarus::Block::set_pushable(bool pushable)'/>
+<def f='codebrowser/src/entities/Block.cpp' l='356' ll='358' type='void Solarus::Block::set_pushable(bool pushable)'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='351'>/**
+ * \brief Returns whether this block can be pushed.
+ * \param pushable \c true if it can be pushed, independently of the maximum
+ * moves.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3230' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pushableEP9lua_State'/>

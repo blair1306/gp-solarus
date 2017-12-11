@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='267' type='bool Solarus::Entity::is_in_same_region(const Solarus::Point &amp; xy) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2936' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2948' ll='3021' type='bool Solarus::Entity::is_in_same_region(const Solarus::Point &amp; xy) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2939'>/**
+ * \brief Returns whether this entity is in the same region as a point.
+ *
+ * Regions are defined by the position of separators on the map.
+ * The region of this entity is the one of its center point.
+ *
+ * \param xy A point.
+ * \return \c true if this entity and the point are in the same region.
+ */</doc>

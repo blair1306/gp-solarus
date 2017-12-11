@@ -1,0 +1,20 @@
+<dec f='include/physfs.h' l='2281' type='void PHYSFS_utf8FromUcs4(const PHYSFS_uint32 * src, char * dst, PHYSFS_uint64 len)'/>
+<doc f='include/physfs.h' l='2262'>/**
+ * \fn void PHYSFS_utf8FromUcs4(const PHYSFS_uint32 *src, char *dst, PHYSFS_uint64 len)
+ * \brief Convert a UCS-4 string to a UTF-8 string.
+ *
+ * UCS-4 strings are 32-bits per character: \c wchar_t on Unix.
+ *
+ * To ensure that the destination buffer is large enough for the conversion,
+ *  please allocate a buffer that is the same size as the source buffer. UTF-8
+ *  never uses more than 32-bits per character, so while it may shrink a UCS-4
+ *  string, it will never expand it.
+ *
+ * Strings that don&apos;t fit in the destination buffer will be truncated, but
+ *  will always be null-terminated and never have an incomplete UTF-8
+ *  sequence at the end. If the buffer length is 0, this function does nothing.
+ *
+ *   \param src Null-terminated source string in UCS-4 format.
+ *   \param dst Buffer to store converted UTF-8 string.
+ *   \param len Size, in bytes, of destination buffer.
+ */</doc>

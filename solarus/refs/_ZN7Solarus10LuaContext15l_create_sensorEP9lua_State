@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1326' type='static int Solarus::LuaContext::l_create_sensor(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='900' ll='919' type='static int Solarus::LuaContext::l_create_sensor(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1283' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='895'>/**
+ * \brief Creates a sensor on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

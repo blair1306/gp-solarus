@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='972' type='static int Solarus::LuaContext::enemy_api_set_pushed_back_when_hurt(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='452' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4518' ll='4528' type='static int Solarus::LuaContext::enemy_api_set_pushed_back_when_hurt(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4513'>/**
+ * \brief Implementation of enemy:set_pushed_back_when_hurt().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

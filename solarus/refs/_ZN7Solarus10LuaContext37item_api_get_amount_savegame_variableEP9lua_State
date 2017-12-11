@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='744' type='static int Solarus::LuaContext::item_api_get_amount_savegame_variable(lua_State * )'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='49' u='r' c='_ZN7Solarus10LuaContext20register_item_moduleEv'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='226' ll='240' type='static int Solarus::LuaContext::item_api_get_amount_savegame_variable(lua_State * l)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='221'>/**
+ * \brief Implementation of item:get_amount_savegame_variable().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

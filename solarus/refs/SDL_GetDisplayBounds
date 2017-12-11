@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='289' type='int SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_video.h' l='281'>/**
+ *  \brief Get the desktop area represented by a display, with the primary
+ *         display located at 0,0
+ *
+ *  \return 0 on success, or -1 if the index is out of range.
+ *
+ *  \sa SDL_GetNumVideoDisplays()
+ */</doc>

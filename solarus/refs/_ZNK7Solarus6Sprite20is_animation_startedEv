@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='89' type='bool Solarus::Sprite::is_animation_started() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='276' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/Sprite.cpp' l='468' ll='470' type='bool Solarus::Sprite::is_animation_started() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='640' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='640' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<doc f='codebrowser/src/Sprite.cpp' l='461'>/**
+ * \brief Returns true if the animation is started.
+ *
+ * It can be suspended.
+ *
+ * \return true if the animation is started, false otherwise
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='1826' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1842' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1880' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1896' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='255' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='374' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='501' u='c' c='_ZNK7Solarus11HeroSprites16is_sword_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='511' u='c' c='_ZNK7Solarus11HeroSprites22is_sword_stars_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='521' u='c' c='_ZNK7Solarus11HeroSprites17is_shield_visibleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='529' u='c' c='_ZNK7Solarus11HeroSprites16is_trail_visibleEv'/>

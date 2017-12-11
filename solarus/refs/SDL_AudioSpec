@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_audio.h' l='165' ll='176'/>
+<size>32</size>
+<doc f='include/SDL2/SDL_audio.h' l='162'>/**
+ *  The calculated values in this structure are calculated by SDL_OpenAudio().
+ */</doc>
+<mbr r='SDL_AudioSpec::freq' o='0' t='int'/>
+<mbr r='SDL_AudioSpec::format' o='32' t='SDL_AudioFormat'/>
+<mbr r='SDL_AudioSpec::channels' o='48' t='Uint8'/>
+<mbr r='SDL_AudioSpec::silence' o='56' t='Uint8'/>
+<mbr r='SDL_AudioSpec::samples' o='64' t='Uint16'/>
+<mbr r='SDL_AudioSpec::padding' o='80' t='Uint16'/>
+<mbr r='SDL_AudioSpec::size' o='96' t='Uint32'/>
+<mbr r='SDL_AudioSpec::callback' o='128' t='SDL_AudioCallback'/>
+<mbr r='SDL_AudioSpec::userdata' o='192' t='void *'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/gui/include/solarus/gui/main_window.h' l='67' type='bool SolarusGui::MainWindow::confirm_close()'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='222' u='c' c='_ZN10SolarusGui10MainWindow10closeEventEP11QCloseEvent'/>
+<def f='codebrowser/gui/src/main_window.cpp' l='237' ll='265' type='bool SolarusGui::MainWindow::confirm_close()'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='331' u='c' c='_ZN10SolarusGui10MainWindow24on_action_exit_triggeredEv'/>
+<doc f='codebrowser/gui/src/main_window.cpp' l='230'>/**
+ * @brief Function called when the user wants to exit the program.
+ *
+ * A confirmation dialog is shown if a quest is running.
+ *
+ * @return @c false to cancel the closing operation.
+ */</doc>

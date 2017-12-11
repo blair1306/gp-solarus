@@ -1,0 +1,8 @@
+<def f='include/SDL2/SDL_events.h' l='376' ll='381'/>
+<size>12</size>
+<doc f='include/SDL2/SDL_events.h' l='373'>/**
+ *  \brief Controller device event structure (event.cdevice.*)
+ */</doc>
+<mbr r='SDL_ControllerDeviceEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_ControllerDeviceEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_ControllerDeviceEvent::which' o='64' t='Sint32'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='180' type='bool Solarus::Enemy::is_in_normal_state() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='226' u='c' c='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1018' u='c' c='_ZN7Solarus5Enemy27notify_collision_with_enemyERS0_RNS_6SpriteES3_'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1151' ll='1157' type='bool Solarus::Enemy::is_in_normal_state() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1204' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1141'>/**
+ * \brief Returns whether this enemy is in a normal state.
+ *
+ * The enemy is considered to be in its normal state if
+ * it is not disabled, dying, being hurt or immobilized.
+ * When this method returns false, scripts
+ * cannot hurt or immobilized the enemy.
+ *
+ * \return true if this enemy is in a normal state
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5034' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5058' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

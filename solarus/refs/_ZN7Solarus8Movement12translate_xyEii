@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='70' type='void Solarus::Movement::translate_xy(int dx, int dy)'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='232' u='c' c='_ZN7Solarus8Movement11translate_xEi'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='240' u='c' c='_ZN7Solarus8Movement11translate_yEi'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='248' ll='250' type='void Solarus::Movement::translate_xy(int dx, int dy)'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='257' u='c' c='_ZN7Solarus8Movement12translate_xyERKNS_5PointE'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='243'>/**
+ * \brief Moves the object.
+ * \param dx number of pixels of the move on x
+ * \param dy number of pixels of the move on y
+ */</doc>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='447' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='454' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='491' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='535' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='542' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='578' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='608' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>

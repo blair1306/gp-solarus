@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='72' type='int Solarus::Equipment::get_life() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='234' u='c' c='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<def f='codebrowser/src/Equipment.cpp' l='243' ll='245' type='int Solarus::Equipment::get_life() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='273' u='c' c='_ZN7Solarus9Equipment8add_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='285' u='c' c='_ZN7Solarus9Equipment11remove_lifeEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='239'>/**
+ * \brief Returns the current level of life of the player.
+ * \return the player&apos;s current life
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='76' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='784' u='c' c='_ZNK7Solarus4Game9can_pauseEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='390' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='149' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='754' u='c' c='_ZN7Solarus10LuaContext17game_api_get_lifeEP9lua_State'/>

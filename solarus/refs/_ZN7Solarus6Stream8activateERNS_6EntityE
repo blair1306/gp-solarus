@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='64' type='void Solarus::Stream::activate(Solarus::Entity &amp; target)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1713' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='167' ll='172' type='void Solarus::Stream::activate(Solarus::Entity &amp; target)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='163'>/**
+ * \brief Applies this stream on an entity.
+ * \param target The entity to move. It should overlap the stream.
+ */</doc>

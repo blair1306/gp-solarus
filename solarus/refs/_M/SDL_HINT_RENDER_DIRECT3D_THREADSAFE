@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='106'/>
+<doc f='include/SDL2/SDL_hints.h' l='97'>/**
+ *  \brief  A variable controlling whether the Direct3D device is initialized for thread-safe operations.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Thread-safety is not enabled (faster)
+ *    &quot;1&quot;       - Thread-safety is enabled
+ *
+ *  By default the Direct3D device is created with thread-safety disabled.
+ */</doc>

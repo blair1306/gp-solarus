@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='134' type='void Solarus::Entity::set_layer(int layer)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1320' u='c' c='_ZN7Solarus8Entities16set_entity_layerERNS_6EntityEi'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='583' ll='587' type='void Solarus::Entity::set_layer(int layer)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='572'>/**
+ * \brief Sets the layer of the entity on the map.
+ *
+ * If the entity is stored on the map in the class MapEntities,
+ * you should not call this function directly: call
+ * MapEntities::set_entity_layer() instead because the class MapEntities
+ * stores different lists of entities for each layer.
+ * TODO: use notify_layer_changed to update MapEntities instead
+ *
+ * \param layer The layer of the entity on the map.
+ */</doc>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='124' u='c' c='_ZN7Solarus4Hero13CarryingState20notify_layer_changedEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='174' u='c' c='_ZN7Solarus4Hero12JumpingState20notify_layer_changedEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='353' u='c' c='_ZN7Solarus4Hero11StairsState20notify_layer_changedEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1215' type='bool Solarus::LuaContext::on_dialog_started(const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1706' u='c' c='_ZN7Solarus10LuaContext22game_on_dialog_startedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1489' ll='1500' type='bool Solarus::LuaContext::on_dialog_started(const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1481'>/**
+ * \brief Calls the on_dialog_started() method of the object on top of the
+ * stack.
+ * \param dialog The dialog that just started.
+ * \param info_ref Lua ref to the info parameter to pass to the method,
+ * or an empty ref.
+ * \return true if the on_dialog_started() method is defined.
+ */</doc>

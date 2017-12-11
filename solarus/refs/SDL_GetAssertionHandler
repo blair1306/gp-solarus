@@ -1,0 +1,16 @@
+<dec f='include/SDL2/SDL_assert.h' l='241' type='SDL_AssertionHandler SDL_GetAssertionHandler(void ** puserdata)'/>
+<doc f='include/SDL2/SDL_assert.h' l='226'>/**
+ *  \brief Get the current assertion handler.
+ *
+ *  This returns the function pointer that is called when an assertion is
+ *   triggered. This is either the value last passed to
+ *   SDL_SetAssertionHandler(), or if no application-specified function is
+ *   set, is equivalent to calling SDL_GetDefaultAssertionHandler().
+ *
+ *   \param puserdata Pointer to a void*, which will store the &quot;userdata&quot;
+ *                    pointer that was passed to SDL_SetAssertionHandler().
+ *                    This value will always be NULL for the default handler.
+ *                    If you don&apos;t care about this data, it is safe to pass
+ *                    a NULL pointer to this function to ignore it.
+ *  \return The SDL_AssertionHandler that is called when an assert triggers.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityTypeInfo.h' l='40' type='static bool Solarus::EntityTypeInfo::can_be_created_from_lua_api(Solarus::EntityType type)'/>
+<def f='codebrowser/src/entities/EntityTypeInfo.cpp' l='115' ll='160' type='static bool Solarus::EntityTypeInfo::can_be_created_from_lua_api(Solarus::EntityType type)'/>
+<doc f='codebrowser/src/entities/EntityTypeInfo.cpp' l='109'>/**
+ * \brief Returns whether entities of the specified type can be created
+ * dynamically by using the Lua scripting API.
+ * \param type A type of entity.
+ * \return \c true if this type can be created through the scripting API.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='172' u='c' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>

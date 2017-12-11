@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='781' type='static int Solarus::LuaContext::map_api_get_size(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='125' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1547' ll='1557' type='static int Solarus::LuaContext::map_api_get_size(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1542'>/**
+ * \brief Implementation of map:get_size().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

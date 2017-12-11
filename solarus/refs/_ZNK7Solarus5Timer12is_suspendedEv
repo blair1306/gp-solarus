@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='39' type='bool Solarus::Timer::is_suspended() const'/>
+<def f='codebrowser/src/Timer.cpp' l='60' ll='62' type='bool Solarus::Timer::is_suspended() const'/>
+<use f='codebrowser/src/Timer.cpp' l='112' u='c' c='_ZN7Solarus5Timer22set_suspended_with_mapEb'/>
+<doc f='codebrowser/src/Timer.cpp' l='56'>/**
+ * \brief Returns whether this timer is currently suspended.
+ * \return true if this timer is suspended.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='469' u='c' c='_ZN7Solarus10LuaContext22timer_api_is_suspendedEP9lua_State'/>

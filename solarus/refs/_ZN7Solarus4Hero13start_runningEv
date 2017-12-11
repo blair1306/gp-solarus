@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='269' type='void Solarus::Hero::start_running()'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2467' ll='2480' type='void Solarus::Hero::start_running()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2464'>/**
+ * \brief Starts running with the speed shoes.
+ */</doc>
+<use f='codebrowser/src/hero/FreeState.cpp' l='120' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2417' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_runningEP9lua_State'/>

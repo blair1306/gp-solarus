@@ -1,0 +1,12 @@
+<def f='include/SDL2/SDL_events.h' l='299' ll='314'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_events.h' l='296'>/**
+ *  \brief Joystick hat position change event structure (event.jhat.*)
+ */</doc>
+<mbr r='SDL_JoyHatEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_JoyHatEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_JoyHatEvent::which' o='64' t='SDL_JoystickID'/>
+<mbr r='SDL_JoyHatEvent::hat' o='96' t='Uint8'/>
+<mbr r='SDL_JoyHatEvent::value' o='104' t='Uint8'/>
+<mbr r='SDL_JoyHatEvent::padding1' o='112' t='Uint8'/>
+<mbr r='SDL_JoyHatEvent::padding2' o='120' t='Uint8'/>

@@ -1,0 +1,18 @@
+<def f='include/c++/4.9/bits/stl_set.h' l='619' ll='621' type='size_type std::set::erase(const key_type &amp; __x)'/>
+<doc f='include/c++/4.9/bits/stl_set.h' l='608'>/**
+       *  @brief Erases elements according to the provided key.
+       *  @param  __x  Key of element to be erased.
+       *  @return  The number of elements erased.
+       *
+       *  This function erases all the elements located by the given key from
+       *  a %set.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/src/GameCommands.cpp' l='502' u='c' c='_ZN7Solarus12GameCommands21game_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1142' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1315' u='c' c='_ZN7Solarus8Entities16set_entity_layerERNS_6EntityEi'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='296' u='c' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='123' u='c' c='_ZN7Solarus10LuaContext16update_drawablesEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1309' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>

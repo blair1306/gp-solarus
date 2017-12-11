@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='60' type='const Solarus::Treasure &amp; Solarus::Destructible::get_treasure() const'/>
+<doc f='codebrowser/include/solarus/entities/Destructible.h' l='59'>// Properties specific to destructibles.</doc>
+<def f='codebrowser/src/entities/Destructible.cpp' l='104' ll='106' type='const Solarus::Treasure &amp; Solarus::Destructible::get_treasure() const'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='100'>/**
+ * \brief Returns the pickable treasure contained by this object.
+ * \return The pickable treasure.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4003' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='86' type='void Solarus::PathMovement::snap()'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='266' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='368' ll='401' type='void Solarus::PathMovement::snap()'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='364'>/**
+ * Tries to move the top-left corner of the entity towards an intersection of the 8*8 grid of the map.
+ * This function is called only when the entity is not already aligned to the grid.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='90' type='bool Solarus::Equipment::item_exists(const std::string &amp; item_name) const'/>
+<def f='codebrowser/src/Equipment.cpp' l='416' ll='418' type='bool Solarus::Equipment::item_exists(const std::string &amp; item_name) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='428' u='c' c='_ZN7Solarus9Equipment8get_itemERKSs'/>
+<use f='codebrowser/src/Equipment.cpp' l='441' u='c' c='_ZNK7Solarus9Equipment8get_itemERKSs'/>
+<doc f='codebrowser/src/Equipment.cpp' l='411'>/**
+ * \brief Returns whether an equipment item with the specified name exists.
+ * \param item_name Name of the item to check.
+ * \return \c true if such an item exists.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2317' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1172' u='c' c='_ZN7Solarus10LuaContext17game_api_get_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1193' u='c' c='_ZN7Solarus10LuaContext17game_api_has_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='633' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1074' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

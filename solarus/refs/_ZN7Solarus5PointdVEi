@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='47' type='Solarus::Point &amp; Solarus::Point::operator/=(int divisor)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='77' ll='81' type='Solarus::Point &amp; Solarus::Point::operator/=(int divisor)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='72'>/**
+ * \brief Multiplies this point by a value.
+ * \param divisor The divisor.
+ * \return The current point after modification.
+ */</doc>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='69' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>

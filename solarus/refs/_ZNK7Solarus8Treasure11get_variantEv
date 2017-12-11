@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='55' type='int Solarus::Treasure::get_variant() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='121' ll='123' type='int Solarus::Treasure::get_variant() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='180' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='196' u='c' c='_ZNK7Solarus8Treasure13create_spriteEv'/>
+<doc f='codebrowser/src/Treasure.cpp' l='117'>/**
+ * \brief Returns the variant of the item.
+ * \return The variant.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='186' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='190' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2482' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2487' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3107' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3951' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4012' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4891' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2170' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2189' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2462' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2564' u='c' c='_ZN7Solarus10LuaContext12on_obtainingERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2582' u='c' c='_ZN7Solarus10LuaContext11on_obtainedERKNS_8TreasureE'/>

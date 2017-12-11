@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/TransitionFade.h' l='37' type='void Solarus::TransitionFade::set_delay(uint32_t delay)'/>
+<use f='codebrowser/src/TransitionFade.cpp' l='53' u='c' c='_ZN7Solarus14TransitionFadeC1ENS_10Transition9DirectionERNS_7SurfaceE'/>
+<def f='codebrowser/src/TransitionFade.cpp' l='63' ll='65' type='void Solarus::TransitionFade::set_delay(uint32_t delay)'/>
+<doc f='codebrowser/src/TransitionFade.cpp' l='56'>/**
+ * \brief Sets the delay between two frames.
+ *
+ * The default delay is 20 ms.
+ *
+ * \param delay the new delay in milliseconds
+ */</doc>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='236' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='275' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>

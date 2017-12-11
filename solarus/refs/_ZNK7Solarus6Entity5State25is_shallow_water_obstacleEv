@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='94' type='bool Solarus::Entity::State::is_shallow_water_obstacle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='631' ll='633' type='bool Solarus::Entity::State::is_shallow_water_obstacle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='624'>/**
+ * \brief Returns whether shallow water is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if shallow water is considered as an obstacle in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1422' u='c' c='_ZNK7Solarus4Hero25is_shallow_water_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='259' c='_ZNK7Solarus4Hero12PullingState25is_shallow_water_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='281' c='_ZNK7Solarus4Hero12PushingState25is_shallow_water_obstacleEv'/>

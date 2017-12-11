@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_mouse.h' l='98' type='void SDL_WarpMouseInWindow(SDL_Window * window, int x, int y)'/>
+<doc f='include/SDL2/SDL_mouse.h' l='89'>/**
+ *  \brief Moves the mouse to the given position within the window.
+ *
+ *  \param window The window to move the mouse into, or NULL for the current mouse focus
+ *  \param x The x coordinate within the window
+ *  \param y The y coordinate within the window
+ *
+ *  \note This function generates a mouse motion event
+ */</doc>

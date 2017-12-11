@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='78' type='void Solarus::Rectangle::set_size(const Solarus::Size &amp; other)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='317' ll='319' type='void Solarus::Rectangle::set_size(const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='313'>/**
+ * \brief Sets the size of this rectangle.
+ * \param size the new size
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='299' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='109' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='76' u='c' c='_ZN7Solarus19AnimatedTilePatternC1ENS_6GroundENS0_17AnimationSequenceERKNS_4SizeEiiiiiib'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='902' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>

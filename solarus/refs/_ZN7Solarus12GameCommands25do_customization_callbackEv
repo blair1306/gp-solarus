@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='97' type='void Solarus::GameCommands::do_customization_callback()'/>
+<use f='codebrowser/src/GameCommands.cpp' l='213' u='c' c='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='258' u='c' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='336' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='475' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<def f='codebrowser/src/GameCommands.cpp' l='799' ll='802' type='void Solarus::GameCommands::do_customization_callback()'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='795'>/**
+ * \brief Calls the Lua function that was registered to be called after a
+ * command customization phase.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='114' type='void Solarus::Enemy::set_traversable(bool traversable)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='548' ll='550' type='void Solarus::Enemy::set_traversable(bool traversable)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='538'>/**
+ * \brief Sets whether this enemy is traversable by other entities.
+ *
+ * If the enemy is not traversable, is_obstacle_for() will always return
+ * \c false.
+ * If the enemy is traversable, is_obstacle_for() will call
+ * is_enemy_obstacle() on the entity to test.
+ *
+ * \param traversable \c true to make this enemy traversable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4966' u='c' c='_ZN7Solarus10LuaContext25enemy_api_set_traversableEP9lua_State'/>

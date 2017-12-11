@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='151' type='bool Solarus::Enemy::is_raised_block_obstacle(Solarus::CrystalBlock &amp; raised_block)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='343' c='_ZN7Solarus6Entity24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='315' ll='323' type='bool Solarus::Enemy::is_raised_block_obstacle(Solarus::CrystalBlock &amp; raised_block)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='309'>/**
+ * \brief Returns whether a raised crystal block is currently considered as an
+ * obstacle by this entity.
+ * \param raised_block A crystal block raised.
+ * \return \c true if the raised block is currently an obstacle for this entity.
+ */</doc>

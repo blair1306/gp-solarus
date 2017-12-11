@@ -1,0 +1,39 @@
+<use f='codebrowser/include/solarus/MapData.h' l='59' u='w' c='_ZN7Solarus11EntityIndexC1Ev'/>
+<use f='codebrowser/include/solarus/MapData.h' l='69' u='w' c='_ZN7Solarus11EntityIndexC1Eii'/>
+<use f='codebrowser/include/solarus/MapData.h' l='76' u='r' c='_ZNK7Solarus11EntityIndex8is_validEv'/>
+<use f='codebrowser/include/solarus/MapData.h' l='81' u='r' c='_ZNK7Solarus11EntityIndexeqERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='81' u='r' c='_ZNK7Solarus11EntityIndexeqERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='95' u='r' c='_ZNK7Solarus11EntityIndexleERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='95' u='r' c='_ZNK7Solarus11EntityIndexleERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='105' u='r' c='_ZNK7Solarus11EntityIndexltERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='105' u='r' c='_ZNK7Solarus11EntityIndexltERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='115' u='r' c='_ZNK7Solarus11EntityIndexgeERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='115' u='r' c='_ZNK7Solarus11EntityIndexgeERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='125' u='r' c='_ZNK7Solarus11EntityIndexgtERKS0_'/>
+<use f='codebrowser/include/solarus/MapData.h' l='125' u='r' c='_ZNK7Solarus11EntityIndexgtERKS0_'/>
+<dec f='codebrowser/include/solarus/MapData.h' l='129' type='int'/>
+<offset>32</offset>
+<doc f='codebrowser/include/solarus/MapData.h' l='129'>/**&lt; Z order of the entity in that layer.
+                      * -1 means an invalid index. */</doc>
+<use f='codebrowser/src/MapData.cpp' l='356' u='r' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='391' u='r' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='430' u='w' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='445' u='w' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='465' u='r' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='465' u='r' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='466' u='r' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='466' u='r' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='471' u='r' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='489' u='r' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='489' u='r' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='490' u='r' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='490' u='r' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='495' u='r' c='_ZN7Solarus7MapData20bring_entity_to_backERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='506' u='r' c='_ZNK7Solarus7MapData13entity_existsERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='507' u='r' c='_ZNK7Solarus7MapData13entity_existsERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='522' u='r' c='_ZNK7Solarus7MapData10get_entityERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='540' u='r' c='_ZN7Solarus7MapData10get_entityERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='702' u='r' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='738' u='w' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='758' u='r' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='782' u='w' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>

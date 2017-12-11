@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='74' type='void Solarus::TextSurface::TextSurface(int x, int y)'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='47' ll='49' type='void Solarus::TextSurface::TextSurface(int x, int y)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='34'>/**
+ * \brief Creates a text to draw with the default properties.
+ *
+ * The default properties are:
+ * - font: the default font defined in file text/fonts.dat
+ * - horizontal alignment: left
+ * - vertical alignment: middle
+ * - rendering mode: solid
+ * - text color: white
+ *
+ * \param x x position of the text on the destination surface
+ * \param y y position of the text on the destination surface
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='223' type='static int Solarus::InputEvent::get_joypad_axis_state(int axis)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='441' ll='458' type='static int Solarus::InputEvent::get_joypad_axis_state(int axis)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='435'>/**
+ * \brief Returns the state of a joypad axis.
+ * \param axis Index of a joypad axis.
+ * \return The state of that axis:
+ * -1 (left or up), 0 (centered) or 1 (right or down).
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='172' u='c' c='_ZN7Solarus10LuaContext31input_api_get_joypad_axis_stateEP9lua_State'/>

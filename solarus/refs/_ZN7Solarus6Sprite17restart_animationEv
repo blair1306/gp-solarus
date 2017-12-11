@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='91' type='void Solarus::Sprite::restart_animation()'/>
+<use f='codebrowser/src/Sprite.cpp' l='476' u='c' c='_ZN7Solarus6Sprite15start_animationEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='482' ll='485' type='void Solarus::Sprite::restart_animation()'/>
+<doc f='codebrowser/src/Sprite.cpp' l='479'>/**
+ * \brief Restarts the animation.
+ */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='155' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='750' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='972' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='975' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='979' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='983' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='987' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='991' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1240' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1244' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1252' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1276' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1280' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1287' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='196' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

@@ -1,0 +1,24 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/HurtState.h' l='28' ll='61'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/hero/HurtState.h' l='25'>/**
+ * \brief The state &quot;Hurt&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero9HurtStateC1ERS0_PKNS_5PointEi'/>
+<fun r='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero9HurtState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<fun r='_ZN7Solarus4Hero9HurtState13set_suspendedEb'/>
+<fun r='_ZNK7Solarus4Hero9HurtState27can_start_gameover_sequenceEv'/>
+<fun r='_ZNK7Solarus4Hero9HurtState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero9HurtState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Hero9HurtState18is_stream_obstacleERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero9HurtState18is_sensor_obstacleERKNS_6SensorE'/>
+<fun r='_ZNK7Solarus4Hero9HurtState21is_separator_obstacleERKNS_9SeparatorE'/>
+<fun r='_ZNK7Solarus4Hero9HurtState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero9HurtState16can_avoid_switchEv'/>
+<fun r='_ZNK7Solarus4Hero9HurtState13can_avoid_iceEv'/>
+<mbr r='Solarus::Hero::HurtState::has_source' o='328' t='bool'/>
+<mbr r='Solarus::Hero::HurtState::source_xy' o='352' t='const Solarus::Point'/>
+<mbr r='Solarus::Hero::HurtState::damage' o='416' t='int'/>
+<mbr r='Solarus::Hero::HurtState::end_hurt_date' o='448' t='uint32_t'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='211' type='void SNES_SPC::ram_loaded()'/>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='140' ll='148' type='void SNES_SPC::ram_loaded()'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='206' u='c' c='_ZN8SNES_SPC5resetEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='238' u='c' c='_ZN8SNES_SPC8load_spcEPKvl'/>
+<doc f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='138'>// RAM was just loaded from SPC, with $F0-$FF containing SMP registers
+// and timer counts. Copies these to proper registers.</doc>

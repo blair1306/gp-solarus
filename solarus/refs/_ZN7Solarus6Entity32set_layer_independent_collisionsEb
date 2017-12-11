@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='277' type='void Solarus::Entity::set_layer_independent_collisions(bool independent)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1732' ll='1734' type='void Solarus::Entity::set_layer_independent_collisions(bool independent)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1726'>/**
+ * \brief Sets whether this entity can detect collisions with entities even if
+ * they are not on the same layer.
+ * \param independent \c true if this entity can detect entities
+ * that are on another layer.
+ */</doc>
+<use f='codebrowser/src/entities/Separator.cpp' l='44' u='c' c='_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='49' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='98' u='c' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1605' u='c' c='_ZN7Solarus10LuaContext43entity_api_set_layer_independent_collisionsEP9lua_State'/>

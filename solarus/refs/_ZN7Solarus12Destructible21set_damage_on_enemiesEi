@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='74' type='void Solarus::Destructible::set_damage_on_enemies(int damage_on_enemies)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='236' ll='238' type='void Solarus::Destructible::set_damage_on_enemies(int damage_on_enemies)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='232'>/**
+ * \brief Sets the damage this object causes to enemies when thrown at them.
+ * \param damage_on_enemies The damage on enemies.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4264' u='c' c='_ZN7Solarus10LuaContext38destructible_api_set_damage_on_enemiesEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='597' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

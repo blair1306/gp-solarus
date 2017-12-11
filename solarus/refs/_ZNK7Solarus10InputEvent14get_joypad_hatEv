@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='274' type='int Solarus::InputEvent::get_joypad_hat() const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='186' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1055' ll='1062' type='int Solarus::InputEvent::get_joypad_hat() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1047'>/**
+ * \brief Returns the hat that was moved during
+ * this joypad hat event.
+ *
+ * If this is not a joypad hat event, -1 is returned.
+ *
+ * \return the hat index of this joypad hat event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1796' u='c' c='_ZN7Solarus10LuaContext19on_joypad_hat_movedERKNS_10InputEventE'/>

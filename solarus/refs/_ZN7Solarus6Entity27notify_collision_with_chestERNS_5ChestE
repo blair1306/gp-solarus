@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='309' type='void Solarus::Entity::notify_collision_with_chest(Solarus::Chest &amp; chest)'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='368' u='c' c='_ZN7Solarus5Chest16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1074' c='_ZN7Solarus12CustomEntity27notify_collision_with_chestERNS_5ChestE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3122' ll='3123' type='void Solarus::Entity::notify_collision_with_chest(Solarus::Chest &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3118'>/**
+ * \brief This function is called when a chest detects a collision with this entity.
+ * \param chest the chest
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3122'>/* chest */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1847' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='347' c='_ZN7Solarus8Hookshot27notify_collision_with_chestERNS_5ChestE'/>

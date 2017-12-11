@@ -1,0 +1,33 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='354' type='bool Solarus::Entity::is_suspended() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='353'>// Game loop.</doc>
+<use f='codebrowser/src/Map.cpp' l='1300' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1341' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1387' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1434' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='211' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='230' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='252' u='c' c='_ZN7Solarus9Boomerang6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='360' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='367' u='c' c='_ZN7Solarus5Chest16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='381' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='164' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1237' u='c' c='_ZN7Solarus12CustomEntity6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='502' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='518' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='773' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='945' u='c' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2262' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2290' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3291' ll='3293' type='bool Solarus::Entity::is_suspended() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3287'>/**
+ * \brief Returns whether the movement and the animations of this entity are suspended.
+ * \return true if the movement and the animations are suspended
+ */</doc>
+<use f='codebrowser/src/entities/EntityState.cpp' l='193' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='187' u='c' c='_ZN7Solarus4Hero6updateEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1096' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='172' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='553' u='c' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='80' u='c' c='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1429' u='c' c='_ZN7Solarus10LuaContext24entity_api_create_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='171' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>

@@ -1,0 +1,5 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobject.h' l='246' ll='250' type='static typename QtPrivate::QEnableIf&lt;int(QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount) &gt;= 0, QMetaObject::Connection&gt;::Type QObject::connect(const typename QtPrivate::FunctionPointer&lt;Func1&gt;::Object * sender, Func1 signal, Func2 slot)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobject.h' l='286' ll='290' type='static typename QtPrivate::QEnableIf&lt;QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount == -1, QMetaObject::Connection&gt;::Type QObject::connect(const typename QtPrivate::FunctionPointer&lt;Func1&gt;::Object * sender, Func1 signal, Func2 slot)'/>
+<use f='codebrowser/gui/src/console_line_edit.cpp' l='79' u='c' c='_ZN10SolarusGui15ConsoleLineEditC1EP7QWidget'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='142' u='c' c='_ZN10SolarusGui10MainWindow16initialize_menusEv'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='48' u='c' c='_ZN10SolarusGui11QuestRunnerC1EP7QObject'/>

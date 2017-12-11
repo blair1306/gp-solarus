@@ -1,0 +1,58 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Destructible.h' l='39' ll='122'/>
+<size>336</size>
+<doc f='codebrowser/include/solarus/entities/Destructible.h' l='28'>/**
+ * \brief An entity that the hero can destroy and that may contain a pickable
+ * treasure.
+ *
+ * Some destructible objects can be lifted and thrown (a pot, a stone, etc.),
+ * some of them can be cut with the sword (for example some grass)
+ * and others have both behaviors (for example a bush).
+ * Some others can explode when they are lifted (a bomb or a bomb flower).
+ * When the hero lifts a destructible object, it is removed from the map and
+ * replaced by an instance of CarriedObject that is attached to the hero.
+ */</doc>
+<smbr r='Solarus::Destructible::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<fun r='_ZNK7Solarus12Destructible8get_typeEv'/>
+<fun r='_ZNK7Solarus12Destructible19get_modified_groundEv'/>
+<fun r='_ZNK7Solarus12Destructible12get_treasureEv'/>
+<fun r='_ZN7Solarus12Destructible12set_treasureERKNS_8TreasureE'/>
+<fun r='_ZNK7Solarus12Destructible20get_animation_set_idEv'/>
+<fun r='_ZNK7Solarus12Destructible21get_destruction_soundEv'/>
+<fun r='_ZN7Solarus12Destructible21set_destruction_soundERKSs'/>
+<fun r='_ZNK7Solarus12Destructible10get_weightEv'/>
+<fun r='_ZN7Solarus12Destructible10set_weightEi'/>
+<fun r='_ZNK7Solarus12Destructible14get_can_be_cutEv'/>
+<fun r='_ZN7Solarus12Destructible14set_can_be_cutEb'/>
+<fun r='_ZNK7Solarus12Destructible15get_can_explodeEv'/>
+<fun r='_ZN7Solarus12Destructible15set_can_explodeEb'/>
+<fun r='_ZNK7Solarus12Destructible18get_can_regenerateEv'/>
+<fun r='_ZN7Solarus12Destructible18set_can_regenerateEb'/>
+<fun r='_ZNK7Solarus12Destructible21get_damage_on_enemiesEv'/>
+<fun r='_ZN7Solarus12Destructible21set_damage_on_enemiesEi'/>
+<fun r='_ZN7Solarus12Destructible7explodeEv'/>
+<fun r='_ZNK7Solarus12Destructible27is_waiting_for_regenerationEv'/>
+<fun r='_ZN7Solarus12Destructible15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus12Destructible21test_collision_customERNS_6EntityE'/>
+<fun r='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus12Destructible13set_suspendedEb'/>
+<fun r='_ZN7Solarus12Destructible6updateEv'/>
+<fun r='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<fun r='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<fun r='_ZN7Solarus12Destructible15create_treasureEv'/>
+<mbr r='Solarus::Destructible::modified_ground' o='2048' t='const Solarus::Ground'/>
+<mbr r='Solarus::Destructible::treasure' o='2112' t='Solarus::Treasure'/>
+<mbr r='Solarus::Destructible::animation_set_id' o='2368' t='const std::string'/>
+<mbr r='Solarus::Destructible::destruction_sound_id' o='2432' t='std::string'/>
+<mbr r='Solarus::Destructible::can_be_cut' o='2496' t='bool'/>
+<mbr r='Solarus::Destructible::can_explode' o='2504' t='bool'/>
+<mbr r='Solarus::Destructible::can_regenerate' o='2512' t='bool'/>
+<mbr r='Solarus::Destructible::weight' o='2528' t='int'/>
+<mbr r='Solarus::Destructible::damage_on_enemies' o='2560' t='int'/>
+<mbr r='Solarus::Destructible::is_being_cut' o='2592' t='bool'/>
+<mbr r='Solarus::Destructible::regeneration_date' o='2624' t='uint32_t'/>
+<mbr r='Solarus::Destructible::is_regenerating' o='2656' t='bool'/>

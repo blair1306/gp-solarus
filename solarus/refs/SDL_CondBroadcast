@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_mutex.h' l='216' type='int SDL_CondBroadcast(SDL_cond * cond)'/>
+<doc f='include/SDL2/SDL_mutex.h' l='211'>/**
+ *  Restart all threads that are waiting on the condition variable.
+ *
+ *  \return 0 or -1 on error.
+ */</doc>

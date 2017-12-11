@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='124' type='void Solarus::Entities::bring_to_back(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='683' ll='688' type='void Solarus::Entities::bring_to_back(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='679'>/**
+ * \brief Brings to back an entity in its layer.
+ * \param entity The entity to bring to back.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1371' u='c' c='_ZN7Solarus10LuaContext24entity_api_bring_to_backEP9lua_State'/>

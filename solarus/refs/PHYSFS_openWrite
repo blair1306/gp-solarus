@@ -1,0 +1,24 @@
+<dec f='include/physfs.h' l='1115' type='PHYSFS_File * PHYSFS_openWrite(const char * filename)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='325' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<doc f='include/physfs.h' l='1093'>/**
+ * \fn PHYSFS_File *PHYSFS_openWrite(const char *filename)
+ * \brief Open a file for writing.
+ *
+ * Open a file for writing, in platform-independent notation and in relation
+ *  to the write dir as the root of the writable filesystem. The specified
+ *  file is created if it doesn&apos;t exist. If it does exist, it is truncated to
+ *  zero bytes, and the writing offset is set to the start.
+ *
+ * Note that entries that are symlinks are ignored if
+ *  PHYSFS_permitSymbolicLinks(1) hasn&apos;t been called, and opening a
+ *  symlink with this function will fail in such a case.
+ *
+ *   \param filename File to open.
+ *  \return A valid PhysicsFS filehandle on success, NULL on error. Specifics
+ *           of the error can be gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_openRead
+ * \sa PHYSFS_openAppend
+ * \sa PHYSFS_write
+ * \sa PHYSFS_close
+ */</doc>

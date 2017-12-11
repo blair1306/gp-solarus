@@ -1,0 +1,31 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' c='QInputEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='170' ll='220'/>
+<size>96</size>
+<fun r='_ZN11QWheelEventC1ERK7QPointFi6QFlagsIN2Qt11MouseButtonEES3_INS4_16KeyboardModifierEENS4_11OrientationE'/>
+<fun r='_ZN11QWheelEventC1ERK7QPointFS2_i6QFlagsIN2Qt11MouseButtonEES3_INS4_16KeyboardModifierEENS4_11OrientationE'/>
+<fun r='_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_11MouseButtonEES6_INS4_16KeyboardModifierEE'/>
+<fun r='_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_11MouseButtonEES6_INS4_16KeyboardModifierEENS4_11ScrollPhaseE'/>
+<fun r='_ZN11QWheelEventD1Ev'/>
+<fun r='_ZNK11QWheelEvent10pixelDeltaEv'/>
+<fun r='_ZNK11QWheelEvent10angleDeltaEv'/>
+<fun r='_ZNK11QWheelEvent5deltaEv'/>
+<fun r='_ZNK11QWheelEvent11orientationEv'/>
+<fun r='_ZNK11QWheelEvent3posEv'/>
+<fun r='_ZNK11QWheelEvent9globalPosEv'/>
+<fun r='_ZNK11QWheelEvent1xEv'/>
+<fun r='_ZNK11QWheelEvent1yEv'/>
+<fun r='_ZNK11QWheelEvent7globalXEv'/>
+<fun r='_ZNK11QWheelEvent7globalYEv'/>
+<fun r='_ZNK11QWheelEvent4posFEv'/>
+<fun r='_ZNK11QWheelEvent10globalPosFEv'/>
+<fun r='_ZNK11QWheelEvent7buttonsEv'/>
+<fun r='_ZNK11QWheelEvent5phaseEv'/>
+<mbr r='QWheelEvent::p' o='256' t='QPointF'/>
+<mbr r='QWheelEvent::g' o='384' t='QPointF'/>
+<mbr r='QWheelEvent::pixelD' o='512' t='QPoint'/>
+<mbr r='QWheelEvent::angleD' o='576' t='QPoint'/>
+<mbr r='QWheelEvent::qt4D' o='640' t='int'/>
+<mbr r='QWheelEvent::qt4O' o='672' t='Qt::Orientation'/>
+<mbr r='QWheelEvent::mouseState' o='704' t='Qt::MouseButtons'/>
+<mbr r='QWheelEvent::ph' o='736' t='uint'/>
+<mbr r='QWheelEvent::reserved' o='738' t='int'/>

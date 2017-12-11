@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='58' type='const std::string &amp; Solarus::EquipmentItem::get_amount_savegame_variable() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='135' u='c' c='_ZNK7Solarus13EquipmentItem10has_amountEv'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='144' ll='146' type='const std::string &amp; Solarus::EquipmentItem::get_amount_savegame_variable() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='433' u='c' c='_ZNK7Solarus13EquipmentItem10get_amountEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='446' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='138'>/**
+ * \brief If this item has an amount, returns the savegame variable
+ * that stores the value of this amount.
+ * \return The savegame variable of the amount, or an empty string if there
+ * is no amount associated to this item.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='231' u='c' c='_ZN7Solarus10LuaContext37item_api_get_amount_savegame_variableEP9lua_State'/>

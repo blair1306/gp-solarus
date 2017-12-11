@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='179' type='int Solarus::Entity::get_optimization_distance() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1202' ll='1204' type='int Solarus::Entity::get_optimization_distance() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1194'>/**
+ * \brief Returns the optimization distance of this entity.
+ *
+ * Above this distance from the visible area, the engine may decide to
+ * skip updates.
+ *
+ * \return The optimization distance (0 means infinite).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1646' u='c' c='_ZN7Solarus10LuaContext36entity_api_get_optimization_distanceEP9lua_State'/>

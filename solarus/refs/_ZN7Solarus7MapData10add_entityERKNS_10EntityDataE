@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='184' type='Solarus::EntityIndex Solarus::MapData::add_entity(const Solarus::EntityData &amp; entity)'/>
+<def f='codebrowser/src/MapData.cpp' l='663' ll='681' type='Solarus::EntityIndex Solarus::MapData::add_entity(const Solarus::EntityData &amp; entity)'/>
+<use f='codebrowser/src/MapData.cpp' l='817' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<doc f='codebrowser/src/MapData.cpp' l='650'>/**
+ * \brief Adds an entity to the map.
+ *
+ * The entity will be added in front of other ones that are on the same layer.
+ * Use insert_entity() if you want to insert it at a specific index.
+ *
+ * If the new entity has a name, it should be unique on the map.
+ *
+ * \param entity The information of an entity.
+ * \return The index of this entity on the map.
+ * Returns an invalid index in case of failure, that is,
+ * if the name was already in use or if the entity type or layer is illegal.
+ */</doc>

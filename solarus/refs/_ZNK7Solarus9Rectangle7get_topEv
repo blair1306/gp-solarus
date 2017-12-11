@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='66' type='int Solarus::Rectangle::get_top() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='119' u='c' c='_ZNK7Solarus9Rectangle10get_bottomEv'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='151' u='c' c='_ZNK7Solarus9Rectangle10get_centerEv'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='178' ll='180' type='int Solarus::Rectangle::get_top() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='190' u='c' c='_ZNK7Solarus9Rectangle12get_top_leftEv'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='201' u='c' c='_ZNK7Solarus9Rectangle13get_top_rightEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='436' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='505' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='174'>/**
+ * \brief Returns the top coordinate of this rectangle.
+ * \return The top coordinate.
+ */</doc>

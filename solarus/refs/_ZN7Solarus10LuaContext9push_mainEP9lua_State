@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1085' type='static void Solarus::LuaContext::push_main(lua_State * l)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1084'>// Pushing objects to Lua.</doc>
+<def f='codebrowser/src/lua/MainApi.cpp' l='86' ll='89' type='static void Solarus::LuaContext::push_main(lua_State * l)'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='407' u='c' c='_ZN7Solarus10LuaContext15main_on_startedEv'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='419' u='c' c='_ZN7Solarus10LuaContext16main_on_finishedEv'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='433' u='c' c='_ZN7Solarus10LuaContext14main_on_updateEv'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='445' u='c' c='_ZN7Solarus10LuaContext12main_on_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='461' u='c' c='_ZN7Solarus10LuaContext13main_on_inputERKNS_10InputEventE'/>
+<doc f='codebrowser/src/lua/MainApi.cpp' l='82'>/**
+ * \brief Pushes the sol.main table onto the stack.
+ * \param l A Lua state.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='367' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>

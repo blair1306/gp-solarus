@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_render.h' l='321' type='int SDL_SetTextureAlphaMod(SDL_Texture * texture, Uint8 alpha)'/>
+<doc f='include/SDL2/SDL_render.h' l='310'>/**
+ *  \brief Set an additional alpha value used in render copy operations.
+ *
+ *  \param texture The texture to update.
+ *  \param alpha     The alpha value multiplied into copy operations.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid or alpha modulation
+ *          is not supported.
+ *
+ *  \sa SDL_GetTextureAlphaMod()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='843' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

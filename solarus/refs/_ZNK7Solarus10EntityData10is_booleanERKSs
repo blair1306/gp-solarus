@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='116' type='bool Solarus::EntityData::is_boolean(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='635' ll='642' type='bool Solarus::EntityData::is_boolean(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/EntityData.cpp' l='630'>/**
+ * \brief Returns whether a field of this entity is a boolean.
+ * \param key Key of the field to get.
+ * \return \c true if the field exists and is a boolean.
+ */</doc>

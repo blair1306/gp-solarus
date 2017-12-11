@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/entities/EnemyReaction.h' l='53' type='Solarus::EnemyReaction::ReactionType'/>
+<use f='codebrowser/include/solarus/entities/EnemyReaction.h' l='57' u='w' c='_ZN7Solarus13EnemyReaction8ReactionC1Ev'/>
+<offset>0</offset>
+<doc f='codebrowser/include/solarus/entities/EnemyReaction.h' l='53'>/**&lt; type of reaction */</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='422' u='r' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='426' u='r' c='_ZN7Solarus5Arrow21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='356' u='r' c='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='482' u='r' c='_ZN7Solarus13CarriedObject21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1180' u='r' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1188' u='r' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1209' u='w' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='46' u='w' c='_ZN7Solarus13EnemyReaction20set_default_reactionEv'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='59' u='w' c='_ZN7Solarus13EnemyReaction20set_general_reactionENS0_12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/EnemyReaction.cpp' l='77' u='w' c='_ZN7Solarus13EnemyReaction19set_sprite_reactionEPKNS_6SpriteENS0_12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='170' u='r' c='_ZN7Solarus9Explosion21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='338' u='r' c='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='253' u='r' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='135' u='r' c='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='223' u='r' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='205' u='r' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4707' u='r' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4713' u='r' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4763' u='r' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4769' u='r' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>

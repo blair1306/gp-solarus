@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/dsp.h' l='61' type='void spc_dsp_disable_surround(SPC_DSP * , int disable)'/>
+<def f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='42' type='void spc_dsp_disable_surround(SPC_DSP * s, int disable)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/dsp.h' l='59'>/* If true, prevents channels and global volumes from being phase-negated.
+Only supported by fast DSP; has no effect on accurate DSP. */</doc>

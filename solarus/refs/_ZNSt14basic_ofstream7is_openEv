@@ -1,0 +1,6 @@
+<def f='include/c++/4.9/fstream' l='694' ll='696' type='bool std::basic_ofstream::is_open()'/>
+<use f='codebrowser/src/lowlevel/Logger.cpp' l='38' u='c' c='_ZN7Solarus6Logger12_GLOBAL__N_118get_error_log_fileEv'/>
+<doc f='include/c++/4.9/fstream' l='690'>/**
+       *  @brief  Wrapper to test for an open file.
+       *  @return  @c rdbuf()-&gt;is_open()
+       */</doc>

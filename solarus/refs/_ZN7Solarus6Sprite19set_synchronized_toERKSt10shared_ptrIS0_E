@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='87' type='void Solarus::Sprite::set_synchronized_to(const SpritePtr &amp; other)'/>
+<def f='codebrowser/src/Sprite.cpp' l='457' ll='459' type='void Solarus::Sprite::set_synchronized_to(const SpritePtr &amp; other)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='452'>/**
+ * \brief Makes this sprite always synchronized with another one as soon as
+ * they have the same animation name.
+ * \param other the sprite to synchronize to, or nullptr to stop any previous synchronization
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='204' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='207' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='267' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='385' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='595' u='c' c='_ZN7Solarus10LuaContext22sprite_api_synchronizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='598' u='c' c='_ZN7Solarus10LuaContext22sprite_api_synchronizeEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='71' type='const std::string &amp; Solarus::ShopTreasure::get_dialog_id() const'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='136' ll='138' type='const std::string &amp; Solarus::ShopTreasure::get_dialog_id() const'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='131'>/**
+ * \brief Returns the id of the dialog describing this shop item when the
+ * player watches it.
+ * \return The dialog id.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3765' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>

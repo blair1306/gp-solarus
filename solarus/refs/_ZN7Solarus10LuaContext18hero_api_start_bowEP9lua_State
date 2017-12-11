@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='891' type='static int Solarus::LuaContext::hero_api_start_bow(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='186' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2380' ll='2389' type='static int Solarus::LuaContext::hero_api_start_bow(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2375'>/**
+ * \brief Implementation of hero:start_bow().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

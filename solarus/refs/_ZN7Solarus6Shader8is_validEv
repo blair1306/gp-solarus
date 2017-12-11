@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='45' type='bool Solarus::Shader::is_valid()'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='223' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<def f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='95' ll='98' type='bool Solarus::Shader::is_valid()'/>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='91'>/**
+ * \brief Check if the engine shader context is marked as compatible by the shader script.
+ * \return True if the engine shader context is not been explicitly set as not compatible with the shader script .
+ */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='195' type='const std::map&lt;HurtStyle, std::string&gt;'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='195'>/**&lt; Lua names of the HurtStyle enum. */</doc>
+<def f='codebrowser/src/entities/Enemy.cpp' l='59' ll='63' type='const std::map&lt;Enemy::HurtStyle, std::string&gt;'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4606' u='m' c='_ZN7Solarus10LuaContext24enemy_api_get_hurt_styleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4621' u='r' c='_ZN7Solarus10LuaContext24enemy_api_set_hurt_styleEP9lua_State'/>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StraightMovement.h source code [codebrowser/include/solarus/movements/StraightMovement.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::StraightMovement "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/movements/StraightMovement.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>movements</a>/<a href='StraightMovement.h.html'>StraightMovement.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_STRAIGHT_MOVEMENT_H">SOLARUS_STRAIGHT_MOVEMENT_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_STRAIGHT_MOVEMENT_H" data-ref="_M/SOLARUS_STRAIGHT_MOVEMENT_H">SOLARUS_STRAIGHT_MOVEMENT_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../lowlevel/Point.h.html">"solarus/lowlevel/Point.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="Movement.h.html">"solarus/movements/Movement.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * <span class="command">\brief</span> A straight movement represented as a speed vector</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * whose properties (speed and angle) can be changed.</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="32">32</th><td><b>class</b> <dfn class="type def" id="Solarus::StraightMovement" title='Solarus::StraightMovement' data-ref="Solarus::StraightMovement">StraightMovement</dfn>: <b>public</b> <a class="type" href="Movement.h.html#Solarus::Movement" title='Solarus::Movement' data-ref="Solarus::Movement">Movement</a> {</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>  <b>public</b>:</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <dfn class="decl" id="_ZN7Solarus16StraightMovementC1Ebb" title='Solarus::StraightMovement::StraightMovement' data-ref="_ZN7Solarus16StraightMovementC1Ebb">StraightMovement</dfn>(<em>bool</em> <dfn class="local col5 decl" id="25ignore_obstacles" title='ignore_obstacles' data-type='bool' data-ref="25ignore_obstacles">ignore_obstacles</dfn>, <em>bool</em> <dfn class="local col6 decl" id="26smooth" title='smooth' data-type='bool' data-ref="26smooth">smooth</dfn>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus16StraightMovement24notify_object_controlledEv" title='Solarus::StraightMovement::notify_object_controlled' data-ref="_ZN7Solarus16StraightMovement24notify_object_controlledEv">notify_object_controlled</dfn>() override;</td></tr>
+<tr><th id="39">39</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus16StraightMovement6updateEv" title='Solarus::StraightMovement::update' data-ref="_ZN7Solarus16StraightMovement6updateEv">update</dfn>() override;</td></tr>
+<tr><th id="40">40</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus16StraightMovement13set_suspendedEb" title='Solarus::StraightMovement::set_suspended' data-ref="_ZN7Solarus16StraightMovement13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col7 decl" id="27suspended" title='suspended' data-type='bool' data-ref="27suspended">suspended</dfn>) override;</td></tr>
+<tr><th id="41">41</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement15has_to_move_nowEv" title='Solarus::StraightMovement::has_to_move_now' data-ref="_ZNK7Solarus16StraightMovement15has_to_move_nowEv">has_to_move_now</dfn>() <em>const</em>;</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>    <i>// speed vector</i></td></tr>
+<tr><th id="44">44</th><td>    <em>double</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement11get_x_speedEv" title='Solarus::StraightMovement::get_x_speed' data-ref="_ZNK7Solarus16StraightMovement11get_x_speedEv">get_x_speed</dfn>() <em>const</em>;</td></tr>
+<tr><th id="45">45</th><td>    <em>double</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement11get_y_speedEv" title='Solarus::StraightMovement::get_y_speed' data-ref="_ZNK7Solarus16StraightMovement11get_y_speedEv">get_y_speed</dfn>() <em>const</em>;</td></tr>
+<tr><th id="46">46</th><td>    <em>double</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement9get_speedEv" title='Solarus::StraightMovement::get_speed' data-ref="_ZNK7Solarus16StraightMovement9get_speedEv">get_speed</dfn>() <em>const</em>;</td></tr>
+<tr><th id="47">47</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement11set_x_speedEd" title='Solarus::StraightMovement::set_x_speed' data-ref="_ZN7Solarus16StraightMovement11set_x_speedEd">set_x_speed</dfn>(<em>double</em> <dfn class="local col8 decl" id="28x_speed" title='x_speed' data-type='double' data-ref="28x_speed">x_speed</dfn>);</td></tr>
+<tr><th id="48">48</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement11set_y_speedEd" title='Solarus::StraightMovement::set_y_speed' data-ref="_ZN7Solarus16StraightMovement11set_y_speedEd">set_y_speed</dfn>(<em>double</em> <dfn class="local col9 decl" id="29y_speed" title='y_speed' data-type='double' data-ref="29y_speed">y_speed</dfn>);</td></tr>
+<tr><th id="49">49</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement9set_speedEd" title='Solarus::StraightMovement::set_speed' data-ref="_ZN7Solarus16StraightMovement9set_speedEd">set_speed</dfn>(<em>double</em> <dfn class="local col0 decl" id="30speed" title='speed' data-type='double' data-ref="30speed">speed</dfn>);</td></tr>
+<tr><th id="50">50</th><td>    <em>double</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement9get_angleEv" title='Solarus::StraightMovement::get_angle' data-ref="_ZNK7Solarus16StraightMovement9get_angleEv">get_angle</dfn>() <em>const</em>;</td></tr>
+<tr><th id="51">51</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement9set_angleEd" title='Solarus::StraightMovement::set_angle' data-ref="_ZN7Solarus16StraightMovement9set_angleEd">set_angle</dfn>(<em>double</em> <dfn class="local col1 decl" id="31angle" title='angle' data-type='double' data-ref="31angle">angle</dfn>);</td></tr>
+<tr><th id="52">52</th><td>    <em>int</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement16get_max_distanceEv" title='Solarus::StraightMovement::get_max_distance' data-ref="_ZNK7Solarus16StraightMovement16get_max_distanceEv">get_max_distance</dfn>() <em>const</em>;</td></tr>
+<tr><th id="53">53</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement16set_max_distanceEi" title='Solarus::StraightMovement::set_max_distance' data-ref="_ZN7Solarus16StraightMovement16set_max_distanceEi">set_max_distance</dfn>(<em>int</em> <dfn class="local col2 decl" id="32max_distance" title='max_distance' data-type='int' data-ref="32max_distance">max_distance</dfn>);</td></tr>
+<tr><th id="54">54</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus16StraightMovement9is_smoothEv" title='Solarus::StraightMovement::is_smooth' data-ref="_ZNK7Solarus16StraightMovement9is_smoothEv">is_smooth</dfn>() <em>const</em>;</td></tr>
+<tr><th id="55">55</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement10set_smoothEb" title='Solarus::StraightMovement::set_smooth' data-ref="_ZN7Solarus16StraightMovement10set_smoothEb">set_smooth</dfn>(<em>bool</em> <dfn class="local col3 decl" id="33smooth" title='smooth' data-type='bool' data-ref="33smooth">smooth</dfn>);</td></tr>
+<tr><th id="56">56</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZNK7Solarus16StraightMovement24get_displayed_direction4Ev" title='Solarus::StraightMovement::get_displayed_direction4' data-ref="_ZNK7Solarus16StraightMovement24get_displayed_direction4Ev">get_displayed_direction4</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>    <i>// movement</i></td></tr>
+<tr><th id="59">59</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus16StraightMovement10is_startedEv" title='Solarus::StraightMovement::is_started' data-ref="_ZNK7Solarus16StraightMovement10is_startedEv">is_started</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="60">60</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus16StraightMovement11is_finishedEv" title='Solarus::StraightMovement::is_finished' data-ref="_ZNK7Solarus16StraightMovement11is_finishedEv">is_finished</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="61">61</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement12set_finishedEv" title='Solarus::StraightMovement::set_finished' data-ref="_ZN7Solarus16StraightMovement12set_finishedEv">set_finished</dfn>();</td></tr>
+<tr><th id="62">62</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus16StraightMovement4stopEv" title='Solarus::StraightMovement::stop' data-ref="_ZN7Solarus16StraightMovement4stopEv">stop</dfn>() override;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <b>virtual</b> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="virtual decl" id="_ZNK7Solarus16StraightMovement17get_lua_type_nameEv" title='Solarus::StraightMovement::get_lua_type_name' data-ref="_ZNK7Solarus16StraightMovement17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>  <b>protected</b>:</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement20set_next_move_date_xEj" title='Solarus::StraightMovement::set_next_move_date_x' data-ref="_ZN7Solarus16StraightMovement20set_next_move_date_xEj">set_next_move_date_x</dfn>(<a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col4 decl" id="34next_move_date_x" title='next_move_date_x' data-type='uint32_t' data-ref="34next_move_date_x">next_move_date_x</dfn>);</td></tr>
+<tr><th id="69">69</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement20set_next_move_date_yEj" title='Solarus::StraightMovement::set_next_move_date_y' data-ref="_ZN7Solarus16StraightMovement20set_next_move_date_yEj">set_next_move_date_y</dfn>(<a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="35next_move_date_y" title='next_move_date_y' data-type='uint32_t' data-ref="35next_move_date_y">next_move_date_y</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement16update_smooth_xyEv" title='Solarus::StraightMovement::update_smooth_xy' data-ref="_ZN7Solarus16StraightMovement16update_smooth_xyEv">update_smooth_xy</dfn>();</td></tr>
+<tr><th id="72">72</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement15update_smooth_xEv" title='Solarus::StraightMovement::update_smooth_x' data-ref="_ZN7Solarus16StraightMovement15update_smooth_xEv">update_smooth_x</dfn>();</td></tr>
+<tr><th id="73">73</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement15update_smooth_yEv" title='Solarus::StraightMovement::update_smooth_y' data-ref="_ZN7Solarus16StraightMovement15update_smooth_yEv">update_smooth_y</dfn>();</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus16StraightMovement20update_non_smooth_xyEv" title='Solarus::StraightMovement::update_non_smooth_xy' data-ref="_ZN7Solarus16StraightMovement20update_non_smooth_xyEv">update_non_smooth_xy</dfn>();</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>  <b>private</b>:</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>    <i>// speed vector</i></td></tr>
+<tr><th id="80">80</th><td>    <em>double</em> <dfn class="decl" id="Solarus::StraightMovement::angle" title='Solarus::StraightMovement::angle' data-ref="Solarus::StraightMovement::angle">angle</dfn>;                <i class="doc">/**&lt; angle between the speed vector and the horizontal axis in radians */</i></td></tr>
+<tr><th id="81">81</th><td>    <em>double</em> <dfn class="decl" id="Solarus::StraightMovement::x_speed" title='Solarus::StraightMovement::x_speed' data-ref="Solarus::StraightMovement::x_speed">x_speed</dfn>;              <i class="doc">/**&lt; X speed of the object to move in pixels per second.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">                                  * 0: stopped</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">                                  * positive value: moving to the right</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">                                  * negative value: moving to the left */</i></td></tr>
+<tr><th id="85">85</th><td>    <em>double</em> <dfn class="decl" id="Solarus::StraightMovement::y_speed" title='Solarus::StraightMovement::y_speed' data-ref="Solarus::StraightMovement::y_speed">y_speed</dfn>;              <i class="doc">/**&lt; Y speed of the object to move in pixels per second.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">                                  * 0: stopped</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">                                  * positive value: moving downwards</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">                                  * negative value: moving upwards */</i></td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::StraightMovement::next_move_date_x" title='Solarus::StraightMovement::next_move_date_x' data-ref="Solarus::StraightMovement::next_move_date_x">next_move_date_x</dfn>;   <i class="doc">/**&lt; Date of the next x move in ticks. */</i></td></tr>
+<tr><th id="91">91</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::StraightMovement::next_move_date_y" title='Solarus::StraightMovement::next_move_date_y' data-ref="Solarus::StraightMovement::next_move_date_y">next_move_date_y</dfn>;   <i class="doc">/**&lt; Date of the next y move in ticks. */</i></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>    <i>// the following fields are redundant and can be computed from x_speed and y_speed</i></td></tr>
+<tr><th id="94">94</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::StraightMovement::x_delay" title='Solarus::StraightMovement::x_delay' data-ref="Solarus::StraightMovement::x_delay">x_delay</dfn>;            <i class="doc">/**&lt; Delay in ticks between an x move of 1 pixel.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">                                  * x_delay = 200 / |x_speed| */</i></td></tr>
+<tr><th id="96">96</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::StraightMovement::y_delay" title='Solarus::StraightMovement::y_delay' data-ref="Solarus::StraightMovement::y_delay">y_delay</dfn>;            <i class="doc">/**&lt; Delay in ticks between an y move of 1 pixel.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">                                  * y_delay = 200 / |y_speed| */</i></td></tr>
+<tr><th id="98">98</th><td>    <em>int</em> <dfn class="decl" id="Solarus::StraightMovement::x_move" title='Solarus::StraightMovement::x_move' data-ref="Solarus::StraightMovement::x_move">x_move</dfn>;                  <i class="doc">/**&lt; Number of pixels of the next x move : 0, 1 or -1. */</i></td></tr>
+<tr><th id="99">99</th><td>    <em>int</em> <dfn class="decl" id="Solarus::StraightMovement::y_move" title='Solarus::StraightMovement::y_move' data-ref="Solarus::StraightMovement::y_move">y_move</dfn>;                  <i class="doc">/**&lt; Number of pixels of the next y move : 0, 1 or -1. */</i></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>    <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="Solarus::StraightMovement::initial_xy" title='Solarus::StraightMovement::initial_xy' data-ref="Solarus::StraightMovement::initial_xy">initial_xy</dfn>;            <i class="doc">/**&lt; Initial position when the movement started</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">                                  * (reset whenever the speed of the angle changes) */</i></td></tr>
+<tr><th id="103">103</th><td>    <em>int</em> <dfn class="decl" id="Solarus::StraightMovement::max_distance" title='Solarus::StraightMovement::max_distance' data-ref="Solarus::StraightMovement::max_distance">max_distance</dfn>;            <i class="doc">/**&lt; After this distance in pixels from the initial position,</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">                                  * or when an obstacle is reached, the movement will stop</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc">                                  * (0 means no limit) */</i></td></tr>
+<tr><th id="106">106</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::StraightMovement::finished" title='Solarus::StraightMovement::finished' data-ref="Solarus::StraightMovement::finished">finished</dfn>;               <i class="doc">/**&lt; When max_distance is not zero, indicates</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc">                                  * that max_distance or an obstacle is reached */</i></td></tr>
+<tr><th id="108">108</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::StraightMovement::smooth" title='Solarus::StraightMovement::smooth' data-ref="Solarus::StraightMovement::smooth">smooth</dfn>;                 <i class="doc">/**&lt; Makes the movement adjust its trajectory</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc">                                  * when an obstacle is close */</i></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>};</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>}</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Boomerang.cpp.html'>codebrowser/src/entities/Boomerang.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

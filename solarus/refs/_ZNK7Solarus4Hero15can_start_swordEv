@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='275' type='bool Solarus::Hero::can_start_sword() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2555' ll='2564' type='bool Solarus::Hero::can_start_sword() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2571' u='c' c='_ZN7Solarus4Hero11start_swordEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2551'>/**
+ * \brief Returns whether the hero can currently use his sword.
+ * \return \c true if the sword can be used now.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='82' u='c' c='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2247' u='c' c='_ZN7Solarus10LuaContext21hero_api_start_attackEP9lua_State'/>

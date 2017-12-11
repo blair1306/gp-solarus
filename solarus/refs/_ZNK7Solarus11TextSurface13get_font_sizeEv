@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='91' type='int Solarus::TextSurface::get_font_size() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='221' ll='223' type='int Solarus::TextSurface::get_font_size() const'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='217'>/**
+ * \brief Returns the font size.
+ * \return The font size.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='390' u='c' c='_ZN7Solarus10LuaContext30text_surface_api_get_font_sizeEP9lua_State'/>

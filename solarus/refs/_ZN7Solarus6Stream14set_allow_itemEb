@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='56' type='void Solarus::Stream::set_allow_item(bool allow_item)'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='125' ll='127' type='void Solarus::Stream::set_allow_item(bool allow_item)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='121'>/**
+ * \brief Sets whether the hero can use equipment items in this stream.
+ * \param allow_item \c true to allow the hero to use equipment items.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3621' u='c' c='_ZN7Solarus10LuaContext25stream_api_set_allow_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1037' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>

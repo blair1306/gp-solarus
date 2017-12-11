@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='47' type='Solarus::Size Solarus::SpriteAnimationDirection::get_size() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='169' u='c' c='_ZNK7Solarus6Sprite8get_sizeEv'/>
+<doc f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='46'>// size and origin point</doc>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='44' ll='48' type='Solarus::Size Solarus::SpriteAnimationDirection::get_size() const'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='40'>/**
+ * \brief Returns the size of a frame.
+ * \return The size of a frame.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='438' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>

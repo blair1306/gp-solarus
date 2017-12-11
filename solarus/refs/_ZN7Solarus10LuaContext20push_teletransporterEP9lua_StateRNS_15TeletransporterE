@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1108' type='static void Solarus::LuaContext::push_teletransporter(lua_State * l, Solarus::Teletransporter &amp; teletransporter)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2812' ll='2814' type='static void Solarus::LuaContext::push_teletransporter(lua_State * l, Solarus::Teletransporter &amp; teletransporter)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6020' u='c' c='_ZN7Solarus10LuaContext28teletransporter_on_activatedERNS_15TeletransporterE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2807'>/**
+ * \brief Pushes an teletransporter userdata onto the stack.
+ * \param l A Lua context.
+ * \param teletransporter A teletransporter.
+ */</doc>

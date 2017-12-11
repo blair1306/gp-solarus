@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='239' type='bool'/>
+<offset>2944</offset>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='239'>/**&lt; indicates that the enemy can currently attack the hero */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='104' u='w' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='493' u='r' c='_ZNK7Solarus5Enemy14get_can_attackEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='502' u='w' c='_ZN7Solarus5Enemy14set_can_attackEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='805' u='r' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='807' u='w' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1036' u='r' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1087' u='w' c='_ZN7Solarus5Enemy29attack_stopped_by_hero_shieldEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1284' u='w' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1349' u='w' c='_ZN7Solarus5Enemy4killEv'/>

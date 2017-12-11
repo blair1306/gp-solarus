@@ -1,0 +1,36 @@
+<dec f='include/SDL2/SDL_events.h' l='500' type='Uint32'/>
+<offset>0</offset>
+<doc f='include/SDL2/SDL_events.h' l='500'>/**&lt; Event type, shared with all events */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='250' u='r' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='287' u='r' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='294' u='r' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='584' u='r' c='_ZNK7Solarus10InputEvent8is_validEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='593' u='r' c='_ZNK7Solarus10InputEvent17is_keyboard_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='593' u='r' c='_ZNK7Solarus10InputEvent17is_keyboard_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='603' u='r' c='_ZNK7Solarus10InputEvent15is_joypad_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='604' u='r' c='_ZNK7Solarus10InputEvent15is_joypad_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='605' u='r' c='_ZNK7Solarus10InputEvent15is_joypad_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='606' u='r' c='_ZNK7Solarus10InputEvent15is_joypad_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='615' u='r' c='_ZNK7Solarus10InputEvent14is_mouse_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='616' u='r' c='_ZNK7Solarus10InputEvent14is_mouse_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='617' u='r' c='_ZNK7Solarus10InputEvent14is_mouse_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='618' u='r' c='_ZNK7Solarus10InputEvent14is_mouse_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='627' u='r' c='_ZNK7Solarus10InputEvent15is_finger_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='628' u='r' c='_ZNK7Solarus10InputEvent15is_finger_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='629' u='r' c='_ZNK7Solarus10InputEvent15is_finger_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='638' u='r' c='_ZNK7Solarus10InputEvent15is_window_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='650' u='r' c='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='713' u='r' c='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='843' u='r' c='_ZNK7Solarus10InputEvent20is_character_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='862' u='w' c='_ZN7Solarus10InputEvent20simulate_key_pressedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='876' u='w' c='_ZN7Solarus10InputEvent21simulate_key_releasedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='937' u='r' c='_ZNK7Solarus10InputEvent24is_joypad_button_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='947' u='r' c='_ZNK7Solarus10InputEvent25is_joypad_button_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='974' u='r' c='_ZNK7Solarus10InputEvent20is_joypad_axis_movedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1044' u='r' c='_ZNK7Solarus10InputEvent19is_joypad_hat_movedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1146' u='r' c='_ZNK7Solarus10InputEvent23is_mouse_button_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1168' u='r' c='_ZNK7Solarus10InputEvent24is_mouse_button_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1223' u='r' c='_ZNK7Solarus10InputEvent17is_finger_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1245' u='r' c='_ZNK7Solarus10InputEvent18is_finger_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1267' u='r' c='_ZNK7Solarus10InputEvent15is_finger_movedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1471' u='r' c='_ZNK7Solarus10InputEvent17is_window_closingEv'/>

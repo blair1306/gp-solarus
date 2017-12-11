@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='113' type='void Solarus::Entity::set_drawn_in_y_order(bool drawn_in_y_order)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='51' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='74' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='51' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='97' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='78' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='118' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='277' ll='279' type='void Solarus::Entity::set_drawn_in_y_order(bool drawn_in_y_order)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='272'>/**
+ * \brief Sets whether this entity should be drawn in y order.
+ * \param drawn_in_y_order \c true to draw this entity at the same level
+ * as the hero.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='121' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='59' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='76' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5369' u='c' c='_ZN7Solarus10LuaContext38custom_entity_api_set_drawn_in_y_orderEP9lua_State'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='108' type='uint32_t Solarus::Movement::get_when_suspended() const'/>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='107'>// suspended</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='423' u='c' c='_ZN7Solarus14CircleMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='424' u='c' c='_ZN7Solarus14CircleMovement13set_suspendedEb'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='402' ll='404' type='uint32_t Solarus::Movement::get_when_suspended() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='395'>/**
+ * \brief Returns the date when this movement was suspended.
+ *
+ * This function should be called only while the movement is suspended.
+ *
+ * \return the date when this movement started to be suspended
+ */</doc>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='189' u='c' c='_ZN7Solarus12PathMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='191' u='c' c='_ZN7Solarus12PathMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='201' u='c' c='_ZN7Solarus13PixelMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='203' u='c' c='_ZN7Solarus13PixelMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='167' u='c' c='_ZN7Solarus14RandomMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='206' u='c' c='_ZN7Solarus16StraightMovement20set_next_move_date_xEj'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='221' u='c' c='_ZN7Solarus16StraightMovement20set_next_move_date_yEj'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='331' u='c' c='_ZN7Solarus16StraightMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='332' u='c' c='_ZN7Solarus16StraightMovement13set_suspendedEb'/>

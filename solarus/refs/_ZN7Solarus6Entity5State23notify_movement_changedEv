@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='77' type='void Solarus::Entity::State::notify_movement_changed()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='509' ll='510' type='void Solarus::Entity::State::notify_movement_changed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='502'>/**
+ * \brief Notifies this state that the movement has changed.
+ *
+ * This function is called when the entity&apos;s movement direction changes (for instance
+ * because the player pressed or released a directional key, or the entity just reached an obstacle).
+ * The animations and collisions should be updated according to the new movement.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1179' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='238' c='_ZN7Solarus4Hero19PlayerMovementState23notify_movement_changedEv'/>

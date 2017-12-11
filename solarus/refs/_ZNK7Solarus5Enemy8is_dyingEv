@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='189' type='bool Solarus::Enemy::is_dying() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='242' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1130' u='c' c='_ZN7Solarus5Enemy7restartEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1437' u='c' c='_ZNK7Solarus5Enemy27is_dying_animation_finishedEv'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1461' ll='1464' type='bool Solarus::Enemy::is_dying() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1457'>/**
+ * \brief Returns whether the enemy is dying, i.e. his life has reached zero and the dying animation is playing.
+ * \return true if the enemy is dying
+ */</doc>

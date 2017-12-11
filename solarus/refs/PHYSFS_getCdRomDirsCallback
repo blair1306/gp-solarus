@@ -1,0 +1,32 @@
+<dec f='include/physfs.h' l='2181' type='void PHYSFS_getCdRomDirsCallback(PHYSFS_StringCallback c, void * d)'/>
+<doc f='include/physfs.h' l='2150'>/**
+ * \fn void PHYSFS_getCdRomDirsCallback(PHYSFS_StringCallback c, void *d)
+ * \brief Enumerate CD-ROM directories, using an application-defined callback.
+ *
+ * Internally, PHYSFS_getCdRomDirs() just calls this function and then builds
+ *  a list before returning to the application, so functionality is identical
+ *  except for how the information is represented to the application.
+ *
+ * Unlike PHYSFS_getCdRomDirs(), this function does not return an array.
+ *  Rather, it calls a function specified by the application once per
+ *  detected disc:
+ *
+ * \code
+ *
+ * static void foundDisc(void *data, const char *cddir)
+ * {
+ *     printf(&quot;cdrom dir [%s] is available.\n&quot;, cddir);
+ * }
+ *
+ * // ...
+ * PHYSFS_getCdRomDirsCallback(foundDisc, NULL);
+ * \endcode
+ *
+ * This call may block while drives spin up. Be forewarned.
+ *
+ *    \param c Callback function to notify about detected drives.
+ *    \param d Application-defined data passed to callback. Can be NULL.
+ *
+ * \sa PHYSFS_StringCallback
+ * \sa PHYSFS_getCdRomDirs
+ */</doc>

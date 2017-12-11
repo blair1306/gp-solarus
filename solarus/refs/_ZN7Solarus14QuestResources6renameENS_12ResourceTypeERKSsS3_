@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='74' type='bool Solarus::QuestResources::rename(Solarus::ResourceType resource_type, const std::string &amp; old_id, const std::string &amp; new_id)'/>
+<def f='codebrowser/src/QuestResources.cpp' l='167' ll='182' type='bool Solarus::QuestResources::rename(Solarus::ResourceType resource_type, const std::string &amp; old_id, const std::string &amp; new_id)'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='159'>/**
+ * \brief Changes the id of a resource element from the list.
+ * \param resource_type A type of resource.
+ * \param old_id Id of the element to change.
+ * \param new_id The new id to set.
+ * \return \c true in case of success, \c false if the old id does not
+ * exist or if the new id already exists.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Game.h' l='111' type='bool Solarus::Game::can_pause() const'/>
+<doc f='codebrowser/include/solarus/Game.h' l='110'>// pause</doc>
+<use f='codebrowser/src/Game.cpp' l='313' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/Game.cpp' l='781' ll='785' type='bool Solarus::Game::can_pause() const'/>
+<doc f='codebrowser/src/Game.cpp' l='773'>/**
+ * \brief Returns whether the player can currently pause the game.
+ *
+ * He can pause the game if the pause command is enabled
+ * and if his life is greater than zero.
+ *
+ * \return \c true if the player can currently pause the game.
+ */</doc>

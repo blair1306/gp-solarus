@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='220' type='int Solarus::Hero::get_sword_damage_factor() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1242' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2044' ll='2046' type='int Solarus::Hero::get_sword_damage_factor() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2036'>/**
+ * \brief Returns the damage power of the sword for the current attack.
+ *
+ * The value returned takes into account the power of the current sword
+ * and the fact that a spin attack is more powerful than other attacks.
+ *
+ * \return the current damage factor of the sword
+ */</doc>

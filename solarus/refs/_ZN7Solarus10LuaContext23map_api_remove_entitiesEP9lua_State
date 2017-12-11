@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='808' type='static int Solarus::LuaContext::map_api_remove_entities(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='154' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2146' ll='2155' type='static int Solarus::LuaContext::map_api_remove_entities(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2141'>/**
+ * \brief Implementation of map:remove_entities().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

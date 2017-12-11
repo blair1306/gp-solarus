@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Map.h' l='57' type='void Solarus::Map::Map(const std::string &amp; id)'/>
+<doc f='codebrowser/include/solarus/Map.h' l='56'>// creation and destruction</doc>
+<def f='codebrowser/src/Map.cpp' l='43' ll='60' type='void Solarus::Map::Map(const std::string &amp; id)'/>
+<doc f='codebrowser/src/Map.cpp' l='38'>/**
+ * \brief Creates a map.
+ * \param id Id of the map, used to determine the data file and
+ * and the script file of the map. The data file must exist.
+ */</doc>

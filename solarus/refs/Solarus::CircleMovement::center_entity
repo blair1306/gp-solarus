@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='79' type='EntityPtr'/>
+<offset>896</offset>
+<doc f='codebrowser/include/solarus/movements/CircleMovement.h' l='78'>// center of the circle</doc>
+<doc f='codebrowser/include/solarus/movements/CircleMovement.h' l='79'>/**&lt; the entity to make circles around (nullptr if only a point is used) */</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='36' u='w' c='_ZN7Solarus14CircleMovementC1Eb'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='66' u='w' c='_ZN7Solarus14CircleMovement10set_centerERKNS_5PointE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='85' u='w' c='_ZN7Solarus14CircleMovement10set_centerERKSt10shared_ptrINS_6EntityEEii'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='321' u='r' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='321' u='m' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='323' u='m' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='324' u='m' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='380' u='r' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='400' u='r' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='401' u='m' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='71' type='bool Solarus::Destructible::get_can_regenerate() const'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='211' ll='213' type='bool Solarus::Destructible::get_can_regenerate() const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='416' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='512' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='206'>/**
+ * \brief Returns whether this object regenerates after a delay when it is
+ * destroyed.
+ * \return \c true if this object can regenerate.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4212' u='c' c='_ZN7Solarus10LuaContext35destructible_api_get_can_regenerateEP9lua_State'/>

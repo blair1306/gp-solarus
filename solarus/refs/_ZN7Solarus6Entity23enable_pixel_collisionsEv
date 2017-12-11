@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='274' type='void Solarus::Entity::enable_pixel_collisions()'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='80' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='206' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1682' u='c' c='_ZN7Solarus6Entity19set_collision_modesEi'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1709' ll='1714' type='void Solarus::Entity::enable_pixel_collisions()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1705'>/**
+ * \brief Enables the pixel-perfect collision checks for all sprites
+ * of this entity.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='199' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>

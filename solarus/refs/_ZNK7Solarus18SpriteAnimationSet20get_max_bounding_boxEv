@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='58' type='const Solarus::Rectangle &amp; Solarus::SpriteAnimationSet::get_max_bounding_box() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='205' u='c' c='_ZNK7Solarus6Sprite20get_max_bounding_boxEv'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='204' ll='206' type='const Solarus::Rectangle &amp; Solarus::SpriteAnimationSet::get_max_bounding_box() const'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='195'>/**
+ * \brief Returns a rectangle big enough to contain a frame of any animation
+ * and direction.
+ *
+ * The rectangle is anchored to the origin point of the sprite,
+ * so it has has negative top and left coordinates.
+ *
+ * \return The maximum frame size.
+ */</doc>

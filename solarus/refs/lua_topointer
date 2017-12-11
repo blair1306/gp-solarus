@@ -1,0 +1,10 @@
+<dec f='include/luajit-2.0/lua.h' l='154' type='const void * lua_topointer(lua_State * L, int idx)'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='70' u='c' c='_ZN7Solarus10LuaContext8add_menuERKNS_12ScopedLuaRefEib'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='99' u='c' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='423' u='c' c='_ZN7Solarus10LuaContext15menus_on_updateEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='447' u='c' c='_ZN7Solarus10LuaContext13menus_on_drawEiRKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='472' u='c' c='_ZN7Solarus10LuaContext14menus_on_inputEiRKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='503' u='c' c='_ZN7Solarus10LuaContext24menus_on_command_pressedEiNS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='534' u='c' c='_ZN7Solarus10LuaContext25menus_on_command_releasedEiNS_11GameCommandE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='122' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='209' u='c' c='_ZN7Solarus10LuaContext13remove_timersEi'/>

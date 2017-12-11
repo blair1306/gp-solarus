@@ -1,0 +1,25 @@
+<inh f='codebrowser/include/solarus/movements/PixelMovement.h' l='32' c='Solarus::PixelMovement'/>
+<def f='codebrowser/include/solarus/movements/JumpMovement.h' l='31' ll='67'/>
+<size>184</size>
+<doc f='codebrowser/include/solarus/movements/JumpMovement.h' l='26'>/**
+ * \brief Movement of an entity that jumps towards a direction.
+ *
+ * TODO: inherit StraightMovement instead?
+ */</doc>
+<fun r='_ZN7Solarus12JumpMovementC1Eiiib'/>
+<fun r='_ZNK7Solarus12JumpMovement14get_direction8Ev'/>
+<fun r='_ZN7Solarus12JumpMovement14set_direction8Ei'/>
+<fun r='_ZNK7Solarus12JumpMovement12get_distanceEv'/>
+<fun r='_ZN7Solarus12JumpMovement12set_distanceEi'/>
+<fun r='_ZNK7Solarus12JumpMovement9get_speedEv'/>
+<fun r='_ZN7Solarus12JumpMovement9set_speedEi'/>
+<fun r='_ZNK7Solarus12JumpMovement24get_displayed_direction4Ev'/>
+<fun r='_ZNK7Solarus12JumpMovement16get_displayed_xyEv'/>
+<fun r='_ZNK7Solarus12JumpMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus12JumpMovement16notify_step_doneEib'/>
+<fun r='_ZN7Solarus12JumpMovement7restartEv'/>
+<smbr r='Solarus::JumpMovement::basic_trajectories' t='const std::string []'/>
+<mbr r='Solarus::JumpMovement::direction8' o='1344' t='int'/>
+<mbr r='Solarus::JumpMovement::distance' o='1376' t='int'/>
+<mbr r='Solarus::JumpMovement::speed' o='1408' t='int'/>
+<mbr r='Solarus::JumpMovement::jump_height' o='1440' t='int'/>

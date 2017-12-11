@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='153' type='Solarus::LuaContext &amp; Solarus::Entity::State::get_lua_context()'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='152'>// access to various game objects</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='121' ll='123' type='Solarus::LuaContext &amp; Solarus::Entity::State::get_lua_context()'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='197' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='117'>/**
+ * \brief Returns the shared Lua context.
+ * \return The Lua context where all scripts are run.
+ */</doc>
+<use f='codebrowser/src/hero/HurtState.cpp' l='83' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='77' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>

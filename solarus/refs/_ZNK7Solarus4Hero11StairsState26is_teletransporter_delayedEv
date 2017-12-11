@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='48' type='bool Solarus::Hero::StairsState::is_teletransporter_delayed() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='102' c='_ZNK7Solarus6Entity5State26is_teletransporter_delayedEv'/>
+<def f='codebrowser/src/hero/StairsState.cpp' l='311' ll='313' type='bool Solarus::Hero::StairsState::is_teletransporter_delayed() const'/>
+<doc f='codebrowser/src/hero/StairsState.cpp' l='303'>/**
+ * \brief Returns whether the effect of teletransporters is delayed in this state.
+ *
+ * When overlapping a teletransporter, if this function returns true, the teletransporter
+ * will not be activated immediately. The state then has to activate it when it is ready.
+ *
+ * \return true if the effect of teletransporters is delayed in this state
+ */</doc>

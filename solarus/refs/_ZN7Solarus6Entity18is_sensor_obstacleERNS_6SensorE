@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='341' type='bool Solarus::Entity::is_sensor_obstacle(Solarus::Sensor &amp; sensor)'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='610' c='_ZN7Solarus13CarriedObject18is_sensor_obstacleERNS_6SensorE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='485' c='_ZN7Solarus12CustomEntity18is_sensor_obstacleERNS_6SensorE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='491' u='c' c='_ZN7Solarus12CustomEntity18is_sensor_obstacleERNS_6SensorE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2628' ll='2630' type='bool Solarus::Entity::is_sensor_obstacle(Solarus::Sensor &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2620'>/**
+ * \brief Returns whether a sensor is currently considered as an obstacle by this entity.
+ *
+ * This function returns false by default.
+ *
+ * \param sensor a sensor
+ * \return true if the sensor is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2628'>/* sensor */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1505' c='_ZN7Solarus4Hero18is_sensor_obstacleERNS_6SensorE'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='71' u='c' c='_ZN7Solarus6Sensor15is_obstacle_forERNS_6EntityE'/>

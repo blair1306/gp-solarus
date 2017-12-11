@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='151'/>
+<doc f='include/SDL2/SDL_hints.h' l='142'>/**
+ *  \brief  A variable controlling whether the X11 VidMode extension should be used.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Disable XVidMode
+ *    &quot;1&quot;       - Enable XVidMode
+ *
+ *  By default SDL will use XVidMode if it is available.
+ */</doc>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='127' type='Solarus::Surface &amp; Solarus::Sprite::get_intermediate_surface() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='776' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='777' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='779' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='780' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='809' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='814' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='848' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='849' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='863' u='c' c='_ZN7Solarus6Sprite15draw_transitionERNS_10TransitionE'/>
+<use f='codebrowser/src/Sprite.cpp' l='872' u='c' c='_ZN7Solarus6Sprite22get_transition_surfaceEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='883' ll='889' type='Solarus::Surface &amp; Solarus::Sprite::get_intermediate_surface() const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='875'>/**
+ * \brief Returns the intermediate surface used for transitions and other
+ * effects for this sprite.
+ *
+ * Creates this intermediate surface if it does not exist yet.
+ *
+ * \return The intermediate surface of this sprite.
+ */</doc>

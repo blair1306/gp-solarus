@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='61' type='void Solarus::Chest::set_open(bool open)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='145' ll='166' type='void Solarus::Chest::set_open(bool open)'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='426' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='134'>/**
+ * \brief Sets whether the chest is open.
+ *
+ * If you don&apos;t change the chest state, this function has no effect.
+ * If you make the chest open, its sprite is updated but this function does
+ * not give any treasure to the player.
+ * If you close the chest, its sprite is updated and the chest will contain
+ * its initial treasure again.
+ *
+ * \param open true to open the chest, false to close it
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3083' u='c' c='_ZN7Solarus10LuaContext18chest_api_set_openEP9lua_State'/>

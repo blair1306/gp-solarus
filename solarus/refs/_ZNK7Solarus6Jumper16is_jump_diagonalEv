@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='57' type='bool Solarus::Jumper::is_jump_diagonal() const'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='110' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='262' ll='265' type='bool Solarus::Jumper::is_jump_diagonal() const'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='332' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='258'>/**
+ * \brief Returns whether the direction of this jumper is diagonal.
+ * \return \c true if this jumper is a diagonal one.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='163' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='170' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>

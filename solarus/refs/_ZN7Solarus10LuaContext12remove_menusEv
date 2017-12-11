@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='226' type='void Solarus::LuaContext::remove_menus()'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='123' ll='142' type='void Solarus::LuaContext::remove_menus()'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='118'>/**
+ * \brief Unregisters all existing menus.
+ *
+ * This function can be called safely even while iterating on the menus list.
+ */</doc>

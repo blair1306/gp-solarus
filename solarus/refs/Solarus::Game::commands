@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Game.h' l='152' type='std::unique_ptr&lt;GameCommands&gt;'/>
+<offset>1920</offset>
+<doc f='codebrowser/include/solarus/Game.h' l='150'>// controls</doc>
+<use f='codebrowser/src/Game.cpp' l='71' u='w' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='202' u='m' c='_ZN7Solarus4Game12get_commandsEv'/>
+<use f='codebrowser/src/Game.cpp' l='210' u='m' c='_ZNK7Solarus4Game12get_commandsEv'/>
+<use f='codebrowser/src/Game.cpp' l='275' u='m' c='_ZN7Solarus4Game12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/Game.cpp' l='946' u='m' c='_ZN7Solarus4Game24simulate_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='954' u='m' c='_ZN7Solarus4Game25simulate_command_releasedENS_11GameCommandE'/>

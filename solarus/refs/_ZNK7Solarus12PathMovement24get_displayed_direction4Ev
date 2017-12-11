@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='68' type='int Solarus::PathMovement::get_displayed_direction4() const'/>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero18ForcedWalkingState6updateEv'/>
+<inh f='codebrowser/include/solarus/movements/Movement.h' l='92' c='_ZNK7Solarus8Movement24get_displayed_direction4Ev'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='358' ll='362' type='int Solarus::PathMovement::get_displayed_direction4() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='354'>/**
+ * \brief Returns the direction a sprite controlled by this movement should take.
+ * \return the direction to use to display the object controlled by this movement (0 to 3)
+ */</doc>

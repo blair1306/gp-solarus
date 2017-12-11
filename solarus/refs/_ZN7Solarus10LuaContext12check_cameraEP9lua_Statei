@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1175' type='static std::shared_ptr&lt;Camera&gt; Solarus::LuaContext::check_camera(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2575' ll='2579' type='static std::shared_ptr&lt;Camera&gt; Solarus::LuaContext::check_camera(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2598' u='c' c='_ZN7Solarus10LuaContext33camera_api_get_position_on_screenEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2617' u='c' c='_ZN7Solarus10LuaContext33camera_api_set_position_on_screenEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2635' u='c' c='_ZN7Solarus10LuaContext25camera_api_start_trackingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2652' u='c' c='_ZN7Solarus10LuaContext23camera_api_start_manualEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2668' u='c' c='_ZN7Solarus10LuaContext32camera_api_get_position_to_trackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2699' u='c' c='_ZN7Solarus10LuaContext29camera_api_get_tracked_entityEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2568'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * camera and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The camera.
+ */</doc>

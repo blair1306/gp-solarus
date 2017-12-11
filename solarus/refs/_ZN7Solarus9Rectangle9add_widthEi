@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='84' type='void Solarus::Rectangle::add_width(int dw)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='341' ll='343' type='void Solarus::Rectangle::add_width(int dw)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='337'>/**
+ * \brief Adds a value to the width of this rectangle.
+ * \param dw the value to add
+ */</doc>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='75' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='91' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='93' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='109' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>

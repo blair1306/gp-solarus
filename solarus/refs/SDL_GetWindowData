@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_video.h' l='489' type='void * SDL_GetWindowData(SDL_Window * window, const char * name)'/>
+<doc f='include/SDL2/SDL_video.h' l='479'>/**
+ *  \brief Retrieve the data pointer associated with a window.
+ *
+ *  \param window   The window to query.
+ *  \param name     The name of the pointer.
+ *
+ *  \return The value associated with &apos;name&apos;
+ *
+ *  \sa SDL_SetWindowData()
+ */</doc>

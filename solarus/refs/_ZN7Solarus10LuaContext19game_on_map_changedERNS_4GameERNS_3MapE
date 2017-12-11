@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='339' type='void Solarus::LuaContext::game_on_map_changed(Solarus::Game &amp; game, Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/Game.cpp' l='664' u='c' c='_ZN7Solarus4Game18notify_map_changedEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1638' ll='1647' type='void Solarus::LuaContext::game_on_map_changed(Solarus::Game &amp; game, Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1630'>/**
+ * \brief Calls the on_changed() method of a Lua game.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param game A game.
+ * \param map The new active map.
+ */</doc>

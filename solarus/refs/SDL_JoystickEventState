@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_joystick.h' l='175' type='int SDL_JoystickEventState(int state)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='166'>/**
+ *  Enable/disable joystick event polling.
+ *
+ *  If joystick events are disabled, you must call SDL_JoystickUpdate()
+ *  yourself and check the state of the joystick when you want joystick
+ *  information.
+ *
+ *  The state can be one of ::SDL_QUERY, ::SDL_ENABLE or ::SDL_IGNORE.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='922' u='c' c='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>

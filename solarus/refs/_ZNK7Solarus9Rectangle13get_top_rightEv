@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='68' type='Solarus::Point Solarus::Rectangle::get_top_right() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='200' ll='202' type='Solarus::Point Solarus::Rectangle::get_top_right() const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='628' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='193'>/**
+ * \brief Returns the top-right point of this rectangle.
+ *
+ * This is the equivalent of: Point(get_right(), get_top())
+ *
+ * \return The top-right point.
+ */</doc>

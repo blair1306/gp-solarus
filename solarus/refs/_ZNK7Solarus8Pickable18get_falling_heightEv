@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='66' type='Solarus::FallingHeight Solarus::Pickable::get_falling_height() const'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='255' u='c' c='_ZNK7Solarus8Pickable10is_fallingEv'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='262' ll='264' type='Solarus::FallingHeight Solarus::Pickable::get_falling_height() const'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='258'>/**
+ * \brief Returns the height this pickable item falls from when it appears.
+ * \return the falling height
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3934' u='c' c='_ZN7Solarus10LuaContext31pickable_api_get_falling_heightEP9lua_State'/>

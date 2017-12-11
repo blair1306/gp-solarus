@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='69' type='int Solarus::Equipment::get_max_life() const'/>
+<def f='codebrowser/src/Equipment.cpp' l='214' ll='216' type='int Solarus::Equipment::get_max_life() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='234' u='c' c='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='257' u='c' c='_ZN7Solarus9Equipment8set_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='293' u='c' c='_ZN7Solarus9Equipment16restore_all_lifeEv'/>
+<doc f='codebrowser/src/Equipment.cpp' l='210'>/**
+ * \brief Returns the maximum level of life of the player.
+ * \return the player&apos;s maximum level of life
+ */</doc>
+<doc f='codebrowser/include/solarus/Equipment.h' l='68'>// life</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='829' u='c' c='_ZN7Solarus10LuaContext21game_api_get_max_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='873' u='c' c='_ZN7Solarus10LuaContext21game_api_add_max_lifeEP9lua_State'/>

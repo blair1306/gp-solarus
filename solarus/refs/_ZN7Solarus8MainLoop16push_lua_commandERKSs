@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='58' type='int Solarus::MainLoop::push_lua_command(const std::string &amp; command)'/>
+<def f='codebrowser/src/MainLoop.cpp' l='299' ll='304' type='int Solarus::MainLoop::push_lua_command(const std::string &amp; command)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='554' u='c' c='_ZN7Solarus8MainLoop22initialize_lua_consoleEv'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='290'>/**
+ * \brief Schedules a Lua command to be executed at the next cycle.
+ *
+ * This function is thread safe, it can be called from a separate thread
+ * while the main loop is running.
+ *
+ * \param command The Lua string to execute.
+ * \return A number identifying your command.
+ */</doc>

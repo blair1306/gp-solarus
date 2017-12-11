@@ -1,0 +1,243 @@
+<def f='include/libmodplug/sndfile.h' l='538' ll='793'/>
+<size>74552</size>
+<doc f='include/libmodplug/sndfile.h' l='537'>//==============</doc>
+<smbr r='CSoundFile::m_nXBassDepth' t='UINT'/>
+<smbr r='CSoundFile::m_nXBassRange' t='UINT'/>
+<smbr r='CSoundFile::m_nReverbDepth' t='UINT'/>
+<smbr r='CSoundFile::m_nReverbDelay' t='UINT'/>
+<smbr r='CSoundFile::gnReverbType' t='UINT'/>
+<smbr r='CSoundFile::m_nProLogicDepth' t='UINT'/>
+<smbr r='CSoundFile::m_nProLogicDelay' t='UINT'/>
+<smbr r='CSoundFile::m_nStereoSeparation' t='UINT'/>
+<smbr r='CSoundFile::m_nMaxMixChannels' t='UINT'/>
+<smbr r='CSoundFile::m_nStreamVolume' t='LONG'/>
+<smbr r='CSoundFile::gdwSysInfo' t='DWORD'/>
+<smbr r='CSoundFile::gdwSoundSetup' t='DWORD'/>
+<smbr r='CSoundFile::gdwMixingFreq' t='DWORD'/>
+<smbr r='CSoundFile::gnBitsPerSample' t='DWORD'/>
+<smbr r='CSoundFile::gnChannels' t='DWORD'/>
+<smbr r='CSoundFile::gnAGC' t='UINT'/>
+<smbr r='CSoundFile::gnVolumeRampSamples' t='UINT'/>
+<smbr r='CSoundFile::gnVUMeter' t='UINT'/>
+<smbr r='CSoundFile::gnCPUUsage' t='UINT'/>
+<smbr r='CSoundFile::gpSndMixHook' t='LPSNDMIXHOOKPROC'/>
+<smbr r='CSoundFile::gpMixPluginCreateProc' t='PMIXPLUGINCREATEPROC'/>
+<mbr r='CSoundFile::Chn' o='0' t='MODCHANNEL [128]'/>
+<mbr r='CSoundFile::ChnMix' o='286720' t='UINT [128]'/>
+<mbr r='CSoundFile::Ins' o='290816' t='MODINSTRUMENT [240]'/>
+<mbr r='CSoundFile::Headers' o='429056' t='INSTRUMENTHEADER *[240]'/>
+<mbr r='CSoundFile::ChnSettings' o='444416' t='MODCHANNELSETTINGS [64]'/>
+<mbr r='CSoundFile::Patterns' o='462848' t='MODCOMMAND *[240]'/>
+<mbr r='CSoundFile::PatternSize' o='478208' t='WORD [240]'/>
+<mbr r='CSoundFile::Order' o='482048' t='BYTE [256]'/>
+<mbr r='CSoundFile::m_MidiCfg' o='484096' t='MODMIDICFG'/>
+<mbr r='CSoundFile::m_MixPlugins' o='523264' t='SNDMIXPLUGIN [8]'/>
+<mbr r='CSoundFile::m_nDefaultSpeed' o='533504' t='UINT'/>
+<mbr r='CSoundFile::m_nDefaultTempo' o='533536' t='UINT'/>
+<mbr r='CSoundFile::m_nDefaultGlobalVolume' o='533568' t='UINT'/>
+<mbr r='CSoundFile::m_dwSongFlags' o='533600' t='DWORD'/>
+<mbr r='CSoundFile::m_nChannels' o='533632' t='UINT'/>
+<mbr r='CSoundFile::m_nMixChannels' o='533664' t='UINT'/>
+<mbr r='CSoundFile::m_nMixStat' o='533696' t='UINT'/>
+<mbr r='CSoundFile::m_nBufferCount' o='533728' t='UINT'/>
+<mbr r='CSoundFile::m_nType' o='533760' t='UINT'/>
+<mbr r='CSoundFile::m_nSamples' o='533792' t='UINT'/>
+<mbr r='CSoundFile::m_nInstruments' o='533824' t='UINT'/>
+<mbr r='CSoundFile::m_nTickCount' o='533856' t='UINT'/>
+<mbr r='CSoundFile::m_nTotalCount' o='533888' t='UINT'/>
+<mbr r='CSoundFile::m_nPatternDelay' o='533920' t='UINT'/>
+<mbr r='CSoundFile::m_nFrameDelay' o='533952' t='UINT'/>
+<mbr r='CSoundFile::m_nMusicSpeed' o='533984' t='UINT'/>
+<mbr r='CSoundFile::m_nMusicTempo' o='534016' t='UINT'/>
+<mbr r='CSoundFile::m_nNextRow' o='534048' t='UINT'/>
+<mbr r='CSoundFile::m_nRow' o='534080' t='UINT'/>
+<mbr r='CSoundFile::m_nPattern' o='534112' t='UINT'/>
+<mbr r='CSoundFile::m_nCurrentPattern' o='534144' t='UINT'/>
+<mbr r='CSoundFile::m_nNextPattern' o='534176' t='UINT'/>
+<mbr r='CSoundFile::m_nRestartPos' o='534208' t='UINT'/>
+<mbr r='CSoundFile::m_nMasterVolume' o='534240' t='UINT'/>
+<mbr r='CSoundFile::m_nGlobalVolume' o='534272' t='UINT'/>
+<mbr r='CSoundFile::m_nSongPreAmp' o='534304' t='UINT'/>
+<mbr r='CSoundFile::m_nFreqFactor' o='534336' t='UINT'/>
+<mbr r='CSoundFile::m_nTempoFactor' o='534368' t='UINT'/>
+<mbr r='CSoundFile::m_nOldGlbVolSlide' o='534400' t='UINT'/>
+<mbr r='CSoundFile::m_nMinPeriod' o='534432' t='LONG'/>
+<mbr r='CSoundFile::m_nMaxPeriod' o='534464' t='LONG'/>
+<mbr r='CSoundFile::m_nRepeatCount' o='534496' t='LONG'/>
+<mbr r='CSoundFile::m_nInitialRepeatCount' o='534528' t='LONG'/>
+<mbr r='CSoundFile::m_nGlobalFadeSamples' o='534560' t='DWORD'/>
+<mbr r='CSoundFile::m_nGlobalFadeMaxSamples' o='534592' t='DWORD'/>
+<mbr r='CSoundFile::m_nMaxOrderPosition' o='534624' t='UINT'/>
+<mbr r='CSoundFile::m_nPatternNames' o='534656' t='UINT'/>
+<mbr r='CSoundFile::m_lpszSongComments' o='534720' t='LPSTR'/>
+<mbr r='CSoundFile::m_lpszPatternNames' o='534784' t='LPSTR'/>
+<mbr r='CSoundFile::m_szNames' o='534848' t='char [240][32]'/>
+<mbr r='CSoundFile::CompressionTable' o='596288' t='CHAR [16]'/>
+<fun r='_ZN10CSoundFileC1Ev'/>
+<fun r='_ZN10CSoundFileD1Ev'/>
+<fun r='_ZN10CSoundFile6CreateEPKhj'/>
+<fun r='_ZN10CSoundFile7DestroyEv'/>
+<fun r='_ZNK10CSoundFile7GetTypeEv'/>
+<fun r='_ZNK10CSoundFile14GetNumChannelsEv'/>
+<fun r='_ZNK10CSoundFile18GetLogicalChannelsEv'/>
+<fun r='_ZN10CSoundFile15SetMasterVolumeEjb'/>
+<fun r='_ZNK10CSoundFile15GetMasterVolumeEv'/>
+<fun r='_ZNK10CSoundFile14GetNumPatternsEv'/>
+<fun r='_ZNK10CSoundFile17GetNumInstrumentsEv'/>
+<fun r='_ZNK10CSoundFile13GetNumSamplesEv'/>
+<fun r='_ZNK10CSoundFile13GetCurrentPosEv'/>
+<fun r='_ZNK10CSoundFile17GetCurrentPatternEv'/>
+<fun r='_ZNK10CSoundFile15GetCurrentOrderEv'/>
+<fun r='_ZN10CSoundFile15GetSongCommentsEPcjj'/>
+<fun r='_ZN10CSoundFile18GetRawSongCommentsEPcjj'/>
+<fun r='_ZNK10CSoundFile14GetMaxPositionEv'/>
+<fun r='_ZN10CSoundFile13SetCurrentPosEj'/>
+<fun r='_ZN10CSoundFile15SetCurrentOrderEj'/>
+<fun r='_ZNK10CSoundFile8GetTitleEPc'/>
+<fun r='_ZNK10CSoundFile8GetTitleEv'/>
+<fun r='_ZNK10CSoundFile13GetSampleNameEjPc'/>
+<fun r='_ZNK10CSoundFile17GetInstrumentNameEjPc'/>
+<fun r='_ZNK10CSoundFile13GetMusicSpeedEv'/>
+<fun r='_ZNK10CSoundFile13GetMusicTempoEv'/>
+<fun r='_ZN10CSoundFile9GetLengthEbb'/>
+<fun r='_ZN10CSoundFile11GetSongTimeEv'/>
+<fun r='_ZN10CSoundFile14SetRepeatCountEi'/>
+<fun r='_ZNK10CSoundFile14GetRepeatCountEv'/>
+<fun r='_ZNK10CSoundFile8IsPausedEv'/>
+<fun r='_ZN10CSoundFile11LoopPatternEii'/>
+<fun r='_ZN10CSoundFile13CheckCPUUsageEj'/>
+<fun r='_ZN10CSoundFile14SetPatternNameEjPKc'/>
+<fun r='_ZNK10CSoundFile14GetPatternNameEjPcj'/>
+<fun r='_ZN10CSoundFile6ReadXMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadS3MEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadModEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadMedEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadMTMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadSTMEPKhj'/>
+<fun r='_ZN10CSoundFile6ReadITEPKhj'/>
+<fun r='_ZN10CSoundFile7Read669EPKhj'/>
+<fun r='_ZN10CSoundFile7ReadUltEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadWavEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadDSMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadFAREPKhj'/>
+<fun r='_ZN10CSoundFile7ReadAMSEPKhj'/>
+<fun r='_ZN10CSoundFile8ReadAMS2EPKhj'/>
+<fun r='_ZN10CSoundFile7ReadMDLEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadOKTEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadDMFEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadPTMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadDBMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadAMFEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadMT2EPKhj'/>
+<fun r='_ZN10CSoundFile7ReadPSMEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadJ2BEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadUMXEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadABCEPKhj'/>
+<fun r='_ZN10CSoundFile7TestABCEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadMIDEPKhj'/>
+<fun r='_ZN10CSoundFile7TestMIDEPKhj'/>
+<fun r='_ZN10CSoundFile7ReadPATEPKhj'/>
+<fun r='_ZN10CSoundFile7TestPATEPKhj'/>
+<fun r='_ZNK10CSoundFile17GetBestSaveFormatEv'/>
+<fun r='_ZNK10CSoundFile14GetSaveFormatsEv'/>
+<fun r='_ZNK10CSoundFile17ConvertModCommandEP11_MODCOMMAND'/>
+<fun r='_ZNK10CSoundFile10S3MConvertEP11_MODCOMMANDb'/>
+<fun r='_ZNK10CSoundFile14S3MSaveConvertEPjS0_b'/>
+<fun r='_ZNK10CSoundFile14ModSaveCommandEPK11_MODCOMMANDb'/>
+<fun r='_ZN10CSoundFile13ResetChannelsEv'/>
+<fun r='_ZN10CSoundFile4ReadEPvj'/>
+<fun r='_ZN10CSoundFile15CreateStereoMixEi'/>
+<fun r='_ZN10CSoundFile8FadeSongEj'/>
+<fun r='_ZN10CSoundFile14GlobalFadeSongEj'/>
+<fun r='_ZNK10CSoundFile17GetTotalTickCountEv'/>
+<fun r='_ZN10CSoundFile19ResetTotalTickCountEv'/>
+<fun r='_ZN10CSoundFile10InitPlayerEb'/>
+<fun r='_ZN10CSoundFile12SetMixConfigEjj'/>
+<fun r='_ZN10CSoundFile13SetWaveConfigEjjjb'/>
+<fun r='_ZN10CSoundFile17SetResamplingModeEj'/>
+<fun r='_ZN10CSoundFile8IsStereoEv'/>
+<fun r='_ZN10CSoundFile13GetSampleRateEv'/>
+<fun r='_ZN10CSoundFile16GetBitsPerSampleEv'/>
+<fun r='_ZN10CSoundFile11InitSysInfoEv'/>
+<fun r='_ZN10CSoundFile10GetSysInfoEv'/>
+<fun r='_ZN10CSoundFile6GetAGCEv'/>
+<fun r='_ZN10CSoundFile6SetAGCEb'/>
+<fun r='_ZN10CSoundFile8ResetAGCEv'/>
+<fun r='_ZN10CSoundFile10ProcessAGCEi'/>
+<fun r='_ZN10CSoundFile15SetWaveConfigExEbbbbbbb'/>
+<fun r='_ZN10CSoundFile13InitializeDSPEb'/>
+<fun r='_ZN10CSoundFile16ProcessStereoDSPEi'/>
+<fun r='_ZN10CSoundFile14ProcessMonoDSPEi'/>
+<fun r='_ZN10CSoundFile19SetReverbParametersEjj'/>
+<fun r='_ZN10CSoundFile18SetXBassParametersEjj'/>
+<fun r='_ZN10CSoundFile21SetSurroundParametersEjj'/>
+<fun r='_ZN10CSoundFile8ReadNoteEv'/>
+<fun r='_ZN10CSoundFile10ProcessRowEv'/>
+<fun r='_ZN10CSoundFile14ProcessEffectsEv'/>
+<fun r='_ZNK10CSoundFile13GetNNAChannelEj'/>
+<fun r='_ZN10CSoundFile8CheckNNAEjjib'/>
+<fun r='_ZN10CSoundFile10NoteChangeEjibb'/>
+<fun r='_ZN10CSoundFile16InstrumentChangeEP11_MODCHANNELjbbb'/>
+<fun r='_ZN10CSoundFile12PortamentoUpEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile14PortamentoDownEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile16FinePortamentoUpEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile18FinePortamentoDownEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile21ExtraFinePortamentoUpEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile23ExtraFinePortamentoDownEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile14TonePortamentoEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile7VibratoEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile11FineVibratoEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile11VolumeSlideEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile12PanningSlideEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile15ChannelVolSlideEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile12FineVolumeUpEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile14FineVolumeDownEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile7TremoloEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile9PanbrelloEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile10RetrigNoteEjj'/>
+<fun r='_ZN10CSoundFile7NoteCutEjj'/>
+<fun r='_ZN10CSoundFile6KeyOffEj'/>
+<fun r='_ZN10CSoundFile11PatternLoopEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile19ExtendedMODCommandsEjj'/>
+<fun r='_ZN10CSoundFile19ExtendedS3MCommandsEjj'/>
+<fun r='_ZN10CSoundFile21ExtendedChannelEffectEP11_MODCHANNELj'/>
+<fun r='_ZN10CSoundFile16ProcessMidiMacroEjPKcj'/>
+<fun r='_ZNK10CSoundFile18SetupChannelFilterEP11_MODCHANNELbi'/>
+<fun r='_ZN10CSoundFile11DoFreqSlideEP11_MODCHANNELi'/>
+<fun r='_ZN10CSoundFile8SetTempoEj'/>
+<fun r='_ZN10CSoundFile8SetSpeedEj'/>
+<fun r='_ZN10CSoundFile14GlobalVolSlideEj'/>
+<fun r='_ZNK10CSoundFile14IsSongFinishedEjj'/>
+<fun r='_ZNK10CSoundFile19IsValidBackwardJumpEjjjj'/>
+<fun r='_ZNK10CSoundFile13GetDeltaValueEaj'/>
+<fun r='_ZN10CSoundFile10PackSampleERii'/>
+<fun r='_ZN10CSoundFile13CanPackSampleEPcjjPh'/>
+<fun r='_ZN10CSoundFile10ReadSampleEP14_MODINSTRUMENTjPKcj'/>
+<fun r='_ZN10CSoundFile13DestroySampleEj'/>
+<fun r='_ZN10CSoundFile17DestroyInstrumentEj'/>
+<fun r='_ZN10CSoundFile12IsSampleUsedEj'/>
+<fun r='_ZN10CSoundFile16IsInstrumentUsedEj'/>
+<fun r='_ZN10CSoundFile23RemoveInstrumentSamplesEj'/>
+<fun r='_ZN10CSoundFile19DetectUnusedSamplesEPb'/>
+<fun r='_ZN10CSoundFile21RemoveSelectedSamplesEPb'/>
+<fun r='_ZN10CSoundFile16AdjustSampleLoopEP14_MODINSTRUMENT'/>
+<fun r='_ZN10CSoundFile22ReadInstrumentFromSongEjPS_j'/>
+<fun r='_ZN10CSoundFile18ReadSampleFromSongEjPS_j'/>
+<fun r='_ZNK10CSoundFile17GetNoteFromPeriodEj'/>
+<fun r='_ZNK10CSoundFile17GetPeriodFromNoteEjij'/>
+<fun r='_ZNK10CSoundFile17GetFreqFromPeriodEjji'/>
+<fun r='_ZN10CSoundFile9GetSampleEj'/>
+<fun r='_ZN10CSoundFile12ResetMidiCfgEv'/>
+<fun r='_ZN10CSoundFile17MapMidiInstrumentEjjj'/>
+<fun r='_ZN10CSoundFile12ITInstrToMPTEPKvP17_INSTRUMENTHEADERj'/>
+<fun r='_ZN10CSoundFile14SaveMixPluginsEP8_IO_FILEb'/>
+<fun r='_ZN10CSoundFile14LoadMixPluginsEPKvj'/>
+<fun r='_ZNK10CSoundFile17CutOffToFrequencyEji'/>
+<fun r='_ZN10CSoundFile20TransposeToFrequencyEii'/>
+<fun r='_ZN10CSoundFile20FrequencyToTransposeEj'/>
+<fun r='_ZN10CSoundFile20FrequencyToTransposeEP14_MODINSTRUMENT'/>
+<fun r='_ZN10CSoundFile15AllocatePatternEjj'/>
+<fun r='_ZN10CSoundFile14AllocateSampleEj'/>
+<fun r='_ZN10CSoundFile11FreePatternEPv'/>
+<fun r='_ZN10CSoundFile10FreeSampleEPv'/>
+<fun r='_ZN10CSoundFile20Normalize24BitBufferEPhjjj'/>

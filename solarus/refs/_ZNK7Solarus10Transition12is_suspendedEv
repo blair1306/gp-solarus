@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='68' type='bool Solarus::Transition::is_suspended() const'/>
+<def f='codebrowser/src/Transition.cpp' l='144' ll='146' type='bool Solarus::Transition::is_suspended() const'/>
+<doc f='codebrowser/src/Transition.cpp' l='140'>/**
+ * \brief Returns whether this transition is currently suspended.
+ * \return true if this transition is suspended.
+ */</doc>
+<use f='codebrowser/src/TransitionFade.cpp' l='158' u='c' c='_ZN7Solarus14TransitionFade6updateEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='197' u='c' c='_ZN7Solarus19TransitionScrolling6updateEv'/>

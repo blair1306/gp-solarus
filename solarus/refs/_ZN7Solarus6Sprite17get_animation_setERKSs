@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='125' type='static Solarus::SpriteAnimationSet &amp; Solarus::Sprite::get_animation_set(const std::string &amp; id)'/>
+<def f='codebrowser/src/Sprite.cpp' l='68' ll='83' type='static Solarus::SpriteAnimationSet &amp; Solarus::Sprite::get_animation_set(const std::string &amp; id)'/>
+<use f='codebrowser/src/Sprite.cpp' l='92' u='c' c='_ZN7Solarus6SpriteC1ERKSs'/>
+<doc f='codebrowser/src/Sprite.cpp' l='59'>/**
+ * \brief Returns the sprite animation set corresponding to the specified id.
+ *
+ * The animation set may be created if it is new, or just retrieved from
+ * memory if it way already used before.
+ *
+ * \param id id of the animation set
+ * \return the corresponding animation set
+ */</doc>

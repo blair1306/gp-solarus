@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='202' type='void Solarus::LuaContext::notify_userdata_destroyed(Solarus::ExportableToLua &amp; userdata)'/>
+<use f='codebrowser/src/lua/ExportableToLua.cpp' l='39' u='c' c='_ZN7Solarus15ExportableToLuaD1Ev'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1195' ll='1218' type='void Solarus::LuaContext::notify_userdata_destroyed(Solarus::ExportableToLua &amp; userdata)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1187'>/**
+ * \brief Function called when a userdata is being destroyed from C++.
+ *
+ * It means that it is no longer used from Lua either
+ * (__gc has been called before or is being called).
+ *
+ * \param userdata The userdata just destroyed.
+ */</doc>

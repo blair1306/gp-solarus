@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='114' type='bool Solarus::Entity::is_drawn_at_its_position() const'/>
+<ovr f='codebrowser/src/entities/DynamicTile.cpp' l='82' c='_ZNK7Solarus11DynamicTile24is_drawn_at_its_positionEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='993' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3448' ll='3450' type='bool Solarus::Entity::is_drawn_at_its_position() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3436'>/**
+ * \brief Returns whether this entity is drawn at its position on the map.
+ *
+ * Usually, this function returns true, and when it is the case, draw_on_map()
+ * is called only for entities located in the camera&apos;s rectangle.
+ *
+ * However, some entities may want to be drawn in the camera even when their
+ * position is outside, typically to make an illusion of movement like parallax
+ * scrolling.
+ *
+ * \return true if this entity is drawn where it is located.
+ */</doc>
+<ovr f='codebrowser/src/entities/Tile.cpp' l='51' c='_ZNK7Solarus4Tile24is_drawn_at_its_positionEv'/>

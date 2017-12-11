@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='73' type='Solarus::Point Solarus::operator*(int factor, const Solarus::Point &amp; point)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='160' ll='162' type='Solarus::Point Solarus::operator*(int factor, const Solarus::Point &amp; point)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='154'>/**
+ * \brief Multiples a point by a number.
+ * \param factor The factor.
+ * \param point A point.
+ * \return A point with coordinates multiplied by the factor.
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='196' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>

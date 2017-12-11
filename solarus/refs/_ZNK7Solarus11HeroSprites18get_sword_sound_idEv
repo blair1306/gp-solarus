@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='63' type='const std::string &amp; Solarus::HeroSprites::get_sword_sound_id() const'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='307' ll='310' type='const std::string &amp; Solarus::HeroSprites::get_sword_sound_id() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='303'>/**
+ * \brief Returns the id of the sound played when using the sword.
+ * \return The sword sound id.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2057' u='c' c='_ZN7Solarus10LuaContext27hero_api_get_sword_sound_idEP9lua_State'/>

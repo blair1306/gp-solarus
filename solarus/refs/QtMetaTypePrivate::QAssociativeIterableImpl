@@ -1,0 +1,37 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='1063' ll='1181'/>
+<size>112</size>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_iterable' o='0' t='const void *'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_iterator' o='64' t='void *'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_metaType_id_key' o='128' t='int'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_metaType_flags_key' o='160' t='uint'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_metaType_id_value' o='192' t='int'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_metaType_flags_value' o='224' t='uint'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_size' o='256' t='sizeFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_find' o='320' t='findFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_begin' o='384' t='beginFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_end' o='448' t='beginFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_advance' o='512' t='advanceFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_getKey' o='576' t='getFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_getValue' o='640' t='getFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_destroyIter' o='704' t='destroyIterFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_equalIter' o='768' t='equalIterFunc'/>
+<mbr r='QtMetaTypePrivate::QAssociativeIterableImpl::_copyIter' o='832' t='copyIterFunc'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl8sizeImplEPKv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl8findImplEPKvS2_PPv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl11advanceImplEPPvi'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl9beginImplEPKvPPv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl7endImplEPKvPPv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl10getKeyImplEPKPvij'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl12getValueImplEPKPvij'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImplC1EPKT_'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImplC1Ev'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl5beginEv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl3endEv'/>
+<fun r='_ZNK17QtMetaTypePrivate24QAssociativeIterableImpl5equalERKS0_'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl7advanceEi'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl11destroyIterEv'/>
+<fun r='_ZNK17QtMetaTypePrivate24QAssociativeIterableImpl13getCurrentKeyEv'/>
+<fun r='_ZNK17QtMetaTypePrivate24QAssociativeIterableImpl15getCurrentValueEv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl4findERKNS_11VariantDataE'/>
+<fun r='_ZNK17QtMetaTypePrivate24QAssociativeIterableImpl4sizeEv'/>
+<fun r='_ZN17QtMetaTypePrivate24QAssociativeIterableImpl4copyERKS0_'/>

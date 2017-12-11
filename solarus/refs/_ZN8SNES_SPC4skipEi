@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='85' type='blargg_err_t SNES_SPC::skip(int count)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='84'>// Skips count samples. Several times faster than play() when using fast DSP.</doc>
+<def f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='350' ll='379' type='blargg_err_t SNES_SPC::skip(int count)'/>
+<use f='codebrowser/src/third_party/snes_spc/spc.cpp' l='60' u='c' c='spc_skip'/>

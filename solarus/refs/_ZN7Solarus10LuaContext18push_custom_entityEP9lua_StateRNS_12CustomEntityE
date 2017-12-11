@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1119' type='static void Solarus::LuaContext::push_custom_entity(lua_State * l, Solarus::CustomEntity &amp; entity)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5167' ll='5169' type='static void Solarus::LuaContext::push_custom_entity(lua_State * l, Solarus::CustomEntity &amp; entity)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5193' u='c' c='_ZN7Solarus10LuaContext42do_custom_entity_traversable_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5228' u='c' c='_ZN7Solarus10LuaContext40do_custom_entity_collision_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5259' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5289' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityERNS_6SpriteES9_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6612' u='c' c='_ZN7Solarus10LuaContext37custom_entity_on_ground_below_changedERNS_12CustomEntityENS_6GroundE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5162'>/**
+ * \brief Pushes a custom entity userdata onto the stack.
+ * \param l A Lua context.
+ * \param custom_entity A custom entity.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='377' u='c' c='_ZN7Solarus10LuaContext17run_custom_entityERNS_12CustomEntityE'/>

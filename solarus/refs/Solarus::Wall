@@ -1,0 +1,20 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Wall.h' l='34' ll='60'/>
+<size>304</size>
+<doc f='codebrowser/include/solarus/entities/Wall.h' l='27'>/**
+ * \brief An invisible obstacle that stops other types of entities.
+ *
+ * The types of entities that are stopped can be specified.
+ * This entity is typically used to prevent enemies from going to
+ * a specific place.
+ */</doc>
+<smbr r='Solarus::Wall::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<fun r='_ZNK7Solarus4Wall8get_typeEv'/>
+<fun r='_ZNK7Solarus4Wall12can_be_drawnEv'/>
+<fun r='_ZN7Solarus4Wall15is_obstacle_forERNS_6EntityE'/>
+<mbr r='Solarus::Wall::entity_types_stopped' o='2048' t='std::set&lt;EntityType&gt;'/>
+<fun r='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<fun r='_ZNK7Solarus4Wall8get_typeEv'/>
+<fun r='_ZNK7Solarus4Wall12can_be_drawnEv'/>
+<fun r='_ZN7Solarus4Wall15is_obstacle_forERNS_6EntityE'/>

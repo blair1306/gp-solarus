@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='72' type='const std::string &amp; Solarus::EquipmentItem::get_shadow() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='271' ll='273' type='const std::string &amp; Solarus::EquipmentItem::get_shadow() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='266'>/**
+ * \brief Returns the animation of the shadow sprite to display when this item
+ * is on the ground.
+ * \return The animation of the shadow sprite, or an empty string.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='155' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='407' u='c' c='_ZN7Solarus10LuaContext19item_api_get_shadowEP9lua_State'/>

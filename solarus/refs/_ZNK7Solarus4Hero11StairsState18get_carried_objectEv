@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/StairsState.h' l='50' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Hero::StairsState::get_carried_object() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='142' c='_ZNK7Solarus6Entity5State18get_carried_objectEv'/>
+<def f='codebrowser/src/hero/StairsState.cpp' l='332' ll='334' type='std::shared_ptr&lt;CarriedObject&gt; Solarus::Hero::StairsState::get_carried_object() const'/>
+<doc f='codebrowser/src/hero/StairsState.cpp' l='328'>/**
+ * \brief Returns the item currently carried by the hero in this state, if any.
+ * \return the item carried by the hero, or nullptr
+ */</doc>

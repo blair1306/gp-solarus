@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='272' type='bool Solarus::Hero::can_avoid_teletransporter(const Solarus::Teletransporter &amp; teletransporter) const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1591' u='c' c='_ZN7Solarus4Hero37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2504' ll='2517' type='bool Solarus::Hero::can_avoid_teletransporter(const Solarus::Teletransporter &amp; teletransporter) const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2499'>/**
+ * \brief Returns whether the hero currently ignores the effect of a teletransporter.
+ * \param teletransporter A candidate teletransporter.
+ * \return \c true if the hero currently ignores this teletransporter.
+ */</doc>

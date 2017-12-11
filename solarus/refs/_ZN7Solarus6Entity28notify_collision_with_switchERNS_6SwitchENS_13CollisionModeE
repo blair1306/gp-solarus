@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='305' type='void Solarus::Entity::notify_collision_with_switch(Solarus::Switch &amp; sw, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='348' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='182' c='_ZN7Solarus5Block28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='307' c='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='629' c='_ZN7Solarus13CarriedObject28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1038' c='_ZN7Solarus12CustomEntity28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3087' ll='3089' type='void Solarus::Entity::notify_collision_with_switch(Solarus::Switch &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3082'>/**
+ * \brief This function is called when a switch detects a collision with this entity.
+ * \param sw a switch
+ * \param collision_mode the collision mode that detected the event
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3087'>/* sw */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1780' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='389' c='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='273' u='c' c='_ZN7Solarus6Switch16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

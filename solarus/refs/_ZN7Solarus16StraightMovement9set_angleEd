@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='51' type='void Solarus::StraightMovement::set_angle(double angle)'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='86' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='193' u='c' c='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1301' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='77' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='107' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='269' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='234' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='215' u='c' c='_ZN7Solarus4Hero17SwordTappingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='774' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_set_angleEP9lua_State'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='145' u='c' c='_ZN7Solarus14PlayerMovement16compute_movementEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='130' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='243' ll='253' type='void Solarus::StraightMovement::set_angle(double angle)'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='236'>/**
+ * \brief Changes the direction of the movement vector, keeping the same speed.
+ *
+ * x_speed and y_speed are recomputed so that the total speed is unchanged.
+ *
+ * \param angle the new movement direction in radians
+ */</doc>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='176' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

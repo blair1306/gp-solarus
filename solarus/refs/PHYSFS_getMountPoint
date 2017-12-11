@@ -1,0 +1,23 @@
+<dec f='include/physfs.h' l='2085' type='const char * PHYSFS_getMountPoint(const char * dir)'/>
+<doc f='include/physfs.h' l='2063'>/**
+ * \fn int PHYSFS_getMountPoint(const char *dir)
+ * \brief Determine a mounted archive&apos;s mountpoint.
+ *
+ * You give this function the name of an archive or dir you successfully
+ *  added to the search path, and it reports the location in the interpolated
+ *  tree where it is mounted. Files mounted with a NULL mountpoint or through
+ *  PHYSFS_addToSearchPath() will report &quot;/&quot;. The return value is READ ONLY
+ *  and valid until the archive is removed from the search path.
+ *
+ *   \param dir directory or archive previously added to the path, in
+ *              platform-dependent notation. This must match the string
+ *              used when adding, even if your string would also reference
+ *              the same file with a different string of characters.
+ *  \return READ-ONLY string of mount point if added to path, NULL on failure
+ *          (bogus archive, etc) Specifics of the error can be gleaned from
+ *          PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_removeFromSearchPath
+ * \sa PHYSFS_getSearchPath
+ * \sa PHYSFS_getMountPoint
+ */</doc>

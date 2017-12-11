@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='151' type='bool Solarus::MapData::is_valid_layer(int layer) const'/>
+<def f='codebrowser/src/MapData.cpp' l='176' ll='179' type='bool Solarus::MapData::is_valid_layer(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='301' u='c' c='_ZNK7Solarus7MapData13get_num_tilesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='322' u='c' c='_ZNK7Solarus7MapData12get_entitiesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='334' u='c' c='_ZN7Solarus7MapData12get_entitiesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='347' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='665' u='c' c='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<use f='codebrowser/src/MapData.cpp' l='811' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<doc f='codebrowser/src/MapData.cpp' l='171'>/**
+ * \brief Returns whether the specified layer exists in the map.
+ * \param layer The layer to check.
+ * \return \c true if the layer is &gt;= 0 and &lt; get_num_layers().
+ */</doc>

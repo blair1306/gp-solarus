@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='185' type='static bool Solarus::LuaContext::do_file_if_exists(lua_State * l, const std::string &amp; script_name)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='165' u='c' c='_ZN7Solarus10LuaContext10initializeEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='730' ll='737' type='static bool Solarus::LuaContext::do_file_if_exists(lua_State * l, const std::string &amp; script_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='719'>/**
+ * \brief Opens a Lua file if it exists and executes it without arguments.
+ *
+ * This function just calls load_file_if_exists() and call_function().
+ * Nothing is done if the file does not exists.
+ *
+ * \param l A Lua state.
+ * \param script_name File name of the script without extension,
+ * relative to the data directory.
+ * \return true if the file exists and was successfully executed.
+ */</doc>

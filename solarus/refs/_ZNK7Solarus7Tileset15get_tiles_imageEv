@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='51' type='const SurfacePtr &amp; Solarus::Tileset::get_tiles_image() const'/>
+<use f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='135' u='c' c='_ZNK7Solarus19AnimatedTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='49' u='c' c='_ZNK7Solarus28ParallaxScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='72' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/SimpleTilePattern.cpp' l='50' u='c' c='_ZNK7Solarus17SimpleTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<def f='codebrowser/src/entities/Tileset.cpp' l='192' ll='194' type='const SurfacePtr &amp; Solarus::Tileset::get_tiles_image() const'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='233' u='c' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<doc f='codebrowser/src/entities/Tileset.cpp' l='188'>/**
+ * \brief Returns the image containing the tiles of this tileset.
+ * \return The tiles image.
+ */</doc>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='96' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='104' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='112' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='120' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>

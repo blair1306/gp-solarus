@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='284' type='Solarus::InputEvent::MouseButton Solarus::InputEvent::get_mouse_button() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1190' ll='1197' type='InputEvent::MouseButton Solarus::InputEvent::get_mouse_button() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1183'>/**
+ * \brief Returns the button that was pressed or released during
+ * this mouse event.
+ *
+ * If this is not a mouse event, MOUSE_BUTTON_NONE is returned.
+ * \return The button of this mouse event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1825' u='c' c='_ZN7Solarus10LuaContext23on_mouse_button_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1866' u='c' c='_ZN7Solarus10LuaContext24on_mouse_button_releasedERKNS_10InputEventE'/>

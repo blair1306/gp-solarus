@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='523' type='static int Solarus::LuaContext::timer_api_is_suspended(lua_State * )'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='54' u='r' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='464' ll='472' type='static int Solarus::LuaContext::timer_api_is_suspended(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='459'>/**
+ * \brief Implementation of timer:is_suspended().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

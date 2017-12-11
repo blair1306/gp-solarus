@@ -1,0 +1,41 @@
+<dec f='include/physfs.h' l='2061' type='int PHYSFS_mount(const char * newDir, const char * mountPoint, int appendToPath)'/>
+<doc f='include/physfs.h' l='2021'>/**
+ * \fn int PHYSFS_mount(const char *newDir, const char *mountPoint, int appendToPath)
+ * \brief Add an archive or directory to the search path.
+ *
+ * If this is a duplicate, the entry is not added again, even though the
+ *  function succeeds. You may not add the same archive to two different
+ *  mountpoints: duplicate checking is done against the archive and not the
+ *  mountpoint.
+ *
+ * When you mount an archive, it is added to a virtual file system...all files
+ *  in all of the archives are interpolated into a single hierachical file
+ *  tree. Two archives mounted at the same place (or an archive with files
+ *  overlapping another mountpoint) may have overlapping files: in such a case,
+ *  the file earliest in the search path is selected, and the other files are
+ *  inaccessible to the application. This allows archives to be used to
+ *  override previous revisions; you can use the mounting mechanism to place
+ *  archives at a specific point in the file tree and prevent overlap; this
+ *  is useful for downloadable mods that might trample over application data
+ *  or each other, for example.
+ *
+ * The mountpoint does not need to exist prior to mounting, which is different
+ *  than those familiar with the Unix concept of &quot;mounting&quot; may not expect.
+ *  As well, more than one archive can be mounted to the same mountpoint, or
+ *  mountpoints and archive contents can overlap...the interpolation mechanism
+ *  still functions as usual.
+ *
+ *   \param newDir directory or archive to add to the path, in
+ *                   platform-dependent notation.
+ *   \param mountPoint Location in the interpolated tree that this archive
+ *                     will be &quot;mounted&quot;, in platform-independent notation.
+ *                     NULL or &quot;&quot; is equivalent to &quot;/&quot;.
+ *   \param appendToPath nonzero to append to search path, zero to prepend.
+ *  \return nonzero if added to path, zero on failure (bogus archive, dir
+ *                   missing, etc). Specifics of the error can be
+ *                   gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_removeFromSearchPath
+ * \sa PHYSFS_getSearchPath
+ * \sa PHYSFS_getMountPoint
+ */</doc>

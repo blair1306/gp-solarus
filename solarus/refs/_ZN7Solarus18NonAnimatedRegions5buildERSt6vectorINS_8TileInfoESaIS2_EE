@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/NonAnimatedRegions.h' l='45' type='void Solarus::NonAnimatedRegions::build(std::vector&lt;TileInfo&gt; &amp; rejected_tiles)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='698' u='c' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<def f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='57' ll='115' type='void Solarus::NonAnimatedRegions::build(std::vector&lt;TileInfo&gt; &amp; rejected_tiles)'/>
+<doc f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='50'>/**
+ * \brief Determines which rectangles are animated to allow drawing all non-animated
+ * rectangles of tiles only once.
+ * \param[out] rejected_tiles The list of tiles that are in animated regions.
+ * They include all animated tiles plus the static tiles overlapping them.
+ * You will have to redraw these tiles at each frame.
+ */</doc>

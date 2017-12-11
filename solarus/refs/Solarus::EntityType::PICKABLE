@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='39' type='3'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='39'>/**&lt; a treasure that the hero can pick up: a rupee, a heart, a fairy... */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='75' u='r'/>
+<use f='codebrowser/include/solarus/entities/Pickable.h' l='39'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='49' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='82' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='134' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='392' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3877' u='r' c='_ZN7Solarus10LuaContext11is_pickableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3889' u='r' c='_ZN7Solarus10LuaContext14check_pickableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1273' u='r'/>

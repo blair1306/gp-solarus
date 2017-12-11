@@ -1,0 +1,11 @@
+<dec f='include/AL/al.h' l='274'/>
+<doc f='include/AL/al.h' l='264'>/**
+ * Source reference distance.
+ * Type:    ALfloat
+ * Range:   [0.0 - ]
+ * Default: 1.0
+ *
+ * The distance in units that no attenuation occurs.
+ *
+ * At 0.0, no distance attenuation ever occurs on non-linear attenuation models.
+ */</doc>

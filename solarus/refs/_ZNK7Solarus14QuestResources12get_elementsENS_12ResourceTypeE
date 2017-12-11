@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='58' type='const ResourceMap &amp; Solarus::QuestResources::get_elements(Solarus::ResourceType resource_type) const'/>
+<use f='codebrowser/src/QuestResources.cpp' l='100' u='c' c='_ZNK7Solarus14QuestResources6existsENS_12ResourceTypeERKSs'/>
+<def f='codebrowser/src/QuestResources.cpp' l='109' ll='113' type='const QuestResources::ResourceMap &amp; Solarus::QuestResources::get_elements(Solarus::ResourceType resource_type) const'/>
+<use f='codebrowser/src/QuestResources.cpp' l='196' u='c' c='_ZNK7Solarus14QuestResources15get_descriptionENS_12ResourceTypeERKSs'/>
+<use f='codebrowser/src/QuestResources.cpp' l='261' u='c' c='_ZNK7Solarus14QuestResources13export_to_luaERSo'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='104'>/**
+ * \brief Returns the list of element IDs of the specified resource type.
+ * \param resource_type A type of resource.
+ * \return The ids of all declared element of this type
+ */</doc>

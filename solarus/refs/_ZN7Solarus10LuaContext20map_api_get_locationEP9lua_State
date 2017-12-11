@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='782' type='static int Solarus::LuaContext::map_api_get_location(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='126' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1564' ll='1574' type='static int Solarus::LuaContext::map_api_get_location(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1559'>/**
+ * \brief Implementation of map:get_location().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

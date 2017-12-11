@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='179' type='void Solarus::Enemy::restart()'/>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='178'>// receive an attack</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='215' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='227' u='c' c='_ZN7Solarus5Enemy38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='796' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='815' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='922' u='c' c='_ZN7Solarus5Enemy14notify_enabledEb'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1128' ll='1139' type='void Solarus::Enemy::restart()'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1118'>/**
+ * \brief Notifies this enemy that it should restart his movement.
+ *
+ * This function is called when the enemy needs to restart its movement
+ * because something happened (for example the enemy has just been created,
+ * or it was just hurt).
+ * By default, the &quot;walking&quot; animation is set on the enemy&apos;s sprites.
+ *
+ * Nothing happens if the enemy is dying.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5017' u='c' c='_ZN7Solarus10LuaContext17enemy_api_restartEP9lua_State'/>

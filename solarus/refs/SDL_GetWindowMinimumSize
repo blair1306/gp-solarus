@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_video.h' l='573' type='void SDL_GetWindowMinimumSize(SDL_Window * window, int * w, int * h)'/>
+<doc f='include/SDL2/SDL_video.h' l='563'>/**
+ *  \brief Get the minimum size of a window&apos;s client area.
+ *
+ *  \param window   The window to query.
+ *  \param w        Pointer to variable for storing the minimum width, may be NULL
+ *  \param h        Pointer to variable for storing the minimum height, may be NULL
+ *
+ *  \sa SDL_GetWindowMaximumSize()
+ *  \sa SDL_SetWindowMinimumSize()
+ */</doc>

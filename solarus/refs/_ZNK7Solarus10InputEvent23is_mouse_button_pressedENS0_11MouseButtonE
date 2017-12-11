@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='280' type='bool Solarus::InputEvent::is_mouse_button_pressed(Solarus::InputEvent::MouseButton button) const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1155' ll='1159' type='bool Solarus::InputEvent::is_mouse_button_pressed(Solarus::InputEvent::MouseButton button) const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1149'>/**
+ * \brief Returns whether this event is a mouse event.
+ * corresponding to pressing a specific button.
+ * \param button the button to test.
+ * \return true if this event corresponds to pressing that mouse button.
+ */</doc>

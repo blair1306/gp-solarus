@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1140' type='static bool Solarus::LuaContext::is_text_surface(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='41' u='c' c='_ZN7Solarus10LuaContext11is_drawableEP9lua_Statei'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='112' ll='114' type='static bool Solarus::LuaContext::is_text_surface(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='106'>/**
+ * \brief Returns whether a value is a userdata of type text surface.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a text surface.
+ */</doc>

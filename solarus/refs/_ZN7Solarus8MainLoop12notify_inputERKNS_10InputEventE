@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='65' type='void Solarus::MainLoop::notify_input(const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='411' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<def f='codebrowser/src/MainLoop.cpp' l='442' ll='462' type='void Solarus::MainLoop::notify_input(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='436'>/**
+ * \brief This function is called when there is an input event.
+ *
+ * It forwards the event to Lua, and then to the game if Lua did not
+ * handle it.
+ */</doc>

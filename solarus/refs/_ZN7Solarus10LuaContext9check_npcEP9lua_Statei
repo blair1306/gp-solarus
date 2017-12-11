@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1181' type='static std::shared_ptr&lt;Npc&gt; Solarus::LuaContext::check_npc(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2977' ll='2981' type='static std::shared_ptr&lt;Npc&gt; Solarus::LuaContext::check_npc(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3000' u='c' c='_ZN7Solarus10LuaContext22npc_api_is_traversableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3015' u='c' c='_ZN7Solarus10LuaContext23npc_api_set_traversableEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2970'>/**
+ * \brief Checks that the userdata at the specified index of the stack is an
+ * NPC and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The NPC.
+ */</doc>

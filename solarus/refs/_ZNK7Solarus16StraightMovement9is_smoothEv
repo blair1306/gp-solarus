@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='54' type='bool Solarus::StraightMovement::is_smooth() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='817' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_is_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='942' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_is_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1070' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_is_smoothEP9lua_State'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='344' ll='346' type='bool Solarus::StraightMovement::is_smooth() const'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='658' u='c' c='_ZN7Solarus16StraightMovement6updateEv'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='339'>/**
+ * \brief Returns whether the movement adjusts its trajectory when
+ * an obstacle is reached.
+ * \return true if the movement is smooth
+ */</doc>

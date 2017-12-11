@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='120' type='double Solarus::LuaTools::check_number_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='395' ll='411' type='double Solarus::LuaTools::check_number_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='385'>/**
+ * \brief Checks that a table field is a number and returns it as a double.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::check_number().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \return The wanted field as a double.
+ */</doc>

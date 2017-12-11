@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='99' type='void Solarus::HeroSprites::set_animation_walking_common()'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1120' ll='1127' type='void Solarus::HeroSprites::set_animation_walking_common()'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1134' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1155' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1182' u='c' c='_ZN7Solarus11HeroSprites30set_animation_walking_carryingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1198' u='c' c='_ZN7Solarus11HeroSprites27set_animation_swimming_slowEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1211' u='c' c='_ZN7Solarus11HeroSprites27set_animation_swimming_fastEv'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1114'>/**
+ * \brief This function is called when the sprites take a &quot;walking&quot; animation.
+ *
+ * It makes instructions common to all states having a &quot;walking&quot; animation.
+ * (e.g. free or carrying).
+ */</doc>

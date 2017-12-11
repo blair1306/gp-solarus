@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='116' type='Solarus::Entity *'/>
+<offset>320</offset>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='115'>// Object to move (can be an entity, a drawable or a point).</doc>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='116'>/**&lt; The entity controlled by this movement. */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='44' u='w' c='_ZN7Solarus8MovementC1Eb'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='71' u='r' c='_ZNK7Solarus8Movement10get_entityEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='88' u='w' c='_ZN7Solarus8Movement10set_entityEPNS_6EntityE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='119' u='r' c='_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='165' u='r' c='_ZNK7Solarus8Movement6get_xyEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='167' u='r' c='_ZNK7Solarus8Movement6get_xyEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='210' u='r' c='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='212' u='r' c='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='271' u='r' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='272' u='r' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='273' u='r' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='289' u='r' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='289' u='r' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='290' u='r' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='305' u='r' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='305' u='r' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='306' u='r' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='321' u='r' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='321' u='r' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='322' u='r' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='436' u='r' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='440' u='r' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='443' u='r' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='446' u='r' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='446' u='r' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>

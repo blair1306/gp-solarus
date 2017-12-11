@@ -1,0 +1,17 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='231' ll='247'/>
+<size>66048</size>
+<mbr r='SNES_SPC::spc_file_t::signature' o='0' t='char [35]'/>
+<mbr r='SNES_SPC::spc_file_t::has_id666' o='280' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::version' o='288' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::pcl' o='296' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::pch' o='304' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::a' o='312' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::x' o='320' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::y' o='328' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::psw' o='336' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::sp' o='344' t='uint8_t'/>
+<mbr r='SNES_SPC::spc_file_t::text' o='352' t='char [212]'/>
+<mbr r='SNES_SPC::spc_file_t::ram' o='2048' t='uint8_t [65536]'/>
+<mbr r='SNES_SPC::spc_file_t::dsp' o='526336' t='uint8_t [128]'/>
+<mbr r='SNES_SPC::spc_file_t::unused' o='527360' t='uint8_t [64]'/>
+<mbr r='SNES_SPC::spc_file_t::ipl_rom' o='527872' t='uint8_t [64]'/>

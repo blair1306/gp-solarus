@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h' l='202' type='static QMessageBox::StandardButton QMessageBox::warning(QWidget * parent, const QString &amp; title, const QString &amp; text, StandardButtons buttons = Ok, QMessageBox::StandardButton defaultButton = NoButton)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h' l='261' u='c' c='_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='244' u='c' c='_ZN10SolarusGui10MainWindow13confirm_closeEv'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='155' u='c' c='_ZN10SolarusGui11QuestRunner5startERK7QString'/>

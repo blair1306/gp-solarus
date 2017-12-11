@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='66' type='void Solarus::CustomEntity::set_sprites_direction(int direction)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='82' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='121' ll='130' type='void Solarus::CustomEntity::set_sprites_direction(int direction)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='114'>/**
+ * \brief Sets the direction of this custom entity.
+ *
+ * It will be applied to sprites that have such a direction.
+ *
+ * \param direction The direction.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5337' u='c' c='_ZN7Solarus10LuaContext31custom_entity_api_set_directionEP9lua_State'/>

@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='57' type='void Solarus::ScopedLuaRef::clear_and_call(const std::string &amp; function_name)'/>
+<use f='codebrowser/src/Drawable.cpp' l='164' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<use f='codebrowser/src/GameCommands.cpp' l='801' u='c' c='_ZN7Solarus12GameCommands25do_customization_callbackEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='855' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='84' u='c' c='_ZN7Solarus4Hero12VictoryState6updateEv'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='202' ll='212' type='void Solarus::ScopedLuaRef::clear_and_call(const std::string &amp; function_name)'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='185'>/**
+ * \brief Like call(), but clears the reference before calling
+ * the function.
+ *
+ * This avoids reentrant calls: your reference will become clean before
+ * the function is called.
+ *
+ * This is equivalent to:
+ *
+ * ScopedLuaRef copy = callback_ref;
+ * callback_ref.clear();  // Avoid nasty problems in case of reentrant calls.
+ * copy.call(s);
+ *
+ * If the reference is already empty, nothing happens.
+ * \param function_name A name describing the Lua function (only used to
+ * print the error message if any).
+ */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='317' u='c' c='_ZN7Solarus8Movement24notify_movement_finishedEv'/>

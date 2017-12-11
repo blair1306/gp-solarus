@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/console_line_edit.h' l='48' type='void SolarusGui::ConsoleLineEdit::keyPressEvent(QKeyEvent * event)'/>
+<inh f='include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h' l='219' c='_ZN9QLineEdit13keyPressEventEP9QKeyEvent'/>
+<def f='codebrowser/gui/src/console_line_edit.cpp' l='104' ll='121' type='void SolarusGui::ConsoleLineEdit::keyPressEvent(QKeyEvent * event)'/>
+<doc f='codebrowser/gui/src/console_line_edit.cpp' l='100'>/**
+ * @brief Reimplementation to navigate in the command history with up/down arrows.
+ * @param event The event to handle.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='446' type='static int Solarus::LuaContext::main_api_save_settings(lua_State * )'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='52' u='r' c='_ZN7Solarus10LuaContext20register_main_moduleEv'/>
+<def f='codebrowser/src/lua/MainApi.cpp' l='287' ll='303' type='static int Solarus::LuaContext::main_api_save_settings(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MainApi.cpp' l='282'>/**
+ * \brief Implementation of sol.main.save_settings().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

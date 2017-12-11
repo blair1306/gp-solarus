@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='106' type='void Solarus::Quadtree::Node::get_elements(const Solarus::Rectangle &amp; region, std::set&lt;T&gt; &amp; result) const'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='546' ll='570' type='void Solarus::Quadtree::Node::get_elements(const Solarus::Rectangle &amp; region, std::set&lt;T&gt; &amp; result) const'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='541'>/**
+ * \brief Gets the elements intersecting the given rectangle under this node.
+ * \param[in] region The rectangle to check.
+ * \param[in/out] result A list that will be filled with elements.
+ */</doc>

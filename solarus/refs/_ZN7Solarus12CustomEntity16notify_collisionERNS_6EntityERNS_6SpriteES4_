@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='136' type='void Solarus::CustomEntity::notify_collision(Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; this_sprite, Solarus::Sprite &amp; other_sprite)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='409' c='_ZN7Solarus6Entity16notify_collisionERS0_RNS_6SpriteES3_'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='933' ll='953' type='void Solarus::CustomEntity::notify_collision(Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; this_sprite, Solarus::Sprite &amp; other_sprite)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='978' u='c' c='_ZN7Solarus12CustomEntity21notify_collision_fromERNS_6EntityERNS_6SpriteES4_'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='930'>/**
+ * \copydoc Entity::notify_collision(Entity&amp;, Sprite&amp;, Sprite&amp;)
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='217' type='static bool Solarus::InputEvent::is_caps_lock_on()'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='366' ll='370' type='static bool Solarus::InputEvent::is_caps_lock_on()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='362'>/**
+ * \brief Returns whether the caps lock key is currently active.
+ * \return \c true if the caps lock key is currently active.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='118' u='c' c='_ZN7Solarus10LuaContext27input_api_get_key_modifiersEP9lua_State'/>

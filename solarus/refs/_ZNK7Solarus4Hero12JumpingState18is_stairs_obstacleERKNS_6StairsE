@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/JumpingState.h' l='51' type='bool Solarus::Hero::JumpingState::is_stairs_obstacle(const Solarus::Stairs &amp; stairs) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='106' c='_ZNK7Solarus6Entity5State18is_stairs_obstacleERKNS_6StairsE'/>
+<def f='codebrowser/src/hero/JumpingState.cpp' l='267' ll='270' type='bool Solarus::Hero::JumpingState::is_stairs_obstacle(const Solarus::Stairs &amp; ) const'/>
+<doc f='codebrowser/src/hero/JumpingState.cpp' l='262'>/**
+ * \brief Returns whether some stairs are considered as obstacle in this state.
+ * \param stairs some stairs
+ * \return true if the stairs are obstacle in this state
+ */</doc>
+<doc f='codebrowser/src/hero/JumpingState.cpp' l='267'>/* stairs */</doc>

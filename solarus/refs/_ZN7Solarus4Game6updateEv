@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Game.h' l='80' type='void Solarus::Game::update()'/>
+<def f='codebrowser/src/Game.cpp' l='353' ll='371' type='void Solarus::Game::update()'/>
+<doc f='codebrowser/src/Game.cpp' l='348'>/**
+ * \brief Updates the game elements.
+ *
+ * Updates the map, the equipment, the HUD, etc.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='472' u='c' c='_ZN7Solarus8MainLoop6updateEv'/>

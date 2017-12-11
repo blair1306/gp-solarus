@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='54' type='void Solarus::GameCommands::set_joypad_binding(Solarus::GameCommand command, const std::string &amp; joypad_string)'/>
+<use f='codebrowser/src/GameCommands.cpp' l='255' u='c' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='333' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='472' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<def f='codebrowser/src/GameCommands.cpp' l='588' ll='609' type='void Solarus::GameCommands::set_joypad_binding(Solarus::GameCommand command, const std::string &amp; joypad_string)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='578'>/**
+ * \brief Maps the specified joypad action to a new game command.
+ *
+ * If this joypad action was already mapped to a command, both commands are switched.
+ * (The old command gets the previous joypad action of the new command.)
+ *
+ * \param command A game command.
+ * \param joypad_string A string describing the joypad action to map to this
+ * game command, or an empty string to unmap the command.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1452' u='c' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>

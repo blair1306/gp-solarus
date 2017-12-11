@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1232' type='bool Solarus::LuaContext::on_command_pressed(Solarus::GameCommand command)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1808' u='c' c='_ZN7Solarus10LuaContext23game_on_command_pressedERNS_4GameENS_11GameCommandE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2002' ll='2018' type='bool Solarus::LuaContext::on_command_pressed(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1998'>/**
+ * \brief Calls the on_command_pressed() method of the object on top of the stack.
+ * \param command The game command just pressed.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2290' u='c' c='_ZN7Solarus10LuaContext22map_on_command_pressedERNS_3MapENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='377' u='c' c='_ZN7Solarus10LuaContext23menu_on_command_pressedERKNS_12ScopedLuaRefENS_11GameCommandE'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='142' type='void Solarus::Entity::set_xy(const Solarus::Point &amp; xy)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='64' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='339' u='c' c='_ZN7Solarus5Block5resetEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='154' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='196' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='728' ll='730' type='void Solarus::Entity::set_xy(const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='721'>/**
+ * \brief Sets the coordinates of the origin point of the entity, relative to the map.
+ *
+ * This function sets the coordinates of the point as returned by get_x() and get_y().
+ *
+ * \param xy the new coordinates of the entity on the map.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='665' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='60' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='212' u='c' c='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>

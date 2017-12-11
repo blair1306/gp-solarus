@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Game.h source code [codebrowser/include/solarus/Game.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Game "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/Game.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>include</a>/<a href='./'>solarus</a>/<a href='Game.h.html'>Game.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_GAME_H">SOLARUS_GAME_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_GAME_H" data-ref="_M/SOLARUS_GAME_H">SOLARUS_GAME_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="entities/HeroPtr.h.html">"solarus/entities/HeroPtr.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="lowlevel/Point.h.html">"solarus/lowlevel/Point.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="lowlevel/SurfacePtr.h.html">"solarus/lowlevel/SurfacePtr.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="CommandsEffects.h.html">"solarus/CommandsEffects.h"</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="DialogBoxSystem.h.html">"solarus/DialogBoxSystem.h"</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="GameCommand.h.html">"solarus/GameCommand.h"</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="Transition.h.html">"solarus/Transition.h"</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="GameCommands.h.html">"solarus/GameCommands.h"</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="entities/NonAnimatedRegions.h.html">"solarus/entities/NonAnimatedRegions.h"</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../../include/c++/4.9/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>class</b> <a class="type" href="CommandsEffects.h.html#Solarus::CommandsEffects" title='Solarus::CommandsEffects' data-ref="Solarus::CommandsEffects" id="Solarus::CommandsEffects">CommandsEffects</a>;</td></tr>
+<tr><th id="36">36</th><td><b>class</b> <dfn class="type" id="Solarus::Equipment" title='Solarus::Equipment' data-ref="Solarus::Equipment">Equipment</dfn>;</td></tr>
+<tr><th id="37">37</th><td><b>class</b> <a class="type" href="GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands" id="Solarus::GameCommands">GameCommands</a>;</td></tr>
+<tr><th id="38">38</th><td><b>class</b> <a class="type" href="lowlevel/InputEvent.h.html#Solarus::InputEvent" title='Solarus::InputEvent' data-ref="Solarus::InputEvent" id="Solarus::InputEvent">InputEvent</a>;</td></tr>
+<tr><th id="39">39</th><td><b>class</b> <a class="type" href="lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext" id="Solarus::LuaContext">LuaContext</a>;</td></tr>
+<tr><th id="40">40</th><td><b>class</b> <dfn class="type" id="Solarus::MainLoop" title='Solarus::MainLoop' data-ref="Solarus::MainLoop">MainLoop</dfn>;</td></tr>
+<tr><th id="41">41</th><td><b>class</b> <a class="type" href="Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map" id="Solarus::Map">Map</a>;</td></tr>
+<tr><th id="42">42</th><td><b>class</b> <dfn class="type" id="Solarus::ResourceProvider" title='Solarus::ResourceProvider' data-ref="Solarus::ResourceProvider">ResourceProvider</dfn>;</td></tr>
+<tr><th id="43">43</th><td><b>class</b> <a class="type" href="GameCommands.h.html#Solarus::Savegame" title='Solarus::Savegame' data-ref="Solarus::Savegame" id="Solarus::Savegame">Savegame</a>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * <span class="command">\brief</span> Represents the game currently running.</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * The game shows the current map and handles all game elements.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="50">50</th><td><b>class</b> <a class="macro" href="Common.h.html#89" title="" data-ref="_M/SOLARUS_API">SOLARUS_API</a> <dfn class="type def" id="Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</dfn> {</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>  <b>public</b>:</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <i>// creation</i></td></tr>
+<tr><th id="55">55</th><td>    <dfn class="decl" id="_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE" title='Solarus::Game::Game' data-ref="_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE">Game</dfn>(<a class="type" href="#Solarus::MainLoop" title='Solarus::MainLoop' data-ref="Solarus::MainLoop">MainLoop</a>&amp; <dfn class="local col8 decl" id="1058main_loop" title='main_loop' data-type='Solarus::MainLoop &amp;' data-ref="1058main_loop">main_loop</dfn>, <em>const</em> <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="GameCommands.h.html#Solarus::Savegame" title='Solarus::Savegame' data-ref="Solarus::Savegame">Savegame</a>&gt;&amp; <dfn class="local col9 decl" id="1059savegame" title='savegame' data-type='const std::shared_ptr&lt;Savegame&gt; &amp;' data-ref="1059savegame">savegame</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>    <i>// no copy operations</i></td></tr>
+<tr><th id="58">58</th><td>    <dfn class="decl def" id="_ZN7Solarus4GameC1ERKS0_" title='Solarus::Game::Game' data-ref="_ZN7Solarus4GameC1ERKS0_">Game</dfn>(<em>const</em> <a class="type" href="#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <dfn class="local col0 decl" id="1060game" title='game' data-type='const Solarus::Game &amp;' data-ref="1060game">game</dfn>) = <b>delete</b>;</td></tr>
+<tr><th id="59">59</th><td>    <a class="type" href="#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <dfn class="decl def" id="_ZN7Solarus4GameaSERKS0_" title='Solarus::Game::operator=' data-ref="_ZN7Solarus4GameaSERKS0_"><b>operator</b>=</dfn>(<em>const</em> <a class="type" href="#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <dfn class="local col1 decl" id="1061game" title='game' data-type='const Solarus::Game &amp;' data-ref="1061game">game</dfn>) = <b>delete</b>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game5startEv" title='Solarus::Game::start' data-ref="_ZN7Solarus4Game5startEv">start</dfn>();</td></tr>
+<tr><th id="62">62</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game4stopEv" title='Solarus::Game::stop' data-ref="_ZN7Solarus4Game4stopEv">stop</dfn>();</td></tr>
+<tr><th id="63">63</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game7restartEv" title='Solarus::Game::restart' data-ref="_ZN7Solarus4Game7restartEv">restart</dfn>();</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>    <i>// global objects</i></td></tr>
+<tr><th id="66">66</th><td>    <a class="type" href="#Solarus::MainLoop" title='Solarus::MainLoop' data-ref="Solarus::MainLoop">MainLoop</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game13get_main_loopEv" title='Solarus::Game::get_main_loop' data-ref="_ZN7Solarus4Game13get_main_loopEv">get_main_loop</dfn>();</td></tr>
+<tr><th id="67">67</th><td>    <a class="type" href="lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game15get_lua_contextEv" title='Solarus::Game::get_lua_context' data-ref="_ZN7Solarus4Game15get_lua_contextEv">get_lua_context</dfn>();</td></tr>
+<tr><th id="68">68</th><td>    <a class="type" href="#Solarus::ResourceProvider" title='Solarus::ResourceProvider' data-ref="Solarus::ResourceProvider">ResourceProvider</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game21get_resource_providerEv" title='Solarus::Game::get_resource_provider' data-ref="_ZN7Solarus4Game21get_resource_providerEv">get_resource_provider</dfn>();</td></tr>
+<tr><th id="69">69</th><td>    <em>const</em> <a class="typedef" href="entities/HeroPtr.h.html#Solarus::HeroPtr" title='Solarus::HeroPtr' data-type='std::shared_ptr&lt;Hero&gt;' data-ref="Solarus::HeroPtr">HeroPtr</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game8get_heroEv" title='Solarus::Game::get_hero' data-ref="_ZN7Solarus4Game8get_heroEv">get_hero</dfn>();</td></tr>
+<tr><th id="70">70</th><td>    <a class="type" href="GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZN7Solarus4Game12get_commandsEv">get_commands</dfn>();</td></tr>
+<tr><th id="71">71</th><td>    <em>const</em> <a class="type" href="GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <dfn class="decl" id="_ZNK7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZNK7Solarus4Game12get_commandsEv">get_commands</dfn>() <em>const</em>;</td></tr>
+<tr><th id="72">72</th><td>    <a class="type" href="CommandsEffects.h.html#Solarus::CommandsEffects" title='Solarus::CommandsEffects' data-ref="Solarus::CommandsEffects">CommandsEffects</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game20get_commands_effectsEv" title='Solarus::Game::get_commands_effects' data-ref="_ZN7Solarus4Game20get_commands_effectsEv">get_commands_effects</dfn>();</td></tr>
+<tr><th id="73">73</th><td>    <a class="type" href="GameCommands.h.html#Solarus::Savegame" title='Solarus::Savegame' data-ref="Solarus::Savegame">Savegame</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game12get_savegameEv" title='Solarus::Game::get_savegame' data-ref="_ZN7Solarus4Game12get_savegameEv">get_savegame</dfn>();</td></tr>
+<tr><th id="74">74</th><td>    <em>const</em> <a class="type" href="GameCommands.h.html#Solarus::Savegame" title='Solarus::Savegame' data-ref="Solarus::Savegame">Savegame</a>&amp; <dfn class="decl" id="_ZNK7Solarus4Game12get_savegameEv" title='Solarus::Game::get_savegame' data-ref="_ZNK7Solarus4Game12get_savegameEv">get_savegame</dfn>() <em>const</em>;</td></tr>
+<tr><th id="75">75</th><td>    <a class="type" href="#Solarus::Equipment" title='Solarus::Equipment' data-ref="Solarus::Equipment">Equipment</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game13get_equipmentEv" title='Solarus::Game::get_equipment' data-ref="_ZN7Solarus4Game13get_equipmentEv">get_equipment</dfn>();</td></tr>
+<tr><th id="76">76</th><td>    <em>const</em> <a class="type" href="#Solarus::Equipment" title='Solarus::Equipment' data-ref="Solarus::Equipment">Equipment</a>&amp; <dfn class="decl" id="_ZNK7Solarus4Game13get_equipmentEv" title='Solarus::Game::get_equipment' data-ref="_ZNK7Solarus4Game13get_equipmentEv">get_equipment</dfn>() <em>const</em>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <i>// functions called by the main loop</i></td></tr>
+<tr><th id="79">79</th><td>    <em>bool</em> <dfn class="decl" id="_ZN7Solarus4Game12notify_inputERKNS_10InputEventE" title='Solarus::Game::notify_input' data-ref="_ZN7Solarus4Game12notify_inputERKNS_10InputEventE">notify_input</dfn>(<em>const</em> <a class="type" href="lowlevel/InputEvent.h.html#Solarus::InputEvent" title='Solarus::InputEvent' data-ref="Solarus::InputEvent">InputEvent</a>&amp; <dfn class="local col2 decl" id="1062event" title='event' data-type='const Solarus::InputEvent &amp;' data-ref="1062event">event</dfn>);</td></tr>
+<tr><th id="80">80</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game6updateEv" title='Solarus::Game::update' data-ref="_ZN7Solarus4Game6updateEv">update</dfn>();</td></tr>
+<tr><th id="81">81</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE" title='Solarus::Game::draw' data-ref="_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE">draw</dfn>(<em>const</em> <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="local col3 decl" id="1063dst_surface" title='dst_surface' data-type='const SurfacePtr &amp;' data-ref="1063dst_surface">dst_surface</dfn>);</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <i>// game controls</i></td></tr>
+<tr><th id="84">84</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE" title='Solarus::Game::notify_command_pressed' data-ref="_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE">notify_command_pressed</dfn>(<a class="type" href="GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col4 decl" id="1064command" title='command' data-type='Solarus::GameCommand' data-ref="1064command">command</dfn>);</td></tr>
+<tr><th id="85">85</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE" title='Solarus::Game::notify_command_released' data-ref="_ZN7Solarus4Game23notify_command_releasedENS_11GameCommandE">notify_command_released</dfn>(<a class="type" href="GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col5 decl" id="1065command" title='command' data-type='Solarus::GameCommand' data-ref="1065command">command</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <i>// simulate commands</i></td></tr>
+<tr><th id="88">88</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game24simulate_command_pressedENS_11GameCommandE" title='Solarus::Game::simulate_command_pressed' data-ref="_ZN7Solarus4Game24simulate_command_pressedENS_11GameCommandE">simulate_command_pressed</dfn>(<a class="type" href="GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col6 decl" id="1066command" title='command' data-type='Solarus::GameCommand' data-ref="1066command">command</dfn>);</td></tr>
+<tr><th id="89">89</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game25simulate_command_releasedENS_11GameCommandE" title='Solarus::Game::simulate_command_released' data-ref="_ZN7Solarus4Game25simulate_command_releasedENS_11GameCommandE">simulate_command_released</dfn>(<a class="type" href="GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col7 decl" id="1067command" title='command' data-type='Solarus::GameCommand' data-ref="1067command">command</dfn>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>    <i>// map</i></td></tr>
+<tr><th id="92">92</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game15has_current_mapEv" title='Solarus::Game::has_current_map' data-ref="_ZNK7Solarus4Game15has_current_mapEv">has_current_map</dfn>() <em>const</em>;</td></tr>
+<tr><th id="93">93</th><td>    <a class="type" href="Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&amp; <dfn class="decl" id="_ZN7Solarus4Game15get_current_mapEv" title='Solarus::Game::get_current_map' data-ref="_ZN7Solarus4Game15get_current_mapEv">get_current_map</dfn>();</td></tr>
+<tr><th id="94">94</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE" title='Solarus::Game::set_current_map' data-ref="_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE">set_current_map</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col8 decl" id="1068map_id" title='map_id' data-type='const std::string &amp;' data-ref="1068map_id">map_id</dfn>, <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col9 decl" id="1069destination_name" title='destination_name' data-type='const std::string &amp;' data-ref="1069destination_name">destination_name</dfn>,</td></tr>
+<tr><th id="95">95</th><td>        <a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a> <dfn class="local col0 decl" id="1070transition_style" title='transition_style' data-type='Transition::Style' data-ref="1070transition_style">transition_style</dfn>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>    <i>// world</i></td></tr>
+<tr><th id="98">98</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game17get_crystal_stateEv" title='Solarus::Game::get_crystal_state' data-ref="_ZNK7Solarus4Game17get_crystal_stateEv">get_crystal_state</dfn>() <em>const</em>;</td></tr>
+<tr><th id="99">99</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game20change_crystal_stateEv" title='Solarus::Game::change_crystal_state' data-ref="_ZN7Solarus4Game20change_crystal_stateEv">change_crystal_state</dfn>();</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>    <i>// current game state</i></td></tr>
+<tr><th id="102">102</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game9is_pausedEv" title='Solarus::Game::is_paused' data-ref="_ZNK7Solarus4Game9is_pausedEv">is_paused</dfn>() <em>const</em>;</td></tr>
+<tr><th id="103">103</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game17is_dialog_enabledEv" title='Solarus::Game::is_dialog_enabled' data-ref="_ZNK7Solarus4Game17is_dialog_enabledEv">is_dialog_enabled</dfn>() <em>const</em>;</td></tr>
+<tr><th id="104">104</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game21is_playing_transitionEv" title='Solarus::Game::is_playing_transition' data-ref="_ZNK7Solarus4Game21is_playing_transitionEv">is_playing_transition</dfn>() <em>const</em>;</td></tr>
+<tr><th id="105">105</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game20is_showing_game_overEv" title='Solarus::Game::is_showing_game_over' data-ref="_ZNK7Solarus4Game20is_showing_game_overEv">is_showing_game_over</dfn>() <em>const</em>;</td></tr>
+<tr><th id="106">106</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game22is_suspended_by_cameraEv" title='Solarus::Game::is_suspended_by_camera' data-ref="_ZNK7Solarus4Game22is_suspended_by_cameraEv">is_suspended_by_camera</dfn>() <em>const</em>;</td></tr>
+<tr><th id="107">107</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game22is_suspended_by_scriptEv" title='Solarus::Game::is_suspended_by_script' data-ref="_ZNK7Solarus4Game22is_suspended_by_scriptEv">is_suspended_by_script</dfn>() <em>const</em>;</td></tr>
+<tr><th id="108">108</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game12is_suspendedEv" title='Solarus::Game::is_suspended' data-ref="_ZNK7Solarus4Game12is_suspendedEv">is_suspended</dfn>() <em>const</em>; <i>// true if at least one of the 5 functions above returns true</i></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>    <i>// pause</i></td></tr>
+<tr><th id="111">111</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game9can_pauseEv" title='Solarus::Game::can_pause' data-ref="_ZNK7Solarus4Game9can_pauseEv">can_pause</dfn>() <em>const</em>;</td></tr>
+<tr><th id="112">112</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game11can_unpauseEv" title='Solarus::Game::can_unpause' data-ref="_ZNK7Solarus4Game11can_unpauseEv">can_unpause</dfn>() <em>const</em>;</td></tr>
+<tr><th id="113">113</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus4Game16is_pause_allowedEv" title='Solarus::Game::is_pause_allowed' data-ref="_ZNK7Solarus4Game16is_pause_allowedEv">is_pause_allowed</dfn>() <em>const</em>;</td></tr>
+<tr><th id="114">114</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game17set_pause_allowedEb" title='Solarus::Game::set_pause_allowed' data-ref="_ZN7Solarus4Game17set_pause_allowedEb">set_pause_allowed</dfn>(<em>bool</em> <dfn class="local col1 decl" id="1071pause_allowed" title='pause_allowed' data-type='bool' data-ref="1071pause_allowed">pause_allowed</dfn>);</td></tr>
+<tr><th id="115">115</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game10set_pausedEb" title='Solarus::Game::set_paused' data-ref="_ZN7Solarus4Game10set_pausedEb">set_paused</dfn>(<em>bool</em> <dfn class="local col2 decl" id="1072paused" title='paused' data-type='bool' data-ref="1072paused">paused</dfn>);</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>    <i>// dialogs</i></td></tr>
+<tr><th id="118">118</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_" title='Solarus::Game::start_dialog' data-ref="_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_">start_dialog</dfn>(</td></tr>
+<tr><th id="119">119</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col3 decl" id="1073dialog_id" title='dialog_id' data-type='const std::string &amp;' data-ref="1073dialog_id">dialog_id</dfn>,</td></tr>
+<tr><th id="120">120</th><td>        <em>const</em> <a class="type" href="lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col4 decl" id="1074info_ref" title='info_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="1074info_ref">info_ref</dfn>,</td></tr>
+<tr><th id="121">121</th><td>        <em>const</em> <a class="type" href="lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col5 decl" id="1075callback_ref" title='callback_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="1075callback_ref">callback_ref</dfn></td></tr>
+<tr><th id="122">122</th><td>    );</td></tr>
+<tr><th id="123">123</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game11stop_dialogERKNS_12ScopedLuaRefE" title='Solarus::Game::stop_dialog' data-ref="_ZN7Solarus4Game11stop_dialogERKNS_12ScopedLuaRefE">stop_dialog</dfn>(<em>const</em> <a class="type" href="lua/ScopedLuaRef.h.html#Solarus::ScopedLuaRef" title='Solarus::ScopedLuaRef' data-ref="Solarus::ScopedLuaRef">ScopedLuaRef</a>&amp; <dfn class="local col6 decl" id="1076status_ref" title='status_ref' data-type='const Solarus::ScopedLuaRef &amp;' data-ref="1076status_ref">status_ref</dfn>);</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>    <i>// game over</i></td></tr>
+<tr><th id="126">126</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game15start_game_overEv" title='Solarus::Game::start_game_over' data-ref="_ZN7Solarus4Game15start_game_overEv">start_game_over</dfn>();</td></tr>
+<tr><th id="127">127</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game14stop_game_overEv" title='Solarus::Game::stop_game_over' data-ref="_ZN7Solarus4Game14stop_game_overEv">stop_game_over</dfn>();</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td>    <i>// Suspend manually.</i></td></tr>
+<tr><th id="130">130</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game23set_suspended_by_scriptEb" title='Solarus::Game::set_suspended_by_script' data-ref="_ZN7Solarus4Game23set_suspended_by_scriptEb">set_suspended_by_script</dfn>(<em>bool</em> <dfn class="local col7 decl" id="1077suspended" title='suspended' data-type='bool' data-ref="1077suspended">suspended</dfn>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><b>private</b>:</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <i>// main objects</i></td></tr>
+<tr><th id="135">135</th><td>    <a class="type" href="#Solarus::MainLoop" title='Solarus::MainLoop' data-ref="Solarus::MainLoop">MainLoop</a>&amp; <dfn class="decl" id="Solarus::Game::main_loop" title='Solarus::Game::main_loop' data-ref="Solarus::Game::main_loop">main_loop</dfn>;       <i class="doc">/**&lt; the main loop object */</i></td></tr>
+<tr><th id="136">136</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="GameCommands.h.html#Solarus::Savegame" title='Solarus::Savegame' data-ref="Solarus::Savegame">Savegame</a>&gt;</td></tr>
+<tr><th id="137">137</th><td>        <dfn class="decl" id="Solarus::Game::savegame" title='Solarus::Game::savegame' data-ref="Solarus::Game::savegame">savegame</dfn>;              <i class="doc">/**&lt; the game data saved */</i></td></tr>
+<tr><th id="138">138</th><td>    <a class="typedef" href="entities/HeroPtr.h.html#Solarus::HeroPtr" title='Solarus::HeroPtr' data-type='std::shared_ptr&lt;Hero&gt;' data-ref="Solarus::HeroPtr">HeroPtr</a> <dfn class="decl" id="Solarus::Game::hero" title='Solarus::Game::hero' data-ref="Solarus::Game::hero">hero</dfn>;              <i class="doc">/**&lt; The hero entity.  */</i></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td>    <i>// current game state (elements currently shown)</i></td></tr>
+<tr><th id="141">141</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::pause_allowed" title='Solarus::Game::pause_allowed' data-ref="Solarus::Game::pause_allowed">pause_allowed</dfn>;        <i class="doc">/**&lt; indicates that the player is allowed to use the pause command */</i></td></tr>
+<tr><th id="142">142</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::paused" title='Solarus::Game::paused' data-ref="Solarus::Game::paused">paused</dfn>;               <i class="doc">/**&lt; indicates that the game is paused */</i></td></tr>
+<tr><th id="143">143</th><td>    <a class="type" href="DialogBoxSystem.h.html#Solarus::DialogBoxSystem" title='Solarus::DialogBoxSystem' data-ref="Solarus::DialogBoxSystem">DialogBoxSystem</a></td></tr>
+<tr><th id="144">144</th><td>        <dfn class="decl" id="Solarus::Game::dialog_box" title='Solarus::Game::dialog_box' data-ref="Solarus::Game::dialog_box">dialog_box</dfn>;            <i class="doc">/**&lt; The dialog box manager. */</i></td></tr>
+<tr><th id="145">145</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::showing_game_over" title='Solarus::Game::showing_game_over' data-ref="Solarus::Game::showing_game_over">showing_game_over</dfn>;    <i class="doc">/**&lt; Whether a game-over sequence is currently active. */</i></td></tr>
+<tr><th id="146">146</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::suspended_by_script" title='Solarus::Game::suspended_by_script' data-ref="Solarus::Game::suspended_by_script">suspended_by_script</dfn>;  <i class="doc">/**&lt; Whether the game is manually suspended. */</i></td></tr>
+<tr><th id="147">147</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::started" title='Solarus::Game::started' data-ref="Solarus::Game::started">started</dfn>;              <i class="doc">/**&lt; true if this game is running, false if it is not yet started or being closed. */</i></td></tr>
+<tr><th id="148">148</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::restarting" title='Solarus::Game::restarting' data-ref="Solarus::Game::restarting">restarting</dfn>;           <i class="doc">/**&lt; true if the game will be restarted */</i></td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>    <i>// controls</i></td></tr>
+<tr><th id="151">151</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&gt;</td></tr>
+<tr><th id="152">152</th><td>        <dfn class="decl" id="Solarus::Game::commands" title='Solarus::Game::commands' data-ref="Solarus::Game::commands">commands</dfn>;              <i class="doc">/**&lt; this object receives the keyboard and joypad events */</i></td></tr>
+<tr><th id="153">153</th><td>    <a class="type" href="CommandsEffects.h.html#Solarus::CommandsEffects" title='Solarus::CommandsEffects' data-ref="Solarus::CommandsEffects">CommandsEffects</a></td></tr>
+<tr><th id="154">154</th><td>        <dfn class="decl" id="Solarus::Game::commands_effects" title='Solarus::Game::commands_effects' data-ref="Solarus::Game::commands_effects">commands_effects</dfn>;      <i class="doc">/**&lt; current effect associated to the main game keys</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">                                * (represented on the HUD by the action icon, the objects icons, etc.) */</i></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>    <i>// map</i></td></tr>
+<tr><th id="158">158</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&gt;</td></tr>
+<tr><th id="159">159</th><td>        <dfn class="decl" id="Solarus::Game::current_map" title='Solarus::Game::current_map' data-ref="Solarus::Game::current_map">current_map</dfn>;           <i class="doc">/**&lt; the map currently displayed */</i></td></tr>
+<tr><th id="160">160</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&gt;</td></tr>
+<tr><th id="161">161</th><td>        <dfn class="decl" id="Solarus::Game::next_map" title='Solarus::Game::next_map' data-ref="Solarus::Game::next_map">next_map</dfn>;              <i class="doc">/**&lt; the map where the hero is going to; if not nullptr, it means that the hero</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc">                                * is changing from current_map to next_map */</i></td></tr>
+<tr><th id="163">163</th><td>    <a class="typedef" href="lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a></td></tr>
+<tr><th id="164">164</th><td>        <dfn class="decl" id="Solarus::Game::previous_map_surface" title='Solarus::Game::previous_map_surface' data-ref="Solarus::Game::previous_map_surface">previous_map_surface</dfn>;  <i class="doc">/**&lt; a copy of the previous map surface for transition effects that display two maps */</i></td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>    <a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>::<a class="type" href="Transition.h.html#Solarus::Transition::Style" title='Solarus::Transition::Style' data-ref="Solarus::Transition::Style">Style</a></td></tr>
+<tr><th id="167">167</th><td>        <dfn class="decl" id="Solarus::Game::transition_style" title='Solarus::Game::transition_style' data-ref="Solarus::Game::transition_style">transition_style</dfn>;      <i class="doc">/**&lt; the transition style between the current map and the next one */</i></td></tr>
+<tr><th id="168">168</th><td>    <span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="Transition.h.html#Solarus::Transition" title='Solarus::Transition' data-ref="Solarus::Transition">Transition</a>&gt;</td></tr>
+<tr><th id="169">169</th><td>        <dfn class="decl" id="Solarus::Game::transition" title='Solarus::Game::transition' data-ref="Solarus::Game::transition">transition</dfn>;            <i class="doc">/**&lt; the transition currently shown, or nullptr if no transition is playing */</i></td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>    <i>// world (i.e. the current set of maps)</i></td></tr>
+<tr><th id="172">172</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Game::crystal_state" title='Solarus::Game::crystal_state' data-ref="Solarus::Game::crystal_state">crystal_state</dfn>;        <i class="doc">/**&lt; indicates that a crystal has been enabled (i.e. the orange blocks are raised) */</i></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>    <i>// update functions</i></td></tr>
+<tr><th id="175">175</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game23update_commands_effectsEv" title='Solarus::Game::update_commands_effects' data-ref="_ZN7Solarus4Game23update_commands_effectsEv">update_commands_effects</dfn>();</td></tr>
+<tr><th id="176">176</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game18update_transitionsEv" title='Solarus::Game::update_transitions' data-ref="_ZN7Solarus4Game18update_transitionsEv">update_transitions</dfn>();</td></tr>
+<tr><th id="177">177</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game24update_gameover_sequenceEv" title='Solarus::Game::update_gameover_sequence' data-ref="_ZN7Solarus4Game24update_gameover_sequenceEv">update_gameover_sequence</dfn>();</td></tr>
+<tr><th id="178">178</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus4Game18notify_map_changedEv" title='Solarus::Game::notify_map_changed' data-ref="_ZN7Solarus4Game18notify_map_changedEv">notify_map_changed</dfn>();</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td>};</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>}</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

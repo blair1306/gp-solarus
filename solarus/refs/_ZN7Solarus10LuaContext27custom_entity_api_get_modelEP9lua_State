@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1001' type='static int Solarus::LuaContext::custom_entity_api_get_model(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='500' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5301' ll='5309' type='static int Solarus::LuaContext::custom_entity_api_get_model(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5296'>/**
+ * \brief Implementation of custom_entity:get_model().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

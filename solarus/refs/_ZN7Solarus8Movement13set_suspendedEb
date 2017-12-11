@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='58' type='void Solarus::Movement::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/Drawable.cpp' l='70' u='c' c='_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/Drawable.cpp' l='203' u='c' c='_ZN7Solarus8Drawable13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1514' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2266' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2294' u='c' c='_ZN7Solarus6Entity11set_enabledEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3319' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='419' c='_ZN7Solarus14CircleMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='421' u='c' c='_ZN7Solarus14CircleMovement13set_suspendedEb'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='381' ll='393' type='void Solarus::Movement::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='374'>/**
+ * \brief Suspends or resumes the movement.
+ *
+ * This function is called by the entity to suspend or resume its movement.
+ *
+ * \param suspended true to suspend the movement, false to resume it
+ */</doc>
+<ovr f='codebrowser/src/movements/PixelMovement.cpp' l='196' c='_ZN7Solarus13PixelMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='198' u='c' c='_ZN7Solarus13PixelMovement13set_suspendedEb'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='324' c='_ZN7Solarus16StraightMovement13set_suspendedEb'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='326' u='c' c='_ZN7Solarus16StraightMovement13set_suspendedEb'/>

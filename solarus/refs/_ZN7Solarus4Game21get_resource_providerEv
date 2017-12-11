@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Game.h' l='68' type='Solarus::ResourceProvider &amp; Solarus::Game::get_resource_provider()'/>
+<def f='codebrowser/src/Game.cpp' l='185' ll='187' type='Solarus::ResourceProvider &amp; Solarus::Game::get_resource_provider()'/>
+<doc f='codebrowser/src/Game.cpp' l='181'>/**
+ * \brief Returns the resource provider of the quest.
+ * \return The resource provider.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='89' u='c' c='_ZN7Solarus3Map11set_tilesetERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='297' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>

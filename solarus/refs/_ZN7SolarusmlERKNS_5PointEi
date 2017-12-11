@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='72' type='Solarus::Point Solarus::operator*(const Solarus::Point &amp; point, int factor)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='150' ll='152' type='Solarus::Point Solarus::operator*(const Solarus::Point &amp; point, int factor)'/>
+<use f='codebrowser/include/solarus/lowlevel/Point.inl' l='161' u='c' c='_ZN7SolarusmlEiRKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='144'>/**
+ * \brief Multiples a point by a number.
+ * \param point A point.
+ * \param factor The factor.
+ * \return A point with coordinates multiplied by the factor.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='301' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='314' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='327' u='c' c='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>

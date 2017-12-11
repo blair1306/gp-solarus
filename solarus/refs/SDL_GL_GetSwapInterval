@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_video.h' l='953' type='int SDL_GL_GetSwapInterval()'/>
+<doc f='include/SDL2/SDL_video.h' l='942'>/**
+ *  \brief Get the swap interval for the current OpenGL context.
+ *
+ *  \return 0 if there is no vertical retrace synchronization, 1 if the buffer
+ *          swap is synchronized with the vertical retrace, and -1 if late
+ *          swaps happen immediately instead of waiting for the next retrace.
+ *          If the system can&apos;t determine the swap interval, or there isn&apos;t a
+ *          valid current context, this will return 0 as a safe default.
+ *
+ *  \sa SDL_GL_SetSwapInterval()
+ */</doc>

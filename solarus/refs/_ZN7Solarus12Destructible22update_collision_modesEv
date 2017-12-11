@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='101' type='void Solarus::Destructible::update_collision_modes()'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='75' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='165' u='c' c='_ZN7Solarus12Destructible10set_weightEi'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='183' u='c' c='_ZN7Solarus12Destructible14set_can_be_cutEb'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='203' u='c' c='_ZN7Solarus12Destructible15set_can_explodeEb'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='259' ll='275' type='void Solarus::Destructible::update_collision_modes()'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='253'>/**
+ * \brief Sets the appropriate collisions modes.
+ *
+ * This depends on whether the object is an obstacle, can be cut
+ * or can explode.
+ */</doc>

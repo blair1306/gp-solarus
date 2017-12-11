@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='56' type='const std::string &amp; Solarus::Treasure::get_savegame_variable() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='130' u='c' c='_ZNK7Solarus8Treasure8is_savedEv'/>
+<def f='codebrowser/src/Treasure.cpp' l='158' ll='160' type='const std::string &amp; Solarus::Treasure::get_savegame_variable() const'/>
+<doc f='codebrowser/src/Treasure.cpp' l='153'>/**
+ * \brief Returns the name of the boolean variable where this treasure is saved.
+ * \return The savegame variable of this treasure, or an empty string if it is
+ * not saved.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='390' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='155' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2488' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3113' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3860' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3956' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4017' u='c' c='_ZN7Solarus10LuaContext29destructible_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4896' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2175' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2194' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2469' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2569' u='c' c='_ZN7Solarus10LuaContext12on_obtainingERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2587' u='c' c='_ZN7Solarus10LuaContext11on_obtainedERKNS_8TreasureE'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='149' type='void Solarus::LuaContext::update()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='474' u='c' c='_ZN7Solarus8MainLoop6updateEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='200' ll='218' type='void Solarus::LuaContext::update()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='194'>/**
+ * \brief Updates the Lua world.
+ *
+ * This function is called at each cycle.
+ * sol.main.on_update() is called if it exists.
+ */</doc>

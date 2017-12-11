@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='101' type='bool Solarus::TextSurface::is_empty() const'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='306' ll='310' type='bool Solarus::TextSurface::is_empty() const'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='395' u='c' c='_ZN7Solarus11TextSurface7rebuildEv'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='299'>/**
+ * \brief Returns whether the current text is an empty string.
+ *
+ * A string with only whitespaces characters is considered empty.
+ *
+ * \return \c true if there is no text.
+ */</doc>

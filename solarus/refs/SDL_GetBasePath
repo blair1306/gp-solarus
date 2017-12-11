@@ -1,0 +1,24 @@
+<dec f='include/SDL2/SDL_filesystem.h' l='63' type='char * SDL_GetBasePath()'/>
+<doc f='include/SDL2/SDL_filesystem.h' l='40'>/**
+ * \brief Get the path where the application resides.
+ *
+ * Get the &quot;base path&quot;. This is the directory where the application was run
+ *  from, which is probably the installation directory, and may or may not
+ *  be the process&apos;s current working directory.
+ *
+ * This returns an absolute path in UTF-8 encoding, and is guaranteed to
+ *  end with a path separator (&apos;\\&apos; on Windows, &apos;/&apos; most other places).
+ *
+ * The pointer returned by this function is owned by you. Please call
+ *  SDL_free() on the pointer when you are done with it, or it will be a
+ *  memory leak. This is not necessarily a fast call, though, so you should
+ *  call this once near startup and save the string if you need it.
+ *
+ * Some platforms can&apos;t determine the application&apos;s path, and on other
+ *  platforms, this might be meaningless. In such cases, this function will
+ *  return NULL.
+ *
+ *  \return String of base dir in UTF-8 encoding, or NULL on error.
+ *
+ * \sa SDL_GetPrefPath
+ */</doc>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='342' type='bool Solarus::Entity::is_switch_obstacle(Solarus::Switch &amp; sw)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='165' c='_ZN7Solarus5Arrow18is_switch_obstacleERNS_6SwitchE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='188' c='_ZN7Solarus9Boomerang18is_switch_obstacleERNS_6SwitchE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='566' c='_ZN7Solarus13CarriedObject18is_switch_obstacleERNS_6SwitchE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='497' c='_ZN7Solarus12CustomEntity18is_switch_obstacleERNS_6SwitchE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='503' u='c' c='_ZN7Solarus12CustomEntity18is_switch_obstacleERNS_6SwitchE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2640' ll='2642' type='bool Solarus::Entity::is_switch_obstacle(Solarus::Switch &amp; sw)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2632'>/**
+ * \brief Returns whether a switch is currently considered as an obstacle by this entity.
+ *
+ * By default, this function returns true for solid switches and false for other ones.
+ *
+ * \param sw a switch
+ * \return true if the switch is currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='145' c='_ZN7Solarus8Hookshot18is_switch_obstacleERNS_6SwitchE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='102' u='c' c='_ZN7Solarus6Switch15is_obstacle_forERNS_6EntityE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='52' type='void Solarus::Shader::register_callback(lua_State * l)'/>
+<def f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='128' ll='129' type='void Solarus::Shader::register_callback(lua_State * )'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='150' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='124'>/**
+ * \brief Dummy method used to call the static lua callback for a specific shader implementation.
+ * \param l The lua state.
+ */</doc>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='128'>/* l */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1177' type='static std::shared_ptr&lt;Destination&gt; Solarus::LuaContext::check_destination(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2729' ll='2733' type='static std::shared_ptr&lt;Destination&gt; Solarus::LuaContext::check_destination(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2752' u='c' c='_ZN7Solarus10LuaContext42destination_api_get_starting_location_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2769' u='c' c='_ZN7Solarus10LuaContext42destination_api_set_starting_location_modeEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2722'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * destination and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The destination.
+ */</doc>

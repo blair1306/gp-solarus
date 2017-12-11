@@ -1,0 +1,76 @@
+<dec f='codebrowser/include/solarus/lowlevel/Debug.h' l='43' type='void Solarus::Debug::error(const std::string &amp; message)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='294' u='c' c='_ZN7Solarus15DialogResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/EntityData.cpp' l='860' u='c' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/Game.cpp' l='95' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='755' u='c' c='_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/MainLoop.cpp' l='144' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/Map.cpp' l='393' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/MapData.cpp' l='898' u='c' c='_ZN7Solarus7MapData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='142' u='c' c='_ZN7Solarus15QuestProperties15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='245' u='c' c='_ZN7Solarus14QuestResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/Savegame.cpp' l='416' u='c' c='_ZNK7Solarus8Savegame10get_stringERKSs'/>
+<use f='codebrowser/src/Savegame.cpp' l='473' u='c' c='_ZNK7Solarus8Savegame11get_integerERKSs'/>
+<use f='codebrowser/src/Savegame.cpp' l='529' u='c' c='_ZNK7Solarus8Savegame11get_booleanERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='153' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='158' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='168' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='243' u='c' c='_ZN7Solarus8Settings4saveERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='354' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='646' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='652' u='c' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='50' u='c' c='_ZN7Solarus15SpriteAnimationC1ERKSsRKSt6vectorINS_24SpriteAnimationDirectionESaIS4_EEji'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='72' u='c' c='_ZN7Solarus15SpriteAnimation11set_tilesetERKNS_7TilesetE'/>
+<use f='codebrowser/src/SpriteData.cpp' l='683' u='c' c='_ZN7Solarus10SpriteData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/StringResources.cpp' l='177' u='c' c='_ZN7Solarus15StringResources15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='196' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3502' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='649' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='181' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='194' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='80' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='108' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='153' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='617' u='c' c='_ZN7Solarus11TilesetData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1549' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lowlevel/Debug.cpp' l='82' ll='90' type='void Solarus::Debug::error(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Debug.cpp' l='74'>/**
+ * \brief Prints &quot;Error: &quot; and a message on both stdout and error.txt.
+ *
+ * Use this function for non fatal errors such as errors in quest data files.
+ * Stops Solarus if set_die_on_error(true) was called.
+ *
+ * \param message The error message to print.
+ */</doc>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='93' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='456' u='c' c='_ZN7Solarus5Music10decode_spcEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='484' u='c' c='_ZN7Solarus5Music9decode_itEji'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='516' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='577' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='587' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='169' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='187' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/OggDecoder.cpp' l='201' u='c' c='_ZN7Solarus10OggDecoder6decodeEji'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='193' u='c' c='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='200' u='c' c='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='205' u='c' c='_ZN7Solarus5Sound10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='374' u='c' c='_ZN7Solarus5Sound4loadEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='416' u='c' c='_ZN7Solarus5Sound5startEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='428' u='c' c='_ZN7Solarus5Sound5startEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='449' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='466' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='483' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='500' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='524' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='537' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='345' u='c' c='_ZN7Solarus7Surface11set_opacityEh'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='76' u='c' c='_ZN7Solarus11TextSurfaceC1EiiNS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='227' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='274' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='691' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='712' u='c' c='_ZN7Solarus10LuaContext7do_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='42' u='c' c='_ZN7Solarus7LuaData18import_from_bufferERKSsS2_'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='66' u='c' c='_ZN7Solarus7LuaData16import_from_fileERKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='96' u='c' c='_ZN7Solarus7LuaData22import_from_quest_fileERKSsb'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='118' u='c' c='_ZN7Solarus8LuaTools13call_functionEP9lua_StateiiPKc'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='144' u='c' c='_ZN7Solarus8LuaTools9do_stringEP9lua_StateRKSsS4_'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='184' u='c' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>

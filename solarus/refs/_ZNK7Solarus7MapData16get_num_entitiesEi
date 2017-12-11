@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='165' type='int Solarus::MapData::get_num_entities(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='279' u='c' c='_ZNK7Solarus7MapData16get_num_entitiesEv'/>
+<def f='codebrowser/src/MapData.cpp' l='290' ll='292' type='int Solarus::MapData::get_num_entities(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='312' u='c' c='_ZNK7Solarus7MapData24get_num_dynamic_entitiesEi'/>
+<use f='codebrowser/src/MapData.cpp' l='362' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='401' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='462' u='c' c='_ZN7Solarus7MapData21bring_entity_to_frontERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='507' u='c' c='_ZNK7Solarus7MapData13entity_existsERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='672' u='c' c='_ZN7Solarus7MapData10add_entityERKNS_10EntityDataE'/>
+<use f='codebrowser/src/MapData.cpp' l='705' u='c' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<doc f='codebrowser/src/MapData.cpp' l='285'>/**
+ * \brief Returns the number of entities on a layer of this map.
+ * \param layer A layer.
+ * \return The number of entities on that layer.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='192' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='80' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>

@@ -1,0 +1,15 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='569' ll='574'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='575'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='576'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='578'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='579'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='580'/>
+<size>1</size>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h' l='564'>/*
+       Logic that check if the arguments of the slot matches the argument of the signal.
+       To be used like this:
+       Q_STATIC_ASSERT(CheckCompatibleArguments&lt;FunctionPointer&lt;Signal&gt;::Arguments, FunctionPointer&lt;Slot&gt;::Arguments&gt;::value)
+    */</doc>
+<fun r='_ZN9QtPrivate22AreArgumentsCompatible4testERKNS_9RemoveRefIT0_E4TypeE'/>
+<fun r='_ZN9QtPrivate22AreArgumentsCompatible4testEz'/>
+<fun r='_ZN9QtPrivate22AreArgumentsCompatible5dummyEv'/>

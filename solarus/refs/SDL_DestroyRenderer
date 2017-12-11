@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_render.h' l='837' type='void SDL_DestroyRenderer(SDL_Renderer * renderer)'/>
+<doc f='include/SDL2/SDL_render.h' l='831'>/**
+ *  \brief Destroy the rendering context for a window and free associated
+ *         textures.
+ *
+ *  \sa SDL_CreateRenderer()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='319' u='c' c='_ZN7Solarus5Video4quitEv'/>

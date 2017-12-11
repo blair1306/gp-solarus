@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='244' type='static const Solarus::Point &amp; Solarus::Entity::direction_to_xy_move(int direction8)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2231' ll='2245' type='static const Solarus::Point &amp; Solarus::Entity::direction_to_xy_move(int direction8)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2226'>/**
+ * \brief Converts a direction into the corresponding one-pixel move on x and y.
+ * \param direction8 a direction (0 to 7)
+ * \return a point with x and y set to -1, 0 or 1 depending on the direction
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='301' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='309' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='314' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='319' u='c' c='_ZN7Solarus4Hero10update_iceEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='958' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='968' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='976' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2266' u='c' c='_ZN7Solarus4Hero9start_iceEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='159' u='c' c='_ZN7Solarus6Stream16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='85' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='326' u='c' c='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/CarryingState.h' l='32' type='void Solarus::Hero::CarryingState::CarryingState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;CarriedObject&gt; &amp; carried_object)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2375' u='c' c='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>
+<def f='codebrowser/src/hero/CarryingState.cpp' l='34' ll='41' type='void Solarus::Hero::CarryingState::CarryingState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;CarriedObject&gt; &amp; carried_object)'/>
+<doc f='codebrowser/src/hero/CarryingState.cpp' l='29'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param carried_object The item to carry.
+ */</doc>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='108' u='c' c='_ZN7Solarus4Hero12LiftingState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='193' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='208' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

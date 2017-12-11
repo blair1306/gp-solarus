@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='322' type='void Solarus::Hero::place_on_map(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='321'>// position</doc>
+<def f='codebrowser/src/entities/Hero.cpp' l='542' ll='563' type='void Solarus::Hero::place_on_map(Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='591' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='607' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='653' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='661' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='534'>/**
+ * \brief Puts the hero on a map.
+ *
+ * This function is called when the current map is changed.
+ * Does nothing if the hero is already on this map.
+ *
+ * \param map The map.
+ */</doc>

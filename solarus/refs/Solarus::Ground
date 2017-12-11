@@ -1,0 +1,10 @@
+<def f='codebrowser/include/solarus/entities/Ground.h' l='33' ll='60'/>
+<doc f='codebrowser/include/solarus/entities/Ground.h' l='24'>/**
+ * \brief The possible kinds of grounds on a map.
+ *
+ * The ground of a point of the map is the one of the tile, dynamic tile
+ * or destructible entity placed there.
+ * If several entities are present at that point (like a traversable dynamic
+ * tile over a hole tile),
+ * the highest one whose ground is not GROUND_EMPTY wins.
+ */</doc>

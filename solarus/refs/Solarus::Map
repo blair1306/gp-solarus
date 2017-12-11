@@ -1,0 +1,107 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/Map.h' l='52' ll='232'/>
+<size>192</size>
+<doc f='codebrowser/include/solarus/Map.h' l='42'>/**
+ * \brief Represents a map where the game can take place.
+ *
+ * A map is a game scene. It contains various information, including:
+ * - its dimensions,
+ * - the tileset,
+ * - the tiles and the other entities placed on the map,
+ * - the ground of each 8x8 square,
+ * - the background music.
+ */</doc>
+<fun r='_ZN7Solarus3MapC1ERKSs'/>
+<fun r='_ZNK7Solarus3Map6get_idEv'/>
+<fun r='_ZNK7Solarus3Map11get_tilesetEv'/>
+<fun r='_ZNK7Solarus3Map14get_tileset_idEv'/>
+<fun r='_ZN7Solarus3Map11set_tilesetERKSs'/>
+<fun r='_ZNK7Solarus3Map12get_music_idEv'/>
+<fun r='_ZNK7Solarus3Map9has_worldEv'/>
+<fun r='_ZNK7Solarus3Map9get_worldEv'/>
+<fun r='_ZN7Solarus3Map9set_worldERKSs'/>
+<fun r='_ZNK7Solarus3Map9has_floorEv'/>
+<fun r='_ZNK7Solarus3Map9get_floorEv'/>
+<fun r='_ZN7Solarus3Map9set_floorEi'/>
+<fun r='_ZNK7Solarus3Map12get_locationEv'/>
+<fun r='_ZNK7Solarus3Map8get_sizeEv'/>
+<fun r='_ZNK7Solarus3Map9get_widthEv'/>
+<fun r='_ZNK7Solarus3Map10get_heightEv'/>
+<fun r='_ZNK7Solarus3Map10get_width8Ev'/>
+<fun r='_ZNK7Solarus3Map11get_height8Ev'/>
+<fun r='_ZNK7Solarus3Map13get_min_layerEv'/>
+<fun r='_ZNK7Solarus3Map13get_max_layerEv'/>
+<fun r='_ZNK7Solarus3Map14is_valid_layerEi'/>
+<fun r='_ZNK7Solarus3Map10get_cameraEv'/>
+<fun r='_ZN7Solarus3Map18get_camera_surfaceEv'/>
+<fun r='_ZNK7Solarus3Map9is_loadedEv'/>
+<fun r='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<fun r='_ZN7Solarus3Map6unloadEv'/>
+<fun r='_ZN7Solarus3Map8get_gameEv'/>
+<fun r='_ZN7Solarus3Map15get_lua_contextEv'/>
+<fun r='_ZNK7Solarus3Map17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<fun r='_ZN7Solarus3Map12get_entitiesEv'/>
+<fun r='_ZNK7Solarus3Map12get_entitiesEv'/>
+<fun r='_ZNK7Solarus3Map10is_startedEv'/>
+<fun r='_ZN7Solarus3Map5startEv'/>
+<fun r='_ZN7Solarus3Map5leaveEv'/>
+<fun r='_ZN7Solarus3Map15set_destinationERKSs'/>
+<fun r='_ZNK7Solarus3Map20get_destination_nameEv'/>
+<fun r='_ZN7Solarus3Map15get_destinationEv'/>
+<fun r='_ZNK7Solarus3Map20get_destination_sideEv'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_borderEii'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_borderERKNS_5PointE'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_borderERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_groundEiiiRKNS_6EntityERb'/>
+<fun r='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<fun r='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<fun r='_ZN7Solarus3Map29test_collision_with_obstaclesEiiiRNS_6EntityE'/>
+<fun r='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_5PointERNS_6EntityE'/>
+<fun r='_ZNK7Solarus3Map16has_empty_groundEiRKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus3Map10get_groundEiiiPKNS_6EntityE'/>
+<fun r='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<fun r='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityEii'/>
+<fun r='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<fun r='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<fun r='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<fun r='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<fun r='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<fun r='_ZN7Solarus3Map12notify_inputERKNS_10InputEventE'/>
+<fun r='_ZN7Solarus3Map6updateEv'/>
+<fun r='_ZNK7Solarus3Map12is_suspendedEv'/>
+<fun r='_ZN7Solarus3Map15check_suspendedEv'/>
+<fun r='_ZN7Solarus3Map4drawEv'/>
+<fun r='_ZN7Solarus3Map11draw_visualERNS_8DrawableERKNS_5PointE'/>
+<fun r='_ZN7Solarus3Map11draw_visualERNS_8DrawableEii'/>
+<fun r='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<fun r='_ZN7Solarus3Map13set_suspendedEb'/>
+<fun r='_ZN7Solarus3Map24build_background_surfaceEv'/>
+<fun r='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<fun r='_ZN7Solarus3Map15draw_backgroundERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus3Map15draw_foregroundERKSt10shared_ptrINS_7SurfaceEE'/>
+<mbr r='Solarus::Map::game' o='320' t='Solarus::Game *'/>
+<mbr r='Solarus::Map::id' o='384' t='std::string'/>
+<mbr r='Solarus::Map::width8' o='448' t='int'/>
+<mbr r='Solarus::Map::height8' o='480' t='int'/>
+<mbr r='Solarus::Map::min_layer' o='512' t='int'/>
+<mbr r='Solarus::Map::max_layer' o='544' t='int'/>
+<mbr r='Solarus::Map::tileset_id' o='576' t='std::string'/>
+<mbr r='Solarus::Map::tileset' o='640' t='const Solarus::Tileset *'/>
+<mbr r='Solarus::Map::music_id' o='704' t='std::string'/>
+<mbr r='Solarus::Map::world' o='768' t='std::string'/>
+<mbr r='Solarus::Map::floor' o='832' t='int'/>
+<mbr r='Solarus::Map::location' o='864' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Map::background_surface' o='1024' t='SurfacePtr'/>
+<mbr r='Solarus::Map::foreground_surface' o='1152' t='SurfacePtr'/>
+<mbr r='Solarus::Map::loaded' o='1280' t='bool'/>
+<mbr r='Solarus::Map::started' o='1288' t='bool'/>
+<mbr r='Solarus::Map::destination_name' o='1344' t='std::string'/>
+<mbr r='Solarus::Map::entities' o='1408' t='std::unique_ptr&lt;Entities&gt;'/>
+<mbr r='Solarus::Map::suspended' o='1472' t='bool'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_borderEii'/>
+<fun r='_ZNK7Solarus3Map26test_collision_with_borderERKNS_5PointE'/>
+<fun r='_ZNK7Solarus3Map11get_tilesetEv'/>
+<fun r='_ZNK7Solarus3Map12get_entitiesEv'/>
+<fun r='_ZN7Solarus3Map12get_entitiesEv'/>
+<fun r='_ZNK7Solarus3Map10get_cameraEv'/>

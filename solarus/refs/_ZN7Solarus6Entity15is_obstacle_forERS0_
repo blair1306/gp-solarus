@@ -1,0 +1,36 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='333' type='bool Solarus::Entity::is_obstacle_for(Solarus::Entity &amp; other)'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='332'>// Obstacles.</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='238' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='98' c='_ZN7Solarus5Block15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='356' c='_ZN7Solarus5Chest15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='85' c='_ZN7Solarus7Crystal15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/CrystalBlock.cpp' l='85' c='_ZN7Solarus12CrystalBlock15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='285' c='_ZN7Solarus12CustomEntity15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='245' c='_ZN7Solarus12Destructible15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='114' c='_ZN7Solarus4Door15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='252' c='_ZN7Solarus5Enemy15is_obstacle_forERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2338' ll='2341' type='bool Solarus::Entity::is_obstacle_for(Solarus::Entity &amp; )'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2372' u='c' c='_ZN7Solarus6Entity15is_obstacle_forERS0_RKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2329'>/**
+ * \brief Returns whether this entity is an obstacle for another one.
+ *
+ * This function is called by the default implementation of
+ * Entity::is_obstacle_for(Entity&amp;, const Rectangle&amp; candidate_position).
+ *
+ * \param other Another entity.
+ * \return \c true if this entity is an obstacle for the other one.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2338'>/* other */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1413' c='_ZN7Solarus4Hero15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='161' c='_ZN7Solarus3Npc15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='69' c='_ZN7Solarus6Sensor15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Separator.cpp' l='73' c='_ZN7Solarus9Separator15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='156' c='_ZN7Solarus12ShopTreasure15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='133' c='_ZN7Solarus6Stairs15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Stream.cpp' l='149' c='_ZN7Solarus6Stream15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='101' c='_ZN7Solarus6Switch15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Teletransporter.cpp' l='206' c='_ZN7Solarus15Teletransporter15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Wall.cpp' l='91' c='_ZN7Solarus4Wall15is_obstacle_forERNS_6EntityE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='161' u='c' c='_ZN7Solarus4Hero18SwordSwingingState21is_cutting_with_swordERNS_6EntityE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='166' u='c' c='_ZN7Solarus4Hero17SwordTappingState21is_cutting_with_swordERNS_6EntityE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='74' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>

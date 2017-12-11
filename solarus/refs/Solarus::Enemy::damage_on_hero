@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='214' type='int'/>
+<offset>2112</offset>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='214'>/**&lt; number of heart quarters the player loses when he gets hurt by this enemy;
+                                        * this number is divided depending on the hero&apos;s tunic number (default: 1) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='90' u='w' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='441' u='r' c='_ZNK7Solarus5Enemy10get_damageEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='449' u='w' c='_ZN7Solarus5Enemy10set_damageEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1071' u='r' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>

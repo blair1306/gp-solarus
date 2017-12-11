@@ -1,0 +1,27 @@
+<dec f='include/physfs.h' l='820' type='char ** PHYSFS_getSearchPath()'/>
+<doc f='include/physfs.h' l='794'>/**
+ * \fn char **PHYSFS_getSearchPath(void)
+ * \brief Get the current search path.
+ *
+ * The default search path is an empty list.
+ *
+ * The returned value is an array of strings, with a NULL entry to signify the
+ *  end of the list:
+ *
+ * \code
+ * char **i;
+ *
+ * for (i = PHYSFS_getSearchPath(); *i != NULL; i++)
+ *     printf(&quot;[%s] is in the search path.\n&quot;, *i);
+ * \endcode
+ *
+ * When you are done with the returned information, you may dispose of the
+ *  resources by calling PHYSFS_freeList() with the returned pointer.
+ *
+ *   \return Null-terminated array of null-terminated strings. NULL if there
+ *            was a problem (read: OUT OF MEMORY).
+ *
+ * \sa PHYSFS_getSearchPathCallback
+ * \sa PHYSFS_addToSearchPath
+ * \sa PHYSFS_removeFromSearchPath
+ */</doc>

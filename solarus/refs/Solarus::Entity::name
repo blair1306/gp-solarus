@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='457' type='std::string'/>
+<offset>704</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='455'>// other data, used for some kinds of entities only</doc>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='457'>/**&lt; Name of the entity or an empty string.
+                                                 * The name uniquely identifies the entity in the map. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='68' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1135' u='a' c='_ZNK7Solarus6Entity8get_nameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1144' u='w' c='_ZN7Solarus6Entity8set_nameERKSs'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1152' u='m' c='_ZNK7Solarus6Entity8has_nameEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1161' u='m' c='_ZNK7Solarus6Entity10has_prefixERKSs'/>

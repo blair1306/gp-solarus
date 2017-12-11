@@ -1,0 +1,44 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1145' type='static std::shared_ptr&lt;EquipmentItem&gt; Solarus::LuaContext::check_item(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2264' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2522' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1245' u='c' c='_ZN7Solarus10LuaContext26game_api_set_item_assignedEP9lua_State'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='106' ll='110' type='static std::shared_ptr&lt;EquipmentItem&gt; Solarus::LuaContext::check_item(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='130' u='c' c='_ZN7Solarus10LuaContext17item_api_get_nameEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='145' u='c' c='_ZN7Solarus10LuaContext17item_api_get_gameEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='160' u='c' c='_ZN7Solarus10LuaContext16item_api_get_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='181' u='c' c='_ZN7Solarus10LuaContext30item_api_get_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='202' u='c' c='_ZN7Solarus10LuaContext30item_api_set_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='229' u='c' c='_ZN7Solarus10LuaContext37item_api_get_amount_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='250' u='c' c='_ZN7Solarus10LuaContext37item_api_set_amount_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='277' u='c' c='_ZN7Solarus10LuaContext22item_api_is_obtainableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='292' u='c' c='_ZN7Solarus10LuaContext23item_api_set_obtainableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='309' u='c' c='_ZN7Solarus10LuaContext22item_api_is_assignableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='324' u='c' c='_ZN7Solarus10LuaContext23item_api_set_assignableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='341' u='c' c='_ZN7Solarus10LuaContext26item_api_get_can_disappearEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='356' u='c' c='_ZN7Solarus10LuaContext26item_api_set_can_disappearEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='373' u='c' c='_ZN7Solarus10LuaContext33item_api_get_brandish_when_pickedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='388' u='c' c='_ZN7Solarus10LuaContext33item_api_set_brandish_when_pickedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='405' u='c' c='_ZN7Solarus10LuaContext19item_api_get_shadowEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='426' u='c' c='_ZN7Solarus10LuaContext19item_api_set_shadowEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='446' u='c' c='_ZN7Solarus10LuaContext30item_api_get_sound_when_pickedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='467' u='c' c='_ZN7Solarus10LuaContext30item_api_set_sound_when_pickedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='487' u='c' c='_ZN7Solarus10LuaContext34item_api_get_sound_when_brandishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='508' u='c' c='_ZN7Solarus10LuaContext34item_api_set_sound_when_brandishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='528' u='c' c='_ZN7Solarus10LuaContext20item_api_has_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='547' u='c' c='_ZN7Solarus10LuaContext20item_api_get_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='566' u='c' c='_ZN7Solarus10LuaContext20item_api_set_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='587' u='c' c='_ZN7Solarus10LuaContext19item_api_has_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='610' u='c' c='_ZN7Solarus10LuaContext19item_api_get_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='630' u='c' c='_ZN7Solarus10LuaContext19item_api_set_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='651' u='c' c='_ZN7Solarus10LuaContext19item_api_add_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='676' u='c' c='_ZN7Solarus10LuaContext22item_api_remove_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='701' u='c' c='_ZN7Solarus10LuaContext23item_api_get_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='720' u='c' c='_ZN7Solarus10LuaContext23item_api_set_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='745' u='c' c='_ZN7Solarus10LuaContext21item_api_set_finishedEP9lua_State'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='99'>/**
+ * \brief Checks that the userdata at the specified index of the stack is an
+ * equipment item and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The equipment item.
+ */</doc>

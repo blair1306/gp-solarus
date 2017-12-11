@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_rect.h' l='115' type='SDL_bool SDL_EnclosePoints(const SDL_Point * points, int count, const SDL_Rect * clip, SDL_Rect * result)'/>
+<doc f='include/SDL2/SDL_rect.h' l='110'>/**
+ *  \brief Calculate a minimal rectangle enclosing a set of points
+ *
+ *  \return SDL_TRUE if any points were within the clipping rect
+ */</doc>

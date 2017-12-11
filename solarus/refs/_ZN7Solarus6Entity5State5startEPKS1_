@@ -1,0 +1,60 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='44' type='void Solarus::Entity::State::start(const Solarus::Entity::State * previous_state)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3519' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='191' ll='199' type='void Solarus::Entity::State::start(const Solarus::Entity::State * )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='181'>/**
+ * \brief Starts this state.
+ *
+ * This function is called automatically when this state becomes the active
+ * state of the entity.
+ * The initializations should be done here rather than in the constructor.
+ *
+ * \param previous_state The previous state or nullptr if this is the first state
+ * (for information).
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='191'>/* previous_state */</doc>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='71' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='73' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/BoomerangState.cpp' l='58' c='_ZN7Solarus4Hero14BoomerangState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='60' u='c' c='_ZN7Solarus4Hero14BoomerangState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/BowState.cpp' l='40' c='_ZN7Solarus4Hero8BowState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BowState.cpp' l='42' u='c' c='_ZN7Solarus4Hero8BowState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/FallingState.cpp' l='40' c='_ZN7Solarus4Hero12FallingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='42' u='c' c='_ZN7Solarus4Hero12FallingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='50' c='_ZN7Solarus4Hero18ForcedWalkingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='52' u='c' c='_ZN7Solarus4Hero18ForcedWalkingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/FrozenState.cpp' l='37' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FrozenState.cpp' l='39' u='c' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/GrabbingState.cpp' l='40' c='_ZN7Solarus4Hero13GrabbingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/GrabbingState.cpp' l='42' u='c' c='_ZN7Solarus4Hero13GrabbingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='42' c='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='44' u='c' c='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='57' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='59' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='64' c='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='66' u='c' c='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/LiftingState.cpp' l='49' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='51' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='80' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='83' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/PlungingState.cpp' l='41' c='_ZN7Solarus4Hero13PlungingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='43' u='c' c='_ZN7Solarus4Hero13PlungingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='43' c='_ZN7Solarus4Hero12PullingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='45' u='c' c='_ZN7Solarus4Hero12PullingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='44' c='_ZN7Solarus4Hero12PushingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='46' u='c' c='_ZN7Solarus4Hero12PushingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='54' c='_ZN7Solarus4Hero12RunningState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='56' u='c' c='_ZN7Solarus4Hero12RunningState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='48' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='50' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='77' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='79' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='45' c='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='47' u='c' c='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='48' c='_ZN7Solarus4Hero17SwordTappingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='50' u='c' c='_ZN7Solarus4Hero17SwordTappingState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/TreasureState.cpp' l='57' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='59' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/UsingItemState.cpp' l='42' c='_ZN7Solarus4Hero14UsingItemState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='44' u='c' c='_ZN7Solarus4Hero14UsingItemState5startEPKNS_6Entity5StateE'/>
+<ovr f='codebrowser/src/hero/VictoryState.cpp' l='47' c='_ZN7Solarus4Hero12VictoryState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='49' u='c' c='_ZN7Solarus4Hero12VictoryState5startEPKNS_6Entity5StateE'/>

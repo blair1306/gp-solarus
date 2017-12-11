@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='533' type='static int Solarus::LuaContext::language_api_set_language(lua_State * )'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='63' u='r' c='_ZN7Solarus10LuaContext24register_language_moduleEv'/>
+<def f='codebrowser/src/lua/LanguageApi.cpp' l='99' ll='111' type='static int Solarus::LuaContext::language_api_set_language(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LanguageApi.cpp' l='94'>/**
+ * \brief Implementation of sol.language.set_language().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

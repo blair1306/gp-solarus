@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='308' type='bool Solarus::InputEvent::is_window_closing() const'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='307'>// window event</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='444' u='c' c='_ZN7Solarus8MainLoop12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1469' ll='1472' type='bool Solarus::InputEvent::is_window_closing() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1464'>/**
+ * \brief Returns whether this event corresponds to
+ * the user closing the window.
+ * \return true if this is a window closing event
+ */</doc>

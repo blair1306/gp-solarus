@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='49' type='void Solarus::MainLoop::step()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='359' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='368' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<def f='codebrowser/src/MainLoop.cpp' l='399' ll='401' type='void Solarus::MainLoop::step()'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='393'>/**
+ * \brief Advances the simulation of one tick.
+ *
+ * You can use this function if you want to simulate step by step.
+ * Otherwise, use run() to execute the standard main loop.
+ */</doc>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='182' u='c' c='_ZN7Solarus15TestEnvironment4stepEv'/>

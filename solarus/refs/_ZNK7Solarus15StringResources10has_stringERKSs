@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='38' type='bool Solarus::StringResources::has_string(const std::string &amp; key) const'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='260' u='c' c='_ZN7Solarus12CurrentQuest13string_existsERKSs'/>
+<def f='codebrowser/src/StringResources.cpp' l='51' ll='53' type='bool Solarus::StringResources::has_string(const std::string &amp; key) const'/>
+<use f='codebrowser/src/StringResources.cpp' l='124' u='c' c='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<use f='codebrowser/src/StringResources.cpp' l='129' u='c' c='_ZN7Solarus15StringResources14set_string_keyERKSsS2_'/>
+<doc f='codebrowser/src/StringResources.cpp' l='46'>/**
+ * \brief Returns whether there exists a string with the specified key.
+ * \param key The key to test.
+ * \return \c true if a string exists with this key.
+ */</doc>

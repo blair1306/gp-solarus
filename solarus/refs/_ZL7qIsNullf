@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='780' type='bool qIsNull(float f)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='781' ll='790' type='bool qIsNull(float f)'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='775'>/*
+   This function tests a float for a null value. It doesn&apos;t
+   check whether the actual value is 0 or close to 0, but whether
+   it is binary 0, disregarding sign.
+*/</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h' l='142' u='c' c='_ZNK9QVector2D6isNullEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h' l='142' u='c' c='_ZNK9QVector2D6isNullEv'/>

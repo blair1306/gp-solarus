@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='236' type='void Solarus::Entity::notify_movement_changed()'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2201' ll='2206' type='void Solarus::Entity::notify_movement_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2196'>/**
+ * \brief This function can be called by the movement object
+ * to notify the entity when the movement has just changed
+ * (e.g. the speed, the angle or the trajectory).
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1159' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1185' u='c' c='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='306' u='c' c='_ZN7Solarus8Movement23notify_movement_changedEv'/>

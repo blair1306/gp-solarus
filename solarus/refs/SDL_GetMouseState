@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_mouse.h' l='78' type='Uint32 SDL_GetMouseState(int * x, int * y)'/>
+<doc f='include/SDL2/SDL_mouse.h' l='70'>/**
+ *  \brief Retrieve the current state of the mouse.
+ *
+ *  The current button state is returned as a button bitmask, which can
+ *  be tested using the SDL_BUTTON(X) macros, and x and y are set to the
+ *  mouse cursor position relative to the focus window for the currently
+ *  selected mouse.  You can pass NULL for either x or y.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='416' u='c' c='_ZN7Solarus10InputEvent20is_mouse_button_downENS0_11MouseButtonE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='522' u='c' c='_ZN7Solarus10InputEvent25get_global_mouse_positionEv'/>

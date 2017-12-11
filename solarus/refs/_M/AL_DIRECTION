@@ -1,0 +1,9 @@
+<dec f='include/AL/al.h' l='154'/>
+<doc f='include/AL/al.h' l='146'>/**
+ * Source direction.
+ * Type:    ALfloat[3], ALint[3]
+ * Default: {0, 0, 0}
+ *
+ * Specifies the current direction in local space.
+ * A zero-length vector specifies an omni-directional source (cone is ignored).
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='55' type='bool Solarus::Hookshot::is_going_back() const'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='251' u='c' c='_ZNK7Solarus8Hookshot9is_flyingEv'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='258' ll='260' type='bool Solarus::Hookshot::is_going_back() const'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='267' u='c' c='_ZN7Solarus8Hookshot7go_backEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='338' u='c' c='_ZN7Solarus8Hookshot21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='394' u='c' c='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='411' u='c' c='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='254'>/**
+ * \brief Returns whether the hookshot is going back towards the hero, i.e. if go_back() has been called.
+ * \return true if the hookshot is going back
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='316' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='43' type='bool Solarus::LuaData::import_from_quest_file(const std::string &amp; quest_file_name, bool language_specific = false)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='44' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='176' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='182' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='289' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='53' u='c' c='_ZN7Solarus18SpriteAnimationSet4loadEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='140' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='91' ll='104' type='bool Solarus::LuaData::import_from_quest_file(const std::string &amp; quest_file_name, bool language_specific = false)'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='76'>/**
+ * \brief Imports a Lua data file from the current quest to this object.
+ *
+ * This function loads a file in the search path of the current quest.
+ * The actual file might be located in the physical quest data directory,
+ * in the quest write directory or in the quest data archive (see QuestFiles).
+ * This function does the search for you.
+ *
+ * \param[in] quest_file_name Path of the file to load, relative to the quest
+ * data path.
+ * \param[in] language_specific \c true to search in the language-specific
+ * directory of the current language.
+ * The file must be encoded in UTF-8.
+ * \return \c true in case of success, \c false if the file could not be loaded.
+ */</doc>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='70' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>

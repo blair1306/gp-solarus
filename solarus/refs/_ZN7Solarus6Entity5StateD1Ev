@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='42' type='void Solarus::Entity::State::~State()'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='41'>// creation and destruction</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='58' ll='59' type='void Solarus::Entity::State::~State()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='53'>/**
+ * \brief Destructor.
+ *
+ * The state is destroyed once it is not the current state of the entity anymore.
+ */</doc>

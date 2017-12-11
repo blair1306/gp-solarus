@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/FontResource.h' l='82' type='static void Solarus::FontResource::load_fonts()'/>
+<def f='codebrowser/src/lowlevel/FontResource.cpp' l='50' ll='114' type='static void Solarus::FontResource::load_fonts()'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='124' u='c' c='_ZN7Solarus12FontResource19get_default_font_idEv'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='143' u='c' c='_ZN7Solarus12FontResource6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='157' u='c' c='_ZN7Solarus12FontResource14is_bitmap_fontERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='173' u='c' c='_ZN7Solarus12FontResource15get_bitmap_fontERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='191' u='c' c='_ZN7Solarus12FontResource16get_outline_fontERKSsi'/>
+<doc f='codebrowser/src/lowlevel/FontResource.cpp' l='47'>/**
+ * \brief Loads the fonts declared in the quest resource list.
+ */</doc>

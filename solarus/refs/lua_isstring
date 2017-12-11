@@ -1,0 +1,17 @@
+<dec f='include/luajit-2.0/lua.h' l='136' type='int lua_isstring(lua_State * L, int idx)'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='191' u='c' c='_ZN7Solarus8LuaTools16check_enum_fieldEP9lua_StateiRKSsRKSt3mapIT_SsSt4lessIS6_ESaISt4pairIKS6_SsEEE'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='249' u='c' c='_ZN7Solarus8LuaTools14opt_enum_fieldEP9lua_StateiRKSsRKSt3mapIT_SsSt4lessIS6_ESaISt4pairIKS6_SsEEES6_'/>
+<use f='codebrowser/src/Settings.cpp' l='181' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='215' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='937' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='578' u='c' c='_ZN7Solarus10LuaContext9is_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5388' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5447' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5549' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1147' u='c' c='_ZN7Solarus10LuaContext19is_solarus_userdataEP9lua_StateiRSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1302' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1347' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='483' u='c' c='_ZN7Solarus8LuaTools12check_stringEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='509' u='c' c='_ZN7Solarus8LuaTools18check_string_fieldEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='566' u='c' c='_ZN7Solarus8LuaTools16opt_string_fieldEP9lua_StateiRKSsS4_'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='181' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_animationEP9lua_State'/>

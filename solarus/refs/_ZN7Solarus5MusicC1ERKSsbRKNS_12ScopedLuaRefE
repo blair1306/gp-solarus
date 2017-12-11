@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='97' type='void Solarus::Music::Music(const std::string &amp; music_id, bool loop, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='75' ll='92' type='void Solarus::Music::Music(const std::string &amp; music_id, bool loop, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='341' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='67'>/**
+ * \brief Creates a new music.
+ * \param music_id Id of the music (file name without extension).
+ * \param loop Whether the music should loop when reaching its end.
+ * \param callback_ref Lua function to call when the music ends
+ * or an empty ref.
+ * There cannot be both a loop and a callback at the same time.
+ */</doc>

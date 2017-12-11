@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='108' type='bool Solarus::Sprite::test_collision(const Solarus::Sprite &amp; other, int x1, int y1, int x2, int y2) const'/>
+<doc f='codebrowser/include/solarus/Sprite.h' l='107'>// collisions</doc>
+<def f='codebrowser/src/Sprite.cpp' l='634' ll='670' type='bool Solarus::Sprite::test_collision(const Solarus::Sprite &amp; other, int x1, int y1, int x2, int y2) const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='621'>/**
+ * \brief Tests whether this sprite&apos;s pixels are overlapping another sprite.
+ * \param other Another sprite.
+ * \param x1 X coordinate of this sprite&apos;s origin point on the map,
+ * before applying its current movement if any.
+ * \param y1 Y coordinate of this sprite&apos;s origin point on the map,
+ * before applying its current movement if any.
+ * \param x2 X coordinate of the other sprite&apos;s origin point on the map,
+ * before applying its current movement if any.
+ * \param y2 Y coordinate of the other sprite&apos;s origin point on the map,
+ * before applying its current movement if any.
+ * \return \c true if the sprites are overlapping.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='1850' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1904' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2068' u='c' c='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>

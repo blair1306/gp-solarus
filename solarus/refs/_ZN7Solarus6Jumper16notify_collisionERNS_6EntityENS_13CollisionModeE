@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='52' type='void Solarus::Jumper::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='387' ll='391' type='void Solarus::Jumper::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='382'>/**
+ * \brief This function is called when an entity overlaps the jumper.
+ * \param entity_overlapping The entity that overlaps the jumper.
+ * \param collision_mode The collision mode that triggered the event.
+ */</doc>

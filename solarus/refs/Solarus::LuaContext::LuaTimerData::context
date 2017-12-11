@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1043' type='const void *'/>
+<offset>128</offset>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1043'>/**&lt; Lua table or userdata the timer is attached to. */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='141' u='w' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='214' u='r' c='_ZN7Solarus10LuaContext13remove_timersEi'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='290' u='r' c='_ZN7Solarus10LuaContext27set_entity_timers_suspendedERNS_6EntityEb'/>

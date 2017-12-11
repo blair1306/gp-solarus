@@ -1,0 +1,9 @@
+<def f='include/SDL2/SDL_assert.h' l='107' ll='116'/>
+<size>48</size>
+<mbr r='SDL_assert_data::always_ignore' o='0' t='int'/>
+<mbr r='SDL_assert_data::trigger_count' o='32' t='unsigned int'/>
+<mbr r='SDL_assert_data::condition' o='64' t='const char *'/>
+<mbr r='SDL_assert_data::filename' o='128' t='const char *'/>
+<mbr r='SDL_assert_data::linenum' o='192' t='int'/>
+<mbr r='SDL_assert_data::function' o='256' t='const char *'/>
+<mbr r='SDL_assert_data::next' o='320' t='const struct SDL_assert_data *'/>

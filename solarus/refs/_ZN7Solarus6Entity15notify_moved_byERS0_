@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='238' type='void Solarus::Entity::notify_moved_by(Solarus::Entity &amp; entity)'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='321' c='_ZN7Solarus5Block15notify_moved_byERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2222' ll='2224' type='void Solarus::Entity::notify_moved_by(Solarus::Entity &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2217'>/**
+ * \brief This function is called when this entity has just finished to get
+ * moved by another one.
+ * \param entity The other entity.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2222'>/* entity */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='230' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='235' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>

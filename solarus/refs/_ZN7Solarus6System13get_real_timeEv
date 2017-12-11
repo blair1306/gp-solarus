@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lowlevel/System.h' l='44' type='static uint32_t Solarus::System::get_real_time()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='323' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='334' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='348' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='384' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/lowlevel/System.cpp' l='48' u='c' c='_ZN7Solarus6System10initializeERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/System.cpp' l='132' ll='134' type='static uint32_t Solarus::System::get_real_time()'/>
+<doc f='codebrowser/src/lowlevel/System.cpp' l='124'>/**
+ * \brief Returns the number of real milliseconds elapsed since the
+ * initialization of the Solarus library.
+ *
+ * This function is not deterministic, so use it at your own risks.
+ *
+ * \return The number of milliseconds elapsed since the initialization.
+ */</doc>

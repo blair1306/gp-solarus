@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='212' type='void Solarus::Entity::notify_sprite_animation_finished(Solarus::Sprite &amp; sprite, const std::string &amp; animation)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1465' ll='1466' type='void Solarus::Entity::notify_sprite_animation_finished(Solarus::Sprite &amp; , const std::string &amp; )'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3414' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1456'>/**
+ * \brief Notifies this entity that the animation of one of its sprites
+ * has just finished.
+ *
+ * By default, nothing is done.
+ *
+ * \param sprite the sprite
+ * \param animation the animation just finished
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1465'>/* sprite */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1465'>/* animation */</doc>

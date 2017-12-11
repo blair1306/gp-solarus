@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='49' type='void Solarus::Timer::notify_map_suspended(bool suspended)'/>
+<def f='codebrowser/src/Timer.cpp' l='189' ll='194' type='void Solarus::Timer::notify_map_suspended(bool suspended)'/>
+<doc f='codebrowser/src/Timer.cpp' l='185'>/**
+ * \brief Notifies this timer that the current map is being suspended or resumed.
+ * \param suspended true if the map is suspended, false if it is resumed.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='271' u='c' c='_ZN7Solarus10LuaContext27notify_timers_map_suspendedEb'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='524' u='c' c='_ZN7Solarus10LuaContext32timer_api_set_suspended_with_mapEP9lua_State'/>

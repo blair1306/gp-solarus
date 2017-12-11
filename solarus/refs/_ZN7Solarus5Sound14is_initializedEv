@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='71' type='static bool Solarus::Sound::is_initialized()'/>
+<use f='codebrowser/src/Settings.cpp' l='294' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='330' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='159' u='c' c='_ZN7Solarus5SoundD1Ev'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='227' u='c' c='_ZN7Solarus5Sound4quitEv'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='252' ll='254' type='static bool Solarus::Sound::is_initialized()'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='261' u='c' c='_ZN7Solarus5Sound8load_allEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='396' u='c' c='_ZN7Solarus5Sound5startEv'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='248'>/**
+ * \brief Returns whether the audio (music and sound) system is initialized.
+ * \return true if the audio (music and sound) system is initilialized
+ */</doc>

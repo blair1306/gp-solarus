@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='347' type='void Solarus::LuaContext::game_on_dialog_finished(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog)'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1720' ll='1730' type='void Solarus::LuaContext::game_on_dialog_finished(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1712'>/**
+ * \brief Calls the on_dialog_finished() method of a Lua game.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param game A game.
+ * \param dialog The dialog just finished.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='414' u='c' c='_ZN7Solarus10LuaContext22notify_dialog_finishedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefES8_'/>

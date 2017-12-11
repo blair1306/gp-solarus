@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/System.h' l='41' type='static std::string Solarus::System::get_os()'/>
+<def f='codebrowser/src/lowlevel/System.cpp' l='105' ll='108' type='static std::string Solarus::System::get_os()'/>
+<doc f='codebrowser/src/lowlevel/System.cpp' l='95'>/**
+ * \brief Returns the name of the running OS.
+ *
+ * Possible values are &quot;Windows&quot;, &quot;Mac OS X&quot;, &quot;Linux&quot;, &quot;iOS&quot; and &quot;Android&quot;.
+ *
+ * If the correct OS name is not available, returns a string
+ * beginning with the text &quot;Unknown&quot;.
+ *
+ * \return the name of the running OS.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='392' u='c' c='_ZN7Solarus10LuaContext15main_api_get_osEP9lua_State'/>

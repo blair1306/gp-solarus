@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1049' type='bool Solarus::LuaContext::find_method(int index, const char * function_name)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='592' u='c' c='_ZN7Solarus10LuaContext11find_methodEPKc'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='609' ll='629' type='bool Solarus::LuaContext::find_method(int index, const char * function_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='595'>/**
+ * \brief Gets a method of an object.
+ *
+ * If the method exists, the method and the object are both pushed
+ * so that you can call the method immediately with the object as first parameter.
+ * If the method is not found, the stack is left unchanged.
+ *
+ * \param index Index of the object in the stack.
+ * \param function_name Name of the function to find in the object.
+ * This is not an const std::string&amp; but a const char* on purpose to avoid
+ * costly conversions as this function is called very often.
+ *
+ * \return true if the function was found.
+ */</doc>

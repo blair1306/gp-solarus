@@ -1,0 +1,27 @@
+<def f='codebrowser/include/solarus/SpriteAnimationSet.h' l='42' ll='76'/>
+<size>88</size>
+<doc f='codebrowser/include/solarus/SpriteAnimationSet.h' l='34'>/**
+ * \brief A set of animations representing a sprite.
+ *
+ * Each animation correspond to a specific situation of a sprite
+ * and is an instance of SpriteAnimation.
+ * For example, an NPC usually has an animation &quot;stopped&quot;
+ * and an animation &quot;walking&quot;.
+ */</doc>
+<fun r='_ZN7Solarus18SpriteAnimationSetC1ERKSs'/>
+<fun r='_ZN7Solarus18SpriteAnimationSet11set_tilesetERKNS_7TilesetE'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet13has_animationERKSs'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet13get_animationERKSs'/>
+<fun r='_ZN7Solarus18SpriteAnimationSet13get_animationERKSs'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet21get_default_animationEv'/>
+<fun r='_ZN7Solarus18SpriteAnimationSet23enable_pixel_collisionsEv'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet28are_pixel_collisions_enabledEv'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet12get_max_sizeEv'/>
+<fun r='_ZNK7Solarus18SpriteAnimationSet20get_max_bounding_boxEv'/>
+<fun r='_ZN7Solarus18SpriteAnimationSet4loadEv'/>
+<fun r='_ZN7Solarus18SpriteAnimationSet13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<mbr r='Solarus::SpriteAnimationSet::id' o='0' t='std::string'/>
+<mbr r='Solarus::SpriteAnimationSet::animations' o='64' t='std::map&lt;std::string, SpriteAnimation&gt;'/>
+<mbr r='Solarus::SpriteAnimationSet::default_animation_name' o='448' t='std::string'/>
+<mbr r='Solarus::SpriteAnimationSet::max_size' o='512' t='Solarus::Size'/>
+<mbr r='Solarus::SpriteAnimationSet::max_bounding_box' o='576' t='Solarus::Rectangle'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='81' type='static const Solarus::Size &amp; Solarus::Video::get_quest_size()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='157' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/MainLoop.cpp' l='167' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/Map.cpp' l='283' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='227' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='742' ll='744' type='static const Solarus::Size &amp; Solarus::Video::get_quest_size()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='738'>/**
+ * \brief Returns the size of the quest surface to render on the screen.
+ * \return The quest size.
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='115' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='248' u='c' c='_ZN7Solarus10LuaContext24video_api_get_quest_sizeEP9lua_State'/>

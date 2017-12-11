@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='182' type='bool Solarus::Enemy::is_being_hurt() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='349' u='c' c='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='384' u='c' c='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='419' u='c' c='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='820' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1153' u='c' c='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1415' ll='1417' type='bool Solarus::Enemy::is_being_hurt() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1411'>/**
+ * \brief Returns whether the enemy is being hurt.
+ * \return true if the enemy is being hurt
+ */</doc>

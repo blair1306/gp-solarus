@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='301' type='void Solarus::Entity::notify_collision_with_stream(Solarus::Stream &amp; stream, int dx, int dy)'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='144' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1002' c='_ZN7Solarus12CustomEntity28notify_collision_with_streamERNS_6StreamEii'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3054' ll='3056' type='void Solarus::Entity::notify_collision_with_stream(Solarus::Stream &amp; , int , int )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3047'>/**
+ * \brief This function is called when a stream detects a collision with this
+ * entity.
+ * \param stream A stream.
+ * \param dx Direction of the x move in pixels (0, 1 or -1).
+ * \param dy Direction of the y move in pixels (0, 1 or -1).
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1620' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='160' u='c' c='_ZN7Solarus6Stream16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

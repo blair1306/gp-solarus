@@ -1,0 +1,38 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/RunningState.h' l='28' ll='71'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/hero/RunningState.h' l='25'>/**
+ * \brief The state &quot;Running&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero12RunningStateC1ERS0_NS_11GameCommandE'/>
+<fun r='_ZN7Solarus4Hero12RunningState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12RunningState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<fun r='_ZN7Solarus4Hero12RunningState13set_suspendedEb'/>
+<fun r='_ZNK7Solarus4Hero12RunningState23is_pressing_running_keyEv'/>
+<fun r='_ZN7Solarus4Hero12RunningState32notify_direction_command_pressedEi'/>
+<fun r='_ZN7Solarus4Hero12RunningState23notify_obstacle_reachedEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState30get_wanted_movement_direction8Ev'/>
+<fun r='_ZNK7Solarus4Hero12RunningState15can_take_jumperEv'/>
+<fun r='_ZN7Solarus4Hero12RunningState23notify_jumper_activatedERNS_6JumperE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState15can_take_stairsEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState21can_sword_hit_crystalEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState27can_start_gameover_sequenceEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState20can_avoid_deep_waterEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState14can_avoid_holeEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState14can_avoid_lavaEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState17can_avoid_prickleEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState25can_avoid_teletransporterEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState21can_persist_on_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState18is_sensor_obstacleERKNS_6SensorE'/>
+<fun r='_ZN7Solarus4Hero12RunningState21is_cutting_with_swordERNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero12RunningState23get_sword_damage_factorEv'/>
+<fun r='_ZNK7Solarus4Hero12RunningState11is_bouncingEv'/>
+<mbr r='Solarus::Hero::RunningState::phase' o='352' t='int'/>
+<mbr r='Solarus::Hero::RunningState::next_phase_date' o='384' t='uint32_t'/>
+<mbr r='Solarus::Hero::RunningState::next_sound_date' o='416' t='uint32_t'/>
+<mbr r='Solarus::Hero::RunningState::command' o='448' t='Solarus::GameCommand'/>

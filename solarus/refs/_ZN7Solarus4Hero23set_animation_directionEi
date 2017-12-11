@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='85' type='void Solarus::Hero::set_animation_direction(int direction)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='462' ll='464' type='void Solarus::Hero::set_animation_direction(int direction4)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='455'>/**
+ * \brief Changes the direction of the hero&apos;s sprites.
+ *
+ * It is different from the movement direction.
+ *
+ * \param direction4 the direction to set (0 to 3)
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1787' u='c' c='_ZN7Solarus10LuaContext22hero_api_set_directionEP9lua_State'/>

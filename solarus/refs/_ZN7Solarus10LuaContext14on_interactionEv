@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1254' type='bool Solarus::LuaContext::on_interaction()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5920' u='c' c='_ZN7Solarus10LuaContext21entity_on_interactionERNS_6EntityE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2341' ll='2349' type='bool Solarus::LuaContext::on_interaction()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2337'>/**
+ * \brief Calls the on_interaction() method of the object on top of the stack.
+ * \return true if an interaction occurred.
+ */</doc>

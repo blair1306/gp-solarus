@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/SpriteAnimation.h' l='51' type='void Solarus::SpriteAnimation::draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position, int current_direction, int current_frame)'/>
+<use f='codebrowser/src/Sprite.cpp' l='777' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='813' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/SpriteAnimation.cpp' l='144' ll='161' type='void Solarus::SpriteAnimation::draw(Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position, int current_direction, int current_frame)'/>
+<doc f='codebrowser/src/SpriteAnimation.cpp' l='136'>/**
+ * \brief Draws a specific frame of this animation on a surface.
+ * \param dst_surface the surface on which the sprite will be drawn
+ * \param dst_position coordinates on the destination surface
+ * (the origin point will be drawn at this position)
+ * \param current_direction the direction to show
+ * \param current_frame the frame to show in this direction
+ */</doc>

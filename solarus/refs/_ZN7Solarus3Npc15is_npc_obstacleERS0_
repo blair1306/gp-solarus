@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='90' type='bool Solarus::Npc::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='345' c='_ZN7Solarus6Entity15is_npc_obstacleERNS_3NpcE'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='180' ll='184' type='bool Solarus::Npc::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='175'>/**
+ * \brief Returns whether an NPC is currently considered as an obstacle by this entity.
+ * \param npc an NPC
+ * \return true if this NPC is currently considered as an obstacle by this entity
+ */</doc>

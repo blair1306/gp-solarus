@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='155' type='void Solarus::HeroSprites::set_tunic_animation(const std::string &amp; animation, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1490' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_animationERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1503' ll='1511' type='void Solarus::HeroSprites::set_tunic_animation(const std::string &amp; animation, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1546' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSsRKNS_12ScopedLuaRefE'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1494'>/**
+ * \brief Changes the animation of the tunic sprite.
+ *
+ * Cancels the Lua callback if any.
+ *
+ * \param animation The animation name of the tunic sprite.
+ * \param callback_ref Lua ref of a function to call when the animation ends
+ * or an empty ref.
+ */</doc>

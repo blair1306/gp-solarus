@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='74' type='int Solarus::Entity::State::get_wanted_movement_direction8() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='483' ll='485' type='int Solarus::Entity::State::get_wanted_movement_direction8() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='474'>/**
+ * \brief Returns the direction of the entity&apos;s movement as defined by the controls applied by the player
+ * and the movements allowed is the current state.
+ *
+ * If he is not moving, -1 is returned.
+ * This direction may be different from the real movement direction because of obstacles.
+ *
+ * \return the entity&apos;s wanted direction between 0 and 7, or -1 if he is stopped
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='928' u='c' c='_ZNK7Solarus4Hero30get_wanted_movement_direction8Ev'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='187' c='_ZNK7Solarus4Hero12JumpingState30get_wanted_movement_direction8Ev'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='214' c='_ZNK7Solarus4Hero19PlayerMovementState30get_wanted_movement_direction8Ev'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='197' c='_ZNK7Solarus4Hero12RunningState30get_wanted_movement_direction8Ev'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='324' c='_ZNK7Solarus4Hero11StairsState30get_wanted_movement_direction8Ev'/>

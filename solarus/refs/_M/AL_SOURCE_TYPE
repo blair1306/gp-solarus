@@ -1,0 +1,14 @@
+<dec f='include/AL/al.h' l='331'/>
+<doc f='include/AL/al.h' l='318'>/**
+ * Source type (query only).
+ * Type:  ALint
+ * Range: [AL_STATIC, AL_STREAMING, AL_UNDETERMINED]
+ *
+ * A Source is Static if a Buffer has been attached using AL_BUFFER.
+ *
+ * A Source is Streaming if one or more Buffers have been attached using
+ * alSourceQueueBuffers.
+ *
+ * A Source is Undetermined when it has the NULL buffer attached using
+ * AL_BUFFER.
+ */</doc>

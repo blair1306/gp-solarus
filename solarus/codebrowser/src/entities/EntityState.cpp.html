@@ -1,0 +1,1136 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EntityState.cpp source code [codebrowser/src/entities/EntityState.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/entities/EntityState.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>src</a>/<a href='./'>entities</a>/<a href='EntityState.cpp.html'>EntityState.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/solarus/hero/SwordSwingingState.h.html">"solarus/hero/SwordSwingingState.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../../include/solarus/hero/HeroSprites.h.html">"solarus/hero/HeroSprites.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../../include/solarus/entities/EntityState.h.html">"solarus/entities/EntityState.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../../include/solarus/entities/Hero.h.html">"solarus/entities/Hero.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../include/solarus/entities/Jumper.h.html">"solarus/entities/Jumper.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../include/solarus/entities/Stairs.h.html">"solarus/entities/Stairs.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../include/solarus/lowlevel/Debug.h.html">"solarus/lowlevel/Debug.h"</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../include/solarus/lua/LuaContext.h.html">"solarus/lua/LuaContext.h"</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../include/solarus/CommandsEffects.h.html">"solarus/CommandsEffects.h"</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../include/solarus/Game.h.html">"solarus/Game.h"</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../include/solarus/Map.h.html">"solarus/Map.h"</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="../../include/solarus/Equipment.h.html">"solarus/Equipment.h"</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../include/solarus/EquipmentItem.h.html">"solarus/EquipmentItem.h"</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../include/solarus/Sprite.h.html">"solarus/Sprite.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * <span class="command">\brief</span> Creates a state.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * This constructor can be called only from the subclasses.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity</span> The entity to control with this state.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">state_name</span> A name describing this state.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td><a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5StateC1ERS0_RKSs" title='Solarus::Entity::State::State' data-ref="_ZN7Solarus6Entity5StateC1ERS0_RKSs">State</dfn>(<a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <dfn class="local col8 decl" id="18entity" title='entity' data-type='Solarus::Entity &amp;' data-ref="18entity">entity</dfn>, <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col9 decl" id="19state_name" title='state_name' data-type='const std::string &amp;' data-ref="19state_name">state_name</dfn>):</td></tr>
+<tr><th id="44">44</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>(<a class="local col8 ref" href="#18entity" title='entity' data-ref="18entity">entity</a>),</td></tr>
+<tr><th id="45">45</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::suspended" title='Solarus::Entity::State::suspended' data-ref="Solarus::Entity::State::suspended">suspended</a>(<b>false</b>),</td></tr>
+<tr><th id="46">46</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::when_suspended" title='Solarus::Entity::State::when_suspended' data-ref="Solarus::Entity::State::when_suspended">when_suspended</a>(<var>0</var>),</td></tr>
+<tr><th id="47">47</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>(&amp;<a class="local col8 ref" href="#18entity" title='entity' data-ref="18entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity7get_mapEv" title='Solarus::Entity::get_map' data-ref="_ZNK7Solarus6Entity7get_mapEv">get_map</a>()),</td></tr>
+<tr><th id="48">48</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::name" title='Solarus::Entity::State::name' data-ref="Solarus::Entity::State::name">name</a><a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1ERKSbIT_T0_T1_E" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1ERKSbIT_T0_T1_E">(</a><a class="local col9 ref" href="#19state_name" title='state_name' data-ref="19state_name">state_name</a>),</td></tr>
+<tr><th id="49">49</th><td>  <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::stopping" title='Solarus::Entity::State::stopping' data-ref="Solarus::Entity::State::stopping">stopping</a>(<b>false</b>) {</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * <span class="command">\brief</span> Destructor.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * The state is destroyed once it is not the current state of the entity anymore.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="58">58</th><td><a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5StateD1Ev" title='Solarus::Entity::State::~State' data-ref="_ZN7Solarus6Entity5StateD1Ev">~State</dfn>() {</td></tr>
+<tr><th id="59">59</th><td>}</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * <span class="command">\brief</span> Returns a name describing this state.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * <span class="command">\return</span> A name describing this state.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="65">65</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State8get_nameEv" title='Solarus::Entity::State::get_name' data-ref="_ZNK7Solarus6Entity5State8get_nameEv">get_name</dfn>() <em>const</em> {</td></tr>
+<tr><th id="66">66</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::name" title='Solarus::Entity::State::name' data-ref="Solarus::Entity::State::name">name</a>;</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this state is the current state.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if this state is the current state.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="73">73</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State16is_current_stateEv" title='Solarus::Entity::State::is_current_state' data-ref="_ZNK7Solarus6Entity5State16is_current_stateEv">is_current_state</dfn>() <em>const</em> {</td></tr>
+<tr><th id="74">74</th><td>  <b>return</b> &amp;<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9get_stateEv" title='Solarus::Entity::get_state' data-ref="_ZNK7Solarus6Entity9get_stateEv">get_state</a>() == <b>this</b> &amp;&amp; !<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9get_stateEv" title='Solarus::Entity::get_state' data-ref="_ZNK7Solarus6Entity9get_stateEv">get_state</a>().<a class="member" href="#_ZNK7Solarus6Entity5State11is_stoppingEv" title='Solarus::Entity::State::is_stopping' data-ref="_ZNK7Solarus6Entity5State11is_stoppingEv">is_stopping</a>();</td></tr>
+<tr><th id="75">75</th><td>}</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this state is being stopped.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if this state is being stopped.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="81">81</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State11is_stoppingEv" title='Solarus::Entity::State::is_stopping' data-ref="_ZNK7Solarus6Entity5State11is_stoppingEv">is_stopping</dfn>() <em>const</em> {</td></tr>
+<tr><th id="82">82</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::stopping" title='Solarus::Entity::State::stopping' data-ref="Solarus::Entity::State::stopping">stopping</a>;</td></tr>
+<tr><th id="83">83</th><td>}</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * <span class="command">\brief</span> Returns the entity of this state.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * <span class="command">\return</span> The entity.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="89">89</th><td><a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State10get_entityEv" title='Solarus::Entity::State::get_entity' data-ref="_ZN7Solarus6Entity5State10get_entityEv">get_entity</dfn>() {</td></tr>
+<tr><th id="90">90</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>;</td></tr>
+<tr><th id="91">91</th><td>}</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * <span class="command">\brief</span> Returns the entity of this state.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * <span class="command">\return</span> The entity.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="97">97</th><td><em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State10get_entityEv" title='Solarus::Entity::State::get_entity' data-ref="_ZNK7Solarus6Entity5State10get_entityEv">get_entity</dfn>() <em>const</em> {</td></tr>
+<tr><th id="98">98</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>;</td></tr>
+<tr><th id="99">99</th><td>}</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current map.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * <span class="command">\return</span> the map</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><a class="type" href="../../include/solarus/Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State7get_mapEv" title='Solarus::Entity::State::get_map' data-ref="_ZN7Solarus6Entity5State7get_mapEv">get_map</dfn>() {</td></tr>
+<tr><th id="106">106</th><td>  <b>return</b> *<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * <span class="command">\brief</span> Returns the entities of the current map.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * <span class="command">\return</span> the entities</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><a class="type" href="../../include/solarus/entities/Entities.h.html#Solarus::Entities" title='Solarus::Entities' data-ref="Solarus::Entities">Entities</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State12get_entitiesEv" title='Solarus::Entity::State::get_entities' data-ref="_ZN7Solarus6Entity5State12get_entitiesEv">get_entities</dfn>() {</td></tr>
+<tr><th id="114">114</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>-&gt;<a class="ref" href="../../include/solarus/Map.h.html#_ZN7Solarus3Map12get_entitiesEv" title='Solarus::Map::get_entities' data-ref="_ZN7Solarus3Map12get_entitiesEv">get_entities</a>();</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * <span class="command">\brief</span> Returns the shared Lua context.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * <span class="command">\return</span> The Lua context where all scripts are run.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="121">121</th><td><a class="type" href="../../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State15get_lua_contextEv" title='Solarus::Entity::State::get_lua_context' data-ref="_ZN7Solarus6Entity5State15get_lua_contextEv">get_lua_context</dfn>() {</td></tr>
+<tr><th id="122">122</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>-&gt;<a class="ref" href="../../include/solarus/Map.h.html#_ZN7Solarus3Map8get_gameEv" title='Solarus::Map::get_game' data-ref="_ZN7Solarus3Map8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game15get_lua_contextEv" title='Solarus::Game::get_lua_context' data-ref="_ZN7Solarus4Game15get_lua_contextEv">get_lua_context</a>();</td></tr>
+<tr><th id="123">123</th><td>}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current game.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * <span class="command">\return</span> the game</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="129">129</th><td><a class="type" href="../../include/solarus/Game.h.html#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZN7Solarus6Entity5State8get_gameEv">get_game</dfn>() {</td></tr>
+<tr><th id="130">130</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>-&gt;<a class="ref" href="../../include/solarus/Map.h.html#_ZN7Solarus3Map8get_gameEv" title='Solarus::Map::get_game' data-ref="_ZN7Solarus3Map8get_gameEv">get_game</a>();</td></tr>
+<tr><th id="131">131</th><td>}</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current game.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * <span class="command">\return</span> the game</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="137">137</th><td><em>const</em> <a class="type" href="../../include/solarus/Game.h.html#Solarus::Game" title='Solarus::Game' data-ref="Solarus::Game">Game</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZNK7Solarus6Entity5State8get_gameEv">get_game</dfn>() <em>const</em> {</td></tr>
+<tr><th id="138">138</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a>-&gt;<a class="ref" href="../../include/solarus/Map.h.html#_ZN7Solarus3Map8get_gameEv" title='Solarus::Map::get_game' data-ref="_ZN7Solarus3Map8get_gameEv">get_game</a>();</td></tr>
+<tr><th id="139">139</th><td>}</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current equipment.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * <span class="command">\return</span> the equipment</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><a class="type" href="../../include/solarus/Equipment.h.html#Solarus::Equipment" title='Solarus::Equipment' data-ref="Solarus::Equipment">Equipment</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State13get_equipmentEv" title='Solarus::Entity::State::get_equipment' data-ref="_ZN7Solarus6Entity5State13get_equipmentEv">get_equipment</dfn>() {</td></tr>
+<tr><th id="146">146</th><td>  <b>return</b> <a class="member" href="#_ZN7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZN7Solarus6Entity5State8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game13get_equipmentEv" title='Solarus::Game::get_equipment' data-ref="_ZN7Solarus4Game13get_equipmentEv">get_equipment</a>();</td></tr>
+<tr><th id="147">147</th><td>}</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * <span class="command">\brief</span> Returns the current equipment.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * <span class="command">\return</span> the equipment</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="153">153</th><td><em>const</em> <a class="type" href="../../include/solarus/Equipment.h.html#Solarus::Equipment" title='Solarus::Equipment' data-ref="Solarus::Equipment">Equipment</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State13get_equipmentEv" title='Solarus::Entity::State::get_equipment' data-ref="_ZNK7Solarus6Entity5State13get_equipmentEv">get_equipment</dfn>() <em>const</em> {</td></tr>
+<tr><th id="154">154</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZNK7Solarus6Entity5State8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZNK7Solarus4Game13get_equipmentEv" title='Solarus::Game::get_equipment' data-ref="_ZNK7Solarus4Game13get_equipmentEv">get_equipment</a>();</td></tr>
+<tr><th id="155">155</th><td>}</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * <span class="command">\brief</span> Returns the keys effect manager.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * <span class="command">\return</span> the keys effect</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="161">161</th><td><a class="type" href="../../include/solarus/CommandsEffects.h.html#Solarus::CommandsEffects" title='Solarus::CommandsEffects' data-ref="Solarus::CommandsEffects">CommandsEffects</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State20get_commands_effectsEv" title='Solarus::Entity::State::get_commands_effects' data-ref="_ZN7Solarus6Entity5State20get_commands_effectsEv">get_commands_effects</dfn>() {</td></tr>
+<tr><th id="162">162</th><td>  <b>return</b> <a class="member" href="#_ZN7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZN7Solarus6Entity5State8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game20get_commands_effectsEv" title='Solarus::Game::get_commands_effects' data-ref="_ZN7Solarus4Game20get_commands_effectsEv">get_commands_effects</a>();</td></tr>
+<tr><th id="163">163</th><td>}</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> * <span class="command">\brief</span> Returns the game commands.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> * <span class="command">\return</span> The commands.</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="169">169</th><td><a class="type" href="../../include/solarus/GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State12get_commandsEv" title='Solarus::Entity::State::get_commands' data-ref="_ZN7Solarus6Entity5State12get_commandsEv">get_commands</dfn>() {</td></tr>
+<tr><th id="170">170</th><td>  <b>return</b> <a class="member" href="#_ZN7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZN7Solarus6Entity5State8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZN7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZN7Solarus4Game12get_commandsEv">get_commands</a>();</td></tr>
+<tr><th id="171">171</th><td>}</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * <span class="command">\brief</span> Returns the game commands.</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * <span class="command">\return</span> The commands.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="177">177</th><td><em>const</em> <a class="type" href="../../include/solarus/GameCommands.h.html#Solarus::GameCommands" title='Solarus::GameCommands' data-ref="Solarus::GameCommands">GameCommands</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State12get_commandsEv" title='Solarus::Entity::State::get_commands' data-ref="_ZNK7Solarus6Entity5State12get_commandsEv">get_commands</dfn>() <em>const</em> {</td></tr>
+<tr><th id="178">178</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus6Entity5State8get_gameEv" title='Solarus::Entity::State::get_game' data-ref="_ZNK7Solarus6Entity5State8get_gameEv">get_game</a>().<a class="ref" href="../../include/solarus/Game.h.html#_ZNK7Solarus4Game12get_commandsEv" title='Solarus::Game::get_commands' data-ref="_ZNK7Solarus4Game12get_commandsEv">get_commands</a>();</td></tr>
+<tr><th id="179">179</th><td>}</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * <span class="command">\brief</span> Starts this state.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * This function is called automatically when this state becomes the active</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * state of the entity.</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> * The initializations should be done here rather than in the constructor.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">previous_state</span> The previous state or nullptr if this is the first state</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * (for information).</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State5startEPKS1_" title='Solarus::Entity::State::start' data-ref="_ZN7Solarus6Entity5State5startEPKS1_">start</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>* <i>/* previous_state */</i>) {</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td>  <a class="virtual member" href="#_ZN7Solarus6Entity5State13set_suspendedEb" title='Solarus::Entity::State::set_suspended' data-ref="_ZN7Solarus6Entity5State13set_suspendedEb">set_suspended</a>(<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity12is_suspendedEv" title='Solarus::Entity::is_suspended' data-ref="_ZNK7Solarus6Entity12is_suspendedEv">is_suspended</a>());</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td>  <i>// Notify Lua.</i></td></tr>
+<tr><th id="196">196</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity9is_on_mapEv" title='Solarus::Entity::is_on_map' data-ref="_ZNK7Solarus6Entity9is_on_mapEv">is_on_map</a>()) {</td></tr>
+<tr><th id="197">197</th><td>    <a class="member" href="#_ZN7Solarus6Entity5State15get_lua_contextEv" title='Solarus::Entity::State::get_lua_context' data-ref="_ZN7Solarus6Entity5State15get_lua_contextEv">get_lua_context</a>().<a class="ref" href="../../include/solarus/lua/LuaContext.h.html#_ZN7Solarus10LuaContext23entity_on_state_changedERNS_6EntityERKSs" title='Solarus::LuaContext::entity_on_state_changed' data-ref="_ZN7Solarus10LuaContext23entity_on_state_changedERNS_6EntityERKSs">entity_on_state_changed</a>(<span class='refarg'><a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a></span>, <a class="member" href="#_ZNK7Solarus6Entity5State8get_nameEv" title='Solarus::Entity::State::get_name' data-ref="_ZNK7Solarus6Entity5State8get_nameEv">get_name</a>());</td></tr>
+<tr><th id="198">198</th><td>  }</td></tr>
+<tr><th id="199">199</th><td>}</td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> * <span class="command">\brief</span> Ends this state.</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> * This function is called automatically when this state is not the active</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * state anymore.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> * You should here close everything the start() function has opened.</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> * The destructor will be called at the next cycle.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">next_state</span> The next state (for information).</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="211">211</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State4stopEPKS1_" title='Solarus::Entity::State::stop' data-ref="_ZN7Solarus6Entity5State4stopEPKS1_">stop</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>* <i>/* next_state */</i>) {</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug15check_assertionEbRKSs" title='Solarus::Debug::check_assertion' data-ref="_ZN7Solarus5Debug15check_assertionEbRKSs">check_assertion</a>(!<a class="member" href="#_ZNK7Solarus6Entity5State11is_stoppingEv" title='Solarus::Entity::State::is_stopping' data-ref="_ZNK7Solarus6Entity5State11is_stoppingEv">is_stopping</a>(),</td></tr>
+<tr><th id="214">214</th><td>      <span class="namespace"><a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_">std</a>::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>(<q>"This state is already stopping: "</q>) <a class="ref" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZStplOSbIT_T0_T1_ERKS2_" title='std::operator+' data-ref="_ZStplOSbIT_T0_T1_ERKS2_">+</a> <a class="member" href="#_ZNK7Solarus6Entity5State8get_nameEv" title='Solarus::Entity::State::get_name' data-ref="_ZNK7Solarus6Entity5State8get_nameEv">get_name</a>());</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::stopping" title='Solarus::Entity::State::stopping' data-ref="Solarus::Entity::State::stopping">stopping</a> = <b>true</b>;</td></tr>
+<tr><th id="217">217</th><td>}</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> * <span class="command">\brief</span> Updates this state.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> * This function is called repeatedly while this state is the active state.</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="224">224</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State6updateEv" title='Solarus::Entity::State::update' data-ref="_ZN7Solarus6Entity5State6updateEv">update</dfn>() {</td></tr>
+<tr><th id="225">225</th><td></td></tr>
+<tr><th id="226">226</th><td>}</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> * <span class="command">\brief</span> Draws this state.</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> * This function draws this entity in its current state.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * The default implement does nothing.</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * If your state needs to draw additional elements, you can redefine this function.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="235">235</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State11draw_on_mapEv" title='Solarus::Entity::State::draw_on_map' data-ref="_ZN7Solarus6Entity5State11draw_on_mapEv">draw_on_map</dfn>() {</td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td>}</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this state is suspended.</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if this state is suspended.</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="243">243</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State12is_suspendedEv" title='Solarus::Entity::State::is_suspended' data-ref="_ZNK7Solarus6Entity5State12is_suspendedEv">is_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="244">244</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::suspended" title='Solarus::Entity::State::suspended' data-ref="Solarus::Entity::State::suspended">suspended</a>;</td></tr>
+<tr><th id="245">245</th><td>}</td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the game was just suspended or resumed.</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true if the game is suspended</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="251">251</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State13set_suspendedEb" title='Solarus::Entity::State::set_suspended' data-ref="_ZN7Solarus6Entity5State13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col0 decl" id="20suspended" title='suspended' data-type='bool' data-ref="20suspended">suspended</dfn>) {</td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td>  <b>if</b> (<a class="local col0 ref" href="#20suspended" title='suspended' data-ref="20suspended">suspended</a> != <b>this</b>-&gt;<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::suspended" title='Solarus::Entity::State::suspended' data-ref="Solarus::Entity::State::suspended">suspended</a>) {</td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td>    <b>this</b>-&gt;<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::suspended" title='Solarus::Entity::State::suspended' data-ref="Solarus::Entity::State::suspended">suspended</a> = <a class="local col0 ref" href="#20suspended" title='suspended' data-ref="20suspended">suspended</a>;</td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td>    <i>// remember the date if the state is being suspended</i></td></tr>
+<tr><th id="258">258</th><td>    <b>if</b> (<a class="local col0 ref" href="#20suspended" title='suspended' data-ref="20suspended">suspended</a>) {</td></tr>
+<tr><th id="259">259</th><td>      <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::when_suspended" title='Solarus::Entity::State::when_suspended' data-ref="Solarus::Entity::State::when_suspended">when_suspended</a> = <a class="type" href="../../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="260">260</th><td>    }</td></tr>
+<tr><th id="261">261</th><td>  }</td></tr>
+<tr><th id="262">262</th><td>}</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc"> * <span class="command">\brief</span> Returns the date when this state was suspended.</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> * <span class="command">\return</span> The date when this state was suspended.</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="268">268</th><td><a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State18get_when_suspendedEv" title='Solarus::Entity::State::get_when_suspended' data-ref="_ZNK7Solarus6Entity5State18get_when_suspendedEv">get_when_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="269">269</th><td>  <b>return</b> <a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::when_suspended" title='Solarus::Entity::State::when_suspended' data-ref="Solarus::Entity::State::when_suspended">when_suspended</a>;</td></tr>
+<tr><th id="270">270</th><td>}</td></tr>
+<tr><th id="271">271</th><td></td></tr>
+<tr><th id="272">272</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> * <span class="command">\brief</span> This function is called when a game command is pressed and the game</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> * is not suspended.</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">command</span> The command pressed.</i></td></tr>
+<tr><th id="276">276</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="277">277</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE" title='Solarus::Entity::State::notify_command_pressed' data-ref="_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE">notify_command_pressed</dfn>(<a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col1 decl" id="21command" title='command' data-type='Solarus::GameCommand' data-ref="21command">command</dfn>) {</td></tr>
+<tr><th id="278">278</th><td></td></tr>
+<tr><th id="279">279</th><td>  <b>switch</b> (<a class="local col1 ref" href="#21command" title='command' data-ref="21command">command</a>) {</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td>    <i>// action key</i></td></tr>
+<tr><th id="282">282</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ACTION" title='Solarus::GameCommand::ACTION' data-ref="Solarus::GameCommand::ACTION">ACTION</a>:</td></tr>
+<tr><th id="283">283</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State29notify_action_command_pressedEv" title='Solarus::Entity::State::notify_action_command_pressed' data-ref="_ZN7Solarus6Entity5State29notify_action_command_pressedEv">notify_action_command_pressed</a>();</td></tr>
+<tr><th id="284">284</th><td>    <b>break</b>;</td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td>    <i>// sword key</i></td></tr>
+<tr><th id="287">287</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ATTACK" title='Solarus::GameCommand::ATTACK' data-ref="Solarus::GameCommand::ATTACK">ATTACK</a>:</td></tr>
+<tr><th id="288">288</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State29notify_attack_command_pressedEv" title='Solarus::Entity::State::notify_attack_command_pressed' data-ref="_ZN7Solarus6Entity5State29notify_attack_command_pressedEv">notify_attack_command_pressed</a>();</td></tr>
+<tr><th id="289">289</th><td>    <b>break</b>;</td></tr>
+<tr><th id="290">290</th><td></td></tr>
+<tr><th id="291">291</th><td>    <i>// move the entity</i></td></tr>
+<tr><th id="292">292</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::RIGHT" title='Solarus::GameCommand::RIGHT' data-ref="Solarus::GameCommand::RIGHT">RIGHT</a>:</td></tr>
+<tr><th id="293">293</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State32notify_direction_command_pressedEi" title='Solarus::Entity::State::notify_direction_command_pressed' data-ref="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi">notify_direction_command_pressed</a>(<var>0</var>);</td></tr>
+<tr><th id="294">294</th><td>    <b>break</b>;</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::UP" title='Solarus::GameCommand::UP' data-ref="Solarus::GameCommand::UP">UP</a>:</td></tr>
+<tr><th id="297">297</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State32notify_direction_command_pressedEi" title='Solarus::Entity::State::notify_direction_command_pressed' data-ref="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi">notify_direction_command_pressed</a>(<var>1</var>);</td></tr>
+<tr><th id="298">298</th><td>    <b>break</b>;</td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::LEFT" title='Solarus::GameCommand::LEFT' data-ref="Solarus::GameCommand::LEFT">LEFT</a>:</td></tr>
+<tr><th id="301">301</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State32notify_direction_command_pressedEi" title='Solarus::Entity::State::notify_direction_command_pressed' data-ref="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi">notify_direction_command_pressed</a>(<var>2</var>);</td></tr>
+<tr><th id="302">302</th><td>    <b>break</b>;</td></tr>
+<tr><th id="303">303</th><td></td></tr>
+<tr><th id="304">304</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::DOWN" title='Solarus::GameCommand::DOWN' data-ref="Solarus::GameCommand::DOWN">DOWN</a>:</td></tr>
+<tr><th id="305">305</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State32notify_direction_command_pressedEi" title='Solarus::Entity::State::notify_direction_command_pressed' data-ref="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi">notify_direction_command_pressed</a>(<var>3</var>);</td></tr>
+<tr><th id="306">306</th><td>    <b>break</b>;</td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td>    <i>// use an equipment item</i></td></tr>
+<tr><th id="309">309</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ITEM_1" title='Solarus::GameCommand::ITEM_1' data-ref="Solarus::GameCommand::ITEM_1">ITEM_1</a>:</td></tr>
+<tr><th id="310">310</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State27notify_item_command_pressedEi" title='Solarus::Entity::State::notify_item_command_pressed' data-ref="_ZN7Solarus6Entity5State27notify_item_command_pressedEi">notify_item_command_pressed</a>(<var>1</var>);</td></tr>
+<tr><th id="311">311</th><td>    <b>break</b>;</td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ITEM_2" title='Solarus::GameCommand::ITEM_2' data-ref="Solarus::GameCommand::ITEM_2">ITEM_2</a>:</td></tr>
+<tr><th id="314">314</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State27notify_item_command_pressedEi" title='Solarus::Entity::State::notify_item_command_pressed' data-ref="_ZN7Solarus6Entity5State27notify_item_command_pressedEi">notify_item_command_pressed</a>(<var>2</var>);</td></tr>
+<tr><th id="315">315</th><td>    <b>break</b>;</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td>  <b>default</b>:</td></tr>
+<tr><th id="318">318</th><td>    <b>break</b>;</td></tr>
+<tr><th id="319">319</th><td>  }</td></tr>
+<tr><th id="320">320</th><td>}</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="323">323</th><td><i class="doc"> * <span class="command">\brief</span> This function is called when a command is released if the game is</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc"> * not suspended.</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">command</span> The command released.</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="327">327</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE" title='Solarus::Entity::State::notify_command_released' data-ref="_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE">notify_command_released</dfn>(<a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a> <dfn class="local col2 decl" id="22command" title='command' data-type='Solarus::GameCommand' data-ref="22command">command</dfn>) {</td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td>  <b>switch</b> (<a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>) {</td></tr>
+<tr><th id="330">330</th><td></td></tr>
+<tr><th id="331">331</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ACTION" title='Solarus::GameCommand::ACTION' data-ref="Solarus::GameCommand::ACTION">ACTION</a>:</td></tr>
+<tr><th id="332">332</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State30notify_action_command_releasedEv" title='Solarus::Entity::State::notify_action_command_released' data-ref="_ZN7Solarus6Entity5State30notify_action_command_releasedEv">notify_action_command_released</a>();</td></tr>
+<tr><th id="333">333</th><td>    <b>break</b>;</td></tr>
+<tr><th id="334">334</th><td></td></tr>
+<tr><th id="335">335</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ATTACK" title='Solarus::GameCommand::ATTACK' data-ref="Solarus::GameCommand::ATTACK">ATTACK</a>:</td></tr>
+<tr><th id="336">336</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State30notify_attack_command_releasedEv" title='Solarus::Entity::State::notify_attack_command_released' data-ref="_ZN7Solarus6Entity5State30notify_attack_command_releasedEv">notify_attack_command_released</a>();</td></tr>
+<tr><th id="337">337</th><td>    <b>break</b>;</td></tr>
+<tr><th id="338">338</th><td></td></tr>
+<tr><th id="339">339</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::RIGHT" title='Solarus::GameCommand::RIGHT' data-ref="Solarus::GameCommand::RIGHT">RIGHT</a>:</td></tr>
+<tr><th id="340">340</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State33notify_direction_command_releasedEi" title='Solarus::Entity::State::notify_direction_command_released' data-ref="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi">notify_direction_command_released</a>(<var>0</var>);</td></tr>
+<tr><th id="341">341</th><td>    <b>break</b>;</td></tr>
+<tr><th id="342">342</th><td></td></tr>
+<tr><th id="343">343</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::UP" title='Solarus::GameCommand::UP' data-ref="Solarus::GameCommand::UP">UP</a>:</td></tr>
+<tr><th id="344">344</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State33notify_direction_command_releasedEi" title='Solarus::Entity::State::notify_direction_command_released' data-ref="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi">notify_direction_command_released</a>(<var>1</var>);</td></tr>
+<tr><th id="345">345</th><td>    <b>break</b>;</td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::LEFT" title='Solarus::GameCommand::LEFT' data-ref="Solarus::GameCommand::LEFT">LEFT</a>:</td></tr>
+<tr><th id="348">348</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State33notify_direction_command_releasedEi" title='Solarus::Entity::State::notify_direction_command_released' data-ref="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi">notify_direction_command_released</a>(<var>2</var>);</td></tr>
+<tr><th id="349">349</th><td>    <b>break</b>;</td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::DOWN" title='Solarus::GameCommand::DOWN' data-ref="Solarus::GameCommand::DOWN">DOWN</a>:</td></tr>
+<tr><th id="352">352</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State33notify_direction_command_releasedEi" title='Solarus::Entity::State::notify_direction_command_released' data-ref="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi">notify_direction_command_released</a>(<var>3</var>);</td></tr>
+<tr><th id="353">353</th><td>    <b>break</b>;</td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ITEM_1" title='Solarus::GameCommand::ITEM_1' data-ref="Solarus::GameCommand::ITEM_1">ITEM_1</a>:</td></tr>
+<tr><th id="356">356</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State28notify_item_command_releasedEi" title='Solarus::Entity::State::notify_item_command_released' data-ref="_ZN7Solarus6Entity5State28notify_item_command_releasedEi">notify_item_command_released</a>(<var>0</var>);</td></tr>
+<tr><th id="357">357</th><td>    <b>break</b>;</td></tr>
+<tr><th id="358">358</th><td></td></tr>
+<tr><th id="359">359</th><td>  <b>case</b> <a class="type" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand" title='Solarus::GameCommand' data-ref="Solarus::GameCommand">GameCommand</a>::<a class="enum" href="../../include/solarus/GameCommand.h.html#Solarus::GameCommand::ITEM_2" title='Solarus::GameCommand::ITEM_2' data-ref="Solarus::GameCommand::ITEM_2">ITEM_2</a>:</td></tr>
+<tr><th id="360">360</th><td>    <a class="virtual member" href="#_ZN7Solarus6Entity5State28notify_item_command_releasedEi" title='Solarus::Entity::State::notify_item_command_released' data-ref="_ZN7Solarus6Entity5State28notify_item_command_releasedEi">notify_item_command_released</a>(<var>1</var>);</td></tr>
+<tr><th id="361">361</th><td>    <b>break</b>;</td></tr>
+<tr><th id="362">362</th><td></td></tr>
+<tr><th id="363">363</th><td>  <b>default</b>:</td></tr>
+<tr><th id="364">364</th><td>    <b>break</b>;</td></tr>
+<tr><th id="365">365</th><td>  }</td></tr>
+<tr><th id="366">366</th><td>}</td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="369">369</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the action command was just pressed.</i></td></tr>
+<tr><th id="370">370</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="371">371</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State29notify_action_command_pressedEv" title='Solarus::Entity::State::notify_action_command_pressed' data-ref="_ZN7Solarus6Entity5State29notify_action_command_pressedEv">notify_action_command_pressed</dfn>() {</td></tr>
+<tr><th id="372">372</th><td>}</td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the action command was just released.</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="377">377</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State30notify_action_command_releasedEv" title='Solarus::Entity::State::notify_action_command_released' data-ref="_ZN7Solarus6Entity5State30notify_action_command_releasedEv">notify_action_command_released</dfn>() {</td></tr>
+<tr><th id="378">378</th><td>}</td></tr>
+<tr><th id="379">379</th><td></td></tr>
+<tr><th id="380">380</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="381">381</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the attack command was just pressed.</i></td></tr>
+<tr><th id="382">382</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="383">383</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State29notify_attack_command_pressedEv" title='Solarus::Entity::State::notify_attack_command_pressed' data-ref="_ZN7Solarus6Entity5State29notify_attack_command_pressedEv">notify_attack_command_pressed</dfn>() {</td></tr>
+<tr><th id="384">384</th><td>}</td></tr>
+<tr><th id="385">385</th><td></td></tr>
+<tr><th id="386">386</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="387">387</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the attack command was just released.</i></td></tr>
+<tr><th id="388">388</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="389">389</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State30notify_attack_command_releasedEv" title='Solarus::Entity::State::notify_attack_command_released' data-ref="_ZN7Solarus6Entity5State30notify_attack_command_releasedEv">notify_attack_command_released</dfn>() {</td></tr>
+<tr><th id="390">390</th><td>}</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="393">393</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that a directional command was just pressed.</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction4</span> direction of the command (0 to 3)</i></td></tr>
+<tr><th id="395">395</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="396">396</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi" title='Solarus::Entity::State::notify_direction_command_pressed' data-ref="_ZN7Solarus6Entity5State32notify_direction_command_pressedEi">notify_direction_command_pressed</dfn>(<em>int</em> <i>/* direction4 */</i>) {</td></tr>
+<tr><th id="397">397</th><td>}</td></tr>
+<tr><th id="398">398</th><td></td></tr>
+<tr><th id="399">399</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that a directional command was just released.</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">direction4</span> direction of the command (0 to 3)</i></td></tr>
+<tr><th id="402">402</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="403">403</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi" title='Solarus::Entity::State::notify_direction_command_released' data-ref="_ZN7Solarus6Entity5State33notify_direction_command_releasedEi">notify_direction_command_released</dfn>(<em>int</em> <i>/* direction4 */</i>) {</td></tr>
+<tr><th id="404">404</th><td>}</td></tr>
+<tr><th id="405">405</th><td></td></tr>
+<tr><th id="406">406</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="407">407</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that an item command was just pressed.</i></td></tr>
+<tr><th id="408">408</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">slot</span> The slot activated (1 or 2).</i></td></tr>
+<tr><th id="409">409</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="410">410</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State27notify_item_command_pressedEi" title='Solarus::Entity::State::notify_item_command_pressed' data-ref="_ZN7Solarus6Entity5State27notify_item_command_pressedEi">notify_item_command_pressed</dfn>(<em>int</em> <i>/* slot */</i>) {</td></tr>
+<tr><th id="411">411</th><td>}</td></tr>
+<tr><th id="412">412</th><td></td></tr>
+<tr><th id="413">413</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="414">414</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that an item command was just released.</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">slot</span> the slot (1 or 2)</i></td></tr>
+<tr><th id="416">416</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="417">417</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State28notify_item_command_releasedEi" title='Solarus::Entity::State::notify_item_command_released' data-ref="_ZN7Solarus6Entity5State28notify_item_command_releasedEi">notify_item_command_released</dfn>(<em>int</em> <i>/* slot */</i>) {</td></tr>
+<tr><th id="418">418</th><td>}</td></tr>
+<tr><th id="419">419</th><td></td></tr>
+<tr><th id="420">420</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="421">421</th><td><i class="doc"> * <span class="command">\brief</span> Changes the map.</i></td></tr>
+<tr><th id="422">422</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="423">423</th><td><i class="doc"> * This function is called when the entity is about to go to another map.</i></td></tr>
+<tr><th id="424">424</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="425">425</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">map</span> the new map</i></td></tr>
+<tr><th id="426">426</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="427">427</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State7set_mapERNS_3MapE" title='Solarus::Entity::State::set_map' data-ref="_ZN7Solarus6Entity5State7set_mapERNS_3MapE">set_map</dfn>(<a class="type" href="../../include/solarus/Map.h.html#Solarus::Map" title='Solarus::Map' data-ref="Solarus::Map">Map</a>&amp; <dfn class="local col3 decl" id="23map" title='map' data-type='Solarus::Map &amp;' data-ref="23map">map</dfn>) {</td></tr>
+<tr><th id="428">428</th><td>  <b>this</b>-&gt;<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::map" title='Solarus::Entity::State::map' data-ref="Solarus::Entity::State::map">map</a> = &amp;<a class="local col3 ref" href="#23map" title='map' data-ref="23map">map</a>;</td></tr>
+<tr><th id="429">429</th><td>}</td></tr>
+<tr><th id="430">430</th><td></td></tr>
+<tr><th id="431">431</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="432">432</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the game over sequence can start in the current state.</i></td></tr>
+<tr><th id="433">433</th><td><i class="doc"> * <span class="command">\return</span> true if the game over sequence can start in the current state</i></td></tr>
+<tr><th id="434">434</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="435">435</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State27can_start_gameover_sequenceEv" title='Solarus::Entity::State::can_start_gameover_sequence' data-ref="_ZNK7Solarus6Entity5State27can_start_gameover_sequenceEv">can_start_gameover_sequence</dfn>() <em>const</em> {</td></tr>
+<tr><th id="436">436</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="437">437</th><td>}</td></tr>
+<tr><th id="438">438</th><td></td></tr>
+<tr><th id="439">439</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="440">440</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is visible in the current state.</i></td></tr>
+<tr><th id="441">441</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is displayed in the current state</i></td></tr>
+<tr><th id="442">442</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="443">443</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State10is_visibleEv" title='Solarus::Entity::State::is_visible' data-ref="_ZNK7Solarus6Entity5State10is_visibleEv">is_visible</dfn>() <em>const</em> {</td></tr>
+<tr><th id="444">444</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="445">445</th><td>}</td></tr>
+<tr><th id="446">446</th><td></td></tr>
+<tr><th id="447">447</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the animation direction is locked.</i></td></tr>
+<tr><th id="449">449</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="450">450</th><td><i class="doc"> * When this function returns false, which is the case most of the time,</i></td></tr>
+<tr><th id="451">451</th><td><i class="doc"> * it means that the animation direction is set to the movement direction.</i></td></tr>
+<tr><th id="452">452</th><td><i class="doc"> * When it returns true, it means that the animation direction is fixed</i></td></tr>
+<tr><th id="453">453</th><td><i class="doc"> * and do not depends on the movement direction anymore (this is the case</i></td></tr>
+<tr><th id="454">454</th><td><i class="doc"> * when the hero is loading his sword).</i></td></tr>
+<tr><th id="455">455</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="456">456</th><td><i class="doc"> * <span class="command">\return</span> true if the animation direction is locked</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="458">458</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State19is_direction_lockedEv" title='Solarus::Entity::State::is_direction_locked' data-ref="_ZNK7Solarus6Entity5State19is_direction_lockedEv">is_direction_locked</dfn>() <em>const</em> {</td></tr>
+<tr><th id="459">459</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="460">460</th><td>}</td></tr>
+<tr><th id="461">461</th><td></td></tr>
+<tr><th id="462">462</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="463">463</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the player can control his movements in the current state.</i></td></tr>
+<tr><th id="464">464</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="465">465</th><td><i class="doc"> * This function returns true if and only if the current movement of the entity is</i></td></tr>
+<tr><th id="466">466</th><td><i class="doc"> * an instance of PlayerMovement.</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc"> * <span class="command">\return</span> true if the player can control his movements</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="470">470</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State20can_control_movementEv" title='Solarus::Entity::State::can_control_movement' data-ref="_ZNK7Solarus6Entity5State20can_control_movementEv">can_control_movement</dfn>() <em>const</em> {</td></tr>
+<tr><th id="471">471</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="472">472</th><td>}</td></tr>
+<tr><th id="473">473</th><td></td></tr>
+<tr><th id="474">474</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="475">475</th><td><i class="doc"> * <span class="command">\brief</span> Returns the direction of the entity's movement as defined by the controls applied by the player</i></td></tr>
+<tr><th id="476">476</th><td><i class="doc"> * and the movements allowed is the current state.</i></td></tr>
+<tr><th id="477">477</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="478">478</th><td><i class="doc"> * If he is not moving, -1 is returned.</i></td></tr>
+<tr><th id="479">479</th><td><i class="doc"> * This direction may be different from the real movement direction because of obstacles.</i></td></tr>
+<tr><th id="480">480</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="481">481</th><td><i class="doc"> * <span class="command">\return</span> the entity's wanted direction between 0 and 7, or -1 if he is stopped</i></td></tr>
+<tr><th id="482">482</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="483">483</th><td><em>int</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State30get_wanted_movement_direction8Ev" title='Solarus::Entity::State::get_wanted_movement_direction8' data-ref="_ZNK7Solarus6Entity5State30get_wanted_movement_direction8Ev">get_wanted_movement_direction8</dfn>() <em>const</em> {</td></tr>
+<tr><th id="484">484</th><td>  <b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="485">485</th><td>}</td></tr>
+<tr><th id="486">486</th><td></td></tr>
+<tr><th id="487">487</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the walking speed has changed.</i></td></tr>
+<tr><th id="489">489</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="490">490</th><td><i class="doc"> * If the entity can walk in this state, the state should modify its movement</i></td></tr>
+<tr><th id="491">491</th><td><i class="doc"> * to set the new speed.</i></td></tr>
+<tr><th id="492">492</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="493">493</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State28notify_walking_speed_changedEv" title='Solarus::Entity::State::notify_walking_speed_changed' data-ref="_ZN7Solarus6Entity5State28notify_walking_speed_changedEv">notify_walking_speed_changed</dfn>() {</td></tr>
+<tr><th id="494">494</th><td>}</td></tr>
+<tr><th id="495">495</th><td></td></tr>
+<tr><th id="496">496</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the layer has changed.</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="499">499</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State20notify_layer_changedEv" title='Solarus::Entity::State::notify_layer_changed' data-ref="_ZN7Solarus6Entity5State20notify_layer_changedEv">notify_layer_changed</dfn>() {</td></tr>
+<tr><th id="500">500</th><td>}</td></tr>
+<tr><th id="501">501</th><td></td></tr>
+<tr><th id="502">502</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the movement has changed.</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="505">505</th><td><i class="doc"> * This function is called when the entity's movement direction changes (for instance</i></td></tr>
+<tr><th id="506">506</th><td><i class="doc"> * because the player pressed or released a directional key, or the entity just reached an obstacle).</i></td></tr>
+<tr><th id="507">507</th><td><i class="doc"> * The animations and collisions should be updated according to the new movement.</i></td></tr>
+<tr><th id="508">508</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="509">509</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State23notify_movement_changedEv" title='Solarus::Entity::State::notify_movement_changed' data-ref="_ZN7Solarus6Entity5State23notify_movement_changedEv">notify_movement_changed</dfn>() {</td></tr>
+<tr><th id="510">510</th><td>}</td></tr>
+<tr><th id="511">511</th><td></td></tr>
+<tr><th id="512">512</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the movement if finished.</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="515">515</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State24notify_movement_finishedEv" title='Solarus::Entity::State::notify_movement_finished' data-ref="_ZN7Solarus6Entity5State24notify_movement_finishedEv">notify_movement_finished</dfn>() {</td></tr>
+<tr><th id="516">516</th><td>}</td></tr>
+<tr><th id="517">517</th><td></td></tr>
+<tr><th id="518">518</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="519">519</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the entity has just failed to change its</i></td></tr>
+<tr><th id="520">520</th><td><i class="doc"> * position because of obstacles.</i></td></tr>
+<tr><th id="521">521</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="522">522</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State23notify_obstacle_reachedEv" title='Solarus::Entity::State::notify_obstacle_reached' data-ref="_ZN7Solarus6Entity5State23notify_obstacle_reachedEv">notify_obstacle_reached</dfn>() {</td></tr>
+<tr><th id="523">523</th><td>}</td></tr>
+<tr><th id="524">524</th><td></td></tr>
+<tr><th id="525">525</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="526">526</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the entity has just changed its</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc"> * position.</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="529">529</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State23notify_position_changedEv" title='Solarus::Entity::State::notify_position_changed' data-ref="_ZN7Solarus6Entity5State23notify_position_changedEv">notify_position_changed</dfn>() {</td></tr>
+<tr><th id="530">530</th><td>}</td></tr>
+<tr><th id="531">531</th><td></td></tr>
+<tr><th id="532">532</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="533">533</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of deep water in this state.</i></td></tr>
+<tr><th id="534">534</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="535">535</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="536">536</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="537">537</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of deep water in the current state</i></td></tr>
+<tr><th id="538">538</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="539">539</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State20can_avoid_deep_waterEv" title='Solarus::Entity::State::can_avoid_deep_water' data-ref="_ZNK7Solarus6Entity5State20can_avoid_deep_waterEv">can_avoid_deep_water</dfn>() <em>const</em> {</td></tr>
+<tr><th id="540">540</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="541">541</th><td>}</td></tr>
+<tr><th id="542">542</th><td></td></tr>
+<tr><th id="543">543</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="544">544</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of holes in this state.</i></td></tr>
+<tr><th id="545">545</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="546">546</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="547">547</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="548">548</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of holes in the current state</i></td></tr>
+<tr><th id="549">549</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="550">550</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State14can_avoid_holeEv" title='Solarus::Entity::State::can_avoid_hole' data-ref="_ZNK7Solarus6Entity5State14can_avoid_holeEv">can_avoid_hole</dfn>() <em>const</em> {</td></tr>
+<tr><th id="551">551</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="552">552</th><td>}</td></tr>
+<tr><th id="553">553</th><td></td></tr>
+<tr><th id="554">554</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="555">555</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of ice in this state.</i></td></tr>
+<tr><th id="556">556</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the entity ignores the effect of ice in the current state.</i></td></tr>
+<tr><th id="560">560</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="561">561</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State13can_avoid_iceEv" title='Solarus::Entity::State::can_avoid_ice' data-ref="_ZNK7Solarus6Entity5State13can_avoid_iceEv">can_avoid_ice</dfn>() <em>const</em> {</td></tr>
+<tr><th id="562">562</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="563">563</th><td>}</td></tr>
+<tr><th id="564">564</th><td></td></tr>
+<tr><th id="565">565</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of lava in this state.</i></td></tr>
+<tr><th id="567">567</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="569">569</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="570">570</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of lava in the current state</i></td></tr>
+<tr><th id="571">571</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="572">572</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State14can_avoid_lavaEv" title='Solarus::Entity::State::can_avoid_lava' data-ref="_ZNK7Solarus6Entity5State14can_avoid_lavaEv">can_avoid_lava</dfn>() <em>const</em> {</td></tr>
+<tr><th id="573">573</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="574">574</th><td>}</td></tr>
+<tr><th id="575">575</th><td></td></tr>
+<tr><th id="576">576</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="577">577</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of prickles in this state.</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of prickles in the current state</i></td></tr>
+<tr><th id="582">582</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="583">583</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State17can_avoid_prickleEv" title='Solarus::Entity::State::can_avoid_prickle' data-ref="_ZNK7Solarus6Entity5State17can_avoid_prickleEv">can_avoid_prickle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="584">584</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="585">585</th><td>}</td></tr>
+<tr><th id="586">586</th><td></td></tr>
+<tr><th id="587">587</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="588">588</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is touching the ground in the current state.</i></td></tr>
+<tr><th id="589">589</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="590">590</th><td><i class="doc"> * Returns true by default.</i></td></tr>
+<tr><th id="591">591</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="592">592</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is touching the ground in the current state</i></td></tr>
+<tr><th id="593">593</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="594">594</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_touching_groundEv" title='Solarus::Entity::State::is_touching_ground' data-ref="_ZNK7Solarus6Entity5State18is_touching_groundEv">is_touching_ground</dfn>() <em>const</em> {</td></tr>
+<tr><th id="595">595</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="596">596</th><td>}</td></tr>
+<tr><th id="597">597</th><td></td></tr>
+<tr><th id="598">598</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="599">599</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity's current position can be considered</i></td></tr>
+<tr><th id="600">600</th><td><i class="doc"> * as a place to come back after a bad ground (hole, deep water, etc).</i></td></tr>
+<tr><th id="601">601</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="602">602</th><td><i class="doc"> * Returns is_touching_ground() by default.</i></td></tr>
+<tr><th id="603">603</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="604">604</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can come back here</i></td></tr>
+<tr><th id="605">605</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="606">606</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State24can_come_from_bad_groundEv" title='Solarus::Entity::State::can_come_from_bad_ground' data-ref="_ZNK7Solarus6Entity5State24can_come_from_bad_groundEv">can_come_from_bad_ground</dfn>() <em>const</em> {</td></tr>
+<tr><th id="607">607</th><td>  <b>return</b> <a class="virtual member" href="#_ZNK7Solarus6Entity5State18is_touching_groundEv" title='Solarus::Entity::State::is_touching_ground' data-ref="_ZNK7Solarus6Entity5State18is_touching_groundEv">is_touching_ground</a>();</td></tr>
+<tr><th id="608">608</th><td>}</td></tr>
+<tr><th id="609">609</th><td></td></tr>
+<tr><th id="610">610</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="611">611</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the ground was just changed.</i></td></tr>
+<tr><th id="612">612</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="613">613</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State21notify_ground_changedEv" title='Solarus::Entity::State::notify_ground_changed' data-ref="_ZN7Solarus6Entity5State21notify_ground_changedEv">notify_ground_changed</dfn>() {</td></tr>
+<tr><th id="614">614</th><td>}</td></tr>
+<tr><th id="615">615</th><td></td></tr>
+<tr><th id="616">616</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="617">617</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this state ignores the collisions with the detectors and the ground.</i></td></tr>
+<tr><th id="618">618</th><td><i class="doc"> * <span class="command">\return</span> true if the collisions are ignored</i></td></tr>
+<tr><th id="619">619</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="620">620</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State22are_collisions_ignoredEv" title='Solarus::Entity::State::are_collisions_ignored' data-ref="_ZNK7Solarus6Entity5State22are_collisions_ignoredEv">are_collisions_ignored</dfn>() <em>const</em> {</td></tr>
+<tr><th id="621">621</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="622">622</th><td>}</td></tr>
+<tr><th id="623">623</th><td></td></tr>
+<tr><th id="624">624</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="625">625</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether shallow water is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="626">626</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="627">627</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="628">628</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="629">629</th><td><i class="doc"> * <span class="command">\return</span> true if shallow water is considered as an obstacle in this state</i></td></tr>
+<tr><th id="630">630</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="631">631</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State25is_shallow_water_obstacleEv" title='Solarus::Entity::State::is_shallow_water_obstacle' data-ref="_ZNK7Solarus6Entity5State25is_shallow_water_obstacleEv">is_shallow_water_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="632">632</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="633">633</th><td>}</td></tr>
+<tr><th id="634">634</th><td></td></tr>
+<tr><th id="635">635</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="636">636</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether deep water tile is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="637">637</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="639">639</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="640">640</th><td><i class="doc"> * <span class="command">\return</span> true if deep water is considered as an obstacle in this state</i></td></tr>
+<tr><th id="641">641</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="642">642</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State22is_deep_water_obstacleEv" title='Solarus::Entity::State::is_deep_water_obstacle' data-ref="_ZNK7Solarus6Entity5State22is_deep_water_obstacleEv">is_deep_water_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="643">643</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="644">644</th><td>}</td></tr>
+<tr><th id="645">645</th><td></td></tr>
+<tr><th id="646">646</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="647">647</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a hole is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="648">648</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="649">649</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="650">650</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="651">651</th><td><i class="doc"> * <span class="command">\return</span> true if the holes are considered as obstacles in this state</i></td></tr>
+<tr><th id="652">652</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="653">653</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State16is_hole_obstacleEv" title='Solarus::Entity::State::is_hole_obstacle' data-ref="_ZNK7Solarus6Entity5State16is_hole_obstacleEv">is_hole_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="654">654</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="655">655</th><td>}</td></tr>
+<tr><th id="656">656</th><td></td></tr>
+<tr><th id="657">657</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="658">658</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether lava is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="659">659</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="660">660</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="661">661</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="662">662</th><td><i class="doc"> * <span class="command">\return</span> true if lava is considered as obstacles in this state</i></td></tr>
+<tr><th id="663">663</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="664">664</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State16is_lava_obstacleEv" title='Solarus::Entity::State::is_lava_obstacle' data-ref="_ZNK7Solarus6Entity5State16is_lava_obstacleEv">is_lava_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="665">665</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="666">666</th><td>}</td></tr>
+<tr><th id="667">667</th><td></td></tr>
+<tr><th id="668">668</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="669">669</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether prickles are considered as an obstacle in this state.</i></td></tr>
+<tr><th id="670">670</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="671">671</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="672">672</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="673">673</th><td><i class="doc"> * <span class="command">\return</span> true if prickles are considered as obstacles in this state</i></td></tr>
+<tr><th id="674">674</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="675">675</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State19is_prickle_obstacleEv" title='Solarus::Entity::State::is_prickle_obstacle' data-ref="_ZNK7Solarus6Entity5State19is_prickle_obstacleEv">is_prickle_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="676">676</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="677">677</th><td>}</td></tr>
+<tr><th id="678">678</th><td></td></tr>
+<tr><th id="679">679</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="680">680</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a ladder is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="681">681</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="682">682</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="683">683</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="684">684</th><td><i class="doc"> * <span class="command">\return</span> true if the ladders are considered as obstacles in this state</i></td></tr>
+<tr><th id="685">685</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="686">686</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_ladder_obstacleEv" title='Solarus::Entity::State::is_ladder_obstacle' data-ref="_ZNK7Solarus6Entity5State18is_ladder_obstacleEv">is_ladder_obstacle</dfn>() <em>const</em> {</td></tr>
+<tr><th id="687">687</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="688">688</th><td>}</td></tr>
+<tr><th id="689">689</th><td></td></tr>
+<tr><th id="690">690</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="691">691</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a teletransporter is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="692">692</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="693">693</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="694">694</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="695">695</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">teletransporter</span> a teletransporter</i></td></tr>
+<tr><th id="696">696</th><td><i class="doc"> * <span class="command">\return</span> true if the teletransporter is an obstacle in this state</i></td></tr>
+<tr><th id="697">697</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="698">698</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State27is_teletransporter_obstacleERKNS_15TeletransporterE" title='Solarus::Entity::State::is_teletransporter_obstacle' data-ref="_ZNK7Solarus6Entity5State27is_teletransporter_obstacleERKNS_15TeletransporterE">is_teletransporter_obstacle</dfn>(</td></tr>
+<tr><th id="699">699</th><td>    <em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Teletransporter" title='Solarus::Teletransporter' data-ref="Solarus::Teletransporter">Teletransporter</a>&amp; <i>/* teletransporter */</i>) <em>const</em> {</td></tr>
+<tr><th id="700">700</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="701">701</th><td>}</td></tr>
+<tr><th id="702">702</th><td></td></tr>
+<tr><th id="703">703</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="704">704</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of teletransporters in this state.</i></td></tr>
+<tr><th id="705">705</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="706">706</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="707">707</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="708">708</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of teletransporters in this state</i></td></tr>
+<tr><th id="709">709</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="710">710</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State25can_avoid_teletransporterEv" title='Solarus::Entity::State::can_avoid_teletransporter' data-ref="_ZNK7Solarus6Entity5State25can_avoid_teletransporterEv">can_avoid_teletransporter</dfn>() <em>const</em> {</td></tr>
+<tr><th id="711">711</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="712">712</th><td>}</td></tr>
+<tr><th id="713">713</th><td></td></tr>
+<tr><th id="714">714</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="715">715</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the effect of teletransporters is delayed in this state.</i></td></tr>
+<tr><th id="716">716</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="717">717</th><td><i class="doc"> * When overlapping a teletransporter, if this function returns true, the teletransporter</i></td></tr>
+<tr><th id="718">718</th><td><i class="doc"> * will not be activated immediately. The state then has to activate it when it is ready.</i></td></tr>
+<tr><th id="719">719</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="720">720</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="721">721</th><td><i class="doc"> * <span class="command">\return</span> true if the effect of teletransporters is delayed in this state</i></td></tr>
+<tr><th id="722">722</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="723">723</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State26is_teletransporter_delayedEv" title='Solarus::Entity::State::is_teletransporter_delayed' data-ref="_ZNK7Solarus6Entity5State26is_teletransporter_delayedEv">is_teletransporter_delayed</dfn>() <em>const</em> {</td></tr>
+<tr><th id="724">724</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="725">725</th><td>}</td></tr>
+<tr><th id="726">726</th><td></td></tr>
+<tr><th id="727">727</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="728">728</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a stream is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="729">729</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">stream</span> A stream.</i></td></tr>
+<tr><th id="730">730</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the stream is an obstacle in this state.</i></td></tr>
+<tr><th id="731">731</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="732">732</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_stream_obstacleERKNS_6StreamE" title='Solarus::Entity::State::is_stream_obstacle' data-ref="_ZNK7Solarus6Entity5State18is_stream_obstacleERKNS_6StreamE">is_stream_obstacle</dfn>(</td></tr>
+<tr><th id="733">733</th><td>    <em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Stream" title='Solarus::Stream' data-ref="Solarus::Stream">Stream</a>&amp; <i>/* stream */</i>) <em>const</em> {</td></tr>
+<tr><th id="734">734</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="735">735</th><td>}</td></tr>
+<tr><th id="736">736</th><td></td></tr>
+<tr><th id="737">737</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="738">738</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of a stream in this state.</i></td></tr>
+<tr><th id="739">739</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">stream</span> A stream.</i></td></tr>
+<tr><th id="740">740</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the entity ignores the effect of the stream in this state.</i></td></tr>
+<tr><th id="741">741</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="742">742</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State16can_avoid_streamERKNS_6StreamE" title='Solarus::Entity::State::can_avoid_stream' data-ref="_ZNK7Solarus6Entity5State16can_avoid_streamERKNS_6StreamE">can_avoid_stream</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Stream" title='Solarus::Stream' data-ref="Solarus::Stream">Stream</a>&amp; <i>/* stream */</i>) <em>const</em> {</td></tr>
+<tr><th id="743">743</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="744">744</th><td>}</td></tr>
+<tr><th id="745">745</th><td></td></tr>
+<tr><th id="746">746</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="747">747</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this state can continue when taking a stream.</i></td></tr>
+<tr><th id="748">748</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="749">749</th><td><i class="doc"> * This function only matters if the stream is applied in this state, that is,</i></td></tr>
+<tr><th id="750">750</th><td><i class="doc"> * when can_avoid_stream() is<span class="command"> \c</span> <span class="arg">false.</span></i></td></tr>
+<tr><th id="751">751</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="752">752</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">stream</span> A stream.</i></td></tr>
+<tr><th id="753">753</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if this state can continue,<span class="command"> \c</span> <span class="arg">false</span> if the entity should</i></td></tr>
+<tr><th id="754">754</th><td><i class="doc"> * get back to FreeState.</i></td></tr>
+<tr><th id="755">755</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="756">756</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State21can_persist_on_streamERKNS_6StreamE" title='Solarus::Entity::State::can_persist_on_stream' data-ref="_ZNK7Solarus6Entity5State21can_persist_on_streamERKNS_6StreamE">can_persist_on_stream</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Stream" title='Solarus::Stream' data-ref="Solarus::Stream">Stream</a>&amp; <i>/* stream */</i>) <em>const</em> {</td></tr>
+<tr><th id="757">757</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="758">758</th><td>}</td></tr>
+<tr><th id="759">759</th><td></td></tr>
+<tr><th id="760">760</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="761">761</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can take stairs in this state.</i></td></tr>
+<tr><th id="762">762</th><td><i class="doc"> * If false is returned, stairs have no effect (but they are obstacle for the entity).</i></td></tr>
+<tr><th id="763">763</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="764">764</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="765">765</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="766">766</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can take stairs in this state</i></td></tr>
+<tr><th id="767">767</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="768">768</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State15can_take_stairsEv" title='Solarus::Entity::State::can_take_stairs' data-ref="_ZNK7Solarus6Entity5State15can_take_stairsEv">can_take_stairs</dfn>() <em>const</em> {</td></tr>
+<tr><th id="769">769</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="770">770</th><td>}</td></tr>
+<tr><th id="771">771</th><td></td></tr>
+<tr><th id="772">772</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="773">773</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether some stairs are considered as obstacle in this state.</i></td></tr>
+<tr><th id="774">774</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">stairs</span> Some stairs.</i></td></tr>
+<tr><th id="775">775</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the stairs are obstacle in this state.</i></td></tr>
+<tr><th id="776">776</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="777">777</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_stairs_obstacleERKNS_6StairsE" title='Solarus::Entity::State::is_stairs_obstacle' data-ref="_ZNK7Solarus6Entity5State18is_stairs_obstacleERKNS_6StairsE">is_stairs_obstacle</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/Stairs.h.html#Solarus::Stairs" title='Solarus::Stairs' data-ref="Solarus::Stairs">Stairs</a>&amp; <dfn class="local col4 decl" id="24stairs" title='stairs' data-type='const Solarus::Stairs &amp;' data-ref="24stairs">stairs</dfn>) <em>const</em> {</td></tr>
+<tr><th id="778">778</th><td></td></tr>
+<tr><th id="779">779</th><td>  <i>// The entity may overlap stairs in rare cases,</i></td></tr>
+<tr><th id="780">780</th><td><i>  // for example if he arrived by swimming over them</i></td></tr>
+<tr><th id="781">781</th><td><i>  // and thus did not activate them.</i></td></tr>
+<tr><th id="782">782</th><td><i>  // This is allowed and can be used to leave water pools for example.</i></td></tr>
+<tr><th id="783">783</th><td>  <b>if</b> (<a class="member" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State::entity" title='Solarus::Entity::State::entity' data-ref="Solarus::Entity::State::entity">entity</a>.<a class="ref" href="../../include/solarus/entities/Entity.h.html#_ZNK7Solarus6Entity8overlapsERKS0_" title='Solarus::Entity::overlaps' data-ref="_ZNK7Solarus6Entity8overlapsERKS0_">overlaps</a>(<a class="local col4 ref" href="#24stairs" title='stairs' data-ref="24stairs">stairs</a>)) {</td></tr>
+<tr><th id="784">784</th><td>    <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="785">785</th><td>  }</td></tr>
+<tr><th id="786">786</th><td></td></tr>
+<tr><th id="787">787</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="788">788</th><td>}</td></tr>
+<tr><th id="789">789</th><td></td></tr>
+<tr><th id="790">790</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="791">791</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a sensor is considered as an obstacle in this state.</i></td></tr>
+<tr><th id="792">792</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="793">793</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="794">794</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="795">795</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">sensor</span> a sensor</i></td></tr>
+<tr><th id="796">796</th><td><i class="doc"> * <span class="command">\return</span> true if the sensor is an obstacle in this state</i></td></tr>
+<tr><th id="797">797</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="798">798</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_sensor_obstacleERKNS_6SensorE" title='Solarus::Entity::State::is_sensor_obstacle' data-ref="_ZNK7Solarus6Entity5State18is_sensor_obstacleERKNS_6SensorE">is_sensor_obstacle</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Sensor" title='Solarus::Sensor' data-ref="Solarus::Sensor">Sensor</a>&amp; <i>/* sensor */</i>) <em>const</em> {</td></tr>
+<tr><th id="799">799</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="800">800</th><td>}</td></tr>
+<tr><th id="801">801</th><td></td></tr>
+<tr><th id="802">802</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="803">803</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a jumper is considered as an obstacle in this state</i></td></tr>
+<tr><th id="804">804</th><td><i class="doc"> * for the entity at the specified position.</i></td></tr>
+<tr><th id="805">805</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">jumper</span> A jumper.</i></td></tr>
+<tr><th id="806">806</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">candidate_position</span> Position of the entity to test.</i></td></tr>
+<tr><th id="807">807</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the jumper is an obstacle in this state with this</i></td></tr>
+<tr><th id="808">808</th><td><i class="doc"> * entity position.</i></td></tr>
+<tr><th id="809">809</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="810">810</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE" title='Solarus::Entity::State::is_jumper_obstacle' data-ref="_ZNK7Solarus6Entity5State18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE">is_jumper_obstacle</dfn>(</td></tr>
+<tr><th id="811">811</th><td>    <em>const</em> <a class="type" href="../../include/solarus/entities/Jumper.h.html#Solarus::Jumper" title='Solarus::Jumper' data-ref="Solarus::Jumper">Jumper</a>&amp; <i>/* jumper */</i>, <em>const</em> <a class="type" href="../../include/solarus/lowlevel/Rectangle.h.html#Solarus::Rectangle" title='Solarus::Rectangle' data-ref="Solarus::Rectangle">Rectangle</a>&amp; <i>/* candidate_position */</i>) <em>const</em> {</td></tr>
+<tr><th id="812">812</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="813">813</th><td>}</td></tr>
+<tr><th id="814">814</th><td></td></tr>
+<tr><th id="815">815</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="816">816</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a separator is considered as an obstacle in this</i></td></tr>
+<tr><th id="817">817</th><td><i class="doc"> * state.</i></td></tr>
+<tr><th id="818">818</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="819">819</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="820">820</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="821">821</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">separator</span> A separator.</i></td></tr>
+<tr><th id="822">822</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the separator is an obstacle in this state.</i></td></tr>
+<tr><th id="823">823</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="824">824</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State21is_separator_obstacleERKNS_9SeparatorE" title='Solarus::Entity::State::is_separator_obstacle' data-ref="_ZNK7Solarus6Entity5State21is_separator_obstacleERKNS_9SeparatorE">is_separator_obstacle</dfn>(<em>const</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Separator" title='Solarus::Separator' data-ref="Solarus::Separator">Separator</a>&amp; <i>/* separator */</i>) <em>const</em> {</td></tr>
+<tr><th id="825">825</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="826">826</th><td>}</td></tr>
+<tr><th id="827">827</th><td></td></tr>
+<tr><th id="828">828</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="829">829</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of sensors in this state.</i></td></tr>
+<tr><th id="830">830</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="831">831</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="832">832</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="833">833</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of sensors in this state</i></td></tr>
+<tr><th id="834">834</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="835">835</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State16can_avoid_sensorEv" title='Solarus::Entity::State::can_avoid_sensor' data-ref="_ZNK7Solarus6Entity5State16can_avoid_sensorEv">can_avoid_sensor</dfn>() <em>const</em> {</td></tr>
+<tr><th id="836">836</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="837">837</th><td>}</td></tr>
+<tr><th id="838">838</th><td></td></tr>
+<tr><th id="839">839</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="840">840</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of switches in this state.</i></td></tr>
+<tr><th id="841">841</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="842">842</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="843">843</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="844">844</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of switches in this state</i></td></tr>
+<tr><th id="845">845</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="846">846</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State16can_avoid_switchEv" title='Solarus::Entity::State::can_avoid_switch' data-ref="_ZNK7Solarus6Entity5State16can_avoid_switchEv">can_avoid_switch</dfn>() <em>const</em> {</td></tr>
+<tr><th id="847">847</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="848">848</th><td>}</td></tr>
+<tr><th id="849">849</th><td></td></tr>
+<tr><th id="850">850</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="851">851</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether crystals can be activated by the sword in this state.</i></td></tr>
+<tr><th id="852">852</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="853">853</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="854">854</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="855">855</th><td><i class="doc"> * <span class="command">\return</span> true if crystals can be activated by the sword in this state</i></td></tr>
+<tr><th id="856">856</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="857">857</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State21can_sword_hit_crystalEv" title='Solarus::Entity::State::can_sword_hit_crystal' data-ref="_ZNK7Solarus6Entity5State21can_sword_hit_crystalEv">can_sword_hit_crystal</dfn>() <em>const</em> {</td></tr>
+<tr><th id="858">858</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="859">859</th><td>}</td></tr>
+<tr><th id="860">860</th><td></td></tr>
+<tr><th id="861">861</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="862">862</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity ignores the effect of explosions in this state.</i></td></tr>
+<tr><th id="863">863</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="864">864</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="865">865</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="866">866</th><td><i class="doc"> * <span class="command">\return</span> true if the entity ignores the effect of explosions in this state</i></td></tr>
+<tr><th id="867">867</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="868">868</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State19can_avoid_explosionEv" title='Solarus::Entity::State::can_avoid_explosion' data-ref="_ZNK7Solarus6Entity5State19can_avoid_explosionEv">can_avoid_explosion</dfn>() <em>const</em> {</td></tr>
+<tr><th id="869">869</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="870">870</th><td>}</td></tr>
+<tr><th id="871">871</th><td></td></tr>
+<tr><th id="872">872</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="873">873</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can trigger a jumper in this state.</i></td></tr>
+<tr><th id="874">874</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="875">875</th><td><i class="doc"> * If false is returned, jumpers have no effect (but they are obstacle for</i></td></tr>
+<tr><th id="876">876</th><td><i class="doc"> * the entity).</i></td></tr>
+<tr><th id="877">877</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="878">878</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="879">879</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="880">880</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the entity can use jumpers in this state.</i></td></tr>
+<tr><th id="881">881</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="882">882</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State15can_take_jumperEv" title='Solarus::Entity::State::can_take_jumper' data-ref="_ZNK7Solarus6Entity5State15can_take_jumperEv">can_take_jumper</dfn>() <em>const</em> {</td></tr>
+<tr><th id="883">883</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="884">884</th><td>}</td></tr>
+<tr><th id="885">885</th><td></td></tr>
+<tr><th id="886">886</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="887">887</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the entity is activating a jumper.</i></td></tr>
+<tr><th id="888">888</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="889">889</th><td><i class="doc"> * Does nothing by default.</i></td></tr>
+<tr><th id="890">890</th><td><i class="doc"> * Redefine this function if you want to perform the jump in your state.</i></td></tr>
+<tr><th id="891">891</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="892">892</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">jumper</span> The jumper activated.</i></td></tr>
+<tr><th id="893">893</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="894">894</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State23notify_jumper_activatedERNS_6JumperE" title='Solarus::Entity::State::notify_jumper_activated' data-ref="_ZN7Solarus6Entity5State23notify_jumper_activatedERNS_6JumperE">notify_jumper_activated</dfn>(<a class="type" href="../../include/solarus/entities/Jumper.h.html#Solarus::Jumper" title='Solarus::Jumper' data-ref="Solarus::Jumper">Jumper</a>&amp; <i>/* jumper */</i>) {</td></tr>
+<tr><th id="895">895</th><td>}</td></tr>
+<tr><th id="896">896</th><td></td></tr>
+<tr><th id="897">897</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="898">898</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this state that the entity has just attacked an enemy.</i></td></tr>
+<tr><th id="899">899</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="900">900</th><td><i class="doc"> * This function is called even if this attack was not successful.</i></td></tr>
+<tr><th id="901">901</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="902">902</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">attack</span> The attack.</i></td></tr>
+<tr><th id="903">903</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">victim</span> The enemy just hurt.</i></td></tr>
+<tr><th id="904">904</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">victim_sprite</span> The enemy's sprite that was touched or nullptr.</i></td></tr>
+<tr><th id="905">905</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">result</span> How the enemy has reacted to the attack.</i></td></tr>
+<tr><th id="906">906</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">killed</span> Whether the attack has just killed the enemy.</i></td></tr>
+<tr><th id="907">907</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="908">908</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb" title='Solarus::Entity::State::notify_attacked_enemy' data-ref="_ZN7Solarus6Entity5State21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb">notify_attacked_enemy</dfn>(</td></tr>
+<tr><th id="909">909</th><td>    <a class="type" href="../../include/solarus/entities/EnemyAttack.h.html#Solarus::EnemyAttack" title='Solarus::EnemyAttack' data-ref="Solarus::EnemyAttack">EnemyAttack</a> <i>/* attack */</i>,</td></tr>
+<tr><th id="910">910</th><td>    <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Enemy" title='Solarus::Enemy' data-ref="Solarus::Enemy">Enemy</a>&amp; <i>/* victim */</i>,</td></tr>
+<tr><th id="911">911</th><td>    <em>const</em> <a class="type" href="../../include/solarus/Sprite.h.html#Solarus::Sprite" title='Solarus::Sprite' data-ref="Solarus::Sprite">Sprite</a>* <i>/* victim_sprite */</i>,</td></tr>
+<tr><th id="912">912</th><td>    <a class="type" href="../../include/solarus/entities/EnemyReaction.h.html#Solarus::EnemyReaction" title='Solarus::EnemyReaction' data-ref="Solarus::EnemyReaction">EnemyReaction</a>::<a class="type" href="../../include/solarus/entities/EnemyReaction.h.html#Solarus::EnemyReaction::Reaction" title='Solarus::EnemyReaction::Reaction' data-ref="Solarus::EnemyReaction::Reaction">Reaction</a>&amp; <i>/* result */</i>,</td></tr>
+<tr><th id="913">913</th><td>    <em>bool</em> <i>/* killed */</i>) {</td></tr>
+<tr><th id="914">914</th><td>}</td></tr>
+<tr><th id="915">915</th><td></td></tr>
+<tr><th id="916">916</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="917">917</th><td><i class="doc"> * <span class="command">\brief</span> Returns the damage power of the sword for the current attack.</i></td></tr>
+<tr><th id="918">918</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="919">919</th><td><i class="doc"> * Redefine the function if your state changes the power of the sword</i></td></tr>
+<tr><th id="920">920</th><td><i class="doc"> * (typically for a spin attack).</i></td></tr>
+<tr><th id="921">921</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="922">922</th><td><i class="doc"> * <span class="command">\return</span> the current damage factor of the sword</i></td></tr>
+<tr><th id="923">923</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="924">924</th><td><em>int</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State23get_sword_damage_factorEv" title='Solarus::Entity::State::get_sword_damage_factor' data-ref="_ZNK7Solarus6Entity5State23get_sword_damage_factorEv">get_sword_damage_factor</dfn>() <em>const</em> {</td></tr>
+<tr><th id="925">925</th><td></td></tr>
+<tr><th id="926">926</th><td>  <b>return</b> <a class="member" href="#_ZNK7Solarus6Entity5State13get_equipmentEv" title='Solarus::Entity::State::get_equipment' data-ref="_ZNK7Solarus6Entity5State13get_equipmentEv">get_equipment</a>().<a class="ref" href="../../include/solarus/Equipment.h.html#_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE" title='Solarus::Equipment::get_ability' data-ref="_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE">get_ability</a>(<a class="type" href="../../include/solarus/Ability.h.html#Solarus::Ability" title='Solarus::Ability' data-ref="Solarus::Ability">Ability</a>::<a class="enum" href="../../include/solarus/Ability.h.html#Solarus::Ability::SWORD" title='Solarus::Ability::SWORD' data-ref="Solarus::Ability::SWORD">SWORD</a>);</td></tr>
+<tr><th id="927">927</th><td>}</td></tr>
+<tr><th id="928">928</th><td></td></tr>
+<tr><th id="929">929</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="930">930</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can be hurt in this state.</i></td></tr>
+<tr><th id="931">931</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="932">932</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="933">933</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="934">934</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">attacker</span> an attacker that is trying to hurt the entity</i></td></tr>
+<tr><th id="935">935</th><td><i class="doc"> * (or nullptr if the source of the attack is not an enemy)</i></td></tr>
+<tr><th id="936">936</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can be hurt in this state</i></td></tr>
+<tr><th id="937">937</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="938">938</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State11can_be_hurtEPS0_" title='Solarus::Entity::State::can_be_hurt' data-ref="_ZNK7Solarus6Entity5State11can_be_hurtEPS0_">can_be_hurt</dfn>(<a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>* <i>/* attacker */</i>) <em>const</em> {</td></tr>
+<tr><th id="939">939</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="940">940</th><td>}</td></tr>
+<tr><th id="941">941</th><td></td></tr>
+<tr><th id="942">942</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="943">943</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can walk normally and interact with entities</i></td></tr>
+<tr><th id="944">944</th><td><i class="doc"> * in this state.</i></td></tr>
+<tr><th id="945">945</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="946">946</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="947">947</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="948">948</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can walk normally</i></td></tr>
+<tr><th id="949">949</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="950">950</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State7is_freeEv" title='Solarus::Entity::State::is_free' data-ref="_ZNK7Solarus6Entity5State7is_freeEv">is_free</dfn>() <em>const</em> {</td></tr>
+<tr><th id="951">951</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="952">952</th><td>}</td></tr>
+<tr><th id="953">953</th><td></td></tr>
+<tr><th id="954">954</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="955">955</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is using an equipment item in this state.</i></td></tr>
+<tr><th id="956">956</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="957">957</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="958">958</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="959">959</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is using an equipment item.</i></td></tr>
+<tr><th id="960">960</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="961">961</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State13is_using_itemEv" title='Solarus::Entity::State::is_using_item' data-ref="_ZNK7Solarus6Entity5State13is_using_itemEv">is_using_item</dfn>() <em>const</em> {</td></tr>
+<tr><th id="962">962</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="963">963</th><td>}</td></tr>
+<tr><th id="964">964</th><td></td></tr>
+<tr><th id="965">965</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="966">966</th><td><i class="doc"> * <span class="command">\brief</span> When the entity is using an equipment item, returns that item.</i></td></tr>
+<tr><th id="967">967</th><td><i class="doc"> * <span class="command">\return</span> The current equipment item.</i></td></tr>
+<tr><th id="968">968</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="969">969</th><td><a class="type" href="../../include/solarus/entities/Hero.h.html#Solarus::EquipmentItemUsage" title='Solarus::EquipmentItemUsage' data-ref="Solarus::EquipmentItemUsage">EquipmentItemUsage</a>&amp; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State19get_item_being_usedEv" title='Solarus::Entity::State::get_item_being_used' data-ref="_ZN7Solarus6Entity5State19get_item_being_usedEv">get_item_being_used</dfn>() {</td></tr>
+<tr><th id="970">970</th><td></td></tr>
+<tr><th id="971">971</th><td>  <span class="namespace">Debug::</span><a class="ref" href="../../include/solarus/lowlevel/Debug.h.html#_ZN7Solarus5Debug3dieERKSs" title='Solarus::Debug::die' data-ref="_ZN7Solarus5Debug3dieERKSs">die</a>(<a class="ref fake" href="../../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"No item is being used in this state"</q>);</td></tr>
+<tr><th id="972">972</th><td>}</td></tr>
+<tr><th id="973">973</th><td></td></tr>
+<tr><th id="974">974</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="975">975</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is brandishing a treasure in this state.</i></td></tr>
+<tr><th id="976">976</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="977">977</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="978">978</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="979">979</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the entity is brandishing a treasure.</i></td></tr>
+<tr><th id="980">980</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="981">981</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State23is_brandishing_treasureEv" title='Solarus::Entity::State::is_brandishing_treasure' data-ref="_ZNK7Solarus6Entity5State23is_brandishing_treasureEv">is_brandishing_treasure</dfn>() <em>const</em> {</td></tr>
+<tr><th id="982">982</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="983">983</th><td>}</td></tr>
+<tr><th id="984">984</th><td></td></tr>
+<tr><th id="985">985</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="986">986</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is grabbing or pulling an entity in this state.</i></td></tr>
+<tr><th id="987">987</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="988">988</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="989">989</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="990">990</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is grabbing or pulling an entity</i></td></tr>
+<tr><th id="991">991</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="992">992</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State22is_grabbing_or_pullingEv" title='Solarus::Entity::State::is_grabbing_or_pulling' data-ref="_ZNK7Solarus6Entity5State22is_grabbing_or_pullingEv">is_grabbing_or_pulling</dfn>() <em>const</em> {</td></tr>
+<tr><th id="993">993</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="994">994</th><td>}</td></tr>
+<tr><th id="995">995</th><td></td></tr>
+<tr><th id="996">996</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="997">997</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is grabbing and moving an entity in this state.</i></td></tr>
+<tr><th id="998">998</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="999">999</th><td><i class="doc"> * If he is not grabbing any entity, false is returned.</i></td></tr>
+<tr><th id="1000">1000</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="1001">1001</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1002">1002</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is grabbing and moving an entity</i></td></tr>
+<tr><th id="1003">1003</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1004">1004</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State24is_moving_grabbed_entityEv" title='Solarus::Entity::State::is_moving_grabbed_entity' data-ref="_ZNK7Solarus6Entity5State24is_moving_grabbed_entityEv">is_moving_grabbed_entity</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1005">1005</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="1006">1006</th><td>}</td></tr>
+<tr><th id="1007">1007</th><td></td></tr>
+<tr><th id="1008">1008</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1009">1009</th><td><i class="doc"> * <span class="command">\brief</span> Notifies the entity that the entity he is pushing or pulling in this state</i></td></tr>
+<tr><th id="1010">1010</th><td><i class="doc"> * cannot move anymore because of a collision.</i></td></tr>
+<tr><th id="1011">1011</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1012">1012</th><td><em>void</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State31notify_grabbed_entity_collisionEv" title='Solarus::Entity::State::notify_grabbed_entity_collision' data-ref="_ZN7Solarus6Entity5State31notify_grabbed_entity_collisionEv">notify_grabbed_entity_collision</dfn>() {</td></tr>
+<tr><th id="1013">1013</th><td>}</td></tr>
+<tr><th id="1014">1014</th><td></td></tr>
+<tr><th id="1015">1015</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1016">1016</th><td><i class="doc"> * <span class="command">\brief</span> Tests whether the entity is cutting with his sword the specified entity</i></td></tr>
+<tr><th id="1017">1017</th><td><i class="doc"> * for which a collision was detected.</i></td></tr>
+<tr><th id="1018">1018</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1019">1019</th><td><i class="doc"> * When the sword sprite collides with an entity,</i></td></tr>
+<tr><th id="1020">1020</th><td><i class="doc"> * this function can be called to determine whether the entity is</i></td></tr>
+<tr><th id="1021">1021</th><td><i class="doc"> * really cutting this particular entity precisely.</i></td></tr>
+<tr><th id="1022">1022</th><td><i class="doc"> * This depends on the entity's state, his direction and his</i></td></tr>
+<tr><th id="1023">1023</th><td><i class="doc"> * distance to the detector.</i></td></tr>
+<tr><th id="1024">1024</th><td><i class="doc"> * This function assumes that there is already a collision</i></td></tr>
+<tr><th id="1025">1025</th><td><i class="doc"> * between the sword sprite and the detector's sprite.</i></td></tr>
+<tr><th id="1026">1026</th><td><i class="doc"> * This function should be called to check whether the</i></td></tr>
+<tr><th id="1027">1027</th><td><i class="doc"> * entity wants to cut a bush or some grass.</i></td></tr>
+<tr><th id="1028">1028</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="1029">1029</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1030">1030</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">entity</span> The entity to check.</i></td></tr>
+<tr><th id="1031">1031</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the sword is cutting this entity.</i></td></tr>
+<tr><th id="1032">1032</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1033">1033</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZN7Solarus6Entity5State21is_cutting_with_swordERS0_" title='Solarus::Entity::State::is_cutting_with_sword' data-ref="_ZN7Solarus6Entity5State21is_cutting_with_swordERS0_">is_cutting_with_sword</dfn>(<a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>&amp; <i>/* detector */</i>) {</td></tr>
+<tr><th id="1034">1034</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="1035">1035</th><td>}</td></tr>
+<tr><th id="1036">1036</th><td></td></tr>
+<tr><th id="1037">1037</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1038">1038</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can swing his sword in this state.</i></td></tr>
+<tr><th id="1039">1039</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1040">1040</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="1041">1041</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1042">1042</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can swing his sword in this state</i></td></tr>
+<tr><th id="1043">1043</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1044">1044</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State15can_start_swordEv" title='Solarus::Entity::State::can_start_sword' data-ref="_ZNK7Solarus6Entity5State15can_start_swordEv">can_start_sword</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1045">1045</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="1046">1046</th><td>}</td></tr>
+<tr><th id="1047">1047</th><td></td></tr>
+<tr><th id="1048">1048</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1049">1049</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can pick a treasure in this state.</i></td></tr>
+<tr><th id="1050">1050</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1051">1051</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="1052">1052</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1053">1053</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">item</span> The equipment item to obtain.</i></td></tr>
+<tr><th id="1054">1054</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can pick that treasure in this state.</i></td></tr>
+<tr><th id="1055">1055</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1056">1056</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State17can_pick_treasureERNS_13EquipmentItemE" title='Solarus::Entity::State::can_pick_treasure' data-ref="_ZNK7Solarus6Entity5State17can_pick_treasureERNS_13EquipmentItemE">can_pick_treasure</dfn>(<a class="type" href="../../include/solarus/EquipmentItem.h.html#Solarus::EquipmentItem" title='Solarus::EquipmentItem' data-ref="Solarus::EquipmentItem">EquipmentItem</a>&amp; <i>/* item */</i>) <em>const</em> {</td></tr>
+<tr><th id="1057">1057</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="1058">1058</th><td>}</td></tr>
+<tr><th id="1059">1059</th><td></td></tr>
+<tr><th id="1060">1060</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1061">1061</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether attack can be stopped with a shield in this state.</i></td></tr>
+<tr><th id="1062">1062</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1063">1063</th><td><i class="doc"> * Returns<span class="command"> \c</span> <span class="arg">true</span> by default.</i></td></tr>
+<tr><th id="1064">1064</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1065">1065</th><td><i class="doc"> * <span class="command">\return</span><span class="command"> \c</span> <span class="arg">true</span> if the shield is active is this state.</i></td></tr>
+<tr><th id="1066">1066</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1067">1067</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State14can_use_shieldEv" title='Solarus::Entity::State::can_use_shield' data-ref="_ZNK7Solarus6Entity5State14can_use_shieldEv">can_use_shield</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1068">1068</th><td>  <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="1069">1069</th><td>}</td></tr>
+<tr><th id="1070">1070</th><td></td></tr>
+<tr><th id="1071">1071</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1072">1072</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity can use an equipment item in this state.</i></td></tr>
+<tr><th id="1073">1073</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1074">1074</th><td><i class="doc"> * Returns false by default.</i></td></tr>
+<tr><th id="1075">1075</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1076">1076</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">item</span> The equipment item to check.</i></td></tr>
+<tr><th id="1077">1077</th><td><i class="doc"> * <span class="command">\return</span> true if the entity can use an equipment item in this state.</i></td></tr>
+<tr><th id="1078">1078</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1079">1079</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State14can_start_itemERNS_13EquipmentItemE" title='Solarus::Entity::State::can_start_item' data-ref="_ZNK7Solarus6Entity5State14can_start_itemERNS_13EquipmentItemE">can_start_item</dfn>(<a class="type" href="../../include/solarus/EquipmentItem.h.html#Solarus::EquipmentItem" title='Solarus::EquipmentItem' data-ref="Solarus::EquipmentItem">EquipmentItem</a>&amp; <i>/* item */</i>) <em>const</em> {</td></tr>
+<tr><th id="1080">1080</th><td>  <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="1081">1081</th><td>}</td></tr>
+<tr><th id="1082">1082</th><td></td></tr>
+<tr><th id="1083">1083</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1084">1084</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the entity is currently carrying an item in this state.</i></td></tr>
+<tr><th id="1085">1085</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1086">1086</th><td><i class="doc"> * This function returns true if get_carried_object() is not nullptr.</i></td></tr>
+<tr><th id="1087">1087</th><td><i class="doc"> * Redefine get_carried_object() if the entity is able to carry an item in this state.</i></td></tr>
+<tr><th id="1088">1088</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1089">1089</th><td><i class="doc"> * <span class="command">\return</span> true if the entity is currently carrying an item in this state</i></td></tr>
+<tr><th id="1090">1090</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1091">1091</th><td><em>bool</em> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="decl def" id="_ZNK7Solarus6Entity5State16is_carrying_itemEv" title='Solarus::Entity::State::is_carrying_item' data-ref="_ZNK7Solarus6Entity5State16is_carrying_itemEv">is_carrying_item</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1092">1092</th><td>  <b>return</b> <a class="virtual member" href="#_ZNK7Solarus6Entity5State18get_carried_objectEv" title='Solarus::Entity::State::get_carried_object' data-ref="_ZNK7Solarus6Entity5State18get_carried_objectEv">get_carried_object</a>() <a class="ref" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZStneRKSt10shared_ptrIT_EDn" title='std::operator!=' data-ref="_ZStneRKSt10shared_ptrIT_EDn">!=</a> <b>nullptr</b>;</td></tr>
+<tr><th id="1093">1093</th><td>}</td></tr>
+<tr><th id="1094">1094</th><td></td></tr>
+<tr><th id="1095">1095</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1096">1096</th><td><i class="doc"> * <span class="command">\brief</span> Returns the item currently carried by the entity in this state, if any.</i></td></tr>
+<tr><th id="1097">1097</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1098">1098</th><td><i class="doc"> * Redefine this function to make the entity able to carry an item in this state.</i></td></tr>
+<tr><th id="1099">1099</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1100">1100</th><td><i class="doc"> * <span class="command">\return</span> the item carried by the entity, or nullptr</i></td></tr>
+<tr><th id="1101">1101</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1102">1102</th><td><span class="namespace">std::</span><a class="type" href="../../../include/c++/4.9/bits/shared_ptr_base.h.html#std::shared_ptr" title='std::shared_ptr' data-ref="std::shared_ptr">shared_ptr</a>&lt;<a class="type" href="../../include/solarus/entities/CarriedObject.h.html#Solarus::CarriedObject" title='Solarus::CarriedObject' data-ref="Solarus::CarriedObject">CarriedObject</a>&gt; <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State18get_carried_objectEv" title='Solarus::Entity::State::get_carried_object' data-ref="_ZNK7Solarus6Entity5State18get_carried_objectEv">get_carried_object</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1103">1103</th><td>  <b>return</b> <a class="ref fake" href="../../../include/c++/4.9/bits/shared_ptr.h.html#_ZNSt10shared_ptrC1EDn" title='std::shared_ptr::shared_ptr&lt;_Tp&gt;' data-ref="_ZNSt10shared_ptrC1EDn"></a><b>nullptr</b>;</td></tr>
+<tr><th id="1104">1104</th><td>}</td></tr>
+<tr><th id="1105">1105</th><td></td></tr>
+<tr><th id="1106">1106</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1107">1107</th><td><i class="doc"> * <span class="command">\brief</span> Returns the action to do with an item previously carried by the entity when this state starts.</i></td></tr>
+<tr><th id="1108">1108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1109">1109</th><td><i class="doc"> * Returns CarriedObject::BEHAVIOR_THROW by default.</i></td></tr>
+<tr><th id="1110">1110</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1111">1111</th><td><i class="doc"> * <span class="command">\return</span> the action to do with a previous carried object when this state starts</i></td></tr>
+<tr><th id="1112">1112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1113">1113</th><td><a class="type" href="../../include/solarus/entities/CarriedObject.h.html#Solarus::CarriedObject" title='Solarus::CarriedObject' data-ref="Solarus::CarriedObject">CarriedObject</a>::<a class="type" href="../../include/solarus/entities/CarriedObject.h.html#Solarus::CarriedObject::Behavior" title='Solarus::CarriedObject::Behavior' data-ref="Solarus::CarriedObject::Behavior">Behavior</a> <a class="type" href="../../include/solarus/entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>::<a class="type" href="../../include/solarus/entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>::<dfn class="virtual decl def" id="_ZNK7Solarus6Entity5State36get_previous_carried_object_behaviorEv" title='Solarus::Entity::State::get_previous_carried_object_behavior' data-ref="_ZNK7Solarus6Entity5State36get_previous_carried_object_behaviorEv">get_previous_carried_object_behavior</dfn>() <em>const</em> {</td></tr>
+<tr><th id="1114">1114</th><td>  <b>return</b> <a class="type" href="../../include/solarus/entities/CarriedObject.h.html#Solarus::CarriedObject" title='Solarus::CarriedObject' data-ref="Solarus::CarriedObject">CarriedObject</a>::<a class="enum" href="../../include/solarus/entities/CarriedObject.h.html#Solarus::CarriedObject::Behavior::BEHAVIOR_THROW" title='Solarus::CarriedObject::Behavior::BEHAVIOR_THROW' data-ref="Solarus::CarriedObject::Behavior::BEHAVIOR_THROW">BEHAVIOR_THROW</a>;</td></tr>
+<tr><th id="1115">1115</th><td>}</td></tr>
+<tr><th id="1116">1116</th><td></td></tr>
+<tr><th id="1117">1117</th><td>}</td></tr>
+<tr><th id="1118">1118</th><td></td></tr>
+<tr><th id="1119">1119</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

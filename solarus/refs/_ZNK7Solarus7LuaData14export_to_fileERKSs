@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='49' type='bool Solarus::LuaData::export_to_file(const std::string &amp; file_name) const'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='131' ll='161' type='bool Solarus::LuaData::export_to_file(const std::string &amp; file_name) const'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='124'>/**
+ * \brief Saves the data into a Lua file.
+ * \param[in] file_name Path of the file to save.
+ * The file will be encoded in UTF-8.
+ * \return \c true in case of success, \c false if the data
+ * could not be exported.
+ */</doc>

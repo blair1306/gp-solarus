@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='275' type='int Solarus::InputEvent::get_joypad_hat_direction() const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='186' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1074' ll='1119' type='int Solarus::InputEvent::get_joypad_hat_direction() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1133' u='c' c='_ZNK7Solarus10InputEvent22is_joypad_hat_centeredEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1392' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1064'>/**
+ * \brief Returns the new direction of the hat that was moved during
+ * this joypad hat event.
+ *
+ * The value returned is -1 if the hat is centered,
+ * and 0 to 7 if the hat is in one of the eight main directions.
+ * If this is not a joypad hat event, -1 is returned.
+ *
+ * \return the new direction of the hat moved during this joypad hat event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1797' u='c' c='_ZN7Solarus10LuaContext19on_joypad_hat_movedERKNS_10InputEventE'/>

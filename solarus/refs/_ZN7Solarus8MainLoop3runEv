@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='48' type='void Solarus::MainLoop::run()'/>
+<use f='codebrowser/gui/src/main.cpp' l='98' u='c' c='_ZN10SolarusGui12_GLOBAL__N_19run_questEiPPc'/>
+<def f='codebrowser/src/MainLoop.cpp' l='314' ll='391' type='void Solarus::MainLoop::run()'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='306'>/**
+ * \brief Runs the main loop until the user requests to stop the program.
+ *
+ * The main loop controls simulated time and repeatedly updates the world and
+ * redraws the screen.
+ *
+ * Does nothing if the quest is missing.
+ */</doc>
+<use f='codebrowser/src/main/Main.cpp' l='118' u='c' c='main'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='115' u='c' c='_ZN7Solarus15TestEnvironment7run_mapERKSs'/>

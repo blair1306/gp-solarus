@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='136' type='static SDL_Surface * Solarus::Surface::get_surface_from_file(const std::string &amp; file_name, Solarus::Surface::ImageDirectory base_directory)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='192' u='c' c='_ZN7Solarus7Surface6createERKSsNS0_14ImageDirectoryE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='211' ll='263' type='static SDL_Surface * Solarus::Surface::get_surface_from_file(const std::string &amp; file_name, Solarus::Surface::ImageDirectory base_directory)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='202'>/**
+ * \brief Creates an SDL surface corresponding to the requested file.
+ *
+ * The returned SDL surface has to be manually deleted.
+ *
+ * \param file_name Name of the image file to load, relative to the base directory specified.
+ * \param base_directory The base directory to use.
+ * \return The SDL surface created.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_timer.h' l='56'/>
+<doc f='include/SDL2/SDL_timer.h' l='47'>/**
+ * \brief Compare SDL ticks values, and return true if A has passed B
+ *
+ * e.g. if you want to wait 100 ms, you could do this:
+ *  Uint32 timeout = SDL_GetTicks() + 100;
+ *  while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
+ *      ... do work until timeout has elapsed
+ *  }
+ */</doc>

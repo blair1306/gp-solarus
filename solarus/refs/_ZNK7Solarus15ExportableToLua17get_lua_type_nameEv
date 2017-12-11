@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='53' type='const std::string &amp; Solarus::ExportableToLua::get_lua_type_name() const'/>
+<doc f='codebrowser/include/solarus/lua/ExportableToLua.h' l='49'>/**
+     * \brief Returns the name identifying this type in Lua.
+     * \return the name identifying this type in Lua
+     */</doc>
+<ovr f='codebrowser/src/EquipmentItem.cpp' l='485' c='_ZNK7Solarus13EquipmentItem17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/Map.cpp' l='1445' c='_ZNK7Solarus3Map17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/Savegame.cpp' l='565' c='_ZNK7Solarus8Savegame17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/Sprite.cpp' l='919' c='_ZNK7Solarus6Sprite17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/Timer.cpp' l='200' c='_ZNK7Solarus5Timer17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/entities/Entity.cpp' l='114' c='_ZNK7Solarus6Entity17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/lowlevel/Surface.cpp' l='1013' c='_ZNK7Solarus7Surface17get_lua_type_nameEv'/>
+<ovr f='codebrowser/src/lowlevel/TextSurface.cpp' l='587' c='_ZNK7Solarus11TextSurface17get_lua_type_nameEv'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='568' u='c' c='_ZNK7Solarus10LuaContext22userdata_has_metafieldERKNS_15ExportableToLuaEPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='774' u='c' c='_ZN7Solarus10LuaContext11print_stackEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1026' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1036' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1041' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1047' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<ovr f='codebrowser/src/movements/Movement.cpp' l='588' c='_ZNK7Solarus8Movement17get_lua_type_nameEv'/>

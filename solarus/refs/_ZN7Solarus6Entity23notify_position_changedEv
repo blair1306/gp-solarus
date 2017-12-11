@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='231' type='void Solarus::Entity::notify_position_changed()'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='65' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='241' c='_ZN7Solarus5Block23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='243' u='c' c='_ZN7Solarus5Block23notify_position_changedEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='169' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='171' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1637' ll='1661' type='void Solarus::Entity::notify_position_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1628'>/**
+ * \brief This function is called when the entity has just moved.
+ *
+ * It checks collisions with the detectors on the map
+ * and, if this entity defines a ground, updates entities sensible to their
+ * ground.
+ *
+ * TODO only keep notify_bounding_box_changed()
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1060' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='357' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='359' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='249' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='913' u='c' c='_ZN7Solarus10LuaContext19entity_api_set_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='950' u='c' c='_ZN7Solarus10LuaContext21entity_api_set_originEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='989' u='c' c='_ZN7Solarus10LuaContext23entity_api_set_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1153' u='c' c='_ZN7Solarus10LuaContext20entity_api_set_layerEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='273' u='c' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='38' u='c' c='_ZN12_GLOBAL__N_117test_path_to_heroERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

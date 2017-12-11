@@ -1,0 +1,22 @@
+<dec f='include/SDL2/SDL_video.h' l='344' type='SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayMode * mode, SDL_DisplayMode * closest)'/>
+<doc f='include/SDL2/SDL_video.h' l='323'>/**
+ *  \brief Get the closest match to the requested display mode.
+ *
+ *  \param displayIndex The index of display from which mode should be queried.
+ *  \param mode The desired display mode
+ *  \param closest A pointer to a display mode to be filled in with the closest
+ *                 match of the available display modes.
+ *
+ *  \return The passed in value \c closest, or NULL if no matching video mode
+ *          was available.
+ *
+ *  The available display modes are scanned, and \c closest is filled in with the
+ *  closest mode matching the requested mode and returned.  The mode format and
+ *  refresh_rate default to the desktop mode if they are 0.  The modes are
+ *  scanned with size being first priority, format being second priority, and
+ *  finally checking the refresh_rate.  If all the available modes are too
+ *  small, then NULL is returned.
+ *
+ *  \sa SDL_GetNumDisplayModes()
+ *  \sa SDL_GetDisplayMode()
+ */</doc>

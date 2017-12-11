@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='128' type='bool Solarus::Quadtree::Node::is_main_cell(const Solarus::Rectangle &amp; bounding_box) const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='340' u='c' c='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='489' ll='511' type='bool Solarus::Quadtree::Node::is_main_cell(const Solarus::Rectangle &amp; bounding_box) const'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='527' u='c' c='_ZNK7Solarus8Quadtree4Node16get_num_elementsEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='587' u='c' c='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='483'>/**
+ * \brief Returns whether this cell contains a box and is also its main cell.
+ *
+ * The main cell is used to ensure uniqueness, for example when counting
+ * elements.
+ */</doc>

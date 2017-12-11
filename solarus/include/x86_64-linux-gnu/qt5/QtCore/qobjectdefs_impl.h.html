@@ -1,0 +1,660 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qobjectdefs_impl.h source code [include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QtPrivate::ApplyReturnValue,QtPrivate::AreArgumentsCompatible,QtPrivate::CheckCompatibleArguments,QtPrivate::ComputeFunctorArgumentCount,QtPrivate::ComputeFunctorArgumentCountHelper,QtPrivate::FunctionPointer,QtPrivate::Functor,QtPrivate::FunctorCall,QtPrivate::FunctorReturnType,QtPrivate::Indexes,QtPrivate::IndexesAppend,QtPrivate::IndexesList,QtPrivate::List,QtPrivate::List_Append,QtPrivate::List_Left,QtPrivate::List_Select,QtPrivate::RemoveConstRef,QtPrivate::RemoveRef "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qobjectdefs_impl.h.html'>qobjectdefs_impl.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Copyright (C) 2013 Olivier Goffart &lt;ogoffart@woboq.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="6">6</th><td><i>**</i></td></tr>
+<tr><th id="7">7</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="8">8</th><td><i>**</i></td></tr>
+<tr><th id="9">9</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="10">10</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="11">11</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="12">12</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="13">13</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="14">14</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="15">15</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="16">16</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="17">17</th><td><i>**</i></td></tr>
+<tr><th id="18">18</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="19">19</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="20">20</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="21">21</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="22">22</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="23">23</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="24">24</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="25">25</th><td><i>**</i></td></tr>
+<tr><th id="26">26</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="27">27</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="28">28</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="29">29</th><td><i>**</i></td></tr>
+<tr><th id="30">30</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="31">31</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="32">32</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="33">33</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="34">34</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="35">35</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="36">36</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>**</i></td></tr>
+<tr><th id="39">39</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="40">40</th><td><i>**</i></td></tr>
+<tr><th id="41">41</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="43">ifndef</span> <span class="macro" data-ref="_M/Q_QDOC">Q_QDOC</span></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="45">ifndef</span> <a class="macro" href="qobjectdefs.h.html#43" data-ref="_M/QOBJECTDEFS_H">QOBJECTDEFS_H</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#error Do not include qobjectdefs_impl.h directly</u></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="45">endif</span></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="49">if</span> 0</u></td></tr>
+<tr><th id="50">50</th><td><u>#pragma qt_sync_skip_header_check</u></td></tr>
+<tr><th id="51">51</th><td><u>#pragma qt_sync_stop_processing</u></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="49">endif</span></u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><a class="macro" href="qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>namespace</b> <span class="namespace">QtPrivate</span> {</td></tr>
+<tr><th id="58">58</th><td>    <b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::RemoveRef::Type" title='QtPrivate::RemoveRef::Type' data-type='T' data-ref="QtPrivate::RemoveRef::Type">Type</dfn>; };</td></tr>
+<tr><th id="59">59</th><td>    <b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</dfn>&lt;T&amp;&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::RemoveRef{type-parameter-0-0&amp;}::Type" title='QtPrivate::RemoveRef&lt;type-parameter-0-0 &amp;&gt;::Type' data-type='T' data-ref="QtPrivate::RemoveRef{type-parameter-0-0&amp;}::Type">Type</dfn>; };</td></tr>
+<tr><th id="60">60</th><td>    <b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::RemoveConstRef" title='QtPrivate::RemoveConstRef' data-ref="QtPrivate::RemoveConstRef">RemoveConstRef</dfn> { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::RemoveConstRef::Type" title='QtPrivate::RemoveConstRef::Type' data-type='T' data-ref="QtPrivate::RemoveConstRef::Type">Type</dfn>; };</td></tr>
+<tr><th id="61">61</th><td>    <b>template</b> &lt;<b>typename</b> T&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::RemoveConstRef" title='QtPrivate::RemoveConstRef' data-ref="QtPrivate::RemoveConstRef">RemoveConstRef</dfn>&lt;<em>const</em> T&amp;&gt; { <b>typedef</b> T <dfn class="typedef" id="QtPrivate::RemoveConstRef{consttype-parameter-0-0&amp;}::Type" title='QtPrivate::RemoveConstRef&lt;const type-parameter-0-0 &amp;&gt;::Type' data-type='T' data-ref="QtPrivate::RemoveConstRef{consttype-parameter-0-0&amp;}::Type">Type</dfn>; };</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>    <i>/*</i></td></tr>
+<tr><th id="64">64</th><td><i>       The following List classes are used to help to handle the list of arguments.</i></td></tr>
+<tr><th id="65">65</th><td><i>       It follow the same principles as the lisp lists.</i></td></tr>
+<tr><th id="66">66</th><td><i>       List_Left&lt;L,N&gt; take a list and a number as a parameter and returns (via the Value typedef,</i></td></tr>
+<tr><th id="67">67</th><td><i>       the list composed of the first N element of the list</i></td></tr>
+<tr><th id="68">68</th><td><i>     */</i></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="69">ifndef</span> <a class="macro" href="qcompilerdetection.h.html#666" data-ref="_M/Q_COMPILER_VARIADIC_TEMPLATES">Q_COMPILER_VARIADIC_TEMPLATES</a></u></td></tr>
+<tr><th id="70">70</th><td>    <b>template</b> &lt;<b>typename</b> Head, <b>typename</b> Tail&gt; <b>struct</b> List { <b>typedef</b> Head Car; <b>typedef</b> Tail Cdr; };</td></tr>
+<tr><th id="71">71</th><td>    <b>template</b> &lt;<b>typename</b> L, <em>int</em> N&gt; <b>struct</b> List_Left { <b>typedef</b> List&lt;<b>typename</b> L::Car, <b>typename</b> List_Left&lt;<b>typename</b> L::Cdr, N - <var>1</var>&gt;::Value &gt; Value; };</td></tr>
+<tr><th id="72">72</th><td>    <b>template</b> &lt;<b>typename</b> L&gt; <b>struct</b> List_Left&lt;L,<var>0</var>&gt; { <b>typedef</b> <em>void</em> Value; };</td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="69">else</span></u></td></tr>
+<tr><th id="74">74</th><td>    <i>// With variadic template, lists are represented using a variadic template argument instead of the lisp way</i></td></tr>
+<tr><th id="75">75</th><td>    <b>template</b> &lt;<b>typename</b>...&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</dfn> {};</td></tr>
+<tr><th id="76">76</th><td>    <b>template</b> &lt;<b>typename</b> Head, <b>typename</b>... Tail&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</dfn>&lt;Head, Tail...&gt; { <b>typedef</b> Head <dfn class="typedef" id="QtPrivate::List{type-parameter-0-0,type-parameter-0-1...}::Car" title='QtPrivate::List&lt;type-parameter-0-0, type-parameter-0-1...&gt;::Car' data-type='Head' data-ref="QtPrivate::List{type-parameter-0-0,type-parameter-0-1...}::Car">Car</dfn>; <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Tail...&gt; <dfn class="typedef" id="QtPrivate::List{type-parameter-0-0,type-parameter-0-1...}::Cdr" title='QtPrivate::List&lt;type-parameter-0-0, type-parameter-0-1...&gt;::Cdr' data-type='List&lt;Tail...&gt;' data-ref="QtPrivate::List{type-parameter-0-0,type-parameter-0-1...}::Cdr">Cdr</dfn>; };</td></tr>
+<tr><th id="77">77</th><td>    <b>template</b> &lt;<b>typename</b>, <b>typename</b>&gt; <b>struct</b> <dfn class="type" id="QtPrivate::List_Append" title='QtPrivate::List_Append' data-ref="QtPrivate::List_Append">List_Append</dfn>;</td></tr>
+<tr><th id="78">78</th><td>    <b>template</b> &lt;<b>typename</b>... L1, <b>typename</b>...L2&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List_Append" title='QtPrivate::List_Append' data-ref="QtPrivate::List_Append">List_Append</dfn>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;L1...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;L2...&gt;&gt; { <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;L1..., L2...&gt; <dfn class="typedef" id="QtPrivate::List_Append{List{type-parameter-0-0...},List{type-parameter-0-1...}}::Value" title='QtPrivate::List_Append&lt;List&lt;type-parameter-0-0...&gt;, List&lt;type-parameter-0-1...&gt; &gt;::Value' data-type='List&lt;L1..., L2...&gt;' data-ref="QtPrivate::List_Append{List{type-parameter-0-0...},List{type-parameter-0-1...}}::Value">Value</dfn>; };</td></tr>
+<tr><th id="79">79</th><td>    <b>template</b> &lt;<b>typename</b> L, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List_Left" title='QtPrivate::List_Left' data-ref="QtPrivate::List_Left">List_Left</dfn> {</td></tr>
+<tr><th id="80">80</th><td>        <b>typedef</b> <b>typename</b> <a class="type" href="#QtPrivate::List_Append" title='QtPrivate::List_Append' data-ref="QtPrivate::List_Append">List_Append</a>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;<b>typename</b> L::Car&gt;,<b>typename</b> <a class="type" href="#QtPrivate::List_Left" title='QtPrivate::List_Left' data-ref="QtPrivate::List_Left">List_Left</a>&lt;<b>typename</b> L::Cdr, <a class="tu ref" href="#QtPrivate::List_Left::N" title='QtPrivate::List_Left::N' data-use='r' data-ref="QtPrivate::List_Left::N">N</a> - <var>1</var>&gt;::Value&gt;::Value <dfn class="typedef" id="QtPrivate::List_Left::Value" title='QtPrivate::List_Left::Value' data-type='typename List_Append&lt;List&lt;typename L::Car&gt;, typename List_Left&lt;typename L::Cdr, N - 1&gt;::Value&gt;::Value' data-ref="QtPrivate::List_Left::Value">Value</dfn>;</td></tr>
+<tr><th id="81">81</th><td>    };</td></tr>
+<tr><th id="82">82</th><td>    <b>template</b> &lt;<b>typename</b> L&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List_Left" title='QtPrivate::List_Left' data-ref="QtPrivate::List_Left">List_Left</dfn>&lt;L, <var>0</var>&gt; { <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;&gt; <dfn class="typedef" id="QtPrivate::List_Left{type-parameter-0-0,0}::Value" title='QtPrivate::List_Left&lt;type-parameter-0-0, 0&gt;::Value' data-type='List&lt;&gt;' data-ref="QtPrivate::List_Left{type-parameter-0-0,0}::Value">Value</dfn>; };</td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="69">endif</span></u></td></tr>
+<tr><th id="84">84</th><td>    <i>// List_Select&lt;L,N&gt; returns (via typedef Value) the Nth element of the list L</i></td></tr>
+<tr><th id="85">85</th><td>    <b>template</b> &lt;<b>typename</b> L, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List_Select" title='QtPrivate::List_Select' data-ref="QtPrivate::List_Select">List_Select</dfn> { <b>typedef</b> <b>typename</b> <a class="type" href="#QtPrivate::List_Select" title='QtPrivate::List_Select' data-ref="QtPrivate::List_Select">List_Select</a>&lt;<b>typename</b> L::Cdr, <a class="tu ref" href="#QtPrivate::List_Select::N" title='QtPrivate::List_Select::N' data-use='r' data-ref="QtPrivate::List_Select::N">N</a> - <var>1</var>&gt;::Value <dfn class="typedef" id="QtPrivate::List_Select::Value" title='QtPrivate::List_Select::Value' data-type='typename List_Select&lt;typename L::Cdr, N - 1&gt;::Value' data-ref="QtPrivate::List_Select::Value">Value</dfn>; };</td></tr>
+<tr><th id="86">86</th><td>    <b>template</b> &lt;<b>typename</b> L&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::List_Select" title='QtPrivate::List_Select' data-ref="QtPrivate::List_Select">List_Select</dfn>&lt;L,<var>0</var>&gt; { <b>typedef</b> <b>typename</b> L::Car <dfn class="typedef" id="QtPrivate::List_Select{type-parameter-0-0,0}::Value" title='QtPrivate::List_Select&lt;type-parameter-0-0, 0&gt;::Value' data-type='typename L::Car' data-ref="QtPrivate::List_Select{type-parameter-0-0,0}::Value">Value</dfn>; };</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <i>/*</i></td></tr>
+<tr><th id="89">89</th><td><i>       trick to set the return value of a slot that works even if the signal or the slot returns void</i></td></tr>
+<tr><th id="90">90</th><td><i>       to be used like     function(), ApplyReturnValue&lt;ReturnType&gt;(&amp;return_value)</i></td></tr>
+<tr><th id="91">91</th><td><i>       if function() returns a value, the operator,(T, ApplyReturnValue&lt;ReturnType&gt;) is called, but if it</i></td></tr>
+<tr><th id="92">92</th><td><i>       returns void, the builtin one is used without an error.</i></td></tr>
+<tr><th id="93">93</th><td><i>    */</i></td></tr>
+<tr><th id="94">94</th><td>    <b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="95">95</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</dfn> {</td></tr>
+<tr><th id="96">96</th><td>        <em>void</em> *<dfn class="decl" id="QtPrivate::ApplyReturnValue::data" title='QtPrivate::ApplyReturnValue::data' data-ref="QtPrivate::ApplyReturnValue::data">data</dfn>;</td></tr>
+<tr><th id="97">97</th><td>        <b>explicit</b> <dfn class="decl def" id="_ZN9QtPrivate16ApplyReturnValueC1EPv" title='QtPrivate::ApplyReturnValue::ApplyReturnValue&lt;T&gt;' data-ref="_ZN9QtPrivate16ApplyReturnValueC1EPv">ApplyReturnValue</dfn>(<em>void</em> *<dfn class="local col1 decl" id="1data_" title='data_' data-type='void *' data-ref="1data_">data_</dfn>) : <a class="member" href="#QtPrivate::ApplyReturnValue::data" title='QtPrivate::ApplyReturnValue::data' data-ref="QtPrivate::ApplyReturnValue::data">data</a>(<a class="local col1 ref" href="#1data_" title='data_' data-ref="1data_">data_</a>) {}</td></tr>
+<tr><th id="98">98</th><td>    };</td></tr>
+<tr><th id="99">99</th><td>    <b>template</b>&lt;<b>typename</b> T, <b>typename</b> U&gt;</td></tr>
+<tr><th id="100">100</th><td>    <em>void</em> <dfn class="decl def" id="_ZN9QtPrivatecmERKT_RKNS_16ApplyReturnValueIT0_EE" title='QtPrivate::operator,' data-ref="_ZN9QtPrivatecmERKT_RKNS_16ApplyReturnValueIT0_EE"><b>operator</b>,</dfn>(<em>const</em> T &amp;<dfn class="local col2 decl" id="2value" title='value' data-type='const T &amp;' data-ref="2value">value</dfn>, <em>const</em> <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;U&gt; &amp;<dfn class="local col3 decl" id="3container" title='container' data-type='const ApplyReturnValue&lt;U&gt; &amp;' data-ref="3container">container</dfn>) {</td></tr>
+<tr><th id="101">101</th><td>        <b>if</b> (<a class="local col3 ref" href="#3container" title='container' data-ref="3container">container</a>.data)</td></tr>
+<tr><th id="102">102</th><td>            *<b>reinterpret_cast</b>&lt;U*&gt;(<a class="local col3 ref" href="#3container" title='container' data-ref="3container">container</a>.data) = <a class="local col2 ref" href="#2value" title='value' data-ref="2value">value</a>;</td></tr>
+<tr><th id="103">103</th><td>    }</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="104">ifdef</span> <a class="macro" href="qcompilerdetection.h.html#645" data-ref="_M/Q_COMPILER_RVALUE_REFS">Q_COMPILER_RVALUE_REFS</a></u></td></tr>
+<tr><th id="105">105</th><td>    <b>template</b>&lt;<b>typename</b> T, <b>typename</b> U&gt;</td></tr>
+<tr><th id="106">106</th><td>    <em>void</em> <dfn class="decl def" id="_ZN9QtPrivatecmEOT_RKNS_16ApplyReturnValueIT0_EE" title='QtPrivate::operator,' data-ref="_ZN9QtPrivatecmEOT_RKNS_16ApplyReturnValueIT0_EE"><b>operator</b>,</dfn>(T &amp;&amp;<dfn class="local col4 decl" id="4value" title='value' data-type='T &amp;&amp;' data-ref="4value">value</dfn>, <em>const</em> <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;U&gt; &amp;<dfn class="local col5 decl" id="5container" title='container' data-type='const ApplyReturnValue&lt;U&gt; &amp;' data-ref="5container">container</dfn>) {</td></tr>
+<tr><th id="107">107</th><td>        <b>if</b> (<a class="local col5 ref" href="#5container" title='container' data-ref="5container">container</a>.data)</td></tr>
+<tr><th id="108">108</th><td>            *<b>reinterpret_cast</b>&lt;U*&gt;(<a class="local col5 ref" href="#5container" title='container' data-ref="5container">container</a>.data) = <a class="local col4 ref" href="#4value" title='value' data-ref="4value">value</a>;</td></tr>
+<tr><th id="109">109</th><td>    }</td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="104">endif</span></u></td></tr>
+<tr><th id="111">111</th><td>    <b>template</b>&lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="112">112</th><td>    <em>void</em> <dfn class="decl def" id="_ZN9QtPrivatecmET_RKNS_16ApplyReturnValueIvEE" title='QtPrivate::operator,' data-ref="_ZN9QtPrivatecmET_RKNS_16ApplyReturnValueIvEE"><b>operator</b>,</dfn>(T, <em>const</em> <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;<em>void</em>&gt; &amp;) {}</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>    <i>/*</i></td></tr>
+<tr><th id="116">116</th><td><i>      The FunctionPointer&lt;Func&gt; struct is a type trait for function pointer.</i></td></tr>
+<tr><th id="117">117</th><td><i>        - ArgumentCount  is the number of argument, or -1 if it is unknown</i></td></tr>
+<tr><th id="118">118</th><td><i>        - the Object typedef is the Object of a pointer to member function</i></td></tr>
+<tr><th id="119">119</th><td><i>        - the Arguments typedef is the list of argument (in a QtPrivate::List)</i></td></tr>
+<tr><th id="120">120</th><td><i>        - the Function typedef is an alias to the template parameter Func</i></td></tr>
+<tr><th id="121">121</th><td><i>        - the call&lt;Args, R&gt;(f,o,args) method is used to call that slot</i></td></tr>
+<tr><th id="122">122</th><td><i>            Args is the list of argument of the signal</i></td></tr>
+<tr><th id="123">123</th><td><i>            R is the return type of the signal</i></td></tr>
+<tr><th id="124">124</th><td><i>            f is the function pointer</i></td></tr>
+<tr><th id="125">125</th><td><i>            o is the receiver object</i></td></tr>
+<tr><th id="126">126</th><td><i>            and args is the array of pointer to arguments, as used in qt_metacall</i></td></tr>
+<tr><th id="127">127</th><td><i></i></td></tr>
+<tr><th id="128">128</th><td><i>       The Functor&lt;Func,N&gt; struct is the helper to call a functor of N argument.</i></td></tr>
+<tr><th id="129">129</th><td><i>       its call function is the same as the FunctionPointer::call function.</i></td></tr>
+<tr><th id="130">130</th><td><i>     */</i></td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="131">ifndef</span> <a class="macro" href="qcompilerdetection.h.html#666" data-ref="_M/Q_COMPILER_VARIADIC_TEMPLATES">Q_COMPILER_VARIADIC_TEMPLATES</a></u></td></tr>
+<tr><th id="132">132</th><td>    <b>template</b>&lt;<b>typename</b> Func&gt; <b>struct</b> FunctionPointer { <b>enum</b> {ArgumentCount = -<var>1</var>, IsPointerToMemberFunction = <b>false</b>}; };</td></tr>
+<tr><th id="133">133</th><td>    <i>//Pointers to member functions</i></td></tr>
+<tr><th id="134">134</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) ()&gt;</td></tr>
+<tr><th id="135">135</th><td>    {</td></tr>
+<tr><th id="136">136</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="137">137</th><td>        <b>typedef</b> <em>void</em> Arguments;</td></tr>
+<tr><th id="138">138</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="139">139</th><td>        <b>typedef</b> Ret (Obj::*Function) ();</td></tr>
+<tr><th id="140">140</th><td>        <b>enum</b> {ArgumentCount = <var>0</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="141">141</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="142">142</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) { (o-&gt;*f)(), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="143">143</th><td>    };</td></tr>
+<tr><th id="144">144</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1)&gt;</td></tr>
+<tr><th id="145">145</th><td>    {</td></tr>
+<tr><th id="146">146</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="147">147</th><td>        <b>typedef</b> List&lt;Arg1, <em>void</em>&gt; Arguments;</td></tr>
+<tr><th id="148">148</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="149">149</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1);</td></tr>
+<tr><th id="150">150</th><td>        <b>enum</b> {ArgumentCount = <var>1</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="151">151</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="152">152</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="153">153</th><td>            (o-&gt;*f)((*<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> Args::Car&gt;::Type *&gt;(arg[<var>1</var>]))), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="154">154</th><td>        }</td></tr>
+<tr><th id="155">155</th><td>    };</td></tr>
+<tr><th id="156">156</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2)&gt;</td></tr>
+<tr><th id="157">157</th><td>    {</td></tr>
+<tr><th id="158">158</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="159">159</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, <em>void</em>&gt; &gt;  Arguments;</td></tr>
+<tr><th id="160">160</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="161">161</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2);</td></tr>
+<tr><th id="162">162</th><td>        <b>enum</b> {ArgumentCount = <var>2</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="163">163</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="164">164</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="165">165</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="166">166</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="167">167</th><td>        }</td></tr>
+<tr><th id="168">168</th><td>    };</td></tr>
+<tr><th id="169">169</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3)&gt;</td></tr>
+<tr><th id="170">170</th><td>    {</td></tr>
+<tr><th id="171">171</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="172">172</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, <em>void</em>&gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="173">173</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="174">174</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3);</td></tr>
+<tr><th id="175">175</th><td>        <b>enum</b> {ArgumentCount = <var>3</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="176">176</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="177">177</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="178">178</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="179">179</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="180">180</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="181">181</th><td>        }</td></tr>
+<tr><th id="182">182</th><td>    };</td></tr>
+<tr><th id="183">183</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4)&gt;</td></tr>
+<tr><th id="184">184</th><td>    {</td></tr>
+<tr><th id="185">185</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="186">186</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, <em>void</em>&gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="187">187</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="188">188</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4);</td></tr>
+<tr><th id="189">189</th><td>        <b>enum</b> {ArgumentCount = <var>4</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="190">190</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="191">191</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="192">192</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="193">193</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="194">194</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="195">195</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="196">196</th><td>        }</td></tr>
+<tr><th id="197">197</th><td>    };</td></tr>
+<tr><th id="198">198</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4, Arg5)&gt;</td></tr>
+<tr><th id="199">199</th><td>    {</td></tr>
+<tr><th id="200">200</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="201">201</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, List&lt;Arg5, <em>void</em>&gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="202">202</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="203">203</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4, Arg5);</td></tr>
+<tr><th id="204">204</th><td>        <b>enum</b> {ArgumentCount = <var>5</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="205">205</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="206">206</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="207">207</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="208">208</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="209">209</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="210">210</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="211">211</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="212">212</th><td>        }</td></tr>
+<tr><th id="213">213</th><td>    };</td></tr>
+<tr><th id="214">214</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5, <b>typename</b> Arg6&gt;</td></tr>
+<tr><th id="215">215</th><td>    <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6)&gt;</td></tr>
+<tr><th id="216">216</th><td>    {</td></tr>
+<tr><th id="217">217</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="218">218</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, List&lt;Arg5, List&lt;Arg6, <em>void</em>&gt; &gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="219">219</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="220">220</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6);</td></tr>
+<tr><th id="221">221</th><td>        <b>enum</b> {ArgumentCount = <var>6</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="222">222</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="223">223</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="224">224</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="225">225</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="226">226</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="227">227</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="228">228</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>]),</td></tr>
+<tr><th id="229">229</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>5</var>&gt;::Value&gt;::Type *&gt;(arg[<var>6</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="230">230</th><td>        }</td></tr>
+<tr><th id="231">231</th><td>    };</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td>    <i>//Pointers to const member functions</i></td></tr>
+<tr><th id="234">234</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) () <em>const</em>&gt;</td></tr>
+<tr><th id="235">235</th><td>    {</td></tr>
+<tr><th id="236">236</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="237">237</th><td>        <b>typedef</b> <em>void</em> Arguments;</td></tr>
+<tr><th id="238">238</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="239">239</th><td>        <b>typedef</b> Ret (Obj::*Function) () <em>const</em>;</td></tr>
+<tr><th id="240">240</th><td>        <b>enum</b> {ArgumentCount = <var>0</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="241">241</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="242">242</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) { (o-&gt;*f)(), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="243">243</th><td>    };</td></tr>
+<tr><th id="244">244</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1) <em>const</em>&gt;</td></tr>
+<tr><th id="245">245</th><td>    {</td></tr>
+<tr><th id="246">246</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="247">247</th><td>        <b>typedef</b> List&lt;Arg1, <em>void</em>&gt; Arguments;</td></tr>
+<tr><th id="248">248</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="249">249</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1) <em>const</em>;</td></tr>
+<tr><th id="250">250</th><td>        <b>enum</b> {ArgumentCount = <var>1</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="251">251</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="252">252</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="253">253</th><td>            (o-&gt;*f)((*<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> Args::Car&gt;::Type *&gt;(arg[<var>1</var>]))), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="254">254</th><td>        }</td></tr>
+<tr><th id="255">255</th><td>    };</td></tr>
+<tr><th id="256">256</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2) <em>const</em>&gt;</td></tr>
+<tr><th id="257">257</th><td>    {</td></tr>
+<tr><th id="258">258</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="259">259</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, <em>void</em>&gt; &gt;  Arguments;</td></tr>
+<tr><th id="260">260</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="261">261</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2) <em>const</em>;</td></tr>
+<tr><th id="262">262</th><td>        <b>enum</b> {ArgumentCount = <var>2</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="263">263</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="264">264</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="265">265</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="266">266</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="267">267</th><td>        }</td></tr>
+<tr><th id="268">268</th><td>    };</td></tr>
+<tr><th id="269">269</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3) <em>const</em>&gt;</td></tr>
+<tr><th id="270">270</th><td>    {</td></tr>
+<tr><th id="271">271</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="272">272</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, <em>void</em>&gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="273">273</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="274">274</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3) <em>const</em>;</td></tr>
+<tr><th id="275">275</th><td>        <b>enum</b> {ArgumentCount = <var>3</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="276">276</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="277">277</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="278">278</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="279">279</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="280">280</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="281">281</th><td>        }</td></tr>
+<tr><th id="282">282</th><td>    };</td></tr>
+<tr><th id="283">283</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4) <em>const</em>&gt;</td></tr>
+<tr><th id="284">284</th><td>    {</td></tr>
+<tr><th id="285">285</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="286">286</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, <em>void</em>&gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="287">287</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="288">288</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4) <em>const</em>;</td></tr>
+<tr><th id="289">289</th><td>        <b>enum</b> {ArgumentCount = <var>4</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="290">290</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="291">291</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="292">292</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="293">293</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="294">294</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="295">295</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="296">296</th><td>        }</td></tr>
+<tr><th id="297">297</th><td>    };</td></tr>
+<tr><th id="298">298</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5&gt; <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4, Arg5) <em>const</em>&gt;</td></tr>
+<tr><th id="299">299</th><td>    {</td></tr>
+<tr><th id="300">300</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="301">301</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, List&lt;Arg5, <em>void</em>&gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="302">302</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="303">303</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4, Arg5) <em>const</em>;</td></tr>
+<tr><th id="304">304</th><td>        <b>enum</b> {ArgumentCount = <var>5</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="305">305</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="306">306</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="307">307</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="308">308</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="309">309</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="310">310</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="311">311</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="312">312</th><td>        }</td></tr>
+<tr><th id="313">313</th><td>    };</td></tr>
+<tr><th id="314">314</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5, <b>typename</b> Arg6&gt;</td></tr>
+<tr><th id="315">315</th><td>    <b>struct</b> FunctionPointer&lt;Ret (Obj::*) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6) <em>const</em>&gt;</td></tr>
+<tr><th id="316">316</th><td>    {</td></tr>
+<tr><th id="317">317</th><td>        <b>typedef</b> Obj Object;</td></tr>
+<tr><th id="318">318</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, List&lt;Arg5, List&lt;Arg6, <em>void</em>&gt; &gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="319">319</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="320">320</th><td>        <b>typedef</b> Ret (Obj::*Function) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6) <em>const</em>;</td></tr>
+<tr><th id="321">321</th><td>        <b>enum</b> {ArgumentCount = <var>6</var>, IsPointerToMemberFunction = <b>true</b>};</td></tr>
+<tr><th id="322">322</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="323">323</th><td>        <em>static</em> <em>void</em> call(Function f, Obj *o, <em>void</em> **arg) {</td></tr>
+<tr><th id="324">324</th><td>            (o-&gt;*f)( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="325">325</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="326">326</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="327">327</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="328">328</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>]),</td></tr>
+<tr><th id="329">329</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>5</var>&gt;::Value&gt;::Type *&gt;(arg[<var>6</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="330">330</th><td>        }</td></tr>
+<tr><th id="331">331</th><td>    };</td></tr>
+<tr><th id="332">332</th><td></td></tr>
+<tr><th id="333">333</th><td>    <i>//Static functions</i></td></tr>
+<tr><th id="334">334</th><td>    <b>template</b>&lt;<b>typename</b> Ret&gt; <b>struct</b> FunctionPointer&lt;Ret (*) ()&gt;</td></tr>
+<tr><th id="335">335</th><td>    {</td></tr>
+<tr><th id="336">336</th><td>        <b>typedef</b> <em>void</em> Arguments;</td></tr>
+<tr><th id="337">337</th><td>        <b>typedef</b> Ret (*Function) ();</td></tr>
+<tr><th id="338">338</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="339">339</th><td>        <b>enum</b> {ArgumentCount = <var>0</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="340">340</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="341">341</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) { f(), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="342">342</th><td>    };</td></tr>
+<tr><th id="343">343</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1)&gt;</td></tr>
+<tr><th id="344">344</th><td>    {</td></tr>
+<tr><th id="345">345</th><td>        <b>typedef</b> List&lt;Arg1, <em>void</em>&gt; Arguments;</td></tr>
+<tr><th id="346">346</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="347">347</th><td>        <b>typedef</b> Ret (*Function) (Arg1);</td></tr>
+<tr><th id="348">348</th><td>        <b>enum</b> {ArgumentCount = <var>1</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="349">349</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="350">350</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg)</td></tr>
+<tr><th id="351">351</th><td>        { f(*<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="352">352</th><td>    };</td></tr>
+<tr><th id="353">353</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1, Arg2)&gt;</td></tr>
+<tr><th id="354">354</th><td>    {</td></tr>
+<tr><th id="355">355</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, <em>void</em>&gt; &gt; Arguments;</td></tr>
+<tr><th id="356">356</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="357">357</th><td>        <b>typedef</b> Ret (*Function) (Arg1, Arg2);</td></tr>
+<tr><th id="358">358</th><td>        <b>enum</b> {ArgumentCount = <var>2</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="359">359</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="360">360</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="361">361</th><td>            f(*<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="362">362</th><td>              *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="363">363</th><td>    };</td></tr>
+<tr><th id="364">364</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1, Arg2, Arg3)&gt;</td></tr>
+<tr><th id="365">365</th><td>    {</td></tr>
+<tr><th id="366">366</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, <em>void</em>&gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="367">367</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="368">368</th><td>        <b>typedef</b> Ret (*Function) (Arg1, Arg2, Arg3);</td></tr>
+<tr><th id="369">369</th><td>        <b>enum</b> {ArgumentCount = <var>3</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="370">370</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="371">371</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="372">372</th><td>            f(       *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="373">373</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="374">374</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="375">375</th><td>        }</td></tr>
+<tr><th id="376">376</th><td>    };</td></tr>
+<tr><th id="377">377</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1, Arg2, Arg3, Arg4)&gt;</td></tr>
+<tr><th id="378">378</th><td>    {</td></tr>
+<tr><th id="379">379</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, <em>void</em>&gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="380">380</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="381">381</th><td>        <b>typedef</b> Ret (*Function) (Arg1, Arg2, Arg3, Arg4);</td></tr>
+<tr><th id="382">382</th><td>        <b>enum</b> {ArgumentCount = <var>4</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="383">383</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="384">384</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="385">385</th><td>            f(       *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="386">386</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="387">387</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="388">388</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="389">389</th><td>        }</td></tr>
+<tr><th id="390">390</th><td>    };</td></tr>
+<tr><th id="391">391</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1, Arg2, Arg3, Arg4, Arg5)&gt;</td></tr>
+<tr><th id="392">392</th><td>    {</td></tr>
+<tr><th id="393">393</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3,</td></tr>
+<tr><th id="394">394</th><td>        List&lt;Arg4, List&lt;Arg5, <em>void</em> &gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="395">395</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="396">396</th><td>        <b>typedef</b> Ret (*Function) (Arg1, Arg2, Arg3, Arg4, Arg5);</td></tr>
+<tr><th id="397">397</th><td>        <b>enum</b> {ArgumentCount = <var>5</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="398">398</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="399">399</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="400">400</th><td>            f(       *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="401">401</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="402">402</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="403">403</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="404">404</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="405">405</th><td>        }</td></tr>
+<tr><th id="406">406</th><td>    };</td></tr>
+<tr><th id="407">407</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Arg3, <b>typename</b> Arg4, <b>typename</b> Arg5, <b>typename</b> Arg6&gt; <b>struct</b> FunctionPointer&lt;Ret (*) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6)&gt;</td></tr>
+<tr><th id="408">408</th><td>    {</td></tr>
+<tr><th id="409">409</th><td>        <b>typedef</b> List&lt;Arg1, List&lt;Arg2, List&lt;Arg3, List&lt;Arg4, List&lt;Arg5, List&lt;Arg6, <em>void</em>&gt; &gt; &gt; &gt; &gt; &gt;  Arguments;</td></tr>
+<tr><th id="410">410</th><td>        <b>typedef</b> Ret ReturnType;</td></tr>
+<tr><th id="411">411</th><td>        <b>typedef</b> Ret (*Function) (Arg1, Arg2, Arg3, Arg4, Arg5, Arg6);</td></tr>
+<tr><th id="412">412</th><td>        <b>enum</b> {ArgumentCount = <var>6</var>, IsPointerToMemberFunction = <b>false</b>};</td></tr>
+<tr><th id="413">413</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="414">414</th><td>        <em>static</em> <em>void</em> call(Function f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="415">415</th><td>            f(       *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="416">416</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="417">417</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="418">418</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="419">419</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>]),</td></tr>
+<tr><th id="420">420</th><td>                     *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>5</var>&gt;::Value&gt;::Type *&gt;(arg[<var>6</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="421">421</th><td>        }</td></tr>
+<tr><th id="422">422</th><td>    };</td></tr>
+<tr><th id="423">423</th><td></td></tr>
+<tr><th id="424">424</th><td>    <i>//Functors</i></td></tr>
+<tr><th id="425">425</th><td>    <b>template</b>&lt;<b>typename</b> F, <em>int</em> N&gt; <b>struct</b> Functor;</td></tr>
+<tr><th id="426">426</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>0</var>&gt;</td></tr>
+<tr><th id="427">427</th><td>    {</td></tr>
+<tr><th id="428">428</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="429">429</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) { f(), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]); }</td></tr>
+<tr><th id="430">430</th><td>    };</td></tr>
+<tr><th id="431">431</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>1</var>&gt;</td></tr>
+<tr><th id="432">432</th><td>    {</td></tr>
+<tr><th id="433">433</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="434">434</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="435">435</th><td>            f(*<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="436">436</th><td>        }</td></tr>
+<tr><th id="437">437</th><td>    };</td></tr>
+<tr><th id="438">438</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>2</var>&gt;</td></tr>
+<tr><th id="439">439</th><td>    {</td></tr>
+<tr><th id="440">440</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="441">441</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="442">442</th><td>            f( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="443">443</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="444">444</th><td>        }</td></tr>
+<tr><th id="445">445</th><td>    };</td></tr>
+<tr><th id="446">446</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>3</var>&gt;</td></tr>
+<tr><th id="447">447</th><td>    {</td></tr>
+<tr><th id="448">448</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="449">449</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="450">450</th><td>            f( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="451">451</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="452">452</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="453">453</th><td>        }</td></tr>
+<tr><th id="454">454</th><td>    };</td></tr>
+<tr><th id="455">455</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>4</var>&gt;</td></tr>
+<tr><th id="456">456</th><td>    {</td></tr>
+<tr><th id="457">457</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="458">458</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="459">459</th><td>            f( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="460">460</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="461">461</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="462">462</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="463">463</th><td>        }</td></tr>
+<tr><th id="464">464</th><td>    };</td></tr>
+<tr><th id="465">465</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>5</var>&gt;</td></tr>
+<tr><th id="466">466</th><td>    {</td></tr>
+<tr><th id="467">467</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="468">468</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="469">469</th><td>            f( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="470">470</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="471">471</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="472">472</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="473">473</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="474">474</th><td>        }</td></tr>
+<tr><th id="475">475</th><td>    };</td></tr>
+<tr><th id="476">476</th><td>    <b>template</b>&lt;<b>typename</b> Function&gt; <b>struct</b> Functor&lt;Function, <var>6</var>&gt;</td></tr>
+<tr><th id="477">477</th><td>    {</td></tr>
+<tr><th id="478">478</th><td>        <b>template</b> &lt;<b>typename</b> Args, <b>typename</b> R&gt;</td></tr>
+<tr><th id="479">479</th><td>        <em>static</em> <em>void</em> call(Function &amp;f, <em>void</em> *, <em>void</em> **arg) {</td></tr>
+<tr><th id="480">480</th><td>            f( *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>0</var>&gt;::Value&gt;::Type *&gt;(arg[<var>1</var>]),</td></tr>
+<tr><th id="481">481</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>1</var>&gt;::Value&gt;::Type *&gt;(arg[<var>2</var>]),</td></tr>
+<tr><th id="482">482</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>2</var>&gt;::Value&gt;::Type *&gt;(arg[<var>3</var>]),</td></tr>
+<tr><th id="483">483</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>3</var>&gt;::Value&gt;::Type *&gt;(arg[<var>4</var>]),</td></tr>
+<tr><th id="484">484</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>4</var>&gt;::Value&gt;::Type *&gt;(arg[<var>5</var>]),</td></tr>
+<tr><th id="485">485</th><td>               *<b>reinterpret_cast</b>&lt;<b>typename</b> RemoveRef&lt;<b>typename</b> List_Select&lt;Args, <var>5</var>&gt;::Value&gt;::Type *&gt;(arg[<var>6</var>])), ApplyReturnValue&lt;R&gt;(arg[<var>0</var>]);</td></tr>
+<tr><th id="486">486</th><td>        }</td></tr>
+<tr><th id="487">487</th><td>    };</td></tr>
+<tr><th id="488">488</th><td><u>#<span data-ppcond="131">else</span></u></td></tr>
+<tr><th id="489">489</th><td>    <b>template</b> &lt;<em>int</em>...&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</dfn> {};</td></tr>
+<tr><th id="490">490</th><td>    <b>template</b> &lt;<b>typename</b> IndexList, <em>int</em> Right&gt; <b>struct</b> <dfn class="type" id="QtPrivate::IndexesAppend" title='QtPrivate::IndexesAppend' data-ref="QtPrivate::IndexesAppend">IndexesAppend</dfn>;</td></tr>
+<tr><th id="491">491</th><td>    <b>template</b> &lt;<em>int</em>... Left, <em>int</em> Right&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::IndexesAppend" title='QtPrivate::IndexesAppend' data-ref="QtPrivate::IndexesAppend">IndexesAppend</dfn>&lt;<a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;<a class="tu ref" href="#QtPrivate::IndexesAppend{IndexesList{...},Right}::Left" title='QtPrivate::IndexesAppend&lt;IndexesList&lt;...&gt;, Right&gt;::Left' data-ref="QtPrivate::IndexesAppend{IndexesList{...},Right}::Left">Left</a>...&gt;, <a class="tu ref" href="#QtPrivate::IndexesAppend{IndexesList{...},Right}::Right" title='QtPrivate::IndexesAppend&lt;IndexesList&lt;...&gt;, Right&gt;::Right' data-ref="QtPrivate::IndexesAppend{IndexesList{...},Right}::Right">Right</a>&gt;</td></tr>
+<tr><th id="492">492</th><td>    { <b>typedef</b> <a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;<a class="tu ref" href="#QtPrivate::IndexesAppend{IndexesList{...},Right}::Left" title='QtPrivate::IndexesAppend&lt;IndexesList&lt;...&gt;, Right&gt;::Left' data-ref="QtPrivate::IndexesAppend{IndexesList{...},Right}::Left">Left</a>..., <a class="tu ref" href="#QtPrivate::IndexesAppend{IndexesList{...},Right}::Right" title='QtPrivate::IndexesAppend&lt;IndexesList&lt;...&gt;, Right&gt;::Right' data-ref="QtPrivate::IndexesAppend{IndexesList{...},Right}::Right">Right</a>&gt; <dfn class="typedef" id="QtPrivate::IndexesAppend{IndexesList{...},Right}::Value" title='QtPrivate::IndexesAppend&lt;IndexesList&lt;...&gt;, Right&gt;::Value' data-type='IndexesList&lt;Left..., Right&gt;' data-ref="QtPrivate::IndexesAppend{IndexesList{...},Right}::Value">Value</dfn>; };</td></tr>
+<tr><th id="493">493</th><td>    <b>template</b> &lt;<em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</dfn></td></tr>
+<tr><th id="494">494</th><td>    { <b>typedef</b> <b>typename</b> <a class="type" href="#QtPrivate::IndexesAppend" title='QtPrivate::IndexesAppend' data-ref="QtPrivate::IndexesAppend">IndexesAppend</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a>&lt;<a class="tu ref" href="#QtPrivate::Indexes::N" title='QtPrivate::Indexes::N' data-use='r' data-ref="QtPrivate::Indexes::N">N</a> - <var>1</var>&gt;::Value, <a class="tu ref" href="#QtPrivate::Indexes::N" title='QtPrivate::Indexes::N' data-use='r' data-ref="QtPrivate::Indexes::N">N</a> - <var>1</var>&gt;::Value <dfn class="typedef" id="QtPrivate::Indexes::Value" title='QtPrivate::Indexes::Value' data-type='typename IndexesAppend&lt;typename Indexes&lt;N - 1&gt;::Value, N - 1&gt;::Value' data-ref="QtPrivate::Indexes::Value">Value</dfn>; };</td></tr>
+<tr><th id="495">495</th><td>    <b>template</b> &lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes"><a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a></dfn>&lt;<var>0</var>&gt; { <b>typedef</b> <a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;&gt; <dfn class="typedef" id="QtPrivate::Indexes{0}::Value" title='QtPrivate::Indexes&lt;0&gt;::Value' data-type='IndexesList&lt;&gt;' data-ref="QtPrivate::Indexes{0}::Value">Value</dfn>; };</td></tr>
+<tr><th id="496">496</th><td>    <b>template</b>&lt;<b>typename</b> Func&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::FunctionPointer" title='QtPrivate::FunctionPointer' data-ref="QtPrivate::FunctionPointer">FunctionPointer</dfn> { <b>enum</b> {<dfn class="enum" id="QtPrivate::FunctionPointer::::ArgumentCount" title='QtPrivate::FunctionPointer::::ArgumentCount' data-ref="QtPrivate::FunctionPointer::::ArgumentCount">ArgumentCount</dfn> = -<var>1</var>, <dfn class="enum" id="QtPrivate::FunctionPointer::::IsPointerToMemberFunction" title='QtPrivate::FunctionPointer::::IsPointerToMemberFunction' data-ref="QtPrivate::FunctionPointer::::IsPointerToMemberFunction">IsPointerToMemberFunction</dfn> = <b>false</b>}; };</td></tr>
+<tr><th id="497">497</th><td></td></tr>
+<tr><th id="498">498</th><td>    <b>template</b> &lt;<b>typename</b>, <b>typename</b>, <b>typename</b>, <b>typename</b>&gt; <b>struct</b> <dfn class="type" id="QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</dfn>;</td></tr>
+<tr><th id="499">499</th><td>    <b>template</b> &lt;<em>int</em>... II, <b>typename</b>... SignalArgs, <b>typename</b> R, <b>typename</b> Function&gt;</td></tr>
+<tr><th id="500">500</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</dfn>&lt;<a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;<a class="tu ref" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-3}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-3&gt;::II' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-3}::II">II</a>...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;SignalArgs...&gt;, R, Function&gt; {</td></tr>
+<tr><th id="501">501</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_T2_E4callES8_PPv" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-3&gt;::call' data-ref="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_T2_E4callES8_PPv">call</dfn>(Function <dfn class="local col6 decl" id="6f" title='f' data-type='Function' data-ref="6f">f</dfn>, <em>void</em> **<dfn class="local col7 decl" id="7arg" title='arg' data-type='void **' data-ref="7arg">arg</dfn>) {</td></tr>
+<tr><th id="502">502</th><td>            <a class="local col6 ref" href="#6f" title='f' data-ref="6f">f</a>((*<b>reinterpret_cast</b>&lt;<b>typename</b> <a class="type" href="#QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</a>&lt;SignalArgs&gt;::Type *&gt;(<a class="local col7 ref" href="#7arg" title='arg' data-ref="7arg">arg</a>[<a class="tu member" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-3}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-3&gt;::II' data-use='r' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-3}::II">II</a>+<var>1</var>]))...), <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;R&gt;(<a class="local col7 ref" href="#7arg" title='arg' data-ref="7arg">arg</a>[<var>0</var>]);</td></tr>
+<tr><th id="503">503</th><td>        }</td></tr>
+<tr><th id="504">504</th><td>    };</td></tr>
+<tr><th id="505">505</th><td>    <b>template</b> &lt;<em>int</em>... II, <b>typename</b>... SignalArgs, <b>typename</b> R, <b>typename</b>... SlotArgs, <b>typename</b> SlotRet, <b>class</b> Obj&gt;</td></tr>
+<tr><th id="506">506</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</dfn>&lt;<a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;<a class="tu ref" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...)&gt;::II' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)}::II">II</a>...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;SignalArgs...&gt;, R, SlotRet (Obj::*)(SlotArgs...)&gt; {</td></tr>
+<tr><th id="507">507</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_MT4_FT3_DpT2_EE4callESD_PS8_PPv" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...)&gt;::call' data-ref="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_MT4_FT3_DpT2_EE4callESD_PS8_PPv">call</dfn>(SlotRet (Obj::*<dfn class="local col8 decl" id="8f" title='f' data-type='SlotRet (Obj::*)(SlotArgs...)' data-ref="8f">f</dfn>)(SlotArgs...), Obj *<dfn class="local col9 decl" id="9o" title='o' data-type='Obj *' data-ref="9o">o</dfn>, <em>void</em> **<dfn class="local col0 decl" id="10arg" title='arg' data-type='void **' data-ref="10arg">arg</dfn>) {</td></tr>
+<tr><th id="508">508</th><td>            (<a class="local col9 ref" href="#9o" title='o' data-ref="9o">o</a>-&gt;*<a class="local col8 ref" href="#8f" title='f' data-ref="8f">f</a>)((*<b>reinterpret_cast</b>&lt;<b>typename</b> <a class="type" href="#QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</a>&lt;SignalArgs&gt;::Type *&gt;(<a class="local col0 ref" href="#10arg" title='arg' data-ref="10arg">arg</a>[<a class="tu member" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...)&gt;::II' data-use='r' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)}::II">II</a>+<var>1</var>]))...), <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;R&gt;(<a class="local col0 ref" href="#10arg" title='arg' data-ref="10arg">arg</a>[<var>0</var>]);</td></tr>
+<tr><th id="509">509</th><td>        }</td></tr>
+<tr><th id="510">510</th><td>    };</td></tr>
+<tr><th id="511">511</th><td>    <b>template</b> &lt;<em>int</em>... II, <b>typename</b>... SignalArgs, <b>typename</b> R, <b>typename</b>... SlotArgs, <b>typename</b> SlotRet, <b>class</b> Obj&gt;</td></tr>
+<tr><th id="512">512</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</dfn>&lt;<a class="type" href="#QtPrivate::IndexesList" title='QtPrivate::IndexesList' data-ref="QtPrivate::IndexesList">IndexesList</a>&lt;<a class="tu ref" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)const}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...) const&gt;::II' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)const}::II">II</a>...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;SignalArgs...&gt;, R, SlotRet (Obj::*)(SlotArgs...) <em>const</em>&gt; {</td></tr>
+<tr><th id="513">513</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_MT4_KFT3_DpT2_EE4callESD_PS8_PPv" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...) const&gt;::call' data-ref="_ZN9QtPrivate11FunctorCallINS_11IndexesListIJXspT_EEEENS_4ListIJDpT0_EEET1_MT4_KFT3_DpT2_EE4callESD_PS8_PPv">call</dfn>(SlotRet (Obj::*<dfn class="local col1 decl" id="11f" title='f' data-type='SlotRet (Obj::*)(SlotArgs...) const' data-ref="11f">f</dfn>)(SlotArgs...) <em>const</em>, Obj *<dfn class="local col2 decl" id="12o" title='o' data-type='Obj *' data-ref="12o">o</dfn>, <em>void</em> **<dfn class="local col3 decl" id="13arg" title='arg' data-type='void **' data-ref="13arg">arg</dfn>) {</td></tr>
+<tr><th id="514">514</th><td>            (<a class="local col2 ref" href="#12o" title='o' data-ref="12o">o</a>-&gt;*<a class="local col1 ref" href="#11f" title='f' data-ref="11f">f</a>)((*<b>reinterpret_cast</b>&lt;<b>typename</b> <a class="type" href="#QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</a>&lt;SignalArgs&gt;::Type *&gt;(<a class="local col3 ref" href="#13arg" title='arg' data-ref="13arg">arg</a>[<a class="tu member" href="#QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)const}::II" title='QtPrivate::FunctorCall&lt;IndexesList&lt;...&gt;, List&lt;type-parameter-0-1...&gt;, type-parameter-0-2, type-parameter-0-4 (type-parameter-0-5::*)(type-parameter-0-3...) const&gt;::II' data-use='r' data-ref="QtPrivate::FunctorCall{IndexesList{...},List{type-parameter-0-1...},type-parameter-0-2,type-parameter-0-4(type-parameter-0-5::*)(type-parameter-0-3...)const}::II">II</a>+<var>1</var>]))...), <a class="type" href="#QtPrivate::ApplyReturnValue" title='QtPrivate::ApplyReturnValue' data-ref="QtPrivate::ApplyReturnValue">ApplyReturnValue</a>&lt;R&gt;(<a class="local col3 ref" href="#13arg" title='arg' data-ref="13arg">arg</a>[<var>0</var>]);</td></tr>
+<tr><th id="515">515</th><td>        }</td></tr>
+<tr><th id="516">516</th><td>    };</td></tr>
+<tr><th id="517">517</th><td></td></tr>
+<tr><th id="518">518</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b>... Args&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::FunctionPointer" title='QtPrivate::FunctionPointer' data-ref="QtPrivate::FunctionPointer">FunctionPointer</dfn>&lt;Ret (Obj::*) (Args...)&gt;</td></tr>
+<tr><th id="519">519</th><td>    {</td></tr>
+<tr><th id="520">520</th><td>        <b>typedef</b> Obj <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Object" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::Object' data-type='Obj' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Object">Object</dfn>;</td></tr>
+<tr><th id="521">521</th><td>        <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Args...&gt;  <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Arguments" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::Arguments' data-type='List&lt;Args...&gt;' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Arguments">Arguments</dfn>;</td></tr>
+<tr><th id="522">522</th><td>        <b>typedef</b> Ret <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::ReturnType" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::ReturnType' data-type='Ret' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::ReturnType">ReturnType</dfn>;</td></tr>
+<tr><th id="523">523</th><td>        <b>typedef</b> Ret (Obj::*<dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::Function' data-type='Ret (Obj::*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function">Function</dfn>) (Args...);</td></tr>
+<tr><th id="524">524</th><td>        <b>enum</b> {<dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::ArgumentCount">ArgumentCount</dfn> = <b>sizeof</b>...(Args), <dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::IsPointerToMemberFunction" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::::IsPointerToMemberFunction' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::IsPointerToMemberFunction">IsPointerToMemberFunction</dfn> = <b>true</b>};</td></tr>
+<tr><th id="525">525</th><td>        <b>template</b> &lt;<b>typename</b> SignalArgs, <b>typename</b> R&gt;</td></tr>
+<tr><th id="526">526</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate15FunctionPointerIMT_FT0_DpT1_EE4callES6_PS1_PPv" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::call' data-ref="_ZN9QtPrivate15FunctionPointerIMT_FT0_DpT1_EE4callES6_PS1_PPv">call</dfn>(<a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::Function' data-type='Ret (Obj::*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function">Function</a> <dfn class="local col4 decl" id="14f" title='f' data-type='Function' data-ref="14f">f</dfn>, Obj *<dfn class="local col5 decl" id="15o" title='o' data-type='Obj *' data-ref="15o">o</dfn>, <em>void</em> **<dfn class="local col6 decl" id="16arg" title='arg' data-type='void **' data-ref="16arg">arg</dfn>) {</td></tr>
+<tr><th id="527">527</th><td>            <a class="type" href="#QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a>&lt;<a class="enum" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::::ArgumentCount">ArgumentCount</a>&gt;::Value, SignalArgs, R, <a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...)&gt;::Function' data-type='Ret (Obj::*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)}::Function">Function</a>&gt;::call(<a class="local col4 ref" href="#14f" title='f' data-ref="14f">f</a>, <a class="local col5 ref" href="#15o" title='o' data-ref="15o">o</a>, <a class="local col6 ref" href="#16arg" title='arg' data-ref="16arg">arg</a>);</td></tr>
+<tr><th id="528">528</th><td>        }</td></tr>
+<tr><th id="529">529</th><td>    };</td></tr>
+<tr><th id="530">530</th><td>    <b>template</b>&lt;<b>class</b> Obj, <b>typename</b> Ret, <b>typename</b>... Args&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::FunctionPointer" title='QtPrivate::FunctionPointer' data-ref="QtPrivate::FunctionPointer">FunctionPointer</dfn>&lt;Ret (Obj::*) (Args...) <em>const</em>&gt;</td></tr>
+<tr><th id="531">531</th><td>    {</td></tr>
+<tr><th id="532">532</th><td>        <b>typedef</b> Obj <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Object" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::Object' data-type='Obj' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Object">Object</dfn>;</td></tr>
+<tr><th id="533">533</th><td>        <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Args...&gt;  <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Arguments" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::Arguments' data-type='List&lt;Args...&gt;' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Arguments">Arguments</dfn>;</td></tr>
+<tr><th id="534">534</th><td>        <b>typedef</b> Ret <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::ReturnType" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::ReturnType' data-type='Ret' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::ReturnType">ReturnType</dfn>;</td></tr>
+<tr><th id="535">535</th><td>        <b>typedef</b> Ret (Obj::*<dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::Function' data-type='Ret (Obj::*)(Args...) const' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function">Function</dfn>) (Args...) <em>const</em>;</td></tr>
+<tr><th id="536">536</th><td>        <b>enum</b> {<dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::ArgumentCount">ArgumentCount</dfn> = <b>sizeof</b>...(Args), <dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::IsPointerToMemberFunction" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::::IsPointerToMemberFunction' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::IsPointerToMemberFunction">IsPointerToMemberFunction</dfn> = <b>true</b>};</td></tr>
+<tr><th id="537">537</th><td>        <b>template</b> &lt;<b>typename</b> SignalArgs, <b>typename</b> R&gt;</td></tr>
+<tr><th id="538">538</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate15FunctionPointerIMT_KFT0_DpT1_EE4callES6_PS1_PPv" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::call' data-ref="_ZN9QtPrivate15FunctionPointerIMT_KFT0_DpT1_EE4callES6_PS1_PPv">call</dfn>(<a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::Function' data-type='Ret (Obj::*)(Args...) const' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function">Function</a> <dfn class="local col7 decl" id="17f" title='f' data-type='Function' data-ref="17f">f</dfn>, Obj *<dfn class="local col8 decl" id="18o" title='o' data-type='Obj *' data-ref="18o">o</dfn>, <em>void</em> **<dfn class="local col9 decl" id="19arg" title='arg' data-type='void **' data-ref="19arg">arg</dfn>) {</td></tr>
+<tr><th id="539">539</th><td>            <a class="type" href="#QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a>&lt;<a class="enum" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::::ArgumentCount">ArgumentCount</a>&gt;::Value, SignalArgs, R, <a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-1 (type-parameter-0-0::*)(type-parameter-0-2...) const&gt;::Function' data-type='Ret (Obj::*)(Args...) const' data-ref="QtPrivate::FunctionPointer{type-parameter-0-1(type-parameter-0-0::*)(type-parameter-0-2...)const}::Function">Function</a>&gt;::call(<a class="local col7 ref" href="#17f" title='f' data-ref="17f">f</a>, <a class="local col8 ref" href="#18o" title='o' data-ref="18o">o</a>, <a class="local col9 ref" href="#19arg" title='arg' data-ref="19arg">arg</a>);</td></tr>
+<tr><th id="540">540</th><td>        }</td></tr>
+<tr><th id="541">541</th><td>    };</td></tr>
+<tr><th id="542">542</th><td></td></tr>
+<tr><th id="543">543</th><td>    <b>template</b>&lt;<b>typename</b> Ret, <b>typename</b>... Args&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::FunctionPointer" title='QtPrivate::FunctionPointer' data-ref="QtPrivate::FunctionPointer">FunctionPointer</dfn>&lt;Ret (*) (Args...)&gt;</td></tr>
+<tr><th id="544">544</th><td>    {</td></tr>
+<tr><th id="545">545</th><td>        <b>typedef</b> <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Args...&gt; <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Arguments" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::Arguments' data-type='List&lt;Args...&gt;' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Arguments">Arguments</dfn>;</td></tr>
+<tr><th id="546">546</th><td>        <b>typedef</b> Ret <dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::ReturnType" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::ReturnType' data-type='Ret' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::ReturnType">ReturnType</dfn>;</td></tr>
+<tr><th id="547">547</th><td>        <b>typedef</b> Ret (*<dfn class="typedef" id="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::Function' data-type='Ret (*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function">Function</dfn>) (Args...);</td></tr>
+<tr><th id="548">548</th><td>        <b>enum</b> {<dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::ArgumentCount">ArgumentCount</dfn> = <b>sizeof</b>...(Args), <dfn class="enum" id="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::IsPointerToMemberFunction" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::::IsPointerToMemberFunction' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::IsPointerToMemberFunction">IsPointerToMemberFunction</dfn> = <b>false</b>};</td></tr>
+<tr><th id="549">549</th><td>        <b>template</b> &lt;<b>typename</b> SignalArgs, <b>typename</b> R&gt;</td></tr>
+<tr><th id="550">550</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate15FunctionPointerIPFT_DpT0_EE4callES5_PvPS7_" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::call' data-ref="_ZN9QtPrivate15FunctionPointerIPFT_DpT0_EE4callES5_PvPS7_">call</dfn>(<a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::Function' data-type='Ret (*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function">Function</a> <dfn class="local col0 decl" id="20f" title='f' data-type='Function' data-ref="20f">f</dfn>, <em>void</em> *, <em>void</em> **<dfn class="local col1 decl" id="21arg" title='arg' data-type='void **' data-ref="21arg">arg</dfn>) {</td></tr>
+<tr><th id="551">551</th><td>            <a class="type" href="#QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a>&lt;<a class="enum" href="#QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::ArgumentCount" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::::ArgumentCount' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::::ArgumentCount">ArgumentCount</a>&gt;::Value, SignalArgs, R, <a class="typedef" href="#QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function" title='QtPrivate::FunctionPointer&lt;type-parameter-0-0 (*)(type-parameter-0-1...)&gt;::Function' data-type='Ret (*)(Args...)' data-ref="QtPrivate::FunctionPointer{type-parameter-0-0(*)(type-parameter-0-1...)}::Function">Function</a>&gt;::call(<a class="local col0 ref" href="#20f" title='f' data-ref="20f">f</a>, <a class="local col1 ref" href="#21arg" title='arg' data-ref="21arg">arg</a>);</td></tr>
+<tr><th id="552">552</th><td>        }</td></tr>
+<tr><th id="553">553</th><td>    };</td></tr>
+<tr><th id="554">554</th><td></td></tr>
+<tr><th id="555">555</th><td>    <b>template</b>&lt;<b>typename</b> Function, <em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::Functor" title='QtPrivate::Functor' data-ref="QtPrivate::Functor">Functor</dfn></td></tr>
+<tr><th id="556">556</th><td>    {</td></tr>
+<tr><th id="557">557</th><td>        <b>template</b> &lt;<b>typename</b> SignalArgs, <b>typename</b> R&gt;</td></tr>
+<tr><th id="558">558</th><td>        <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN9QtPrivate7Functor4callERT_PvPS3_" title='QtPrivate::Functor::call' data-ref="_ZN9QtPrivate7Functor4callERT_PvPS3_">call</dfn>(Function &amp;<dfn class="local col2 decl" id="22f" title='f' data-type='Function &amp;' data-ref="22f">f</dfn>, <em>void</em> *, <em>void</em> **<dfn class="local col3 decl" id="23arg" title='arg' data-type='void **' data-ref="23arg">arg</dfn>) {</td></tr>
+<tr><th id="559">559</th><td>            <a class="type" href="#QtPrivate::FunctorCall" title='QtPrivate::FunctorCall' data-ref="QtPrivate::FunctorCall">FunctorCall</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::Indexes" title='QtPrivate::Indexes' data-ref="QtPrivate::Indexes">Indexes</a>&lt;<a class="tu member" href="#QtPrivate::Functor::N" title='QtPrivate::Functor::N' data-use='c' data-ref="QtPrivate::Functor::N">N</a>&gt;::Value, SignalArgs, R, Function&gt;::call(<a class="local col2 ref" href="#22f" title='f' data-ref="22f">f</a>, <a class="local col3 ref" href="#23arg" title='arg' data-ref="23arg">arg</a>);</td></tr>
+<tr><th id="560">560</th><td>        }</td></tr>
+<tr><th id="561">561</th><td>    };</td></tr>
+<tr><th id="562">562</th><td><u>#<span data-ppcond="131">endif</span></u></td></tr>
+<tr><th id="563">563</th><td></td></tr>
+<tr><th id="564">564</th><td>    <i>/*</i></td></tr>
+<tr><th id="565">565</th><td><i>       Logic that check if the arguments of the slot matches the argument of the signal.</i></td></tr>
+<tr><th id="566">566</th><td><i>       To be used like this:</i></td></tr>
+<tr><th id="567">567</th><td><i>       Q_STATIC_ASSERT(CheckCompatibleArguments&lt;FunctionPointer&lt;Signal&gt;::Arguments, FunctionPointer&lt;Slot&gt;::Arguments&gt;::value)</i></td></tr>
+<tr><th id="568">568</th><td><i>    */</i></td></tr>
+<tr><th id="569">569</th><td>    <b>template</b>&lt;<b>typename</b> A1, <b>typename</b> A2&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</dfn> {</td></tr>
+<tr><th id="570">570</th><td>        <em>static</em> <em>int</em> <dfn class="decl" id="_ZN9QtPrivate22AreArgumentsCompatible4testERKNS_9RemoveRefIT0_E4TypeE" title='QtPrivate::AreArgumentsCompatible::test' data-ref="_ZN9QtPrivate22AreArgumentsCompatible4testERKNS_9RemoveRefIT0_E4TypeE">test</dfn>(<em>const</em> <b>typename</b> <a class="type" href="#QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</a>&lt;A2&gt;::Type&amp;);</td></tr>
+<tr><th id="571">571</th><td>        <em>static</em> <em>char</em> <dfn class="decl" id="_ZN9QtPrivate22AreArgumentsCompatible4testEz" title='QtPrivate::AreArgumentsCompatible::test' data-ref="_ZN9QtPrivate22AreArgumentsCompatible4testEz">test</dfn>(...);</td></tr>
+<tr><th id="572">572</th><td>        <em>static</em> <em>const</em> <b>typename</b> <a class="type" href="#QtPrivate::RemoveRef" title='QtPrivate::RemoveRef' data-ref="QtPrivate::RemoveRef">RemoveRef</a>&lt;A1&gt;::Type &amp;<dfn class="decl" id="_ZN9QtPrivate22AreArgumentsCompatible5dummyEv" title='QtPrivate::AreArgumentsCompatible::dummy' data-ref="_ZN9QtPrivate22AreArgumentsCompatible5dummyEv">dummy</dfn>();</td></tr>
+<tr><th id="573">573</th><td>        <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible::::value" title='QtPrivate::AreArgumentsCompatible::::value' data-ref="QtPrivate::AreArgumentsCompatible::::value">value</dfn> = <b>sizeof</b>(test(<a class="ref" href="#_ZN9QtPrivate22AreArgumentsCompatible5dummyEv" title='QtPrivate::AreArgumentsCompatible::dummy' data-ref="_ZN9QtPrivate22AreArgumentsCompatible5dummyEv">dummy</a>())) == <b>sizeof</b>(<em>int</em>) };</td></tr>
+<tr><th id="574">574</th><td>    };</td></tr>
+<tr><th id="575">575</th><td>    <b>template</b>&lt;<b>typename</b> A1, <b>typename</b> A2&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</dfn>&lt;A1, A2&amp;&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible{type-parameter-0-0,type-parameter-0-1&amp;}::::value" title='QtPrivate::AreArgumentsCompatible&lt;type-parameter-0-0, type-parameter-0-1 &amp;&gt;::::value' data-ref="QtPrivate::AreArgumentsCompatible{type-parameter-0-0,type-parameter-0-1&amp;}::::value">value</dfn> = <b>false</b> }; };</td></tr>
+<tr><th id="576">576</th><td>    <b>template</b>&lt;<b>typename</b> A&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</dfn>&lt;A&amp;, A&amp;&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible{type-parameter-0-0&amp;,type-parameter-0-0&amp;}::::value" title='QtPrivate::AreArgumentsCompatible&lt;type-parameter-0-0 &amp;, type-parameter-0-0 &amp;&gt;::::value' data-ref="QtPrivate::AreArgumentsCompatible{type-parameter-0-0&amp;,type-parameter-0-0&amp;}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="577">577</th><td>    <i>// void as a return value</i></td></tr>
+<tr><th id="578">578</th><td>    <b>template</b>&lt;<b>typename</b> A&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</dfn>&lt;<em>void</em>, A&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible{void,type-parameter-0-0}::::value" title='QtPrivate::AreArgumentsCompatible&lt;void, type-parameter-0-0&gt;::::value' data-ref="QtPrivate::AreArgumentsCompatible{void,type-parameter-0-0}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="579">579</th><td>    <b>template</b>&lt;<b>typename</b> A&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</dfn>&lt;A, <em>void</em>&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible{type-parameter-0-0,void}::::value" title='QtPrivate::AreArgumentsCompatible&lt;type-parameter-0-0, void&gt;::::value' data-ref="QtPrivate::AreArgumentsCompatible{type-parameter-0-0,void}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="580">580</th><td>    <b>template</b>&lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible"><a class="type" href="#QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</a></dfn>&lt;<em>void</em>, <em>void</em>&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::AreArgumentsCompatible{void,void}::::value" title='QtPrivate::AreArgumentsCompatible&lt;void, void&gt;::::value' data-ref="QtPrivate::AreArgumentsCompatible{void,void}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="581">581</th><td></td></tr>
+<tr><th id="582">582</th><td><u>#<span data-ppcond="582">ifndef</span> <a class="macro" href="qcompilerdetection.h.html#666" data-ref="_M/Q_COMPILER_VARIADIC_TEMPLATES">Q_COMPILER_VARIADIC_TEMPLATES</a></u></td></tr>
+<tr><th id="583">583</th><td>    <b>template</b> &lt;<b>typename</b> List1, <b>typename</b> List2&gt; <b>struct</b> CheckCompatibleArguments { <b>enum</b> { value = <b>false</b> }; };</td></tr>
+<tr><th id="584">584</th><td>    <b>template</b> &lt;&gt; <b>struct</b> CheckCompatibleArguments&lt;<em>void</em>, <em>void</em>&gt; { <b>enum</b> { value = <b>true</b> }; };</td></tr>
+<tr><th id="585">585</th><td>    <b>template</b> &lt;<b>typename</b> List1&gt; <b>struct</b> CheckCompatibleArguments&lt;List1, <em>void</em>&gt; { <b>enum</b> { value = <b>true</b> }; };</td></tr>
+<tr><th id="586">586</th><td>    <b>template</b> &lt;<b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b> Tail1, <b>typename</b> Tail2&gt; <b>struct</b> CheckCompatibleArguments&lt;List&lt;Arg1, Tail1&gt;, List&lt;Arg2, Tail2&gt; &gt;</td></tr>
+<tr><th id="587">587</th><td>    {</td></tr>
+<tr><th id="588">588</th><td>        <b>enum</b> { value = AreArgumentsCompatible&lt;<b>typename</b> RemoveConstRef&lt;Arg1&gt;::Type, <b>typename</b> RemoveConstRef&lt;Arg2&gt;::Type&gt;::value</td></tr>
+<tr><th id="589">589</th><td>                    &amp;&amp; CheckCompatibleArguments&lt;Tail1, Tail2&gt;::value };</td></tr>
+<tr><th id="590">590</th><td>    };</td></tr>
+<tr><th id="591">591</th><td><u>#<span data-ppcond="582">else</span></u></td></tr>
+<tr><th id="592">592</th><td>    <b>template</b> &lt;<b>typename</b> List1, <b>typename</b> List2&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments">CheckCompatibleArguments</dfn> { <b>enum</b> { <dfn class="enum" id="QtPrivate::CheckCompatibleArguments::::value" title='QtPrivate::CheckCompatibleArguments::::value' data-ref="QtPrivate::CheckCompatibleArguments::::value">value</dfn> = <b>false</b> }; };</td></tr>
+<tr><th id="593">593</th><td>    <b>template</b> &lt;&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments"><a class="type" href="#QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments">CheckCompatibleArguments</a></dfn>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;&gt;&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::CheckCompatibleArguments{QtPrivate::List{},QtPrivate::List{}}::::value" title='QtPrivate::CheckCompatibleArguments&lt;QtPrivate::List&lt;&gt;, QtPrivate::List&lt;&gt; &gt;::::value' data-ref="QtPrivate::CheckCompatibleArguments{QtPrivate::List{},QtPrivate::List{}}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="594">594</th><td>    <b>template</b> &lt;<b>typename</b> List1&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments">CheckCompatibleArguments</dfn>&lt;List1, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;&gt;&gt; { <b>enum</b> { <dfn class="enum" id="QtPrivate::CheckCompatibleArguments{type-parameter-0-0,QtPrivate::List{}}::::value" title='QtPrivate::CheckCompatibleArguments&lt;type-parameter-0-0, QtPrivate::List&lt;&gt; &gt;::::value' data-ref="QtPrivate::CheckCompatibleArguments{type-parameter-0-0,QtPrivate::List{}}::::value">value</dfn> = <b>true</b> }; };</td></tr>
+<tr><th id="595">595</th><td>    <b>template</b> &lt;<b>typename</b> Arg1, <b>typename</b> Arg2, <b>typename</b>... Tail1, <b>typename</b>... Tail2&gt;</td></tr>
+<tr><th id="596">596</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments">CheckCompatibleArguments</dfn>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Arg1, Tail1...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Arg2, Tail2...&gt;&gt;</td></tr>
+<tr><th id="597">597</th><td>    {</td></tr>
+<tr><th id="598">598</th><td>        <b>enum</b> { <dfn class="enum" id="QtPrivate::CheckCompatibleArguments{List{type-parameter-0-0,type-parameter-0-2...},List{type-parameter-0-1,type-parameter-0-3...}}::::value" title='QtPrivate::CheckCompatibleArguments&lt;List&lt;type-parameter-0-0, type-parameter-0-2...&gt;, List&lt;type-parameter-0-1, type-parameter-0-3...&gt; &gt;::::value' data-ref="QtPrivate::CheckCompatibleArguments{List{type-parameter-0-0,type-parameter-0-2...},List{type-parameter-0-1,type-parameter-0-3...}}::::value">value</dfn> = <a class="type" href="#QtPrivate::AreArgumentsCompatible" title='QtPrivate::AreArgumentsCompatible' data-ref="QtPrivate::AreArgumentsCompatible">AreArgumentsCompatible</a>&lt;<b>typename</b> <a class="type" href="#QtPrivate::RemoveConstRef" title='QtPrivate::RemoveConstRef' data-ref="QtPrivate::RemoveConstRef">RemoveConstRef</a>&lt;Arg1&gt;::Type, <b>typename</b> <a class="type" href="#QtPrivate::RemoveConstRef" title='QtPrivate::RemoveConstRef' data-ref="QtPrivate::RemoveConstRef">RemoveConstRef</a>&lt;Arg2&gt;::Type&gt;::value</td></tr>
+<tr><th id="599">599</th><td>                    &amp;&amp; <a class="type" href="#QtPrivate::CheckCompatibleArguments" title='QtPrivate::CheckCompatibleArguments' data-ref="QtPrivate::CheckCompatibleArguments">CheckCompatibleArguments</a>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Tail1...&gt;, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;Tail2...&gt;&gt;::value };</td></tr>
+<tr><th id="600">600</th><td>    };</td></tr>
+<tr><th id="601">601</th><td><u>#<span data-ppcond="582">endif</span></u></td></tr>
+<tr><th id="602">602</th><td></td></tr>
+<tr><th id="603">603</th><td><u>#<span data-ppcond="603">if</span> defined(<a class="macro" href="qcompilerdetection.h.html#599" data-ref="_M/Q_COMPILER_DECLTYPE">Q_COMPILER_DECLTYPE</a>) &amp;&amp; defined(<a class="macro" href="qcompilerdetection.h.html#666" data-ref="_M/Q_COMPILER_VARIADIC_TEMPLATES">Q_COMPILER_VARIADIC_TEMPLATES</a>)</u></td></tr>
+<tr><th id="604">604</th><td>    <i>/*</i></td></tr>
+<tr><th id="605">605</th><td><i>       Find the maximum number of arguments a functor object can take and be still compatible with</i></td></tr>
+<tr><th id="606">606</th><td><i>       the arguments from the signal.</i></td></tr>
+<tr><th id="607">607</th><td><i>       Value is the number of arguments, or -1 if nothing matches.</i></td></tr>
+<tr><th id="608">608</th><td><i>     */</i></td></tr>
+<tr><th id="609">609</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b> ArgList&gt; <b>struct</b> <dfn class="type" id="QtPrivate::ComputeFunctorArgumentCount" title='QtPrivate::ComputeFunctorArgumentCount' data-ref="QtPrivate::ComputeFunctorArgumentCount">ComputeFunctorArgumentCount</dfn>;</td></tr>
+<tr><th id="610">610</th><td></td></tr>
+<tr><th id="611">611</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b> ArgList, <em>bool</em> Done&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::ComputeFunctorArgumentCountHelper" title='QtPrivate::ComputeFunctorArgumentCountHelper' data-ref="QtPrivate::ComputeFunctorArgumentCountHelper">ComputeFunctorArgumentCountHelper</dfn></td></tr>
+<tr><th id="612">612</th><td>    { <b>enum</b> { <dfn class="enum" id="QtPrivate::ComputeFunctorArgumentCountHelper::::Value" title='QtPrivate::ComputeFunctorArgumentCountHelper::::Value' data-ref="QtPrivate::ComputeFunctorArgumentCountHelper::::Value">Value</dfn> = -<var>1</var> }; };</td></tr>
+<tr><th id="613">613</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b> First, <b>typename</b>... ArgList&gt;</td></tr>
+<tr><th id="614">614</th><td>    <b>struct</b> <dfn class="type def" id="QtPrivate::ComputeFunctorArgumentCountHelper" title='QtPrivate::ComputeFunctorArgumentCountHelper' data-ref="QtPrivate::ComputeFunctorArgumentCountHelper">ComputeFunctorArgumentCountHelper</dfn>&lt;Functor, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;First, ArgList...&gt;, <b>false</b>&gt;</td></tr>
+<tr><th id="615">615</th><td>        : <a class="type" href="#QtPrivate::ComputeFunctorArgumentCount" title='QtPrivate::ComputeFunctorArgumentCount' data-ref="QtPrivate::ComputeFunctorArgumentCount">ComputeFunctorArgumentCount</a>&lt;Functor,</td></tr>
+<tr><th id="616">616</th><td>            <b>typename</b> <a class="type" href="#QtPrivate::List_Left" title='QtPrivate::List_Left' data-ref="QtPrivate::List_Left">List_Left</a>&lt;<a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;First, ArgList...&gt;, <b>sizeof</b>...(ArgList)&gt;::Value&gt; {};</td></tr>
+<tr><th id="617">617</th><td></td></tr>
+<tr><th id="618">618</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b>... ArgList&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::ComputeFunctorArgumentCount" title='QtPrivate::ComputeFunctorArgumentCount' data-ref="QtPrivate::ComputeFunctorArgumentCount">ComputeFunctorArgumentCount</dfn>&lt;Functor, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;ArgList...&gt;&gt;</td></tr>
+<tr><th id="619">619</th><td>    {</td></tr>
+<tr><th id="620">620</th><td>        <b>template</b> &lt;<b>typename</b> D&gt; <em>static</em> D <dfn class="decl" id="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE5dummyEv" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::dummy' data-ref="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE5dummyEv">dummy</dfn>();</td></tr>
+<tr><th id="621">621</th><td>        <b>template</b> &lt;<b>typename</b> F&gt; <em>static</em> <em>auto</em> <dfn class="decl" id="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE4testET_" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::test' data-ref="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE4testET_">test</dfn>(F <dfn class="local col4 decl" id="24f" title='f' data-type='F' data-ref="24f">f</dfn>) -&gt; <b>decltype</b>(((<a class="local col4 ref" href="#24f" title='f' data-ref="24f">f</a>.<b>operator</b>()((dummy&lt;ArgList&gt;())...)), <em>int</em>()));</td></tr>
+<tr><th id="622">622</th><td>        <em>static</em> <em>char</em> <dfn class="decl" id="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE4testEz" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::test' data-ref="_ZN9QtPrivate27ComputeFunctorArgumentCountIT_NS_4ListIJDpT0_EEEE4testEz">test</dfn>(...);</td></tr>
+<tr><th id="623">623</th><td>        <b>enum</b> {</td></tr>
+<tr><th id="624">624</th><td>            <dfn class="enum" id="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::::Ok' data-ref="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok">Ok</dfn> = <b>sizeof</b>(test(dummy&lt;Functor&gt;())) == <b>sizeof</b>(<em>int</em>),</td></tr>
+<tr><th id="625">625</th><td>            <dfn class="enum" id="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Value" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::::Value' data-ref="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Value">Value</dfn> = <a class="enum" href="#QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::::Ok' data-ref="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok">Ok</a> ? <em>int</em>(<b>sizeof</b>...(ArgList)) : <em>int</em>(<a class="type" href="#QtPrivate::ComputeFunctorArgumentCountHelper" title='QtPrivate::ComputeFunctorArgumentCountHelper' data-ref="QtPrivate::ComputeFunctorArgumentCountHelper">ComputeFunctorArgumentCountHelper</a>&lt;Functor, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;ArgList...&gt;, <a class="enum" href="#QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok" title='QtPrivate::ComputeFunctorArgumentCount&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::::Ok' data-ref="QtPrivate::ComputeFunctorArgumentCount{type-parameter-0-0,List{type-parameter-0-1...}}::::Ok">Ok</a>&gt;::Value)</td></tr>
+<tr><th id="626">626</th><td>        };</td></tr>
+<tr><th id="627">627</th><td>    };</td></tr>
+<tr><th id="628">628</th><td></td></tr>
+<tr><th id="629">629</th><td>    <i>/* get the return type of a functor, given the signal argument list  */</i></td></tr>
+<tr><th id="630">630</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b> ArgList&gt; <b>struct</b> <dfn class="type" id="QtPrivate::FunctorReturnType" title='QtPrivate::FunctorReturnType' data-ref="QtPrivate::FunctorReturnType">FunctorReturnType</dfn>;</td></tr>
+<tr><th id="631">631</th><td>    <b>template</b> &lt;<b>typename</b> Functor, <b>typename</b> ... ArgList&gt; <b>struct</b> <dfn class="type def" id="QtPrivate::FunctorReturnType" title='QtPrivate::FunctorReturnType' data-ref="QtPrivate::FunctorReturnType">FunctorReturnType</dfn>&lt;Functor, <a class="type" href="#QtPrivate::List" title='QtPrivate::List' data-ref="QtPrivate::List">List</a>&lt;ArgList...&gt;&gt; {</td></tr>
+<tr><th id="632">632</th><td>        <b>template</b> &lt;<b>typename</b> D&gt; <em>static</em> D <dfn class="decl" id="_ZN9QtPrivate17FunctorReturnTypeIT_NS_4ListIJDpT0_EEEE5dummyEv" title='QtPrivate::FunctorReturnType&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::dummy' data-ref="_ZN9QtPrivate17FunctorReturnTypeIT_NS_4ListIJDpT0_EEEE5dummyEv">dummy</dfn>();</td></tr>
+<tr><th id="633">633</th><td>        <b>typedef</b> <b>decltype</b>(dummy&lt;Functor&gt;().<b>operator</b>()((dummy&lt;ArgList&gt;())...)) <dfn class="typedef" id="QtPrivate::FunctorReturnType{type-parameter-0-0,List{type-parameter-0-1...}}::Value" title='QtPrivate::FunctorReturnType&lt;type-parameter-0-0, List&lt;type-parameter-0-1...&gt; &gt;::Value' data-type='decltype(dummy&lt;Functor&gt;().operator()((dummy&lt;ArgList&gt;())...))' data-ref="QtPrivate::FunctorReturnType{type-parameter-0-0,List{type-parameter-0-1...}}::Value">Value</dfn>;</td></tr>
+<tr><th id="634">634</th><td>    };</td></tr>
+<tr><th id="635">635</th><td><u>#<span data-ppcond="603">endif</span></u></td></tr>
+<tr><th id="636">636</th><td></td></tr>
+<tr><th id="637">637</th><td>}</td></tr>
+<tr><th id="638">638</th><td></td></tr>
+<tr><th id="639">639</th><td><a class="macro" href="qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="640">640</th><td></td></tr>
+<tr><th id="641">641</th><td><u>#<span data-ppcond="43">endif</span></u></td></tr>
+<tr><th id="642">642</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/solarus_gui_lib_automoc.cpp.html'>codebrowser/gui/solarus_gui_lib_automoc.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

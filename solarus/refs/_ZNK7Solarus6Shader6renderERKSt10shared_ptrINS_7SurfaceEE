@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='47' type='void Solarus::Shader::render(const SurfacePtr &amp; quest_surface) const'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='662' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='105' ll='108' type='void Solarus::Shader::render(const SurfacePtr &amp; ) const'/>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='100'>/**
+ * \brief Draws the quest surface on the screen in a shader-allowed context.
+ * It will perform the render using the OpenGL API directly.
+ * \param quest_surface the surface to render on the screen
+ */</doc>
+<doc f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='105'>/* quest_surface */</doc>

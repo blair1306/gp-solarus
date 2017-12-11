@@ -1,0 +1,74 @@
+<inh f='codebrowser/include/solarus/lua/ExportableToLua.h' l='34' c='Solarus::ExportableToLua'/>
+<def f='codebrowser/include/solarus/movements/Movement.h' l='42' ll='138'/>
+<size>112</size>
+<doc f='codebrowser/include/solarus/movements/Movement.h' l='32'>/**
+ * \brief Abstract class for representing a movement.
+ *
+ * This is the parent class of all kinds of movement.
+ * An instance of Movement can be applied to a map entity during the game,
+ * to a drawable object or to some arbitrary coordinates.
+ *
+ * TODO: generalize this and allow to apply a movement to any Lua object that
+ * has a set_xy method()?
+ */</doc>
+<fun r='_ZN7Solarus8MovementD1Ev'/>
+<fun r='_ZNK7Solarus8Movement10get_entityEv'/>
+<fun r='_ZN7Solarus8Movement10set_entityEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus8Movement12get_drawableEv'/>
+<fun r='_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE'/>
+<fun r='_ZN7Solarus8Movement24notify_object_controlledEv'/>
+<fun r='_ZN7Solarus8Movement6updateEv'/>
+<fun r='_ZNK7Solarus8Movement12is_suspendedEv'/>
+<fun r='_ZN7Solarus8Movement13set_suspendedEb'/>
+<fun r='_ZNK7Solarus8Movement5get_xEv'/>
+<fun r='_ZNK7Solarus8Movement5get_yEv'/>
+<fun r='_ZNK7Solarus8Movement6get_xyEv'/>
+<fun r='_ZN7Solarus8Movement5set_xEi'/>
+<fun r='_ZN7Solarus8Movement5set_yEi'/>
+<fun r='_ZN7Solarus8Movement6set_xyEii'/>
+<fun r='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Movement11translate_xEi'/>
+<fun r='_ZN7Solarus8Movement11translate_yEi'/>
+<fun r='_ZN7Solarus8Movement12translate_xyEii'/>
+<fun r='_ZN7Solarus8Movement12translate_xyERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<fun r='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus8Movement23notify_movement_changedEv'/>
+<fun r='_ZN7Solarus8Movement24notify_movement_finishedEv'/>
+<fun r='_ZNK7Solarus8Movement10is_stoppedEv'/>
+<fun r='_ZNK7Solarus8Movement10is_startedEv'/>
+<fun r='_ZN7Solarus8Movement4stopEv'/>
+<fun r='_ZNK7Solarus8Movement11is_finishedEv'/>
+<fun r='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<fun r='_ZNK7Solarus8Movement29test_collision_with_obstaclesERKNS_5PointE'/>
+<fun r='_ZNK7Solarus8Movement34get_last_collision_box_on_obstacleEv'/>
+<fun r='_ZNK7Solarus8Movement21are_obstacles_ignoredEv'/>
+<fun r='_ZN7Solarus8Movement20set_ignore_obstaclesEb'/>
+<fun r='_ZN7Solarus8Movement32restore_default_ignore_obstaclesEv'/>
+<fun r='_ZNK7Solarus8Movement24get_displayed_direction4Ev'/>
+<fun r='_ZNK7Solarus8Movement16get_displayed_xyEv'/>
+<fun r='_ZNK7Solarus8Movement21get_finished_callbackEv'/>
+<fun r='_ZN7Solarus8Movement21set_finished_callbackERKNS_12ScopedLuaRefE'/>
+<fun r='_ZNK7Solarus8Movement29are_lua_notifications_enabledEv'/>
+<fun r='_ZN7Solarus8Movement29set_lua_notifications_enabledEb'/>
+<fun r='_ZNK7Solarus8Movement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus8MovementC1Ev'/>
+<fun r='_ZN7Solarus8MovementC1Eb'/>
+<fun r='_ZNK7Solarus8Movement18get_when_suspendedEv'/>
+<fun r='_ZN7Solarus8Movement28set_default_ignore_obstaclesEb'/>
+<mbr r='Solarus::Movement::entity' o='320' t='Solarus::Entity *'/>
+<mbr r='Solarus::Movement::drawable' o='384' t='Solarus::Drawable *'/>
+<mbr r='Solarus::Movement::xy' o='448' t='Solarus::Point'/>
+<mbr r='Solarus::Movement::last_move_date' o='512' t='uint32_t'/>
+<mbr r='Solarus::Movement::finished' o='544' t='bool'/>
+<mbr r='Solarus::Movement::lua_notifications_enabled' o='552' t='bool'/>
+<mbr r='Solarus::Movement::suspended' o='560' t='bool'/>
+<mbr r='Solarus::Movement::when_suspended' o='576' t='uint32_t'/>
+<mbr r='Solarus::Movement::last_collision_box_on_obstacle' o='608' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Movement::default_ignore_obstacles' o='736' t='bool'/>
+<mbr r='Solarus::Movement::current_ignore_obstacles' o='744' t='bool'/>
+<mbr r='Solarus::Movement::finished_callback_ref' o='768' t='Solarus::ScopedLuaRef'/>
+<ovr f='codebrowser/include/solarus/movements/PixelMovement.h' l='32' c='Solarus::PixelMovement'/>
+<ovr f='codebrowser/include/solarus/movements/RelativeMovement.h' l='34' c='Solarus::RelativeMovement'/>
+<ovr f='codebrowser/include/solarus/movements/StraightMovement.h' l='32' c='Solarus::StraightMovement'/>
+<ovr f='codebrowser/include/solarus/movements/CircleMovement.h' l='33' c='Solarus::CircleMovement'/>

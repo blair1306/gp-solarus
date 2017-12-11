@@ -1,0 +1,4 @@
+<dec f='include/iconv.h' l='42' type='size_t iconv(iconv_t __cd, char **restrict __inbuf, size_t *restrict __inbytesleft, char **restrict __outbuf, size_t *restrict __outbytesleft)'/>
+<doc f='include/iconv.h' l='39'>/* Convert at most *INBYTESLEFT bytes from *INBUF according to the
+   code conversion algorithm specified by CD and place up to
+   *OUTBYTESLEFT bytes in buffer at *OUTBUF.  */</doc>

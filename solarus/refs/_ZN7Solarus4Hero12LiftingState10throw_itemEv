@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/LiftingState.h' l='42' type='void Solarus::Hero::LiftingState::throw_item()'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='80' u='c' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/LiftingState.cpp' l='141' ll='146' type='void Solarus::Hero::LiftingState::throw_item()'/>
+<doc f='codebrowser/src/hero/LiftingState.cpp' l='135'>/**
+ * \brief Throws the item that is being lifted.
+ *
+ * This function is called when this state is interrupted by a new state,
+ * e.g. when the hero is hurt while lifting an item.
+ */</doc>

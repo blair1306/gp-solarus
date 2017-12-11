@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/FreeState.h' l='44' type='bool Solarus::Hero::FreeState::can_take_stairs() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='137' c='_ZNK7Solarus6Entity5State15can_take_stairsEv'/>
+<def f='codebrowser/src/hero/FreeState.cpp' l='179' ll='181' type='bool Solarus::Hero::FreeState::can_take_stairs() const'/>
+<doc f='codebrowser/src/hero/FreeState.cpp' l='174'>/**
+ * \brief Returns whether the hero can take stairs in this state.
+ * If false is returned, stairs have no effect (but they are obstacle for the hero).
+ * \return true if the hero ignores the effect of stairs in this state
+ */</doc>

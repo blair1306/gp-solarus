@@ -1,0 +1,42 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='129' type='Solarus::Game &amp; Solarus::Entity::get_game()'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='233' u='c' c='_ZN7Solarus6CameraC1ERNS_3MapE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='434' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='72' u='c' c='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='119' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='143' u='c' c='_ZN7Solarus7Crystal8activateERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='165' u='c' c='_ZN7Solarus7Crystal6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='188' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='295' u='c' c='_ZN7Solarus12Destructible15create_treasureEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='581' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='856' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1486' u='c' c='_ZN7Solarus5Enemy14clear_treasureEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='319' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='440' ll='443' type='Solarus::Game &amp; Solarus::Entity::get_game()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='477' u='c' c='_ZN7Solarus6Entity13get_equipmentEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='493' u='c' c='_ZN7Solarus6Entity20get_commands_effectsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='501' u='c' c='_ZN7Solarus6Entity12get_commandsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='509' u='c' c='_ZN7Solarus6Entity12get_savegameEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='436'>/**
+ * \brief Returns the game that is running the map where this entity is.
+ * \return The game.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='393' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1209' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='278' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='432' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='115' u='c' c='_ZN7Solarus6Sensor8activateERNS_4HeroE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='171' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='327' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='34' u='c' c='_ZN7Solarus4Hero14UsingItemStateC1ERS0_RNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='784' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_gameEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1755' u='c' c='_ZN7Solarus10LuaContext17hero_api_teleportEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2317' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2321' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3149' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3764' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3784' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3827' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4052' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4932' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='73' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='117' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>

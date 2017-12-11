@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='324' type='bool'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='324'>/**&lt; True to handle repeat KEYDOWN and KEYUP events. */</doc>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='37' type='bool'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='212' u='w' c='_ZN7Solarus10InputEvent4quitEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='320' u='w' c='_ZN7Solarus10InputEvent14set_key_repeatEb'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='594' u='r' c='_ZNK7Solarus10InputEvent17is_keyboard_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='651' u='r' c='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='714' u='r' c='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedEv'/>

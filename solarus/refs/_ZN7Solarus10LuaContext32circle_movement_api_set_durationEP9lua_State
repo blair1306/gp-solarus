@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='660' type='static int Solarus::LuaContext::circle_movement_api_set_duration(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='254' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1621' ll='1629' type='static int Solarus::LuaContext::circle_movement_api_set_duration(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1616'>/**
+ * \brief Implementation of circle_movement:set_duration().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

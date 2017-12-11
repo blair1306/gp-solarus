@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='82' type='SDL_Keymod SDL_GetModState()'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='79'>/**
+ *  \brief Get the current key modifier state for the keyboard.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='332' u='c' c='_ZN7Solarus10InputEvent13is_shift_downEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='345' u='c' c='_ZN7Solarus10InputEvent15is_control_downEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='358' u='c' c='_ZN7Solarus10InputEvent11is_alt_downEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='368' u='c' c='_ZN7Solarus10InputEvent15is_caps_lock_onEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='378' u='c' c='_ZN7Solarus10InputEvent14is_num_lock_onEv'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='385' type='bool Solarus::LuaContext::hero_on_taking_damage(Solarus::Hero &amp; hero, int damage)'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='83' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5977' ll='5987' type='bool Solarus::LuaContext::hero_on_taking_damage(Solarus::Hero &amp; hero, int damage)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5968'>/**
+ * \brief Calls the on_taking_damage() method of a Lua hero.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param hero The hero.
+ * \param damage The damage to take.
+ * \return \c true if the event is defined.
+ */</doc>

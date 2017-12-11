@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='66' type='int Solarus::PathMovement::get_current_direction() const'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='340' ll='343' type='int Solarus::PathMovement::get_current_direction() const'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='333'>/**
+ * \brief Returns the current direction in the path.
+ *
+ * If the movement is finished, the last direction used is returned.
+ *
+ * \return the current direction (0 to 7)
+ */</doc>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='87' u='c' c='_ZN12_GLOBAL__N_114direction_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='95' u='c' c='_ZN12_GLOBAL__N_114direction_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

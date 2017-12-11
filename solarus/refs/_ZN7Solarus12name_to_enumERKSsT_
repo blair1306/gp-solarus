@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EnumInfo.h' l='70' type='E Solarus::name_to_enum(const std::string &amp; name, E default_value)'/>
+<def f='codebrowser/include/solarus/EnumInfo.inl' l='72' ll='81' type='E Solarus::name_to_enum(const std::string &amp; name, E default_value)'/>
+<use f='codebrowser/src/GameCommands.cpp' l='674' u='c' c='_ZNK7Solarus12GameCommands26get_saved_keyboard_bindingENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1395' u='c' c='_ZN7Solarus10LuaContext37game_api_set_command_keyboard_bindingEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='95' u='c' c='_ZN7Solarus10LuaContext24input_api_is_key_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='201' u='c' c='_ZN7Solarus10LuaContext33input_api_is_mouse_button_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='222' u='c' c='_ZN7Solarus10LuaContext34input_api_is_mouse_button_releasedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='346' u='c' c='_ZN7Solarus10LuaContext30input_api_simulate_key_pressedEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='368' u='c' c='_ZN7Solarus10LuaContext31input_api_simulate_key_releasedEP9lua_State'/>

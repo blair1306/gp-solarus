@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_blendmode.h' l='44' type='1'/>
+<doc f='include/SDL2/SDL_blendmode.h' l='44'>/**&lt; alpha blending
+                                              dstRGB = (srcRGB * srcA) + (dstRGB * (1-srcA))
+                                              dstA = srcA + (dstA * (1-srcA)) */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='260' u='r' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='997' u='r' c='_ZNK7Solarus7Surface18get_sdl_blend_modeEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='1006' u='r' c='_ZNK7Solarus7Surface18get_sdl_blend_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='123' u='r' c='_ZN7Solarus12_GLOBAL__N_113create_windowEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='211' u='r' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>

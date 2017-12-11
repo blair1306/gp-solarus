@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/JumpingState.h' l='65' type='CarriedObject::Behavior Solarus::Hero::JumpingState::get_previous_carried_object_behavior() const'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='48' u='c' c='_ZN7Solarus4Hero12JumpingStateC1ERS0_iibb'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='143' c='_ZNK7Solarus6Entity5State36get_previous_carried_object_behaviorEv'/>
+<def f='codebrowser/src/hero/JumpingState.cpp' l='328' ll='331' type='CarriedObject::Behavior Solarus::Hero::JumpingState::get_previous_carried_object_behavior() const'/>
+<doc f='codebrowser/src/hero/JumpingState.cpp' l='324'>/**
+ * \brief Returns the action to do with an item previously carried by the hero when this state starts.
+ * \return the action to do with a previous carried object when this state starts
+ */</doc>

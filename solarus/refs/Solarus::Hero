@@ -1,0 +1,170 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Hero.h' l='46' ll='370'/>
+<size>352</size>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='40'>/**
+ * \brief The hero entity.
+ *
+ * This class represents the hero. It coordinates his position on the map and his state.
+ * The hero is animated by several sprites that are handled by the HeroSprites class.
+ */</doc>
+<smbr r='Solarus::Hero::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<fun r='_ZNK7Solarus4Hero8get_typeEv'/>
+<fun r='_ZN7Solarus4Hero6updateEv'/>
+<fun r='_ZN7Solarus4Hero11draw_on_mapEv'/>
+<fun r='_ZN7Solarus4Hero13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero22notify_command_pressedENS_11GameCommandE'/>
+<fun r='_ZN7Solarus4Hero23notify_command_releasedENS_11GameCommandE'/>
+<fun r='_ZNK7Solarus4Hero16get_hero_spritesEv'/>
+<fun r='_ZN7Solarus4Hero16get_hero_spritesEv'/>
+<fun r='_ZNK7Solarus4Hero23get_animation_directionEv'/>
+<fun r='_ZN7Solarus4Hero23set_animation_directionEi'/>
+<fun r='_ZNK7Solarus4Hero21is_animation_finishedEv'/>
+<fun r='_ZN7Solarus4Hero17rebuild_equipmentEv'/>
+<fun r='_ZNK7Solarus4Hero17is_shadow_visibleEv'/>
+<fun r='_ZNK7Solarus4Hero20get_max_bounding_boxEv'/>
+<fun r='_ZN7Solarus4Hero15notify_creatingEv'/>
+<fun r='_ZN7Solarus4Hero18notify_map_startedEv'/>
+<fun r='_ZN7Solarus4Hero22notify_tileset_changedEv'/>
+<fun r='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<fun r='_ZNK7Solarus4Hero16get_facing_pointEv'/>
+<fun r='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<fun r='_ZN7Solarus4Hero18is_facing_obstacleEv'/>
+<fun r='_ZN7Solarus4Hero27is_facing_point_on_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero20is_facing_direction4Ei'/>
+<fun r='_ZNK7Solarus4Hero20is_facing_direction8Ei'/>
+<fun r='_ZNK7Solarus4Hero19is_on_raised_blocksEv'/>
+<fun r='_ZNK7Solarus4Hero22get_stairs_overlappingEv'/>
+<fun r='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<fun r='_ZNK7Solarus4Hero21can_control_directionEv'/>
+<fun r='_ZNK7Solarus4Hero24get_normal_walking_speedEv'/>
+<fun r='_ZN7Solarus4Hero24set_normal_walking_speedEi'/>
+<fun r='_ZNK7Solarus4Hero17get_walking_speedEv'/>
+<fun r='_ZN7Solarus4Hero17set_walking_speedEi'/>
+<fun r='_ZNK7Solarus4Hero30get_wanted_movement_direction8Ev'/>
+<fun r='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<fun r='_ZNK7Solarus4Hero17is_moving_towardsEi'/>
+<fun r='_ZNK7Solarus4Hero19is_direction_lockedEv'/>
+<fun r='_ZN7Solarus4Hero23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<fun r='_ZN7Solarus4Hero20notify_layer_changedEv'/>
+<fun r='_ZN7Solarus4Hero23notify_movement_changedEv'/>
+<fun r='_ZN7Solarus4Hero24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus4Hero14reset_movementEv'/>
+<fun r='_ZNK7Solarus4Hero17is_ground_visibleEv'/>
+<fun r='_ZNK7Solarus4Hero18is_ground_observerEv'/>
+<fun r='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<fun r='_ZNK7Solarus4Hero28get_last_solid_ground_coordsEv'/>
+<fun r='_ZNK7Solarus4Hero27get_last_solid_ground_layerEv'/>
+<fun r='_ZNK7Solarus4Hero26make_solid_ground_callbackERKNS_5PointEi'/>
+<fun r='_ZNK7Solarus4Hero32get_target_solid_ground_callbackEv'/>
+<fun r='_ZN7Solarus4Hero32set_target_solid_ground_callbackERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Hero34reset_target_solid_ground_callbackEv'/>
+<fun r='_ZN7Solarus4Hero15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero25is_shallow_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus4Hero18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus4Hero17is_block_obstacleERNS_5BlockE'/>
+<fun r='_ZN7Solarus4Hero27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus4Hero18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus4Hero18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZN7Solarus4Hero18is_sensor_obstacleERNS_6SensorE'/>
+<fun r='_ZN7Solarus4Hero24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus4Hero18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus4Hero21is_separator_obstacleERNS_9SeparatorE'/>
+<fun r='_ZN7Solarus4Hero14check_positionEv'/>
+<fun r='_ZN7Solarus4Hero34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyE'/>
+<fun r='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus4Hero37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<fun r='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<fun r='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<fun r='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<fun r='_ZN7Solarus4Hero31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus4Hero31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<fun r='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<fun r='_ZNK7Solarus4Hero22is_striking_with_swordERNS_6EntityE'/>
+<fun r='_ZN7Solarus4Hero21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZNK7Solarus4Hero23get_sword_damage_factorEv'/>
+<fun r='_ZNK7Solarus4Hero13is_invincibleEv'/>
+<fun r='_ZN7Solarus4Hero14set_invincibleEbj'/>
+<fun r='_ZNK7Solarus4Hero11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZN7Solarus4Hero4hurtERNS_6EntityEPNS_6SpriteEi'/>
+<fun r='_ZN7Solarus4Hero4hurtERKNS_5PointEi'/>
+<fun r='_ZN7Solarus4Hero4hurtEi'/>
+<fun r='_ZN7Solarus4Hero25notify_game_over_finishedEv'/>
+<fun r='_ZNK7Solarus4Hero7is_freeEv'/>
+<fun r='_ZNK7Solarus4Hero13is_using_itemEv'/>
+<fun r='_ZN7Solarus4Hero19get_item_being_usedEv'/>
+<fun r='_ZNK7Solarus4Hero23is_brandishing_treasureEv'/>
+<fun r='_ZNK7Solarus4Hero22is_grabbing_or_pullingEv'/>
+<fun r='_ZNK7Solarus4Hero24is_moving_grabbed_entityEv'/>
+<fun r='_ZN7Solarus4Hero31notify_grabbed_entity_collisionEv'/>
+<fun r='_ZN7Solarus4Hero11start_grassEv'/>
+<fun r='_ZN7Solarus4Hero19start_shallow_waterEv'/>
+<fun r='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<fun r='_ZN7Solarus4Hero10start_holeEv'/>
+<fun r='_ZN7Solarus4Hero9start_iceEv'/>
+<fun r='_ZN7Solarus4Hero10start_lavaEv'/>
+<fun r='_ZN7Solarus4Hero13start_prickleEj'/>
+<fun r='_ZN7Solarus4Hero16start_next_stateEv'/>
+<fun r='_ZN7Solarus4Hero10start_freeEv'/>
+<fun r='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>
+<fun r='_ZN7Solarus4Hero14start_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Hero20start_forced_walkingERKSsbb'/>
+<fun r='_ZN7Solarus4Hero13start_jumpingEiibb'/>
+<fun r='_ZN7Solarus4Hero12start_frozenEv'/>
+<fun r='_ZN7Solarus4Hero13start_victoryERKNS_12ScopedLuaRefE'/>
+<fun r='_ZN7Solarus4Hero13start_liftingERKSt10shared_ptrINS_13CarriedObjectEE'/>
+<fun r='_ZN7Solarus4Hero13start_runningEv'/>
+<fun r='_ZN7Solarus4Hero14start_grabbingEv'/>
+<fun r='_ZN7Solarus4Hero17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero25can_avoid_teletransporterERKNS_15TeletransporterE'/>
+<fun r='_ZNK7Solarus4Hero7can_runEv'/>
+<fun r='_ZNK7Solarus4Hero14can_use_shieldEv'/>
+<fun r='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<fun r='_ZN7Solarus4Hero11start_swordEv'/>
+<fun r='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus4Hero10start_itemERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus4Hero15start_boomerangEiiRKSsS2_'/>
+<fun r='_ZN7Solarus4Hero9start_bowEv'/>
+<fun r='_ZN7Solarus4Hero14start_hookshotEv'/>
+<fun r='_ZN7Solarus4Hero26start_back_to_solid_groundEbjb'/>
+<fun r='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<fun r='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<fun r='_ZN7Solarus4Hero15update_movementEv'/>
+<fun r='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<fun r='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<fun r='_ZN7Solarus4Hero27get_delayed_teletransporterEv'/>
+<fun r='_ZN7Solarus4Hero18get_carried_objectEv'/>
+<fun r='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<fun r='_ZN7Solarus4Hero10update_iceEv'/>
+<fun r='_ZN7Solarus4Hero17stop_ice_movementEv'/>
+<fun r='_ZN7Solarus4Hero14check_gameoverEv'/>
+<fun r='_ZN7Solarus4Hero20update_invincibilityEv'/>
+<mbr r='Solarus::Hero::invincible' o='2048' t='bool'/>
+<mbr r='Solarus::Hero::end_invincible_date' o='2080' t='uint32_t'/>
+<mbr r='Solarus::Hero::sprites' o='2112' t='std::unique_ptr&lt;HeroSprites&gt;'/>
+<mbr r='Solarus::Hero::normal_walking_speed' o='2176' t='int'/>
+<mbr r='Solarus::Hero::walking_speed' o='2208' t='int'/>
+<mbr r='Solarus::Hero::delayed_teletransporter' o='2240' t='std::shared_ptr&lt;Teletransporter&gt;'/>
+<mbr r='Solarus::Hero::on_raised_blocks' o='2368' t='bool'/>
+<mbr r='Solarus::Hero::last_solid_ground_coords' o='2400' t='Solarus::Point'/>
+<mbr r='Solarus::Hero::last_solid_ground_layer' o='2464' t='int'/>
+<mbr r='Solarus::Hero::target_solid_ground_callback' o='2496' t='Solarus::ScopedLuaRef'/>
+<mbr r='Solarus::Hero::next_ground_date' o='2624' t='uint32_t'/>
+<mbr r='Solarus::Hero::next_ice_date' o='2656' t='uint32_t'/>
+<mbr r='Solarus::Hero::ice_movement_direction8' o='2688' t='int'/>
+<mbr r='Solarus::Hero::ground_dxy' o='2720' t='Solarus::Point'/>

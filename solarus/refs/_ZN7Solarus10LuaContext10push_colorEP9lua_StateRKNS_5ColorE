@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1087' type='static void Solarus::LuaContext::push_color(lua_State * l, const Solarus::Color &amp; color)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='966' ll='979' type='static void Solarus::LuaContext::push_color(lua_State * l, const Solarus::Color &amp; color)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='961'>/**
+ * \brief Pushes a color onto the stack.
+ * \param l A Lua context.
+ * \param color A color.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='358' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_get_colorEP9lua_State'/>

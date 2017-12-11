@@ -1,0 +1,21 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/SwordSwingingState.h' l='27' ll='57'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/hero/SwordSwingingState.h' l='24'>/**
+ * \brief The state &quot;sword swinging&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero18SwordSwingingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState15can_start_swordEv'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState14can_use_shieldEv'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState21can_sword_hit_crystalEv'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState21is_cutting_with_swordERNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero18SwordSwingingState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero18SwordSwingingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<mbr r='Solarus::Hero::SwordSwingingState::attacked' o='328' t='bool'/>
+<mbr r='Solarus::Hero::SwordSwingingState::sword_finished' o='336' t='bool'/>

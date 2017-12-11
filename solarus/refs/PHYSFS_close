@@ -1,0 +1,21 @@
+<dec f='include/physfs.h' l='1187' type='int PHYSFS_close(PHYSFS_File * handle)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='309' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='337' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<doc f='include/physfs.h' l='1169'>/**
+ * \fn int PHYSFS_close(PHYSFS_File *handle)
+ * \brief Close a PhysicsFS filehandle.
+ *
+ * This call is capable of failing if the operating system was buffering
+ *  writes to the physical media, and, now forced to write those changes to
+ *  physical media, can not store the data for some reason. In such a case,
+ *  the filehandle stays open. A well-written program should ALWAYS check the
+ *  return value from the close call in addition to every writing call!
+ *
+ *   \param handle handle returned from PHYSFS_open*().
+ *  \return nonzero on success, zero on error. Specifics of the error can be
+ *          gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_openRead
+ * \sa PHYSFS_openWrite
+ * \sa PHYSFS_openAppend
+ */</doc>

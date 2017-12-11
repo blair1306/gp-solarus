@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='226' type='static bool Solarus::InputEvent::get_global_finger_position(int finger_id, Solarus::Point &amp; finger_xy)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='534' ll='552' type='static bool Solarus::InputEvent::get_global_finger_position(int finger_id, Solarus::Point &amp; finger_xy)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='527'>/**
+ * \brief Gets the x and y position of the finger.
+ * Values are in quest size coordinates.
+ * \param finger_id The ID of the finger.
+ * \param[out] finger_xy The x and y position of the finger in quest coordinates.
+ * \return \c false if the finger is not pressed.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='304' u='c' c='_ZN7Solarus10LuaContext29input_api_get_finger_positionEP9lua_State'/>

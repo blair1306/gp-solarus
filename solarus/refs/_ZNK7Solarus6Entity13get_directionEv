@@ -1,0 +1,45 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='192' type='int Solarus::Entity::get_direction() const'/>
+<use f='codebrowser/src/entities/Block.cpp' l='208' u='c' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='157' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='111' u='c' c='_ZNK7Solarus12CustomEntity21get_sprites_directionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='182' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='209' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='637' ll='639' type='int Solarus::Entity::get_direction() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='628'>/**
+ * \brief Returns the direction of the entity.
+ *
+ * This direction is not used by all kinds of entities
+ * since some of them only use the direction property of their sprites
+ * and/or their movements.
+ *
+ * \return the direction of the entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='662' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='663' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='107' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='245' u='c' c='_ZNK7Solarus6Jumper18is_jump_horizontalEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='245' u='c' c='_ZNK7Solarus6Jumper18is_jump_horizontalEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='254' u='c' c='_ZNK7Solarus6Jumper16is_jump_verticalEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='254' u='c' c='_ZNK7Solarus6Jumper16is_jump_verticalEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='264' u='c' c='_ZNK7Solarus6Jumper16is_jump_diagonalEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='297' u='c' c='_ZNK7Solarus6Jumper29is_point_in_extended_diagonalERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='358' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='358' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='228' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='229' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='160' u='c' c='_ZNK7Solarus6Stairs22get_movement_directionENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='179' u='c' c='_ZNK7Solarus6Stairs23get_animation_directionENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='241' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='248' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='262' u='c' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='300' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='137' u='c' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='159' u='c' c='_ZN7Solarus6Stream16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='84' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='117' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='164' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='172' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='150' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='230' u='c' c='_ZN7Solarus4Hero12RunningState23notify_jumper_activatedERNS_6JumperE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='259' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3473' u='c' c='_ZN7Solarus10LuaContext24stream_api_get_directionEP9lua_State'/>

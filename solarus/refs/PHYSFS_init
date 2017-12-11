@@ -1,0 +1,23 @@
+<dec f='include/physfs.h' l='487' type='int PHYSFS_init(const char * argv0)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='125' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='128' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<doc f='include/physfs.h' l='467'>/**
+ * \fn int PHYSFS_init(const char *argv0)
+ * \brief Initialize the PhysicsFS library.
+ *
+ * This must be called before any other PhysicsFS function.
+ *
+ * This should be called prior to any attempts to change your process&apos;s
+ *  current working directory.
+ *
+ *   \param argv0 the argv[0] string passed to your program&apos;s mainline.
+ *          This may be NULL on most platforms (such as ones without a
+ *          standard main() function), but you should always try to pass
+ *          something in here. Unix-like systems such as Linux _need_ to
+ *          pass argv[0] from main() in here.
+ *  \return nonzero on success, zero on error. Specifics of the error can be
+ *          gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_deinit
+ * \sa PHYSFS_isInit
+ */</doc>

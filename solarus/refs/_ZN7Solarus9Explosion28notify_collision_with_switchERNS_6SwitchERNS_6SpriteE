@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Explosion.h' l='53' type='void Solarus::Explosion::notify_collision_with_switch(Solarus::Switch &amp; sw, Solarus::Sprite &amp; sprite_overlapping)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='306' c='_ZN7Solarus6Entity28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Explosion.cpp' l='104' ll='107' type='void Solarus::Explosion::notify_collision_with_switch(Solarus::Switch &amp; sw, Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='98'>/**
+ * \brief This function is called when a the sprite of a switch
+ * detects a pixel-precise collision with a sprite of this entity.
+ * \param sw the switch
+ * \param sprite_overlapping the sprite of the current entity that collides with the switch
+ */</doc>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='104'>/* sprite_overlapping */</doc>

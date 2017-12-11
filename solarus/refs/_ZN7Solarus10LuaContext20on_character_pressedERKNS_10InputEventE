@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1222' type='bool Solarus::LuaContext::on_character_pressed(const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1555' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1653' ll='1671' type='bool Solarus::LuaContext::on_character_pressed(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1647'>/**
+ * \brief Notifies the object on top of the stack
+ * that a character was just pressed with the keyboard.
+ * \param event The corresponding input event.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

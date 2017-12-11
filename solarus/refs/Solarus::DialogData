@@ -1,0 +1,15 @@
+<def f='codebrowser/include/solarus/DialogResources.h' l='29' ll='49'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/DialogResources.h' l='26'>/**
+ * \brief Stores the properties of a dialog.
+ */</doc>
+<fun r='_ZN7Solarus10DialogDataC1Ev'/>
+<fun r='_ZNK7Solarus10DialogData8get_textEv'/>
+<fun r='_ZN7Solarus10DialogData8set_textERKSs'/>
+<fun r='_ZNK7Solarus10DialogData14get_propertiesEv'/>
+<fun r='_ZNK7Solarus10DialogData12has_propertyERKSs'/>
+<fun r='_ZNK7Solarus10DialogData12get_propertyERKSs'/>
+<fun r='_ZN7Solarus10DialogData12set_propertyERKSsS2_'/>
+<fun r='_ZN7Solarus10DialogData15remove_propertyERKSs'/>
+<mbr r='Solarus::DialogData::text' o='0' t='std::string'/>
+<mbr r='Solarus::DialogData::properties' o='64' t='std::map&lt;std::string, std::string&gt;'/>

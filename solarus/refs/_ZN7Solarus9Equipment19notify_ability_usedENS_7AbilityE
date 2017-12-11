@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='103' type='void Solarus::Equipment::notify_ability_used(Solarus::Ability ability)'/>
+<def f='codebrowser/src/Equipment.cpp' l='627' ll='633' type='void Solarus::Equipment::notify_ability_used(Solarus::Ability ability)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='620'>/**
+ * \brief This function is called when the player has just used an ability.
+ *
+ * All item scripts are notified.
+ *
+ * \param ability The ability used.
+ */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1090' u='c' c='_ZN7Solarus5Enemy29attack_stopped_by_hero_shieldEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='93' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='46' u='c' c='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='51' u='c' c='_ZN7Solarus4Hero18SwordSwingingState5startEPKNS_6Entity5StateE'/>

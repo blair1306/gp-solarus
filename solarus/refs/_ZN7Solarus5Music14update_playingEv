@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='113' type='bool Solarus::Music::update_playing()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='373' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='391' ll='435' type='bool Solarus::Music::update_playing()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='384'>/**
+ * \brief Updates this music when it is playing.
+ *
+ * This function handles the double buffering.
+ *
+ * \return \c true if the music keeps playing, \c false if the end is reached.
+ */</doc>

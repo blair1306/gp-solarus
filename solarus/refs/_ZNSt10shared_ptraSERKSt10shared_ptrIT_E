@@ -1,0 +1,26 @@
+<dec f='include/c++/4.9/bits/shared_ptr.h' l='268' type='shared_ptr&lt;_Tp&gt; &amp; std::shared_ptr::operator=(const shared_ptr&lt;_Tp&gt; &amp; )'/>
+<def f='include/c++/4.9/bits/shared_ptr.h' l='271' ll='276' type='shared_ptr&lt;_Tp&gt; &amp; std::shared_ptr::operator=(const shared_ptr&lt;_Tp1&gt; &amp; __r)'/>
+<use f='codebrowser/src/Drawable.cpp' l='67' u='c' c='_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/Equipment.cpp' l='395' u='c' c='_ZN7Solarus9Equipment10load_itemsEv'/>
+<use f='codebrowser/src/Game.cpp' l='391' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='440' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='505' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='647' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<use f='codebrowser/src/Map.cpp' l='410' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='458' u='c' c='_ZN7Solarus6Sprite19set_synchronized_toERKSt10shared_ptrIS0_E'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='69' u='c' c='_ZN7Solarus15SpriteAnimation11set_tilesetERKNS_7TilesetE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='983' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1047' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1321' u='c' c='_ZN7Solarus6Entity13create_spriteERKSsS2_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1507' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='242' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='312' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='319' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='233' u='c' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='234' u='c' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1644' u='c' c='_ZN7Solarus11HeroSprites15set_lifted_itemERKSt10shared_ptrINS_13CarriedObjectEE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='485' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='520' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='85' u='c' c='_ZN7Solarus14CircleMovement10set_centerERKSt10shared_ptrINS_6EntityEEii'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='43' u='c' c='_ZN7Solarus19PathFindingMovement10set_targetERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='96' u='c' c='_ZN7Solarus14TargetMovement10set_targetERKSt10shared_ptrINS_6EntityEERKNS_5PointE'/>

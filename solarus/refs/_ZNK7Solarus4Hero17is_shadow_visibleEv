@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='88' type='bool Solarus::Hero::is_shadow_visible() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='498' ll='500' type='bool Solarus::Hero::is_shadow_visible() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='494'>/**
+ * \brief Returns whether the shadow should be currently displayed, separate from the tunic sprite.
+ * \return true if the shadow should be currently displayed.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='869' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>

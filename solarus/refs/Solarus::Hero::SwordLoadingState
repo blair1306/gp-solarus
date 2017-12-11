@@ -1,0 +1,34 @@
+<inh f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='39' c='Solarus::Hero::PlayerMovementState'/>
+<def f='codebrowser/include/solarus/hero/SwordLoadingState.h' l='28' ll='60'/>
+<size>96</size>
+<doc f='codebrowser/include/solarus/hero/SwordLoadingState.h' l='25'>/**
+ * \brief The state &quot;sword loading&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero17SwordLoadingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState19is_direction_lockedEv'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState15can_take_stairsEv'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState14can_use_shieldEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21set_animation_stoppedEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21set_animation_walkingEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<mbr r='Solarus::Hero::SwordLoadingState::sword_loaded_date' o='672' t='uint32_t'/>
+<mbr r='Solarus::Hero::SwordLoadingState::sword_loaded' o='704' t='bool'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState6updateEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState19is_direction_lockedEv'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState15can_take_stairsEv'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero17SwordLoadingState14can_use_shieldEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21set_animation_stoppedEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState21set_animation_walkingEv'/>
+<fun r='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>

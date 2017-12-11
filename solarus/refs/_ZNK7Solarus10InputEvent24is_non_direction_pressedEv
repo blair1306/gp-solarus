@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='304' type='bool Solarus::InputEvent::is_non_direction_pressed() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1438' ll='1442' type='bool Solarus::InputEvent::is_non_direction_pressed() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1430'>/**
+ * \brief Returns whether this keyboard, joypad or mouse event
+ * corresponds to pressing something other than a direction.
+ *
+ * If this is not a keyboard, joypad or mouse event, false is returned.
+ *
+ * \return true if something other that a direction was pressed
+ */</doc>

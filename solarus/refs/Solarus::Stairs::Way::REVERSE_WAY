@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='71' type='1'/>
+<doc f='codebrowser/include/solarus/entities/Stairs.h' l='71'>/**&lt; for stairs inside a single floor, indicates that the entity is going downstairs;
+                      * for stairs between two floors, indicates that the entity is arriving on this floor */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='686' u='r' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1734' u='r' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1738' u='r' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='161' u='r' c='_ZNK7Solarus6Stairs22get_movement_directionENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='189' u='r' c='_ZNK7Solarus6Stairs23get_animation_directionENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='272' u='r' c='_ZNK7Solarus6Stairs8get_pathENS0_3WayE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='111' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='185' u='r' c='_ZN7Solarus4Hero11StairsState6updateEv'/>

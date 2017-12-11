@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='625' type='static int Solarus::LuaContext::random_movement_api_is_smooth(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='159' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='938' ll='945' type='static int Solarus::LuaContext::random_movement_api_is_smooth(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='933'>/**
+ * \brief Implementation of random_movement:is_smooth().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

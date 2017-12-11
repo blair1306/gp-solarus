@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1322' type='static int Solarus::LuaContext::l_create_block(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='774' ll='803' type='static int Solarus::LuaContext::l_create_block(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1279' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='769'>/**
+ * \brief Creates a block on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

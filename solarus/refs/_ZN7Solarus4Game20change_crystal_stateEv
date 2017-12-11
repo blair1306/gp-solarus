@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Game.h' l='99' type='void Solarus::Game::change_crystal_state()'/>
+<def f='codebrowser/src/Game.cpp' l='684' ll='686' type='void Solarus::Game::change_crystal_state()'/>
+<doc f='codebrowser/src/Game.cpp' l='681'>/**
+ * \brief Changes the state of the crystal blocks.
+ */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='143' u='c' c='_ZN7Solarus7Crystal8activateERNS_6EntityE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1813' u='c' c='_ZN7Solarus10LuaContext25map_api_set_crystal_stateEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1830' u='c' c='_ZN7Solarus10LuaContext28map_api_change_crystal_stateEP9lua_State'/>

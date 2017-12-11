@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='406' type='void Solarus::LuaContext::destructible_on_cut(Solarus::Destructible &amp; destructible)'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='364' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6360' ll='6369' type='void Solarus::LuaContext::destructible_on_cut(Solarus::Destructible &amp; destructible)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6353'>/**
+ * \brief Calls the on_cut() method of a Lua destructible.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param destructible A destructible object.
+ */</doc>

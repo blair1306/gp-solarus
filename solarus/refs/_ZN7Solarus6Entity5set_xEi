@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='139' type='void Solarus::Entity::set_x(int x)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='682' ll='684' type='void Solarus::Entity::set_x(int x)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='717' u='c' c='_ZN7Solarus6Entity6set_xyEii'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='675'>/**
+ * \brief Sets the x position of the entity.
+ *
+ * This function is called by the movement object of this entity.
+ *
+ * \param x the new x position
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='612' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='618' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='622' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='628' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='714' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='722' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='207' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='217' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='212' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='222' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>

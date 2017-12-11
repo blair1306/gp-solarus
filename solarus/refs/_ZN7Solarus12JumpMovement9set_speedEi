@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='42' type='void Solarus::JumpMovement::set_speed(int speed)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1765' u='c' c='_ZN7Solarus10LuaContext27jump_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='58' u='c' c='_ZN7Solarus12JumpMovementC1Eiiib'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='129' ll='139' type='void Solarus::JumpMovement::set_speed(int speed)'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='125'>/**
+ * \brief Sets the speed of the movement.
+ * \param speed the speed in pixels per second (0 means auto, based on the length of the jump)
+ */</doc>

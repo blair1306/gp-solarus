@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1176' type='int SDL_HapticRumbleSupported(SDL_Haptic * haptic)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1166'>/**
+ *  \brief Checks to see if rumble is supported on a haptic device.
+ *
+ *  \param haptic Haptic device to check to see if it supports rumble.
+ *  \return SDL_TRUE if effect is supported, SDL_FALSE if it isn&apos;t or -1 on error.
+ *
+ *  \sa SDL_HapticRumbleInit
+ *  \sa SDL_HapticRumblePlay
+ *  \sa SDL_HapticRumbleStop
+ */</doc>

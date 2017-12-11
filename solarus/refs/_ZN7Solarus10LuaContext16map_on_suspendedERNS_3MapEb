@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='359' type='void Solarus::LuaContext::map_on_suspended(Solarus::Map &amp; map, bool suspended)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='303' u='c' c='_ZN7Solarus10LuaContext20notify_map_suspendedERNS_3MapEb'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2331' ll='2340' type='void Solarus::LuaContext::map_on_suspended(Solarus::Map &amp; map, bool suspended)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2323'>/**
+ * \brief Calls the on_suspended() method of a Lua map.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param map A map.
+ * \param suspended true if the map is suspended.
+ */</doc>

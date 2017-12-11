@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='243' type='void Solarus::LuaContext::update_movements()'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='208' u='c' c='_ZN7Solarus10LuaContext6updateEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='457' ll='467' type='void Solarus::LuaContext::update_movements()'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='450'>/**
+ * \brief Updates all movements applied to x,y points.
+ *
+ * Movements applied to map entities or drawables are already updated
+ * by the entity or the drawable.
+ * This may change in the future in order to unify the handling of movements.
+ */</doc>

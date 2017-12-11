@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='89' type='bool Solarus::Door::is_interaction_required() const'/>
+<def f='codebrowser/src/entities/Door.cpp' l='307' ll='312' type='bool Solarus::Door::is_interaction_required() const'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='300'>/**
+ * \brief Returns whether this door should be opened by pressing the action
+ * command in front of it.
+ * \return \c true if the opening method is one of OpeningMethod::BY_INTERACTION,
+ * OpeningMethod::BY_INTERACTION_IF_SAVEGAME_VARIABLE or
+ * OpeningMethod::BY_INTERACTION_IF_ITEM.
+ */</doc>

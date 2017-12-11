@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='50' type='void Solarus::Hero::PlayerMovementState::set_suspended(bool suspended)'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='132' c='_ZN7Solarus4Hero13CarryingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='134' u='c' c='_ZN7Solarus4Hero13CarryingState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='83' c='_ZN7Solarus4Hero9FreeState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='85' u='c' c='_ZN7Solarus4Hero9FreeState13set_suspendedEb'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='51' c='_ZN7Solarus6Entity5State13set_suspendedEb'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='172' ll='181' type='void Solarus::Hero::PlayerMovementState::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='168'>/**
+ * \brief Notifies this state that the game was just suspended or resumed.
+ * \param suspended \c true if the game is suspended.
+ */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='96' c='_ZN7Solarus4Hero13SwimmingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='98' u='c' c='_ZN7Solarus4Hero13SwimmingState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='97' c='_ZN7Solarus4Hero17SwordLoadingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero17SwordLoadingState13set_suspendedEb'/>

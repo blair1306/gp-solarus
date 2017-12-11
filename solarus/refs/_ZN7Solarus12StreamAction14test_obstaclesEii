@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/StreamAction.h' l='55' type='bool Solarus::StreamAction::test_obstacles(int dx, int dy)'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='225' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='229' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='233' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<def f='codebrowser/src/entities/StreamAction.cpp' l='302' ll='320' type='bool Solarus::StreamAction::test_obstacles(int dx, int dy)'/>
+<doc f='codebrowser/src/entities/StreamAction.cpp' l='295'>/**
+ * \brief Returns whether an obstacle blocks a candidate move.
+ * \param dx X component of the translation to test.
+ * \param dy Y component of the translation to test.
+ * \return \c true if the entity cannot currently move of dx,dy because of an
+ * obstacle.
+ */</doc>

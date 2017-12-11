@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='72' type='Solarus::Hero &amp; Solarus::Entities::get_hero()'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='71'>// Get entities.</doc>
+<use f='codebrowser/src/Map.cpp' l='1328' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1344' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1374' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/Map.cpp' l='1390' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='220' ll='222' type='Solarus::Hero &amp; Solarus::Entities::get_hero()'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='216'>/**
+ * \brief Returns the hero.
+ * \return The hero.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='525' u='c' c='_ZN7Solarus6Entity8get_heroEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5035' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5059' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

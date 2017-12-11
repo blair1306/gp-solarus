@@ -1,0 +1,18 @@
+<def f='codebrowser/include/solarus/lowlevel/SpcDecoder.h' l='39' ll='68'/>
+<size>16</size>
+<doc f='codebrowser/include/solarus/lowlevel/SpcDecoder.h' l='28'>/**
+ * \brief Encapsulates the SPC music decoding.
+ *
+ * This class allows the Music class to be independent of the SPC library.
+ * To decode SPC music files, the code of the Snes_SPC library is used.
+ * Snes_SPC is a recent SPC decoding library that exists in two versions:
+ * - a fast version, that renders music with a very nice quality;
+ * - a highly accurate version, that renders music with a better accuracy, but about three times slower.
+ * The source code of Solarus include the fast version of Snes_SPC, which I recommend
+ * since the sound generated is good enough.
+ */</doc>
+<fun r='_ZN7Solarus10SpcDecoderC1Ev'/>
+<fun r='_ZN7Solarus10SpcDecoder4loadEPsm'/>
+<fun r='_ZN7Solarus10SpcDecoder6decodeEPsi'/>
+<mbr r='Solarus::SpcDecoder::snes_spc_manager' o='0' t='std::unique_ptr&lt;SNES_SPC, SNES_SPC_Deleter&gt;'/>
+<mbr r='Solarus::SpcDecoder::snes_spc_filter' o='64' t='std::unique_ptr&lt;SPC_Filter, SPC_Filter_Deleter&gt;'/>

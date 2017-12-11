@@ -1,0 +1,55 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='38' type='void Solarus::Size::Size(int width, int height)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='34' ll='37' type='void Solarus::Size::Size(int width, int height)'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='129' u='c' c='_ZN7SolarusplERKNS_4SizeES2_'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='139' u='c' c='_ZN7SolarusmiERKNS_4SizeES2_'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='149' u='c' c='_ZN7SolarusmlERKNS_4SizeEi'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='169' u='c' c='_ZN7SolarusdvERKNS_4SizeEi'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='29'>/**
+ * \brief Creates a size with the specified dimensions.
+ * \param width The width.
+ * \param height The height.
+ */</doc>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='225' u='c' c='_ZNK7Solarus9Rectangle8get_sizeEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='619' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='622' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='625' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='628' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Map.cpp' l='176' u='c' c='_ZNK7Solarus3Map8get_sizeEv'/>
+<use f='codebrowser/src/Map.cpp' l='1088' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/MapData.cpp' l='32' u='c' c='_ZN7Solarus7MapDataC1Ev'/>
+<use f='codebrowser/src/MapData.cpp' l='866' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='47' u='c' c='_ZNK7Solarus24SpriteAnimationDirection8get_sizeEv'/>
+<use f='codebrowser/src/SpriteData.cpp' l='31' u='c' c='_ZN7Solarus28SpriteAnimationDirectionDataC1Ev'/>
+<use f='codebrowser/src/SpriteData.cpp' l='653' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='43' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='57' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='43' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='150' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='50' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='72' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='60' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='40' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Destination.cpp' l='43' u='c' c='_ZN7Solarus11DestinationC1ERKSsiRKNS_5PointEiS2_b'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='58' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='75' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='88' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='902' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='38' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='31' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='101' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='43' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='34' u='c' c='_ZN7Solarus18NonAnimatedRegionsC1ERNS_3MapEi'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='61' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='52' u='c' c='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='56' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='43' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='41' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='59' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='317' u='c' c='_ZNK7Solarus7Surface8get_sizeEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='379' u='c' c='_ZNK7Solarus11TextSurface8get_sizeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='267' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='734' u='c' c='_ZN7Solarus5Video10parse_sizeERKSsRNS_4SizeE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='832' u='c' c='_ZN7Solarus5Video15get_window_sizeEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='274' u='c' c='_ZN7Solarus12_GLOBAL__N_126entity_creation_check_sizeEP9lua_StateiRKNS_10EntityDataE'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='290' u='c' c='_ZN7Solarus10LuaContext25video_api_set_window_sizeEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='135' u='c' c='_ZN7Solarus15TestEnvironment11make_entityERKNS_5PointEi'/>

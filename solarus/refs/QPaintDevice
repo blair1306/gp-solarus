@@ -1,0 +1,31 @@
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h' l='55' ll='109'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qimage.h' l='92' c='QImage'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h' l='62' c='QPixmap'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='126' c='QWidget'/>
+<size>24</size>
+<doc f='include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h' l='55'>// device for QPainter</doc>
+<fun r='_ZN12QPaintDeviceD1Ev'/>
+<fun r='_ZNK12QPaintDevice7devTypeEv'/>
+<fun r='_ZNK12QPaintDevice14paintingActiveEv'/>
+<fun r='_ZNK12QPaintDevice11paintEngineEv'/>
+<fun r='_ZNK12QPaintDevice5widthEv'/>
+<fun r='_ZNK12QPaintDevice6heightEv'/>
+<fun r='_ZNK12QPaintDevice7widthMMEv'/>
+<fun r='_ZNK12QPaintDevice8heightMMEv'/>
+<fun r='_ZNK12QPaintDevice11logicalDpiXEv'/>
+<fun r='_ZNK12QPaintDevice11logicalDpiYEv'/>
+<fun r='_ZNK12QPaintDevice12physicalDpiXEv'/>
+<fun r='_ZNK12QPaintDevice12physicalDpiYEv'/>
+<fun r='_ZNK12QPaintDevice16devicePixelRatioEv'/>
+<fun r='_ZNK12QPaintDevice10colorCountEv'/>
+<fun r='_ZNK12QPaintDevice5depthEv'/>
+<fun r='_ZN12QPaintDeviceC1Ev'/>
+<fun r='_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE'/>
+<fun r='_ZNK12QPaintDevice11initPainterEP8QPainter'/>
+<fun r='_ZNK12QPaintDevice10redirectedEP6QPoint'/>
+<fun r='_ZNK12QPaintDevice13sharedPainterEv'/>
+<mbr r='QPaintDevice::painters' o='64' t='ushort'/>
+<fun r='_ZN12QPaintDeviceC1ERKS_'/>
+<mbr r='QPaintDevice::reserved' o='128' t='QPaintDevicePrivate *'/>
+<fun r='_ZNK12QPaintDevice7devTypeEv'/>
+<fun r='_ZNK12QPaintDevice14paintingActiveEv'/>

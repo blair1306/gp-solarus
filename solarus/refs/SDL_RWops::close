@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_rwops.h' l='91' type='int (*)(struct SDL_RWops *)'/>
+<offset>256</offset>
+<doc f='include/SDL2/SDL_rwops.h' l='86'>/**
+     *  Close and free an allocated SDL_RWops structure.
+     *
+     *  \return 0 if successful or -1 on write error when flushing data.
+     */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='237' macro='1' u='r'/>

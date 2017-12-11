@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='104' type='void Solarus::Savegame::unset(const std::string &amp; key)'/>
+<def f='codebrowser/src/Savegame.cpp' l='553' ll='559' type='void Solarus::Savegame::unset(const std::string &amp; key)'/>
+<doc f='codebrowser/src/Savegame.cpp' l='549'>/**
+ * \brief Unsets a value saved.
+ * \param key Name of the value to unset.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='682' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>

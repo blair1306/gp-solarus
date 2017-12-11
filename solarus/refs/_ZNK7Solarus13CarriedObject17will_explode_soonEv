@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='113' type='bool Solarus::CarriedObject::will_explode_soon() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='152' u='c' c='_ZN7Solarus13CarriedObject21set_animation_stoppedEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='166' u='c' c='_ZN7Solarus13CarriedObject21set_animation_walkingEv'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='222' ll='224' type='bool Solarus::CarriedObject::will_explode_soon() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='386' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='218'>/**
+ * \brief Returns whether the item is about to explode.
+ * \return true if the item is about to explode
+ */</doc>

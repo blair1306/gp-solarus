@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1160' type='static bool Solarus::LuaContext::is_circle_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='331' u='c' c='_ZN7Solarus10LuaContext11is_movementEP9lua_Statei'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1381' ll='1383' type='static bool Solarus::LuaContext::is_circle_movement(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1375'>/**
+ * \brief Returns whether a value is a userdata of type circle movement.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a circle movement.
+ */</doc>

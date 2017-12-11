@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='36' type='1'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='36'>/**&lt; a destination point on the map */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='66' u='r'/>
+<use f='codebrowser/include/solarus/entities/Destination.h' l='34'/>
+<use f='codebrowser/src/Game.cpp' l='447' u='r' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='392' u='r' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='978' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='38' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='75' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='125' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='230' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2719' u='r' c='_ZN7Solarus10LuaContext14is_destinationEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2731' u='r' c='_ZN7Solarus10LuaContext17check_destinationEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1271' u='r'/>

@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='109' type='SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='101'>/**
+ *  \brief Get the scancode corresponding to the given key code according to the
+ *         current keyboard layout.
+ *
+ *  See ::SDL_Scancode for details.
+ *
+ *  \sa SDL_GetScancodeName()
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='391' u='c' c='_ZN7Solarus10InputEvent11is_key_downENS0_11KeyboardKeyE'/>

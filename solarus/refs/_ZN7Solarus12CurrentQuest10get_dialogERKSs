@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='59' type='const Solarus::Dialog &amp; Solarus::CurrentQuest::get_dialog(const std::string &amp; dialog_id)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='303' ll='308' type='const Solarus::Dialog &amp; Solarus::CurrentQuest::get_dialog(const std::string &amp; dialog_id)'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='297'>/**
+ * \brief Returns a dialog stored in the language-specific file
+ * &quot;text/dialogs.dat&quot;.
+ * \param dialog_id id of the dialog to retrieve
+ * \return the corresponding localized dialog
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='97' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='200' u='c' c='_ZN7Solarus10LuaContext23language_api_get_dialogEP9lua_State'/>

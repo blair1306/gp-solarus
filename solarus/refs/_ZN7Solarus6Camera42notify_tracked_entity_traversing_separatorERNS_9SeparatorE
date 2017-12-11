@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='67' type='void Solarus::Camera::notify_tracked_entity_traversing_separator(Solarus::Separator &amp; separator)'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='374' ll='381' type='void Solarus::Camera::notify_tracked_entity_traversing_separator(Solarus::Separator &amp; separator)'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='370'>/**
+ * \brief Function called when the tracked entity crosses a separator.
+ * \param separator The separator being traversed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1884' u='c' c='_ZN7Solarus4Hero31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>

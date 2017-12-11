@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_joystick.h' l='184' type='Sint16 SDL_JoystickGetAxis(SDL_Joystick * joystick, int axis)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='177'>/**
+ *  Get the current state of an axis control on a joystick.
+ *
+ *  The state is a value ranging from -32768 to 32767.
+ *
+ *  The axis indices start at index 0.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='447' u='c' c='_ZN7Solarus10InputEvent21get_joypad_axis_stateEi'/>

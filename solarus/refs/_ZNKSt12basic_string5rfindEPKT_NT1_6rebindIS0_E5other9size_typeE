@@ -1,0 +1,14 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='1939' ll='1944' type='size_type std::basic_string::rfind(const _CharT * __s, size_type __pos = npos) const'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='1929'>/**
+       *  @brief  Find last position of a C string.
+       *  @param __s  C string to locate.
+       *  @param __pos  Index of character to start search at (default end).
+       *  @return  Index of start of  last occurrence.
+       *
+       *  Starting from @a __pos, searches backward for the value of
+       *  @a __s within this string.  If found, returns the index
+       *  where it begins.  If not found, returns npos.
+      */</doc>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='233' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='237' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='238' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>

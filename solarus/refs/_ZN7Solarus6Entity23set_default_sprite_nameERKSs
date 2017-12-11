@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='210' type='void Solarus::Entity::set_default_sprite_name(const std::string &amp; default_sprite_name)'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='106' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1439' ll='1442' type='void Solarus::Entity::set_default_sprite_name(const std::string &amp; default_sprite_name)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1434'>/**
+ * \brief Sets the default sprite of this entity.
+ * \param default_sprite_name The default sprite name to set.
+ * An empty name means the first one in creation order.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='174' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='108' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>

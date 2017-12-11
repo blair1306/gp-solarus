@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='57' type='bool Solarus::DialogBoxSystem::notify_command_pressed(Solarus::GameCommand command)'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='267' ll='294' type='bool Solarus::DialogBoxSystem::notify_command_pressed(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='257'>/**
+ * \brief This function is called by the game when a command is pressed
+ * while a dialog is active.
+ *
+ * Nothing happens if the dialog is handled in Lua.
+ *
+ * \param command The command pressed.
+ * \return \c true if the command was handled (that is, if the dialog box
+ * is active and is the built-in one).
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='290' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>

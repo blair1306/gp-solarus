@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='138' type='bool Solarus::SpriteData::set_animation_name(const std::string &amp; old_animation_name, const std::string &amp; new_animation_name)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='530' ll='553' type='bool Solarus::SpriteData::set_animation_name(const std::string &amp; old_animation_name, const std::string &amp; new_animation_name)'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='523'>/**
+ * \brief Changes the name of an animation in the sprite.
+ * \param old_animation_name Old name of the animation.
+ * \param new_animation_name New name to set.
+ * \return \c true in case of success.
+ * In case of failure, the old animation is unchanged.
+ */</doc>

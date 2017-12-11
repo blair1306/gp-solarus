@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='65' type='Solarus::DialogData &amp; Solarus::DialogResources::get_dialog(const std::string &amp; dialog_id)'/>
+<def f='codebrowser/src/DialogResources.cpp' l='155' ll='163' type='Solarus::DialogData &amp; Solarus::DialogResources::get_dialog(const std::string &amp; dialog_id)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='213' u='c' c='_ZN7Solarus15DialogResources13set_dialog_idERKSsS2_'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='147'>/**
+ * \brief Returns the dialog with the specified id.
+ *
+ * Non-const version.
+ *
+ * \param dialog_id A dialog id. It must exist.
+ * \return The dialog with this id.
+ */</doc>

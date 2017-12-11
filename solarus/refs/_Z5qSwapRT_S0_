@@ -1,0 +1,73 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qglobal.h' l='813' ll='817' type='void qSwap(T &amp; value1, T &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h' l='480' u='c' c='_ZN11QMetaObject10ConnectionaSEOS0_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='203' u='c' c='_ZN10QByteArrayaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='206' u='c' c='_ZN10QByteArray4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h' l='638' macro='1' type='void qSwap(QByteArray &amp; value1, QByteArray &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='230' u='c' c='_ZN7QStringaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='232' u='c' c='_ZN7QString4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1253' macro='1' type='void qSwap(QString &amp; value1, QString &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qregexp.h' l='77' u='c' c='_ZN7QRegExpaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qregexp.h' l='79' u='c' c='_ZN7QRegExp4swapERS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qregion.h' l='78' u='c' c='_ZN7QRegionaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qregion.h' l='80' u='c' c='_ZN7QRegion4swapERS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qimage.h' l='148' u='c' c='_ZN6QImageC1EOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qimage.h' l='155' u='c' c='_ZN6QImageaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qimage.h' l='157' u='c' c='_ZN6QImage4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qimage.h' l='344' macro='1' type='void qSwap(QImage &amp; value1, QImage &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h' l='205' macro='1' type='void qSwap(QPixmap &amp; value1, QPixmap &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qbrush.h' l='137' macro='1' type='void qSwap(QBrush &amp; value1, QBrush &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qpalette.h' l='76' u='c' c='_ZN8QPaletteaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qpalette.h' l='81' u='c' c='_ZN8QPalette4swapERS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qpalette.h' l='82' u='c' c='_ZN8QPalette4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qpalette.h' l='187' macro='1' type='void qSwap(QPalette &amp; value1, QPalette &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qfont.h' l='163' u='c' c='_ZN5QFont4swapERS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qfont.h' l='242' u='c' c='_ZN5QFontaSEOS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qfont.h' l='318' macro='1' type='void qSwap(QFont &amp; value1, QFont &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h' l='126' macro='1' type='void qSwap(QFontMetrics &amp; value1, QFontMetrics &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h' l='188' macro='1' type='void qSwap(QFontMetricsF &amp; value1, QFontMetricsF &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h' l='84' macro='1' type='void qSwap(QFontInfo &amp; value1, QFontInfo &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qcursor.h' l='92' u='c' c='_ZN7QCursoraSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h' l='188' u='c' c='_ZN12QKeySequenceaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h' l='190' u='c' c='_ZN12QKeySequence4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h' l='222' macro='1' type='void qSwap(QKeySequence &amp; value1, QKeySequence &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='264' u='c' c='_ZN8QVariantaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='267' u='c' c='_ZN8QVariant4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qvariant.h' l='831' macro='1' type='void qSwap(QVariant &amp; value1, QVariant &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qicon.h' l='67' u='c' c='_ZN5QIconC1EOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qicon.h' l='75' u='c' c='_ZN5QIconaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qicon.h' l='77' u='c' c='_ZN5QIcon4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qicon.h' l='134' macro='1' type='void qSwap(QIcon &amp; value1, QIcon &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='119' u='c' c='_ZN21QPersistentModelIndexaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='121' u='c' c='_ZN21QPersistentModelIndex4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='144' macro='1' type='void qSwap(QPersistentModelIndex &amp; value1, QPersistentModelIndex &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h' l='140' macro='1' type='void qSwap(QRegularExpression &amp; value1, QRegularExpression &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h' l='206' macro='1' type='void qSwap(QRegularExpressionMatch &amp; value1, QRegularExpressionMatch &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h' l='244' macro='1' type='void qSwap(QRegularExpressionMatchIterator &amp; value1, QRegularExpressionMatchIterator &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qurl.h' l='185' u='c' c='_ZN4QUrlC1EOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qurl.h' l='187' u='c' c='_ZN4QUrlaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qurl.h' l='191' u='c' c='_ZN4QUrl4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qurl.h' l='364' macro='1' type='void qSwap(QUrl &amp; value1, QUrl &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qpen.h' l='76' u='c' c='_ZN4QPenaSEOS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qpen.h' l='78' u='c' c='_ZN4QPen4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qpen.h' l='132' macro='1' type='void qSwap(QPen &amp; value1, QPen &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='295' u='c' c='_ZN11QTextFormat4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='380' macro='1' type='void qSwap(QTextFormat &amp; value1, QTextFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='559' macro='1' type='void qSwap(QTextCharFormat &amp; value1, QTextCharFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='651' macro='1' type='void qSwap(QTextBlockFormat &amp; value1, QTextBlockFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='716' macro='1' type='void qSwap(QTextListFormat &amp; value1, QTextListFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='754' macro='1' type='void qSwap(QTextImageFormat &amp; value1, QTextImageFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='854' macro='1' type='void qSwap(QTextFrameFormat &amp; value1, QTextFrameFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='925' macro='1' type='void qSwap(QTextTableFormat &amp; value1, QTextTableFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h' l='966' macro='1' type='void qSwap(QTextTableCellFormat &amp; value1, QTextTableCellFormat &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h' l='236' macro='1' type='void qSwap(QTextCursor &amp; value1, QTextCursor &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='770' u='c' c='_ZN11QTouchEvent10TouchPointaSEOS0_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='777' u='c' c='_ZN11QTouchEvent10TouchPoint4swapERS0_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h' l='155' macro='1' type='void qSwap(QRawFont &amp; value1, QRawFont &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h' l='127' macro='1' type='void qSwap(QGlyphRun &amp; value1, QGlyphRun &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qprocess.h' l='101' macro='1' type='void qSwap(QProcessEnvironment &amp; value1, QProcessEnvironment &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qdebug.h' l='95' u='c' c='_ZN6QDebug4swapERS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qdebug.h' l='132' macro='1' type='void qSwap(QDebug &amp; value1, QDebug &amp; value2)'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qdebug.h' l='162' u='c' c='_ZN6QDebugaSERKS_'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h' l='153' macro='1' type='void qSwap(QFileInfo &amp; value1, QFileInfo &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h' l='324' macro='1' type='void qSwap(QDateTime &amp; value1, QDateTime &amp; value2)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qdir.h' l='225' macro='1' type='void qSwap(QDir &amp; value1, QDir &amp; value2)'/>

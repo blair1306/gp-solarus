@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/BorderSet.h' l='35' type='void Solarus::BorderSet::BorderSet(const std::map&lt;BorderKind, std::string&gt; &amp; patterns, bool inner = false)'/>
+<def f='codebrowser/src/entities/BorderSet.cpp' l='36' ll='40' type='void Solarus::BorderSet::BorderSet(const std::map&lt;BorderKind, std::string&gt; &amp; patterns, bool inner = false)'/>
+<doc f='codebrowser/src/entities/BorderSet.cpp' l='31'>/**
+ * \brief Creates a border set with the given properties.
+ * \param patterns The pattern ids to set.
+ * \param inner Whether the tiles should be generated inside or outside the countour.
+ */</doc>

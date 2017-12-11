@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='129' type='void Solarus::Hero::set_normal_walking_speed(int normal_walking_speed)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='890' ll='897' type='void Solarus::Hero::set_normal_walking_speed(int normal_walking_speed)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='886'>/**
+ * \brief Sets the speed applied to the walking movement on normal ground.
+ * \param normal_walking_speed The normal walking speed to set in pixels per second.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1819' u='c' c='_ZN7Solarus10LuaContext26hero_api_set_walking_speedEP9lua_State'/>

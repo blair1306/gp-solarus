@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Stairs.h' l='98' type='std::string Solarus::Stairs::get_path(Solarus::Stairs::Way way) const'/>
+<def f='codebrowser/src/entities/Stairs.cpp' l='238' ll='284' type='std::string Solarus::Stairs::get_path(Solarus::Stairs::Way way) const'/>
+<doc f='codebrowser/src/entities/Stairs.cpp' l='228'>/**
+ * \brief Returns the path an entity should follow to take these stairs.
+ *
+ * When an entity collides with the stairs (usually the hero),
+ * it can call this function to know the path it should take to make the
+ * appropriate movement.
+ *
+ * \param way The way you are taking these stairs.
+ * \return The corresponding path to make.
+ */</doc>
+<use f='codebrowser/src/hero/StairsState.cpp' l='83' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>

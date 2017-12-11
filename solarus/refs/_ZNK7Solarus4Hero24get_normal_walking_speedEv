@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='128' type='int Solarus::Hero::get_normal_walking_speed() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='882' ll='884' type='int Solarus::Hero::get_normal_walking_speed() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='878'>/**
+ * \brief Returns the speed applied to the walking movement on normal ground.
+ * \return The normal walking speed in pixels per second.
+ */</doc>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='60' u='c' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='157' u='c' c='_ZNK7Solarus4Hero13SwimmingState23get_slow_swimming_speedEv'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='165' u='c' c='_ZNK7Solarus4Hero13SwimmingState23get_fast_swimming_speedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1803' u='c' c='_ZN7Solarus10LuaContext26hero_api_get_walking_speedEP9lua_State'/>

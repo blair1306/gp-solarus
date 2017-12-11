@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='225' type='static Solarus::Point Solarus::InputEvent::get_global_mouse_position()'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='518' ll='525' type='static Solarus::Point Solarus::InputEvent::get_global_mouse_position()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='513'>/**
+ * \brief Gets the x and y position of the mouse.
+ * Values are in quest size coordinates.
+ * \return The mouse position in quest coordinates.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='242' u='c' c='_ZN7Solarus10LuaContext28input_api_get_mouse_positionEP9lua_State'/>

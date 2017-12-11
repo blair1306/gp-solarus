@@ -1,0 +1,9 @@
+<def f='include/SDL2/SDL_events.h' l='210' ll='216'/>
+<size>44</size>
+<doc f='include/SDL2/SDL_events.h' l='207'>/**
+ *  \brief Keyboard text input event structure (event.text.*)
+ */</doc>
+<mbr r='SDL_TextInputEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_TextInputEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_TextInputEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_TextInputEvent::text' o='96' t='char [32]'/>

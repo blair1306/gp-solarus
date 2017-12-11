@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='959' type='static int Solarus::LuaContext::destructible_api_get_damage_on_enemies(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='413' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4241' ll='4251' type='static int Solarus::LuaContext::destructible_api_get_damage_on_enemies(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4236'>/**
+ * \brief Implementation of destructible:get_damage_on_enemies().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

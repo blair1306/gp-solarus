@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='305' type='bool Solarus::InputEvent::is_released() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1453' ll='1460' type='bool Solarus::InputEvent::is_released() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1444'>/**
+ * \brief Returns whether this keyboard, joypad or mouse event
+ * corresponds to releasing something.
+ *
+ * The thing released may be a key, a button or a direction.
+ * If this is not a keyboard, joypad or mouse event, false is returned.
+ *
+ * \return true if something was released
+ */</doc>

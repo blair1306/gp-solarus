@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='148' type='Solarus::Size Solarus::Entity::get_size() const'/>
+<use f='codebrowser/src/Game.cpp' l='496' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='573' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='262' u='c' c='_ZN7Solarus6Camera14create_surfaceEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='279' u='c' c='_ZN7Solarus6Camera19notify_size_changedEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='311' u='c' c='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='96' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1226' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1227' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1229' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='831' ll='833' type='Solarus::Size Solarus::Entity::get_size() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='827'>/**
+ * \brief Returns the size of the entity.
+ * \return the size of the entity
+ */</doc>

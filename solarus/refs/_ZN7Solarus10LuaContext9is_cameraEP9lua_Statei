@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1174' type='static bool Solarus::LuaContext::is_camera(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2564' ll='2566' type='static bool Solarus::LuaContext::is_camera(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2558'>/**
+ * \brief Returns whether a value is a userdata of type camera.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a camera.
+ */</doc>

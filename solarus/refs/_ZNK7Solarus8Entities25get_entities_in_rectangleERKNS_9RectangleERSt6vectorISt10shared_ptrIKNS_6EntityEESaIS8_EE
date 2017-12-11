@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='104' type='void Solarus::Entities::get_entities_in_rectangle(const Solarus::Rectangle &amp; rectangle, ConstEntityVector &amp; result) const'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='103'>// By coordinates.</doc>
+<def f='codebrowser/src/entities/Entities.cpp' l='429' ll='439' type='void Solarus::Entities::get_entities_in_rectangle(const Solarus::Rectangle &amp; rectangle, ConstEntityVector &amp; result) const'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='462' u='c' c='_ZNK7Solarus8Entities32get_entities_in_rectangle_sortedERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='424'>/**
+ * \brief Returns all entities whose bounding box overlaps the given rectangle.
+ * \param[in] rectangle A rectangle.
+ * \param[out] result The entities in that rectangle, in arbitrary order.
+ */</doc>

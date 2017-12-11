@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='224' type='static int Solarus::InputEvent::get_joypad_hat_direction(int hat)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='465' ll='511' type='static int Solarus::InputEvent::get_joypad_hat_direction(int hat)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='460'>/**
+ * \brief Returns the direction of a joypad hat.
+ * \param hat Index of a joypad hat.
+ * \return The direction of that hat (0 to 7, or -1 if centered).
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='187' u='c' c='_ZN7Solarus10LuaContext34input_api_get_joypad_hat_directionEP9lua_State'/>

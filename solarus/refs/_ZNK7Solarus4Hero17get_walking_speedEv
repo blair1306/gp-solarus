@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='130' type='int Solarus::Hero::get_walking_speed() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='903' ll='905' type='int Solarus::Hero::get_walking_speed() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='899'>/**
+ * \brief Returns the current speed applied to the hero&apos;s movements when he is walking.
+ * \return The current walking speed.
+ */</doc>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='41' u='c' c='_ZN7Solarus4Hero18ForcedWalkingStateC1ERS0_RKSsbb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='86' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='227' u='c' c='_ZN7Solarus4Hero19PlayerMovementState28notify_walking_speed_changedEv'/>

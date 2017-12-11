@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='60' type='bool Solarus::EquipmentItem::is_obtainable() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='163' ll='165' type='bool Solarus::EquipmentItem::is_obtainable() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='159'>/**
+ * \brief Returns whether this item can be obtained by the player.
+ * \return true if this item can be obtained.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='60' u='c' c='_ZNK7Solarus8Treasure13is_obtainableEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='279' u='c' c='_ZN7Solarus10LuaContext22item_api_is_obtainableEP9lua_State'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='52' type='static std::string Solarus::LuaData::escape_multiline_string(std::string value)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='317' u='c' c='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='159' u='c' c='_ZNK7Solarus15QuestProperties13export_to_luaERSo'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='218' ll='236' type='static std::string Solarus::LuaData::escape_multiline_string(std::string value)'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='210'>/**
+ * \brief Protects a string so that it can safely be enclosed between [[ and ]].
+ *
+ * Characters \, [ and ] are protected by a backslash.
+ *
+ * \param value The string value to escape.
+ * \return The escaped value.
+ */</doc>

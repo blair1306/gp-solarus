@@ -1,0 +1,14 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qsize.h' l='60' type='int QSize::width() const'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qsize.h' l='124' ll='125' macro='1' type='int QSize::width() const'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qsize.h' l='276' u='c' c='_ZN6QSizeFC1ERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrect.h' l='184' u='c' c='_ZN5QRectC1ERK6QPointRK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qrect.h' l='408' u='c' c='_ZN5QRect7setSizeERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='773' u='c' c='_ZNK7QWidget12minimumWidthEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='779' u='c' c='_ZNK7QWidget12maximumWidthEv'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='785' u='c' c='_ZN7QWidget14setMinimumSizeERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='788' u='c' c='_ZN7QWidget14setMaximumSizeERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='791' u='c' c='_ZN7QWidget16setSizeIncrementERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h' l='794' u='c' c='_ZN7QWidget11setBaseSizeERK5QSize'/>
+<use f='include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h' l='75' u='c' c='_ZN11QRubberBand6resizeERK5QSize'/>
+<use f='codebrowser/gui/src/quest_runner.cpp' l='100' u='c' c='_ZNK10SolarusGui11QuestRunner16create_argumentsERK7QString'/>
+<use f='codebrowser/gui/src/quests_item_delegate.cpp' l='84' u='c' c='_ZNK10SolarusGui18QuestsItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex'/>

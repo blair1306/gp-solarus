@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='187' type='void Solarus::Enemy::hurt(Solarus::Entity &amp; source, Solarus::Sprite * this_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1198' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1250' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1277' ll='1306' type='void Solarus::Enemy::hurt(Solarus::Entity &amp; source, Solarus::Sprite * this_sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1268'>/**
+ * \brief Hurts the enemy.
+ *
+ * Updates its state, its sprite and plays the sound.
+ *
+ * \param source The entity attacking the enemy (often the hero).
+ * \param this_sprite The sprite of this enemy that received the attack, or nullptr
+ * if the attack comes from a non pixel-precise collision test.
+ */</doc>

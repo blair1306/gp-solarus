@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='206' type='void Solarus::LuaContext::add_timer(const TimerPtr &amp; timer, int context_index, const Solarus::ScopedLuaRef &amp; callback_index)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='205'>// Timers.</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2498' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='109' ll='177' type='void Solarus::LuaContext::add_timer(const TimerPtr &amp; timer, int context_index, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='379' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='103'>/**
+ * \brief Registers a timer into a context (table or a userdata).
+ * \param timer A timer.
+ * \param context_index Index of the table or userdata in the stack.
+ * \param callback_ref Lua ref to the function to call when the timer finishes.
+ */</doc>

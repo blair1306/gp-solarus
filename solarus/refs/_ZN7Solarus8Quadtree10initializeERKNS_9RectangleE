@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='52' type='void Solarus::Quadtree::initialize(const Solarus::Rectangle &amp; space)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='47' u='c' c='_ZN7Solarus8QuadtreeC1ERKNS_9RectangleE'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='65' ll='82' type='void Solarus::Quadtree::initialize(const Solarus::Rectangle &amp; space)'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='61'>/**
+ * \brief Clears the quadtree and initializes it with a new size.
+ * \param space Rectangle representing the space to create partitions of.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='178' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>

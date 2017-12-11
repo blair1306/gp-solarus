@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='129' type='bool Solarus::TilesetData::remove_pattern(const std::string &amp; pattern_id)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='294' ll='297' type='bool Solarus::TilesetData::remove_pattern(const std::string &amp; pattern_id)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='320' u='c' c='_ZN7Solarus11TilesetData14set_pattern_idERKSsS2_'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='289'>/**
+ * \brief Removes a pattern from the tileset.
+ * \param pattern_id Id of the pattern to remove.
+ * \return \c true in case of success.
+ */</doc>

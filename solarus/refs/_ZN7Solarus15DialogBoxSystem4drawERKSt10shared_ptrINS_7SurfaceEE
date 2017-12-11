@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/DialogBoxSystem.h' l='60' type='void Solarus::DialogBoxSystem::draw(const SurfacePtr &amp; dst_surface)'/>
+<def f='codebrowser/src/DialogBoxSystem.cpp' l='303' ll='314' type='void Solarus::DialogBoxSystem::draw(const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/DialogBoxSystem.cpp' l='296'>/**
+ * \brief Draws the dialog box on a surface.
+ *
+ * Draws nothing if the dialog is handled by Lua.
+ *
+ * \param dst_surface The destination surface.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='588' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>

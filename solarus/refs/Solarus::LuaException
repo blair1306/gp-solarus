@@ -1,0 +1,28 @@
+<inh f='include/c++/4.9/exception' l='60' c='std::exception'/>
+<def f='codebrowser/include/solarus/lua/LuaException.h' l='48' ll='65'/>
+<size>24</size>
+<doc f='codebrowser/include/solarus/lua/LuaException.h' l='28'>/**
+ * \brief Exception to indicate that a Lua error occurred.
+ *
+ * Depending on how Lua was compiled and on whether we are using regular Lua
+ * or LuaJIT, lua_error() may be implemented with longjmp()/setjmp() or with
+ * exceptions. We don&apos;t want to assume anything about that.
+ * So there is a problem when lua_error() is called: it is possible that C++
+ * destructors are never called, resulting in memory leaks.
+ * To fix this, in the C++ side, we use exceptions instead of calling
+ * lua_error(). Stack-allocated objects are then correctly destroyed.
+ *
+ * C++/Lua boundary functions convert exceptions to Lua errors to make
+ * everything correct.
+ * - Any C++ function that calls Lua only makes protected calls.
+ * - Any C++ function directly called by Lua catches LuaExceptions and makes a
+ *   lua_error() if a LuaException occurred.
+ * This way, the C++ side only uses exceptions and the Lua side only uses
+ * Lua errors. The stack is correctly unwound (destructors are called),
+ * including when it contains several C++/Lua and Lua/C++ calls.
+ */</doc>
+<fun r='_ZN7Solarus12LuaExceptionC1EP9lua_StateRKSs'/>
+<fun r='_ZNK7Solarus12LuaException13get_lua_stateEv'/>
+<fun r='_ZNK7Solarus12LuaException4whatEv'/>
+<mbr r='Solarus::LuaException::l' o='64' t='lua_State *'/>
+<mbr r='Solarus::LuaException::error_message' o='128' t='std::string'/>

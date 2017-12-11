@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='223' type='bool Solarus::Hero::can_be_hurt(Solarus::Entity * attacker) const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1037' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1919' u='c' c='_ZN7Solarus4Hero31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2089' ll='2091' type='bool Solarus::Hero::can_be_hurt(Solarus::Entity * attacker) const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2083'>/**
+ * \brief Returns whether the hero can be hurt currently.
+ * \param attacker An attacker that is trying to hurt the hero
+ * (or nullptr if the source of the attack is not an entity).
+ * \return \c true if the hero can be hurt.
+ */</doc>

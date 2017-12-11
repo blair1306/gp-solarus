@@ -1,0 +1,21 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/DynamicTile.h' l='38' ll='66'/>
+<size>272</size>
+<doc f='codebrowser/include/solarus/entities/DynamicTile.h' l='29'>/**
+ * \brief A special tile that can be enabled or disabled.
+ *
+ * A dynamic tile is a tile placed on the map
+ * that can be enabled or disabled by the script,
+ * contrary to the Tile instances that are totally static for performance reasons.
+ * An enabled dynamic tile behaves like a normal tile and may be an obstacle or any ground.
+ * A disabled dynamic tile is invisible and can be traversed.
+ */</doc>
+<smbr r='Solarus::DynamicTile::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus11DynamicTileC1ERKSsiRKNS_5PointERKNS_4SizeERKNS_7TilesetES2_b'/>
+<fun r='_ZNK7Solarus11DynamicTile8get_typeEv'/>
+<fun r='_ZNK7Solarus11DynamicTile19get_tile_pattern_idEv'/>
+<fun r='_ZNK7Solarus11DynamicTile19get_modified_groundEv'/>
+<fun r='_ZNK7Solarus11DynamicTile24is_drawn_at_its_positionEv'/>
+<fun r='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<mbr r='Solarus::DynamicTile::tile_pattern_id' o='2048' t='const std::string'/>
+<mbr r='Solarus::DynamicTile::tile_pattern' o='2112' t='const Solarus::TilePattern &amp;'/>

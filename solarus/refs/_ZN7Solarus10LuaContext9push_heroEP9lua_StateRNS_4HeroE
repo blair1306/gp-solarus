@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1104' type='static void Solarus::LuaContext::push_hero(lua_State * l, Solarus::Hero &amp; hero)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1733' ll='1735' type='static void Solarus::LuaContext::push_hero(lua_State * l, Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5983' u='c' c='_ZN7Solarus10LuaContext21hero_on_taking_damageERNS_4HeroEi'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1728'>/**
+ * \brief Pushes a hero userdata onto the stack.
+ * \param l A Lua context.
+ * \param hero A hero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='602' u='c' c='_ZN7Solarus10LuaContext17game_api_get_heroEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2841' u='c' c='_ZN7Solarus10LuaContext16on_hurt_by_swordERNS_4HeroERNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2900' u='c' c='_ZN7Solarus10LuaContext17on_attacking_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2114' u='c' c='_ZN7Solarus10LuaContext16map_api_get_heroEP9lua_State'/>

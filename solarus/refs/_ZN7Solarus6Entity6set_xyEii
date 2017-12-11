@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='143' type='void Solarus::Entity::set_xy(int x, int y)'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='66' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='70' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='74' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='78' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='90' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='93' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='716' ll='719' type='void Solarus::Entity::set_xy(int x, int y)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='729' u='c' c='_ZN7Solarus6Entity6set_xyERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='708'>/**
+ * \brief Sets the coordinates of the origin point of the entity, relative to the map.
+ *
+ * This function sets the coordinates of the point as returned by get_x() and get_y().
+ *
+ * \param x the new x coordinate of the entity on the map
+ * \param y the new y coordinate of the entity on the map
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='592' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='248' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='328' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='117' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='987' u='c' c='_ZN7Solarus10LuaContext23entity_api_set_positionEP9lua_State'/>

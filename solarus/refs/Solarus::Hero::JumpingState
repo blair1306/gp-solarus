@@ -1,0 +1,35 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/JumpingState.h' l='30' ll='77'/>
+<size>88</size>
+<doc f='codebrowser/include/solarus/hero/JumpingState.h' l='27'>/**
+ * \brief The state &quot;Jumping&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero12JumpingStateC1ERS0_iibb'/>
+<fun r='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero12JumpingState7set_mapERNS_3MapE'/>
+<fun r='_ZN7Solarus4Hero12JumpingState6updateEv'/>
+<fun r='_ZN7Solarus4Hero12JumpingState13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero12JumpingState20notify_layer_changedEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState30get_wanted_movement_direction8Ev'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState27can_start_gameover_sequenceEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState18is_touching_groundEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState18is_stairs_obstacleERKNS_6StairsE'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState18is_sensor_obstacleERKNS_6SensorE'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState21is_separator_obstacleERKNS_9SeparatorE'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState20can_avoid_deep_waterEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState14can_avoid_holeEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState13can_avoid_iceEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState14can_avoid_lavaEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState17can_avoid_prickleEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState25can_avoid_teletransporterEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState16can_avoid_streamERKNS_6StreamE'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState16can_avoid_sensorEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState16can_avoid_switchEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState18get_carried_objectEv'/>
+<fun r='_ZNK7Solarus4Hero12JumpingState36get_previous_carried_object_behaviorEv'/>
+<mbr r='Solarus::Hero::JumpingState::movement' o='384' t='std::shared_ptr&lt;JumpMovement&gt;'/>
+<mbr r='Solarus::Hero::JumpingState::direction8' o='512' t='int'/>
+<mbr r='Solarus::Hero::JumpingState::with_sound' o='544' t='bool'/>
+<mbr r='Solarus::Hero::JumpingState::carried_object' o='576' t='std::shared_ptr&lt;CarriedObject&gt;'/>

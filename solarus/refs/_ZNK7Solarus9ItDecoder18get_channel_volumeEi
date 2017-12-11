@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/ItDecoder.h' l='44' type='int Solarus::ItDecoder::get_channel_volume(int channel) const'/>
+<def f='codebrowser/src/lowlevel/ItDecoder.cpp' l='91' ll='110' type='int Solarus::ItDecoder::get_channel_volume(int channel) const'/>
+<doc f='codebrowser/src/lowlevel/ItDecoder.cpp' l='86'>/**
+ * \brief Returns the volume of a channel.
+ * \param channel A channel index.
+ * \return The volume of this channel.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='194' u='c' c='_ZN7Solarus5Music18get_channel_volumeEi'/>

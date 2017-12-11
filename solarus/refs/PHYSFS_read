@@ -1,0 +1,18 @@
+<dec f='include/physfs.h' l='1206' type='PHYSFS_sint64 PHYSFS_read(PHYSFS_File * handle, void * buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='308' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<doc f='include/physfs.h' l='1190'>/**
+ * \fn PHYSFS_sint64 PHYSFS_read(PHYSFS_File *handle, void *buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount)
+ * \brief Read data from a PhysicsFS filehandle
+ *
+ * The file must be opened for reading.
+ *
+ *   \param handle handle returned from PHYSFS_openRead().
+ *   \param buffer buffer to store read data into.
+ *   \param objSize size in bytes of objects being read from (handle).
+ *   \param objCount number of (objSize) objects to read from (handle).
+ *  \return number of objects read. PHYSFS_getLastError() can shed light on
+ *           the reason this might be &lt; (objCount), as can PHYSFS_eof().
+ *            -1 if complete failure.
+ *
+ * \sa PHYSFS_eof
+ */</doc>

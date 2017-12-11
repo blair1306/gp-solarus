@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_video.h' l='687' type='SDL_Surface * SDL_GetWindowSurface(SDL_Window * window)'/>
+<doc f='include/SDL2/SDL_video.h' l='674'>/**
+ *  \brief Get the SDL surface associated with the window.
+ *
+ *  \return The window&apos;s framebuffer surface, or NULL on error.
+ *
+ *  A new surface will be created with the optimal format for the window,
+ *  if necessary. This surface will be freed when the window is destroyed.
+ *
+ *  \note You may not combine this with 3D or the rendering API on this window.
+ *
+ *  \sa SDL_UpdateWindowSurface()
+ *  \sa SDL_UpdateWindowSurfaceRects()
+ */</doc>

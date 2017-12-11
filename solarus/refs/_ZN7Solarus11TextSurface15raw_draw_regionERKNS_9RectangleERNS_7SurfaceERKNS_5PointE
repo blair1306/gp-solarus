@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='109' type='void Solarus::TextSurface::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='103' c='_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='555' ll='564' type='void Solarus::TextSurface::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='549'>/**
+ * \brief Draws a subrectangle of this text surface on another surface.
+ * \param region The subrectangle to draw in this object.
+ * \param dst_surface The destination surface.
+ * \param dst_position Coordinates on the destination surface.
+ */</doc>

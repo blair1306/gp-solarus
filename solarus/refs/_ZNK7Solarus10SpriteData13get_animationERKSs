@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='132' type='const Solarus::SpriteAnimationData &amp; Solarus::SpriteData::get_animation(const std::string &amp; animation_name) const'/>
+<def f='codebrowser/src/SpriteData.cpp' l='453' ll='461' type='const Solarus::SpriteAnimationData &amp; Solarus::SpriteData::get_animation(const std::string &amp; animation_name) const'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='447'>/**
+ * \brief Returns the animation with the specified name.
+ * \param animation_name An animation name. It must exist.
+ * \return The animation with this name.
+ * The object remains valid until animations are added or removed.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='89' type='bool Solarus::CarriedObject::is_crystal_obstacle(Solarus::Crystal &amp; crystal)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='344' c='_ZN7Solarus6Entity19is_crystal_obstacleERNS_7CrystalE'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='585' ll='587' type='bool Solarus::CarriedObject::is_crystal_obstacle(Solarus::Crystal &amp; )'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='580'>/**
+ * \brief Returns whether a crystal is currently considered as an obstacle for this entity.
+ * \param crystal a crystal
+ * \return true if the crystal is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='585'>/* crystal */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/RunningState.h' l='41' type='int Solarus::Hero::RunningState::get_wanted_movement_direction8() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='74' c='_ZNK7Solarus6Entity5State30get_wanted_movement_direction8Ev'/>
+<def f='codebrowser/src/hero/RunningState.cpp' l='197' ll='199' type='int Solarus::Hero::RunningState::get_wanted_movement_direction8() const'/>
+<doc f='codebrowser/src/hero/RunningState.cpp' l='188'>/**
+ * \brief Returns the direction of the hero&apos;s movement as defined by the controls applied by the player
+ * and the movements allowed is the current state.
+ *
+ * If he is not moving, -1 is returned.
+ * This direction may be different from the real movement direction because of obstacles.
+ *
+ * \return the hero&apos;s wanted direction between 0 and 7, or -1 if he is stopped
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='845' type='static int Solarus::LuaContext::entity_api_create_sprite(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='484' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='505' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1420' ll='1436' type='static int Solarus::LuaContext::entity_api_create_sprite(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1415'>/**
+ * \brief Implementation of enemy:create_sprite().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

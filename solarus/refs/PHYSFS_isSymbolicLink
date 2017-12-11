@@ -1,0 +1,19 @@
+<dec f='include/physfs.h' l='1072' type='int PHYSFS_isSymbolicLink(const char * fname)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='395' u='c' c='_ZN7Solarus10QuestFiles20data_files_enumerateERKSsbb'/>
+<doc f='include/physfs.h' l='1055'>/**
+ * \fn int PHYSFS_isSymbolicLink(const char *fname)
+ * \brief Determine if a file in the search path is really a symbolic link.
+ *
+ * Determine if the first occurence of (fname) in the search path is
+ *  really a symbolic link.
+ *
+ * Note that entries that are symlinks are ignored if
+ *  PHYSFS_permitSymbolicLinks(1) hasn&apos;t been called, and as such,
+ *  this function will always return 0 in that case.
+ *
+ *    \param fname filename in platform-independent notation.
+ *   \return non-zero if filename exists and is a symlink.  zero otherwise.
+ *
+ * \sa PHYSFS_exists
+ * \sa PHYSFS_isDirectory
+ */</doc>

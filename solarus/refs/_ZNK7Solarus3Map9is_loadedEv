@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/Map.h' l='88' type='bool Solarus::Map::is_loaded() const'/>
+<doc f='codebrowser/include/solarus/Map.h' l='87'>// loading</doc>
+<use f='codebrowser/src/Game.cpp' l='151' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<use f='codebrowser/src/Game.cpp' l='266' u='c' c='_ZN7Solarus4Game12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/Game.cpp' l='517' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='574' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/Map.cpp' l='250' ll='252' type='bool Solarus::Map::is_loaded() const'/>
+<use f='codebrowser/src/Map.cpp' l='263' u='c' c='_ZN7Solarus3Map6unloadEv'/>
+<use f='codebrowser/src/Map.cpp' l='385' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/Map.cpp' l='436' u='c' c='_ZN7Solarus3Map18get_camera_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='516' u='c' c='_ZN7Solarus3Map4drawEv'/>
+<use f='codebrowser/src/Map.cpp' l='860' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1078' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<doc f='codebrowser/src/Map.cpp' l='246'>/**
+ * \brief Returns whether the map is loaded.
+ * \return true if the map is loaded, false otherwise
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='303' u='c' c='_ZNK7Solarus6Entity9is_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='325' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='367' u='c' c='_ZN7Solarus6Entity21finish_initializationEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5110' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='532' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>

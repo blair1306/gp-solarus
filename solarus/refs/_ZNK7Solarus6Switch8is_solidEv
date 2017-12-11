@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='71' type='bool Solarus::Switch::is_solid() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='358' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2641' u='c' c='_ZN7Solarus6Entity18is_switch_obstacleERNS_6SwitchE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1800' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='125' ll='127' type='bool Solarus::Switch::is_solid() const'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='121'>/**
+ * \brief Returns whether this switch is a solid switch.
+ * \return \c true if the subtype of this switch is SOLID.
+ */</doc>

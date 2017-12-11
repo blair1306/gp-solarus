@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='306' type='void Solarus::LuaContext::sprite_on_frame_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int frame)'/>
+<use f='codebrowser/src/Sprite.cpp' l='302' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='365' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='415' u='c' c='_ZN7Solarus6Sprite17set_current_frameEib'/>
+<use f='codebrowser/src/Sprite.cpp' l='723' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='741' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='675' ll='685' type='void Solarus::LuaContext::sprite_on_frame_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int frame)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='666'>/**
+ * \brief Calls the on_frame_changed() method of a Lua sprite.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sprite A sprite whose frame has just changed.
+ * \param animation Name of the current animation.
+ * \param frame The new frame.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='104' type='bool Solarus::Sprite::is_blinking() const'/>
+<doc f='codebrowser/include/solarus/Sprite.h' l='103'>// effects</doc>
+<def f='codebrowser/src/Sprite.cpp' l='603' ll='605' type='bool Solarus::Sprite::is_blinking() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='748' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='599'>/**
+ * \brief Returns whether the sprite is blinking.
+ * \return true if the sprite is blinking
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='568' u='c' c='_ZN7Solarus8Pickable6updateEv'/>

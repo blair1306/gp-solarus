@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='46' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='40' ll='42' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='36'>/**
+ * \brief Creates a rectangle, specifying its position.
+ * \param xy coordinates of the top-left corner
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='588' u='c' c='_ZN7Solarus7Surface14add_subsurfaceERKSt10shared_ptrIS0_ERKNS_9RectangleERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='677' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='706' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>

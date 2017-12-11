@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='91' type='void Solarus::Door::set_opening_condition(const std::string &amp; opening_condition)'/>
+<def f='codebrowser/src/entities/Door.cpp' l='363' ll='365' type='void Solarus::Door::set_opening_condition(const std::string &amp; opening_condition)'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='344'>/**
+ * \brief Sets the savegame variable or the equipment item name required to
+ * open this door.
+ *
+ * You must set a savegame variable if the opening mode is
+ * OpeningMethod::BY_INTERACTION_IF_SAVEGAME_VARIABLE.
+ * The hero will be allowed to open the door if this saved value is either
+ * \c true, an integer greater than zero or a non-empty string.
+ *
+ * You must set an equipment item&apos;s name if the opening mode is
+ * OpeningMethod::BY_INTERACTION_IF_ITEM.
+ * The hero will be allowed to open the door if he has that item and,
+ * for items with an amount, if the amount is greater than zero.
+ *
+ * For the other opening methods, this setting has no effect.
+ *
+ * \param opening_condition The savegame variable or the equipment item name
+ * required.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1096' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

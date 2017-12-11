@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='58' type='int Solarus::GameCommands::get_wanted_direction8() const'/>
+<def f='codebrowser/src/GameCommands.cpp' l='140' ll='157' type='int Solarus::GameCommands::get_wanted_direction8() const'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='134'>/**
+ * \brief Returns the direction corresponding to the directional commands
+ * currently pressed by the player.
+ * \return The direction (0 to 7), or -1 if no directional command is pressed
+ * or if the combination of directional command is not a valid direction.
+ */</doc>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='69' u='c' c='_ZN7Solarus4Hero14BoomerangState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='85' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/GrabbingState.cpp' l='58' u='c' c='_ZN7Solarus4Hero13GrabbingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='75' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='82' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='248' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='89' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1508' u='c' c='_ZN7Solarus10LuaContext31game_api_get_commands_directionEP9lua_State'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='74' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='118' u='c' c='_ZN7Solarus14PlayerMovement20set_wanted_directionEv'/>

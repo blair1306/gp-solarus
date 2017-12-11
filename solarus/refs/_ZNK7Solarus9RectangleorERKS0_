@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='96' type='Solarus::Rectangle Solarus::Rectangle::operator|(const Solarus::Rectangle &amp; other) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='495' ll='498' type='Solarus::Rectangle Solarus::Rectangle::operator|(const Solarus::Rectangle &amp; other) const'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='490'>/**
+ * \brief Returns the union between this rectangle and another one.
+ * \param other Another rectangle.
+ * \return The smallest rectangle that contains both.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='491' u='c' c='_ZNK7Solarus4Hero20get_max_bounding_boxEv'/>

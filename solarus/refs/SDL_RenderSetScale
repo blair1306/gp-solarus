@@ -1,0 +1,19 @@
+<dec f='include/SDL2/SDL_render.h' l='572' type='int SDL_RenderSetScale(SDL_Renderer * renderer, float scaleX, float scaleY)'/>
+<doc f='include/SDL2/SDL_render.h' l='554'>/**
+ *  \brief Set the drawing scale for rendering on the current target.
+ *
+ *  \param renderer The renderer for which the drawing scale should be set.
+ *  \param scaleX The horizontal scaling factor
+ *  \param scaleY The vertical scaling factor
+ *
+ *  The drawing coordinates are scaled by the x/y scaling factors
+ *  before they are used by the renderer.  This allows resolution
+ *  independent drawing with a single coordinate system.
+ *
+ *  \note If this results in scaling or subpixel drawing by the
+ *        rendering backend, it will be handled using the appropriate
+ *        quality hints.  For best results use integer scaling factors.
+ *
+ *  \sa SDL_RenderGetScale()
+ *  \sa SDL_RenderSetLogicalSize()
+ */</doc>

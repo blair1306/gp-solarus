@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='43' type='bool Solarus::StringResources::set_string_key(const std::string &amp; old_key, const std::string &amp; new_key)'/>
+<def f='codebrowser/src/StringResources.cpp' l='121' ll='139' type='bool Solarus::StringResources::set_string_key(const std::string &amp; old_key, const std::string &amp; new_key)'/>
+<doc f='codebrowser/src/StringResources.cpp' l='114'>/**
+ * \brief Changes the key of a string.
+ * \param old_key Old key of the string.
+ * \param new_key New key to set.
+ * \return \c true in case of success.
+ * In case of failure, the old string is unchanged.
+ */</doc>

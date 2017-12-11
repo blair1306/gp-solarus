@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='133' type='uint32_t Solarus::Surface::get_color_value(const Solarus::Color &amp; color) const'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='508' u='c' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='538' u='c' c='_ZN7Solarus7Surface5clearERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='691' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='700' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='979' ll='983' type='uint32_t Solarus::Surface::get_color_value(const Solarus::Color &amp; color) const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='974'>/**
+ * \brief Converts a color to a 32-bit value in the current video format.
+ * \param color The color to convert.
+ * \return The pixel value of this color in the current format.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='157' type='bool'/>
+<offset>960</offset>
+<doc f='codebrowser/include/solarus/lowlevel/Surface.h' l='157'>/**&lt; Whether this surface should be modified on software side
+                                           * (and therefore immediately) when used as a destination */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='106' u='w' c='_ZN7Solarus7SurfaceC1Eii'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='130' u='w' c='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='336' u='r' c='_ZN7Solarus7Surface11set_opacityEh'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='362' u='r' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='423' u='r' c='_ZNK7Solarus7Surface23is_software_destinationEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='453' u='w' c='_ZN7Solarus7Surface24set_software_destinationEb'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='504' u='r' c='_ZN7Solarus7Surface5clearEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='527' u='r' c='_ZN7Solarus7Surface5clearERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='630' u='r' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='817' u='r' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

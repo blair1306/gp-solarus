@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_video.h' l='243' type='int SDL_VideoInit(const char * driver_name)'/>
+<doc f='include/SDL2/SDL_video.h' l='229'>/**
+ *  \brief Initialize the video subsystem, optionally specifying a video driver.
+ *
+ *  \param driver_name Initialize a specific driver by name, or NULL for the
+ *                     default video driver.
+ *
+ *  \return 0 on success, -1 on error
+ *
+ *  This function initializes the video subsystem; setting up a connection
+ *  to the window manager, etc, and determines the available display modes
+ *  and pixel formats, but does not initialize a window or graphics mode.
+ *
+ *  \sa SDL_VideoQuit()
+ */</doc>

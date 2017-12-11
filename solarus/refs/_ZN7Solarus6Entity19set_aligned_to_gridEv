@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='175' type='void Solarus::Entity::set_aligned_to_grid()'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='974' ll='978' type='void Solarus::Entity::set_aligned_to_grid()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='969'>/**
+ * \brief Makes the entity&apos;s top-left corner aligned with the 8*8 grid of the map.
+ *
+ * Be careful: This function does not check the collisions with obstacles.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1227' u='c' c='_ZN7Solarus10LuaContext23entity_api_snap_to_gridEP9lua_State'/>

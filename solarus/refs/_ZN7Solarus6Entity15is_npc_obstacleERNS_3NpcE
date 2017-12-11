@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='345' type='bool Solarus::Entity::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='193' c='_ZN7Solarus5Arrow15is_npc_obstacleERNS_3NpcE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='216' c='_ZN7Solarus9Boomerang15is_npc_obstacleERNS_3NpcE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='594' c='_ZN7Solarus13CarriedObject15is_npc_obstacleERNS_3NpcE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='533' c='_ZN7Solarus12CustomEntity15is_npc_obstacleERNS_3NpcE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='539' u='c' c='_ZN7Solarus12CustomEntity15is_npc_obstacleERNS_3NpcE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2677' ll='2679' type='bool Solarus::Entity::is_npc_obstacle(Solarus::Npc &amp; npc)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2669'>/**
+ * \brief Returns whether a non-playing character is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param npc a non-playing character
+ * \return true if the NPC is currently an obstacle for this entity
+ */</doc>
+<use f='codebrowser/src/entities/Npc.cpp' l='163' u='c' c='_ZN7Solarus3Npc15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='180' c='_ZN7Solarus3Npc15is_npc_obstacleERS0_'/>

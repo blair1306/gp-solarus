@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='79' type='void Solarus::PathFinding::add_index_sorted(Solarus::PathFinding::Node * node)'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='198' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='258' ll='275' type='void Solarus::PathFinding::add_index_sorted(Solarus::PathFinding::Node * node)'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='253'>/**
+ * \brief Adds the index of a node to the sorted list of indices of the open
+ * list, making sure that the list remains sorted.
+ * \param node The node.
+ */</doc>

@@ -1,0 +1,11 @@
+<def f='include/SDL2/SDL_events.h' l='488' ll='493'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_events.h' l='482'>/**
+ *  \brief A video driver dependent system event (event.syswm.*)
+ *         This event is disabled by default, you can enable it with SDL_EventState()
+ *
+ *  \note If you want to use this event, you should include SDL_syswm.h.
+ */</doc>
+<mbr r='SDL_SysWMEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_SysWMEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_SysWMEvent::msg' o='64' t='SDL_SysWMmsg *'/>

@@ -1,0 +1,15 @@
+<def f='codebrowser/include/solarus/SavegameConverterV1.h' l='35' ll='221'/>
+<size>16384</size>
+<doc f='codebrowser/include/solarus/SavegameConverterV1.h' l='28'>/**
+ * \brief Old format of savegames (version 1) kept for compatibility.
+ *
+ * The version 1 format was binary, not portable, not evolutive and hard to use.
+ * In particular, saved values were identified by integer indexes.
+ * This class is used to load version 1 savegames and convert them to version 2.
+ */</doc>
+<fun r='_ZN7Solarus19SavegameConverterV1C1ERKSs'/>
+<fun r='_ZN7Solarus19SavegameConverterV110get_stringEi'/>
+<fun r='_ZN7Solarus19SavegameConverterV111get_integerEi'/>
+<fun r='_ZN7Solarus19SavegameConverterV111get_booleanEi'/>
+<fun r='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<mbr r='Solarus::SavegameConverterV1::saved_data' o='0' t='Solarus::SavegameConverterV1::SavedData'/>

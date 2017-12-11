@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='37' type='2'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='37'>/**&lt; a teletransporter: the hero is transported
+                              * to a destination point when walking on it */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='54' u='r'/>
+<use f='codebrowser/include/solarus/entities/Teletransporter.h' l='38'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='56' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='89' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='141' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='251' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2791' u='r' c='_ZN7Solarus10LuaContext18is_teletransporterEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2803' u='r' c='_ZN7Solarus10LuaContext21check_teletransporterEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1272' u='r'/>

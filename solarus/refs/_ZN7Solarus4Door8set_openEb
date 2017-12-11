@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='106' type='void Solarus::Door::set_open(bool open)'/>
+<use f='codebrowser/src/entities/Door.cpp' l='93' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='96' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<def f='codebrowser/src/entities/Door.cpp' l='165' ll='200' type='void Solarus::Door::set_open(bool door_open)'/>
+<use f='codebrowser/src/entities/Door.cpp' l='529' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='681' u='c' c='_ZN7Solarus4Door11set_openingEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='715' u='c' c='_ZN7Solarus4Door11set_closingEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='161'>/**
+ * \brief Makes the door immediately open or closed.
+ * \param door_open true to make it opened, false to make it closed.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1916' u='c' c='_ZN7Solarus10LuaContext22map_api_set_doors_openEP9lua_State'/>

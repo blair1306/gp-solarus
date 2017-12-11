@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_render.h' l='306' type='int SDL_GetTextureColorMod(SDL_Texture * texture, Uint8 * r, Uint8 * g, Uint8 * b)'/>
+<doc f='include/SDL2/SDL_render.h' l='294'>/**
+ *  \brief Get the additional color value used in render copy operations.
+ *
+ *  \param texture The texture to query.
+ *  \param r         A pointer filled in with the current red color value.
+ *  \param g         A pointer filled in with the current green color value.
+ *  \param b         A pointer filled in with the current blue color value.
+ *
+ *  \return 0 on success, or -1 if the texture is not valid.
+ *
+ *  \sa SDL_SetTextureColorMod()
+ */</doc>

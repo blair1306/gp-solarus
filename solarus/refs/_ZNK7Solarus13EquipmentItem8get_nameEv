@@ -1,0 +1,32 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='52' type='const std::string &amp; Solarus::EquipmentItem::get_name() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='510' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<use f='codebrowser/src/Equipment.cpp' l='513' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<use f='codebrowser/src/Equipment.cpp' l='515' u='c' c='_ZN7Solarus9Equipment17set_item_assignedEiPNS_13EquipmentItemE'/>
+<use f='codebrowser/src/Equipment.cpp' l='531' u='c' c='_ZNK7Solarus9Equipment13get_item_slotERKNS_13EquipmentItemE'/>
+<use f='codebrowser/src/Equipment.cpp' l='531' u='c' c='_ZNK7Solarus9Equipment13get_item_slotERKNS_13EquipmentItemE'/>
+<doc f='codebrowser/include/solarus/EquipmentItem.h' l='51'>// Properties.</doc>
+<def f='codebrowser/src/EquipmentItem.cpp' l='91' ll='93' type='const std::string &amp; Solarus::EquipmentItem::get_name() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='392' u='c' c='_ZNK7Solarus13EquipmentItem11get_variantEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='407' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='431' u='c' c='_ZNK7Solarus13EquipmentItem10get_amountEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='443' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='458' u='c' c='_ZNK7Solarus13EquipmentItem14get_max_amountEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='470' u='c' c='_ZN7Solarus13EquipmentItem14set_max_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='87'>/**
+ * \brief Returns the name identifying the item.
+ * \return The name of this item.
+ */</doc>
+<use f='codebrowser/src/EquipmentItemUsage.cpp' l='51' u='c' c='_ZN7Solarus18EquipmentItemUsage5startEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2613' u='c' c='_ZN7Solarus4Hero10start_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2268' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2538' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='132' u='c' c='_ZN7Solarus10LuaContext17item_api_get_nameEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='550' u='c' c='_ZN7Solarus10LuaContext20item_api_get_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='570' u='c' c='_ZN7Solarus10LuaContext20item_api_set_variantEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='591' u='c' c='_ZN7Solarus10LuaContext19item_api_has_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='634' u='c' c='_ZN7Solarus10LuaContext19item_api_set_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='655' u='c' c='_ZN7Solarus10LuaContext19item_api_add_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='680' u='c' c='_ZN7Solarus10LuaContext22item_api_remove_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='704' u='c' c='_ZN7Solarus10LuaContext23item_api_get_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='724' u='c' c='_ZN7Solarus10LuaContext23item_api_set_max_amountEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='316' u='c' c='_ZN7Solarus10LuaContext8run_itemERNS_13EquipmentItemE'/>

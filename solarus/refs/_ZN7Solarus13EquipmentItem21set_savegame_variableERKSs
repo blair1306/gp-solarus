@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='56' type='void Solarus::EquipmentItem::set_savegame_variable(const std::string &amp; savegame_variable)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='126' ll='128' type='void Solarus::EquipmentItem::set_savegame_variable(const std::string &amp; savegame_variable)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='121'>/**
+ * \brief Sets the savegame variable where the item possession state is saved.
+ * \param savegame_variable The savegame variable that stores the item
+ * possession state, or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='215' u='c' c='_ZN7Solarus10LuaContext30item_api_set_savegame_variableEP9lua_State'/>

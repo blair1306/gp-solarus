@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='73' type='static int Solarus::Music::get_num_channels()'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='173' ll='179' type='static int Solarus::Music::get_num_channels()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='166'>/**
+ * \brief Returns the number of channels of the current music.
+ *
+ * This function is only supported for .it musics.
+ *
+ * \return The number of channels.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='253' u='c' c='_ZN7Solarus10LuaContext32audio_api_get_music_num_channelsEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='273' u='c' c='_ZN7Solarus10LuaContext34audio_api_get_music_channel_volumeEP9lua_State'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='299' u='c' c='_ZN7Solarus10LuaContext34audio_api_set_music_channel_volumeEP9lua_State'/>

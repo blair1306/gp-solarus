@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/GameCommand.h' l='34' type='3'/>
+<use f='codebrowser/src/GameCommands.cpp' l='37' u='r'/>
+<use f='codebrowser/src/GameCommands.cpp' l='626' u='r' c='_ZNK7Solarus12GameCommands38get_keyboard_binding_savegame_variableENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='652' u='r' c='_ZNK7Solarus12GameCommands36get_joypad_binding_savegame_variableENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='313' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='359' c='_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2477' u='r' c='_ZN7Solarus4Hero13start_runningEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1299' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>

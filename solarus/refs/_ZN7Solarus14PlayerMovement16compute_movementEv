@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/PlayerMovement.h' l='44' type='void Solarus::PlayerMovement::compute_movement()'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='91' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='66' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='77' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='107' u='c' c='_ZN7Solarus14PlayerMovement16set_moving_speedEi'/>
+<def f='codebrowser/src/movements/PlayerMovement.cpp' l='130' ll='147' type='void Solarus::PlayerMovement::compute_movement()'/>
+<doc f='codebrowser/src/movements/PlayerMovement.cpp' l='125'>/**
+ * \brief Changes the movement of the entity depending on the direction wanted.
+ *
+ * This function is called when the direction is changed.
+ */</doc>

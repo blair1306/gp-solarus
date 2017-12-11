@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1193' type='static std::shared_ptr&lt;ShopTreasure&gt; Solarus::LuaContext::check_shop_treasure(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3736' ll='3740' type='static std::shared_ptr&lt;ShopTreasure&gt; Solarus::LuaContext::check_shop_treasure(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3783' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3817' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3729'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * shop treasure and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The shop treasure.
+ */</doc>

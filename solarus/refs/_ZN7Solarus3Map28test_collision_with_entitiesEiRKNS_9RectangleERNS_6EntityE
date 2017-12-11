@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='123' type='bool Solarus::Map::test_collision_with_entities(int layer, const Solarus::Rectangle &amp; collision_box, Solarus::Entity &amp; entity_to_check)'/>
+<def f='codebrowser/src/Map.cpp' l='855' ll='879' type='bool Solarus::Map::test_collision_with_entities(int layer, const Solarus::Rectangle &amp; collision_box, Solarus::Entity &amp; entity_to_check)'/>
+<use f='codebrowser/src/Map.cpp' l='951' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='978' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiiiRNS_6EntityE'/>
+<doc f='codebrowser/src/Map.cpp' l='847'>/**
+ * \brief Tests whether a rectangle overlaps an obstacle dynamic entity.
+ * \param layer The layer.
+ * \param collision_box The rectangle to check.
+ * \param entity_to_check The entity to check (used to decide what is
+ * considered as obstacle).
+ * \return \c true if there is an obstacle entity at this point.
+ */</doc>

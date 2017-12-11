@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='637' type='static int Solarus::LuaContext::path_movement_api_get_loop(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='195' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1197' ll='1204' type='static int Solarus::LuaContext::path_movement_api_get_loop(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1192'>/**
+ * \brief Implementation of path_movement:get_loop().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

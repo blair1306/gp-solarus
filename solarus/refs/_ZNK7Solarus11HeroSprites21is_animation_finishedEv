@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='85' type='bool Solarus::HeroSprites::is_animation_finished() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='471' u='c' c='_ZNK7Solarus4Hero21is_animation_finishedEv'/>
+<use f='codebrowser/src/hero/BowState.cpp' l='54' u='c' c='_ZN7Solarus4Hero8BowState6updateEv'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='70' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='775' ll='777' type='bool Solarus::HeroSprites::is_animation_finished() const'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='771'>/**
+ * \brief Returns whether the sprites animations are finished.
+ * \return true if the animation is finished
+ */</doc>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='96' u='c' c='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='78' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>

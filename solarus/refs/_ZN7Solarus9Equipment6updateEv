@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='56' type='void Solarus::Equipment::update()'/>
+<def f='codebrowser/src/Equipment.cpp' l='97' ll='116' type='void Solarus::Equipment::update()'/>
+<doc f='codebrowser/src/Equipment.cpp' l='90'>/**
+ * \brief This function is be called repeatedly by the game.
+ *
+ * Most of the time, there is nothing to update in this class.
+ * The only elements updated here are some dynamic things
+ * such as equipment-related animations or dialogs.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='369' u='c' c='_ZN7Solarus4Game6updateEv'/>

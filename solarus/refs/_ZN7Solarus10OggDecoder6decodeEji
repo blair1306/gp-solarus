@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/OggDecoder.h' l='38' type='void Solarus::OggDecoder::decode(ALuint destination_buffer, ALsizei nb_samples)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='495' u='c' c='_ZN7Solarus5Music10decode_oggEji'/>
+<def f='codebrowser/src/lowlevel/OggDecoder.cpp' l='118' ll='203' type='void Solarus::OggDecoder::decode(ALuint destination_buffer, ALsizei nb_samples)'/>
+<doc f='codebrowser/src/lowlevel/OggDecoder.cpp' l='112'>/**
+ * \brief Decodes a chunk of the previously loaded OGG data into PCM data
+ * and plays it.
+ * \param decoded_data Pointer to where you want the decoded data to be written.
+ * \param nb_samples Number of samples to write.
+ */</doc>

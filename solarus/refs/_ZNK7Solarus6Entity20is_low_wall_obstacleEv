@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='415' type='bool Solarus::Entity::is_low_wall_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='116' c='_ZNK7Solarus5Arrow20is_low_wall_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='139' c='_ZNK7Solarus9Boomerang20is_low_wall_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='517' c='_ZNK7Solarus13CarriedObject20is_low_wall_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='694' c='_ZNK7Solarus12CustomEntity20is_low_wall_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='266' c='_ZNK7Solarus5Enemy20is_low_wall_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2392' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2465' ll='2467' type='bool Solarus::Entity::is_low_wall_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2457'>/**
+ * \brief Returns whether a low wall is currently considered as an obstacle
+ * by this entity.
+ *
+ * This function returns \c true by default.
+ *
+ * \return \c true if low walls are currently obstacle for this entity.
+ */</doc>

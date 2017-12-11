@@ -1,0 +1,23 @@
+<dec f='include/luajit-2.0/lua.h' l='168' type='void lua_pushcclosure(lua_State * L, lua_CFunction fn, int n)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='292' macro='1' u='c'/>
+<use f='codebrowser/src/EntityData.cpp' l='855' u='c' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='879' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='896' macro='1' u='c'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='138' u='c' c='_ZN7Solarus15QuestProperties15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='236' macro='1' u='c'/>
+<use f='codebrowser/src/Savegame.cpp' l='217' macro='1' u='c'/>
+<use f='codebrowser/src/SpriteData.cpp' l='681' macro='1' u='c'/>
+<use f='codebrowser/src/StringResources.cpp' l='175' macro='1' u='c'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1374' u='c' c='_ZNK7Solarus4Hero26make_solid_ground_callbackERKNS_5PointEi'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='613' macro='1' u='c'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='614' macro='1' u='c'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='615' macro='1' u='c'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='649' u='c' c='_ZN7Solarus10LuaContext20push_entity_iteratorEP9lua_StateRKSt6vectorISt10shared_ptrINS_6EntityEESaIS6_EE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='740' u='c' c='_ZN7Solarus10LuaContext26push_named_sprite_iteratorEP9lua_StateRKSt6vectorINS_6Entity11NamedSpriteESaIS5_EE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2490' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3761' u='c' c='_ZN7Solarus10LuaContext32notify_shop_treasure_interactionERNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3795' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='145' macro='1' u='c'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='270' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='177' u='c' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1317' macro='1' u='c'/>

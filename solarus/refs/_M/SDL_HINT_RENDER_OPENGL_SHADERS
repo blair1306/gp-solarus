@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_hints.h' l='95'/>
+<doc f='include/SDL2/SDL_hints.h' l='86'>/**
+ *  \brief  A variable controlling whether the OpenGL render driver uses shaders if they are available.
+ *
+ *  This variable can be set to the following values:
+ *    &quot;0&quot;       - Disable shaders
+ *    &quot;1&quot;       - Enable shaders
+ *
+ *  By default shaders are used if OpenGL supports them.
+ */</doc>

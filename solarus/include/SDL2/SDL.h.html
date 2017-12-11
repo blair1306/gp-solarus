@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL.h source code [include/SDL2/SDL.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL.h.html'>SDL.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Main include header for the SDL library</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> *  <span class="command">\mainpage</span> <span class="verb">Simple DirectMedia Layer (SDL)</span></i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> *  <a href="http://www.libsdl.org/">http://www.libsdl.org/</a></i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *  <span class="command">\section</span> <span class="verb">intro_sec Introduction</span></i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *  Simple DirectMedia Layer is a cross-platform development library designed</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *  to provide low level access to audio, keyboard, mouse, joystick, and</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *  graphics hardware via OpenGL and Direct3D. It is used by video playback</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *  software, emulators, and popular games including Valve's award winning</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *  catalog and many Humble Bundle games.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *  SDL officially supports Windows, Mac OS X, Linux, iOS, and Android.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *  Support for other platforms may be found in the source code.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *  SDL is written in C, works natively with C++, and there are bindings </i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  available for several other languages, including C# and Python.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *  This library is distributed under the zlib license, which can be found</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *  in the file "COPYING.txt".</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *  The best way to learn how to use SDL is to check out the header files in</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *  the "include" subdirectory and the programs in the "test" subdirectory.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *  The header files and test programs are well commented and always up to date.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *  More documentation and FAQs are available online at:</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *      <a href="http://wiki.libsdl.org/">http://wiki.libsdl.org/</a></i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *  If you need help with the library, or just want to discuss SDL related</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *  issues, you can join the developers mailing list:</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *      <a href="http://www.libsdl.org/mailing-list.php">http://www.libsdl.org/mailing-list.php</a></i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *  Enjoy!</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *      Sam Lantinga                (slouke<span class="command">n@libsdl</span>.org)</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="64">ifndef</span> <span class="macro" data-ref="_M/_SDL_H">_SDL_H</span></u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/_SDL_H" data-ref="_M/_SDL_H">_SDL_H</dfn></u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#include <a href="SDL_main.h.html">"SDL_main.h"</a></u></td></tr>
+<tr><th id="68">68</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="69">69</th><td><u>#include <a href="SDL_assert.h.html">"SDL_assert.h"</a></u></td></tr>
+<tr><th id="70">70</th><td><u>#include <a href="SDL_atomic.h.html">"SDL_atomic.h"</a></u></td></tr>
+<tr><th id="71">71</th><td><u>#include <a href="SDL_audio.h.html">"SDL_audio.h"</a></u></td></tr>
+<tr><th id="72">72</th><td><u>#include <a href="SDL_clipboard.h.html">"SDL_clipboard.h"</a></u></td></tr>
+<tr><th id="73">73</th><td><u>#include <a href="SDL_cpuinfo.h.html">"SDL_cpuinfo.h"</a></u></td></tr>
+<tr><th id="74">74</th><td><u>#include <a href="SDL_endian.h.html">"SDL_endian.h"</a></u></td></tr>
+<tr><th id="75">75</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="76">76</th><td><u>#include <a href="SDL_events.h.html">"SDL_events.h"</a></u></td></tr>
+<tr><th id="77">77</th><td><u>#include <a href="SDL_filesystem.h.html">"SDL_filesystem.h"</a></u></td></tr>
+<tr><th id="78">78</th><td><u>#include <a href="SDL_joystick.h.html">"SDL_joystick.h"</a></u></td></tr>
+<tr><th id="79">79</th><td><u>#include <a href="SDL_gamecontroller.h.html">"SDL_gamecontroller.h"</a></u></td></tr>
+<tr><th id="80">80</th><td><u>#include <a href="SDL_haptic.h.html">"SDL_haptic.h"</a></u></td></tr>
+<tr><th id="81">81</th><td><u>#include <a href="SDL_hints.h.html">"SDL_hints.h"</a></u></td></tr>
+<tr><th id="82">82</th><td><u>#include <a href="SDL_loadso.h.html">"SDL_loadso.h"</a></u></td></tr>
+<tr><th id="83">83</th><td><u>#include <a href="SDL_log.h.html">"SDL_log.h"</a></u></td></tr>
+<tr><th id="84">84</th><td><u>#include <a href="SDL_messagebox.h.html">"SDL_messagebox.h"</a></u></td></tr>
+<tr><th id="85">85</th><td><u>#include <a href="SDL_mutex.h.html">"SDL_mutex.h"</a></u></td></tr>
+<tr><th id="86">86</th><td><u>#include <a href="SDL_power.h.html">"SDL_power.h"</a></u></td></tr>
+<tr><th id="87">87</th><td><u>#include <a href="SDL_render.h.html">"SDL_render.h"</a></u></td></tr>
+<tr><th id="88">88</th><td><u>#include <a href="SDL_rwops.h.html">"SDL_rwops.h"</a></u></td></tr>
+<tr><th id="89">89</th><td><u>#include <a href="SDL_system.h.html">"SDL_system.h"</a></u></td></tr>
+<tr><th id="90">90</th><td><u>#include <a href="SDL_thread.h.html">"SDL_thread.h"</a></u></td></tr>
+<tr><th id="91">91</th><td><u>#include <a href="SDL_timer.h.html">"SDL_timer.h"</a></u></td></tr>
+<tr><th id="92">92</th><td><u>#include <a href="SDL_version.h.html">"SDL_version.h"</a></u></td></tr>
+<tr><th id="93">93</th><td><u>#include <a href="SDL_video.h.html">"SDL_video.h"</a></u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="96">96</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="97">97</th><td><u>#<span data-ppcond="97">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="98">98</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="97">endif</span></u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i>/* As of version 0.5, SDL is loaded dynamically into the application */</i></td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">SDL_INIT_*</span></i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *  These are the flags which may be passed to SDL_Init().  You should</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *  specify the subsystems which you will be using in your application.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="109">109</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_TIMER" data-ref="_M/SDL_INIT_TIMER">SDL_INIT_TIMER</dfn>          0x00000001</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_AUDIO" data-ref="_M/SDL_INIT_AUDIO">SDL_INIT_AUDIO</dfn>          0x00000010</u></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_VIDEO" data-ref="_M/SDL_INIT_VIDEO">SDL_INIT_VIDEO</dfn>          0x00000020  /**&lt; SDL_INIT_VIDEO implies SDL_INIT_EVENTS */</u></td></tr>
+<tr><th id="113">113</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_JOYSTICK" data-ref="_M/SDL_INIT_JOYSTICK">SDL_INIT_JOYSTICK</dfn>       0x00000200  /**&lt; SDL_INIT_JOYSTICK implies SDL_INIT_EVENTS */</u></td></tr>
+<tr><th id="114">114</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_HAPTIC" data-ref="_M/SDL_INIT_HAPTIC">SDL_INIT_HAPTIC</dfn>         0x00001000</u></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_GAMECONTROLLER" data-ref="_M/SDL_INIT_GAMECONTROLLER">SDL_INIT_GAMECONTROLLER</dfn> 0x00002000  /**&lt; SDL_INIT_GAMECONTROLLER implies SDL_INIT_JOYSTICK */</u></td></tr>
+<tr><th id="116">116</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_EVENTS" data-ref="_M/SDL_INIT_EVENTS">SDL_INIT_EVENTS</dfn>         0x00004000</u></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_NOPARACHUTE" data-ref="_M/SDL_INIT_NOPARACHUTE">SDL_INIT_NOPARACHUTE</dfn>    0x00100000  /**&lt; Don't catch fatal signals */</u></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/SDL_INIT_EVERYTHING" data-ref="_M/SDL_INIT_EVERYTHING">SDL_INIT_EVERYTHING</dfn> ( \</u></td></tr>
+<tr><th id="119">119</th><td><u>                SDL_INIT_TIMER | SDL_INIT_AUDIO | SDL_INIT_VIDEO | SDL_INIT_EVENTS | \</u></td></tr>
+<tr><th id="120">120</th><td><u>                SDL_INIT_JOYSTICK | SDL_INIT_HAPTIC | SDL_INIT_GAMECONTROLLER \</u></td></tr>
+<tr><th id="121">121</th><td><u>            )</u></td></tr>
+<tr><th id="122">122</th><td><i>/* @} */</i></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *  This function initializes  the subsystems specified by<span class="command"> \c</span> <span class="arg">flags</span></i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *  Unless the ::SDL_INIT_NOPARACHUTE flag is set, it will install cleanup</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *  signal handlers for some commonly ignored fatal signals (like SIGSEGV).</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="129">129</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_Init" title='SDL_Init' data-ref="SDL_Init">SDL_Init</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col3 decl" id="1703flags" title='flags' data-type='Uint32' data-ref="1703flags">flags</dfn>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *  This function initializes specific SDL subsystems</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="134">134</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_InitSubSystem" title='SDL_InitSubSystem' data-ref="SDL_InitSubSystem">SDL_InitSubSystem</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col4 decl" id="1704flags" title='flags' data-type='Uint32' data-ref="1704flags">flags</dfn>);</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *  This function cleans up specific SDL subsystems</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="139">139</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_QuitSubSystem" title='SDL_QuitSubSystem' data-ref="SDL_QuitSubSystem">SDL_QuitSubSystem</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col5 decl" id="1705flags" title='flags' data-type='Uint32' data-ref="1705flags">flags</dfn>);</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *  This function returns a mask of the specified subsystems which have</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *  previously been initialized.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *  If<span class="command"> \c</span> <span class="arg">flags</span> is 0, it returns a mask of all initialized subsystems.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="147">147</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WasInit" title='SDL_WasInit' data-ref="SDL_WasInit">SDL_WasInit</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col6 decl" id="1706flags" title='flags' data-type='Uint32' data-ref="1706flags">flags</dfn>);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *  This function cleans up all initialized subsystems. You should</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *  call it upon all exit conditions.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="153">153</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_Quit" title='SDL_Quit' data-ref="SDL_Quit">SDL_Quit</dfn>(<em>void</em>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="156">156</th><td><u>#<span data-ppcond="156">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="157">157</th><td>}</td></tr>
+<tr><th id="158">158</th><td><u>#<span data-ppcond="156">endif</span></u></td></tr>
+<tr><th id="159">159</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><u>#<span data-ppcond="64">endif</span> /* _SDL_H */</u></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

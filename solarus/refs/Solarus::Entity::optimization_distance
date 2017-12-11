@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='493' type='int'/>
+<offset>1984</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='493'>/**&lt; Above this distance from the visible area,
+                                                 * the engine may skip updates (0 means infinite). */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='85' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1203' u='r' c='_ZNK7Solarus6Entity25get_optimization_distanceEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1223' u='w' c='_ZN7Solarus6Entity25set_optimization_distanceEi'/>

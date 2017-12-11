@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='82' type='void Solarus::PathMovement::start_next_elementary_move()'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='168' u='c' c='_ZN7Solarus12PathMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='216' u='c' c='_ZN7Solarus12PathMovement7restartEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='253' ll='300' type='void Solarus::PathMovement::start_next_elementary_move()'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='245'>/**
+ * \brief Starts the next 8-pixel trajectory of the path movement.
+ *
+ * This function is called when an 8-pixel trajectory of the movement is finished,
+ * or when the movement is restarted.
+ * Before starting the 8-pixel move, if the property must_be_aligned is true,
+ * the entity&apos;s top-left corner tries to get aligned with the 8*8 squares of the grid.
+ */</doc>

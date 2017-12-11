@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='96' type='bool'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='66' u='w' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='303' u='r' c='_ZNK7Solarus5Chest29is_opening_condition_consumedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='326' u='w' c='_ZN7Solarus5Chest30set_opening_condition_consumedEb'/>
+<offset>2496</offset>
+<doc f='codebrowser/include/solarus/entities/Chest.h' l='96'>/**&lt; Indicates that the required savegame variable
+                                        * (in the case of \c OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE)
+                                        * or the required item
+                                        * (in the case of \c OPENING_BY_INTERACTION_IF_ITEM)
+                                        * should be consumed when opening the chesty. */</doc>

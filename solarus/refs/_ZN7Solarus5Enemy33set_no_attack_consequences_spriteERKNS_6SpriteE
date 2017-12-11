@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='138' type='void Solarus::Enemy::set_no_attack_consequences_sprite(const Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='693' ll='699' type='void Solarus::Enemy::set_no_attack_consequences_sprite(const Solarus::Sprite &amp; sprite)'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='689'>/**
+ * \brief Sets a particular sprite of the enemy insensible to all attacks.
+ * \param sprite a sprite of this enemy
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4867' u='c' c='_ZN7Solarus10LuaContext31enemy_api_set_invincible_spriteEP9lua_State'/>

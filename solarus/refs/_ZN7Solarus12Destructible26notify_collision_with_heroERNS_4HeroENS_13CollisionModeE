@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='92' type='void Solarus::Destructible::notify_collision_with_hero(Solarus::Hero &amp; hero, Solarus::CollisionMode collision_mode)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='324' ll='340' type='void Solarus::Destructible::notify_collision_with_hero(Solarus::Hero &amp; hero, Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='319'>/**
+ * \brief This function is called when this entity detects a collision with the hero.
+ * \param hero the hero
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='324'>/* collision_mode */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1539' u='c' c='_ZN7Solarus4Hero34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>

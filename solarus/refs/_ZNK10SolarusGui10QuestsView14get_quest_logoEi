@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='51' type='const QPixmap &amp; SolarusGui::QuestsView::get_quest_logo(int index) const'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='141' u='c' c='_ZNK10SolarusGui10QuestsView17get_selected_logoEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='149' ll='152' type='const QPixmap &amp; SolarusGui::QuestsView::get_quest_logo(int index) const'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='144'>/**
+ * @brief Returns the logo of a quest in this view.
+ * @param index Index of the quest to get.
+ * @return The quest logo.
+ */</doc>

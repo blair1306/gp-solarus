@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='66' type='bool Solarus::Entity::State::can_start_gameover_sequence() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='435' ll='437' type='bool Solarus::Entity::State::can_start_gameover_sequence() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='431'>/**
+ * \brief Returns whether the game over sequence can start in the current state.
+ * \return true if the game over sequence can start in the current state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='391' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='174' c='_ZNK7Solarus4Hero22BackToSolidGroundState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/FallingState.cpp' l='114' c='_ZNK7Solarus4Hero12FallingState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='91' c='_ZNK7Solarus4Hero18ForcedWalkingState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='145' c='_ZNK7Solarus4Hero9HurtState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='195' c='_ZNK7Solarus4Hero12JumpingState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/PlungingState.cpp' l='92' c='_ZNK7Solarus4Hero13PlungingState27can_start_gameover_sequenceEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='279' c='_ZNK7Solarus4Hero12RunningState27can_start_gameover_sequenceEv'/>

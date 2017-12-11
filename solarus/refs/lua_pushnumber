@@ -1,0 +1,12 @@
+<dec f='include/luajit-2.0/lua.h' l='161' type='void lua_pushnumber(lua_State * L, lua_Number n)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1278' u='c' c='_ZN7Solarus10LuaContext20entity_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1309' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction4_toEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1340' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction8_toEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='331' u='c' c='_ZN7Solarus10LuaContext29input_api_get_finger_pressureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1914' u='c' c='_ZN7Solarus10LuaContext17on_finger_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1947' u='c' c='_ZN7Solarus10LuaContext18on_finger_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1983' u='c' c='_ZN7Solarus10LuaContext15on_finger_movedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='340' u='c' c='_ZN7Solarus10LuaContext18main_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='759' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='899' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1056' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_get_angleEP9lua_State'/>

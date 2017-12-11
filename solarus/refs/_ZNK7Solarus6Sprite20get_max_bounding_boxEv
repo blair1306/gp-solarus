@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='71' type='const Solarus::Rectangle &amp; Solarus::Sprite::get_max_bounding_box() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='203' ll='206' type='const Solarus::Rectangle &amp; Solarus::Sprite::get_max_bounding_box() const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='194'>/**
+ * \brief Returns a rectangle big enough to contain a frame of any animation
+ * and direction.
+ *
+ * The rectangle is anchored to the origin point of the sprite,
+ * so it has has negative top and left coordinates.
+ *
+ * \return The maximum frame size.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='921' u='c' c='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='472' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='475' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='478' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='481' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='484' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='487' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='490' u='c' c='_ZN7Solarus11HeroSprites30recompute_sprites_bounding_boxEv'/>

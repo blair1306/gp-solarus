@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='103' type='Solarus::Surface * Solarus::Transition::get_previous_surface() const'/>
+<def f='codebrowser/src/Transition.cpp' l='114' ll='116' type='Solarus::Surface * Solarus::Transition::get_previous_surface() const'/>
+<doc f='codebrowser/src/Transition.cpp' l='109'>/**
+ * \brief Returns the surface to show during the closing transition
+ * that was played before this opening transition.
+ * \return The previous surface or nullptr.
+ */</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='50' u='c' c='_ZN7Solarus19TransitionScrolling29get_previous_map_dst_positionEi'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='78' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='218' u='c' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>

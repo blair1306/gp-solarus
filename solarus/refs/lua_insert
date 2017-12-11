@@ -1,0 +1,4 @@
+<dec f='include/luajit-2.0/lua.h' l='124' type='void lua_insert(lua_State * L, int idx)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1059' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1714' u='c' c='_ZN7Solarus10LuaContext19map_api_move_cameraEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='370' u='c' c='_ZN7Solarus10LuaContext15timer_api_startEP9lua_State'/>

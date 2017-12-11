@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='63' type='void Solarus::Surface::Surface(SDL_Surface * internal_surface)'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='128' ll='153' type='void Solarus::Surface::Surface(SDL_Surface * internal_surface)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='119'>/**
+ * \brief Creates a surface form the specified SDL texture.
+ *
+ * This constructor must be used only by low-level classes that manipulate directly
+ * SDL dependent surfaces.
+ *
+ * \param internal_surface The internal surface data.
+ * The created surface takes ownership of this object.
+ */</doc>

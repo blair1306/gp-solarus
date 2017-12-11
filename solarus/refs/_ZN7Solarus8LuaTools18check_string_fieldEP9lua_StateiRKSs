@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='142' type='std::string Solarus::LuaTools::check_string_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='238' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/DialogResources.cpp' l='239' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/EntityData.cpp' l='784' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/MapData.cpp' l='854' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<use f='codebrowser/src/QuestProperties.cpp' l='44' u='c' c='_ZN7Solarus12_GLOBAL__N_17l_questEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='60' u='c' c='_ZN7Solarus12_GLOBAL__N_118l_resource_elementEP9lua_State'/>
+<use f='codebrowser/src/QuestResources.cpp' l='61' u='c' c='_ZN7Solarus12_GLOBAL__N_118l_resource_elementEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='597' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/SpriteData.cpp' l='598' u='c' c='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<use f='codebrowser/src/StringResources.cpp' l='159' u='c' c='_ZN7Solarus15StringResources6l_textEP9lua_State'/>
+<use f='codebrowser/src/StringResources.cpp' l='160' u='c' c='_ZN7Solarus15StringResources6l_textEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='481' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='582' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5083' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='819' u='c' c='_ZN7Solarus10LuaContext17print_lua_versionEv'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='503' ll='519' type='std::string Solarus::LuaTools::check_string_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='493'>/**
+ * \brief Checks that a table field is a string and returns it.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::check_string().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \return The wanted field as a string.
+ */</doc>

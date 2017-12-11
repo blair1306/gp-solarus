@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='98' type='bool Solarus::Door::can_open() const'/>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='97'>// State.</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='239' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Door.cpp' l='418' ll='466' type='bool Solarus::Door::can_open() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='563' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='413'>/**
+ * \brief Returns whether the required conditions are met to open this door.
+ * \return \c true if the hero can currently open the door by pressing the
+ * action command.
+ */</doc>

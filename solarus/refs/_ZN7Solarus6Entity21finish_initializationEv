@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='427' type='void Solarus::Entity::finish_initialization()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='328' u='c' c='_ZN7Solarus6Entity7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='352' u='c' c='_ZN7Solarus6Entity18notify_map_startedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='363' ll='374' type='void Solarus::Entity::finish_initialization()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='356'>/**
+ * \brief Finishes the initialization of this entity once the map is loaded.
+ *
+ * This function must be called once the map is ready.
+ * It calls notify_creating(), then the Lua event entity:on_created(),
+ * and then notify_created().
+ */</doc>

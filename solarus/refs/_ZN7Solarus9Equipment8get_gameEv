@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='51' type='Solarus::Game * Solarus::Equipment::get_game()'/>
+<def f='codebrowser/src/Equipment.cpp' l='55' ll='57' type='Solarus::Game * Solarus::Equipment::get_game()'/>
+<use f='codebrowser/src/Equipment.cpp' l='609' u='c' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='51'>/**
+ * \brief If this equipment object is currently running in a game, return that game.
+ * \return A game or nullptr.
+ */</doc>
+<use f='codebrowser/src/EquipmentItem.cpp' l='60' u='c' c='_ZN7Solarus13EquipmentItem8get_gameEv'/>

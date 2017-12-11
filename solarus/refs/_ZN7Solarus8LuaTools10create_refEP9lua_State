@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='48' type='Solarus::ScopedLuaRef Solarus::LuaTools::create_ref(lua_State * l)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3792' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3796' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='461' u='c' c='_ZN7Solarus10LuaContext10create_refEv'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='74' ll='77' type='Solarus::ScopedLuaRef Solarus::LuaTools::create_ref(lua_State * l)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='711' u='c' c='_ZN7Solarus8LuaTools20check_function_fieldEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='754' u='c' c='_ZN7Solarus8LuaTools18opt_function_fieldEP9lua_StateiRKSs'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='67'>/**
+ * \brief Creates a reference to the Lua value on top of the stack and pops
+ * this value.
+ * \param l A Lua state.
+ * \return The reference created, wrapped in an object that manages its
+ * lifetime.
+ */</doc>

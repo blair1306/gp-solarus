@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='101' type='bool Solarus::Savegame::is_boolean(const std::string &amp; key) const'/>
+<def f='codebrowser/src/Savegame.cpp' l='498' ll='510' type='bool Solarus::Savegame::is_boolean(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='493'>/**
+ * \brief Returns whether a saved value is a boolean.
+ * \param key Name of the value to get.
+ * \return true if this value exists and is a boolean.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='189' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='435' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='604' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='626' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>

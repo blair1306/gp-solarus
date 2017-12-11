@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='149' type='int Solarus::MapData::get_max_layer() const'/>
+<use f='codebrowser/src/Map.cpp' l='303' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<def f='codebrowser/src/MapData.cpp' l='128' ll='130' type='int Solarus::MapData::get_max_layer() const'/>
+<use f='codebrowser/src/MapData.cpp' l='178' u='c' c='_ZNK7Solarus7MapData14is_valid_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='278' u='c' c='_ZNK7Solarus7MapData16get_num_entitiesEv'/>
+<use f='codebrowser/src/MapData.cpp' l='918' u='c' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<doc f='codebrowser/src/MapData.cpp' l='124'>/**
+ * \brief Returns the highest layer of the map.
+ * \return The highest layer.
+ */</doc>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='79' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>

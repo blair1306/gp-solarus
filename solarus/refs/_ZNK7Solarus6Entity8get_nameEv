@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='188' type='const std::string &amp; Solarus::Entity::get_name() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='187'>// properties</doc>
+<use f='codebrowser/src/Game.cpp' l='441' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='211' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='216' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1015' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1073' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1074' u='c' c='_ZN7Solarus8Entities13remove_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1119' u='c' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1134' ll='1136' type='const std::string &amp; Solarus::Entity::get_name() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1129'>/**
+ * \brief Returns the name of the entity (if any).
+ * \return the name of the entity, or an empty string if
+ * the entity has no name.
+ */</doc>
+<use f='codebrowser/src/entities/Stairs.cpp' l='354' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='360' u='c' c='_ZN7Solarus6Stairs20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='315' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='799' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_nameEP9lua_State'/>

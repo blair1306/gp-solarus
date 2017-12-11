@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='69' type='bool Solarus::CustomEntity::is_traversable_by_entity(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='156' ll='167' type='bool Solarus::CustomEntity::is_traversable_by_entity(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='287' u='c' c='_ZN7Solarus12CustomEntity15is_obstacle_forERNS_6EntityE'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='150'>/**
+ * \brief Sets whether this custom entity can be traversed by the specified
+ * entity.
+ * \param entity The entity to test.
+ * \return \c true if the entity can traverse this custom entity.
+ */</doc>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='68'>// What can traverse this custom entity.</doc>

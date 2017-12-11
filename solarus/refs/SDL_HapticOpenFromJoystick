@@ -1,0 +1,18 @@
+<dec f='include/SDL2/SDL_haptic.h' l='914' type='SDL_Haptic * SDL_HapticOpenFromJoystick(SDL_Joystick * joystick)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='897'>/**
+ *  \brief Opens a Haptic device for usage from a Joystick device.
+ *
+ *  You must still close the haptic device seperately.  It will not be closed
+ *  with the joystick.
+ *
+ *  When opening from a joystick you should first close the haptic device before
+ *  closing the joystick device.  If not, on some implementations the haptic
+ *  device will also get unallocated and you&apos;ll be unable to use force feedback
+ *  on that device.
+ *
+ *  \param joystick Joystick to create a haptic device from.
+ *  \return A valid haptic device identifier on success or NULL on error.
+ *
+ *  \sa SDL_HapticOpen
+ *  \sa SDL_HapticClose
+ */</doc>

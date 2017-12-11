@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='419' type='bool Solarus::Entity::is_ice_obstacle() const'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='734' c='_ZNK7Solarus12CustomEntity15is_ice_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2417' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2533' ll='2535' type='bool Solarus::Entity::is_ice_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2525'>/**
+ * \brief Returns whether ice ground is currently considered as an
+ * obstacle by this entity.
+ *
+ * This function returns \c false by default.
+ *
+ * \return \c true if ice ground is currently obstacle for this entity.
+ */</doc>

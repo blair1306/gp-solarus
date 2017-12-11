@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1127' type='int SDL_HapticSetAutocenter(SDL_Haptic * haptic, int autocenter)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1113'>/**
+ *  \brief Sets the global autocenter of the device.
+ *
+ *  Autocenter should be between 0 and 100.  Setting it to 0 will disable
+ *  autocentering.
+ *
+ *  Device must support the ::SDL_HAPTIC_AUTOCENTER feature.
+ *
+ *  \param haptic Haptic device to set autocentering on.
+ *  \param autocenter Value to set autocenter to, 0 disables autocentering.
+ *  \return 0 on success or -1 on error.
+ *
+ *  \sa SDL_HapticQuery
+ */</doc>

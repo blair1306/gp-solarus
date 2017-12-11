@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='80' type='int Solarus::Sprite::get_nb_frames() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='375' ll='381' type='int Solarus::Sprite::get_nb_frames() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='596' u='c' c='_ZNK7Solarus6Sprite21is_last_frame_reachedEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='694' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='370'>/**
+ * \brief Returns the number of frames in the current direction of the current
+ * animation of this sprite.
+ * \return The number of frames.
+ */</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='59' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='126' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='307' u='c' c='_ZN7Solarus10LuaContext20sprite_api_set_frameEP9lua_State'/>

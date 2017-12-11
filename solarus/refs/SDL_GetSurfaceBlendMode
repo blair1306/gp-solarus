@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_surface.h' l='321' type='int SDL_GetSurfaceBlendMode(SDL_Surface * surface, SDL_BlendMode * blendMode)'/>
+<doc f='include/SDL2/SDL_surface.h' l='311'>/**
+ *  \brief Get the blend mode used for blit operations.
+ *
+ *  \param surface   The surface to query.
+ *  \param blendMode A pointer filled in with the current blend mode.
+ *
+ *  \return 0 on success, or -1 if the surface is not valid.
+ *
+ *  \sa SDL_SetSurfaceBlendMode()
+ */</doc>

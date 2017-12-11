@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='52' type='uint32_t Solarus::Entity::State::get_when_suspended() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='268' ll='270' type='uint32_t Solarus::Entity::State::get_when_suspended() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='264'>/**
+ * \brief Returns the date when this state was suspended.
+ * \return The date when this state was suspended.
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='166' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='88' u='c' c='_ZN7Solarus4Hero9FreeState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='136' u='c' c='_ZN7Solarus4Hero9HurtState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='178' u='c' c='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='132' u='c' c='_ZN7Solarus4Hero12RunningState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='280' u='c' c='_ZN7Solarus4Hero11StairsState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='101' u='c' c='_ZN7Solarus4Hero13SwimmingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='102' u='c' c='_ZN7Solarus4Hero17SwordLoadingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='132' u='c' c='_ZN7Solarus4Hero17SwordTappingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='58' u='c' c='_ZN7Solarus4Hero12VictoryState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='103' u='c' c='_ZN7Solarus4Hero12VictoryState13set_suspendedEb'/>

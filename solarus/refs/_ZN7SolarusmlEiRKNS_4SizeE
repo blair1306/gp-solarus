@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='75' type='Solarus::Size Solarus::operator*(int factor, const Solarus::Size &amp; size)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='158' ll='160' type='Solarus::Size Solarus::operator*(int factor, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='152'>/**
+ * \brief Multiplies a size by a value.
+ * \param factor The multiplication factor.
+ * \param size A size.
+ * \return A size with width and height multiplied by the factor.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='902' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>

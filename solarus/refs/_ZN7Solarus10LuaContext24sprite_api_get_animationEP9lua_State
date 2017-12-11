@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='584' type='static int Solarus::LuaContext::sprite_api_get_animation(lua_State * )'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='43' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='157' ll='167' type='static int Solarus::LuaContext::sprite_api_get_animation(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='152'>/**
+ * \brief Implementation of sprite:get_animation().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

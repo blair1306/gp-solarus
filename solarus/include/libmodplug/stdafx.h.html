@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>stdafx.h source code [include/libmodplug/stdafx.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/libmodplug/stdafx.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>libmodplug</a>/<a href='stdafx.h.html'>stdafx.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * This source code is public domain.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Authors: Rani Assaf &lt;rani@magic.metawire.com&gt;,</i></td></tr>
+<tr><th id="5">5</th><td><i> *          Olivier Lapicque &lt;olivierl@jps.net&gt;,</i></td></tr>
+<tr><th id="6">6</th><td><i> *          Adam Goode       &lt;adam@evdebs.org&gt; (endian and char fixes for PPC)</i></td></tr>
+<tr><th id="7">7</th><td><i> */</i></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifndef</span> <span class="macro" data-ref="_M/_STDAFX_H_">_STDAFX_H_</span></u></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/_STDAFX_H_" data-ref="_M/_STDAFX_H_">_STDAFX_H_</dfn></u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><i>/* Autoconf detection of stdint/inttypes */</i></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="13">if</span> defined(<span class="macro" data-ref="_M/HAVE_CONFIG_H">HAVE_CONFIG_H</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/CONFIG_H_INCLUDED">CONFIG_H_INCLUDED</span>)</u></td></tr>
+<tr><th id="14">14</th><td><u># include "config.h"</u></td></tr>
+<tr><th id="15">15</th><td><u># define CONFIG_H_INCLUDED 1</u></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="13">endif</span></u></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifdef</span> <span class="macro" data-ref="_M/HAVE_INTTYPES_H">HAVE_INTTYPES_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u># include &lt;inttypes.h&gt;</u></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifdef</span> <span class="macro" data-ref="_M/HAVE_STDINT_H">HAVE_STDINT_H</span></u></td></tr>
+<tr><th id="21">21</th><td><u># include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#ifdef MSC_VER</u></td></tr>
+<tr><th id="28">28</th><td><u>#pragma warning (disable:4201)</u></td></tr>
+<tr><th id="29">29</th><td><u>#pragma warning (disable:4514)</u></td></tr>
+<tr><th id="30">30</th><td><u>#endif</u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#define WIN32_LEAN_AND_MEAN</u></td></tr>
+<tr><th id="33">33</th><td><u>#include &lt;windows.h&gt;</u></td></tr>
+<tr><th id="34">34</th><td><u>#include &lt;windowsx.h&gt;</u></td></tr>
+<tr><th id="35">35</th><td><u>#include &lt;mmsystem.h&gt;</u></td></tr>
+<tr><th id="36">36</th><td><u>#include &lt;stdio.h&gt;</u></td></tr>
+<tr><th id="37">37</th><td><u>#include &lt;malloc.h&gt;</u></td></tr>
+<tr><th id="38">38</th><td><u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#define srandom(_seed)  srand(_seed)</u></td></tr>
+<tr><th id="41">41</th><td><u>#define random()        rand()</u></td></tr>
+<tr><th id="42">42</th><td><u>#define sleep(_ms)      Sleep(_ms)</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><b>inline</b> <em>void</em> ProcessPlugins(<em>int</em> n) {}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#define strncasecmp(a,b,c)  strncmp(a,b,c)</u></td></tr>
+<tr><th id="47">47</th><td><u>#define strcasecmp(a,b) strcmp(a,b)</u></td></tr>
+<tr><th id="48">48</th><td><u>#define strnicmp(a,b,c)		strncasecmp(a,b,c)</u></td></tr>
+<tr><th id="49">49</th><td><u>#define HAVE_SINF 1</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="25">else</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#include <a href="../stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="54">54</th><td><u>#include <a href="../stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="55">55</th><td><u>#include <a href="../string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">ifdef</span> <span class="macro" data-ref="_M/HAVE_MALLOC_H">HAVE_MALLOC_H</span></u></td></tr>
+<tr><th id="57">57</th><td><u>#include &lt;malloc.h&gt;</u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#int8_t" title='int8_t' data-type='signed char' data-ref="int8_t">int8_t</a> <dfn class="typedef" id="CHAR" title='CHAR' data-type='int8_t' data-ref="CHAR">CHAR</dfn>;</td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="typedef" id="UCHAR" title='UCHAR' data-type='uint8_t' data-ref="UCHAR">UCHAR</dfn>;</td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a>* <dfn class="typedef" id="PUCHAR" title='PUCHAR' data-type='uint8_t *' data-ref="PUCHAR">PUCHAR</dfn>;</td></tr>
+<tr><th id="63">63</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint16_t" title='uint16_t' data-type='unsigned short' data-ref="uint16_t">uint16_t</a> <dfn class="typedef" id="USHORT" title='USHORT' data-type='uint16_t' data-ref="USHORT">USHORT</dfn>;</td></tr>
+<tr><th id="64">64</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="typedef" id="ULONG" title='ULONG' data-type='uint32_t' data-ref="ULONG">ULONG</dfn>;</td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="typedef" id="UINT" title='UINT' data-type='uint32_t' data-ref="UINT">UINT</dfn>;</td></tr>
+<tr><th id="66">66</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="typedef" id="DWORD" title='DWORD' data-type='uint32_t' data-ref="DWORD">DWORD</dfn>;</td></tr>
+<tr><th id="67">67</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#int32_t" title='int32_t' data-type='int' data-ref="int32_t">int32_t</a> <dfn class="typedef" id="LONG" title='LONG' data-type='int32_t' data-ref="LONG">LONG</dfn>;</td></tr>
+<tr><th id="68">68</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#int64_t" title='int64_t' data-type='long' data-ref="int64_t">int64_t</a> <dfn class="typedef" id="LONGLONG" title='LONGLONG' data-type='int64_t' data-ref="LONGLONG">LONGLONG</dfn>;</td></tr>
+<tr><th id="69">69</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#int32_t" title='int32_t' data-type='int' data-ref="int32_t">int32_t</a>* <dfn class="typedef" id="LPLONG" title='LPLONG' data-type='int32_t *' data-ref="LPLONG">LPLONG</dfn>;</td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>* <dfn class="typedef" id="LPDWORD" title='LPDWORD' data-type='uint32_t *' data-ref="LPDWORD">LPDWORD</dfn>;</td></tr>
+<tr><th id="71">71</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint16_t" title='uint16_t' data-type='unsigned short' data-ref="uint16_t">uint16_t</a> <dfn class="typedef" id="WORD" title='WORD' data-type='uint16_t' data-ref="WORD">WORD</dfn>;</td></tr>
+<tr><th id="72">72</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="typedef" id="BYTE" title='BYTE' data-type='uint8_t' data-ref="BYTE">BYTE</dfn>;</td></tr>
+<tr><th id="73">73</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a>* <dfn class="typedef" id="LPBYTE" title='LPBYTE' data-type='uint8_t *' data-ref="LPBYTE">LPBYTE</dfn>;</td></tr>
+<tr><th id="74">74</th><td><b>typedef</b> <em>bool</em> <dfn class="typedef" id="BOOL" title='BOOL' data-type='bool' data-ref="BOOL">BOOL</dfn>;</td></tr>
+<tr><th id="75">75</th><td><b>typedef</b> <em>char</em>* <dfn class="typedef" id="LPSTR" title='LPSTR' data-type='char *' data-ref="LPSTR">LPSTR</dfn>;</td></tr>
+<tr><th id="76">76</th><td><b>typedef</b> <em>void</em>* <dfn class="typedef" id="LPVOID" title='LPVOID' data-type='void *' data-ref="LPVOID">LPVOID</dfn>;</td></tr>
+<tr><th id="77">77</th><td><b>typedef</b> <a class="typedef" href="../stdint.h.html#uint16_t" title='uint16_t' data-type='unsigned short' data-ref="uint16_t">uint16_t</a>* <dfn class="typedef" id="LPWORD" title='LPWORD' data-type='uint16_t *' data-ref="LPWORD">LPWORD</dfn>;</td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <em>const</em> <em>char</em>* <dfn class="typedef" id="LPCSTR" title='LPCSTR' data-type='const char *' data-ref="LPCSTR">LPCSTR</dfn>;</td></tr>
+<tr><th id="79">79</th><td><b>typedef</b> <em>void</em>* <dfn class="typedef" id="PVOID" title='PVOID' data-type='void *' data-ref="PVOID">PVOID</dfn>;</td></tr>
+<tr><th id="80">80</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="VOID" title='VOID' data-type='void' data-ref="VOID">VOID</dfn>;</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><b>inline</b> <a class="typedef" href="#LONG" title='LONG' data-type='int32_t' data-ref="LONG">LONG</a> <dfn class="decl def" id="_Z6MulDivlll" title='MulDiv' data-ref="_Z6MulDivlll">MulDiv</dfn> (<em>long</em> <dfn class="local col9 decl" id="59a" title='a' data-type='long' data-ref="59a">a</dfn>, <em>long</em> <dfn class="local col0 decl" id="60b" title='b' data-type='long' data-ref="60b">b</dfn>, <em>long</em> <dfn class="local col1 decl" id="61c" title='c' data-type='long' data-ref="61c">c</dfn>)</td></tr>
+<tr><th id="83">83</th><td>{</td></tr>
+<tr><th id="84">84</th><td>  <i>// if (!c) return 0;</i></td></tr>
+<tr><th id="85">85</th><td>  <b>return</b> ((<a class="typedef" href="../stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>) <a class="local col9 ref" href="#59a" title='a' data-ref="59a">a</a> * (<a class="typedef" href="../stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>) <a class="local col0 ref" href="#60b" title='b' data-ref="60b">b</a> ) / <a class="local col1 ref" href="#61c" title='c' data-ref="61c">c</a>;</td></tr>
+<tr><th id="86">86</th><td>}</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/MODPLUG_NO_FILESAVE" data-ref="_M/MODPLUG_NO_FILESAVE">MODPLUG_NO_FILESAVE</dfn></u></td></tr>
+<tr><th id="89">89</th><td><u>#define <dfn class="macro" id="_M/NO_AGC" data-ref="_M/NO_AGC">NO_AGC</dfn></u></td></tr>
+<tr><th id="90">90</th><td><u>#define <dfn class="macro" id="_M/LPCTSTR" data-ref="_M/LPCTSTR">LPCTSTR</dfn> LPCSTR</u></td></tr>
+<tr><th id="91">91</th><td><u>#define <dfn class="macro" id="_M/lstrcpyn" data-ref="_M/lstrcpyn">lstrcpyn</dfn> strncpy</u></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/lstrcpy" data-ref="_M/lstrcpy">lstrcpy</dfn> strcpy</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/lstrcmp" data-ref="_M/lstrcmp">lstrcmp</dfn> strcmp</u></td></tr>
+<tr><th id="94">94</th><td><u>#define <dfn class="macro" id="_M/WAVE_FORMAT_PCM" data-ref="_M/WAVE_FORMAT_PCM">WAVE_FORMAT_PCM</dfn> 1</u></td></tr>
+<tr><th id="95">95</th><td><i>//#define ENABLE_EQ</i></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><u>#define  <dfn class="macro" id="_M/GHND" data-ref="_M/GHND">GHND</dfn>   0</u></td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><b>inline</b> <a class="typedef" href="../stdint.h.html#int8_t" title='int8_t' data-type='signed char' data-ref="int8_t">int8_t</a> * <dfn class="decl def" id="_Z14GlobalAllocPtrjm" title='GlobalAllocPtr' data-ref="_Z14GlobalAllocPtrjm">GlobalAllocPtr</dfn>(<em>unsigned</em> <em>int</em>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="62size" title='size' data-type='size_t' data-ref="62size">size</dfn>)</td></tr>
+<tr><th id="100">100</th><td>{</td></tr>
+<tr><th id="101">101</th><td>  <a class="typedef" href="../stdint.h.html#int8_t" title='int8_t' data-type='signed char' data-ref="int8_t">int8_t</a> * <dfn class="local col3 decl" id="63p" title='p' data-type='int8_t *' data-ref="63p">p</dfn> = (<a class="typedef" href="../stdint.h.html#int8_t" title='int8_t' data-type='signed char' data-ref="int8_t">int8_t</a> *) <a class="ref" href="../stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<a class="local col2 ref" href="#62size" title='size' data-ref="62size">size</a>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>  <b>if</b> (<a class="local col3 ref" href="#63p" title='p' data-ref="63p">p</a> != <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) <a class="ref" href="../string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col3 ref" href="#63p" title='p' data-ref="63p">p</a>, <var>0</var>, <a class="local col2 ref" href="#62size" title='size' data-ref="62size">size</a>);</td></tr>
+<tr><th id="104">104</th><td>  <b>return</b> <a class="local col3 ref" href="#63p" title='p' data-ref="63p">p</a>;</td></tr>
+<tr><th id="105">105</th><td>}</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>inline</b> <em>void</em> <dfn class="decl def" id="_Z14ProcessPluginsi" title='ProcessPlugins' data-ref="_Z14ProcessPluginsi">ProcessPlugins</dfn>(<em>int</em> <dfn class="local col4 decl" id="64n" title='n' data-type='int' data-ref="64n">n</dfn>) {}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><u>#define <dfn class="macro" id="_M/GlobalFreePtr" data-ref="_M/GlobalFreePtr">GlobalFreePtr</dfn>(p) free((void *)(p))</u></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/strnicmp" data-ref="_M/strnicmp">strnicmp</dfn>(a,b,c)		strncasecmp(a,b,c)</u></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/wsprintf" data-ref="_M/wsprintf">wsprintf</dfn>			sprintf</u></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="114">ifndef</span> <span class="macro" data-ref="_M/FALSE">FALSE</span></u></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/FALSE" data-ref="_M/FALSE">FALSE</dfn>	false</u></td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="114">endif</span></u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="118">ifndef</span> <span class="macro" data-ref="_M/TRUE">TRUE</span></u></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/TRUE" data-ref="_M/TRUE">TRUE</dfn>	true</u></td></tr>
+<tr><th id="120">120</th><td><u>#<span data-ppcond="118">endif</span></u></td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><u>#<span data-ppcond="25">endif</span> // _WIN32</u></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/lowlevel/ItDecoder.cpp.html'>codebrowser/src/lowlevel/ItDecoder.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

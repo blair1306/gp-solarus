@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='61' type='void Solarus::EquipmentItem::set_obtainable(bool obtainable)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='171' ll='173' type='void Solarus::EquipmentItem::set_obtainable(bool obtainable)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='167'>/**
+ * \brief Sets whether this item can be obtained by the player.
+ * \param obtainable true to allow the player to obtain this item.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='295' u='c' c='_ZN7Solarus10LuaContext23item_api_set_obtainableEP9lua_State'/>

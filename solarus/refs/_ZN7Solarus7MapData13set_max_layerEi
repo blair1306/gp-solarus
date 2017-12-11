@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='150' type='void Solarus::MapData::set_max_layer(int max_layer)'/>
+<use f='codebrowser/src/MapData.cpp' l='42' u='c' c='_ZN7Solarus7MapDataC1Ev'/>
+<def f='codebrowser/src/MapData.cpp' l='137' ll='169' type='void Solarus::MapData::set_max_layer(int max_layer)'/>
+<use f='codebrowser/src/MapData.cpp' l='868' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<doc f='codebrowser/src/MapData.cpp' l='132'>/**
+ * \brief Changes the highest layer of the map.
+ * \param max_layer The new highest layer.
+ * If you decrease it, entities in removed layers are destroyed.
+ */</doc>

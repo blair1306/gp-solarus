@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='168' type='void Solarus::LuaContext::run_item(Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='307' u='c' c='_ZN7Solarus13EquipmentItem10initializeEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='313' ll='328' type='void Solarus::LuaContext::run_item(Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='306'>/**
+ * \brief Notifies the Lua world that an equipment item has just been created.
+ *
+ * The Lua file of this item is automatically loaded.
+ *
+ * \param item The item.
+ */</doc>

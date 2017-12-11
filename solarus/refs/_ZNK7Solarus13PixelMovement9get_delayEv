@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/PixelMovement.h' l='43' type='uint32_t Solarus::PixelMovement::get_delay() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1891' u='c' c='_ZN7Solarus10LuaContext28pixel_movement_api_get_delayEP9lua_State'/>
+<def f='codebrowser/src/movements/PixelMovement.cpp' l='108' ll='110' type='uint32_t Solarus::PixelMovement::get_delay() const'/>
+<doc f='codebrowser/src/movements/PixelMovement.cpp' l='104'>/**
+ * \brief Returns the delay between two moves.
+ * \return the delay between two moves, in milliseconds
+ */</doc>

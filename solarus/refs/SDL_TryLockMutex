@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_mutex.h' l='79' type='int SDL_TryLockMutex(SDL_mutex * mutex)'/>
+<doc f='include/SDL2/SDL_mutex.h' l='74'>/**
+ *  Try to lock the mutex
+ *
+ *  \return 0, SDL_MUTEX_TIMEDOUT, or -1 on error
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1211' type='void Solarus::LuaContext::on_post_draw(const SurfacePtr &amp; dst_surface)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1441' ll='1447' type='void Solarus::LuaContext::on_post_draw(const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1437'>/**
+ * \brief Calls the on_post_draw() method of the object on top of the stack.
+ * \param dst_surface The destination surface.
+ */</doc>

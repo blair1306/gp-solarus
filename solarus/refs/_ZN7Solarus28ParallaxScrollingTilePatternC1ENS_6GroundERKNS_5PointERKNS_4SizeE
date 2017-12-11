@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/ParallaxScrollingTilePattern.h' l='43' type='void Solarus::ParallaxScrollingTilePattern::ParallaxScrollingTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<def f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='29' ll='33' type='void Solarus::ParallaxScrollingTilePattern::ParallaxScrollingTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='23'>/**
+ * \brief Creates a tile pattern with parallax scrolling.
+ * \param ground Kind of ground of the tile pattern.
+ * \param xy Coordinates of the tile pattern in the tileset.
+ * \param size Size of the tile pattern in the tileset.
+ */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='93' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>

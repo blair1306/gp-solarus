@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='149' type='static int Solarus::SpriteData::l_animation(lua_State * l)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='587' ll='672' type='static int Solarus::SpriteData::l_animation(lua_State * l)'/>
+<use f='codebrowser/src/SpriteData.cpp' l='681' u='r' c='_ZN7Solarus10SpriteData15import_from_luaEP9lua_State'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='579'>/**
+ * \brief Function called by the Lua data file to define an animation.
+ *
+ * - Argument 1 (table): properties of the animation.
+ *
+ * \param l the Lua context that is calling this function
+ * \return Number of values to return to Lua.
+ */</doc>

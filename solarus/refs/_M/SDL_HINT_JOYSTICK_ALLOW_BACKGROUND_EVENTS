@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_hints.h' l='271'/>
+<doc f='include/SDL2/SDL_hints.h' l='260'>/**
+ *  \brief  A variable that lets you enable joystick (and gamecontroller) events even when your app is in the background.
+ *
+ *  The variable can be set to the following values:
+ *    &quot;0&quot;       - Disable joystick &amp; gamecontroller input events when the
+ *                application is in the background.
+ *    &quot;1&quot;       - Enable joystick &amp; gamecontroller input events when the
+ *                application is in the background.
+ *
+ *  The default value is &quot;0&quot;.  This hint may be set at any time.
+ */</doc>

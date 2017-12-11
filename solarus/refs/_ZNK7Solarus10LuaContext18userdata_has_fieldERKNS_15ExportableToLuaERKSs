@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='198' type='bool Solarus::LuaContext::userdata_has_field(const Solarus::ExportableToLua &amp; userdata, const std::string &amp; key) const'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5672' u='c' c='_ZN7Solarus10LuaContext16entity_on_updateERNS_6EntityE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1605' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='807' u='c' c='_ZN7Solarus10LuaContext14item_on_updateERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='535' ll='554' type='bool Solarus::LuaContext::userdata_has_field(const Solarus::ExportableToLua &amp; userdata, const std::string &amp; key) const'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='522'>/**
+ * \brief Returns whether a userdata has an entry with the specified key.
+ *
+ * Userdata can have entries like tables thanks to special __index and
+ * __newindex metamethods.
+ *
+ * Version with std::string, better for performance if you already have an
+ * std::string representation of the key.
+ *
+ * \param userdata A userdata.
+ * \param key String key to test.
+ * \return \c true if this key exists on the userdata.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2228' u='c' c='_ZN7Solarus10LuaContext13map_on_updateERNS_3MapE'/>

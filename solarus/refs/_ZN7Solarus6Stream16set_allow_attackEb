@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='54' type='void Solarus::Stream::set_allow_attack(bool allow_attack)'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='109' ll='111' type='void Solarus::Stream::set_allow_attack(bool allow_attack)'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='105'>/**
+ * \brief Sets whether the hero can use the sword in this stream.
+ * \param allow_attack \c true to allow the hero to use the sword.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3589' u='c' c='_ZN7Solarus10LuaContext27stream_api_set_allow_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1036' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>

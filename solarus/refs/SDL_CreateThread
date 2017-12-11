@@ -1,0 +1,19 @@
+<dec f='include/SDL2/SDL_thread.h' l='142' type='SDL_Thread * SDL_CreateThread(SDL_ThreadFunction fn, const char * name, void * data)'/>
+<doc f='include/SDL2/SDL_thread.h' l='123'>/**
+ *  Create a thread.
+ *
+ *   Thread naming is a little complicated: Most systems have very small
+ *    limits for the string length (Haiku has 32 bytes, Linux currently has 16,
+ *    Visual C++ 6.0 has nine!), and possibly other arbitrary rules. You&apos;ll
+ *    have to see what happens with your system&apos;s debugger. The name should be
+ *    UTF-8 (but using the naming limits of C identifiers is a better bet).
+ *   There are no requirements for thread naming conventions, so long as the
+ *    string is null-terminated UTF-8, but these guidelines are helpful in
+ *    choosing a name:
+ *
+ *    http://stackoverflow.com/questions/149932/naming-conventions-for-threads
+ *
+ *   If a system imposes requirements, SDL will try to munge the string for
+ *    it (truncate, etc), but the original string contents will be available
+ *    from SDL_GetThreadName().
+ */</doc>

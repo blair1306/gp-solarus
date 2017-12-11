@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='71' type='static SurfacePtr Solarus::Surface::create(const Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/Game.cpp' l='495' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='166' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/Map.cpp' l='282' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/Map.cpp' l='587' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='886' u='c' c='_ZNK7Solarus6Sprite24get_intermediate_surfaceEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='262' u='c' c='_ZN7Solarus6Camera14create_surfaceEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='241' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='174' ll='177' type='static SurfacePtr Solarus::Surface::create(const Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='568' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='169'>/**
+ * \brief Creates a surface with the specified size.
+ * \param size The size in pixels.
+ * \return The created surface.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='575' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='115' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>

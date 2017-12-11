@@ -1,0 +1,12 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='66' type='bool SolarusGui::Console::apply_settings()'/>
+<use f='codebrowser/gui/src/console.cpp' l='106' u='c' c='_ZN10SolarusGui7Console13quest_runningEv'/>
+<def f='codebrowser/gui/src/console.cpp' l='433' ll='445' type='bool SolarusGui::Console::apply_settings()'/>
+<doc f='codebrowser/gui/src/console.cpp' l='424'>/**
+ * @brief Applies current settings of the GUI to the quest process.
+ *
+ * Settings are applied as Lua commands.
+ *
+ * @param settings The settings.
+ * @return @c true if settings commands could be sent to the process
+ * (even if they produce an error).
+ */</doc>

@@ -1,0 +1,15 @@
+<def f='include/SDL2/SDL_events.h' l='237' ll='249'/>
+<size>28</size>
+<doc f='include/SDL2/SDL_events.h' l='234'>/**
+ *  \brief Mouse button event structure (event.button.*)
+ */</doc>
+<mbr r='SDL_MouseButtonEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_MouseButtonEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_MouseButtonEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_MouseButtonEvent::which' o='96' t='Uint32'/>
+<mbr r='SDL_MouseButtonEvent::button' o='128' t='Uint8'/>
+<mbr r='SDL_MouseButtonEvent::state' o='136' t='Uint8'/>
+<mbr r='SDL_MouseButtonEvent::clicks' o='144' t='Uint8'/>
+<mbr r='SDL_MouseButtonEvent::padding1' o='152' t='Uint8'/>
+<mbr r='SDL_MouseButtonEvent::x' o='160' t='Sint32'/>
+<mbr r='SDL_MouseButtonEvent::y' o='192' t='Sint32'/>

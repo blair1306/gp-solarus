@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='54' type='bool Solarus::Hero::ForcedWalkingState::can_avoid_teletransporter() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='101' c='_ZNK7Solarus6Entity5State25can_avoid_teletransporterEv'/>
+<def f='codebrowser/src/hero/ForcedWalkingState.cpp' l='147' ll='149' type='bool Solarus::Hero::ForcedWalkingState::can_avoid_teletransporter() const'/>
+<doc f='codebrowser/src/hero/ForcedWalkingState.cpp' l='143'>/**
+ * \brief Returns whether the hero ignores the effect of teletransporters in this state.
+ * \return true if the hero ignores the effect of teletransporters in this state
+ */</doc>

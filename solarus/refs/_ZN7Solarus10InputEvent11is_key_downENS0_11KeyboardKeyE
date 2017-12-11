@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='219' type='static bool Solarus::InputEvent::is_key_down(Solarus::InputEvent::KeyboardKey key)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='387' ll='393' type='static bool Solarus::InputEvent::is_key_down(Solarus::InputEvent::KeyboardKey key)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='382'>/**
+ * \brief Returns whether a keyboard key is currently down.
+ * \param key A keyboard key.
+ * \return \c true if this keyboard key is currently down.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='102' u='c' c='_ZN7Solarus10LuaContext24input_api_is_key_pressedEP9lua_State'/>

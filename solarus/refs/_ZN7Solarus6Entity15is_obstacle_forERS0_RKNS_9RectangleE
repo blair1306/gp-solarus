@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='334' type='bool Solarus::Entity::is_obstacle_for(Solarus::Entity &amp; other, const Solarus::Rectangle &amp; candidate_position)'/>
+<use f='codebrowser/src/Map.cpp' l='870' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2367' ll='2373' type='bool Solarus::Entity::is_obstacle_for(Solarus::Entity &amp; other, const Solarus::Rectangle &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2343'>/**
+ * \brief Returns whether this entity is an obstacle for another one it that
+ * other entity was at the specified place.
+ *
+ * There are two mechanisms to block entities: by another entity or by the
+ * ground of the map.
+ *
+ * This function is about entities blocking other entities.
+ * If you return \c true, the other entity will be blocked even if there are
+ * traversable entities on top of yours.
+ *
+ * If your entity modifies the ground of the map (see is_ground_modifier()),
+ * you then rely on the map ground mechanism. In this case, if
+ * other entities at the same coordinates also modify the map ground and are
+ * higher than your entity, their ground overrides yours.
+ *
+ * To respect this behavior, is_obstacle_for() should return false for
+ * ground modifiers.
+ *
+ * \param other Another entity.
+ * \param candidate_position Candidate position of this other entity.
+ * \return \c true if this entity is an obstacle for the other one at that
+ * position.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2367'>/* candidate_position */</doc>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='82' c='_ZN7Solarus6Jumper15is_obstacle_forERNS_6EntityERKNS_9RectangleE'/>

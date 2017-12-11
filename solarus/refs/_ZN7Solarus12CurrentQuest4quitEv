@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='39' type='void Solarus::CurrentQuest::quit()'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='83' ll='90' type='void Solarus::CurrentQuest::quit()'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='80'>/**
+ * \brief Clears the loaded quest resource list.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='210' u='c' c='_ZN7Solarus8MainLoopD1Ev'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='167' u='c' c='_ZN7Solarus10QuestFiles11close_questEv'/>

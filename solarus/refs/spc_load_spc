@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='82' type='spc_err_t spc_load_spc(SNES_SPC * , const void * spc_in, long size)'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='81'>/* Loads SPC data into emulator. Returns NULL on success, otherwise error string. */</doc>
+<use f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='39' u='c' c='_ZN7Solarus10SpcDecoder4loadEPsm'/>
+<def f='codebrowser/src/third_party/snes_spc/spc.cpp' l='57' type='spc_err_t spc_load_spc(SNES_SPC * s, const void * p, long n)'/>

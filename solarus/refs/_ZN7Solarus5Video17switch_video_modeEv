@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='66' type='static void Solarus::Video::switch_video_mode()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='497' ll='523' type='static void Solarus::Video::switch_video_mode()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='491'>/**
+ * \brief Sets the next video mode.
+ *
+ * The fullscreen flag is preserved.
+ * The window size is reset to the default size of the new video mode.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='130' u='c' c='_ZN7Solarus10LuaContext21video_api_switch_modeEP9lua_State'/>

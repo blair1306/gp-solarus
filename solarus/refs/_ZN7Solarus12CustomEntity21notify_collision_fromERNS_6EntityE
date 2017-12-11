@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='248' type='void Solarus::CustomEntity::notify_collision_from(Solarus::Entity &amp; other_entity)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='960' ll='966' type='void Solarus::CustomEntity::notify_collision_from(Solarus::Entity &amp; other_entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='987' u='c' c='_ZN7Solarus12CustomEntity34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='996' u='c' c='_ZN7Solarus12CustomEntity37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1005' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1014' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1023' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1032' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1041' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1059' u='c' c='_ZN7Solarus12CustomEntity29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1076' u='c' c='_ZN7Solarus12CustomEntity27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1084' u='c' c='_ZN7Solarus12CustomEntity27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1093' u='c' c='_ZN7Solarus12CustomEntity31notify_collision_with_separatorERNS_9SeparatorENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1102' u='c' c='_ZN7Solarus12CustomEntity26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1111' u='c' c='_ZN7Solarus12CustomEntity31notify_collision_with_explosionERNS_9ExplosionENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1137' u='c' c='_ZN7Solarus12CustomEntity27notify_collision_with_enemyERNS_5EnemyE'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='955'>/**
+ * \brief Notifies this custom entity that another entity has detected a
+ * collision with it.
+ * \param other_entity The other entity.
+ */</doc>

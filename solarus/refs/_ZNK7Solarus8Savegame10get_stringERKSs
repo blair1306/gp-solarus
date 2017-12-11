@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='96' type='std::string Solarus::Savegame::get_string(const std::string &amp; key) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='461' u='c' c='_ZN7Solarus9Equipment17get_item_assignedEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='482' u='c' c='_ZNK7Solarus9Equipment17get_item_assignedEi'/>
+<use f='codebrowser/src/Game.cpp' l='81' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='82' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='673' u='c' c='_ZNK7Solarus12GameCommands26get_saved_keyboard_bindingENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='719' u='c' c='_ZNK7Solarus12GameCommands24get_saved_joypad_bindingENS_11GameCommandE'/>
+<def f='codebrowser/src/Savegame.cpp' l='404' ll='421' type='std::string Solarus::Savegame::get_string(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='399'>/**
+ * \brief Returns a string value saved.
+ * \param key Name of the value to get.
+ * \return The string value associated with this key or an empty string.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='198' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='444' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='633' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='706' u='c' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='707' u='c' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='713' u='c' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='719' u='c' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>

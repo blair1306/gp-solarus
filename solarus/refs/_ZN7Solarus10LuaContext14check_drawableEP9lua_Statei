@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1137' type='static DrawablePtr Solarus::LuaContext::check_drawable(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='52' ll='64' type='static DrawablePtr Solarus::LuaContext::check_drawable(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='136' u='c' c='_ZN7Solarus10LuaContext17drawable_api_drawEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='154' u='c' c='_ZN7Solarus10LuaContext24drawable_api_draw_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='180' u='c' c='_ZN7Solarus10LuaContext27drawable_api_get_blend_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='198' u='c' c='_ZN7Solarus10LuaContext27drawable_api_set_blend_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='218' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='257' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='293' u='c' c='_ZN7Solarus10LuaContext19drawable_api_get_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='309' u='c' c='_ZN7Solarus10LuaContext19drawable_api_set_xyEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='327' u='c' c='_ZN7Solarus10LuaContext25drawable_api_get_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='348' u='c' c='_ZN7Solarus10LuaContext26drawable_api_stop_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='365' u='c' c='_ZN7Solarus10LuaContext16drawable_meta_gcEP9lua_State'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='45'>/**
+ * \brief Check that the userdata at the specified index is a drawable
+ * object (surface, text surface of sprite) and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return The drawable.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1752' u='c' c='_ZN7Solarus10LuaContext19map_api_draw_visualEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='608' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>

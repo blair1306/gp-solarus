@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/Map.h' l='85' type='SurfacePtr Solarus::Map::get_camera_surface()'/>
+<doc f='codebrowser/include/solarus/Map.h' l='85'>// TODO remove</doc>
+<use f='codebrowser/src/Game.cpp' l='398' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='481' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='499' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='521' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='890' u='c' c='_ZN7Solarus4Game7restartEv'/>
+<def f='codebrowser/src/Map.cpp' l='434' ll='444' type='SurfacePtr Solarus::Map::get_camera_surface()'/>
+<use f='codebrowser/src/Map.cpp' l='520' u='c' c='_ZN7Solarus3Map4drawEv'/>
+<doc f='codebrowser/src/Map.cpp' l='430'>/**
+ * \brief Returns the camera surface where the map is displayed.
+ * \return The camera surface.
+ */</doc>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='102' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='211' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='220' u='c' c='_ZN7Solarus12ShopTreasure11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='68' u='c' c='_ZN7Solarus4Tile11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='118' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>

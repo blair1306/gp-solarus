@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_events.h' l='185' type='Uint8'/>
+<offset>104</offset>
+<doc f='include/SDL2/SDL_events.h' l='185'>/**&lt; Non-zero if this is a key repeat */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='291' u='w' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='298' u='w' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='594' u='r' c='_ZNK7Solarus10InputEvent17is_keyboard_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='651' u='r' c='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='714' u='r' c='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='864' u='w' c='_ZN7Solarus10InputEvent20simulate_key_pressedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='878' u='w' c='_ZN7Solarus10InputEvent21simulate_key_releasedENS0_11KeyboardKeyE'/>

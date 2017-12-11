@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/Size.h' l='67' type='bool Solarus::operator==(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Size.inl' l='108' ll='110' type='bool Solarus::operator==(const Solarus::Size &amp; lhs, const Solarus::Size &amp; rhs)'/>
+<use f='codebrowser/include/solarus/lowlevel/Size.inl' l='119' u='c' c='_ZN7SolarusneERKNS_4SizeES2_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Size.h' l='63'>////////////////////////////////////////////////////////////
+// Free functions
+
+// Comparison operators</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Size.inl' l='102'>/**
+ * \brief Returns whether two sizes are equal.
+ * \param lhs A size.
+ * \param rhs Another size.
+ * \return \c true if the sizes are equal.
+ */</doc>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='525' u='c' c='_ZN7SolaruseqERKNS_9RectangleES2_'/>

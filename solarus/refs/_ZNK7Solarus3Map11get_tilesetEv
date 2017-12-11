@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Map.h' l='61' type='const Solarus::Tileset &amp; Solarus::Map::get_tileset() const'/>
+<def f='codebrowser/include/solarus/Map.h' l='259' ll='265' type='const Solarus::Tileset &amp; Solarus::Map::get_tileset() const'/>
+<doc f='codebrowser/include/solarus/Map.h' l='255'>/**
+ * \brief Returns the tileset associated to this map.
+ * \return The tileset.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='575' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='104' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='424' u='c' c='_ZN7Solarus6Entity22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='260' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='89' u='c' c='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='960' u='c' c='_ZN7Solarus11HeroSprites22notify_tileset_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1609' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='423' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='821' u='c' c='_ZN7Solarus10LuaContext21l_create_dynamic_tileEP9lua_State'/>

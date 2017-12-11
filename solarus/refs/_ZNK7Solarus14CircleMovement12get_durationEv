@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='65' type='uint32_t Solarus::CircleMovement::get_duration() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1611' u='c' c='_ZN7Solarus10LuaContext32circle_movement_api_get_durationEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='238' ll='241' type='uint32_t Solarus::CircleMovement::get_duration() const'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='229'>/**
+ * \brief Returns the maximum duration of the movement.
+ *
+ * When this delay is reached, the movement stops.
+ * Note that if the radius changes gradually, the movement will continue
+ * for a while until the radius reaches zero.
+ *
+ * \return duration of the movement in milliseconds, (0 means infinite)
+ */</doc>

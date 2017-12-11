@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Wall.h' l='40' type='void Solarus::Wall::Wall(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, bool stops_hero, bool stops_enemies, bool stops_npcs, bool stops_blocks, bool stops_projectiles)'/>
+<def f='codebrowser/src/entities/Wall.cpp' l='36' ll='67' type='void Solarus::Wall::Wall(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, bool stops_hero, bool stops_enemies, bool stops_npcs, bool stops_blocks, bool stops_projectiles)'/>
+<doc f='codebrowser/src/entities/Wall.cpp' l='23'>/**
+ * \brief Constructor.
+ * \param name name of the wall to create
+ * \param layer layer of the Wall to create
+ * \param xy Coordinates where to create the wall.
+ * \param size Size of the Wall to create.
+ * \param stops_hero true to make this entity an obstacle for the hero
+ * \param stops_enemies true to make this entity an obstacle for enemies
+ * \param stops_npcs true to make this entity an obstacle for NPCs
+ * \param stops_blocks true to make this entity an obstacle for blocks
+ * \param stops_projectiles true to make this entity an obstacle for thrown
+ * items, arrows, hookshots and boomerangs.
+ */</doc>

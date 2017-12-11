@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1142' type='static bool Solarus::LuaContext::is_sprite(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='42' u='c' c='_ZN7Solarus10LuaContext11is_drawableEP9lua_Statei'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2454' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='89' ll='91' type='static bool Solarus::LuaContext::is_sprite(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='83'>/**
+ * \brief Returns whether a value is a userdata of type sprite.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return \c true if the value at this index is a sprite.
+ */</doc>

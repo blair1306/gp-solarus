@@ -1,0 +1,997 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_video.h source code [include/SDL2/SDL_video.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_video.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_video.h.html'>SDL_video.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_video.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Header file for SDL video functions.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_video_h">_SDL_video_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_video_h" data-ref="_M/_SDL_video_h">_SDL_video_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_pixels.h.html">"SDL_pixels.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_rect.h.html">"SDL_rect.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="SDL_surface.h.html">"SDL_surface.h"</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="37">37</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="38">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="38">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *  <span class="command">\brief</span>  The structure that defines a display mode</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumDisplayModes()</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetDisplayMode()</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetDesktopDisplayMode()</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetCurrentDisplayMode()</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetClosestDisplayMode()</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowDisplayMode()</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowDisplayMode()</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="54">54</th><td>{</td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="(anonymous)::format" title='(anonymous struct)::format' data-ref="(anonymous)::format">format</dfn>;              <i class="doc">/**&lt; pixel format */</i></td></tr>
+<tr><th id="56">56</th><td>    <em>int</em> <dfn class="decl" id="(anonymous)::w" title='(anonymous struct)::w' data-ref="(anonymous)::w">w</dfn>;                      <i class="doc">/**&lt; width */</i></td></tr>
+<tr><th id="57">57</th><td>    <em>int</em> <dfn class="decl" id="(anonymous)::h" title='(anonymous struct)::h' data-ref="(anonymous)::h">h</dfn>;                      <i class="doc">/**&lt; height */</i></td></tr>
+<tr><th id="58">58</th><td>    <em>int</em> <dfn class="decl" id="(anonymous)::refresh_rate" title='(anonymous struct)::refresh_rate' data-ref="(anonymous)::refresh_rate">refresh_rate</dfn>;           <i class="doc">/**&lt; refresh rate (or zero for unspecified) */</i></td></tr>
+<tr><th id="59">59</th><td>    <em>void</em> *<dfn class="decl" id="(anonymous)::driverdata" title='(anonymous struct)::driverdata' data-ref="(anonymous)::driverdata">driverdata</dfn>;           <i class="doc">/**&lt; driver-specific data, initialize to 0 */</i></td></tr>
+<tr><th id="60">60</th><td>} <dfn class="typedef" id="SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</dfn>;</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *  <span class="command">\brief</span> The type used to identify a window</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateWindow()</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateWindowFrom()</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyWindow()</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowData()</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowFlags()</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowGrab()</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowPosition()</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowSize()</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowTitle()</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_HideWindow()</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_MaximizeWindow()</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_MinimizeWindow()</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RaiseWindow()</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RestoreWindow()</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowData()</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowFullscreen()</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowGrab()</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowIcon()</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowPosition()</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowSize()</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowBordered()</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowTitle()</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_ShowWindow()</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="SDL_Window" title='SDL_Window' data-ref="SDL_Window"><a class="type" href="#SDL_Window" title='SDL_Window' data-ref="SDL_Window">SDL_Window</a></dfn> <dfn class="typedef" id="SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *  <span class="command">\brief</span> The flags on a window</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowFlags()</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="96">96</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="97">97</th><td>{</td></tr>
+<tr><th id="98">98</th><td>    <dfn class="enum" id="::SDL_WINDOW_FULLSCREEN" title='::SDL_WINDOW_FULLSCREEN' data-ref="::SDL_WINDOW_FULLSCREEN">SDL_WINDOW_FULLSCREEN</dfn> = <var>0x00000001</var>,         <i class="doc">/**&lt; fullscreen window */</i></td></tr>
+<tr><th id="99">99</th><td>    <dfn class="enum" id="::SDL_WINDOW_OPENGL" title='::SDL_WINDOW_OPENGL' data-ref="::SDL_WINDOW_OPENGL">SDL_WINDOW_OPENGL</dfn> = <var>0x00000002</var>,             <i class="doc">/**&lt; window usable with OpenGL context */</i></td></tr>
+<tr><th id="100">100</th><td>    <dfn class="enum" id="::SDL_WINDOW_SHOWN" title='::SDL_WINDOW_SHOWN' data-ref="::SDL_WINDOW_SHOWN">SDL_WINDOW_SHOWN</dfn> = <var>0x00000004</var>,              <i class="doc">/**&lt; window is visible */</i></td></tr>
+<tr><th id="101">101</th><td>    <dfn class="enum" id="::SDL_WINDOW_HIDDEN" title='::SDL_WINDOW_HIDDEN' data-ref="::SDL_WINDOW_HIDDEN">SDL_WINDOW_HIDDEN</dfn> = <var>0x00000008</var>,             <i class="doc">/**&lt; window is not visible */</i></td></tr>
+<tr><th id="102">102</th><td>    <dfn class="enum" id="::SDL_WINDOW_BORDERLESS" title='::SDL_WINDOW_BORDERLESS' data-ref="::SDL_WINDOW_BORDERLESS">SDL_WINDOW_BORDERLESS</dfn> = <var>0x00000010</var>,         <i class="doc">/**&lt; no window decoration */</i></td></tr>
+<tr><th id="103">103</th><td>    <dfn class="enum" id="::SDL_WINDOW_RESIZABLE" title='::SDL_WINDOW_RESIZABLE' data-ref="::SDL_WINDOW_RESIZABLE">SDL_WINDOW_RESIZABLE</dfn> = <var>0x00000020</var>,          <i class="doc">/**&lt; window can be resized */</i></td></tr>
+<tr><th id="104">104</th><td>    <dfn class="enum" id="::SDL_WINDOW_MINIMIZED" title='::SDL_WINDOW_MINIMIZED' data-ref="::SDL_WINDOW_MINIMIZED">SDL_WINDOW_MINIMIZED</dfn> = <var>0x00000040</var>,          <i class="doc">/**&lt; window is minimized */</i></td></tr>
+<tr><th id="105">105</th><td>    <dfn class="enum" id="::SDL_WINDOW_MAXIMIZED" title='::SDL_WINDOW_MAXIMIZED' data-ref="::SDL_WINDOW_MAXIMIZED">SDL_WINDOW_MAXIMIZED</dfn> = <var>0x00000080</var>,          <i class="doc">/**&lt; window is maximized */</i></td></tr>
+<tr><th id="106">106</th><td>    <dfn class="enum" id="::SDL_WINDOW_INPUT_GRABBED" title='::SDL_WINDOW_INPUT_GRABBED' data-ref="::SDL_WINDOW_INPUT_GRABBED">SDL_WINDOW_INPUT_GRABBED</dfn> = <var>0x00000100</var>,      <i class="doc">/**&lt; window has grabbed input focus */</i></td></tr>
+<tr><th id="107">107</th><td>    <dfn class="enum" id="::SDL_WINDOW_INPUT_FOCUS" title='::SDL_WINDOW_INPUT_FOCUS' data-ref="::SDL_WINDOW_INPUT_FOCUS">SDL_WINDOW_INPUT_FOCUS</dfn> = <var>0x00000200</var>,        <i class="doc">/**&lt; window has input focus */</i></td></tr>
+<tr><th id="108">108</th><td>    <dfn class="enum" id="::SDL_WINDOW_MOUSE_FOCUS" title='::SDL_WINDOW_MOUSE_FOCUS' data-ref="::SDL_WINDOW_MOUSE_FOCUS">SDL_WINDOW_MOUSE_FOCUS</dfn> = <var>0x00000400</var>,        <i class="doc">/**&lt; window has mouse focus */</i></td></tr>
+<tr><th id="109">109</th><td>    <dfn class="enum" id="::SDL_WINDOW_FULLSCREEN_DESKTOP" title='::SDL_WINDOW_FULLSCREEN_DESKTOP' data-ref="::SDL_WINDOW_FULLSCREEN_DESKTOP">SDL_WINDOW_FULLSCREEN_DESKTOP</dfn> = ( <a class="enum" href="#::SDL_WINDOW_FULLSCREEN" title='::SDL_WINDOW_FULLSCREEN' data-ref="::SDL_WINDOW_FULLSCREEN">SDL_WINDOW_FULLSCREEN</a> | <var>0x00001000</var> ),</td></tr>
+<tr><th id="110">110</th><td>    <dfn class="enum" id="::SDL_WINDOW_FOREIGN" title='::SDL_WINDOW_FOREIGN' data-ref="::SDL_WINDOW_FOREIGN">SDL_WINDOW_FOREIGN</dfn> = <var>0x00000800</var>,            <i class="doc">/**&lt; window not created by SDL */</i></td></tr>
+<tr><th id="111">111</th><td>    <dfn class="enum" id="::SDL_WINDOW_ALLOW_HIGHDPI" title='::SDL_WINDOW_ALLOW_HIGHDPI' data-ref="::SDL_WINDOW_ALLOW_HIGHDPI">SDL_WINDOW_ALLOW_HIGHDPI</dfn> = <var>0x00002000</var>       <i class="doc">/**&lt; window should be created in high-DPI mode if supported */</i></td></tr>
+<tr><th id="112">112</th><td>} <dfn class="typedef" id="SDL_WindowFlags" title='SDL_WindowFlags' data-type='enum SDL_WindowFlags' data-ref="SDL_WindowFlags">SDL_WindowFlags</dfn>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *  <span class="command">\brief</span> Used to indicate that you don't care what the window position is.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_UNDEFINED_MASK" data-ref="_M/SDL_WINDOWPOS_UNDEFINED_MASK">SDL_WINDOWPOS_UNDEFINED_MASK</dfn>    0x1FFF0000</u></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_UNDEFINED_DISPLAY" data-ref="_M/SDL_WINDOWPOS_UNDEFINED_DISPLAY">SDL_WINDOWPOS_UNDEFINED_DISPLAY</dfn>(X)  (SDL_WINDOWPOS_UNDEFINED_MASK|(X))</u></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_UNDEFINED" data-ref="_M/SDL_WINDOWPOS_UNDEFINED">SDL_WINDOWPOS_UNDEFINED</dfn>         SDL_WINDOWPOS_UNDEFINED_DISPLAY(0)</u></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_ISUNDEFINED" data-ref="_M/SDL_WINDOWPOS_ISUNDEFINED">SDL_WINDOWPOS_ISUNDEFINED</dfn>(X)    \</u></td></tr>
+<tr><th id="121">121</th><td><u>            (((X)&amp;0xFFFF0000) == SDL_WINDOWPOS_UNDEFINED_MASK)</u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *  <span class="command">\brief</span> Used to indicate that the window position should be centered.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="126">126</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_CENTERED_MASK" data-ref="_M/SDL_WINDOWPOS_CENTERED_MASK">SDL_WINDOWPOS_CENTERED_MASK</dfn>    0x2FFF0000</u></td></tr>
+<tr><th id="127">127</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_CENTERED_DISPLAY" data-ref="_M/SDL_WINDOWPOS_CENTERED_DISPLAY">SDL_WINDOWPOS_CENTERED_DISPLAY</dfn>(X)  (SDL_WINDOWPOS_CENTERED_MASK|(X))</u></td></tr>
+<tr><th id="128">128</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_CENTERED" data-ref="_M/SDL_WINDOWPOS_CENTERED">SDL_WINDOWPOS_CENTERED</dfn>         SDL_WINDOWPOS_CENTERED_DISPLAY(0)</u></td></tr>
+<tr><th id="129">129</th><td><u>#define <dfn class="macro" id="_M/SDL_WINDOWPOS_ISCENTERED" data-ref="_M/SDL_WINDOWPOS_ISCENTERED">SDL_WINDOWPOS_ISCENTERED</dfn>(X)    \</u></td></tr>
+<tr><th id="130">130</th><td><u>            (((X)&amp;0xFFFF0000) == SDL_WINDOWPOS_CENTERED_MASK)</u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *  <span class="command">\brief</span> Event subtype for window events</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="135">135</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="136">136</th><td>{</td></tr>
+<tr><th id="137">137</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_NONE" title='::SDL_WINDOWEVENT_NONE' data-ref="::SDL_WINDOWEVENT_NONE">SDL_WINDOWEVENT_NONE</dfn>,           <i class="doc">/**&lt; Never used */</i></td></tr>
+<tr><th id="138">138</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_SHOWN" title='::SDL_WINDOWEVENT_SHOWN' data-ref="::SDL_WINDOWEVENT_SHOWN">SDL_WINDOWEVENT_SHOWN</dfn>,          <i class="doc">/**&lt; Window has been shown */</i></td></tr>
+<tr><th id="139">139</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_HIDDEN" title='::SDL_WINDOWEVENT_HIDDEN' data-ref="::SDL_WINDOWEVENT_HIDDEN">SDL_WINDOWEVENT_HIDDEN</dfn>,         <i class="doc">/**&lt; Window has been hidden */</i></td></tr>
+<tr><th id="140">140</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_EXPOSED" title='::SDL_WINDOWEVENT_EXPOSED' data-ref="::SDL_WINDOWEVENT_EXPOSED">SDL_WINDOWEVENT_EXPOSED</dfn>,        <i class="doc">/**&lt; Window has been exposed and should be</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc">                                         redrawn */</i></td></tr>
+<tr><th id="142">142</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_MOVED" title='::SDL_WINDOWEVENT_MOVED' data-ref="::SDL_WINDOWEVENT_MOVED">SDL_WINDOWEVENT_MOVED</dfn>,          <i class="doc">/**&lt; Window has been moved to data1, data2</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc">                                     */</i></td></tr>
+<tr><th id="144">144</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_RESIZED" title='::SDL_WINDOWEVENT_RESIZED' data-ref="::SDL_WINDOWEVENT_RESIZED">SDL_WINDOWEVENT_RESIZED</dfn>,        <i class="doc">/**&lt; Window has been resized to data1xdata2 */</i></td></tr>
+<tr><th id="145">145</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_SIZE_CHANGED" title='::SDL_WINDOWEVENT_SIZE_CHANGED' data-ref="::SDL_WINDOWEVENT_SIZE_CHANGED">SDL_WINDOWEVENT_SIZE_CHANGED</dfn>,   <i class="doc">/**&lt; The window size has changed, either as a result of an API call or through the system or user changing the window size. */</i></td></tr>
+<tr><th id="146">146</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_MINIMIZED" title='::SDL_WINDOWEVENT_MINIMIZED' data-ref="::SDL_WINDOWEVENT_MINIMIZED">SDL_WINDOWEVENT_MINIMIZED</dfn>,      <i class="doc">/**&lt; Window has been minimized */</i></td></tr>
+<tr><th id="147">147</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_MAXIMIZED" title='::SDL_WINDOWEVENT_MAXIMIZED' data-ref="::SDL_WINDOWEVENT_MAXIMIZED">SDL_WINDOWEVENT_MAXIMIZED</dfn>,      <i class="doc">/**&lt; Window has been maximized */</i></td></tr>
+<tr><th id="148">148</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_RESTORED" title='::SDL_WINDOWEVENT_RESTORED' data-ref="::SDL_WINDOWEVENT_RESTORED">SDL_WINDOWEVENT_RESTORED</dfn>,       <i class="doc">/**&lt; Window has been restored to normal size</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc">                                         and position */</i></td></tr>
+<tr><th id="150">150</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_ENTER" title='::SDL_WINDOWEVENT_ENTER' data-ref="::SDL_WINDOWEVENT_ENTER">SDL_WINDOWEVENT_ENTER</dfn>,          <i class="doc">/**&lt; Window has gained mouse focus */</i></td></tr>
+<tr><th id="151">151</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_LEAVE" title='::SDL_WINDOWEVENT_LEAVE' data-ref="::SDL_WINDOWEVENT_LEAVE">SDL_WINDOWEVENT_LEAVE</dfn>,          <i class="doc">/**&lt; Window has lost mouse focus */</i></td></tr>
+<tr><th id="152">152</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_FOCUS_GAINED" title='::SDL_WINDOWEVENT_FOCUS_GAINED' data-ref="::SDL_WINDOWEVENT_FOCUS_GAINED">SDL_WINDOWEVENT_FOCUS_GAINED</dfn>,   <i class="doc">/**&lt; Window has gained keyboard focus */</i></td></tr>
+<tr><th id="153">153</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_FOCUS_LOST" title='::SDL_WINDOWEVENT_FOCUS_LOST' data-ref="::SDL_WINDOWEVENT_FOCUS_LOST">SDL_WINDOWEVENT_FOCUS_LOST</dfn>,     <i class="doc">/**&lt; Window has lost keyboard focus */</i></td></tr>
+<tr><th id="154">154</th><td>    <dfn class="enum" id="::SDL_WINDOWEVENT_CLOSE" title='::SDL_WINDOWEVENT_CLOSE' data-ref="::SDL_WINDOWEVENT_CLOSE">SDL_WINDOWEVENT_CLOSE</dfn>           <i class="doc">/**&lt; The window manager requests that the</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc">                                         window be closed */</i></td></tr>
+<tr><th id="156">156</th><td>} <dfn class="typedef" id="SDL_WindowEventID" title='SDL_WindowEventID' data-type='enum SDL_WindowEventID' data-ref="SDL_WindowEventID">SDL_WindowEventID</dfn>;</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *  <span class="command">\brief</span> An opaque handle to an OpenGL context.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="161">161</th><td><b>typedef</b> <em>void</em> *<dfn class="typedef" id="SDL_GLContext" title='SDL_GLContext' data-type='void *' data-ref="SDL_GLContext">SDL_GLContext</dfn>;</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> *  <span class="command">\brief</span> OpenGL configuration attributes</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="166">166</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="167">167</th><td>{</td></tr>
+<tr><th id="168">168</th><td>    <dfn class="enum" id="::SDL_GL_RED_SIZE" title='::SDL_GL_RED_SIZE' data-ref="::SDL_GL_RED_SIZE">SDL_GL_RED_SIZE</dfn>,</td></tr>
+<tr><th id="169">169</th><td>    <dfn class="enum" id="::SDL_GL_GREEN_SIZE" title='::SDL_GL_GREEN_SIZE' data-ref="::SDL_GL_GREEN_SIZE">SDL_GL_GREEN_SIZE</dfn>,</td></tr>
+<tr><th id="170">170</th><td>    <dfn class="enum" id="::SDL_GL_BLUE_SIZE" title='::SDL_GL_BLUE_SIZE' data-ref="::SDL_GL_BLUE_SIZE">SDL_GL_BLUE_SIZE</dfn>,</td></tr>
+<tr><th id="171">171</th><td>    <dfn class="enum" id="::SDL_GL_ALPHA_SIZE" title='::SDL_GL_ALPHA_SIZE' data-ref="::SDL_GL_ALPHA_SIZE">SDL_GL_ALPHA_SIZE</dfn>,</td></tr>
+<tr><th id="172">172</th><td>    <dfn class="enum" id="::SDL_GL_BUFFER_SIZE" title='::SDL_GL_BUFFER_SIZE' data-ref="::SDL_GL_BUFFER_SIZE">SDL_GL_BUFFER_SIZE</dfn>,</td></tr>
+<tr><th id="173">173</th><td>    <dfn class="enum" id="::SDL_GL_DOUBLEBUFFER" title='::SDL_GL_DOUBLEBUFFER' data-ref="::SDL_GL_DOUBLEBUFFER">SDL_GL_DOUBLEBUFFER</dfn>,</td></tr>
+<tr><th id="174">174</th><td>    <dfn class="enum" id="::SDL_GL_DEPTH_SIZE" title='::SDL_GL_DEPTH_SIZE' data-ref="::SDL_GL_DEPTH_SIZE">SDL_GL_DEPTH_SIZE</dfn>,</td></tr>
+<tr><th id="175">175</th><td>    <dfn class="enum" id="::SDL_GL_STENCIL_SIZE" title='::SDL_GL_STENCIL_SIZE' data-ref="::SDL_GL_STENCIL_SIZE">SDL_GL_STENCIL_SIZE</dfn>,</td></tr>
+<tr><th id="176">176</th><td>    <dfn class="enum" id="::SDL_GL_ACCUM_RED_SIZE" title='::SDL_GL_ACCUM_RED_SIZE' data-ref="::SDL_GL_ACCUM_RED_SIZE">SDL_GL_ACCUM_RED_SIZE</dfn>,</td></tr>
+<tr><th id="177">177</th><td>    <dfn class="enum" id="::SDL_GL_ACCUM_GREEN_SIZE" title='::SDL_GL_ACCUM_GREEN_SIZE' data-ref="::SDL_GL_ACCUM_GREEN_SIZE">SDL_GL_ACCUM_GREEN_SIZE</dfn>,</td></tr>
+<tr><th id="178">178</th><td>    <dfn class="enum" id="::SDL_GL_ACCUM_BLUE_SIZE" title='::SDL_GL_ACCUM_BLUE_SIZE' data-ref="::SDL_GL_ACCUM_BLUE_SIZE">SDL_GL_ACCUM_BLUE_SIZE</dfn>,</td></tr>
+<tr><th id="179">179</th><td>    <dfn class="enum" id="::SDL_GL_ACCUM_ALPHA_SIZE" title='::SDL_GL_ACCUM_ALPHA_SIZE' data-ref="::SDL_GL_ACCUM_ALPHA_SIZE">SDL_GL_ACCUM_ALPHA_SIZE</dfn>,</td></tr>
+<tr><th id="180">180</th><td>    <dfn class="enum" id="::SDL_GL_STEREO" title='::SDL_GL_STEREO' data-ref="::SDL_GL_STEREO">SDL_GL_STEREO</dfn>,</td></tr>
+<tr><th id="181">181</th><td>    <dfn class="enum" id="::SDL_GL_MULTISAMPLEBUFFERS" title='::SDL_GL_MULTISAMPLEBUFFERS' data-ref="::SDL_GL_MULTISAMPLEBUFFERS">SDL_GL_MULTISAMPLEBUFFERS</dfn>,</td></tr>
+<tr><th id="182">182</th><td>    <dfn class="enum" id="::SDL_GL_MULTISAMPLESAMPLES" title='::SDL_GL_MULTISAMPLESAMPLES' data-ref="::SDL_GL_MULTISAMPLESAMPLES">SDL_GL_MULTISAMPLESAMPLES</dfn>,</td></tr>
+<tr><th id="183">183</th><td>    <dfn class="enum" id="::SDL_GL_ACCELERATED_VISUAL" title='::SDL_GL_ACCELERATED_VISUAL' data-ref="::SDL_GL_ACCELERATED_VISUAL">SDL_GL_ACCELERATED_VISUAL</dfn>,</td></tr>
+<tr><th id="184">184</th><td>    <dfn class="enum" id="::SDL_GL_RETAINED_BACKING" title='::SDL_GL_RETAINED_BACKING' data-ref="::SDL_GL_RETAINED_BACKING">SDL_GL_RETAINED_BACKING</dfn>,</td></tr>
+<tr><th id="185">185</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_MAJOR_VERSION" title='::SDL_GL_CONTEXT_MAJOR_VERSION' data-ref="::SDL_GL_CONTEXT_MAJOR_VERSION">SDL_GL_CONTEXT_MAJOR_VERSION</dfn>,</td></tr>
+<tr><th id="186">186</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_MINOR_VERSION" title='::SDL_GL_CONTEXT_MINOR_VERSION' data-ref="::SDL_GL_CONTEXT_MINOR_VERSION">SDL_GL_CONTEXT_MINOR_VERSION</dfn>,</td></tr>
+<tr><th id="187">187</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_EGL" title='::SDL_GL_CONTEXT_EGL' data-ref="::SDL_GL_CONTEXT_EGL">SDL_GL_CONTEXT_EGL</dfn>,</td></tr>
+<tr><th id="188">188</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_FLAGS" title='::SDL_GL_CONTEXT_FLAGS' data-ref="::SDL_GL_CONTEXT_FLAGS">SDL_GL_CONTEXT_FLAGS</dfn>,</td></tr>
+<tr><th id="189">189</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_PROFILE_MASK" title='::SDL_GL_CONTEXT_PROFILE_MASK' data-ref="::SDL_GL_CONTEXT_PROFILE_MASK">SDL_GL_CONTEXT_PROFILE_MASK</dfn>,</td></tr>
+<tr><th id="190">190</th><td>    <dfn class="enum" id="::SDL_GL_SHARE_WITH_CURRENT_CONTEXT" title='::SDL_GL_SHARE_WITH_CURRENT_CONTEXT' data-ref="::SDL_GL_SHARE_WITH_CURRENT_CONTEXT">SDL_GL_SHARE_WITH_CURRENT_CONTEXT</dfn>,</td></tr>
+<tr><th id="191">191</th><td>    <dfn class="enum" id="::SDL_GL_FRAMEBUFFER_SRGB_CAPABLE" title='::SDL_GL_FRAMEBUFFER_SRGB_CAPABLE' data-ref="::SDL_GL_FRAMEBUFFER_SRGB_CAPABLE">SDL_GL_FRAMEBUFFER_SRGB_CAPABLE</dfn></td></tr>
+<tr><th id="192">192</th><td>} <dfn class="typedef" id="SDL_GLattr" title='SDL_GLattr' data-type='enum SDL_GLattr' data-ref="SDL_GLattr">SDL_GLattr</dfn>;</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="195">195</th><td>{</td></tr>
+<tr><th id="196">196</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_PROFILE_CORE" title='::SDL_GL_CONTEXT_PROFILE_CORE' data-ref="::SDL_GL_CONTEXT_PROFILE_CORE">SDL_GL_CONTEXT_PROFILE_CORE</dfn>           = <var>0x0001</var>,</td></tr>
+<tr><th id="197">197</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_PROFILE_COMPATIBILITY" title='::SDL_GL_CONTEXT_PROFILE_COMPATIBILITY' data-ref="::SDL_GL_CONTEXT_PROFILE_COMPATIBILITY">SDL_GL_CONTEXT_PROFILE_COMPATIBILITY</dfn>  = <var>0x0002</var>,</td></tr>
+<tr><th id="198">198</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_PROFILE_ES" title='::SDL_GL_CONTEXT_PROFILE_ES' data-ref="::SDL_GL_CONTEXT_PROFILE_ES">SDL_GL_CONTEXT_PROFILE_ES</dfn>             = <var>0x0004</var> <i>/* GLX_CONTEXT_ES2_PROFILE_BIT_EXT */</i></td></tr>
+<tr><th id="199">199</th><td>} <dfn class="typedef" id="SDL_GLprofile" title='SDL_GLprofile' data-type='enum SDL_GLprofile' data-ref="SDL_GLprofile">SDL_GLprofile</dfn>;</td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="202">202</th><td>{</td></tr>
+<tr><th id="203">203</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_DEBUG_FLAG" title='::SDL_GL_CONTEXT_DEBUG_FLAG' data-ref="::SDL_GL_CONTEXT_DEBUG_FLAG">SDL_GL_CONTEXT_DEBUG_FLAG</dfn>              = <var>0x0001</var>,</td></tr>
+<tr><th id="204">204</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG" title='::SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG' data-ref="::SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG">SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG</dfn> = <var>0x0002</var>,</td></tr>
+<tr><th id="205">205</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG" title='::SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG' data-ref="::SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG">SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG</dfn>      = <var>0x0004</var>,</td></tr>
+<tr><th id="206">206</th><td>    <dfn class="enum" id="::SDL_GL_CONTEXT_RESET_ISOLATION_FLAG" title='::SDL_GL_CONTEXT_RESET_ISOLATION_FLAG' data-ref="::SDL_GL_CONTEXT_RESET_ISOLATION_FLAG">SDL_GL_CONTEXT_RESET_ISOLATION_FLAG</dfn>    = <var>0x0008</var></td></tr>
+<tr><th id="207">207</th><td>} <dfn class="typedef" id="SDL_GLcontextFlag" title='SDL_GLcontextFlag' data-type='enum SDL_GLcontextFlag' data-ref="SDL_GLcontextFlag">SDL_GLcontextFlag</dfn>;</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><i>/* Function prototypes */</i></td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> *  <span class="command">\brief</span> Get the number of video drivers compiled into SDL</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetVideoDriver()</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="217">217</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetNumVideoDrivers" title='SDL_GetNumVideoDrivers' data-ref="SDL_GetNumVideoDrivers">SDL_GetNumVideoDrivers</dfn>(<em>void</em>);</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> *  <span class="command">\brief</span> Get the name of a built in video driver.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> *  <span class="command">\note</span> The video drivers are presented in the order in which they are</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> *        normally checked during initialization.</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumVideoDrivers()</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="227">227</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetVideoDriver" title='SDL_GetVideoDriver' data-ref="SDL_GetVideoDriver">SDL_GetVideoDriver</dfn>(<em>int</em> <dfn class="local col9 decl" id="619index" title='index' data-type='int' data-ref="619index">index</dfn>);</td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *  <span class="command">\brief</span> Initialize the video subsystem, optionally specifying a video driver.</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">driver_name</span> Initialize a specific driver by name, or NULL for the</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> *                     default video driver.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, -1 on error</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *  This function initializes the video subsystem; setting up a connection</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> *  to the window manager, etc, and determines the available display modes</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *  and pixel formats, but does not initialize a window or graphics mode.</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_VideoQuit()</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="243">243</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_VideoInit" title='SDL_VideoInit' data-ref="SDL_VideoInit">SDL_VideoInit</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="620driver_name" title='driver_name' data-type='const char *' data-ref="620driver_name">driver_name</dfn>);</td></tr>
+<tr><th id="244">244</th><td></td></tr>
+<tr><th id="245">245</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> *  <span class="command">\brief</span> Shuts down the video subsystem.</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *  This function closes all windows, and restores the original video mode.</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_VideoInit()</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="252">252</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_VideoQuit" title='SDL_VideoQuit' data-ref="SDL_VideoQuit">SDL_VideoQuit</dfn>(<em>void</em>);</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> *  <span class="command">\brief</span> Returns the name of the currently initialized video driver.</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> *  <span class="command">\return</span> The name of the current video driver or NULL if no driver</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> *          has been initialized</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumVideoDrivers()</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetVideoDriver()</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="263">263</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetCurrentVideoDriver" title='SDL_GetCurrentVideoDriver' data-ref="SDL_GetCurrentVideoDriver">SDL_GetCurrentVideoDriver</dfn>(<em>void</em>);</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> *  <span class="command">\brief</span> Returns the number of available video displays.</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetDisplayBounds()</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="270">270</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetNumVideoDisplays" title='SDL_GetNumVideoDisplays' data-ref="SDL_GetNumVideoDisplays">SDL_GetNumVideoDisplays</dfn>(<em>void</em>);</td></tr>
+<tr><th id="271">271</th><td></td></tr>
+<tr><th id="272">272</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> *  <span class="command">\brief</span> Get the name of a display in UTF-8 encoding</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> *  <span class="command">\return</span> The name of a display, or NULL for an invalid display index.</i></td></tr>
+<tr><th id="276">276</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumVideoDisplays()</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="279">279</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDisplayName" title='SDL_GetDisplayName' data-ref="SDL_GetDisplayName">SDL_GetDisplayName</dfn>(<em>int</em> <dfn class="local col1 decl" id="621displayIndex" title='displayIndex' data-type='int' data-ref="621displayIndex">displayIndex</dfn>);</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> *  <span class="command">\brief</span> Get the desktop area represented by a display, with the primary</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> *         display located at 0,0</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the index is out of range.</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumVideoDisplays()</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="289">289</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDisplayBounds" title='SDL_GetDisplayBounds' data-ref="SDL_GetDisplayBounds">SDL_GetDisplayBounds</dfn>(<em>int</em> <dfn class="local col2 decl" id="622displayIndex" title='displayIndex' data-type='int' data-ref="622displayIndex">displayIndex</dfn>, <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col3 decl" id="623rect" title='rect' data-type='SDL_Rect *' data-ref="623rect">rect</dfn>);</td></tr>
+<tr><th id="290">290</th><td></td></tr>
+<tr><th id="291">291</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="292">292</th><td><i class="doc"> *  <span class="command">\brief</span> Returns the number of available display modes.</i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetDisplayMode()</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="296">296</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetNumDisplayModes" title='SDL_GetNumDisplayModes' data-ref="SDL_GetNumDisplayModes">SDL_GetNumDisplayModes</dfn>(<em>int</em> <dfn class="local col4 decl" id="624displayIndex" title='displayIndex' data-type='int' data-ref="624displayIndex">displayIndex</dfn>);</td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *  <span class="command">\brief</span> Fill in information about a specific display mode.</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *  <span class="command">\note</span> The display modes are sorted in this priority:</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> *        <span class="command">\li</span> bits per pixel -&gt; more colors to fewer colors</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> *        <span class="command">\li</span> width -&gt; largest to smallest</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> *        <span class="command">\li</span> height -&gt; largest to smallest</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc"> *        <span class="command">\li</span> refresh rate -&gt; highest to lowest</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumDisplayModes()</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="309">309</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDisplayMode" title='SDL_GetDisplayMode' data-ref="SDL_GetDisplayMode">SDL_GetDisplayMode</dfn>(<em>int</em> <dfn class="local col5 decl" id="625displayIndex" title='displayIndex' data-type='int' data-ref="625displayIndex">displayIndex</dfn>, <em>int</em> <dfn class="local col6 decl" id="626modeIndex" title='modeIndex' data-type='int' data-ref="626modeIndex">modeIndex</dfn>,</td></tr>
+<tr><th id="310">310</th><td>                                               <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col7 decl" id="627mode" title='mode' data-type='SDL_DisplayMode *' data-ref="627mode">mode</dfn>);</td></tr>
+<tr><th id="311">311</th><td></td></tr>
+<tr><th id="312">312</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> *  <span class="command">\brief</span> Fill in information about the desktop display mode.</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="315">315</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDesktopDisplayMode" title='SDL_GetDesktopDisplayMode' data-ref="SDL_GetDesktopDisplayMode">SDL_GetDesktopDisplayMode</dfn>(<em>int</em> <dfn class="local col8 decl" id="628displayIndex" title='displayIndex' data-type='int' data-ref="628displayIndex">displayIndex</dfn>, <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col9 decl" id="629mode" title='mode' data-type='SDL_DisplayMode *' data-ref="629mode">mode</dfn>);</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> *  <span class="command">\brief</span> Fill in information about the current display mode.</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="320">320</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetCurrentDisplayMode" title='SDL_GetCurrentDisplayMode' data-ref="SDL_GetCurrentDisplayMode">SDL_GetCurrentDisplayMode</dfn>(<em>int</em> <dfn class="local col0 decl" id="630displayIndex" title='displayIndex' data-type='int' data-ref="630displayIndex">displayIndex</dfn>, <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col1 decl" id="631mode" title='mode' data-type='SDL_DisplayMode *' data-ref="631mode">mode</dfn>);</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td></td></tr>
+<tr><th id="323">323</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc"> *  <span class="command">\brief</span> Get the closest match to the requested display mode.</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">displayIndex</span> The index of display from which mode should be queried.</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">mode</span> The desired display mode</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">closest</span> A pointer to a display mode to be filled in with the closest</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> *                 match of the available display modes.</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> *  <span class="command">\return</span> The passed in value<span class="command"> \c</span> <span class="arg">closest,</span> or NULL if no matching video mode</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> *          was available.</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc"> *  The available display modes are scanned, and<span class="command"> \c</span> <span class="arg">closest</span> is filled in with the</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> *  closest mode matching the requested mode and returned.  The mode format and</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc"> *  refresh_rate default to the desktop mode if they are 0.  The modes are</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> *  scanned with size being first priority, format being second priority, and</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> *  finally checking the refresh_rate.  If all the available modes are too</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> *  small, then NULL is returned.</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetNumDisplayModes()</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetDisplayMode()</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="344">344</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetClosestDisplayMode" title='SDL_GetClosestDisplayMode' data-ref="SDL_GetClosestDisplayMode">SDL_GetClosestDisplayMode</dfn>(<em>int</em> <dfn class="local col2 decl" id="632displayIndex" title='displayIndex' data-type='int' data-ref="632displayIndex">displayIndex</dfn>, <em>const</em> <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col3 decl" id="633mode" title='mode' data-type='const SDL_DisplayMode *' data-ref="633mode">mode</dfn>, <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col4 decl" id="634closest" title='closest' data-type='SDL_DisplayMode *' data-ref="634closest">closest</dfn>);</td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> *  <span class="command">\brief</span> Get the display index associated with a window.</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc"> *  <span class="command">\return</span> the display index of the display containing the center of the</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc"> *          window, or -1 on error.</i></td></tr>
+<tr><th id="351">351</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="352">352</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowDisplayIndex" title='SDL_GetWindowDisplayIndex' data-ref="SDL_GetWindowDisplayIndex">SDL_GetWindowDisplayIndex</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="635window" title='window' data-type='SDL_Window *' data-ref="635window">window</dfn>);</td></tr>
+<tr><th id="353">353</th><td></td></tr>
+<tr><th id="354">354</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc"> *  <span class="command">\brief</span> Set the display mode used when a fullscreen window is visible.</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="357">357</th><td><i class="doc"> *  By default the window's dimensions and the desktop format and refresh rate</i></td></tr>
+<tr><th id="358">358</th><td><i class="doc"> *  are used.</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window for which the display mode should be set.</i></td></tr>
+<tr><th id="361">361</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">mode</span> The mode to use, or NULL for the default mode.</i></td></tr>
+<tr><th id="362">362</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="363">363</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if setting the display mode failed.</i></td></tr>
+<tr><th id="364">364</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="365">365</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowDisplayMode()</i></td></tr>
+<tr><th id="366">366</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowFullscreen()</i></td></tr>
+<tr><th id="367">367</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="368">368</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowDisplayMode" title='SDL_SetWindowDisplayMode' data-ref="SDL_SetWindowDisplayMode">SDL_SetWindowDisplayMode</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col6 decl" id="636window" title='window' data-type='SDL_Window *' data-ref="636window">window</dfn>,</td></tr>
+<tr><th id="369">369</th><td>                                                     <em>const</em> <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a></td></tr>
+<tr><th id="370">370</th><td>                                                         * <dfn class="local col7 decl" id="637mode" title='mode' data-type='const SDL_DisplayMode *' data-ref="637mode">mode</dfn>);</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="373">373</th><td><i class="doc"> *  <span class="command">\brief</span> Fill in information about the display mode used when a fullscreen</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc"> *         window is visible.</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowDisplayMode()</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowFullscreen()</i></td></tr>
+<tr><th id="378">378</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="379">379</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowDisplayMode" title='SDL_GetWindowDisplayMode' data-ref="SDL_GetWindowDisplayMode">SDL_GetWindowDisplayMode</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col8 decl" id="638window" title='window' data-type='SDL_Window *' data-ref="638window">window</dfn>,</td></tr>
+<tr><th id="380">380</th><td>                                                     <a class="typedef" href="#SDL_DisplayMode" title='SDL_DisplayMode' data-type='struct SDL_DisplayMode' data-ref="SDL_DisplayMode">SDL_DisplayMode</a> * <dfn class="local col9 decl" id="639mode" title='mode' data-type='SDL_DisplayMode *' data-ref="639mode">mode</dfn>);</td></tr>
+<tr><th id="381">381</th><td></td></tr>
+<tr><th id="382">382</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="383">383</th><td><i class="doc"> *  <span class="command">\brief</span> Get the pixel format associated with the window.</i></td></tr>
+<tr><th id="384">384</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="385">385</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowPixelFormat" title='SDL_GetWindowPixelFormat' data-ref="SDL_GetWindowPixelFormat">SDL_GetWindowPixelFormat</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="640window" title='window' data-type='SDL_Window *' data-ref="640window">window</dfn>);</td></tr>
+<tr><th id="386">386</th><td></td></tr>
+<tr><th id="387">387</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="388">388</th><td><i class="doc"> *  <span class="command">\brief</span> Create a window with the specified position, dimensions, and flags.</i></td></tr>
+<tr><th id="389">389</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="390">390</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">title</span> The title of the window, in UTF-8 encoding.</i></td></tr>
+<tr><th id="391">391</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span>     The x position of the window, ::SDL_WINDOWPOS_CENTERED, or</i></td></tr>
+<tr><th id="392">392</th><td><i class="doc"> *               ::SDL_WINDOWPOS_UNDEFINED.</i></td></tr>
+<tr><th id="393">393</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y</span>     The y position of the window, ::SDL_WINDOWPOS_CENTERED, or</i></td></tr>
+<tr><th id="394">394</th><td><i class="doc"> *               ::SDL_WINDOWPOS_UNDEFINED.</i></td></tr>
+<tr><th id="395">395</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>     The width of the window.</i></td></tr>
+<tr><th id="396">396</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>     The height of the window.</i></td></tr>
+<tr><th id="397">397</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">flags</span> The flags for the window, a mask of any of the following:</i></td></tr>
+<tr><th id="398">398</th><td><i class="doc"> *               ::SDL_WINDOW_FULLSCREEN,    ::SDL_WINDOW_OPENGL,</i></td></tr>
+<tr><th id="399">399</th><td><i class="doc"> *               ::SDL_WINDOW_HIDDEN,        ::SDL_WINDOW_BORDERLESS,</i></td></tr>
+<tr><th id="400">400</th><td><i class="doc"> *               ::SDL_WINDOW_RESIZABLE,     ::SDL_WINDOW_MAXIMIZED,</i></td></tr>
+<tr><th id="401">401</th><td><i class="doc"> *               ::SDL_WINDOW_MINIMIZED,     ::SDL_WINDOW_INPUT_GRABBED,</i></td></tr>
+<tr><th id="402">402</th><td><i class="doc"> *               ::SDL_WINDOW_ALLOW_HIGHDPI.</i></td></tr>
+<tr><th id="403">403</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="404">404</th><td><i class="doc"> *  <span class="command">\return</span> The id of the window created, or zero if window creation failed.</i></td></tr>
+<tr><th id="405">405</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="406">406</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyWindow()</i></td></tr>
+<tr><th id="407">407</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="408">408</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateWindow" title='SDL_CreateWindow' data-ref="SDL_CreateWindow">SDL_CreateWindow</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="641title" title='title' data-type='const char *' data-ref="641title">title</dfn>,</td></tr>
+<tr><th id="409">409</th><td>                                                      <em>int</em> <dfn class="local col2 decl" id="642x" title='x' data-type='int' data-ref="642x">x</dfn>, <em>int</em> <dfn class="local col3 decl" id="643y" title='y' data-type='int' data-ref="643y">y</dfn>, <em>int</em> <dfn class="local col4 decl" id="644w" title='w' data-type='int' data-ref="644w">w</dfn>,</td></tr>
+<tr><th id="410">410</th><td>                                                      <em>int</em> <dfn class="local col5 decl" id="645h" title='h' data-type='int' data-ref="645h">h</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col6 decl" id="646flags" title='flags' data-type='Uint32' data-ref="646flags">flags</dfn>);</td></tr>
+<tr><th id="411">411</th><td></td></tr>
+<tr><th id="412">412</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc"> *  <span class="command">\brief</span> Create an SDL window from an existing native window.</i></td></tr>
+<tr><th id="414">414</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">data</span> A pointer to driver-dependent window creation data</i></td></tr>
+<tr><th id="416">416</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="417">417</th><td><i class="doc"> *  <span class="command">\return</span> The id of the window created, or zero if window creation failed.</i></td></tr>
+<tr><th id="418">418</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DestroyWindow()</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="421">421</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateWindowFrom" title='SDL_CreateWindowFrom' data-ref="SDL_CreateWindowFrom">SDL_CreateWindowFrom</dfn>(<em>const</em> <em>void</em> *<dfn class="local col7 decl" id="647data" title='data' data-type='const void *' data-ref="647data">data</dfn>);</td></tr>
+<tr><th id="422">422</th><td></td></tr>
+<tr><th id="423">423</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="424">424</th><td><i class="doc"> *  <span class="command">\brief</span> Get the numeric ID of a window, for logging purposes.</i></td></tr>
+<tr><th id="425">425</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="426">426</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowID" title='SDL_GetWindowID' data-ref="SDL_GetWindowID">SDL_GetWindowID</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col8 decl" id="648window" title='window' data-type='SDL_Window *' data-ref="648window">window</dfn>);</td></tr>
+<tr><th id="427">427</th><td></td></tr>
+<tr><th id="428">428</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="429">429</th><td><i class="doc"> *  <span class="command">\brief</span> Get a window from a stored ID, or NULL if it doesn't exist.</i></td></tr>
+<tr><th id="430">430</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="431">431</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowFromID" title='SDL_GetWindowFromID' data-ref="SDL_GetWindowFromID">SDL_GetWindowFromID</dfn>(<a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col9 decl" id="649id" title='id' data-type='Uint32' data-ref="649id">id</dfn>);</td></tr>
+<tr><th id="432">432</th><td></td></tr>
+<tr><th id="433">433</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="434">434</th><td><i class="doc"> *  <span class="command">\brief</span> Get the window flags.</i></td></tr>
+<tr><th id="435">435</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="436">436</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowFlags" title='SDL_GetWindowFlags' data-ref="SDL_GetWindowFlags">SDL_GetWindowFlags</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="650window" title='window' data-type='SDL_Window *' data-ref="650window">window</dfn>);</td></tr>
+<tr><th id="437">437</th><td></td></tr>
+<tr><th id="438">438</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="439">439</th><td><i class="doc"> *  <span class="command">\brief</span> Set the title of a window, in UTF-8 format.</i></td></tr>
+<tr><th id="440">440</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="441">441</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowTitle()</i></td></tr>
+<tr><th id="442">442</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="443">443</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowTitle" title='SDL_SetWindowTitle' data-ref="SDL_SetWindowTitle">SDL_SetWindowTitle</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col1 decl" id="651window" title='window' data-type='SDL_Window *' data-ref="651window">window</dfn>,</td></tr>
+<tr><th id="444">444</th><td>                                                <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="652title" title='title' data-type='const char *' data-ref="652title">title</dfn>);</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="447">447</th><td><i class="doc"> *  <span class="command">\brief</span> Get the title of a window, in UTF-8 format.</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="449">449</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowTitle()</i></td></tr>
+<tr><th id="450">450</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="451">451</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>const</em> <em>char</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowTitle" title='SDL_GetWindowTitle' data-ref="SDL_GetWindowTitle">SDL_GetWindowTitle</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col3 decl" id="653window" title='window' data-type='SDL_Window *' data-ref="653window">window</dfn>);</td></tr>
+<tr><th id="452">452</th><td></td></tr>
+<tr><th id="453">453</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="454">454</th><td><i class="doc"> *  <span class="command">\brief</span> Set the icon for a window.</i></td></tr>
+<tr><th id="455">455</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="456">456</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window for which the icon should be set.</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">icon</span> The icon for the window.</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="459">459</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowIcon" title='SDL_SetWindowIcon' data-ref="SDL_SetWindowIcon">SDL_SetWindowIcon</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col4 decl" id="654window" title='window' data-type='SDL_Window *' data-ref="654window">window</dfn>,</td></tr>
+<tr><th id="460">460</th><td>                                               <a class="typedef" href="SDL_surface.h.html#SDL_Surface" title='SDL_Surface' data-type='struct SDL_Surface' data-ref="SDL_Surface">SDL_Surface</a> * <dfn class="local col5 decl" id="655icon" title='icon' data-type='SDL_Surface *' data-ref="655icon">icon</dfn>);</td></tr>
+<tr><th id="461">461</th><td></td></tr>
+<tr><th id="462">462</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="463">463</th><td><i class="doc"> *  <span class="command">\brief</span> Associate an arbitrary named pointer with a window.</i></td></tr>
+<tr><th id="464">464</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="465">465</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to associate with the pointer.</i></td></tr>
+<tr><th id="466">466</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">name</span>     The name of the pointer.</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">userdata</span> The associated pointer.</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc"> *  <span class="command">\return</span> The previous value associated with 'name'</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="471">471</th><td><i class="doc"> *  <span class="command">\note</span> The name is case-sensitive.</i></td></tr>
+<tr><th id="472">472</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="473">473</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowData()</i></td></tr>
+<tr><th id="474">474</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="475">475</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowData" title='SDL_SetWindowData' data-ref="SDL_SetWindowData">SDL_SetWindowData</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col6 decl" id="656window" title='window' data-type='SDL_Window *' data-ref="656window">window</dfn>,</td></tr>
+<tr><th id="476">476</th><td>                                                <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="657name" title='name' data-type='const char *' data-ref="657name">name</dfn>,</td></tr>
+<tr><th id="477">477</th><td>                                                <em>void</em> *<dfn class="local col8 decl" id="658userdata" title='userdata' data-type='void *' data-ref="658userdata">userdata</dfn>);</td></tr>
+<tr><th id="478">478</th><td></td></tr>
+<tr><th id="479">479</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="480">480</th><td><i class="doc"> *  <span class="command">\brief</span> Retrieve the data pointer associated with a window.</i></td></tr>
+<tr><th id="481">481</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="482">482</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to query.</i></td></tr>
+<tr><th id="483">483</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">name</span>     The name of the pointer.</i></td></tr>
+<tr><th id="484">484</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="485">485</th><td><i class="doc"> *  <span class="command">\return</span> The value associated with 'name'</i></td></tr>
+<tr><th id="486">486</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="487">487</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowData()</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="489">489</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowData" title='SDL_GetWindowData' data-ref="SDL_GetWindowData">SDL_GetWindowData</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col9 decl" id="659window" title='window' data-type='SDL_Window *' data-ref="659window">window</dfn>,</td></tr>
+<tr><th id="490">490</th><td>                                                <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="660name" title='name' data-type='const char *' data-ref="660name">name</dfn>);</td></tr>
+<tr><th id="491">491</th><td></td></tr>
+<tr><th id="492">492</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="493">493</th><td><i class="doc"> *  <span class="command">\brief</span> Set the position of a window.</i></td></tr>
+<tr><th id="494">494</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="495">495</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to reposition.</i></td></tr>
+<tr><th id="496">496</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span>        The x coordinate of the window, ::SDL_WINDOWPOS_CENTERED, or</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc">                    ::SDL_WINDOWPOS_UNDEFINED.</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y</span>        The y coordinate of the window, ::SDL_WINDOWPOS_CENTERED, or</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc">                    ::SDL_WINDOWPOS_UNDEFINED.</i></td></tr>
+<tr><th id="500">500</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="501">501</th><td><i class="doc"> *  <span class="command">\note</span> The window coordinate origin is the upper left of the display.</i></td></tr>
+<tr><th id="502">502</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowPosition()</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="505">505</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowPosition" title='SDL_SetWindowPosition' data-ref="SDL_SetWindowPosition">SDL_SetWindowPosition</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col1 decl" id="661window" title='window' data-type='SDL_Window *' data-ref="661window">window</dfn>,</td></tr>
+<tr><th id="506">506</th><td>                                                   <em>int</em> <dfn class="local col2 decl" id="662x" title='x' data-type='int' data-ref="662x">x</dfn>, <em>int</em> <dfn class="local col3 decl" id="663y" title='y' data-type='int' data-ref="663y">y</dfn>);</td></tr>
+<tr><th id="507">507</th><td></td></tr>
+<tr><th id="508">508</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="509">509</th><td><i class="doc"> *  <span class="command">\brief</span> Get the position of a window.</i></td></tr>
+<tr><th id="510">510</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="511">511</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to query.</i></td></tr>
+<tr><th id="512">512</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span>        Pointer to variable for storing the x position, may be NULL</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y</span>        Pointer to variable for storing the y position, may be NULL</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="515">515</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowPosition()</i></td></tr>
+<tr><th id="516">516</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="517">517</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowPosition" title='SDL_GetWindowPosition' data-ref="SDL_GetWindowPosition">SDL_GetWindowPosition</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col4 decl" id="664window" title='window' data-type='SDL_Window *' data-ref="664window">window</dfn>,</td></tr>
+<tr><th id="518">518</th><td>                                                   <em>int</em> *<dfn class="local col5 decl" id="665x" title='x' data-type='int *' data-ref="665x">x</dfn>, <em>int</em> *<dfn class="local col6 decl" id="666y" title='y' data-type='int *' data-ref="666y">y</dfn>);</td></tr>
+<tr><th id="519">519</th><td></td></tr>
+<tr><th id="520">520</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="521">521</th><td><i class="doc"> *  <span class="command">\brief</span> Set the size of a window's client area.</i></td></tr>
+<tr><th id="522">522</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="523">523</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to resize.</i></td></tr>
+<tr><th id="524">524</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>        The width of the window, must be &gt;0</i></td></tr>
+<tr><th id="525">525</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>        The height of the window, must be &gt;0</i></td></tr>
+<tr><th id="526">526</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc"> *  <span class="command">\note</span> You can't change the size of a fullscreen window, it automatically</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc"> *        matches the size of the display mode.</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowSize()</i></td></tr>
+<tr><th id="531">531</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="532">532</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowSize" title='SDL_SetWindowSize' data-ref="SDL_SetWindowSize">SDL_SetWindowSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col7 decl" id="667window" title='window' data-type='SDL_Window *' data-ref="667window">window</dfn>, <em>int</em> <dfn class="local col8 decl" id="668w" title='w' data-type='int' data-ref="668w">w</dfn>,</td></tr>
+<tr><th id="533">533</th><td>                                               <em>int</em> <dfn class="local col9 decl" id="669h" title='h' data-type='int' data-ref="669h">h</dfn>);</td></tr>
+<tr><th id="534">534</th><td></td></tr>
+<tr><th id="535">535</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="536">536</th><td><i class="doc"> *  <span class="command">\brief</span> Get the size of a window's client area.</i></td></tr>
+<tr><th id="537">537</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="538">538</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to query.</i></td></tr>
+<tr><th id="539">539</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>        Pointer to variable for storing the width, may be NULL</i></td></tr>
+<tr><th id="540">540</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>        Pointer to variable for storing the height, may be NULL</i></td></tr>
+<tr><th id="541">541</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="542">542</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowSize()</i></td></tr>
+<tr><th id="543">543</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="544">544</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowSize" title='SDL_GetWindowSize' data-ref="SDL_GetWindowSize">SDL_GetWindowSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="670window" title='window' data-type='SDL_Window *' data-ref="670window">window</dfn>, <em>int</em> *<dfn class="local col1 decl" id="671w" title='w' data-type='int *' data-ref="671w">w</dfn>,</td></tr>
+<tr><th id="545">545</th><td>                                               <em>int</em> *<dfn class="local col2 decl" id="672h" title='h' data-type='int *' data-ref="672h">h</dfn>);</td></tr>
+<tr><th id="546">546</th><td></td></tr>
+<tr><th id="547">547</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="548">548</th><td><i class="doc"> *  <span class="command">\brief</span> Set the minimum size of a window's client area.</i></td></tr>
+<tr><th id="549">549</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="550">550</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>    The window to set a new minimum size.</i></td></tr>
+<tr><th id="551">551</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">min_w</span>     The minimum width of the window, must be &gt;0</i></td></tr>
+<tr><th id="552">552</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">min_h</span>     The minimum height of the window, must be &gt;0</i></td></tr>
+<tr><th id="553">553</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="554">554</th><td><i class="doc"> *  <span class="command">\note</span> You can't change the minimum size of a fullscreen window, it</i></td></tr>
+<tr><th id="555">555</th><td><i class="doc"> *        automatically matches the size of the display mode.</i></td></tr>
+<tr><th id="556">556</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowMinimumSize()</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowMaximumSize()</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="560">560</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowMinimumSize" title='SDL_SetWindowMinimumSize' data-ref="SDL_SetWindowMinimumSize">SDL_SetWindowMinimumSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col3 decl" id="673window" title='window' data-type='SDL_Window *' data-ref="673window">window</dfn>,</td></tr>
+<tr><th id="561">561</th><td>                                                      <em>int</em> <dfn class="local col4 decl" id="674min_w" title='min_w' data-type='int' data-ref="674min_w">min_w</dfn>, <em>int</em> <dfn class="local col5 decl" id="675min_h" title='min_h' data-type='int' data-ref="675min_h">min_h</dfn>);</td></tr>
+<tr><th id="562">562</th><td></td></tr>
+<tr><th id="563">563</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="564">564</th><td><i class="doc"> *  <span class="command">\brief</span> Get the minimum size of a window's client area.</i></td></tr>
+<tr><th id="565">565</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="566">566</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to query.</i></td></tr>
+<tr><th id="567">567</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>        Pointer to variable for storing the minimum width, may be NULL</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>        Pointer to variable for storing the minimum height, may be NULL</i></td></tr>
+<tr><th id="569">569</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="570">570</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowMaximumSize()</i></td></tr>
+<tr><th id="571">571</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowMinimumSize()</i></td></tr>
+<tr><th id="572">572</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="573">573</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowMinimumSize" title='SDL_GetWindowMinimumSize' data-ref="SDL_GetWindowMinimumSize">SDL_GetWindowMinimumSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col6 decl" id="676window" title='window' data-type='SDL_Window *' data-ref="676window">window</dfn>,</td></tr>
+<tr><th id="574">574</th><td>                                                      <em>int</em> *<dfn class="local col7 decl" id="677w" title='w' data-type='int *' data-ref="677w">w</dfn>, <em>int</em> *<dfn class="local col8 decl" id="678h" title='h' data-type='int *' data-ref="678h">h</dfn>);</td></tr>
+<tr><th id="575">575</th><td></td></tr>
+<tr><th id="576">576</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="577">577</th><td><i class="doc"> *  <span class="command">\brief</span> Set the maximum size of a window's client area.</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="579">579</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>    The window to set a new maximum size.</i></td></tr>
+<tr><th id="580">580</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">max_w</span>     The maximum width of the window, must be &gt;0</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">max_h</span>     The maximum height of the window, must be &gt;0</i></td></tr>
+<tr><th id="582">582</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="583">583</th><td><i class="doc"> *  <span class="command">\note</span> You can't change the maximum size of a fullscreen window, it</i></td></tr>
+<tr><th id="584">584</th><td><i class="doc"> *        automatically matches the size of the display mode.</i></td></tr>
+<tr><th id="585">585</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="586">586</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowMaximumSize()</i></td></tr>
+<tr><th id="587">587</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowMinimumSize()</i></td></tr>
+<tr><th id="588">588</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="589">589</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowMaximumSize" title='SDL_SetWindowMaximumSize' data-ref="SDL_SetWindowMaximumSize">SDL_SetWindowMaximumSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col9 decl" id="679window" title='window' data-type='SDL_Window *' data-ref="679window">window</dfn>,</td></tr>
+<tr><th id="590">590</th><td>                                                      <em>int</em> <dfn class="local col0 decl" id="680max_w" title='max_w' data-type='int' data-ref="680max_w">max_w</dfn>, <em>int</em> <dfn class="local col1 decl" id="681max_h" title='max_h' data-type='int' data-ref="681max_h">max_h</dfn>);</td></tr>
+<tr><th id="591">591</th><td></td></tr>
+<tr><th id="592">592</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="593">593</th><td><i class="doc"> *  <span class="command">\brief</span> Get the maximum size of a window's client area.</i></td></tr>
+<tr><th id="594">594</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="595">595</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   The window to query.</i></td></tr>
+<tr><th id="596">596</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>        Pointer to variable for storing the maximum width, may be NULL</i></td></tr>
+<tr><th id="597">597</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>        Pointer to variable for storing the maximum height, may be NULL</i></td></tr>
+<tr><th id="598">598</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="599">599</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowMinimumSize()</i></td></tr>
+<tr><th id="600">600</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowMaximumSize()</i></td></tr>
+<tr><th id="601">601</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="602">602</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowMaximumSize" title='SDL_GetWindowMaximumSize' data-ref="SDL_GetWindowMaximumSize">SDL_GetWindowMaximumSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col2 decl" id="682window" title='window' data-type='SDL_Window *' data-ref="682window">window</dfn>,</td></tr>
+<tr><th id="603">603</th><td>                                                      <em>int</em> *<dfn class="local col3 decl" id="683w" title='w' data-type='int *' data-ref="683w">w</dfn>, <em>int</em> *<dfn class="local col4 decl" id="684h" title='h' data-type='int *' data-ref="684h">h</dfn>);</td></tr>
+<tr><th id="604">604</th><td></td></tr>
+<tr><th id="605">605</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="606">606</th><td><i class="doc"> *  <span class="command">\brief</span> Set the border state of a window.</i></td></tr>
+<tr><th id="607">607</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="608">608</th><td><i class="doc"> *  This will add or remove the window's SDL_WINDOW_BORDERLESS flag and</i></td></tr>
+<tr><th id="609">609</th><td><i class="doc"> *  add or remove the border from the actual window. This is a no-op if the</i></td></tr>
+<tr><th id="610">610</th><td><i class="doc"> *  window's border already matches the requested state.</i></td></tr>
+<tr><th id="611">611</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="612">612</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window of which to change the border state.</i></td></tr>
+<tr><th id="613">613</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">bordered</span> SDL_FALSE to remove border, SDL_TRUE to add border.</i></td></tr>
+<tr><th id="614">614</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="615">615</th><td><i class="doc"> *  <span class="command">\note</span> You can't change the border state of a fullscreen window.</i></td></tr>
+<tr><th id="616">616</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="617">617</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowFlags()</i></td></tr>
+<tr><th id="618">618</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="619">619</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowBordered" title='SDL_SetWindowBordered' data-ref="SDL_SetWindowBordered">SDL_SetWindowBordered</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="685window" title='window' data-type='SDL_Window *' data-ref="685window">window</dfn>,</td></tr>
+<tr><th id="620">620</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="local col6 decl" id="686bordered" title='bordered' data-type='SDL_bool' data-ref="686bordered">bordered</dfn>);</td></tr>
+<tr><th id="621">621</th><td></td></tr>
+<tr><th id="622">622</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="623">623</th><td><i class="doc"> *  <span class="command">\brief</span> Show a window.</i></td></tr>
+<tr><th id="624">624</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="625">625</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_HideWindow()</i></td></tr>
+<tr><th id="626">626</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="627">627</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ShowWindow" title='SDL_ShowWindow' data-ref="SDL_ShowWindow">SDL_ShowWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col7 decl" id="687window" title='window' data-type='SDL_Window *' data-ref="687window">window</dfn>);</td></tr>
+<tr><th id="628">628</th><td></td></tr>
+<tr><th id="629">629</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="630">630</th><td><i class="doc"> *  <span class="command">\brief</span> Hide a window.</i></td></tr>
+<tr><th id="631">631</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="632">632</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_ShowWindow()</i></td></tr>
+<tr><th id="633">633</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="634">634</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HideWindow" title='SDL_HideWindow' data-ref="SDL_HideWindow">SDL_HideWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col8 decl" id="688window" title='window' data-type='SDL_Window *' data-ref="688window">window</dfn>);</td></tr>
+<tr><th id="635">635</th><td></td></tr>
+<tr><th id="636">636</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="637">637</th><td><i class="doc"> *  <span class="command">\brief</span> Raise a window above other windows and set the input focus.</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="639">639</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RaiseWindow" title='SDL_RaiseWindow' data-ref="SDL_RaiseWindow">SDL_RaiseWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col9 decl" id="689window" title='window' data-type='SDL_Window *' data-ref="689window">window</dfn>);</td></tr>
+<tr><th id="640">640</th><td></td></tr>
+<tr><th id="641">641</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="642">642</th><td><i class="doc"> *  <span class="command">\brief</span> Make a window as large as possible.</i></td></tr>
+<tr><th id="643">643</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="644">644</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RestoreWindow()</i></td></tr>
+<tr><th id="645">645</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="646">646</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_MaximizeWindow" title='SDL_MaximizeWindow' data-ref="SDL_MaximizeWindow">SDL_MaximizeWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="690window" title='window' data-type='SDL_Window *' data-ref="690window">window</dfn>);</td></tr>
+<tr><th id="647">647</th><td></td></tr>
+<tr><th id="648">648</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="649">649</th><td><i class="doc"> *  <span class="command">\brief</span> Minimize a window to an iconic representation.</i></td></tr>
+<tr><th id="650">650</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="651">651</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RestoreWindow()</i></td></tr>
+<tr><th id="652">652</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="653">653</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_MinimizeWindow" title='SDL_MinimizeWindow' data-ref="SDL_MinimizeWindow">SDL_MinimizeWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col1 decl" id="691window" title='window' data-type='SDL_Window *' data-ref="691window">window</dfn>);</td></tr>
+<tr><th id="654">654</th><td></td></tr>
+<tr><th id="655">655</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="656">656</th><td><i class="doc"> *  <span class="command">\brief</span> Restore the size and position of a minimized or maximized window.</i></td></tr>
+<tr><th id="657">657</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="658">658</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_MaximizeWindow()</i></td></tr>
+<tr><th id="659">659</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_MinimizeWindow()</i></td></tr>
+<tr><th id="660">660</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="661">661</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RestoreWindow" title='SDL_RestoreWindow' data-ref="SDL_RestoreWindow">SDL_RestoreWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col2 decl" id="692window" title='window' data-type='SDL_Window *' data-ref="692window">window</dfn>);</td></tr>
+<tr><th id="662">662</th><td></td></tr>
+<tr><th id="663">663</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="664">664</th><td><i class="doc"> *  <span class="command">\brief</span> Set a window's fullscreen state.</i></td></tr>
+<tr><th id="665">665</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="666">666</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if setting the display mode failed.</i></td></tr>
+<tr><th id="667">667</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="668">668</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowDisplayMode()</i></td></tr>
+<tr><th id="669">669</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowDisplayMode()</i></td></tr>
+<tr><th id="670">670</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="671">671</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowFullscreen" title='SDL_SetWindowFullscreen' data-ref="SDL_SetWindowFullscreen">SDL_SetWindowFullscreen</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col3 decl" id="693window" title='window' data-type='SDL_Window *' data-ref="693window">window</dfn>,</td></tr>
+<tr><th id="672">672</th><td>                                                    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col4 decl" id="694flags" title='flags' data-type='Uint32' data-ref="694flags">flags</dfn>);</td></tr>
+<tr><th id="673">673</th><td></td></tr>
+<tr><th id="674">674</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="675">675</th><td><i class="doc"> *  <span class="command">\brief</span> Get the SDL surface associated with the window.</i></td></tr>
+<tr><th id="676">676</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="677">677</th><td><i class="doc"> *  <span class="command">\return</span> The window's framebuffer surface, or NULL on error.</i></td></tr>
+<tr><th id="678">678</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="679">679</th><td><i class="doc"> *  A new surface will be created with the optimal format for the window,</i></td></tr>
+<tr><th id="680">680</th><td><i class="doc"> *  if necessary. This surface will be freed when the window is destroyed.</i></td></tr>
+<tr><th id="681">681</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="682">682</th><td><i class="doc"> *  <span class="command">\note</span> You may not combine this with 3D or the rendering API on this window.</i></td></tr>
+<tr><th id="683">683</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="684">684</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UpdateWindowSurface()</i></td></tr>
+<tr><th id="685">685</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UpdateWindowSurfaceRects()</i></td></tr>
+<tr><th id="686">686</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="687">687</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_surface.h.html#SDL_Surface" title='SDL_Surface' data-type='struct SDL_Surface' data-ref="SDL_Surface">SDL_Surface</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowSurface" title='SDL_GetWindowSurface' data-ref="SDL_GetWindowSurface">SDL_GetWindowSurface</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="695window" title='window' data-type='SDL_Window *' data-ref="695window">window</dfn>);</td></tr>
+<tr><th id="688">688</th><td></td></tr>
+<tr><th id="689">689</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="690">690</th><td><i class="doc"> *  <span class="command">\brief</span> Copy the window surface to the screen.</i></td></tr>
+<tr><th id="691">691</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="692">692</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error.</i></td></tr>
+<tr><th id="693">693</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="694">694</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowSurface()</i></td></tr>
+<tr><th id="695">695</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UpdateWindowSurfaceRects()</i></td></tr>
+<tr><th id="696">696</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="697">697</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UpdateWindowSurface" title='SDL_UpdateWindowSurface' data-ref="SDL_UpdateWindowSurface">SDL_UpdateWindowSurface</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col6 decl" id="696window" title='window' data-type='SDL_Window *' data-ref="696window">window</dfn>);</td></tr>
+<tr><th id="698">698</th><td></td></tr>
+<tr><th id="699">699</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="700">700</th><td><i class="doc"> *  <span class="command">\brief</span> Copy a number of rectangles on the window surface to the screen.</i></td></tr>
+<tr><th id="701">701</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="702">702</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 on error.</i></td></tr>
+<tr><th id="703">703</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="704">704</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowSurface()</i></td></tr>
+<tr><th id="705">705</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UpdateWindowSurfaceRect()</i></td></tr>
+<tr><th id="706">706</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="707">707</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UpdateWindowSurfaceRects" title='SDL_UpdateWindowSurfaceRects' data-ref="SDL_UpdateWindowSurfaceRects">SDL_UpdateWindowSurfaceRects</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col7 decl" id="697window" title='window' data-type='SDL_Window *' data-ref="697window">window</dfn>,</td></tr>
+<tr><th id="708">708</th><td>                                                         <em>const</em> <a class="typedef" href="SDL_rect.h.html#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col8 decl" id="698rects" title='rects' data-type='const SDL_Rect *' data-ref="698rects">rects</dfn>,</td></tr>
+<tr><th id="709">709</th><td>                                                         <em>int</em> <dfn class="local col9 decl" id="699numrects" title='numrects' data-type='int' data-ref="699numrects">numrects</dfn>);</td></tr>
+<tr><th id="710">710</th><td></td></tr>
+<tr><th id="711">711</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="712">712</th><td><i class="doc"> *  <span class="command">\brief</span> Set a window's input grab mode.</i></td></tr>
+<tr><th id="713">713</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="714">714</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window for which the input grab mode should be set.</i></td></tr>
+<tr><th id="715">715</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">grabbed</span> This is SDL_TRUE to grab input, and SDL_FALSE to release input.</i></td></tr>
+<tr><th id="716">716</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="717">717</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowGrab()</i></td></tr>
+<tr><th id="718">718</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="719">719</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowGrab" title='SDL_SetWindowGrab' data-ref="SDL_SetWindowGrab">SDL_SetWindowGrab</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="700window" title='window' data-type='SDL_Window *' data-ref="700window">window</dfn>,</td></tr>
+<tr><th id="720">720</th><td>                                               <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="local col1 decl" id="701grabbed" title='grabbed' data-type='SDL_bool' data-ref="701grabbed">grabbed</dfn>);</td></tr>
+<tr><th id="721">721</th><td></td></tr>
+<tr><th id="722">722</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="723">723</th><td><i class="doc"> *  <span class="command">\brief</span> Get a window's input grab mode.</i></td></tr>
+<tr><th id="724">724</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="725">725</th><td><i class="doc"> *  <span class="command">\return</span> This returns SDL_TRUE if input is grabbed, and SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="726">726</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="727">727</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowGrab()</i></td></tr>
+<tr><th id="728">728</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="729">729</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowGrab" title='SDL_GetWindowGrab' data-ref="SDL_GetWindowGrab">SDL_GetWindowGrab</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col2 decl" id="702window" title='window' data-type='SDL_Window *' data-ref="702window">window</dfn>);</td></tr>
+<tr><th id="730">730</th><td></td></tr>
+<tr><th id="731">731</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="732">732</th><td><i class="doc"> *  <span class="command">\brief</span> Set the brightness (gamma correction) for a window.</i></td></tr>
+<tr><th id="733">733</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="734">734</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if setting the brightness isn't supported.</i></td></tr>
+<tr><th id="735">735</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="736">736</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowBrightness()</i></td></tr>
+<tr><th id="737">737</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowGammaRamp()</i></td></tr>
+<tr><th id="738">738</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="739">739</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowBrightness" title='SDL_SetWindowBrightness' data-ref="SDL_SetWindowBrightness">SDL_SetWindowBrightness</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col3 decl" id="703window" title='window' data-type='SDL_Window *' data-ref="703window">window</dfn>, <em>float</em> <dfn class="local col4 decl" id="704brightness" title='brightness' data-type='float' data-ref="704brightness">brightness</dfn>);</td></tr>
+<tr><th id="740">740</th><td></td></tr>
+<tr><th id="741">741</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="742">742</th><td><i class="doc"> *  <span class="command">\brief</span> Get the brightness (gamma correction) for a window.</i></td></tr>
+<tr><th id="743">743</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="744">744</th><td><i class="doc"> *  <span class="command">\return</span> The last brightness value passed to SDL_SetWindowBrightness()</i></td></tr>
+<tr><th id="745">745</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="746">746</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowBrightness()</i></td></tr>
+<tr><th id="747">747</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="748">748</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>float</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowBrightness" title='SDL_GetWindowBrightness' data-ref="SDL_GetWindowBrightness">SDL_GetWindowBrightness</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="705window" title='window' data-type='SDL_Window *' data-ref="705window">window</dfn>);</td></tr>
+<tr><th id="749">749</th><td></td></tr>
+<tr><th id="750">750</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="751">751</th><td><i class="doc"> *  <span class="command">\brief</span> Set the gamma ramp for a window.</i></td></tr>
+<tr><th id="752">752</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="753">753</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window for which the gamma ramp should be set.</i></td></tr>
+<tr><th id="754">754</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">red</span> The translation table for the red channel, or NULL.</i></td></tr>
+<tr><th id="755">755</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">green</span> The translation table for the green channel, or NULL.</i></td></tr>
+<tr><th id="756">756</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blue</span> The translation table for the blue channel, or NULL.</i></td></tr>
+<tr><th id="757">757</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="758">758</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if gamma ramps are unsupported.</i></td></tr>
+<tr><th id="759">759</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="760">760</th><td><i class="doc"> *  Set the gamma translation table for the red, green, and blue channels</i></td></tr>
+<tr><th id="761">761</th><td><i class="doc"> *  of the video hardware.  Each table is an array of 256 16-bit quantities,</i></td></tr>
+<tr><th id="762">762</th><td><i class="doc"> *  representing a mapping between the input and output for that channel.</i></td></tr>
+<tr><th id="763">763</th><td><i class="doc"> *  The input is the index into the array, and the output is the 16-bit</i></td></tr>
+<tr><th id="764">764</th><td><i class="doc"> *  gamma value at that index, scaled to the output color precision.</i></td></tr>
+<tr><th id="765">765</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="766">766</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowGammaRamp()</i></td></tr>
+<tr><th id="767">767</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="768">768</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetWindowGammaRamp" title='SDL_SetWindowGammaRamp' data-ref="SDL_SetWindowGammaRamp">SDL_SetWindowGammaRamp</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col6 decl" id="706window" title='window' data-type='SDL_Window *' data-ref="706window">window</dfn>,</td></tr>
+<tr><th id="769">769</th><td>                                                   <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col7 decl" id="707red" title='red' data-type='const Uint16 *' data-ref="707red">red</dfn>,</td></tr>
+<tr><th id="770">770</th><td>                                                   <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col8 decl" id="708green" title='green' data-type='const Uint16 *' data-ref="708green">green</dfn>,</td></tr>
+<tr><th id="771">771</th><td>                                                   <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col9 decl" id="709blue" title='blue' data-type='const Uint16 *' data-ref="709blue">blue</dfn>);</td></tr>
+<tr><th id="772">772</th><td></td></tr>
+<tr><th id="773">773</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="774">774</th><td><i class="doc"> *  <span class="command">\brief</span> Get the gamma ramp for a window.</i></td></tr>
+<tr><th id="775">775</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="776">776</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window from which the gamma ramp should be queried.</i></td></tr>
+<tr><th id="777">777</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">red</span>   A pointer to a 256 element array of 16-bit quantities to hold</i></td></tr>
+<tr><th id="778">778</th><td><i class="doc"> *               the translation table for the red channel, or NULL.</i></td></tr>
+<tr><th id="779">779</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">green</span> A pointer to a 256 element array of 16-bit quantities to hold</i></td></tr>
+<tr><th id="780">780</th><td><i class="doc"> *               the translation table for the green channel, or NULL.</i></td></tr>
+<tr><th id="781">781</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">blue</span>  A pointer to a 256 element array of 16-bit quantities to hold</i></td></tr>
+<tr><th id="782">782</th><td><i class="doc"> *               the translation table for the blue channel, or NULL.</i></td></tr>
+<tr><th id="783">783</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="784">784</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if gamma ramps are unsupported.</i></td></tr>
+<tr><th id="785">785</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="786">786</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetWindowGammaRamp()</i></td></tr>
+<tr><th id="787">787</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="788">788</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetWindowGammaRamp" title='SDL_GetWindowGammaRamp' data-ref="SDL_GetWindowGammaRamp">SDL_GetWindowGammaRamp</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col0 decl" id="710window" title='window' data-type='SDL_Window *' data-ref="710window">window</dfn>,</td></tr>
+<tr><th id="789">789</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col1 decl" id="711red" title='red' data-type='Uint16 *' data-ref="711red">red</dfn>,</td></tr>
+<tr><th id="790">790</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col2 decl" id="712green" title='green' data-type='Uint16 *' data-ref="712green">green</dfn>,</td></tr>
+<tr><th id="791">791</th><td>                                                   <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> * <dfn class="local col3 decl" id="713blue" title='blue' data-type='Uint16 *' data-ref="713blue">blue</dfn>);</td></tr>
+<tr><th id="792">792</th><td></td></tr>
+<tr><th id="793">793</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="794">794</th><td><i class="doc"> *  <span class="command">\brief</span> Destroy a window.</i></td></tr>
+<tr><th id="795">795</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="796">796</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_DestroyWindow" title='SDL_DestroyWindow' data-ref="SDL_DestroyWindow">SDL_DestroyWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col4 decl" id="714window" title='window' data-type='SDL_Window *' data-ref="714window">window</dfn>);</td></tr>
+<tr><th id="797">797</th><td></td></tr>
+<tr><th id="798">798</th><td></td></tr>
+<tr><th id="799">799</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="800">800</th><td><i class="doc"> *  <span class="command">\brief</span> Returns whether the screensaver is currently enabled (default on).</i></td></tr>
+<tr><th id="801">801</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="802">802</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_EnableScreenSaver()</i></td></tr>
+<tr><th id="803">803</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DisableScreenSaver()</i></td></tr>
+<tr><th id="804">804</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="805">805</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_IsScreenSaverEnabled" title='SDL_IsScreenSaverEnabled' data-ref="SDL_IsScreenSaverEnabled">SDL_IsScreenSaverEnabled</dfn>(<em>void</em>);</td></tr>
+<tr><th id="806">806</th><td></td></tr>
+<tr><th id="807">807</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="808">808</th><td><i class="doc"> *  <span class="command">\brief</span> Allow the screen to be blanked by a screensaver</i></td></tr>
+<tr><th id="809">809</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="810">810</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_IsScreenSaverEnabled()</i></td></tr>
+<tr><th id="811">811</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_DisableScreenSaver()</i></td></tr>
+<tr><th id="812">812</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="813">813</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_EnableScreenSaver" title='SDL_EnableScreenSaver' data-ref="SDL_EnableScreenSaver">SDL_EnableScreenSaver</dfn>(<em>void</em>);</td></tr>
+<tr><th id="814">814</th><td></td></tr>
+<tr><th id="815">815</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="816">816</th><td><i class="doc"> *  <span class="command">\brief</span> Prevent the screen from being blanked by a screensaver</i></td></tr>
+<tr><th id="817">817</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="818">818</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_IsScreenSaverEnabled()</i></td></tr>
+<tr><th id="819">819</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_EnableScreenSaver()</i></td></tr>
+<tr><th id="820">820</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="821">821</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_DisableScreenSaver" title='SDL_DisableScreenSaver' data-ref="SDL_DisableScreenSaver">SDL_DisableScreenSaver</dfn>(<em>void</em>);</td></tr>
+<tr><th id="822">822</th><td></td></tr>
+<tr><th id="823">823</th><td></td></tr>
+<tr><th id="824">824</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="825">825</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">OpenGL support functions</span></i></td></tr>
+<tr><th id="826">826</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="827">827</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="828">828</th><td></td></tr>
+<tr><th id="829">829</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="830">830</th><td><i class="doc"> *  <span class="command">\brief</span> Dynamically load an OpenGL library.</i></td></tr>
+<tr><th id="831">831</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="832">832</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">path</span> The platform dependent OpenGL library name, or NULL to open the</i></td></tr>
+<tr><th id="833">833</th><td><i class="doc"> *              default OpenGL library.</i></td></tr>
+<tr><th id="834">834</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="835">835</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if the library couldn't be loaded.</i></td></tr>
+<tr><th id="836">836</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="837">837</th><td><i class="doc"> *  This should be done after initializing the video driver, but before</i></td></tr>
+<tr><th id="838">838</th><td><i class="doc"> *  creating any OpenGL windows.  If no OpenGL library is loaded, the default</i></td></tr>
+<tr><th id="839">839</th><td><i class="doc"> *  library will be loaded upon creation of the first OpenGL window.</i></td></tr>
+<tr><th id="840">840</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="841">841</th><td><i class="doc"> *  <span class="command">\note</span> If you do this, you need to retrieve all of the GL functions used in</i></td></tr>
+<tr><th id="842">842</th><td><i class="doc"> *        your program from the dynamic library using SDL_GL_GetProcAddress().</i></td></tr>
+<tr><th id="843">843</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="844">844</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_GetProcAddress()</i></td></tr>
+<tr><th id="845">845</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_UnloadLibrary()</i></td></tr>
+<tr><th id="846">846</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="847">847</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_LoadLibrary" title='SDL_GL_LoadLibrary' data-ref="SDL_GL_LoadLibrary">SDL_GL_LoadLibrary</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="715path" title='path' data-type='const char *' data-ref="715path">path</dfn>);</td></tr>
+<tr><th id="848">848</th><td></td></tr>
+<tr><th id="849">849</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="850">850</th><td><i class="doc"> *  <span class="command">\brief</span> Get the address of an OpenGL function.</i></td></tr>
+<tr><th id="851">851</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="852">852</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetProcAddress" title='SDL_GL_GetProcAddress' data-ref="SDL_GL_GetProcAddress">SDL_GL_GetProcAddress</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="716proc" title='proc' data-type='const char *' data-ref="716proc">proc</dfn>);</td></tr>
+<tr><th id="853">853</th><td></td></tr>
+<tr><th id="854">854</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="855">855</th><td><i class="doc"> *  <span class="command">\brief</span> Unload the OpenGL library previously loaded by SDL_GL_LoadLibrary().</i></td></tr>
+<tr><th id="856">856</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="857">857</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_LoadLibrary()</i></td></tr>
+<tr><th id="858">858</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="859">859</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_UnloadLibrary" title='SDL_GL_UnloadLibrary' data-ref="SDL_GL_UnloadLibrary">SDL_GL_UnloadLibrary</dfn>(<em>void</em>);</td></tr>
+<tr><th id="860">860</th><td></td></tr>
+<tr><th id="861">861</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="862">862</th><td><i class="doc"> *  <span class="command">\brief</span> Return true if an OpenGL extension is supported for the current</i></td></tr>
+<tr><th id="863">863</th><td><i class="doc"> *         context.</i></td></tr>
+<tr><th id="864">864</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="865">865</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_ExtensionSupported" title='SDL_GL_ExtensionSupported' data-ref="SDL_GL_ExtensionSupported">SDL_GL_ExtensionSupported</dfn>(<em>const</em> <em>char</em></td></tr>
+<tr><th id="866">866</th><td>                                                           *<dfn class="local col7 decl" id="717extension" title='extension' data-type='const char *' data-ref="717extension">extension</dfn>);</td></tr>
+<tr><th id="867">867</th><td></td></tr>
+<tr><th id="868">868</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="869">869</th><td><i class="doc"> *  <span class="command">\brief</span> Reset all previously set OpenGL context attributes to their default values</i></td></tr>
+<tr><th id="870">870</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="871">871</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_ResetAttributes" title='SDL_GL_ResetAttributes' data-ref="SDL_GL_ResetAttributes">SDL_GL_ResetAttributes</dfn>(<em>void</em>);</td></tr>
+<tr><th id="872">872</th><td></td></tr>
+<tr><th id="873">873</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="874">874</th><td><i class="doc"> *  <span class="command">\brief</span> Set an OpenGL window attribute before window creation.</i></td></tr>
+<tr><th id="875">875</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="876">876</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_SetAttribute" title='SDL_GL_SetAttribute' data-ref="SDL_GL_SetAttribute">SDL_GL_SetAttribute</dfn>(<a class="typedef" href="#SDL_GLattr" title='SDL_GLattr' data-type='enum SDL_GLattr' data-ref="SDL_GLattr">SDL_GLattr</a> <dfn class="local col8 decl" id="718attr" title='attr' data-type='SDL_GLattr' data-ref="718attr">attr</dfn>, <em>int</em> <dfn class="local col9 decl" id="719value" title='value' data-type='int' data-ref="719value">value</dfn>);</td></tr>
+<tr><th id="877">877</th><td></td></tr>
+<tr><th id="878">878</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="879">879</th><td><i class="doc"> *  <span class="command">\brief</span> Get the actual value for an attribute from the current context.</i></td></tr>
+<tr><th id="880">880</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="881">881</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetAttribute" title='SDL_GL_GetAttribute' data-ref="SDL_GL_GetAttribute">SDL_GL_GetAttribute</dfn>(<a class="typedef" href="#SDL_GLattr" title='SDL_GLattr' data-type='enum SDL_GLattr' data-ref="SDL_GLattr">SDL_GLattr</a> <dfn class="local col0 decl" id="720attr" title='attr' data-type='SDL_GLattr' data-ref="720attr">attr</dfn>, <em>int</em> *<dfn class="local col1 decl" id="721value" title='value' data-type='int *' data-ref="721value">value</dfn>);</td></tr>
+<tr><th id="882">882</th><td></td></tr>
+<tr><th id="883">883</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="884">884</th><td><i class="doc"> *  <span class="command">\brief</span> Create an OpenGL context for use with an OpenGL window, and make it</i></td></tr>
+<tr><th id="885">885</th><td><i class="doc"> *         current.</i></td></tr>
+<tr><th id="886">886</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="887">887</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_DeleteContext()</i></td></tr>
+<tr><th id="888">888</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="889">889</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GLContext" title='SDL_GLContext' data-type='void *' data-ref="SDL_GLContext">SDL_GLContext</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_CreateContext" title='SDL_GL_CreateContext' data-ref="SDL_GL_CreateContext">SDL_GL_CreateContext</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> *</td></tr>
+<tr><th id="890">890</th><td>                                                           <dfn class="local col2 decl" id="722window" title='window' data-type='SDL_Window *' data-ref="722window">window</dfn>);</td></tr>
+<tr><th id="891">891</th><td></td></tr>
+<tr><th id="892">892</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="893">893</th><td><i class="doc"> *  <span class="command">\brief</span> Set up an OpenGL context for rendering into an OpenGL window.</i></td></tr>
+<tr><th id="894">894</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="895">895</th><td><i class="doc"> *  <span class="command">\note</span> The context must have been created with a compatible window.</i></td></tr>
+<tr><th id="896">896</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="897">897</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_MakeCurrent" title='SDL_GL_MakeCurrent' data-ref="SDL_GL_MakeCurrent">SDL_GL_MakeCurrent</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col3 decl" id="723window" title='window' data-type='SDL_Window *' data-ref="723window">window</dfn>,</td></tr>
+<tr><th id="898">898</th><td>                                               <a class="typedef" href="#SDL_GLContext" title='SDL_GLContext' data-type='void *' data-ref="SDL_GLContext">SDL_GLContext</a> <dfn class="local col4 decl" id="724context" title='context' data-type='SDL_GLContext' data-ref="724context">context</dfn>);</td></tr>
+<tr><th id="899">899</th><td></td></tr>
+<tr><th id="900">900</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="901">901</th><td><i class="doc"> *  <span class="command">\brief</span> Get the currently active OpenGL window.</i></td></tr>
+<tr><th id="902">902</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="903">903</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a>* <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetCurrentWindow" title='SDL_GL_GetCurrentWindow' data-ref="SDL_GL_GetCurrentWindow">SDL_GL_GetCurrentWindow</dfn>(<em>void</em>);</td></tr>
+<tr><th id="904">904</th><td></td></tr>
+<tr><th id="905">905</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="906">906</th><td><i class="doc"> *  <span class="command">\brief</span> Get the currently active OpenGL context.</i></td></tr>
+<tr><th id="907">907</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="908">908</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_GLContext" title='SDL_GLContext' data-type='void *' data-ref="SDL_GLContext">SDL_GLContext</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetCurrentContext" title='SDL_GL_GetCurrentContext' data-ref="SDL_GL_GetCurrentContext">SDL_GL_GetCurrentContext</dfn>(<em>void</em>);</td></tr>
+<tr><th id="909">909</th><td></td></tr>
+<tr><th id="910">910</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="911">911</th><td><i class="doc"> *  <span class="command">\brief</span> Get the size of a window's underlying drawable (for use with glViewport).</i></td></tr>
+<tr><th id="912">912</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="913">913</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span>   Window from which the drawable size should be queried</i></td></tr>
+<tr><th id="914">914</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">w</span>        Pointer to variable for storing the width, may be NULL</i></td></tr>
+<tr><th id="915">915</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">h</span>        Pointer to variable for storing the height, may be NULL</i></td></tr>
+<tr><th id="916">916</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="917">917</th><td><i class="doc"> * This may differ from SDL_GetWindowSize if we're rendering to a high-DPI</i></td></tr>
+<tr><th id="918">918</th><td><i class="doc"> * drawable, i.e. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a</i></td></tr>
+<tr><th id="919">919</th><td><i class="doc"> * platform with high-DPI support (Apple calls this "Retina"), and not disabled</i></td></tr>
+<tr><th id="920">920</th><td><i class="doc"> * by the SDL_HINT_VIDEO_HIGHDPI_DISABLED hint.</i></td></tr>
+<tr><th id="921">921</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="922">922</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetWindowSize()</i></td></tr>
+<tr><th id="923">923</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateWindow()</i></td></tr>
+<tr><th id="924">924</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="925">925</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetDrawableSize" title='SDL_GL_GetDrawableSize' data-ref="SDL_GL_GetDrawableSize">SDL_GL_GetDrawableSize</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="725window" title='window' data-type='SDL_Window *' data-ref="725window">window</dfn>, <em>int</em> *<dfn class="local col6 decl" id="726w" title='w' data-type='int *' data-ref="726w">w</dfn>,</td></tr>
+<tr><th id="926">926</th><td>                                                    <em>int</em> *<dfn class="local col7 decl" id="727h" title='h' data-type='int *' data-ref="727h">h</dfn>);</td></tr>
+<tr><th id="927">927</th><td></td></tr>
+<tr><th id="928">928</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="929">929</th><td><i class="doc"> *  <span class="command">\brief</span> Set the swap interval for the current OpenGL context.</i></td></tr>
+<tr><th id="930">930</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="931">931</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">interval</span> 0 for immediate updates, 1 for updates synchronized with the</i></td></tr>
+<tr><th id="932">932</th><td><i class="doc"> *                  vertical retrace. If the system supports it, you may</i></td></tr>
+<tr><th id="933">933</th><td><i class="doc"> *                  specify -1 to allow late swaps to happen immediately</i></td></tr>
+<tr><th id="934">934</th><td><i class="doc"> *                  instead of waiting for the next retrace.</i></td></tr>
+<tr><th id="935">935</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="936">936</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if setting the swap interval is not supported.</i></td></tr>
+<tr><th id="937">937</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="938">938</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_GetSwapInterval()</i></td></tr>
+<tr><th id="939">939</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="940">940</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_SetSwapInterval" title='SDL_GL_SetSwapInterval' data-ref="SDL_GL_SetSwapInterval">SDL_GL_SetSwapInterval</dfn>(<em>int</em> <dfn class="local col8 decl" id="728interval" title='interval' data-type='int' data-ref="728interval">interval</dfn>);</td></tr>
+<tr><th id="941">941</th><td></td></tr>
+<tr><th id="942">942</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="943">943</th><td><i class="doc"> *  <span class="command">\brief</span> Get the swap interval for the current OpenGL context.</i></td></tr>
+<tr><th id="944">944</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="945">945</th><td><i class="doc"> *  <span class="command">\return</span> 0 if there is no vertical retrace synchronization, 1 if the buffer</i></td></tr>
+<tr><th id="946">946</th><td><i class="doc"> *          swap is synchronized with the vertical retrace, and -1 if late</i></td></tr>
+<tr><th id="947">947</th><td><i class="doc"> *          swaps happen immediately instead of waiting for the next retrace.</i></td></tr>
+<tr><th id="948">948</th><td><i class="doc"> *          If the system can't determine the swap interval, or there isn't a</i></td></tr>
+<tr><th id="949">949</th><td><i class="doc"> *          valid current context, this will return 0 as a safe default.</i></td></tr>
+<tr><th id="950">950</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="951">951</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_SetSwapInterval()</i></td></tr>
+<tr><th id="952">952</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="953">953</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_GetSwapInterval" title='SDL_GL_GetSwapInterval' data-ref="SDL_GL_GetSwapInterval">SDL_GL_GetSwapInterval</dfn>(<em>void</em>);</td></tr>
+<tr><th id="954">954</th><td></td></tr>
+<tr><th id="955">955</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="956">956</th><td><i class="doc"> * <span class="command">\brief</span> Swap the OpenGL buffers for a window, if double-buffering is</i></td></tr>
+<tr><th id="957">957</th><td><i class="doc"> *        supported.</i></td></tr>
+<tr><th id="958">958</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="959">959</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_SwapWindow" title='SDL_GL_SwapWindow' data-ref="SDL_GL_SwapWindow">SDL_GL_SwapWindow</dfn>(<a class="typedef" href="#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col9 decl" id="729window" title='window' data-type='SDL_Window *' data-ref="729window">window</dfn>);</td></tr>
+<tr><th id="960">960</th><td></td></tr>
+<tr><th id="961">961</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="962">962</th><td><i class="doc"> *  <span class="command">\brief</span> Delete an OpenGL context.</i></td></tr>
+<tr><th id="963">963</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="964">964</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GL_CreateContext()</i></td></tr>
+<tr><th id="965">965</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="966">966</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GL_DeleteContext" title='SDL_GL_DeleteContext' data-ref="SDL_GL_DeleteContext">SDL_GL_DeleteContext</dfn>(<a class="typedef" href="#SDL_GLContext" title='SDL_GLContext' data-type='void *' data-ref="SDL_GLContext">SDL_GLContext</a> <dfn class="local col0 decl" id="730context" title='context' data-type='SDL_GLContext' data-ref="730context">context</dfn>);</td></tr>
+<tr><th id="967">967</th><td></td></tr>
+<tr><th id="968">968</th><td><i>/* @} */</i><i>/* OpenGL support functions */</i></td></tr>
+<tr><th id="969">969</th><td></td></tr>
+<tr><th id="970">970</th><td></td></tr>
+<tr><th id="971">971</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="972">972</th><td><u>#<span data-ppcond="972">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="973">973</th><td>}</td></tr>
+<tr><th id="974">974</th><td><u>#<span data-ppcond="972">endif</span></u></td></tr>
+<tr><th id="975">975</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="976">976</th><td></td></tr>
+<tr><th id="977">977</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_video_h */</u></td></tr>
+<tr><th id="978">978</th><td></td></tr>
+<tr><th id="979">979</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="980">980</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,13 @@
+<dec f='include/SDL2/SDL_render.h' l='615' type='int SDL_GetRenderDrawColor(SDL_Renderer * renderer, Uint8 * r, Uint8 * g, Uint8 * b, Uint8 * a)'/>
+<doc f='include/SDL2/SDL_render.h' l='603'>/**
+ *  \brief Get the color used for drawing operations (Rect, Line and Clear).
+ *
+ *  \param renderer The renderer from which drawing color should be queried.
+ *  \param r A pointer to the red value used to draw on the rendering target.
+ *  \param g A pointer to the green value used to draw on the rendering target.
+ *  \param b A pointer to the blue value used to draw on the rendering target.
+ *  \param a A pointer to the alpha value used to draw on the rendering target,
+ *           usually ::SDL_ALPHA_OPAQUE (255).
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

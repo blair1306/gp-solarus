@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='53' type='Solarus::EquipmentItem &amp; Solarus::Treasure::get_item() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='105' ll='107' type='Solarus::EquipmentItem &amp; Solarus::Treasure::get_item() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='178' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<doc f='codebrowser/src/Treasure.cpp' l='101'>/**
+ * \brief Returns the equipment item corresponding to this treasure&apos;s content.
+ * \return The equipment item.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='122' u='c' c='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='151' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='428' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='66' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2486' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3833' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3950' u='c' c='_ZN7Solarus10LuaContext25pickable_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2169' u='c' c='_ZN7Solarus10LuaContext21on_obtaining_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2188' u='c' c='_ZN7Solarus10LuaContext20on_obtained_treasureERKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2461' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>

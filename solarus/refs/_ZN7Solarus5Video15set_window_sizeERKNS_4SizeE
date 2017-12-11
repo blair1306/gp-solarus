@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='92' type='static void Solarus::Video::set_window_size(const Solarus::Size &amp; size)'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='839' ll='869' type='static void Solarus::Video::set_window_size(const Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='878' u='c' c='_ZN7Solarus5Video17reset_window_sizeEv'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='835'>/**
+ * \brief Sets the size of the window.
+ * \param size The size of the window in pixels.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='290' u='c' c='_ZN7Solarus10LuaContext25video_api_set_window_sizeEP9lua_State'/>

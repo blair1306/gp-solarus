@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/RunningState.h' l='38' type='bool Solarus::Hero::RunningState::is_pressing_running_key() const'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='114' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<def f='codebrowser/src/hero/RunningState.cpp' l='151' ll='154' type='bool Solarus::Hero::RunningState::is_pressing_running_key() const'/>
+<doc f='codebrowser/src/hero/RunningState.cpp' l='146'>/**
+ * \brief Returns whether the hero is still pressing the key that made him
+ * start running.
+ * \return true if the hero is still pressing the running key
+ */</doc>

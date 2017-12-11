@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='108' type='void Solarus::CustomEntity::reset_can_traverse_ground(Solarus::Ground ground)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='670' ll='673' type='void Solarus::CustomEntity::reset_can_traverse_ground(Solarus::Ground ground)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='661'>/**
+ * \brief Restores the default setting of whether this custom entity can
+ * traverse a kind of ground.
+ *
+ * This reverts the settings of previous calls to
+ * set_can_traverse_ground(Ground, bool).
+ *
+ * \param ground A kind of ground.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5522' u='c' c='_ZN7Solarus10LuaContext41custom_entity_api_set_can_traverse_groundEP9lua_State'/>

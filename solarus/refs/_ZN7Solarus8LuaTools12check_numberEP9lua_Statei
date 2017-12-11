@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='116' type='double Solarus::LuaTools::check_number(lua_State * l, int index)'/>
+<doc f='codebrowser/include/solarus/lua/LuaTools.h' l='115'>// double</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1244' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1245' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1269' u='c' c='_ZN7Solarus10LuaContext20entity_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1270' u='c' c='_ZN7Solarus10LuaContext20entity_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1294' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction4_toEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1295' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction4_toEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1325' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction8_toEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1326' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction8_toEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='371' ll='383' type='double Solarus::LuaTools::check_number(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='432' u='c' c='_ZN7Solarus8LuaTools10opt_numberEP9lua_Stateid'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='361'>/**
+ * \brief Checks that a value is a number and returns it as a double.
+ *
+ * This function acts like luaL_checknumber() except that it throws a
+ * LuaException in case of error.
+ *
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \return The number value.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='773' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_set_angleEP9lua_State'/>

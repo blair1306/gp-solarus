@@ -1,0 +1,13 @@
+<dec f='include/physfs.h' l='1244' type='int PHYSFS_eof(PHYSFS_File * handle)'/>
+<doc f='include/physfs.h' l='1232'>/**
+ * \fn int PHYSFS_eof(PHYSFS_File *handle)
+ * \brief Check for end-of-file state on a PhysicsFS filehandle.
+ *
+ * Determine if the end of file has been reached in a PhysicsFS filehandle.
+ *
+ *   \param handle handle returned from PHYSFS_openRead().
+ *  \return nonzero if EOF, zero if not.
+ *
+ * \sa PHYSFS_read
+ * \sa PHYSFS_tell
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='456' type='static int Solarus::LuaContext::audio_api_play_sound(lua_State * )'/>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='39' u='r' c='_ZN7Solarus10LuaContext21register_audio_moduleEv'/>
+<def f='codebrowser/src/lua/AudioApi.cpp' l='90' ll='102' type='static int Solarus::LuaContext::audio_api_play_sound(lua_State * l)'/>
+<doc f='codebrowser/src/lua/AudioApi.cpp' l='85'>/**
+ * \brief Implementation of sol.audio.play_sound().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='219' type='std::shared_ptr&lt;const Movement&gt; Solarus::Entity::get_movement() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='317' u='c' c='_ZNK7Solarus5Arrow10is_stoppedEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='317' u='c' c='_ZNK7Solarus5Arrow10is_stoppedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='804' u='c' c='_ZNK7Solarus6Entity16get_displayed_xyEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='808' u='c' c='_ZNK7Solarus6Entity16get_displayed_xyEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1027' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1029' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1496' ll='1498' type='std::shared_ptr&lt;const Movement&gt; Solarus::Entity::get_movement() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1492'>/**
+ * \brief Returns the current movement of the entity.
+ * \return the entity&apos;s movement, or nullptr if there is no movement
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1005' u='c' c='_ZNK7Solarus4Hero17is_moving_towardsEi'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='202' u='c' c='_ZNK7Solarus4Hero19PlayerMovementState20can_control_movementEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='215' u='c' c='_ZNK7Solarus4Hero15SpinAttackState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='112' u='c' c='_ZNK7Solarus4Hero18SwordSwingingState15can_start_swordEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='195' u='c' c='_ZNK7Solarus4Hero18SwordSwingingState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='180' u='c' c='_ZNK7Solarus4Hero17SwordTappingState27is_teletransporter_obstacleERKNS_15TeletransporterE'/>

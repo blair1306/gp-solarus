@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='184' type='bool Solarus::Enemy::is_killed() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='811' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='819' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='852' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1427' ll='1429' type='bool Solarus::Enemy::is_killed() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1419'>/**
+ * \brief Returns whether the enemy is killed.
+ *
+ * An enemy is considered as killed if he has no more life and its dying
+ * animation has started.
+ *
+ * \return true if the enemy is killed
+ */</doc>

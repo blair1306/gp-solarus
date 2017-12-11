@@ -1,0 +1,10 @@
+<def f='include/SDL2/SDL_events.h' l='439' ll='444'/>
+<size>16</size>
+<doc f='include/SDL2/SDL_events.h' l='434'>/**
+ *  \brief An event used to request a file open by the system (event.drop.*)
+ *         This event is disabled by default, you can enable it with SDL_EventState()
+ *  \note If you enable this event, you must free the filename in the event.
+ */</doc>
+<mbr r='SDL_DropEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_DropEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_DropEvent::file' o='64' t='char *'/>

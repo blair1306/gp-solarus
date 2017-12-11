@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='307' type='void Solarus::Entity::notify_collision_with_crystal(Solarus::Crystal &amp; crystal, Solarus::CollisionMode collision_mode)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='369' c='_ZN7Solarus5Arrow29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='324' c='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='645' c='_ZN7Solarus13CarriedObject29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='95' u='c' c='_ZN7Solarus7Crystal16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1056' c='_ZN7Solarus12CustomEntity29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3105' ll='3107' type='void Solarus::Entity::notify_collision_with_crystal(Solarus::Crystal &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3100'>/**
+ * \brief This function is called when a crystal detects a collision with this entity.
+ * \param crystal the crystal
+ * \param collision_mode the collision mode that detected the event
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3105'>/* crystal */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1813' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='406' c='_ZN7Solarus8Hookshot29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>

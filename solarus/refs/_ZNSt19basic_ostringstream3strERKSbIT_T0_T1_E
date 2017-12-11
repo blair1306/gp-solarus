@@ -1,0 +1,14 @@
+<def f='include/c++/4.9/sstream' l='480' ll='482' type='void std::basic_ostringstream::str(const __string_type &amp; __s)'/>
+<doc f='include/c++/4.9/sstream' l='474'>/**
+       *  @brief  Setting a new buffer.
+       *  @param  __s  The string to use as a new sequence.
+       *
+       *  Calls @c rdbuf()-&gt;str(s).
+      */</doc>
+<use f='codebrowser/src/GameCommands.cpp' l='297' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='311' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='410' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='419' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='424' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='435' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1038' u='c' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='126' type='bool Solarus::Hero::can_control_movement() const'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='118'>/**
+     * \name Movement.
+     *
+     * Information about the movement of the hero.
+     * The hero is controlled by the player most of the time,
+     * and sometimes he is controlled automatically or he
+     * cannot move.
+     */</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='108' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='867' ll='876' type='bool Solarus::Hero::can_control_movement() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1199' u='c' c='_ZN7Solarus4Hero14reset_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2212' u='c' c='_ZN7Solarus4Hero10start_holeEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='863'>/**
+ * \brief Returns whether the player can control his movements in the current state.
+ * \return true if the player can control his movements
+ */</doc>

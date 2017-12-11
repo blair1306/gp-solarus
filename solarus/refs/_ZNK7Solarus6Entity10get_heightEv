@@ -1,0 +1,41 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='147' type='int Solarus::Entity::get_height() const'/>
+<use f='codebrowser/src/Map.cpp' l='1169' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='171' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='176' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='310' u='c' c='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='456' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='505' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='75' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='78' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='114' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='222' u='c' c='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='99' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='358' u='c' c='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='359' u='c' c='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='393' u='c' c='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='394' u='c' c='_ZNK7Solarus5Enemy16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='428' u='c' c='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='429' u='c' c='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='837' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='526' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='823' ll='825' type='int Solarus::Entity::get_height() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1055' u='c' c='_ZNK7Solarus6Entity18get_touching_pointEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1065' u='c' c='_ZNK7Solarus6Entity18get_touching_pointEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2960' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2974' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='819'>/**
+ * \brief Returns the height of the entity.
+ * \return the height of the entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1945' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1955' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='203' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='364' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='374' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='59' u='c' c='_ZNK7Solarus9Separator13is_horizontalEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='90' u='c' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='93' u='c' c='_ZN7Solarus15Teletransporter15notify_creatingEv'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='83' u='c' c='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='884' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='82' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='84' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>

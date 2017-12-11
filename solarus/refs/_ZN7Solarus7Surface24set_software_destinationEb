@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='80' type='void Solarus::Surface::set_software_destination(bool software_destination)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='169' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='451' ll='455' type='void Solarus::Surface::set_software_destination(bool software_destination)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='569' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='426'>/**
+ * When this surface is used as the destination of a drawing operation,
+ * sets whether the drawing operation is performed immediately in RAM or later
+ * by the GPU.
+ *
+ * By default, this setting is true and all drawing operations are performed
+ * in RAM.
+ * Otherwise, when 2D acceleration is active, drawing operations are delayed
+ * and performed by the GPU at rendering time.
+ *
+ * You should leave this to \c true if your surface is built from lots of source
+ * surfaces that don&apos;t change often.
+ *
+ * Hardware destinations are intended to be used for internal optimizations of
+ * the engine. They do not support all operations that software ones do.
+ * In particular, a hardware surface can never be drawn on a software surface.
+ * Also, when you draw on a hardware surface after it was rendered, previous
+ * drawings on this surface get automatically cleared.
+ *
+ * Use hardware surfaces only if you know what you are doing.
+ * If in doubt, leave this to \c true.
+ *
+ * \param software_destination Whether this surface is a software destination
+ * surface.
+ */</doc>

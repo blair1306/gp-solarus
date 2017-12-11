@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='208' type='bool Solarus::Entity::bring_sprite_to_front(Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1407' ll='1423' type='bool Solarus::Entity::bring_sprite_to_front(Solarus::Sprite &amp; sprite)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1402'>/**
+ * \brief Changes the order of a sprite of this entity to display it last.
+ * \return \c true in case of success, \c false if this entity has no such
+ * sprite.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='441' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='444' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='447' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='450' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='453' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='456' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='459' u='c' c='_ZN7Solarus11HeroSprites15reorder_spritesEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1477' u='c' c='_ZN7Solarus10LuaContext32entity_api_bring_sprite_to_frontEP9lua_State'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='518' type='static int Solarus::LuaContext::timer_api_start(lua_State * )'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='44' u='r' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='344' ll='390' type='static int Solarus::LuaContext::timer_api_start(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='339'>/**
+ * \brief Implementation of sol.timer.start().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

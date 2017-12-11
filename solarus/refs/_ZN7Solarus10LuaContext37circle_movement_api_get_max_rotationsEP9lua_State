@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='657' type='static int Solarus::LuaContext::circle_movement_api_get_max_rotations(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='251' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1578' ll='1585' type='static int Solarus::LuaContext::circle_movement_api_get_max_rotations(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1573'>/**
+ * \brief Implementation of circle_movement:get_max_rotations().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

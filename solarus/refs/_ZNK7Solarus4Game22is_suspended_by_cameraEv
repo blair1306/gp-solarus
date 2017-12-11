@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='106' type='bool Solarus::Game::is_suspended_by_camera() const'/>
+<use f='codebrowser/src/Game.cpp' l='724' u='c' c='_ZNK7Solarus4Game12is_suspendedEv'/>
+<def f='codebrowser/src/Game.cpp' l='853' ll='862' type='bool Solarus::Game::is_suspended_by_camera() const'/>
+<doc f='codebrowser/src/Game.cpp' l='849'>/**
+ * \brief Returns whether this game is currently suspended by a camera sequence.
+ * \return \c true if a camera is suspending the game.
+ */</doc>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Size.h source code [codebrowser/include/solarus/lowlevel/Size.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Size "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/lowlevel/Size.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>lowlevel</a>/<a href='Size.h.html'>Size.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_SIZE_H">SOLARUS_SIZE_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_SIZE_H" data-ref="_M/SOLARUS_SIZE_H">SOLARUS_SIZE_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../include/c++/4.9/iosfwd.html">&lt;iosfwd&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\brief</span> Represents a 2D size.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * This class represents a generic size with</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * width and height properties.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type def" id="Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</dfn> {</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>  <b>public</b>:</td></tr>
+<tr><th id="34">34</th><td>    <i>////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="35">35</th><td><i>    // Constructors</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>    <b>constexpr</b> <a class="decl" href="Size.inl.html#_ZN7Solarus4SizeC1Ev" title='Solarus::Size::Size' data-ref="_ZN7Solarus4SizeC1Ev" id="_ZN7Solarus4SizeC1Ev">Size</a>();</td></tr>
+<tr><th id="38">38</th><td>    <b>constexpr</b> <a class="decl" href="Size.inl.html#_ZN7Solarus4SizeC1Eii" title='Solarus::Size::Size' data-ref="_ZN7Solarus4SizeC1Eii" id="_ZN7Solarus4SizeC1Eii">Size</a>(<em>int</em> <dfn class="local col8 decl" id="11978width" title='width' data-type='int' data-ref="11978width">width</dfn>, <em>int</em> <dfn class="local col9 decl" id="11979height" title='height' data-type='int' data-ref="11979height">height</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <i>////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="41">41</th><td><i>    // Operators</i></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>    <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <a class="decl" href="Size.inl.html#_ZN7Solarus4SizepLERKS0_" title='Solarus::Size::operator+=' data-ref="_ZN7Solarus4SizepLERKS0_" id="_ZN7Solarus4SizepLERKS0_"><b>operator</b>+=</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col0 decl" id="11980other" title='other' data-type='const Solarus::Size &amp;' data-ref="11980other">other</dfn>);</td></tr>
+<tr><th id="44">44</th><td>    <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <a class="decl" href="Size.inl.html#_ZN7Solarus4SizemIERKS0_" title='Solarus::Size::operator-=' data-ref="_ZN7Solarus4SizemIERKS0_" id="_ZN7Solarus4SizemIERKS0_"><b>operator</b>-=</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col1 decl" id="11981other" title='other' data-type='const Solarus::Size &amp;' data-ref="11981other">other</dfn>);</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>    <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <a class="decl" href="Size.inl.html#_ZN7Solarus4SizemLEi" title='Solarus::Size::operator*=' data-ref="_ZN7Solarus4SizemLEi" id="_ZN7Solarus4SizemLEi"><b>operator</b>*=</a>(<em>int</em> <dfn class="local col2 decl" id="11982factor" title='factor' data-type='int' data-ref="11982factor">factor</dfn>);</td></tr>
+<tr><th id="47">47</th><td>    <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <a class="decl" href="Size.inl.html#_ZN7Solarus4SizedVEi" title='Solarus::Size::operator/=' data-ref="_ZN7Solarus4SizedVEi" id="_ZN7Solarus4SizedVEi"><b>operator</b>/=</a>(<em>int</em> <dfn class="local col3 decl" id="11983divisor" title='divisor' data-type='int' data-ref="11983divisor">divisor</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <i>////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="50">50</th><td><i>    // Miscellaneous functions</i></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>    <b>constexpr</b> <em>bool</em> <a class="decl" href="Size.inl.html#_ZNK7Solarus4Size7is_flatEv" title='Solarus::Size::is_flat' data-ref="_ZNK7Solarus4Size7is_flatEv" id="_ZNK7Solarus4Size7is_flatEv">is_flat</a>() <em>const</em>;</td></tr>
+<tr><th id="53">53</th><td>    <b>constexpr</b> <em>bool</em> <a class="decl" href="Size.inl.html#_ZNK7Solarus4Size9is_squareEv" title='Solarus::Size::is_square' data-ref="_ZNK7Solarus4Size9is_squareEv" id="_ZNK7Solarus4Size9is_squareEv">is_square</a>() <em>const</em>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <i>////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="56">56</th><td><i>    // Member data</i></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>    <em>int</em> <dfn class="decl" id="Solarus::Size::width" title='Solarus::Size::width' data-ref="Solarus::Size::width">width</dfn> = <var>0</var>;    <i class="doc">/**&lt; Width of an object */</i></td></tr>
+<tr><th id="59">59</th><td>    <em>int</em> <dfn class="decl" id="Solarus::Size::height" title='Solarus::Size::height' data-ref="Solarus::Size::height">height</dfn> = <var>0</var>;   <i class="doc">/**&lt; Height of an object */</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>////////////////////////////////////////////////////////////</i></td></tr>
+<tr><th id="64">64</th><td><i>// Free functions</i></td></tr>
+<tr><th id="65">65</th><td><i></i></td></tr>
+<tr><th id="66">66</th><td><i>// Comparison operators</i></td></tr>
+<tr><th id="67">67</th><td><b>constexpr</b> <em>bool</em> <a class="decl" href="Size.inl.html#_ZN7SolaruseqERKNS_4SizeES2_" title='Solarus::operator==' data-ref="_ZN7SolaruseqERKNS_4SizeES2_" id="_ZN7SolaruseqERKNS_4SizeES2_"><b>operator</b>==</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col4 decl" id="11984lhs" title='lhs' data-type='const Solarus::Size &amp;' data-ref="11984lhs">lhs</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col5 decl" id="11985rhs" title='rhs' data-type='const Solarus::Size &amp;' data-ref="11985rhs">rhs</dfn>);</td></tr>
+<tr><th id="68">68</th><td><b>constexpr</b> <em>bool</em> <a class="decl" href="Size.inl.html#_ZN7SolarusneERKNS_4SizeES2_" title='Solarus::operator!=' data-ref="_ZN7SolarusneERKNS_4SizeES2_" id="_ZN7SolarusneERKNS_4SizeES2_"><b>operator</b>!=</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col6 decl" id="11986lhs" title='lhs' data-type='const Solarus::Size &amp;' data-ref="11986lhs">lhs</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col7 decl" id="11987rhs" title='rhs' data-type='const Solarus::Size &amp;' data-ref="11987rhs">rhs</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i>// Arithmetic operators</i></td></tr>
+<tr><th id="71">71</th><td><b>constexpr</b> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Size.inl.html#_ZN7SolarusplERKNS_4SizeES2_" title='Solarus::operator+' data-ref="_ZN7SolarusplERKNS_4SizeES2_" id="_ZN7SolarusplERKNS_4SizeES2_"><b>operator</b>+</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col8 decl" id="11988lhs" title='lhs' data-type='const Solarus::Size &amp;' data-ref="11988lhs">lhs</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col9 decl" id="11989rhs" title='rhs' data-type='const Solarus::Size &amp;' data-ref="11989rhs">rhs</dfn>);</td></tr>
+<tr><th id="72">72</th><td><b>constexpr</b> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Size.inl.html#_ZN7SolarusmiERKNS_4SizeES2_" title='Solarus::operator-' data-ref="_ZN7SolarusmiERKNS_4SizeES2_" id="_ZN7SolarusmiERKNS_4SizeES2_"><b>operator</b>-</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col0 decl" id="11990lhs" title='lhs' data-type='const Solarus::Size &amp;' data-ref="11990lhs">lhs</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col1 decl" id="11991rhs" title='rhs' data-type='const Solarus::Size &amp;' data-ref="11991rhs">rhs</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><b>constexpr</b> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Size.inl.html#_ZN7SolarusmlERKNS_4SizeEi" title='Solarus::operator*' data-ref="_ZN7SolarusmlERKNS_4SizeEi" id="_ZN7SolarusmlERKNS_4SizeEi"><b>operator</b>*</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col2 decl" id="11992size" title='size' data-type='const Solarus::Size &amp;' data-ref="11992size">size</dfn>, <em>int</em> <dfn class="local col3 decl" id="11993factor" title='factor' data-type='int' data-ref="11993factor">factor</dfn>);</td></tr>
+<tr><th id="75">75</th><td><b>constexpr</b> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Size.inl.html#_ZN7SolarusmlEiRKNS_4SizeE" title='Solarus::operator*' data-ref="_ZN7SolarusmlEiRKNS_4SizeE" id="_ZN7SolarusmlEiRKNS_4SizeE"><b>operator</b>*</a>(<em>int</em> <dfn class="local col4 decl" id="11994factor" title='factor' data-type='int' data-ref="11994factor">factor</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col5 decl" id="11995size" title='size' data-type='const Solarus::Size &amp;' data-ref="11995size">size</dfn>);</td></tr>
+<tr><th id="76">76</th><td><b>constexpr</b> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a> <a class="decl" href="Size.inl.html#_ZN7SolarusdvERKNS_4SizeEi" title='Solarus::operator/' data-ref="_ZN7SolarusdvERKNS_4SizeEi" id="_ZN7SolarusdvERKNS_4SizeEi"><b>operator</b>/</a>(<em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col6 decl" id="11996size" title='size' data-type='const Solarus::Size &amp;' data-ref="11996size">size</dfn>, <em>int</em> <dfn class="local col7 decl" id="11997divisor" title='divisor' data-type='int' data-ref="11997divisor">divisor</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i>// Output to stream</i></td></tr>
+<tr><th id="79">79</th><td><span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/iosfwd.html#std::ostream" title='std::ostream' data-type='basic_ostream&lt;char&gt;' data-ref="std::ostream">ostream</a>&amp; <dfn class="decl" id="_ZN7SolaruslsERSoRKNS_4SizeE" title='Solarus::operator&lt;&lt;' data-ref="_ZN7SolaruslsERSoRKNS_4SizeE"><b>operator</b>&lt;&lt;</dfn>(<span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/iosfwd.html#std::ostream" title='std::ostream' data-type='basic_ostream&lt;char&gt;' data-ref="std::ostream">ostream</a>&amp; <dfn class="local col8 decl" id="11998stream" title='stream' data-type='std::ostream &amp;' data-ref="11998stream">stream</dfn>, <em>const</em> <a class="type" href="#Solarus::Size" title='Solarus::Size' data-ref="Solarus::Size">Size</a>&amp; <dfn class="local col9 decl" id="11999size" title='size' data-type='const Solarus::Size &amp;' data-ref="11999size">size</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>}</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#include <a href="Size.inl.html">"solarus/lowlevel/Size.inl"</a></u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../gui/solarus_gui_lib_automoc.cpp.html'>codebrowser/gui/solarus_gui_lib_automoc.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

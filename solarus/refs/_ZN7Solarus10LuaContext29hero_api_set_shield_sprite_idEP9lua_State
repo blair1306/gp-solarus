@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='877' type='static int Solarus::LuaContext::hero_api_set_shield_sprite_id(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='171' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2103' ll='2113' type='static int Solarus::LuaContext::hero_api_set_shield_sprite_id(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2098'>/**
+ * \brief Implementation of hero:set_shield_sprite_id().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

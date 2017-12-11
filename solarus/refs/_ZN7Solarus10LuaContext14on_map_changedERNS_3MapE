@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1269' type='void Solarus::LuaContext::on_map_changed(Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1645' u='c' c='_ZN7Solarus10LuaContext19game_on_map_changedERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='868' u='c' c='_ZN7Solarus10LuaContext19item_on_map_changedERNS_13EquipmentItemERNS_3MapE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2513' ll='2519' type='void Solarus::LuaContext::on_map_changed(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2509'>/**
+ * \brief Calls the on_map_changed() method of the object on top of the stack.
+ * \param map The new active map.
+ */</doc>

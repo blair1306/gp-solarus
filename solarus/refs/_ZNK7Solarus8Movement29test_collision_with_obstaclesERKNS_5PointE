@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='85' type='bool Solarus::Movement::test_collision_with_obstacles(const Solarus::Point &amp; dxy) const'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='406' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='465' ll='467' type='bool Solarus::Movement::test_collision_with_obstacles(const Solarus::Point &amp; dxy) const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='455'>/**
+ * \brief Returns whether the entity would collide with the map
+ * if it was moved a few pixels from its position.
+ *
+ * If the movement is not attached to an entity of a map,
+ * or if obstacles are ignored, false is always returned.
+ *
+ * \param dxy distance between the current position and the position to check
+ * \return true if the entity would overlap the map obstacles in this position
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='217' u='c' c='_ZN7Solarus13PixelMovement14make_next_stepEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='85' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='143' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='231' type='bool Solarus::LuaContext::has_drawable(const DrawablePtr &amp; drawable)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='230'>// Drawable objects.</doc>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='71' ll='74' type='bool Solarus::LuaContext::has_drawable(const DrawablePtr &amp; drawable)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='82' u='c' c='_ZN7Solarus10LuaContext12add_drawableERKSt10shared_ptrINS_8DrawableEE'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='94' u='c' c='_ZN7Solarus10LuaContext15remove_drawableERKSt10shared_ptrINS_8DrawableEE'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='116' u='c' c='_ZN7Solarus10LuaContext16update_drawablesEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='367' u='c' c='_ZN7Solarus10LuaContext16drawable_meta_gcEP9lua_State'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='66'>/**
+ * \brief Returns whether a drawable object was created by this script.
+ * \param drawable A drawable object.
+ * \return true if the drawable object was created by this script.
+ */</doc>

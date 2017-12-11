@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='785' type='static int Solarus::LuaContext::map_api_get_music(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='131' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1596' ll='1615' type='static int Solarus::LuaContext::map_api_get_music(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1591'>/**
+ * \brief Implementation of map:get_music().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

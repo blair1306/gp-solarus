@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='79' type='void Solarus::TilePattern::TilePattern(Solarus::Ground ground, const Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='67' u='c' c='_ZN7Solarus19AnimatedTilePatternC1ENS_6GroundENS0_17AnimationSequenceERKNS_4SizeEiiiiiib'/>
+<use f='codebrowser/src/entities/SimpleTilePattern.cpp' l='31' u='c' c='_ZN7Solarus17SimpleTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<def f='codebrowser/src/entities/TilePattern.cpp' l='35' ll='48' type='void Solarus::TilePattern::TilePattern(Solarus::Ground ground, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/TilePattern.cpp' l='27'>/**
+ * \brief Constructor.
+ *
+ * It is called by the subclasses.
+ *
+ * \param ground Kind of ground.
+ * \param size Size of the pattern in pixels (must be a multiple of 8).
+ */</doc>

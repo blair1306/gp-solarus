@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='101' type='int Solarus::Equipment::get_ability(Solarus::Ability ability) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='588' u='c' c='_ZNK7Solarus9Equipment11has_abilityENS_7AbilityEi'/>
+<def f='codebrowser/src/Equipment.cpp' l='596' ll='598' type='int Solarus::Equipment::get_ability(Solarus::Ability ability) const'/>
+<doc f='codebrowser/src/Equipment.cpp' l='591'>/**
+ * \brief Returns the level of the specified ability.
+ * \param ability The ability to get.
+ * \return The level of this ability.
+ */</doc>
+<use f='codebrowser/src/entities/EntityState.cpp' l='926' u='c' c='_ZNK7Solarus6Entity5State23get_sword_damage_factorEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='136' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='223' u='c' c='_ZNK7Solarus11HeroSprites27get_default_tunic_sprite_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='293' u='c' c='_ZNK7Solarus11HeroSprites27get_default_sword_sprite_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='338' u='c' c='_ZNK7Solarus11HeroSprites26get_default_sword_sound_idEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='411' u='c' c='_ZNK7Solarus11HeroSprites28get_default_shield_sprite_idEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='89' u='c' c='_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='163' u='c' c='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='204' u='c' c='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1136' u='c' c='_ZN7Solarus10LuaContext20game_api_get_abilityEP9lua_State'/>

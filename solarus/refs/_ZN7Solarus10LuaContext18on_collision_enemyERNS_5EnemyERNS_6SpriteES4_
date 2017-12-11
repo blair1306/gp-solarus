@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1261' type='void Solarus::LuaContext::on_collision_enemy(Solarus::Enemy &amp; enemy, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6460' u='c' c='_ZN7Solarus10LuaContext24enemy_on_collision_enemyERNS_5EnemyES2_RNS_6SpriteES4_'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2752' ll='2760' type='void Solarus::LuaContext::on_collision_enemy(Solarus::Enemy &amp; other_enemy, Solarus::Sprite &amp; other_sprite, Solarus::Sprite &amp; this_sprite)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2746'>/**
+ * \brief Calls the on_collision_enemy() method of the object on top of the stack.
+ * \param other_enemy Another enemy colliding with the object on top of the stack.
+ * \param other_sprite Colliding sprite of the other enemy.
+ * \param this_sprite Colliding sprite of the first enemy.
+ */</doc>

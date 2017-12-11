@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='74' type='void Solarus::QuestFiles::data_file_save(const std::string &amp; file_name, const std::string &amp; buffer)'/>
+<use f='codebrowser/src/Savegame.cpp' l='304' u='c' c='_ZN7Solarus8Savegame4saveEv'/>
+<use f='codebrowser/src/Settings.cpp' l='279' u='c' c='_ZN7Solarus8Settings4saveERKSs'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='320' ll='338' type='void Solarus::QuestFiles::data_file_save(const std::string &amp; file_name, const std::string &amp; buffer)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='314'>/**
+ * \brief Saves a buffer into a data file.
+ * \param file_name Name of the file to write, relative to Solarus write directory.
+ * \param buffer The buffer to save.
+ *
+ */</doc>

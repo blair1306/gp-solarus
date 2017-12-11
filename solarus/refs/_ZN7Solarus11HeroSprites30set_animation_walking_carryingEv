@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='102' type='void Solarus::HeroSprites::set_animation_walking_carrying()'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='223' u='c' c='_ZN7Solarus4Hero13CarryingState21set_animation_walkingEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1180' ll='1191' type='void Solarus::HeroSprites::set_animation_walking_carrying()'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1174'>/**
+ * \brief Starts the &quot;walking&quot; animation with sprites that represent
+ * the hero carrying something.
+ *
+ * If the hero actually carries an item, the carried object also takes a &quot;walking&quot; animation.
+ */</doc>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='76' u='c' c='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='95' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>

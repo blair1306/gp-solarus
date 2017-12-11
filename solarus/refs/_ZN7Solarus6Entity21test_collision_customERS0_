@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='292' type='bool Solarus::Entity::test_collision_custom(Solarus::Entity &amp; entity)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='823' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='285' c='_ZN7Solarus12Destructible21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1797' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1948' u='c' c='_ZN7Solarus6Entity14test_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2087' ll='2090' type='bool Solarus::Entity::test_collision_custom(Solarus::Entity &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2077'>/**
+ * \brief Returns whether an entity collides with this entity with respect to a custom rule.
+ *
+ * This method is called by check_collision(Entity*) when this entity&apos;s collision
+ * mode is COLLISION_CUSTOM.
+ * Redefine it if you want to use this collision mode.
+ *
+ * \param entity The entity.
+ * \return \c true if the entity&apos;s collides with this entity with respect to the custom rule
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2087'>/* entity */</doc>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='220' c='_ZN7Solarus6Jumper21test_collision_customERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Separator.cpp' l='80' c='_ZN7Solarus9Separator21test_collision_customERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='244' c='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Teletransporter.cpp' l='216' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>

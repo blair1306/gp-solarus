@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='55' type='const std::string &amp; Solarus::CustomEntity::get_model() const'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='97' ll='99' type='const std::string &amp; Solarus::CustomEntity::get_model() const'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='93'>/**
+ * \brief Returns the model of this custom entity if any.
+ * \return The model or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5306' u='c' c='_ZN7Solarus10LuaContext27custom_entity_api_get_modelEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='363' u='c' c='_ZN7Solarus10LuaContext17run_custom_entityERNS_12CustomEntityE'/>

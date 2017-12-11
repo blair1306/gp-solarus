@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='420' type='bool Solarus::LuaContext::enemy_on_attacking_hero(Solarus::Enemy &amp; enemy, Solarus::Hero &amp; hero, Solarus::Sprite * enemy_sprite)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1065' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6585' ll='6595' type='bool Solarus::LuaContext::enemy_on_attacking_hero(Solarus::Enemy &amp; enemy, Solarus::Hero &amp; hero, Solarus::Sprite * attacker_sprite)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6575'>/**
+ * \brief Calls the on_attacking_hero() method of a Lua enemy.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param enemy An enemy.
+ * \param hero The hero attacked.
+ * \param attacker_sprite Enemy&apos;s sprite that caused the collision or nullptr.
+ * \return \c true if the method is defined.
+ */</doc>

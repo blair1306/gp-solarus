@@ -1,0 +1,11 @@
+<def f='include/c++/4.9/fstream' l='660' ll='667' type='void std::basic_ofstream::basic_ofstream&lt;_CharT, _Traits&gt;(const std::string &amp; __s, ios_base::openmode __mode = ios_base::out | ios_base::trunc)'/>
+<doc f='include/c++/4.9/fstream' l='652'>/**
+       *  @brief  Create an output file stream.
+       *  @param  __s  std::string specifying the filename.
+       *  @param  __mode  Open file in specified mode (see std::ios_base).
+       *
+       *  @c ios_base::out | @c ios_base::trunc is automatically included in
+       *  @a __mode.
+       */</doc>
+<use f='codebrowser/src/lua/LuaData.cpp' l='135' u='c' c='_ZNK7Solarus7LuaData14export_to_fileERKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='151' u='c' c='_ZNK7Solarus7LuaData14export_to_fileERKSs'/>

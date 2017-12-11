@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='233' type='void Solarus::Entity::notify_ground_below_changed()'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='268' c='_ZN7Solarus5Block27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1190' c='_ZN7Solarus12CustomEntity27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='933' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='935' u='c' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='239' u='c' c='_ZN7Solarus6Entity19update_ground_belowEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='625' ll='626' type='void Solarus::Entity::notify_ground_below_changed()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='621'>/**
+ * \brief This function is called when the ground below this entity has
+ * just changed.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1207' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1211' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='232' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>

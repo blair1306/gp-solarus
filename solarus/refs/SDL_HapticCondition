@@ -1,0 +1,38 @@
+<def f='include/SDL2/SDL_haptic.h' l='591' ll='613'/>
+<size>68</size>
+<doc f='include/SDL2/SDL_haptic.h' l='567'>/**
+ *  \brief A structure containing a template for a Condition effect.
+ *
+ *  The struct handles the following effects:
+ *   - ::SDL_HAPTIC_SPRING: Effect based on axes position.
+ *   - ::SDL_HAPTIC_DAMPER: Effect based on axes velocity.
+ *   - ::SDL_HAPTIC_INERTIA: Effect based on axes acceleration.
+ *   - ::SDL_HAPTIC_FRICTION: Effect based on axes movement.
+ *
+ *  Direction is handled by condition internals instead of a direction member.
+ *  The condition effect specific members have three parameters.  The first
+ *  refers to the X axis, the second refers to the Y axis and the third
+ *  refers to the Z axis.  The right terms refer to the positive side of the
+ *  axis and the left terms refer to the negative side of the axis.  Please
+ *  refer to the ::SDL_HapticDirection diagram for which side is positive and
+ *  which is negative.
+ *
+ *  \sa SDL_HapticDirection
+ *  \sa SDL_HAPTIC_SPRING
+ *  \sa SDL_HAPTIC_DAMPER
+ *  \sa SDL_HAPTIC_INERTIA
+ *  \sa SDL_HAPTIC_FRICTION
+ *  \sa SDL_HapticEffect
+ */</doc>
+<mbr r='SDL_HapticCondition::type' o='0' t='Uint16'/>
+<mbr r='SDL_HapticCondition::direction' o='32' t='SDL_HapticDirection'/>
+<mbr r='SDL_HapticCondition::length' o='160' t='Uint32'/>
+<mbr r='SDL_HapticCondition::delay' o='192' t='Uint16'/>
+<mbr r='SDL_HapticCondition::button' o='208' t='Uint16'/>
+<mbr r='SDL_HapticCondition::interval' o='224' t='Uint16'/>
+<mbr r='SDL_HapticCondition::right_sat' o='240' t='Uint16 [3]'/>
+<mbr r='SDL_HapticCondition::left_sat' o='288' t='Uint16 [3]'/>
+<mbr r='SDL_HapticCondition::right_coeff' o='336' t='Sint16 [3]'/>
+<mbr r='SDL_HapticCondition::left_coeff' o='384' t='Sint16 [3]'/>
+<mbr r='SDL_HapticCondition::deadband' o='432' t='Uint16 [3]'/>
+<mbr r='SDL_HapticCondition::center' o='480' t='Sint16 [3]'/>

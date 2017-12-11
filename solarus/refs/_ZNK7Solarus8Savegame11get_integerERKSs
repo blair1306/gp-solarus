@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='99' type='int Solarus::Savegame::get_integer(const std::string &amp; key) const'/>
+<use f='codebrowser/src/Equipment.cpp' l='138' u='c' c='_ZNK7Solarus9Equipment13get_max_moneyEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='163' u='c' c='_ZNK7Solarus9Equipment9get_moneyEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='215' u='c' c='_ZNK7Solarus9Equipment12get_max_lifeEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='244' u='c' c='_ZNK7Solarus9Equipment8get_lifeEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='301' u='c' c='_ZNK7Solarus9Equipment13get_max_magicEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='326' u='c' c='_ZNK7Solarus9Equipment9get_magicEv'/>
+<use f='codebrowser/src/Equipment.cpp' l='597' u='c' c='_ZNK7Solarus9Equipment11get_abilityENS_7AbilityE'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='394' u='c' c='_ZNK7Solarus13EquipmentItem11get_variantEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='433' u='c' c='_ZNK7Solarus13EquipmentItem10get_amountEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='461' ll='477' type='int Solarus::Savegame::get_integer(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='456'>/**
+ * \brief Returns a integer value saved.
+ * \param key Name of the value to get.
+ * \return The integer value associated with this key or 0.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='194' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='440' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='608' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='630' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>

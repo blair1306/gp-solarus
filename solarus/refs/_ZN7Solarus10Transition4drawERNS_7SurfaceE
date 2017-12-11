@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='97' type='void Solarus::Transition::draw(Solarus::Surface &amp; dst_surface)'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='93'>/**
+     * \brief Draws the transition effect on a surface.
+     * \param dst_surface the surface to draw
+     */</doc>
+<use f='codebrowser/src/Game.cpp' l='581' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Sprite.cpp' l='863' u='c' c='_ZN7Solarus6Sprite15draw_transitionERNS_10TransitionE'/>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='177' c='_ZN7Solarus14TransitionFade4drawERNS_7SurfaceE'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='71' c='_ZN7Solarus19TransitionImmediate4drawERNS_7SurfaceE'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='212' c='_ZN7Solarus19TransitionScrolling4drawERNS_7SurfaceE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='728' u='c' c='_ZN7Solarus7Surface15draw_transitionERNS_10TransitionE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='571' u='c' c='_ZN7Solarus11TextSurface15draw_transitionERNS_10TransitionE'/>

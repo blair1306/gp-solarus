@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='79' type='static void Solarus::Music::find_music_file(const std::string &amp; music_id, std::string &amp; file_name, Solarus::Music::Format &amp; format)'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='259' ll='278' type='static void Solarus::Music::find_music_file(const std::string &amp; music_id, std::string &amp; file_name, Solarus::Music::Format &amp; format)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='294' u='c' c='_ZN7Solarus5Music6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='513' u='c' c='_ZN7Solarus5Music5startEv'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='251'>/**
+ * \brief Tries to find a music file from a music id.
+ * \param music_id Id of the music to find (file name without
+ * directory or extension). Cannot be Music::none or Music::unchanged.
+ * \param file_name Resulting file name with its extension
+ * (empty string if not found).
+ * \param format Resulting music format.
+ */</doc>

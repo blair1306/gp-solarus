@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='794' type='static int Solarus::LuaContext::map_api_change_crystal_state(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='140' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1825' ll='1834' type='static int Solarus::LuaContext::map_api_change_crystal_state(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1820'>/**
+ * \brief Implementation of map:change_crystal_state().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

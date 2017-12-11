@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='85' type='void Solarus::Equipment::remove_magic(int magic_to_remove)'/>
+<def f='codebrowser/src/Equipment.cpp' l='368' ll='373' type='void Solarus::Equipment::remove_magic(int magic_to_remove)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='359'>/**
+ * \brief Removes some magic points from the player.
+ *
+ * If the number of magic points reaches zero, no more magic points
+ * are removed.
+ *
+ * \param magic_to_remove Number of magic poits to remove.
+ * Must be positive of zero.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1063' u='c' c='_ZN7Solarus10LuaContext21game_api_remove_magicEP9lua_State'/>

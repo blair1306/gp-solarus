@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_events.h' l='684' type='void SDL_FilterEvents(SDL_EventFilter filter, void * userdata)'/>
+<doc f='include/SDL2/SDL_events.h' l='680'>/**
+ *  Run the filter function on the current event queue, removing any
+ *  events for which the filter returns 0.
+ */</doc>

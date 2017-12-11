@@ -1,0 +1,60 @@
+<inh f='codebrowser/include/solarus/movements/PixelMovement.h' l='32' c='Solarus::PixelMovement'/>
+<def f='codebrowser/include/solarus/movements/PathMovement.h' l='45' ll='107'/>
+<size>208</size>
+<doc f='codebrowser/include/solarus/movements/PathMovement.h' l='27'>/**
+ * \brief Movement of an entity that follows a predetermined path.
+ *
+ * The path is a succession of basic moves, where each basic move
+ * is an 8-pixel trajectory towards one of the 8 main directions.
+ * The movement may or may not stop on obstacles.
+ * This movement can be used only on a map entity.
+ *
+ * A &quot;path&quot; refers to a succession of small 8-pixel trajectories.
+ * The notion of path is specific to PathMovement and its subclasses
+ * (like PathFindingMovement and RandomPathMovement).
+ * A &quot;trajectory&quot; is a move of 8 pixels in the sense of the PixelMovement
+ * class.
+ * A path is composed of several trajectories. The notion of trajectory is
+ * hidden from the public interface of PathMovement.
+ *
+ * TODO don&apos;t inherit PixelMovement
+ */</doc>
+<fun r='_ZN7Solarus12PathMovementC1ERKSsibbb'/>
+<fun r='_ZN7Solarus12PathMovement24notify_object_controlledEv'/>
+<fun r='_ZN7Solarus12PathMovement6updateEv'/>
+<fun r='_ZN7Solarus12PathMovement13set_suspendedEb'/>
+<fun r='_ZNK7Solarus12PathMovement11is_finishedEv'/>
+<fun r='_ZNK7Solarus12PathMovement8get_pathEv'/>
+<fun r='_ZN7Solarus12PathMovement8set_pathERKSs'/>
+<fun r='_ZNK7Solarus12PathMovement9get_speedEv'/>
+<fun r='_ZN7Solarus12PathMovement9set_speedEi'/>
+<fun r='_ZNK7Solarus12PathMovement8get_loopEv'/>
+<fun r='_ZN7Solarus12PathMovement8set_loopEb'/>
+<fun r='_ZNK7Solarus12PathMovement16get_snap_to_gridEv'/>
+<fun r='_ZN7Solarus12PathMovement16set_snap_to_gridEb'/>
+<fun r='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>
+<fun r='_ZNK7Solarus12PathMovement21get_current_directionEv'/>
+<fun r='_ZNK7Solarus12PathMovement26get_total_distance_coveredEv'/>
+<fun r='_ZNK7Solarus12PathMovement24get_displayed_direction4Ev'/>
+<fun r='_ZN7Solarus12PathMovement18create_random_pathEv'/>
+<fun r='_ZNK7Solarus12PathMovement17get_lua_type_nameEv'/>
+<fun r='_ZN7Solarus12PathMovement16notify_step_doneEib'/>
+<fun r='_ZN7Solarus12PathMovement14speed_to_delayEii'/>
+<fun r='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<fun r='_ZNK7Solarus12PathMovement35is_current_elementary_move_finishedEv'/>
+<fun r='_ZN7Solarus12PathMovement7restartEv'/>
+<fun r='_ZN7Solarus12PathMovement4snapEv'/>
+<fun r='_ZN7Solarus12PathMovement23set_snapping_trajectoryERKNS_5PointES3_'/>
+<mbr r='Solarus::PathMovement::initial_path' o='1344' t='std::string'/>
+<mbr r='Solarus::PathMovement::remaining_path' o='1408' t='std::string'/>
+<mbr r='Solarus::PathMovement::current_direction' o='1472' t='int'/>
+<mbr r='Solarus::PathMovement::total_distance_covered' o='1504' t='int'/>
+<mbr r='Solarus::PathMovement::stopped_by_obstacle' o='1536' t='bool'/>
+<mbr r='Solarus::PathMovement::speed' o='1568' t='int'/>
+<mbr r='Solarus::PathMovement::loop' o='1600' t='bool'/>
+<mbr r='Solarus::PathMovement::snap_to_grid' o='1608' t='bool'/>
+<mbr r='Solarus::PathMovement::snapping' o='1616' t='bool'/>
+<mbr r='Solarus::PathMovement::stop_snapping_date' o='1632' t='uint32_t'/>
+<smbr r='Solarus::PathMovement::elementary_moves' t='const std::string []'/>
+<ovr f='codebrowser/include/solarus/movements/PathFindingMovement.h' l='36' c='Solarus::PathFindingMovement'/>
+<ovr f='codebrowser/include/solarus/movements/RandomPathMovement.h' l='33' c='Solarus::RandomPathMovement'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='64' type='void Solarus::SpriteAnimationSet::add_animation(const std::string &amp; animation_name, const Solarus::SpriteAnimationData &amp; animation_data)'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='58' u='c' c='_ZN7Solarus18SpriteAnimationSet4loadEv'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='71' ll='95' type='void Solarus::SpriteAnimationSet::add_animation(const std::string &amp; animation_name, const Solarus::SpriteAnimationData &amp; animation_data)'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='63'>/**
+ * \brief Adds a new animation to this animation set.
+ *
+ * This function is called while loading the animation set.
+ *
+ * \param animation_name Name of this animation.
+ * \param animation_data Properties of the animation to create.
+ */</doc>

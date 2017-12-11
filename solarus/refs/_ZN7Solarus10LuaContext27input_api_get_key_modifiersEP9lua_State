@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='491' type='static int Solarus::LuaContext::input_api_get_key_modifiers(lua_State * )'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='39' u='r' c='_ZN7Solarus10LuaContext21register_input_moduleEv'/>
+<def f='codebrowser/src/lua/InputApi.cpp' l='112' ll='145' type='static int Solarus::LuaContext::input_api_get_key_modifiers(lua_State * l)'/>
+<doc f='codebrowser/src/lua/InputApi.cpp' l='107'>/**
+ * \brief Implementation of sol.input.get_key_modifiers().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

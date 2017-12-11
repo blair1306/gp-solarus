@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='40' type='void Solarus::JumpMovement::set_distance(int distance)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1736' u='c' c='_ZN7Solarus10LuaContext30jump_movement_api_set_distanceEP9lua_State'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='111' ll='115' type='void Solarus::JumpMovement::set_distance(int distance)'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='104'>/**
+ * \brief Changes the distance of the jump.
+ *
+ * The movement is restarted.
+ *
+ * \param distance the new distance in pixels
+ */</doc>

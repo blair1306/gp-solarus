@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/LiftingState.h' l='32' type='void Solarus::Hero::LiftingState::LiftingState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;CarriedObject&gt; &amp; lifted_item)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2461' u='c' c='_ZN7Solarus4Hero13start_liftingERKSt10shared_ptrINS_13CarriedObjectEE'/>
+<def f='codebrowser/src/hero/LiftingState.cpp' l='35' ll='43' type='void Solarus::Hero::LiftingState::LiftingState(Solarus::Hero &amp; hero, const std::shared_ptr&lt;CarriedObject&gt; &amp; lifted_item)'/>
+<doc f='codebrowser/src/hero/LiftingState.cpp' l='30'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ * \param lifted_item The item to lift.
+ */</doc>

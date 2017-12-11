@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='496' type='static int Solarus::LuaContext::input_api_is_mouse_button_released(lua_State * )'/>
+<def f='codebrowser/src/lua/InputApi.cpp' l='218' ll='232' type='static int Solarus::LuaContext::input_api_is_mouse_button_released(lua_State * l)'/>
+<doc f='codebrowser/src/lua/InputApi.cpp' l='213'>/**
+ * \brief Implementation of sol.input.is_mouse_button_released().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

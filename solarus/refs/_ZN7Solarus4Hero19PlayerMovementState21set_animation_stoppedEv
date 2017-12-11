@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='51' type='void Solarus::Hero::PlayerMovementState::set_animation_stopped()'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='215' c='_ZN7Solarus4Hero13CarryingState21set_animation_stoppedEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='193' c='_ZN7Solarus4Hero9FreeState21set_animation_stoppedEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='97' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='132' u='c' c='_ZN7Solarus4Hero19PlayerMovementState7set_mapERNS_3MapE'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='186' ll='187' type='void Solarus::Hero::PlayerMovementState::set_animation_stopped()'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='249' u='c' c='_ZN7Solarus4Hero19PlayerMovementState23notify_movement_changedEv'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='183'>/**
+ * Gives the sprites the animation stopped corresponding to this state.
+ */</doc>
+<ovr f='codebrowser/src/hero/SwimmingState.cpp' l='108' c='_ZN7Solarus4Hero13SwimmingState21set_animation_stoppedEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='187' c='_ZN7Solarus4Hero17SwordLoadingState21set_animation_stoppedEv'/>

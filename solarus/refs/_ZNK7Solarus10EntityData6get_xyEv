@@ -1,0 +1,36 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='104' type='Solarus::Point Solarus::EntityData::get_xy() const'/>
+<def f='codebrowser/src/EntityData.cpp' l='487' ll='489' type='Solarus::Point Solarus::EntityData::get_xy() const'/>
+<use f='codebrowser/src/EntityData.cpp' l='883' u='c' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<use f='codebrowser/src/EntityData.cpp' l='884' u='c' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<doc f='codebrowser/src/EntityData.cpp' l='483'>/**
+ * \brief Returns the coordinates of this entity on the map.
+ * \return The coordinates of the entity.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='418' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='419' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='468' u='c' c='_ZN7Solarus10LuaContext20l_create_destinationEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='500' u='c' c='_ZN7Solarus10LuaContext24l_create_teletransporterEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='542' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='582' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='649' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='685' u='c' c='_ZN7Solarus10LuaContext15l_create_jumperEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='716' u='c' c='_ZN7Solarus10LuaContext14l_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='754' u='c' c='_ZN7Solarus10LuaContext12l_create_npcEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='789' u='c' c='_ZN7Solarus10LuaContext14l_create_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='819' u='c' c='_ZN7Solarus10LuaContext21l_create_dynamic_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='848' u='c' c='_ZN7Solarus10LuaContext15l_create_switchEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='878' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='909' u='c' c='_ZN7Solarus10LuaContext15l_create_sensorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='935' u='c' c='_ZN7Solarus10LuaContext16l_create_crystalEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='962' u='c' c='_ZN7Solarus10LuaContext22l_create_crystal_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='991' u='c' c='_ZN7Solarus10LuaContext22l_create_shop_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1030' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1090' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1122' u='c' c='_ZN7Solarus10LuaContext15l_create_stairsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1149' u='c' c='_ZN7Solarus10LuaContext18l_create_separatorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1178' u='c' c='_ZN7Solarus10LuaContext22l_create_custom_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1206' u='c' c='_ZN7Solarus10LuaContext13l_create_bombEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1232' u='c' c='_ZN7Solarus10LuaContext18l_create_explosionEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1258' u='c' c='_ZN7Solarus10LuaContext13l_create_fireEP9lua_State'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='46' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='46' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>

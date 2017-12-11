@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='56' type='Solarus::Rectangle Solarus::SpriteAnimationDirectionData::get_bounding_box() const'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='86' u='c' c='_ZN7Solarus18SpriteAnimationSet13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<def f='codebrowser/src/SpriteData.cpp' l='126' ll='129' type='Solarus::Rectangle Solarus::SpriteAnimationDirectionData::get_bounding_box() const'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='118'>/**
+ * \brief Returns the bounding box of frames of this direction.
+ *
+ * This is a rectangle of size get_size() and whose top-left corner has
+ * coordinates -get_origin().
+ *
+ * \return The bounding box.
+ */</doc>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='64' type='static bool Solarus::GameCommands::is_joypad_string_valid(const std::string &amp; joypad_string)'/>
+<def f='codebrowser/src/GameCommands.cpp' l='816' ll='820' type='static bool Solarus::GameCommands::is_joypad_string_valid(const std::string &amp; )'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='804'>/**
+ * \brief Returns whether a string describes a valid joypad action.
+ *
+ * The string should have one of the following forms:
+ * - &quot;button X&quot; where X is the index of a joypad button.
+ * - &quot;axis X +&quot; where X is the index of a joypad axis.
+ * - &quot;axis X -&quot; where X is the index of a joypad axis.
+ * - &quot;hat X Y&quot; where X is the index of a joypad hat and Y is a direction (0 to 7).
+ *
+ * \param joypad_string The string to check.
+ * \return true if this string is a valid joypad action.
+ */</doc>
+<doc f='codebrowser/src/GameCommands.cpp' l='816'>/* joypad_string */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1447' u='c' c='_ZN7Solarus10LuaContext35game_api_set_command_joypad_bindingEP9lua_State'/>

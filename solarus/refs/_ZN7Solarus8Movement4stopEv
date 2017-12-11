@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='80' type='void Solarus::Movement::stop()'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='236' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='270' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1200' u='c' c='_ZN7Solarus4Hero14reset_movementEv'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='473' c='_ZN7Solarus14CircleMovement4stopEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='351' ll='353' type='void Solarus::Movement::stop()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='346'>/**
+ * \brief Stops the movement.
+ *
+ * When this function returns, is_started() should be false.
+ */</doc>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='282' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='186' c='_ZN7Solarus16StraightMovement4stopEv'/>

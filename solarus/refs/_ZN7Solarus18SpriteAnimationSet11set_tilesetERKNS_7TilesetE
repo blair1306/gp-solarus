@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='48' type='void Solarus::SpriteAnimationSet::set_tileset(const Solarus::Tileset &amp; tileset)'/>
+<use f='codebrowser/src/Sprite.cpp' l='140' u='c' c='_ZN7Solarus6Sprite11set_tilesetERKNS_7TilesetE'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='104' ll='109' type='void Solarus::SpriteAnimationSet::set_tileset(const Solarus::Tileset &amp; tileset)'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='97'>/**
+ * \brief When the sprite is displayed on a map, sets the tileset.
+ *
+ * This function must be called if this sprite image depends on the map&apos;s tileset.
+ *
+ * \param tileset The tileset.
+ */</doc>

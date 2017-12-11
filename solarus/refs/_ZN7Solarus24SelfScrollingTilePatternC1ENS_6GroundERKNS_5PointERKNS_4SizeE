@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/SelfScrollingTilePattern.h' l='41' type='void Solarus::SelfScrollingTilePattern::SelfScrollingTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<def f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='29' ll='32' type='void Solarus::SelfScrollingTilePattern::SelfScrollingTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='23'>/**
+ * \brief Creates a tile pattern with self scrolling.
+ * \param ground Kind of ground of the tile pattern.
+ * \param xy Coordinates of the tile pattern in the tileset.
+ * \param size Size of the tile pattern in the tileset.
+ */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='99' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>

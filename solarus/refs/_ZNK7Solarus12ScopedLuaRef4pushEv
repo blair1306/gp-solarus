@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='55' type='void Solarus::ScopedLuaRef::push() const'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='131' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Sprite.cpp' l='935' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='83' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1901' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='480' u='c' c='_ZN7Solarus10LuaContext8push_refEP9lua_StateRKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/ScopedLuaRef.cpp' l='161' ll='166' type='void Solarus::ScopedLuaRef::push() const'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='180' u='c' c='_ZNK7Solarus12ScopedLuaRef4callERKSs'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='209' u='c' c='_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs'/>
+<doc f='codebrowser/src/lua/ScopedLuaRef.cpp' l='156'>/**
+ * \brief Pushes the referenced value onto the Lua stack.
+ *
+ * The ref must not be empty.
+ */</doc>

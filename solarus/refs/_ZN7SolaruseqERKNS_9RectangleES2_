@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='110' type='bool Solarus::operator==(const Solarus::Rectangle &amp; lhs, const Solarus::Rectangle &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='523' ll='526' type='bool Solarus::operator==(const Solarus::Rectangle &amp; lhs, const Solarus::Rectangle &amp; rhs)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='535' u='c' c='_ZN7SolarusneERKNS_9RectangleES2_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='517'>/**
+ * \brief Compares two rectangles.
+ * \param lhs first rectangle
+ * \param rhs second rectangle
+ * \return true if both rectangles have the same coordinates and size
+ */</doc>
+<use f='codebrowser/src/entities/Camera.cpp' l='116' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='57' type='Solarus::Size Solarus::Rectangle::get_size() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='224' ll='226' type='Solarus::Size Solarus::Rectangle::get_size() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='525' u='c' c='_ZN7SolaruseqERKNS_9RectangleES2_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='525' u='c' c='_ZN7SolaruseqERKNS_9RectangleES2_'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='220'>/**
+ * \brief Returns the size of this rectangle.
+ * \return the size
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='832' u='c' c='_ZNK7Solarus6Entity8get_sizeEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='902' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='34' u='c' c='_ZN7Solarus4TileC1ERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='75' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='118' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/lowlevel/Rectangle.cpp' l='30' u='c' c='_ZN7SolaruslsERSoRKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='568' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='686' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='862' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

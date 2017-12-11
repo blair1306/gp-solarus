@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Destination.h' l='36' type='void Solarus::Destination::Destination(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int hero_direction, const std::string &amp; sprite_name, bool is_default)'/>
+<def f='codebrowser/src/entities/Destination.cpp' l='35' ll='52' type='void Solarus::Destination::Destination(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, int hero_direction, const std::string &amp; sprite_name, bool is_default)'/>
+<doc f='codebrowser/src/entities/Destination.cpp' l='24'>/**
+ * \brief Constructor.
+ * \param name Name of the destination to create.
+ * \param layer The layer.
+ * \param xy Coordinates of the destination to create.
+ * \param hero_direction Initial direction of the hero in this state
+ * (0 to 3, or -1 to indicate that the hero&apos;s direction is not changed).
+ * \param sprite_name Animation set id of a sprite to represent this
+ * destination, or an empty string.
+ * \param is_default \c true to make this destination the default one.
+ */</doc>

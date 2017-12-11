@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='94' type='std::string Solarus::QuestFiles::create_temporary_file(const std::string &amp; content)'/>
+<doc f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='93'>// Temporary files.</doc>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='496' ll='534' type='std::string Solarus::QuestFiles::create_temporary_file(const std::string &amp; content)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='491'>/**
+ * \brief Creates a temporary file with the specified content and closes it.
+ * \param content Content of the file to create.
+ * \return Full name of the file created, or an empty string in case of failure.
+ */</doc>
+<use f='codebrowser/src/lua/FileApi.cpp' l='112' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>

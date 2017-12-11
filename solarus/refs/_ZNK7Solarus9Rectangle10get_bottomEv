@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='60' type='int Solarus::Rectangle::get_bottom() const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='118' ll='120' type='int Solarus::Rectangle::get_bottom() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='130' u='c' c='_ZNK7Solarus9Rectangle15get_bottom_leftEv'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='141' u='c' c='_ZNK7Solarus9Rectangle16get_bottom_rightEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='439' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='505' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='111'>/**
+ * \brief Returns the bottom coordinate of this rectangle.
+ *
+ * This is the equivalent of: get_top() + get_height()
+ *
+ * \return The bottom coordinate.
+ */</doc>

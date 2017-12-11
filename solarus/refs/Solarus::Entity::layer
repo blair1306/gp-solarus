@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='434' type='int'/>
+<offset>448</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='434'>/**&lt; Layer of the entity on the map.
+                                                 * The layer is constant for the tiles and can change for the hero and the dynamic entities. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='64' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='569' u='r' c='_ZNK7Solarus6Entity9get_layerEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='585' u='w' c='_ZN7Solarus6Entity9set_layerEi'/>

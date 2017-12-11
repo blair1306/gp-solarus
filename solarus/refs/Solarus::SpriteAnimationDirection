@@ -1,0 +1,23 @@
+<def f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='36' ll='71'/>
+<size>56</size>
+<doc f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='30'>/**
+ * \brief A sequence of frames representing a sprite animated in a particular direction.
+ *
+ * An animation direction is a sequence of frames representing a sprite
+ * with a specific animation and in a specific direction.
+ */</doc>
+<fun r='_ZN7Solarus24SpriteAnimationDirectionC1ERKSt6vectorINS_9RectangleESaIS2_EERKNS_5PointE'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection8get_sizeEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection10get_originEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection13get_nb_framesEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<fun r='_ZN7Solarus24SpriteAnimationDirection4drawERNS_7SurfaceERKNS_5PointEiS2_'/>
+<fun r='_ZN7Solarus24SpriteAnimationDirection23enable_pixel_collisionsERNS_7SurfaceE'/>
+<fun r='_ZN7Solarus24SpriteAnimationDirection24disable_pixel_collisionsEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection28are_pixel_collisions_enabledEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection14get_pixel_bitsEi'/>
+<mbr r='Solarus::SpriteAnimationDirection::frames' o='0' t='std::vector&lt;Rectangle&gt;'/>
+<mbr r='Solarus::SpriteAnimationDirection::origin' o='192' t='Solarus::Point'/>
+<mbr r='Solarus::SpriteAnimationDirection::pixel_bits' o='256' t='std::vector&lt;PixelBits&gt;'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection10get_originEv'/>
+<fun r='_ZNK7Solarus24SpriteAnimationDirection14get_pixel_bitsEi'/>

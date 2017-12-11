@@ -1,0 +1,11 @@
+<dec f='include/c++/4.9/functional' l='2192' type='void std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;(const function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; __x)'/>
+<def f='include/c++/4.9/functional' l='2403' ll='2414' type='void std::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;::function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt;(const function&lt;type-parameter-0-0 (type-parameter-0-1...)&gt; &amp; __x)'/>
+<doc f='include/c++/4.9/functional' l='2184'>/**
+       *  @brief %Function copy constructor.
+       *  @param __x A %function object with identical call signature.
+       *  @post @c bool(*this) == bool(__x)
+       *
+       *  The newly-created %function contains a copy of the target of @a
+       *  __x (if it has one).
+       */</doc>
+<doc f='include/c++/4.9/functional' l='2402'>// Out-of-line member definitions.</doc>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='145' type='void Solarus::Surface::render(SDL_Renderer * renderer, const Solarus::Rectangle &amp; src_rect, const Solarus::Rectangle &amp; dst_rect, const Solarus::Rectangle &amp; clip_rect, uint8_t opacity, const std::vector&lt;SubSurfaceNodePtr&gt; &amp; subsurfaces)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='781' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_Renderer'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='795' ll='884' type='void Solarus::Surface::render(SDL_Renderer * renderer, const Solarus::Rectangle &amp; src_rect, const Solarus::Rectangle &amp; dst_rect, const Solarus::Rectangle &amp; clip_rect, uint8_t opacity, const std::vector&lt;SubSurfaceNodePtr&gt; &amp; subsurfaces)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='872' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='784'>/**
+ * \brief Renders the internal texture if any, and all subsurfaces that are
+ * drawn onto it.
+ * \param renderer The renderer where to draw.
+ * \param src_rect The subrectangle of the texture to draw.
+ * \param dst_rect The position where to draw on the renderer.
+ * \param clip_rect A portion of the renderer where to restrict the drawing.
+ * \param opacity The opacity of the parent surface.
+ * \param subsurfaces The subsurfaces drawn onto this texture. They will be
+ * renderered recursively.
+ */</doc>

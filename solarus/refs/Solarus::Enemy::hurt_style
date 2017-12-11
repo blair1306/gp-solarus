@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='217' type='Solarus::Enemy::HurtStyle'/>
+<offset>2176</offset>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='217'>/**&lt; style of sounds and animations when this enemy gets hurt
+                                        * (default: HURT_NORMAL) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='92' u='w' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='477' u='r' c='_ZNK7Solarus5Enemy14get_hurt_styleEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='485' u='w' c='_ZN7Solarus5Enemy14set_hurt_styleENS0_9HurtStyleE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1099' u='r' c='_ZN7Solarus5Enemy15play_hurt_soundEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1353' u='r' c='_ZN7Solarus5Enemy4killEv'/>

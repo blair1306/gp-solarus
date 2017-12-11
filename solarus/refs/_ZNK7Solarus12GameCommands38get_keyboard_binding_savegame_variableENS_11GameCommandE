@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='82' type='const std::string &amp; Solarus::GameCommands::get_keyboard_binding_savegame_variable(Solarus::GameCommand command) const'/>
+<def f='codebrowser/src/GameCommands.cpp' l='618' ll='635' type='const std::string &amp; Solarus::GameCommands::get_keyboard_binding_savegame_variable(Solarus::GameCommand command) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='672' u='c' c='_ZNK7Solarus12GameCommands26get_saved_keyboard_bindingENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='687' u='c' c='_ZN7Solarus12GameCommands26set_saved_keyboard_bindingENS_11GameCommandENS_10InputEvent11KeyboardKeyE'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='611'>/**
+ * \brief Returns the name of the savegame variable that stores the keyboard
+ * mapping of a game command.
+ * \param command A game command.
+ * \return The savegame variable that stores the keyboard key mapped to this
+ * game command, or an empty string if this command is GameCommand::NONE.
+ */</doc>

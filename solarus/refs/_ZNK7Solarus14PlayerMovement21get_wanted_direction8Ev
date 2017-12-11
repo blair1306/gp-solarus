@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/movements/PlayerMovement.h' l='43' type='int Solarus::PlayerMovement::get_wanted_direction8() const'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='215' u='c' c='_ZNK7Solarus4Hero19PlayerMovementState30get_wanted_movement_direction8Ev'/>
+<def f='codebrowser/src/movements/PlayerMovement.cpp' l='87' ll='89' type='int Solarus::PlayerMovement::get_wanted_direction8() const'/>
+<doc f='codebrowser/src/movements/PlayerMovement.cpp' l='82'>/**
+ * \brief Returns the direction this movement is trying to move towards.
+ * \return the direction (0 to 7), or -1 if the player is not trying to go
+ * to a direction or the movement is disabled
+ */</doc>

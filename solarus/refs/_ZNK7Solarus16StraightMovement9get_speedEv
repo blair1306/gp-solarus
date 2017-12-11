@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='46' type='double Solarus::StraightMovement::get_speed() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='240' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='732' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='870' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1027' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_get_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='83' ll='85' type='double Solarus::StraightMovement::get_speed() const'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='246' u='c' c='_ZN7Solarus16StraightMovement9set_angleEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='433' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_xEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='521' u='c' c='_ZN7Solarus16StraightMovement15update_smooth_yEv'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='76'>/**
+ * \brief Returns the total speed of the object.
+ *
+ * The speed is calculated as sqrt(x_speed^2 + y_speed^2).
+ *
+ * \return the speed in pixels per second
+ */</doc>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='173' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

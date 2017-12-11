@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='254' type='void Solarus::Hero::start_prickle(uint32_t delay)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1266' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2283' ll='2288' type='void Solarus::Hero::start_prickle(uint32_t delay)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2701' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2279'>/**
+ * \brief Makes the hero being hurt by prickles.
+ * \param delay delay before returning control to the player
+ */</doc>

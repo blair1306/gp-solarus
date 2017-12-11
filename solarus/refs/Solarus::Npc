@@ -1,0 +1,48 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Npc.h' l='48' ll='113'/>
+<size>288</size>
+<doc f='codebrowser/include/solarus/entities/Npc.h' l='27'>/**
+ * \brief A non-playing character or a more general interactive entity.
+ *
+ * The entity triggers a message or an event
+ * when the player presses the action key while facing it.
+ *
+ * This class can be used for usual living NPCs who the hero can talk to,
+ * but also for more general non-living, interactive objects that show a
+ * dialog or trigger a script, like signs or torches.
+ * Such customizable interactive objects are called generalized NPCs.
+ *
+ * A usual NPC has some specific collision and displaying properties.
+ * It must have a sprite with four directions, an animation &quot;stopped&quot;,
+ * and an animation &quot;walking&quot; if the script starts a movement.
+ * This class handles automatically the sprite&apos;s direction and animations
+ * depending on the movement and the interactions with the hero.
+ *
+ * On the contrary, a generalized NPC is just assumed to be a solid
+ * interactive entity, and the map script has to handle explicitly its
+ * animations (if any).
+ */</doc>
+<smbr r='Solarus::Npc::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<fun r='_ZNK7Solarus3Npc8get_typeEv'/>
+<fun r='_ZNK7Solarus3Npc8is_solidEv'/>
+<fun r='_ZNK7Solarus3Npc14is_traversableEv'/>
+<fun r='_ZN7Solarus3Npc15set_traversableEb'/>
+<fun r='_ZN7Solarus3Npc15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus3Npc16is_hero_obstacleERNS_4HeroE'/>
+<fun r='_ZN7Solarus3Npc15is_npc_obstacleERS0_'/>
+<fun r='_ZN7Solarus3Npc17is_enemy_obstacleERNS_5EnemyE'/>
+<fun r='_ZNK7Solarus3Npc16is_sword_ignoredEv'/>
+<fun r='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus3Npc28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<fun r='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<fun r='_ZN7Solarus3Npc24notify_movement_finishedEv'/>
+<fun r='_ZNK7Solarus3Npc13can_be_liftedEv'/>
+<fun r='_ZN7Solarus3Npc17initialize_spriteERKSsi'/>
+<fun r='_ZN7Solarus3Npc28call_script_hero_interactionEv'/>
+<mbr r='Solarus::Npc::subtype' o='2048' t='Solarus::Npc::Subtype'/>
+<mbr r='Solarus::Npc::behavior' o='2080' t='Solarus::Npc::Behavior'/>
+<mbr r='Solarus::Npc::traversable' o='2112' t='bool'/>
+<mbr r='Solarus::Npc::dialog_to_show' o='2176' t='std::string'/>
+<mbr r='Solarus::Npc::item_name' o='2240' t='std::string'/>

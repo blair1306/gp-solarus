@@ -1,0 +1,17 @@
+<dec f='include/physfs.h' l='430'/>
+<doc f='include/physfs.h' l='414'>/**
+ * \def PHYSFS_VERSION(x)
+ * \brief Macro to determine PhysicsFS version program was compiled against.
+ *
+ * This macro fills in a PHYSFS_Version structure with the version of the
+ *  library you compiled against. This is determined by what header the
+ *  compiler uses. Note that if you dynamically linked the library, you might
+ *  have a slightly newer or older version at runtime. That version can be
+ *  determined with PHYSFS_getLinkedVersion(), which, unlike PHYSFS_VERSION,
+ *  is not a macro.
+ *
+ * \param x A pointer to a PHYSFS_Version struct to initialize.
+ *
+ * \sa PHYSFS_Version
+ * \sa PHYSFS_getLinkedVersion
+ */</doc>

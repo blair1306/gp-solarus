@@ -1,0 +1,22 @@
+<dec f='include/physfs.h' l='771' type='int PHYSFS_addToSearchPath(const char * newDir, int appendToPath)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='137' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='138' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='139' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='140' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='141' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='142' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='467' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<doc f='include/physfs.h' l='757'>/**
+ * \fn int PHYSFS_addToSearchPath(const char *newDir, int appendToPath)
+ * \brief Add an archive or directory to the search path.
+ *
+ * This is a legacy call in PhysicsFS 2.0, equivalent to:
+ *     PHYSFS_mount(newDir, NULL, appendToPath);
+ *
+ * You must use this and not PHYSFS_mount if binary compatibility with
+ *  PhysicsFS 1.0 is important (which it may not be for many people).
+ *
+ * \sa PHYSFS_mount
+ * \sa PHYSFS_removeFromSearchPath
+ * \sa PHYSFS_getSearchPath
+ */</doc>

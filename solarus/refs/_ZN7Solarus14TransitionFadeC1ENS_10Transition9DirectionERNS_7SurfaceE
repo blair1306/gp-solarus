@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/TransitionFade.h' l='35' type='void Solarus::TransitionFade::TransitionFade(Solarus::Transition::Direction direction, Solarus::Surface &amp; dst_surface)'/>
+<use f='codebrowser/src/Transition.cpp' l='77' u='c' c='_ZN7Solarus10Transition6createENS0_5StyleENS0_9DirectionERNS_7SurfaceEPNS_4GameE'/>
+<def f='codebrowser/src/TransitionFade.cpp' l='33' ll='54' type='void Solarus::TransitionFade::TransitionFade(Solarus::Transition::Direction direction, Solarus::Surface &amp; dst_surface)'/>
+<doc f='codebrowser/src/TransitionFade.cpp' l='27'>/**
+ * \brief Creates a fade-in or fade-out transition effect.
+ * \param direction direction of the transition effect (opening or closing)
+ * \param dst_surface The destination surface that will receive this
+ * transition.
+ */</doc>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='231' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='270' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>

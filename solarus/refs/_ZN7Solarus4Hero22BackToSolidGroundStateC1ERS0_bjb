@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/hero/BackToSolidGroundState.h' l='33' type='void Solarus::Hero::BackToSolidGroundState::BackToSolidGroundState(Solarus::Hero &amp; hero, bool use_specified_position, uint32_t end_delay = 0, bool with_sound = true)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2657' u='c' c='_ZN7Solarus4Hero26start_back_to_solid_groundEbjb'/>
+<def f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='43' ll='65' type='void Solarus::Hero::BackToSolidGroundState::BackToSolidGroundState(Solarus::Hero &amp; hero, bool use_specified_position, uint32_t end_delay = 0, bool with_sound = true)'/>
+<doc f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='35'>/**
+ * \brief Constructor.
+ * \param hero the hero controlled by this state
+ * \param use_specified_position true to get back to the place previously specified (if any),
+ * false to get back to the last coordinates with solid ground
+ * \param end_delay a delay to add at the end before returning control to the hero (default 0)
+ * \param with_sound true to play a sound when returning to solid ground
+ */</doc>
+<use f='codebrowser/src/hero/FallingState.cpp' l='81' u='c' c='_ZN7Solarus4Hero12FallingState6updateEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='227' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/PlungingState.cpp' l='83' u='c' c='_ZN7Solarus4Hero13PlungingState6updateEv'/>

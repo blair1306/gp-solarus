@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='241' type='Solarus::Color Solarus::LuaTools::check_color_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='949' ll='965' type='Solarus::Color Solarus::LuaTools::check_color_field(lua_State * l, int table_index, const std::string &amp; key)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='939'>/**
+ * \brief Checks that a table field is a color and returns it.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::check_color().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \return The wanted field as a layer.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='284' type='bool Solarus::Entity::test_collision(Solarus::Entity &amp; entity, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='283'>// TODO void check_collision(Sprite&amp; this_sprite, Entity&amp; other, Sprite&amp; other_sprite);</doc>
+<def f='codebrowser/src/entities/Entity.cpp' l='1917' ll='1955' type='bool Solarus::Entity::test_collision(Solarus::Entity &amp; entity, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1910'>/**
+ * \brief Returns whether an entity is overlapping this entity with the given
+ * collision test.
+ * \param entity The entity.
+ * \param collision_mode The collision test to perform.
+ * \return \c true if there is a collision.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1202' u='c' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>

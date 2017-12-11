@@ -1,0 +1,28 @@
+<def f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='37' ll='64'/>
+<size>16</size>
+<doc f='codebrowser/include/solarus/lua/ScopedLuaRef.h' l='27'>/**
+ * \brief Holds a Lua ref and does luaL_unref() on destruction.
+ *
+ * This class is meant to make the usage of Lua refs safer, by making sure
+ * that for each luaL_ref() call, there is exactly one luaL_unref() call.
+ * This avoids memory leaks and duplicate luaL_unref() calls.
+ *
+ * It is recommended to use this class rather than calling luaL_unref()
+ * directly.
+ */</doc>
+<fun r='_ZN7Solarus12ScopedLuaRefC1Ev'/>
+<fun r='_ZN7Solarus12ScopedLuaRefC1EP9lua_Statei'/>
+<fun r='_ZN7Solarus12ScopedLuaRefC1ERKS0_'/>
+<fun r='_ZN7Solarus12ScopedLuaRefC1EOS0_'/>
+<fun r='_ZN7Solarus12ScopedLuaRefD1Ev'/>
+<fun r='_ZN7Solarus12ScopedLuaRefaSERKS0_'/>
+<fun r='_ZN7Solarus12ScopedLuaRefaSEOS0_'/>
+<fun r='_ZNK7Solarus12ScopedLuaRef13get_lua_stateEv'/>
+<fun r='_ZNK7Solarus12ScopedLuaRef8is_emptyEv'/>
+<fun r='_ZNK7Solarus12ScopedLuaRef3getEv'/>
+<fun r='_ZN7Solarus12ScopedLuaRef5clearEv'/>
+<fun r='_ZNK7Solarus12ScopedLuaRef4pushEv'/>
+<fun r='_ZNK7Solarus12ScopedLuaRef4callERKSs'/>
+<fun r='_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs'/>
+<mbr r='Solarus::ScopedLuaRef::l' o='0' t='lua_State *'/>
+<mbr r='Solarus::ScopedLuaRef::ref' o='64' t='int'/>

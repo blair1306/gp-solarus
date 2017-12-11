@@ -1,0 +1,14 @@
+<def f='codebrowser/include/solarus/entities/Entities.h' l='158' ll='175'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='155'>/**
+     * \brief Internal fast cached information about the entity insertion order.
+     */</doc>
+<fun r='_ZN7Solarus8Entities6ZCacheC1Ev'/>
+<fun r='_ZNK7Solarus8Entities6ZCache5get_zERKSt10shared_ptrIKNS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities6ZCache3addERKSt10shared_ptrIKNS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities6ZCache6removeERKSt10shared_ptrIKNS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities6ZCache14bring_to_frontERKSt10shared_ptrIKNS_6EntityEE'/>
+<fun r='_ZN7Solarus8Entities6ZCache13bring_to_backERKSt10shared_ptrIKNS_6EntityEE'/>
+<mbr r='Solarus::Entities::ZCache::z_values' o='0' t='std::unordered_map&lt;ConstEntityPtr, int&gt;'/>
+<mbr r='Solarus::Entities::ZCache::min' o='448' t='int'/>
+<mbr r='Solarus::Entities::ZCache::max' o='480' t='int'/>

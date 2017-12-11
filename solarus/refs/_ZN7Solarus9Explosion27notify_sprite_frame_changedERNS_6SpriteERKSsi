@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Explosion.h' l='49' type='void Solarus::Explosion::notify_sprite_frame_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int frame)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='211' c='_ZN7Solarus6Entity27notify_sprite_frame_changedERNS_6SpriteERKSsi'/>
+<def f='codebrowser/src/entities/Explosion.cpp' l='79' ll='85' type='void Solarus::Explosion::notify_sprite_frame_changed(Solarus::Sprite &amp; , const std::string &amp; , int frame)'/>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='73'>/**
+ * \brief Notifies this entity that the frame of one of its sprites has just changed.
+ * \param sprite the sprite
+ * \param animation the current animation
+ * \param frame the new frame
+ */</doc>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='79'>/* sprite */</doc>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='79'>/* animation */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='790' type='static int Solarus::LuaContext::map_api_draw_visual(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='136' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1747' ll='1760' type='static int Solarus::LuaContext::map_api_draw_visual(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1742'>/**
+ * \brief Implementation of map:draw_visual().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

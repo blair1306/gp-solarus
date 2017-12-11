@@ -1,0 +1,12 @@
+<def f='include/c++/4.9/bits/stl_list.h' l='788' ll='790' type='iterator std::list::end()'/>
+<doc f='include/c++/4.9/bits/stl_list.h' l='783'>/**
+       *  Returns a read/write iterator that points one past the last
+       *  element in the %list.  Iteration is done in ordinary element
+       *  order.
+       */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='231' u='c' c='_ZN7Solarus8Entities12get_entitiesEv'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='154' u='c' c='_ZN7Solarus9Explosion16try_attack_enemyERNS_5EnemyERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='155' u='c' c='_ZN7Solarus9Explosion16try_attack_enemyERNS_5EnemyERNS_6SpriteE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='162' u='c' c='_ZN7Solarus10LuaContext12update_menusEv'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='262' u='c' c='_ZN7Solarus11PathFinding16add_index_sortedEPNS0_4NodeE'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='224' u='c' c='_ZN7Solarus13PixelMovement14make_next_stepEv'/>

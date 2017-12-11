@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='82' type='void Solarus::EquipmentItem::notify_amount_changed(int amount)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='350' ll='353' type='void Solarus::EquipmentItem::notify_amount_changed(int amount)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='448' u='c' c='_ZN7Solarus13EquipmentItem10set_amountEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='346'>/**
+ * \brief Notifies the script that the amount of this item has just changed.
+ * \param amount The new amount.
+ */</doc>

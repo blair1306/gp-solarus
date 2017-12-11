@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_mouse.h source code [include/SDL2/SDL_mouse.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_mouse.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_mouse.h.html'>SDL_mouse.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_mouse.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Include file for SDL mouse event handling.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_mouse_h">_SDL_mouse_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_mouse_h" data-ref="_M/_SDL_mouse_h">_SDL_mouse_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_video.h.html">"SDL_video.h"</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="36">36</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="37">endif</span></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="SDL_Cursor" title='SDL_Cursor' data-ref="SDL_Cursor"><a class="type" href="#SDL_Cursor" title='SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a></dfn> <dfn class="typedef" id="SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</dfn>;   <i>/* Implementation dependent */</i></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * <span class="command">\brief</span> Cursor types for SDL_CreateSystemCursor.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_ARROW" title='::SDL_SYSTEM_CURSOR_ARROW' data-ref="::SDL_SYSTEM_CURSOR_ARROW">SDL_SYSTEM_CURSOR_ARROW</dfn>,     <i class="doc">/**&lt; Arrow */</i></td></tr>
+<tr><th id="49">49</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_IBEAM" title='::SDL_SYSTEM_CURSOR_IBEAM' data-ref="::SDL_SYSTEM_CURSOR_IBEAM">SDL_SYSTEM_CURSOR_IBEAM</dfn>,     <i class="doc">/**&lt; I-beam */</i></td></tr>
+<tr><th id="50">50</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_WAIT" title='::SDL_SYSTEM_CURSOR_WAIT' data-ref="::SDL_SYSTEM_CURSOR_WAIT">SDL_SYSTEM_CURSOR_WAIT</dfn>,      <i class="doc">/**&lt; Wait */</i></td></tr>
+<tr><th id="51">51</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_CROSSHAIR" title='::SDL_SYSTEM_CURSOR_CROSSHAIR' data-ref="::SDL_SYSTEM_CURSOR_CROSSHAIR">SDL_SYSTEM_CURSOR_CROSSHAIR</dfn>, <i class="doc">/**&lt; Crosshair */</i></td></tr>
+<tr><th id="52">52</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_WAITARROW" title='::SDL_SYSTEM_CURSOR_WAITARROW' data-ref="::SDL_SYSTEM_CURSOR_WAITARROW">SDL_SYSTEM_CURSOR_WAITARROW</dfn>, <i class="doc">/**&lt; Small wait cursor (or Wait if not available) */</i></td></tr>
+<tr><th id="53">53</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_SIZENWSE" title='::SDL_SYSTEM_CURSOR_SIZENWSE' data-ref="::SDL_SYSTEM_CURSOR_SIZENWSE">SDL_SYSTEM_CURSOR_SIZENWSE</dfn>,  <i class="doc">/**&lt; Double arrow pointing northwest and southeast */</i></td></tr>
+<tr><th id="54">54</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_SIZENESW" title='::SDL_SYSTEM_CURSOR_SIZENESW' data-ref="::SDL_SYSTEM_CURSOR_SIZENESW">SDL_SYSTEM_CURSOR_SIZENESW</dfn>,  <i class="doc">/**&lt; Double arrow pointing northeast and southwest */</i></td></tr>
+<tr><th id="55">55</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_SIZEWE" title='::SDL_SYSTEM_CURSOR_SIZEWE' data-ref="::SDL_SYSTEM_CURSOR_SIZEWE">SDL_SYSTEM_CURSOR_SIZEWE</dfn>,    <i class="doc">/**&lt; Double arrow pointing west and east */</i></td></tr>
+<tr><th id="56">56</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_SIZENS" title='::SDL_SYSTEM_CURSOR_SIZENS' data-ref="::SDL_SYSTEM_CURSOR_SIZENS">SDL_SYSTEM_CURSOR_SIZENS</dfn>,    <i class="doc">/**&lt; Double arrow pointing north and south */</i></td></tr>
+<tr><th id="57">57</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_SIZEALL" title='::SDL_SYSTEM_CURSOR_SIZEALL' data-ref="::SDL_SYSTEM_CURSOR_SIZEALL">SDL_SYSTEM_CURSOR_SIZEALL</dfn>,   <i class="doc">/**&lt; Four pointed arrow pointing north, south, east, and west */</i></td></tr>
+<tr><th id="58">58</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_NO" title='::SDL_SYSTEM_CURSOR_NO' data-ref="::SDL_SYSTEM_CURSOR_NO">SDL_SYSTEM_CURSOR_NO</dfn>,        <i class="doc">/**&lt; Slashed circle or crossbones */</i></td></tr>
+<tr><th id="59">59</th><td>    <dfn class="enum" id="::SDL_SYSTEM_CURSOR_HAND" title='::SDL_SYSTEM_CURSOR_HAND' data-ref="::SDL_SYSTEM_CURSOR_HAND">SDL_SYSTEM_CURSOR_HAND</dfn>,      <i class="doc">/**&lt; Hand */</i></td></tr>
+<tr><th id="60">60</th><td>    <dfn class="enum" id="::SDL_NUM_SYSTEM_CURSORS" title='::SDL_NUM_SYSTEM_CURSORS' data-ref="::SDL_NUM_SYSTEM_CURSORS">SDL_NUM_SYSTEM_CURSORS</dfn></td></tr>
+<tr><th id="61">61</th><td>} <dfn class="typedef" id="SDL_SystemCursor" title='SDL_SystemCursor' data-type='enum SDL_SystemCursor' data-ref="SDL_SystemCursor">SDL_SystemCursor</dfn>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/* Function prototypes */</i></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *  <span class="command">\brief</span> Get the window which currently has mouse focus.</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="68">68</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_video.h.html#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetMouseFocus" title='SDL_GetMouseFocus' data-ref="SDL_GetMouseFocus">SDL_GetMouseFocus</dfn>(<em>void</em>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *  <span class="command">\brief</span> Retrieve the current state of the mouse.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *  The current button state is returned as a button bitmask, which can</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *  be tested using the SDL_BUTTON(X) macros, and x and y are set to the</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *  mouse cursor position relative to the focus window for the currently</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *  selected mouse.  You can pass NULL for either x or y.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="78">78</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetMouseState" title='SDL_GetMouseState' data-ref="SDL_GetMouseState">SDL_GetMouseState</dfn>(<em>int</em> *<dfn class="local col1 decl" id="741x" title='x' data-type='int *' data-ref="741x">x</dfn>, <em>int</em> *<dfn class="local col2 decl" id="742y" title='y' data-type='int *' data-ref="742y">y</dfn>);</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *  <span class="command">\brief</span> Retrieve the relative state of the mouse.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *  The current button state is returned as a button bitmask, which can</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *  be tested using the SDL_BUTTON(X) macros, and x and y are set to the</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *  mouse deltas since the last call to SDL_GetRelativeMouseState().</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="87">87</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRelativeMouseState" title='SDL_GetRelativeMouseState' data-ref="SDL_GetRelativeMouseState">SDL_GetRelativeMouseState</dfn>(<em>int</em> *<dfn class="local col3 decl" id="743x" title='x' data-type='int *' data-ref="743x">x</dfn>, <em>int</em> *<dfn class="local col4 decl" id="744y" title='y' data-type='int *' data-ref="744y">y</dfn>);</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *  <span class="command">\brief</span> Moves the mouse to the given position within the window.</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">window</span> The window to move the mouse into, or NULL for the current mouse focus</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">x</span> The x coordinate within the window</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">y</span> The y coordinate within the window</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *  <span class="command">\note</span> This function generates a mouse motion event</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="98">98</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WarpMouseInWindow" title='SDL_WarpMouseInWindow' data-ref="SDL_WarpMouseInWindow">SDL_WarpMouseInWindow</dfn>(<a class="typedef" href="SDL_video.h.html#SDL_Window" title='SDL_Window' data-type='struct SDL_Window' data-ref="SDL_Window">SDL_Window</a> * <dfn class="local col5 decl" id="745window" title='window' data-type='SDL_Window *' data-ref="745window">window</dfn>,</td></tr>
+<tr><th id="99">99</th><td>                                                   <em>int</em> <dfn class="local col6 decl" id="746x" title='x' data-type='int' data-ref="746x">x</dfn>, <em>int</em> <dfn class="local col7 decl" id="747y" title='y' data-type='int' data-ref="747y">y</dfn>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *  <span class="command">\brief</span> Set relative mouse mode.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">enabled</span> Whether or not to enable relative mode</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *  <span class="command">\return</span> 0 on success, or -1 if relative mode is not supported.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *  While the mouse is in relative mode, the cursor is hidden, and the</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *  driver will try to report continuous motion in the current window.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *  Only relative motion events will be delivered, the mouse position</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *  will not change.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  <span class="command">\note</span> This function will flush any pending mouse motion.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_GetRelativeMouseMode()</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="117">117</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetRelativeMouseMode" title='SDL_SetRelativeMouseMode' data-ref="SDL_SetRelativeMouseMode">SDL_SetRelativeMouseMode</dfn>(<a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="local col8 decl" id="748enabled" title='enabled' data-type='SDL_bool' data-ref="748enabled">enabled</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> *  <span class="command">\brief</span> Query whether relative mouse mode is enabled.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_SetRelativeMouseMode()</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="124">124</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetRelativeMouseMode" title='SDL_GetRelativeMouseMode' data-ref="SDL_GetRelativeMouseMode">SDL_GetRelativeMouseMode</dfn>(<em>void</em>);</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *  <span class="command">\brief</span> Create a cursor, using the specified bitmap data and</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *         mask (in MSB format).</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *  The cursor width must be a multiple of 8 bits.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *  The cursor is created in black and white according to the following:</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *  <span class="tag">&lt;table&gt;</span></i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *  <span class="tag">&lt;tr&gt;</span><span class="tag">&lt;td&gt;</span> data <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> mask <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> resulting pixel on screen <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;/tr&gt;</span></i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *  <span class="tag">&lt;tr&gt;</span><span class="tag">&lt;td&gt;</span>  0   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span>  1   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> White <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;/tr&gt;</span></i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *  <span class="tag">&lt;tr&gt;</span><span class="tag">&lt;td&gt;</span>  1   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span>  1   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> Black <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;/tr&gt;</span></i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *  <span class="tag">&lt;tr&gt;</span><span class="tag">&lt;td&gt;</span>  0   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span>  0   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> Transparent <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;/tr&gt;</span></i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *  <span class="tag">&lt;tr&gt;</span><span class="tag">&lt;td&gt;</span>  1   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span>  0   <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;td&gt;</span> Inverted color if possible, black</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *                                         if not. <span class="tag">&lt;/td&gt;</span><span class="tag">&lt;/tr&gt;</span></i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *  <span class="tag">&lt;/table&gt;</span></i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_FreeCursor()</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="144">144</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateCursor" title='SDL_CreateCursor' data-ref="SDL_CreateCursor">SDL_CreateCursor</dfn>(<em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col9 decl" id="749data" title='data' data-type='const Uint8 *' data-ref="749data">data</dfn>,</td></tr>
+<tr><th id="145">145</th><td>                                                     <em>const</em> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> * <dfn class="local col0 decl" id="750mask" title='mask' data-type='const Uint8 *' data-ref="750mask">mask</dfn>,</td></tr>
+<tr><th id="146">146</th><td>                                                     <em>int</em> <dfn class="local col1 decl" id="751w" title='w' data-type='int' data-ref="751w">w</dfn>, <em>int</em> <dfn class="local col2 decl" id="752h" title='h' data-type='int' data-ref="752h">h</dfn>, <em>int</em> <dfn class="local col3 decl" id="753hot_x" title='hot_x' data-type='int' data-ref="753hot_x">hot_x</dfn>,</td></tr>
+<tr><th id="147">147</th><td>                                                     <em>int</em> <dfn class="local col4 decl" id="754hot_y" title='hot_y' data-type='int' data-ref="754hot_y">hot_y</dfn>);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *  <span class="command">\brief</span> Create a color cursor.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_FreeCursor()</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="154">154</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateColorCursor" title='SDL_CreateColorCursor' data-ref="SDL_CreateColorCursor">SDL_CreateColorCursor</dfn>(<a class="typedef" href="SDL_surface.h.html#SDL_Surface" title='SDL_Surface' data-type='struct SDL_Surface' data-ref="SDL_Surface">SDL_Surface</a> *<dfn class="local col5 decl" id="755surface" title='surface' data-type='SDL_Surface *' data-ref="755surface">surface</dfn>,</td></tr>
+<tr><th id="155">155</th><td>                                                          <em>int</em> <dfn class="local col6 decl" id="756hot_x" title='hot_x' data-type='int' data-ref="756hot_x">hot_x</dfn>,</td></tr>
+<tr><th id="156">156</th><td>                                                          <em>int</em> <dfn class="local col7 decl" id="757hot_y" title='hot_y' data-type='int' data-ref="757hot_y">hot_y</dfn>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *  <span class="command">\brief</span> Create a system cursor.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_FreeCursor()</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="163">163</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_CreateSystemCursor" title='SDL_CreateSystemCursor' data-ref="SDL_CreateSystemCursor">SDL_CreateSystemCursor</dfn>(<a class="typedef" href="#SDL_SystemCursor" title='SDL_SystemCursor' data-type='enum SDL_SystemCursor' data-ref="SDL_SystemCursor">SDL_SystemCursor</a> <dfn class="local col8 decl" id="758id" title='id' data-type='SDL_SystemCursor' data-ref="758id">id</dfn>);</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *  <span class="command">\brief</span> Set the active cursor.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="168">168</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_SetCursor" title='SDL_SetCursor' data-ref="SDL_SetCursor">SDL_SetCursor</dfn>(<a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> * <dfn class="local col9 decl" id="759cursor" title='cursor' data-type='SDL_Cursor *' data-ref="759cursor">cursor</dfn>);</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> *  <span class="command">\brief</span> Return the active cursor.</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="173">173</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetCursor" title='SDL_GetCursor' data-ref="SDL_GetCursor">SDL_GetCursor</dfn>(<em>void</em>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> *  <span class="command">\brief</span> Return the default cursor.</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="178">178</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_GetDefaultCursor" title='SDL_GetDefaultCursor' data-ref="SDL_GetDefaultCursor">SDL_GetDefaultCursor</dfn>(<em>void</em>);</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *  <span class="command">\brief</span> Frees a cursor created with SDL_CreateCursor().</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_CreateCursor()</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="185">185</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_FreeCursor" title='SDL_FreeCursor' data-ref="SDL_FreeCursor">SDL_FreeCursor</dfn>(<a class="typedef" href="#SDL_Cursor" title='SDL_Cursor' data-type='struct SDL_Cursor' data-ref="SDL_Cursor">SDL_Cursor</a> * <dfn class="local col0 decl" id="760cursor" title='cursor' data-type='SDL_Cursor *' data-ref="760cursor">cursor</dfn>);</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> *  <span class="command">\brief</span> Toggle whether or not the cursor is shown.</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> *  <span class="command">\param</span> <span class="arg">toggle</span> 1 to show the cursor, 0 to hide it, -1 to query the current</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *                state.</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *  <span class="command">\return</span> 1 if the cursor is shown, or 0 if the cursor is hidden.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="195">195</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>int</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ShowCursor" title='SDL_ShowCursor' data-ref="SDL_ShowCursor">SDL_ShowCursor</dfn>(<em>int</em> <dfn class="local col1 decl" id="761toggle" title='toggle' data-type='int' data-ref="761toggle">toggle</dfn>);</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> *  Used as a mask when testing buttons in buttonstate.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *   - Button 1:  Left mouse button</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> *   - Button 2:  Middle mouse button</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *   - Button 3:  Right mouse button</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="203">203</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON" data-ref="_M/SDL_BUTTON">SDL_BUTTON</dfn>(X)       (1 &lt;&lt; ((X)-1))</u></td></tr>
+<tr><th id="204">204</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_LEFT" data-ref="_M/SDL_BUTTON_LEFT">SDL_BUTTON_LEFT</dfn>     1</u></td></tr>
+<tr><th id="205">205</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_MIDDLE" data-ref="_M/SDL_BUTTON_MIDDLE">SDL_BUTTON_MIDDLE</dfn>   2</u></td></tr>
+<tr><th id="206">206</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_RIGHT" data-ref="_M/SDL_BUTTON_RIGHT">SDL_BUTTON_RIGHT</dfn>    3</u></td></tr>
+<tr><th id="207">207</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_X1" data-ref="_M/SDL_BUTTON_X1">SDL_BUTTON_X1</dfn>       4</u></td></tr>
+<tr><th id="208">208</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_X2" data-ref="_M/SDL_BUTTON_X2">SDL_BUTTON_X2</dfn>       5</u></td></tr>
+<tr><th id="209">209</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_LMASK" data-ref="_M/SDL_BUTTON_LMASK">SDL_BUTTON_LMASK</dfn>    SDL_BUTTON(SDL_BUTTON_LEFT)</u></td></tr>
+<tr><th id="210">210</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_MMASK" data-ref="_M/SDL_BUTTON_MMASK">SDL_BUTTON_MMASK</dfn>    SDL_BUTTON(SDL_BUTTON_MIDDLE)</u></td></tr>
+<tr><th id="211">211</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_RMASK" data-ref="_M/SDL_BUTTON_RMASK">SDL_BUTTON_RMASK</dfn>    SDL_BUTTON(SDL_BUTTON_RIGHT)</u></td></tr>
+<tr><th id="212">212</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_X1MASK" data-ref="_M/SDL_BUTTON_X1MASK">SDL_BUTTON_X1MASK</dfn>   SDL_BUTTON(SDL_BUTTON_X1)</u></td></tr>
+<tr><th id="213">213</th><td><u>#define <dfn class="macro" id="_M/SDL_BUTTON_X2MASK" data-ref="_M/SDL_BUTTON_X2MASK">SDL_BUTTON_X2MASK</dfn>   SDL_BUTTON(SDL_BUTTON_X2)</u></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="217">217</th><td><u>#<span data-ppcond="217">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="218">218</th><td>}</td></tr>
+<tr><th id="219">219</th><td><u>#<span data-ppcond="217">endif</span></u></td></tr>
+<tr><th id="220">220</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_mouse_h */</u></td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="225">225</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

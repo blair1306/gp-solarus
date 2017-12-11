@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='120' type='const std::string'/>
+<use f='codebrowser/src/Map.cpp' l='1446' u='a' c='_ZNK7Solarus3Map17get_lua_type_nameEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='111' type='const std::string'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='165' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='168' u='m' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='200' u='r' c='_ZN7Solarus10LuaContext6is_mapEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='213' u='r' c='_ZN7Solarus10LuaContext9check_mapEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='108'>/**
+ * Name of the Lua table representing the map module.
+ */</doc>

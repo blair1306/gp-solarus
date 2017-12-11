@@ -1,0 +1,24 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Crystal.h' l='32' ll='63'/>
+<size>312</size>
+<doc f='codebrowser/include/solarus/entities/Crystal.h' l='28'>/**
+ * \brief A switch that can be activated to change the state of the
+ * crystal blocks.
+ */</doc>
+<smbr r='Solarus::Crystal::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<fun r='_ZNK7Solarus7Crystal8get_typeEv'/>
+<fun r='_ZN7Solarus7Crystal15notify_creatingEv'/>
+<fun r='_ZN7Solarus7Crystal15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus7Crystal16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus7Crystal16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus7Crystal8activateERNS_6EntityE'/>
+<fun r='_ZN7Solarus7Crystal6updateEv'/>
+<fun r='_ZN7Solarus7Crystal13set_suspendedEb'/>
+<fun r='_ZN7Solarus7Crystal7twinkleEv'/>
+<mbr r='Solarus::Crystal::state' o='2048' t='bool'/>
+<mbr r='Solarus::Crystal::next_possible_hit_date' o='2080' t='uint32_t'/>
+<mbr r='Solarus::Crystal::entities_activating' o='2112' t='std::list&lt;Entity *&gt;'/>
+<mbr r='Solarus::Crystal::main_sprite' o='2240' t='SpritePtr'/>
+<mbr r='Solarus::Crystal::star_sprite' o='2368' t='SpritePtr'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='134' type='SDL_BlendMode Solarus::Surface::get_sdl_blend_mode() const'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='288' u='c' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='483' u='c' c='_ZN7Solarus7Surface23create_software_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='671' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='989' ll='1007' type='SDL_BlendMode Solarus::Surface::get_sdl_blend_mode() const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='985'>/**
+ * \brief Returns the blend mode as an SDL_BlendMode value.
+ * \return The blend mode.
+ */</doc>

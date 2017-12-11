@@ -1,0 +1,18 @@
+<def f='include/c++/4.9/bits/shared_ptr.h' l='100' ll='101' type='void std::shared_ptr::shared_ptr&lt;_Tp&gt;()'/>
+<doc f='include/c++/4.9/bits/shared_ptr.h' l='96'>/**
+       *  @brief  Construct an empty %shared_ptr.
+       *  @post   use_count()==0 &amp;&amp; get()==0
+       */</doc>
+<use f='codebrowser/src/Game.cpp' l='436' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='387' u='c' c='_ZN7Solarus3Map15get_destinationEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='55' u='c' c='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='46' u='c' c='_ZN7Solarus4Hero12JumpingStateC1ERS0_iibb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='37' u='c' c='_ZN7Solarus4Hero19PlayerMovementStateC1ERS0_RKSs'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='38' u='c' c='_ZN7Solarus4Hero19PlayerMovementStateC1ERS0_RKSs'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='46' u='c' c='_ZN7Solarus4Hero13TreasureStateC1ERS0_RKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2452' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1018' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2071' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='480' u='c' c='_ZN7Solarus10LuaContext19movement_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='112' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='33' u='c' c='_ZN7Solarus19PathFindingMovementC1Ei'/>

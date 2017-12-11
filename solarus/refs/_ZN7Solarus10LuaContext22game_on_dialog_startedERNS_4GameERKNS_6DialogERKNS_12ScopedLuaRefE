@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='342' type='bool Solarus::LuaContext::game_on_dialog_started(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='1696' ll='1710' type='bool Solarus::LuaContext::game_on_dialog_started(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; info_ref)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='1685'>/**
+ * \brief Calls the on_dialog_started() method of a Lua game.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param game A game.
+ * \param dialog The dialog just started.
+ * \param info_ref Lua ref to the info parameter to pass to the method,
+ * or an empty ref.
+ * \return true if the game:on_dialog_started() method is defined.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='397' u='c' c='_ZN7Solarus10LuaContext21notify_dialog_startedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefE'/>

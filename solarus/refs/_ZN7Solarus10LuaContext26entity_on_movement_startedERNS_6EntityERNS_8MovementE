@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='379' type='void Solarus::LuaContext::entity_on_movement_started(Solarus::Entity &amp; entity, Solarus::Movement &amp; movement)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2182' u='c' c='_ZN7Solarus6Entity23notify_movement_startedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5855' ll='5865' type='void Solarus::LuaContext::entity_on_movement_started(Solarus::Entity &amp; entity, Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5848'>/**
+ * \brief Calls the on_movement_started() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ */</doc>

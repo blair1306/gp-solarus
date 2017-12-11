@@ -1,0 +1,41 @@
+<inh f='codebrowser/include/solarus/hero/HeroState.h' l='27' c='Solarus::HeroState'/>
+<def f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='39' ll='84'/>
+<ovr f='codebrowser/include/solarus/hero/CarryingState.h' l='28' c='Solarus::Hero::CarryingState'/>
+<ovr f='codebrowser/include/solarus/hero/FreeState.h' l='28' c='Solarus::Hero::FreeState'/>
+<ovr f='codebrowser/include/solarus/hero/SwimmingState.h' l='28' c='Solarus::Hero::SwimmingState'/>
+<size>88</size>
+<doc f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='30'>/**
+ * \brief State where the hero is controlled by the player.
+ *
+ * Abstract class for all hero states such that the movement is controlled by the player.
+ * This means that the hero can move in the eight directions and the movement
+ * is an instance of PlayerMovement.
+ * These states include FreeState (the normal walk), SwordLoadingState (the sword is
+ * loading), CarryingState (the hero is carrying something) and SwimmingState.
+ */</doc>
+<fun r='_ZN7Solarus4Hero19PlayerMovementStateD1Ev'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState7set_mapERNS_3MapE'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState21set_animation_stoppedEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState21set_animation_walkingEv'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState20can_control_movementEv'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState30get_wanted_movement_direction8Ev'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState28notify_walking_speed_changedEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState23notify_movement_changedEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState23notify_position_changedEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState20notify_layer_changedEv'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState11can_be_hurtEPNS_6EntityE'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState15can_take_jumperEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState23notify_jumper_activatedERNS_6JumperE'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementStateC1ERS0_RKSs'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState19get_player_movementEv'/>
+<fun r='_ZNK7Solarus4Hero19PlayerMovementState19get_player_movementEv'/>
+<fun r='_ZN7Solarus4Hero19PlayerMovementState13cancel_jumperEv'/>
+<mbr r='Solarus::Hero::PlayerMovementState::player_movement' o='384' t='std::shared_ptr&lt;PlayerMovement&gt;'/>
+<mbr r='Solarus::Hero::PlayerMovementState::current_jumper' o='512' t='std::shared_ptr&lt;Jumper&gt;'/>
+<mbr r='Solarus::Hero::PlayerMovementState::jumper_start_date' o='640' t='uint32_t'/>
+<ovr f='codebrowser/include/solarus/hero/SwordLoadingState.h' l='28' c='Solarus::Hero::SwordLoadingState'/>

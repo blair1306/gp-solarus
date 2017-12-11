@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='71' type='void Solarus::EquipmentItem::set_sound_when_brandished(const std::string &amp; sound_when_brandished)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='261' ll='264' type='void Solarus::EquipmentItem::set_sound_when_brandished(const std::string &amp; sound_when_brandished)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='257'>/**
+ * \brief Sets the sound to play when this item is brandished.
+ * \param sound_when_brandished The sound to play when this item is brandished or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='514' u='c' c='_ZN7Solarus10LuaContext34item_api_set_sound_when_brandishedEP9lua_State'/>

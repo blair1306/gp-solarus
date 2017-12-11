@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='221' type='bool Solarus::Hero::is_invincible() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2052' ll='2054' type='bool Solarus::Hero::is_invincible() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2076' u='c' c='_ZN7Solarus4Hero20update_invincibilityEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2090' u='c' c='_ZNK7Solarus4Hero11can_be_hurtEPNS_6EntityE'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2048'>/**
+ * \brief Returns whether the hero is currently invincible.
+ * \return \c true if the hero is currently invincible.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2163' u='c' c='_ZN7Solarus10LuaContext22hero_api_is_invincibleEP9lua_State'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Color.h' l='55' type='bool Solarus::operator==(const Solarus::Color &amp; lhs, const Solarus::Color &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Color.inl' l='100' ll='106' type='bool Solarus::operator==(const Solarus::Color &amp; lhs, const Solarus::Color &amp; rhs)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Color.inl' l='94'>/**
+ * \brief Equality operator.
+ * \param lhs A color.
+ * \param rhs Another color.
+ * \return \c true if both colors are equal.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='209' u='c' c='_ZN7Solarus11TextSurface14set_text_colorERKNS_5ColorE'/>

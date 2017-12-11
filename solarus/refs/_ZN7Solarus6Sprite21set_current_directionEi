@@ -1,0 +1,46 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='79' type='void Solarus::Sprite::set_current_direction(int current_direction)'/>
+<def f='codebrowser/src/Sprite.cpp' l='344' ll='368' type='void Solarus::Sprite::set_current_direction(int current_direction)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='337'>/**
+ * \brief Sets the current direction of the sprite&apos;s animation and restarts the animation.
+ *
+ * If the specified direction is the current direction, nothing is done.
+ *
+ * \param current_direction the current direction
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='196' u='c' c='_ZNK7Solarus8Treasure13create_spriteEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='50' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='127' u='c' c='_ZN7Solarus12CustomEntity21set_sprites_directionEi'/>
+<use f='codebrowser/src/entities/Door.cpp' l='98' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='211' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='54' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='115' u='c' c='_ZN7Solarus3Npc17initialize_spriteERKSsi'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='271' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='371' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='197' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='142' u='c' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='197' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='273' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='391' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='730' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='733' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='737' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='741' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='745' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1052' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1072' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1074' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1079' u='c' c='_ZN7Solarus11HeroSprites35set_animation_stopped_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1141' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_normalEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1162' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1164' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1169' u='c' c='_ZN7Solarus11HeroSprites35set_animation_walking_sword_loadingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1229' u='c' c='_ZN7Solarus11HeroSprites30set_animation_walking_diagonalEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1243' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1250' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1279' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1286' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1365' u='c' c='_ZN7Solarus11HeroSprites21set_animation_jumpingEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1400' u='c' c='_ZN7Solarus11HeroSprites22set_animation_brandishEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1412' u='c' c='_ZN7Solarus11HeroSprites21set_animation_victoryEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1415' u='c' c='_ZN7Solarus11HeroSprites21set_animation_victoryEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='251' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_directionEP9lua_State'/>

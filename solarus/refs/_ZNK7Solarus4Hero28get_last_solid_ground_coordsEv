@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='153' type='const Solarus::Point &amp; Solarus::Hero::get_last_solid_ground_coords() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1330' ll='1332' type='const Solarus::Point &amp; Solarus::Hero::get_last_solid_ground_coords() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1325'>/**
+ * \brief Returns the last point of solid ground where the hero was.
+ * \return The last solid ground coordinates, or
+ * &lt;tt&gt;-1,-1&lt;/tt&gt; if the hero never was on solid ground on this map yet.
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='61' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='87' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1905' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1917' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1918' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='254' type='Solarus::InputEvent::KeyboardKey Solarus::InputEvent::get_keyboard_key() const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='171' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='174' u='c' c='_ZN7Solarus12GameCommands12notify_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='663' u='c' c='_ZNK7Solarus10InputEvent23is_keyboard_key_pressedENS0_11KeyboardKeyE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='726' u='c' c='_ZNK7Solarus10InputEvent24is_keyboard_key_releasedENS0_11KeyboardKeyE'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='822' ll='835' type='InputEvent::KeyboardKey Solarus::InputEvent::get_keyboard_key() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1358' u='c' c='_ZNK7Solarus10InputEvent13get_directionEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='811'>/**
+ * \brief Returns the key that was pressed or released during
+ * this keyboard event.
+ *
+ * If this is not a keyboard event, KEY_NONE is returned.
+ * The raw key is returned. If you want the corresponding character if any,
+ * see get_character().
+ *
+ * \return The key of this keyboard event, or KEY_NONE if this is not a
+ * keyboard event or if the key is unknown.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1609' u='c' c='_ZN7Solarus10LuaContext14on_key_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1685' u='c' c='_ZN7Solarus10LuaContext15on_key_releasedERKNS_10InputEventE'/>

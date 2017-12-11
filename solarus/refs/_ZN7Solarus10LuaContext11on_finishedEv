@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1207' type='void Solarus::LuaContext::on_finished()'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1585' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='788' u='c' c='_ZN7Solarus10LuaContext16item_on_finishedERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1396' ll='1401' type='void Solarus::LuaContext::on_finished()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1393'>/**
+ * \brief Calls the on_finished() method of the object on top of the stack.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='420' u='c' c='_ZN7Solarus10LuaContext16main_on_finishedEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2208' u='c' c='_ZN7Solarus10LuaContext15map_on_finishedERNS_3MapE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='301' u='c' c='_ZN7Solarus10LuaContext16menu_on_finishedERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='2000' u='c' c='_ZN7Solarus10LuaContext20movement_on_finishedERNS_8MovementE'/>

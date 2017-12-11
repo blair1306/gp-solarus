@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='105' type='uint32_t Solarus::Transition::get_when_suspended() const'/>
+<def f='codebrowser/src/Transition.cpp' l='167' ll='169' type='uint32_t Solarus::Transition::get_when_suspended() const'/>
+<doc f='codebrowser/src/Transition.cpp' l='163'>/**
+ * \brief Returns the date when this transition was suspended if it is.
+ * \return The date when this transition was suspended or 0.
+ */</doc>
+<use f='codebrowser/src/TransitionFade.cpp' l='147' u='c' c='_ZN7Solarus14TransitionFade16notify_suspendedEb'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='186' u='c' c='_ZN7Solarus19TransitionScrolling16notify_suspendedEb'/>

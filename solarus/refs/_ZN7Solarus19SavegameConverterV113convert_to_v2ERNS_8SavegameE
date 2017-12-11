@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SavegameConverterV1.h' l='48' type='void Solarus::SavegameConverterV1::convert_to_v2(Solarus::Savegame &amp; savegame_v2)'/>
+<use f='codebrowser/src/Savegame.cpp' l='235' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<doc f='codebrowser/include/solarus/SavegameConverterV1.h' l='47'>// conversion to a savegame version 2</doc>
+<def f='codebrowser/src/SavegameConverterV1.cpp' l='86' ll='204' type='void Solarus::SavegameConverterV1::convert_to_v2(Solarus::Savegame &amp; savegame_v2)'/>
+<doc f='codebrowser/src/SavegameConverterV1.cpp' l='82'>/**
+ * \brief Converts this savegame v1 into a savegame v2.
+ * \param savegame_v2 The savegame to fill.
+ */</doc>

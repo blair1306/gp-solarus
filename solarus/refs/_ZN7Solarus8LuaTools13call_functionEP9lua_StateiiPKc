@@ -1,0 +1,35 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='50' type='bool Solarus::LuaTools::call_function(lua_State * l, int nb_arguments, int nb_results, const char * function_name)'/>
+<use f='codebrowser/src/Sprite.cpp' l='945' u='c' c='_ZN7Solarus6Sprite15notify_finishedEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='84' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1902' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5195' u='c' c='_ZN7Solarus10LuaContext42do_custom_entity_traversable_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5230' u='c' c='_ZN7Solarus10LuaContext40do_custom_entity_collision_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5261' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5293' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityERNS_6SpriteES9_'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='123' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='654' u='c' c='_ZN7Solarus10LuaContext13call_functionEiiPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='715' u='c' c='_ZN7Solarus10LuaContext7do_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='733' u='c' c='_ZN7Solarus10LuaContext17do_file_if_existsEP9lua_StateRKSs'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='111' ll='126' type='bool Solarus::LuaTools::call_function(lua_State * l, int nb_arguments, int nb_results, const char * function_name)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='150' u='c' c='_ZN7Solarus8LuaTools9do_stringEP9lua_StateRKSsS4_'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='92'>/**
+ * \brief Calls the Lua function with its arguments on top of the stack.
+ *
+ * This function is like lua_pcall, except that it additionally handles the
+ * error message if an error occurs in the Lua code (the error is printed).
+ * This function leaves the results on the stack if there is no error,
+ * and leaves nothing on the stack in case of error.
+ *
+ * \param l A Lua state.
+ * \param nb_arguments Number of arguments placed on the Lua stack above the
+ * function to call.
+ * \param nb_results Number of results expected (you get them on the stack if
+ * there is no error).
+ * \param function_name A name describing the Lua function (only used to print
+ * the error message if any).
+ * This is not a &lt;tt&gt;const std::string&amp;&lt;/tt&gt; but a &lt;tt&gt;const char*&lt;/tt&gt; on
+ * purpose to avoid costly conversions as this function is called very often.
+ * \return \c true in case of success.
+ */</doc>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='181' u='c' c='_ZNK7Solarus12ScopedLuaRef4callERKSs'/>
+<use f='codebrowser/src/lua/ScopedLuaRef.cpp' l='211' u='c' c='_ZN7Solarus12ScopedLuaRef14clear_and_callERKSs'/>

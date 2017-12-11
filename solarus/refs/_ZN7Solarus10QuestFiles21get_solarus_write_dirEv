@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='88' type='const std::string &amp; Solarus::QuestFiles::get_solarus_write_dir()'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='413' ll='415' type='const std::string &amp; Solarus::QuestFiles::get_solarus_write_dir()'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='475' u='c' c='_ZN7Solarus10QuestFiles24get_full_quest_write_dirEv'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='408'>/**
+ * \brief Returns the directory where the engine can write files.
+ * \returns The directory where the engine can write files, relative to the
+ * base write directory.
+ */</doc>

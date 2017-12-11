@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='80' type='void Solarus::Entity::State::notify_position_changed()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='529' ll='530' type='void Solarus::Entity::State::notify_position_changed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='525'>/**
+ * \brief Notifies this state that the entity has just changed its
+ * position.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1067' u='c' c='_ZN7Solarus4Hero23notify_position_changedEv'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='257' c='_ZN7Solarus4Hero19PlayerMovementState23notify_position_changedEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='169' c='_ZN7Solarus4Hero12PullingState23notify_position_changedEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='179' c='_ZN7Solarus4Hero12PushingState23notify_position_changedEv'/>

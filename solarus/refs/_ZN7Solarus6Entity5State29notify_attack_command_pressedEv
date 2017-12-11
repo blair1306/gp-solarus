@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='57' type='void Solarus::Entity::State::notify_attack_command_pressed()'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='288' u='c' c='_ZN7Solarus6Entity5State22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='383' ll='384' type='void Solarus::Entity::State::notify_attack_command_pressed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='380'>/**
+ * \brief Notifies this state that the attack command was just pressed.
+ */</doc>
+<ovr f='codebrowser/src/hero/HeroState.cpp' l='77' c='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>

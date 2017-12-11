@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='50' type='Solarus::Savegame &amp; Solarus::Equipment::get_savegame()'/>
+<def f='codebrowser/src/Equipment.cpp' l='47' ll='49' type='Solarus::Savegame &amp; Solarus::Equipment::get_savegame()'/>
+<doc f='codebrowser/src/Equipment.cpp' l='43'>/**
+ * \brief Returns the savegame represented by this equipment object.
+ * \return The savegame.
+ */</doc>
+<use f='codebrowser/src/EquipmentItem.cpp' l='68' u='c' c='_ZN7Solarus13EquipmentItem12get_savegameEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='76' u='c' c='_ZNK7Solarus13EquipmentItem12get_savegameEv'/>

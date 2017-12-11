@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Stream.h' l='49' type='int Solarus::Stream::get_speed() const'/>
+<def f='codebrowser/src/entities/Stream.cpp' l='68' ll='70' type='int Solarus::Stream::get_speed() const'/>
+<doc f='codebrowser/src/entities/Stream.cpp' l='64'>/**
+ * \brief Returns the speed of this stream.
+ * \return The speed in pixels per second.
+ */</doc>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='88' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='198' u='c' c='_ZN7Solarus12StreamAction6updateEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3509' u='c' c='_ZN7Solarus10LuaContext20stream_api_get_speedEP9lua_State'/>

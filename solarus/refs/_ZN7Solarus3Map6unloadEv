@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Map.h' l='90' type='void Solarus::Map::unload()'/>
+<use f='codebrowser/src/Game.cpp' l='152' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<use f='codebrowser/src/Game.cpp' l='503' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Map.cpp' l='261' ll='271' type='void Solarus::Map::unload()'/>
+<doc f='codebrowser/src/Map.cpp' l='254'>/**
+ * \brief Unloads the map.
+ *
+ * Destroys all entities in the map to free some memory. This function
+ * can be called when the player exists the map. If the player is likely to
+ * come back on the map, you can keep the map loaded.
+ */</doc>

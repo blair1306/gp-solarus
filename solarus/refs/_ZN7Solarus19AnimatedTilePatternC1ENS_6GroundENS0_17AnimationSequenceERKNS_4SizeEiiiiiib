@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/AnimatedTilePattern.h' l='44' type='void Solarus::AnimatedTilePattern::AnimatedTilePattern(Solarus::Ground ground, Solarus::AnimatedTilePattern::AnimationSequence sequence, const Solarus::Size &amp; size, int x1, int y1, int x2, int y2, int x3, int y3, bool parallax)'/>
+<def f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='60' ll='78' type='void Solarus::AnimatedTilePattern::AnimatedTilePattern(Solarus::Ground ground, Solarus::AnimatedTilePattern::AnimationSequence sequence, const Solarus::Size &amp; size, int x1, int y1, int x2, int y2, int x3, int y3, bool parallax)'/>
+<doc f='codebrowser/src/entities/AnimatedTilePattern.cpp' l='47'>/**
+ * \brief Constructor.
+ * \param ground Kind of ground of the tile pattern.
+ * \param sequence animation sequence type
+ * \param size Size of the pattern (the same for each frame of the animation)
+ * \param x1 x position of the first frame in the tileset
+ * \param y1 y position of the first frame in the tileset
+ * \param x2 x position of the second frame in the tileset
+ * \param y2 y position of the second frame in the tileset
+ * \param x3 x position of the third frame in the tileset
+ * \param y3 y position of the third frame in the tileset
+ * \param parallax true to also set parallax scrolling to the tile pattern
+ */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='115' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>

@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_hints.h' l='299'/>
+<doc f='include/SDL2/SDL_hints.h' l='285'>/**
+ *  \brief A variable that controls the timer resolution, in milliseconds.
+ *
+ *  The higher resolution the timer, the more frequently the CPU services
+ *  timer interrupts, and the more precise delays are, but this takes up
+ *  power and CPU time.  This hint is only used on Windows 7 and earlier.
+ *
+ *  See this blog post for more information:
+ *  http://randomascii.wordpress.com/2013/07/08/windows-timer-resolution-megawatts-wasted/
+ *
+ *  If this variable is set to &quot;0&quot;, the system timer resolution is not set.
+ *
+ *  The default value is &quot;1&quot;. This hint may be set at any time.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/PushingState.h' l='48' type='bool Solarus::Hero::PushingState::can_pick_treasure(Solarus::EquipmentItem &amp; item) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='134' c='_ZNK7Solarus6Entity5State17can_pick_treasureERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/hero/PushingState.cpp' l='273' ll='275' type='bool Solarus::Hero::PushingState::can_pick_treasure(Solarus::EquipmentItem &amp; ) const'/>
+<doc f='codebrowser/src/hero/PushingState.cpp' l='268'>/**
+ * \brief Returns whether the hero can pick a treasure in this state.
+ * \param item The equipment item to obtain.
+ * \return true if the hero can pick that treasure in this state.
+ */</doc>
+<doc f='codebrowser/src/hero/PushingState.cpp' l='273'>/* item */</doc>

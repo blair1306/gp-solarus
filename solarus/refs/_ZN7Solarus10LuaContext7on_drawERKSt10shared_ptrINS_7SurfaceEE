@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1209' type='void Solarus::LuaContext::on_draw(const SurfacePtr &amp; dst_surface)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1624' u='c' c='_ZN7Solarus10LuaContext12game_on_drawERNS_4GameERKSt10shared_ptrINS_7SurfaceEE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1417' ll='1423' type='void Solarus::LuaContext::on_draw(const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1413'>/**
+ * \brief Calls the on_draw() method of the object on top of the stack.
+ * \param dst_surface The destination surface.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='446' u='c' c='_ZN7Solarus10LuaContext12main_on_drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2247' u='c' c='_ZN7Solarus10LuaContext11map_on_drawERNS_3MapERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='328' u='c' c='_ZN7Solarus10LuaContext12menu_on_drawERKNS_12ScopedLuaRefERKSt10shared_ptrINS_7SurfaceEE'/>

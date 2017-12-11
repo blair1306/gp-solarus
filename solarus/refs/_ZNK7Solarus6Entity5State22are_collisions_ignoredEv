@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='93' type='bool Solarus::Entity::State::are_collisions_ignored() const'/>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='92'>// obstacles and collisions</doc>
+<def f='codebrowser/src/entities/EntityState.cpp' l='620' ll='622' type='bool Solarus::Entity::State::are_collisions_ignored() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='616'>/**
+ * \brief Returns whether this state ignores the collisions with the detectors and the ground.
+ * \return true if the collisions are ignored
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1087' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='238' c='_ZNK7Solarus4Hero22BackToSolidGroundState22are_collisions_ignoredEv'/>

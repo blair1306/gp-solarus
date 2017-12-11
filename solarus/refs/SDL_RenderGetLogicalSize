@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='500' type='void SDL_RenderGetLogicalSize(SDL_Renderer * renderer, int * w, int * h)'/>
+<doc f='include/SDL2/SDL_render.h' l='491'>/**
+ *  \brief Get device independent resolution for rendering
+ *
+ *  \param renderer The renderer from which resolution should be queried.
+ *  \param w      A pointer filled with the width of the logical resolution
+ *  \param h      A pointer filled with the height of the logical resolution
+ *
+ *  \sa SDL_RenderSetLogicalSize()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='939' u='c' c='_ZN7Solarus5Video29renderer_to_quest_coordinatesERKNS_5PointERS1_'/>

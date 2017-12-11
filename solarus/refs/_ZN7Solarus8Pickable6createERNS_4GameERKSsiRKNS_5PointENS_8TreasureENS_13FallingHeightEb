@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='49' type='static std::shared_ptr&lt;Pickable&gt; Solarus::Pickable::create(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, Solarus::Treasure treasure, Solarus::FallingHeight falling_height, bool force_persistent)'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='294' u='c' c='_ZN7Solarus12Destructible15create_treasureEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='156' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='855' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='100' ll='131' type='static std::shared_ptr&lt;Pickable&gt; Solarus::Pickable::create(Solarus::Game &amp; , const std::string &amp; name, int layer, const Solarus::Point &amp; xy, Solarus::Treasure treasure, Solarus::FallingHeight falling_height, bool force_persistent)'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='77'>/**
+ * \brief Creates a pickable item with the specified subtype.
+ *
+ * This method acts like a constructor, except that it can return nullptr in several cases:
+ * - the treasure is saved and the player already has it,
+ * or:
+ * - the treasure is empty,
+ * or:
+ * - the item cannot be obtained by the hero yet,
+ * or:
+ * - the animation of the item is missing in sprite &apos;entities/items&apos;.
+ *
+ * \param game the current game
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer layer of the pickable treasure to create on the map
+ * \param xy Coordinates of the pickable treasure to create
+ * \param treasure the treasure to give
+ * \param falling_height to make the treasure fall when it appears
+ * \param force_persistent true to make the treasure stay forever
+ * (otherwise, the properties of the treasure
+ * decide if it disappears after some time)
+ * \return the pickable item created, or nullptr
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='538' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>

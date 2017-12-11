@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_render.h' l='584' type='void SDL_RenderGetScale(SDL_Renderer * renderer, float * scaleX, float * scaleY)'/>
+<doc f='include/SDL2/SDL_render.h' l='575'>/**
+ *  \brief Get the drawing scale for the current target.
+ *
+ *  \param renderer The renderer from which drawing scale should be queried.
+ *  \param scaleX A pointer filled in with the horizontal scaling factor
+ *  \param scaleY A pointer filled in with the vertical scaling factor
+ *
+ *  \sa SDL_RenderSetScale()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='909' u='c' c='_ZN7Solarus5Video27window_to_quest_coordinatesERKNS_5PointE'/>

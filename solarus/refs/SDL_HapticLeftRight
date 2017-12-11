@@ -1,0 +1,18 @@
+<def f='include/SDL2/SDL_haptic.h' l='665' ll='676'/>
+<size>12</size>
+<doc f='include/SDL2/SDL_haptic.h' l='653'>/**
+ * \brief A structure containing a template for a Left/Right effect.
+ *
+ * This struct is exclusively for the ::SDL_HAPTIC_LEFTRIGHT effect.
+ *
+ * The Left/Right effect is used to explicitly control the large and small
+ * motors, commonly found in modern game controllers. One motor is high
+ * frequency, the other is low frequency.
+ *
+ * \sa SDL_HAPTIC_LEFTRIGHT
+ * \sa SDL_HapticEffect
+ */</doc>
+<mbr r='SDL_HapticLeftRight::type' o='0' t='Uint16'/>
+<mbr r='SDL_HapticLeftRight::length' o='32' t='Uint32'/>
+<mbr r='SDL_HapticLeftRight::large_magnitude' o='64' t='Uint16'/>
+<mbr r='SDL_HapticLeftRight::small_magnitude' o='80' t='Uint16'/>

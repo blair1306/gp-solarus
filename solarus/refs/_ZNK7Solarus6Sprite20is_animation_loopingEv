@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='98' type='bool Solarus::Sprite::is_animation_looping() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='569' ll='575' type='bool Solarus::Sprite::is_animation_looping() const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='565'>/**
+ * \brief Returns true if the animation is looping.
+ * \return true if the animation is looping
+ */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1500' u='c' c='_ZNK7Solarus5Enemy29is_sprite_finished_or_loopingEv'/>

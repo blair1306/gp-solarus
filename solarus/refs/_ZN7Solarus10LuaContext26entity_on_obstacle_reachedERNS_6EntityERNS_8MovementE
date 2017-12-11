@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='378' type='void Solarus::LuaContext::entity_on_obstacle_reached(Solarus::Entity &amp; entity, Solarus::Movement &amp; movement)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1624' u='c' c='_ZN7Solarus6Entity23notify_obstacle_reachedEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5836' ll='5846' type='void Solarus::LuaContext::entity_on_obstacle_reached(Solarus::Entity &amp; entity, Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5828'>/**
+ * \brief Calls the on_obstacle_reached() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \param movement The movement that reached an obstacle.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/GroundInfo.h' l='37' type='static bool Solarus::GroundInfo::is_ground_diagonal(Solarus::Ground ground)'/>
+<use f='codebrowser/src/Map.cpp' l='1164' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<def f='codebrowser/src/entities/GroundInfo.cpp' l='52' ll='83' type='static bool Solarus::GroundInfo::is_ground_diagonal(Solarus::Ground ground)'/>
+<doc f='codebrowser/src/entities/GroundInfo.cpp' l='47'>/**
+ * \brief Returns whether a ground value represents a diagonal obstacle.
+ * \return ground The ground to test.
+ * \retrun \c true if this is diagonal ground.
+ */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='78' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>

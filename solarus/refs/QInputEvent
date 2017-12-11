@@ -1,0 +1,19 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='53' c='QEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' ll='82'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='106' c='QMouseEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='151' c='QHoverEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='170' c='QWheelEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='224' c='QTabletEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='275' c='QNativeGestureEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='302' c='QKeyEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='460' c='QContextMenuEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='754' c='QTouchEvent'/>
+<size>32</size>
+<fun r='_ZN11QInputEventC1EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE'/>
+<fun r='_ZN11QInputEventD1Ev'/>
+<fun r='_ZNK11QInputEvent9modifiersEv'/>
+<fun r='_ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE'/>
+<fun r='_ZNK11QInputEvent9timestampEv'/>
+<fun r='_ZN11QInputEvent12setTimestampEm'/>
+<mbr r='QInputEvent::modState' o='160' t='Qt::KeyboardModifiers'/>
+<mbr r='QInputEvent::ts' o='192' t='ulong'/>

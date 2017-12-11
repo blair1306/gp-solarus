@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Debug.h' l='38' type='void Solarus::Debug::set_die_on_error(bool die)'/>
+<def f='codebrowser/src/lowlevel/Debug.cpp' l='39' ll='41' type='void Solarus::Debug::set_die_on_error(bool die)'/>
+<doc f='codebrowser/src/lowlevel/Debug.cpp' l='34'>/**
+ * \brief Sets whether errors are fatal.
+ * \param die If \c true, calling Debug::error() will stop Solarus.
+ * The default is \c false.
+ */</doc>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='38' u='c' c='_ZN7Solarus15TestEnvironmentC1EiPPc'/>

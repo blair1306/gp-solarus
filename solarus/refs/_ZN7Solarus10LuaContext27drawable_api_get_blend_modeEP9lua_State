@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='542' type='static int Solarus::LuaContext::drawable_api_get_blend_mode(lua_State * )'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='177' ll='188' type='static int Solarus::LuaContext::drawable_api_get_blend_mode(lua_State * l)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='172'>/**
+ * \brief Implementation of drawable:get_blend_mode().
+ * \param l the Lua context that is calling this function
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='63' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='53' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='87' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>

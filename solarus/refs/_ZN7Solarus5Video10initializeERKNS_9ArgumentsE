@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='47' type='static void Solarus::Video::initialize(const Solarus::Arguments &amp; args)'/>
+<use f='codebrowser/src/lowlevel/System.cpp' l='61' u='c' c='_ZN7Solarus6System10initializeERKNS_9ArgumentsE'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='259' ll='294' type='static void Solarus::Video::initialize(const Solarus::Arguments &amp; args)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='248'>/**
+ * \brief Initializes the video system.
+ *
+ * This method should be called when the program starts.
+ * Options recognized:
+ *   -no-video
+ *   -video-acceleration=yes|no
+ *   -quest-size=WIDTHxHEIGHT
+ *
+ * \param args Command-line arguments.
+ */</doc>

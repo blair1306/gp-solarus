@@ -1,0 +1,33 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='63' type='Solarus::Point Solarus::Movement::get_xy() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='559' u='c' c='_ZN7Solarus10LuaContext19movement_api_get_xyEP9lua_State'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='162' u='c' c='_ZNK7Solarus12JumpMovement16get_displayed_xyEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='147' u='c' c='_ZNK7Solarus8Movement5get_xEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='156' u='c' c='_ZNK7Solarus8Movement5get_yEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='163' ll='177' type='Solarus::Point Solarus::Movement::get_xy() const'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='268' u='c' c='_ZN7Solarus8Movement23notify_position_changedEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='535' u='c' c='_ZNK7Solarus8Movement16get_displayed_xyEv'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='159'>/**
+ * \brief Returns the coordinates of the object controlled by this movement.
+ * \return The coordinates of the object controlled by this movement.
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='179' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='182' u='c' c='_ZN7Solarus13PixelMovement6updateEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='105' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='120' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='128' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='79' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='108' u='c' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='119' u='c' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='57' u='c' c='_ZN7Solarus16StraightMovement24notify_object_controlledEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='116' u='c' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='151' u='c' c='_ZN7Solarus16StraightMovement11set_y_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='364' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='403' u='c' c='_ZN7Solarus16StraightMovement16update_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='595' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='633' u='c' c='_ZN7Solarus16StraightMovement20update_non_smooth_xyEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='668' u='c' c='_ZN7Solarus16StraightMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='141' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='164' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='167' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='169' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='177' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

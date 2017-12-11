@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='79' type='void Solarus::Switch::try_activate(Solarus::Block &amp; block)'/>
+<use f='codebrowser/src/entities/Block.cpp' l='184' u='c' c='_ZN7Solarus5Block28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='315' ll='323' type='void Solarus::Switch::try_activate(Solarus::Block &amp; block)'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='308'>/**
+ * \brief This function is called when a block overlaps this switch.
+ *
+ * The switch is activated if its properties allow it.
+ *
+ * \param block the block overlapping this switch
+ */</doc>

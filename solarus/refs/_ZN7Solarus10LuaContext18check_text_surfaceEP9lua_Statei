@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1141' type='static std::shared_ptr&lt;TextSurface&gt; Solarus::LuaContext::check_text_surface(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='123' ll='127' type='static std::shared_ptr&lt;TextSurface&gt; Solarus::LuaContext::check_text_surface(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='210' u='c' c='_ZN7Solarus10LuaContext41text_surface_api_get_horizontal_alignmentEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='227' u='c' c='_ZN7Solarus10LuaContext41text_surface_api_set_horizontal_alignmentEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='246' u='c' c='_ZN7Solarus10LuaContext39text_surface_api_get_vertical_alignmentEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='263' u='c' c='_ZN7Solarus10LuaContext39text_surface_api_set_vertical_alignmentEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='282' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_get_fontEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='299' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_set_fontEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='319' u='c' c='_ZN7Solarus10LuaContext35text_surface_api_get_rendering_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='336' u='c' c='_ZN7Solarus10LuaContext35text_surface_api_set_rendering_modeEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='354' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_get_colorEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='371' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_set_colorEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='388' u='c' c='_ZN7Solarus10LuaContext30text_surface_api_get_font_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='403' u='c' c='_ZN7Solarus10LuaContext30text_surface_api_set_font_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='420' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_get_textEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='437' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_set_textEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='456' u='c' c='_ZN7Solarus10LuaContext29text_surface_api_set_text_keyEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='480' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_get_sizeEP9lua_State'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='116'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * text surface and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the text surface
+ */</doc>

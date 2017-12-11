@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='398' type='void Solarus::LuaContext::sensor_on_collision_explosion(Solarus::Sensor &amp; sensor)'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='92' u='c' c='_ZN7Solarus6Sensor31notify_collision_with_explosionERNS_9ExplosionENS_13CollisionModeE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6212' ll='6221' type='void Solarus::LuaContext::sensor_on_collision_explosion(Solarus::Sensor &amp; sensor)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6205'>/**
+ * \brief Calls the on_collision_explosion() method of a Lua sensor.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sensor A sensor.
+ */</doc>

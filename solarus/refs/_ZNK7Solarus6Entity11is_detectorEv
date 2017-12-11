@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='270' type='bool Solarus::Entity::is_detector() const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='269'>// Collisions.</doc>
+<use f='codebrowser/src/Map.cpp' l='1294' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1429' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='600' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1642' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1670' ll='1672' type='bool Solarus::Entity::is_detector() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1752' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3403' u='c' c='_ZN7Solarus6Entity6updateEv'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1663'>/**
+ * \brief Returns whether this entity is able to detect other entities.
+ *
+ * This is \c true if this entity has at least one collision mode.
+ *
+ * \return \c true if this entity can detect other entities.
+ */</doc>

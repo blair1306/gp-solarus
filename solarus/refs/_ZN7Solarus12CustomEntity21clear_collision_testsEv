@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='131' type='void Solarus::CustomEntity::clear_collision_tests()'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='813' ll='818' type='void Solarus::CustomEntity::clear_collision_tests()'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='810'>/**
+ * \brief Unregisters all collision test functions.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5609' u='c' c='_ZN7Solarus10LuaContext39custom_entity_api_clear_collision_testsEP9lua_State'/>

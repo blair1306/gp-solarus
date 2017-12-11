@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='103' type='std::vector&lt;Rectangle&gt;'/>
+<offset>128</offset>
+<doc f='codebrowser/include/solarus/entities/TilesetData.h' l='103'>/**&lt; Coordinates of the pattern&apos;s frame(s).
+                                        * - 1 element: one frame (no animation).
+                                        * - 3 elements: three frames, animated with 0-1-2-0.
+                                        * - 4 elements: three frames, animated with 0-1-2-1-0. */</doc>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='59' u='w' c='_ZN7Solarus15TilePatternDataC1ERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='139' u='m' c='_ZNK7Solarus15TilePatternData14get_num_framesEv'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='152' u='m' c='_ZNK7Solarus15TilePatternData9get_frameEv'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='163' u='m' c='_ZN7Solarus15TilePatternData9set_frameERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='164' u='m' c='_ZN7Solarus15TilePatternData9set_frameERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='173' u='a' c='_ZNK7Solarus15TilePatternData10get_framesEv'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='185' u='w' c='_ZN7Solarus15TilePatternData10set_framesERKSt6vectorINS_9RectangleESaIS2_EE'/>

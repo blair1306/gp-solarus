@@ -1,0 +1,17 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='53' c='QEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='884' ll='906'/>
+<size>112</size>
+<fun r='_ZN19QScrollPrepareEventC1ERK7QPointF'/>
+<fun r='_ZN19QScrollPrepareEventD1Ev'/>
+<fun r='_ZNK19QScrollPrepareEvent8startPosEv'/>
+<fun r='_ZNK19QScrollPrepareEvent12viewportSizeEv'/>
+<fun r='_ZNK19QScrollPrepareEvent15contentPosRangeEv'/>
+<fun r='_ZNK19QScrollPrepareEvent10contentPosEv'/>
+<fun r='_ZN19QScrollPrepareEvent15setViewportSizeERK6QSizeF'/>
+<fun r='_ZN19QScrollPrepareEvent18setContentPosRangeERK6QRectF'/>
+<fun r='_ZN19QScrollPrepareEvent13setContentPosERK7QPointF'/>
+<mbr r='QScrollPrepareEvent::m_target' o='192' t='QObject *'/>
+<mbr r='QScrollPrepareEvent::m_startPos' o='256' t='QPointF'/>
+<mbr r='QScrollPrepareEvent::m_viewportSize' o='384' t='QSizeF'/>
+<mbr r='QScrollPrepareEvent::m_contentPosRange' o='512' t='QRectF'/>
+<mbr r='QScrollPrepareEvent::m_contentPos' o='768' t='QPointF'/>

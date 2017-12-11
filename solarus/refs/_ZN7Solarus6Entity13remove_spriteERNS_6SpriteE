@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='205' type='bool Solarus::Entity::remove_sprite(Solarus::Sprite &amp; sprite)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1333' ll='1346' type='bool Solarus::Entity::remove_sprite(Solarus::Sprite &amp; sprite)'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1328'>/**
+ * \brief Marks a sprite of this entity to be removed as soon as possible.
+ * \return \c true in case of success, \c false if this entity has no such
+ * sprite.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='189' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='259' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='378' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1593' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1450' u='c' c='_ZN7Solarus10LuaContext24entity_api_remove_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1460' u='c' c='_ZN7Solarus10LuaContext24entity_api_remove_spriteEP9lua_State'/>

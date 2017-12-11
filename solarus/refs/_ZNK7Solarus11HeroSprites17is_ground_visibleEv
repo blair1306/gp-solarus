@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='142' type='bool Solarus::HeroSprites::is_ground_visible() const'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='536' ll='539' type='bool Solarus::HeroSprites::is_ground_visible() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='841' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='883' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='926' u='c' c='_ZN7Solarus11HeroSprites13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='959' u='c' c='_ZN7Solarus11HeroSprites22notify_tileset_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='990' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1021' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1034' u='c' c='_ZN7Solarus11HeroSprites28set_animation_stopped_commonEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1122' u='c' c='_ZN7Solarus11HeroSprites28set_animation_walking_commonEv'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='532'>/**
+ * \brief Returns whether a special ground is displayed under the hero.
+ * \return true if a ground is currently visible under the hero
+ */</doc>

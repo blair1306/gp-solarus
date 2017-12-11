@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/BorderSet.h' l='42' type='void Solarus::BorderSet::set_pattern(Solarus::BorderKind border_kind, const std::string &amp; pattern_id)'/>
+<def f='codebrowser/src/entities/BorderSet.cpp' l='89' ll='97' type='void Solarus::BorderSet::set_pattern(Solarus::BorderKind border_kind, const std::string &amp; pattern_id)'/>
+<doc f='codebrowser/src/entities/BorderSet.cpp' l='83'>/**
+ * \brief Sets the pattern id of the given border.
+ * \param border_kind Which border to set.
+ * \param pattern_id The corresponding pattern id,
+ * or an empty string to mean no pattern.
+ */</doc>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='594' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_border_setEP9lua_State'/>

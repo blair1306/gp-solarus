@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/SpcDecoder.h' l='46' type='void Solarus::SpcDecoder::decode(int16_t * decoded_data, int nb_samples)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='446' u='c' c='_ZN7Solarus5Music10decode_spcEji'/>
+<def f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='50' ll='59' type='void Solarus::SpcDecoder::decode(int16_t * decoded_data, int nb_samples)'/>
+<doc f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='45'>/**
+ * \brief Decodes a chunk of the previously loaded SPC data into PCM data.
+ * \param decoded_data pointer to where you want the decoded data to be written.
+ * \param nb_samples Number of samples to write.
+ */</doc>

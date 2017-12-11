@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='416' type='void Solarus::LuaContext::enemy_on_hurt(Solarus::Enemy &amp; enemy, Solarus::EnemyAttack attack)'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1315' u='c' c='_ZN7Solarus5Enemy11notify_hurtERNS_6EntityENS_11EnemyAttackE'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6513' ll='6521' type='void Solarus::LuaContext::enemy_on_hurt(Solarus::Enemy &amp; enemy, Solarus::EnemyAttack attack)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6505'>/**
+ * \brief Calls the on_hurt() method of a Lua enemy if it is defined.
+ *
+ * Also stops timers associated to the enemy.
+ *
+ * \param enemy An enemy.
+ * \param attack The attack received.
+ */</doc>

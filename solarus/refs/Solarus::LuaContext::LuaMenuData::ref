@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1026' type='Solarus::ScopedLuaRef'/>
+<use f='codebrowser/include/solarus/lua/LuaContext.h' l='1032' u='w' c='_ZN7Solarus10LuaContext11LuaMenuDataC1ERKNS_12ScopedLuaRefEPKv'/>
+<offset>0</offset>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1026'>/**&lt; Lua ref of the table of the menu.
+                              * LUA_REFNIL means that the menu will be removed. */</doc>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='109' u='r' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='111' u='m' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='134' u='r' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='136' u='m' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='166' u='m' c='_ZN7Solarus10LuaContext12update_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='217' u='r' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='219' u='r' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='220' u='m' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='267' u='r' c='_ZN7Solarus10LuaContext19menu_api_is_startedEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='428' u='r' c='_ZN7Solarus10LuaContext15menus_on_updateEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='452' u='r' c='_ZN7Solarus10LuaContext13menus_on_drawEiRKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='478' u='r' c='_ZN7Solarus10LuaContext14menus_on_inputEiRKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='509' u='r' c='_ZN7Solarus10LuaContext24menus_on_command_pressedEiNS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='540' u='r' c='_ZN7Solarus10LuaContext25menus_on_command_releasedEiNS_11GameCommandE'/>

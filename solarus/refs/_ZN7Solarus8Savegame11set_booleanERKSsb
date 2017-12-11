@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='103' type='void Solarus::Savegame::set_boolean(const std::string &amp; key, bool value)'/>
+<use f='codebrowser/src/Savegame.cpp' l='262' u='c' c='_ZN7Solarus8Savegame10l_newindexEP9lua_State'/>
+<def f='codebrowser/src/Savegame.cpp' l='540' ll='547' type='void Solarus::Savegame::set_boolean(const std::string &amp; key, bool value)'/>
+<doc f='codebrowser/src/Savegame.cpp' l='535'>/**
+ * \brief Sets a boolean value saved.
+ * \param key Name of the value to set.
+ * \param value The boolean value to associate with this key.
+ */</doc>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='141' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='147' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='153' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='159' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='165' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='201' u='c' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/Treasure.cpp' l='174' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='390' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='190' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='568' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='605' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='666' u='c' c='_ZN7Solarus4Door4openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='700' u='c' c='_ZN7Solarus4Door5closeEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1407' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3860' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='670' u='c' c='_ZN7Solarus10LuaContext18game_api_set_valueEP9lua_State'/>

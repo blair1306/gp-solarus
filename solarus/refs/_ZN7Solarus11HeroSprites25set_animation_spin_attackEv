@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='109' type='void Solarus::HeroSprites::set_animation_spin_attack()'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1295' ll='1302' type='void Solarus::HeroSprites::set_animation_spin_attack()'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1292'>/**
+ * \brief Starts (or restarts) the &quot;spin_attck&quot; animation of the hero&apos;s sprites.
+ */</doc>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='70' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='238' u='c' c='_ZN7Solarus4Hero15SpinAttackState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='260' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

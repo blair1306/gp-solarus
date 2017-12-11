@@ -1,0 +1,17 @@
+<def f='codebrowser/include/solarus/lowlevel/System.h' l='33' ll='54'/>
+<size>1</size>
+<doc f='codebrowser/include/solarus/lowlevel/System.h' l='28'>/**
+ * \brief Provides low-level functions and initialization.
+ *
+ * This class initializes all low-level features.
+ */</doc>
+<fun r='_ZN7Solarus6System10initializeERKNS_9ArgumentsE'/>
+<fun r='_ZN7Solarus6System4quitEv'/>
+<fun r='_ZN7Solarus6System6updateEv'/>
+<fun r='_ZN7Solarus6System6get_osEv'/>
+<fun r='_ZN7Solarus6System3nowEv'/>
+<fun r='_ZN7Solarus6System13get_real_timeEv'/>
+<fun r='_ZN7Solarus6System5sleepEj'/>
+<smbr r='Solarus::System::timestep' t='const uint32_t'/>
+<smbr r='Solarus::System::initial_time' t='uint32_t'/>
+<smbr r='Solarus::System::ticks' t='uint32_t'/>

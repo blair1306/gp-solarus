@@ -1,0 +1,56 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='117' type='void Solarus::Entities::add_entity(const EntityPtr &amp; entity)'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='261' u='c' c='_ZN7Solarus4Bomb7explodeEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='251' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='294' u='c' c='_ZN7Solarus12Destructible15create_treasureEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='474' u='c' c='_ZN7Solarus12Destructible7explodeEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='838' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='855' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='181' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='703' u='c' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='954' ll='1054' type='void Solarus::Entities::add_entity(const EntityPtr &amp; entity)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='943'>/**
+ * \brief Adds an entity to the map.
+ *
+ * This function can be called when loading the map or,
+ * except for tiles, when the map is already loaded.
+ * If the entity specified is nullptr
+ * (because some entity creation functions may return nullptr),
+ * nothing is done.
+ *
+ * \param entity The entity to add or nullptr.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='553' u='c' c='_ZN7Solarus4Hero12place_on_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='96' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/BowState.cpp' l='56' u='c' c='_ZN7Solarus4Hero8BowState6updateEv'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='184' u='c' c='_ZN7Solarus4Hero13CarryingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='48' u='c' c='_ZN7Solarus4Hero13HookshotState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='104' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='144' u='c' c='_ZN7Solarus4Hero12LiftingState10throw_itemEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='137' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5132' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='476' u='c' c='_ZN7Solarus10LuaContext20l_create_destinationEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='508' u='c' c='_ZN7Solarus10LuaContext24l_create_teletransporterEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='558' u='c' c='_ZN7Solarus10LuaContext17l_create_pickableEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='598' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='662' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='690' u='c' c='_ZN7Solarus10LuaContext15l_create_jumperEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='729' u='c' c='_ZN7Solarus10LuaContext14l_create_enemyEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='760' u='c' c='_ZN7Solarus10LuaContext12l_create_npcEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='796' u='c' c='_ZN7Solarus10LuaContext14l_create_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='825' u='c' c='_ZN7Solarus10LuaContext21l_create_dynamic_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='855' u='c' c='_ZN7Solarus10LuaContext15l_create_switchEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='886' u='c' c='_ZN7Solarus10LuaContext13l_create_wallEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='912' u='c' c='_ZN7Solarus10LuaContext15l_create_sensorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='937' u='c' c='_ZN7Solarus10LuaContext16l_create_crystalEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='966' u='c' c='_ZN7Solarus10LuaContext22l_create_crystal_blockEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1007' u='c' c='_ZN7Solarus10LuaContext22l_create_shop_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1039' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1099' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1126' u='c' c='_ZN7Solarus10LuaContext15l_create_stairsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1152' u='c' c='_ZN7Solarus10LuaContext18l_create_separatorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1183' u='c' c='_ZN7Solarus10LuaContext22l_create_custom_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1208' u='c' c='_ZN7Solarus10LuaContext13l_create_bombEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1235' u='c' c='_ZN7Solarus10LuaContext18l_create_explosionEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1260' u='c' c='_ZN7Solarus10LuaContext13l_create_fireEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='139' u='c' c='_ZN7Solarus15TestEnvironment11make_entityERKNS_5PointEi'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='165' u='c' c='_ZN7Solarus15TestEnvironment11make_entityERKNS_5PointEi'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='350' type='bool Solarus::Entity::is_separator_obstacle(Solarus::Separator &amp; separator)'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='597' c='_ZN7Solarus12CustomEntity21is_separator_obstacleERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='603' u='c' c='_ZN7Solarus12CustomEntity21is_separator_obstacleERNS_9SeparatorE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2739' ll='2742' type='bool Solarus::Entity::is_separator_obstacle(Solarus::Separator &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2730'>/**
+ * \brief Returns whether a separator is currently considered as an obstacle
+ * by this entity.
+ *
+ * By default, this function returns \c true.
+ *
+ * \param separator A separator.
+ * \return \c true if the separator is currently an obstacle for this entity.
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2739'>/* separator */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1528' c='_ZN7Solarus4Hero21is_separator_obstacleERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='74' u='c' c='_ZN7Solarus9Separator15is_obstacle_forERNS_6EntityE'/>

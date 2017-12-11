@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='85' type='bool Solarus::Entity::State::can_avoid_ice() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='561' ll='563' type='bool Solarus::Entity::State::can_avoid_ice() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='554'>/**
+ * \brief Returns whether the entity ignores the effect of ice in this state.
+ *
+ * Returns false by default.
+ *
+ * \return \c true if the entity ignores the effect of ice in the current state.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='269' u='c' c='_ZN7Solarus4Hero21update_ground_effectsEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1249' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='206' c='_ZNK7Solarus4Hero22BackToSolidGroundState13can_avoid_iceEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='123' c='_ZNK7Solarus4Hero18ForcedWalkingState13can_avoid_iceEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='94' c='_ZNK7Solarus4Hero13HookshotState13can_avoid_iceEv'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='212' c='_ZNK7Solarus4Hero9HurtState13can_avoid_iceEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='227' c='_ZNK7Solarus4Hero12JumpingState13can_avoid_iceEv'/>

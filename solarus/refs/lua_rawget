@@ -1,0 +1,5 @@
+<dec f='include/luajit-2.0/lua.h' l='179' type='void lua_rawget(lua_State * L, int idx)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='577' u='c' c='_ZN7Solarus10LuaContext9is_entityEP9lua_Statei'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='572' u='c' c='_ZNK7Solarus10LuaContext22userdata_has_metafieldERKNS_15ExportableToLuaEPKc'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1146' u='c' c='_ZN7Solarus10LuaContext19is_solarus_userdataEP9lua_StateiRSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1354' u='c' c='_ZN7Solarus10LuaContext28userdata_meta_index_as_tableEP9lua_State'/>

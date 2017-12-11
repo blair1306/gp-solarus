@@ -1,0 +1,15 @@
+<dec f='include/physfs.h' l='1623' type='int PHYSFS_readULE32(PHYSFS_File * file, PHYSFS_uint32 * val)'/>
+<doc f='include/physfs.h' l='1609'>/**
+ * \fn int PHYSFS_readULE32(PHYSFS_File *file, PHYSFS_uint32 *val)
+ * \brief Read and convert an unsigned 32-bit littleendian value.
+ *
+ * Convenience function. Read an unsigned 32-bit littleendian value from a
+ *  file and convert it to the platform&apos;s native byte order.
+ *
+ *    \param file PhysicsFS file handle from which to read.
+ *    \param val pointer to where value should be stored.
+ *   \return zero on failure, non-zero on success. If successful, (*val) will
+ *           store the result. On failure, you can find out what went wrong
+ *           from PHYSFS_getLastError().
+ *
+ */</doc>

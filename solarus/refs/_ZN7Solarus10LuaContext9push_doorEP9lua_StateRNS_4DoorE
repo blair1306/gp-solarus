@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1113' type='static void Solarus::LuaContext::push_door(lua_State * l, Solarus::Door &amp; door)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3655' ll='3657' type='static void Solarus::LuaContext::push_door(lua_State * l, Solarus::Door &amp; door)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6274' u='c' c='_ZN7Solarus10LuaContext14door_on_openedERNS_4DoorE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6292' u='c' c='_ZN7Solarus10LuaContext14door_on_closedERNS_4DoorE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3650'>/**
+ * \brief Pushes a door userdata onto the stack.
+ * \param l A Lua context.
+ * \param door A door.
+ */</doc>

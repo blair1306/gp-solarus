@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='332' type='void Solarus::LuaContext::item_on_npc_collision_fire(Solarus::EquipmentItem &amp; item, Solarus::Npc &amp; npc)'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='244' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='1055' ll='1064' type='void Solarus::LuaContext::item_on_npc_collision_fire(Solarus::EquipmentItem &amp; item, Solarus::Npc &amp; npc)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='1047'>/**
+ * \brief Calls the on_npc_collision_fire() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ * \param npc An NPC.
+ */</doc>

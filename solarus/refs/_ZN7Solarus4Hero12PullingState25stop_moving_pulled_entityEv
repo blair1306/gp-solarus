@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/hero/PullingState.h' l='58' type='void Solarus::Hero::PullingState::stop_moving_pulled_entity()'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='61' u='c' c='_ZN7Solarus4Hero12PullingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='137' u='c' c='_ZN7Solarus4Hero12PullingState31notify_grabbed_entity_collisionEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='148' u='c' c='_ZN7Solarus4Hero12PullingState24notify_movement_finishedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='161' u='c' c='_ZN7Solarus4Hero12PullingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='181' u='c' c='_ZN7Solarus4Hero12PullingState23notify_position_changedEv'/>
+<def f='codebrowser/src/hero/PullingState.cpp' l='193' ll='234' type='void Solarus::Hero::PullingState::stop_moving_pulled_entity()'/>
+<doc f='codebrowser/src/hero/PullingState.cpp' l='186'>/**
+ * \brief Makes the hero stop pulling the entity he is facing.
+ *
+ * This function is called while moving the entity, when the
+ * hero or the entity collides with an obstacle or when
+ * the hero&apos;s movement is finished.
+ */</doc>

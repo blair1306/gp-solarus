@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/CrystalBlock.h' l='46' type='void Solarus::CrystalBlock::CrystalBlock(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, Solarus::CrystalBlock::Subtype subtype)'/>
+<def f='codebrowser/src/entities/CrystalBlock.cpp' l='38' ll='60' type='void Solarus::CrystalBlock::CrystalBlock(Solarus::Game &amp; game, const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size, Solarus::CrystalBlock::Subtype subtype)'/>
+<doc f='codebrowser/src/entities/CrystalBlock.cpp' l='29'>/**
+ * \brief Creates a new crystal block.
+ * \param game The current game.
+ * \param name Name identifying the entity on the map or an empty string.
+ * \param layer Layer of the entity to create on the map.
+ * \param xy Coordinates of the entity to create.
+ * \param size Size of the block (the pattern can be repeated).
+ * \param subtype subtype of raised block
+ */</doc>

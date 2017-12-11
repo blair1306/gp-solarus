@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='71' type='static int Solarus::Music::get_volume()'/>
+<use f='codebrowser/src/Settings.cpp' l='296' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='145' ll='148' type='static int Solarus::Music::get_volume()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='163' u='c' c='_ZN7Solarus5Music10set_volumeEi'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='141'>/**
+ * \brief Returns the current volume of music.
+ * \return the volume (0 to 100)
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='125' u='c' c='_ZN7Solarus10LuaContext26audio_api_get_music_volumeEP9lua_State'/>

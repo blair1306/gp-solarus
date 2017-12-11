@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='57' type='const Solarus::Treasure &amp; Solarus::Chest::get_treasure() const'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='110' ll='112' type='const Solarus::Treasure &amp; Solarus::Chest::get_treasure() const'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='103'>/**
+ * \brief Returns the treasure of this chest.
+ *
+ * The treasure is returned even if the chest is open.
+ *
+ * \return The treasure. It may be empty or non obtainable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3098' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>

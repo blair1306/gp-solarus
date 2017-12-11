@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='70' type='const std::string &amp; Solarus::Chest::get_cannot_open_dialog_id() const'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='336' ll='338' type='const std::string &amp; Solarus::Chest::get_cannot_open_dialog_id() const'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='432' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='434' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='329'>/**
+ * \brief Returns the id of the dialog to show when the player presses the action
+ * command on the chest but cannot open it (i.e. if can_open() is false).
+ *
+ * \return The id of the &quot;cannot open&quot; dialog for this chest
+ * (an empty string means no dialog).
+ */</doc>

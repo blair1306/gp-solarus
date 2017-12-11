@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='104' type='void Solarus::Music::stop()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='334' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='377' u='c' c='_ZN7Solarus5Music6updateEv'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='603' ll='646' type='void Solarus::Music::stop()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='598'>/**
+ * \brief Stops playing the music.
+ *
+ * The callback if any is not called.
+ */</doc>

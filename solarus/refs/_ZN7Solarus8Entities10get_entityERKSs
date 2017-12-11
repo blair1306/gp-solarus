@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='79' type='EntityPtr Solarus::Entities::get_entity(const std::string &amp; name)'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='78'>// By name.</doc>
+<def f='codebrowser/src/entities/Entities.cpp' l='271' ll='281' type='EntityPtr Solarus::Entities::get_entity(const std::string &amp; name)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='263'>/**
+ * \brief Returns the entity with the specified name.
+ *
+ * The program stops if there is no such entity.
+ *
+ * \param name Name of the entity to get.
+ * \return The entity requested.
+ */</doc>

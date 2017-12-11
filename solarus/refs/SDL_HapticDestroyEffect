@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1077' type='void SDL_HapticDestroyEffect(SDL_Haptic * haptic, int effect)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1066'>/**
+ *  \brief Destroys a haptic effect on the device.
+ *
+ *  This will stop the effect if it&apos;s running.  Effects are automatically
+ *  destroyed when the device is closed.
+ *
+ *  \param haptic Device to destroy the effect on.
+ *  \param effect Identifier of the effect to destroy.
+ *
+ *  \sa SDL_HapticNewEffect
+ */</doc>

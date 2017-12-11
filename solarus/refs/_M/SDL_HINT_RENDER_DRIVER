@@ -1,0 +1,18 @@
+<dec f='include/SDL2/SDL_hints.h' l='84'/>
+<doc f='include/SDL2/SDL_hints.h' l='67'>/**
+ *  \brief  A variable specifying which render driver to use.
+ *
+ *  If the application doesn&apos;t pick a specific renderer to use, this variable
+ *  specifies the name of the preferred renderer.  If the preferred renderer
+ *  can&apos;t be initialized, the normal default renderer is used.
+ *
+ *  This variable is case insensitive and can be set to the following values:
+ *    &quot;direct3d&quot;
+ *    &quot;opengl&quot;
+ *    &quot;opengles2&quot;
+ *    &quot;opengles&quot;
+ *    &quot;software&quot;
+ *
+ *  The default varies by platform, but it&apos;s the first one in the list that
+ *  is available on the current platform.
+ */</doc>

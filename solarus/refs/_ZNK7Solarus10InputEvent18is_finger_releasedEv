@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='290' type='bool Solarus::InputEvent::is_finger_released() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1243' ll='1246' type='bool Solarus::InputEvent::is_finger_released() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1256' u='c' c='_ZNK7Solarus10InputEvent18is_finger_releasedEi'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1238'>/**
+ * \brief Returns whether this event is a finger event.
+ * corresponding to releasing a finger.
+ * \return true if this event corresponds to releasing a finger.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1586' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>

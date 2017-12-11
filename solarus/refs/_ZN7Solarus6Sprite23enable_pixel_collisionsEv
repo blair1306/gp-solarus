@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='64' type='void Solarus::Sprite::enable_pixel_collisions()'/>
+<def f='codebrowser/src/Sprite.cpp' l='148' ll='150' type='void Solarus::Sprite::enable_pixel_collisions()'/>
+<doc f='codebrowser/src/Sprite.cpp' l='143'>/**
+ * \brief Enables the pixel-perfect collision detection for the animation set of this sprite.
+ *
+ * All sprites that use the same animation set as this one will be affected.
+ */</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='49' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='48' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='104' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='51' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='53' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='88' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1712' u='c' c='_ZN7Solarus6Entity23enable_pixel_collisionsEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2060' u='c' c='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2067' u='c' c='_ZN7Solarus6Entity22test_collision_spritesERS0_'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='44' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='37' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='53' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='194' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='266' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1428' u='c' c='_ZN7Solarus10LuaContext24entity_api_create_spriteEP9lua_State'/>

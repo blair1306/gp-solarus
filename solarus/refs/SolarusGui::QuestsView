@@ -1,0 +1,24 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h' l='54' c='QListView'/>
+<def f='codebrowser/gui/include/solarus/gui/quests_view.h' l='32' ll='62'/>
+<size>64</size>
+<doc f='codebrowser/gui/include/solarus/gui/quests_view.h' l='29'>/**
+ * @brief A widget where the user can select a quest.
+ */</doc>
+<fun r='_ZN10SolarusGui10QuestsViewC1EP7QWidget'/>
+<fun r='_ZNK10SolarusGui10QuestsView13path_to_indexERK7QString'/>
+<fun r='_ZNK10SolarusGui10QuestsView13index_to_pathEi'/>
+<fun r='_ZNK10SolarusGui10QuestsView14get_num_questsEv'/>
+<fun r='_ZNK10SolarusGui10QuestsView9get_pathsEv'/>
+<fun r='_ZN10SolarusGui10QuestsView9has_questERK7QString'/>
+<fun r='_ZN10SolarusGui10QuestsView9add_questERK7QString'/>
+<fun r='_ZN10SolarusGui10QuestsView12remove_questEi'/>
+<fun r='_ZNK10SolarusGui10QuestsView29get_selected_quest_propertiesEv'/>
+<fun r='_ZNK10SolarusGui10QuestsView20get_quest_propertiesEi'/>
+<fun r='_ZNK10SolarusGui10QuestsView17get_selected_logoEv'/>
+<fun r='_ZNK10SolarusGui10QuestsView14get_quest_logoEi'/>
+<fun r='_ZNK10SolarusGui10QuestsView18get_selected_indexEv'/>
+<fun r='_ZNK10SolarusGui10QuestsView17get_selected_pathEv'/>
+<fun r='_ZN10SolarusGui10QuestsView12select_questEi'/>
+<fun r='_ZN10SolarusGui10QuestsView12select_questERK7QString'/>
+<mbr r='SolarusGui::QuestsView::model' o='384' t='SolarusGui::QuestsModel *'/>
+<mbr r='SolarusGui::QuestsView::itemDelegate' o='448' t='SolarusGui::QuestsItemDelegate *'/>

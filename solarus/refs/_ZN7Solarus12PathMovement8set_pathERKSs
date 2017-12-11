@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='57' type='void Solarus::PathMovement::set_path(const std::string &amp; path)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1157' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_pathEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='71' u='c' c='_ZN7Solarus19PathFindingMovement6updateEv'/>
+<use f='codebrowser/src/movements/PathFindingMovement.cpp' l='103' u='c' c='_ZN7Solarus19PathFindingMovement18recompute_movementEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='68' u='c' c='_ZN7Solarus12PathMovementC1ERKSsibbb'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='86' ll='90' type='void Solarus::PathMovement::set_path(const std::string &amp; path)'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='80'>/**
+ * \brief Sets the path of this movement.
+ * \param path the succession of basic moves
+ * composing this movement (each character represents
+ * a direction between &apos;0&apos; and &apos;7&apos;)
+ */</doc>
+<use f='codebrowser/src/movements/RandomPathMovement.cpp' l='43' u='c' c='_ZN7Solarus18RandomPathMovement6updateEv'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='47' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='56' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='65' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='120' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

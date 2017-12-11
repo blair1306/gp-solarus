@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='174' type='bool Solarus::Hero::is_teletransporter_obstacle(Solarus::Teletransporter &amp; teletransporter)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='338' c='_ZN7Solarus6Entity27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1480' ll='1482' type='bool Solarus::Hero::is_teletransporter_obstacle(Solarus::Teletransporter &amp; teletransporter)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1472'>/**
+ * \brief Returns whether a teletransporter is currently considered as an obstacle.
+ *
+ * This depends on the hero&apos;s state.
+ *
+ * \param teletransporter a teletransporter
+ * \return true if the teletransporter is currently an obstacle for the hero
+ */</doc>

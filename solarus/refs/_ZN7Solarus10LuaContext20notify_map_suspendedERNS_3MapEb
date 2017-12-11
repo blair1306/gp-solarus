@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='151' type='void Solarus::LuaContext::notify_map_suspended(Solarus::Map &amp; map, bool suspended)'/>
+<use f='codebrowser/src/Map.cpp' l='460' u='c' c='_ZN7Solarus3Map13set_suspendedEb'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='300' ll='304' type='void Solarus::LuaContext::notify_map_suspended(Solarus::Map &amp; map, bool suspended)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='295'>/**
+ * \brief Notifies Lua that a map has just been suspended or resumed.
+ * \param map A map.
+ * \param suspended \c true if it is suspended, false if it is resumed.
+ */</doc>

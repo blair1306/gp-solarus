@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='69' type='static void Solarus::Sound::initialize(const Solarus::Arguments &amp; args)'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='181' ll='218' type='static void Solarus::Sound::initialize(const Solarus::Arguments &amp; args)'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='172'>/**
+ * \brief Initializes the audio (music and sound) system.
+ *
+ * This method should be called when the application starts.
+ * If the argument -no-audio is provided, this function has no effect and
+ * there will be no sound.
+ *
+ * \param args Command-line arguments.
+ */</doc>
+<use f='codebrowser/src/lowlevel/System.cpp' l='52' u='c' c='_ZN7Solarus6System10initializeERKNS_9ArgumentsE'/>

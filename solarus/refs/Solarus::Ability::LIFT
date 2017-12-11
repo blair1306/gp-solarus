@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Ability.h' l='32' type='4'/>
+<use f='codebrowser/src/AbilityInfo.cpp' l='28' u='r'/>
+<doc f='codebrowser/include/solarus/Ability.h' l='32'>/**&lt; Lifting destructible objects. */</doc>
+<use f='codebrowser/src/Equipment.cpp' l='562' c='_ZNK7Solarus9Equipment29get_ability_savegame_variableENS_7AbilityE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='333' u='r' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='398' u='r' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='235' u='r' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='287' u='r' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='61' u='r' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>

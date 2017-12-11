@@ -1,0 +1,14 @@
+<inh f='codebrowser/include/solarus/movements/PathMovement.h' l='45' c='Solarus::PathMovement'/>
+<def f='codebrowser/include/solarus/movements/RandomPathMovement.h' l='33' ll='44'/>
+<size>208</size>
+<doc f='codebrowser/include/solarus/movements/RandomPathMovement.h' l='26'>/**
+ * \brief Movement of an entity that walks randomly.
+ *
+ * The movement is composed of small random moves. Each
+ * random move goes to one of the 4 main directions
+ * and with a length that is a multiple of 8 pixels.
+ */</doc>
+<fun r='_ZN7Solarus18RandomPathMovementC1Ei'/>
+<fun r='_ZN7Solarus18RandomPathMovement6updateEv'/>
+<fun r='_ZNK7Solarus18RandomPathMovement11is_finishedEv'/>
+<fun r='_ZNK7Solarus18RandomPathMovement17get_lua_type_nameEv'/>

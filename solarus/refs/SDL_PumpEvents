@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_events.h' l='545' type='void SDL_PumpEvents()'/>
+<doc f='include/SDL2/SDL_events.h' l='538'>/**
+ *  Pumps the event loop, gathering events from the input devices.
+ *
+ *  This function updates the event queue and internal input device state.
+ *
+ *  This should only be run in the thread that sets the video mode.
+ */</doc>

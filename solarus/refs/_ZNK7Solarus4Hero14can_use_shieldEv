@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='274' type='bool Solarus::Hero::can_use_shield() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1042' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2545' ll='2548' type='bool Solarus::Hero::can_use_shield() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2540'>/**
+ * \brief Returns whether the hero can stop attacks with a shield in his
+ * current state.
+ * \return \c true if the shield is active is this state.
+ */</doc>

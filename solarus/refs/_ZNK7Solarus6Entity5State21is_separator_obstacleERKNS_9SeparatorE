@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='109' type='bool Solarus::Entity::State::is_separator_obstacle(const Solarus::Separator &amp; separator) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='824' ll='826' type='bool Solarus::Entity::State::is_separator_obstacle(const Solarus::Separator &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='815'>/**
+ * \brief Returns whether a separator is considered as an obstacle in this
+ * state.
+ *
+ * Returns false by default.
+ *
+ * \param separator A separator.
+ * \return \c true if the separator is an obstacle in this state.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='824'>/* separator */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1529' u='c' c='_ZN7Solarus4Hero21is_separator_obstacleERNS_9SeparatorE'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='186' c='_ZNK7Solarus4Hero9HurtState21is_separator_obstacleERKNS_9SeparatorE'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='285' c='_ZNK7Solarus4Hero12JumpingState21is_separator_obstacleERKNS_9SeparatorE'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='305' c='_ZNK7Solarus4Hero12PullingState21is_separator_obstacleERKNS_9SeparatorE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='221' c='_ZNK7Solarus4Hero15SpinAttackState21is_separator_obstacleERKNS_9SeparatorE'/>

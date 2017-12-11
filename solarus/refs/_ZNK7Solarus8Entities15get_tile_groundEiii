@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='74' type='Solarus::Ground Solarus::Entities::get_tile_ground(int layer, int x, int y) const'/>
+<def f='codebrowser/include/solarus/entities/Entities.h' l='242' ll='245' type='Solarus::Ground Solarus::Entities::get_tile_ground(int layer, int x, int y) const'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='227'>/**
+ * \brief Returns the ground property of tiles at the specified point.
+ *
+ * Only static tiles are considered here (not the dynamic entities).
+ * Use get_ground() instead to also take into account dynamic entities that
+ * may change the ground, like dynamic tiles and destructible entities.
+ *
+ * This function assumes that the parameters are correct: for performance
+ * reasons, no check is done here.
+ *
+ * \param layer Layer of the point.
+ * \param x X coordinate of the point.
+ * \param y Y coordinate of the point.
+ * \return The ground of the highest tile at this place.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1119' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>

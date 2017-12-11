@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='90' type='bool Solarus::Rectangle::contains(const Solarus::Point &amp; point) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='387' ll='389' type='bool Solarus::Rectangle::contains(const Solarus::Point &amp; point) const'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='536' u='c' c='_ZNK7Solarus6Entity8overlapsERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='508' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='382'>/**
+ * \brief Returns whether the specified point is inside this rectangle.
+ * \param point point that may be in this rectangle
+ * \return true if \a point is in this rectangle
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='2799' u='c' c='_ZNK7Solarus6Entity18is_origin_point_inERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2811' u='c' c='_ZNK7Solarus6Entity18is_facing_point_inERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2825' u='c' c='_ZNK7Solarus6Entity20is_touching_point_inERKNS_9RectangleEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2837' u='c' c='_ZNK7Solarus6Entity12is_center_inERKNS_9RectangleE'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='120' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>

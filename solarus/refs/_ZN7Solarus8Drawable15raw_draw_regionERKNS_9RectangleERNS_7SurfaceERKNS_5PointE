@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='103' type='void Solarus::Drawable::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='92'>/**
+     * \brief Draws a subrectangle of this object without applying dynamic
+     * effects.
+     *
+     * Redefine this function to draw your object onto the destination
+     * surface.
+     *
+     * \param region The subrectangle to draw in this object.
+     * \param dst_surface The destination surface.
+     * \param dst_position Coordinates on the destination surface.
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='271' u='c' c='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<ovr f='codebrowser/src/Sprite.cpp' l='796' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<ovr f='codebrowser/src/lowlevel/Surface.cpp' l='625' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<ovr f='codebrowser/src/lowlevel/TextSurface.cpp' l='555' c='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>

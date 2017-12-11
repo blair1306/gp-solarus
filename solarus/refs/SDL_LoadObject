@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_loadso.h' l='58' type='void * SDL_LoadObject(const char * sofile)'/>
+<doc f='include/SDL2/SDL_loadso.h' l='53'>/**
+ *  This function dynamically loads a shared object and returns a pointer
+ *  to the object handle (or NULL if there was an error).
+ *  The &apos;sofile&apos; parameter is a system dependent name of the object file.
+ */</doc>

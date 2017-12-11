@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='106' type='void Solarus::Entities::get_entities_in_rectangle_sorted(const Solarus::Rectangle &amp; rectangle, ConstEntityVector &amp; result) const'/>
+<use f='codebrowser/src/Map.cpp' l='1090' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='457' ll='464' type='void Solarus::Entities::get_entities_in_rectangle_sorted(const Solarus::Rectangle &amp; rectangle, ConstEntityVector &amp; result) const'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='451'>/**
+ * \brief Like get_entities_in_rectangle(), but sorts entities according to
+ * their Z index on the map.
+ * \param[in] rectangle A rectangle.
+ * \param[out] result The entities in that rectangle, in arbitrary order.
+ */</doc>

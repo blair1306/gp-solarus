@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='47' type='void Solarus::Hero::PlayerMovementState::set_map(Solarus::Map &amp; map)'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='93' c='_ZN7Solarus4Hero13CarryingState7set_mapERNS_3MapE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='95' u='c' c='_ZN7Solarus4Hero13CarryingState7set_mapERNS_3MapE'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='65' c='_ZN7Solarus6Entity5State7set_mapERNS_3MapE'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='129' ll='133' type='void Solarus::Hero::PlayerMovementState::set_map(Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='122'>/**
+ * \brief Changes the map.
+ *
+ * This function is called when the hero is about to go to another map.
+ *
+ * \param map the new map
+ */</doc>

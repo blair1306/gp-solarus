@@ -1,0 +1,17 @@
+<inh f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='32' c='Solarus::SimpleTilePattern'/>
+<def f='codebrowser/include/solarus/entities/TimeScrollingTilePattern.h' l='32' ll='55'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/entities/TimeScrollingTilePattern.h' l='26'>/**
+ * \brief Tile pattern with a scrolling effect.
+ *
+ * The pattern scrolls on itself with time,
+ * giving the illusion of a movement.
+ */</doc>
+<fun r='_ZN7Solarus24TimeScrollingTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZN7Solarus24TimeScrollingTilePattern10initializeEv'/>
+<fun r='_ZN7Solarus24TimeScrollingTilePattern4quitEv'/>
+<fun r='_ZN7Solarus24TimeScrollingTilePattern6updateEv'/>
+<fun r='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<fun r='_ZNK7Solarus24TimeScrollingTilePattern11is_animatedEv'/>
+<smbr r='Solarus::TimeScrollingTilePattern::shift' t='int'/>
+<smbr r='Solarus::TimeScrollingTilePattern::next_shift_date' t='uint32_t'/>

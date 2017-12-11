@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='130' type='double Solarus::LuaTools::opt_number_field(lua_State * l, int table_index, const std::string &amp; key, double default_value)'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='446' ll='467' type='double Solarus::LuaTools::opt_number_field(lua_State * l, int table_index, const std::string &amp; key, double default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='435'>/**
+ * \brief Like LuaTools::check_number_field() but with a default value.
+ *
+ * This function acts like lua_getfield() followed by LuaTools::opt_number().
+ *
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as a double.
+ */</doc>

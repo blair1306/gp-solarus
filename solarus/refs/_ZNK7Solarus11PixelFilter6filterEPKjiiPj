@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/PixelFilter.h' l='51' type='void Solarus::PixelFilter::filter(const uint32_t * src, int src_width, int src_height, uint32_t * dst) const'/>
+<ovr f='codebrowser/src/lowlevel/Hq2xFilter.cpp' l='40' c='_ZNK7Solarus10Hq2xFilter6filterEPKjiiPj'/>
+<doc f='codebrowser/include/solarus/lowlevel/PixelFilter.h' l='41'>/**
+     * \brief Applies the algorithm on a rectangle of pixels.
+     * \param src The rectangle of pixels in RGBA format.
+     * Must be a buffer of size src_width * dst_width.
+     * \param src_width Width of the rectangle.
+     * \param src_height Height of the rectangle.
+     * \param dst The destination rectangle to write.
+     * Must be a buffer of size
+     * src_width * dst_width * get_scaling_factor().
+     */</doc>
+<ovr f='codebrowser/src/lowlevel/Hq3xFilter.cpp' l='40' c='_ZNK7Solarus10Hq3xFilter6filterEPKjiiPj'/>
+<ovr f='codebrowser/src/lowlevel/Hq4xFilter.cpp' l='43' c='_ZNK7Solarus10Hq4xFilter6filterEPKjiiPj'/>
+<ovr f='codebrowser/src/lowlevel/Scale2xFilter.cpp' l='38' c='_ZNK7Solarus13Scale2xFilter6filterEPKjiiPj'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='764' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>

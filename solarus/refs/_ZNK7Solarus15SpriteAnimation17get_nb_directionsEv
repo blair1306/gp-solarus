@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/SpriteAnimation.h' l='54' type='int Solarus::SpriteAnimation::get_nb_directions() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='326' u='c' c='_ZNK7Solarus6Sprite17get_nb_directionsEv'/>
+<def f='codebrowser/src/SpriteAnimation.cpp' l='85' ll='87' type='int Solarus::SpriteAnimation::get_nb_directions() const'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='116' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='119' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='152' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='155' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<doc f='codebrowser/src/SpriteAnimation.cpp' l='81'>/**
+ * \brief Returns the number of directions of this animation.
+ * \return The number of directions.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='274' u='c' c='_ZN7Solarus10LuaContext29sprite_api_get_num_directionsEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='345' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='431' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='470' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='511' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/PathFinding.h' l='78' type='bool Solarus::PathFinding::is_node_transition_valid(const Solarus::PathFinding::Node &amp; node, int direction) const'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='185' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<def f='codebrowser/src/movements/PathFinding.cpp' l='301' ll='308' type='bool Solarus::PathFinding::is_node_transition_valid(const Solarus::PathFinding::Node &amp; initial_node, int direction) const'/>
+<doc f='codebrowser/src/movements/PathFinding.cpp' l='294'>/**
+ * \brief Returns whether a transition between two nodes is valid, i.e.
+ * whether there is no collision with the map.
+ * \param initial_node the first node
+ * \param direction the direction to take (0 to 7)
+ * \return true if there is no collision for this transition
+ */</doc>

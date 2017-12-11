@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='168' type='void Solarus::CustomEntity::set_modified_ground(Solarus::Ground modified_ground)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1208' ll='1217' type='void Solarus::CustomEntity::set_modified_ground(Solarus::Ground modified_ground)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1204'>/**
+ * \brief Changes the ground defined by this entity.
+ * \param modified_ground The new ground to set, or Ground::EMPTY to clear it.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5655' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_set_modified_groundEP9lua_State'/>

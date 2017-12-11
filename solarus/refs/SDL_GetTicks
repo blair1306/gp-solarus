@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_timer.h' l='45' type='Uint32 SDL_GetTicks()'/>
+<doc f='include/SDL2/SDL_timer.h' l='40'>/**
+ * \brief Get the number of milliseconds since the SDL library initialization.
+ *
+ * \note This value wraps if the program runs for more than ~49 days.
+ */</doc>
+<use f='codebrowser/src/lowlevel/System.cpp' l='133' u='c' c='_ZN7Solarus6System13get_real_timeEv'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='119' type='void Solarus::Entities::remove_entity(Solarus::Entity &amp; entity)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1060' ll='1077' type='void Solarus::Entities::remove_entity(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1087' u='c' c='_ZN7Solarus8Entities13remove_entityERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1099' u='c' c='_ZN7Solarus8Entities27remove_entities_with_prefixERKSs'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1056'>/**
+ * \brief Removes an entity from the map and schedules it to be destroyed.
+ * \param entity the entity to remove
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='536' u='c' c='_ZN7Solarus6Entity15remove_from_mapEv'/>

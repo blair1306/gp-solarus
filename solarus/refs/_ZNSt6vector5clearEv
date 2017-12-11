@@ -1,0 +1,23 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='1210' ll='1212' type='void std::vector::clear()'/>
+<use f='include/c++/4.9/bits/random.tcc' l='2800' u='c' c='_ZNSt21discrete_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/4.9/bits/random.tcc' l='2953' u='c' c='_ZNSt31piecewise_constant_distribution10param_type13_M_initializeEv'/>
+<use f='include/c++/4.9/bits/random.tcc' l='3178' u='c' c='_ZNSt29piecewise_linear_distribution10param_type13_M_initializeEv'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='1204'>/**
+       *  Erases all the elements.  Note that this function only erases the
+       *  elements, and that if the elements themselves are pointers, the
+       *  pointed-to memory is not touched in any way.  Managing the pointer is
+       *  the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='432' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='122' u='c' c='_ZN7Solarus24SpriteAnimationDirection24disable_pixel_collisionsEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='816' u='c' c='_ZN7Solarus12CustomEntity21clear_collision_testsEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='927' u='c' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1542' u='c' c='_ZN7Solarus6Entity19clear_old_movementsEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='114' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='163' u='c' c='_ZN7Solarus15TilePatternData9set_frameERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='214' u='c' c='_ZN7Solarus10InputEvent4quitEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='913' u='c' c='_ZN7Solarus10InputEvent18set_joypad_enabledEb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='549' u='c' c='_ZN7Solarus10QuestFiles22remove_temporary_filesEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='605' u='c' c='_ZN7Solarus7Surface17clear_subsurfacesEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='648' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='312' u='c' c='_ZN7Solarus5Video4quitEv'/>

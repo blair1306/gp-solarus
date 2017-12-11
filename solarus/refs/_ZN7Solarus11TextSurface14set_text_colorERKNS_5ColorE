@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='90' type='void Solarus::TextSurface::set_text_color(const Solarus::Color &amp; color)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='235' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='253' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='287' u='c' c='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='289' u='c' c='_ZN7Solarus15DialogBoxSystem22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='207' ll='215' type='void Solarus::TextSurface::set_text_color(const Solarus::Color &amp; color)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='203'>/**
+ * \brief Sets the color of the text.
+ * \param color The color to set.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='179' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='374' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_set_colorEP9lua_State'/>

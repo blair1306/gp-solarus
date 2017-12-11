@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='87' type='void Solarus::PathMovement::set_snapping_trajectory(const Solarus::Point &amp; src, const Solarus::Point &amp; dst)'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='382' u='c' c='_ZN7Solarus12PathMovement4snapEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='397' u='c' c='_ZN7Solarus12PathMovement4snapEv'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='412' ll='441' type='void Solarus::PathMovement::set_snapping_trajectory(const Solarus::Point &amp; src, const Solarus::Point &amp; dst)'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='403'>/**
+ * \brief Computes a pixel-by-pixel trajectory (in the sense of PixelMovement) between two points and starts it.
+ *
+ * This function is used to make a trajectory between the initial position of the entity and the closest grid point,
+ * before the actual path is started.
+ *
+ * \param src current position of the entity
+ * \param dst snapped position
+ */</doc>

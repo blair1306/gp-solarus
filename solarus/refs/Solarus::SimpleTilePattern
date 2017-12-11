@@ -1,0 +1,16 @@
+<inh f='codebrowser/include/solarus/entities/TilePattern.h' l='39' c='Solarus::TilePattern'/>
+<def f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='32' ll='51'/>
+<ovr f='codebrowser/include/solarus/entities/ParallaxScrollingTilePattern.h' l='39' c='Solarus::ParallaxScrollingTilePattern'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='26'>/**
+ * \brief Non-animated tile pattern.
+ *
+ * This tile pattern does not show any special effects and displays
+ * a single image.
+ */</doc>
+<fun r='_ZN7Solarus17SimpleTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus17SimpleTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<fun r='_ZNK7Solarus17SimpleTilePattern11is_animatedEv'/>
+<mbr r='Solarus::SimpleTilePattern::position_in_tileset' o='160' t='Solarus::Rectangle'/>
+<ovr f='codebrowser/include/solarus/entities/SelfScrollingTilePattern.h' l='37' c='Solarus::SelfScrollingTilePattern'/>
+<ovr f='codebrowser/include/solarus/entities/TimeScrollingTilePattern.h' l='32' c='Solarus::TimeScrollingTilePattern'/>

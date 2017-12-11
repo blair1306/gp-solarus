@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1189' type='static std::shared_ptr&lt;Stream&gt; Solarus::LuaContext::check_stream(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3448' ll='3452' type='static std::shared_ptr&lt;Stream&gt; Solarus::LuaContext::check_stream(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3471' u='c' c='_ZN7Solarus10LuaContext24stream_api_get_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3486' u='c' c='_ZN7Solarus10LuaContext24stream_api_set_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3507' u='c' c='_ZN7Solarus10LuaContext20stream_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3522' u='c' c='_ZN7Solarus10LuaContext20stream_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3539' u='c' c='_ZN7Solarus10LuaContext29stream_api_get_allow_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3554' u='c' c='_ZN7Solarus10LuaContext29stream_api_set_allow_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3571' u='c' c='_ZN7Solarus10LuaContext27stream_api_get_allow_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3586' u='c' c='_ZN7Solarus10LuaContext27stream_api_set_allow_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3603' u='c' c='_ZN7Solarus10LuaContext25stream_api_get_allow_itemEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3618' u='c' c='_ZN7Solarus10LuaContext25stream_api_set_allow_itemEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3441'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * stream and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The stream.
+ */</doc>

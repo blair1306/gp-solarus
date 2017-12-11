@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='126' type='static Solarus::EntityData Solarus::EntityData::check_entity_data(lua_State * l, int index, Solarus::EntityType type)'/>
+<use f='codebrowser/src/EntityData.cpp' l='293' u='c' c='_ZN7Solarus12_GLOBAL__N_120l_create_entity_dataEP9lua_State'/>
+<def f='codebrowser/src/EntityData.cpp' l='756' ll='823' type='static Solarus::EntityData Solarus::EntityData::check_entity_data(lua_State * l, int index, Solarus::EntityType type)'/>
+<doc f='codebrowser/src/EntityData.cpp' l='749'>/**
+ * \brief Reads an EntityData from the Lua table at the specified index.
+ * \param l A Lua state.
+ * \param index Index of the table in the Lua stack.
+ * \param type Type of entity to read.
+ * \return The EntityData created.
+ */</doc>
+<use f='codebrowser/src/MapData.cpp' l='809' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_add_entityEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2170' u='c' c='_ZN7Solarus10LuaContext21map_api_create_entityEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='103' type='bool Solarus::Music::start()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='343' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='505' ll='596' type='bool Solarus::Music::start()'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='498'>/**
+ * \brief Loads the file and starts playing this music.
+ *
+ * No other music should be playing.
+ *
+ * \return true if the music was loaded successfully
+ */</doc>

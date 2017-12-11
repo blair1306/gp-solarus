@@ -1,0 +1,19 @@
+<dec f='include/SDL2/SDL_thread.h' l='190' type='void SDL_WaitThread(SDL_Thread * thread, int * status)'/>
+<doc f='include/SDL2/SDL_thread.h' l='172'>/**
+ *  Wait for a thread to finish. Threads that haven&apos;t been detached will
+ *  remain (as a &quot;zombie&quot;) until this function cleans them up. Not doing so
+ *  is a resource leak.
+ *
+ *  Once a thread has been cleaned up through this function, the SDL_Thread
+ *  that references it becomes invalid and should not be referenced again.
+ *  As such, only one thread may call SDL_WaitThread() on another.
+ *
+ *  The return code for the thread function is placed in the area
+ *  pointed to by \c status, if \c status is not NULL.
+ *
+ *  You may not wait on a thread that has been used in a call to
+ *  SDL_DetachThread(). Use either that function or this one, but not
+ *  both, or behavior is undefined.
+ *
+ *  It is safe to pass NULL to this function; it is a no-op.
+ */</doc>

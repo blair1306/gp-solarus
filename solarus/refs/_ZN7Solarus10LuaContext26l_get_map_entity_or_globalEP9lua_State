@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1307' type='static int Solarus::LuaContext::l_get_map_entity_or_global(lua_State * )'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='270' u='r' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1335' ll='1355' type='static int Solarus::LuaContext::l_get_map_entity_or_global(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1323'>/**
+ * \brief __index function of the environment of the map&apos;s code.
+ *
+ * This special __index function allows the map&apos;s Lua code to get a map
+ * entity like a global value.
+ * If an entity exists with the specified name, this entity is returned.
+ * Otherwise, we fall back to the usual behavior of global values:
+ * a global value with this name (or \c nil) is returned.
+ *
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,10 @@
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='59' ll='91' type='void Solarus::Surface::SubSurfaceNode::SubSurfaceNode(SurfacePtr src_surface, const Solarus::Rectangle &amp; src_rect, const Solarus::Rectangle &amp; dst_rect, const std::vector&lt;SubSurfaceNodePtr&gt; &amp; subsurfaces)'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='585' u='c' c='_ZN7Solarus7Surface14add_subsurfaceERKSt10shared_ptrIS0_ERKNS_9RectangleERKNS_5PointE'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='51'>/**
+     * Creates a subsurface node.
+     * \param src_surface The surface to draw.
+     * \param src_rect Region of the surface to draw.
+     * \param dst_rect The rectangle where to draw the surface, relative to
+     * the parent surface.
+     * \param subsurfaces Surfaces drawn onto src_surface.
+     */</doc>

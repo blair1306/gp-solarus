@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='168' type='Solarus::Point Solarus::Entity::get_facing_point() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1018' ll='1034' type='Solarus::Point Solarus::Entity::get_facing_point() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2810' u='c' c='_ZNK7Solarus6Entity18is_facing_point_inERKNS_9RectangleE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1006'>/**
+ * \brief Returns the coordinates of the point the entity is looking at.
+ *
+ * By default, this point depends on the direction of the sprite if any.
+ * If there is no sprite, or if the sprite has not 4 directions,
+ * then the movement is considered.
+ * If there is no movement either, the entity is assumed to look to the north.
+ * You can redefine this method to change what is a facing point for your
+ * subclass.
+ *
+ * \return The coordinates of the point the entity is looking at.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='744' c='_ZNK7Solarus4Hero16get_facing_pointEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1023' u='c' c='_ZN7Solarus10LuaContext30entity_api_get_facing_positionEP9lua_State'/>

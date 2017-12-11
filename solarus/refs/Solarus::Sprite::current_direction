@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='140' type='int'/>
+<offset>1024</offset>
+<doc f='codebrowser/include/solarus/Sprite.h' l='140'>/**&lt; current direction of the animation (the first one is number 0);
+                                        * it can be different from the movement direction
+                                        * of the entity, because sometimes a sprite can
+                                        * go backwards. */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='94' u='w' c='_ZN7Solarus6SpriteC1ERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='169' u='r' c='_ZNK7Solarus6Sprite8get_sizeEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='191' u='r' c='_ZNK7Solarus6Sprite10get_originEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='255' u='r' c='_ZNK7Solarus6Sprite14get_next_frameEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='287' u='r' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='288' u='r' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='289' u='r' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='290' u='w' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='299' u='r' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='300' u='r' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='334' u='r' c='_ZNK7Solarus6Sprite21get_current_directionEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='346' u='r' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='358' u='w' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='380' u='r' c='_ZNK7Solarus6Sprite13get_nb_framesEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='432' u='r' c='_ZNK7Solarus6Sprite27get_current_frame_rectangleEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='657' u='r' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='663' u='r' c='_ZNK7Solarus6Sprite14test_collisionERKS0_iiii'/>
+<use f='codebrowser/src/Sprite.cpp' l='778' u='r' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='816' u='r' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>

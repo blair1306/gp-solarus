@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='52' type='void Solarus::Movement::set_drawable(Solarus::Drawable * drawable)'/>
+<use f='codebrowser/src/Drawable.cpp' l='68' u='c' c='_ZN7Solarus8Drawable14start_movementERKSt10shared_ptrINS_8MovementEE'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='117' ll='131' type='void Solarus::Movement::set_drawable(Solarus::Drawable * drawable)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='109'>/**
+ * \brief Sets the drawable to be controlled by this movement object.
+ *
+ * This entity can be nullptr if your movement applies to something else than a drawable.
+ *
+ * \param drawable The drawable to control, or nullptr if the movement should not be
+ * attached to a drawable.
+ */</doc>

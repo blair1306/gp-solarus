@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Dialog.h' l='43' type='const std::string &amp; Solarus::Dialog::get_property(const std::string &amp; key) const'/>
+<def f='codebrowser/src/Dialog.cpp' l='94' ll='105' type='const std::string &amp; Solarus::Dialog::get_property(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Dialog.cpp' l='89'>/**
+ * \brief Returns a custom properties of this dialog.
+ * \param key Key of the property to get. It must exist.
+ * \return The value of this property.
+ */</doc>

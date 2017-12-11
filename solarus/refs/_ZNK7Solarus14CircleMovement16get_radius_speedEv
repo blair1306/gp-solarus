@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='57' type='int Solarus::CircleMovement::get_radius_speed() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1464' u='c' c='_ZN7Solarus10LuaContext36circle_movement_api_get_radius_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='129' ll='132' type='int Solarus::CircleMovement::get_radius_speed() const'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='125'>/**
+ * \brief Returns the speed of the radius variations.
+ * \return The speed in pixels per second, or 0 if radius variations are immediate.
+ */</doc>

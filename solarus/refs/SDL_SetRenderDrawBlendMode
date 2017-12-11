@@ -1,0 +1,15 @@
+<dec f='include/SDL2/SDL_render.h' l='632' type='int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer, SDL_BlendMode blendMode)'/>
+<doc f='include/SDL2/SDL_render.h' l='619'>/**
+ *  \brief Set the blend mode used for drawing operations (Fill and Line).
+ *
+ *  \param renderer The renderer for which blend mode should be set.
+ *  \param blendMode ::SDL_BlendMode to use for blending.
+ *
+ *  \return 0 on success, or -1 on error
+ *
+ *  \note If the blend mode is not supported, the closest supported mode is
+ *        chosen.
+ *
+ *  \sa SDL_GetRenderDrawBlendMode()
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='123' u='c' c='_ZN7Solarus12_GLOBAL__N_113create_windowEv'/>

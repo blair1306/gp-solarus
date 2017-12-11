@@ -1,0 +1,16 @@
+<dec f='include/SDL2/SDL_render.h' l='517' type='int SDL_RenderSetViewport(SDL_Renderer * renderer, const SDL_Rect * rect)'/>
+<doc f='include/SDL2/SDL_render.h' l='502'>/**
+ *  \brief Set the drawing area for rendering on the current target.
+ *
+ *  \param renderer The renderer for which the drawing area should be set.
+ *  \param rect The rectangle representing the drawing area, or NULL to set the viewport to the entire target.
+ *
+ *  The x,y of the viewport rect represents the origin for rendering.
+ *
+ *  \return 0 on success, or -1 on error
+ *
+ *  \note If the window associated with the renderer is resized, the viewport is automatically reset.
+ *
+ *  \sa SDL_RenderGetViewport()
+ *  \sa SDL_RenderSetLogicalSize()
+ */</doc>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='421' type='bool Solarus::Entity::is_lava_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='140' c='_ZNK7Solarus5Arrow16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='98' c='_ZNK7Solarus4Bomb16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='163' c='_ZNK7Solarus9Boomerang16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='541' c='_ZNK7Solarus13CarriedObject16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='742' c='_ZNK7Solarus12CustomEntity16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='413' c='_ZNK7Solarus5Enemy16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2426' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2521' ll='2523' type='bool Solarus::Entity::is_lava_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2514'>/**
+ * \brief Returns whether lava is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \return true if lava is currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1445' c='_ZNK7Solarus4Hero16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='120' c='_ZNK7Solarus8Hookshot16is_lava_obstacleEv'/>

@@ -1,0 +1,27 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' c='QInputEvent'/>
+<def f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='106' ll='149'/>
+<size>104</size>
+<fun r='_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFN2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE'/>
+<fun r='_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFS4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE'/>
+<fun r='_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE'/>
+<fun r='_ZN11QMouseEventD1Ev'/>
+<fun r='_ZNK11QMouseEvent3posEv'/>
+<fun r='_ZNK11QMouseEvent9globalPosEv'/>
+<fun r='_ZNK11QMouseEvent1xEv'/>
+<fun r='_ZNK11QMouseEvent1yEv'/>
+<fun r='_ZNK11QMouseEvent7globalXEv'/>
+<fun r='_ZNK11QMouseEvent7globalYEv'/>
+<fun r='_ZNK11QMouseEvent8localPosEv'/>
+<fun r='_ZNK11QMouseEvent9windowPosEv'/>
+<fun r='_ZNK11QMouseEvent9screenPosEv'/>
+<fun r='_ZNK11QMouseEvent6buttonEv'/>
+<fun r='_ZNK11QMouseEvent7buttonsEv'/>
+<fun r='_ZNK11QMouseEvent6sourceEv'/>
+<fun r='_ZNK11QMouseEvent5flagsEv'/>
+<mbr r='QMouseEvent::l' o='256' t='QPointF'/>
+<mbr r='QMouseEvent::w' o='384' t='QPointF'/>
+<mbr r='QMouseEvent::s' o='512' t='QPointF'/>
+<mbr r='QMouseEvent::b' o='640' t='Qt::MouseButton'/>
+<mbr r='QMouseEvent::mouseState' o='672' t='Qt::MouseButtons'/>
+<mbr r='QMouseEvent::caps' o='704' t='int'/>
+<mbr r='QMouseEvent::velocity' o='736' t='QVector2D'/>

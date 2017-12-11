@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='92' type='bool Solarus::Rectangle::overlaps(const Solarus::Rectangle &amp; other) const'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='406' ll='423' type='bool Solarus::Rectangle::overlaps(const Solarus::Rectangle &amp; other) const'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='527' u='c' c='_ZNK7Solarus6Entity8overlapsERKNS_9RectangleE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='111' u='c' c='_ZN7Solarus8Quadtree3addERKT_RKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='401'>/**
+ * \brief Returns whether or not another rectangle overlaps this one.
+ * \param other another rectangle
+ * \return true if the two rectangles overlap
+ */</doc>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='116' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>

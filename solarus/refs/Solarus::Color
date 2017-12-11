@@ -1,0 +1,32 @@
+<def f='codebrowser/include/solarus/lowlevel/Color.h' l='30' ll='62'/>
+<size>4</size>
+<doc f='codebrowser/include/solarus/lowlevel/Color.h' l='25'>/**
+ * \brief Represents a color.
+ *
+ * This class simply wraps the RGBA components of a color.
+ */</doc>
+<fun r='_ZN7Solarus5ColorC1Ev'/>
+<fun r='_ZN7Solarus5ColorC1Eiiii'/>
+<fun r='_ZNK7Solarus5Color9get_alphaEv'/>
+<fun r='_ZN7Solarus5Color9set_alphaEh'/>
+<fun r='_ZNK7Solarus5Color14get_componentsERhS1_S1_S1_'/>
+<fun r='_ZN7Solarus5Color14set_componentsEiiii'/>
+<smbr r='Solarus::Color::transparent' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::black' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::white' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::red' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::green' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::blue' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::yellow' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::magenta' t='const Solarus::Color'/>
+<smbr r='Solarus::Color::cyan' t='const Solarus::Color'/>
+<mbr r='Solarus::Color::r' o='0' t='uint8_t'/>
+<mbr r='Solarus::Color::g' o='8' t='uint8_t'/>
+<mbr r='Solarus::Color::b' o='16' t='uint8_t'/>
+<mbr r='Solarus::Color::a' o='24' t='uint8_t'/>
+<fun r='_ZN7Solarus5ColorC1Ev'/>
+<fun r='_ZN7Solarus5ColorC1Eiiii'/>
+<fun r='_ZNK7Solarus5Color9get_alphaEv'/>
+<fun r='_ZN7Solarus5Color9set_alphaEh'/>
+<fun r='_ZNK7Solarus5Color14get_componentsERhS1_S1_S1_'/>
+<fun r='_ZN7Solarus5Color14set_componentsEiiii'/>

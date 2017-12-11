@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='82' type='void Solarus::Surface::clear()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='500' u='c' c='_ZN7Solarus8MainLoop4drawEv'/>
+<use f='codebrowser/src/Map.cpp' l='546' u='c' c='_ZN7Solarus3Map24build_background_surfaceEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='776' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='809' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='493' ll='515' type='void Solarus::Surface::clear()'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='487'>/**
+ * \brief Clears this surface.
+ *
+ * The surface becomes fully transparent and its size remains unchanged.
+ * The opacity property of the surface is preserved.
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='172' u='c' c='_ZN7Solarus10LuaContext17surface_api_clearEP9lua_State'/>

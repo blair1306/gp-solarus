@@ -1,0 +1,32 @@
+<dec f='include/physfs.h' l='943' type='int PHYSFS_delete(const char * filename)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='348' u='c' c='_ZN7Solarus10QuestFiles16data_file_deleteERKSs'/>
+<doc f='include/physfs.h' l='913'>/**
+ * \fn int PHYSFS_delete(const char *filename)
+ * \brief Delete a file or directory.
+ *
+ * (filename) is specified in platform-independent notation in relation to the
+ *  write dir.
+ *
+ * A directory must be empty before this call can delete it.
+ *
+ * Deleting a symlink will remove the link, not what it points to, regardless
+ *  of whether you &quot;permitSymLinks&quot; or not.
+ *
+ * So if you&apos;ve got the write dir set to &quot;C:\mygame\writedir&quot; and call
+ *  PHYSFS_delete(&quot;downloads/maps/level1.map&quot;) then the file
+ *  &quot;C:\mygame\writedir\downloads\maps\level1.map&quot; is removed from the
+ *  physical filesystem, if it exists and the operating system permits the
+ *  deletion.
+ *
+ * Note that on Unix systems, deleting a file may be successful, but the
+ *  actual file won&apos;t be removed until all processes that have an open
+ *  filehandle to it (including your program) close their handles.
+ *
+ * Chances are, the bits that make up the file still exist, they are just
+ *  made available to be written over at a later point. Don&apos;t consider this
+ *  a security method or anything.  :)
+ *
+ *   \param filename Filename to delete.
+ *  \return nonzero on success, zero on error. Specifics of the error can be
+ *          gleaned from PHYSFS_getLastError().
+ */</doc>

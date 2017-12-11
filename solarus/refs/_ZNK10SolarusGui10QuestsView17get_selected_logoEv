@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='50' type='const QPixmap &amp; SolarusGui::QuestsView::get_selected_logo() const'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='518' u='c' c='_ZN10SolarusGui10MainWindow22selected_quest_changedEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='135' ll='142' type='const QPixmap &amp; SolarusGui::QuestsView::get_selected_logo() const'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='131'>/**
+ * @brief Returns the logo of the selected quest.
+ * @return The quest logo, or the default image if no quest is selected.
+ */</doc>

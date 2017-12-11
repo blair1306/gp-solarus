@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityTypeInfo.h' l='39' type='static bool Solarus::EntityTypeInfo::can_be_stored_in_map_file(Solarus::EntityType type)'/>
+<use f='codebrowser/src/EntityData.cpp' l='850' u='c' c='_ZN7Solarus10EntityData15import_from_luaEP9lua_State'/>
+<use f='codebrowser/src/MapData.cpp' l='696' u='c' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='195' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<def f='codebrowser/src/entities/EntityTypeInfo.cpp' l='66' ll='107' type='static bool Solarus::EntityTypeInfo::can_be_stored_in_map_file(Solarus::EntityType type)'/>
+<doc f='codebrowser/src/entities/EntityTypeInfo.cpp' l='61'>/**
+ * \brief Returns whether entities of the specified type can be stored in map files.
+ * \param type A type of entity.
+ * \return \c true if this type can be stored.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='81' type='void Solarus::Switch::try_activate()'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='359' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='311' u='c' c='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='635' u='c' c='_ZN7Solarus13CarriedObject28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Explosion.cpp' l='106' u='c' c='_ZN7Solarus9Explosion28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1804' u='c' c='_ZN7Solarus4Hero28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='393' u='c' c='_ZN7Solarus8Hookshot28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='347' ll='353' type='void Solarus::Switch::try_activate()'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='341'>/**
+ * \brief This function is called when any entity overlaps this switch.
+ *
+ * Only solid switches can be activated this way.
+ * The switch is activated if its properties allow it.
+ */</doc>

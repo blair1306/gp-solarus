@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Timer.h source code [codebrowser/include/solarus/Timer.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Timer "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/Timer.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>include</a>/<a href='./'>solarus</a>/<a href='Timer.h.html'>Timer.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_TIMER_H">SOLARUS_TIMER_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_TIMER_H" data-ref="_M/SOLARUS_TIMER_H">SOLARUS_TIMER_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="lua/ExportableToLua.h.html">"solarus/lua/ExportableToLua.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * <span class="command">\brief</span> Represents a timer that any class can start.</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * Timers are mostly used by the scripts.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type def" id="Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</dfn>: <b>public</b> <a class="type" href="lua/ExportableToLua.h.html#Solarus::ExportableToLua" title='Solarus::ExportableToLua' data-ref="Solarus::ExportableToLua">ExportableToLua</a> {</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>  <b>public</b>:</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <b>explicit</b> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5TimerC1Ej" title='Solarus::Timer::Timer' data-ref="_ZN7Solarus5TimerC1Ej" id="_ZN7Solarus5TimerC1Ej">Timer</a>(<a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="1duration" title='duration' data-type='uint32_t' data-ref="1duration">duration</dfn>);</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>    <em>bool</em> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer13is_with_soundEv" title='Solarus::Timer::is_with_sound' data-ref="_ZNK7Solarus5Timer13is_with_soundEv" id="_ZNK7Solarus5Timer13is_with_soundEv">is_with_sound</a>() <em>const</em>;</td></tr>
+<tr><th id="38">38</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer14set_with_soundEb" title='Solarus::Timer::set_with_sound' data-ref="_ZN7Solarus5Timer14set_with_soundEb" id="_ZN7Solarus5Timer14set_with_soundEb">set_with_sound</a>(<em>bool</em> <dfn class="local col2 decl" id="2with_sound" title='with_sound' data-type='bool' data-ref="2with_sound">with_sound</dfn>);</td></tr>
+<tr><th id="39">39</th><td>    <em>bool</em> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer12is_suspendedEv" title='Solarus::Timer::is_suspended' data-ref="_ZNK7Solarus5Timer12is_suspendedEv" id="_ZNK7Solarus5Timer12is_suspendedEv">is_suspended</a>() <em>const</em>;</td></tr>
+<tr><th id="40">40</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer13set_suspendedEb" title='Solarus::Timer::set_suspended' data-ref="_ZN7Solarus5Timer13set_suspendedEb" id="_ZN7Solarus5Timer13set_suspendedEb">set_suspended</a>(<em>bool</em> <dfn class="local col3 decl" id="3suspended" title='suspended' data-type='bool' data-ref="3suspended">suspended</dfn>);</td></tr>
+<tr><th id="41">41</th><td>    <em>bool</em> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer21is_suspended_with_mapEv" title='Solarus::Timer::is_suspended_with_map' data-ref="_ZNK7Solarus5Timer21is_suspended_with_mapEv" id="_ZNK7Solarus5Timer21is_suspended_with_mapEv">is_suspended_with_map</a>() <em>const</em>;</td></tr>
+<tr><th id="42">42</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer22set_suspended_with_mapEb" title='Solarus::Timer::set_suspended_with_map' data-ref="_ZN7Solarus5Timer22set_suspended_with_mapEb" id="_ZN7Solarus5Timer22set_suspended_with_mapEb">set_suspended_with_map</a>(<em>bool</em> <dfn class="local col4 decl" id="4suspend_with_map" title='suspend_with_map' data-type='bool' data-ref="4suspend_with_map">suspend_with_map</dfn>);</td></tr>
+<tr><th id="43">43</th><td>    <em>bool</em> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer11is_finishedEv" title='Solarus::Timer::is_finished' data-ref="_ZNK7Solarus5Timer11is_finishedEv" id="_ZNK7Solarus5Timer11is_finishedEv">is_finished</a>() <em>const</em>;</td></tr>
+<tr><th id="44">44</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer20get_initial_durationEv" title='Solarus::Timer::get_initial_duration' data-ref="_ZNK7Solarus5Timer20get_initial_durationEv" id="_ZNK7Solarus5Timer20get_initial_durationEv">get_initial_duration</a>() <em>const</em>;</td></tr>
+<tr><th id="45">45</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer19get_expiration_dateEv" title='Solarus::Timer::get_expiration_date' data-ref="_ZNK7Solarus5Timer19get_expiration_dateEv" id="_ZNK7Solarus5Timer19get_expiration_dateEv">get_expiration_date</a>() <em>const</em>;</td></tr>
+<tr><th id="46">46</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer19set_expiration_dateEj" title='Solarus::Timer::set_expiration_date' data-ref="_ZN7Solarus5Timer19set_expiration_dateEj" id="_ZN7Solarus5Timer19set_expiration_dateEj">set_expiration_date</a>(<a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="5expiration_date" title='expiration_date' data-type='uint32_t' data-ref="5expiration_date">expiration_date</dfn>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer6updateEv" title='Solarus::Timer::update' data-ref="_ZN7Solarus5Timer6updateEv" id="_ZN7Solarus5Timer6updateEv">update</a>();</td></tr>
+<tr><th id="49">49</th><td>    <em>void</em> <a class="decl" href="../../src/Timer.cpp.html#_ZN7Solarus5Timer20notify_map_suspendedEb" title='Solarus::Timer::notify_map_suspended' data-ref="_ZN7Solarus5Timer20notify_map_suspendedEb" id="_ZN7Solarus5Timer20notify_map_suspendedEb">notify_map_suspended</a>(<em>bool</em> <dfn class="local col6 decl" id="6suspended" title='suspended' data-type='bool' data-ref="6suspended">suspended</dfn>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <b>virtual</b> <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="virtual decl" href="../../src/Timer.cpp.html#_ZNK7Solarus5Timer17get_lua_type_nameEv" title='Solarus::Timer::get_lua_type_name' data-ref="_ZNK7Solarus5Timer17get_lua_type_nameEv" id="_ZNK7Solarus5Timer17get_lua_type_nameEv">get_lua_type_name</a>() <em>const</em> override;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>  <b>private</b>:</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</dfn>;        <i class="doc">/**&lt; Date when the timer is finished. */</i></td></tr>
+<tr><th id="56">56</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::Timer::duration" title='Solarus::Timer::duration' data-ref="Solarus::Timer::duration">duration</dfn>;               <i class="doc">/**&lt; Initial duration of this timer. */</i></td></tr>
+<tr><th id="57">57</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Timer::finished" title='Solarus::Timer::finished' data-ref="Solarus::Timer::finished">finished</dfn>;                   <i class="doc">/**&lt; Whether the timer is finished. */</i></td></tr>
+<tr><th id="58">58</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</dfn>;         <i class="doc">/**&lt; Whether the timer should be suspended when the map is. */</i></td></tr>
+<tr><th id="59">59</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</dfn>;                  <i class="doc">/**&lt; Whether the timer is suspended. */</i></td></tr>
+<tr><th id="60">60</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</dfn>;         <i class="doc">/**&lt; Date when the timer was suspended. */</i></td></tr>
+<tr><th id="61">61</th><td>    <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</dfn>;        <i class="doc">/**&lt; Date when the next clock sound effect is played. */</i></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>};</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>}</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../src/Timer.cpp.html'>codebrowser/src/Timer.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

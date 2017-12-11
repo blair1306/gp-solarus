@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='361' type='const Solarus::Entities &amp; Solarus::Entity::get_entities() const'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='447' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='467' ll='470' type='const Solarus::Entities &amp; Solarus::Entity::get_entities() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2954' u='c' c='_ZNK7Solarus6Entity17is_in_same_regionERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='463'>/**
+ * \brief Returns the entities of the current map.
+ * \return The entities.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='852' u='c' c='_ZNK7Solarus4Hero22get_stairs_overlappingEv'/>

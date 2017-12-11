@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1272' type='void Solarus::LuaContext::on_amount_changed(int amount)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='964' u='c' c='_ZN7Solarus10LuaContext22item_on_amount_changedERNS_13EquipmentItemEi'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2549' ll='2555' type='void Solarus::LuaContext::on_amount_changed(int amount)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2545'>/**
+ * \brief Calls the on_amount_changed() method of the object on top of the stack.
+ * \param amount Amount of an equipment item.
+ */</doc>

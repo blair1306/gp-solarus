@@ -1,0 +1,20 @@
+<def f='codebrowser/include/solarus/Arguments.h' l='33' ll='54'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/Arguments.h' l='26'>/**
+ * \brief Stores runtime arguments passed to the program.
+ *
+ * Arguments may come from the command-line or be set explicitly.
+ * Provides easy access to find whether a particular option was passed,
+ * and to get the value of options of the form key=value.
+ */</doc>
+<fun r='_ZN7Solarus9ArgumentsC1Ev'/>
+<fun r='_ZN7Solarus9ArgumentsC1EiPPc'/>
+<fun r='_ZNK7Solarus9Arguments16get_program_nameEv'/>
+<fun r='_ZN7Solarus9Arguments16set_program_nameERKSs'/>
+<fun r='_ZNK7Solarus9Arguments13get_argumentsEv'/>
+<fun r='_ZNK7Solarus9Arguments12has_argumentERKSs'/>
+<fun r='_ZNK7Solarus9Arguments18get_argument_valueERKSs'/>
+<fun r='_ZN7Solarus9Arguments12add_argumentERKSs'/>
+<fun r='_ZN7Solarus9Arguments12add_argumentERKSsS2_'/>
+<mbr r='Solarus::Arguments::program_name' o='0' t='std::string'/>
+<mbr r='Solarus::Arguments::args' o='64' t='std::vector&lt;std::string&gt;'/>

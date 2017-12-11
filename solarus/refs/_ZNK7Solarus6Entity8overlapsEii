@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='249' type='bool Solarus::Entity::overlaps(int x, int y) const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='545' ll='547' type='bool Solarus::Entity::overlaps(int x, int y) const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='539'>/**
+ * \brief Returns whether or not a point overlaps this entity&apos;s bounding box.
+ * \param x x coordinate of the point to check
+ * \param y y coordinate of the point to check
+ * \return true if the point is in this entity&apos;s bounding box
+ */</doc>
+<use f='codebrowser/src/entities/Destructible.cpp' l='286' u='c' c='_ZN7Solarus12Destructible21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='194' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='195' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='206' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='207' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='254' u='c' c='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='254' u='c' c='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='255' u='c' c='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='255' u='c' c='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='249' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='249' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='250' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='250' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_model.h' l='78' type='void SolarusGui::QuestsModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder)'/>
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='231' c='_ZN18QAbstractItemModel4sortEiN2Qt9SortOrderE'/>
+<def f='codebrowser/gui/src/quests_model.cpp' l='322' ll='325' type='void SolarusGui::QuestsModel::sort(int column, Qt::SortOrder order = Qt::AscendingOrder)'/>
+<doc f='codebrowser/gui/src/quests_model.cpp' l='317'>/**
+ * @brief Sort the quests and notify the view
+ * @param column int value of a QuestSort value, column to sort the quests by
+ * @param order Order to the quests in the list by
+ */</doc>

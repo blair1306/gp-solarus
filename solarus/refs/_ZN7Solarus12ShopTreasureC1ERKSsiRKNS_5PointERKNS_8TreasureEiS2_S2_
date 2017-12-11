@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='46' type='void Solarus::ShopTreasure::ShopTreasure(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure, int price, const std::string &amp; font_id, const std::string &amp; dialog_id)'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='48' ll='72' type='void Solarus::ShopTreasure::ShopTreasure(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Treasure &amp; treasure, int price, const std::string &amp; font_id, const std::string &amp; dialog_id)'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='36'>/**
+ * \brief Creates a new shop treasure with the specified treasure and price.
+ * \param name The name identifying this entity.
+ * \param layer Layer of the entity to create.
+ * \param xy Coordinates of the entity to create.
+ * \param treasure The treasure that the hero can buy.
+ * \param price The treasure&apos;s price.
+ * \param font_id Id of the font to use to display the price or an empty
+ * string for the default font.
+ * \param dialog_id Id of the dialog describing the treasure when the hero
+ * watches it.
+ */</doc>

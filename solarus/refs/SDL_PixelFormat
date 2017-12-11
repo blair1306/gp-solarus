@@ -1,0 +1,24 @@
+<def f='include/SDL2/SDL_pixels.h' l='274' ll='295'/>
+<size>56</size>
+<doc f='include/SDL2/SDL_pixels.h' l='271'>/**
+ *  \note Everything in the pixel format structure is read-only.
+ */</doc>
+<mbr r='SDL_PixelFormat::format' o='0' t='Uint32'/>
+<mbr r='SDL_PixelFormat::palette' o='64' t='SDL_Palette *'/>
+<mbr r='SDL_PixelFormat::BitsPerPixel' o='128' t='Uint8'/>
+<mbr r='SDL_PixelFormat::BytesPerPixel' o='136' t='Uint8'/>
+<mbr r='SDL_PixelFormat::padding' o='144' t='Uint8 [2]'/>
+<mbr r='SDL_PixelFormat::Rmask' o='160' t='Uint32'/>
+<mbr r='SDL_PixelFormat::Gmask' o='192' t='Uint32'/>
+<mbr r='SDL_PixelFormat::Bmask' o='224' t='Uint32'/>
+<mbr r='SDL_PixelFormat::Amask' o='256' t='Uint32'/>
+<mbr r='SDL_PixelFormat::Rloss' o='288' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Gloss' o='296' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Bloss' o='304' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Aloss' o='312' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Rshift' o='320' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Gshift' o='328' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Bshift' o='336' t='Uint8'/>
+<mbr r='SDL_PixelFormat::Ashift' o='344' t='Uint8'/>
+<mbr r='SDL_PixelFormat::refcount' o='352' t='int'/>
+<mbr r='SDL_PixelFormat::next' o='384' t='struct SDL_PixelFormat *'/>

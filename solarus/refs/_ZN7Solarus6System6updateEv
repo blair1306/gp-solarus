@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/System.h' l='39' type='static void Solarus::System::update()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='475' u='c' c='_ZN7Solarus8MainLoop6updateEv'/>
+<def f='codebrowser/src/lowlevel/System.cpp' l='88' ll='93' type='static void Solarus::System::update()'/>
+<doc f='codebrowser/src/lowlevel/System.cpp' l='83'>/**
+ * \brief This function is called repeatedly by the main loop.
+ *
+ * It calls the update function of low-level systems that need it.
+ */</doc>

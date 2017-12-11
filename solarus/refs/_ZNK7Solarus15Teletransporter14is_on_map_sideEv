@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='63' type='bool Solarus::Teletransporter::is_on_map_side() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2506' u='c' c='_ZNK7Solarus4Hero25can_avoid_teletransporterERKNS_15TeletransporterE'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='197' ll='199' type='bool Solarus::Teletransporter::is_on_map_side() const'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='225' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='253' u='c' c='_ZN7Solarus15Teletransporter21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='285' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='189'>/**
+ * \brief Returns whether this teletransporter is on the side of the map.
+ *
+ * When true is returned, this means that the teletransporter can make the hero
+ * scroll towards an adjacent map.
+ *
+ * \return true if this teletransporter is on the side of the map
+ */</doc>

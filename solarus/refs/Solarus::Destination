@@ -1,0 +1,14 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Destination.h' l='30' ll='58'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/Destination.h' l='27'>/**
+ * \brief A location of the map where the hero can arrive when using a teletransporter.
+ */</doc>
+<smbr r='Solarus::Destination::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus11DestinationC1ERKSsiRKNS_5PointEiS2_b'/>
+<fun r='_ZNK7Solarus11Destination8get_typeEv'/>
+<fun r='_ZNK7Solarus11Destination10is_defaultEv'/>
+<fun r='_ZNK7Solarus11Destination26get_starting_location_modeEv'/>
+<fun r='_ZN7Solarus11Destination26set_starting_location_modeENS_20StartingLocationModeE'/>
+<mbr r='Solarus::Destination::starting_location_mode' o='2048' t='Solarus::StartingLocationMode'/>
+<mbr r='Solarus::Destination::is_default_destination' o='2080' t='bool'/>

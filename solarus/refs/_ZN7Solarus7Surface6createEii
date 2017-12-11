@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='70' type='static SurfacePtr Solarus::Surface::create(int width, int height)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Surface.h' l='65'>// Surfaces should only created with std::make_shared.
+    // This is what create() functions do, so you should call them rather than
+    // constructors.
+    // This is because they are always reference-counted with shared_ptr
+    // internally for drawing.</doc>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='102' u='c' c='_ZN7Solarus19TransitionScrolling5startEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='154' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='164' ll='167' type='static SurfacePtr Solarus::Surface::create(int width, int height)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='155'>/**
+ * \brief Creates a surface with the specified size.
+ *
+ * The surface is initially transparent.
+ *
+ * \param width The width in pixels.
+ * \param height The height in pixels.
+ * \return The created surface.
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='472' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='121' u='c' c='_ZN7Solarus10LuaContext18surface_api_createEP9lua_State'/>

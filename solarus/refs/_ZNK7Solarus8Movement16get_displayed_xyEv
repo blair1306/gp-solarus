@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='93' type='Solarus::Point Solarus::Movement::get_displayed_xy() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='808' u='c' c='_ZNK7Solarus6Entity16get_displayed_xyEv'/>
+<ovr f='codebrowser/src/movements/JumpMovement.cpp' l='160' c='_ZNK7Solarus12JumpMovement16get_displayed_xyEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='534' ll='536' type='Solarus::Point Solarus::Movement::get_displayed_xy() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='525'>/**
+ * \brief Returns the coordinates where an object controlled by this movement
+ * should be displayed.
+ *
+ * By default, it returns the coordinates of the object itself. Redefine this function
+ * if you want the object to be displayed at different coordinates than its real position.
+ *
+ * \return the coordinates to use to display the object controlled by this movement
+ */</doc>
+<ovr f='codebrowser/src/movements/RelativeMovement.cpp' l='105' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>

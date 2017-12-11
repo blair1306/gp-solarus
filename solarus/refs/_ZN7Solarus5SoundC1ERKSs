@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='60' type='void Solarus::Sound::Sound(const std::string &amp; sound_id)'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='139' u='c' c='_ZN7Solarus5SoundC1Ev'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='148' ll='152' type='void Solarus::Sound::Sound(const std::string &amp; sound_id)'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='268' u='c' c='_ZN7Solarus5Sound8load_allEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='295' u='c' c='_ZN7Solarus5Sound4playERKSs'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='143'>/**
+ * \brief Creates a new Ogg Vorbis sound.
+ * \param sound_id id of the sound: name of a .ogg file in the sounds subdirectory,
+ * without the extension (.ogg is added automatically)
+ */</doc>

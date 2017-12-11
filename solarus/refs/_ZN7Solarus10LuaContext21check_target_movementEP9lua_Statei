@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1153' type='static std::shared_ptr&lt;TargetMovement&gt; Solarus::LuaContext::check_target_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='980' ll='984' type='static std::shared_ptr&lt;TargetMovement&gt; Solarus::LuaContext::check_target_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='994' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_targetEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1026' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1040' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1055' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1069' u='c' c='_ZN7Solarus10LuaContext29target_movement_api_is_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1083' u='c' c='_ZN7Solarus10LuaContext30target_movement_api_set_smoothEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='973'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * target movement and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The movement.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='80' type='std::vector&lt;std::string&gt; Solarus::QuestFiles::data_files_enumerate(const std::string &amp; dir_path, bool list_files = true, bool list_directories = true)'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='381' ll='406' type='std::vector&lt;std::string&gt; Solarus::QuestFiles::data_files_enumerate(const std::string &amp; dir_path, bool list_files = true, bool list_directories = true)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='370'>/**
+ * \brief Enumerate files of a directory.
+ *
+ * Symbolic links are never returned.
+ *
+ * \param dir_path Name of the directory to list, relative to the quest data
+ * directory.
+ * \param list_files Whether regular files should be included in the result.
+ * \param list_directories Whether directories should be included in the result.
+ * \return The files in this directory.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='215' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>

@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_video.h' l='517' type='void SDL_GetWindowPosition(SDL_Window * window, int * x, int * y)'/>
+<doc f='include/SDL2/SDL_video.h' l='508'>/**
+ *  \brief Get the position of a window.
+ *
+ *  \param window   The window to query.
+ *  \param x        Pointer to variable for storing the x position, may be NULL
+ *  \param y        Pointer to variable for storing the y position, may be NULL
+ *
+ *  \sa SDL_SetWindowPosition()
+ */</doc>

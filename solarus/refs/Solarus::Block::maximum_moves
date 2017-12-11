@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='81' type='int'/>
+<use f='codebrowser/src/entities/Block.cpp' l='58' u='w' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Block.cpp' l='216' u='r' c='_ZN7Solarus5Block22start_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='304' u='r' c='_ZN7Solarus5Block21stop_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='305' u='w' c='_ZN7Solarus5Block21stop_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='338' u='w' c='_ZN7Solarus5Block5resetEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='404' u='w' c='_ZN7Solarus5Block17set_maximum_movesEi'/>
+<offset>2048</offset>
+<doc f='codebrowser/include/solarus/entities/Block.h' l='81'>/**&lt; indicates whether the block can be pushed
+                                 * (0: none, 1: once: 2: infinite) */</doc>

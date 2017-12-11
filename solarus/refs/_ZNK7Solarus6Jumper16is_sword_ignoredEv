@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='49' type='bool Solarus::Jumper::is_sword_ignored() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='351' c='_ZNK7Solarus6Entity16is_sword_ignoredEv'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='401' ll='405' type='bool Solarus::Jumper::is_sword_ignored() const'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='393'>/**
+ * \brief Returns true if this entity does not react to the sword.
+ *
+ * If true is returned, nothing will happen when the hero hits this entity
+ * with the sword.
+ *
+ * \return \c true if the sword is ignored
+ */</doc>

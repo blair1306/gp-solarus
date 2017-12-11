@@ -1,0 +1,22 @@
+<def f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='140' ll='186'/>
+<size>66664</size>
+<mbr r='SNES_SPC::state_t::timers' o='0' t='SNES_SPC::Timer [3]'/>
+<mbr r='SNES_SPC::state_t::smp_regs' o='576' t='uint8_t [2][16]'/>
+<mbr r='SNES_SPC::state_t::cpu_regs' o='832' t='struct (anonymous struct at /home/jon/workspace/solarus/include/solarus/third_party/snes_spc/SNES_SPC.h:146:3)'/>
+<mbr r='SNES_SPC::state_t::dsp_time' o='1024' t='rel_time_t'/>
+<mbr r='SNES_SPC::state_t::spc_time' o='1056' t='time_t'/>
+<mbr r='SNES_SPC::state_t::echo_accessed' o='1088' t='bool'/>
+<mbr r='SNES_SPC::state_t::tempo' o='1120' t='int'/>
+<mbr r='SNES_SPC::state_t::skipped_kon' o='1152' t='int'/>
+<mbr r='SNES_SPC::state_t::skipped_koff' o='1184' t='int'/>
+<mbr r='SNES_SPC::state_t::cpu_error' o='1216' t='const char *'/>
+<mbr r='SNES_SPC::state_t::extra_clocks' o='1280' t='int'/>
+<mbr r='SNES_SPC::state_t::buf_begin' o='1344' t='sample_t *'/>
+<mbr r='SNES_SPC::state_t::buf_end' o='1408' t='const sample_t *'/>
+<mbr r='SNES_SPC::state_t::extra_pos' o='1472' t='sample_t *'/>
+<mbr r='SNES_SPC::state_t::extra_buf' o='1536' t='sample_t [16]'/>
+<mbr r='SNES_SPC::state_t::rom_enabled' o='1792' t='int'/>
+<mbr r='SNES_SPC::state_t::rom' o='1824' t='uint8_t [64]'/>
+<mbr r='SNES_SPC::state_t::hi_ram' o='2336' t='uint8_t [64]'/>
+<mbr r='SNES_SPC::state_t::cycle_table' o='2848' t='unsigned char [256]'/>
+<mbr r='SNES_SPC::state_t::ram' o='4896' t='struct (anonymous struct at /home/jon/workspace/solarus/include/solarus/third_party/snes_spc/SNES_SPC.h:177:3)'/>

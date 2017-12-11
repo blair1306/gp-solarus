@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/GrabbingState.h' l='31' type='void Solarus::Hero::GrabbingState::GrabbingState(Solarus::Hero &amp; hero)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2486' u='c' c='_ZN7Solarus4Hero14start_grabbingEv'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='115' u='c' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/hero/GrabbingState.cpp' l='31' ll='34' type='void Solarus::Hero::GrabbingState::GrabbingState(Solarus::Hero &amp; hero)'/>
+<doc f='codebrowser/src/hero/GrabbingState.cpp' l='27'>/**
+ * \brief Constructor.
+ * \param hero The hero controlled by this state.
+ */</doc>
+<use f='codebrowser/src/hero/PullingState.cpp' l='86' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='233' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='85' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='254' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>

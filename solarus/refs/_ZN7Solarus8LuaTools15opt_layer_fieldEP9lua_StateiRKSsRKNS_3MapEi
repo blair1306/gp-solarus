@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='224' type='int Solarus::LuaTools::opt_layer_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Map &amp; map, int default_value)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5079' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='860' ll='882' type='int Solarus::LuaTools::opt_layer_field(lua_State * l, int table_index, const std::string &amp; key, const Solarus::Map &amp; map, int default_value)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='851'>/**
+ * \brief Like LuaTools::check_layer_field() but with a default value.
+ * \param l A Lua state.
+ * \param table_index Index of a table in the stack.
+ * \param key Key of the field to get in that table.
+ * \param map The map whose number of layer matters.
+ * \param default_value The default value to return if the field is \c nil.
+ * \return The wanted field as a layer.
+ */</doc>

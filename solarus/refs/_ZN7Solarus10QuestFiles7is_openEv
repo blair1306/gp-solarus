@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='59' type='bool Solarus::QuestFiles::is_open()'/>
+<use f='codebrowser/gui/src/settings.cpp' l='44' u='c' c='_ZNK10SolarusGui8Settings15export_to_questERK7QString'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='120' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='163' u='c' c='_ZN7Solarus10QuestFiles11close_questEv'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='182' ll='185' type='bool Solarus::QuestFiles::is_open()'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='178'>/**
+ * @brief Returns whether a quest is open.
+ * @return @c true if a quest is open, even if missing.
+ */</doc>

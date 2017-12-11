@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='92' type='bool Solarus::Npc::is_sword_ignored() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='351' c='_ZNK7Solarus6Entity16is_sword_ignoredEv'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='204' ll='208' type='bool Solarus::Npc::is_sword_ignored() const'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='197'>/**
+ * \brief Returns true if this entity does not react to the sword.
+ *
+ * If true is returned, nothing will happen when the hero hits this entity with the sword.
+ *
+ * \return true if the sword is ignored
+ */</doc>

@@ -1,0 +1,40 @@
+<def f='codebrowser/include/solarus/MainLoop.h' l='41' ll='94'/>
+<size>184</size>
+<doc f='codebrowser/include/solarus/MainLoop.h' l='36'>/**
+ * \brief Main class of the game engine.
+ *
+ * It starts the program and handles the succession of its screens.
+ */</doc>
+<fun r='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<fun r='_ZN7Solarus8MainLoopD1Ev'/>
+<fun r='_ZN7Solarus8MainLoop3runEv'/>
+<fun r='_ZN7Solarus8MainLoop4stepEv'/>
+<fun r='_ZN7Solarus8MainLoop11set_exitingEv'/>
+<fun r='_ZN7Solarus8MainLoop10is_exitingEv'/>
+<fun r='_ZN7Solarus8MainLoop13set_resettingEv'/>
+<fun r='_ZN7Solarus8MainLoop12is_resettingEv'/>
+<fun r='_ZN7Solarus8MainLoop8get_gameEv'/>
+<fun r='_ZN7Solarus8MainLoop8set_gameEPNS_4GameE'/>
+<fun r='_ZN7Solarus8MainLoop21get_resource_providerEv'/>
+<fun r='_ZN7Solarus8MainLoop16push_lua_commandERKSs'/>
+<fun r='_ZN7Solarus8MainLoop15get_lua_contextEv'/>
+<fun r='_ZN7Solarus8MainLoop11check_inputEv'/>
+<fun r='_ZN7Solarus8MainLoop12notify_inputERKNS_10InputEventE'/>
+<fun r='_ZN7Solarus8MainLoop4drawEv'/>
+<fun r='_ZN7Solarus8MainLoop6updateEv'/>
+<fun r='_ZN7Solarus8MainLoop21load_quest_propertiesEv'/>
+<fun r='_ZN7Solarus8MainLoop22initialize_lua_consoleEv'/>
+<fun r='_ZN7Solarus8MainLoop16quit_lua_consoleEv'/>
+<mbr r='Solarus::MainLoop::lua_context' o='0' t='std::unique_ptr&lt;LuaContext&gt;'/>
+<mbr r='Solarus::MainLoop::resource_provider' o='64' t='Solarus::ResourceProvider'/>
+<mbr r='Solarus::MainLoop::root_surface' o='448' t='SurfacePtr'/>
+<mbr r='Solarus::MainLoop::game' o='576' t='std::unique_ptr&lt;Game&gt;'/>
+<mbr r='Solarus::MainLoop::next_game' o='640' t='Solarus::Game *'/>
+<mbr r='Solarus::MainLoop::exiting' o='704' t='std::atomic&lt;bool&gt;'/>
+<mbr r='Solarus::MainLoop::debug_lag' o='736' t='uint32_t'/>
+<mbr r='Solarus::MainLoop::turbo' o='768' t='bool'/>
+<mbr r='Solarus::MainLoop::stdin_thread' o='832' t='std::thread'/>
+<mbr r='Solarus::MainLoop::lua_commands' o='896' t='std::vector&lt;std::string&gt;'/>
+<mbr r='Solarus::MainLoop::lua_commands_mutex' o='1088' t='std::mutex'/>
+<mbr r='Solarus::MainLoop::num_lua_commands_pushed' o='1408' t='int'/>
+<mbr r='Solarus::MainLoop::num_lua_commands_done' o='1440' t='int'/>

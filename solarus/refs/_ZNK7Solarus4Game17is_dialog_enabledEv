@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Game.h' l='103' type='bool Solarus::Game::is_dialog_enabled() const'/>
+<use f='codebrowser/src/Game.cpp' l='289' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/Game.cpp' l='545' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='587' u='c' c='_ZN7Solarus4Game4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Game.cpp' l='721' u='c' c='_ZNK7Solarus4Game12is_suspendedEv'/>
+<def f='codebrowser/src/Game.cpp' l='732' ll='734' type='bool Solarus::Game::is_dialog_enabled() const'/>
+<use f='codebrowser/src/Game.cpp' l='794' u='c' c='_ZNK7Solarus4Game11can_unpauseEv'/>
+<doc f='codebrowser/src/Game.cpp' l='728'>/**
+ * \brief Returns whether a dialog is currently active.
+ * \return true if a dialog box is being shown
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='432' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='420' u='c' c='_ZN7Solarus10LuaContext26game_api_is_dialog_enabledEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='448' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='486' u='c' c='_ZN7Solarus10LuaContext20game_api_stop_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='164' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>

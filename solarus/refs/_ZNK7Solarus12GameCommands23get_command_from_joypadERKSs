@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='95' type='Solarus::GameCommand Solarus::GameCommands::get_command_from_joypad(const std::string &amp; joypad_string) const'/>
+<use f='codebrowser/src/GameCommands.cpp' l='242' u='c' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='272' u='c' c='_ZN7Solarus12GameCommands22joypad_button_releasedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='292' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='299' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='315' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='316' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='355' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='408' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='413' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='422' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='427' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='433' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='438' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='591' u='c' c='_ZN7Solarus12GameCommands18set_joypad_bindingENS_11GameCommandERKSs'/>
+<def f='codebrowser/src/GameCommands.cpp' l='741' ll='750' type='Solarus::GameCommand Solarus::GameCommands::get_command_from_joypad(const std::string &amp; joypad_string) const'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='735'>/**
+ * \brief Returns the game command (if any) associated to the specified
+ * joypad action.
+ * \param joypad_string A joypad action.
+ * \return The game command mapped to that joypad action or GameCommand::NONE.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/gui/include/solarus/gui/about_dialog.h' l='34' type='void SolarusGui::AboutDialog::AboutDialog(QWidget * parent = nullptr)'/>
+<def f='codebrowser/gui/src/about_dialog.cpp' l='26' ll='40' type='void SolarusGui::AboutDialog::AboutDialog(QWidget * parent = nullptr)'/>
+<doc f='codebrowser/gui/src/about_dialog.cpp' l='22'>/**
+ * @brief Creates a main window.
+ * @param parent Parent object or nullptr.
+ */</doc>
+<use f='codebrowser/gui/src/main_window.cpp' l='453' u='c' c='_ZN10SolarusGui10MainWindow25on_action_about_triggeredEv'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='254' type='bool Solarus::Entity::is_touching_point_in(const Solarus::Rectangle &amp; rectangle, int direction) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2024' u='c' c='_ZNK7Solarus6Entity23test_collision_touchingERKS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2025' u='c' c='_ZNK7Solarus6Entity23test_collision_touchingERKS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2026' u='c' c='_ZNK7Solarus6Entity23test_collision_touchingERKS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2027' u='c' c='_ZNK7Solarus6Entity23test_collision_touchingERKS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2821' ll='2826' type='bool Solarus::Entity::is_touching_point_in(const Solarus::Rectangle &amp; rectangle, int direction) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2814'>/**
+ * \brief Returns whether a touching point of this entity is in
+ * the specified rectangle.
+ * \param rectangle the rectangle to check
+ * \param direction direction of the touching point to consider (0 to 3)
+ * \return true if this touching point is in the specified rectangle
+ */</doc>

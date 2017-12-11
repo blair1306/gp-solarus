@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/GameCommands.h' l='71' type='void Solarus::GameCommands::game_command_pressed(Solarus::GameCommand command)'/>
+<doc f='codebrowser/include/solarus/GameCommands.h' l='70'>// High-level resulting commands.</doc>
+<use f='codebrowser/src/Game.cpp' l='946' u='c' c='_ZN7Solarus4Game24simulate_command_pressedENS_11GameCommandE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='202' u='c' c='_ZN7Solarus12GameCommands20keyboard_key_pressedENS_10InputEvent11KeyboardKeyE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='247' u='c' c='_ZN7Solarus12GameCommands21joypad_button_pressedEi'/>
+<use f='codebrowser/src/GameCommands.cpp' l='325' u='c' c='_ZN7Solarus12GameCommands17joypad_axis_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='449' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<use f='codebrowser/src/GameCommands.cpp' l='456' u='c' c='_ZN7Solarus12GameCommands16joypad_hat_movedEii'/>
+<def f='codebrowser/src/GameCommands.cpp' l='487' ll='491' type='void Solarus::GameCommands::game_command_pressed(Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/GameCommands.cpp' l='480'>/**
+ * \brief This function is called when a game command is pressed.
+ *
+ * This event may come from the keyboard or the joypad.
+ *
+ * \param command The game command pressed.
+ */</doc>

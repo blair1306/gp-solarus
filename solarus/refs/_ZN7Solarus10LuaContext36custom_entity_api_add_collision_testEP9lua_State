@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1010' type='static int Solarus::LuaContext::custom_entity_api_add_collision_test(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='513' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5542' ll='5597' type='static int Solarus::LuaContext::custom_entity_api_add_collision_test(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5537'>/**
+ * \brief Implementation of custom_entity:add_collision_test().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1093' type='static void Solarus::LuaContext::push_sprite(lua_State * l, Solarus::Sprite &amp; sprite)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='730' u='c' c='_ZN7Solarus10LuaContext26push_named_sprite_iteratorEP9lua_StateRKSt6vectorINS_6Entity11NamedSpriteESaIS5_EE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1390' u='c' c='_ZN7Solarus10LuaContext21entity_api_get_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1433' u='c' c='_ZN7Solarus10LuaContext24entity_api_create_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5291' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityERNS_6SpriteES9_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5292' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityERNS_6SpriteES9_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2756' u='c' c='_ZN7Solarus10LuaContext18on_collision_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2757' u='c' c='_ZN7Solarus10LuaContext18on_collision_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2823' u='c' c='_ZN7Solarus10LuaContext25on_custom_attack_receivedENS_11EnemyAttackEPNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2842' u='c' c='_ZN7Solarus10LuaContext16on_hurt_by_swordERNS_4HeroERNS_6SpriteE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2905' u='c' c='_ZN7Solarus10LuaContext17on_attacking_heroERNS_4HeroEPNS_6SpriteE'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='111' ll='114' type='static void Solarus::LuaContext::push_sprite(lua_State * l, Solarus::Sprite &amp; sprite)'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='130' u='c' c='_ZN7Solarus10LuaContext17sprite_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='620' u='c' c='_ZN7Solarus10LuaContext28sprite_on_animation_finishedERNS_6SpriteERKSs'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='640' u='c' c='_ZN7Solarus10LuaContext27sprite_on_animation_changedERNS_6SpriteERKSs'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='661' u='c' c='_ZN7Solarus10LuaContext27sprite_on_direction_changedERNS_6SpriteERKSsi'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='682' u='c' c='_ZN7Solarus10LuaContext23sprite_on_frame_changedERNS_6SpriteERKSsi'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='106'>/**
+ * \brief Pushes a sprite userdata onto the stack.
+ * \param l A Lua context.
+ * \param sprite A sprite.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='110' type='bool Solarus::Entity::State::can_avoid_sensor() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='835' ll='837' type='bool Solarus::Entity::State::can_avoid_sensor() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='828'>/**
+ * \brief Returns whether the entity ignores the effect of sensors in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of sensors in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1770' u='c' c='_ZN7Solarus4Hero28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='261' c='_ZNK7Solarus4Hero22BackToSolidGroundState16can_avoid_sensorEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='162' c='_ZNK7Solarus4Hero18ForcedWalkingState16can_avoid_sensorEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='294' c='_ZNK7Solarus4Hero12JumpingState16can_avoid_sensorEv'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='228' type='Solarus::CollisionMode Solarus::CustomEntity::CollisionInfo::get_built_in_test() const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='835' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='942' u='c' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1411' ll='1413' type='Solarus::CollisionMode Solarus::CustomEntity::CollisionInfo::get_built_in_test() const'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1406'>/**
+ * \brief Returns the built-in collision test to perform.
+ * \return The built-in collision test, or COLLISION_NONE if this is a
+ * customized collision test.
+ */</doc>

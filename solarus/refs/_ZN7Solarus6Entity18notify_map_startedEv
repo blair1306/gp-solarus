@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='124' type='void Solarus::Entity::notify_map_started()'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='710' u='c' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='348' ll='354' type='void Solarus::Entity::notify_map_started()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='343'>/**
+ * \brief Notifies this entity that its map has just started.
+ *
+ * The map was being loaded and is now ready.
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='516' c='_ZN7Solarus4Hero18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='518' u='c' c='_ZN7Solarus4Hero18notify_map_startedEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='94' type='void Solarus::Npc::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='407' c='_ZN7Solarus6Entity16notify_collisionERS0_NS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='218' ll='250' type='void Solarus::Npc::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='210'>/**
+ * \brief This function is called by the engine when there is a collision with another entity.
+ *
+ * If the entity is the hero, we allow him to interact with this entity.
+ *
+ * \param entity_overlapping the entity overlapping the detector
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL.h' l='147' type='Uint32 SDL_WasInit(Uint32 flags)'/>
+<doc f='include/SDL2/SDL.h' l='141'>/**
+ *  This function returns a mask of the specified subsystems which have
+ *  previously been initialized.
+ *
+ *  If \c flags is 0, it returns a mask of all initialized subsystems.
+ */</doc>

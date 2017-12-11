@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Map.h' l='133' type='bool Solarus::Map::test_collision_with_obstacles(int layer, int x, int y, Solarus::Entity &amp; entity_to_check)'/>
+<def f='codebrowser/src/Map.cpp' l='963' ll='982' type='bool Solarus::Map::test_collision_with_obstacles(int layer, int x, int y, Solarus::Entity &amp; entity_to_check)'/>
+<use f='codebrowser/src/Map.cpp' l='997' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiRKNS_5PointERNS_6EntityE'/>
+<doc f='codebrowser/src/Map.cpp' l='954'>/**
+ * \brief Tests whether a point collides with the map obstacles.
+ * \param layer Layer of point to check.
+ * \param x X coordinate of the point to check.
+ * \param y Y coordinate of the point to check.
+ * \param entity_to_check The entity to check (used to decide what is
+ * considered as obstacle)
+ * \return \c true if the point is overlapping an obstacle.
+ */</doc>

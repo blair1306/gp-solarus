@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='86' type='uint32_t Solarus::Sprite::get_next_frame_date() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='239' ll='241' type='uint32_t Solarus::Sprite::get_next_frame_date() const'/>
+<doc f='codebrowser/src/Sprite.cpp' l='235'>/**
+ * \brief Returns the date if the next frame change.
+ * \return The next frame date or 0 if there is no frame change scheduled.
+ */</doc>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='128' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='129' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='133' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>

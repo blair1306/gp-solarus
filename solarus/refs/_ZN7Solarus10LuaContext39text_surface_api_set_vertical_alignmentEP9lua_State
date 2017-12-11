@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='567' type='static int Solarus::LuaContext::text_surface_api_set_vertical_alignment(lua_State * )'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='72' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>
+<def f='codebrowser/src/lua/TextSurfaceApi.cpp' l='260' ll='272' type='static int Solarus::LuaContext::text_surface_api_set_vertical_alignment(lua_State * l)'/>
+<doc f='codebrowser/src/lua/TextSurfaceApi.cpp' l='255'>/**
+ * \brief Implementation of text_surface:set_vertical_alignment().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

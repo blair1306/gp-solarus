@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='137' type='void Solarus::Hero::notify_position_changed()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='350' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='359' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='369' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='231' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1060' ll='1072' type='void Solarus::Hero::notify_position_changed()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2019' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1057'>/**
+ * \brief This function is called when the hero&apos;s position is changed.
+ */</doc>
+<use f='codebrowser/tests/src/tests/PathFinding.cpp' l='40' u='c' c='_ZN12_GLOBAL__N_117test_path_to_heroERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

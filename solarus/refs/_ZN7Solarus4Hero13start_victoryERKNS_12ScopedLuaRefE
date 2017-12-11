@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='267' type='void Solarus::Hero::start_victory(const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2441' ll='2443' type='void Solarus::Hero::start_victory(const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2436'>/**
+ * \brief Makes the hero brandish his sword meaning a victory.
+ * \param callback_ref Lua ref to a function to call when the
+ * victory sequence finishes (possibly an empty ref).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2348' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_victoryEP9lua_State'/>

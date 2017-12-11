@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='65' type='int Solarus::Rectangle::get_right() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='141' u='c' c='_ZNK7Solarus9Rectangle16get_bottom_rightEv'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='170' ll='172' type='int Solarus::Rectangle::get_right() const'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='201' u='c' c='_ZNK7Solarus9Rectangle13get_top_rightEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='436' u='c' c='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='504' u='c' c='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='163'>/**
+ * \brief Returns the right coordinate of this rectangle.
+ *
+ * This is the equivalent of: get_left() + get_width()
+ *
+ * \return The right coordinate.
+ */</doc>

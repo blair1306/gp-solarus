@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_render.h' l='770' type='int SDL_RenderCopy(SDL_Renderer * renderer, SDL_Texture * texture, const SDL_Rect * srcrect, const SDL_Rect * dstrect)'/>
+<doc f='include/SDL2/SDL_render.h' l='758'>/**
+ *  \brief Copy a portion of the texture to the current rendering target.
+ *
+ *  \param renderer The renderer which should copy parts of a texture.
+ *  \param texture The source texture.
+ *  \param srcrect   A pointer to the source rectangle, or NULL for the entire
+ *                   texture.
+ *  \param dstrect   A pointer to the destination rectangle, or NULL for the
+ *                   entire rendering target.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='846' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

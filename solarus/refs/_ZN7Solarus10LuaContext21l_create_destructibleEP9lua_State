@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1317' type='static int Solarus::LuaContext::l_create_destructible(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='573' ll='605' type='static int Solarus::LuaContext::l_create_destructible(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1274' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='568'>/**
+ * \brief Creates a destructible object on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

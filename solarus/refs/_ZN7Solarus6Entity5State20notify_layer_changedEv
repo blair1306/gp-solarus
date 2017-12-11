@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='76' type='void Solarus::Entity::State::notify_layer_changed()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='499' ll='500' type='void Solarus::Entity::State::notify_layer_changed()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='496'>/**
+ * \brief Notifies this state that the layer has changed.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1149' u='c' c='_ZN7Solarus4Hero20notify_layer_changedEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='171' c='_ZN7Solarus4Hero12JumpingState20notify_layer_changedEv'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='266' c='_ZN7Solarus4Hero19PlayerMovementState20notify_layer_changedEv'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='350' c='_ZN7Solarus4Hero11StairsState20notify_layer_changedEv'/>

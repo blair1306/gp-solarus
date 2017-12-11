@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='116' type='void Solarus::Entities::add_tile_info(const Solarus::TileInfo &amp; tile)'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='783' ll='941' type='void Solarus::Entities::add_tile_info(const Solarus::TileInfo &amp; tile_info)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='773'>/**
+ * \brief Adds tile creation info to the map.
+ *
+ * If possible, the actual tile will never be created for performance reasons:
+ * instead, only its picture and its obstacle info are stored.
+ *
+ * This function is called for each tile when loading the map.
+ *
+ * \param tile_info The tile info to add.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='444' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>

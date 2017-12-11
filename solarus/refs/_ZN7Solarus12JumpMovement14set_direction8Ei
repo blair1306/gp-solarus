@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='38' type='void Solarus::JumpMovement::set_direction8(int direction8)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1707' u='c' c='_ZN7Solarus10LuaContext32jump_movement_api_set_direction8EP9lua_State'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='90' ll='94' type='void Solarus::JumpMovement::set_direction8(int direction8)'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='83'>/**
+ * \brief Changes the direction of this movement.
+ *
+ * The movement is restarted.
+ *
+ * \param direction8 the new direction (0 to 7)
+ */</doc>

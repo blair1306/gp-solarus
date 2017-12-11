@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/PushingState.h' l='57' type='void Solarus::Hero::PushingState::stop_moving_pushed_entity()'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='62' u='c' c='_ZN7Solarus4Hero12PushingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='147' u='c' c='_ZN7Solarus4Hero12PushingState31notify_grabbed_entity_collisionEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='158' u='c' c='_ZN7Solarus4Hero12PushingState24notify_movement_finishedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='171' u='c' c='_ZN7Solarus4Hero12PushingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='191' u='c' c='_ZN7Solarus4Hero12PushingState23notify_position_changedEv'/>
+<def f='codebrowser/src/hero/PushingState.cpp' l='199' ll='256' type='void Solarus::Hero::PushingState::stop_moving_pushed_entity()'/>
+<doc f='codebrowser/src/hero/PushingState.cpp' l='196'>/**
+ * \brief Makes the hero stop pushing the entity he is facing.
+ */</doc>

@@ -1,0 +1,9 @@
+<def f='include/c++/4.9/fstream' l='755' ll='760' type='void std::basic_ofstream::close()'/>
+<doc f='include/c++/4.9/fstream' l='749'>/**
+       *  @brief  Close the file.
+       *
+       *  Calls @c std::basic_filebuf::close().  If that function
+       *  fails, @c failbit is set in the stream&apos;s error state.
+       */</doc>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='531' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='145' u='c' c='_ZNK7Solarus7LuaData14export_to_fileERKSs'/>

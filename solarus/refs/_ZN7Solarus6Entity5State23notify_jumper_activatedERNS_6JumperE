@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='140' type='void Solarus::Entity::State::notify_jumper_activated(Solarus::Jumper &amp; jumper)'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='894' ll='895' type='void Solarus::Entity::State::notify_jumper_activated(Solarus::Jumper &amp; )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='886'>/**
+ * \brief Notifies this state that the entity is activating a jumper.
+ *
+ * Does nothing by default.
+ * Redefine this function if you want to perform the jump in your state.
+ *
+ * \param jumper The jumper activated.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='894'>/* jumper */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1758' u='c' c='_ZN7Solarus4Hero28notify_collision_with_jumperERNS_6JumperENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='305' c='_ZN7Solarus4Hero19PlayerMovementState23notify_jumper_activatedERNS_6JumperE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='226' c='_ZN7Solarus4Hero12RunningState23notify_jumper_activatedERNS_6JumperE'/>

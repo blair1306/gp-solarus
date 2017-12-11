@@ -1,0 +1,42 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='198' type='SpritePtr Solarus::Entity::get_sprite(const std::string &amp; sprite_name = &quot;&quot;) const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='251' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='442' u='c' c='_ZN7Solarus5Arrow22has_reached_map_borderEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='240' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='151' u='c' c='_ZN7Solarus5Chest8set_openEb'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='185' u='c' c='_ZN7Solarus12CrystalBlock6updateEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='214' u='c' c='_ZN7Solarus12CrystalBlock11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1050' u='c' c='_ZN7Solarus12CustomEntity28notify_collision_with_switchERNS_6SwitchERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1068' u='c' c='_ZN7Solarus12CustomEntity29notify_collision_with_crystalERNS_7CrystalERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1120' u='c' c='_ZN7Solarus12CustomEntity31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1129' u='c' c='_ZN7Solarus12CustomEntity26notify_collision_with_fireERNS_4FireERNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='449' u='c' c='_ZN7Solarus12Destructible22play_destroy_animationEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='506' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='174' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='524' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='675' u='c' c='_ZN7Solarus4Door11set_openingEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='709' u='c' c='_ZN7Solarus4Door11set_closingEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='744' u='c' c='_ZNK7Solarus5Enemy13get_animationEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1447' u='c' c='_ZNK7Solarus5Enemy27is_dying_animation_finishedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1495' u='c' c='_ZNK7Solarus5Enemy29is_sprite_finished_or_loopingEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1021' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1247' ll='1281' type='SpritePtr Solarus::Entity::get_sprite(const std::string &amp; sprite_name = &quot;&quot;) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1241'>/**
+ * \brief Returns a sprite of this entity.
+ * \param sprite_name Name of the sprite to get, or an empty string to
+ * get the default sprite.
+ * \return The corresponding sprite, or nullptr if there is no such sprite.
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='67' u='c' c='_ZN7Solarus9Explosion6updateEv'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='57' u='c' c='_ZN7Solarus4Fire6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='225' u='c' c='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='283' u='c' c='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='265' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='363' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='392' u='c' c='_ZN7Solarus3Npc24notify_movement_finishedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='410' u='c' c='_ZNK7Solarus3Npc13can_be_liftedEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='138' u='c' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='124' u='c' c='_ZN7Solarus12StreamAction18recompute_movementEv'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='169' u='c' c='_ZN7Solarus6Switch13set_activatedEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='749' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1388' u='c' c='_ZN7Solarus10LuaContext21entity_api_get_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1456' u='c' c='_ZN7Solarus10LuaContext24entity_api_remove_spriteEP9lua_State'/>

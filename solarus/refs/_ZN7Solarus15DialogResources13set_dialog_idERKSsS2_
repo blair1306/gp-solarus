@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='68' type='bool Solarus::DialogResources::set_dialog_id(const std::string &amp; old_dialog_id, const std::string &amp; new_dialog_id)'/>
+<def f='codebrowser/src/DialogResources.cpp' l='200' ll='218' type='bool Solarus::DialogResources::set_dialog_id(const std::string &amp; old_dialog_id, const std::string &amp; new_dialog_id)'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='193'>/**
+ * \brief Changes the id of a dialog.
+ * \param old_dialog_id Old id of the dialog.
+ * \param new_dialog_id New id to set.
+ * \return \c true in case of success.
+ * In case of failure, the old dialog is unchanged.
+ */</doc>

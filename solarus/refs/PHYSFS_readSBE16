@@ -1,0 +1,14 @@
+<dec f='include/physfs.h' l='1573' type='int PHYSFS_readSBE16(PHYSFS_File * file, PHYSFS_sint16 * val)'/>
+<doc f='include/physfs.h' l='1560'>/**
+ * \fn int PHYSFS_readSBE16(PHYSFS_File *file, PHYSFS_sint16 *val)
+ * \brief Read and convert a signed 16-bit bigendian value.
+ *
+ * Convenience function. Read a signed 16-bit bigendian value from a
+ *  file and convert it to the platform&apos;s native byte order.
+ *
+ *    \param file PhysicsFS file handle from which to read.
+ *    \param val pointer to where value should be stored.
+ *   \return zero on failure, non-zero on success. If successful, (*val) will
+ *           store the result. On failure, you can find out what went wrong
+ *           from PHYSFS_getLastError().
+ */</doc>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/tests/include/test_tools/TestEnvironment.h' l='72' type='void Solarus::TestEnvironment::step()'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='70' u='c' c='_ZN7Solarus15TestEnvironment8get_gameEv'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='84' u='c' c='_ZN7Solarus15TestEnvironment7get_mapEv'/>
+<def f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='181' ll='183' type='void Solarus::TestEnvironment::step()'/>
+<doc f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='178'>/**
+ * \brief Simulates one tick of the main loop.
+ */</doc>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='39' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='49' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='58' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='67' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='91' u='c' c='_ZN12_GLOBAL__N_114direction_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='112' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='123' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='149' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='163' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='35' u='c' c='_ZN12_GLOBAL__N_110basic_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_19loop_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='81' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='92' u='c' c='_ZN12_GLOBAL__N_112restart_testERN7Solarus15TestEnvironmentE'/>
+<use f='codebrowser/tests/src/tests/PixelMovement.cpp' l='114' u='c' c='_ZN12_GLOBAL__N_19list_testERN7Solarus15TestEnvironmentE'/>

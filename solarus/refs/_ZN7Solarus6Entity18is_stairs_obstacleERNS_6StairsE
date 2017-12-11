@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='340' type='bool Solarus::Entity::is_stairs_obstacle(Solarus::Stairs &amp; stairs)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='107' c='_ZN7Solarus5Arrow18is_stairs_obstacleERNS_6StairsE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='130' c='_ZN7Solarus9Boomerang18is_stairs_obstacleERNS_6StairsE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='508' c='_ZN7Solarus13CarriedObject18is_stairs_obstacleERNS_6StairsE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='473' c='_ZN7Solarus12CustomEntity18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='479' u='c' c='_ZN7Solarus12CustomEntity18is_stairs_obstacleERNS_6StairsE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2616' ll='2618' type='bool Solarus::Entity::is_stairs_obstacle(Solarus::Stairs &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2608'>/**
+ * \brief Returns whether some stairs are currently considered as an obstacle for this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param stairs an stairs entity
+ * \return true if the stairs are currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2616'>/* stairs */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1496' c='_ZN7Solarus4Hero18is_stairs_obstacleERNS_6StairsE'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='96' c='_ZN7Solarus8Hookshot18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='135' u='c' c='_ZN7Solarus6Stairs15is_obstacle_forERNS_6EntityE'/>

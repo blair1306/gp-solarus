@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_mutex.h' l='89'/>
+<doc f='include/SDL2/SDL_mutex.h' l='81'>/**
+ *  Unlock the mutex.
+ *
+ *  \return 0, or -1 on error.
+ *
+ *  \warning It is an error to unlock a mutex that has not been locked by
+ *           the current thread, and doing so results in undefined behavior.
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1297' type='void Solarus::LuaContext::on_dying()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6535' u='c' c='_ZN7Solarus10LuaContext14enemy_on_dyingERNS_5EnemyE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2864' ll='2869' type='void Solarus::LuaContext::on_dying()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2861'>/**
+ * \brief Calls the on_dying() method of the object on top of the stack.
+ */</doc>

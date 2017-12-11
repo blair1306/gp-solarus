@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Map.h' l='109' type='Solarus::Destination * Solarus::Map::get_destination()'/>
+<def f='codebrowser/src/Map.cpp' l='378' ll='414' type='Solarus::Destination * Solarus::Map::get_destination()'/>
+<use f='codebrowser/src/Map.cpp' l='701' u='c' c='_ZN7Solarus3Map5startEv'/>
+<use f='codebrowser/src/Map.cpp' l='740' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<doc f='codebrowser/src/Map.cpp' l='363'>/**
+ * \brief Returns the destination point specified by the last call to
+ * set_destination().
+ *
+ * If the destination point was set to a special value
+ * (&quot;_same&quot;, &quot;_side0&quot;, &quot;_side1&quot;, &quot;_side2&quot; or &quot;_side3&quot;), returns nullptr.
+ *
+ * If the destination name is empty, returns the default destination if any,
+ * or nullptr.
+ *
+ * Otherwise, if there is no destination entity with this name on the map,
+ * prints an error message and returns the default destination if any or nullptr.
+ *
+ * \return The destination point previously set, or nullptr.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='643' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>

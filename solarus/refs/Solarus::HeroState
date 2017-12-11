@@ -1,0 +1,38 @@
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='37' c='Solarus::Entity::State'/>
+<def f='codebrowser/include/solarus/hero/HeroState.h' l='27' ll='47'/>
+<ovr f='codebrowser/include/solarus/hero/SwordSwingingState.h' l='27' c='Solarus::Hero::SwordSwingingState'/>
+<size>48</size>
+<doc f='codebrowser/include/solarus/hero/HeroState.h' l='24'>/**
+ * \brief The hero base state.
+ */</doc>
+<fun r='_ZN7Solarus9HeroState10get_entityEv'/>
+<fun r='_ZNK7Solarus9HeroState10get_entityEv'/>
+<fun r='_ZNK7Solarus9HeroState11get_spritesEv'/>
+<fun r='_ZN7Solarus9HeroState11get_spritesEv'/>
+<fun r='_ZN7Solarus9HeroState11draw_on_mapEv'/>
+<fun r='_ZN7Solarus9HeroState29notify_attack_command_pressedEv'/>
+<fun r='_ZN7Solarus9HeroState27notify_item_command_pressedEi'/>
+<fun r='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus9HeroStateC1ERNS_4HeroERKSs'/>
+<ovr f='codebrowser/include/solarus/hero/BackToSolidGroundState.h' l='29' c='Solarus::Hero::BackToSolidGroundState'/>
+<ovr f='codebrowser/include/solarus/hero/BoomerangState.h' l='28' c='Solarus::Hero::BoomerangState'/>
+<ovr f='codebrowser/include/solarus/hero/BowState.h' l='27' c='Solarus::Hero::BowState'/>
+<ovr f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='39' c='Solarus::Hero::PlayerMovementState'/>
+<ovr f='codebrowser/include/solarus/hero/FallingState.h' l='27' c='Solarus::Hero::FallingState'/>
+<ovr f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='33' c='Solarus::Hero::ForcedWalkingState'/>
+<ovr f='codebrowser/include/solarus/hero/FrozenState.h' l='27' c='Solarus::Hero::FrozenState'/>
+<ovr f='codebrowser/include/solarus/hero/GrabbingState.h' l='27' c='Solarus::Hero::GrabbingState'/>
+<ovr f='codebrowser/include/solarus/hero/HookshotState.h' l='30' c='Solarus::Hero::HookshotState'/>
+<ovr f='codebrowser/include/solarus/hero/HurtState.h' l='28' c='Solarus::Hero::HurtState'/>
+<ovr f='codebrowser/include/solarus/hero/JumpingState.h' l='30' c='Solarus::Hero::JumpingState'/>
+<ovr f='codebrowser/include/solarus/hero/LiftingState.h' l='28' c='Solarus::Hero::LiftingState'/>
+<ovr f='codebrowser/include/solarus/hero/PlungingState.h' l='27' c='Solarus::Hero::PlungingState'/>
+<ovr f='codebrowser/include/solarus/hero/RunningState.h' l='28' c='Solarus::Hero::RunningState'/>
+<ovr f='codebrowser/include/solarus/hero/StairsState.h' l='30' c='Solarus::Hero::StairsState'/>
+<ovr f='codebrowser/include/solarus/hero/TreasureState.h' l='29' c='Solarus::Hero::TreasureState'/>
+<ovr f='codebrowser/include/solarus/hero/UsingItemState.h' l='28' c='Solarus::Hero::UsingItemState'/>
+<ovr f='codebrowser/include/solarus/hero/VictoryState.h' l='28' c='Solarus::Hero::VictoryState'/>
+<ovr f='codebrowser/include/solarus/hero/PushingState.h' l='30' c='Solarus::Hero::PushingState'/>
+<ovr f='codebrowser/include/solarus/hero/PullingState.h' l='30' c='Solarus::Hero::PullingState'/>
+<ovr f='codebrowser/include/solarus/hero/SpinAttackState.h' l='27' c='Solarus::Hero::SpinAttackState'/>
+<ovr f='codebrowser/include/solarus/hero/SwordTappingState.h' l='28' c='Solarus::Hero::SwordTappingState'/>

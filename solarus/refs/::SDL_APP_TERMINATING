@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_events.h' l='63' type='257'/>
+<doc f='include/SDL2/SDL_events.h' l='62'>/* These application events have special meaning on iOS, see README-ios.txt for details */</doc>
+<doc f='include/SDL2/SDL_events.h' l='63'>/**&lt; The application is being terminated by the OS
+                                     Called on iOS in applicationWillTerminate()
+                                     Called on Android in onDestroy()
+                                */</doc>

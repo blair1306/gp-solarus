@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='24' type='64'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='25' c='_ZN8SNES_SPC8init_romEPKh'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='172'/>
+<use f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='173'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='88' u='r' c='_ZN8SNES_SPC10enable_romEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC.cpp' l='397' u='r' c='_ZN8SNES_SPC14cpu_write_highEiii'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SNES_SPC.h' l='20'>// Emulator use
+	
+	// Sets IPL ROM data. Library does not include ROM data. Most SPC music files
+	// don&apos;t need ROM, but a full emulator must provide this.</doc>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='80' c='_ZN8SNES_SPC8init_romEPKh'/>

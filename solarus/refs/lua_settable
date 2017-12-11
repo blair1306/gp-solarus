@@ -1,0 +1,7 @@
+<dec f='include/luajit-2.0/lua.h' l='190' type='void lua_settable(lua_State * L, int idx)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1061' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1211' u='c' c='_ZN7Solarus10LuaContext25notify_userdata_destroyedERNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1284' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1299' u='c' c='_ZN7Solarus10LuaContext31userdata_meta_newindex_as_tableEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='424' u='c' c='_ZN7Solarus10LuaContext23start_movement_on_pointERKSt10shared_ptrINS_8MovementEEi'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='444' u='c' c='_ZN7Solarus10LuaContext22stop_movement_on_pointERKSt10shared_ptrINS_8MovementEE'/>

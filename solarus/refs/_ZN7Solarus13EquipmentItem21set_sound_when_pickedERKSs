@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='69' type='void Solarus::EquipmentItem::set_sound_when_picked(const std::string &amp; sound_when_picked)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='244' ll='247' type='void Solarus::EquipmentItem::set_sound_when_picked(const std::string &amp; sound_when_picked)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='239'>/**
+ * \brief Sets the sound to play when this item is picked on the ground.
+ * \param sound_when_picked The sound to play when this item is picked
+ * or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='473' u='c' c='_ZN7Solarus10LuaContext30item_api_set_sound_when_pickedEP9lua_State'/>

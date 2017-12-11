@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='95' type='void Solarus::HeroSprites::set_animation_stopped_normal()'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='139' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='58' u='c' c='_ZN7Solarus4Hero12FallingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='194' u='c' c='_ZN7Solarus4Hero9FreeState21set_animation_stoppedEv'/>
+<use f='codebrowser/src/hero/FrozenState.cpp' l='41' u='c' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1044' ll='1059' type='void Solarus::HeroSprites::set_animation_stopped_normal()'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1041'>/**
+ * \brief Starts the basic &quot;stopped&quot; animation of the hero&apos;s sprites.
+ */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='117' u='c' c='_ZN7Solarus4Hero19PlayerMovementState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='94' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>

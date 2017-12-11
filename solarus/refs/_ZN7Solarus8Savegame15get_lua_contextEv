@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='112' type='Solarus::LuaContext &amp; Solarus::Savegame::get_lua_context()'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='84' u='c' c='_ZN7Solarus13EquipmentItem15get_lua_contextEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='328' ll='330' type='Solarus::LuaContext &amp; Solarus::Savegame::get_lua_context()'/>
+<doc f='codebrowser/src/Savegame.cpp' l='324'>/**
+ * \brief Returns the Lua context where this savegame lives.
+ * \return The Lua context.
+ */</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='260' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>

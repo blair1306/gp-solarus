@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='404' type='void Solarus::Entity::update_ground_below()'/>
+<use f='codebrowser/src/entities/Block.cpp' l='164' u='c' c='_ZN7Solarus5Block14notify_createdEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='188' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='214' ll='241' type='void Solarus::Entity::update_ground_below()'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='412' u='c' c='_ZN7Solarus6Entity38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='613' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1655' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2326' u='c' c='_ZN7Solarus6Entity14notify_enabledEb'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='209'>/**
+ * \brief Recomputes the kind of ground below this entity.
+ *
+ * This function does nothing if the entity is not sensible to its ground.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1104' u='c' c='_ZN7Solarus4Hero14check_positionEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1593' u='c' c='_ZN7Solarus4Hero37notify_collision_with_teletransporterERNS_15TeletransporterENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2676' u='c' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='231' u='c' c='_ZN7Solarus8Pickable14notify_createdEv'/>

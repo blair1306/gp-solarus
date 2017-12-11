@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='60' type='int Solarus::Equipment::get_max_money() const'/>
+<def f='codebrowser/src/Equipment.cpp' l='137' ll='139' type='int Solarus::Equipment::get_max_money() const'/>
+<use f='codebrowser/src/Equipment.cpp' l='153' u='c' c='_ZN7Solarus9Equipment13set_max_moneyEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='176' u='c' c='_ZN7Solarus9Equipment9set_moneyEi'/>
+<doc f='codebrowser/src/Equipment.cpp' l='133'>/**
+ * \brief Returns the maximum amount of money of the player.
+ * \return the player&apos;s maximum number of money
+ */</doc>
+<doc f='codebrowser/include/solarus/Equipment.h' l='59'>// money</doc>
+<use f='codebrowser/src/lua/GameApi.cpp' l='965' u='c' c='_ZN7Solarus10LuaContext22game_api_get_max_moneyEP9lua_State'/>

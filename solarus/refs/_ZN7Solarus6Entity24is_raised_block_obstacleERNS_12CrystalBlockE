@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='343' type='bool Solarus::Entity::is_raised_block_obstacle(Solarus::CrystalBlock &amp; raised_block)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='174' c='_ZN7Solarus5Arrow24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='197' c='_ZN7Solarus9Boomerang24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='575' c='_ZN7Solarus13CarriedObject24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='93' u='c' c='_ZN7Solarus12CrystalBlock15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='509' c='_ZN7Solarus12CustomEntity24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='515' u='c' c='_ZN7Solarus12CustomEntity24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='315' c='_ZN7Solarus5Enemy24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2652' ll='2654' type='bool Solarus::Entity::is_raised_block_obstacle(Solarus::CrystalBlock &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2644'>/**
+ * \brief Returns whether a raised crystal block is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \param raised_block a crystal block raised
+ * \return true if the raised block is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2652'>/* raised_block */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1514' c='_ZN7Solarus4Hero24is_raised_block_obstacleERNS_12CrystalBlockE'/>

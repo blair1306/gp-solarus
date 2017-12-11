@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='91' type='std::string Solarus::SpriteAnimationData::get_src_image() const'/>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='75' u='c' c='_ZN7Solarus18SpriteAnimationSet13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<def f='codebrowser/src/SpriteData.cpp' l='248' ll='250' type='std::string Solarus::SpriteAnimationData::get_src_image() const'/>
+<use f='codebrowser/src/SpriteData.cpp' l='723' u='c' c='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='244'>/**
+ * \brief Returns the source image of this animation.
+ * \return The source image.
+ */</doc>

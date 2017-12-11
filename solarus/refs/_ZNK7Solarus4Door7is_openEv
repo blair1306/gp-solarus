@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='99' type='bool Solarus::Door::is_open() const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='547' u='c' c='_ZN7Solarus12CustomEntity16is_door_obstacleERNS_4DoorE'/>
+<def f='codebrowser/src/entities/Door.cpp' l='124' ll='126' type='bool Solarus::Door::is_open() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='218' u='c' c='_ZN7Solarus4Door20update_dynamic_tilesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='537' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='548' u='c' c='_ZN7Solarus4Door11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='658' u='c' c='_ZN7Solarus4Door4openEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='119'>/**
+ * \brief Returns whether this door is completely open.
+ * \return true if this door is open, false if it is closed, closing or
+ * opening.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='2691' u='c' c='_ZN7Solarus6Entity16is_door_obstacleERNS_4DoorE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3669' u='c' c='_ZN7Solarus10LuaContext16door_api_is_openEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1852' u='c' c='_ZN7Solarus10LuaContext18map_api_open_doorsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1884' u='c' c='_ZN7Solarus10LuaContext19map_api_close_doorsEP9lua_State'/>

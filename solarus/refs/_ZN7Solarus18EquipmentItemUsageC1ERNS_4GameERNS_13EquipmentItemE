@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/EquipmentItemUsage.h' l='35' type='void Solarus::EquipmentItemUsage::EquipmentItemUsage(Solarus::Game &amp; game, Solarus::EquipmentItem &amp; item)'/>
+<def f='codebrowser/src/EquipmentItemUsage.cpp' l='31' ll='36' type='void Solarus::EquipmentItemUsage::EquipmentItemUsage(Solarus::Game &amp; , Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/EquipmentItemUsage.cpp' l='26'>/**
+ * \brief Creates a new item to be used.
+ * \param game The game.
+ * \param item The item to use.
+ */</doc>
+<doc f='codebrowser/src/EquipmentItemUsage.cpp' l='31'>/* game */</doc>
+<doc f='codebrowser/include/solarus/EquipmentItemUsage.h' l='34'>// creation and destruction</doc>
+<use f='codebrowser/src/hero/UsingItemState.cpp' l='34' u='c' c='_ZN7Solarus4Hero14UsingItemStateC1ERS0_RNS_13EquipmentItemE'/>

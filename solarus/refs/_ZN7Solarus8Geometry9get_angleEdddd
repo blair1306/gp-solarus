@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='74' type='double Solarus::Geometry::get_angle(double x1, double y1, double x2, double y2)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2848' u='c' c='_ZNK7Solarus6Entity9get_angleEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2888' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<def f='codebrowser/src/lowlevel/Geometry.cpp' l='49' ll='67' type='double Solarus::Geometry::get_angle(double x1, double y1, double x2, double y2)'/>
+<use f='codebrowser/src/lowlevel/Geometry.cpp' l='76' u='c' c='_ZN7Solarus8Geometry9get_angleERKNS_5PointES3_'/>
+<doc f='codebrowser/src/lowlevel/Geometry.cpp' l='41'>/**
+ * \brief Returns the angle of the vector formed by two points.
+ * \param x1 X coordinate of the first point.
+ * \param y1 Y coordinate of the first point.
+ * \param x2 X coordinate of the second point.
+ * \param y2 Y coordinate of the second point.
+ * \return The angle in radians, between 0 and TWO_PI.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='338' u='c' c='_ZN7Solarus10LuaContext18main_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='115' u='c' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='150' u='c' c='_ZN7Solarus16StraightMovement11set_y_speedEd'/>

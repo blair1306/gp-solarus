@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='150' type='bool Solarus::Entity::State::is_stopping() const'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='74' u='c' c='_ZNK7Solarus6Entity5State16is_current_stateEv'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='81' ll='83' type='bool Solarus::Entity::State::is_stopping() const'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='213' u='c' c='_ZN7Solarus6Entity5State4stopEPKS1_'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='77'>/**
+ * \brief Returns whether this state is being stopped.
+ * \return \c true if this state is being stopped.
+ */</doc>

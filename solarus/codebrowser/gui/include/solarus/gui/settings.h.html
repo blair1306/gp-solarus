@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>settings.h source code [codebrowser/gui/include/solarus/gui/settings.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="SolarusGui::Settings "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/gui/include/solarus/gui/settings.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>gui</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>gui</a>/<a href='settings.h.html'>settings.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2014-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus Quest Editor is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus Quest Editor is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_GUI_SETTINGS_H">SOLARUS_GUI_SETTINGS_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_GUI_SETTINGS_H" data-ref="_M/SOLARUS_GUI_SETTINGS_H">SOLARUS_GUI_SETTINGS_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="gui_common.h.html">"solarus/gui/gui_common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/qt5/QtCore/QSettings.html">&lt;QSettings&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">SolarusGui</span> {</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">@brief</span> Specialized QSettings object for Solarus settings.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><b>class</b> <a class="macro" href="gui_common.h.html#34" title="" data-ref="_M/SOLARUS_GUI_API">SOLARUS_GUI_API</a> <dfn class="type def" id="SolarusGui::Settings" title='SolarusGui::Settings' data-ref="SolarusGui::Settings">Settings</dfn> : <b>public</b> <a class="type" href="../../../../../include/x86_64-linux-gnu/qt5/QtCore/qsettings.h.html#QSettings" title='QSettings' data-ref="QSettings">QSettings</a> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>public</b>:</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>  <dfn class="decl" id="_ZN10SolarusGui8SettingsC1EN9QSettings5ScopeE" title='SolarusGui::Settings::Settings' data-ref="_ZN10SolarusGui8SettingsC1EN9QSettings5ScopeE">Settings</dfn>(<a class="type" href="../../../../../include/x86_64-linux-gnu/qt5/QtCore/qsettings.h.html#QSettings::Scope" title='QSettings::Scope' data-ref="QSettings::Scope">Scope</a> <dfn class="local col6 decl" id="46scope" title='scope' data-type='QSettings::Scope' data-ref="46scope">scope</dfn> = <a class="enum" href="../../../../../include/x86_64-linux-gnu/qt5/QtCore/qsettings.h.html#QSettings::Scope::UserScope" title='QSettings::Scope::UserScope' data-ref="QSettings::Scope::UserScope">UserScope</a>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>  <em>void</em> <dfn class="decl" id="_ZNK10SolarusGui8Settings15export_to_questERK7QString" title='SolarusGui::Settings::export_to_quest' data-ref="_ZNK10SolarusGui8Settings15export_to_questERK7QString">export_to_quest</dfn>(<em>const</em> <a class="type" href="../../../../../include/x86_64-linux-gnu/qt5/QtCore/qstring.h.html#QString" title='QString' data-ref="QString">QString</a>&amp; <dfn class="local col7 decl" id="47quest_path" title='quest_path' data-type='const QString &amp;' data-ref="47quest_path">quest_path</dfn>) <em>const</em>;</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>};</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/console.cpp.html'>codebrowser/gui/src/console.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

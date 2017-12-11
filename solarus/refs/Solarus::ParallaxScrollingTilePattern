@@ -1,0 +1,22 @@
+<inh f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='32' c='Solarus::SimpleTilePattern'/>
+<def f='codebrowser/include/solarus/entities/ParallaxScrollingTilePattern.h' l='39' ll='57'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/entities/ParallaxScrollingTilePattern.h' l='25'>/**
+ * \brief Tile pattern with a parallax scrolling effect.
+ *
+ * The pattern moves from 1 pixel when the camera moves from 2 pixels.
+ * This gives an illusion of depth. Only the position of where the pattern
+ * is displayed changes: the real position of the tile never changes.
+ * Therefore, placing such tiles on your map can be tricky because at runtime,
+ * they are displayed elsewhere (except in the particular case where the
+ * camera is in (0,0), the top-left corner of the map).
+ * Note that collisions properties remain applied to the
+ * real position of the tile and not to where they are displayed.
+ * Usually, parallax scrolling is used for decoration only, for example to make
+ * nice scrolling backgrounds.
+ */</doc>
+<fun r='_ZN7Solarus28ParallaxScrollingTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus28ParallaxScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<fun r='_ZNK7Solarus28ParallaxScrollingTilePattern11is_animatedEv'/>
+<fun r='_ZNK7Solarus28ParallaxScrollingTilePattern24is_drawn_at_its_positionEv'/>
+<smbr r='Solarus::ParallaxScrollingTilePattern::ratio' t='const int'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='75' type='int Solarus::Surface::get_width() const'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='177' u='c' c='_ZNK7Solarus11TilePattern12fill_surfaceERKSt10shared_ptrINS_7SurfaceEERKNS_9RectangleERKNS_7TilesetERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='62' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='87' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='79' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='80' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='300' ll='302' type='int Solarus::Surface::get_width() const'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='317' u='c' c='_ZNK7Solarus7Surface8get_sizeEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='368' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='742' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='742' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='764' u='c' c='_ZN7Solarus7Surface18apply_pixel_filterERKNS_11PixelFilterERS0_'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='296'>/**
+ * \brief Returns the width of the surface.
+ * \return the width in pixels
+ */</doc>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='358' u='c' c='_ZNK7Solarus11TextSurface9get_widthEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='422' u='c' c='_ZN7Solarus11TextSurface7rebuildEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='426' u='c' c='_ZN7Solarus11TextSurface7rebuildEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='156' u='c' c='_ZN7Solarus10LuaContext20surface_api_get_sizeEP9lua_State'/>

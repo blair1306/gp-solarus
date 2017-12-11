@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='72' type='bool Solarus::Jumper::is_point_in_extended_diagonal(const Solarus::Point &amp; point) const'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='134' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='279' u='c' c='_ZNK7Solarus6Jumper20is_point_in_diagonalERKNS_5PointE'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='291' ll='316' type='bool Solarus::Jumper::is_point_in_extended_diagonal(const Solarus::Point &amp; point) const'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='282'>/**
+ * \brief Returns whether a point is in the 8-pixel active strip
+ * of this diagonal jumper or in the extension of that strip.
+ *
+ * This function only make sense for a diagonal jumper.
+ *
+ * \param point The point to check.
+ * \return \c true if this point is overlapping the jumper
+ */</doc>

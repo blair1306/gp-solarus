@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='86' type='const Solarus::Rectangle &amp; Solarus::Movement::get_last_collision_box_on_obstacle() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='451' u='c' c='_ZN7Solarus5Arrow22has_reached_map_borderEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='279' u='c' c='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='306' u='c' c='_ZN7Solarus8Hookshot23notify_obstacle_reachedEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='473' ll='476' type='const Solarus::Rectangle &amp; Solarus::Movement::get_last_collision_box_on_obstacle() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='469'>/**
+ * \brief Returns the collision box of the last collision check that detected an obstacle.
+ * \return the collision box of the last collision detected, or (-1, -1) if no obstacle was detected
+ */</doc>

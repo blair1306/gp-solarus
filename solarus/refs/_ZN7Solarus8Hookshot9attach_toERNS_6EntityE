@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='57' type='void Solarus::Hookshot::attach_to(Solarus::Entity &amp; entity_reached)'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='276' ll='296' type='void Solarus::Hookshot::attach_to(Solarus::Entity &amp; entity_reached)'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='350' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='368' u='c' c='_ZN7Solarus8Hookshot34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='380' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_blockERNS_5BlockE'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='272'>/**
+ * \brief Attachs the hookshot to an entity and makes the hero move towards this entity.
+ * \param entity_reached the entity to attach the hookshot to
+ */</doc>

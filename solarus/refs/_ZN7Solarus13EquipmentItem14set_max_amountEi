@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='95' type='void Solarus::EquipmentItem::set_max_amount(int max_amount)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='467' ll='479' type='void Solarus::EquipmentItem::set_max_amount(int max_amount)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='463'>/**
+ * \brief Sets the maximum value of the amount associated to this item.
+ * \param max_amount The maximum amount of this item.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='731' u='c' c='_ZN7Solarus10LuaContext23item_api_set_max_amountEP9lua_State'/>

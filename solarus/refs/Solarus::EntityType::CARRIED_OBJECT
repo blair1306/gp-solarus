@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='64' type='24'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='64'>/**&lt; item carried and thrown by the hero (comes from a destructible item) */</doc>
+<use f='codebrowser/include/solarus/entities/CarriedObject.h' l='39'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='33' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='98' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='149' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='62' u='a' c='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='537' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>

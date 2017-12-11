@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='126' type='bool Solarus::Entity::State::is_using_item() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='961' ll='963' type='bool Solarus::Entity::State::is_using_item() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='954'>/**
+ * \brief Returns whether the entity is using an equipment item in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity is using an equipment item.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2305' u='c' c='_ZNK7Solarus4Hero13is_using_itemEv'/>
+<ovr f='codebrowser/src/hero/UsingItemState.cpp' l='79' c='_ZNK7Solarus4Hero14UsingItemState13is_using_itemEv'/>

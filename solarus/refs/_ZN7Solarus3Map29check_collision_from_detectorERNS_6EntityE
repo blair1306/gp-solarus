@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Map.h' l='166' type='void Solarus::Map::check_collision_from_detector(Solarus::Entity &amp; detector)'/>
+<def f='codebrowser/src/Map.cpp' l='1316' ll='1349' type='void Solarus::Map::check_collision_from_detector(Solarus::Entity &amp; detector)'/>
+<doc f='codebrowser/src/Map.cpp' l='1307'>/**
+ * \brief Checks the collisions between all entities and a detector.
+ *
+ * This function is called when a detector wants to check entities,
+ * typically when the detector has just moved.
+ * If the map is suspended, this function does nothing.
+ *
+ * \param detector A detector.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='603' u='c' c='_ZN7Solarus6Entity20notify_layer_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1645' u='c' c='_ZN7Solarus6Entity23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3333' u='c' c='_ZN7Solarus6Entity13set_suspendedEb'/>

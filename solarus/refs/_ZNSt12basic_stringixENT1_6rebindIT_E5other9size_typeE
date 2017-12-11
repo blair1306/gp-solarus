@@ -1,0 +1,36 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='852' ll='862' type='reference std::basic_string::operator[](size_type __pos)'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='842'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read/write reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)  Unshares the string.
+       */</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='68' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='157' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='157' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='63' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='292' u='c' c='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='102' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='102' u='c' c='_ZN7Solarus4Hero12PullingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='105' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='105' u='c' c='_ZN7Solarus4Hero12PushingState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='97' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='114' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='458' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='477' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='486' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='197' u='c' c='_ZN7Solarus7LuaData13escape_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='201' u='c' c='_ZN7Solarus7LuaData13escape_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='221' u='c' c='_ZN7Solarus7LuaData23escape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='225' u='c' c='_ZN7Solarus7LuaData23escape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='229' u='c' c='_ZN7Solarus7LuaData23escape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='247' u='c' c='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='247' u='c' c='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='250' u='c' c='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='250' u='c' c='_ZN7Solarus7LuaData25unescape_multiline_stringESs'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='289' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='292' u='c' c='_ZN7Solarus12PathMovement26start_next_elementary_moveEv'/>

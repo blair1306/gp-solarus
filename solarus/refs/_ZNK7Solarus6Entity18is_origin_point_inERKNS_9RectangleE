@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='252' type='bool Solarus::Entity::is_origin_point_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1994' u='c' c='_ZNK7Solarus6Entity27test_collision_origin_pointERKS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2798' ll='2800' type='bool Solarus::Entity::is_origin_point_in(const Solarus::Rectangle &amp; rectangle) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2792'>/**
+ * \brief Returns whether or not this entity&apos;s origin point is in
+ * the specified rectangle.
+ * \param rectangle the rectangle to check
+ * \return true if this entity&apos;s origin point is in the specified rectangle
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='38' type='int SolarusGui::QuestsView::path_to_index(const QString &amp; path) const'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='43' ll='46' type='int SolarusGui::QuestsView::path_to_index(const QString &amp; path) const'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='195' u='c' c='_ZN10SolarusGui10QuestsView12select_questERK7QString'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='38'>/**
+ * @brief Finds the index of a quest in the list.
+ * @param path Path of the quest to look for.
+ * @return The quest index, or -1 if it is not in the list.
+ */</doc>

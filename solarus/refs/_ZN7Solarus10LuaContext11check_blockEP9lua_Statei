@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1185' type='static std::shared_ptr&lt;Block&gt; Solarus::LuaContext::check_block(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3173' ll='3177' type='static std::shared_ptr&lt;Block&gt; Solarus::LuaContext::check_block(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3196' u='c' c='_ZN7Solarus10LuaContext15block_api_resetEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3212' u='c' c='_ZN7Solarus10LuaContext21block_api_is_pushableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3227' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pushableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3244' u='c' c='_ZN7Solarus10LuaContext21block_api_is_pullableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3259' u='c' c='_ZN7Solarus10LuaContext22block_api_set_pullableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3276' u='c' c='_ZN7Solarus10LuaContext27block_api_get_maximum_movesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3299' u='c' c='_ZN7Solarus10LuaContext27block_api_set_maximum_movesEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3166'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * block and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The block.
+ */</doc>

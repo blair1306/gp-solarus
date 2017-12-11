@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='588' type='static int Solarus::LuaContext::sprite_api_set_direction(lua_State * )'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='47' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='238' ll='255' type='static int Solarus::LuaContext::sprite_api_set_direction(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='233'>/**
+ * \brief Implementation of sprite:set_direction().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

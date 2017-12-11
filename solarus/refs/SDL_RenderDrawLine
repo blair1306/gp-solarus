@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_render.h' l='693' type='int SDL_RenderDrawLine(SDL_Renderer * renderer, int x1, int y1, int x2, int y2)'/>
+<doc f='include/SDL2/SDL_render.h' l='682'>/**
+ *  \brief Draw a line on the current rendering target.
+ *
+ *  \param renderer The renderer which should draw a line.
+ *  \param x1 The x coordinate of the start point.
+ *  \param y1 The y coordinate of the start point.
+ *  \param x2 The x coordinate of the end point.
+ *  \param y2 The y coordinate of the end point.
+ *
+ *  \return 0 on success, or -1 on error
+ */</doc>

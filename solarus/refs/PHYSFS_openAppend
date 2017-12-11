@@ -1,0 +1,24 @@
+<dec f='include/physfs.h' l='1141' type='PHYSFS_File * PHYSFS_openAppend(const char * filename)'/>
+<doc f='include/physfs.h' l='1118'>/**
+ * \fn PHYSFS_File *PHYSFS_openAppend(const char *filename)
+ * \brief Open a file for appending.
+ *
+ * Open a file for writing, in platform-independent notation and in relation
+ *  to the write dir as the root of the writable filesystem. The specified
+ *  file is created if it doesn&apos;t exist. If it does exist, the writing offset
+ *  is set to the end of the file, so the first write will be the byte after
+ *  the end.
+ *
+ * Note that entries that are symlinks are ignored if
+ *  PHYSFS_permitSymbolicLinks(1) hasn&apos;t been called, and opening a
+ *  symlink with this function will fail in such a case.
+ *
+ *   \param filename File to open.
+ *  \return A valid PhysicsFS filehandle on success, NULL on error. Specifics
+ *           of the error can be gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_openRead
+ * \sa PHYSFS_openWrite
+ * \sa PHYSFS_write
+ * \sa PHYSFS_close
+ */</doc>

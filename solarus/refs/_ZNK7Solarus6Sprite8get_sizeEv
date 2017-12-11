@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='68' type='Solarus::Size Solarus::Sprite::get_size() const'/>
+<doc f='codebrowser/include/solarus/Sprite.h' l='67'>// size and origin point</doc>
+<inh f='codebrowser/include/solarus/Drawable.h' l='53' c='_ZNK7Solarus8Drawable8get_sizeEv'/>
+<def f='codebrowser/src/Sprite.cpp' l='164' ll='170' type='Solarus::Size Solarus::Sprite::get_size() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='781' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='823' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<doc f='codebrowser/src/Sprite.cpp' l='160'>/**
+ * \brief Returns the size of the current frame.
+ * \return The size of the current frame.
+ */</doc>
+<use f='codebrowser/src/entities/Block.cpp' l='74' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2776' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1567' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>

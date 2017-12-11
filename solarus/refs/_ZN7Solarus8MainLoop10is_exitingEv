@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='52' type='bool Solarus::MainLoop::is_exiting()'/>
+<def f='codebrowser/src/MainLoop.cpp' l='240' ll='242' type='bool Solarus::MainLoop::is_exiting()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='331' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='366' u='c' c='_ZN7Solarus8MainLoop3runEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='545' u='c' c='_ZN7Solarus8MainLoop22initialize_lua_consoleEv'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='232'>/**
+ * \brief Returns whether the user just closed the window.
+ *
+ * When this function returns true, you should stop immediately
+ * whatever you are doing, free your memory and let the program quit.
+ *
+ * \return true if the user wants to exit the program
+ */</doc>

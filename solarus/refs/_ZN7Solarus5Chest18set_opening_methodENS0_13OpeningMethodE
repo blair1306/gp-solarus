@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='65' type='void Solarus::Chest::set_opening_method(Solarus::Chest::OpeningMethod opening_method)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='234' ll='236' type='void Solarus::Chest::set_opening_method(Solarus::Chest::OpeningMethod opening_method)'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='230'>/**
+ * \brief Sets the opening method of this chest.
+ * \param opening_method How this chest should be opened.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='658' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1149' type='static std::shared_ptr&lt;StraightMovement&gt; Solarus::LuaContext::check_straight_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='716' ll='721' type='static std::shared_ptr&lt;StraightMovement&gt; Solarus::LuaContext::check_straight_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='731' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='744' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='758' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='772' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_set_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='787' u='c' c='_ZN7Solarus10LuaContext38straight_movement_api_get_max_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='801' u='c' c='_ZN7Solarus10LuaContext38straight_movement_api_set_max_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='816' u='c' c='_ZN7Solarus10LuaContext31straight_movement_api_is_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='830' u='c' c='_ZN7Solarus10LuaContext32straight_movement_api_set_smoothEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='709'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * straight movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

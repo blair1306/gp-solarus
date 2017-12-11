@@ -1,0 +1,46 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1201' type='static std::shared_ptr&lt;Enemy&gt; Solarus::LuaContext::check_enemy(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4370' ll='4374' type='static std::shared_ptr&lt;Enemy&gt; Solarus::LuaContext::check_enemy(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4393' u='c' c='_ZN7Solarus10LuaContext19enemy_api_get_breedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4408' u='c' c='_ZN7Solarus10LuaContext18enemy_api_get_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4423' u='c' c='_ZN7Solarus10LuaContext18enemy_api_set_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4440' u='c' c='_ZN7Solarus10LuaContext18enemy_api_add_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4457' u='c' c='_ZN7Solarus10LuaContext21enemy_api_remove_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4474' u='c' c='_ZN7Solarus10LuaContext20enemy_api_get_damageEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4489' u='c' c='_ZN7Solarus10LuaContext20enemy_api_set_damageEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4506' u='c' c='_ZN7Solarus10LuaContext34enemy_api_is_pushed_back_when_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4521' u='c' c='_ZN7Solarus10LuaContext35enemy_api_set_pushed_back_when_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4538' u='c' c='_ZN7Solarus10LuaContext32enemy_api_get_push_hero_on_swordEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4553' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_push_hero_on_swordEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4570' u='c' c='_ZN7Solarus10LuaContext35enemy_api_get_can_hurt_hero_runningEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4585' u='c' c='_ZN7Solarus10LuaContext35enemy_api_set_can_hurt_hero_runningEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4602' u='c' c='_ZN7Solarus10LuaContext24enemy_api_get_hurt_styleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4619' u='c' c='_ZN7Solarus10LuaContext24enemy_api_set_hurt_styleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4637' u='c' c='_ZN7Solarus10LuaContext24enemy_api_get_can_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4652' u='c' c='_ZN7Solarus10LuaContext24enemy_api_set_can_attackEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4669' u='c' c='_ZN7Solarus10LuaContext35enemy_api_get_minimum_shield_neededEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4686' u='c' c='_ZN7Solarus10LuaContext35enemy_api_set_minimum_shield_neededEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4703' u='c' c='_ZN7Solarus10LuaContext32enemy_api_get_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4727' u='c' c='_ZN7Solarus10LuaContext32enemy_api_set_attack_consequenceEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4758' u='c' c='_ZN7Solarus10LuaContext39enemy_api_get_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4783' u='c' c='_ZN7Solarus10LuaContext39enemy_api_set_attack_consequence_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4815' u='c' c='_ZN7Solarus10LuaContext41enemy_api_set_default_attack_consequencesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4831' u='c' c='_ZN7Solarus10LuaContext48enemy_api_set_default_attack_consequences_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4848' u='c' c='_ZN7Solarus10LuaContext24enemy_api_set_invincibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4864' u='c' c='_ZN7Solarus10LuaContext31enemy_api_set_invincible_spriteEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4881' u='c' c='_ZN7Solarus10LuaContext22enemy_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4911' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4947' u='c' c='_ZN7Solarus10LuaContext24enemy_api_is_traversableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4962' u='c' c='_ZN7Solarus10LuaContext25enemy_api_set_traversableEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4980' u='c' c='_ZN7Solarus10LuaContext31enemy_api_get_obstacle_behaviorEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4997' u='c' c='_ZN7Solarus10LuaContext31enemy_api_set_obstacle_behaviorEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5015' u='c' c='_ZN7Solarus10LuaContext17enemy_api_restartEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5031' u='c' c='_ZN7Solarus10LuaContext14enemy_api_hurtEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5052' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5076' u='c' c='_ZN7Solarus10LuaContext22enemy_api_create_enemyEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4363'>/**
+ * \brief Checks that the userdata at the specified index of the stack is an
+ * enemy and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The enemy.
+ */</doc>

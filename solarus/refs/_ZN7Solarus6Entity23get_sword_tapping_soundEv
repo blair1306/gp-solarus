@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='330' type='std::string Solarus::Entity::get_sword_tapping_sound()'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='645' c='_ZN7Solarus4Door23get_sword_tapping_soundEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3283' ll='3285' type='std::string Solarus::Entity::get_sword_tapping_sound()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3279'>/**
+ * \brief This function is called when the player is tapping his sword against this entity.
+ * \return The sound to play when tapping this entity with the sword.
+ */</doc>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='107' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>

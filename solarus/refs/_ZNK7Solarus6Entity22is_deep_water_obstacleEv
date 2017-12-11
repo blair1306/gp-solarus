@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='418' type='bool Solarus::Entity::is_deep_water_obstacle() const'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='124' c='_ZNK7Solarus5Arrow22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='82' c='_ZNK7Solarus4Bomb22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='147' c='_ZNK7Solarus9Boomerang22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='525' c='_ZNK7Solarus13CarriedObject22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='718' c='_ZNK7Solarus12CustomEntity22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='342' c='_ZNK7Solarus5Enemy22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2405' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2489' u='c' c='_ZNK7Solarus6Entity25is_shallow_water_obstacleEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2499' ll='2501' type='bool Solarus::Entity::is_deep_water_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2492'>/**
+ * \brief Returns whether deep water is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ *
+ * \return true if deep water is currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1429' c='_ZNK7Solarus4Hero22is_deep_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='104' c='_ZNK7Solarus8Hookshot22is_deep_water_obstacleEv'/>

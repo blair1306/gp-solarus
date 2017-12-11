@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationSet.h' l='52' type='Solarus::SpriteAnimation &amp; Solarus::SpriteAnimationSet::get_animation(const std::string &amp; animation_name)'/>
+<use f='codebrowser/src/Sprite.cpp' l='280' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/SpriteAnimationSet.cpp' l='142' ll='151' type='Solarus::SpriteAnimation &amp; Solarus::SpriteAnimationSet::get_animation(const std::string &amp; animation_name)'/>
+<doc f='codebrowser/src/SpriteAnimationSet.cpp' l='137'>/**
+ * \brief Returns an animation.
+ * \param animation_name Name of the animation to get.
+ * \return The specified animation.
+ */</doc>

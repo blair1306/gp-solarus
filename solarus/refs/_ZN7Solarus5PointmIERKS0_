@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='44' type='Solarus::Point &amp; Solarus::Point::operator-=(const Solarus::Point &amp; other)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='55' ll='59' type='Solarus::Point &amp; Solarus::Point::operator-=(const Solarus::Point &amp; other)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='50'>/**
+ * \brief Subtracts another point from this one.
+ * \param other Another point.
+ * \return The current point after modification.
+ */</doc>
+<use f='codebrowser/src/Sprite.cpp' l='847' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='89' u='c' c='_ZN7Solarus24SpriteAnimationDirection4drawERNS_7SurfaceERKNS_5PointEiS2_'/>

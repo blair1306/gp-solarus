@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Game.h' l='104' type='bool Solarus::Game::is_playing_transition() const'/>
+<def f='codebrowser/src/Game.cpp' l='700' ll='702' type='bool Solarus::Game::is_playing_transition() const'/>
+<use f='codebrowser/src/Game.cpp' l='722' u='c' c='_ZNK7Solarus4Game12is_suspendedEv'/>
+<doc f='codebrowser/src/Game.cpp' l='696'>/**
+ * \brief Returns whether we are playing a transition between two maps.
+ * \return true if there is a transition
+ */</doc>

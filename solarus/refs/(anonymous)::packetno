@@ -1,0 +1,13 @@
+<dec f='include/ogg/ogg.h' l='78' type='ogg_int64_t'/>
+<dec f='include/ogg/ogg.h' l='98' type='ogg_int64_t'/>
+<offset>320</offset>
+<doc f='include/ogg/ogg.h' l='78'>/* sequence number for decode; the framing
+                             knows where there&apos;s a hole in the data,
+                             but we need coupling so that the codec
+                             (which is in a separate abstraction
+                             layer) also knows about the gap */</doc>
+<doc f='include/ogg/ogg.h' l='98'>/* sequence number for decode; the framing
+                                knows where there&apos;s a hole in the data,
+                                but we need coupling so that the codec
+                                (which is in a separate abstraction
+                                layer) also knows about the gap */</doc>

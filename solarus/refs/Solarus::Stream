@@ -1,0 +1,29 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Stream.h' l='33' ll='73'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/Stream.h' l='26'>/**
+ * \brief A special terrain where the hero is moved towards a specific
+ * direction.
+ *
+ * The hero may or may not resist to the movement of the stream, depending
+ * on its properties.
+ */</doc>
+<smbr r='Solarus::Stream::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<fun r='_ZNK7Solarus6Stream8get_typeEv'/>
+<fun r='_ZNK7Solarus6Stream9get_speedEv'/>
+<fun r='_ZN7Solarus6Stream9set_speedEi'/>
+<fun r='_ZNK7Solarus6Stream18get_allow_movementEv'/>
+<fun r='_ZN7Solarus6Stream18set_allow_movementEb'/>
+<fun r='_ZNK7Solarus6Stream16get_allow_attackEv'/>
+<fun r='_ZN7Solarus6Stream16set_allow_attackEb'/>
+<fun r='_ZNK7Solarus6Stream14get_allow_itemEv'/>
+<fun r='_ZN7Solarus6Stream14set_allow_itemEb'/>
+<fun r='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<fun r='_ZN7Solarus6Stream15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus6Stream16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Stream8activateERNS_6EntityE'/>
+<mbr r='Solarus::Stream::speed' o='2048' t='int'/>
+<mbr r='Solarus::Stream::allow_movement' o='2080' t='bool'/>
+<mbr r='Solarus::Stream::allow_attack' o='2088' t='bool'/>
+<mbr r='Solarus::Stream::allow_item' o='2096' t='bool'/>

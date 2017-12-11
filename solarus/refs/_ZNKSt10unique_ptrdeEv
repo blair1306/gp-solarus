@@ -1,0 +1,21 @@
+<def f='include/c++/4.9/bits/unique_ptr.h' l='287' ll='292' type='typename add_lvalue_reference&lt;element_type&gt;::type std::unique_ptr::operator*() const'/>
+<doc f='include/c++/4.9/bits/unique_ptr.h' l='284'>// Observers.
+
+      /// Dereference the stored pointer.</doc>
+<use f='codebrowser/include/solarus/Map.h' l='275' u='c' c='_ZNK7Solarus3Map12get_entitiesEv'/>
+<use f='codebrowser/include/solarus/Map.h' l='282' u='c' c='_ZN7Solarus3Map12get_entitiesEv'/>
+<use f='codebrowser/src/Drawable.cpp' l='237' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Drawable.cpp' l='268' u='c' c='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Game.cpp' l='202' u='c' c='_ZN7Solarus4Game12get_commandsEv'/>
+<use f='codebrowser/src/Game.cpp' l='210' u='c' c='_ZNK7Solarus4Game12get_commandsEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='221' u='c' c='_ZN7Solarus8MainLoop15get_lua_contextEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='411' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<use f='codebrowser/src/ResourceProvider.cpp' l='36' u='c' c='_ZN7Solarus16ResourceProvider11get_tilesetERKSs'/>
+<use f='codebrowser/src/ResourceProvider.cpp' l='43' u='c' c='_ZN7Solarus16ResourceProvider11get_tilesetERKSs'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='434' u='c' c='_ZNK7Solarus4Hero16get_hero_spritesEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='441' u='c' c='_ZN7Solarus4Hero16get_hero_spritesEv'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='218' u='c' c='_ZNK7Solarus7Tileset16get_tile_patternERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='203' u='c' c='_ZN7Solarus12FontResource16get_outline_fontERKSsi'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='218' u='c' c='_ZN7Solarus12FontResource16get_outline_fontERKSsi'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='691' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='700' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>

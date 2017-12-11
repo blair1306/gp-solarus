@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/SpriteAnimation.h' l='60' type='bool Solarus::SpriteAnimation::are_pixel_collisions_enabled() const'/>
+<def f='codebrowser/src/SpriteAnimation.cpp' l='209' ll='220' type='bool Solarus::SpriteAnimation::are_pixel_collisions_enabled() const'/>
+<doc f='codebrowser/src/SpriteAnimation.cpp' l='205'>/**
+ * \brief Returns whether the pixel-perfect collisions are enabled for this animations.
+ * \return true if the pixel-perfect collisions are enabled
+ */</doc>
+<use f='codebrowser/src/SpriteAnimationSet.cpp' l='184' u='c' c='_ZNK7Solarus18SpriteAnimationSet28are_pixel_collisions_enabledEv'/>

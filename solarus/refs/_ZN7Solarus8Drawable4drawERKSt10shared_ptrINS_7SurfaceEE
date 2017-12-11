@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='71' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='312' u='c' c='_ZN7Solarus15DialogBoxSystem4drawERKSt10shared_ptrINS_7SurfaceEE'/>
+<doc f='codebrowser/include/solarus/Drawable.h' l='69'>// drawing with effects</doc>
+<def f='codebrowser/src/Drawable.cpp' l='211' ll='214' type='void Solarus::Drawable::draw(const SurfacePtr &amp; dst_surface)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='207'>/**
+ * \brief Draws this object, applying dynamic effects.
+ * \param dst_surface the destination surface
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='499' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Map.cpp' l='557' u='c' c='_ZN7Solarus3Map15draw_backgroundERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/Map.cpp' l='614' u='c' c='_ZN7Solarus3Map15draw_foregroundERKSt10shared_ptrINS_7SurfaceEE'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1226' type='bool Solarus::LuaContext::on_joypad_hat_moved(const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1569' u='c' c='_ZN7Solarus10LuaContext8on_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1792' ll='1812' type='bool Solarus::LuaContext::on_joypad_hat_moved(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1786'>/**
+ * \brief Notifies the object on top of the stack
+ * that a joypad hat was just moved.
+ * \param event The corresponding input event.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

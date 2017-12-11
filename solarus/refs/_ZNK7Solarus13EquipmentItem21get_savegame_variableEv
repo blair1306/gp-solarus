@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='55' type='const std::string &amp; Solarus::EquipmentItem::get_savegame_variable() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='108' u='c' c='_ZNK7Solarus13EquipmentItem8is_savedEv'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='117' ll='119' type='const std::string &amp; Solarus::EquipmentItem::get_savegame_variable() const'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='394' u='c' c='_ZNK7Solarus13EquipmentItem11get_variantEv'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='410' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='111'>/**
+ * \brief Returns the savegame variable where the item possession state
+ * is saved.
+ * \return The savegame variable that stores the item possession state,
+ * or an empty string if the item is not saved.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='183' u='c' c='_ZN7Solarus10LuaContext30item_api_get_savegame_variableEP9lua_State'/>

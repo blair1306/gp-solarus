@@ -1,0 +1,41 @@
+<def f='include/c++/4.9/bits/stl_vector.h' l='778' ll='780' type='reference std::vector::operator[](size_type __n)'/>
+<use f='include/c++/4.9/bits/random.tcc' l='3434' u='c' c='_ZNSt8seed_seq8generateET_S0_'/>
+<doc f='include/c++/4.9/bits/stl_vector.h' l='767'>/**
+       *  @brief  Subscript access to the data contained in the %vector.
+       *  @param __n The index of the element for which data should be
+       *  accessed.
+       *  @return  Read/write reference to data.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='codebrowser/gui/src/quests_model.cpp' l='82' u='c' c='_ZNK10SolarusGui11QuestsModel13path_to_indexERK7QString'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='101' u='c' c='_ZNK10SolarusGui11QuestsModel13index_to_pathEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='193' u='c' c='_ZNK10SolarusGui11QuestsModel20get_quest_propertiesEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='218' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='232' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='263' u='c' c='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='159' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='112' u='c' c='_ZN7Solarus24SpriteAnimationDirection23enable_pixel_collisionsERNS_7SurfaceE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='259' u='c' c='_ZN7Solarus8Entities15set_tile_groundEiiiNS_6GroundE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1271' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='75' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='123' u='c' c='_ZN7Solarus18NonAnimatedRegions22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='199' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='210' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='227' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='242' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='513' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='520' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='531' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='538' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='266' u='c' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='278' u='c' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='66' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='76' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='76' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='81' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='81' u='c' c='_ZN7Solarus9PixelBitsC1ERKNS_7SurfaceERKNS_9RectangleE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='197' u='c' c='_ZN7Solarus12_GLOBAL__N_122initialize_video_modesEv'/>

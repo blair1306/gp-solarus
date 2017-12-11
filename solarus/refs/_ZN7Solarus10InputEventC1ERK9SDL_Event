@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='312' type='void Solarus::InputEvent::InputEvent(const SDL_Event &amp; event)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='230' ll='233' type='void Solarus::InputEvent::InputEvent(const SDL_Event &amp; event)'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='304' u='c' c='_ZN7Solarus10InputEvent9get_eventEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='226'>/**
+ * \brief Creates a keyboard event.
+ * \param event The internal event to encapsulate.
+ */</doc>

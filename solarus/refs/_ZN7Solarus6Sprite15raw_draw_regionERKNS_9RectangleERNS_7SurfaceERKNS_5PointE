@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='113' type='void Solarus::Sprite::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<inh f='codebrowser/include/solarus/Drawable.h' l='103' c='_ZN7Solarus8Drawable15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<def f='codebrowser/src/Sprite.cpp' l='796' ll='855' type='void Solarus::Sprite::raw_draw_region(const Solarus::Rectangle &amp; region, Solarus::Surface &amp; dst_surface, const Solarus::Point &amp; dst_position)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='788'>/**
+ * \brief Draws a subrectangle of the current frame of this sprite.
+ * \param region The subrectangle to draw, relative to the origin point.
+ * It may be bigger than the frame: in this case it will be clipped.
+ * \param dst_surface The destination surface.
+ * \param dst_position Coordinates on the destination surface.
+ * The origin point of the sprite will appear at these coordinates.
+ */</doc>

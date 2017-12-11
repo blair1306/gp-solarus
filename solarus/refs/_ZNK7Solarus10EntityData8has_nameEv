@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='99' type='bool Solarus::EntityData::has_name() const'/>
+<def f='codebrowser/src/EntityData.cpp' l='447' ll='449' type='bool Solarus::EntityData::has_name() const'/>
+<use f='codebrowser/src/EntityData.cpp' l='877' u='c' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<doc f='codebrowser/src/EntityData.cpp' l='444'>/**
+ * \brief Returns whether the entity has a name.
+ */</doc>
+<use f='codebrowser/src/MapData.cpp' l='108' u='c' c='_ZN7Solarus7MapData13set_min_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='155' u='c' c='_ZN7Solarus7MapData13set_max_layerEi'/>
+<use f='codebrowser/src/MapData.cpp' l='365' u='c' c='_ZN7Solarus7MapData16set_entity_layerERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='411' u='c' c='_ZN7Solarus7MapData16set_entity_orderERKNS_11EntityIndexEi'/>
+<use f='codebrowser/src/MapData.cpp' l='712' u='c' c='_ZN7Solarus7MapData13insert_entityERKNS_10EntityDataERKNS_11EntityIndexE'/>
+<use f='codebrowser/src/MapData.cpp' l='762' u='c' c='_ZN7Solarus7MapData13remove_entityERKNS_11EntityIndexE'/>

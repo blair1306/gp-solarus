@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='51' type='void Solarus::Entity::State::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='193' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='251' ll='262' type='void Solarus::Entity::State::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='247'>/**
+ * \brief Notifies this state that the game was just suspended or resumed.
+ * \param suspended true if the game is suspended
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='170' u='c' c='_ZN7Solarus4Hero13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='161' c='_ZN7Solarus4Hero22BackToSolidGroundState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='163' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/HurtState.cpp' l='131' c='_ZN7Solarus4Hero9HurtState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='133' u='c' c='_ZN7Solarus4Hero9HurtState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='159' c='_ZN7Solarus4Hero12JumpingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='161' u='c' c='_ZN7Solarus4Hero12JumpingState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/LiftingState.cpp' l='116' c='_ZN7Solarus4Hero12LiftingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='118' u='c' c='_ZN7Solarus4Hero12LiftingState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='172' c='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='174' u='c' c='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='127' c='_ZN7Solarus4Hero12RunningState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='129' u='c' c='_ZN7Solarus4Hero12RunningState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/StairsState.cpp' l='271' c='_ZN7Solarus4Hero11StairsState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='273' u='c' c='_ZN7Solarus4Hero11StairsState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='127' c='_ZN7Solarus4Hero17SwordTappingState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='129' u='c' c='_ZN7Solarus4Hero17SwordTappingState13set_suspendedEb'/>
+<ovr f='codebrowser/src/hero/VictoryState.cpp' l='98' c='_ZN7Solarus4Hero12VictoryState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/VictoryState.cpp' l='100' u='c' c='_ZN7Solarus4Hero12VictoryState13set_suspendedEb'/>

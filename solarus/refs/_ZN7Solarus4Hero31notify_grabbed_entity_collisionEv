@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='246' type='void Solarus::Hero::notify_grabbed_entity_collision()'/>
+<use f='codebrowser/src/entities/Block.cpp' l='260' u='c' c='_ZN7Solarus5Block23notify_obstacle_reachedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1970' ll='1972' type='void Solarus::Hero::notify_grabbed_entity_collision()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1966'>/**
+ * \brief Notifies the hero that the entity he is pushing or pulling
+ * cannot move anymore because of a collision.
+ */</doc>

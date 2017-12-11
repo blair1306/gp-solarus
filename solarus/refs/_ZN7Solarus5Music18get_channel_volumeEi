@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='74' type='static int Solarus::Music::get_channel_volume(int channel)'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='189' ll='195' type='static int Solarus::Music::get_channel_volume(int channel)'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='181'>/**
+ * \brief Returns the volume of a channel of the current music.
+ *
+ * This function is only supported for .it musics.
+ *
+ * \param channel Index of a channel.
+ * \return The volume of this channel.
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='278' u='c' c='_ZN7Solarus10LuaContext34audio_api_get_music_channel_volumeEP9lua_State'/>

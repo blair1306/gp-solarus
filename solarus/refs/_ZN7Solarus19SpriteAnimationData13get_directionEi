@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='102' type='Solarus::SpriteAnimationDirectionData &amp; Solarus::SpriteAnimationData::get_direction(int direction_nb)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='325' ll='333' type='Solarus::SpriteAnimationDirectionData &amp; Solarus::SpriteAnimationData::get_direction(int direction_nb)'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='316'>/**
+ * \brief Returns a direction.
+ *
+ * Non-const version.
+ *
+ * \param direction_nb The number of a direction.
+ * \return The direction at the specified number.
+ * The object remains valid until directions are added, removed or moved.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='224' type='int'/>
+<offset>2240</offset>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='224'>/**&lt; shield number needed by the hero to avoid the attack of this enemy,
+                                        * or 0 to make the attack unavoidable (default: 0) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='96' u='w' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='605' u='r' c='_ZNK7Solarus5Enemy25get_minimum_shield_neededEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='613' u='w' c='_ZN7Solarus5Enemy25set_minimum_shield_neededEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1040' u='r' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1041' u='r' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>

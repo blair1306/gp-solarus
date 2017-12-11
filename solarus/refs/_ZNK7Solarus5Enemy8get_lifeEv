@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='107' type='int Solarus::Enemy::get_life() const'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='456' ll='458' type='int Solarus::Enemy::get_life() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='950' u='c' c='_ZN7Solarus5Enemy27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1154' u='c' c='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1264' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1316' u='c' c='_ZN7Solarus5Enemy11notify_hurtERNS_6EntityENS_11EnemyAttackE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1463' u='c' c='_ZNK7Solarus5Enemy8is_dyingEv'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='452'>/**
+ * \brief Returns the number of health points of the enemy.
+ * \return number of health points of the enemy
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4410' u='c' c='_ZN7Solarus10LuaContext18enemy_api_get_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4443' u='c' c='_ZN7Solarus10LuaContext18enemy_api_add_lifeEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4460' u='c' c='_ZN7Solarus10LuaContext21enemy_api_remove_lifeEP9lua_State'/>

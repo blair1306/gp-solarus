@@ -1,0 +1,21 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Separator.h' l='34' ll='61'/>
+<size>256</size>
+<doc f='codebrowser/include/solarus/entities/Separator.h' l='26'>/**
+ * \brief An horizontal or vertical separation between two parts of the map.
+ *
+ * The camera cannot cross this separation except when the hero touches it:
+ * in this case, scrolling is performed.
+ * This entity allows to separate parts of the map like if there was several
+ * maps.
+ */</doc>
+<smbr r='Solarus::Separator::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus9Separator8get_typeEv'/>
+<fun r='_ZNK7Solarus9Separator13is_horizontalEv'/>
+<fun r='_ZNK7Solarus9Separator11is_verticalEv'/>
+<fun r='_ZN7Solarus9Separator15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZN7Solarus9Separator21test_collision_customERNS_6EntityE'/>
+<fun r='_ZN7Solarus9Separator16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Separator17notify_activatingEi'/>
+<fun r='_ZN7Solarus9Separator16notify_activatedEi'/>

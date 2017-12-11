@@ -1,0 +1,57 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='221' type='void Solarus::Entity::clear_movement()'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='219' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='280' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='295' u='c' c='_ZN7Solarus5Block21stop_movement_by_heroEv'/>
+<use f='codebrowser/src/entities/Block.cpp' l='333' u='c' c='_ZN7Solarus5Block5resetEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='158' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='249' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='264' u='c' c='_ZN7Solarus9Boomerang6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='194' u='c' c='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='369' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='790' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='795' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1292' u='c' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1347' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='103' u='c' c='_ZN7Solarus6EntityD1Ev'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1506' u='c' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1527' ll='1535' type='void Solarus::Entity::clear_movement()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1520'>/**
+ * \brief Clears the movement of this entity.
+ *
+ * The entity immediately stops moving.
+ * The movement object will be released at the next cycle,
+ * thus this function can be called by the movement object itself.
+ */</doc>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='194' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='282' u='c' c='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='323' u='c' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='118' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/ForcedWalkingState.cpp' l='70' u='c' c='_ZN7Solarus4Hero18ForcedWalkingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='62' u='c' c='_ZN7Solarus4Hero13HookshotState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='106' u='c' c='_ZN7Solarus4Hero9HurtState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='122' u='c' c='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='96' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='116' u='c' c='_ZN7Solarus4Hero19PlayerMovementState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='59' u='c' c='_ZN7Solarus4Hero12PullingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='226' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='60' u='c' c='_ZN7Solarus4Hero12PushingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='231' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='75' u='c' c='_ZN7Solarus4Hero12RunningState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='108' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='85' u='c' c='_ZN7Solarus4Hero15SpinAttackState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='102' u='c' c='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='234' u='c' c='_ZN7Solarus4Hero15SpinAttackState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='259' u='c' c='_ZN7Solarus4Hero15SpinAttackState21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='188' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='202' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='65' u='c' c='_ZN7Solarus4Hero18SwordSwingingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='100' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='206' u='c' c='_ZN7Solarus4Hero18SwordSwingingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='67' u='c' c='_ZN7Solarus4Hero17SwordTappingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='191' u='c' c='_ZN7Solarus4Hero17SwordTappingState23notify_obstacle_reachedEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1568' u='c' c='_ZN7Solarus10LuaContext24entity_api_stop_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='604' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='635' u='c' c='_ZN7Solarus10LuaContext17movement_api_stopEP9lua_State'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='74' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='131' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='155' u='c' c='_ZN12_GLOBAL__N_19snap_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

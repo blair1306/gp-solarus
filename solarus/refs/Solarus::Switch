@@ -1,0 +1,41 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Switch.h' l='38' ll='110'/>
+<size>296</size>
+<doc f='codebrowser/include/solarus/entities/Switch.h' l='29'>/**
+ * \brief A button that the hero can trigger.
+ *
+ * A switch can be triggered by walking onto it
+ * or by using weapons on it, depending on its subtype
+ * Some walkable switches require a block to be activated.
+ * Some walkable switches become disabled when the hero or the block leave it.
+ * A switch can have a sprite or be invisible.
+ */</doc>
+<smbr r='Solarus::Switch::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<fun r='_ZNK7Solarus6Switch8get_typeEv'/>
+<fun r='_ZN7Solarus6Switch15is_obstacle_forERNS_6EntityE'/>
+<fun r='_ZNK7Solarus6Switch11is_walkableEv'/>
+<fun r='_ZNK7Solarus6Switch15is_arrow_targetEv'/>
+<fun r='_ZNK7Solarus6Switch8is_solidEv'/>
+<fun r='_ZNK7Solarus6Switch12is_activatedEv'/>
+<fun r='_ZN7Solarus6Switch8activateEv'/>
+<fun r='_ZN7Solarus6Switch13set_activatedEb'/>
+<fun r='_ZNK7Solarus6Switch9is_lockedEv'/>
+<fun r='_ZN7Solarus6Switch10set_lockedEb'/>
+<fun r='_ZN7Solarus6Switch12try_activateERNS_4HeroE'/>
+<fun r='_ZN7Solarus6Switch12try_activateERNS_5BlockE'/>
+<fun r='_ZN7Solarus6Switch12try_activateERNS_5ArrowE'/>
+<fun r='_ZN7Solarus6Switch12try_activateEv'/>
+<fun r='_ZN7Solarus6Switch6updateEv'/>
+<fun r='_ZN7Solarus6Switch21test_collision_customERNS_6EntityE'/>
+<fun r='_ZN7Solarus6Switch16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus6Switch16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<smbr r='Solarus::Switch::subtype_names' t='const std::map&lt;Subtype, std::string&gt;'/>
+<mbr r='Solarus::Switch::subtype' o='2048' t='Solarus::Switch::Subtype'/>
+<mbr r='Solarus::Switch::sound_id' o='2112' t='const std::string'/>
+<mbr r='Solarus::Switch::activated' o='2176' t='bool'/>
+<mbr r='Solarus::Switch::locked' o='2184' t='bool'/>
+<mbr r='Solarus::Switch::needs_block' o='2192' t='bool'/>
+<mbr r='Solarus::Switch::inactivate_when_leaving' o='2200' t='bool'/>
+<mbr r='Solarus::Switch::entity_overlapping' o='2240' t='Solarus::Entity *'/>
+<mbr r='Solarus::Switch::entity_overlapping_still_present' o='2304' t='bool'/>

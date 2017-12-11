@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Camera.h' l='60' type='void Solarus::Camera::set_position_on_screen(const Solarus::Point &amp; position_on_screen)'/>
+<def f='codebrowser/src/entities/Camera.cpp' l='298' ll='300' type='void Solarus::Camera::set_position_on_screen(const Solarus::Point &amp; position_on_screen)'/>
+<doc f='codebrowser/src/entities/Camera.cpp' l='293'>/**
+ * \brief Sets where this camera is displayed on the screen.
+ * \param position_on_screen position of the upper-left corner of the camera
+ * relative to the quest screen.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2621' u='c' c='_ZN7Solarus10LuaContext33camera_api_set_position_on_screenEP9lua_State'/>

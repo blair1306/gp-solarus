@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='130' type='void Solarus::Drawable::set_suspended(bool suspended)'/>
+<def f='codebrowser/src/Drawable.cpp' l='189' ll='205' type='void Solarus::Drawable::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='185'>/**
+ * \brief Suspends or resumes this drawable.
+ * \param suspended \c true to suspend this drawable, \c false to resume it.
+ */</doc>
+<ovr f='codebrowser/src/Sprite.cpp' l='501' c='_ZN7Solarus6Sprite13set_suspendedEb'/>
+<use f='codebrowser/src/Sprite.cpp' l='506' u='c' c='_ZN7Solarus6Sprite13set_suspendedEb'/>

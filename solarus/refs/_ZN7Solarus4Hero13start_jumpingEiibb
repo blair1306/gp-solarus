@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='264' type='void Solarus::Hero::start_jumping(int direction8, int distance, bool ignore_obstacles, bool with_sound)'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='172' u='c' c='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2199' u='c' c='_ZN7Solarus4Hero16start_deep_waterEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2421' ll='2434' type='void Solarus::Hero::start_jumping(int direction8, int distance, bool ignore_obstacles, bool with_sound)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2411'>/**
+ * \brief Makes the hero jump into a direction.
+ *
+ * While he is jumping, the player does not control him anymore.
+ *
+ * \param direction8 direction of the jump (0 to 7)
+ * \param distance distance of the jump in pixels
+ * \param ignore_obstacles true make the movement ignore obstacles
+ * \param with_sound true to play the &quot;jump&quot; sound
+ */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='161' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='229' u='c' c='_ZN7Solarus4Hero12RunningState23notify_jumper_activatedERNS_6JumperE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2291' u='c' c='_ZN7Solarus10LuaContext22hero_api_start_jumpingEP9lua_State'/>

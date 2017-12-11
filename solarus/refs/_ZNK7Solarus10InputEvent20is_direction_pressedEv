@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='303' type='bool Solarus::InputEvent::is_direction_pressed() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1410' u='c' c='_ZNK7Solarus10InputEvent10is_pressedEv'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1423' ll='1428' type='bool Solarus::InputEvent::is_direction_pressed() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1441' u='c' c='_ZNK7Solarus10InputEvent24is_non_direction_pressedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1415'>/**
+ * \brief Returns whether this keyboard or joypad event
+ * corresponds to pressing a direction.
+ *
+ * If this is not a keyboard or joypad event, false is returned.
+ *
+ * \return true if a direction was pressed
+ */</doc>

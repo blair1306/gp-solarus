@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/QuestProperties.h' l='50' type='std::string Solarus::QuestProperties::get_solarus_version() const'/>
+<use f='codebrowser/src/MainLoop.cpp' l='516' u='c' c='_ZN7Solarus8MainLoop21load_quest_propertiesEv'/>
+<def f='codebrowser/src/QuestProperties.cpp' l='176' ll='178' type='std::string Solarus::QuestProperties::get_solarus_version() const'/>
+<doc f='codebrowser/src/QuestProperties.cpp' l='172'>/**
+ * \brief Returns the Solarus compatibility version of the quest.
+ * \return The &quot;solarus_version&quot; value.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='134' u='c' c='_ZN7Solarus10LuaContext25main_api_get_quest_formatEP9lua_State'/>

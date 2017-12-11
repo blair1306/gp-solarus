@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='162' type='void Solarus::LuaContext::notify_dialog_finished(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; callback_ref, const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='189' u='c' c='_ZN7Solarus15DialogBoxSystem5closeERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='408' ll='429' type='void Solarus::LuaContext::notify_dialog_finished(Solarus::Game &amp; game, const Solarus::Dialog &amp; dialog, const Solarus::ScopedLuaRef &amp; callback_ref, const Solarus::ScopedLuaRef &amp; status_ref)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='400'>/**
+ * \brief Notifies Lua that a dialog is finished.
+ * \param game The game.
+ * \param dialog The dialog that was active.
+ * \param callback_ref Lua ref of the function to call, or an empty ref.
+ * \param status_ref Lua ref to a status value to pass to the callback.
+ * &quot;skipped&quot; means that the dialog was canceled by the user.
+ */</doc>

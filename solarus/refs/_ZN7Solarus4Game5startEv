@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Game.h' l='61' type='void Solarus::Game::start()'/>
+<def f='codebrowser/src/Game.cpp' l='119' ll='128' type='void Solarus::Game::start()'/>
+<doc f='codebrowser/src/Game.cpp' l='114'>/**
+ * \brief Starts this game.
+ *
+ * Does nothing if the game is already started.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='483' u='c' c='_ZN7Solarus8MainLoop6updateEv'/>

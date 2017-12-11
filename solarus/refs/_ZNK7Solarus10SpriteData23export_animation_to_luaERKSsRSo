@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='150' type='void Solarus::SpriteData::export_animation_to_lua(const std::string &amp; animation_name, std::ostream &amp; out) const'/>
+<use f='codebrowser/src/SpriteData.cpp' l='696' u='c' c='_ZNK7Solarus10SpriteData13export_to_luaERSo'/>
+<use f='codebrowser/src/SpriteData.cpp' l='701' u='c' c='_ZNK7Solarus10SpriteData13export_to_luaERSo'/>
+<def f='codebrowser/src/SpriteData.cpp' l='712' ll='761' type='void Solarus::SpriteData::export_animation_to_lua(const std::string &amp; animation_name, std::ostream &amp; out) const'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='707'>/**
+ * \brief Saves an animation data as Lua into a stream.
+ * \param animation_name The name of animation to save.
+ * \param out The stream to write.
+ */</doc>

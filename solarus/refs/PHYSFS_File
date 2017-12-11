@@ -1,0 +1,26 @@
+<def f='include/physfs.h' l='341' ll='344'/>
+<size>8</size>
+<doc f='include/physfs.h' l='318'>/**
+ * \struct PHYSFS_File
+ * \brief A PhysicsFS file handle.
+ *
+ * You get a pointer to one of these when you open a file for reading,
+ *  writing, or appending via PhysicsFS.
+ *
+ * As you can see from the lack of meaningful fields, you should treat this
+ *  as opaque data. Don&apos;t try to manipulate the file handle, just pass the
+ *  pointer you got, unmolested, to various PhysicsFS APIs.
+ *
+ * \sa PHYSFS_openRead
+ * \sa PHYSFS_openWrite
+ * \sa PHYSFS_openAppend
+ * \sa PHYSFS_close
+ * \sa PHYSFS_read
+ * \sa PHYSFS_write
+ * \sa PHYSFS_seek
+ * \sa PHYSFS_tell
+ * \sa PHYSFS_eof
+ * \sa PHYSFS_setBuffer
+ * \sa PHYSFS_flush
+ */</doc>
+<mbr r='PHYSFS_File::opaque' o='0' t='void *'/>

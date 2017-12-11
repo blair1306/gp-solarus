@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='409' type='void Solarus::Entity::notify_collision(Solarus::Entity &amp; other_entity, Solarus::Sprite &amp; this_sprite, Solarus::Sprite &amp; other_sprite)'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='101' c='_ZN7Solarus7Crystal16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='933' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='345' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='254' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='982' c='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1851' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1905' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2118' ll='2125' type='void Solarus::Entity::notify_collision(Solarus::Entity &amp; , Solarus::Sprite &amp; , Solarus::Sprite &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2108'>/**
+ * \brief Notifies this entity that it just detected a pixel-perfect collision with another sprite.
+ *
+ * This function is called by check_collision(Entity*, Sprite*) when another entity&apos;s
+ * sprite overlaps a sprite of this detector.
+ *
+ * \param other_entity The entity overlapping this detector.
+ * \param this_sprite The sprite of this detector that is overlapping the other entity&apos;s sprite.
+ * \param other_sprite The sprite of other_entity that is overlapping this detector.
+ */</doc>
+<ovr f='codebrowser/src/entities/Explosion.cpp' l='90' c='_ZN7Solarus9Explosion16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Fire.cpp' l='69' c='_ZN7Solarus4Fire16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='336' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='280' c='_ZN7Solarus6Switch16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>

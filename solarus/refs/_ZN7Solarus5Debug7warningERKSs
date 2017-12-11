@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Debug.h' l='42' type='void Solarus::Debug::warning(const std::string &amp; message)'/>
+<def f='codebrowser/src/lowlevel/Debug.cpp' l='69' ll='72' type='void Solarus::Debug::warning(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Debug.cpp' l='65'>/**
+ * \brief Prints &quot;Warning: &quot; and a message on both stdout and error.txt.
+ * \param message The warning message to print.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='802' u='c' c='_ZN7Solarus5Video20set_quest_size_rangeERKNS_4SizeES3_S3_'/>
+<use f='codebrowser/src/lowlevel/shaders/ShaderContext.cpp' l='78' u='c' c='_ZN7Solarus13ShaderContext13create_shaderERKSs'/>

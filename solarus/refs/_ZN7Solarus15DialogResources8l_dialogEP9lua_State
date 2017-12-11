@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/DialogResources.h' l='76' type='static int Solarus::DialogResources::l_dialog(lua_State * l)'/>
+<def f='codebrowser/src/DialogResources.cpp' l='228' ll='283' type='static int Solarus::DialogResources::l_dialog(lua_State * l)'/>
+<use f='codebrowser/src/DialogResources.cpp' l='292' u='r' c='_ZN7Solarus15DialogResources15import_from_luaEP9lua_State'/>
+<doc f='codebrowser/src/DialogResources.cpp' l='220'>/**
+ * \brief Function called by Lua to add a dialog to the resource.
+ *
+ * - Argument 1 (table): properties of the dialog.
+ *
+ * \param l the Lua context that is calling this function
+ * \return Number of values to return to Lua.
+ */</doc>

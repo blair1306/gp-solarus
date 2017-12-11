@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1155' type='static std::shared_ptr&lt;PathMovement&gt; Solarus::LuaContext::check_path_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1108' ll='1112' type='static std::shared_ptr&lt;PathMovement&gt; Solarus::LuaContext::check_path_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1122' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_get_pathEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1146' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_pathEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1171' u='c' c='_ZN7Solarus10LuaContext27path_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1185' u='c' c='_ZN7Solarus10LuaContext27path_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1200' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_get_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1214' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_loopEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1231' u='c' c='_ZN7Solarus10LuaContext34path_movement_api_get_snap_to_gridEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1245' u='c' c='_ZN7Solarus10LuaContext34path_movement_api_set_snap_to_gridEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1101'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * path movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

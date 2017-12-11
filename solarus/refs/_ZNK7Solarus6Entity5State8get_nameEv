@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='43' type='const std::string &amp; Solarus::Entity::State::get_name() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3502' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3503' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3504' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3505' u='c' c='_ZN7Solarus6Entity9set_stateEPNS0_5StateE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3537' u='c' c='_ZNK7Solarus6Entity14get_state_nameEv'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='65' ll='67' type='const std::string &amp; Solarus::Entity::State::get_name() const'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='197' u='c' c='_ZN7Solarus6Entity5State5startEPKS1_'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='214' u='c' c='_ZN7Solarus6Entity5State4stopEPKS1_'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='61'>/**
+ * \brief Returns a name describing this state.
+ * \return A name describing this state.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2364' u='c' c='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2369' u='c' c='_ZN7Solarus4Hero38start_free_carrying_loading_or_runningEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='171' u='c' c='_ZNK7Solarus9HeroState18is_jumper_obstacleERKNS_6JumperERKNS_9RectangleE'/>

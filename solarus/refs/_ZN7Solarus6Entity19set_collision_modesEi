@@ -1,0 +1,35 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='271' type='void Solarus::Entity::set_collision_modes(int collision_modes)'/>
+<use f='codebrowser/src/entities/Block.cpp' l='70' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='46' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='68' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='44' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='43' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='71' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='817' u='c' c='_ZN7Solarus12CustomEntity21clear_collision_testsEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='262' u='c' c='_ZN7Solarus12Destructible22update_collision_modesEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='85' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='170' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Door.cpp' l='178' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='115' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1346' u='c' c='_ZN7Solarus5Enemy4killEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1679' ll='1685' type='void Solarus::Entity::set_collision_modes(int collision_modes)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1693' u='c' c='_ZN7Solarus6Entity18add_collision_modeENS_13CollisionModeE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1674'>/**
+ * \brief Sets the collision modes detected by this entity.
+ * \param collision_modes The collision modes to set
+ * (can be an OR combination of collision modes).
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='40' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='34' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='43' u='c' c='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='68' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='66' u='c' c='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='44' u='c' c='_ZN7Solarus6SensorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Separator.cpp' l='43' u='c' c='_ZN7Solarus9SeparatorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='64' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='46' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='47' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='77' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='80' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='83' u='c' c='_ZN7Solarus6SwitchC1ERKSsiRKNS_5PointENS0_7SubtypeES2_S2_bb'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='65' u='c' c='_ZN7Solarus15TeletransporterC1ERKSsiRKNS_5PointERKNS_4SizeES2_S2_NS_10Transition5StyleES2_S2_'/>

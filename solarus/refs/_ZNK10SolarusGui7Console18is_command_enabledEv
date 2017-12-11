@@ -1,0 +1,6 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='42' type='bool SolarusGui::Console::is_command_enabled() const'/>
+<def f='codebrowser/gui/src/console.cpp' l='65' ll='67' type='bool SolarusGui::Console::is_command_enabled() const'/>
+<doc f='codebrowser/gui/src/console.cpp' l='61'>/**
+ * @brief Returns whether the Lua command input field is available.
+ * @return @c true if the user can type Lua commands.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='97' type='void Solarus::Movement::set_finished_callback(const Solarus::ScopedLuaRef &amp; finished_callback_ref)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='614' u='c' c='_ZN7Solarus10LuaContext18movement_api_startEP9lua_State'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='551' ll='556' type='void Solarus::Movement::set_finished_callback(const Solarus::ScopedLuaRef &amp; finished_callback_ref)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='547'>/**
+ * \brief Sets the function to call when this movement finishes.
+ * \param finished_callback_ref The Lua ref to a function, or an empty ref.
+ */</doc>

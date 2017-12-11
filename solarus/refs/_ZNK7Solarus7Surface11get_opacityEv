@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='86' type='uint8_t Solarus::Surface::get_opacity() const'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='324' ll='326' type='uint8_t Solarus::Surface::get_opacity() const'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='320'>/**
+ * \brief Returns the opacity of this surface.
+ * \return The opacity (0 to 255).
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='215' u='c' c='_ZN7Solarus10LuaContext23surface_api_get_opacityEP9lua_State'/>

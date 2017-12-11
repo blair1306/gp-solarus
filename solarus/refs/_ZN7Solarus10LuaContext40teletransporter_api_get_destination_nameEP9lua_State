@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='910' type='static int Solarus::LuaContext::teletransporter_api_get_destination_name(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='245' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2931' ll='2941' type='static int Solarus::LuaContext::teletransporter_api_get_destination_name(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2926'>/**
+ * \brief Implementation of teletransporter:get_destination_name().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

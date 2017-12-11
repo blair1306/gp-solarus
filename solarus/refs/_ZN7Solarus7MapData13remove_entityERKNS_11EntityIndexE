@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='186' type='bool Solarus::MapData::remove_entity(const Solarus::EntityIndex &amp; index)'/>
+<def f='codebrowser/src/MapData.cpp' l='751' ll='786' type='bool Solarus::MapData::remove_entity(const Solarus::EntityIndex &amp; index)'/>
+<doc f='codebrowser/src/MapData.cpp' l='745'>/**
+ * \brief Removes an entity from the map.
+ * \param index Index of the entity on the map.
+ * \return \c false in case of failure, that is,
+ * if the index is out of range.
+ */</doc>

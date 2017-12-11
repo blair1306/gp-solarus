@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/hero/FallingState.h' l='37' type='bool Solarus::Hero::FallingState::can_avoid_lava() const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='86' c='_ZNK7Solarus6Entity5State14can_avoid_lavaEv'/>
+<def f='codebrowser/src/hero/FallingState.cpp' l='98' ll='100' type='bool Solarus::Hero::FallingState::can_avoid_lava() const'/>
+<doc f='codebrowser/src/hero/FallingState.cpp' l='94'>/**
+ * \brief Returns whether the hero ignores the effect of lava in this state.
+ * \return true if the hero ignores the effect of lava in the current state
+ */</doc>

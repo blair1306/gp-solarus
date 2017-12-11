@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='902' type='static int Solarus::LuaContext::destination_api_get_starting_location_mode(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='224' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2749' ll='2759' type='static int Solarus::LuaContext::destination_api_get_starting_location_mode(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2744'>/**
+ * \brief Implementation of destination:get_starting_location_mode().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

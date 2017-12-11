@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='148' type='void Solarus::MapData::set_min_layer(int min_layer)'/>
+<use f='codebrowser/src/MapData.cpp' l='41' u='c' c='_ZN7Solarus7MapDataC1Ev'/>
+<def f='codebrowser/src/MapData.cpp' l='90' ll='122' type='void Solarus::MapData::set_min_layer(int min_layer)'/>
+<use f='codebrowser/src/MapData.cpp' l='867' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>
+<doc f='codebrowser/src/MapData.cpp' l='85'>/**
+ * \brief Changes the lowest layer of the map.
+ * \param min_layer The new lowest layer.
+ * If you increase it, entities in removed layers are destroyed.
+ */</doc>

@@ -1,0 +1,43 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='364' type='Solarus::CommandsEffects &amp; Solarus::Entity::get_commands_effects()'/>
+<use f='codebrowser/src/entities/Block.cpp' l='192' u='c' c='_ZN7Solarus5Block29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='174' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='177' u='c' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='186' u='c' c='_ZN7Solarus4Bomb29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='421' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='429' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='114' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='116' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='330' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='334' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='337' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='390' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='236' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='241' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='245' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='560' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='492' ll='494' type='Solarus::CommandsEffects &amp; Solarus::Entity::get_commands_effects()'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='488'>/**
+ * \brief Returns the keys effect manager.
+ * \return the keys effect
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='755' u='c' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='758' u='c' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1818' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1822' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1849' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1855' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1865' u='c' c='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1869' u='c' c='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1898' u='c' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1903' u='c' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='224' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='232' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='236' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='259' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='262' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='263' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='376' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='379' u='c' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='175' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='179' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='190' u='c' c='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>

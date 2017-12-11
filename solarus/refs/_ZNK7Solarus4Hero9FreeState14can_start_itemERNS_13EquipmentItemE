@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/FreeState.h' l='43' type='bool Solarus::Hero::FreeState::can_start_item(Solarus::EquipmentItem &amp; item) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='136' c='_ZNK7Solarus6Entity5State14can_start_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/hero/FreeState.cpp' l='169' ll='172' type='bool Solarus::Hero::FreeState::can_start_item(Solarus::EquipmentItem &amp; ) const'/>
+<doc f='codebrowser/src/hero/FreeState.cpp' l='164'>/**
+ * \brief Returns whether the hero can use an equipment item in this state.
+ * \param item The equipment item to check.
+ * \return true if the hero can use this equipment item in this state.
+ */</doc>
+<doc f='codebrowser/src/hero/FreeState.cpp' l='169'>/* item */</doc>

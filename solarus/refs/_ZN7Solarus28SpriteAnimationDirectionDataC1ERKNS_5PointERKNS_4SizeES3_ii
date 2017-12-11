@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteData.h' l='43' type='void Solarus::SpriteAnimationDirectionData::SpriteAnimationDirectionData(const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const Solarus::Point &amp; origin, int num_frames, int num_columns = 1)'/>
+<def f='codebrowser/src/SpriteData.cpp' l='59' ll='68' type='void Solarus::SpriteAnimationDirectionData::SpriteAnimationDirectionData(const Solarus::Point &amp; xy, const Solarus::Size &amp; size, const Solarus::Point &amp; origin, int num_frames, int num_columns = 1)'/>
+<doc f='codebrowser/src/SpriteData.cpp' l='51'>/**
+ * \brief Creates a sprite animation direction.
+ * \param xy Coordinates of the first frame.
+ * \param size Size of the frames.
+ * \param origin Origin of the frames.
+ * \param num_frames Numbers of the frames.
+ * \param num_columns Numbers of columns.
+ */</doc>

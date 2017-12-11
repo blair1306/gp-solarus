@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='212' type='void Solarus::LuaContext::remove_timers(int context_index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5731' u='c' c='_ZN7Solarus10LuaContext17entity_on_removedERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6435' u='c' c='_ZN7Solarus10LuaContext18enemy_on_restartedERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6516' u='c' c='_ZN7Solarus10LuaContext13enemy_on_hurtERNS_5EnemyENS_11EnemyAttackE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6533' u='c' c='_ZN7Solarus10LuaContext14enemy_on_dyingERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6568' u='c' c='_ZN7Solarus10LuaContext20enemy_on_immobilizedERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1587' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='790' u='c' c='_ZN7Solarus10LuaContext16item_on_finishedERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='421' u='c' c='_ZN7Solarus10LuaContext16main_on_finishedEv'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2210' u='c' c='_ZN7Solarus10LuaContext15map_on_finishedERNS_3MapE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext16menu_on_finishedERKNS_12ScopedLuaRefE'/>
+<def f='codebrowser/src/lua/TimerApi.cpp' l='200' ll='219' type='void Solarus::LuaContext::remove_timers(int context_index)'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='421' u='c' c='_ZN7Solarus10LuaContext18timer_api_stop_allEP9lua_State'/>
+<doc f='codebrowser/src/lua/TimerApi.cpp' l='193'>/**
+ * \brief Unregisters all timers associated to a context.
+ *
+ * This function can be called safely even while iterating on the timer list.
+ *
+ * \param context_index Index of a table or userdata containing timers.
+ */</doc>

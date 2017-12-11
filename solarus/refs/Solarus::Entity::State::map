@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='176' type='Solarus::Map *'/>
+<offset>192</offset>
+<doc f='codebrowser/include/solarus/entities/EntityState.h' l='176'>/**&lt; The current map (it may change during this state). */</doc>
+<use f='codebrowser/src/entities/EntityState.cpp' l='47' u='w' c='_ZN7Solarus6Entity5StateC1ERS0_RKSs'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='106' u='r' c='_ZN7Solarus6Entity5State7get_mapEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='114' u='r' c='_ZN7Solarus6Entity5State12get_entitiesEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='122' u='r' c='_ZN7Solarus6Entity5State15get_lua_contextEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='130' u='r' c='_ZN7Solarus6Entity5State8get_gameEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='138' u='r' c='_ZNK7Solarus6Entity5State8get_gameEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='428' u='w' c='_ZN7Solarus6Entity5State7set_mapERNS_3MapE'/>

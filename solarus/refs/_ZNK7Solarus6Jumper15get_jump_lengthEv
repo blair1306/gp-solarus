@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Jumper.h' l='54' type='int Solarus::Jumper::get_jump_length() const'/>
+<def f='codebrowser/src/entities/Jumper.cpp' l='235' ll='237' type='int Solarus::Jumper::get_jump_length() const'/>
+<doc f='codebrowser/src/entities/Jumper.cpp' l='231'>/**
+ * \brief Returns the length of the jump to make with this jumper.
+ * \return Length of the jump in pixels (usually a multiple of 8).
+ */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='162' u='c' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='231' u='c' c='_ZN7Solarus4Hero12RunningState23notify_jumper_activatedERNS_6JumperE'/>

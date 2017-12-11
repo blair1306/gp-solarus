@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='59' type='bool Solarus::Arrow::is_flying() const'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='324' ll='326' type='bool Solarus::Arrow::is_flying() const'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='358' u='c' c='_ZN7Solarus5Arrow28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='371' u='c' c='_ZN7Solarus5Arrow29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='386' u='c' c='_ZN7Solarus5Arrow34notify_collision_with_destructibleERNS_12DestructibleENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='407' u='c' c='_ZN7Solarus5Arrow27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='320'>/**
+ * \brief Returns whether the arrow is currently flying.
+ * \return true if the arrow was shot and has not reached a target yet
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='68' type='const std::shared_ptr&lt;PlayerMovement&gt; &amp; Solarus::Hero::PlayerMovementState::get_player_movement()'/>
+<def f='codebrowser/src/hero/PlayerMovementState.cpp' l='56' ll='58' type='const std::shared_ptr&lt;PlayerMovement&gt; &amp; Solarus::Hero::PlayerMovementState::get_player_movement()'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='91' u='c' c='_ZN7Solarus4Hero19PlayerMovementState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='226' u='c' c='_ZN7Solarus4Hero19PlayerMovementState28notify_walking_speed_changedEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='227' u='c' c='_ZN7Solarus4Hero19PlayerMovementState28notify_walking_speed_changedEv'/>
+<doc f='codebrowser/src/hero/PlayerMovementState.cpp' l='48'>/**
+ * \brief Returns the movement created by this state.
+ *
+ * This movement is applied to the hero until the end of this state or until
+ * someone sets another movement.
+ *
+ * \return The player movement.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='76' type='void Solarus::CircleMovement::recompute_position()'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='68' u='c' c='_ZN7Solarus14CircleMovement10set_centerERKNS_5PointE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='87' u='c' c='_ZN7Solarus14CircleMovement10set_centerERKSt10shared_ptrINS_6EntityEEii'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='122' u='c' c='_ZN7Solarus14CircleMovement10set_radiusEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='182' u='c' c='_ZN7Solarus14CircleMovement15set_angle_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='385' u='c' c='_ZN7Solarus14CircleMovement6updateEv'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='397' ll='413' type='void Solarus::CircleMovement::recompute_position()'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='451' u='c' c='_ZN7Solarus14CircleMovement5startEv'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='481' u='c' c='_ZN7Solarus14CircleMovement4stopEv'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='392'>/**
+ * \brief Computes the position of the object controlled by this movement.
+ *
+ * This function should be called whenever the angle, the radius or the center changes.
+ */</doc>

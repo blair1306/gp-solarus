@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='212' type='EntityTree'/>
+<offset>2560</offset>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='212'>/**&lt; All map entities except tiles.
+                                                     * Optimized for fast spatial search. */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='153' u='w' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='178' u='m' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='433' u='m' c='_ZNK7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='448' u='m' c='_ZN7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='968' u='m' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1115' u='m' c='_ZN7Solarus8Entities22remove_marked_entitiesEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1289' u='m' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1336' u='m' c='_ZN7Solarus8Entities34notify_entity_bounding_box_changedERNS_6EntityE'/>

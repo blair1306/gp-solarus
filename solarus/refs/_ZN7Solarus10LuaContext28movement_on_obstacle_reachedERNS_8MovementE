@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='311' type='void Solarus::LuaContext::movement_on_obstacle_reached(Solarus::Movement &amp; movement)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1957' ll='1966' type='void Solarus::LuaContext::movement_on_obstacle_reached(Solarus::Movement &amp; movement)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1950'>/**
+ * \brief Calls the on_obstacle_reached() method of a Lua movement.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param movement A movement.
+ */</doc>
+<use f='codebrowser/src/movements/Movement.cpp' l='286' u='c' c='_ZN7Solarus8Movement23notify_obstacle_reachedEv'/>

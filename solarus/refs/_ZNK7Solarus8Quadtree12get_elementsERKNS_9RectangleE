@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/containers/Quadtree.h' l='60' type='std::vector&lt;T&gt; Solarus::Quadtree::get_elements(const Solarus::Rectangle &amp; where) const'/>
+<def f='codebrowser/include/solarus/containers/Quadtree.inl' l='209' ll='216' type='std::vector&lt;T&gt; Solarus::Quadtree::get_elements(const Solarus::Rectangle &amp; region) const'/>
+<doc f='codebrowser/include/solarus/containers/Quadtree.inl' l='202'>/**
+ * \brief Gets the elements intersecting the given rectangle.
+ * \param region The rectangle to check.
+ * The rectangle should be entirely contained in the quadtree space.
+ * \return A list of elements intersecting the rectangle, in arbitrary order.
+ * Elements outside the quadtree space are not added there.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='433' u='c' c='_ZNK7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrIKNS_6EntityEESaIS8_EE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='448' u='c' c='_ZN7Solarus8Entities25get_entities_in_rectangleERKNS_9RectangleERSt6vectorISt10shared_ptrINS_6EntityEESaIS7_EE'/>

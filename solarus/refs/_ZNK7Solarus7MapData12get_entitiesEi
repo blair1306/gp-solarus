@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='195' type='const std::deque&lt;EntityData&gt; &amp; Solarus::MapData::get_entities(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='291' u='c' c='_ZNK7Solarus7MapData16get_num_entitiesEi'/>
+<def f='codebrowser/src/MapData.cpp' l='320' ll='325' type='const std::deque&lt;EntityData&gt; &amp; Solarus::MapData::get_entities(int layer) const'/>
+<use f='codebrowser/src/MapData.cpp' l='522' u='c' c='_ZNK7Solarus7MapData10get_entityERKNS_11EntityIndexE'/>
+<doc f='codebrowser/src/MapData.cpp' l='315'>/**
+ * \brief Returns the entities on a layer of this map.
+ * \param layer A layer.
+ * \return The entities on that layer.
+ */</doc>

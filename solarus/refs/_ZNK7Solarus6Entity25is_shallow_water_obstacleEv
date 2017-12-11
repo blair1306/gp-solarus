@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='417' type='bool Solarus::Entity::is_shallow_water_obstacle() const'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='710' c='_ZNK7Solarus12CustomEntity25is_shallow_water_obstacleEv'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='370' c='_ZNK7Solarus5Enemy25is_shallow_water_obstacleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2408' u='c' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2488' ll='2490' type='bool Solarus::Entity::is_shallow_water_obstacle() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2481'>/**
+ * \brief Returns whether shallow water is currently considered as an obstacle by this entity.
+ *
+ * This function returns is_deep_water_obstacle() by default.
+ *
+ * \return true if shallow water is currently an obstacle for this entity
+ */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1421' c='_ZNK7Solarus4Hero25is_shallow_water_obstacleEv'/>

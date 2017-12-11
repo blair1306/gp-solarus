@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='95' type='void Solarus::EntityData::set_type(Solarus::EntityType type)'/>
+<def f='codebrowser/src/EntityData.cpp' l='418' ll='426' type='void Solarus::EntityData::set_type(Solarus::EntityType type)'/>
+<doc f='codebrowser/src/EntityData.cpp' l='411'>/**
+ * \brief Sets the type of this entity.
+ *
+ * When the type changes, all fields are reset to their default value.
+ *
+ * \param type The new type.
+ */</doc>

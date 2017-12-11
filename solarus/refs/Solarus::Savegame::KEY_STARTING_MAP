@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='46' type='const std::string'/>
+<use f='codebrowser/src/Game.cpp' l='81' u='r' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='471' u='r' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='33' type='const std::string'/>
+<doc f='codebrowser/src/Savegame.cpp' l='33'>/**&lt; Map id where to start the savegame. */</doc>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='91' u='r' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='97' u='r' c='_ZN7Solarus19SavegameConverterV113convert_to_v2ERNS_8SavegameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='706' u='r' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='713' u='r' c='_ZN7Solarus10LuaContext30game_api_get_starting_locationEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='737' u='r' c='_ZN7Solarus10LuaContext30game_api_set_starting_locationEP9lua_State'/>
+<use f='codebrowser/tests/src/test_tools/TestEnvironment.cpp' l='67' u='r' c='_ZN7Solarus15TestEnvironment8get_gameEv'/>

@@ -1,0 +1,11 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1063' type='int SDL_HapticStopEffect(SDL_Haptic * haptic, int effect)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1053'>/**
+ *  \brief Stops the haptic effect on its associated haptic device.
+ *
+ *  \param haptic Haptic device to stop the effect on.
+ *  \param effect Identifier of the effect to stop.
+ *  \return 0 on success or -1 on error.
+ *
+ *  \sa SDL_HapticRunEffect
+ *  \sa SDL_HapticDestroyEffect
+ */</doc>

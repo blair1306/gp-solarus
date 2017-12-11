@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_rwops.h' l='65' type='Sint64 (*)(struct SDL_RWops *, Sint64, int)'/>
+<offset>64</offset>
+<doc f='include/SDL2/SDL_rwops.h' l='59'>/**
+     *  Seek to \c offset relative to \c whence, one of stdio&apos;s whence values:
+     *  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END
+     *
+     *  \return the final offset in the data stream, or -1 on error.
+     */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1183' type='static std::shared_ptr&lt;Chest&gt; Solarus::LuaContext::check_chest(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3042' ll='3046' type='static std::shared_ptr&lt;Chest&gt; Solarus::LuaContext::check_chest(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3065' u='c' c='_ZN7Solarus10LuaContext17chest_api_is_openEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3080' u='c' c='_ZN7Solarus10LuaContext18chest_api_set_openEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3097' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3127' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3035'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * chest and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The chest.
+ */</doc>

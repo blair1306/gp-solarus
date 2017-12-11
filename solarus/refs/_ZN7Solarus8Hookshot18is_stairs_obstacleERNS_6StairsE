@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hookshot.h' l='41' type='bool Solarus::Hookshot::is_stairs_obstacle(Solarus::Stairs &amp; stairs)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='340' c='_ZN7Solarus6Entity18is_stairs_obstacleERNS_6StairsE'/>
+<def f='codebrowser/src/entities/Hookshot.cpp' l='96' ll='98' type='bool Solarus::Hookshot::is_stairs_obstacle(Solarus::Stairs &amp; stairs)'/>
+<doc f='codebrowser/src/entities/Hookshot.cpp' l='91'>/**
+ * \brief Returns whether some stairs are currently considered as an obstacle for this entity.
+ * \param stairs an stairs entity
+ * \return true if the stairs are currently an obstacle for this entity
+ */</doc>

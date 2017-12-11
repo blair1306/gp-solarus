@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='101' type='void Solarus::EntityData::set_name(const std::string &amp; name)'/>
+<def f='codebrowser/src/EntityData.cpp' l='463' ll='465' type='void Solarus::EntityData::set_name(const std::string &amp; name)'/>
+<use f='codebrowser/src/EntityData.cpp' l='765' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<doc f='codebrowser/src/EntityData.cpp' l='459'>/**
+ * \brief Changes the name of this entity.
+ * \param name The entity name or an empty string.
+ */</doc>
+<use f='codebrowser/src/MapData.cpp' l='637' u='c' c='_ZN7Solarus7MapData15set_entity_nameERKNS_11EntityIndexERKSs'/>

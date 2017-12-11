@@ -1,0 +1,26 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Jumper.h' l='32' ll='76'/>
+<size>264</size>
+<doc f='codebrowser/include/solarus/entities/Jumper.h' l='26'>/**
+ * \brief A sensor that makes the hero jump.
+ *
+ * A jumper is a detector placed on a map.
+ * When the hero touches this detector, he makes a jump with a specified length.
+ */</doc>
+<smbr r='Solarus::Jumper::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus6JumperC1ERKSsiRKNS_5PointERKNS_4SizeEii'/>
+<fun r='_ZNK7Solarus6Jumper8get_typeEv'/>
+<fun r='_ZNK7Solarus6Jumper12can_be_drawnEv'/>
+<fun r='_ZNK7Solarus6Jumper16is_sword_ignoredEv'/>
+<fun r='_ZN7Solarus6Jumper15is_obstacle_forERNS_6EntityERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus6Jumper21test_collision_customERNS_6EntityE'/>
+<fun r='_ZN7Solarus6Jumper16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZNK7Solarus6Jumper15get_jump_lengthEv'/>
+<fun r='_ZNK7Solarus6Jumper18is_jump_horizontalEv'/>
+<fun r='_ZNK7Solarus6Jumper16is_jump_verticalEv'/>
+<fun r='_ZNK7Solarus6Jumper16is_jump_diagonalEv'/>
+<fun r='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<fun r='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<fun r='_ZNK7Solarus6Jumper20is_point_in_diagonalERKNS_5PointE'/>
+<fun r='_ZNK7Solarus6Jumper29is_point_in_extended_diagonalERKNS_5PointE'/>
+<mbr r='Solarus::Jumper::jump_length' o='2048' t='int'/>

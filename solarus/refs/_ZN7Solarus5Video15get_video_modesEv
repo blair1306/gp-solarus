@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='61' type='static std::vector&lt;const VideoMode *&gt; Solarus::Video::get_video_modes()'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='616' ll='624' type='static std::vector&lt;const VideoMode *&gt; Solarus::Video::get_video_modes()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='612'>/**
+ * \brief Returns a list of all supported video modes.
+ * \return The list of supported video modes.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='145' u='c' c='_ZN7Solarus10LuaContext19video_api_get_modesEP9lua_State'/>

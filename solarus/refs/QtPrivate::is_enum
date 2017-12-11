@@ -1,0 +1,19 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='309' ll='316'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='318'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='319'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='320'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h' l='294'>// Specified by TR1 [4.5.1] primary type categories.
+
+// Implementation note:
+//
+// Each type is either void, integral, floating point, array, pointer,
+// reference, member object pointer, member function pointer, enum,
+// union or class. Out of these, only integral, floating point, reference,
+// class and enum types are potentially convertible to int. Therefore,
+// if a type is not a reference, integral, floating point or class and
+// is convertible to int, it&apos;s a enum. Adding cv-qualification to a type
+// does not change whether it&apos;s an enum.
+//
+// Is-convertible-to-int check is done only if all other checks pass,
+// because it can&apos;t be used with some types (e.g. void or classes with
+// inaccessible conversion operators).</doc>

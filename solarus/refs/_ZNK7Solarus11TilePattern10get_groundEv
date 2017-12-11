@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='48' type='Solarus::Ground Solarus::TilePattern::get_ground() const'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='76' u='c' c='_ZNK7Solarus11DynamicTile19get_modified_groundEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='805' u='c' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<def f='codebrowser/src/entities/TilePattern.cpp' l='84' ll='86' type='Solarus::Ground Solarus::TilePattern::get_ground() const'/>
+<doc f='codebrowser/src/entities/TilePattern.cpp' l='80'>/**
+ * \brief Returns the king of ground of this tile pattern.
+ * \return The ground of this tile pattern
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/RandomMovement.h' l='59' type='int'/>
+<offset>1472</offset>
+<doc f='codebrowser/include/solarus/movements/RandomMovement.h' l='59'>/**&lt; if the object goes further than this distance in x or y, it will come back
+                                             * (this is not a hard limit, there is no guarantee) */</doc>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='45' u='w' c='_ZN7Solarus14RandomMovementC1Eii'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='58' u='r' c='_ZN7Solarus14RandomMovement24notify_object_controlledEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='87' u='r' c='_ZNK7Solarus14RandomMovement14get_max_radiusEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='102' u='w' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='119' u='r' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>

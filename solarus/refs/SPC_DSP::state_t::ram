@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='138' type='uint8_t *'/>
+<offset>13760</offset>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='137'>// non-emulation state</doc>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='138'>// 64K shared RAM between DSP and SMP</doc>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='194' u='r' c='_ZN7SPC_DSP3runEi'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='643' u='w' c='_ZN7SPC_DSP4initEPv'/>

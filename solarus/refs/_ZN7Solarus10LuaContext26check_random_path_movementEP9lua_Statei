@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1157' type='static std::shared_ptr&lt;RandomPathMovement&gt; Solarus::LuaContext::check_random_path_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1261' ll='1265' type='static std::shared_ptr&lt;RandomPathMovement&gt; Solarus::LuaContext::check_random_path_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1285' u='c' c='_ZN7Solarus10LuaContext34random_path_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1299' u='c' c='_ZN7Solarus10LuaContext34random_path_movement_api_set_speedEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1254'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * random path movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

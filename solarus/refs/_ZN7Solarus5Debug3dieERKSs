@@ -1,0 +1,79 @@
+<dec f='codebrowser/include/solarus/lowlevel/Debug.h' l='46' type='void Solarus::Debug::die(const std::string &amp; error_message)'/>
+<use f='codebrowser/include/solarus/EnumInfo.inl' l='52' u='c' c='_ZN7Solarus12enum_to_nameET_'/>
+<use f='codebrowser/include/solarus/EnumInfo.inl' l='68' u='c' c='_ZN7Solarus12name_to_enumERKSs'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='65' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='69' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/EntityData.cpp' l='740' u='c' c='_ZNK7Solarus10EntityData14is_field_unsetERKSs'/>
+<use f='codebrowser/src/EntityData.cpp' l='817' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/EntityData.cpp' l='933' u='c' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<use f='codebrowser/src/Equipment.cpp' l='578' u='c' c='_ZNK7Solarus9Equipment29get_ability_savegame_variableENS_7AbilityE'/>
+<use f='codebrowser/src/Game.cpp' l='105' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/MainLoop.cpp' l='53' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/MainLoop.cpp' l='81' u='c' c='_ZN7Solarus12_GLOBAL__N_127check_version_compatibilityERKSs'/>
+<use f='codebrowser/src/Map.cpp' l='292' u='c' c='_ZN7Solarus3Map4loadERNS_4GameE'/>
+<use f='codebrowser/src/Savegame.cpp' l='227' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='121' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='157' u='c' c='_ZN7Solarus15SpriteAnimation4drawERNS_7SurfaceERKNS_5PointEii'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='69' u='c' c='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<use f='codebrowser/src/Treasure.cpp' l='69' u='c' c='_ZNK7Solarus8Treasure16check_obtainableEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='893' u='c' c='_ZN7Solarus12CustomEntity21test_collision_customERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='653' u='c' c='_ZN7Solarus5Enemy22set_attack_consequenceENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='674' u='c' c='_ZN7Solarus5Enemy29set_attack_consequence_spriteERKNS_6SpriteENS_11EnemyAttackENS_13EnemyReaction12ReactionTypeEi'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='276' u='c' c='_ZN7Solarus8Entities10get_entityERKSs'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1069' u='c' c='_ZNK7Solarus6Entity18get_touching_pointEi'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='971' u='c' c='_ZN7Solarus6Entity5State19get_item_being_usedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='632' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='730' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='796' u='c' c='_ZN7Solarus4Hero18is_facing_obstacleEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1960' u='c' c='_ZN7Solarus4Hero15avoid_collisionERNS_6EntityEi'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='183' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='312' u='c' c='_ZNK7Solarus6Jumper29is_point_in_extended_diagonalERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='91' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Teletransporter.cpp' l='314' u='c' c='_ZN7Solarus15Teletransporter14transport_heroERNS_4HeroE'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='46' u='c' c='_ZN7Solarus11TilePatternC1ENS_6GroundERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='216' u='c' c='_ZNK7Solarus7Tileset16get_tile_patternERKSs'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='84' u='c' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='120' u='c' c='_ZN7Solarus4Hero12JumpingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='151' u='c' c='_ZN7Solarus4Hero11StairsState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='86' u='c' c='_ZN7Solarus5Debug5errorERKSs'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='100' u='c' c='_ZN7Solarus5Debug15check_assertionEbPKc'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='112' u='c' c='_ZN7Solarus5Debug15check_assertionEbRKSs'/>
+<def f='codebrowser/src/lowlevel/Debug.cpp' l='124' ll='143' type='void Solarus::Debug::die(const std::string &amp; error_message)'/>
+<doc f='codebrowser/src/lowlevel/Debug.cpp' l='116'>/**
+ * \brief Stops Solarus on a fatal error.
+ *
+ * This function is equivalent to check_assertion(false, error_message).
+ * The error message is printed on both stdout and error.txt.
+ *
+ * \param error_message The error message to report.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='418' u='c' c='_ZN7Solarus5Music14update_playingEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='572' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='643' u='c' c='_ZN7Solarus5Music4stopEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='86' u='c' c='_ZN7Solarus10QuestFiles12_GLOBAL__N_121set_solarus_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='95' u='c' c='_ZN7Solarus10QuestFiles12_GLOBAL__N_121set_solarus_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='242' u='c' c='_ZN7Solarus10QuestFiles22data_file_get_locationERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='327' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='334' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='453' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/SpcDecoder.cpp' l='56' u='c' c='_ZN7Solarus10SpcDecoder6decodeEPsi'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='942' u='c' c='_ZNK7Solarus7Surface9get_pixelEi'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='146' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='158' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1337' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1025' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2939' u='c' c='_ZN7Solarus10LuaContext7l_panicEP9lua_State'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='132' u='c' c='_ZN7Solarus10LuaContext9add_timerERKSt10shared_ptrINS_5TimerEEiRKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='107' u='c' c='_ZN7Solarus14CircleMovement10set_radiusEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='147' u='c' c='_ZN7Solarus14CircleMovement16set_radius_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='177' u='c' c='_ZN7Solarus14CircleMovement15set_angle_speedEi'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='288' u='c' c='_ZN7Solarus14CircleMovement17set_max_rotationsEi'/>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='56' u='c' c='_ZN7Solarus12JumpMovementC1Eiiib'/>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='94' u='c' c='_ZN7Solarus13PixelMovement14set_trajectoryERKSs'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='100' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='55' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='83' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='75' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='63' u='c' c='_ZN12_GLOBAL__N_118check_num_elementsERKN7Solarus8QuadtreeISt10shared_ptrINS_7ElementEEEEi'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='54' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='53' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

@@ -1,0 +1,34 @@
+<dec f='include/physfs.h' l='2217' type='void PHYSFS_getSearchPathCallback(PHYSFS_StringCallback c, void * d)'/>
+<doc f='include/physfs.h' l='2184'>/**
+ * \fn void PHYSFS_getSearchPathCallback(PHYSFS_StringCallback c, void *d)
+ * \brief Enumerate the search path, using an application-defined callback.
+ *
+ * Internally, PHYSFS_getSearchPath() just calls this function and then builds
+ *  a list before returning to the application, so functionality is identical
+ *  except for how the information is represented to the application.
+ *
+ * Unlike PHYSFS_getSearchPath(), this function does not return an array.
+ *  Rather, it calls a function specified by the application once per
+ *  element of the search path:
+ *
+ * \code
+ *
+ * static void printSearchPath(void *data, const char *pathItem)
+ * {
+ *     printf(&quot;[%s] is in the search path.\n&quot;, pathItem);
+ * }
+ *
+ * // ...
+ * PHYSFS_getSearchPathCallback(printSearchPath, NULL);
+ * \endcode
+ *
+ * Elements of the search path are reported in order search priority, so the
+ *  first archive/dir that would be examined when looking for a file is the
+ *  first element passed through the callback.
+ *
+ *    \param c Callback function to notify about search path elements.
+ *    \param d Application-defined data passed to callback. Can be NULL.
+ *
+ * \sa PHYSFS_StringCallback
+ * \sa PHYSFS_getSearchPath
+ */</doc>

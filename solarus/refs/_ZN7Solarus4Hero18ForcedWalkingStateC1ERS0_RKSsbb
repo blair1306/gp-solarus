@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/hero/ForcedWalkingState.h' l='37' type='void Solarus::Hero::ForcedWalkingState::ForcedWalkingState(Solarus::Hero &amp; hero, const std::string &amp; path, bool loop, bool ignore_obstacles)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2408' u='c' c='_ZN7Solarus4Hero20start_forced_walkingERKSsbb'/>
+<def f='codebrowser/src/hero/ForcedWalkingState.cpp' l='33' ll='44' type='void Solarus::Hero::ForcedWalkingState::ForcedWalkingState(Solarus::Hero &amp; hero, const std::string &amp; path, bool loop, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/hero/ForcedWalkingState.cpp' l='23'>/**
+ * \brief Constructor.
+ * \param hero the hero controlled by this state
+ * \param path the succession of basic moves
+ * composing this movement (each character represents
+ * a direction between &apos;0&apos; and &apos;7&apos;), as in PathMovement
+ * \param loop true to make the movement return to the beginning
+ * once finished
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ */</doc>

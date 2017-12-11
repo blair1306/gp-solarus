@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='271' type='bool Solarus::Hero::can_pick_treasure(Solarus::EquipmentItem &amp; item)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2494' ll='2497' type='bool Solarus::Hero::can_pick_treasure(Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2489'>/**
+ * \brief Returns whether the hero can pick a treasure in his current state.
+ * \param item The equipment item to pick.
+ * \return true if this equipment item can currently be picked.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='433' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>

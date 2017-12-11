@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Hq4xFilter.h' l='43' type='static void Solarus::Hq4xFilter::initialize_hqx()'/>
+<use f='codebrowser/src/lowlevel/Hq2xFilter.cpp' l='47' u='c' c='_ZNK7Solarus10Hq2xFilter6filterEPKjiiPj'/>
+<use f='codebrowser/src/lowlevel/Hq3xFilter.cpp' l='47' u='c' c='_ZNK7Solarus10Hq3xFilter6filterEPKjiiPj'/>
+<use f='codebrowser/src/lowlevel/Hq4xFilter.cpp' l='50' u='c' c='_ZNK7Solarus10Hq4xFilter6filterEPKjiiPj'/>
+<def f='codebrowser/src/lowlevel/Hq4xFilter.cpp' l='60' ll='66' type='static void Solarus::Hq4xFilter::initialize_hqx()'/>
+<doc f='codebrowser/src/lowlevel/Hq4xFilter.cpp' l='55'>/**
+ * \brief Performs the initialization common to the 3 variants of hqx.
+ *
+ * Does nothing if the initialization was already done.
+ */</doc>

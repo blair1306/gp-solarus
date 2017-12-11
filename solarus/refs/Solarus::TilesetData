@@ -1,0 +1,30 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/entities/TilesetData.h' l='113' ll='155'/>
+<size>112</size>
+<doc f='codebrowser/include/solarus/entities/TilesetData.h' l='110'>/**
+ * \brief Stores the content of a tileset data file.
+ */</doc>
+<fun r='_ZN7Solarus11TilesetDataC1Ev'/>
+<fun r='_ZNK7Solarus11TilesetData20get_background_colorEv'/>
+<fun r='_ZN7Solarus11TilesetData20set_background_colorERKNS_5ColorE'/>
+<fun r='_ZNK7Solarus11TilesetData16get_num_patternsEv'/>
+<fun r='_ZNK7Solarus11TilesetData12get_patternsEv'/>
+<fun r='_ZNK7Solarus11TilesetData14pattern_existsERKSs'/>
+<fun r='_ZNK7Solarus11TilesetData11get_patternERKSs'/>
+<fun r='_ZN7Solarus11TilesetData11get_patternERKSs'/>
+<fun r='_ZN7Solarus11TilesetData11add_patternERKSsRKNS_15TilePatternDataE'/>
+<fun r='_ZN7Solarus11TilesetData14remove_patternERKSs'/>
+<fun r='_ZN7Solarus11TilesetData14set_pattern_idERKSsS2_'/>
+<fun r='_ZNK7Solarus11TilesetData19get_num_border_setsEv'/>
+<fun r='_ZNK7Solarus11TilesetData15get_border_setsEv'/>
+<fun r='_ZNK7Solarus11TilesetData17border_set_existsERKSs'/>
+<fun r='_ZNK7Solarus11TilesetData14get_border_setERKSs'/>
+<fun r='_ZN7Solarus11TilesetData14get_border_setERKSs'/>
+<fun r='_ZN7Solarus11TilesetData14add_border_setERKSsRKNS_9BorderSetE'/>
+<fun r='_ZN7Solarus11TilesetData17remove_border_setERKSs'/>
+<fun r='_ZN7Solarus11TilesetData17set_border_set_idERKSsS2_'/>
+<fun r='_ZN7Solarus11TilesetData15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<mbr r='Solarus::TilesetData::background_color' o='64' t='Solarus::Color'/>
+<mbr r='Solarus::TilesetData::patterns' o='128' t='std::map&lt;std::string, TilePatternData&gt;'/>
+<mbr r='Solarus::TilesetData::border_sets' o='512' t='std::map&lt;std::string, BorderSet&gt;'/>

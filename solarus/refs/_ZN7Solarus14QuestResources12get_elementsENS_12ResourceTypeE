@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/QuestResources.h' l='61' type='ResourceMap &amp; Solarus::QuestResources::get_elements(Solarus::ResourceType resource_type)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='146' u='c' c='_ZN7Solarus12CurrentQuest13get_resourcesENS_12ResourceTypeE'/>
+<def f='codebrowser/src/QuestResources.cpp' l='120' ll='124' type='QuestResources::ResourceMap &amp; Solarus::QuestResources::get_elements(Solarus::ResourceType resource_type)'/>
+<use f='codebrowser/src/QuestResources.cpp' l='139' u='c' c='_ZN7Solarus14QuestResources3addENS_12ResourceTypeERKSsS3_'/>
+<use f='codebrowser/src/QuestResources.cpp' l='155' u='c' c='_ZN7Solarus14QuestResources6removeENS_12ResourceTypeERKSs'/>
+<use f='codebrowser/src/QuestResources.cpp' l='222' u='c' c='_ZN7Solarus14QuestResources15set_descriptionENS_12ResourceTypeERKSsS3_'/>
+<doc f='codebrowser/src/QuestResources.cpp' l='115'>/**
+ * \brief Returns the list of element IDs of the specified resource type.
+ * \param resource_type A type of resource.
+ * \return The ids of all declared element of this type
+ */</doc>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='97' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='98' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='68' u='c' c='main'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='67' u='c' c='main'/>

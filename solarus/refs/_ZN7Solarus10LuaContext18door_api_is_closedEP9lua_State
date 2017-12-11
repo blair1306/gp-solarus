@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='942' type='static int Solarus::LuaContext::door_api_is_closed(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='355' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3694' ll='3702' type='static int Solarus::LuaContext::door_api_is_closed(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3689'>/**
+ * \brief Implementation of door:is_closed().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,30 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='158' type='void Solarus::Entity::set_origin(int x, int y)'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='56' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='61' u='c' c='_ZN7Solarus5ArrowC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Block.cpp' l='71' u='c' c='_ZN7Solarus5BlockC1ERKSsiRKNS_5PointEiS2_bbi'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='50' u='c' c='_ZN7Solarus4BombC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='59' u='c' c='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='75' u='c' c='_ZN7Solarus5ChestC1ERKSsiRKNS_5PointES2_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='49' u='c' c='_ZN7Solarus7CrystalC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='76' u='c' c='_ZN7Solarus12CustomEntityC1ERNS_4GameERKSsiiRKNS_5PointERKNS_4SizeES4_S4_'/>
+<use f='codebrowser/src/entities/Destination.cpp' l='47' u='c' c='_ZN7Solarus11DestinationC1ERKSsiRKNS_5PointEiS2_b'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='72' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='117' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1179' ll='1183' type='void Solarus::Entity::set_origin(int x, int y)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1191' u='c' c='_ZN7Solarus6Entity10set_originERKNS_5PointE'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1173'>/**
+ * \brief Sets the origin point of the entity,
+ * relative to the top-left corner of its rectangle.
+ * \param x x coordinate of the origin
+ * \param y y coordinate of the origin
+ */</doc>
+<use f='codebrowser/src/entities/Explosion.cpp' l='48' u='c' c='_ZN7Solarus9ExplosionC1ERKSsiRKNS_5PointEb'/>
+<use f='codebrowser/src/entities/Fire.cpp' l='39' u='c' c='_ZN7Solarus4FireC1ERKSsiRKNS_5PointE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='116' u='c' c='_ZN7Solarus4HeroC1ERNS_9EquipmentE'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='58' u='c' c='_ZN7Solarus8HookshotC1ERKNS_4HeroE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='71' u='c' c='_ZN7Solarus3NpcC1ERNS_4GameERKSsiRKNS_5PointENS0_7SubtypeES4_iS4_'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='203' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Sensor.cpp' l='45' u='c' c='_ZN7Solarus6SensorC1ERKSsiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='54' u='c' c='_ZN7Solarus6StairsC1ERKSsiRKNS_5PointEiNS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='48' u='c' c='_ZN7Solarus6StreamC1ERKSsiRKNS_5PointEiS2_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='949' u='c' c='_ZN7Solarus10LuaContext21entity_api_set_originEP9lua_State'/>

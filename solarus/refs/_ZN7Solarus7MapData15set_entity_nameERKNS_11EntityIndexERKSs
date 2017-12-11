@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='182' type='bool Solarus::MapData::set_entity_name(const Solarus::EntityIndex &amp; index, const std::string &amp; name)'/>
+<def f='codebrowser/src/MapData.cpp' l='619' ll='648' type='bool Solarus::MapData::set_entity_name(const Solarus::EntityIndex &amp; index, const std::string &amp; name)'/>
+<doc f='codebrowser/src/MapData.cpp' l='613'>/**
+ * \brief Changes the name of an entity.
+ * \param index Index of the entity on the map.
+ * \param name The new name. An empty string means no name.
+ * \return \c true in case of success, \c false if the name was already used.
+ */</doc>

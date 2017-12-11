@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='38' type='void Solarus::Timer::set_with_sound(bool with_sound)'/>
+<def f='codebrowser/src/Timer.cpp' l='52' ll='54' type='void Solarus::Timer::set_with_sound(bool with_sound)'/>
+<doc f='codebrowser/src/Timer.cpp' l='48'>/**
+ * \brief Sets whether a clock sound is played during this timer.
+ * \param with_sound true to play a clock sound during this timer.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='453' u='c' c='_ZN7Solarus10LuaContext24timer_api_set_with_soundEP9lua_State'/>

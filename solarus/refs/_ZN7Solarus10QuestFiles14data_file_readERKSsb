@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='70' type='std::string Solarus::QuestFiles::data_file_read(const std::string &amp; file_name, bool language_specific = false)'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='229' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='292' u='c' c='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='51' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/Savegame.cpp' l='201' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='40' u='c' c='_ZN7Solarus19SavegameConverterV1C1ERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='164' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='106' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='536' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='548' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='560' u='c' c='_ZN7Solarus5Music5startEv'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='278' ll='312' type='std::string Solarus::QuestFiles::data_file_read(const std::string &amp; file_name, bool language_specific = false)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='272'>/**
+ * \brief Opens a data file an loads its content into memory.
+ * \param file_name Name of the file to open.
+ * \param language_specific \c true if the file is specific to the current language.
+ * \return The content of the file.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='457' u='c' c='_ZN7Solarus5Sound11decode_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='232' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='141' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='111' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='687' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='100' u='c' c='_ZN7Solarus7LuaData22import_from_quest_fileERKSsb'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='41' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='69' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='61' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='40' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='39' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

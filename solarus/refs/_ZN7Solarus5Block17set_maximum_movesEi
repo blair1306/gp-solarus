@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Block.h' l='75' type='void Solarus::Block::set_maximum_moves(int maximum_moves)'/>
+<def f='codebrowser/src/entities/Block.cpp' l='398' ll='405' type='void Solarus::Block::set_maximum_moves(int maximum_moves)'/>
+<doc f='codebrowser/src/entities/Block.cpp' l='390'>/**
+ * \brief Sets the maximum moves of this block.
+ *
+ * This resets the remaining allowed moves.
+ *
+ * \param maximum_moves How many times the block can be moved
+ * (0: none, 1: once, 2: infinite).
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3309' u='c' c='_ZN7Solarus10LuaContext27block_api_set_maximum_movesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3313' u='c' c='_ZN7Solarus10LuaContext27block_api_set_maximum_movesEP9lua_State'/>

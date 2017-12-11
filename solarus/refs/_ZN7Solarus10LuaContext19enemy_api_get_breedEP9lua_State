@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='964' type='static int Solarus::LuaContext::enemy_api_get_breed(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='444' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4390' ll='4398' type='static int Solarus::LuaContext::enemy_api_get_breed(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4385'>/**
+ * \brief Implementation of enemy:get_breed().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

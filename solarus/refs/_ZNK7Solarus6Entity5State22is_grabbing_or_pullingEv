@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='129' type='bool Solarus::Entity::State::is_grabbing_or_pulling() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='992' ll='994' type='bool Solarus::Entity::State::is_grabbing_or_pulling() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='985'>/**
+ * \brief Returns whether the entity is grabbing or pulling an entity in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity is grabbing or pulling an entity
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2344' u='c' c='_ZNK7Solarus4Hero22is_grabbing_or_pullingEv'/>
+<ovr f='codebrowser/src/hero/GrabbingState.cpp' l='82' c='_ZNK7Solarus4Hero13GrabbingState22is_grabbing_or_pullingEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='120' c='_ZNK7Solarus4Hero12PullingState22is_grabbing_or_pullingEv'/>

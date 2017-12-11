@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/hero/SwordSwingingState.h' l='37' type='bool Solarus::Hero::SwordSwingingState::can_be_hurt(Solarus::Entity * attacker) const'/>
+<inh f='codebrowser/include/solarus/entities/EntityState.h' l='122' c='_ZNK7Solarus6Entity5State11can_be_hurtEPS0_'/>
+<def f='codebrowser/src/hero/SwordSwingingState.cpp' l='121' ll='123' type='bool Solarus::Hero::SwordSwingingState::can_be_hurt(Solarus::Entity * ) const'/>
+<doc f='codebrowser/src/hero/SwordSwingingState.cpp' l='115'>/**
+ * \brief Returns whether the hero can be hurt in this state.
+ * \return true if the hero can be hurt in this state
+ * \param attacker an attacker that is trying to hurt the hero
+ * (or nullptr if the source of the attack is not an enemy)
+ */</doc>
+<doc f='codebrowser/src/hero/SwordSwingingState.cpp' l='121'>/* attacker */</doc>

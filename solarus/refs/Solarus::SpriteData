@@ -1,0 +1,23 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/SpriteData.h' l='123' ll='157'/>
+<size>64</size>
+<doc f='codebrowser/include/solarus/SpriteData.h' l='120'>/**
+ * \brief Stores the content of a sprite data file.
+ */</doc>
+<fun r='_ZN7Solarus10SpriteDataC1Ev'/>
+<fun r='_ZNK7Solarus10SpriteData18get_num_animationsEv'/>
+<fun r='_ZNK7Solarus10SpriteData14get_animationsEv'/>
+<fun r='_ZNK7Solarus10SpriteData13has_animationERKSs'/>
+<fun r='_ZNK7Solarus10SpriteData13get_animationERKSs'/>
+<fun r='_ZN7Solarus10SpriteData13get_animationERKSs'/>
+<fun r='_ZN7Solarus10SpriteData13add_animationERKSsRKNS_19SpriteAnimationDataE'/>
+<fun r='_ZN7Solarus10SpriteData16remove_animationERKSs'/>
+<fun r='_ZN7Solarus10SpriteData18set_animation_nameERKSsS2_'/>
+<fun r='_ZNK7Solarus10SpriteData26get_default_animation_nameEv'/>
+<fun r='_ZN7Solarus10SpriteData26set_default_animation_nameERKSs'/>
+<fun r='_ZN7Solarus10SpriteData15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus10SpriteData13export_to_luaERSo'/>
+<fun r='_ZN7Solarus10SpriteData11l_animationEP9lua_State'/>
+<fun r='_ZNK7Solarus10SpriteData23export_animation_to_luaERKSsRSo'/>
+<mbr r='Solarus::SpriteData::animations' o='64' t='std::map&lt;std::string, SpriteAnimationData&gt;'/>
+<mbr r='Solarus::SpriteData::default_animation_name' o='448' t='std::string'/>

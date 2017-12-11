@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='73' type='std::string'/>
+<offset>192</offset>
+<doc f='codebrowser/include/solarus/Treasure.h' l='73'>/**&lt; name of the savegame boolean variable corresponding to this treasure,
+                                        * or an empty string if the treasure state is not saved */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='50' u='w' c='_ZN7Solarus8TreasureC1ERNS_4GameERKSsiS4_'/>
+<use f='codebrowser/src/Treasure.cpp' l='142' u='r' c='_ZNK7Solarus8Treasure8is_foundEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='159' u='a' c='_ZNK7Solarus8Treasure21get_savegame_variableEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='174' u='r' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='199' type='std::vector&lt;SpritePtr&gt; Solarus::Entity::get_sprites() const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='125' u='c' c='_ZN7Solarus12CustomEntity21set_sprites_directionEi'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='210' u='c' c='_ZN7Solarus5Enemy14notify_createdEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='761' u='c' c='_ZN7Solarus5Enemy13set_animationERKSs'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='423' u='c' c='_ZN7Solarus6Entity22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='920' u='c' c='_ZNK7Solarus6Entity20get_max_bounding_boxEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1287' ll='1297' type='std::vector&lt;SpritePtr&gt; Solarus::Entity::get_sprites() const'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1839' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1893' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1283'>/**
+ * \brief Returns all sprites of this entity.
+ * \return The sprites.
+ */</doc>

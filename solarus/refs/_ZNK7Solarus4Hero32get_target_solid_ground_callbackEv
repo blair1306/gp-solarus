@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='157' type='const Solarus::ScopedLuaRef &amp; Solarus::Hero::get_target_solid_ground_callback() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1349' ll='1351' type='const Solarus::ScopedLuaRef &amp; Solarus::Hero::get_target_solid_ground_callback() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1343'>/**
+ * \brief Returns the function indicated by the last call to
+ * set_target_solid_callback().
+ * \return The Lua function that gives solid ground coordinates, or
+ * an empty ref if set_target_solid_callback() was not called.
+ */</doc>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='54' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='56' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundStateC1ERS0_bjb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1898' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='163' type='Solarus::Entity &amp; Solarus::Entity::State::get_entity()'/>
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='167' type='T &amp; Solarus::Entity::State::get_entity()'/>
+<def f='codebrowser/include/solarus/entities/EntityState.h' l='187' ll='189' type='T &amp; Solarus::Entity::State::get_entity()'/>
+<use f='codebrowser/include/solarus/entities/EntityState.h' l='188' u='c' c='_ZN7Solarus6Entity5State10get_entityEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='93' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='153' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='89' ll='91' type='Solarus::Entity &amp; Solarus::Entity::State::get_entity()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='85'>/**
+ * \brief Returns the entity of this state.
+ * \return The entity.
+ */</doc>
+<ovr f='codebrowser/src/hero/HeroState.cpp' l='39' c='_ZN7Solarus9HeroState10get_entityEv'/>
+<use f='codebrowser/src/hero/HeroState.cpp' l='40' u='c' c='_ZN7Solarus9HeroState10get_entityEv'/>

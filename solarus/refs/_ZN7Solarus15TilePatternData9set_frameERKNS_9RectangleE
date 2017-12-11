@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='92' type='void Solarus::TilePatternData::set_frame(const Solarus::Rectangle &amp; frame)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='61' u='c' c='_ZN7Solarus15TilePatternDataC1ERKNS_9RectangleE'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='162' ll='165' type='void Solarus::TilePatternData::set_frame(const Solarus::Rectangle &amp; frame)'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='155'>/**
+ * \brief Sets the coordinates of this pattern in the tileset image file.
+ *
+ * The pattern will have a single frame.
+ *
+ * \param frame The coordinates of the single frame of this pattern.
+ */</doc>

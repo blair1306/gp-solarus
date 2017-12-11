@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='70' type='30'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='70'>/**&lt; the hookshot thrown by the hero */</doc>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='45' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='101' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='151' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/include/solarus/entities/Hookshot.h' l='33'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='314' u='r' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='541' u='r' c='_ZN7Solarus8Pickable6updateEv'/>
+<use f='codebrowser/src/entities/Wall.cpp' l='64' u='a' c='_ZN7Solarus4WallC1ERKSsiRKNS_5PointERKNS_4SizeEbbbbb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='549' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>

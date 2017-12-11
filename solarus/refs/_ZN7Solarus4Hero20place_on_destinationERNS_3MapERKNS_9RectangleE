@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='99' type='void Solarus::Hero::place_on_destination(Solarus::Map &amp; map, const Solarus::Rectangle &amp; previous_map_location)'/>
+<use f='codebrowser/src/Game.cpp' l='477' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='532' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='571' ll='695' type='void Solarus::Hero::place_on_destination(Solarus::Map &amp; map, const Solarus::Rectangle &amp; previous_map_location)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='565'>/**
+ * \brief Places the hero on the map specified and at its destination point selected.
+ * \param map The new map.
+ * \param previous_map_location Position of the previous map in its world
+ * (because the previous map is already destroyed).
+ */</doc>

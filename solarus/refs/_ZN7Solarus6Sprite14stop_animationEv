@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='92' type='void Solarus::Sprite::stop_animation()'/>
+<def f='codebrowser/src/Sprite.cpp' l='490' ll='492' type='void Solarus::Sprite::stop_animation()'/>
+<doc f='codebrowser/src/Sprite.cpp' l='487'>/**
+ * \brief Stops the animation.
+ */</doc>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='112' u='c' c='_ZN7Solarus13CarriedObjectC1ERNS_4HeroERKNS_6EntityERKSsS7_ij'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='237' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='142' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='152' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='269' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='387' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='547' u='c' c='_ZN7Solarus11HeroSprites21stop_displaying_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='558' u='c' c='_ZN7Solarus11HeroSprites27stop_displaying_sword_starsEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='568' u='c' c='_ZN7Solarus11HeroSprites22stop_displaying_shieldEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='576' u='c' c='_ZN7Solarus11HeroSprites21stop_displaying_trailEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1245' u='c' c='_ZN7Solarus11HeroSprites19set_animation_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1281' u='c' c='_ZN7Solarus11HeroSprites27set_animation_sword_tappingEv'/>

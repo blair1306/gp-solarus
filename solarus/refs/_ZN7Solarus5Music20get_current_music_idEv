@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/Music.h' l='92' type='static const std::string &amp; Solarus::Music::get_current_music_id()'/>
+<def f='codebrowser/src/lowlevel/Music.cpp' l='247' ll='249' type='static const std::string &amp; Solarus::Music::get_current_music_id()'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='329' u='c' c='_ZN7Solarus5Music4playERKSsbRKNS_12ScopedLuaRefE'/>
+<doc f='codebrowser/src/lowlevel/Music.cpp' l='243'>/**
+ * \brief Returns the id of the music currently playing.
+ * \return the id of the current music, or &quot;none&quot; if no music is being played
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='208' u='c' c='_ZN7Solarus10LuaContext19audio_api_get_musicEP9lua_State'/>

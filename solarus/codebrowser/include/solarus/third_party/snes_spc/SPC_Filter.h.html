@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SPC_Filter.h source code [codebrowser/include/solarus/third_party/snes_spc/SPC_Filter.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="SPC_Filter "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/SPC_Filter.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='SPC_Filter.h.html'>SPC_Filter.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// Simple low-pass and high-pass filter to better match sound output of a SNES</i></td></tr>
+<tr><th id="2">2</th><td><i></i></td></tr>
+<tr><th id="3">3</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/SPC_FILTER_H">SPC_FILTER_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/SPC_FILTER_H" data-ref="_M/SPC_FILTER_H">SPC_FILTER_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="blargg_common.h.html">"blargg_common.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="SPC_Filter" title='SPC_Filter' data-ref="SPC_Filter">SPC_Filter</dfn> {</td></tr>
+<tr><th id="10">10</th><td><b>public</b>:</td></tr>
+<tr><th id="11">11</th><td>	</td></tr>
+<tr><th id="12">12</th><td>	<i>// Filters count samples of stereo sound in place. Count must be a multiple of 2.</i></td></tr>
+<tr><th id="13">13</th><td>	<b>typedef</b> <em>short</em> <dfn class="typedef" id="SPC_Filter::sample_t" title='SPC_Filter::sample_t' data-type='short' data-ref="SPC_Filter::sample_t">sample_t</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SPC_Filter.cpp.html#_ZN10SPC_Filter3runEPsi" title='SPC_Filter::run' data-ref="_ZN10SPC_Filter3runEPsi" id="_ZN10SPC_Filter3runEPsi">run</a>( <a class="typedef" href="#SPC_Filter::sample_t" title='SPC_Filter::sample_t' data-type='short' data-ref="SPC_Filter::sample_t">sample_t</a>* <dfn class="local col1 decl" id="1io" title='io' data-type='sample_t *' data-ref="1io">io</dfn>, <em>int</em> <dfn class="local col2 decl" id="2count" title='count' data-type='int' data-ref="2count">count</dfn> );</td></tr>
+<tr><th id="15">15</th><td>	</td></tr>
+<tr><th id="16">16</th><td><i>// Optional features</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>	// Clears filter to silence</i></td></tr>
+<tr><th id="19">19</th><td>	<em>void</em> <a class="decl" href="../../../../src/third_party/snes_spc/SPC_Filter.cpp.html#_ZN10SPC_Filter5clearEv" title='SPC_Filter::clear' data-ref="_ZN10SPC_Filter5clearEv" id="_ZN10SPC_Filter5clearEv">clear</a>();</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>	<i>// Sets gain (volume), where gain_unit is normal. Gains greater than gain_unit</i></td></tr>
+<tr><th id="22">22</th><td><i>	// are fine, since output is clamped to 16-bit sample range.</i></td></tr>
+<tr><th id="23">23</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_Filter::::gain_unit" title='SPC_Filter::::gain_unit' data-ref="SPC_Filter::::gain_unit">gain_unit</dfn> = <var>0x100</var> };</td></tr>
+<tr><th id="24">24</th><td>	<em>void</em> <a class="decl" href="#_ZN10SPC_Filter8set_gainEi" title='SPC_Filter::set_gain' data-ref="_ZN10SPC_Filter8set_gainEi">set_gain</a>( <em>int</em> <dfn class="local col3 decl" id="3gain" title='gain' data-type='int' data-ref="3gain">gain</dfn> );</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<i>// Sets amount of bass (logarithmic scale)</i></td></tr>
+<tr><th id="27">27</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_Filter::::bass_none" title='SPC_Filter::::bass_none' data-ref="SPC_Filter::::bass_none">bass_none</dfn> =  <var>0</var> };</td></tr>
+<tr><th id="28">28</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_Filter::::bass_norm" title='SPC_Filter::::bass_norm' data-ref="SPC_Filter::::bass_norm">bass_norm</dfn> =  <var>8</var> }; <i>// normal amount</i></td></tr>
+<tr><th id="29">29</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_Filter::::bass_max" title='SPC_Filter::::bass_max' data-ref="SPC_Filter::::bass_max">bass_max</dfn>  = <var>31</var> };</td></tr>
+<tr><th id="30">30</th><td>	<em>void</em> <a class="decl" href="#_ZN10SPC_Filter8set_bassEi" title='SPC_Filter::set_bass' data-ref="_ZN10SPC_Filter8set_bassEi">set_bass</a>( <em>int</em> <dfn class="local col4 decl" id="4bass" title='bass' data-type='int' data-ref="4bass">bass</dfn> );</td></tr>
+<tr><th id="31">31</th><td>	</td></tr>
+<tr><th id="32">32</th><td><b>public</b>:</td></tr>
+<tr><th id="33">33</th><td>	<a class="decl" href="../../../../src/third_party/snes_spc/SPC_Filter.cpp.html#_ZN10SPC_FilterC1Ev" title='SPC_Filter::SPC_Filter' data-ref="_ZN10SPC_FilterC1Ev" id="_ZN10SPC_FilterC1Ev">SPC_Filter</a>();</td></tr>
+<tr><th id="34">34</th><td>	<a class="macro" href="blargg_common.h.html#73" title="void* operator new ( size_t s ) throw () { return malloc( s ); } void operator delete ( void* p ) { free( p ); }" data-ref="_M/BLARGG_DISABLE_NOTHROW">BLARGG_DISABLE_NOTHROW</a></td></tr>
+<tr><th id="35">35</th><td><b>private</b>:</td></tr>
+<tr><th id="36">36</th><td>	<b>enum</b> { <dfn class="enum" id="SPC_Filter::::gain_bits" title='SPC_Filter::::gain_bits' data-ref="SPC_Filter::::gain_bits">gain_bits</dfn> = <var>8</var> };</td></tr>
+<tr><th id="37">37</th><td>	<em>int</em> <dfn class="decl" id="SPC_Filter::gain" title='SPC_Filter::gain' data-ref="SPC_Filter::gain">gain</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>int</em> <dfn class="decl" id="SPC_Filter::bass" title='SPC_Filter::bass' data-ref="SPC_Filter::bass">bass</dfn>;</td></tr>
+<tr><th id="39">39</th><td>	<b>struct</b> <dfn class="type def" id="SPC_Filter::chan_t" title='SPC_Filter::chan_t' data-ref="SPC_Filter::chan_t">chan_t</dfn> { <em>int</em> <dfn class="decl" id="SPC_Filter::chan_t::p1" title='SPC_Filter::chan_t::p1' data-ref="SPC_Filter::chan_t::p1">p1</dfn>, <dfn class="decl" id="SPC_Filter::chan_t::pp1" title='SPC_Filter::chan_t::pp1' data-ref="SPC_Filter::chan_t::pp1">pp1</dfn>, <dfn class="decl" id="SPC_Filter::chan_t::sum" title='SPC_Filter::chan_t::sum' data-ref="SPC_Filter::chan_t::sum">sum</dfn>; };</td></tr>
+<tr><th id="40">40</th><td>	<a class="type" href="#SPC_Filter::chan_t" title='SPC_Filter::chan_t' data-ref="SPC_Filter::chan_t">chan_t</a> <dfn class="decl" id="SPC_Filter::ch" title='SPC_Filter::ch' data-ref="SPC_Filter::ch">ch</dfn> [<var>2</var>];</td></tr>
+<tr><th id="41">41</th><td>};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><b>inline</b> <em>void</em> <a class="type" href="#SPC_Filter" title='SPC_Filter' data-ref="SPC_Filter">SPC_Filter</a>::<dfn class="decl def" id="_ZN10SPC_Filter8set_gainEi" title='SPC_Filter::set_gain' data-ref="_ZN10SPC_Filter8set_gainEi">set_gain</dfn>( <em>int</em> <dfn class="local col5 decl" id="5g" title='g' data-type='int' data-ref="5g">g</dfn> ) { <a class="member" href="#SPC_Filter::gain" title='SPC_Filter::gain' data-ref="SPC_Filter::gain">gain</a> = <a class="local col5 ref" href="#5g" title='g' data-ref="5g">g</a>; }</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>inline</b> <em>void</em> <a class="type" href="#SPC_Filter" title='SPC_Filter' data-ref="SPC_Filter">SPC_Filter</a>::<dfn class="decl def" id="_ZN10SPC_Filter8set_bassEi" title='SPC_Filter::set_bass' data-ref="_ZN10SPC_Filter8set_bassEi">set_bass</dfn>( <em>int</em> <dfn class="local col6 decl" id="6b" title='b' data-type='int' data-ref="6b">b</dfn> ) { <a class="member" href="#SPC_Filter::bass" title='SPC_Filter::bass' data-ref="SPC_Filter::bass">bass</a> = <a class="local col6 ref" href="#6b" title='b' data-ref="6b">b</a>; }</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SPC_Filter.cpp.html'>codebrowser/src/third_party/snes_spc/SPC_Filter.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

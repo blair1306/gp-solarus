@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='142' type='lua_State * Solarus::LuaContext::get_internal_state()'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='111' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='218' u='c' c='_ZN7Solarus15DialogBoxSystem15show_more_linesEv'/>
+<use f='codebrowser/src/MainLoop.cpp' l='421' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='199' u='c' c='_ZN7Solarus8Entities15create_entitiesERKNS_7MapDataE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1369' u='c' c='_ZNK7Solarus4Hero26make_solid_ground_callbackERKNS_5PointEi'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='79' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='85' ll='87' type='lua_State * Solarus::LuaContext::get_internal_state()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='81'>/**
+ * \brief Returns the internal Lua state encapsulated by this LuaContext object.
+ * \return The internal Lua state.
+ */</doc>

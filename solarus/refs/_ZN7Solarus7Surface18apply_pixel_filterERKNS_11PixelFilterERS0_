@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='91' type='void Solarus::Surface::apply_pixel_filter(const Solarus::PixelFilter &amp; pixel_filter, Solarus::Surface &amp; dst_surface)'/>
+<def f='codebrowser/src/lowlevel/Surface.cpp' l='738' ll='771' type='void Solarus::Surface::apply_pixel_filter(const Solarus::PixelFilter &amp; pixel_filter, Solarus::Surface &amp; dst_surface)'/>
+<doc f='codebrowser/src/lowlevel/Surface.cpp' l='731'>/**
+ * \brief Draws this software surface with a pixel filter on another software
+ * surface.
+ * \param pixel_filter The pixel filter to apply.
+ * \param dst_surface The destination surface. It must have the size of the
+ * this surface multiplied by the scaling factor of the filter.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='671' u='c' c='_ZN7Solarus5Video6renderERKSt10shared_ptrINS_7SurfaceEE'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='59' type='void Solarus::Sprite::set_tileset(const Solarus::Tileset &amp; tileset)'/>
+<def f='codebrowser/src/Sprite.cpp' l='139' ll='141' type='void Solarus::Sprite::set_tileset(const Solarus::Tileset &amp; tileset)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='132'>/**
+ * \brief When the sprite is drawn on a map, sets the tileset.
+ *
+ * This function must be called if this sprite image depends on the map&apos;s tileset.
+ *
+ * \param tileset The tileset.
+ */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='424' u='c' c='_ZN7Solarus6Entity22notify_tileset_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='960' u='c' c='_ZN7Solarus11HeroSprites22notify_tileset_changedEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1609' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>

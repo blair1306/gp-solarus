@@ -1,0 +1,17 @@
+<dec f='codebrowser/gui/include/solarus/gui/console.h' l='44' type='int SolarusGui::Console::execute_command(const QString &amp; command)'/>
+<use f='codebrowser/gui/src/console.cpp' l='145' u='c' c='_ZN10SolarusGui7Console23command_field_activatedEv'/>
+<def f='codebrowser/gui/src/console.cpp' l='159' ll='177' type='int SolarusGui::Console::execute_command(const QString &amp; command)'/>
+<use f='codebrowser/gui/src/console.cpp' l='442' u='c' c='_ZN10SolarusGui7Console14apply_settingsEv'/>
+<doc f='codebrowser/gui/src/console.cpp' l='149'>/**
+ * @brief Executes some Lua code in the quest process and logs it into the console.
+ *
+ * Use the command_result_received() signal to be notified of the result if you
+ * need to.
+ *
+ * @param command The Lua code.
+ * @return The id of the command executed, or -1 if it could not be sent
+ * to the process.
+ */</doc>
+<use f='codebrowser/gui/src/main_window.cpp' l='392' u='c' c='_ZN10SolarusGui10MainWindow30on_action_fullscreen_triggeredEv'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='594' u='c' c='_ZN10SolarusGui10MainWindow24set_video_mode_requestedERK7QString'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='609' u='c' c='_ZN10SolarusGui10MainWindow18set_zoom_requestedEi'/>

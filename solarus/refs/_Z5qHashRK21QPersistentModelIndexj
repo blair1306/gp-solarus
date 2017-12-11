@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='102' type='uint qHash(const QPersistentModelIndex &amp; index, uint seed = 0)'/>
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='139' type='uint qHash(const QPersistentModelIndex &amp; , uint seed = 0)'/>
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='146' ll='147' type='uint qHash(const QPersistentModelIndex &amp; index, uint seed = 0)'/>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='101'>// qHash is a friend, but we can&apos;t use default arguments for friends (§8.3.6.4)</doc>

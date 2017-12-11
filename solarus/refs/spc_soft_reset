@@ -1,0 +1,4 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='48' type='void spc_soft_reset(SNES_SPC * )'/>
+<doc f='codebrowser/include/solarus/third_party/snes_spc/spc.h' l='46'>/* Emulates pressing reset switch on SNES. This resets your output buffer, so
+you must call spc_set_output() after this. */</doc>
+<def f='codebrowser/src/third_party/snes_spc/spc.cpp' l='50' type='void spc_soft_reset(SNES_SPC * s)'/>

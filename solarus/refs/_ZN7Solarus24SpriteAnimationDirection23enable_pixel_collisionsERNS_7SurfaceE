@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='57' type='void Solarus::SpriteAnimationDirection::enable_pixel_collisions(Solarus::Surface &amp; src_image)'/>
+<doc f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='56'>// pixel collisions</doc>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='187' u='c' c='_ZN7Solarus15SpriteAnimation26do_enable_pixel_collisionsEv'/>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='108' ll='115' type='void Solarus::SpriteAnimationDirection::enable_pixel_collisions(Solarus::Surface &amp; src_image)'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='98'>/**
+ * \brief Calculates the bit fields representing the non-transparent pixels
+ * of the images in this direction.
+ *
+ * This method has to be called if you want a sprite having this animations
+ * to be able to detect pixel-perfect collisions.
+ * If the pixel-perfect collisions are already enabled, this function does nothing.
+ *
+ * \param src_image the surface containing the animations
+ */</doc>

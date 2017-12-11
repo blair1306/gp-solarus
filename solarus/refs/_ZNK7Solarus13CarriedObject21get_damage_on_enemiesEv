@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='62' type='int Solarus::CarriedObject::get_damage_on_enemies() const'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='139' ll='141' type='int Solarus::CarriedObject::get_damage_on_enemies() const'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='467' u='c' c='_ZN7Solarus13CarriedObject27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='135'>/**
+ * \brief Returns the damage this item can cause to ennemies.
+ * \return the damage on enemies
+ */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1246' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>

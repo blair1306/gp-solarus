@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='49' type='void Solarus::Entity::State::draw_on_map()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='235' ll='237' type='void Solarus::Entity::State::draw_on_map()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='228'>/**
+ * \brief Draws this state.
+ *
+ * This function draws this entity in its current state.
+ * The default implement does nothing.
+ * If your state needs to draw additional elements, you can redefine this function.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='407' u='c' c='_ZN7Solarus4Hero11draw_on_mapEv'/>
+<ovr f='codebrowser/src/hero/HeroState.cpp' l='69' c='_ZN7Solarus9HeroState11draw_on_mapEv'/>

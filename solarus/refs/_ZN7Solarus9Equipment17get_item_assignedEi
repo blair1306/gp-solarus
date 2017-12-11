@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='93' type='Solarus::EquipmentItem * Solarus::Equipment::get_item_assigned(int slot)'/>
+<def f='codebrowser/src/Equipment.cpp' l='452' ll='468' type='Solarus::EquipmentItem * Solarus::Equipment::get_item_assigned(int slot)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='447'>/**
+ * \brief Returns the item currently assigned to a slot.
+ * \param slot Slot of the item to get (1 or 2).
+ * \return The item currently assigned to this slot or nullptr.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='95' u='c' c='_ZN7Solarus9HeroState27notify_item_command_pressedEi'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1221' u='c' c='_ZN7Solarus10LuaContext26game_api_get_item_assignedEP9lua_State'/>

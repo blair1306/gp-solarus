@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='56' type='bool Solarus::LuaTools::do_string(lua_State * l, const std::string &amp; code, const std::string &amp; chunk_name)'/>
+<use f='codebrowser/src/MainLoop.cpp' l='421' u='c' c='_ZN7Solarus8MainLoop11check_inputEv'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='136' ll='151' type='bool Solarus::LuaTools::do_string(lua_State * l, const std::string &amp; code, const std::string &amp; chunk_name)'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='128'>/**
+ * \brief Loads and executes some Lua code.
+ * \param l A Lua state.
+ * \param code The code to execute.
+ * \param chunk_name A name describing the Lua chunk
+ * (only used to print the error message if any).
+ * \return \c true in case of success.
+ */</doc>

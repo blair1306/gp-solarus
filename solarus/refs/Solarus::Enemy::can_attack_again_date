@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='240' type='uint32_t'/>
+<offset>2976</offset>
+<doc f='codebrowser/include/solarus/entities/Enemy.h' l='240'>/**&lt; date when the enemy can attack again (0 means never) */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='105' u='w' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='504' u='w' c='_ZN7Solarus5Enemy14set_can_attackEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='806' u='r' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='806' u='r' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='889' u='r' c='_ZN7Solarus5Enemy13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='890' u='w' c='_ZN7Solarus5Enemy13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1088' u='w' c='_ZN7Solarus5Enemy29attack_stopped_by_hero_shieldEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1285' u='w' c='_ZN7Solarus5Enemy4hurtERNS_6EntityEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1350' u='w' c='_ZN7Solarus5Enemy4killEv'/>

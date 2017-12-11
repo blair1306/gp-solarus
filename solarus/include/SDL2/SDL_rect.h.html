@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_rect.h source code [include/SDL2/SDL_rect.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_rect.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_rect.h.html'>SDL_rect.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_rect.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  Header file for SDL_rect definition and management functions.</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/_SDL_rect_h">_SDL_rect_h</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/_SDL_rect_h" data-ref="_M/_SDL_rect_h">_SDL_rect_h</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_pixels.h.html">"SDL_pixels.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="SDL_rwops.h.html">"SDL_rwops.h"</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="37">37</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="38">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="38">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *  <span class="command">\brief</span>  The structure that defines a point</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_EnclosePoints</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_Point" title='SDL_Point' data-ref="SDL_Point"><a class="type" href="#SDL_Point" title='SDL_Point' data-ref="SDL_Point">SDL_Point</a></dfn></td></tr>
+<tr><th id="48">48</th><td>{</td></tr>
+<tr><th id="49">49</th><td>    <em>int</em> <dfn class="decl" id="SDL_Point::x" title='SDL_Point::x' data-ref="SDL_Point::x">x</dfn>;</td></tr>
+<tr><th id="50">50</th><td>    <em>int</em> <dfn class="decl" id="SDL_Point::y" title='SDL_Point::y' data-ref="SDL_Point::y">y</dfn>;</td></tr>
+<tr><th id="51">51</th><td>} <dfn class="typedef" id="SDL_Point" title='SDL_Point' data-type='struct SDL_Point' data-ref="SDL_Point">SDL_Point</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *  <span class="command">\brief</span> A rectangle, with the origin at the upper left.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RectEmpty</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_RectEquals</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_HasIntersection</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_IntersectRect</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_UnionRect</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *  <span class="command">\sa</span> SDL_EnclosePoints</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="63">63</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_Rect" title='SDL_Rect' data-ref="SDL_Rect"><a class="type" href="#SDL_Rect" title='SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a></dfn></td></tr>
+<tr><th id="64">64</th><td>{</td></tr>
+<tr><th id="65">65</th><td>    <em>int</em> <dfn class="decl" id="SDL_Rect::x" title='SDL_Rect::x' data-ref="SDL_Rect::x">x</dfn>, <dfn class="decl" id="SDL_Rect::y" title='SDL_Rect::y' data-ref="SDL_Rect::y">y</dfn>;</td></tr>
+<tr><th id="66">66</th><td>    <em>int</em> <dfn class="decl" id="SDL_Rect::w" title='SDL_Rect::w' data-ref="SDL_Rect::w">w</dfn>, <dfn class="decl" id="SDL_Rect::h" title='SDL_Rect::h' data-ref="SDL_Rect::h">h</dfn>;</td></tr>
+<tr><th id="67">67</th><td>} <dfn class="typedef" id="SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</dfn>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *  <span class="command">\brief</span> Returns true if the rectangle has no area.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="72">72</th><td><a class="macro" href="begin_code.h.html#125" title="__attribute__((always_inline)) static __inline__" data-ref="_M/SDL_FORCE_INLINE">SDL_FORCE_INLINE</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="decl def" id="_Z13SDL_RectEmptyPK8SDL_Rect" title='SDL_RectEmpty' data-ref="_Z13SDL_RectEmptyPK8SDL_Rect">SDL_RectEmpty</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> *<dfn class="local col0 decl" id="500r" title='r' data-type='const SDL_Rect *' data-ref="500r">r</dfn>)</td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>    <b>return</b> ((!<a class="local col0 ref" href="#500r" title='r' data-ref="500r">r</a>) || (<a class="local col0 ref" href="#500r" title='r' data-ref="500r">r</a>-&gt;<a class="ref" href="#SDL_Rect::w" title='SDL_Rect::w' data-ref="SDL_Rect::w">w</a> &lt;= <var>0</var>) || (<a class="local col0 ref" href="#500r" title='r' data-ref="500r">r</a>-&gt;<a class="ref" href="#SDL_Rect::h" title='SDL_Rect::h' data-ref="SDL_Rect::h">h</a> &lt;= <var>0</var>)) ? <a class="enum" href="SDL_stdinc.h.html#::SDL_TRUE" title='::SDL_TRUE' data-ref="::SDL_TRUE">SDL_TRUE</a> : <a class="enum" href="SDL_stdinc.h.html#::SDL_FALSE" title='::SDL_FALSE' data-ref="::SDL_FALSE">SDL_FALSE</a>;</td></tr>
+<tr><th id="75">75</th><td>}</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *  <span class="command">\brief</span> Returns true if the two rectangles are equal.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="begin_code.h.html#125" title="__attribute__((always_inline)) static __inline__" data-ref="_M/SDL_FORCE_INLINE">SDL_FORCE_INLINE</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="decl def" id="_Z14SDL_RectEqualsPK8SDL_RectS1_" title='SDL_RectEquals' data-ref="_Z14SDL_RectEqualsPK8SDL_RectS1_">SDL_RectEquals</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> *<dfn class="local col1 decl" id="501a" title='a' data-type='const SDL_Rect *' data-ref="501a">a</dfn>, <em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> *<dfn class="local col2 decl" id="502b" title='b' data-type='const SDL_Rect *' data-ref="502b">b</dfn>)</td></tr>
+<tr><th id="81">81</th><td>{</td></tr>
+<tr><th id="82">82</th><td>    <b>return</b> (<a class="local col1 ref" href="#501a" title='a' data-ref="501a">a</a> &amp;&amp; <a class="local col2 ref" href="#502b" title='b' data-ref="502b">b</a> &amp;&amp; (<a class="local col1 ref" href="#501a" title='a' data-ref="501a">a</a>-&gt;<a class="ref" href="#SDL_Rect::x" title='SDL_Rect::x' data-ref="SDL_Rect::x">x</a> == <a class="local col2 ref" href="#502b" title='b' data-ref="502b">b</a>-&gt;<a class="ref" href="#SDL_Rect::x" title='SDL_Rect::x' data-ref="SDL_Rect::x">x</a>) &amp;&amp; (<a class="local col1 ref" href="#501a" title='a' data-ref="501a">a</a>-&gt;<a class="ref" href="#SDL_Rect::y" title='SDL_Rect::y' data-ref="SDL_Rect::y">y</a> == <a class="local col2 ref" href="#502b" title='b' data-ref="502b">b</a>-&gt;<a class="ref" href="#SDL_Rect::y" title='SDL_Rect::y' data-ref="SDL_Rect::y">y</a>) &amp;&amp;</td></tr>
+<tr><th id="83">83</th><td>            (<a class="local col1 ref" href="#501a" title='a' data-ref="501a">a</a>-&gt;<a class="ref" href="#SDL_Rect::w" title='SDL_Rect::w' data-ref="SDL_Rect::w">w</a> == <a class="local col2 ref" href="#502b" title='b' data-ref="502b">b</a>-&gt;<a class="ref" href="#SDL_Rect::w" title='SDL_Rect::w' data-ref="SDL_Rect::w">w</a>) &amp;&amp; (<a class="local col1 ref" href="#501a" title='a' data-ref="501a">a</a>-&gt;<a class="ref" href="#SDL_Rect::h" title='SDL_Rect::h' data-ref="SDL_Rect::h">h</a> == <a class="local col2 ref" href="#502b" title='b' data-ref="502b">b</a>-&gt;<a class="ref" href="#SDL_Rect::h" title='SDL_Rect::h' data-ref="SDL_Rect::h">h</a>)) ? <a class="enum" href="SDL_stdinc.h.html#::SDL_TRUE" title='::SDL_TRUE' data-ref="::SDL_TRUE">SDL_TRUE</a> : <a class="enum" href="SDL_stdinc.h.html#::SDL_FALSE" title='::SDL_FALSE' data-ref="::SDL_FALSE">SDL_FALSE</a>;</td></tr>
+<tr><th id="84">84</th><td>}</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  <span class="command">\brief</span> Determine whether two rectangles intersect.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *  <span class="command">\return</span> SDL_TRUE if there is an intersection, SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="91">91</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_HasIntersection" title='SDL_HasIntersection' data-ref="SDL_HasIntersection">SDL_HasIntersection</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col3 decl" id="503A" title='A' data-type='const SDL_Rect *' data-ref="503A">A</dfn>,</td></tr>
+<tr><th id="92">92</th><td>                                                     <em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col4 decl" id="504B" title='B' data-type='const SDL_Rect *' data-ref="504B">B</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *  <span class="command">\brief</span> Calculate the intersection of two rectangles.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *  <span class="command">\return</span> SDL_TRUE if there is an intersection, SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="99">99</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_IntersectRect" title='SDL_IntersectRect' data-ref="SDL_IntersectRect">SDL_IntersectRect</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col5 decl" id="505A" title='A' data-type='const SDL_Rect *' data-ref="505A">A</dfn>,</td></tr>
+<tr><th id="100">100</th><td>                                                   <em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col6 decl" id="506B" title='B' data-type='const SDL_Rect *' data-ref="506B">B</dfn>,</td></tr>
+<tr><th id="101">101</th><td>                                                   <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col7 decl" id="507result" title='result' data-type='SDL_Rect *' data-ref="507result">result</dfn>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *  <span class="command">\brief</span> Calculate the union of two rectangles.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="106">106</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_UnionRect" title='SDL_UnionRect' data-ref="SDL_UnionRect">SDL_UnionRect</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col8 decl" id="508A" title='A' data-type='const SDL_Rect *' data-ref="508A">A</dfn>,</td></tr>
+<tr><th id="107">107</th><td>                                           <em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col9 decl" id="509B" title='B' data-type='const SDL_Rect *' data-ref="509B">B</dfn>,</td></tr>
+<tr><th id="108">108</th><td>                                           <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col0 decl" id="510result" title='result' data-type='SDL_Rect *' data-ref="510result">result</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *  <span class="command">\brief</span> Calculate a minimal rectangle enclosing a set of points</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  <span class="command">\return</span> SDL_TRUE if any points were within the clipping rect</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="115">115</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_EnclosePoints" title='SDL_EnclosePoints' data-ref="SDL_EnclosePoints">SDL_EnclosePoints</dfn>(<em>const</em> <a class="typedef" href="#SDL_Point" title='SDL_Point' data-type='struct SDL_Point' data-ref="SDL_Point">SDL_Point</a> * <dfn class="local col1 decl" id="511points" title='points' data-type='const SDL_Point *' data-ref="511points">points</dfn>,</td></tr>
+<tr><th id="116">116</th><td>                                                   <em>int</em> <dfn class="local col2 decl" id="512count" title='count' data-type='int' data-ref="512count">count</dfn>,</td></tr>
+<tr><th id="117">117</th><td>                                                   <em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col3 decl" id="513clip" title='clip' data-type='const SDL_Rect *' data-ref="513clip">clip</dfn>,</td></tr>
+<tr><th id="118">118</th><td>                                                   <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> * <dfn class="local col4 decl" id="514result" title='result' data-type='SDL_Rect *' data-ref="514result">result</dfn>);</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *  <span class="command">\brief</span> Calculate the intersection of a rectangle and line segment.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *  <span class="command">\return</span> SDL_TRUE if there is an intersection, SDL_FALSE otherwise.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="125">125</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_IntersectRectAndLine" title='SDL_IntersectRectAndLine' data-ref="SDL_IntersectRectAndLine">SDL_IntersectRectAndLine</dfn>(<em>const</em> <a class="typedef" href="#SDL_Rect" title='SDL_Rect' data-type='struct SDL_Rect' data-ref="SDL_Rect">SDL_Rect</a> *</td></tr>
+<tr><th id="126">126</th><td>                                                          <dfn class="local col5 decl" id="515rect" title='rect' data-type='const SDL_Rect *' data-ref="515rect">rect</dfn>, <em>int</em> *<dfn class="local col6 decl" id="516X1" title='X1' data-type='int *' data-ref="516X1">X1</dfn>,</td></tr>
+<tr><th id="127">127</th><td>                                                          <em>int</em> *<dfn class="local col7 decl" id="517Y1" title='Y1' data-type='int *' data-ref="517Y1">Y1</dfn>, <em>int</em> *<dfn class="local col8 decl" id="518X2" title='X2' data-type='int *' data-ref="518X2">X2</dfn>,</td></tr>
+<tr><th id="128">128</th><td>                                                          <em>int</em> *<dfn class="local col9 decl" id="519Y2" title='Y2' data-type='int *' data-ref="519Y2">Y2</dfn>);</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="131">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="132">132</th><td>}</td></tr>
+<tr><th id="133">133</th><td><u>#<span data-ppcond="131">endif</span></u></td></tr>
+<tr><th id="134">134</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="28">endif</span> /* _SDL_rect_h */</u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

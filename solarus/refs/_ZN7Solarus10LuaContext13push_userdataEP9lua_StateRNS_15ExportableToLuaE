@@ -1,0 +1,34 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1088' type='static void Solarus::LuaContext::push_userdata(lua_State * l, Solarus::ExportableToLua &amp; userdata)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='622' u='c' c='_ZN7Solarus10LuaContext11push_entityEP9lua_StateRNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1552' u='c' c='_ZN7Solarus10LuaContext23entity_api_get_movementEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1734' u='c' c='_ZN7Solarus10LuaContext9push_heroEP9lua_StateRNS_4HeroE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2587' u='c' c='_ZN7Solarus10LuaContext11push_cameraEP9lua_StateRNS_6CameraE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2741' u='c' c='_ZN7Solarus10LuaContext16push_destinationEP9lua_StateRNS_11DestinationE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2813' u='c' c='_ZN7Solarus10LuaContext20push_teletransporterEP9lua_StateRNS_15TeletransporterE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2989' u='c' c='_ZN7Solarus10LuaContext8push_npcEP9lua_StateRNS_3NpcE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3054' u='c' c='_ZN7Solarus10LuaContext10push_chestEP9lua_StateRNS_5ChestE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3185' u='c' c='_ZN7Solarus10LuaContext10push_blockEP9lua_StateRNS_5BlockE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3349' u='c' c='_ZN7Solarus10LuaContext11push_switchEP9lua_StateRNS_6SwitchE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3460' u='c' c='_ZN7Solarus10LuaContext11push_streamEP9lua_StateRNS_6StreamE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3656' u='c' c='_ZN7Solarus10LuaContext9push_doorEP9lua_StateRNS_4DoorE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3748' u='c' c='_ZN7Solarus10LuaContext18push_shop_treasureEP9lua_StateRNS_12ShopTreasureE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3899' u='c' c='_ZN7Solarus10LuaContext13push_pickableEP9lua_StateRNS_8PickableE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3991' u='c' c='_ZN7Solarus10LuaContext17push_destructibleEP9lua_StateRNS_12DestructibleE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4316' u='c' c='_ZN7Solarus10LuaContext17push_dynamic_tileEP9lua_StateRNS_11DynamicTileE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4382' u='c' c='_ZN7Solarus10LuaContext10push_enemyEP9lua_StateRNS_5EnemyE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5168' u='c' c='_ZN7Solarus10LuaContext18push_custom_entityEP9lua_StateRNS_12CustomEntityE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='151' u='c' c='_ZN7Solarus10LuaContext9push_gameEP9lua_StateRNS_8SavegameE'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='119' u='c' c='_ZN7Solarus10LuaContext9push_itemEP9lua_StateRNS_13EquipmentItemE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='987' ll='1066' type='static void Solarus::LuaContext::push_userdata(lua_State * l, Solarus::ExportableToLua &amp; userdata)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='981'>/**
+ * \brief Pushes the Lua equivalent of a C++ object onto the stack.
+ * \param l A Lua context.
+ * \param userdata A userdata. It must live as a std::shared_ptr somewhere:
+ * typically, it should have been stored in a std::shared_ptr at creation time.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='224' u='c' c='_ZN7Solarus10LuaContext8push_mapEP9lua_StateRNS_3MapE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='364' u='c' c='_ZN7Solarus10LuaContext13push_movementEP9lua_StateRNS_8MovementE'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='113' u='c' c='_ZN7Solarus10LuaContext11push_spriteEP9lua_StateRNS_6SpriteE'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='101' u='c' c='_ZN7Solarus10LuaContext12push_surfaceEP9lua_StateRNS_7SurfaceE'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='135' u='c' c='_ZN7Solarus10LuaContext17push_text_surfaceEP9lua_StateRNS_11TextSurfaceE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='100' u='c' c='_ZN7Solarus10LuaContext10push_timerEP9lua_StateRKSt10shared_ptrINS_5TimerEE'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='336' type='bool Solarus::Entity::is_hero_obstacle(Solarus::Hero &amp; hero)'/>
+<ovr f='codebrowser/src/entities/Block.cpp' l='126' c='_ZN7Solarus5Block16is_hero_obstacleERNS_4HeroE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='425' c='_ZN7Solarus12CustomEntity16is_hero_obstacleERNS_4HeroE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='431' u='c' c='_ZN7Solarus12CustomEntity16is_hero_obstacleERNS_4HeroE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2567' ll='2569' type='bool Solarus::Entity::is_hero_obstacle(Solarus::Hero &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2559'>/**
+ * \brief Returns whether the hero is currently considered as an obstacle by this entity.
+ *
+ * This function returns false by default.
+ *
+ * \param hero the hero
+ * \return true if the hero is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2567'>/* hero */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1414' u='c' c='_ZN7Solarus4Hero15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='171' c='_ZN7Solarus3Npc16is_hero_obstacleERNS_4HeroE'/>

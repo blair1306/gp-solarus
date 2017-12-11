@@ -1,0 +1,25 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1096' type='static void Solarus::LuaContext::push_game(lua_State * l, Solarus::Savegame &amp; game)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='784' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_gameEP9lua_State'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='150' ll='152' type='static void Solarus::LuaContext::push_game(lua_State * l, Solarus::Savegame &amp; game)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='214' u='c' c='_ZN7Solarus10LuaContext13game_api_loadEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1569' u='c' c='_ZN7Solarus10LuaContext15game_on_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1583' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1601' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1622' u='c' c='_ZN7Solarus10LuaContext12game_on_drawERNS_4GameERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1644' u='c' c='_ZN7Solarus10LuaContext19game_on_map_changedERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1662' u='c' c='_ZN7Solarus10LuaContext14game_on_pausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1680' u='c' c='_ZN7Solarus10LuaContext16game_on_unpausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1705' u='c' c='_ZN7Solarus10LuaContext22game_on_dialog_startedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1727' u='c' c='_ZN7Solarus10LuaContext23game_on_dialog_finishedERNS_4GameERKNS_6DialogE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1746' u='c' c='_ZN7Solarus10LuaContext25game_on_game_over_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1766' u='c' c='_ZN7Solarus10LuaContext26game_on_game_over_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1784' u='c' c='_ZN7Solarus10LuaContext13game_on_inputERNS_4GameERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1806' u='c' c='_ZN7Solarus10LuaContext23game_on_command_pressedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1830' u='c' c='_ZN7Solarus10LuaContext24game_on_command_releasedERNS_4GameENS_11GameCommandE'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='145'>/**
+ * \brief Pushes a game userdata onto the stack.
+ * \param l A Lua context.
+ * \param game A game.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='147' u='c' c='_ZN7Solarus10LuaContext17item_api_get_gameEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1404' u='c' c='_ZN7Solarus10LuaContext16map_api_get_gameEP9lua_State'/>

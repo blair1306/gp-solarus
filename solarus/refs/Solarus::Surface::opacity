@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Surface.h' l='167' type='uint8_t'/>
+<offset>1224</offset>
+<doc f='codebrowser/include/solarus/lowlevel/Surface.h' l='167'>/**&lt; Opacity (0: transparent, 255: opaque). */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='111' u='w' c='_ZN7Solarus7SurfaceC1Eii'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='135' u='w' c='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='292' u='a' c='_ZN7Solarus7Surface27create_texture_from_surfaceEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='325' u='r' c='_ZNK7Solarus7Surface11get_opacityEv'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='334' u='w' c='_ZN7Solarus7Surface11set_opacityEh'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='825' u='a' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='829' u='r' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>

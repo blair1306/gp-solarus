@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='50' type='std::string &amp; Solarus::CurrentQuest::get_language()'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='172' u='c' c='_ZN7Solarus12CurrentQuest12set_languageERKSs'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='214' ll='220' type='std::string &amp; Solarus::CurrentQuest::get_language()'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='207'>/**
+ * \brief Returns the current language.
+ *
+ * The language-specific data are be loaded from the directory of this language.
+ *
+ * \return code of the language, or an empty string if no language is set
+ */</doc>
+<use f='codebrowser/src/Settings.cpp' l='302' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='303' u='c' c='_ZN7Solarus8Settings14set_from_questEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='259' u='c' c='_ZN7Solarus10QuestFiles16data_file_existsERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='263' u='c' c='_ZN7Solarus10QuestFiles16data_file_existsERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='284' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='289' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='82' u='c' c='_ZN7Solarus10LuaContext25language_api_get_languageEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='129' u='c' c='_ZN7Solarus10LuaContext30language_api_get_language_nameEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='189' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='462' u='c' c='_ZN7Solarus10LuaContext29text_surface_api_set_text_keyEP9lua_State'/>

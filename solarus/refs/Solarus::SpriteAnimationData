@@ -1,0 +1,26 @@
+<def f='codebrowser/include/solarus/SpriteData.h' l='81' ll='118'/>
+<size>96</size>
+<doc f='codebrowser/include/solarus/SpriteData.h' l='78'>/**
+ * \brief Stores the properties of a sprite animation.
+ */</doc>
+<fun r='_ZN7Solarus19SpriteAnimationDataC1Ev'/>
+<fun r='_ZN7Solarus19SpriteAnimationDataC1ERKSsRSt5dequeINS_28SpriteAnimationDirectionDataESaIS4_EEji'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData20src_image_is_tilesetEv'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData13get_src_imageEv'/>
+<fun r='_ZN7Solarus19SpriteAnimationData13set_src_imageERKSs'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData15get_frame_delayEv'/>
+<fun r='_ZN7Solarus19SpriteAnimationData15set_frame_delayERKj'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData17get_loop_on_frameEv'/>
+<fun r='_ZN7Solarus19SpriteAnimationData17set_loop_on_frameEi'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData18get_num_directionsEv'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData13get_directionEi'/>
+<fun r='_ZN7Solarus19SpriteAnimationData13get_directionEi'/>
+<fun r='_ZNK7Solarus19SpriteAnimationData14get_directionsEv'/>
+<fun r='_ZN7Solarus19SpriteAnimationData14set_directionsERKSt5dequeINS_28SpriteAnimationDirectionDataESaIS2_EE'/>
+<fun r='_ZN7Solarus19SpriteAnimationData13add_directionERKNS_28SpriteAnimationDirectionDataE'/>
+<fun r='_ZN7Solarus19SpriteAnimationData16remove_directionEi'/>
+<fun r='_ZN7Solarus19SpriteAnimationData14move_directionEii'/>
+<mbr r='Solarus::SpriteAnimationData::src_image' o='0' t='std::string'/>
+<mbr r='Solarus::SpriteAnimationData::frame_delay' o='64' t='uint32_t'/>
+<mbr r='Solarus::SpriteAnimationData::loop_on_frame' o='96' t='int'/>
+<mbr r='Solarus::SpriteAnimationData::directions' o='128' t='std::deque&lt;SpriteAnimationDirectionData&gt;'/>

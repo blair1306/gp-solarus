@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='92' type='std::string'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='257' u='a' c='_ZNK7Solarus5Chest21get_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='280' u='w' c='_ZN7Solarus5Chest21set_opening_conditionERKSs'/>
+<offset>2432</offset>
+<doc f='codebrowser/include/solarus/entities/Chest.h' l='92'>/**&lt; Condition required to open the chest: a savegame variable if
+                                        * the opening mode is \c OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE,
+                                        * or an equipment item name if the opening mode is
+                                        * \c OPENING_BY_INTERACTION_IF_ITEM. */</doc>

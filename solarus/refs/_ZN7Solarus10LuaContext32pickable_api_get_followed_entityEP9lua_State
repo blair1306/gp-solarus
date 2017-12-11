@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='944' type='static int Solarus::LuaContext::pickable_api_get_followed_entity(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='385' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3907' ll='3922' type='static int Solarus::LuaContext::pickable_api_get_followed_entity(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3902'>/**
+ * \brief Implementation of pickable:get_followed_entity().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='89' type='void Solarus::EquipmentItem::set_variant(int variant)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='404' ll='422' type='void Solarus::EquipmentItem::set_variant(int variant)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='397'>/**
+ * \brief Sets the possession state of this item.
+ *
+ * This function only makes sense if the item is saved.
+ *
+ * \param variant The possessed variant of this item.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='180' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='628' u='c' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='573' u='c' c='_ZN7Solarus10LuaContext20item_api_set_variantEP9lua_State'/>

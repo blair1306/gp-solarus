@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='61' type='void Solarus::PathMovement::set_loop(bool loop)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1217' u='c' c='_ZN7Solarus10LuaContext26path_movement_api_set_loopEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='123' ll='130' type='void Solarus::PathMovement::set_loop(bool loop)'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='116'>/**
+ * \brief Sets whether this movement restarts when the path is finished.
+ *
+ * If the movement was finished and loop is set to true, the movement restarts.
+ *
+ * \param loop true to make the movement loop
+ */</doc>

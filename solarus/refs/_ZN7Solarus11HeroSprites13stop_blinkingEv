@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='71' type='void Solarus::HeroSprites::stop_blinking()'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='392' u='c' c='_ZN7Solarus4Hero14check_gameoverEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='151' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='611' ll='625' type='void Solarus::HeroSprites::stop_blinking()'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='849' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='608'>/**
+ * \brief Stops making the hero&apos;s sprites blink.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2146' u='c' c='_ZN7Solarus10LuaContext21hero_api_set_blinkingEP9lua_State'/>

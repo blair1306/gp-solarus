@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1151' type='static std::shared_ptr&lt;RandomMovement&gt; Solarus::LuaContext::check_random_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='855' ll='859' type='static std::shared_ptr&lt;RandomMovement&gt; Solarus::LuaContext::check_random_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='869' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='883' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='898' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='912' u='c' c='_ZN7Solarus10LuaContext36random_movement_api_get_max_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='926' u='c' c='_ZN7Solarus10LuaContext36random_movement_api_set_max_distanceEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='941' u='c' c='_ZN7Solarus10LuaContext29random_movement_api_is_smoothEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='955' u='c' c='_ZN7Solarus10LuaContext30random_movement_api_set_smoothEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='848'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * random movement and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The movement.
+ */</doc>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='140' type='void Solarus::Entity::set_y(int y)'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='189' u='c' c='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='233' u='c' c='_ZN7Solarus13CarriedObject10break_itemEv'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='693' ll='695' type='void Solarus::Entity::set_y(int y)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='718' u='c' c='_ZN7Solarus6Entity6set_xyEii'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='686'>/**
+ * \brief Sets the y position of the entity.
+ *
+ * This function is called by the movement object of this entity.
+ *
+ * \param y the new y position
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='613' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='617' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='623' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='627' u='c' c='_ZN7Solarus4Hero20place_on_destinationERNS_3MapERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='718' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='726' u='c' c='_ZN7Solarus4Hero38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='212' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PullingState.cpp' l='222' u='c' c='_ZN7Solarus4Hero12PullingState25stop_moving_pulled_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='217' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>
+<use f='codebrowser/src/hero/PushingState.cpp' l='227' u='c' c='_ZN7Solarus4Hero12PushingState25stop_moving_pushed_entityEv'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='134' type='bool Solarus::Entity::State::can_pick_treasure(Solarus::EquipmentItem &amp; item) const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1056' ll='1058' type='bool Solarus::Entity::State::can_pick_treasure(Solarus::EquipmentItem &amp; ) const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1048'>/**
+ * \brief Returns whether the entity can pick a treasure in this state.
+ *
+ * Returns false by default.
+ *
+ * \param item The equipment item to obtain.
+ * \return true if the entity can pick that treasure in this state.
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1056'>/* item */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2496' u='c' c='_ZN7Solarus4Hero17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/GrabbingState.cpp' l='101' c='_ZNK7Solarus4Hero13GrabbingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='180' c='_ZNK7Solarus4Hero13HookshotState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/PlayerMovementState.cpp' l='285' c='_ZNK7Solarus4Hero19PlayerMovementState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='251' c='_ZNK7Solarus4Hero12PullingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='273' c='_ZNK7Solarus4Hero12PushingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='264' c='_ZNK7Solarus4Hero12RunningState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='124' c='_ZNK7Solarus4Hero15SpinAttackState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='130' c='_ZNK7Solarus4Hero18SwordSwingingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='149' c='_ZNK7Solarus4Hero17SwordTappingState17can_pick_treasureERNS_13EquipmentItemE'/>

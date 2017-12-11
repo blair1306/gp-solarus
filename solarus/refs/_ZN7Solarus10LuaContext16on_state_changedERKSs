@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1245' type='void Solarus::LuaContext::on_state_changed(const std::string &amp; state_name)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5964' u='c' c='_ZN7Solarus10LuaContext23entity_on_state_changedERNS_6EntityERKSs'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2204' ll='2210' type='void Solarus::LuaContext::on_state_changed(const std::string &amp; state_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2200'>/**
+ * \brief Calls the on_state_changed() method of the object on top of the stack.
+ * \param state_name A name describing the new state.
+ */</doc>

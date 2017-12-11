@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='103' type='void Solarus::Destructible::create_treasure()'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='292' ll='303' type='void Solarus::Destructible::create_treasure()'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='362' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='380' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='414' u='c' c='_ZN7Solarus12Destructible29notify_action_command_pressedEv'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='289'>/**
+ * \brief Adds to the map the pickable treasure (if any) hidden under this destructible item.
+ */</doc>

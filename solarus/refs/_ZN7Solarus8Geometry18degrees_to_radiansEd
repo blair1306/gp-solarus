@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lowlevel/Geometry.h' l='67' type='double Solarus::Geometry::degrees_to_radians(double degrees)'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='193' u='c' c='_ZN7Solarus13CarriedObject10throw_itemEi'/>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='95' u='c' c='_ZN7Solarus4Hero14BoomerangState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='102' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<def f='codebrowser/src/lowlevel/Geometry.cpp' l='37' ll='39' type='double Solarus::Geometry::degrees_to_radians(double degrees)'/>
+<doc f='codebrowser/src/lowlevel/Geometry.cpp' l='32'>/**
+ * \brief Converts an angle in degrees into an angle in radians.
+ * \param degrees Angle in degrees.
+ * \return The radians value.
+ */</doc>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='404' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='145' u='c' c='_ZN7Solarus14PlayerMovement16compute_movementEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='123' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>

@@ -1,0 +1,32 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='37' type='void Solarus::Point::Point()'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='26' type='void Solarus::Point::Point()'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.h' l='34'>////////////////////////////////////////////////////////////
+    // Constructors</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='23'>/**
+ * \brief Creates a point with coordinates &lt;tt&gt;(0,0)&lt;/tt&gt;.
+ */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='31' u='c' c='_ZN7Solarus8DrawableC1Ev'/>
+<use f='codebrowser/src/EntityData.cpp' l='383' u='c' c='_ZN7Solarus10EntityDataC1Ev'/>
+<use f='codebrowser/src/EntityData.cpp' l='397' u='c' c='_ZN7Solarus10EntityDataC1ENS_10EntityTypeE'/>
+<use f='codebrowser/src/Sprite.cpp' l='188' u='c' c='_ZNK7Solarus6Sprite10get_originEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='162' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='835' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2878' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2883' u='c' c='_ZNK7Solarus6Entity9get_angleERKS0_PKNS_6SpriteES5_'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='238' u='c' c='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='146' u='c' c='_ZNK7Solarus6Jumper19is_in_jump_positionERKNS_4HeroERKNS_9RectangleEb'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='52' u='c' c='_ZNK7Solarus24SelfScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/entities/TilePattern.cpp' l='160' u='c' c='_ZNK7Solarus11TilePattern12fill_surfaceERKSt10shared_ptrINS_7SurfaceEERKNS_9RectangleERKNS_7TilesetERKNS_5PointE'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='87' u='c' c='_ZNK7Solarus24TimeScrollingTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='75' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='47' u='c' c='_ZN7Solarus4Hero9HurtStateC1ERS0_PKNS_5PointEi'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='475' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1895' u='c' c='_ZN7Solarus10LuaContext34hero_api_get_solid_ground_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2670' u='c' c='_ZN7Solarus10LuaContext32camera_api_get_position_to_trackEP9lua_State'/>
+<use f='codebrowser/src/lua/InputApi.cpp' l='302' u='c' c='_ZN7Solarus10LuaContext29input_api_get_finger_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1826' u='c' c='_ZN7Solarus10LuaContext23on_mouse_button_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1867' u='c' c='_ZN7Solarus10LuaContext24on_mouse_button_releasedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='436' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2070' u='c' c='_ZN7Solarus10LuaContext30map_api_get_entities_in_regionEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='76' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='322' u='c' c='_ZNK7Solarus12PathMovement13get_xy_changeEv'/>

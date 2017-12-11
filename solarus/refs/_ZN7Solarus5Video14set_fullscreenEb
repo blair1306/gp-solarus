@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='71' type='static void Solarus::Video::set_fullscreen(bool fullscreen)'/>
+<use f='codebrowser/src/Settings.cpp' l='326' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='453' ll='458' type='static void Solarus::Video::set_fullscreen(bool fullscreen)'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='448'>/**
+ * \brief Sets the video mode to fullscreen or windowed,
+ * keeping an equivalent resolution.
+ * \param fullscreen true to make fullscreen.
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='203' u='c' c='_ZN7Solarus10LuaContext24video_api_set_fullscreenEP9lua_State'/>

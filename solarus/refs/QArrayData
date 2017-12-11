@@ -1,0 +1,18 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h' l='50' ll='129'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h' l='134' c='QTypedArrayData'/>
+<size>24</size>
+<mbr r='QArrayData::ref' o='0' t='QtPrivate::RefCount'/>
+<mbr r='QArrayData::size' o='32' t='int'/>
+<mbr r='QArrayData::alloc' o='64' t='uint'/>
+<mbr r='QArrayData::capacityReserved' o='95' t='uint'/>
+<mbr r='QArrayData::offset' o='128' t='qptrdiff'/>
+<fun r='_ZN10QArrayData4dataEv'/>
+<fun r='_ZNK10QArrayData4dataEv'/>
+<fun r='_ZNK10QArrayData9isMutableEv'/>
+<fun r='_ZNK10QArrayData14detachCapacityEm'/>
+<fun r='_ZNK10QArrayData11detachFlagsEv'/>
+<fun r='_ZNK10QArrayData10cloneFlagsEv'/>
+<fun r='_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE'/>
+<fun r='_ZN10QArrayData10deallocateEPS_mm'/>
+<smbr r='QArrayData::shared_null' t='const QArrayData [2]'/>
+<fun r='_ZN10QArrayData10sharedNullEv'/>

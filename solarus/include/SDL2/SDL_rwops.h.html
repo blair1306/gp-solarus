@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SDL_rwops.h source code [include/SDL2/SDL_rwops.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/SDL2/SDL_rwops.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>SDL2</a>/<a href='SDL_rwops.h.html'>SDL_rwops.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>  Simple DirectMedia Layer</i></td></tr>
+<tr><th id="3">3</th><td><i>  Copyright (C) 1997-2014 Sam Lantinga &lt;slouken@libsdl.org&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i></i></td></tr>
+<tr><th id="5">5</th><td><i>  This software is provided 'as-is', without any express or implied</i></td></tr>
+<tr><th id="6">6</th><td><i>  warranty.  In no event will the authors be held liable for any damages</i></td></tr>
+<tr><th id="7">7</th><td><i>  arising from the use of this software.</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>  Permission is granted to anyone to use this software for any purpose,</i></td></tr>
+<tr><th id="10">10</th><td><i>  including commercial applications, and to alter it and redistribute it</i></td></tr>
+<tr><th id="11">11</th><td><i>  freely, subject to the following restrictions:</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>  1. The origin of this software must not be misrepresented; you must not</i></td></tr>
+<tr><th id="14">14</th><td><i>     claim that you wrote the original software. If you use this software</i></td></tr>
+<tr><th id="15">15</th><td><i>     in a product, an acknowledgment in the product documentation would be</i></td></tr>
+<tr><th id="16">16</th><td><i>     appreciated but is not required.</i></td></tr>
+<tr><th id="17">17</th><td><i>  2. Altered source versions must be plainly marked as such, and must not be</i></td></tr>
+<tr><th id="18">18</th><td><i>     misrepresented as being the original software.</i></td></tr>
+<tr><th id="19">19</th><td><i>  3. This notice may not be removed or altered from any source distribution.</i></td></tr>
+<tr><th id="20">20</th><td><i>*/</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> * <span class="command"> \file</span> SDL_rwops.h</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *  This file provides a general interface for SDL to read and write</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> *  data streams.  It can easily be extended to files, memory, etc.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="29">ifndef</span> <span class="macro" data-ref="_M/_SDL_rwops_h">_SDL_rwops_h</span></u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/_SDL_rwops_h" data-ref="_M/_SDL_rwops_h">_SDL_rwops_h</dfn></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="SDL_stdinc.h.html">"SDL_stdinc.h"</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="SDL_error.h.html">"SDL_error.h"</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="begin_code.h.html">"begin_code.h"</a></u></td></tr>
+<tr><th id="36">36</th><td><i>/* Set up for C function definitions, even when using C++ */</i></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="37">endif</span></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* RWops Types */</i></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_UNKNOWN" data-ref="_M/SDL_RWOPS_UNKNOWN">SDL_RWOPS_UNKNOWN</dfn>   0   /* Unknown stream type */</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_WINFILE" data-ref="_M/SDL_RWOPS_WINFILE">SDL_RWOPS_WINFILE</dfn>   1   /* Win32 file */</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_STDFILE" data-ref="_M/SDL_RWOPS_STDFILE">SDL_RWOPS_STDFILE</dfn>   2   /* Stdio file */</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_JNIFILE" data-ref="_M/SDL_RWOPS_JNIFILE">SDL_RWOPS_JNIFILE</dfn>   3   /* Android asset */</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_MEMORY" data-ref="_M/SDL_RWOPS_MEMORY">SDL_RWOPS_MEMORY</dfn>    4   /* Memory stream */</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/SDL_RWOPS_MEMORY_RO" data-ref="_M/SDL_RWOPS_MEMORY_RO">SDL_RWOPS_MEMORY_RO</dfn> 5   /* Read-Only memory stream */</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * This is the read/write operation structure -- very basic.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="52">52</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops"><a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a></dfn></td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">     *  Return the size of the file in this rwops, or -1 if unknown</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="57">57</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint64" title='Sint64' data-type='int64_t' data-ref="Sint64">Sint64</a> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="decl" id="SDL_RWops::size" title='SDL_RWops::size' data-ref="SDL_RWops::size">size</dfn>) (<b>struct</b> <a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col7 decl" id="457context" title='context' data-type='struct SDL_RWops *' data-ref="457context">context</dfn>);</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc">     *  Seek to<span class="command"> \c</span> <span class="arg">offset</span> relative to<span class="command"> \c</span> <span class="arg">whence,</span> one of stdio's whence values:</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc">     *  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">     *  <span class="command">\return</span> the final offset in the data stream, or -1 on error.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="65">65</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Sint64" title='Sint64' data-type='int64_t' data-ref="Sint64">Sint64</a> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="decl" id="SDL_RWops::seek" title='SDL_RWops::seek' data-ref="SDL_RWops::seek">seek</dfn>) (<b>struct</b> <a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col8 decl" id="458context" title='context' data-type='struct SDL_RWops *' data-ref="458context">context</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Sint64" title='Sint64' data-type='int64_t' data-ref="Sint64">Sint64</a> <dfn class="local col9 decl" id="459offset" title='offset' data-type='Sint64' data-ref="459offset">offset</dfn>,</td></tr>
+<tr><th id="66">66</th><td>                             <em>int</em> <dfn class="local col0 decl" id="460whence" title='whence' data-type='int' data-ref="460whence">whence</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">     *  Read up to<span class="command"> \c</span> <span class="arg">maxnum</span> objects each of size<span class="command"> \c</span> <span class="arg">size</span> from the data</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc">     *  stream to the area pointed at by<span class="command"> \c</span> <span class="arg">ptr.</span></i></td></tr>
+<tr><th id="71">71</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">     *  <span class="command">\return</span> the number of objects read, or 0 at error or end of file.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="74">74</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="decl" id="SDL_RWops::read" title='SDL_RWops::read' data-ref="SDL_RWops::read">read</dfn>) (<b>struct</b> <a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col1 decl" id="461context" title='context' data-type='struct SDL_RWops *' data-ref="461context">context</dfn>, <em>void</em> *<dfn class="local col2 decl" id="462ptr" title='ptr' data-type='void *' data-ref="462ptr">ptr</dfn>,</td></tr>
+<tr><th id="75">75</th><td>                             <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="463size" title='size' data-type='size_t' data-ref="463size">size</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="464maxnum" title='maxnum' data-type='size_t' data-ref="464maxnum">maxnum</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">     *  Write exactly<span class="command"> \c</span> <span class="arg">num</span> objects each of size<span class="command"> \c</span> <span class="arg">size</span> from the area</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc">     *  pointed at by<span class="command"> \c</span> <span class="arg">ptr</span> to data stream.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc">     *  <span class="command">\return</span> the number of objects written, or 0 at error or end of file.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="83">83</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="decl" id="SDL_RWops::write" title='SDL_RWops::write' data-ref="SDL_RWops::write">write</dfn>) (<b>struct</b> <a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col5 decl" id="465context" title='context' data-type='struct SDL_RWops *' data-ref="465context">context</dfn>, <em>const</em> <em>void</em> *<dfn class="local col6 decl" id="466ptr" title='ptr' data-type='const void *' data-ref="466ptr">ptr</dfn>,</td></tr>
+<tr><th id="84">84</th><td>                              <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="467size" title='size' data-type='size_t' data-ref="467size">size</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="468num" title='num' data-type='size_t' data-ref="468num">num</dfn>);</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>    <i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">     *  Close and free an allocated SDL_RWops structure.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">     *</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc">     *  <span class="command">\return</span> 0 if successful or -1 on write error when flushing data.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc">     */</i></td></tr>
+<tr><th id="91">91</th><td>    <em>int</em> (<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> * <dfn class="decl" id="SDL_RWops::close" title='SDL_RWops::close' data-ref="SDL_RWops::close">close</dfn>) (<b>struct</b> <a class="type" href="#SDL_RWops" title='SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col9 decl" id="469context" title='context' data-type='struct SDL_RWops *' data-ref="469context">context</dfn>);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>    <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="decl" id="SDL_RWops::type" title='SDL_RWops::type' data-ref="SDL_RWops::type">type</dfn>;</td></tr>
+<tr><th id="94">94</th><td>    <b>union</b></td></tr>
+<tr><th id="95">95</th><td>    {</td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="96">if</span> defined(<span class="macro" data-ref="_M/ANDROID">ANDROID</span>)</u></td></tr>
+<tr><th id="97">97</th><td>        <b>struct</b></td></tr>
+<tr><th id="98">98</th><td>        {</td></tr>
+<tr><th id="99">99</th><td>            <em>void</em> *fileNameRef;</td></tr>
+<tr><th id="100">100</th><td>            <em>void</em> *inputStreamRef;</td></tr>
+<tr><th id="101">101</th><td>            <em>void</em> *readableByteChannelRef;</td></tr>
+<tr><th id="102">102</th><td>            <em>void</em> *readMethod;</td></tr>
+<tr><th id="103">103</th><td>            <em>void</em> *assetFileDescriptorRef;</td></tr>
+<tr><th id="104">104</th><td>            <em>long</em> position;</td></tr>
+<tr><th id="105">105</th><td>            <em>long</em> size;</td></tr>
+<tr><th id="106">106</th><td>            <em>long</em> offset;</td></tr>
+<tr><th id="107">107</th><td>            <em>int</em> fd;</td></tr>
+<tr><th id="108">108</th><td>        } androidio;</td></tr>
+<tr><th id="109">109</th><td><u>#<span data-ppcond="96">elif</span> defined(<span class="macro" data-ref="_M/__WIN32__">__WIN32__</span>)</u></td></tr>
+<tr><th id="110">110</th><td>        <b>struct</b></td></tr>
+<tr><th id="111">111</th><td>        {</td></tr>
+<tr><th id="112">112</th><td>            SDL_bool append;</td></tr>
+<tr><th id="113">113</th><td>            <em>void</em> *h;</td></tr>
+<tr><th id="114">114</th><td>            <b>struct</b></td></tr>
+<tr><th id="115">115</th><td>            {</td></tr>
+<tr><th id="116">116</th><td>                <em>void</em> *data;</td></tr>
+<tr><th id="117">117</th><td>                size_t size;</td></tr>
+<tr><th id="118">118</th><td>                size_t left;</td></tr>
+<tr><th id="119">119</th><td>            } buffer;</td></tr>
+<tr><th id="120">120</th><td>        } windowsio;</td></tr>
+<tr><th id="121">121</th><td><u>#<span data-ppcond="96">endif</span></u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><u>#<span data-ppcond="123">ifdef</span> <a class="macro" href="SDL_config.h.html#62" data-ref="_M/HAVE_STDIO_H">HAVE_STDIO_H</a></u></td></tr>
+<tr><th id="124">124</th><td>        <b>struct</b></td></tr>
+<tr><th id="125">125</th><td>        {</td></tr>
+<tr><th id="126">126</th><td>            <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::autoclose" title='SDL_RWops::(anonymous union)::(anonymous struct)::autoclose' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::autoclose">autoclose</dfn>;</td></tr>
+<tr><th id="127">127</th><td>            <a class="typedef" href="../stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::fp" title='SDL_RWops::(anonymous union)::(anonymous struct)::fp' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::fp">fp</dfn>;</td></tr>
+<tr><th id="128">128</th><td>        } <dfn class="decl" id="SDL_RWops::(anonymous)::stdio" title='SDL_RWops::(anonymous union)::stdio' data-ref="SDL_RWops::(anonymous)::stdio">stdio</dfn>;</td></tr>
+<tr><th id="129">129</th><td><u>#<span data-ppcond="123">endif</span></u></td></tr>
+<tr><th id="130">130</th><td>        <b>struct</b></td></tr>
+<tr><th id="131">131</th><td>        {</td></tr>
+<tr><th id="132">132</th><td>            <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::base" title='SDL_RWops::(anonymous union)::(anonymous struct)::base' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::base">base</dfn>;</td></tr>
+<tr><th id="133">133</th><td>            <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::here" title='SDL_RWops::(anonymous union)::(anonymous struct)::here' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::here">here</dfn>;</td></tr>
+<tr><th id="134">134</th><td>            <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::stop" title='SDL_RWops::(anonymous union)::(anonymous struct)::stop' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::stop">stop</dfn>;</td></tr>
+<tr><th id="135">135</th><td>        } <dfn class="decl" id="SDL_RWops::(anonymous)::mem" title='SDL_RWops::(anonymous union)::mem' data-ref="SDL_RWops::(anonymous)::mem">mem</dfn>;</td></tr>
+<tr><th id="136">136</th><td>        <b>struct</b></td></tr>
+<tr><th id="137">137</th><td>        {</td></tr>
+<tr><th id="138">138</th><td>            <em>void</em> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::data1" title='SDL_RWops::(anonymous union)::(anonymous struct)::data1' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::data1">data1</dfn>;</td></tr>
+<tr><th id="139">139</th><td>            <em>void</em> *<dfn class="decl" id="SDL_RWops::(anonymousunion)::(anonymous)::data2" title='SDL_RWops::(anonymous union)::(anonymous struct)::data2' data-ref="SDL_RWops::(anonymousunion)::(anonymous)::data2">data2</dfn>;</td></tr>
+<tr><th id="140">140</th><td>        } <dfn class="decl" id="SDL_RWops::(anonymous)::unknown" title='SDL_RWops::(anonymous union)::unknown' data-ref="SDL_RWops::(anonymous)::unknown">unknown</dfn>;</td></tr>
+<tr><th id="141">141</th><td>    } <dfn class="decl" id="SDL_RWops::hidden" title='SDL_RWops::hidden' data-ref="SDL_RWops::hidden">hidden</dfn>;</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td>} <dfn class="typedef" id="SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</dfn>;</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">RWFrom functions</span></i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *  Functions to create SDL_RWops structures from various data streams.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="151">151</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RWFromFile" title='SDL_RWFromFile' data-ref="SDL_RWFromFile">SDL_RWFromFile</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="470file" title='file' data-type='const char *' data-ref="470file">file</dfn>,</td></tr>
+<tr><th id="154">154</th><td>                                                  <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="471mode" title='mode' data-type='const char *' data-ref="471mode">mode</dfn>);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><u>#<span data-ppcond="156">ifdef</span> <a class="macro" href="SDL_config.h.html#62" data-ref="_M/HAVE_STDIO_H">HAVE_STDIO_H</a></u></td></tr>
+<tr><th id="157">157</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RWFromFP" title='SDL_RWFromFP' data-ref="SDL_RWFromFP">SDL_RWFromFP</dfn>(<a class="typedef" href="../stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> * <dfn class="local col2 decl" id="472fp" title='fp' data-type='FILE *' data-ref="472fp">fp</dfn>,</td></tr>
+<tr><th id="158">158</th><td>                                                <a class="typedef" href="SDL_stdinc.h.html#SDL_bool" title='SDL_bool' data-type='enum SDL_bool' data-ref="SDL_bool">SDL_bool</a> <dfn class="local col3 decl" id="473autoclose" title='autoclose' data-type='SDL_bool' data-ref="473autoclose">autoclose</dfn>);</td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="156">else</span></u></td></tr>
+<tr><th id="160">160</th><td><b>extern</b> DECLSPEC SDL_RWops *SDLCALL SDL_RWFromFP(<em>void</em> * fp,</td></tr>
+<tr><th id="161">161</th><td>                                                SDL_bool autoclose);</td></tr>
+<tr><th id="162">162</th><td><u>#<span data-ppcond="156">endif</span></u></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RWFromMem" title='SDL_RWFromMem' data-ref="SDL_RWFromMem">SDL_RWFromMem</dfn>(<em>void</em> *<dfn class="local col4 decl" id="474mem" title='mem' data-type='void *' data-ref="474mem">mem</dfn>, <em>int</em> <dfn class="local col5 decl" id="475size" title='size' data-type='int' data-ref="475size">size</dfn>);</td></tr>
+<tr><th id="165">165</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_RWFromConstMem" title='SDL_RWFromConstMem' data-ref="SDL_RWFromConstMem">SDL_RWFromConstMem</dfn>(<em>const</em> <em>void</em> *<dfn class="local col6 decl" id="476mem" title='mem' data-type='const void *' data-ref="476mem">mem</dfn>,</td></tr>
+<tr><th id="166">166</th><td>                                                      <em>int</em> <dfn class="local col7 decl" id="477size" title='size' data-type='int' data-ref="477size">size</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><i>/* @} */</i><i>/* RWFrom functions */</i></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> *<a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_AllocRW" title='SDL_AllocRW' data-ref="SDL_AllocRW">SDL_AllocRW</dfn>(<em>void</em>);</td></tr>
+<tr><th id="172">172</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <em>void</em> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_FreeRW" title='SDL_FreeRW' data-ref="SDL_FreeRW">SDL_FreeRW</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col8 decl" id="478area" title='area' data-type='SDL_RWops *' data-ref="478area">area</dfn>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><u>#define <dfn class="macro" id="_M/RW_SEEK_SET" data-ref="_M/RW_SEEK_SET">RW_SEEK_SET</dfn> 0       /**&lt; Seek from the beginning of data */</u></td></tr>
+<tr><th id="175">175</th><td><u>#define <dfn class="macro" id="_M/RW_SEEK_CUR" data-ref="_M/RW_SEEK_CUR">RW_SEEK_CUR</dfn> 1       /**&lt; Seek relative to current read point */</u></td></tr>
+<tr><th id="176">176</th><td><u>#define <dfn class="macro" id="_M/RW_SEEK_END" data-ref="_M/RW_SEEK_END">RW_SEEK_END</dfn> 2       /**&lt; Seek relative to the end of data */</u></td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">Read/write macros</span></i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *  Macros to easily read and write from an SDL_RWops structure.</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="183">183</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="184">184</th><td><u>#define <dfn class="macro" id="_M/SDL_RWsize" data-ref="_M/SDL_RWsize">SDL_RWsize</dfn>(ctx)         (ctx)-&gt;size(ctx)</u></td></tr>
+<tr><th id="185">185</th><td><u>#define <dfn class="macro" id="_M/SDL_RWseek" data-ref="_M/SDL_RWseek">SDL_RWseek</dfn>(ctx, offset, whence) (ctx)-&gt;seek(ctx, offset, whence)</u></td></tr>
+<tr><th id="186">186</th><td><u>#define <dfn class="macro" id="_M/SDL_RWtell" data-ref="_M/SDL_RWtell">SDL_RWtell</dfn>(ctx)         (ctx)-&gt;seek(ctx, 0, RW_SEEK_CUR)</u></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/SDL_RWread" data-ref="_M/SDL_RWread">SDL_RWread</dfn>(ctx, ptr, size, n)   (ctx)-&gt;read(ctx, ptr, size, n)</u></td></tr>
+<tr><th id="188">188</th><td><u>#define <dfn class="macro" id="_M/SDL_RWwrite" data-ref="_M/SDL_RWwrite">SDL_RWwrite</dfn>(ctx, ptr, size, n)  (ctx)-&gt;write(ctx, ptr, size, n)</u></td></tr>
+<tr><th id="189">189</th><td><u>#define <dfn class="macro" id="_M/SDL_RWclose" data-ref="_M/SDL_RWclose">SDL_RWclose</dfn>(ctx)        (ctx)-&gt;close(ctx)</u></td></tr>
+<tr><th id="190">190</th><td><i>/* @} */</i><i>/* Read/write macros */</i></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">Read endian functions</span></i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *  Read an item of the specified endianness and return in native format.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="198">198</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="199">199</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadU8" title='SDL_ReadU8' data-ref="SDL_ReadU8">SDL_ReadU8</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col9 decl" id="479src" title='src' data-type='SDL_RWops *' data-ref="479src">src</dfn>);</td></tr>
+<tr><th id="200">200</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadLE16" title='SDL_ReadLE16' data-ref="SDL_ReadLE16">SDL_ReadLE16</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col0 decl" id="480src" title='src' data-type='SDL_RWops *' data-ref="480src">src</dfn>);</td></tr>
+<tr><th id="201">201</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadBE16" title='SDL_ReadBE16' data-ref="SDL_ReadBE16">SDL_ReadBE16</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col1 decl" id="481src" title='src' data-type='SDL_RWops *' data-ref="481src">src</dfn>);</td></tr>
+<tr><th id="202">202</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadLE32" title='SDL_ReadLE32' data-ref="SDL_ReadLE32">SDL_ReadLE32</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col2 decl" id="482src" title='src' data-type='SDL_RWops *' data-ref="482src">src</dfn>);</td></tr>
+<tr><th id="203">203</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadBE32" title='SDL_ReadBE32' data-ref="SDL_ReadBE32">SDL_ReadBE32</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col3 decl" id="483src" title='src' data-type='SDL_RWops *' data-ref="483src">src</dfn>);</td></tr>
+<tr><th id="204">204</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint64" title='Uint64' data-type='uint64_t' data-ref="Uint64">Uint64</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadLE64" title='SDL_ReadLE64' data-ref="SDL_ReadLE64">SDL_ReadLE64</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col4 decl" id="484src" title='src' data-type='SDL_RWops *' data-ref="484src">src</dfn>);</td></tr>
+<tr><th id="205">205</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <a class="typedef" href="SDL_stdinc.h.html#Uint64" title='Uint64' data-type='uint64_t' data-ref="Uint64">Uint64</a> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_ReadBE64" title='SDL_ReadBE64' data-ref="SDL_ReadBE64">SDL_ReadBE64</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col5 decl" id="485src" title='src' data-type='SDL_RWops *' data-ref="485src">src</dfn>);</td></tr>
+<tr><th id="206">206</th><td><i>/* @} */</i><i>/* Read endian functions */</i></td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> *  <span class="command">\name</span> <span class="verb">Write endian functions</span></i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> *  Write an item of native format to the specified endianness.</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="213">213</th><td><i>/* @{ */</i></td></tr>
+<tr><th id="214">214</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteU8" title='SDL_WriteU8' data-ref="SDL_WriteU8">SDL_WriteU8</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col6 decl" id="486dst" title='dst' data-type='SDL_RWops *' data-ref="486dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint8" title='Uint8' data-type='uint8_t' data-ref="Uint8">Uint8</a> <dfn class="local col7 decl" id="487value" title='value' data-type='Uint8' data-ref="487value">value</dfn>);</td></tr>
+<tr><th id="215">215</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteLE16" title='SDL_WriteLE16' data-ref="SDL_WriteLE16">SDL_WriteLE16</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col8 decl" id="488dst" title='dst' data-type='SDL_RWops *' data-ref="488dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="local col9 decl" id="489value" title='value' data-type='Uint16' data-ref="489value">value</dfn>);</td></tr>
+<tr><th id="216">216</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteBE16" title='SDL_WriteBE16' data-ref="SDL_WriteBE16">SDL_WriteBE16</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col0 decl" id="490dst" title='dst' data-type='SDL_RWops *' data-ref="490dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint16" title='Uint16' data-type='uint16_t' data-ref="Uint16">Uint16</a> <dfn class="local col1 decl" id="491value" title='value' data-type='Uint16' data-ref="491value">value</dfn>);</td></tr>
+<tr><th id="217">217</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteLE32" title='SDL_WriteLE32' data-ref="SDL_WriteLE32">SDL_WriteLE32</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col2 decl" id="492dst" title='dst' data-type='SDL_RWops *' data-ref="492dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col3 decl" id="493value" title='value' data-type='Uint32' data-ref="493value">value</dfn>);</td></tr>
+<tr><th id="218">218</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteBE32" title='SDL_WriteBE32' data-ref="SDL_WriteBE32">SDL_WriteBE32</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col4 decl" id="494dst" title='dst' data-type='SDL_RWops *' data-ref="494dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint32" title='Uint32' data-type='uint32_t' data-ref="Uint32">Uint32</a> <dfn class="local col5 decl" id="495value" title='value' data-type='Uint32' data-ref="495value">value</dfn>);</td></tr>
+<tr><th id="219">219</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteLE64" title='SDL_WriteLE64' data-ref="SDL_WriteLE64">SDL_WriteLE64</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col6 decl" id="496dst" title='dst' data-type='SDL_RWops *' data-ref="496dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint64" title='Uint64' data-type='uint64_t' data-ref="Uint64">Uint64</a> <dfn class="local col7 decl" id="497value" title='value' data-type='Uint64' data-ref="497value">value</dfn>);</td></tr>
+<tr><th id="220">220</th><td><b>extern</b> <a class="macro" href="begin_code.h.html#58" title="__attribute__ ((visibility(&quot;default&quot;)))" data-ref="_M/DECLSPEC">DECLSPEC</a> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="macro" href="begin_code.h.html#72" title="" data-ref="_M/SDLCALL">SDLCALL</a> <dfn class="decl" id="SDL_WriteBE64" title='SDL_WriteBE64' data-ref="SDL_WriteBE64">SDL_WriteBE64</dfn>(<a class="typedef" href="#SDL_RWops" title='SDL_RWops' data-type='struct SDL_RWops' data-ref="SDL_RWops">SDL_RWops</a> * <dfn class="local col8 decl" id="498dst" title='dst' data-type='SDL_RWops *' data-ref="498dst">dst</dfn>, <a class="typedef" href="SDL_stdinc.h.html#Uint64" title='Uint64' data-type='uint64_t' data-ref="Uint64">Uint64</a> <dfn class="local col9 decl" id="499value" title='value' data-type='Uint64' data-ref="499value">value</dfn>);</td></tr>
+<tr><th id="221">221</th><td><i>/* @} */</i><i>/* Write endian functions */</i></td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i>/* Ends C function definitions when using C++ */</i></td></tr>
+<tr><th id="225">225</th><td><u>#<span data-ppcond="225">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="226">226</th><td>}</td></tr>
+<tr><th id="227">227</th><td><u>#<span data-ppcond="225">endif</span></u></td></tr>
+<tr><th id="228">228</th><td><u>#include <a href="close_code.h.html">"close_code.h"</a></u></td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td><u>#<span data-ppcond="29">endif</span> /* _SDL_rwops_h */</u></td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td><i>/* vi: set ts=4 sw=4 expandtab: */</i></td></tr>
+<tr><th id="233">233</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/src/DialogBoxSystem.cpp.html'>codebrowser/src/DialogBoxSystem.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

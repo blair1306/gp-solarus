@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/StreamAction.h' l='44' type='const Solarus::Stream &amp; Solarus::StreamAction::get_stream() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='870' u='c' c='_ZNK7Solarus4Hero20can_control_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2531' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2558' u='c' c='_ZNK7Solarus4Hero15can_start_swordEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2598' u='c' c='_ZN7Solarus4Hero14can_start_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/entities/StreamAction.cpp' l='51' ll='53' type='const Solarus::Stream &amp; Solarus::StreamAction::get_stream() const'/>
+<doc f='codebrowser/src/entities/StreamAction.cpp' l='47'>/**
+ * \brief Returns the stream responsible from this action.
+ * \return The stream.
+ */</doc>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='57' u='c' c='_ZN7Solarus14PlayerMovement6updateEv'/>

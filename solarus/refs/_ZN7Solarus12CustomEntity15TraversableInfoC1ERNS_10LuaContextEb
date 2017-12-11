@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='181' type='void Solarus::CustomEntity::TraversableInfo::TraversableInfo(Solarus::LuaContext &amp; lua_context, bool traversable)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='182' u='c' c='_ZN7Solarus12CustomEntity27set_traversable_by_entitiesEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='238' u='c' c='_ZN7Solarus12CustomEntity27set_traversable_by_entitiesENS_10EntityTypeEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='321' u='c' c='_ZN7Solarus12CustomEntity25set_can_traverse_entitiesEb'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='378' u='c' c='_ZN7Solarus12CustomEntity25set_can_traverse_entitiesENS_10EntityTypeEb'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1294' ll='1302' type='void Solarus::CustomEntity::TraversableInfo::TraversableInfo(Solarus::LuaContext &amp; lua_context, bool traversable)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1289'>/**
+ * \brief Creates a boolean traversable property.
+ * \param lua_context The Lua context.
+ * \param traversable The value to store.
+ */</doc>

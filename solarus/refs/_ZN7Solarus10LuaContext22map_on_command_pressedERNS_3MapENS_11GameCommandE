@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='365' type='bool Solarus::LuaContext::map_on_command_pressed(Solarus::Map &amp; map, Solarus::GameCommand command)'/>
+<use f='codebrowser/src/Game.cpp' l='301' u='c' c='_ZN7Solarus4Game22notify_command_pressedENS_11GameCommandE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2285' ll='2297' type='bool Solarus::LuaContext::map_on_command_pressed(Solarus::Map &amp; map, Solarus::GameCommand command)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2275'>/**
+ * \brief Calls the on_command_pressed() method of a Lua map.
+ *
+ * Also notifies the menus of the game if the game itself does not handle the
+ * event.
+ *
+ * \param map A map.
+ * \param command The command pressed.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

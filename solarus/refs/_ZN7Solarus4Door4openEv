@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='104' type='void Solarus::Door::open()'/>
+<def f='codebrowser/src/entities/Door.cpp' l='656' ll='668' type='void Solarus::Door::open()'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='651'>/**
+ * \brief Starts opening the door and plays the corresponding animations.
+ *
+ * Nothing is done if the door is already in the process of being open.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1853' u='c' c='_ZN7Solarus10LuaContext18map_api_open_doorsEP9lua_State'/>

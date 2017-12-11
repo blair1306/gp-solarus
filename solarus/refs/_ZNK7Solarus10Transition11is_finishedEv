@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='86' type='bool Solarus::Transition::is_finished() const'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='82'>/**
+     * \brief Returns whether the transition effect is finished.
+     * \return true if the transition effect is finished
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='158' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='408' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='134' c='_ZNK7Solarus14TransitionFade11is_finishedEv'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='48' c='_ZNK7Solarus19TransitionImmediate11is_finishedEv'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='134' c='_ZNK7Solarus19TransitionScrolling11is_finishedEv'/>

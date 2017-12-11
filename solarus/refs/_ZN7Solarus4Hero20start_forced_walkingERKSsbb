@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='263' type='void Solarus::Hero::start_forced_walking(const std::string &amp; path, bool loop, bool ignore_obstacles)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2407' ll='2409' type='void Solarus::Hero::start_forced_walking(const std::string &amp; path, bool loop, bool ignore_obstacles)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2395'>/**
+ * \brief Makes the hero walk with a predetermined path.
+ *
+ * The player does not control him anymore.
+ *
+ * \param path the succession of basic moves
+ * composing this movement (each character represents
+ * a direction between &apos;0&apos; and &apos;7&apos;), as in PathMovement
+ * \param loop true to make the movement return to the beginning
+ * once finished
+ * \param ignore_obstacles true to make the movement ignore obstacles
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2231' u='c' c='_ZN7Solarus10LuaContext13hero_api_walkEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='277' type='bool Solarus::Hero::can_start_item(Solarus::EquipmentItem &amp; item)'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2580' ll='2604' type='bool Solarus::Hero::can_start_item(Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2611' u='c' c='_ZN7Solarus4Hero10start_itemERNS_13EquipmentItemE'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2575'>/**
+ * \brief Returns whether the hero can starts using an equipment item.
+ * \param item The equipment item to use.
+ * \return true if this equipment item can currently be used.
+ */</doc>
+<use f='codebrowser/src/hero/HeroState.cpp' l='97' u='c' c='_ZN7Solarus9HeroState27notify_item_command_pressedEi'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2270' u='c' c='_ZN7Solarus10LuaContext19hero_api_start_itemEP9lua_State'/>

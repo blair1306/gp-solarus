@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='73' type='const CameraPtr &amp; Solarus::Entities::get_camera() const'/>
+<def f='codebrowser/include/solarus/entities/Entities.h' l='251' ll='254' type='const CameraPtr &amp; Solarus::Entities::get_camera() const'/>
+<use f='codebrowser/include/solarus/Map.h' l='291' u='c' c='_ZNK7Solarus3Map10get_cameraEv'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='247'>/**
+ * \brief Returns the camera of the map.
+ * \return The camera, or nullptr if there is no camera.
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='1207' u='c' c='_ZN7Solarus8Entities4drawEv'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='62' type='void Solarus::Drawable::start_transition(std::unique_ptr&lt;Transition&gt; transition, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<def f='codebrowser/src/Drawable.cpp' l='117' ll='127' type='void Solarus::Drawable::start_transition(std::unique_ptr&lt;Transition&gt; transition, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='108'>/**
+ * \brief Starts a transition effect on this object.
+ *
+ * Any previous transition is stopped.
+ *
+ * \param transition The transition to start.
+ * \param callback_ref A Lua registry ref to the function to call when
+ * the transition finishes, or an empty ref.
+ */</doc>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='237' u='c' c='_ZN7Solarus10LuaContext20drawable_api_fade_inEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='276' u='c' c='_ZN7Solarus10LuaContext21drawable_api_fade_outEP9lua_State'/>

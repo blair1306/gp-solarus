@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='68' type='void Solarus::CircleMovement::set_max_rotations(int max_rotations)'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='65' u='c' c='_ZN7Solarus4Hero15SpinAttackState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1597' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_set_max_rotationsEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='283' ll='293' type='void Solarus::CircleMovement::set_max_rotations(int max_rotations)'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='274'>/**
+ * \brief Sets the number of rotations of the movement.
+ *
+ * When this number of rotations is reached, the movement stops.
+ * Note that is the radius changes gradually, the movement will continue
+ * for a while until the radius reaches zero.
+ *
+ * \param max_rotations number of rotations to make (0 for infinite rotations)
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/SDL2/SDL_gamecontroller.h' l='141' type='char * SDL_GameControllerMappingForGUID(SDL_JoystickGUID guid)'/>
+<doc f='include/SDL2/SDL_gamecontroller.h' l='136'>/**
+ *  Get a mapping string for a GUID
+ *
+ *  \return the mapping string.  Must be freed with SDL_free.  Returns NULL if no mapping is available
+ */</doc>

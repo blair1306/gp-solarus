@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityType.h' l='35' type='0'/>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='33'>// entities specified in the map file</doc>
+<doc f='codebrowser/include/solarus/entities/EntityType.h' l='35'>/**&lt; a tile on the map, obstacle or not */</doc>
+<use f='codebrowser/src/EntityData.cpp' l='37' u='r'/>
+<use f='codebrowser/src/EntityData.cpp' l='433' u='r' c='_ZNK7Solarus10EntityData10is_dynamicEv'/>
+<use f='codebrowser/include/solarus/entities/Tile.h' l='49'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='964' u='r' c='_ZN7Solarus8Entities10add_entityERKSt10shared_ptrINS_6EntityEE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='57' u='r'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='90' c='_ZN7Solarus14EntityTypeInfo25can_be_stored_in_map_fileENS_10EntityTypeE'/>
+<use f='codebrowser/src/entities/EntityTypeInfo.cpp' l='152' c='_ZN7Solarus14EntityTypeInfo27can_be_created_from_lua_apiENS_10EntityTypeE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='536' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5386' u='r' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5445' u='r' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1270' u='r'/>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Timer.cpp source code [codebrowser/src/Timer.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/Timer.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='Timer.cpp.html'>Timer.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../include/solarus/Timer.h.html">"solarus/Timer.h"</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../include/solarus/Game.h.html">"solarus/Game.h"</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="../include/solarus/lua/LuaContext.h.html">"solarus/lua/LuaContext.h"</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../include/solarus/lowlevel/Sound.h.html">"solarus/lowlevel/Sound.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../include/solarus/lowlevel/System.h.html">"solarus/lowlevel/System.h"</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\brief</span> Creates and starts a timer.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">duration</span> Duration of the timer in milliseconds.</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="29">29</th><td><a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5TimerC1Ej" title='Solarus::Timer::Timer' data-ref="_ZN7Solarus5TimerC1Ej">Timer</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col7 decl" id="7duration" title='duration' data-type='uint32_t' data-ref="7duration">duration</dfn>):</td></tr>
+<tr><th id="30">30</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a>(<a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() + <a class="local col7 ref" href="#7duration" title='duration' data-ref="7duration">duration</a>),</td></tr>
+<tr><th id="31">31</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::duration" title='Solarus::Timer::duration' data-ref="Solarus::Timer::duration">duration</a>(<a class="local col7 ref" href="#7duration" title='duration' data-ref="7duration">duration</a>),</td></tr>
+<tr><th id="32">32</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::finished" title='Solarus::Timer::finished' data-ref="Solarus::Timer::finished">finished</a>(<a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() &gt;= <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a>),</td></tr>
+<tr><th id="33">33</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</a>(<b>false</b>),</td></tr>
+<tr><th id="34">34</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</a>(<b>false</b>),</td></tr>
+<tr><th id="35">35</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</a>(<var>0</var>),</td></tr>
+<tr><th id="36">36</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a>(<var>0</var>) {</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether a clock sound is played during this timer.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * <span class="command">\return</span> true if a clock sound is played.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="44">44</th><td><em>bool</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer13is_with_soundEv" title='Solarus::Timer::is_with_sound' data-ref="_ZNK7Solarus5Timer13is_with_soundEv">is_with_sound</dfn>() <em>const</em> {</td></tr>
+<tr><th id="45">45</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> != <var>0</var>;</td></tr>
+<tr><th id="46">46</th><td>}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * <span class="command">\brief</span> Sets whether a clock sound is played during this timer.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">with_sound</span> true to play a clock sound during this timer.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="52">52</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer14set_with_soundEb" title='Solarus::Timer::set_with_sound' data-ref="_ZN7Solarus5Timer14set_with_soundEb">set_with_sound</dfn>(<em>bool</em> <dfn class="local col8 decl" id="8with_sound" title='with_sound' data-type='bool' data-ref="8with_sound">with_sound</dfn>) {</td></tr>
+<tr><th id="53">53</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> = <a class="local col8 ref" href="#8with_sound" title='with_sound' data-ref="8with_sound">with_sound</a> ? <a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() : <var>0</var>;</td></tr>
+<tr><th id="54">54</th><td>}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this timer is currently suspended.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * <span class="command">\return</span> true if this timer is suspended.</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="60">60</th><td><em>bool</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer12is_suspendedEv" title='Solarus::Timer::is_suspended' data-ref="_ZNK7Solarus5Timer12is_suspendedEv">is_suspended</dfn>() <em>const</em> {</td></tr>
+<tr><th id="61">61</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</a>;</td></tr>
+<tr><th id="62">62</th><td>}</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * <span class="command">\brief</span> Suspends or resumes the timer.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * It is okay to call this function when is_suspended_with_map() is true:</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * this means that you temporarily override the automatic suspending behavior.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true to suspend the timer, false to resume it.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="72">72</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer13set_suspendedEb" title='Solarus::Timer::set_suspended' data-ref="_ZN7Solarus5Timer13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col9 decl" id="9suspended" title='suspended' data-type='bool' data-ref="9suspended">suspended</dfn>) {</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>  <b>if</b> (<a class="local col9 ref" href="#9suspended" title='suspended' data-ref="9suspended">suspended</a> != <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</a>) {</td></tr>
+<tr><th id="75">75</th><td>    <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</a> = <a class="local col9 ref" href="#9suspended" title='suspended' data-ref="9suspended">suspended</a>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col0 decl" id="10now" title='now' data-type='uint32_t' data-ref="10now">now</dfn> = <a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>    <b>if</b> (<a class="local col9 ref" href="#9suspended" title='suspended' data-ref="9suspended">suspended</a>) {</td></tr>
+<tr><th id="80">80</th><td>      <i>// the timer is being suspended</i></td></tr>
+<tr><th id="81">81</th><td>      <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</a> = <a class="local col0 ref" href="#10now" title='now' data-ref="10now">now</a>;</td></tr>
+<tr><th id="82">82</th><td>    }</td></tr>
+<tr><th id="83">83</th><td>    <b>else</b> {</td></tr>
+<tr><th id="84">84</th><td>      <i>// recalculate the expiration date</i></td></tr>
+<tr><th id="85">85</th><td>      <b>if</b> (<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</a> != <var>0</var>) {</td></tr>
+<tr><th id="86">86</th><td>        <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a> += <a class="local col0 ref" href="#10now" title='now' data-ref="10now">now</a> - <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</a>;</td></tr>
+<tr><th id="87">87</th><td>        <b>if</b> (<a class="member" href="#_ZNK7Solarus5Timer13is_with_soundEv" title='Solarus::Timer::is_with_sound' data-ref="_ZNK7Solarus5Timer13is_with_soundEv">is_with_sound</a>()) {</td></tr>
+<tr><th id="88">88</th><td>          <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> += <a class="local col0 ref" href="#10now" title='now' data-ref="10now">now</a> - <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::when_suspended" title='Solarus::Timer::when_suspended' data-ref="Solarus::Timer::when_suspended">when_suspended</a>;</td></tr>
+<tr><th id="89">89</th><td>        }</td></tr>
+<tr><th id="90">90</th><td>      }</td></tr>
+<tr><th id="91">91</th><td>    }</td></tr>
+<tr><th id="92">92</th><td>  }</td></tr>
+<tr><th id="93">93</th><td>}</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether this timer is suspended when the map is suspended.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * <span class="command">\return</span> true if this timer is suspended with the map.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="99">99</th><td><em>bool</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer21is_suspended_with_mapEv" title='Solarus::Timer::is_suspended_with_map' data-ref="_ZNK7Solarus5Timer21is_suspended_with_mapEv">is_suspended_with_map</dfn>() <em>const</em> {</td></tr>
+<tr><th id="100">100</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</a>;</td></tr>
+<tr><th id="101">101</th><td>}</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * <span class="command">\brief</span> Sets whether this timer should be suspended when the map is suspended.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended_with_map</span> true to suspend this timer with the map.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="107">107</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer22set_suspended_with_mapEb" title='Solarus::Timer::set_suspended_with_map' data-ref="_ZN7Solarus5Timer22set_suspended_with_mapEb">set_suspended_with_map</dfn>(<em>bool</em> <dfn class="local col1 decl" id="11suspended_with_map" title='suspended_with_map' data-type='bool' data-ref="11suspended_with_map">suspended_with_map</dfn>) {</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>  <b>if</b> (<a class="local col1 ref" href="#11suspended_with_map" title='suspended_with_map' data-ref="11suspended_with_map">suspended_with_map</a> != <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</a>) {</td></tr>
+<tr><th id="110">110</th><td>    <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</a> = <a class="local col1 ref" href="#11suspended_with_map" title='suspended_with_map' data-ref="11suspended_with_map">suspended_with_map</a>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>    <b>if</b> (<a class="member" href="#_ZNK7Solarus5Timer12is_suspendedEv" title='Solarus::Timer::is_suspended' data-ref="_ZNK7Solarus5Timer12is_suspendedEv">is_suspended</a>() &amp;&amp; !<a class="local col1 ref" href="#11suspended_with_map" title='suspended_with_map' data-ref="11suspended_with_map">suspended_with_map</a>) {</td></tr>
+<tr><th id="113">113</th><td>      <a class="member" href="#_ZN7Solarus5Timer13set_suspendedEb" title='Solarus::Timer::set_suspended' data-ref="_ZN7Solarus5Timer13set_suspendedEb">set_suspended</a>(<b>false</b>);</td></tr>
+<tr><th id="114">114</th><td>    }</td></tr>
+<tr><th id="115">115</th><td>  }</td></tr>
+<tr><th id="116">116</th><td>}</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * <span class="command">\brief</span> Returns whether the timer is finished.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * <span class="command">\return</span> true if the timer is finished</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="122">122</th><td><em>bool</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer11is_finishedEv" title='Solarus::Timer::is_finished' data-ref="_ZNK7Solarus5Timer11is_finishedEv">is_finished</dfn>() <em>const</em> {</td></tr>
+<tr><th id="123">123</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::finished" title='Solarus::Timer::finished' data-ref="Solarus::Timer::finished">finished</a>;</td></tr>
+<tr><th id="124">124</th><td>}</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * <span class="command">\brief</span> Returns the initial duration of this timer.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * <span class="command">\return</span> The initial duration in milliseconds.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="130">130</th><td><a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer20get_initial_durationEv" title='Solarus::Timer::get_initial_duration' data-ref="_ZNK7Solarus5Timer20get_initial_durationEv">get_initial_duration</dfn>() <em>const</em> {</td></tr>
+<tr><th id="131">131</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::duration" title='Solarus::Timer::duration' data-ref="Solarus::Timer::duration">duration</a>;</td></tr>
+<tr><th id="132">132</th><td>}</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * <span class="command">\brief</span> Returns the expiration date of this timer.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * <span class="command">\return</span> The expiration date in milliseconds.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="138">138</th><td><a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZNK7Solarus5Timer19get_expiration_dateEv" title='Solarus::Timer::get_expiration_date' data-ref="_ZNK7Solarus5Timer19get_expiration_dateEv">get_expiration_date</dfn>() <em>const</em> {</td></tr>
+<tr><th id="139">139</th><td>  <b>return</b> <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a>;</td></tr>
+<tr><th id="140">140</th><td>}</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * <span class="command">\brief</span> Sets the expiration date of this timer.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">expiration_date</span> The expiration date in milliseconds.</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="146">146</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer19set_expiration_dateEj" title='Solarus::Timer::set_expiration_date' data-ref="_ZN7Solarus5Timer19set_expiration_dateEj">set_expiration_date</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col2 decl" id="12expiration_date" title='expiration_date' data-type='uint32_t' data-ref="12expiration_date">expiration_date</dfn>) {</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td>  <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a> = <a class="local col2 ref" href="#12expiration_date" title='expiration_date' data-ref="12expiration_date">expiration_date</a>;</td></tr>
+<tr><th id="149">149</th><td>  <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::finished" title='Solarus::Timer::finished' data-ref="Solarus::Timer::finished">finished</a> = <a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>() &gt;= <b>this</b>-&gt;<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a>;</td></tr>
+<tr><th id="150">150</th><td>}</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * <span class="command">\brief</span> Updates the timer.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="155">155</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer6updateEv" title='Solarus::Timer::update' data-ref="_ZN7Solarus5Timer6updateEv">update</dfn>() {</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>  <b>if</b> (<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended" title='Solarus::Timer::suspended' data-ref="Solarus::Timer::suspended">suspended</a> || <a class="member" href="#_ZNK7Solarus5Timer11is_finishedEv" title='Solarus::Timer::is_finished' data-ref="_ZNK7Solarus5Timer11is_finishedEv">is_finished</a>()) {</td></tr>
+<tr><th id="158">158</th><td>    <b>return</b>;</td></tr>
+<tr><th id="159">159</th><td>  }</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td>  <i>// check the time</i></td></tr>
+<tr><th id="162">162</th><td>  <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col3 decl" id="13now" title='now' data-type='uint32_t' data-ref="13now">now</dfn> = <a class="type" href="../include/solarus/lowlevel/System.h.html#Solarus::System" title='Solarus::System' data-ref="Solarus::System">System</a>::<a class="ref" href="../include/solarus/lowlevel/System.h.html#_ZN7Solarus6System3nowEv" title='Solarus::System::now' data-ref="_ZN7Solarus6System3nowEv">now</a>();</td></tr>
+<tr><th id="163">163</th><td>  <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::finished" title='Solarus::Timer::finished' data-ref="Solarus::Timer::finished">finished</a> = (<a class="local col3 ref" href="#13now" title='now' data-ref="13now">now</a> &gt;= <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a>);</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>  <i>// play the sound</i></td></tr>
+<tr><th id="166">166</th><td>  <b>if</b> (<a class="member" href="#_ZNK7Solarus5Timer13is_with_soundEv" title='Solarus::Timer::is_with_sound' data-ref="_ZNK7Solarus5Timer13is_with_soundEv">is_with_sound</a>() &amp;&amp; <a class="local col3 ref" href="#13now" title='now' data-ref="13now">now</a> &gt;= <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a>) {</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col4 decl" id="14remaining_time" title='remaining_time' data-type='uint32_t' data-ref="14remaining_time">remaining_time</dfn> = <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::expiration_date" title='Solarus::Timer::expiration_date' data-ref="Solarus::Timer::expiration_date">expiration_date</a> - <a class="local col3 ref" href="#13now" title='now' data-ref="13now">now</a>;</td></tr>
+<tr><th id="169">169</th><td>    <b>if</b> (<a class="local col4 ref" href="#14remaining_time" title='remaining_time' data-ref="14remaining_time">remaining_time</a> &gt; <var>6000</var>) {</td></tr>
+<tr><th id="170">170</th><td>      <a class="type" href="../include/solarus/lowlevel/Sound.h.html#Solarus::Sound" title='Solarus::Sound' data-ref="Solarus::Sound">Sound</a>::<a class="ref" href="../include/solarus/lowlevel/Sound.h.html#_ZN7Solarus5Sound4playERKSs" title='Solarus::Sound::play' data-ref="_ZN7Solarus5Sound4playERKSs">play</a>(<a class="ref fake" href="../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"timer"</q>);</td></tr>
+<tr><th id="171">171</th><td>      <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> += <var>1000</var>;</td></tr>
+<tr><th id="172">172</th><td>    }</td></tr>
+<tr><th id="173">173</th><td>    <b>else</b> {</td></tr>
+<tr><th id="174">174</th><td>      <a class="type" href="../include/solarus/lowlevel/Sound.h.html#Solarus::Sound" title='Solarus::Sound' data-ref="Solarus::Sound">Sound</a>::<a class="ref" href="../include/solarus/lowlevel/Sound.h.html#_ZN7Solarus5Sound4playERKSs" title='Solarus::Sound::play' data-ref="_ZN7Solarus5Sound4playERKSs">play</a>(<a class="ref fake" href="../../include/c++/4.9/bits/basic_string.h.html#_ZNSt12basic_stringC1EPKT_RKT1_" title='std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt12basic_stringC1EPKT_RKT1_"></a><q>"timer_hurry"</q>);</td></tr>
+<tr><th id="175">175</th><td>      <b>if</b> (<a class="local col4 ref" href="#14remaining_time" title='remaining_time' data-ref="14remaining_time">remaining_time</a> &gt; <var>2000</var>) {</td></tr>
+<tr><th id="176">176</th><td>        <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> += <var>1000</var>;</td></tr>
+<tr><th id="177">177</th><td>      }</td></tr>
+<tr><th id="178">178</th><td>      <b>else</b> {</td></tr>
+<tr><th id="179">179</th><td>        <a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::next_sound_date" title='Solarus::Timer::next_sound_date' data-ref="Solarus::Timer::next_sound_date">next_sound_date</a> += <var>250</var>;</td></tr>
+<tr><th id="180">180</th><td>      }</td></tr>
+<tr><th id="181">181</th><td>    }</td></tr>
+<tr><th id="182">182</th><td>  }</td></tr>
+<tr><th id="183">183</th><td>}</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> * <span class="command">\brief</span> Notifies this timer that the current map is being suspended or resumed.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> * <span class="command">\param</span> <span class="arg">suspended</span> true if the map is suspended, false if it is resumed.</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="189">189</th><td><em>void</em> <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="decl def" id="_ZN7Solarus5Timer20notify_map_suspendedEb" title='Solarus::Timer::notify_map_suspended' data-ref="_ZN7Solarus5Timer20notify_map_suspendedEb">notify_map_suspended</dfn>(<em>bool</em> <dfn class="local col5 decl" id="15suspended" title='suspended' data-type='bool' data-ref="15suspended">suspended</dfn>) {</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td>  <b>if</b> (<a class="member" href="../include/solarus/Timer.h.html#Solarus::Timer::suspended_with_map" title='Solarus::Timer::suspended_with_map' data-ref="Solarus::Timer::suspended_with_map">suspended_with_map</a>) {</td></tr>
+<tr><th id="192">192</th><td>    <a class="member" href="#_ZN7Solarus5Timer13set_suspendedEb" title='Solarus::Timer::set_suspended' data-ref="_ZN7Solarus5Timer13set_suspendedEb">set_suspended</a>(<a class="local col5 ref" href="#15suspended" title='suspended' data-ref="15suspended">suspended</a>);</td></tr>
+<tr><th id="193">193</th><td>  }</td></tr>
+<tr><th id="194">194</th><td>}</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> * <span class="command">\brief</span> Returns the name identifying this type in Lua.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * <span class="command">\return</span> the name identifying this type in Lua</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="200">200</th><td><em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <a class="type" href="../include/solarus/Timer.h.html#Solarus::Timer" title='Solarus::Timer' data-ref="Solarus::Timer">Timer</a>::<dfn class="virtual decl def" id="_ZNK7Solarus5Timer17get_lua_type_nameEv" title='Solarus::Timer::get_lua_type_name' data-ref="_ZNK7Solarus5Timer17get_lua_type_nameEv">get_lua_type_name</dfn>() <em>const</em> {</td></tr>
+<tr><th id="201">201</th><td>  <b>return</b> <a class="type" href="../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext" title='Solarus::LuaContext' data-ref="Solarus::LuaContext">LuaContext</a>::<a class="ref" href="../include/solarus/lua/LuaContext.h.html#Solarus::LuaContext::timer_module_name" title='Solarus::LuaContext::timer_module_name' data-ref="Solarus::LuaContext::timer_module_name">timer_module_name</a>;</td></tr>
+<tr><th id="202">202</th><td>}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>}</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

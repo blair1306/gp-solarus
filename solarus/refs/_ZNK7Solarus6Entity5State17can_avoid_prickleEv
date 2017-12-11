@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='87' type='bool Solarus::Entity::State::can_avoid_prickle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='583' ll='585' type='bool Solarus::Entity::State::can_avoid_prickle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='576'>/**
+ * \brief Returns whether the entity ignores the effect of prickles in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of prickles in the current state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1265' u='c' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='222' c='_ZNK7Solarus4Hero22BackToSolidGroundState17can_avoid_prickleEv'/>
+<ovr f='codebrowser/src/hero/FallingState.cpp' l='106' c='_ZNK7Solarus4Hero12FallingState17can_avoid_prickleEv'/>
+<ovr f='codebrowser/src/hero/ForcedWalkingState.cpp' l='139' c='_ZNK7Solarus4Hero18ForcedWalkingState17can_avoid_prickleEv'/>
+<ovr f='codebrowser/src/hero/HookshotState.cpp' l='110' c='_ZNK7Solarus4Hero13HookshotState17can_avoid_prickleEv'/>
+<ovr f='codebrowser/src/hero/JumpingState.cpp' l='243' c='_ZNK7Solarus4Hero12JumpingState17can_avoid_prickleEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='319' c='_ZNK7Solarus4Hero12RunningState17can_avoid_prickleEv'/>

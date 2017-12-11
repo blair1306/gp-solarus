@@ -1,0 +1,67 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Boomerang.h' l='34' ll='99'/>
+<size>288</size>
+<doc f='codebrowser/include/solarus/entities/Boomerang.h' l='28'>/**
+ * \brief A boomerang thrown on the map.
+ *
+ * In the current implementation, only the hero is supposed to be able to
+ * throw a boomerang.
+ */</doc>
+<smbr r='Solarus::Boomerang::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<fun r='_ZNK7Solarus9Boomerang8get_typeEv'/>
+<fun r='_ZNK7Solarus9Boomerang12can_be_drawnEv'/>
+<fun r='_ZN7Solarus9Boomerang27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus9Boomerang18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus9Boomerang18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZNK7Solarus9Boomerang20is_low_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus9Boomerang18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus9Boomerang24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus9Boomerang19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus9Boomerang15is_npc_obstacleERNS_3NpcE'/>
+<fun r='_ZN7Solarus9Boomerang18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus9Boomerang13is_going_backEv'/>
+<fun r='_ZN7Solarus9Boomerang7go_backEv'/>
+<fun r='_ZN7Solarus9Boomerang6updateEv'/>
+<fun r='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Boomerang27notify_collision_with_enemyERNS_5EnemyE'/>
+<fun r='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>
+<mbr r='Solarus::Boomerang::hero' o='2048' t='HeroPtr'/>
+<mbr r='Solarus::Boomerang::next_sound_date' o='2176' t='uint32_t'/>
+<mbr r='Solarus::Boomerang::has_to_go_back' o='2208' t='bool'/>
+<mbr r='Solarus::Boomerang::going_back' o='2216' t='bool'/>
+<mbr r='Solarus::Boomerang::speed' o='2240' t='int'/>
+<fun r='_ZN7Solarus9BoomerangC1ERKSt10shared_ptrINS_4HeroEEiidRKSs'/>
+<fun r='_ZNK7Solarus9Boomerang8get_typeEv'/>
+<fun r='_ZNK7Solarus9Boomerang12can_be_drawnEv'/>
+<fun r='_ZN7Solarus9Boomerang27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<fun r='_ZN7Solarus9Boomerang18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus9Boomerang18is_stairs_obstacleERNS_6StairsE'/>
+<fun r='_ZNK7Solarus9Boomerang20is_low_wall_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang22is_deep_water_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang16is_hole_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang16is_lava_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang19is_prickle_obstacleEv'/>
+<fun r='_ZNK7Solarus9Boomerang18is_ladder_obstacleEv'/>
+<fun r='_ZN7Solarus9Boomerang18is_switch_obstacleERNS_6SwitchE'/>
+<fun r='_ZN7Solarus9Boomerang24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<fun r='_ZN7Solarus9Boomerang19is_crystal_obstacleERNS_7CrystalE'/>
+<fun r='_ZN7Solarus9Boomerang15is_npc_obstacleERNS_3NpcE'/>
+<fun r='_ZN7Solarus9Boomerang18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus9Boomerang13is_going_backEv'/>
+<fun r='_ZN7Solarus9Boomerang7go_backEv'/>
+<fun r='_ZN7Solarus9Boomerang6updateEv'/>
+<fun r='_ZN7Solarus9Boomerang23notify_obstacle_reachedEv'/>
+<fun r='_ZN7Solarus9Boomerang24notify_movement_finishedEv'/>
+<fun r='_ZN7Solarus9Boomerang28notify_collision_with_switchERNS_6SwitchENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Boomerang29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus9Boomerang27notify_collision_with_enemyERNS_5EnemyE'/>
+<fun r='_ZN7Solarus9Boomerang21notify_attacked_enemyENS_11EnemyAttackERNS_5EnemyEPKNS_6SpriteERNS_13EnemyReaction8ReactionEb'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='111' type='bool Solarus::Entity::State::can_avoid_explosion() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='868' ll='870' type='bool Solarus::Entity::State::can_avoid_explosion() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='861'>/**
+ * \brief Returns whether the entity ignores the effect of explosions in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity ignores the effect of explosions in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1917' u='c' c='_ZN7Solarus4Hero31notify_collision_with_explosionERNS_9ExplosionERNS_6SpriteE'/>
+<ovr f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='277' c='_ZNK7Solarus4Hero22BackToSolidGroundState19can_avoid_explosionEv'/>

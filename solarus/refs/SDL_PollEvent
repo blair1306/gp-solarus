@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_events.h' l='598' type='int SDL_PollEvent(SDL_Event * event)'/>
+<doc f='include/SDL2/SDL_events.h' l='590'>/**
+ *  \brief Polls for currently pending events.
+ *
+ *  \return 1 if there are any pending events, or 0 if there are none available.
+ *
+ *  \param event If not NULL, the next event is removed from the queue and
+ *               stored in that area.
+ */</doc>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='247' u='c' c='_ZN7Solarus10InputEvent9get_eventEv'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Timer.h' l='41' type='bool Solarus::Timer::is_suspended_with_map() const'/>
+<def f='codebrowser/src/Timer.cpp' l='99' ll='101' type='bool Solarus::Timer::is_suspended_with_map() const'/>
+<doc f='codebrowser/src/Timer.cpp' l='95'>/**
+ * \brief Returns whether this timer is suspended when the map is suspended.
+ * \return true if this timer is suspended with the map.
+ */</doc>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='270' u='c' c='_ZN7Solarus10LuaContext27notify_timers_map_suspendedEb'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='501' u='c' c='_ZN7Solarus10LuaContext31timer_api_is_suspended_with_mapEP9lua_State'/>

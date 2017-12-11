@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/ShopTreasure.h' l='70' type='int Solarus::ShopTreasure::get_price() const'/>
+<def f='codebrowser/src/entities/ShopTreasure.cpp' l='127' ll='129' type='int Solarus::ShopTreasure::get_price() const'/>
+<doc f='codebrowser/src/entities/ShopTreasure.cpp' l='123'>/**
+ * \brief Returns the price of this shop item.
+ * \return The price.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3791' u='c' c='_ZN7Solarus10LuaContext43l_shop_treasure_description_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3839' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3855' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>

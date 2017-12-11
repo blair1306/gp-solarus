@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1162' type='static bool Solarus::LuaContext::is_jump_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='332' u='c' c='_ZN7Solarus10LuaContext11is_movementEP9lua_Statei'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1666' ll='1668' type='static bool Solarus::LuaContext::is_jump_movement(lua_State * l, int index)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1660'>/**
+ * \brief Returns whether a value is a userdata of type jump movement.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return true if the value at this index is a jump movement.
+ */</doc>

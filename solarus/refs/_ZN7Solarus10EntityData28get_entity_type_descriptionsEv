@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='127' type='static const std::map&lt;EntityType, const EntityTypeDescription&gt; Solarus::EntityData::get_entity_type_descriptions()'/>
+<def f='codebrowser/src/EntityData.cpp' l='836' ll='838' type='static const std::map&lt;EntityType, const EntityTypeDescription&gt; Solarus::EntityData::get_entity_type_descriptions()'/>
+<doc f='codebrowser/src/EntityData.cpp' l='825'>/**
+ * \brief Returns the definition of the format of all entity types in map data files.
+ *
+ * Note: entities whose type is not in this map can only be created
+ * by the engine.
+ * This is the case of HERO, CARRIED_OBJECT, BOOMERANG, ARROW and HOOKHOT.
+ * The ones in the map can be created either by declaring them in a map
+ * data file or by the Lua API, or both.
+ *
+ * \return The format description of entity types.
+ */</doc>
+<use f='codebrowser/src/MapData.cpp' l='876' u='c' c='_ZN7Solarus12_GLOBAL__N_112l_propertiesEP9lua_State'/>

@@ -1,0 +1,27 @@
+<def f='include/physfs.h' l='1981' ll='1988'/>
+<size>40</size>
+<doc f='include/physfs.h' l='1961'>/**
+ * \struct PHYSFS_Allocator
+ * \brief PhysicsFS allocation function pointers.
+ *
+ * (This is for limited, hardcore use. If you don&apos;t immediately see a need
+ *  for it, you can probably ignore this forever.)
+ *
+ * You create one of these structures for use with PHYSFS_setAllocator.
+ *  Allocators are assumed to be reentrant by the caller; please mutex
+ *  accordingly.
+ *
+ * Allocations are always discussed in 64-bits, for future expansion...we&apos;re
+ *  on the cusp of a 64-bit transition, and we&apos;ll probably be allocating 6
+ *  gigabytes like it&apos;s nothing sooner or later, and I don&apos;t want to change
+ *  this again at that point. If you&apos;re on a 32-bit platform and have to
+ *  downcast, it&apos;s okay to return NULL if the allocation is greater than
+ *  4 gigabytes, since you&apos;d have to do so anyhow.
+ *
+ * \sa PHYSFS_setAllocator
+ */</doc>
+<mbr r='PHYSFS_Allocator::Init' o='0' t='int (*)()'/>
+<mbr r='PHYSFS_Allocator::Deinit' o='64' t='void (*)()'/>
+<mbr r='PHYSFS_Allocator::Malloc' o='128' t='void *(*)(PHYSFS_uint64)'/>
+<mbr r='PHYSFS_Allocator::Realloc' o='192' t='void *(*)(void *, PHYSFS_uint64)'/>
+<mbr r='PHYSFS_Allocator::Free' o='256' t='void (*)(void *)'/>

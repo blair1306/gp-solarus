@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='124' type='void Solarus::HeroSprites::set_animation(const std::string &amp; animation, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1525' u='c' c='_ZN7Solarus11HeroSprites13set_animationERKSs'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='1540' ll='1583' type='void Solarus::HeroSprites::set_animation(const std::string &amp; animation, const Solarus::ScopedLuaRef &amp; callback_ref)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='1528'>/**
+ * \brief Starts a custom animation of the hero&apos;s sprites.
+ *
+ * All sprites of the hero that have an animation with this name take the
+ * animation. The ones that don&apos;t have such an animation are not displayed.
+ * Many simple animations can be started with this function.
+ * More complex one have dedicated functions.
+ *
+ * \param animation Name of the animation to give to the hero&apos;s sprites.
+ * \param callback_ref Lua ref of a function to call when the animation ends
+ * or an empty ref.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1971' u='c' c='_ZN7Solarus10LuaContext22hero_api_set_animationEP9lua_State'/>

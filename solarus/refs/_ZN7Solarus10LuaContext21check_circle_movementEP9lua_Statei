@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1161' type='static std::shared_ptr&lt;CircleMovement&gt; Solarus::LuaContext::check_circle_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1392' ll='1396' type='static std::shared_ptr&lt;CircleMovement&gt; Solarus::LuaContext::check_circle_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1406' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_centerEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1434' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_get_radiusEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1448' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_radiusEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1463' u='c' c='_ZN7Solarus10LuaContext36circle_movement_api_get_radius_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1477' u='c' c='_ZN7Solarus10LuaContext36circle_movement_api_set_radius_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1492' u='c' c='_ZN7Solarus10LuaContext32circle_movement_api_is_clockwiseEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1506' u='c' c='_ZN7Solarus10LuaContext33circle_movement_api_set_clockwiseEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1523' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_get_initial_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1537' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_set_initial_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1552' u='c' c='_ZN7Solarus10LuaContext35circle_movement_api_get_angle_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1566' u='c' c='_ZN7Solarus10LuaContext35circle_movement_api_set_angle_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1581' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_get_max_rotationsEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1595' u='c' c='_ZN7Solarus10LuaContext37circle_movement_api_set_max_rotationsEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1610' u='c' c='_ZN7Solarus10LuaContext32circle_movement_api_get_durationEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1624' u='c' c='_ZN7Solarus10LuaContext32circle_movement_api_set_durationEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1639' u='c' c='_ZN7Solarus10LuaContext34circle_movement_api_get_loop_delayEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1653' u='c' c='_ZN7Solarus10LuaContext34circle_movement_api_set_loop_delayEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1385'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * circle movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

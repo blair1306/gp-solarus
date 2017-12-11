@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='70' type='Solarus::Point Solarus::operator-(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='140' ll='142' type='Solarus::Point Solarus::operator-(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='134'>/**
+ * \brief Subtracts two points.
+ * \param lhs A point.
+ * \param rhs The point to subtract.
+ * \return A point with the difference of their coordinates.
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1184' u='c' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/Sprite.cpp' l='783' u='c' c='_ZN7Solarus6Sprite8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='224' u='c' c='_ZN7Solarus5Arrow6updateEv'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='310' u='c' c='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='156' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='901' u='c' c='_ZNK7Solarus6Entity25get_extended_bounding_boxEi'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='209' u='c' c='_ZN7Solarus18NonAnimatedRegions11draw_on_mapEv'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='144' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='145' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='861' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/movements/CircleMovement.cpp' l='406' u='c' c='_ZN7Solarus14CircleMovement18recompute_positionEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='79' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='117' u='c' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='141' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='169' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='42' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='60' u='c' c='_ZN12_GLOBAL__N_113one_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='115' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>
+<use f='codebrowser/tests/src/tests/PathMovement.cpp' l='126' u='c' c='_ZN12_GLOBAL__N_115multi_step_testERN7Solarus15TestEnvironmentERNS0_6EntityE'/>

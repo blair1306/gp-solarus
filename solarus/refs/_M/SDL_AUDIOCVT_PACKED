@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_audio.h' l='192'/>
+<use f='include/SDL2/SDL_audio.h' l='210' u='c'/>
+<doc f='include/SDL2/SDL_audio.h' l='187'>/* This structure is 84 bytes on 32-bit architectures, make sure GCC doesn&apos;t
+   pad it out to 88 bytes to guarantee ABI compatibility between compilers.
+   vvv
+   The next time we rev the ABI, make sure to size the ints and add padding.
+*/</doc>

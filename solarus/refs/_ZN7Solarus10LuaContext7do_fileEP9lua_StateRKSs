@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='184' type='static void Solarus::LuaContext::do_file(lua_State * l, const std::string &amp; script_name)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='709' ll='717' type='static void Solarus::LuaContext::do_file(lua_State * l, const std::string &amp; script_name)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='699'>/**
+ * \brief Opens a Lua file and executes it.
+ *
+ * This function just calls load_file() and call_function().
+ * The file must exist.
+ *
+ * \param l A Lua state.
+ * \param script_name File name of the script without extension,
+ * relative to the data directory.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='169' u='c' c='_ZN7Solarus10LuaContext16main_api_do_fileEP9lua_State'/>

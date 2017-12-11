@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='73' type='void Solarus::EquipmentItem::set_shadow(const std::string &amp; shadow)'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='280' ll='282' type='void Solarus::EquipmentItem::set_shadow(const std::string &amp; shadow)'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='275'>/**
+ * \brief Sets the animation of the shadow sprite to display when this item is
+ * on the ground.
+ * \param shadow The animation of the shadow sprite or an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='432' u='c' c='_ZN7Solarus10LuaContext19item_api_set_shadowEP9lua_State'/>

@@ -1,0 +1,19 @@
+<dec f='include/physfs.h' l='791' type='int PHYSFS_removeFromSearchPath(const char * oldDir)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='444' u='c' c='_ZN7Solarus10QuestFiles19set_quest_write_dirERKSs'/>
+<doc f='include/physfs.h' l='774'>/**
+ * \fn int PHYSFS_removeFromSearchPath(const char *oldDir)
+ * \brief Remove a directory or archive from the search path.
+ *
+ * This must be a (case-sensitive) match to a dir or archive already in the
+ *  search path, specified in platform-dependent notation.
+ *
+ * This call will fail (and fail to remove from the path) if the element still
+ *  has files open in it.
+ *
+ *    \param oldDir dir/archive to remove.
+ *   \return nonzero on success, zero on failure.
+ *            Specifics of the error can be gleaned from PHYSFS_getLastError().
+ *
+ * \sa PHYSFS_addToSearchPath
+ * \sa PHYSFS_getSearchPath
+ */</doc>

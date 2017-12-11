@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/StringResources.h' l='50' type='static int Solarus::StringResources::l_text(lua_State * l)'/>
+<def f='codebrowser/src/StringResources.cpp' l='149' ll='166' type='static int Solarus::StringResources::l_text(lua_State * l)'/>
+<use f='codebrowser/src/StringResources.cpp' l='175' u='r' c='_ZN7Solarus15StringResources15import_from_luaEP9lua_State'/>
+<doc f='codebrowser/src/StringResources.cpp' l='141'>/**
+ * \brief Function called by Lua to add a dialog to the resource.
+ *
+ * - Argument 1 (table): properties of the dialog.
+ *
+ * \param l the Lua context that is calling this function
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,61 @@
+<inh f='codebrowser/include/solarus/Drawable.h' l='41' c='Solarus::Drawable'/>
+<def f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='43' ll='139'/>
+<size>168</size>
+<doc f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='32'>/**
+ * \brief Draws a line of text on a surface.
+ *
+ * This class encapsulates a graphic surface and handles text rendering,
+ * horizontal and vertical text alignment, color and other properties.
+ * This is the only class related to a font library (SDL_ttf).
+ *
+ * Two types of fonts are supported:
+ * - usual fonts (TTF and other formats are supported),
+ * - an image containing characters drawn.
+ */</doc>
+<fun r='_ZN7Solarus11TextSurfaceC1Eii'/>
+<fun r='_ZN7Solarus11TextSurfaceC1EiiNS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<fun r='_ZNK7Solarus11TextSurface8get_fontEv'/>
+<fun r='_ZN7Solarus11TextSurface8set_fontERKSs'/>
+<fun r='_ZNK7Solarus11TextSurface24get_horizontal_alignmentEv'/>
+<fun r='_ZN7Solarus11TextSurface24set_horizontal_alignmentENS0_19HorizontalAlignmentE'/>
+<fun r='_ZNK7Solarus11TextSurface22get_vertical_alignmentEv'/>
+<fun r='_ZN7Solarus11TextSurface22set_vertical_alignmentENS0_17VerticalAlignmentE'/>
+<fun r='_ZN7Solarus11TextSurface13set_alignmentENS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<fun r='_ZNK7Solarus11TextSurface18get_rendering_modeEv'/>
+<fun r='_ZN7Solarus11TextSurface18set_rendering_modeENS0_13RenderingModeE'/>
+<fun r='_ZNK7Solarus11TextSurface14get_text_colorEv'/>
+<fun r='_ZN7Solarus11TextSurface14set_text_colorERKNS_5ColorE'/>
+<fun r='_ZNK7Solarus11TextSurface13get_font_sizeEv'/>
+<fun r='_ZN7Solarus11TextSurface13set_font_sizeEi'/>
+<fun r='_ZN7Solarus11TextSurface12set_positionEii'/>
+<fun r='_ZNK7Solarus11TextSurface5get_xEv'/>
+<fun r='_ZN7Solarus11TextSurface5set_xEi'/>
+<fun r='_ZNK7Solarus11TextSurface5get_yEv'/>
+<fun r='_ZN7Solarus11TextSurface5set_yEi'/>
+<fun r='_ZNK7Solarus11TextSurface8get_textEv'/>
+<fun r='_ZN7Solarus11TextSurface8set_textERKSs'/>
+<fun r='_ZNK7Solarus11TextSurface8is_emptyEv'/>
+<fun r='_ZN7Solarus11TextSurface8add_charEc'/>
+<fun r='_ZNK7Solarus11TextSurface9get_widthEv'/>
+<fun r='_ZNK7Solarus11TextSurface10get_heightEv'/>
+<fun r='_ZNK7Solarus11TextSurface8get_sizeEv'/>
+<fun r='_ZN7Solarus11TextSurface8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<fun r='_ZN7Solarus11TextSurface15draw_transitionERNS_10TransitionE'/>
+<fun r='_ZN7Solarus11TextSurface22get_transition_surfaceEv'/>
+<fun r='_ZNK7Solarus11TextSurface17get_lua_type_nameEv'/>
+<smbr r='Solarus::TextSurface::default_font_size' t='const int'/>
+<fun r='_ZN7Solarus11TextSurface7rebuildEv'/>
+<fun r='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<fun r='_ZN7Solarus11TextSurface11rebuild_ttfEv'/>
+<mbr r='Solarus::TextSurface::font_id' o='768' t='std::string'/>
+<mbr r='Solarus::TextSurface::horizontal_alignment' o='832' t='Solarus::TextSurface::HorizontalAlignment'/>
+<mbr r='Solarus::TextSurface::vertical_alignment' o='864' t='Solarus::TextSurface::VerticalAlignment'/>
+<mbr r='Solarus::TextSurface::rendering_mode' o='896' t='Solarus::TextSurface::RenderingMode'/>
+<mbr r='Solarus::TextSurface::text_color' o='928' t='Solarus::Color'/>
+<mbr r='Solarus::TextSurface::font_size' o='960' t='int'/>
+<mbr r='Solarus::TextSurface::x' o='992' t='int'/>
+<mbr r='Solarus::TextSurface::y' o='1024' t='int'/>
+<mbr r='Solarus::TextSurface::surface' o='1088' t='SurfacePtr'/>
+<mbr r='Solarus::TextSurface::text_position' o='1216' t='Solarus::Point'/>
+<mbr r='Solarus::TextSurface::text' o='1280' t='std::string'/>

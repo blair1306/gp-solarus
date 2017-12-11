@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='473' type='int'/>
+<offset>1600</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='473'>/**&lt; Collision modes detected by entity
+                                                 * (can be an OR combination of CollisionMode values). */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='77' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1671' u='r' c='_ZNK7Solarus6Entity11is_detectorEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1684' u='w' c='_ZN7Solarus6Entity19set_collision_modesEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1693' u='r' c='_ZN7Solarus6Entity18add_collision_modeENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1702' u='r' c='_ZN7Solarus6Entity18has_collision_modeENS_13CollisionModeE'/>

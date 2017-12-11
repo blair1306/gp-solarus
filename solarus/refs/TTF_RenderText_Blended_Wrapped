@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_ttf.h' l='217' type='SDL_Surface * TTF_RenderText_Blended_Wrapped(TTF_Font * font, const char * text, SDL_Color fg, Uint32 wrapLength)'/>
+<doc f='include/SDL2/SDL_ttf.h' l='211'>/* Create a 32-bit ARGB surface and render the given text at high quality,
+   using alpha blending to dither the font with the given color.
+   Text is wrapped to multiple lines on line endings and on word boundaries
+   if it extends beyond wrapLength in pixels.
+   This function returns the new surface, or NULL if there was an error.
+*/</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1199' type='static std::shared_ptr&lt;DynamicTile&gt; Solarus::LuaContext::check_dynamic_tile(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4304' ll='4308' type='static std::shared_ptr&lt;DynamicTile&gt; Solarus::LuaContext::check_dynamic_tile(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4327' u='c' c='_ZN7Solarus10LuaContext31dynamic_tile_api_get_pattern_idEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4344' u='c' c='_ZN7Solarus10LuaContext36dynamic_tile_api_get_modified_groundEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4297'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * dynamic tile and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The dynamic tile.
+ */</doc>

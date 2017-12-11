@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1249' type='void Solarus::LuaContext::on_activated()'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6003' u='c' c='_ZN7Solarus10LuaContext24destination_on_activatedERNS_11DestinationE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6021' u='c' c='_ZN7Solarus10LuaContext28teletransporter_on_activatedERNS_15TeletransporterE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6114' u='c' c='_ZN7Solarus10LuaContext19switch_on_activatedERNS_6SwitchE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6168' u='c' c='_ZN7Solarus10LuaContext19sensor_on_activatedERNS_6SensorE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2251' ll='2256' type='void Solarus::LuaContext::on_activated()'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2248'>/**
+ * \brief Calls the on_activated() method of the object on top of the stack.
+ */</doc>

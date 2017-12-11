@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/TargetMovement.h' l='69' type='void Solarus::TargetMovement::recompute_movement()'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='84' u='c' c='_ZN7Solarus14TargetMovement24notify_object_controlledEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='105' u='c' c='_ZN7Solarus14TargetMovement10set_targetERKSt10shared_ptrINS_6EntityEERKNS_5PointE'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='123' u='c' c='_ZN7Solarus14TargetMovement16set_moving_speedEi'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='136' u='c' c='_ZN7Solarus14TargetMovement6updateEv'/>
+<def f='codebrowser/src/movements/TargetMovement.cpp' l='157' ll='180' type='void Solarus::TargetMovement::recompute_movement()'/>
+<doc f='codebrowser/src/movements/TargetMovement.cpp' l='153'>/**
+ * \brief Calculates the direction and the speed of the movement
+ * depending on the target.
+ */</doc>

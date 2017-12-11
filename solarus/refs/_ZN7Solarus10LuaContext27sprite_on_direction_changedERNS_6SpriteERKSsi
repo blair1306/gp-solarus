@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='304' type='void Solarus::LuaContext::sprite_on_direction_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int direction)'/>
+<use f='codebrowser/src/Sprite.cpp' l='300' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<use f='codebrowser/src/Sprite.cpp' l='364' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='654' ll='664' type='void Solarus::LuaContext::sprite_on_direction_changed(Solarus::Sprite &amp; sprite, const std::string &amp; animation, int direction)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='645'>/**
+ * \brief Calls the on_direction_changed() method of a Lua sprite.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param sprite A sprite whose direction has just changed.
+ * \param animation Name of the current animation.
+ * \param direction The new direction.
+ */</doc>

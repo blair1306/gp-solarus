@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='97' type='bool Solarus::Entity::State::is_lava_obstacle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='664' ll='666' type='bool Solarus::Entity::State::is_lava_obstacle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='657'>/**
+ * \brief Returns whether lava is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if lava is considered as obstacles in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1446' u='c' c='_ZNK7Solarus4Hero16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='283' c='_ZNK7Solarus4Hero12PullingState16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='305' c='_ZNK7Solarus4Hero12PushingState16is_lava_obstacleEv'/>
+<ovr f='codebrowser/src/hero/SpinAttackState.cpp' l='193' c='_ZNK7Solarus4Hero15SpinAttackState16is_lava_obstacleEv'/>

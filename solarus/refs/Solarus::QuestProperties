@@ -1,0 +1,50 @@
+<inh f='codebrowser/include/solarus/lua/LuaData.h' l='31' c='Solarus::LuaData'/>
+<def f='codebrowser/include/solarus/QuestProperties.h' l='41' ll='94'/>
+<size>104</size>
+<doc f='codebrowser/include/solarus/QuestProperties.h' l='33'>/**
+ * \brief This class stores properties of a quest (the quest.dat file).
+ *
+ * These properties are general information about a quest.
+ * They include the Solarus compatibility version,
+ * the writing directory for savegames of this quest,
+ * and some metadata describing the quest.
+ */</doc>
+<fun r='_ZN7Solarus15QuestPropertiesC1Ev'/>
+<fun r='_ZN7Solarus15QuestProperties15import_from_luaEP9lua_State'/>
+<fun r='_ZNK7Solarus15QuestProperties13export_to_luaERSo'/>
+<fun r='_ZNK7Solarus15QuestProperties19get_solarus_versionEv'/>
+<fun r='_ZN7Solarus15QuestProperties19set_solarus_versionERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties19get_quest_write_dirEv'/>
+<fun r='_ZN7Solarus15QuestProperties19set_quest_write_dirERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties9get_titleEv'/>
+<fun r='_ZN7Solarus15QuestProperties9set_titleERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties21get_short_descriptionEv'/>
+<fun r='_ZN7Solarus15QuestProperties21set_short_descriptionERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties20get_long_descriptionEv'/>
+<fun r='_ZN7Solarus15QuestProperties20set_long_descriptionERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties10get_authorEv'/>
+<fun r='_ZN7Solarus15QuestProperties10set_authorERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties17get_quest_versionEv'/>
+<fun r='_ZN7Solarus15QuestProperties17set_quest_versionERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties16get_release_dateEv'/>
+<fun r='_ZN7Solarus15QuestProperties16set_release_dateERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties11get_websiteEv'/>
+<fun r='_ZN7Solarus15QuestProperties11set_websiteERKSs'/>
+<fun r='_ZNK7Solarus15QuestProperties21get_normal_quest_sizeEv'/>
+<fun r='_ZN7Solarus15QuestProperties21set_normal_quest_sizeERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus15QuestProperties18get_min_quest_sizeEv'/>
+<fun r='_ZN7Solarus15QuestProperties18set_min_quest_sizeERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus15QuestProperties18get_max_quest_sizeEv'/>
+<fun r='_ZN7Solarus15QuestProperties18set_max_quest_sizeERKNS_4SizeE'/>
+<mbr r='Solarus::QuestProperties::solarus_version' o='64' t='std::string'/>
+<mbr r='Solarus::QuestProperties::quest_write_dir' o='128' t='std::string'/>
+<mbr r='Solarus::QuestProperties::title' o='192' t='std::string'/>
+<mbr r='Solarus::QuestProperties::short_description' o='256' t='std::string'/>
+<mbr r='Solarus::QuestProperties::long_description' o='320' t='std::string'/>
+<mbr r='Solarus::QuestProperties::author' o='384' t='std::string'/>
+<mbr r='Solarus::QuestProperties::quest_version' o='448' t='std::string'/>
+<mbr r='Solarus::QuestProperties::release_date' o='512' t='std::string'/>
+<mbr r='Solarus::QuestProperties::website' o='576' t='std::string'/>
+<mbr r='Solarus::QuestProperties::normal_quest_size' o='640' t='Solarus::Size'/>
+<mbr r='Solarus::QuestProperties::min_quest_size' o='704' t='Solarus::Size'/>
+<mbr r='Solarus::QuestProperties::max_quest_size' o='768' t='Solarus::Size'/>

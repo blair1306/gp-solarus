@@ -1,0 +1,88 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h' l='380' ll='682'/>
+<size>80</size>
+<fun r='_ZN9QMetaType23registerStreamOperatorsEPKcPFvR11QDataStreamPKvEPFvS3_PvE'/>
+<fun r='_ZN9QMetaType23registerStreamOperatorsEiPFvR11QDataStreamPKvEPFvS1_PvE'/>
+<fun r='_ZN9QMetaType12registerTypeEPKcPFvPvEPFS2_PKvE'/>
+<fun r='_ZN9QMetaType12registerTypeEPKcPFvPvEPFS2_PKvES4_PFS2_S2_S6_Ei6QFlagsINS_8TypeFlagEEPK11QMetaObject'/>
+<fun r='_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_PKvES5_PFS3_S3_S7_Ei6QFlagsINS_8TypeFlagEEPK11QMetaObject'/>
+<fun r='_ZN9QMetaType15registerTypedefEPKci'/>
+<fun r='_ZN9QMetaType25registerNormalizedTypedefERK10QByteArrayi'/>
+<fun r='_ZN9QMetaType4typeEPKc'/>
+<fun r='_ZN9QMetaType8typeNameEi'/>
+<fun r='_ZN9QMetaType6sizeOfEi'/>
+<fun r='_ZN9QMetaType9typeFlagsEi'/>
+<fun r='_ZN9QMetaType17metaObjectForTypeEi'/>
+<fun r='_ZN9QMetaType12isRegisteredEi'/>
+<fun r='_ZN9QMetaType6createEiPKv'/>
+<fun r='_ZN9QMetaType7destroyEiPv'/>
+<fun r='_ZN9QMetaType9constructEiPvPKv'/>
+<fun r='_ZN9QMetaType8destructEiPv'/>
+<fun r='_ZN9QMetaType4saveER11QDataStreamiPKv'/>
+<fun r='_ZN9QMetaType4loadER11QDataStreamiPv'/>
+<fun r='_ZN9QMetaTypeC1Ei'/>
+<fun r='_ZN9QMetaTypeD1Ev'/>
+<fun r='_ZNK9QMetaType7isValidEv'/>
+<fun r='_ZNK9QMetaType12isRegisteredEv'/>
+<fun r='_ZNK9QMetaType6sizeOfEv'/>
+<fun r='_ZNK9QMetaType5flagsEv'/>
+<fun r='_ZNK9QMetaType10metaObjectEv'/>
+<fun r='_ZNK9QMetaType6createEPKv'/>
+<fun r='_ZNK9QMetaType7destroyEPv'/>
+<fun r='_ZNK9QMetaType9constructEPvPKv'/>
+<fun r='_ZNK9QMetaType8destructEPv'/>
+<fun r='_ZN9QMetaType19registerComparatorsEv'/>
+<fun r='_ZN9QMetaType24hasRegisteredComparatorsEv'/>
+<fun r='_ZN9QMetaType24hasRegisteredComparatorsEi'/>
+<fun r='_ZN9QMetaType27registerDebugStreamOperatorEv'/>
+<fun r='_ZN9QMetaType32hasRegisteredDebugStreamOperatorEv'/>
+<fun r='_ZN9QMetaType32hasRegisteredDebugStreamOperatorEi'/>
+<fun r='_ZN9QMetaType17registerConverterEv'/>
+<fun r='_ZN9QMetaType17registerConverterEMT_KFT0_vE'/>
+<fun r='_ZN9QMetaType17registerConverterEMT_KFT0_PbE'/>
+<fun r='_ZN9QMetaType17registerConverterET1_'/>
+<fun r='_ZN9QMetaType7convertEPKviPvi'/>
+<fun r='_ZN9QMetaType7compareEPKvS1_iPi'/>
+<fun r='_ZN9QMetaType11debugStreamER6QDebugPKvi'/>
+<fun r='_ZN9QMetaType30hasRegisteredConverterFunctionEv'/>
+<fun r='_ZN9QMetaType30hasRegisteredConverterFunctionEii'/>
+<fun r='_ZN9QMetaType8typeInfoEi'/>
+<fun r='_ZN9QMetaTypeC1ENS_13ExtensionFlagEPK18QMetaTypeInterfacePFPvPKvEPFvS4_EPFvR11QDataStreamS6_EPFvSC_S4_EPFS4_S4_S6_ESA_jjiPK11QMetaObject'/>
+<fun r='_ZN9QMetaTypeC1ERKS_'/>
+<fun r='_ZN9QMetaTypeaSERKS_'/>
+<fun r='_ZNK9QMetaType10isExtendedENS_13ExtensionFlagE'/>
+<fun r='_ZN9QMetaType4ctorEPK18QMetaTypeInterface'/>
+<fun r='_ZN9QMetaType4dtorEv'/>
+<fun r='_ZNK9QMetaType12sizeExtendedEv'/>
+<fun r='_ZNK9QMetaType13flagsExtendedEv'/>
+<fun r='_ZNK9QMetaType18metaObjectExtendedEv'/>
+<fun r='_ZNK9QMetaType14createExtendedEPKv'/>
+<fun r='_ZNK9QMetaType15destroyExtendedEPv'/>
+<fun r='_ZNK9QMetaType17constructExtendedEPvPKv'/>
+<fun r='_ZNK9QMetaType16destructExtendedEPv'/>
+<fun r='_ZN9QMetaType26registerComparatorFunctionEPKN9QtPrivate26AbstractComparatorFunctionEi'/>
+<fun r='_ZN9QMetaType35registerDebugStreamOperatorFunctionEPKN9QtPrivate27AbstractDebugStreamFunctionEi'/>
+<fun r='_ZN9QMetaType25registerConverterFunctionEPKN9QtPrivate25AbstractConverterFunctionEii'/>
+<fun r='_ZN9QMetaType27unregisterConverterFunctionEii'/>
+<mbr r='QMetaType::m_creator' o='0' t='Creator'/>
+<mbr r='QMetaType::m_deleter' o='64' t='Deleter'/>
+<mbr r='QMetaType::m_saveOp' o='128' t='SaveOperator'/>
+<mbr r='QMetaType::m_loadOp' o='192' t='LoadOperator'/>
+<mbr r='QMetaType::m_constructor' o='256' t='Constructor'/>
+<mbr r='QMetaType::m_destructor' o='320' t='Destructor'/>
+<mbr r='QMetaType::m_extension' o='384' t='void *'/>
+<mbr r='QMetaType::m_size' o='448' t='uint'/>
+<mbr r='QMetaType::m_typeFlags' o='480' t='uint'/>
+<mbr r='QMetaType::m_extensionFlags' o='512' t='uint'/>
+<mbr r='QMetaType::m_typeId' o='544' t='int'/>
+<mbr r='QMetaType::m_metaObject' o='576' t='const QMetaObject *'/>
+<fun r='_ZN9QMetaTypeC1ENS_13ExtensionFlagEPK18QMetaTypeInterfacePFPvPKvEPFvS4_EPFvR11QDataStreamS6_EPFvSC_S4_EPFS4_S4_S6_ESA_jjiPK11QMetaObject'/>
+<fun r='_ZN9QMetaTypeD1Ev'/>
+<fun r='_ZNK9QMetaType7isValidEv'/>
+<fun r='_ZNK9QMetaType12isRegisteredEv'/>
+<fun r='_ZNK9QMetaType6createEPKv'/>
+<fun r='_ZNK9QMetaType7destroyEPv'/>
+<fun r='_ZNK9QMetaType9constructEPvPKv'/>
+<fun r='_ZNK9QMetaType8destructEPv'/>
+<fun r='_ZNK9QMetaType6sizeOfEv'/>
+<fun r='_ZNK9QMetaType5flagsEv'/>
+<fun r='_ZNK9QMetaType10metaObjectEv'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='218' type='static bool Solarus::InputEvent::is_num_lock_on()'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='376' ll='380' type='static bool Solarus::InputEvent::is_num_lock_on()'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='372'>/**
+ * \brief Returns whether the num lock key is currently active.
+ * \return \c true if the num lock key is currently active.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='119' u='c' c='_ZN7Solarus10LuaContext27input_api_get_key_modifiersEP9lua_State'/>

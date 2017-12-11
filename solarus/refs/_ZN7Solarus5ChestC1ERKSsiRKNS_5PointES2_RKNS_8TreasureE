@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Chest.h' l='48' type='void Solarus::Chest::Chest(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; sprite_name, const Solarus::Treasure &amp; treasure)'/>
+<def f='codebrowser/src/entities/Chest.cpp' l='53' ll='79' type='void Solarus::Chest::Chest(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const std::string &amp; sprite_name, const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/entities/Chest.cpp' l='44'>/**
+ * \brief Creates a new chest with the specified treasure.
+ * \param name Name identifying this chest.
+ * \param layer Layer of the chest to create on the map.
+ * \param xy Coordinates of the chest to create.
+ * \param sprite_name Name of the animation set of the
+ * sprite to create for the chest. It must have animations &quot;open&quot; and &quot;closed&quot;.
+ * \param treasure The treasure in the chest.
+ */</doc>

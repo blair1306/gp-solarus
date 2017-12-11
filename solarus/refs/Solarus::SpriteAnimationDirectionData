@@ -1,0 +1,27 @@
+<def f='codebrowser/include/solarus/SpriteData.h' l='37' ll='76'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/SpriteData.h' l='34'>/**
+ * \brief Stores the properties of a sprite animation direction.
+ */</doc>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionDataC1Ev'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionDataC1ERKNS_5PointERKNS_4SizeE'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionDataC1ERKNS_5PointERKNS_4SizeES3_ii'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData6get_xyEv'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionData6set_xyERKNS_5PointE'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData8get_sizeEv'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionData8set_sizeERKNS_4SizeE'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData10get_originEv'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionData10set_originERKNS_5PointE'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData16get_bounding_boxEv'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData14is_multi_frameEv'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData14get_num_framesEv'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionData14set_num_framesEi'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData15get_num_columnsEv'/>
+<fun r='_ZN7Solarus28SpriteAnimationDirectionData15set_num_columnsEi'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData9get_frameEv'/>
+<fun r='_ZNK7Solarus28SpriteAnimationDirectionData14get_all_framesEv'/>
+<mbr r='Solarus::SpriteAnimationDirectionData::xy' o='0' t='Solarus::Point'/>
+<mbr r='Solarus::SpriteAnimationDirectionData::size' o='64' t='Solarus::Size'/>
+<mbr r='Solarus::SpriteAnimationDirectionData::origin' o='128' t='Solarus::Point'/>
+<mbr r='Solarus::SpriteAnimationDirectionData::num_frames' o='192' t='int'/>
+<mbr r='Solarus::SpriteAnimationDirectionData::num_columns' o='224' t='int'/>

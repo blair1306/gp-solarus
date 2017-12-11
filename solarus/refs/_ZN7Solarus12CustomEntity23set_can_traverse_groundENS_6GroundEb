@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='107' type='void Solarus::CustomEntity::set_can_traverse_ground(Solarus::Ground ground, bool traversable)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='656' ll='659' type='void Solarus::CustomEntity::set_can_traverse_ground(Solarus::Ground ground, bool traversable)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='651'>/**
+ * \brief Sets whether this custom entity can traverse a kind of ground.
+ * \param ground A kind of ground.
+ * \param traversable \c true to make this kind of ground traversable.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5530' u='c' c='_ZN7Solarus10LuaContext41custom_entity_api_set_can_traverse_groundEP9lua_State'/>

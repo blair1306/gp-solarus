@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='243' type='void Solarus::Entity::notify_facing_entity_changed(Solarus::Entity * facing_entity)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1100' u='c' c='_ZN7Solarus6Entity17set_facing_entityEPS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1107' ll='1108' type='void Solarus::Entity::notify_facing_entity_changed(Solarus::Entity * )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1103'>/**
+ * \brief Notifies this entity that its facing entity has just changed.
+ * \param facing_entity The detector this entity is now facing (possibly nullptr).
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1107'>/* facing_entity */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='752' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='95' type='void Solarus::Sprite::set_ignore_suspend(bool ignore_suspend)'/>
+<def f='codebrowser/src/Sprite.cpp' l='528' ll='531' type='void Solarus::Sprite::set_ignore_suspend(bool ignore_suspend)'/>
+<doc f='codebrowser/src/Sprite.cpp' l='520'>/**
+ * \brief Sets whether this sprite should keep playing its animation when the game is suspended.
+ *
+ * This will ignore subsequent calls to set_suspended().
+ *
+ * \param ignore_suspend true to make the sprite continue its animation even
+ * when the game is suspended
+ */</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='49' u='c' c='_ZN7Solarus12CrystalBlockC1ERNS_4GameERKSsiRKNS_5PointERKNS_4SizeENS0_7SubtypeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='89' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3358' u='c' c='_ZN7Solarus6Entity28set_animation_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1003' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1006' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1010' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1014' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1018' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1022' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='577' u='c' c='_ZN7Solarus10LuaContext29sprite_api_set_ignore_suspendEP9lua_State'/>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tileset.h source code [codebrowser/include/solarus/entities/Tileset.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="Solarus::Tileset "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/entities/Tileset.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>entities</a>/<a href='Tileset.h.html'>Tileset.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_TILESET_H">SOLARUS_TILESET_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_TILESET_H" data-ref="_M/SOLARUS_TILESET_H">SOLARUS_TILESET_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../Common.h.html">"solarus/Common.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../lowlevel/Color.h.html">"solarus/lowlevel/Color.h"</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="../lowlevel/SurfacePtr.h.html">"solarus/lowlevel/SurfacePtr.h"</a></u></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="../../../../include/c++/4.9/memory.html">&lt;memory&gt;</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../../../include/c++/4.9/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../../../include/c++/4.9/unordered_map.html">&lt;unordered_map&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>struct</b> <a class="type" href="../lua/LuaData.h.html#lua_State" title='lua_State' data-ref="lua_State" id="lua_State">lua_State</a>;</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <a class="type" href="TilePattern.h.html#Solarus::TilePattern" title='Solarus::TilePattern' data-ref="Solarus::TilePattern" id="Solarus::TilePattern">TilePattern</a>;</td></tr>
+<tr><th id="32">32</th><td><b>class</b> <dfn class="type" id="Solarus::TilePatternData" title='Solarus::TilePatternData' data-ref="Solarus::TilePatternData">TilePatternData</dfn>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * <span class="command">\brief</span> A set of tile patterns that are used to compose a map.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * A tileset represents the skin of a map.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="39">39</th><td><b>class</b> <dfn class="type def" id="Solarus::Tileset" title='Solarus::Tileset' data-ref="Solarus::Tileset">Tileset</dfn> {</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>  <b>public</b>:</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>    <b>explicit</b> <dfn class="decl" id="_ZN7Solarus7TilesetC1ERKSs" title='Solarus::Tileset::Tileset' data-ref="_ZN7Solarus7TilesetC1ERKSs">Tileset</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col8 decl" id="678id" title='id' data-type='const std::string &amp;' data-ref="678id">id</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus7Tileset4loadEv" title='Solarus::Tileset::load' data-ref="_ZN7Solarus7Tileset4loadEv">load</dfn>();</td></tr>
+<tr><th id="46">46</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus7Tileset6unloadEv" title='Solarus::Tileset::unload' data-ref="_ZN7Solarus7Tileset6unloadEv">unload</dfn>();</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>    <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="decl" id="_ZNK7Solarus7Tileset6get_idEv" title='Solarus::Tileset::get_id' data-ref="_ZNK7Solarus7Tileset6get_idEv">get_id</dfn>() <em>const</em>;</td></tr>
+<tr><th id="49">49</th><td>    <em>const</em> <a class="type" href="../lowlevel/Color.h.html#Solarus::Color" title='Solarus::Color' data-ref="Solarus::Color">Color</a>&amp; <dfn class="decl" id="_ZNK7Solarus7Tileset20get_background_colorEv" title='Solarus::Tileset::get_background_color' data-ref="_ZNK7Solarus7Tileset20get_background_colorEv">get_background_color</dfn>() <em>const</em>;</td></tr>
+<tr><th id="50">50</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK7Solarus7Tileset9is_loadedEv" title='Solarus::Tileset::is_loaded' data-ref="_ZNK7Solarus7Tileset9is_loadedEv">is_loaded</dfn>() <em>const</em>;</td></tr>
+<tr><th id="51">51</th><td>    <em>const</em> <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="decl" id="_ZNK7Solarus7Tileset15get_tiles_imageEv" title='Solarus::Tileset::get_tiles_image' data-ref="_ZNK7Solarus7Tileset15get_tiles_imageEv">get_tiles_image</dfn>() <em>const</em>;</td></tr>
+<tr><th id="52">52</th><td>    <em>const</em> <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a>&amp; <dfn class="decl" id="_ZNK7Solarus7Tileset18get_entities_imageEv" title='Solarus::Tileset::get_entities_image' data-ref="_ZNK7Solarus7Tileset18get_entities_imageEv">get_entities_image</dfn>() <em>const</em>;</td></tr>
+<tr><th id="53">53</th><td>    <em>const</em> <a class="type" href="TilePattern.h.html#Solarus::TilePattern" title='Solarus::TilePattern' data-ref="Solarus::TilePattern">TilePattern</a>&amp; <dfn class="decl" id="_ZNK7Solarus7Tileset16get_tile_patternERKSs" title='Solarus::Tileset::get_tile_pattern' data-ref="_ZNK7Solarus7Tileset16get_tile_patternERKSs">get_tile_pattern</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col9 decl" id="679id" title='id' data-type='const std::string &amp;' data-ref="679id">id</dfn>) <em>const</em>;</td></tr>
+<tr><th id="54">54</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus7Tileset10set_imagesERKSs" title='Solarus::Tileset::set_images' data-ref="_ZN7Solarus7Tileset10set_imagesERKSs">set_images</dfn>(<em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col0 decl" id="680other_id" title='other_id' data-type='const std::string &amp;' data-ref="680other_id">other_id</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>  <b>private</b>:</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>    <em>void</em> <dfn class="decl" id="_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE" title='Solarus::Tileset::add_tile_pattern' data-ref="_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE">add_tile_pattern</dfn>(</td></tr>
+<tr><th id="59">59</th><td>        <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>&amp; <dfn class="local col1 decl" id="681id" title='id' data-type='const std::string &amp;' data-ref="681id">id</dfn>,</td></tr>
+<tr><th id="60">60</th><td>        <em>const</em> <a class="type" href="#Solarus::TilePatternData" title='Solarus::TilePatternData' data-ref="Solarus::TilePatternData">TilePatternData</a>&amp; <dfn class="local col2 decl" id="682pattern_data" title='pattern_data' data-type='const Solarus::TilePatternData &amp;' data-ref="682pattern_data">pattern_data</dfn></td></tr>
+<tr><th id="61">61</th><td>    );</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>    <em>const</em> <span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a> <dfn class="decl" id="Solarus::Tileset::id" title='Solarus::Tileset::id' data-ref="Solarus::Tileset::id">id</dfn>;          <i class="doc">/**&lt; Id of the tileset. */</i></td></tr>
+<tr><th id="64">64</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unordered_map.h.html#std::unordered_map" title='std::unordered_map' data-ref="std::unordered_map">unordered_map</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../../../../include/c++/4.9/bits/stringfwd.h.html#std::string" title='std::string' data-type='basic_string&lt;char&gt;' data-ref="std::string">string</a>, <span class="namespace">std::</span><a class="type" href="../../../../include/c++/4.9/bits/unique_ptr.h.html#std::unique_ptr" title='std::unique_ptr' data-ref="std::unique_ptr">unique_ptr</a>&lt;<a class="type" href="TilePattern.h.html#Solarus::TilePattern" title='Solarus::TilePattern' data-ref="Solarus::TilePattern">TilePattern</a>&gt;&gt;</td></tr>
+<tr><th id="65">65</th><td>        <dfn class="decl" id="Solarus::Tileset::tile_patterns" title='Solarus::Tileset::tile_patterns' data-ref="Solarus::Tileset::tile_patterns">tile_patterns</dfn>;             <i class="doc">/**&lt; Tile patterns in this tileset. */</i></td></tr>
+<tr><th id="66">66</th><td>    <a class="type" href="../lowlevel/Color.h.html#Solarus::Color" title='Solarus::Color' data-ref="Solarus::Color">Color</a> <dfn class="decl" id="Solarus::Tileset::background_color" title='Solarus::Tileset::background_color' data-ref="Solarus::Tileset::background_color">background_color</dfn>;        <i class="doc">/**&lt; Background color of the tileset. */</i></td></tr>
+<tr><th id="67">67</th><td>    <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a> <dfn class="decl" id="Solarus::Tileset::tiles_image" title='Solarus::Tileset::tiles_image' data-ref="Solarus::Tileset::tiles_image">tiles_image</dfn>;        <i class="doc">/**&lt; Image from which the tile patterns are extracted. */</i></td></tr>
+<tr><th id="68">68</th><td>    <a class="typedef" href="../lowlevel/SurfacePtr.h.html#Solarus::SurfacePtr" title='Solarus::SurfacePtr' data-type='std::shared_ptr&lt;Surface&gt;' data-ref="Solarus::SurfacePtr">SurfacePtr</a> <dfn class="decl" id="Solarus::Tileset::entities_image" title='Solarus::Tileset::entities_image' data-ref="Solarus::Tileset::entities_image">entities_image</dfn>;     <i class="doc">/**&lt; Image from which the tileset-dependent sprites are</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc">                                    * extracted (optional, nullptr if none). */</i></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>};</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>}</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../gui/src/main.cpp.html'>codebrowser/gui/src/main.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

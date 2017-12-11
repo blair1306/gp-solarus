@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/ItDecoder.h' l='41' type='int Solarus::ItDecoder::decode(void * decoded_data, int nb_samples)'/>
+<def f='codebrowser/src/lowlevel/ItDecoder.cpp' l='72' ll='76' type='int Solarus::ItDecoder::decode(void * decoded_data, int nb_samples)'/>
+<doc f='codebrowser/src/lowlevel/ItDecoder.cpp' l='66'>/**
+ * \brief Decodes a chunk of the previously loaded IT data into PCM data.
+ * \param decoded_data Pointer to where you want the decoded data to be written.
+ * \param nb_samples Number of samples to write.
+ * \return The number of bytes read, or 0 if the end is reached.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='469' u='c' c='_ZN7Solarus5Music9decode_itEji'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='39' type='bool Solarus::LuaData::export_to_lua(std::ostream &amp; out) const'/>
+<doc f='codebrowser/include/solarus/lua/LuaData.h' l='39'>// Optional.</doc>
+<ovr f='codebrowser/src/DialogResources.cpp' l='306' c='_ZNK7Solarus15DialogResources13export_to_luaERSo'/>
+<ovr f='codebrowser/src/EntityData.cpp' l='871' c='_ZNK7Solarus10EntityData13export_to_luaERSo'/>
+<ovr f='codebrowser/src/MapData.cpp' l='909' c='_ZNK7Solarus7MapData13export_to_luaERSo'/>
+<ovr f='codebrowser/src/QuestProperties.cpp' l='152' c='_ZNK7Solarus15QuestProperties13export_to_luaERSo'/>
+<ovr f='codebrowser/src/QuestResources.cpp' l='256' c='_ZNK7Solarus14QuestResources13export_to_luaERSo'/>
+<ovr f='codebrowser/src/SpriteData.cpp' l='694' c='_ZNK7Solarus10SpriteData13export_to_luaERSo'/>
+<ovr f='codebrowser/src/StringResources.cpp' l='189' c='_ZNK7Solarus15StringResources13export_to_luaERSo'/>
+<ovr f='codebrowser/src/entities/TilesetData.cpp' l='628' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='116' u='c' c='_ZNK7Solarus7LuaData16export_to_bufferERSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='140' u='c' c='_ZNK7Solarus7LuaData14export_to_fileERKSs'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='177' ll='181' type='bool Solarus::LuaData::export_to_lua(std::ostream &amp; ) const'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='171'>/**
+ * \brief Saves this data as Lua into a stream.
+ * \param out The stream to write.
+ * \return \c true in case of success, \c false if the data
+ * could not be exported.
+ */</doc>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='177'>/* out */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='86' type='const std::string &amp; Solarus::Door::get_savegame_variable() const'/>
+<use f='codebrowser/src/entities/Door.cpp' l='280' u='c' c='_ZNK7Solarus4Door8is_savedEv'/>
+<def f='codebrowser/src/entities/Door.cpp' l='288' ll='290' type='const std::string &amp; Solarus::Door::get_savegame_variable() const'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='283'>/**
+ * \brief Returns the name of the boolean saved variable that stores the
+ * state of this door.
+ * \return The savegame variable, or an empty string if this door is not saved.
+ */</doc>

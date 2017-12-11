@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='58' type='bool Solarus::Treasure::is_empty() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='149' ll='151' type='bool Solarus::Treasure::is_empty() const'/>
+<doc f='codebrowser/src/Treasure.cpp' l='145'>/**
+ * \brief Returns whether this treasure is empty.
+ * \return \c true if this treasure is empty.
+ */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='396' u='c' c='_ZN7Solarus5Chest6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='112' u='c' c='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3100' u='c' c='_ZN7Solarus10LuaContext22chest_api_get_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2456' u='c' c='_ZN7Solarus10LuaContext9on_openedERKNS_8TreasureE'/>

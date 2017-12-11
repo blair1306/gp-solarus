@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1276' type='void Solarus::LuaContext::on_ability_used(Solarus::Ability ability)'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='1001' u='c' c='_ZN7Solarus10LuaContext20item_on_ability_usedERNS_13EquipmentItemENS_7AbilityE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2607' ll='2613' type='void Solarus::LuaContext::on_ability_used(Solarus::Ability ability)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2603'>/**
+ * \brief Calls the on_ability_used() method of the object on top of the stack.
+ * \param ability A built-in ability.
+ */</doc>

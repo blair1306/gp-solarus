@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='83' type='void Solarus::HeroSprites::set_animation_direction8(int direction)'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='764' ll='769' type='void Solarus::HeroSprites::set_animation_direction8(int direction)'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='754'>/**
+ * \brief Changes the direction of the hero&apos;s sprites.
+ *
+ * The direction specified is one of the 8 possible movement directions of the hero.
+ * The hero&apos;s sprites only have four directions, so when
+ * the specified direction is a diagonal one,
+ * one of the two closest main directions is picked.
+ *
+ * \param direction the movement direction (0 to 7)
+ */</doc>
+<use f='codebrowser/src/hero/JumpingState.cpp' l='70' u='c' c='_ZN7Solarus4Hero12JumpingState5startEPKNS_6Entity5StateE'/>

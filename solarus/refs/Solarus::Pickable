@@ -1,0 +1,40 @@
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='84' c='Solarus::Entity'/>
+<def f='codebrowser/include/solarus/entities/Pickable.h' l='35' ll='117'/>
+<size>384</size>
+<doc f='codebrowser/include/solarus/entities/Pickable.h' l='32'>/**
+ * \brief An treasure placed on the ground and that the hero can take.
+ */</doc>
+<smbr r='Solarus::Pickable::ThisType' t='const Solarus::EntityType'/>
+<fun r='_ZN7Solarus8PickableC1ERKSsiRKNS_5PointERKNS_8TreasureE'/>
+<fun r='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>
+<fun r='_ZNK7Solarus8Pickable8get_typeEv'/>
+<fun r='_ZNK7Solarus8Pickable18is_ground_observerEv'/>
+<fun r='_ZN7Solarus8Pickable14notify_createdEv'/>
+<fun r='_ZNK7Solarus8Pickable10is_fallingEv'/>
+<fun r='_ZNK7Solarus8Pickable18get_falling_heightEv'/>
+<fun r='_ZNK7Solarus8Pickable12get_treasureEv'/>
+<fun r='_ZN7Solarus8Pickable13set_suspendedEb'/>
+<fun r='_ZN7Solarus8Pickable19get_entity_followedEv'/>
+<fun r='_ZN7Solarus8Pickable18is_stream_obstacleERNS_6StreamE'/>
+<fun r='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<fun r='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<fun r='_ZN7Solarus8Pickable6updateEv'/>
+<fun r='_ZN7Solarus8Pickable11draw_on_mapEv'/>
+<fun r='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<fun r='_ZN7Solarus8Pickable19initialize_movementEv'/>
+<fun r='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<fun r='_ZN7Solarus8Pickable12set_blinkingEb'/>
+<fun r='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<mbr r='Solarus::Pickable::treasure' o='2048' t='Solarus::Treasure'/>
+<mbr r='Solarus::Pickable::given_to_player' o='2304' t='bool'/>
+<mbr r='Solarus::Pickable::item_sprite' o='2368' t='SpritePtr'/>
+<mbr r='Solarus::Pickable::shadow_sprite' o='2496' t='SpritePtr'/>
+<mbr r='Solarus::Pickable::falling_height' o='2624' t='Solarus::FallingHeight'/>
+<mbr r='Solarus::Pickable::will_disappear' o='2656' t='bool'/>
+<mbr r='Solarus::Pickable::shadow_xy' o='2688' t='Solarus::Point'/>
+<mbr r='Solarus::Pickable::appear_date' o='2752' t='uint32_t'/>
+<mbr r='Solarus::Pickable::allow_pick_date' o='2784' t='uint32_t'/>
+<mbr r='Solarus::Pickable::can_be_picked' o='2816' t='bool'/>
+<mbr r='Solarus::Pickable::blink_date' o='2848' t='uint32_t'/>
+<mbr r='Solarus::Pickable::disappear_date' o='2880' t='uint32_t'/>
+<mbr r='Solarus::Pickable::entity_followed' o='2944' t='EntityPtr'/>

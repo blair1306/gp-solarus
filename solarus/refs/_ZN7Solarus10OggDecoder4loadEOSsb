@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/OggDecoder.h' l='36' type='bool Solarus::OggDecoder::load(std::string &amp;&amp; ogg_data, bool loop)'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='563' u='c' c='_ZN7Solarus5Music5startEv'/>
+<def f='codebrowser/src/lowlevel/OggDecoder.cpp' l='44' ll='99' type='bool Solarus::OggDecoder::load(std::string &amp;&amp; ogg_data, bool loop)'/>
+<doc f='codebrowser/src/lowlevel/OggDecoder.cpp' l='38'>/**
+ * \brief Loads an OGG file from the memory.
+ * \param ogg_data The memory area to read.
+ * \param loop Whether the music should loop if reaching the end.
+ * \return \c true in case of success.
+ */</doc>

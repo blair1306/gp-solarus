@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='106' type='bool Solarus::CustomEntity::can_traverse_ground(Solarus::Ground ground) const'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='611' ll='649' type='bool Solarus::CustomEntity::can_traverse_ground(Solarus::Ground ground) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='680' u='c' c='_ZNK7Solarus12CustomEntity23is_traversable_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='688' u='c' c='_ZNK7Solarus12CustomEntity16is_wall_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='696' u='c' c='_ZNK7Solarus12CustomEntity20is_low_wall_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='704' u='c' c='_ZNK7Solarus12CustomEntity17is_grass_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='712' u='c' c='_ZNK7Solarus12CustomEntity25is_shallow_water_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='720' u='c' c='_ZNK7Solarus12CustomEntity22is_deep_water_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='728' u='c' c='_ZNK7Solarus12CustomEntity16is_hole_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='736' u='c' c='_ZNK7Solarus12CustomEntity15is_ice_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='744' u='c' c='_ZNK7Solarus12CustomEntity16is_lava_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='752' u='c' c='_ZNK7Solarus12CustomEntity19is_prickle_obstacleEv'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='760' u='c' c='_ZNK7Solarus12CustomEntity18is_ladder_obstacleEv'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='606'>/**
+ * \brief Returns whether this custom entity can traverse a kind of ground.
+ * \param ground A kind of ground.
+ * \return \c true if this custom entity can traverse this kind of ground.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5504' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_can_traverse_groundEP9lua_State'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='36' type='void Solarus::SimpleTilePattern::SimpleTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<use f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='31' u='c' c='_ZN7Solarus28ParallaxScrollingTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/SelfScrollingTilePattern.cpp' l='30' u='c' c='_ZN7Solarus24SelfScrollingTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<def f='codebrowser/src/entities/SimpleTilePattern.cpp' l='30' ll='34' type='void Solarus::SimpleTilePattern::SimpleTilePattern(Solarus::Ground ground, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/SimpleTilePattern.cpp' l='24'>/**
+ * \brief Creates a simple tile pattern.
+ * \param ground Kind of the of the tile pattern.
+ * \param xy Coordinates of the tile pattern in the tileset.
+ * \param size Size of the tile pattern in the tileset.
+ */</doc>
+<use f='codebrowser/src/entities/Tileset.cpp' l='87' u='c' c='_ZN7Solarus7Tileset16add_tile_patternERKSsRKNS_15TilePatternDataE'/>
+<use f='codebrowser/src/entities/TimeScrollingTilePattern.cpp' l='35' u='c' c='_ZN7Solarus24TimeScrollingTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>

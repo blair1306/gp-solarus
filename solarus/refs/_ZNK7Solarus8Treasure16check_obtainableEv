@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='62' type='void Solarus::Treasure::check_obtainable() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='66' ll='72' type='void Solarus::Treasure::check_obtainable() const'/>
+<use f='codebrowser/src/Treasure.cpp' l='170' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<doc f='codebrowser/src/Treasure.cpp' l='63'>/**
+ * \brief Raises an assertion error if the player cannot obtain this treasure.
+ */</doc>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='49' u='c' c='_ZN7Solarus4Hero13TreasureStateC1ERS0_RKNS_8TreasureERKNS_12ScopedLuaRefE'/>

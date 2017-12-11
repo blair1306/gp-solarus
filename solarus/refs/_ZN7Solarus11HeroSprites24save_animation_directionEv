@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='87' type='void Solarus::HeroSprites::save_animation_direction()'/>
+<use f='codebrowser/src/hero/FallingState.cpp' l='45' u='c' c='_ZN7Solarus4Hero12FallingState5startEPKNS_6Entity5StateE'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='792' ll='794' type='void Solarus::HeroSprites::save_animation_direction()'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='787'>/**
+ * \brief Saves the current direction of the the sprite.
+ *
+ * Call restore_animation_direction() to restore the direction saved here.
+ */</doc>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='62' u='c' c='_ZN7Solarus4Hero13TreasureState5startEPKNS_6Entity5StateE'/>

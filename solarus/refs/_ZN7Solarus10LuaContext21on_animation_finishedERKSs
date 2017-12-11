@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1234' type='void Solarus::LuaContext::on_animation_finished(const std::string &amp; animation)'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2046' ll='2052' type='void Solarus::LuaContext::on_animation_finished(const std::string &amp; animation)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2042'>/**
+ * \brief Calls the on_animation_finished() method of the object on top of the stack.
+ * \param animation Name of the animation finished.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='621' u='c' c='_ZN7Solarus10LuaContext28sprite_on_animation_finishedERNS_6SpriteERKSs'/>

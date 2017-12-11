@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='135' type='bool Solarus::Entity::State::can_use_shield() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1067' ll='1069' type='bool Solarus::Entity::State::can_use_shield() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1060'>/**
+ * \brief Returns whether attack can be stopped with a shield in this state.
+ *
+ * Returns \c true by default.
+ *
+ * \return \c true if the shield is active is this state.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2547' u='c' c='_ZNK7Solarus4Hero14can_use_shieldEv'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='199' c='_ZNK7Solarus4Hero13CarryingState14can_use_shieldEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='180' c='_ZNK7Solarus4Hero17SwordLoadingState14can_use_shieldEv'/>
+<ovr f='codebrowser/src/hero/SwordSwingingState.cpp' l='137' c='_ZNK7Solarus4Hero18SwordSwingingState14can_use_shieldEv'/>
+<ovr f='codebrowser/src/hero/SwordTappingState.cpp' l='156' c='_ZNK7Solarus4Hero17SwordTappingState14can_use_shieldEv'/>

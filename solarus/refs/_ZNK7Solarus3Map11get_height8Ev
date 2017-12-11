@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Map.h' l='77' type='int Solarus::Map::get_height8() const'/>
+<def f='codebrowser/src/Map.cpp' l='213' ll='215' type='int Solarus::Map::get_height8() const'/>
+<doc f='codebrowser/src/Map.cpp' l='206'>/**
+ * \brief Returns the map height in number of 8*8 squares.
+ *
+ * This is equivalent to get_height() / 8.
+ *
+ * \return the map height in number of 8*8 squares
+ */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='163' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='164' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='63' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='149' u='c' c='_ZNK7Solarus18NonAnimatedRegions22overlaps_animated_tileERKNS_8TileInfoE'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='285' type='bool Solarus::InputEvent::get_mouse_position(Solarus::Point &amp; mouse_xy) const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='1206' ll='1212' type='bool Solarus::InputEvent::get_mouse_position(Solarus::Point &amp; mouse_xy) const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='1199'>/**
+ * \brief Gets the x and y position of this mouse event, if any.
+ * Values are in quest size coordinates.
+ * \param[out] mouse_xy The x and y position of the mouse in this mouse event.
+ * \return \c false if the mouse was not inside the quest displaying during
+ * this event.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1827' u='c' c='_ZN7Solarus10LuaContext23on_mouse_button_pressedERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1868' u='c' c='_ZN7Solarus10LuaContext24on_mouse_button_releasedERKNS_10InputEventE'/>

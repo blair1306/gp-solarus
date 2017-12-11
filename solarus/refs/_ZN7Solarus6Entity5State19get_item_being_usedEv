@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='127' type='Solarus::EquipmentItemUsage &amp; Solarus::Entity::State::get_item_being_used()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='969' ll='972' type='Solarus::EquipmentItemUsage &amp; Solarus::Entity::State::get_item_being_used()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='965'>/**
+ * \brief When the entity is using an equipment item, returns that item.
+ * \return The current equipment item.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='2314' u='c' c='_ZN7Solarus4Hero19get_item_being_usedEv'/>
+<ovr f='codebrowser/src/hero/UsingItemState.cpp' l='87' c='_ZN7Solarus4Hero14UsingItemState19get_item_being_usedEv'/>

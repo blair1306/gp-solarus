@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1219' type='bool Solarus::LuaContext::on_input(const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1785' u='c' c='_ZN7Solarus10LuaContext13game_on_inputERNS_4GameERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1541' ll='1595' type='bool Solarus::LuaContext::on_input(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1536'>/**
+ * \brief Calls an input callback method of the object on top of the stack.
+ * \param event The input event to forward.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='462' u='c' c='_ZN7Solarus10LuaContext13main_on_inputERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2267' u='c' c='_ZN7Solarus10LuaContext12map_on_inputERNS_3MapERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='351' u='c' c='_ZN7Solarus10LuaContext13menu_on_inputERKNS_12ScopedLuaRefERKNS_10InputEventE'/>

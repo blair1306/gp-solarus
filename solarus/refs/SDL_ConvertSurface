@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_surface.h' l='359' type='SDL_Surface * SDL_ConvertSurface(SDL_Surface * src, const SDL_PixelFormat * fmt, Uint32 flags)'/>
+<doc f='include/SDL2/SDL_surface.h' l='349'>/**
+ *  Creates a new surface of the specified format, and then copies and maps
+ *  the given surface to it so the blit of the converted surface will be as
+ *  fast as possible.  If this function fails, it returns NULL.
+ *
+ *  The \c flags parameter is passed to SDL_CreateRGBSurface() and has those
+ *  semantics.  You can also pass ::SDL_RLEACCEL in the flags parameter and
+ *  SDL will try to RLE accelerate colorkey and alpha blits in the resulting
+ *  surface.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='144' u='c' c='_ZN7Solarus7SurfaceC1EP11SDL_Surface'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='250' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='399' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>

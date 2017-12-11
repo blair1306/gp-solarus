@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/SpriteAnimation.h' l='50' type='int Solarus::SpriteAnimation::get_next_frame(int current_direction, int current_frame) const'/>
+<use f='codebrowser/src/Sprite.cpp' l='255' u='c' c='_ZNK7Solarus6Sprite14get_next_frameEv'/>
+<def f='codebrowser/src/SpriteAnimation.cpp' l='112' ll='134' type='int Solarus::SpriteAnimation::get_next_frame(int current_direction, int current_frame) const'/>
+<doc f='codebrowser/src/SpriteAnimation.cpp' l='105'>/**
+ * \brief Returns the next frame of the current frame.
+ * \param current_direction the current direction
+ * \param current_frame the current frame
+ * \return the next frame of the current frame in this direction
+ * (or -1 if the animation is over)
+ */</doc>

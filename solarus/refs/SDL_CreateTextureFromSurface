@@ -1,0 +1,14 @@
+<dec f='include/SDL2/SDL_render.h' l='258' type='SDL_Texture * SDL_CreateTextureFromSurface(SDL_Renderer * renderer, SDL_Surface * surface)'/>
+<doc f='include/SDL2/SDL_render.h' l='245'>/**
+ *  \brief Create a texture from an existing surface.
+ *
+ *  \param renderer The renderer.
+ *  \param surface The surface containing pixel data used to fill the texture.
+ *
+ *  \return The created texture is returned, or 0 on error.
+ *
+ *  \note The surface is not modified or freed by this function.
+ *
+ *  \sa SDL_QueryTexture()
+ *  \sa SDL_DestroyTexture()
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='854' type='static int Solarus::LuaContext::entity_api_set_layer_independent_collisions(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='384' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='472' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='516' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='1599' ll='1609' type='static int Solarus::LuaContext::entity_api_set_layer_independent_collisions(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='1592'>/**
+ * \brief Implementation of
+ * pickable:set_layer_independent_collisions() and
+ * enemy:set_layer_independent_collisions().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

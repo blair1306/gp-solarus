@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Switch.h' l='73' type='void Solarus::Switch::activate()'/>
+<def f='codebrowser/src/entities/Switch.cpp' l='143' ll='155' type='void Solarus::Switch::activate()'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='303' u='c' c='_ZN7Solarus6Switch12try_activateERNS_4HeroE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='320' u='c' c='_ZN7Solarus6Switch12try_activateERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='337' u='c' c='_ZN7Solarus6Switch12try_activateERNS_5ArrowE'/>
+<use f='codebrowser/src/entities/Switch.cpp' l='351' u='c' c='_ZN7Solarus6Switch12try_activateEv'/>
+<doc f='codebrowser/src/entities/Switch.cpp' l='138'>/**
+ * \brief Activates the switch, playing a sound and notifying the map script.
+ *
+ * This function does nothing if the switch is locked or already activated.
+ */</doc>

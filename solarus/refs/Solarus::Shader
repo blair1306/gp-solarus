@@ -1,0 +1,23 @@
+<def f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='32' ll='66'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/lowlevel/shaders/Shader.h' l='29'>/**
+ * \brief Represents a shader for a driver and sampler-independant uses.
+ */</doc>
+<fun r='_ZN7Solarus6ShaderC1ERKSs'/>
+<fun r='_ZN7Solarus6ShaderD1Ev'/>
+<fun r='_ZN7Solarus6Shader28set_shading_language_versionERKSs'/>
+<fun r='_ZN7Solarus6Shader16get_sampler_typeEv'/>
+<fun r='_ZN7Solarus6Shader10reset_timeEv'/>
+<fun r='_ZN7Solarus6Shader8get_nameEv'/>
+<fun r='_ZN7Solarus6Shader24get_default_window_scaleEv'/>
+<fun r='_ZN7Solarus6Shader8is_validEv'/>
+<fun r='_ZNK7Solarus6Shader6renderERKSt10shared_ptrINS_7SurfaceEE'/>
+<fun r='_ZN7Solarus6Shader4loadERKSs'/>
+<fun r='_ZN7Solarus6Shader17register_callbackEP9lua_State'/>
+<smbr r='Solarus::Shader::shading_language_version' t='std::string'/>
+<smbr r='Solarus::Shader::sampler_type' t='std::string'/>
+<smbr r='Solarus::Shader::display_time' t='int'/>
+<mbr r='Solarus::Shader::shader_name' o='64' t='std::string'/>
+<mbr r='Solarus::Shader::default_window_scale' o='128' t='double'/>
+<mbr r='Solarus::Shader::is_shader_valid' o='192' t='bool'/>
+<fun r='_ZN7Solarus6Shader13load_lua_fileERKSs'/>

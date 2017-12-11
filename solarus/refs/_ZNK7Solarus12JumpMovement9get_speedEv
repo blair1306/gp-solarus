@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='41' type='int Solarus::JumpMovement::get_speed() const'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1750' u='c' c='_ZN7Solarus10LuaContext27jump_movement_api_get_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='121' ll='123' type='int Solarus::JumpMovement::get_speed() const'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='117'>/**
+ * \brief Returns the speed of the movement.
+ * \return the speed in pixels per second
+ */</doc>

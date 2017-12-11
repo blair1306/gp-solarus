@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='280' type='void Solarus::LuaContext::menu_on_started(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='279'>// Menu events.</doc>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='80' u='c' c='_ZN7Solarus10LuaContext8add_menuERKNS_12ScopedLuaRefEib'/>
+<def f='codebrowser/src/lua/MenuApi.cpp' l='286' ll='291' type='void Solarus::LuaContext::menu_on_started(const Solarus::ScopedLuaRef &amp; menu_ref)'/>
+<doc f='codebrowser/src/lua/MenuApi.cpp' l='282'>/**
+ * \brief Calls the on_started() method of a Lua menu.
+ * \param menu_ref A reference to the menu object.
+ */</doc>

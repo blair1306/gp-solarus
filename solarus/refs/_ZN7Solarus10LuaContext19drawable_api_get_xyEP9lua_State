@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='546' type='static int Solarus::LuaContext::drawable_api_get_xy(lua_State * )'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='290' ll='299' type='static int Solarus::LuaContext::drawable_api_get_xy(lua_State * l)'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='285'>/**
+ * \brief Implementation of drawable:get_xy().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='67' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='57' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='91' u='r' c='_ZN7Solarus10LuaContext28register_text_surface_moduleEv'/>

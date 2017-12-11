@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='180' type='static void Solarus::LuaContext::push_ref(lua_State * l, const Solarus::ScopedLuaRef &amp; ref)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2489' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5189' u='c' c='_ZN7Solarus10LuaContext42do_custom_entity_traversable_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5224' u='c' c='_ZN7Solarus10LuaContext40do_custom_entity_collision_test_functionERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5256' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5286' u='c' c='_ZN7Solarus10LuaContext35do_custom_entity_collision_callbackERKNS_12ScopedLuaRefERNS_12CustomEntityERNS_6EntityERNS_6SpriteES9_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='419' u='c' c='_ZN7Solarus10LuaContext22notify_dialog_finishedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefES8_'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='421' u='c' c='_ZN7Solarus10LuaContext22notify_dialog_finishedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefES8_'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='472' ll='481' type='static void Solarus::LuaContext::push_ref(lua_State * l, const Solarus::ScopedLuaRef &amp; ref)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1495' u='c' c='_ZN7Solarus10LuaContext17on_dialog_startedERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='464'>/**
+ * \brief Pushes onto the stack a Lua value from its reference.
+ *
+ * Pushes nil if the reference is empty.
+ *
+ * \param l A Lua state.
+ * \param ref Reference to a Lua value.
+ */</doc>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='217' u='c' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='267' u='c' c='_ZN7Solarus10LuaContext19menu_api_is_startedEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='288' u='c' c='_ZN7Solarus10LuaContext15menu_on_startedERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='299' u='c' c='_ZN7Solarus10LuaContext16menu_on_finishedERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='312' u='c' c='_ZN7Solarus10LuaContext14menu_on_updateERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='327' u='c' c='_ZN7Solarus10LuaContext12menu_on_drawERKNS_12ScopedLuaRefERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='344' u='c' c='_ZN7Solarus10LuaContext13menu_on_inputERKNS_12ScopedLuaRefERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='370' u='c' c='_ZN7Solarus10LuaContext23menu_on_command_pressedERKNS_12ScopedLuaRefENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='395' u='c' c='_ZN7Solarus10LuaContext24menu_on_command_releasedERKNS_12ScopedLuaRefENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='314' u='c' c='_ZN7Solarus10LuaContext17do_timer_callbackERKSt10shared_ptrINS_5TimerEE'/>

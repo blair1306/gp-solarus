@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='213' type='static void Solarus::InputEvent::set_key_repeat(bool repeat)'/>
+<doc f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='212'>// global information</doc>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='319' ll='321' type='static void Solarus::InputEvent::set_key_repeat(bool repeat)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='312'>/**
+ * \brief Sets the keyboard repeat preferences.
+ *
+ * If true, the delay and the interval are set from the OS&apos;s settings.
+ *
+ * \param repeat true to accept repeated keyboard event.
+ */</doc>

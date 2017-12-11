@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Settings.h' l='47' type='std::pair&lt;bool, bool&gt; Solarus::Settings::get_boolean(const std::string &amp; key)'/>
+<def f='codebrowser/src/Settings.cpp' l='87' ll='95' type='std::pair&lt;bool, bool&gt; Solarus::Settings::get_boolean(const std::string &amp; key)'/>
+<use f='codebrowser/src/Settings.cpp' l='324' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<use f='codebrowser/src/Settings.cpp' l='356' u='c' c='_ZN7Solarus8Settings14apply_to_questEv'/>
+<doc f='codebrowser/src/Settings.cpp' l='82'>/**
+ * \brief Returns a boolean value if any.
+ * \param key Key of the entry to get.
+ * \return The value if any and a boolean indicating if it exists.
+ */</doc>

@@ -1,0 +1,76 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='442' ll='444' type='void std::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;()'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='439'>/**
+       *  @brief  Default constructor creates an empty string.
+       */</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1232' u='c' c='_ZNK7QString12toStdWStringEv'/>
+<use f='include/c++/4.9/bits/locale_facets.tcc' l='205' u='c' c='_ZNKSt7num_get16_M_extract_floatET0_S0_RSt8ios_baseRSt12_Ios_IostateRSs'/>
+<use f='include/c++/4.9/bits/locale_facets.tcc' l='461' u='c' c='_ZNKSt7num_get14_M_extract_intET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
+<use f='include/c++/4.9/bits/locale_facets.tcc' l='689' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/4.9/bits/locale_facets.tcc' l='704' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/4.9/bits/locale_facets.tcc' l='736' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='218' u='c' c='_ZN7Solarus12CurrentQuest12get_languageEv'/>
+<use f='codebrowser/include/solarus/lua/LuaTools.inl' l='158' u='c' c='_ZN7Solarus8LuaTools10check_enumEP9lua_StateiRKSt3mapIT_SsSt4lessIS4_ESaISt4pairIKS4_SsEEE'/>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='142' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/DialogResources.cpp' l='255' u='c' c='_ZN7Solarus15DialogResources8l_dialogEP9lua_State'/>
+<use f='codebrowser/src/EntityData.cpp' l='307' u='c' c='_ZN7Solarus10EntityData10FieldValueC1Ev'/>
+<use f='codebrowser/src/EntityData.cpp' l='342' u='c' c='_ZN7Solarus10EntityData10FieldValueC1Ei'/>
+<use f='codebrowser/src/EntityData.cpp' l='353' u='c' c='_ZN7Solarus10EntityData10FieldValueC1Eb'/>
+<use f='codebrowser/src/EntityData.cpp' l='381' u='c' c='_ZN7Solarus10EntityDataC1Ev'/>
+<use f='codebrowser/src/EntityData.cpp' l='395' u='c' c='_ZN7Solarus10EntityDataC1ENS_10EntityTypeE'/>
+<use f='codebrowser/src/EntityData.cpp' l='779' u='c' c='_ZN7Solarus10EntityData17check_entity_dataEP9lua_StateiNS_10EntityTypeE'/>
+<use f='codebrowser/src/GameCommands.cpp' l='574' u='c' c='_ZNK7Solarus12GameCommands18get_joypad_bindingENS_11GameCommandE'/>
+<use f='codebrowser/src/MainLoop.cpp' l='544' u='c' c='_ZN7Solarus8MainLoop22initialize_lua_consoleEv'/>
+<use f='codebrowser/src/MapData.cpp' l='33' u='c' c='_ZN7Solarus7MapDataC1Ev'/>
+<use f='codebrowser/src/MapData.cpp' l='36' u='c' c='_ZN7Solarus7MapDataC1Ev'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='62' u='c' c='_ZN7Solarus12DestructibleC1ERKSsiRKNS_5PointES2_RKNS_8TreasureENS_6GroundE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='78' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='80' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='97' u='c' c='_ZN7Solarus5EnemyC1ERNS_4GameERKSsiRKNS_5PointES4_RKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='71' u='c' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1254' u='c' c='_ZNK7Solarus6Entity10get_spriteERKSs'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='206' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='183' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='251' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='370' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1597' u='c' c='_ZN7Solarus11HeroSprites13create_groundENS_6GroundE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='105' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='292' u='c' c='_ZN7Solarus5Music6existsERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='531' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='45' u='c'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='51' u='c'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='57' u='c'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='257' u='c' c='_ZN7Solarus10QuestFiles16data_file_existsERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='282' u='c' c='_ZN7Solarus10QuestFiles14data_file_readERKSsb'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='499' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='215' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='379' u='c' c='_ZNK7Solarus7Surface10get_pixelsEv'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='73' u='c' c='_ZN7Solarus11TextSurfaceC1EiiNS0_19HorizontalAlignmentENS0_17VerticalAlignmentE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='45' u='c'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2848' u='c' c='_ZN7Solarus10LuaContext29teletransporter_api_set_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3128' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3130' u='c' c='_ZN7Solarus10LuaContext22chest_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4032' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4032' u='c' c='_ZN7Solarus10LuaContext29destructible_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4090' u='c' c='_ZN7Solarus10LuaContext38destructible_api_set_destruction_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4912' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4912' u='c' c='_ZN7Solarus10LuaContext22enemy_api_set_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/FileApi.cpp' l='72' u='c' c='_ZN7Solarus10LuaContext13file_api_openEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1276' u='c' c='_ZN7Solarus10LuaContext27game_api_get_command_effectEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='203' u='c' c='_ZN7Solarus10LuaContext30item_api_set_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='251' u='c' c='_ZN7Solarus10LuaContext37item_api_set_amount_savegame_variableEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='427' u='c' c='_ZN7Solarus10LuaContext19item_api_set_shadowEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='468' u='c' c='_ZN7Solarus10LuaContext30item_api_set_sound_when_pickedEP9lua_State'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='509' u='c' c='_ZN7Solarus10LuaContext34item_api_set_sound_when_brandishedEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='121' u='c' c='_ZN7Solarus10LuaContext30language_api_get_language_nameEP9lua_State'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='802' u='c' c='_ZN7Solarus10LuaContext17print_lua_versionEv'/>
+<use f='codebrowser/src/lua/MainApi.cpp' l='355' u='c' c='_ZN7Solarus10LuaContext17main_api_get_typeEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='382' u='c' c='_ZN7Solarus12_GLOBAL__N_126entity_creation_check_enumEP9lua_StateiRKNS_10EntityDataERKSsRKSt3mapIT_SsSt4lessIS9_ESaISt4pairIKS9_SsEEE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1455' u='c' c='_ZN7Solarus10LuaContext17map_api_set_worldEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='438' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_set_textEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='87' u='c' c='_ZN7Solarus11PathFinding12compute_pathEv'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='46' u='c' c='_ZN12_GLOBAL__N_113check_stringsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/LanguageData.cpp' l='74' u='c' c='_ZN12_GLOBAL__N_113check_dialogsERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='35' u='c' c='_ZN12_GLOBAL__N_112check_entityERKN7Solarus10EntityDataE'/>
+<use f='codebrowser/tests/src/tests/MapData.cpp' l='66' u='c' c='_ZN12_GLOBAL__N_19check_mapERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/SpriteData.cpp' l='45' u='c' c='_ZN12_GLOBAL__N_112check_spriteERN7Solarus15TestEnvironmentERKSs'/>
+<use f='codebrowser/tests/src/tests/TilesetData.cpp' l='44' u='c' c='_ZN12_GLOBAL__N_113check_tilesetERN7Solarus15TestEnvironmentERKSs'/>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>qfile.h source code [include/x86_64-linux-gnu/qt5/QtCore/qfile.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="QFile "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/x86_64-linux-gnu/qt5/QtCore/qfile.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>include</a>/<a href='../..'>x86_64-linux-gnu</a>/<a href='..'>qt5</a>/<a href='./'>QtCore</a>/<a href='qfile.h.html'>qfile.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/****************************************************************************</i></td></tr>
+<tr><th id="2">2</th><td><i>**</i></td></tr>
+<tr><th id="3">3</th><td><i>** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).</i></td></tr>
+<tr><th id="4">4</th><td><i>** Contact: <a href="http://www.qt-project.org/legal">http://www.qt-project.org/legal</a></i></td></tr>
+<tr><th id="5">5</th><td><i>**</i></td></tr>
+<tr><th id="6">6</th><td><i>** This file is part of the QtCore module of the Qt Toolkit.</i></td></tr>
+<tr><th id="7">7</th><td><i>**</i></td></tr>
+<tr><th id="8">8</th><td><i>** $QT_BEGIN_LICENSE:LGPL$</i></td></tr>
+<tr><th id="9">9</th><td><i>** Commercial License Usage</i></td></tr>
+<tr><th id="10">10</th><td><i>** Licensees holding valid commercial Qt licenses may use this file in</i></td></tr>
+<tr><th id="11">11</th><td><i>** accordance with the commercial license agreement provided with the</i></td></tr>
+<tr><th id="12">12</th><td><i>** Software or, alternatively, in accordance with the terms contained in</i></td></tr>
+<tr><th id="13">13</th><td><i>** a written agreement between you and Digia.  For licensing terms and</i></td></tr>
+<tr><th id="14">14</th><td><i>** conditions see <a href="http://qt.digia.com/licensing">http://qt.digia.com/licensing</a>.  For further information</i></td></tr>
+<tr><th id="15">15</th><td><i>** use the contact form at <a href="http://qt.digia.com/contact-us">http://qt.digia.com/contact-us</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i>**</i></td></tr>
+<tr><th id="17">17</th><td><i>** GNU Lesser General Public License Usage</i></td></tr>
+<tr><th id="18">18</th><td><i>** Alternatively, this file may be used under the terms of the GNU Lesser</i></td></tr>
+<tr><th id="19">19</th><td><i>** General Public License version 2.1 as published by the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>** Foundation and appearing in the file LICENSE.LGPL included in the</i></td></tr>
+<tr><th id="21">21</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="22">22</th><td><i>** ensure the GNU Lesser General Public License version 2.1 requirements</i></td></tr>
+<tr><th id="23">23</th><td><i>** will be met: <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</a>.</i></td></tr>
+<tr><th id="24">24</th><td><i>**</i></td></tr>
+<tr><th id="25">25</th><td><i>** In addition, as a special exception, Digia gives you certain additional</i></td></tr>
+<tr><th id="26">26</th><td><i>** rights.  These rights are described in the Digia Qt LGPL Exception</i></td></tr>
+<tr><th id="27">27</th><td><i>** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.</i></td></tr>
+<tr><th id="28">28</th><td><i>**</i></td></tr>
+<tr><th id="29">29</th><td><i>** GNU General Public License Usage</i></td></tr>
+<tr><th id="30">30</th><td><i>** Alternatively, this file may be used under the terms of the GNU</i></td></tr>
+<tr><th id="31">31</th><td><i>** General Public License version 3.0 as published by the Free Software</i></td></tr>
+<tr><th id="32">32</th><td><i>** Foundation and appearing in the file LICENSE.GPL included in the</i></td></tr>
+<tr><th id="33">33</th><td><i>** packaging of this file.  Please review the following information to</i></td></tr>
+<tr><th id="34">34</th><td><i>** ensure the GNU General Public License version 3.0 requirements will be</i></td></tr>
+<tr><th id="35">35</th><td><i>** met: <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>.</i></td></tr>
+<tr><th id="36">36</th><td><i>**</i></td></tr>
+<tr><th id="37">37</th><td><i>**</i></td></tr>
+<tr><th id="38">38</th><td><i>** $QT_END_LICENSE$</i></td></tr>
+<tr><th id="39">39</th><td><i>**</i></td></tr>
+<tr><th id="40">40</th><td><i>****************************************************************************/</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">ifndef</span> <span class="macro" data-ref="_M/QFILE_H">QFILE_H</span></u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/QFILE_H" data-ref="_M/QFILE_H">QFILE_H</dfn></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="qfiledevice.h.html">&lt;QtCore/qfiledevice.h&gt;</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="qstring.h.html">&lt;QtCore/qstring.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td><u>#include <a href="../../../stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="49">ifdef</span> <span class="macro" data-ref="_M/open">open</span></u></td></tr>
+<tr><th id="50">50</th><td><u>#error qfile.h must be included before any header file that defines open</u></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="49">endif</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><a class="macro" href="qglobal.h.html#95" title="" data-ref="_M/QT_BEGIN_NAMESPACE">QT_BEGIN_NAMESPACE</a></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>class</b> <dfn class="type" id="QTemporaryFile" title='QTemporaryFile' data-ref="QTemporaryFile">QTemporaryFile</dfn>;</td></tr>
+<tr><th id="56">56</th><td><b>class</b> <dfn class="type" id="QFilePrivate" title='QFilePrivate' data-ref="QFilePrivate">QFilePrivate</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>class</b> <a class="macro" href="qglobal.h.html#304" title="__attribute__((visibility(&quot;default&quot;)))" data-ref="_M/Q_CORE_EXPORT">Q_CORE_EXPORT</a> <dfn class="type def" id="QFile" title='QFile' data-ref="QFile">QFile</dfn> : <b>public</b> <a class="type" href="qfiledevice.h.html#QFileDevice" title='QFileDevice' data-ref="QFileDevice">QFileDevice</a></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="60">ifndef</span> <span class="macro" data-ref="_M/QT_NO_QOBJECT">QT_NO_QOBJECT</span></u></td></tr>
+<tr><th id="61">61</th><td>    <a class="macro" href="qobjectdefs.h.html#150" title="public: template &lt;typename ThisObject&gt; inline void qt_check_for_QOBJECT_macro(const ThisObject &amp;_q_argument) const { int i = qYouForgotTheQ_OBJECT_Macro(this, &amp;_q_argument); i = i + 1; } static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); static inline QString tr(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } static inline QString trUtf8(const char *s, const char *c = 0, int n = -1) { return staticMetaObject.tr(s, c, n); } virtual int qt_metacall(QMetaObject::Call, int, void **); private: __attribute__((visibility(&quot;hidden&quot;))) static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); struct QPrivateSignal {};" data-ref="_M/Q_OBJECT">Q_OBJECT</a></td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="60">endif</span></u></td></tr>
+<tr><th id="63">63</th><td>    <a class="macro" href="qglobal.h.html#947" title="inline QFilePrivate* d_func() { return reinterpret_cast&lt;QFilePrivate *&gt;(qGetPtrHelper(d_ptr)); } inline const QFilePrivate* d_func() const { return reinterpret_cast&lt;const QFilePrivate *&gt;(qGetPtrHelper(d_ptr)); } friend class QFilePrivate;" data-ref="_M/Q_DECLARE_PRIVATE">Q_DECLARE_PRIVATE</a>(QFile)</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>public</b>:</td></tr>
+<tr><th id="66">66</th><td>    <dfn class="decl" id="_ZN5QFileC1Ev" title='QFile::QFile' data-ref="_ZN5QFileC1Ev">QFile</dfn>();</td></tr>
+<tr><th id="67">67</th><td>    <dfn class="decl" id="_ZN5QFileC1ERK7QString" title='QFile::QFile' data-ref="_ZN5QFileC1ERK7QString">QFile</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col5 decl" id="10925name" title='name' data-type='const QString &amp;' data-ref="10925name">name</dfn>);</td></tr>
+<tr><th id="68">68</th><td><u>#<span data-ppcond="68">ifndef</span> <span class="macro" data-ref="_M/QT_NO_QOBJECT">QT_NO_QOBJECT</span></u></td></tr>
+<tr><th id="69">69</th><td>    <b>explicit</b> <dfn class="decl" id="_ZN5QFileC1EP7QObject" title='QFile::QFile' data-ref="_ZN5QFileC1EP7QObject">QFile</dfn>(<a class="type" href="qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a> *<dfn class="local col6 decl" id="10926parent" title='parent' data-type='QObject *' data-ref="10926parent">parent</dfn>);</td></tr>
+<tr><th id="70">70</th><td>    <dfn class="decl" id="_ZN5QFileC1ERK7QStringP7QObject" title='QFile::QFile' data-ref="_ZN5QFileC1ERK7QStringP7QObject">QFile</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col7 decl" id="10927name" title='name' data-type='const QString &amp;' data-ref="10927name">name</dfn>, <a class="type" href="qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a> *<dfn class="local col8 decl" id="10928parent" title='parent' data-type='QObject *' data-ref="10928parent">parent</dfn>);</td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="68">endif</span></u></td></tr>
+<tr><th id="72">72</th><td>    <dfn class="virtual decl" id="_ZN5QFileD1Ev" title='QFile::~QFile' data-ref="_ZN5QFileD1Ev">~QFile</dfn>();</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>    <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="virtual decl" id="_ZNK5QFile8fileNameEv" title='QFile::fileName' data-ref="_ZNK5QFile8fileNameEv">fileName</dfn>() <em>const</em>;</td></tr>
+<tr><th id="75">75</th><td>    <em>void</em> <dfn class="decl" id="_ZN5QFile11setFileNameERK7QString" title='QFile::setFileName' data-ref="_ZN5QFile11setFileNameERK7QString">setFileName</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col9 decl" id="10929name" title='name' data-type='const QString &amp;' data-ref="10929name">name</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="77">if</span> defined(<span class="macro" data-ref="_M/Q_OS_DARWIN">Q_OS_DARWIN</span>)</u></td></tr>
+<tr><th id="78">78</th><td>    <i>// Mac always expects filenames in UTF-8... and decomposed...</i></td></tr>
+<tr><th id="79">79</th><td>    <em>static</em> <b>inline</b> QByteArray encodeName(<em>const</em> QString &amp;fileName)</td></tr>
+<tr><th id="80">80</th><td>    {</td></tr>
+<tr><th id="81">81</th><td>        <b>return</b> fileName.normalized(QString::NormalizationForm_D).toUtf8();</td></tr>
+<tr><th id="82">82</th><td>    }</td></tr>
+<tr><th id="83">83</th><td>    <em>static</em> QString decodeName(<em>const</em> QByteArray &amp;localFileName)</td></tr>
+<tr><th id="84">84</th><td>    {</td></tr>
+<tr><th id="85">85</th><td>        <b>return</b> QString::fromUtf8(localFileName).normalized(QString::NormalizationForm_C);</td></tr>
+<tr><th id="86">86</th><td>    }</td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="77">else</span></u></td></tr>
+<tr><th id="88">88</th><td>    <em>static</em> <b>inline</b> <a class="type" href="qbytearray.h.html#QByteArray" title='QByteArray' data-ref="QByteArray">QByteArray</a> <dfn class="decl def" id="_ZN5QFile10encodeNameERK7QString" title='QFile::encodeName' data-ref="_ZN5QFile10encodeNameERK7QString">encodeName</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col0 decl" id="10930fileName" title='fileName' data-type='const QString &amp;' data-ref="10930fileName">fileName</dfn>)</td></tr>
+<tr><th id="89">89</th><td>    {</td></tr>
+<tr><th id="90">90</th><td>        <b>return</b> <a class="local col0 ref" href="#10930fileName" title='fileName' data-ref="10930fileName">fileName</a>.<a class="ref" href="qstring.h.html#_ZNKR7QString11toLocal8BitEv" title='QString::toLocal8Bit' data-ref="_ZNKR7QString11toLocal8BitEv">toLocal8Bit</a>();</td></tr>
+<tr><th id="91">91</th><td>    }</td></tr>
+<tr><th id="92">92</th><td>    <em>static</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl def" id="_ZN5QFile10decodeNameERK10QByteArray" title='QFile::decodeName' data-ref="_ZN5QFile10decodeNameERK10QByteArray">decodeName</dfn>(<em>const</em> <a class="type" href="qbytearray.h.html#QByteArray" title='QByteArray' data-ref="QByteArray">QByteArray</a> &amp;<dfn class="local col1 decl" id="10931localFileName" title='localFileName' data-type='const QByteArray &amp;' data-ref="10931localFileName">localFileName</dfn>)</td></tr>
+<tr><th id="93">93</th><td>    {</td></tr>
+<tr><th id="94">94</th><td>        <b>return</b> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a>::<a class="ref" href="qstring.h.html#_ZN7QString13fromLocal8BitERK10QByteArray" title='QString::fromLocal8Bit' data-ref="_ZN7QString13fromLocal8BitERK10QByteArray">fromLocal8Bit</a>(<a class="local col1 ref" href="#10931localFileName" title='localFileName' data-ref="10931localFileName">localFileName</a>);</td></tr>
+<tr><th id="95">95</th><td>    }</td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="77">endif</span></u></td></tr>
+<tr><th id="97">97</th><td>    <b>inline</b> <em>static</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl def" id="_ZN5QFile10decodeNameEPKc" title='QFile::decodeName' data-ref="_ZN5QFile10decodeNameEPKc">decodeName</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="10932localFileName" title='localFileName' data-type='const char *' data-ref="10932localFileName">localFileName</dfn>)</td></tr>
+<tr><th id="98">98</th><td>        { <b>return</b> <a class="member" href="#_ZN5QFile10decodeNameERK10QByteArray" title='QFile::decodeName' data-ref="_ZN5QFile10decodeNameERK10QByteArray">decodeName</a>(<a class="type" href="qbytearray.h.html#QByteArray" title='QByteArray' data-ref="QByteArray"><a class="ref" href="qbytearray.h.html#_ZN10QByteArrayC1EPKci" title='QByteArray::QByteArray' data-ref="_ZN10QByteArrayC1EPKci">QByteArray</a></a>(<a class="local col2 ref" href="#10932localFileName" title='localFileName' data-ref="10932localFileName">localFileName</a>)); }</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><u>#<span data-ppcond="100">if</span> <a class="macro" href="qglobal.h.html#271" title="(((5&lt;&lt;16)|(0&lt;&lt;8)|(0)) &gt; ((5&lt;&lt;16)|(0&lt;&lt;8)|(0)))" data-ref="_M/QT_DEPRECATED_SINCE">QT_DEPRECATED_SINCE</a>(5,0)</u></td></tr>
+<tr><th id="101">101</th><td>    <b>typedef</b> QByteArray (*EncoderFn)(<em>const</em> QString &amp;fileName);</td></tr>
+<tr><th id="102">102</th><td>    <b>typedef</b> QString (*DecoderFn)(<em>const</em> QByteArray &amp;localfileName);</td></tr>
+<tr><th id="103">103</th><td>    QT_DEPRECATED <em>static</em> <em>void</em> setEncodingFunction(EncoderFn) {}</td></tr>
+<tr><th id="104">104</th><td>    QT_DEPRECATED <em>static</em> <em>void</em> setDecodingFunction(DecoderFn) {}</td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="100">endif</span></u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>    <em>bool</em> <dfn class="decl" id="_ZNK5QFile6existsEv" title='QFile::exists' data-ref="_ZNK5QFile6existsEv">exists</dfn>() <em>const</em>;</td></tr>
+<tr><th id="108">108</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile6existsERK7QString" title='QFile::exists' data-ref="_ZN5QFile6existsERK7QString">exists</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col3 decl" id="10933fileName" title='fileName' data-type='const QString &amp;' data-ref="10933fileName">fileName</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>    <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl" id="_ZNK5QFile8readLinkEv" title='QFile::readLink' data-ref="_ZNK5QFile8readLinkEv">readLink</dfn>() <em>const</em>;</td></tr>
+<tr><th id="111">111</th><td>    <em>static</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl" id="_ZN5QFile8readLinkERK7QString" title='QFile::readLink' data-ref="_ZN5QFile8readLinkERK7QString">readLink</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col4 decl" id="10934fileName" title='fileName' data-type='const QString &amp;' data-ref="10934fileName">fileName</dfn>);</td></tr>
+<tr><th id="112">112</th><td>    <b>inline</b> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl def" id="_ZNK5QFile13symLinkTargetEv" title='QFile::symLinkTarget' data-ref="_ZNK5QFile13symLinkTargetEv">symLinkTarget</dfn>() <em>const</em> { <b>return</b> <a class="member" href="#_ZNK5QFile8readLinkEv" title='QFile::readLink' data-ref="_ZNK5QFile8readLinkEv">readLink</a>(); }</td></tr>
+<tr><th id="113">113</th><td>    <b>inline</b> <em>static</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> <dfn class="decl def" id="_ZN5QFile13symLinkTargetERK7QString" title='QFile::symLinkTarget' data-ref="_ZN5QFile13symLinkTargetERK7QString">symLinkTarget</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col5 decl" id="10935fileName" title='fileName' data-type='const QString &amp;' data-ref="10935fileName">fileName</dfn>) { <b>return</b> <a class="member" href="#_ZN5QFile8readLinkERK7QString" title='QFile::readLink' data-ref="_ZN5QFile8readLinkERK7QString">readLink</a>(<a class="local col5 ref" href="#10935fileName" title='fileName' data-ref="10935fileName">fileName</a>); }</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile6removeEv" title='QFile::remove' data-ref="_ZN5QFile6removeEv">remove</dfn>();</td></tr>
+<tr><th id="116">116</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile6removeERK7QString" title='QFile::remove' data-ref="_ZN5QFile6removeERK7QString">remove</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col6 decl" id="10936fileName" title='fileName' data-type='const QString &amp;' data-ref="10936fileName">fileName</dfn>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile6renameERK7QString" title='QFile::rename' data-ref="_ZN5QFile6renameERK7QString">rename</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col7 decl" id="10937newName" title='newName' data-type='const QString &amp;' data-ref="10937newName">newName</dfn>);</td></tr>
+<tr><th id="119">119</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile6renameERK7QStringS2_" title='QFile::rename' data-ref="_ZN5QFile6renameERK7QStringS2_">rename</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col8 decl" id="10938oldName" title='oldName' data-type='const QString &amp;' data-ref="10938oldName">oldName</dfn>, <em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col9 decl" id="10939newName" title='newName' data-type='const QString &amp;' data-ref="10939newName">newName</dfn>);</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile4linkERK7QString" title='QFile::link' data-ref="_ZN5QFile4linkERK7QString">link</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col0 decl" id="10940newName" title='newName' data-type='const QString &amp;' data-ref="10940newName">newName</dfn>);</td></tr>
+<tr><th id="122">122</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile4linkERK7QStringS2_" title='QFile::link' data-ref="_ZN5QFile4linkERK7QStringS2_">link</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col1 decl" id="10941oldname" title='oldname' data-type='const QString &amp;' data-ref="10941oldname">oldname</dfn>, <em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col2 decl" id="10942newName" title='newName' data-type='const QString &amp;' data-ref="10942newName">newName</dfn>);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile4copyERK7QString" title='QFile::copy' data-ref="_ZN5QFile4copyERK7QString">copy</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col3 decl" id="10943newName" title='newName' data-type='const QString &amp;' data-ref="10943newName">newName</dfn>);</td></tr>
+<tr><th id="125">125</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile4copyERK7QStringS2_" title='QFile::copy' data-ref="_ZN5QFile4copyERK7QStringS2_">copy</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col4 decl" id="10944fileName" title='fileName' data-type='const QString &amp;' data-ref="10944fileName">fileName</dfn>, <em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col5 decl" id="10945newName" title='newName' data-type='const QString &amp;' data-ref="10945newName">newName</dfn>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE" title='QFile::open' data-ref="_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE">open</dfn>(<a class="typedef" href="qiodevice.h.html#83" title='QIODevice::OpenMode' data-type='QFlags&lt;QIODevice::OpenModeFlag&gt;' data-ref="QIODevice::OpenMode">OpenMode</a> <dfn class="local col6 decl" id="10946flags" title='flags' data-type='OpenMode' data-ref="10946flags">flags</dfn>);</td></tr>
+<tr><th id="128">128</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDevice14FileHandleFlagEE" title='QFile::open' data-ref="_ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDevice14FileHandleFlagEE">open</dfn>(<a class="typedef" href="../../../stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col7 decl" id="10947f" title='f' data-type='FILE *' data-ref="10947f">f</dfn>, <a class="typedef" href="qiodevice.h.html#83" title='QIODevice::OpenMode' data-type='QFlags&lt;QIODevice::OpenModeFlag&gt;' data-ref="QIODevice::OpenMode">OpenMode</a> <dfn class="local col8 decl" id="10948ioFlags" title='ioFlags' data-type='OpenMode' data-ref="10948ioFlags">ioFlags</dfn>, <a class="typedef" href="qfiledevice.h.html#90" title='QFileDevice::FileHandleFlags' data-type='QFlags&lt;QFileDevice::FileHandleFlag&gt;' data-ref="QFileDevice::FileHandleFlags">FileHandleFlags</a> <dfn class="local col9 decl" id="10949handleFlags" title='handleFlags' data-type='FileHandleFlags' data-ref="10949handleFlags">handleFlags</dfn>=<a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><a class="enum" href="qfiledevice.h.html#QFileDevice::FileHandleFlag::DontCloseHandle" title='QFileDevice::FileHandleFlag::DontCloseHandle' data-ref="QFileDevice::FileHandleFlag::DontCloseHandle">DontCloseHandle</a>);</td></tr>
+<tr><th id="129">129</th><td>    <em>bool</em> <dfn class="decl" id="_ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14FileHandleFlagEE" title='QFile::open' data-ref="_ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14FileHandleFlagEE">open</dfn>(<em>int</em> <dfn class="local col0 decl" id="10950fd" title='fd' data-type='int' data-ref="10950fd">fd</dfn>, <a class="typedef" href="qiodevice.h.html#83" title='QIODevice::OpenMode' data-type='QFlags&lt;QIODevice::OpenModeFlag&gt;' data-ref="QIODevice::OpenMode">OpenMode</a> <dfn class="local col1 decl" id="10951ioFlags" title='ioFlags' data-type='OpenMode' data-ref="10951ioFlags">ioFlags</dfn>, <a class="typedef" href="qfiledevice.h.html#90" title='QFileDevice::FileHandleFlags' data-type='QFlags&lt;QFileDevice::FileHandleFlag&gt;' data-ref="QFileDevice::FileHandleFlags">FileHandleFlags</a> <dfn class="local col2 decl" id="10952handleFlags" title='handleFlags' data-type='FileHandleFlags' data-ref="10952handleFlags">handleFlags</dfn>=<a class="ref fake" href="qflags.h.html#_ZN6QFlagsC1ET_" title='QFlags::QFlags&lt;T&gt;' data-ref="_ZN6QFlagsC1ET_"></a><a class="enum" href="qfiledevice.h.html#QFileDevice::FileHandleFlag::DontCloseHandle" title='QFileDevice::FileHandleFlag::DontCloseHandle' data-ref="QFileDevice::FileHandleFlag::DontCloseHandle">DontCloseHandle</a>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>    <a class="typedef" href="qglobal.h.html#qint64" title='qint64' data-type='long long' data-ref="qint64">qint64</a> <dfn class="virtual decl" id="_ZNK5QFile4sizeEv" title='QFile::size' data-ref="_ZNK5QFile4sizeEv">size</dfn>() <em>const</em>;</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN5QFile6resizeEx" title='QFile::resize' data-ref="_ZN5QFile6resizeEx">resize</dfn>(<a class="typedef" href="qglobal.h.html#qint64" title='qint64' data-type='long long' data-ref="qint64">qint64</a> <dfn class="local col3 decl" id="10953sz" title='sz' data-type='qint64' data-ref="10953sz">sz</dfn>);</td></tr>
+<tr><th id="134">134</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile6resizeERK7QStringx" title='QFile::resize' data-ref="_ZN5QFile6resizeERK7QStringx">resize</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col4 decl" id="10954filename" title='filename' data-type='const QString &amp;' data-ref="10954filename">filename</dfn>, <a class="typedef" href="qglobal.h.html#qint64" title='qint64' data-type='long long' data-ref="qint64">qint64</a> <dfn class="local col5 decl" id="10955sz" title='sz' data-type='qint64' data-ref="10955sz">sz</dfn>);</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td>    <a class="typedef" href="qfiledevice.h.html#84" title='QFileDevice::Permissions' data-type='QFlags&lt;QFileDevice::Permission&gt;' data-ref="QFileDevice::Permissions">Permissions</a> <dfn class="virtual decl" id="_ZNK5QFile11permissionsEv" title='QFile::permissions' data-ref="_ZNK5QFile11permissionsEv">permissions</dfn>() <em>const</em>;</td></tr>
+<tr><th id="137">137</th><td>    <em>static</em> <a class="typedef" href="qfiledevice.h.html#84" title='QFileDevice::Permissions' data-type='QFlags&lt;QFileDevice::Permission&gt;' data-ref="QFileDevice::Permissions">Permissions</a> <dfn class="decl" id="_ZN5QFile11permissionsERK7QString" title='QFile::permissions' data-ref="_ZN5QFile11permissionsERK7QString">permissions</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col6 decl" id="10956filename" title='filename' data-type='const QString &amp;' data-ref="10956filename">filename</dfn>);</td></tr>
+<tr><th id="138">138</th><td>    <em>bool</em> <dfn class="virtual decl" id="_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE" title='QFile::setPermissions' data-ref="_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE">setPermissions</dfn>(<a class="typedef" href="qfiledevice.h.html#84" title='QFileDevice::Permissions' data-type='QFlags&lt;QFileDevice::Permission&gt;' data-ref="QFileDevice::Permissions">Permissions</a> <dfn class="local col7 decl" id="10957permissionSpec" title='permissionSpec' data-type='Permissions' data-ref="10957permissionSpec">permissionSpec</dfn>);</td></tr>
+<tr><th id="139">139</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="_ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE" title='QFile::setPermissions' data-ref="_ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE">setPermissions</dfn>(<em>const</em> <a class="type" href="qstring.h.html#QString" title='QString' data-ref="QString">QString</a> &amp;<dfn class="local col8 decl" id="10958filename" title='filename' data-type='const QString &amp;' data-ref="10958filename">filename</dfn>, <a class="typedef" href="qfiledevice.h.html#84" title='QFileDevice::Permissions' data-type='QFlags&lt;QFileDevice::Permission&gt;' data-ref="QFileDevice::Permissions">Permissions</a> <dfn class="local col9 decl" id="10959permissionSpec" title='permissionSpec' data-type='Permissions' data-ref="10959permissionSpec">permissionSpec</dfn>);</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><b>protected</b>:</td></tr>
+<tr><th id="142">142</th><td><u>#<span data-ppcond="142">ifdef</span> <span class="macro" data-ref="_M/QT_NO_QOBJECT">QT_NO_QOBJECT</span></u></td></tr>
+<tr><th id="143">143</th><td>    QFile(QFilePrivate &amp;dd);</td></tr>
+<tr><th id="144">144</th><td><u>#<span data-ppcond="142">else</span></u></td></tr>
+<tr><th id="145">145</th><td>    <dfn class="decl" id="_ZN5QFileC1ER12QFilePrivateP7QObject" title='QFile::QFile' data-ref="_ZN5QFileC1ER12QFilePrivateP7QObject">QFile</dfn>(<a class="type" href="#QFilePrivate" title='QFilePrivate' data-ref="QFilePrivate">QFilePrivate</a> &amp;<dfn class="local col0 decl" id="10960dd" title='dd' data-type='QFilePrivate &amp;' data-ref="10960dd">dd</dfn>, <a class="type" href="qobject.h.html#QObject" title='QObject' data-ref="QObject">QObject</a> *<dfn class="local col1 decl" id="10961parent" title='parent' data-type='QObject *' data-ref="10961parent">parent</dfn> = <var>0</var>);</td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="142">endif</span></u></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><b>private</b>:</td></tr>
+<tr><th id="149">149</th><td>    <b>friend</b> <b>class</b> <a class="type" href="#QTemporaryFile" title='QTemporaryFile' data-ref="QTemporaryFile">QTemporaryFile</a>;</td></tr>
+<tr><th id="150">150</th><td>    <a class="macro" href="qglobal.h.html#1003" title="QFile(const QFile &amp;) = delete; QFile &amp;operator=(const QFile &amp;) = delete;" data-ref="_M/Q_DISABLE_COPY">Q_DISABLE_COPY</a>(<dfn class="decl def" id="_ZN5QFileC1ERKS_" title='QFile::QFile' data-ref="_ZN5QFileC1ERKS_"><a class="type" href="#QFile" title='QFile' data-ref="QFile"><a class="type" href="#QFile" title='QFile' data-ref="QFile"><a class="type" href="#QFile" title='QFile' data-ref="QFile">QFile</a></a></a></dfn>)</td></tr>
+<tr><th id="151">151</th><td>};</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><a class="macro" href="qglobal.h.html#96" title="" data-ref="_M/QT_END_NAMESPACE">QT_END_NAMESPACE</a></td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><u>#<span data-ppcond="42">endif</span> // QFILE_H</u></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../codebrowser/gui/solarus_gui_lib_automoc.cpp.html'>codebrowser/gui/solarus_gui_lib_automoc.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='227' type='static bool Solarus::InputEvent::get_global_finger_pressure(int finger_id, float &amp; finger_pressure)'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='560' ll='574' type='static bool Solarus::InputEvent::get_global_finger_pressure(int finger_id, float &amp; finger_pressure)'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='554'>/**
+ * \brief Gets the pressure of the finger.
+ * \param finger_id The ID of the finger.
+ * \param[out] finger_pressure The pressure of the finger
+ * \return \c false if the finger is not pressed.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='326' u='c' c='_ZN7Solarus10LuaContext29input_api_get_finger_pressureEP9lua_State'/>

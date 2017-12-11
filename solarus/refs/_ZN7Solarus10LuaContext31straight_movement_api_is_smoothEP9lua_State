@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='618' type='static int Solarus::LuaContext::straight_movement_api_is_smooth(lua_State * )'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='140' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='813' ll='820' type='static int Solarus::LuaContext::straight_movement_api_is_smooth(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='808'>/**
+ * \brief Implementation of straight_movement:is_smooth().
+ * \param l the Lua context that is calling this function
+ * \return number of values to return to Lua
+ */</doc>

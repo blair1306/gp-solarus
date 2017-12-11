@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='62' type='static bool Solarus::Video::is_mode_supported(const Solarus::VideoMode &amp; mode)'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='428' ll='438' type='static bool Solarus::Video::is_mode_supported(const Solarus::VideoMode &amp; mode)'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='520' u='c' c='_ZN7Solarus5Video17switch_video_modeEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='549' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='423'>/**
+ * \brief Returns whether a video mode is supported.
+ * \param mode a video mode
+ * \return true if this mode is supported
+ */</doc>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='171' u='c' c='_ZN7Solarus10LuaContext27video_api_is_mode_supportedEP9lua_State'/>

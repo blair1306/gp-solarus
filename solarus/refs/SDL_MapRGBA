@@ -1,0 +1,7 @@
+<dec f='include/SDL2/SDL_pixels.h' l='392' type='Uint32 SDL_MapRGBA(const SDL_PixelFormat * format, Uint8 r, Uint8 g, Uint8 b, Uint8 a)'/>
+<doc f='include/SDL2/SDL_pixels.h' l='387'>/**
+ *  \brief Maps an RGBA quadruple to a pixel value for a given pixel format.
+ *
+ *  \sa SDL_MapRGB
+ */</doc>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='982' u='c' c='_ZNK7Solarus7Surface15get_color_valueERKNS_5ColorE'/>

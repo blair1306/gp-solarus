@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='157' type='Solarus::Map &amp; Solarus::Entity::State::get_map()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='105' ll='107' type='Solarus::Map &amp; Solarus::Entity::State::get_map()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='101'>/**
+ * \brief Returns the current map.
+ * \return the map
+ */</doc>
+<use f='codebrowser/src/hero/BoomerangState.cpp' l='62' u='c' c='_ZN7Solarus4Hero14BoomerangState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='206' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='54' u='c' c='_ZN7Solarus4Hero12LiftingState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='105' u='c' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='90' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='114' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/TreasureState.cpp' l='118' u='c' c='_ZN7Solarus4Hero13TreasureState11draw_on_mapEv'/>

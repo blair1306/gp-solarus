@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/MapData.h' l='172' type='Solarus::EntityIndex Solarus::MapData::bring_entity_to_back(const Solarus::EntityIndex &amp; index)'/>
+<def f='codebrowser/src/MapData.cpp' l='483' ll='497' type='Solarus::EntityIndex Solarus::MapData::bring_entity_to_back(const Solarus::EntityIndex &amp; index)'/>
+<doc f='codebrowser/src/MapData.cpp' l='475'>/**
+ * \brief Brings an entity to the back on its layer.
+ *
+ * If it is a dynamic entity, it will still be above all tiles.
+ *
+ * \param index Index of the entity on the map.
+ * \return The new index of the entity.
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Ground.h' l='43' type='7'/>
+<doc f='codebrowser/include/solarus/entities/Ground.h' l='43'>/**&lt; The lower-right half of the entity is an obstacle. */</doc>
+<use f='codebrowser/src/Map.cpp' l='834' c='_ZNK7Solarus3Map26test_collision_with_groundEiiiRKNS_6EntityERb'/>
+<use f='codebrowser/src/Map.cpp' l='1239' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/Map.cpp' l='1252' u='r' c='_ZNK7Solarus3Map22get_ground_from_entityERKNS_6EntityERKNS_5PointE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='635' c='_ZNK7Solarus12CustomEntity19can_traverse_groundENS_6GroundE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='913' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='916' u='r' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='923' u='r' c='_ZN7Solarus8Entities13add_tile_infoERKNS_8TileInfoE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2397' c='_ZNK7Solarus6Entity18is_ground_obstacleENS_6GroundE'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='32' u='r'/>
+<use f='codebrowser/src/entities/GroundInfo.cpp' l='59' c='_ZN7Solarus10GroundInfo18is_ground_diagonalENS_6GroundE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1287' c='_ZN7Solarus4Hero27notify_ground_below_changedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2726' c='_ZN7Solarus4Hero23start_state_from_groundEv'/>

@@ -1,0 +1,52 @@
+<def f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='53' ll='330'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='332' c='QTimerEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='344' c='QChildEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='357' c='QDynamicPropertyChangeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='369' c='QDeferredDeleteEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='70' c='QInputEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='84' c='QEnterEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='353' c='QFocusEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='369' c='QPaintEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='387' c='QMoveEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='401' c='QExposeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='413' c='QResizeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='428' c='QCloseEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='436' c='QIconDragEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='444' c='QShowEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='452' c='QHideEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='489' c='QInputMethodEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='529' c='QInputMethodQueryEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='554' c='QDropEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='618' c='QDragLeaveEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='627' c='QHelpEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='647' c='QStatusTipEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='660' c='QWhatsThisClickedEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='673' c='QActionEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='685' c='QFileOpenEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='701' c='QToolBarChangeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='714' c='QShortcutEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='730' c='QWindowStateChangeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='884' c='QScrollPrepareEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='909' c='QScrollEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='932' c='QScreenOrientationChangeEvent'/>
+<ovr f='include/x86_64-linux-gnu/qt5/QtGui/qevent.h' l='946' c='QApplicationStateChangeEvent'/>
+<size>24</size>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h' l='53'>// event base class</doc>
+<smbr r='QEvent::staticMetaObject' t='const QMetaObject'/>
+<fun r='_ZN6QEventC1ENS_4TypeE'/>
+<fun r='_ZN6QEventC1ERKS_'/>
+<fun r='_ZN6QEventD1Ev'/>
+<fun r='_ZN6QEventaSERKS_'/>
+<fun r='_ZNK6QEvent4typeEv'/>
+<fun r='_ZNK6QEvent11spontaneousEv'/>
+<fun r='_ZN6QEvent11setAcceptedEb'/>
+<fun r='_ZNK6QEvent10isAcceptedEv'/>
+<fun r='_ZN6QEvent6acceptEv'/>
+<fun r='_ZN6QEvent6ignoreEv'/>
+<fun r='_ZN6QEvent17registerEventTypeEi'/>
+<mbr r='QEvent::d' o='64' t='QEventPrivate *'/>
+<mbr r='QEvent::t' o='128' t='ushort'/>
+<mbr r='QEvent::posted' o='144' t='ushort'/>
+<mbr r='QEvent::spont' o='145' t='ushort'/>
+<mbr r='QEvent::m_accept' o='146' t='ushort'/>
+<mbr r='QEvent::reserved' o='147' t='ushort'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='467' type='std::shared_ptr&lt;Movement&gt;'/>
+<offset>1152</offset>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='467'>/**&lt; Movement of the entity.
+                                                 * nullptr indicates that the entity has no movement. */</doc>
+<use f='codebrowser/src/entities/Entity.cpp' l='74' u='w' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1489' u='a' c='_ZN7Solarus6Entity12get_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1497' u='r' c='_ZNK7Solarus6Entity12get_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1507' u='w' c='_ZN7Solarus6Entity12set_movementERKSt10shared_ptrINS_8MovementEE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1529' u='r' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1530' u='m' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1531' u='m' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1532' u='r' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1533' u='w' c='_ZN7Solarus6Entity14clear_movementEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3318' u='r' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3319' u='m' c='_ZN7Solarus6Entity13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3421' u='r' c='_ZN7Solarus6Entity6updateEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='3422' u='m' c='_ZN7Solarus6Entity6updateEv'/>

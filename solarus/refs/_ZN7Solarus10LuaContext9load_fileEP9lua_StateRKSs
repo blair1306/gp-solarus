@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='183' type='static bool Solarus::LuaContext::load_file(lua_State * l, const std::string &amp; script_name)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='182'>// Executing Lua code.</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='259' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='319' u='c' c='_ZN7Solarus10LuaContext8run_itemERNS_13EquipmentItemE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='343' u='c' c='_ZN7Solarus10LuaContext9run_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='374' u='c' c='_ZN7Solarus10LuaContext17run_custom_entityERNS_12CustomEntityE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='669' ll='697' type='static bool Solarus::LuaContext::load_file(lua_State * l, const std::string &amp; script_name)'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='711' u='c' c='_ZN7Solarus10LuaContext7do_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='732' u='c' c='_ZN7Solarus10LuaContext17do_file_if_existsEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='2952' u='c' c='_ZN7Solarus10LuaContext8l_loaderEP9lua_State'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='657'>/**
+ * \brief Opens a script if it exists and lets it on top of the stack as a
+ * function.
+ *
+ * If the file does not exist or has a syntax error,
+ * the stack is left intact and false is returned.
+ *
+ * \param l A Lua state.
+ * \param script_name File name of the script with or without extension,
+ * relative to the data directory.
+ * \return true if the file exists and was loaded.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='151' u='c' c='_ZN7Solarus10LuaContext18main_api_load_fileEP9lua_State'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='102' type='bool Solarus::Savegame::get_boolean(const std::string &amp; key) const'/>
+<def f='codebrowser/src/Savegame.cpp' l='517' ll='533' type='bool Solarus::Savegame::get_boolean(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Savegame.cpp' l='512'>/**
+ * \brief Returns a boolean value saved.
+ * \param key Name of the value to get.
+ * \return The boolean value associated with this key or false.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='142' u='c' c='_ZNK7Solarus8Treasure8is_foundEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='190' u='c' c='_ZN7Solarus5Chest8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='93' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='436' u='c' c='_ZNK7Solarus4Door8can_openEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='533' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='152' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='155' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='627' u='c' c='_ZN7Solarus10LuaContext18game_api_get_valueEP9lua_State'/>

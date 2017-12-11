@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/hero/RunningState.h' l='64' type='bool Solarus::Hero::RunningState::is_bouncing() const'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='92' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<def f='codebrowser/src/hero/RunningState.cpp' l='142' ll='144' type='bool Solarus::Hero::RunningState::is_bouncing() const'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='162' u='c' c='_ZN7Solarus4Hero12RunningState32notify_direction_command_pressedEi'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='207' u='c' c='_ZNK7Solarus4Hero12RunningState15can_take_stairsEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='219' u='c' c='_ZNK7Solarus4Hero12RunningState15can_take_jumperEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='280' u='c' c='_ZNK7Solarus4Hero12RunningState27can_start_gameover_sequenceEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='288' u='c' c='_ZNK7Solarus4Hero12RunningState18is_touching_groundEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='296' u='c' c='_ZNK7Solarus4Hero12RunningState20can_avoid_deep_waterEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='304' u='c' c='_ZNK7Solarus4Hero12RunningState14can_avoid_holeEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='312' u='c' c='_ZNK7Solarus4Hero12RunningState14can_avoid_lavaEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='320' u='c' c='_ZNK7Solarus4Hero12RunningState17can_avoid_prickleEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='328' u='c' c='_ZNK7Solarus4Hero12RunningState25can_avoid_teletransporterEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='335' u='c' c='_ZNK7Solarus4Hero12RunningState16can_avoid_streamERKNS_6StreamE'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='353' u='c' c='_ZNK7Solarus4Hero12RunningState18is_sensor_obstacleERKNS_6SensorE'/>
+<doc f='codebrowser/src/hero/RunningState.cpp' l='138'>/**
+ * \brief Returns whether the hero is bouncing after he reached an obstacle during the run.
+ * \return true if the hero is bouncing
+ */</doc>

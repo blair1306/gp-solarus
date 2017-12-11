@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='192' type='ByLayer&lt;std::vector&lt;Ground&gt; &gt;'/>
+<use f='codebrowser/include/solarus/entities/Entities.h' l='244' u='m' c='_ZNK7Solarus8Entities15get_tile_groundEiii'/>
+<offset>256</offset>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='192'>/**&lt; For each layer, list of size tiles_grid_size
+                                                     * representing the ground property
+                                                     * of each 8x8 square. */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='146' u='w' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='168' u='m' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='259' u='m' c='_ZN7Solarus8Entities15set_tile_groundEiiiNS_6GroundE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='766' u='m' c='_ZN7Solarus8Entities17initialize_layersEv'/>

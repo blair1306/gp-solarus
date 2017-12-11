@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='191' type='bool Solarus::CustomEntity::TraversableInfo::is_traversable(Solarus::CustomEntity &amp; current_entity, Solarus::Entity &amp; other_entity) const'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='166' u='c' c='_ZN7Solarus12CustomEntity24is_traversable_by_entityERNS_6EntityE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='429' u='c' c='_ZN7Solarus12CustomEntity16is_hero_obstacleERNS_4HeroE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='441' u='c' c='_ZN7Solarus12CustomEntity17is_block_obstacleERNS_5BlockE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='453' u='c' c='_ZN7Solarus12CustomEntity27is_teletransporter_obstacleERNS_15TeletransporterE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='465' u='c' c='_ZN7Solarus12CustomEntity18is_stream_obstacleERNS_6StreamE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='477' u='c' c='_ZN7Solarus12CustomEntity18is_stairs_obstacleERNS_6StairsE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='489' u='c' c='_ZN7Solarus12CustomEntity18is_sensor_obstacleERNS_6SensorE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='501' u='c' c='_ZN7Solarus12CustomEntity18is_switch_obstacleERNS_6SwitchE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='513' u='c' c='_ZN7Solarus12CustomEntity24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='525' u='c' c='_ZN7Solarus12CustomEntity19is_crystal_obstacleERNS_7CrystalE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='537' u='c' c='_ZN7Solarus12CustomEntity15is_npc_obstacleERNS_3NpcE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='553' u='c' c='_ZN7Solarus12CustomEntity16is_door_obstacleERNS_4DoorE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='565' u='c' c='_ZN7Solarus12CustomEntity17is_enemy_obstacleERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='577' u='c' c='_ZN7Solarus12CustomEntity18is_jumper_obstacleERNS_6JumperERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='589' u='c' c='_ZN7Solarus12CustomEntity24is_destructible_obstacleERNS_12DestructibleE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='601' u='c' c='_ZN7Solarus12CustomEntity21is_separator_obstacleERNS_9SeparatorE'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1337' ll='1353' type='bool Solarus::CustomEntity::TraversableInfo::is_traversable(Solarus::CustomEntity &amp; current_entity, Solarus::Entity &amp; other_entity) const'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1328'>/**
+ * \brief Tests this traversable property with the specified other entity.
+ *
+ * This traversable property must not be empty.
+ *
+ * \param current_entity A custom entity.
+ * \param other_entity Another entity.
+ * \return \c true if traversing is allowed, \c false otherwise.
+ */</doc>

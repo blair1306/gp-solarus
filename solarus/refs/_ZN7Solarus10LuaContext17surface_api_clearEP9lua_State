@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='555' type='static int Solarus::LuaContext::surface_api_clear(lua_State * )'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='45' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='167' ll='176' type='static int Solarus::LuaContext::surface_api_clear(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='162'>/**
+ * \brief Implementation of surface:clear().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

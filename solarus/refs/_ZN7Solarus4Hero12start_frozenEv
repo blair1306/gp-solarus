@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='266' type='void Solarus::Hero::start_frozen()'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='430' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2452' ll='2454' type='void Solarus::Hero::start_frozen()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2445'>/**
+ * \brief Freezes the hero.
+ *
+ * When the hero is frozen, he cannot move.
+ * The current animation of the hero&apos;s sprites is stopped and the &quot;stopped&quot; animation is played.
+ * You can call start_free() to unfreeze him.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2196' u='c' c='_ZN7Solarus10LuaContext15hero_api_freezeEP9lua_State'/>

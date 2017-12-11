@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='130' type='std::string'/>
+<offset>2176</offset>
+<doc f='codebrowser/include/solarus/entities/Door.h' l='130'>/**&lt; Condition required to open the door: a savegame variable if
+                                                   * the opening mode is \c OPENING_BY_INTERACTION_IF_SAVEGAME_VARIABLE,
+                                                   * or an equipment item name if the opening mode is
+                                                   * \c OPENING_BY_INTERACTION_IF_ITEM. */</doc>
+<use f='codebrowser/src/entities/Door.cpp' l='78' u='w' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Door.cpp' l='341' u='a' c='_ZNK7Solarus4Door21get_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='364' u='w' c='_ZN7Solarus4Door21set_opening_conditionERKSs'/>
+<use f='codebrowser/src/entities/Door.cpp' l='621' u='m' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='622' u='r' c='_ZN7Solarus4Door25consume_opening_conditionEv'/>

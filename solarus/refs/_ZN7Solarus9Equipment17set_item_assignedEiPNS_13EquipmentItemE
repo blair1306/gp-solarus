@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='95' type='void Solarus::Equipment::set_item_assigned(int slot, Solarus::EquipmentItem * item)'/>
+<def f='codebrowser/src/Equipment.cpp' l='500' ll='520' type='void Solarus::Equipment::set_item_assigned(int slot, Solarus::EquipmentItem * item)'/>
+<doc f='codebrowser/src/Equipment.cpp' l='491'>/**
+ * \brief Assigns an item to a slot.
+ *
+ * The program exits with an error message if the specified item
+ * cannot be assigned or if the player does not have it.
+ *
+ * \param slot Slot to set (1 or 2).
+ * \param item The item to assign to this slot or nullptr to empty the slot.
+ */</doc>
+<use f='codebrowser/src/EquipmentItem.cpp' l='416' u='c' c='_ZN7Solarus13EquipmentItem11set_variantEi'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1252' u='c' c='_ZN7Solarus10LuaContext26game_api_set_item_assignedEP9lua_State'/>

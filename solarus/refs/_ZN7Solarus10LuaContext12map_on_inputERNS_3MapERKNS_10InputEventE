@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='364' type='bool Solarus::LuaContext::map_on_input(Solarus::Map &amp; map, const Solarus::InputEvent &amp; event)'/>
+<use f='codebrowser/src/Map.cpp' l='470' u='c' c='_ZN7Solarus3Map12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2264' ll='2273' type='bool Solarus::LuaContext::map_on_input(Solarus::Map &amp; map, const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2253'>/**
+ * \brief Notifies a Lua map that an input event has just occurred.
+ *
+ * The appropriate callback in the map is triggered if it exists.
+ * Also notifies the menus of the game if the game itself does not handle the
+ * event.
+ *
+ * \param event The input event to handle.
+ * \param map A map.
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

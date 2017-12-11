@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='154' type='Solarus::Rectangle Solarus::Entity::get_extended_bounding_box(int margin) const'/>
+<use f='codebrowser/src/Map.cpp' l='1285' u='c' c='_ZN7Solarus3Map30check_collision_with_detectorsERNS_6EntityE'/>
+<use f='codebrowser/src/Map.cpp' l='1331' u='c' c='_ZN7Solarus3Map29check_collision_from_detectorERNS_6EntityE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='898' ll='904' type='Solarus::Rectangle Solarus::Entity::get_extended_bounding_box(int margin) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='893'>/**
+ * \brief Returns the bounding box of the entity extended with some margin.
+ * \param margin Margin to add to every side.
+ * \return The extended bounding box.
+ */</doc>

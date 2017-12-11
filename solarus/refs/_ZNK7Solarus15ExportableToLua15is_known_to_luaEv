@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/ExportableToLua.h' l='44' type='bool Solarus::ExportableToLua::is_known_to_lua() const'/>
+<def f='codebrowser/src/lua/ExportableToLua.cpp' l='66' ll='68' type='bool Solarus::ExportableToLua::is_known_to_lua() const'/>
+<doc f='codebrowser/src/lua/ExportableToLua.cpp' l='59'>/**
+ * \brief Returns whether this object was exported in the Lua side.
+ *
+ * This stays \c true even if the object was collected from Lua.
+ *
+ * \return \c true if this object was exported in the Lua side at least once.
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1005' u='c' c='_ZN7Solarus10LuaContext13push_userdataEP9lua_StateRNS_15ExportableToLuaE'/>

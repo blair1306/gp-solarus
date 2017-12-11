@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Map.h' l='170' type='bool Solarus::Map::notify_input(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/include/solarus/Map.h' l='169'>// main loop</doc>
+<use f='codebrowser/src/Game.cpp' l='269' u='c' c='_ZN7Solarus4Game12notify_inputERKNS_10InputEventE'/>
+<def f='codebrowser/src/Map.cpp' l='468' ll='472' type='bool Solarus::Map::notify_input(const Solarus::InputEvent &amp; event)'/>
+<doc f='codebrowser/src/Map.cpp' l='463'>/**
+ * \brief This function is called when a low-level input event occurs on this map.
+ * \param event the event to handle
+ * \return \c true if the event was handled and should stop being propagated.
+ */</doc>

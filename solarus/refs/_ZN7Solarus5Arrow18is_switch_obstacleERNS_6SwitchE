@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Arrow.h' l='48' type='bool Solarus::Arrow::is_switch_obstacle(Solarus::Switch &amp; sw)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='342' c='_ZN7Solarus6Entity18is_switch_obstacleERNS_6SwitchE'/>
+<def f='codebrowser/src/entities/Arrow.cpp' l='165' ll='167' type='bool Solarus::Arrow::is_switch_obstacle(Solarus::Switch &amp; )'/>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='160'>/**
+ * \brief Returns whether a switch is currently considered as an obstacle by this entity.
+ * \param sw a switch
+ * \return true if the switch is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Arrow.cpp' l='165'>/* sw */</doc>

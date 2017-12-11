@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='53' type='void Solarus::Movement::notify_object_controlled()'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='97' u='c' c='_ZN7Solarus8Movement10set_entityEPNS_6EntityE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='130' u='c' c='_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='138' ll='139' type='void Solarus::Movement::notify_object_controlled()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='133'>/**
+ * \brief Notifies this movement that the object it controls has changed.
+ *
+ * Does nothing by default.
+ */</doc>
+<ovr f='codebrowser/src/movements/PathMovement.cpp' l='152' c='_ZN7Solarus12PathMovement24notify_object_controlledEv'/>
+<use f='codebrowser/src/movements/PathMovement.cpp' l='154' u='c' c='_ZN7Solarus12PathMovement24notify_object_controlledEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='54' c='_ZN7Solarus16StraightMovement24notify_object_controlledEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='56' u='c' c='_ZN7Solarus16StraightMovement24notify_object_controlledEv'/>

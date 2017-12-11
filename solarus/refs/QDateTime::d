@@ -1,0 +1,7 @@
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h' l='220' u='a' c='_ZN9QDateTime4swapERS_'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h' l='220' u='a' c='_ZN9QDateTime4swapERS_'/>
+<dec f='include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h' l='313' type='QExplicitlySharedDataPointer&lt;QDateTimePrivate&gt;'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h' l='310'>// ### Qt6: Using a private here has high impact on runtime
+    // on users such as QFileInfo. In Qt 6, the data members
+    // should be inlined.</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/hero/HeroSprites.h' l='138' type='bool Solarus::HeroSprites::is_sword_visible() const'/>
+<def f='codebrowser/src/hero/HeroSprites.cpp' l='498' ll='502' type='bool Solarus::HeroSprites::is_sword_visible() const'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='546' u='c' c='_ZN7Solarus11HeroSprites21stop_displaying_swordEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='732' u='c' c='_ZN7Solarus11HeroSprites23set_animation_directionEi'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='818' u='c' c='_ZN7Solarus11HeroSprites6updateEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='887' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='974' u='c' c='_ZN7Solarus11HeroSprites17restart_animationEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='1005' u='c' c='_ZN7Solarus11HeroSprites18set_ignore_suspendEb'/>
+<doc f='codebrowser/src/hero/HeroSprites.cpp' l='494'>/**
+ * \brief Returns whether the sword is currently displayed on the screen.
+ * \return true if the sword is currently displayed on the screen
+ */</doc>

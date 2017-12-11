@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='58' type='bool Solarus::CurrentQuest::dialog_exists(const std::string &amp; dialog_id)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='291' ll='295' type='bool Solarus::CurrentQuest::dialog_exists(const std::string &amp; dialog_id)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='305' u='c' c='_ZN7Solarus12CurrentQuest10get_dialogERKSs'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='286'>/**
+ * \brief Returns whether the specified dialog exists.
+ * \param dialog_id Id of the dialog to test.
+ * \return true if such a dialog exists.
+ */</doc>
+<use f='codebrowser/src/Game.cpp' l='754' u='c' c='_ZN7Solarus4Game12start_dialogERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2493' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='439' u='c' c='_ZN7Solarus10LuaContext21game_api_start_dialogEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='196' u='c' c='_ZN7Solarus10LuaContext23language_api_get_dialogEP9lua_State'/>

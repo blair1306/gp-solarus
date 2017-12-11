@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='86' type='void Solarus::Rectangle::add_xy(int dx, int dy)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='358' ll='361' type='void Solarus::Rectangle::add_xy(int dx, int dy)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='368' u='c' c='_ZN7Solarus9Rectangle6add_xyERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='353'>/**
+ * \brief Adds something to both coordinates of this rectangle.
+ * \param dx change to the x coordinate
+ * \param dy change to the y coordinate
+ */</doc>
+<use f='codebrowser/src/entities/Bomb.cpp' l='151' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1181' u='c' c='_ZN7Solarus6Entity10set_originEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='356' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='366' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1661' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='311' u='c' c='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1628' u='c' c='_ZN7Solarus10LuaContext25entity_api_test_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='444' u='c' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='106' u='c' c='_ZN7Solarus14RandomMovement14set_max_radiusEi'/>

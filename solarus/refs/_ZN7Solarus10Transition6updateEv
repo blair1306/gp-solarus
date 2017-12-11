@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='91' type='void Solarus::Transition::update()'/>
+<doc f='codebrowser/include/solarus/Transition.h' l='88'>/**
+     * \brief Updates this transition effect.
+     */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='157' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='384' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<ovr f='codebrowser/src/TransitionFade.cpp' l='156' c='_ZN7Solarus14TransitionFade6updateEv'/>
+<ovr f='codebrowser/src/TransitionImmediate.cpp' l='63' c='_ZN7Solarus19TransitionImmediate6updateEv'/>
+<ovr f='codebrowser/src/TransitionScrolling.cpp' l='195' c='_ZN7Solarus19TransitionScrolling6updateEv'/>

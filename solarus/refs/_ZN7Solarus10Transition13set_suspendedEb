@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Transition.h' l='69' type='void Solarus::Transition::set_suspended(bool suspended)'/>
+<use f='codebrowser/src/Drawable.cpp' l='126' u='c' c='_ZN7Solarus8Drawable16start_transitionESt10unique_ptrINS_10TransitionESt14default_deleteIS2_EERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/Drawable.cpp' l='199' u='c' c='_ZN7Solarus8Drawable13set_suspendedEb'/>
+<def f='codebrowser/src/Transition.cpp' l='152' ll='161' type='void Solarus::Transition::set_suspended(bool suspended)'/>
+<doc f='codebrowser/src/Transition.cpp' l='148'>/**
+ * \brief Suspends or resumes this transition.
+ * \param suspended true to suspend it, false to resume it.
+ */</doc>

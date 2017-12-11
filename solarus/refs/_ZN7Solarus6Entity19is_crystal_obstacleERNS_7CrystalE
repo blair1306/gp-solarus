@@ -1,0 +1,19 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='344' type='bool Solarus::Entity::is_crystal_obstacle(Solarus::Crystal &amp; crystal)'/>
+<ovr f='codebrowser/src/entities/Arrow.cpp' l='184' c='_ZN7Solarus5Arrow19is_crystal_obstacleERNS_7CrystalE'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='207' c='_ZN7Solarus9Boomerang19is_crystal_obstacleERNS_7CrystalE'/>
+<ovr f='codebrowser/src/entities/CarriedObject.cpp' l='585' c='_ZN7Solarus13CarriedObject19is_crystal_obstacleERNS_7CrystalE'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='86' u='c' c='_ZN7Solarus7Crystal15is_obstacle_forERNS_6EntityE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='521' c='_ZN7Solarus12CustomEntity19is_crystal_obstacleERNS_7CrystalE'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='527' u='c' c='_ZN7Solarus12CustomEntity19is_crystal_obstacleERNS_7CrystalE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2665' ll='2667' type='bool Solarus::Entity::is_crystal_obstacle(Solarus::Crystal &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2656'>/**
+ * \brief Returns whether a crystal is currently considered as an obstacle by this entity.
+ *
+ * This function returns true by default.
+ * It should be redefined only for entities that can activate a crystal: a pot, the boomerang, etc.
+ *
+ * \param crystal a crystal
+ * \return true if the crystal is currently an obstacle for this entity
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2665'>/* crystal */</doc>
+<ovr f='codebrowser/src/entities/Hookshot.cpp' l='154' c='_ZN7Solarus8Hookshot19is_crystal_obstacleERNS_7CrystalE'/>

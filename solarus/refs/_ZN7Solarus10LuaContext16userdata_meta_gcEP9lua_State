@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1016' type='static int Solarus::LuaContext::userdata_meta_gc(lua_State * )'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='371' u='c' c='_ZN7Solarus10LuaContext16drawable_meta_gcEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='145' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='113' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='80' u='r' c='_ZN7Solarus10LuaContext20register_item_moduleEv'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='1167' ll='1185' type='static int Solarus::LuaContext::userdata_meta_gc(lua_State * l)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='1162'>/**
+ * \brief Finalizer of a userdata type.
+ * \param l A Lua state.
+ * \return Number of values to return to Lua.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='159' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='112' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/TimerApi.cpp' l='64' u='r' c='_ZN7Solarus10LuaContext21register_timer_moduleEv'/>

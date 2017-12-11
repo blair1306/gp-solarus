@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='200' type='std::vector&lt;NamedSprite&gt; Solarus::Entity::get_named_sprites() const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1303' ll='1305' type='std::vector&lt;Entity::NamedSprite&gt; Solarus::Entity::get_named_sprites() const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1299'>/**
+ * \brief Returns all sprites of this entity and their names.
+ * \return The sprites and their names.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1409' u='c' c='_ZN7Solarus10LuaContext22entity_api_get_spritesEP9lua_State'/>

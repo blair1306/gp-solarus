@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='60' type='void Solarus::Drawable::set_xy(const Solarus::Point &amp; xy)'/>
+<def f='codebrowser/src/Drawable.cpp' l='104' ll='106' type='void Solarus::Drawable::set_xy(const Solarus::Point &amp; xy)'/>
+<doc f='codebrowser/src/Drawable.cpp' l='100'>/**
+ * \brief Sets the coordinates of this drawable object.
+ * \param xy The new coordinates of this drawable object.
+ */</doc>
+<use f='codebrowser/src/entities/Crystal.cpp' l='156' u='c' c='_ZN7Solarus7Crystal7twinkleEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='313' u='c' c='_ZN7Solarus10LuaContext19drawable_api_set_xyEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='217' u='c' c='_ZN7Solarus8Movement6set_xyERKNS_5PointE'/>

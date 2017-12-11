@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1159' type='static std::shared_ptr&lt;PathFindingMovement&gt; Solarus::LuaContext::check_path_finding_movement(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='1323' ll='1327' type='static std::shared_ptr&lt;PathFindingMovement&gt; Solarus::LuaContext::check_path_finding_movement(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1337' u='c' c='_ZN7Solarus10LuaContext36path_finding_movement_api_set_targetEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1354' u='c' c='_ZN7Solarus10LuaContext35path_finding_movement_api_get_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1368' u='c' c='_ZN7Solarus10LuaContext35path_finding_movement_api_set_speedEP9lua_State'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='1316'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * path finding movement and returns it.
+ * \param l a Lua context
+ * \param index an index in the stack
+ * \return the movement
+ */</doc>

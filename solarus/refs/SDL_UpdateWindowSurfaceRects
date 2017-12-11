@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='707' type='int SDL_UpdateWindowSurfaceRects(SDL_Window * window, const SDL_Rect * rects, int numrects)'/>
+<doc f='include/SDL2/SDL_video.h' l='699'>/**
+ *  \brief Copy a number of rectangles on the window surface to the screen.
+ *
+ *  \return 0 on success, or -1 on error.
+ *
+ *  \sa SDL_GetWindowSurface()
+ *  \sa SDL_UpdateWindowSurfaceRect()
+ */</doc>

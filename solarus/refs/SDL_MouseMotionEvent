@@ -1,0 +1,14 @@
+<def f='include/SDL2/SDL_events.h' l='221' ll='232'/>
+<size>36</size>
+<doc f='include/SDL2/SDL_events.h' l='218'>/**
+ *  \brief Mouse motion event structure (event.motion.*)
+ */</doc>
+<mbr r='SDL_MouseMotionEvent::type' o='0' t='Uint32'/>
+<mbr r='SDL_MouseMotionEvent::timestamp' o='32' t='Uint32'/>
+<mbr r='SDL_MouseMotionEvent::windowID' o='64' t='Uint32'/>
+<mbr r='SDL_MouseMotionEvent::which' o='96' t='Uint32'/>
+<mbr r='SDL_MouseMotionEvent::state' o='128' t='Uint32'/>
+<mbr r='SDL_MouseMotionEvent::x' o='160' t='Sint32'/>
+<mbr r='SDL_MouseMotionEvent::y' o='192' t='Sint32'/>
+<mbr r='SDL_MouseMotionEvent::xrel' o='224' t='Sint32'/>
+<mbr r='SDL_MouseMotionEvent::yrel' o='256' t='Sint32'/>

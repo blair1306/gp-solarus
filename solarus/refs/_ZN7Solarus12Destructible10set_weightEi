@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Destructible.h' l='66' type='void Solarus::Destructible::set_weight(int weight)'/>
+<def f='codebrowser/src/entities/Destructible.cpp' l='162' ll='166' type='void Solarus::Destructible::set_weight(int weight)'/>
+<doc f='codebrowser/src/entities/Destructible.cpp' l='153'>/**
+ * \brief Sets the weight of this destructible object.
+ *
+ * This corresponds to the &quot;lift&quot; ability level required to lift the object.
+ * Therefore, a value of 0 allows the hero to lift the item unconditionally.
+ * A value of -1 means that the object cannot be lifted.
+ *
+ * \param weight The weight of the object or -1.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='4128' u='c' c='_ZN7Solarus10LuaContext27destructible_api_set_weightEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='593' u='c' c='_ZN7Solarus10LuaContext21l_create_destructibleEP9lua_State'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lowlevel/Video.h' l='91' type='static Solarus::Size Solarus::Video::get_window_size()'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='542' u='c' c='_ZN7Solarus10InputEvent26get_global_finger_positionEiRNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1307' u='c' c='_ZNK7Solarus10InputEvent19get_finger_positionEv'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='1323' u='c' c='_ZNK7Solarus10InputEvent19get_finger_distanceEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='556' u='c' c='_ZN7Solarus5Video14set_video_modeERKNS_9VideoModeEb'/>
+<def f='codebrowser/src/lowlevel/Video.cpp' l='817' ll='833' type='static Solarus::Size Solarus::Video::get_window_size()'/>
+<doc f='codebrowser/src/lowlevel/Video.cpp' l='813'>/**
+ * \brief Returns the size of the window.
+ * \return The size of the window in pixels.
+ */</doc>
+<use f='codebrowser/src/lua/InputApi.cpp' l='243' u='c' c='_ZN7Solarus10LuaContext28input_api_get_mouse_positionEP9lua_State'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='264' u='c' c='_ZN7Solarus10LuaContext25video_api_get_window_sizeEP9lua_State'/>

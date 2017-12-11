@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='233' type='void Solarus::LuaContext::remove_drawable(const DrawablePtr &amp; drawable)'/>
+<def f='codebrowser/src/lua/DrawableApi.cpp' l='92' ll='98' type='void Solarus::LuaContext::remove_drawable(const DrawablePtr &amp; drawable)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='369' u='c' c='_ZN7Solarus10LuaContext16drawable_meta_gcEP9lua_State'/>
+<doc f='codebrowser/src/lua/DrawableApi.cpp' l='88'>/**
+ * \brief Unregisters a drawable object created by Lua.
+ * \param drawable a drawable object
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='963' type='static int Solarus::LuaContext::dynamic_tile_api_get_modified_ground(lua_State * )'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='430' u='r' c='_ZN7Solarus10LuaContext22register_entity_moduleEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='4341' ll='4351' type='static int Solarus::LuaContext::dynamic_tile_api_get_modified_ground(lua_State * l)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='4336'>/**
+ * \brief Implementation of dynamic_tile:get_modified_ground().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

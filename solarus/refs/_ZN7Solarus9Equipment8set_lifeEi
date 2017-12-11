@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Equipment.h' l='73' type='void Solarus::Equipment::set_life(int life)'/>
+<use f='codebrowser/src/Equipment.cpp' l='235' u='c' c='_ZN7Solarus9Equipment12set_max_lifeEi'/>
+<def f='codebrowser/src/Equipment.cpp' l='255' ll='259' type='void Solarus::Equipment::set_life(int life)'/>
+<use f='codebrowser/src/Equipment.cpp' l='273' u='c' c='_ZN7Solarus9Equipment8add_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='285' u='c' c='_ZN7Solarus9Equipment11remove_lifeEi'/>
+<use f='codebrowser/src/Equipment.cpp' l='293' u='c' c='_ZN7Solarus9Equipment16restore_all_lifeEv'/>
+<doc f='codebrowser/src/Equipment.cpp' l='247'>/**
+ * \brief Sets the current life of the player.
+ *
+ * If the life is lower than zero, it is replaced by zero.
+ * If the life is greater than get_max_life(), it is replaced by that value.
+ *
+ * \param life The player&apos;s new level of life.
+ */</doc>
+<use f='codebrowser/src/Savegame.cpp' l='144' u='c' c='_ZN7Solarus8Savegame18set_initial_valuesEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='771' u='c' c='_ZN7Solarus10LuaContext17game_api_set_lifeEP9lua_State'/>

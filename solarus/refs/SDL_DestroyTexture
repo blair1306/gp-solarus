@@ -1,0 +1,8 @@
+<dec f='include/SDL2/SDL_render.h' l='829' type='void SDL_DestroyTexture(SDL_Texture * texture)'/>
+<use f='codebrowser/include/solarus/lowlevel/Surface.h' l='126' u='c' c='_ZN7Solarus7Surface19SDL_Texture_DeleterclEP11SDL_Texture'/>
+<doc f='include/SDL2/SDL_render.h' l='823'>/**
+ *  \brief Destroy the specified texture.
+ *
+ *  \sa SDL_CreateTexture()
+ *  \sa SDL_CreateTextureFromSurface()
+ */</doc>

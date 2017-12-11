@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='167' type='Solarus::Ground Solarus::CustomEntity::get_modified_ground() const'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='110' c='_ZNK7Solarus6Entity19get_modified_groundEv'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='1200' ll='1202' type='Solarus::Ground Solarus::CustomEntity::get_modified_ground() const'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='1197'>/**
+ * \copydoc Entity::get_modified_ground
+ */</doc>
+<doc f='codebrowser/include/solarus/entities/CustomEntity.h' l='166'>// Modifying the ground.</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5625' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_get_modified_groundEP9lua_State'/>

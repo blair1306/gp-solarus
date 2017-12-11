@@ -1,0 +1,18 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1027' type='int SDL_HapticUpdateEffect(SDL_Haptic * haptic, int effect, SDL_HapticEffect * data)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1010'>/**
+ *  \brief Updates the properties of an effect.
+ *
+ *  Can be used dynamically, although behaviour when dynamically changing
+ *  direction may be strange.  Specifically the effect may reupload itself
+ *  and start playing from the start.  You cannot change the type either when
+ *  running SDL_HapticUpdateEffect().
+ *
+ *  \param haptic Haptic device that has the effect.
+ *  \param effect Effect to update.
+ *  \param data New effect properties to use.
+ *  \return 0 on success or -1 on error.
+ *
+ *  \sa SDL_HapticNewEffect
+ *  \sa SDL_HapticRunEffect
+ *  \sa SDL_HapticDestroyEffect
+ */</doc>

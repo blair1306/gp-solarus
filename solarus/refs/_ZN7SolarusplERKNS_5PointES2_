@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/lowlevel/Point.h' l='69' type='Solarus::Point Solarus::operator+(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<def f='codebrowser/include/solarus/lowlevel/Point.inl' l='130' ll='132' type='Solarus::Point Solarus::operator+(const Solarus::Point &amp; lhs, const Solarus::Point &amp; rhs)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='617' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='622' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='628' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Point.h' l='68'>// Binary arithmetic operators</doc>
+<doc f='codebrowser/include/solarus/lowlevel/Point.inl' l='124'>/**
+ * \brief Adds two points.
+ * \param lhs A point.
+ * \param rhs Another point.
+ * \return A point with the sum of their coordinates.
+ */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='240' u='c' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Drawable.cpp' l='271' u='c' c='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='196' u='c' c='_ZN7Solarus12_GLOBAL__N_113TrackingState18traverse_separatorERNS_9SeparatorE'/>
+<use f='codebrowser/src/lowlevel/Geometry.cpp' l='101' u='c' c='_ZN7Solarus8Geometry6get_xyERKNS_5PointEdi'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='861' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='545' u='c' c='_ZN7Solarus11TextSurface8raw_drawERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='562' u='c' c='_ZN7Solarus11TextSurface15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='110' u='c' c='_ZN7Solarus11PathFinding12compute_pathERKNS_5PointE'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='78' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='119' u='c' c='_ZNK7Solarus16RelativeMovement16get_displayed_xyEv'/>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='161' u='c' c='_ZN7Solarus14TargetMovement18recompute_movementEv'/>

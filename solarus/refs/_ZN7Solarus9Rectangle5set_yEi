@@ -1,0 +1,24 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='71' type='void Solarus::Rectangle::set_y(int y)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='248' ll='250' type='void Solarus::Rectangle::set_y(int y)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='275' u='c' c='_ZN7Solarus9Rectangle6set_xyEii'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='334' u='c' c='_ZN7Solarus9Rectangle5add_yEi'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='73' u='c' c='_ZN7Solarus8Quadtree10initializeERKNS_9RectangleE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='244'>/**
+ * \brief Sets the y coordinate of the top-left corner of this rectangle.
+ * \param y the new y coordinate
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='602' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Sprite.cpp' l='833' u='c' c='_ZN7Solarus6Sprite15raw_draw_regionERKNS_9RectangleERNS_7SurfaceERKNS_5PointE'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='57' u='c' c='_ZN7Solarus19TransitionScrolling29get_previous_map_dst_positionEi'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='165' u='c' c='_ZN7Solarus19TransitionScrolling6scrollEv'/>
+<use f='codebrowser/src/TransitionScrolling.cpp' l='171' u='c' c='_ZN7Solarus19TransitionScrolling6scrollEv'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='123' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='130' u='c' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='694' u='c' c='_ZN7Solarus6Entity5set_yEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='769' u='c' c='_ZN7Solarus6Entity14set_top_left_yEi'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2008' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='304' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='308' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='531' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='538' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='83' u='c' c='_ZN7Solarus7Surface14SubSurfaceNodeC1ESt10shared_ptrIS0_ERKNS_9RectangleES6_RKSt6vectorIS2_IS1_ESaIS8_EE'/>

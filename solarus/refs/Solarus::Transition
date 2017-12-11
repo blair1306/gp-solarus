@@ -1,0 +1,43 @@
+<def f='codebrowser/include/solarus/Transition.h' l='35' ll='122'/>
+<size>40</size>
+<doc f='codebrowser/include/solarus/Transition.h' l='30'>/**
+ * \brief Abstract class for a transition effect between two phases.
+ *
+ * The transitions may be applied to maps or any surface.
+ */</doc>
+<fun r='_ZN7Solarus10TransitionD1Ev'/>
+<fun r='_ZN7Solarus10Transition6createENS0_5StyleENS0_9DirectionERNS_7SurfaceEPNS_4GameE'/>
+<fun r='_ZNK7Solarus10Transition8get_gameEv'/>
+<fun r='_ZNK7Solarus10Transition13get_directionEv'/>
+<fun r='_ZN7Solarus10Transition20set_previous_surfaceEPNS_7SurfaceE'/>
+<fun r='_ZNK7Solarus10Transition22needs_previous_surfaceEv'/>
+<fun r='_ZNK7Solarus10Transition12is_suspendedEv'/>
+<fun r='_ZN7Solarus10Transition13set_suspendedEb'/>
+<fun r='_ZN7Solarus10Transition5startEv'/>
+<fun r='_ZNK7Solarus10Transition10is_startedEv'/>
+<fun r='_ZNK7Solarus10Transition11is_finishedEv'/>
+<fun r='_ZN7Solarus10Transition6updateEv'/>
+<fun r='_ZN7Solarus10Transition4drawERNS_7SurfaceE'/>
+<fun r='_ZN7Solarus10TransitionC1ENS0_9DirectionE'/>
+<fun r='_ZNK7Solarus10Transition20get_previous_surfaceEv'/>
+<fun r='_ZNK7Solarus10Transition18get_when_suspendedEv'/>
+<fun r='_ZN7Solarus10Transition16notify_suspendedEb'/>
+<mbr r='Solarus::Transition::game' o='64' t='Solarus::Game *'/>
+<mbr r='Solarus::Transition::direction' o='128' t='Solarus::Transition::Direction'/>
+<mbr r='Solarus::Transition::previous_surface' o='192' t='Solarus::Surface *'/>
+<mbr r='Solarus::Transition::suspended' o='256' t='bool'/>
+<mbr r='Solarus::Transition::when_suspended' o='288' t='uint32_t'/>
+<ovr f='codebrowser/include/solarus/TransitionFade.h' l='31' c='Solarus::TransitionFade'/>
+<ovr f='codebrowser/include/solarus/TransitionImmediate.h' l='31' c='Solarus::TransitionImmediate'/>
+<ovr f='codebrowser/include/solarus/TransitionScrolling.h' l='37' c='Solarus::TransitionScrolling'/>
+<fun r='_ZN7Solarus10TransitionC1ENS0_9DirectionE'/>
+<fun r='_ZN7Solarus10TransitionD1Ev'/>
+<fun r='_ZN7Solarus10Transition6createENS0_5StyleENS0_9DirectionERNS_7SurfaceEPNS_4GameE'/>
+<fun r='_ZNK7Solarus10Transition8get_gameEv'/>
+<fun r='_ZNK7Solarus10Transition13get_directionEv'/>
+<fun r='_ZNK7Solarus10Transition20get_previous_surfaceEv'/>
+<fun r='_ZN7Solarus10Transition20set_previous_surfaceEPNS_7SurfaceE'/>
+<fun r='_ZNK7Solarus10Transition22needs_previous_surfaceEv'/>
+<fun r='_ZNK7Solarus10Transition12is_suspendedEv'/>
+<fun r='_ZN7Solarus10Transition13set_suspendedEb'/>
+<fun r='_ZNK7Solarus10Transition18get_when_suspendedEv'/>

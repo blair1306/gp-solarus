@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1179' type='static std::shared_ptr&lt;Teletransporter&gt; Solarus::LuaContext::check_teletransporter(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='2801' ll='2805' type='static std::shared_ptr&lt;Teletransporter&gt; Solarus::LuaContext::check_teletransporter(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2824' u='c' c='_ZN7Solarus10LuaContext29teletransporter_api_get_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2846' u='c' c='_ZN7Solarus10LuaContext29teletransporter_api_set_soundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2866' u='c' c='_ZN7Solarus10LuaContext34teletransporter_api_get_transitionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2881' u='c' c='_ZN7Solarus10LuaContext34teletransporter_api_set_transitionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2900' u='c' c='_ZN7Solarus10LuaContext39teletransporter_api_get_destination_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2917' u='c' c='_ZN7Solarus10LuaContext39teletransporter_api_set_destination_mapEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2934' u='c' c='_ZN7Solarus10LuaContext40teletransporter_api_get_destination_nameEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2951' u='c' c='_ZN7Solarus10LuaContext40teletransporter_api_set_destination_nameEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='2794'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * teletransporter and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The teletransporter.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='80' type='void Solarus::TextSurface::set_font(const std::string &amp; font_id)'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='70' u='c' c='_ZN7Solarus12ShopTreasureC1ERKSsiRKNS_5PointERKNS_8TreasureEiS2_S2_'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='92' ll='100' type='void Solarus::TextSurface::set_font(const std::string &amp; font_id)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='88'>/**
+ * \brief Sets the font to use.
+ * \param font_id Id of a font.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='175' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='305' u='c' c='_ZN7Solarus10LuaContext25text_surface_api_set_fontEP9lua_State'/>

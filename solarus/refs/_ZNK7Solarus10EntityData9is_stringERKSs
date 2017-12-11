@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/EntityData.h' l='110' type='bool Solarus::EntityData::is_string(const std::string &amp; key) const'/>
+<def f='codebrowser/src/EntityData.cpp' l='539' ll='546' type='bool Solarus::EntityData::is_string(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/EntityData.cpp' l='534'>/**
+ * \brief Returns whether a field of this entity is a string.
+ * \param key Key of the field to get.
+ * \return \c true if the field exists and is a string.
+ */</doc>

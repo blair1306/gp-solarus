@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='88' type='void Solarus::Movement::set_ignore_obstacles(bool ignore_obstacles)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='679' u='c' c='_ZN7Solarus10LuaContext33movement_api_set_ignore_obstaclesEP9lua_State'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='504' ll='507' type='void Solarus::Movement::set_ignore_obstacles(bool ignore_obstacles)'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='497'>/**
+ * \brief Overrides temporarily the ability of this movement to traverse obstacles.
+ *
+ * Use restore_default_ignore_obstacles() to restore the normal property of the movement.
+ *
+ * \param ignore_obstacles true to ignore obstacles
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='94' type='void Solarus::CommandsEffects::set_sword_key_effect(Solarus::CommandsEffects::AttackKeyEffect sword_key_effect)'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='157' ll='159' type='void Solarus::CommandsEffects::set_sword_key_effect(CommandsEffects::AttackKeyEffect sword_key_effect)'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='153'>/**
+ * \brief Sets the current effect of the sword key.
+ * \param sword_key_effect the current effect of the sword key
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='105' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='553' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='558' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='836' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>

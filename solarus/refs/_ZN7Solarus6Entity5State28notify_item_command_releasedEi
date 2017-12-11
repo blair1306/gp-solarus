@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='62' type='void Solarus::Entity::State::notify_item_command_released(int slot)'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='356' u='c' c='_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='360' u='c' c='_ZN7Solarus6Entity5State23notify_command_releasedENS_11GameCommandE'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='417' ll='418' type='void Solarus::Entity::State::notify_item_command_released(int )'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='413'>/**
+ * \brief Notifies this state that an item command was just released.
+ * \param slot the slot (1 or 2)
+ */</doc>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='417'>/* slot */</doc>

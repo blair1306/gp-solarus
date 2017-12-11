@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1330' type='static int Solarus::LuaContext::l_create_stream(lua_State * )'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1021' ll='1046' type='static int Solarus::LuaContext::l_create_stream(lua_State * l)'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1287' u='r'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1016'>/**
+ * \brief Creates a stream on the map.
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

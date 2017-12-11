@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='316' type='void Solarus::Entity::notify_collision_with_enemy(Solarus::Enemy &amp; enemy)'/>
+<ovr f='codebrowser/src/entities/Boomerang.cpp' l='339' c='_ZN7Solarus9Boomerang27notify_collision_with_enemyERNS_5EnemyE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='1135' c='_ZN7Solarus12CustomEntity27notify_collision_with_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='976' u='c' c='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='3182' ll='3183' type='void Solarus::Entity::notify_collision_with_enemy(Solarus::Enemy &amp; )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3178'>/**
+ * \brief This function is called when an enemy&apos;s rectangle detects a collision with this entity&apos;s rectangle.
+ * \param enemy the enemy
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='3182'>/* enemy */</doc>
+<ovr f='codebrowser/src/entities/Hero.cpp' l='1546' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyE'/>

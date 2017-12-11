@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='409' type='void Solarus::LuaContext::destructible_on_regenerating(Solarus::Destructible &amp; destructible)'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='531' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='6414' ll='6423' type='void Solarus::LuaContext::destructible_on_regenerating(Solarus::Destructible &amp; destructible)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='6407'>/**
+ * \brief Calls the on_regenerating() method of a Lua destructible.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param destructible A destructible object.
+ */</doc>

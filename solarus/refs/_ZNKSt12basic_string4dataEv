@@ -1,0 +1,29 @@
+<def f='include/c++/4.9/bits/basic_string.h' l='1828' ll='1830' type='const _CharT * std::basic_string::data() const'/>
+<use f='include/c++/4.9/bits/basic_string.h' l='3084' u='c' c='_ZNKSt4hashISsEclERKSs'/>
+<use f='include/c++/4.9/bits/basic_string.h' l='3099' u='c' c='_ZNKSt4hashISbIwSt11char_traitsIwESaIwEEEclERKS3_'/>
+<use f='include/c++/4.9/bits/basic_string.h' l='3117' u='c' c='_ZNKSt4hashISbIDsSt11char_traitsIDsESaIDsEEEclERKS3_'/>
+<use f='include/c++/4.9/bits/basic_string.h' l='3132' u='c' c='_ZNKSt4hashISbIDiSt11char_traitsIDiESaIDiEEEclERKS3_'/>
+<doc f='include/c++/4.9/bits/basic_string.h' l='1822'>/**
+       *  @brief  Return const pointer to contents.
+       *
+       *  This is a handle to internal data.  Do not modify or dire things may
+       *  happen.
+      */</doc>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1228' u='c' c='_ZN7QString13fromStdStringERKSs'/>
+<use f='include/x86_64-linux-gnu/qt5/QtCore/qstring.h' l='1246' u='c' c='_ZN7QString14fromStdWStringERKSbIwSt11char_traitsIwESaIwEE'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='231' u='c' c='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<use f='codebrowser/gui/src/quests_model.cpp' l='294' u='c' c='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='52' u='c' c='_ZN7Solarus12CurrentQuest10initializeEv'/>
+<use f='codebrowser/src/Savegame.cpp' l='202' u='c' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<use f='codebrowser/src/SavegameConverterV1.cpp' l='45' u='c' c='_ZN7Solarus19SavegameConverterV1C1ERKSs'/>
+<use f='codebrowser/src/Settings.cpp' l='165' u='c' c='_ZN7Solarus8Settings4loadERKSs'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='208' u='c' c='_ZN7Solarus12FontResource16get_outline_fontERKSsi'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='50' u='c' c='_ZN7Solarus9ItDecoder4loadERKSs'/>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='539' u='c' c='_ZN7Solarus5Music5startEv'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='333' u='c' c='_ZN7Solarus10QuestFiles14data_file_saveERKSsS2_'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='525' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='70' u='c' c='_ZN7Solarus12_GLOBAL__N_17cb_readEPvmmS1_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='233' u='c' c='_ZN7Solarus7Surface21get_surface_from_fileERKSsNS0_14ImageDirectoryE'/>
+<use f='codebrowser/src/lowlevel/shaders/Shader.cpp' l='142' u='c' c='_ZN7Solarus6Shader13load_lua_fileERKSs'/>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='688' u='c' c='_ZN7Solarus10LuaContext9load_fileEP9lua_StateRKSs'/>
+<use f='codebrowser/src/lua/LuaData.cpp' l='41' u='c' c='_ZN7Solarus7LuaData18import_from_bufferERKSsS2_'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='95' type='void Solarus::TilePatternData::set_frames(const std::vector&lt;Rectangle&gt; &amp; frames)'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='181' ll='186' type='void Solarus::TilePatternData::set_frames(const std::vector&lt;Rectangle&gt; &amp; frames)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='557' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='176'>/**
+ * \brief Sets the coordinates of each frame of this pattern in the tileset
+ * image file.
+ * \param frames The coordinates of the frame(s) of this pattern.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Arguments.h' l='40' type='const std::string &amp; Solarus::Arguments::get_program_name() const'/>
+<def f='codebrowser/src/Arguments.cpp' l='50' ll='52' type='const std::string &amp; Solarus::Arguments::get_program_name() const'/>
+<doc f='codebrowser/src/Arguments.cpp' l='46'>/**
+ * \brief Returns the program name, usually the first argument of main().
+ * \return The program name, or an empty string if unknown.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='143' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/main/Main.cpp' l='36' u='c' c='_ZN7Solarus12_GLOBAL__N_110print_helpERKNS_9ArgumentsE'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='51' type='int Solarus::SpriteAnimationDirection::get_nb_frames() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='380' u='c' c='_ZNK7Solarus6Sprite13get_nb_framesEv'/>
+<doc f='codebrowser/include/solarus/SpriteAnimationDirection.h' l='50'>// frames</doc>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='126' u='c' c='_ZNK7Solarus15SpriteAnimation14get_next_frameEii'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='46' u='c' c='_ZNK7Solarus24SpriteAnimationDirection8get_sizeEv'/>
+<def f='codebrowser/src/SpriteAnimationDirection.cpp' l='54' ll='56' type='int Solarus::SpriteAnimationDirection::get_nb_frames() const'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='65' u='c' c='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='68' u='c' c='_ZNK7Solarus24SpriteAnimationDirection9get_frameEi'/>
+<use f='codebrowser/src/SpriteAnimationDirection.cpp' l='111' u='c' c='_ZN7Solarus24SpriteAnimationDirection23enable_pixel_collisionsERNS_7SurfaceE'/>
+<doc f='codebrowser/src/SpriteAnimationDirection.cpp' l='50'>/**
+ * \brief Returns the number of frames in this direction.
+ * \return the number of frames
+ */</doc>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='352' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='518' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

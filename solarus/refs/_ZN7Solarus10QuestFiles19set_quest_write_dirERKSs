@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='90' type='void Solarus::QuestFiles::set_quest_write_dir(const std::string &amp; quest_write_dir)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='101' u='c' c='_ZN7Solarus10QuestFiles12_GLOBAL__N_121set_solarus_write_dirERKSs'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='153' u='c' c='_ZN7Solarus10QuestFiles10open_questERKSsS2_'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='439' ll='469' type='void Solarus::QuestFiles::set_quest_write_dir(const std::string &amp; quest_write_dir)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='427'>/**
+ * \brief Sets the subdirectory where files specific to the quest are
+ * saved, like savegames and configuration files.
+ *
+ * You have to call this function before loading or saving savegames and
+ * configuration files.
+ * This directory should typically be named like your quest, to be sure other
+ * quests will not interfere.
+ *
+ * \param quest_write_dir The quest write directory, relative to the Solarus
+ * write directory.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='248' u='c' c='_ZN7Solarus10LuaContext28main_api_set_quest_write_dirEP9lua_State'/>

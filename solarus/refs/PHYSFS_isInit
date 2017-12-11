@@ -1,0 +1,15 @@
+<dec f='include/physfs.h' l='1943' type='int PHYSFS_isInit()'/>
+<doc f='include/physfs.h' l='1929'>/**
+ * \fn int PHYSFS_isInit(void)
+ * \brief Determine if the PhysicsFS library is initialized.
+ *
+ * Once PHYSFS_init() returns successfully, this will return non-zero.
+ *  Before a successful PHYSFS_init() and after PHYSFS_deinit() returns
+ *  successfully, this will return zero. This function is safe to call at
+ *  any time.
+ *
+ *  \return non-zero if library is initialized, zero if library is not.
+ *
+ * \sa PHYSFS_init
+ * \sa PHYSFS_deinit
+ */</doc>

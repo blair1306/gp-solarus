@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/Npc.h' l='96' type='bool Solarus::Npc::notify_interaction_with_item(Solarus::EquipmentItem &amp; item)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='327' c='_ZN7Solarus6Entity28notify_interaction_with_itemERNS_13EquipmentItemE'/>
+<def f='codebrowser/src/entities/Npc.cpp' l='334' ll='350' type='bool Solarus::Npc::notify_interaction_with_item(Solarus::EquipmentItem &amp; item_used)'/>
+<doc f='codebrowser/src/entities/Npc.cpp' l='324'>/**
+ * \brief Notifies this detector that the player is interacting by using an
+ * equipment item.
+ *
+ * This function is called when the player uses an equipment item
+ * while the hero is facing this NPC.
+ *
+ * \param item_used The equipment item used.
+ * \return true if an interaction occured.
+ */</doc>

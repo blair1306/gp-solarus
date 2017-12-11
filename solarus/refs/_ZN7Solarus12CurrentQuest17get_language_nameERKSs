@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='51' type='std::string Solarus::CurrentQuest::get_language_name(const std::string &amp; language_code)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='227' ll='238' type='std::string Solarus::CurrentQuest::get_language_name(const std::string &amp; language_code)'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='222'>/**
+ * \brief Returns the user-friendly name of a language for this quest.
+ * \param language_code Code of a language.
+ * \return Name of this language of an empty string.
+ */</doc>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='135' u='c' c='_ZN7Solarus10LuaContext30language_api_get_language_nameEP9lua_State'/>

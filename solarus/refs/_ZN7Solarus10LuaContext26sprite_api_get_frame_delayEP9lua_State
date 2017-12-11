@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='593' type='static int Solarus::LuaContext::sprite_api_get_frame_delay(lua_State * )'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='52' u='r' c='_ZN7Solarus10LuaContext22register_sprite_moduleEv'/>
+<def f='codebrowser/src/lua/SpriteApi.cpp' l='362' ll='385' type='static int Solarus::LuaContext::sprite_api_get_frame_delay(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SpriteApi.cpp' l='357'>/**
+ * \brief Implementation of sprite:get_frame_delay().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

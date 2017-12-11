@@ -1,0 +1,41 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='407' type='void Solarus::Entity::notify_collision(Solarus::Entity &amp; entity_overlapping, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='406'>// Collisions.</doc>
+<ovr f='codebrowser/src/entities/Block.cpp' l='172' c='_ZN7Solarus5Block16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Bomb.cpp' l='123' c='_ZN7Solarus4Bomb16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Chest.cpp' l='365' c='_ZN7Solarus5Chest16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Crystal.cpp' l='94' c='_ZN7Solarus7Crystal16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CrystalBlock.cpp' l='101' c='_ZN7Solarus12CrystalBlock16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/CustomEntity.cpp' l='904' c='_ZN7Solarus12CustomEntity16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Destructible.cpp' l='313' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Door.cpp' l='230' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Enemy.cpp' l='974' c='_ZN7Solarus5Enemy16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1769' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1773' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1777' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1786' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1790' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1794' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1798' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2102' ll='2106' type='void Solarus::Entity::notify_collision(Solarus::Entity &amp; , Solarus::CollisionMode )'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2092'>/**
+ * \brief Notifies this entity that it just detected a collision with another entity.
+ *
+ * This function is called by check_collision(Entity*)
+ * when an entity overlaps this detector.
+ *
+ * \param entity_overlapping The entity overlapping this detector.
+ * \param collision_mode The collision mode that detected the collision (useful if
+ * this detector has several collision modes).
+ */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2102'>/* entity_overlapping */</doc>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2102'>/* collision_mode */</doc>
+<ovr f='codebrowser/src/entities/Jumper.cpp' l='387' c='_ZN7Solarus6Jumper16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Npc.cpp' l='218' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Pickable.cpp' l='298' c='_ZN7Solarus8Pickable16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Sensor.cpp' l='79' c='_ZN7Solarus6Sensor16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Separator.cpp' l='117' c='_ZN7Solarus9Separator16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/ShopTreasure.cpp' l='168' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Stairs.cpp' l='143' c='_ZN7Solarus6Stairs16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Stream.cpp' l='157' c='_ZN7Solarus6Stream16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Switch.cpp' l='263' c='_ZN7Solarus6Switch16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/entities/Teletransporter.cpp' l='265' c='_ZN7Solarus15Teletransporter16notify_collisionERNS_6EntityENS_13CollisionModeE'/>

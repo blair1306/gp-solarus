@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/Drawable.h' l='141' type='Solarus::Point'/>
+<offset>288</offset>
+<doc f='codebrowser/include/solarus/Drawable.h' l='141'>/**&lt; Current position of this object
+                                   * (result of movements). */</doc>
+<use f='codebrowser/src/Drawable.cpp' l='31' u='w' c='_ZN7Solarus8DrawableC1Ev'/>
+<use f='codebrowser/src/Drawable.cpp' l='97' u='a' c='_ZNK7Solarus8Drawable6get_xyEv'/>
+<use f='codebrowser/src/Drawable.cpp' l='105' u='w' c='_ZN7Solarus8Drawable6set_xyERKNS_5PointE'/>
+<use f='codebrowser/src/Drawable.cpp' l='240' u='r' c='_ZN7Solarus8Drawable4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/Drawable.cpp' l='271' u='r' c='_ZN7Solarus8Drawable11draw_regionERKNS_9RectangleERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>

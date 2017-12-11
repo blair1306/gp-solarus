@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_joystick.h' l='118' type='void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid, char * pszGUID, int cbGUID)'/>
+<doc f='include/SDL2/SDL_joystick.h' l='114'>/**
+ *  Return a string representation for this guid. pszGUID must point to at least 33 bytes
+ *  (32 for the string plus a NULL terminator).
+ */</doc>

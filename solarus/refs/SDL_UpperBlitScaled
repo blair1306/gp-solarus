@@ -1,0 +1,5 @@
+<dec f='include/SDL2/SDL_surface.h' l='482' type='int SDL_UpperBlitScaled(SDL_Surface * src, const SDL_Rect * srcrect, SDL_Surface * dst, SDL_Rect * dstrect)'/>
+<doc f='include/SDL2/SDL_surface.h' l='478'>/**
+ *  This is the public scaled blit function, SDL_BlitScaled(), and it performs
+ *  rectangle validation and clipping before passing it to SDL_LowerBlitScaled()
+ */</doc>

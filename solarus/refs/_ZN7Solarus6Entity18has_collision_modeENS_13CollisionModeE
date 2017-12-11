@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='273' type='bool Solarus::Entity::has_collision_mode(Solarus::CollisionMode collision_mode)'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='1701' ll='1703' type='bool Solarus::Entity::has_collision_mode(Solarus::CollisionMode collision_mode)'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1768' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1772' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1776' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1780' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1789' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1793' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1797' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1813' u='c' c='_ZN7Solarus6Entity15check_collisionERS0_RNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1867' u='c' c='_ZN7Solarus6Entity15check_collisionERNS_6SpriteERS0_'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='1696'>/**
+ * \brief Returns whether the entity detects the specified.
+ * \param collision_mode A collision mode.
+ * \return \c true if this collision mode is detected by this entity.
+ */</doc>

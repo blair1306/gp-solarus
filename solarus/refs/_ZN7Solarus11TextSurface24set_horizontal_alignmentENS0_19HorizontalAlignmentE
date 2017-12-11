@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/TextSurface.h' l='82' type='void Solarus::TextSurface::set_horizontal_alignment(Solarus::TextSurface::HorizontalAlignment horizontal_alignment)'/>
+<def f='codebrowser/src/lowlevel/TextSurface.cpp' l='116' ll='125' type='void Solarus::TextSurface::set_horizontal_alignment(Solarus::TextSurface::HorizontalAlignment horizontal_alignment)'/>
+<doc f='codebrowser/src/lowlevel/TextSurface.cpp' l='111'>/**
+ * \brief Sets the horizontal text alignment.
+ * \param horizontal_alignment Horizontal alignment of the text: ALIGN_LEFT,
+ * ALIGN_CENTER or ALIGN_RIGHT.
+ */</doc>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='177' u='c' c='_ZN7Solarus10LuaContext23text_surface_api_createEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='232' u='c' c='_ZN7Solarus10LuaContext41text_surface_api_set_horizontal_alignmentEP9lua_State'/>

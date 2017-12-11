@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/BorderSet.h' l='41' type='std::string Solarus::BorderSet::get_pattern(Solarus::BorderKind border_kind) const'/>
+<def f='codebrowser/src/entities/BorderSet.cpp' l='74' ll='81' type='std::string Solarus::BorderSet::get_pattern(Solarus::BorderKind border_kind) const'/>
+<doc f='codebrowser/src/entities/BorderSet.cpp' l='69'>/**
+ * \brief Returns the pattern id of the given border.
+ * \param border_kind Which border to get.
+ * \return The corresponding pattern id, or an empty string to mean no pattern.
+ */</doc>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='708' u='c' c='_ZNK7Solarus11TilesetData13export_to_luaERSo'/>

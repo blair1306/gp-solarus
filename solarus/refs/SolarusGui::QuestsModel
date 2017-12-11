@@ -1,0 +1,24 @@
+<inh f='include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h' l='453' c='QAbstractListModel'/>
+<def f='codebrowser/gui/include/solarus/gui/quests_model.h' l='31' ll='88'/>
+<size>40</size>
+<doc f='codebrowser/gui/include/solarus/gui/quests_model.h' l='28'>/**
+ * @brief List of quests added to Solarus.
+ */</doc>
+<fun r='_ZN10SolarusGui11QuestsModelC1EP7QObject'/>
+<fun r='_ZNK10SolarusGui11QuestsModel8rowCountERK11QModelIndex'/>
+<fun r='_ZNK10SolarusGui11QuestsModel4dataERK11QModelIndexi'/>
+<fun r='_ZNK10SolarusGui11QuestsModel13path_to_indexERK7QString'/>
+<fun r='_ZNK10SolarusGui11QuestsModel13index_to_pathEi'/>
+<fun r='_ZN10SolarusGui11QuestsModel9has_questERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestsModel9add_questERK7QString'/>
+<fun r='_ZN10SolarusGui11QuestsModel12remove_questEi'/>
+<fun r='_ZNK10SolarusGui11QuestsModel9get_pathsEv'/>
+<fun r='_ZNK10SolarusGui11QuestsModel20get_quest_propertiesEi'/>
+<fun r='_ZNK10SolarusGui11QuestsModel22get_quest_default_logoEv'/>
+<fun r='_ZNK10SolarusGui11QuestsModel14get_quest_logoEi'/>
+<fun r='_ZNK10SolarusGui11QuestsModel22get_quest_default_iconEv'/>
+<fun r='_ZN10SolarusGui11QuestsModel4sortEiN2Qt9SortOrderE'/>
+<fun r='_ZN10SolarusGui11QuestsModel4sortENS0_9QuestSortEN2Qt9SortOrderE'/>
+<fun r='_ZN10SolarusGui11QuestsModel7do_sortENS0_9QuestSortEN2Qt9SortOrderE'/>
+<fun r='_ZNK10SolarusGui11QuestsModel9load_iconEi'/>
+<mbr r='SolarusGui::QuestsModel::quests' o='128' t='std::vector&lt;QuestInfo&gt;'/>

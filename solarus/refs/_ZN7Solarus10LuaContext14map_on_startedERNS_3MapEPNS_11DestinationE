@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='355' type='void Solarus::LuaContext::map_on_started(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='354'>// Map events.</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='292' u='c' c='_ZN7Solarus10LuaContext7run_mapERNS_3MapEPNS_11DestinationE'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='2186' ll='2195' type='void Solarus::LuaContext::map_on_started(Solarus::Map &amp; map, Solarus::Destination * destination)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='2178'>/**
+ * \brief Calls the on_started() method of a Lua map.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param map A map.
+ * \param destination The destination point used (nullptr if it&apos;s a special one).
+ */</doc>

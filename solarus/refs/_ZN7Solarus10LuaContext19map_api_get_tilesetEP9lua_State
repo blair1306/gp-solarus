@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='783' type='static int Solarus::LuaContext::map_api_get_tileset(lua_State * )'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='129' u='r' c='_ZN7Solarus10LuaContext19register_map_moduleEv'/>
+<def f='codebrowser/src/lua/MapApi.cpp' l='1581' ll='1589' type='static int Solarus::LuaContext::map_api_get_tileset(lua_State * l)'/>
+<doc f='codebrowser/src/lua/MapApi.cpp' l='1576'>/**
+ * \brief Implementation of map:get_tileset().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

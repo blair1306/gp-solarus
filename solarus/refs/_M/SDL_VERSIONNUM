@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_version.h' l='94'/>
+<doc f='include/SDL2/SDL_version.h' l='86'>/**
+ *  This macro turns the version numbers into a numeric value:
+ *  \verbatim
+    (1,2,3) -&gt; (1203)
+    \endverbatim
+ *
+ *  This assumes that there will never be more than 100 patchlevels.
+ */</doc>

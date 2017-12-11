@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/CarriedObject.h' l='70' type='void Solarus::CarriedObject::break_item_on_ground()'/>
+<def f='codebrowser/src/entities/CarriedObject.cpp' l='268' ll='309' type='void Solarus::CarriedObject::break_item_on_ground()'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='285' u='c' c='_ZN7Solarus13CarriedObject20break_item_on_groundEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='413' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<doc f='codebrowser/src/entities/CarriedObject.cpp' l='263'>/**
+ * \brief Destroys the item after it finishes its thrown movement.
+ *
+ * How the item breaks depends on the ground where it lands.
+ */</doc>

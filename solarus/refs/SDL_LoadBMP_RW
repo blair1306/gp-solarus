@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_surface.h' l='174' type='SDL_Surface * SDL_LoadBMP_RW(SDL_RWops * src, int freesrc)'/>
+<doc f='include/SDL2/SDL_surface.h' l='165'>/**
+ *  Load a surface from a seekable SDL data stream (memory or file).
+ *
+ *  If \c freesrc is non-zero, the stream will be closed after being read.
+ *
+ *  The new surface should be freed with SDL_FreeSurface().
+ *
+ *  \return the new surface, or NULL if there was an error.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/StraightMovement.h' l='36' type='void Solarus::StraightMovement::StraightMovement(bool ignore_obstacles, bool smooth)'/>
+<use f='codebrowser/src/movements/PlayerMovement.cpp' l='33' u='c' c='_ZN7Solarus14PlayerMovementC1Ei'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='43' u='c' c='_ZN7Solarus14RandomMovementC1Eii'/>
+<def f='codebrowser/src/movements/StraightMovement.cpp' l='34' ll='49' type='void Solarus::StraightMovement::StraightMovement(bool ignore_obstacles, bool smooth)'/>
+<doc f='codebrowser/src/movements/StraightMovement.cpp' l='27'>/**
+ * \brief Constructor.
+ * \param ignore_obstacles true to ignore obstacles of the map
+ * (used only when there is a map and the movement is attached to an entity of this map)
+ * \param smooth true to adjust the trajectory if an obstacle is reached
+ * (only when ignore_obstacles is false)
+ */</doc>
+<use f='codebrowser/src/movements/TargetMovement.cpp' l='65' u='c' c='_ZN7Solarus14TargetMovementC1ERKSt10shared_ptrINS_6EntityEERKNS_5PointEib'/>

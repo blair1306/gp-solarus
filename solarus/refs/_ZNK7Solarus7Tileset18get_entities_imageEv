@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Tileset.h' l='52' type='const SurfacePtr &amp; Solarus::Tileset::get_entities_image() const'/>
+<use f='codebrowser/src/SpriteAnimation.cpp' l='69' u='c' c='_ZN7Solarus15SpriteAnimation11set_tilesetERKNS_7TilesetE'/>
+<def f='codebrowser/src/entities/Tileset.cpp' l='201' ll='203' type='const SurfacePtr &amp; Solarus::Tileset::get_entities_image() const'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='234' u='c' c='_ZN7Solarus7Tileset10set_imagesERKSs'/>
+<doc f='codebrowser/src/entities/Tileset.cpp' l='196'>/**
+ * \brief Returns the image containing the tileset-dependent sprites for this tileset.
+ * \return The image containing the tileset-dependent sprites for this tileset.
+ * Returns \c nullptr if it does not exist.
+ */</doc>

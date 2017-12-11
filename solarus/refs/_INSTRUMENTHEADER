@@ -1,0 +1,45 @@
+<def f='include/libmodplug/sndfile.h' l='325' ll='370'/>
+<size>632</size>
+<doc f='include/libmodplug/sndfile.h' l='324'>// Instrument Struct</doc>
+<mbr r='_INSTRUMENTHEADER::nFadeOut' o='0' t='UINT'/>
+<mbr r='_INSTRUMENTHEADER::dwFlags' o='32' t='DWORD'/>
+<mbr r='_INSTRUMENTHEADER::nGlobalVol' o='64' t='WORD'/>
+<mbr r='_INSTRUMENTHEADER::nPan' o='80' t='WORD'/>
+<mbr r='_INSTRUMENTHEADER::VolPoints' o='96' t='WORD [32]'/>
+<mbr r='_INSTRUMENTHEADER::PanPoints' o='608' t='WORD [32]'/>
+<mbr r='_INSTRUMENTHEADER::PitchPoints' o='1120' t='WORD [32]'/>
+<mbr r='_INSTRUMENTHEADER::VolEnv' o='1632' t='BYTE [32]'/>
+<mbr r='_INSTRUMENTHEADER::PanEnv' o='1888' t='BYTE [32]'/>
+<mbr r='_INSTRUMENTHEADER::PitchEnv' o='2144' t='BYTE [32]'/>
+<mbr r='_INSTRUMENTHEADER::Keyboard' o='2400' t='BYTE [128]'/>
+<mbr r='_INSTRUMENTHEADER::NoteMap' o='3424' t='BYTE [128]'/>
+<mbr r='_INSTRUMENTHEADER::nVolEnv' o='4448' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanEnv' o='4456' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPitchEnv' o='4464' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nVolLoopStart' o='4472' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nVolLoopEnd' o='4480' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nVolSustainBegin' o='4488' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nVolSustainEnd' o='4496' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanLoopStart' o='4504' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanLoopEnd' o='4512' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanSustainBegin' o='4520' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanSustainEnd' o='4528' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPitchLoopStart' o='4536' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPitchLoopEnd' o='4544' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPitchSustainBegin' o='4552' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPitchSustainEnd' o='4560' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nNNA' o='4568' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nDCT' o='4576' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nDNA' o='4584' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPanSwing' o='4592' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nVolSwing' o='4600' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nIFC' o='4608' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nIFR' o='4616' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::wMidiBank' o='4624' t='WORD'/>
+<mbr r='_INSTRUMENTHEADER::nMidiProgram' o='4640' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nMidiChannel' o='4648' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nMidiDrumKey' o='4656' t='BYTE'/>
+<mbr r='_INSTRUMENTHEADER::nPPS' o='4664' t='signed char'/>
+<mbr r='_INSTRUMENTHEADER::nPPC' o='4672' t='unsigned char'/>
+<mbr r='_INSTRUMENTHEADER::name' o='4680' t='CHAR [32]'/>
+<mbr r='_INSTRUMENTHEADER::filename' o='4936' t='CHAR [12]'/>

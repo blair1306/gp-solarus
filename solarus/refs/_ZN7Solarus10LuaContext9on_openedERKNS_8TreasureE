@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1265' type='bool Solarus::LuaContext::on_opened(const Solarus::Treasure &amp; treasure)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6095' u='c' c='_ZN7Solarus10LuaContext15chest_on_openedERNS_5ChestERKNS_8TreasureE'/>
+<def f='codebrowser/src/lua/LuaContext.cpp' l='2452' ll='2477' type='bool Solarus::LuaContext::on_opened(const Solarus::Treasure &amp; treasure)'/>
+<doc f='codebrowser/src/lua/LuaContext.cpp' l='2447'>/**
+ * \brief Calls the on_opened() method of the object on top of the stack.
+ * \param treasure A treasure being obtained when opening.
+ * \return \c true if the method is defined.
+ */</doc>

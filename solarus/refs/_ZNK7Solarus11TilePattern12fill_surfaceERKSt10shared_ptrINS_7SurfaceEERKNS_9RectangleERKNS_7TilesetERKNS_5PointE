@@ -1,0 +1,13 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='53' type='void Solarus::TilePattern::fill_surface(const SurfacePtr &amp; dst_surface, const Solarus::Rectangle &amp; dst_position, const Solarus::Tileset &amp; tileset, const Solarus::Point &amp; viewport) const'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='101' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='257' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='86' u='c' c='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<def f='codebrowser/src/entities/TilePattern.cpp' l='154' ll='185' type='void Solarus::TilePattern::fill_surface(const SurfacePtr &amp; dst_surface, const Solarus::Rectangle &amp; dst_position, const Solarus::Tileset &amp; tileset, const Solarus::Point &amp; viewport) const'/>
+<doc f='codebrowser/src/entities/TilePattern.cpp' l='146'>/**
+ * \brief Fills a rectangle by repeating this tile pattern.
+ * \param dst_surface The destination surface.
+ * \param dst_position Coordinates of the rectangle to fill in \c dst_surface.
+ * \param tileset The tileset to use.
+ * \param viewport Coordinates of the top-left corner of \c dst_surface
+ * relative to the map (may be used for scrolling tiles).
+ */</doc>

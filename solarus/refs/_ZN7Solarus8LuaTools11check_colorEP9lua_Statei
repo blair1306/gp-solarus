@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='237' type='Solarus::Color Solarus::LuaTools::check_color(lua_State * l, int index)'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='456' u='c' c='_ZN7Solarus12_GLOBAL__N_118l_background_colorEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='919' ll='937' type='Solarus::Color Solarus::LuaTools::check_color(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='962' u='c' c='_ZN7Solarus8LuaTools17check_color_fieldEP9lua_StateiRKSs'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='982' u='c' c='_ZN7Solarus8LuaTools9opt_colorEP9lua_StateiRKNS_5ColorE'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='1011' u='c' c='_ZN7Solarus8LuaTools15opt_color_fieldEP9lua_StateiRKSsRKNS_5ColorE'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='910'>/**
+ * \brief Checks that the value at the given index is a color and returns it.
+ *
+ * Set opaque by default if alpha channel is not specified.
+ *
+ * \param l a Lua state
+ * \param index an index in the Lua stack
+ * \return the color at this index
+ */</doc>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='187' u='c' c='_ZN7Solarus10LuaContext22surface_api_fill_colorEP9lua_State'/>
+<use f='codebrowser/src/lua/TextSurfaceApi.cpp' l='372' u='c' c='_ZN7Solarus10LuaContext26text_surface_api_set_colorEP9lua_State'/>

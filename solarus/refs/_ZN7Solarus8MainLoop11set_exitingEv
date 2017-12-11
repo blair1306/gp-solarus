@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/MainLoop.h' l='51' type='void Solarus::MainLoop::set_exiting()'/>
+<def f='codebrowser/src/MainLoop.cpp' l='247' ll='251' type='void Solarus::MainLoop::set_exiting()'/>
+<use f='codebrowser/src/MainLoop.cpp' l='445' u='c' c='_ZN7Solarus8MainLoop12notify_inputERKNS_10InputEventE'/>
+<doc f='codebrowser/src/MainLoop.cpp' l='244'>/**
+ * \brief Sets whether the user wants to quit the program.
+ */</doc>
+<use f='codebrowser/src/lua/MainApi.cpp' l='197' u='c' c='_ZN7Solarus10LuaContext13main_api_exitEP9lua_State'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='247' type='bool Solarus::Entity::overlaps(const Solarus::Rectangle &amp; rectangle) const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='526' ll='528' type='bool Solarus::Entity::overlaps(const Solarus::Rectangle &amp; rectangle) const'/>
+<use f='codebrowser/include/solarus/entities/Entity.h' l='556' u='c' c='_ZNK7Solarus6Entity8overlapsERKS0_'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='246'>// geometry</doc>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='521'>/**
+ * \brief Returns whether or not this entity&apos;s bounding box overlaps a specified rectangle.
+ * \param rectangle the rectangle to check
+ * \return true if this entity&apos;s bounding box overlaps the specified rectangle
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='868' u='c' c='_ZN7Solarus3Map28test_collision_with_entitiesEiRKNS_9RectangleERNS_6EntityE'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='153' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2767' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2784' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1577' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Jumper.cpp' l='333' u='c' c='_ZNK7Solarus6Jumper23overlaps_jumping_regionERKNS_9RectangleEb'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1209' u='c' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Separator.h' l='40' type='void Solarus::Separator::Separator(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<def f='codebrowser/src/entities/Separator.cpp' l='32' ll='45' type='void Solarus::Separator::Separator(const std::string &amp; name, int layer, const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<doc f='codebrowser/src/entities/Separator.cpp' l='23'>/**
+ * \brief Creates a new separator.
+ * \param name Name of the entity to create.
+ * \param layer Layer of the entity to create on the map.
+ * \param xy Coordinate of the entity to create.
+ * \param size Size of the separator.
+ * A width of 16 means a vertical separator and a height of 16 means a
+ * horizontal one.
+ */</doc>

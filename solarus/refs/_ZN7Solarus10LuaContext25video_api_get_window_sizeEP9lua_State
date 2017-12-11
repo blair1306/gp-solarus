@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='483' type='static int Solarus::LuaContext::video_api_get_window_size(lua_State * )'/>
+<use f='codebrowser/src/lua/VideoApi.cpp' l='49' u='r' c='_ZN7Solarus10LuaContext21register_video_moduleEv'/>
+<def f='codebrowser/src/lua/VideoApi.cpp' l='261' ll='270' type='static int Solarus::LuaContext::video_api_get_window_size(lua_State * l)'/>
+<doc f='codebrowser/src/lua/VideoApi.cpp' l='256'>/**
+ * \brief Implementation of sol.video.get_window_size().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

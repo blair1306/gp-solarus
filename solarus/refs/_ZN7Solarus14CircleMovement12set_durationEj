@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/CircleMovement.h' l='66' type='void Solarus::CircleMovement::set_duration(uint32_t duration)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1626' u='c' c='_ZN7Solarus10LuaContext32circle_movement_api_set_durationEP9lua_State'/>
+<def f='codebrowser/src/movements/CircleMovement.cpp' l='252' ll='258' type='void Solarus::CircleMovement::set_duration(uint32_t duration)'/>
+<doc f='codebrowser/src/movements/CircleMovement.cpp' l='243'>/**
+ * \brief Sets the maximum duration of the movement.
+ *
+ * When this delay is reached, the movement stops.
+ * Note that if the radius changes gradually, the movement will continue
+ * for a while until the radius reaches zero.
+ *
+ * \param duration duration of the movement in milliseconds, or 0 to make it infinite
+ */</doc>

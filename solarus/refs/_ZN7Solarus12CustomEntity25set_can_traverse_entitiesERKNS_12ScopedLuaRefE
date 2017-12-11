@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/CustomEntity.h' l='81' type='void Solarus::CustomEntity::set_can_traverse_entities(const Solarus::ScopedLuaRef &amp; traversable_test_ref)'/>
+<def f='codebrowser/src/entities/CustomEntity.cpp' l='338' ll='344' type='void Solarus::CustomEntity::set_can_traverse_entities(const Solarus::ScopedLuaRef &amp; traversable_test_ref)'/>
+<doc f='codebrowser/src/entities/CustomEntity.cpp' l='327'>/**
+ * \brief Registers a Lua function to decide if this custom entity can traverse
+ * other entities.
+ *
+ * This applies to entities that are not overridden by
+ * set_can_traverse_entities(EntityType, bool)
+ * or
+ * set_can_traverse_entities(EntityType, const ScopedLuaRef&amp;).
+ *
+ * \param traversable_test_ref Lua ref to a function that will do the test.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5479' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='318' type='void Solarus::LuaContext::item_on_finished(Solarus::EquipmentItem &amp; item)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='325' u='c' c='_ZN7Solarus13EquipmentItem4exitEv'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='784' ll='793' type='void Solarus::LuaContext::item_on_finished(Solarus::EquipmentItem &amp; item)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='777'>/**
+ * \brief Calls the on_finished() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ */</doc>

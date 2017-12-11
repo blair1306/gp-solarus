@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='240' type='bool Solarus::Hero::is_free() const'/>
+<doc f='codebrowser/include/solarus/entities/Hero.h' l='233'>/**
+     * \name State.
+     *
+     * These functions provide information about the hero&apos;s internal state
+     * and allow to start actions which may modify this state.
+     * Actions can be triggered by equipment items, entities or scripts.
+     */</doc>
+<use f='codebrowser/src/entities/Chest.cpp' l='420' u='c' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='113' u='c' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='331' u='c' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='237' u='c' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='558' u='c' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1819' u='c' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1850' u='c' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1866' u='c' c='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1900' u='c' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2294' ll='2297' type='bool Solarus::Hero::is_free() const'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2472' u='c' c='_ZN7Solarus4Hero13start_runningEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2537' u='c' c='_ZNK7Solarus4Hero7can_runEv'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2290'>/**
+ * \brief Returns whether the hero can walk normally and interact with entities.
+ * \return true if the hero can walk normally
+ */</doc>
+<use f='codebrowser/src/entities/Npc.cpp' l='225' u='c' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='258' u='c' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='176' u='c' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='189' u='c' c='_ZN7Solarus12ShopTreasure29notify_action_command_pressedEv'/>

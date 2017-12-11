@@ -1,0 +1,16 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='78' type='int Solarus::Sprite::get_nb_directions() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='289' u='c' c='_ZN7Solarus6Sprite21set_current_animationERKSs'/>
+<def f='codebrowser/src/Sprite.cpp' l='321' ll='327' type='int Solarus::Sprite::get_nb_directions() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='349' u='c' c='_ZN7Solarus6Sprite21set_current_directionEi'/>
+<use f='codebrowser/src/Sprite.cpp' l='693' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='316'>/**
+ * \brief Returns the number of directions in the current animation of this
+ * sprite.
+ * \return The number of directions.
+ */</doc>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='126' u='c' c='_ZN7Solarus12CustomEntity21set_sprites_directionEi'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1022' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='187' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='192' u='c' c='_ZN7Solarus8Pickable18initialize_spritesEv'/>
+<use f='codebrowser/src/entities/Stream.cpp' l='140' u='c' c='_ZN7Solarus6Stream24notify_direction_changedEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='244' u='c' c='_ZN7Solarus10LuaContext24sprite_api_set_directionEP9lua_State'/>

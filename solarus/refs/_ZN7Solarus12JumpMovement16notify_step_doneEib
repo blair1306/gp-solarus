@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/movements/JumpMovement.h' l='51' type='void Solarus::JumpMovement::notify_step_done(int step_index, bool success)'/>
+<inh f='codebrowser/include/solarus/movements/PixelMovement.h' l='60' c='_ZN7Solarus13PixelMovement16notify_step_doneEib'/>
+<def f='codebrowser/src/movements/JumpMovement.cpp' l='175' ll='186' type='void Solarus::JumpMovement::notify_step_done(int step_index, bool )'/>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='167'>/**
+ * \brief This function is called when a step of the trajectory just occured.
+ *
+ * If updates the height of the jump when a step of the basic movement is made.
+ *
+ * \param step_index index of the step in the trajectory (the first one is 0)
+ * \param success true if the move was made, false if there was an obstacle
+ */</doc>
+<doc f='codebrowser/src/movements/JumpMovement.cpp' l='175'>/* success */</doc>

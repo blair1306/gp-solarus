@@ -1,0 +1,29 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='81' type='bool Solarus::Movement::is_finished() const'/>
+<use f='codebrowser/src/Drawable.cpp' l='171' u='c' c='_ZN7Solarus8Drawable6updateEv'/>
+<use f='codebrowser/src/entities/Arrow.cpp' l='317' u='c' c='_ZNK7Solarus5Arrow10is_stoppedEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='248' u='c' c='_ZN7Solarus4Bomb6updateEv'/>
+<use f='codebrowser/src/entities/CarriedObject.cpp' l='365' u='c' c='_ZN7Solarus13CarriedObject6updateEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='202' u='c' c='_ZN7Solarus8Hookshot6updateEv'/>
+<use f='codebrowser/src/entities/Pickable.cpp' l='378' u='c' c='_ZN7Solarus8Pickable16check_bad_groundEv'/>
+<use f='codebrowser/src/hero/BackToSolidGroundState.cpp' l='134' u='c' c='_ZN7Solarus4Hero22BackToSolidGroundState6updateEv'/>
+<use f='codebrowser/src/hero/HurtState.cpp' l='117' u='c' c='_ZN7Solarus4Hero9HurtState6updateEv'/>
+<use f='codebrowser/src/hero/RunningState.cpp' l='118' u='c' c='_ZN7Solarus4Hero12RunningState6updateEv'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='101' u='c' c='_ZN7Solarus4Hero15SpinAttackState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='183' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='201' u='c' c='_ZN7Solarus4Hero11StairsState6updateEv'/>
+<use f='codebrowser/src/hero/SwordSwingingState.cpp' l='99' u='c' c='_ZN7Solarus4Hero18SwordSwingingState6updateEv'/>
+<use f='codebrowser/src/hero/SwordTappingState.cpp' l='117' u='c' c='_ZN7Solarus4Hero17SwordTappingState6updateEv'/>
+<ovr f='codebrowser/src/movements/CircleMovement.cpp' l='466' c='_ZNK7Solarus14CircleMovement11is_finishedEv'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='362' ll='364' type='bool Solarus::Movement::is_finished() const'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='414' u='c' c='_ZN7Solarus8Movement6updateEv'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='418' u='c' c='_ZN7Solarus8Movement6updateEv'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='355'>/**
+ * \brief Returns whether this movement is finished.
+ *
+ * You can redefine this function if your movement has an end.
+ *
+ * \return true if this movement is finished
+ */</doc>
+<ovr f='codebrowser/src/movements/PixelMovement.cpp' l='272' c='_ZNK7Solarus13PixelMovement11is_finishedEv'/>
+<ovr f='codebrowser/src/movements/RelativeMovement.cpp' l='58' c='_ZNK7Solarus16RelativeMovement11is_finishedEv'/>
+<ovr f='codebrowser/src/movements/StraightMovement.cpp' l='278' c='_ZNK7Solarus16StraightMovement11is_finishedEv'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='250' type='bool Solarus::Entity::overlaps(const Solarus::Entity &amp; other) const'/>
+<def f='codebrowser/include/solarus/entities/Entity.h' l='555' ll='557' type='bool Solarus::Entity::overlaps(const Solarus::Entity &amp; other) const'/>
+<doc f='codebrowser/include/solarus/entities/Entity.h' l='549'>/**
+ * \brief Returns whether or not this entity&apos;s bounding box overlaps
+ * another entity&apos;s bounding box.
+ * \param other another entity
+ * \return true if this entity&apos;s bounding box overlaps the other entity&apos;s bounding box
+ */</doc>
+<use f='codebrowser/src/entities/Arrow.cpp' l='407' u='c' c='_ZN7Solarus5Arrow27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Block.cpp' l='130' u='c' c='_ZN7Solarus5Block16is_hero_obstacleERNS_4HeroE'/>
+<use f='codebrowser/src/entities/Boomerang.cpp' l='341' u='c' c='_ZN7Solarus9Boomerang27notify_collision_with_enemyERNS_5EnemyE'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='98' u='c' c='_ZN7Solarus5Chest14notify_enabledEb'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='524' u='c' c='_ZN7Solarus12Destructible6updateEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='181' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='281' u='c' c='_ZN7Solarus5Enemy24is_destructible_obstacleERNS_12DestructibleE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='294' u='c' c='_ZN7Solarus5Enemy17is_block_obstacleERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='318' u='c' c='_ZN7Solarus5Enemy24is_raised_block_obstacleERNS_12CrystalBlockE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1272' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='185' u='c' c='_ZN7Solarus6Entity23update_ground_observersEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1967' u='c' c='_ZNK7Solarus6Entity24test_collision_rectangleERKS0_'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='783' u='c' c='_ZNK7Solarus6Entity5State18is_stairs_obstacleERKNS_6StairsE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='855' u='c' c='_ZNK7Solarus4Hero22get_stairs_overlappingEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='323' u='c' c='_ZN7Solarus8Hookshot27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>

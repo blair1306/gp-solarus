@@ -1,0 +1,6 @@
+<dec f='include/unistd.h' l='353' type='int close(int __fd)'/>
+<use f='codebrowser/src/lowlevel/QuestFiles.cpp' l='509' u='c' c='_ZN7Solarus10QuestFiles21create_temporary_fileERKSs'/>
+<doc f='include/unistd.h' l='349'>/* Close the file descriptor FD.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>

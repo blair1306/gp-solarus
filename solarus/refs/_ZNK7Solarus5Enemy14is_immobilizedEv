@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/Enemy.h' l='183' type='bool Solarus::Enemy::is_immobilized() const'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='789' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='805' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='810' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='818' u='c' c='_ZN7Solarus5Enemy6updateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1035' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1134' u='c' c='_ZN7Solarus5Enemy7restartEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1155' u='c' c='_ZNK7Solarus5Enemy18is_in_normal_stateEv'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1216' u='c' c='_ZN7Solarus5Enemy8try_hurtENS_11EnemyAttackERNS_6EntityEPNS_6SpriteE'/>
+<def f='codebrowser/src/entities/Enemy.cpp' l='1525' ll='1528' type='bool Solarus::Enemy::is_immobilized() const'/>
+<doc f='codebrowser/src/entities/Enemy.cpp' l='1521'>/**
+ * \brief Returns whether this enemy is immobilized.
+ * \return true if this enemy is immobilized
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5058' u='c' c='_ZN7Solarus10LuaContext20enemy_api_immobilizeEP9lua_State'/>

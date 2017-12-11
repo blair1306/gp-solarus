@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='202' type='HeroPtr'/>
+<offset>1408</offset>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='201'>// dynamic entities</doc>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='202'>/**&lt; The hero, also stored in Game because
+                                                     * it is kept when changing maps. */</doc>
+<use f='codebrowser/src/entities/Entities.cpp' l='149' u='w' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='221' u='m' c='_ZN7Solarus8Entities8get_heroEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='325' u='r' c='_ZN7Solarus8Entities24get_entities_with_prefixERKSs'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='713' u='m' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='714' u='m' c='_ZN7Solarus8Entities18notify_map_startedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='726' u='m' c='_ZN7Solarus8Entities38notify_map_opening_transition_finishedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='743' u='m' c='_ZN7Solarus8Entities22notify_tileset_changedEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1163' u='m' c='_ZN7Solarus8Entities13set_suspendedEb'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1181' u='m' c='_ZN7Solarus8Entities6updateEv'/>

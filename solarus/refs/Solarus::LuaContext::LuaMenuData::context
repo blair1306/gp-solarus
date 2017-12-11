@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1028' type='const void *'/>
+<use f='codebrowser/include/solarus/lua/LuaContext.h' l='1033' u='w' c='_ZN7Solarus10LuaContext11LuaMenuDataC1ERKNS_12ScopedLuaRefEPKv'/>
+<offset>128</offset>
+<doc f='codebrowser/include/solarus/lua/LuaContext.h' l='1028'>/**&lt; Lua table or userdata the menu is attached to. */</doc>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='110' u='r' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='112' u='w' c='_ZN7Solarus10LuaContext12remove_menusEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='137' u='w' c='_ZN7Solarus10LuaContext12remove_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='169' u='r' c='_ZN7Solarus10LuaContext12update_menusEv'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='221' u='w' c='_ZN7Solarus10LuaContext13menu_api_stopEP9lua_State'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='427' u='r' c='_ZN7Solarus10LuaContext15menus_on_updateEi'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='451' u='r' c='_ZN7Solarus10LuaContext13menus_on_drawEiRKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='479' u='r' c='_ZN7Solarus10LuaContext14menus_on_inputEiRKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='510' u='r' c='_ZN7Solarus10LuaContext24menus_on_command_pressedEiNS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MenuApi.cpp' l='541' u='r' c='_ZN7Solarus10LuaContext25menus_on_command_releasedEiNS_11GameCommandE'/>

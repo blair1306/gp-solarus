@@ -1,0 +1,21 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='206' type='bool Solarus::Hero::is_striking_with_sword(Solarus::Entity &amp; entity) const'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='358' u='c' c='_ZN7Solarus12Destructible16notify_collisionERNS_6EntityERNS_6SpriteES4_'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1992' ll='1994' type='bool Solarus::Hero::is_striking_with_sword(Solarus::Entity &amp; entity) const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1974'>/**
+ * \brief Tests whether the hero is cutting with his sword the specified entity
+ * for which a collision was detected.
+ *
+ * When the sword sprite collides with an entity,
+ * this function can be called to determine whether the hero is
+ * really cutting this particular entity precisely.
+ * This depends on the hero&apos;s state, his direction and his
+ * distance to the detector.
+ * This function assumes that there is already a collision
+ * between the sword sprite and the detector&apos;s sprite.
+ * This function should be called to check whether the
+ * hero wants to cut a bush or some grass.
+ * Returns false by default.
+ *
+ * \param entity The entity to check.
+ * \return \c true if the sword is cutting this entity.
+ */</doc>

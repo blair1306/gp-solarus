@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='135' type='const std::string'/>
+<def f='codebrowser/src/lua/MovementApi.cpp' l='82' type='const std::string'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='278' u='r' c='_ZN7Solarus10LuaContext24register_movement_moduleEv'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1667' u='r' c='_ZN7Solarus10LuaContext16is_jump_movementEP9lua_Statei'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1679' u='r' c='_ZN7Solarus10LuaContext19check_jump_movementEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/MovementApi.cpp' l='79'>/**
+ * Name of the Lua table representing the jump movement module.
+ */</doc>
+<use f='codebrowser/src/movements/JumpMovement.cpp' l='193' u='a' c='_ZNK7Solarus12JumpMovement17get_lua_type_nameEv'/>

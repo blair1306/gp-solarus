@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HurtState.h source code [codebrowser/include/solarus/hero/HurtState.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/hero/HurtState.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>include</a>/<a href='..'>solarus</a>/<a href='./'>hero</a>/<a href='HurtState.h.html'>HurtState.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2006-2016 Christopho, Solarus - <a href="http://www.solarus-games.org">http://www.solarus-games.org</a></i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Solarus is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="5">5</th><td><i> * it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="6">6</th><td><i> * the Free Software Foundation, either version 3 of the License, or</i></td></tr>
+<tr><th id="7">7</th><td><i> * (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * Solarus is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</i></td></tr>
+<tr><th id="12">12</th><td><i> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU General Public License along</i></td></tr>
+<tr><th id="15">15</th><td><i> * with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifndef</span> <span class="macro" data-ref="_M/SOLARUS_HERO_HURT_STATE_H">SOLARUS_HERO_HURT_STATE_H</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/SOLARUS_HERO_HURT_STATE_H" data-ref="_M/SOLARUS_HERO_HURT_STATE_H">SOLARUS_HERO_HURT_STATE_H</dfn></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="HeroState.h.html">"solarus/hero/HeroState.h"</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="../../../../include/c++/4.9/cstdint.html">&lt;cstdint&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">Solarus</span> {</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * <span class="command">\brief</span> The state "Hurt" of the hero.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><b>class</b> <a class="type" href="../entities/Hero.h.html#Solarus::Hero" title='Solarus::Hero' data-ref="Solarus::Hero">Hero</a>::<dfn class="type def" id="Solarus::Hero::HurtState" title='Solarus::Hero::HurtState' data-ref="Solarus::Hero::HurtState">HurtState</dfn>: <b>public</b> <a class="type" href="HeroState.h.html#Solarus::HeroState" title='Solarus::HeroState' data-ref="Solarus::HeroState">HeroState</a> {</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>  <b>public</b>:</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>    <dfn class="decl" id="_ZN7Solarus4Hero9HurtStateC1ERS0_PKNS_5PointEi" title='Solarus::Hero::HurtState::HurtState' data-ref="_ZN7Solarus4Hero9HurtStateC1ERS0_PKNS_5PointEi">HurtState</dfn>(<a class="type" href="../entities/Hero.h.html#Solarus::Hero" title='Solarus::Hero' data-ref="Solarus::Hero">Hero</a>&amp; <dfn class="local col6 decl" id="66hero" title='hero' data-type='Solarus::Hero &amp;' data-ref="66hero">hero</dfn>,</td></tr>
+<tr><th id="33">33</th><td>        <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a>* <dfn class="local col7 decl" id="67source_xy" title='source_xy' data-type='const Solarus::Point *' data-ref="67source_xy">source_xy</dfn>,</td></tr>
+<tr><th id="34">34</th><td>        <em>int</em> <dfn class="local col8 decl" id="68damage" title='damage' data-type='int' data-ref="68damage">damage</dfn>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE" title='Solarus::Hero::HurtState::start' data-ref="_ZN7Solarus4Hero9HurtState5startEPKNS_6Entity5StateE">start</dfn>(<em>const</em> <a class="type" href="../entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>* <dfn class="local col9 decl" id="69previous_state" title='previous_state' data-type='const Solarus::Entity::State *' data-ref="69previous_state">previous_state</dfn>) override;</td></tr>
+<tr><th id="37">37</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero9HurtState4stopEPKNS_6Entity5StateE" title='Solarus::Hero::HurtState::stop' data-ref="_ZN7Solarus4Hero9HurtState4stopEPKNS_6Entity5StateE">stop</dfn>(<em>const</em> <a class="type" href="../entities/EntityState.h.html#Solarus::Entity::State" title='Solarus::Entity::State' data-ref="Solarus::Entity::State">State</a>* <dfn class="local col0 decl" id="70next_state" title='next_state' data-type='const Solarus::Entity::State *' data-ref="70next_state">next_state</dfn>) override;</td></tr>
+<tr><th id="38">38</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero9HurtState6updateEv" title='Solarus::Hero::HurtState::update' data-ref="_ZN7Solarus4Hero9HurtState6updateEv">update</dfn>() override;</td></tr>
+<tr><th id="39">39</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN7Solarus4Hero9HurtState13set_suspendedEb" title='Solarus::Hero::HurtState::set_suspended' data-ref="_ZN7Solarus4Hero9HurtState13set_suspendedEb">set_suspended</dfn>(<em>bool</em> <dfn class="local col1 decl" id="71suspended" title='suspended' data-type='bool' data-ref="71suspended">suspended</dfn>) override;</td></tr>
+<tr><th id="40">40</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState27can_start_gameover_sequenceEv" title='Solarus::Hero::HurtState::can_start_gameover_sequence' data-ref="_ZNK7Solarus4Hero9HurtState27can_start_gameover_sequenceEv">can_start_gameover_sequence</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="41">41</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState18is_touching_groundEv" title='Solarus::Hero::HurtState::is_touching_ground' data-ref="_ZNK7Solarus4Hero9HurtState18is_touching_groundEv">is_touching_ground</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="42">42</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState27is_teletransporter_obstacleERKNS_15TeletransporterE" title='Solarus::Hero::HurtState::is_teletransporter_obstacle' data-ref="_ZNK7Solarus4Hero9HurtState27is_teletransporter_obstacleERKNS_15TeletransporterE">is_teletransporter_obstacle</dfn>(<em>const</em> <a class="type" href="../entities/Teletransporter.h.html#Solarus::Teletransporter" title='Solarus::Teletransporter' data-ref="Solarus::Teletransporter">Teletransporter</a>&amp; <dfn class="local col2 decl" id="72teletransporter" title='teletransporter' data-type='const Solarus::Teletransporter &amp;' data-ref="72teletransporter">teletransporter</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="43">43</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState18is_stream_obstacleERKNS_6StreamE" title='Solarus::Hero::HurtState::is_stream_obstacle' data-ref="_ZNK7Solarus4Hero9HurtState18is_stream_obstacleERKNS_6StreamE">is_stream_obstacle</dfn>(<em>const</em> <a class="type" href="../entities/Stream.h.html#Solarus::Stream" title='Solarus::Stream' data-ref="Solarus::Stream">Stream</a>&amp; <dfn class="local col3 decl" id="73stream" title='stream' data-type='const Solarus::Stream &amp;' data-ref="73stream">stream</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="44">44</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState18is_sensor_obstacleERKNS_6SensorE" title='Solarus::Hero::HurtState::is_sensor_obstacle' data-ref="_ZNK7Solarus4Hero9HurtState18is_sensor_obstacleERKNS_6SensorE">is_sensor_obstacle</dfn>(<em>const</em> <a class="type" href="../entities/Sensor.h.html#Solarus::Sensor" title='Solarus::Sensor' data-ref="Solarus::Sensor">Sensor</a>&amp; <dfn class="local col4 decl" id="74sensor" title='sensor' data-type='const Solarus::Sensor &amp;' data-ref="74sensor">sensor</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="45">45</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState21is_separator_obstacleERKNS_9SeparatorE" title='Solarus::Hero::HurtState::is_separator_obstacle' data-ref="_ZNK7Solarus4Hero9HurtState21is_separator_obstacleERKNS_9SeparatorE">is_separator_obstacle</dfn>(<em>const</em> <a class="type" href="../entities/Entity.h.html#Solarus::Separator" title='Solarus::Separator' data-ref="Solarus::Separator">Separator</a>&amp; <dfn class="local col5 decl" id="75separator" title='separator' data-type='const Solarus::Separator &amp;' data-ref="75separator">separator</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="46">46</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState11can_be_hurtEPNS_6EntityE" title='Solarus::Hero::HurtState::can_be_hurt' data-ref="_ZNK7Solarus4Hero9HurtState11can_be_hurtEPNS_6EntityE">can_be_hurt</dfn>(<a class="type" href="../entities/Entity.h.html#Solarus::Entity" title='Solarus::Entity' data-ref="Solarus::Entity">Entity</a>* <dfn class="local col6 decl" id="76attacker" title='attacker' data-type='Solarus::Entity *' data-ref="76attacker">attacker</dfn>) <em>const</em> override;</td></tr>
+<tr><th id="47">47</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState16can_avoid_switchEv" title='Solarus::Hero::HurtState::can_avoid_switch' data-ref="_ZNK7Solarus4Hero9HurtState16can_avoid_switchEv">can_avoid_switch</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="48">48</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZNK7Solarus4Hero9HurtState13can_avoid_iceEv" title='Solarus::Hero::HurtState::can_avoid_ice' data-ref="_ZNK7Solarus4Hero9HurtState13can_avoid_iceEv">can_avoid_ice</dfn>() <em>const</em> override;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>  <b>private</b>:</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>    <em>bool</em> <dfn class="decl" id="Solarus::Hero::HurtState::has_source" title='Solarus::Hero::HurtState::has_source' data-ref="Solarus::Hero::HurtState::has_source">has_source</dfn>;              <i class="doc">/**&lt; Whether there is a source_xy rectangle.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc">                                   * If no, the hero does not move. */</i></td></tr>
+<tr><th id="54">54</th><td>    <em>const</em> <a class="type" href="../lowlevel/Point.h.html#Solarus::Point" title='Solarus::Point' data-ref="Solarus::Point">Point</a> <dfn class="decl" id="Solarus::Hero::HurtState::source_xy" title='Solarus::Hero::HurtState::source_xy' data-ref="Solarus::Hero::HurtState::source_xy">source_xy</dfn>;        <i class="doc">/**&lt; Coordinates of whatever is hurting the</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">                                   * hero (usually an enemy). */</i></td></tr>
+<tr><th id="56">56</th><td>    <em>int</em> <dfn class="decl" id="Solarus::Hero::HurtState::damage" title='Solarus::Hero::HurtState::damage' data-ref="Solarus::Hero::HurtState::damage">damage</dfn>;                   <i class="doc">/**&lt; Number of life points to remove</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc">                                   * (this number may be reduced by the tunic</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc">                                   * or by hero:on_taking_damage()). */</i></td></tr>
+<tr><th id="59">59</th><td>    <a class="typedef" href="../../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="Solarus::Hero::HurtState::end_hurt_date" title='Solarus::Hero::HurtState::end_hurt_date' data-ref="Solarus::Hero::HurtState::end_hurt_date">end_hurt_date</dfn>;       <i class="doc">/**&lt; Date when the state ends. */</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/entities/Hero.cpp.html'>codebrowser/src/entities/Hero.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

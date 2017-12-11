@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/TilesetData.h' l='123' type='const std::map&lt;std::string, TilePatternData&gt; &amp; Solarus::TilesetData::get_patterns() const'/>
+<use f='codebrowser/src/entities/Tileset.cpp' l='144' u='c' c='_ZN7Solarus7Tileset4loadEv'/>
+<def f='codebrowser/src/entities/TilesetData.cpp' l='225' ll='227' type='const std::map&lt;std::string, TilePatternData&gt; &amp; Solarus::TilesetData::get_patterns() const'/>
+<doc f='codebrowser/src/entities/TilesetData.cpp' l='221'>/**
+ * \brief Returns all tile patterns of this tileset.
+ * \return The tile patterns indexed by their id.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/Dialog.h' l='38' type='const std::string &amp; Solarus::Dialog::get_text() const'/>
+<def f='codebrowser/src/Dialog.cpp' l='53' ll='55' type='const std::string &amp; Solarus::Dialog::get_text() const'/>
+<doc f='codebrowser/src/Dialog.cpp' l='46'>/**
+ * \brief Returns the whole text of this dialog.
+ *
+ * Lines are separated by &apos;\n&apos;.
+ *
+ * \return the text of this dialog
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='122' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='44' u='c' c='_ZN7Solarus10LuaContext11push_dialogEP9lua_StateRKNS_6DialogE'/>

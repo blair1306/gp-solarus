@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/PathMovement.h' l='59' type='void Solarus::PathMovement::set_speed(int speed)'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1187' u='c' c='_ZN7Solarus10LuaContext27path_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1301' u='c' c='_ZN7Solarus10LuaContext34random_path_movement_api_set_speedEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1370' u='c' c='_ZN7Solarus10LuaContext35path_finding_movement_api_set_speedEP9lua_State'/>
+<def f='codebrowser/src/movements/PathMovement.cpp' l='104' ll='106' type='void Solarus::PathMovement::set_speed(int speed)'/>
+<doc f='codebrowser/src/movements/PathMovement.cpp' l='100'>/**
+ * \brief Sets the speed of this movement.
+ * \param speed the speed in pixels per second
+ */</doc>

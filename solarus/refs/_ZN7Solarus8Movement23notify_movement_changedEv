@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='74' type='void Solarus::Movement::notify_movement_changed()'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='95' u='c' c='_ZN7Solarus8Movement10set_entityEPNS_6EntityE'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='128' u='c' c='_ZN7Solarus8Movement12set_drawableEPNS_8DrawableE'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='298' ll='308' type='void Solarus::Movement::notify_movement_changed()'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='294'>/**
+ * \brief Notifies this movement that its characteristics (like speed or angle)
+ * have changed.
+ */</doc>
+<use f='codebrowser/src/movements/PixelMovement.cpp' l='163' u='c' c='_ZN7Solarus13PixelMovement7restartEv'/>
+<use f='codebrowser/src/movements/RandomMovement.cpp' l='134' u='c' c='_ZN7Solarus14RandomMovement18set_next_directionEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='119' u='c' c='_ZN7Solarus16StraightMovement11set_x_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='154' u='c' c='_ZN7Solarus16StraightMovement11set_y_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='172' u='c' c='_ZN7Solarus16StraightMovement9set_speedEd'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='195' u='c' c='_ZN7Solarus16StraightMovement4stopEv'/>
+<use f='codebrowser/src/movements/StraightMovement.cpp' l='252' u='c' c='_ZN7Solarus16StraightMovement9set_angleEd'/>

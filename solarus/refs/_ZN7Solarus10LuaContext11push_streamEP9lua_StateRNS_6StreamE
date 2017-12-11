@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1112' type='static void Solarus::LuaContext::push_stream(lua_State * l, Solarus::Stream &amp; stream)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3459' ll='3461' type='static void Solarus::LuaContext::push_stream(lua_State * l, Solarus::Stream &amp; stream)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3454'>/**
+ * \brief Pushes a stream userdata onto the stack.
+ * \param l A Lua context.
+ * \param stream A stream.
+ */</doc>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1041' u='c' c='_ZN7Solarus10LuaContext15l_create_streamEP9lua_State'/>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/include/solarus/Game.h' l='75' type='Solarus::Equipment &amp; Solarus::Game::get_equipment()'/>
+<use f='codebrowser/src/Game.cpp' l='72' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='76' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/Game.cpp' l='77' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<def f='codebrowser/src/Game.cpp' l='244' ll='246' type='Solarus::Equipment &amp; Solarus::Game::get_equipment()'/>
+<use f='codebrowser/src/Game.cpp' l='369' u='c' c='_ZN7Solarus4Game6updateEv'/>
+<use f='codebrowser/src/Game.cpp' l='550' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='555' u='c' c='_ZN7Solarus4Game23update_commands_effectsEv'/>
+<use f='codebrowser/src/Game.cpp' l='667' u='c' c='_ZN7Solarus4Game18notify_map_changedEv'/>
+<doc f='codebrowser/src/Game.cpp' l='237'>/**
+ * \brief Returns the equipment of the player.
+ *
+ * It is equivalent to get_savegame().get_equipment().
+ *
+ * \return The equipment.
+ */</doc>
+<use f='codebrowser/src/Treasure.cpp' l='60' u='c' c='_ZNK7Solarus8Treasure13is_obtainableEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='106' u='c' c='_ZNK7Solarus8Treasure8get_itemEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='477' u='c' c='_ZN7Solarus6Entity13get_equipmentEv'/>
+<use f='codebrowser/src/entities/EntityState.cpp' l='146' u='c' c='_ZN7Solarus6Entity5State13get_equipmentEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2317' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3831' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='633' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='638' u='c' c='_ZN7Solarus10LuaContext14l_create_chestEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1074' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1079' u='c' c='_ZN7Solarus10LuaContext13l_create_doorEP9lua_State'/>

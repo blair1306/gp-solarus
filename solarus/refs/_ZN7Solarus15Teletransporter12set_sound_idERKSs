@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='56' type='void Solarus::Teletransporter::set_sound_id(const std::string &amp; sound_id)'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='125' ll='127' type='void Solarus::Teletransporter::set_sound_id(const std::string &amp; sound_id)'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='120'>/**
+ * \brief Sets the sound to play when using this teletransporter.
+ * \param sound_id Id of the teletransporter&apos;s sound, or an empty string to
+ * play no sound.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2853' u='c' c='_ZN7Solarus10LuaContext29teletransporter_api_set_soundEP9lua_State'/>

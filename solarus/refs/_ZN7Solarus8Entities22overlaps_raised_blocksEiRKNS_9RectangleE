@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/Entities.h' l='129' type='bool Solarus::Entities::overlaps_raised_blocks(int layer, const Solarus::Rectangle &amp; rectangle)'/>
+<doc f='codebrowser/include/solarus/entities/Entities.h' l='128'>// Specific to some entity types.</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='170' u='c' c='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<def f='codebrowser/src/entities/Entities.cpp' l='1345' ll='1366' type='bool Solarus::Entities::overlaps_raised_blocks(int layer, const Solarus::Rectangle &amp; rectangle)'/>
+<doc f='codebrowser/src/entities/Entities.cpp' l='1339'>/**
+ * \brief Returns whether a rectangle overlaps with a raised crystal block.
+ * \param layer The layer to check.
+ * \param rectangle A rectangle.
+ * \return \c true if this rectangle overlaps a raised crystal block.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='206' u='c' c='_ZN7Solarus4Hero15update_movementEv'/>

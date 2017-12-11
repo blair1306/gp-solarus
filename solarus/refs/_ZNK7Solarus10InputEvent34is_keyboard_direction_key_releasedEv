@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='247' type='bool Solarus::InputEvent::is_keyboard_direction_key_released() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='753' ll='756' type='bool Solarus::InputEvent::is_keyboard_direction_key_released() const'/>
+<use f='codebrowser/src/lowlevel/InputEvent.cpp' l='766' u='c' c='_ZNK7Solarus10InputEvent38is_keyboard_non_direction_key_releasedEv'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='748'>/**
+ * \brief Returns whether this event is a keyboard event
+ * corresponding to releasing one of the four directional keys.
+ * \return true if this event corresponds to releasing one of the four directional keys
+ */</doc>

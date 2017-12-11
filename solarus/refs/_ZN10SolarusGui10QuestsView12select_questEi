@@ -1,0 +1,8 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='55' type='void SolarusGui::QuestsView::select_quest(int index)'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='323' u='c' c='_ZN10SolarusGui10MainWindow32on_action_remove_quest_triggeredEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='180' ll='187' type='void SolarusGui::QuestsView::select_quest(int index)'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='199' u='c' c='_ZN10SolarusGui10QuestsView12select_questERK7QString'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='176'>/**
+ * @brief Selects a quest.
+ * @param index Index of the quest to make selected.
+ */</doc>

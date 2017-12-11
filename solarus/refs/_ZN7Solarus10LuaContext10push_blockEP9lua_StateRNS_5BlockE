@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1110' type='static void Solarus::LuaContext::push_block(lua_State * l, Solarus::Block &amp; block)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='3184' ll='3186' type='static void Solarus::LuaContext::push_block(lua_State * l, Solarus::Block &amp; block)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6056' u='c' c='_ZN7Solarus10LuaContext15block_on_movingERNS_5BlockE'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='6074' u='c' c='_ZN7Solarus10LuaContext14block_on_movedERNS_5BlockE'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='3179'>/**
+ * \brief Pushes a block userdata onto the stack.
+ * \param l A Lua context.
+ * \param block A block.
+ */</doc>

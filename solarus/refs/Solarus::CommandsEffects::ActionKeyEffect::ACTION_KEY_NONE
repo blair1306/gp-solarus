@@ -1,0 +1,31 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='50' type='0'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='27' u='r'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='63' u='r' c='_ZN7Solarus15CommandsEffectsC1Ev'/>
+<use f='codebrowser/src/CommandsEffects.cpp' l='64' u='r' c='_ZN7Solarus15CommandsEffectsC1Ev'/>
+<doc f='codebrowser/include/solarus/CommandsEffects.h' l='50'>/**&lt; nothing happens when the user presses the Action key and the action icon is not shown */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='103' u='r' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='834' u='r' c='_ZN7Solarus4Game10set_pausedEb'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='177' u='r' c='_ZN7Solarus4Bomb23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='421' u='r' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Chest.cpp' l='429' u='r' c='_ZN7Solarus5Chest29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Crystal.cpp' l='116' u='r' c='_ZN7Solarus7Crystal29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Destructible.cpp' l='330' u='r' c='_ZN7Solarus12Destructible26notify_collision_with_heroERNS_4HeroENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='236' u='r' c='_ZN7Solarus4Door16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Door.cpp' l='560' u='r' c='_ZN7Solarus4Door29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='758' u='r' c='_ZN7Solarus4Hero28notify_facing_entity_changedEPNS_6EntityE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1818' u='r' c='_ZN7Solarus4Hero29notify_collision_with_crystalERNS_7CrystalENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1849' u='r' c='_ZN7Solarus4Hero27notify_collision_with_chestERNS_5ChestE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1865' u='r' c='_ZN7Solarus4Hero27notify_collision_with_blockERNS_5BlockE'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1898' u='r' c='_ZN7Solarus4Hero26notify_collision_with_bombERNS_4BombENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='224' u='r' c='_ZN7Solarus3Npc16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='259' u='r' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='263' u='r' c='_ZN7Solarus3Npc29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='379' u='r' c='_ZN7Solarus3Npc23notify_position_changedEv'/>
+<use f='codebrowser/src/entities/ShopTreasure.cpp' l='175' u='r' c='_ZN7Solarus12ShopTreasure16notify_collisionERNS_6EntityENS_13CollisionModeE'/>
+<use f='codebrowser/src/hero/CarryingState.cpp' l='68' u='r' c='_ZN7Solarus4Hero13CarryingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='60' u='r' c='_ZN7Solarus4Hero9FreeState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/FreeState.cpp' l='101' u='r' c='_ZN7Solarus4Hero9FreeState29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/hero/FrozenState.cpp' l='42' u='r' c='_ZN7Solarus4Hero11FrozenState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/LiftingState.cpp' l='88' u='r' c='_ZN7Solarus4Hero12LiftingState4stopEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/StairsState.cpp' l='98' u='r' c='_ZN7Solarus4Hero11StairsState5startEPKNS_6Entity5StateE'/>
+<use f='codebrowser/src/hero/SwimmingState.cpp' l='61' u='r' c='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>

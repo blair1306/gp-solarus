@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='710' type='static int Solarus::LuaContext::game_api_add_money(lua_State * )'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='82' u='r' c='_ZN7Solarus10LuaContext20register_game_moduleEv'/>
+<def f='codebrowser/src/lua/GameApi.cpp' l='918' ll='932' type='static int Solarus::LuaContext::game_api_add_money(lua_State * l)'/>
+<doc f='codebrowser/src/lua/GameApi.cpp' l='913'>/**
+ * \brief Implementation of game:add_money().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

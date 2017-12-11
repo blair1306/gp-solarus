@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Teletransporter.h' l='58' type='void Solarus::Teletransporter::set_transition_style(Transition::Style transition_style)'/>
+<def f='codebrowser/src/entities/Teletransporter.cpp' l='141' ll='143' type='void Solarus::Teletransporter::set_transition_style(Transition::Style transition_style)'/>
+<doc f='codebrowser/src/entities/Teletransporter.cpp' l='137'>/**
+ * \brief Sets the style of transition between both maps.
+ * \param transition_style Style of transition of this teletransporter.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2886' u='c' c='_ZN7Solarus10LuaContext34teletransporter_api_set_transitionEP9lua_State'/>

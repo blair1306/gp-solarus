@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Door.h' l='124' type='void Solarus::Door::update_dynamic_tiles()'/>
+<use f='codebrowser/src/entities/Door.cpp' l='187' u='c' c='_ZN7Solarus4Door8set_openEb'/>
+<def f='codebrowser/src/entities/Door.cpp' l='208' ll='220' type='void Solarus::Door::update_dynamic_tiles()'/>
+<use f='codebrowser/src/entities/Door.cpp' l='510' u='c' c='_ZN7Solarus4Door6updateEv'/>
+<doc f='codebrowser/src/entities/Door.cpp' l='202'>/**
+ * \brief Enables or disables the dynamic tiles related to this door.
+ *
+ * The dynamic tiles impacted by this function are the ones whose prefix is the door&apos;s name
+ * followed by &quot;_closed&quot; or &quot;_open&quot;, depending on the door state.
+ */</doc>

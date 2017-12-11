@@ -1,0 +1,9 @@
+<dec f='include/SDL2/SDL_video.h' l='739' type='int SDL_SetWindowBrightness(SDL_Window * window, float brightness)'/>
+<doc f='include/SDL2/SDL_video.h' l='731'>/**
+ *  \brief Set the brightness (gamma correction) for a window.
+ *
+ *  \return 0 on success, or -1 if setting the brightness isn&apos;t supported.
+ *
+ *  \sa SDL_GetWindowBrightness()
+ *  \sa SDL_SetWindowGammaRamp()
+ */</doc>

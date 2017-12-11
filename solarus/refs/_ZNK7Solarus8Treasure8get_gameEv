@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/Treasure.h' l='52' type='Solarus::Game &amp; Solarus::Treasure::get_game() const'/>
+<def f='codebrowser/src/Treasure.cpp' l='97' ll='99' type='Solarus::Game &amp; Solarus::Treasure::get_game() const'/>
+<doc f='codebrowser/src/Treasure.cpp' l='93'>/**
+ * \brief Returns the game where this treasure was created.
+ * \return The game.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2484' u='c' c='_ZN7Solarus10LuaContext29notify_hero_brandish_treasureERKNS_8TreasureERKNS_12ScopedLuaRefE'/>

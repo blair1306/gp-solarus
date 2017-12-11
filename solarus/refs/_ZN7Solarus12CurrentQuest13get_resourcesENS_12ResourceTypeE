@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/CurrentQuest.h' l='46' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::CurrentQuest::get_resources(Solarus::ResourceType resource_type)'/>
+<def f='codebrowser/src/CurrentQuest.cpp' l='143' ll='147' type='const std::map&lt;std::string, std::string&gt; &amp; Solarus::CurrentQuest::get_resources(Solarus::ResourceType resource_type)'/>
+<use f='codebrowser/src/CurrentQuest.cpp' l='230' u='c' c='_ZN7Solarus12CurrentQuest17get_language_nameERKSs'/>
+<doc f='codebrowser/src/CurrentQuest.cpp' l='137'>/**
+ * \brief Returns the list of element IDs of the specified resource type.
+ * \param resource_type A type of resource.
+ * \return The IDs of all declared element of this type, in their declaration
+ * order.
+ */</doc>
+<use f='codebrowser/src/Equipment.cpp' l='390' u='c' c='_ZN7Solarus9Equipment10load_itemsEv'/>
+<use f='codebrowser/src/Game.cpp' l='103' u='c' c='_ZN7Solarus4GameC1ERNS_8MainLoopERKSt10shared_ptrINS_8SavegameEE'/>
+<use f='codebrowser/src/lowlevel/FontResource.cpp' l='54' u='c' c='_ZN7Solarus12FontResource10load_fontsEv'/>
+<use f='codebrowser/src/lowlevel/Sound.cpp' l='264' u='c' c='_ZN7Solarus5Sound8load_allEv'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='249' u='c' c='_ZN7Solarus10LuaContext14game_api_startEP9lua_State'/>
+<use f='codebrowser/src/lua/LanguageApi.cpp' l='151' u='c' c='_ZN7Solarus10LuaContext26language_api_get_languagesEP9lua_State'/>

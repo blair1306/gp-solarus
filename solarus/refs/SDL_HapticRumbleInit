@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1189' type='int SDL_HapticRumbleInit(SDL_Haptic * haptic)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='1178'>/**
+ *  \brief Initializes the haptic device for simple rumble playback.
+ *
+ *  \param haptic Haptic device to initialize for simple rumble playback.
+ *  \return 0 on success or -1 on error.
+ *
+ *  \sa SDL_HapticOpen
+ *  \sa SDL_HapticRumbleSupported
+ *  \sa SDL_HapticRumblePlay
+ *  \sa SDL_HapticRumbleStop
+ */</doc>

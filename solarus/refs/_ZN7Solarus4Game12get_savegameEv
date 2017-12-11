@@ -1,0 +1,50 @@
+<dec f='codebrowser/include/solarus/Game.h' l='73' type='Solarus::Savegame &amp; Solarus::Game::get_savegame()'/>
+<use f='codebrowser/src/Game.cpp' l='126' u='c' c='_ZN7Solarus4Game5startEv'/>
+<use f='codebrowser/src/Game.cpp' l='157' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<use f='codebrowser/src/Game.cpp' l='158' u='c' c='_ZN7Solarus4Game4stopEv'/>
+<def f='codebrowser/src/Game.cpp' l='225' ll='227' type='Solarus::Savegame &amp; Solarus::Game::get_savegame()'/>
+<use f='codebrowser/src/Game.cpp' l='245' u='c' c='_ZN7Solarus4Game13get_equipmentEv'/>
+<use f='codebrowser/src/Game.cpp' l='471' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<use f='codebrowser/src/Game.cpp' l='472' u='c' c='_ZN7Solarus4Game18update_transitionsEv'/>
+<doc f='codebrowser/src/Game.cpp' l='221'>/**
+ * \brief Returns the saved data associated to this game.
+ * \return The saved data.
+ */</doc>
+<use f='codebrowser/src/GameCommands.cpp' l='111' u='c' c='_ZN7Solarus12GameCommands12get_savegameEv'/>
+<use f='codebrowser/src/GameCommands.cpp' l='119' u='c' c='_ZNK7Solarus12GameCommands12get_savegameEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='142' u='c' c='_ZNK7Solarus8Treasure8is_foundEv'/>
+<use f='codebrowser/src/Treasure.cpp' l='174' u='c' c='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<use f='codebrowser/src/entities/Door.cpp' l='93' u='c' c='_ZN7Solarus4DoorC1ERNS_4GameERKSsiRKNS_5PointEiS4_S4_'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='152' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Enemy.cpp' l='155' u='c' c='_ZN7Solarus5Enemy6createERNS_4GameERKSsS4_S4_iRKNS_5PointEiRKNS_8TreasureE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='509' u='c' c='_ZN7Solarus6Entity12get_savegameEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='784' u='c' c='_ZN7Solarus10LuaContext19entity_api_get_gameEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='3860' u='c' c='_ZN7Solarus10LuaContext40l_shop_treasure_question_dialog_finishedEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1565' u='c' c='_ZN7Solarus10LuaContext15game_on_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1569' u='c' c='_ZN7Solarus10LuaContext15game_on_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1583' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1584' u='c' c='_ZN7Solarus10LuaContext16game_on_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1601' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1605' u='c' c='_ZN7Solarus10LuaContext14game_on_updateERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1622' u='c' c='_ZN7Solarus10LuaContext12game_on_drawERNS_4GameERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1623' u='c' c='_ZN7Solarus10LuaContext12game_on_drawERNS_4GameERKSt10shared_ptrINS_7SurfaceEE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1640' u='c' c='_ZN7Solarus10LuaContext19game_on_map_changedERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1644' u='c' c='_ZN7Solarus10LuaContext19game_on_map_changedERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1658' u='c' c='_ZN7Solarus10LuaContext14game_on_pausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1662' u='c' c='_ZN7Solarus10LuaContext14game_on_pausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1676' u='c' c='_ZN7Solarus10LuaContext16game_on_unpausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1680' u='c' c='_ZN7Solarus10LuaContext16game_on_unpausedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1701' u='c' c='_ZN7Solarus10LuaContext22game_on_dialog_startedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1705' u='c' c='_ZN7Solarus10LuaContext22game_on_dialog_startedERNS_4GameERKNS_6DialogERKNS_12ScopedLuaRefE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1723' u='c' c='_ZN7Solarus10LuaContext23game_on_dialog_finishedERNS_4GameERKNS_6DialogE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1727' u='c' c='_ZN7Solarus10LuaContext23game_on_dialog_finishedERNS_4GameERKNS_6DialogE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1742' u='c' c='_ZN7Solarus10LuaContext25game_on_game_over_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1746' u='c' c='_ZN7Solarus10LuaContext25game_on_game_over_startedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1762' u='c' c='_ZN7Solarus10LuaContext26game_on_game_over_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1766' u='c' c='_ZN7Solarus10LuaContext26game_on_game_over_finishedERNS_4GameE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1784' u='c' c='_ZN7Solarus10LuaContext13game_on_inputERNS_4GameERKNS_10InputEventE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1806' u='c' c='_ZN7Solarus10LuaContext23game_on_command_pressedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1807' u='c' c='_ZN7Solarus10LuaContext23game_on_command_pressedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1830' u='c' c='_ZN7Solarus10LuaContext24game_on_command_releasedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='1831' u='c' c='_ZN7Solarus10LuaContext24game_on_command_releasedERNS_4GameENS_11GameCommandE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='1404' u='c' c='_ZN7Solarus10LuaContext16map_api_get_gameEP9lua_State'/>

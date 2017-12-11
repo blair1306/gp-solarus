@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='1203' type='static std::shared_ptr&lt;CustomEntity&gt; Solarus::LuaContext::check_custom_entity(lua_State * l, int index)'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5156' ll='5160' type='static std::shared_ptr&lt;CustomEntity&gt; Solarus::LuaContext::check_custom_entity(lua_State * l, int index)'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5304' u='c' c='_ZN7Solarus10LuaContext27custom_entity_api_get_modelEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5319' u='c' c='_ZN7Solarus10LuaContext31custom_entity_api_get_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5334' u='c' c='_ZN7Solarus10LuaContext31custom_entity_api_set_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5351' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_is_drawn_in_y_orderEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5366' u='c' c='_ZN7Solarus10LuaContext38custom_entity_api_set_drawn_in_y_orderEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5383' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_set_traversable_byEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5442' u='c' c='_ZN7Solarus10LuaContext34custom_entity_api_set_can_traverseEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5501' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_can_traverse_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5519' u='c' c='_ZN7Solarus10LuaContext41custom_entity_api_set_can_traverse_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5545' u='c' c='_ZN7Solarus10LuaContext36custom_entity_api_add_collision_testEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5607' u='c' c='_ZN7Solarus10LuaContext39custom_entity_api_clear_collision_testsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5623' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_get_modified_groundEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='5645' u='c' c='_ZN7Solarus10LuaContext37custom_entity_api_set_modified_groundEP9lua_State'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5149'>/**
+ * \brief Checks that the userdata at the specified index of the stack is a
+ * custom entity and returns it.
+ * \param l A Lua context.
+ * \param index An index in the stack.
+ * \return The custom entity.
+ */</doc>

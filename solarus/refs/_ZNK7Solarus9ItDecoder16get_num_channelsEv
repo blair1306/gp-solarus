@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/lowlevel/ItDecoder.h' l='43' type='int Solarus::ItDecoder::get_num_channels() const'/>
+<def f='codebrowser/src/lowlevel/ItDecoder.cpp' l='82' ll='84' type='int Solarus::ItDecoder::get_num_channels() const'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='95' u='c' c='_ZNK7Solarus9ItDecoder18get_channel_volumeEi'/>
+<use f='codebrowser/src/lowlevel/ItDecoder.cpp' l='119' u='c' c='_ZN7Solarus9ItDecoder18set_channel_volumeEii'/>
+<doc f='codebrowser/src/lowlevel/ItDecoder.cpp' l='78'>/**
+ * \brief Returns the number of channels in this music.
+ * \return The number of channels.
+ */</doc>
+<use f='codebrowser/src/lowlevel/Music.cpp' l='178' u='c' c='_ZN7Solarus5Music16get_num_channelsEv'/>

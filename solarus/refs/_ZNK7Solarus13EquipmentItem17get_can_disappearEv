@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='64' type='bool Solarus::EquipmentItem::get_can_disappear() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='198' ll='200' type='bool Solarus::EquipmentItem::get_can_disappear() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='193'>/**
+ * \brief Returns whether this item disappears after a few seconds
+ * when it is dropped by an enemy or a destructible entity.
+ * \return true if this item can disappear.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='122' u='c' c='_ZN7Solarus8Pickable6createERNS_4GameERKSsiRKNS_5PointENS_8TreasureENS_13FallingHeightEb'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='343' u='c' c='_ZN7Solarus10LuaContext26item_api_get_can_disappearEP9lua_State'/>

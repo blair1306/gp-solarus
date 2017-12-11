@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaData.h' l='42' type='bool Solarus::LuaData::import_from_file(const std::string &amp; file_name)'/>
+<def f='codebrowser/src/lua/LuaData.cpp' l='62' ll='74' type='bool Solarus::LuaData::import_from_file(const std::string &amp; file_name)'/>
+<doc f='codebrowser/src/lua/LuaData.cpp' l='52'>/**
+ * \brief Imports a Lua data file from the filesystem to this object.
+ *
+ * Unlike import_from_quest_file(), this function acts on a regular file on the
+ * filesystem, independently of any notion of quest search path.
+ *
+ * \param[in] file_name Path of the file to load.
+ * The file must be encoded in UTF-8.
+ * \return \c true in case of success, \c false if the file could not be loaded.
+ */</doc>

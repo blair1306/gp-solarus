@@ -1,0 +1,15 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='137' type='bool Solarus::Entity::State::can_take_stairs() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='768' ll='770' type='bool Solarus::Entity::State::can_take_stairs() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='760'>/**
+ * \brief Returns whether the entity can take stairs in this state.
+ * If false is returned, stairs have no effect (but they are obstacle for the entity).
+ *
+ * Returns false by default.
+ *
+ * \return true if the entity can take stairs in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1729' u='c' c='_ZN7Solarus4Hero28notify_collision_with_stairsERNS_6StairsENS_13CollisionModeE'/>
+<ovr f='codebrowser/src/hero/CarryingState.cpp' l='208' c='_ZNK7Solarus4Hero13CarryingState15can_take_stairsEv'/>
+<ovr f='codebrowser/src/hero/FreeState.cpp' l='179' c='_ZNK7Solarus4Hero9FreeState15can_take_stairsEv'/>
+<ovr f='codebrowser/src/hero/RunningState.cpp' l='206' c='_ZNK7Solarus4Hero12RunningState15can_take_stairsEv'/>
+<ovr f='codebrowser/src/hero/SwordLoadingState.cpp' l='164' c='_ZNK7Solarus4Hero17SwordLoadingState15can_take_stairsEv'/>

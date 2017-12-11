@@ -1,0 +1,70 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='48' type='void Solarus::Rectangle::Rectangle(int x, int y, int width, int height)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='59' ll='61' type='void Solarus::Rectangle::Rectangle(int x, int y, int width, int height)'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='69' u='c' c='_ZN7Solarus9RectangleC1ERKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='83' u='c' c='_ZN7Solarus9RectangleC1ERKNS_5PointES3_'/>
+<use f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='485' u='c' c='_ZN7Solarus9RectangleaNERKS0_'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='34' u='c' c='_ZN7Solarus8QuadtreeC1Ev'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='251' u='c' c='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='52'>/**
+ * \brief Creates a rectangle, specifying its properties.
+ * \param x x coordinate of the top-left corner
+ * \param y y coordinate of the top-left corner
+ * \param width the rectangle&apos;s width
+ * \param height the rectangle&apos;s height
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='592' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='600' u='c' c='_ZN7Solarus3Map24build_foreground_surfaceEv'/>
+<use f='codebrowser/src/Map.cpp' l='672' u='c' c='_ZN7Solarus3Map11draw_visualERNS_8DrawableEiiRKNS_9RectangleE'/>
+<use f='codebrowser/src/Map.cpp' l='977' u='c' c='_ZN7Solarus3Map29test_collision_with_obstaclesEiiiRNS_6EntityE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='427' u='c' c='_ZNK7Solarus6Camera16apply_map_boundsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='529' u='c' c='_ZNK7Solarus6Camera16apply_separatorsERKNS_9RectangleE'/>
+<use f='codebrowser/src/entities/DynamicTile.cpp' l='97' u='c' c='_ZN7Solarus11DynamicTile11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='177' u='c' c='_ZN7Solarus8EntitiesC1ERNS_4GameERNS_3MapE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='569' u='c' c='_ZNK7Solarus8Entities14get_region_boxERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='2778' u='c' c='_ZNK7Solarus6Entity15overlaps_cameraEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1570' u='c' c='_ZN7Solarus4Hero27notify_collision_with_enemyERNS_5EnemyERNS_6SpriteES4_'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1657' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='250' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='281' u='c' c='_ZN7Solarus18NonAnimatedRegions10build_cellEi'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='296' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='299' u='c' c='_ZNK7Solarus6Stairs22get_clipping_rectangleENS0_3WayE'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='79' u='c' c='_ZN7Solarus4Tile4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='47' u='c' c='_ZN7Solarus15TilePatternDataC1Ev'/>
+<use f='codebrowser/src/entities/TilesetData.cpp' l='506' u='c' c='_ZN7Solarus12_GLOBAL__N_114l_tile_patternEP9lua_State'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='112' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='113' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/PixelBits.cpp' l='131' u='c' c='_ZNK7Solarus9PixelBits14test_collisionERKS0_RKNS_5PointES5_'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='553' u='c' c='_ZN7Solarus7Surface15fill_with_colorERKNS_5ColorE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='615' u='c' c='_ZN7Solarus7Surface8raw_drawERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/TextSurface.cpp' l='478' u='c' c='_ZN7Solarus11TextSurface14rebuild_bitmapEv'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='894' u='c' c='_ZN7Solarus5Video12get_viewportEv'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='155' u='c' c='_ZN7Solarus10LuaContext24drawable_api_draw_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1209' u='c' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='2053' u='c' c='_ZN7Solarus10LuaContext33map_api_get_entities_in_rectangleEP9lua_State'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='194' u='c' c='_ZN7Solarus10LuaContext22surface_api_fill_colorEP9lua_State'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='38' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='39' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='40' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='41' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='42' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='43' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='44' u='c'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='45' u='c'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='128' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='129' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='130' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='131' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='132' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='133' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='134' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='135' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='136' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='137' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='146' u='c' c='_ZN12_GLOBAL__N_18test_addERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='173' u='c' c='_ZN12_GLOBAL__N_117test_add_big_sizeERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='174' u='c' c='_ZN12_GLOBAL__N_117test_add_big_sizeERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='182' u='c' c='_ZN12_GLOBAL__N_114test_add_limitERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='185' u='c' c='_ZN12_GLOBAL__N_114test_add_limitERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='193' u='c' c='_ZN12_GLOBAL__N_123test_add_center_outsideERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='194' u='c' c='_ZN12_GLOBAL__N_123test_add_center_outsideERN7Solarus15TestEnvironmentERNS0_8QuadtreeISt10shared_ptrINS_7ElementEEEE'/>
+<use f='codebrowser/tests/src/tests/Quadtree.cpp' l='245' u='c' c='main'/>

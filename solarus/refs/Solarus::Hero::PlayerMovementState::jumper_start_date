@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='81' type='uint32_t'/>
+<offset>640</offset>
+<doc f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='81'>/**&lt; Date to trigger the jumper
+                                        * (because a small delay is necessary) */</doc>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='39' u='w' c='_ZN7Solarus4Hero19PlayerMovementStateC1ERS0_RKSs'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='157' u='w' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='159' u='r' c='_ZN7Solarus4Hero19PlayerMovementState6updateEv'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='177' u='r' c='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='178' u='w' c='_ZN7Solarus4Hero19PlayerMovementState13set_suspendedEb'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='314' u='w' c='_ZN7Solarus4Hero19PlayerMovementState23notify_jumper_activatedERNS_6JumperE'/>
+<use f='codebrowser/src/hero/PlayerMovementState.cpp' l='324' u='w' c='_ZN7Solarus4Hero19PlayerMovementState13cancel_jumperEv'/>

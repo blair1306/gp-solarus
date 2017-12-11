@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='177' type='bool Solarus::Hero::is_sensor_obstacle(Solarus::Sensor &amp; sensor)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='341' c='_ZN7Solarus6Entity18is_sensor_obstacleERNS_6SensorE'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='1505' ll='1507' type='bool Solarus::Hero::is_sensor_obstacle(Solarus::Sensor &amp; sensor)'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='1500'>/**
+ * \brief Returns whether a sensor is currently considered as an obstacle for the hero.
+ * \param sensor a sensor (not used here)
+ * \return true if this sensor is currently an obstacle for the hero
+ */</doc>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/Map.h' l='177' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, int x, int y, const Solarus::Rectangle &amp; clipping_area)'/>
+<def f='codebrowser/src/Map.cpp' l='657' ll='687' type='void Solarus::Map::draw_visual(Solarus::Drawable &amp; drawable, int x, int y, const Solarus::Rectangle &amp; clipping_area)'/>
+<doc f='codebrowser/src/Map.cpp' l='649'>/**
+ * \brief Draws a drawable object on a restricted area of the camera surface.
+ * \param drawable The drawable object to draw.
+ * \param x X coordinate of the drawable&apos;s origin point in the map.
+ * \param y Y coordinate of the drawable&apos;s origin point in the map.
+ * \param clipping_area Rectangle of the map where the drawing will be
+ * restricted. A flat rectangle means no restriction.
+ */</doc>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='870' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='877' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='880' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='884' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='888' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='892' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='896' u='c' c='_ZN7Solarus11HeroSprites11draw_on_mapEv'/>

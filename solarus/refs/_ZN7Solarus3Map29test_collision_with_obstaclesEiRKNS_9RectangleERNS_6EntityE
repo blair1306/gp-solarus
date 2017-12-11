@@ -1,0 +1,28 @@
+<dec f='codebrowser/include/solarus/Map.h' l='128' type='bool Solarus::Map::test_collision_with_obstacles(int layer, const Solarus::Rectangle &amp; collision_box, Solarus::Entity &amp; entity_to_check)'/>
+<def f='codebrowser/src/Map.cpp' l='890' ll='952' type='bool Solarus::Map::test_collision_with_obstacles(int layer, const Solarus::Rectangle &amp; collision_box, Solarus::Entity &amp; entity_to_check)'/>
+<doc f='codebrowser/src/Map.cpp' l='881'>/**
+ * \brief Tests whether a rectangle collides with the map obstacles.
+ * \param layer Layer of the rectangle in the map.
+ * \param collision_box The rectangle to check (its dimensions should be
+ * multiples of 8).
+ * \param entity_to_check The entity to check (used to decide what is
+ * considered as obstacle).
+ * \return \c true if the rectangle is overlapping an obstacle.
+ */</doc>
+<use f='codebrowser/src/entities/CrystalBlock.cpp' l='169' u='c' c='_ZN7Solarus12CrystalBlock8try_jumpERNS_4HeroERKNS_9RectangleEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='348' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='357' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='367' u='c' c='_ZN7Solarus4Hero32apply_additional_ground_movementEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='800' u='c' c='_ZN7Solarus4Hero18is_facing_obstacleEv'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='960' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='970' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='978' u='c' c='_ZN7Solarus4Hero28get_real_movement_direction8Ev'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1662' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1680' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='1704' u='c' c='_ZN7Solarus4Hero28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Hero.cpp' l='2017' u='c' c='_ZN7Solarus4Hero25try_snap_to_facing_entityEv'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='314' u='c' c='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<use f='codebrowser/src/hero/HookshotState.cpp' l='218' u='c' c='_ZN7Solarus4Hero13HookshotState15finish_movementEv'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1630' u='c' c='_ZN7Solarus10LuaContext25entity_api_test_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/movements/Movement.cpp' l='446' u='c' c='_ZNK7Solarus8Movement29test_collision_with_obstaclesEii'/>
+<use f='codebrowser/src/movements/PathFinding.cpp' l='307' u='c' c='_ZNK7Solarus11PathFinding24is_node_transition_validERKNS0_4NodeEi'/>

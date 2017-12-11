@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/lowlevel/Rectangle.h' l='49' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<def f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='68' ll='70' type='void Solarus::Rectangle::Rectangle(const Solarus::Point &amp; xy, const Solarus::Size &amp; size)'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='618' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='621' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='624' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<use f='codebrowser/include/solarus/containers/Quadtree.inl' l='627' u='c' c='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<doc f='codebrowser/include/solarus/lowlevel/Rectangle.inl' l='63'>/**
+ * \brief Creates a rectangle, specifying its properties.
+ * \param xy coordinates of the top-left corner
+ * \param size the rectangle&apos;s size
+ */</doc>
+<use f='codebrowser/src/Map.cpp' l='1088' u='c' c='_ZNK7Solarus3Map10get_groundEiRKNS_5PointEPKNS_6EntityE'/>
+<use f='codebrowser/src/SpriteData.cpp' l='128' u='c' c='_ZNK7Solarus28SpriteAnimationDirectionData16get_bounding_boxEv'/>
+<use f='codebrowser/src/SpriteData.cpp' l='176' u='c' c='_ZNK7Solarus28SpriteAnimationDirectionData9get_frameEv'/>
+<use f='codebrowser/src/entities/Bomb.cpp' l='150' u='c' c='_ZN7Solarus4Bomb28notify_collision_with_streamERNS_6StreamEii'/>
+<use f='codebrowser/src/entities/Camera.cpp' l='311' u='c' c='_ZNK7Solarus6Camera21get_position_to_trackERKNS_5PointE'/>
+<use f='codebrowser/src/entities/Entities.cpp' l='1224' u='c' c='_ZN7Solarus8Entities4drawEv'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='65' u='c' c='_ZN7Solarus6EntityC1ERKSsiiRKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/entities/SimpleTilePattern.cpp' l='32' u='c' c='_ZN7Solarus17SimpleTilePatternC1ENS_6GroundERKNS_5PointERKNS_4SizeE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='684' u='c' c='_ZN7Solarus7Surface15raw_draw_regionERKNS_9RectangleERS0_RKNS_5PointE'/>
+<use f='codebrowser/src/lowlevel/Surface.cpp' l='860' u='c' c='_ZN7Solarus7Surface6renderEP12SDL_RendererRKNS_9RectangleES5_S5_hRKSt6vectorISt10shared_ptrINS0_14SubSurfaceNodeEESaIS9_EE'/>
+<use f='codebrowser/src/lua/MapApi.cpp' l='436' u='c' c='_ZN7Solarus10LuaContext13l_create_tileEP9lua_State'/>

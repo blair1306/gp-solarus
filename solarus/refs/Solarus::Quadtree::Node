@@ -1,0 +1,39 @@
+<def f='codebrowser/include/solarus/containers/Quadtree.h' l='84' ll='137'/>
+<fun r='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE'/>
+<fun r='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree4Node5clearEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node10initializeERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node8get_cellEv'/>
+<fun r='_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node16get_num_elementsEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node8is_splitEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node5mergeEv'/>
+<fun r='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<mbr r='Solarus::Quadtree::Node::quadtree' t='const Quadtree&lt;T&gt; &amp;'/>
+<mbr r='Solarus::Quadtree::Node::elements' t='std::vector&lt;std::pair&lt;T, Rectangle&gt; &gt;'/>
+<mbr r='Solarus::Quadtree::Node::children' t='std::array&lt;std::unique_ptr&lt;Node&gt;, 4&gt;'/>
+<mbr r='Solarus::Quadtree::Node::cell' t='Solarus::Rectangle'/>
+<mbr r='Solarus::Quadtree::Node::center' t='Solarus::Point'/>
+<mbr r='Solarus::Quadtree::Node::color' t='Solarus::Color'/>
+<fun r='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EE'/>
+<fun r='_ZN7Solarus8Quadtree4NodeC1ERKNS_8QuadtreeIT_EERKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree4Node5clearEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node10initializeERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node8get_cellEv'/>
+<fun r='_ZNK7Solarus8Quadtree4Node13get_cell_sizeEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node3addERKT_RKNS_9RectangleE'/>
+<fun r='_ZN7Solarus8Quadtree4Node6removeERKT_RKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node8is_splitEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node5splitEv'/>
+<fun r='_ZN7Solarus8Quadtree4Node5mergeEv'/>
+<fun r='_ZNK7Solarus8Quadtree4Node12is_main_cellERKNS_9RectangleE'/>
+<fun r='_ZNK7Solarus8Quadtree4Node16get_num_elementsEv'/>
+<fun r='_ZNK7Solarus8Quadtree4Node12get_elementsERKNS_9RectangleERSt3setIT_St4lessIS6_ESaIS6_EE'/>
+<fun r='_ZN7Solarus8Quadtree4Node4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>
+<fun r='_ZN7Solarus8Quadtree4Node14draw_rectangleERKNS_9RectangleERKNS_5ColorERKSt10shared_ptrINS_7SurfaceEERKNS_5PointE'/>

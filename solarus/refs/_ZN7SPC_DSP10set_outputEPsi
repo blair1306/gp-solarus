@@ -1,0 +1,6 @@
+<dec f='codebrowser/include/solarus/third_party/snes_spc/SPC_DSP.h' l='21' type='void SPC_DSP::set_output(sample_t * out, int out_size)'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='273' u='c' c='_ZN8SNES_SPC9reset_bufEv'/>
+<use f='codebrowser/src/third_party/snes_spc/SNES_SPC_misc.cpp' l='305' u='c' c='_ZN8SNES_SPC10set_outputEPsi'/>
+<def f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='76' ll='87' type='void SPC_DSP::set_output(sample_t * out, int size)'/>
+<use f='codebrowser/src/third_party/snes_spc/SPC_DSP.cpp' l='646' u='c' c='_ZN7SPC_DSP4initEPv'/>
+<use f='codebrowser/src/third_party/snes_spc/dsp.cpp' l='34' u='c' c='spc_dsp_set_output'/>

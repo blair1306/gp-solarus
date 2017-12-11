@@ -1,0 +1,22 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='77' type='int Solarus::Sprite::get_current_direction() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='333' ll='335' type='int Solarus::Sprite::get_current_direction() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='693' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='329'>/**
+ * \brief Returns the current direction of the sprite&apos;s animation.
+ * \return the current direction
+ */</doc>
+<use f='codebrowser/src/entities/Enemy.cpp' l='1052' u='c' c='_ZN7Solarus5Enemy11attack_heroERNS_4HeroEPNS_6SpriteE'/>
+<use f='codebrowser/src/entities/Entity.cpp' l='1024' u='c' c='_ZNK7Solarus6Entity16get_facing_pointEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='229' u='c' c='_ZN7Solarus8Hookshot11draw_on_mapEv'/>
+<use f='codebrowser/src/entities/Hookshot.cpp' l='287' u='c' c='_ZN7Solarus8Hookshot9attach_toERNS_6EntityE'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='113' u='c' c='_ZN7Solarus11HeroSprites17rebuild_equipmentEv'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='188' u='c' c='_ZN7Solarus11HeroSprites19set_tunic_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='257' u='c' c='_ZN7Solarus11HeroSprites19set_sword_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='376' u='c' c='_ZN7Solarus11HeroSprites20set_shield_sprite_idERKSs'/>
+<use f='codebrowser/src/hero/HeroSprites.cpp' l='662' u='c' c='_ZNK7Solarus11HeroSprites23get_animation_directionEv'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='228' u='c' c='_ZN7Solarus10LuaContext24sprite_api_get_directionEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='311' u='c' c='_ZN7Solarus10LuaContext20sprite_api_set_frameEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='331' u='c' c='_ZN7Solarus10LuaContext25sprite_api_get_num_framesEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='417' u='c' c='_ZN7Solarus10LuaContext19sprite_api_get_sizeEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='456' u='c' c='_ZN7Solarus10LuaContext21sprite_api_get_originEP9lua_State'/>
+<use f='codebrowser/src/lua/SpriteApi.cpp' l='495' u='c' c='_ZN7Solarus10LuaContext27sprite_api_get_frame_src_xyEP9lua_State'/>

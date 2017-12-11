@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/movements/Movement.h' l='87' type='bool Solarus::Movement::are_obstacles_ignored() const'/>
+<use f='codebrowser/src/entities/StreamAction.cpp' l='305' u='c' c='_ZN7Solarus12StreamAction14test_obstaclesEii'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='663' u='c' c='_ZN7Solarus10LuaContext33movement_api_get_ignore_obstaclesEP9lua_State'/>
+<def f='codebrowser/src/movements/Movement.cpp' l='482' ll='485' type='bool Solarus::Movement::are_obstacles_ignored() const'/>
+<doc f='codebrowser/src/movements/Movement.cpp' l='478'>/**
+ * \brief Returns whether this movement currently ignores obstacles.
+ * \return true if the obstacles are ignored
+ */</doc>
+<use f='codebrowser/src/movements/RelativeMovement.cpp' l='81' u='c' c='_ZN7Solarus16RelativeMovement6updateEv'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/InputEvent.h' l='251' type='bool Solarus::InputEvent::is_with_control() const'/>
+<def f='codebrowser/src/lowlevel/InputEvent.cpp' l='791' ll='795' type='bool Solarus::InputEvent::is_with_control() const'/>
+<doc f='codebrowser/src/lowlevel/InputEvent.cpp' l='783'>/**
+ * \brief Returns whether the CTRL key was pressed
+ * when this keyboard event occured.
+ *
+ * If this is not a keyboard event, false is returned.
+ *
+ * \return true if CTRL was pressed during this keyboard event
+ */</doc>
+<use f='codebrowser/src/lua/LuaContext.cpp' l='1620' u='c' c='_ZN7Solarus10LuaContext14on_key_pressedERKNS_10InputEventE'/>

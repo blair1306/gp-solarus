@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/Sprite.h' l='126' type='int Solarus::Sprite::get_next_frame() const'/>
+<def f='codebrowser/src/Sprite.cpp' l='249' ll='256' type='int Solarus::Sprite::get_next_frame() const'/>
+<use f='codebrowser/src/Sprite.cpp' l='703' u='c' c='_ZN7Solarus6Sprite6updateEv'/>
+<doc f='codebrowser/src/Sprite.cpp' l='244'>/**
+ * \brief Returns the next frame of the current frame.
+ * \return The next frame of the current frame, or -1 if the animation is
+ * finished.
+ */</doc>

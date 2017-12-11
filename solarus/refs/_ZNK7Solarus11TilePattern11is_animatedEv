@@ -1,0 +1,17 @@
+<dec f='codebrowser/include/solarus/entities/TilePattern.h' l='74' type='bool Solarus::TilePattern::is_animated() const'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='76' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<use f='codebrowser/src/entities/NonAnimatedRegions.cpp' l='101' u='c' c='_ZN7Solarus18NonAnimatedRegions5buildERSt6vectorINS_8TileInfoESaIS2_EE'/>
+<ovr f='codebrowser/src/entities/SimpleTilePattern.cpp' l='63' c='_ZNK7Solarus17SimpleTilePattern11is_animatedEv'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='120' u='c' c='_ZNK7Solarus4Tile11is_animatedEv'/>
+<def f='codebrowser/src/entities/TilePattern.cpp' l='125' ll='127' type='bool Solarus::TilePattern::is_animated() const'/>
+<doc f='codebrowser/src/entities/TilePattern.cpp' l='114'>/**
+ * \brief Returns whether this tile pattern is animated, i.e. not always drawn
+ * the same way.
+ *
+ * Non-animated tiles may be rendered faster by using intermediate surfaces
+ * that are drawn only once.
+ * This function should return false if the tile pattern is always drawn the same way.
+ * Returns true by default.
+ *
+ * \return true if this tile pattern is animated
+ */</doc>

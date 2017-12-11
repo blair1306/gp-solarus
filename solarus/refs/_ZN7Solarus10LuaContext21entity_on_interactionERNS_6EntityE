@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='382' type='bool Solarus::LuaContext::entity_on_interaction(Solarus::Entity &amp; entity)'/>
+<use f='codebrowser/src/entities/CustomEntity.cpp' l='1154' u='c' c='_ZN7Solarus12CustomEntity29notify_action_command_pressedEv'/>
+<use f='codebrowser/src/entities/Npc.cpp' l='316' u='c' c='_ZN7Solarus3Npc28call_script_hero_interactionEv'/>
+<def f='codebrowser/src/lua/EntityApi.cpp' l='5913' ll='5924' type='bool Solarus::LuaContext::entity_on_interaction(Solarus::Entity &amp; entity)'/>
+<doc f='codebrowser/src/lua/EntityApi.cpp' l='5905'>/**
+ * \brief Calls the on_interaction() method of a Lua map entity.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param entity A map entity.
+ * \return \c true if an interaction occurred.
+ */</doc>

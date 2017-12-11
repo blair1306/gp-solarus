@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lowlevel/Sound.h' l='66' type='static bool Solarus::Sound::exists(const std::string &amp; sound_id)'/>
+<use f='codebrowser/src/entities/Stairs.cpp' l='223' u='c' c='_ZNK7Solarus6Stairs10play_soundENS0_3WayE'/>
+<use f='codebrowser/src/hero/SpinAttackState.cpp' l='165' u='c' c='_ZN7Solarus4Hero15SpinAttackState22play_spin_attack_soundEv'/>
+<use f='codebrowser/src/hero/SwordLoadingState.cpp' l='206' u='c' c='_ZN7Solarus4Hero17SwordLoadingState15play_load_soundEv'/>
+<def f='codebrowser/src/lowlevel/Sound.cpp' l='281' ll='286' type='static bool Solarus::Sound::exists(const std::string &amp; sound_id)'/>
+<doc f='codebrowser/src/lowlevel/Sound.cpp' l='276'>/**
+ * \brief Returns whether a sound exists.
+ * \param sound_id id of the sound to test
+ * \return true if the sound exists
+ */</doc>
+<use f='codebrowser/src/lua/AudioApi.cpp' l='95' u='c' c='_ZN7Solarus10LuaContext20audio_api_play_soundEP9lua_State'/>

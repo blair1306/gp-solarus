@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/entities/Entity.h' l='257' type='double Solarus::Entity::get_angle(int x, int y) const'/>
+<def f='codebrowser/src/entities/Entity.cpp' l='2847' ll='2849' type='double Solarus::Entity::get_angle(int x, int y) const'/>
+<doc f='codebrowser/src/entities/Entity.cpp' l='2840'>/**
+ * \brief Returns the angle of the vector between the origin of this entity
+ * and a point.
+ * \param x X coordinate of the point.
+ * \param y Y coordinate of the point.
+ * \return The angle of the vector in radians, between 0 and Geometry::TWO_PI.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1271' u='c' c='_ZN7Solarus10LuaContext20entity_api_get_angleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1296' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction4_toEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1327' u='c' c='_ZN7Solarus10LuaContext28entity_api_get_direction8_toEP9lua_State'/>

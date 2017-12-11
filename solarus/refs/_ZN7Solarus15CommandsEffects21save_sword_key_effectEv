@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/CommandsEffects.h' l='97' type='void Solarus::CommandsEffects::save_sword_key_effect()'/>
+<def f='codebrowser/src/CommandsEffects.cpp' l='182' ll='184' type='void Solarus::CommandsEffects::save_sword_key_effect()'/>
+<doc f='codebrowser/src/CommandsEffects.cpp' l='177'>/**
+ * \brief Saves the current effect of the sword key.
+ *
+ * Call restore_sword_key_effect to restore the sword key saved here.
+ */</doc>
+<use f='codebrowser/src/DialogBoxSystem.cpp' l='104' u='c' c='_ZN7Solarus15DialogBoxSystem4openERKSsRKNS_12ScopedLuaRefES5_'/>
+<use f='codebrowser/src/Game.cpp' l='835' u='c' c='_ZN7Solarus4Game10set_pausedEb'/>

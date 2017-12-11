@@ -1,0 +1,22 @@
+<inh f='codebrowser/include/solarus/hero/PlayerMovementState.h' l='39' c='Solarus::Hero::PlayerMovementState'/>
+<def f='codebrowser/include/solarus/hero/SwimmingState.h' l='28' ll='57'/>
+<size>96</size>
+<doc f='codebrowser/include/solarus/hero/SwimmingState.h' l='25'>/**
+ * \brief The state &quot;Swimming&quot; of the hero.
+ */</doc>
+<fun r='_ZN7Solarus4Hero13SwimmingStateC1ERS0_'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState5startEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState4stopEPKNS_6Entity5StateE'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState6updateEv'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState13set_suspendedEb'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState21set_animation_stoppedEv'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState21set_animation_walkingEv'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState29notify_action_command_pressedEv'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState29notify_attack_command_pressedEv'/>
+<fun r='_ZNK7Solarus4Hero13SwimmingState18is_stairs_obstacleERKNS_6StairsE'/>
+<fun r='_ZNK7Solarus4Hero13SwimmingState17can_pick_treasureERNS_13EquipmentItemE'/>
+<fun r='_ZNK7Solarus4Hero13SwimmingState23get_slow_swimming_speedEv'/>
+<fun r='_ZNK7Solarus4Hero13SwimmingState23get_fast_swimming_speedEv'/>
+<fun r='_ZN7Solarus4Hero13SwimmingState15try_swim_fasterEv'/>
+<mbr r='Solarus::Hero::SwimmingState::fast_swimming' o='672' t='bool'/>
+<mbr r='Solarus::Hero::SwimmingState::end_fast_swim_date' o='704' t='uint32_t'/>

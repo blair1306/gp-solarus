@@ -1,0 +1,27 @@
+<dec f='codebrowser/include/solarus/lua/LuaTools.h' l='103' type='int Solarus::LuaTools::opt_int(lua_State * l, int index, int default_value)'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='138' u='c' c='_ZN7Solarus10LuaContext17drawable_api_drawEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='139' u='c' c='_ZN7Solarus10LuaContext17drawable_api_drawEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='163' u='c' c='_ZN7Solarus10LuaContext24drawable_api_draw_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/DrawableApi.cpp' l='164' u='c' c='_ZN7Solarus10LuaContext24drawable_api_draw_regionEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1207' u='c' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1208' u='c' c='_ZN7Solarus10LuaContext19entity_api_overlapsEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1620' u='c' c='_ZN7Solarus10LuaContext25entity_api_test_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='1621' u='c' c='_ZN7Solarus10LuaContext25entity_api_test_obstaclesEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2140' u='c' c='_ZN7Solarus10LuaContext21hero_api_set_blinkingEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2178' u='c' c='_ZN7Solarus10LuaContext23hero_api_set_invincibleEP9lua_State'/>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2307' u='c' c='_ZN7Solarus10LuaContext23hero_api_start_treasureEP9lua_State'/>
+<def f='codebrowser/src/lua/LuaTools.cpp' l='316' ll='325' type='int Solarus::LuaTools::opt_int(lua_State * l, int index, int default_value)'/>
+<use f='codebrowser/src/lua/LuaTools.cpp' l='932' u='c' c='_ZN7Solarus8LuaTools11check_colorEP9lua_Statei'/>
+<doc f='codebrowser/src/lua/LuaTools.cpp' l='305'>/**
+ * \brief Like LuaTools::check_int() but with a default value.
+ *
+ * This function acts like luaL_optint() except that it throws a LuaException
+ * in case of error.
+ *
+ * \param l A Lua state.
+ * \param index Index of a value in the stack.
+ * \param default_value The default value to return if the value is \c nil.
+ * \return The wanted value as an integer.
+ */</doc>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1417' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_centerEP9lua_State'/>
+<use f='codebrowser/src/lua/MovementApi.cpp' l='1418' u='c' c='_ZN7Solarus10LuaContext30circle_movement_api_set_centerEP9lua_State'/>

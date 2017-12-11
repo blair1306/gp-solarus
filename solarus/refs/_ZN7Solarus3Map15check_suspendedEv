@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Map.h' l='173' type='void Solarus::Map::check_suspended()'/>
+<use f='codebrowser/src/Game.cpp' l='643' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<use f='codebrowser/src/Game.cpp' l='651' u='c' c='_ZN7Solarus4Game15set_current_mapERKSsS2_NS_10Transition5StyleE'/>
+<use f='codebrowser/src/Game.cpp' l='936' u='c' c='_ZN7Solarus4Game14stop_game_overEv'/>
+<use f='codebrowser/src/Map.cpp' l='480' u='c' c='_ZN7Solarus3Map6updateEv'/>
+<def f='codebrowser/src/Map.cpp' l='503' ll='509' type='void Solarus::Map::check_suspended()'/>
+<use f='codebrowser/src/Map.cpp' l='738' u='c' c='_ZN7Solarus3Map34notify_opening_transition_finishedEv'/>
+<doc f='codebrowser/src/Map.cpp' l='496'>/**
+ * \brief Checks whether the game has just been suspended or resumed
+ * and notifies the map elements when this is the case.
+ *
+ * This function is called at each cycle while this map is active,
+ * but you may want to call it more often in specific situations if you cannot wait.
+ */</doc>

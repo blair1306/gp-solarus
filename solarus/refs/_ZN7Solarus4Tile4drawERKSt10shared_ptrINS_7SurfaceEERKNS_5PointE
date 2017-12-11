@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/Tile.h' l='56' type='void Solarus::Tile::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; viewport)'/>
+<use f='codebrowser/src/entities/Tile.cpp' l='68' u='c' c='_ZN7Solarus4Tile11draw_on_mapEv'/>
+<def f='codebrowser/src/entities/Tile.cpp' l='77' ll='92' type='void Solarus::Tile::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; viewport)'/>
+<doc f='codebrowser/src/entities/Tile.cpp' l='71'>/**
+ * \brief Draws the tile on the specified surface.
+ * \param dst_surface the destination surface
+ * \param viewport coordinates of the top-left corner of dst_surface
+ * relative to the map
+ */</doc>

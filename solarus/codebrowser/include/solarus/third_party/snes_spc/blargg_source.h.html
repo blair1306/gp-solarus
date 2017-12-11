@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>blargg_source.h source code [codebrowser/include/solarus/third_party/snes_spc/blargg_source.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/include/solarus/third_party/snes_spc/blargg_source.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>include</a>/<a href='../..'>solarus</a>/<a href='..'>third_party</a>/<a href='./'>snes_spc</a>/<a href='blargg_source.h.html'>blargg_source.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Included at the beginning of library source files, after all other #include lines.</i></td></tr>
+<tr><th id="2">2</th><td><i>Sets up helpful macros and services used in my source code. They don't need</i></td></tr>
+<tr><th id="3">3</th><td><i>module an annoying module prefix on their names since they are defined after</i></td></tr>
+<tr><th id="4">4</th><td><i>all other #include lines. */</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i>// snes_spc 0.9.0</i></td></tr>
+<tr><th id="7">7</th><td><u>#<span data-ppcond="7">ifndef</span> <span class="macro" data-ref="_M/BLARGG_SOURCE_H">BLARGG_SOURCE_H</span></u></td></tr>
+<tr><th id="8">8</th><td><u>#define <dfn class="macro" id="_M/BLARGG_SOURCE_H" data-ref="_M/BLARGG_SOURCE_H">BLARGG_SOURCE_H</dfn></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><i>// If debugging is enabled, abort program if expr is false. Meant for checking</i></td></tr>
+<tr><th id="11">11</th><td><i>// internal state and consistency. A failed assertion indicates a bug in the module.</i></td></tr>
+<tr><th id="12">12</th><td><i>// void assert( bool expr );</i></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../../../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><i>// If debugging is enabled and expr is false, abort program. Meant for checking</i></td></tr>
+<tr><th id="16">16</th><td><i>// caller-supplied parameters and operations that are outside the control of the</i></td></tr>
+<tr><th id="17">17</th><td><i>// module. A failed requirement indicates a bug outside the module.</i></td></tr>
+<tr><th id="18">18</th><td><i>// void require( bool expr );</i></td></tr>
+<tr><th id="19">19</th><td><u>#undef <span class="macro" data-ref="_M/require">require</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/require" data-ref="_M/require">require</dfn>( expr ) assert( expr )</u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>// Like printf() except output goes to debug log file. Might be defined to do</i></td></tr>
+<tr><th id="23">23</th><td><i>// nothing (not even evaluate its arguments).</i></td></tr>
+<tr><th id="24">24</th><td><i>// void dprintf( const char* format, ... );</i></td></tr>
+<tr><th id="25">25</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="_ZL15blargg_dprintf_PKcz" title='blargg_dprintf_' data-ref="_ZL15blargg_dprintf_PKcz">blargg_dprintf_</dfn>( <em>const</em> <em>char</em>*, ... ) { }</td></tr>
+<tr><th id="26">26</th><td><u>#undef <span class="macro" data-ref="_M/dprintf">dprintf</span></u></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/dprintf" data-ref="_M/dprintf">dprintf</dfn> (1) ? (void) 0 : blargg_dprintf_</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i>// If enabled, evaluate expr and if false, make debug log entry with source file</i></td></tr>
+<tr><th id="30">30</th><td><i>// and line. Meant for finding situations that should be examined further, but that</i></td></tr>
+<tr><th id="31">31</th><td><i>// don't indicate a problem. In all cases, execution continues normally.</i></td></tr>
+<tr><th id="32">32</th><td><u>#undef <span class="macro" data-ref="_M/check">check</span></u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/check" data-ref="_M/check">check</dfn>( expr ) ((void) 0)</u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i>// If expr yields error string, return it from current function, otherwise continue.</i></td></tr>
+<tr><th id="36">36</th><td><u>#undef <span class="macro" data-ref="_M/RETURN_ERR">RETURN_ERR</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/RETURN_ERR" data-ref="_M/RETURN_ERR">RETURN_ERR</dfn>( expr ) do {                         \</u></td></tr>
+<tr><th id="38">38</th><td><u>		blargg_err_t blargg_return_err_ = (expr);               \</u></td></tr>
+<tr><th id="39">39</th><td><u>		if ( blargg_return_err_ ) return blargg_return_err_;    \</u></td></tr>
+<tr><th id="40">40</th><td><u>	} while ( 0 )</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i>// If ptr is 0, return out of memory error string.</i></td></tr>
+<tr><th id="43">43</th><td><u>#undef <span class="macro" data-ref="_M/CHECK_ALLOC">CHECK_ALLOC</span></u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/CHECK_ALLOC" data-ref="_M/CHECK_ALLOC">CHECK_ALLOC</dfn>( ptr ) do { if ( (ptr) == 0 ) return "Out of memory"; } while ( 0 )</u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i>// Avoid any macros which evaluate their arguments multiple times</i></td></tr>
+<tr><th id="47">47</th><td><u>#undef <span class="macro" data-ref="_M/min">min</span></u></td></tr>
+<tr><th id="48">48</th><td><u>#undef <span class="macro" data-ref="_M/max">max</span></u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/DEF_MIN_MAX" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</dfn>( type ) \</u></td></tr>
+<tr><th id="51">51</th><td><u>	static inline type <dfn class="decl def" id="_ZL3minii" title='min' data-ref="_ZL3minii"><dfn class="decl def" id="_ZL3minjj" title='min' data-ref="_ZL3minjj"><dfn class="decl def" id="_ZL3minll" title='min' data-ref="_ZL3minll"><dfn class="decl def" id="_ZL3minmm" title='min' data-ref="_ZL3minmm"><dfn class="decl def" id="_ZL3minff" title='min' data-ref="_ZL3minff"><dfn class="decl def" id="_ZL3mindd" title='min' data-ref="_ZL3mindd">min</dfn></dfn></dfn></dfn></dfn></dfn>( type <dfn class="local col3 decl" id="93x" title='x' data-type='int' data-ref="93x"><dfn class="local col7 decl" id="97x" title='x' data-type='unsigned int' data-ref="97x"><dfn class="local col1 decl" id="101x" title='x' data-type='long' data-ref="101x"><dfn class="local col5 decl" id="105x" title='x' data-type='unsigned long' data-ref="105x"><dfn class="local col9 decl" id="109x" title='x' data-type='float' data-ref="109x"><dfn class="local col3 decl" id="113x" title='x' data-type='double' data-ref="113x">x</dfn></dfn></dfn></dfn></dfn></dfn>, type <dfn class="local col4 decl" id="94y" title='y' data-type='int' data-ref="94y"><dfn class="local col8 decl" id="98y" title='y' data-type='unsigned int' data-ref="98y"><dfn class="local col2 decl" id="102y" title='y' data-type='long' data-ref="102y"><dfn class="local col6 decl" id="106y" title='y' data-type='unsigned long' data-ref="106y"><dfn class="local col0 decl" id="110y" title='y' data-type='float' data-ref="110y"><dfn class="local col4 decl" id="114y" title='y' data-type='double' data-ref="114y">y</dfn></dfn></dfn></dfn></dfn></dfn> ) { if ( <a class="local col3 ref" href="#54" title='x' data-ref="93x"><a class="local col7 ref" href="#55" title='x' data-ref="97x"><a class="local col1 ref" href="#56" title='x' data-ref="101x"><a class="local col5 ref" href="#57" title='x' data-ref="105x"><a class="local col9 ref" href="#58" title='x' data-ref="109x"><a class="local col3 ref" href="#59" title='x' data-ref="113x">x</a></a></a></a></a></a> &lt; <a class="local col4 ref" href="#54" title='y' data-ref="94y"><a class="local col8 ref" href="#55" title='y' data-ref="98y"><a class="local col2 ref" href="#56" title='y' data-ref="102y"><a class="local col6 ref" href="#57" title='y' data-ref="106y"><a class="local col0 ref" href="#58" title='y' data-ref="110y"><a class="local col4 ref" href="#59" title='y' data-ref="114y">y</a></a></a></a></a></a> ) return <a class="local col3 ref" href="#54" title='x' data-ref="93x"><a class="local col7 ref" href="#55" title='x' data-ref="97x"><a class="local col1 ref" href="#56" title='x' data-ref="101x"><a class="local col5 ref" href="#57" title='x' data-ref="105x"><a class="local col9 ref" href="#58" title='x' data-ref="109x"><a class="local col3 ref" href="#59" title='x' data-ref="113x">x</a></a></a></a></a></a>; return <a class="local col4 ref" href="#54" title='y' data-ref="94y"><a class="local col8 ref" href="#55" title='y' data-ref="98y"><a class="local col2 ref" href="#56" title='y' data-ref="102y"><a class="local col6 ref" href="#57" title='y' data-ref="106y"><a class="local col0 ref" href="#58" title='y' data-ref="110y"><a class="local col4 ref" href="#59" title='y' data-ref="114y">y</a></a></a></a></a></a>; }\</u></td></tr>
+<tr><th id="52">52</th><td><u>	static inline type <dfn class="decl def" id="_ZL3maxii" title='max' data-ref="_ZL3maxii"><dfn class="decl def" id="_ZL3maxjj" title='max' data-ref="_ZL3maxjj"><dfn class="decl def" id="_ZL3maxll" title='max' data-ref="_ZL3maxll"><dfn class="decl def" id="_ZL3maxmm" title='max' data-ref="_ZL3maxmm"><dfn class="decl def" id="_ZL3maxff" title='max' data-ref="_ZL3maxff"><dfn class="decl def" id="_ZL3maxdd" title='max' data-ref="_ZL3maxdd">max</dfn></dfn></dfn></dfn></dfn></dfn>( type <dfn class="local col5 decl" id="95x" title='x' data-type='int' data-ref="95x"><dfn class="local col9 decl" id="99x" title='x' data-type='unsigned int' data-ref="99x"><dfn class="local col3 decl" id="103x" title='x' data-type='long' data-ref="103x"><dfn class="local col7 decl" id="107x" title='x' data-type='unsigned long' data-ref="107x"><dfn class="local col1 decl" id="111x" title='x' data-type='float' data-ref="111x"><dfn class="local col5 decl" id="115x" title='x' data-type='double' data-ref="115x">x</dfn></dfn></dfn></dfn></dfn></dfn>, type <dfn class="local col6 decl" id="96y" title='y' data-type='int' data-ref="96y"><dfn class="local col0 decl" id="100y" title='y' data-type='unsigned int' data-ref="100y"><dfn class="local col4 decl" id="104y" title='y' data-type='long' data-ref="104y"><dfn class="local col8 decl" id="108y" title='y' data-type='unsigned long' data-ref="108y"><dfn class="local col2 decl" id="112y" title='y' data-type='float' data-ref="112y"><dfn class="local col6 decl" id="116y" title='y' data-type='double' data-ref="116y">y</dfn></dfn></dfn></dfn></dfn></dfn> ) { if ( <a class="local col6 ref" href="#54" title='y' data-ref="96y"><a class="local col0 ref" href="#55" title='y' data-ref="100y"><a class="local col4 ref" href="#56" title='y' data-ref="104y"><a class="local col8 ref" href="#57" title='y' data-ref="108y"><a class="local col2 ref" href="#58" title='y' data-ref="112y"><a class="local col6 ref" href="#59" title='y' data-ref="116y">y</a></a></a></a></a></a> &lt; <a class="local col5 ref" href="#54" title='x' data-ref="95x"><a class="local col9 ref" href="#55" title='x' data-ref="99x"><a class="local col3 ref" href="#56" title='x' data-ref="103x"><a class="local col7 ref" href="#57" title='x' data-ref="107x"><a class="local col1 ref" href="#58" title='x' data-ref="111x"><a class="local col5 ref" href="#59" title='x' data-ref="115x">x</a></a></a></a></a></a> ) return <a class="local col5 ref" href="#54" title='x' data-ref="95x"><a class="local col9 ref" href="#55" title='x' data-ref="99x"><a class="local col3 ref" href="#56" title='x' data-ref="103x"><a class="local col7 ref" href="#57" title='x' data-ref="107x"><a class="local col1 ref" href="#58" title='x' data-ref="111x"><a class="local col5 ref" href="#59" title='x' data-ref="115x">x</a></a></a></a></a></a>; return <a class="local col6 ref" href="#54" title='y' data-ref="96y"><a class="local col0 ref" href="#55" title='y' data-ref="100y"><a class="local col4 ref" href="#56" title='y' data-ref="104y"><a class="local col8 ref" href="#57" title='y' data-ref="108y"><a class="local col2 ref" href="#58" title='y' data-ref="112y"><a class="local col6 ref" href="#59" title='y' data-ref="116y">y</a></a></a></a></a></a>; }</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><a class="macro" href="#50" title="static inline int min( int x, int y ) { if ( x &lt; y ) return x; return y; } static inline int max( int x, int y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>int</em> )</td></tr>
+<tr><th id="55">55</th><td><a class="macro" href="#50" title="static inline unsigned min( unsigned x, unsigned y ) { if ( x &lt; y ) return x; return y; } static inline unsigned max( unsigned x, unsigned y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>unsigned</em> )</td></tr>
+<tr><th id="56">56</th><td><a class="macro" href="#50" title="static inline long min( long x, long y ) { if ( x &lt; y ) return x; return y; } static inline long max( long x, long y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>long</em> )</td></tr>
+<tr><th id="57">57</th><td><a class="macro" href="#50" title="static inline unsigned long min( unsigned long x, unsigned long y ) { if ( x &lt; y ) return x; return y; } static inline unsigned long max( unsigned long x, unsigned long y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>unsigned</em> <em>long</em> )</td></tr>
+<tr><th id="58">58</th><td><a class="macro" href="#50" title="static inline float min( float x, float y ) { if ( x &lt; y ) return x; return y; } static inline float max( float x, float y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>float</em> )</td></tr>
+<tr><th id="59">59</th><td><a class="macro" href="#50" title="static inline double min( double x, double y ) { if ( x &lt; y ) return x; return y; } static inline double max( double x, double y ) { if ( y &lt; x ) return x; return y; }" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a>( <em>double</em> )</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#undef <a class="macro" href="#50" data-ref="_M/DEF_MIN_MAX">DEF_MIN_MAX</a></u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/*</i></td></tr>
+<tr><th id="64">64</th><td><i>// using const references generates crappy code, and I am currenly only using these</i></td></tr>
+<tr><th id="65">65</th><td><i>// for built-in types, so they take arguments by value</i></td></tr>
+<tr><th id="66">66</th><td><i></i></td></tr>
+<tr><th id="67">67</th><td><i>// TODO: remove</i></td></tr>
+<tr><th id="68">68</th><td><i>inline int min( int x, int y )</i></td></tr>
+<tr><th id="69">69</th><td><i>template&lt;class T&gt;</i></td></tr>
+<tr><th id="70">70</th><td><i>inline T min( T x, T y )</i></td></tr>
+<tr><th id="71">71</th><td><i>{</i></td></tr>
+<tr><th id="72">72</th><td><i>	if ( x &lt; y )</i></td></tr>
+<tr><th id="73">73</th><td><i>		return x;</i></td></tr>
+<tr><th id="74">74</th><td><i>	return y;</i></td></tr>
+<tr><th id="75">75</th><td><i>}</i></td></tr>
+<tr><th id="76">76</th><td><i></i></td></tr>
+<tr><th id="77">77</th><td><i>template&lt;class T&gt;</i></td></tr>
+<tr><th id="78">78</th><td><i>inline T max( T x, T y )</i></td></tr>
+<tr><th id="79">79</th><td><i>{</i></td></tr>
+<tr><th id="80">80</th><td><i>	if ( x &lt; y )</i></td></tr>
+<tr><th id="81">81</th><td><i>		return y;</i></td></tr>
+<tr><th id="82">82</th><td><i>	return x;</i></td></tr>
+<tr><th id="83">83</th><td><i>}</i></td></tr>
+<tr><th id="84">84</th><td><i>*/</i></td></tr>
+<tr><th id="85">85</th><td><i></i></td></tr>
+<tr><th id="86">86</th><td><i>// TODO: good idea? bad idea?</i></td></tr>
+<tr><th id="87">87</th><td><u>#undef <span class="macro" data-ref="_M/byte">byte</span></u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/byte" data-ref="_M/byte">byte</dfn> <dfn class="typedef" id="byte_" title='byte_' data-type='unsigned char' data-ref="byte_">byte_</dfn></u></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <em>unsigned</em> <em>char</em> <a class="macro" href="#88" title="byte_" data-ref="_M/byte">byte</a>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i>// deprecated</i></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/BLARGG_CHECK_ALLOC" data-ref="_M/BLARGG_CHECK_ALLOC">BLARGG_CHECK_ALLOC</dfn> CHECK_ALLOC</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/BLARGG_RETURN_ERR" data-ref="_M/BLARGG_RETURN_ERR">BLARGG_RETURN_ERR</dfn> RETURN_ERR</u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i>// BLARGG_SOURCE_BEGIN: If defined, #included, allowing redefition of dprintf and check</i></td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="96">ifdef</span> <span class="macro" data-ref="_M/BLARGG_SOURCE_BEGIN">BLARGG_SOURCE_BEGIN</span></u></td></tr>
+<tr><th id="97">97</th><td>	<u>#include BLARGG_SOURCE_BEGIN</u></td></tr>
+<tr><th id="98">98</th><td><u>#<span data-ppcond="96">endif</span></u></td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><u>#<span data-ppcond="7">endif</span></u></td></tr>
+<tr><th id="101">101</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../../src/third_party/snes_spc/SNES_SPC.cpp.html'>codebrowser/src/third_party/snes_spc/SNES_SPC.cpp</a><br/>Generated on <em>2017-Dec-11</em> from project codebrowser revision <em>v1.4.2-993-gb4d35c8</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

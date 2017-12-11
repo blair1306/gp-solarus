@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/movements/RandomMovement.h' l='40' type='void Solarus::RandomMovement::update()'/>
+<inh f='codebrowser/include/solarus/movements/StraightMovement.h' l='39' c='_ZN7Solarus16StraightMovement6updateEv'/>
+<def f='codebrowser/src/movements/RandomMovement.cpp' l='144' ll='156' type='void Solarus::RandomMovement::update()'/>
+<doc f='codebrowser/src/movements/RandomMovement.cpp' l='137'>/**
+ * \brief Updates the random movement.
+ *
+ * This function is called repeatedly by the map.
+ * This is a redefinition of Movement::update()
+ * to change the direction sometimes.
+ */</doc>

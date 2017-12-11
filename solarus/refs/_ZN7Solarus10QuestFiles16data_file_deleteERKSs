@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/lowlevel/QuestFiles.h' l='78' type='bool Solarus::QuestFiles::data_file_delete(const std::string &amp; file_name)'/>
+<def f='codebrowser/src/lowlevel/QuestFiles.cpp' l='346' ll='353' type='bool Solarus::QuestFiles::data_file_delete(const std::string &amp; file_name)'/>
+<doc f='codebrowser/src/lowlevel/QuestFiles.cpp' l='340'>/**
+ * \brief Removes a file from the write directory.
+ * \param file_name Name of the file to delete, relative to the Solarus
+ * write directory.
+ * \return \c true in case of success.
+ */</doc>
+<use f='codebrowser/src/lua/FileApi.cpp' l='158' u='c' c='_ZN7Solarus10LuaContext15file_api_removeEP9lua_State'/>
+<use f='codebrowser/src/lua/GameApi.cpp' l='189' u='c' c='_ZN7Solarus10LuaContext15game_api_deleteEP9lua_State'/>

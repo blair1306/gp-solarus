@@ -1,0 +1,12 @@
+<dec f='include/SDL2/SDL_haptic.h' l='1007' type='int SDL_HapticNewEffect(SDL_Haptic * haptic, SDL_HapticEffect * effect)'/>
+<doc f='include/SDL2/SDL_haptic.h' l='996'>/**
+ *  \brief Creates a new haptic effect on the device.
+ *
+ *  \param haptic Haptic device to create the effect on.
+ *  \param effect Properties of the effect to create.
+ *  \return The id of the effect on success or -1 on error.
+ *
+ *  \sa SDL_HapticUpdateEffect
+ *  \sa SDL_HapticRunEffect
+ *  \sa SDL_HapticDestroyEffect
+ */</doc>

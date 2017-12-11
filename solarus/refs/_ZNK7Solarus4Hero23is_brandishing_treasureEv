@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='243' type='bool Solarus::Hero::is_brandishing_treasure() const'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='2333' ll='2336' type='bool Solarus::Hero::is_brandishing_treasure() const'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='2329'>/**
+ * \brief Returns whether the hero is brandishing a treasure.
+ * \return \c true if the hero is brandishing a treasure.
+ */</doc>
+<use f='codebrowser/src/lua/EntityApi.cpp' l='2548' u='c' c='_ZN7Solarus10LuaContext28l_treasure_brandish_finishedEP9lua_State'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Pickable.h' l='84' type='void Solarus::Pickable::update()'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='356' c='_ZN7Solarus6Entity6updateEv'/>
+<def f='codebrowser/src/entities/Pickable.cpp' l='523' ll='578' type='void Solarus::Pickable::update()'/>
+<doc f='codebrowser/src/entities/Pickable.cpp' l='516'>/**
+ * \brief Updates the pickable item.
+ *
+ * This function is called repeatedly by the map.
+ * This is a redefinition of Entity::update() to make
+ * the item blink and then disappear after an amount of time.
+ */</doc>

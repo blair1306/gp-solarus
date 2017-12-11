@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='559' type='static int Solarus::LuaContext::surface_api_get_pixels(lua_State * )'/>
+<use f='codebrowser/src/lua/SurfaceApi.cpp' l='49' u='r' c='_ZN7Solarus10LuaContext23register_surface_moduleEv'/>
+<def f='codebrowser/src/lua/SurfaceApi.cpp' l='244' ll='253' type='static int Solarus::LuaContext::surface_api_get_pixels(lua_State * l)'/>
+<doc f='codebrowser/src/lua/SurfaceApi.cpp' l='239'>/**
+ * \brief Implementation of surface:get_pixels().
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='131' type='void Solarus::Entity::State::notify_grabbed_entity_collision()'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='1012' ll='1013' type='void Solarus::Entity::State::notify_grabbed_entity_collision()'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='1008'>/**
+ * \brief Notifies the entity that the entity he is pushing or pulling in this state
+ * cannot move anymore because of a collision.
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1971' u='c' c='_ZN7Solarus4Hero31notify_grabbed_entity_collisionEv'/>
+<ovr f='codebrowser/src/hero/PullingState.cpp' l='135' c='_ZN7Solarus4Hero12PullingState31notify_grabbed_entity_collisionEv'/>
+<ovr f='codebrowser/src/hero/PushingState.cpp' l='145' c='_ZN7Solarus4Hero12PushingState31notify_grabbed_entity_collisionEv'/>

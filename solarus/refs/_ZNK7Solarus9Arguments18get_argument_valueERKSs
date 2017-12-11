@@ -1,0 +1,14 @@
+<dec f='codebrowser/include/solarus/Arguments.h' l='44' type='std::string Solarus::Arguments::get_argument_value(const std::string &amp; key) const'/>
+<def f='codebrowser/src/Arguments.cpp' l='86' ll='96' type='std::string Solarus::Arguments::get_argument_value(const std::string &amp; key) const'/>
+<doc f='codebrowser/src/Arguments.cpp' l='80'>/**
+ * \brief If there is an argument of the form \c key=value, returns the value.
+ * \param key The key to look for.
+ * \return The value that was passed for this key, or an empty string if
+ * no such argument was passed.
+ */</doc>
+<use f='codebrowser/src/MainLoop.cpp' l='132' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/MainLoop.cpp' l='137' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/MainLoop.cpp' l='178' u='c' c='_ZN7Solarus8MainLoopC1ERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='264' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/src/lowlevel/Video.cpp' l='278' u='c' c='_ZN7Solarus5Video10initializeERKNS_9ArgumentsE'/>
+<use f='codebrowser/tests/src/tests/RunLuaTest.cpp' l='31' u='c' c='main'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/Hero.h' l='87' type='void Solarus::Hero::rebuild_equipment()'/>
+<use f='codebrowser/src/Equipment.cpp' l='615' u='c' c='_ZN7Solarus9Equipment11set_abilityENS_7AbilityEi'/>
+<def f='codebrowser/src/entities/Hero.cpp' l='481' ll='484' type='void Solarus::Hero::rebuild_equipment()'/>
+<doc f='codebrowser/src/entities/Hero.cpp' l='474'>/**
+ * \brief Loads (or reloads) the sprites and sounds of the hero and his equipment.
+ *
+ * The sprites and sounds depend on its tunic, sword and shield as specified in the savegame.
+ * This function must be called at the game beginning
+ * and as soon as the hero&apos;s equipment is changed.
+ */</doc>

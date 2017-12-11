@@ -1,0 +1,9 @@
+<dec f='codebrowser/include/solarus/EquipmentItem.h' l='68' type='const std::string &amp; Solarus::EquipmentItem::get_sound_when_picked() const'/>
+<def f='codebrowser/src/EquipmentItem.cpp' l='235' ll='237' type='const std::string &amp; Solarus::EquipmentItem::get_sound_when_picked() const'/>
+<doc f='codebrowser/src/EquipmentItem.cpp' l='230'>/**
+ * \brief Returns the sound to play when this item is picked on the ground.
+ * \return The sound to play when this item is picked
+ * or an empty string.
+ */</doc>
+<use f='codebrowser/src/entities/Pickable.cpp' l='442' u='c' c='_ZN7Solarus8Pickable23try_give_item_to_playerEv'/>
+<use f='codebrowser/src/lua/ItemApi.cpp' l='448' u='c' c='_ZN7Solarus10LuaContext30item_api_get_sound_when_pickedEP9lua_State'/>

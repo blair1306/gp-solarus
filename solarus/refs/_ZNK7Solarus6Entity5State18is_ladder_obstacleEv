@@ -1,0 +1,10 @@
+<dec f='codebrowser/include/solarus/entities/EntityState.h' l='99' type='bool Solarus::Entity::State::is_ladder_obstacle() const'/>
+<def f='codebrowser/src/entities/EntityState.cpp' l='686' ll='688' type='bool Solarus::Entity::State::is_ladder_obstacle() const'/>
+<doc f='codebrowser/src/entities/EntityState.cpp' l='679'>/**
+ * \brief Returns whether a ladder is considered as an obstacle in this state.
+ *
+ * Returns false by default.
+ *
+ * \return true if the ladders are considered as obstacles in this state
+ */</doc>
+<use f='codebrowser/src/entities/Hero.cpp' l='1462' u='c' c='_ZNK7Solarus4Hero18is_ladder_obstacleEv'/>

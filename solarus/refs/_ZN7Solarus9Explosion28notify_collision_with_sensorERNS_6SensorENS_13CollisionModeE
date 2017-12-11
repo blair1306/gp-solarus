@@ -1,0 +1,8 @@
+<dec f='codebrowser/include/solarus/entities/Explosion.h' l='55' type='void Solarus::Explosion::notify_collision_with_sensor(Solarus::Sensor &amp; sensor, Solarus::CollisionMode collision_mode)'/>
+<inh f='codebrowser/include/solarus/entities/Entity.h' l='304' c='_ZN7Solarus6Entity28notify_collision_with_sensorERNS_6SensorENS_13CollisionModeE'/>
+<def f='codebrowser/src/entities/Explosion.cpp' l='125' ll='130' type='void Solarus::Explosion::notify_collision_with_sensor(Solarus::Sensor &amp; sensor, Solarus::CollisionMode collision_mode)'/>
+<doc f='codebrowser/src/entities/Explosion.cpp' l='120'>/**
+ * \brief This function is called when a sensor detects a collision with this entity.
+ * \param sensor a sensor
+ * \param collision_mode the collision mode that detected the collision
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/SDL2/SDL_keyboard.h' l='207' type='SDL_bool SDL_IsScreenKeyboardShown(SDL_Window * window)'/>
+<doc f='include/SDL2/SDL_keyboard.h' l='198'>/**
+ *  \brief Returns whether the screen keyboard is shown for given window.
+ *
+ *  \param window The window for which screen keyboard should be queried.
+ *
+ *  \return SDL_TRUE if screen keyboard is shown else SDL_FALSE.
+ *
+ *  \sa SDL_HasScreenKeyboardSupport()
+ */</doc>

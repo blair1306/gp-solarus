@@ -1,0 +1,12 @@
+<dec f='codebrowser/include/solarus/Savegame.h' l='145' type='static int Solarus::Savegame::l_newindex(lua_State * l)'/>
+<use f='codebrowser/src/Savegame.cpp' l='217' u='r' c='_ZN7Solarus8Savegame16import_from_fileEv'/>
+<def f='codebrowser/src/Savegame.cpp' l='250' ll='279' type='static int Solarus::Savegame::l_newindex(lua_State * l)'/>
+<doc f='codebrowser/src/Savegame.cpp' l='241'>/**
+ * \brief __newindex function of the environment of the savegame file.
+ *
+ * This special __newindex function catches declaration of global variables
+ * to store them into the savegame.
+ *
+ * \param l The Lua context that is calling this function.
+ * \return Number of values to return to Lua.
+ */</doc>

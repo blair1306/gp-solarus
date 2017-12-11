@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/entities/ParallaxScrollingTilePattern.h' l='45' type='void Solarus::ParallaxScrollingTilePattern::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position, const Solarus::Tileset &amp; tileset, const Solarus::Point &amp; viewport) const'/>
+<inh f='codebrowser/include/solarus/entities/SimpleTilePattern.h' l='38' c='_ZNK7Solarus17SimpleTilePattern4drawERKSt10shared_ptrINS_7SurfaceEERKNS_5PointERKNS_7TilesetES8_'/>
+<def f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='43' ll='55' type='void Solarus::ParallaxScrollingTilePattern::draw(const SurfacePtr &amp; dst_surface, const Solarus::Point &amp; dst_position, const Solarus::Tileset &amp; tileset, const Solarus::Point &amp; viewport) const'/>
+<doc f='codebrowser/src/entities/ParallaxScrollingTilePattern.cpp' l='35'>/**
+ * \brief Draws the tile image on a surface.
+ * \param dst_surface the surface to draw
+ * \param dst_position position where tile pattern should be drawn on dst_surface
+ * \param tileset the tileset of this tile
+ * \param viewport coordinates of the top-left corner of dst_surface relative
+ * to the map (may be used for scrolling tiles)
+ */</doc>

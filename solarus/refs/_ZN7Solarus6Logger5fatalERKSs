@@ -1,0 +1,7 @@
+<dec f='codebrowser/include/solarus/lowlevel/Logger.h' l='42' type='void Solarus::Logger::fatal(const std::string &amp; message)'/>
+<use f='codebrowser/src/lowlevel/Debug.cpp' l='126' u='c' c='_ZN7Solarus5Debug3dieERKSs'/>
+<def f='codebrowser/src/lowlevel/Logger.cpp' l='104' ll='109' type='void Solarus::Logger::fatal(const std::string &amp; message)'/>
+<doc f='codebrowser/src/lowlevel/Logger.cpp' l='100'>/**
+ * \brief Logs a fatal error message on stdout and error.txt.
+ * \param message The message to log.
+ */</doc>

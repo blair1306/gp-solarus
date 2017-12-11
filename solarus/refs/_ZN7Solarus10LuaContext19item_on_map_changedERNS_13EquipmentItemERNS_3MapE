@@ -1,0 +1,11 @@
+<dec f='codebrowser/include/solarus/lua/LuaContext.h' l='321' type='void Solarus::LuaContext::item_on_map_changed(Solarus::EquipmentItem &amp; item, Solarus::Map &amp; map)'/>
+<use f='codebrowser/src/EquipmentItem.cpp' l='334' u='c' c='_ZN7Solarus13EquipmentItem18notify_map_changedERNS_3MapE'/>
+<def f='codebrowser/src/lua/ItemApi.cpp' l='861' ll='870' type='void Solarus::LuaContext::item_on_map_changed(Solarus::EquipmentItem &amp; item, Solarus::Map &amp; map)'/>
+<doc f='codebrowser/src/lua/ItemApi.cpp' l='853'>/**
+ * \brief Calls the on_map_changed() method of a Lua equipment item.
+ *
+ * Does nothing if the method is not defined.
+ *
+ * \param item An equipment item.
+ * \param map A map.
+ */</doc>

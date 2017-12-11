@@ -1,0 +1,10 @@
+<dec f='codebrowser/gui/include/solarus/gui/quests_view.h' l='53' type='int SolarusGui::QuestsView::get_selected_index() const'/>
+<use f='codebrowser/gui/src/main_window.cpp' l='306' u='c' c='_ZN10SolarusGui10MainWindow32on_action_remove_quest_triggeredEv'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='114' u='c' c='_ZNK10SolarusGui10QuestsView29get_selected_quest_propertiesEv'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='137' u='c' c='_ZNK10SolarusGui10QuestsView17get_selected_logoEv'/>
+<def f='codebrowser/gui/src/quests_view.cpp' l='158' ll='165' type='int SolarusGui::QuestsView::get_selected_index() const'/>
+<use f='codebrowser/gui/src/quests_view.cpp' l='173' u='c' c='_ZNK10SolarusGui10QuestsView17get_selected_pathEv'/>
+<doc f='codebrowser/gui/src/quests_view.cpp' l='154'>/**
+ * @brief Returns the index of the currently selected quest.
+ * @return Return current index, or -1 if no quest is selected.
+ */</doc>

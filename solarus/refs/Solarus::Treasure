@@ -1,0 +1,34 @@
+<def f='codebrowser/include/solarus/Treasure.h' l='45' ll='76'/>
+<size>32</size>
+<doc f='codebrowser/include/solarus/Treasure.h' l='31'>/**
+ * \brief Represents an item that the hero brandishes when he receives it.
+ *
+ * Treasures include all items the hero can get in chest, buy in a shop,
+ * pick on the ground or get from scripts (e.g. when talking to an NPC).
+ *
+ * A treasure is represented as the following values:
+ * - the item name: a string identifying the nature of the treasure,
+ * - the variant: an integer indicating the variant of this item (some items
+ * may have several variants),
+ * - a savegame variable: name of the saved boolean variable that indicates
+ * whether the player has found this treasure (or an empty string if the treasure
+ * is not saved).
+ */</doc>
+<fun r='_ZN7Solarus8TreasureC1ERNS_4GameERKSsiS4_'/>
+<fun r='_ZNK7Solarus8Treasure8get_gameEv'/>
+<fun r='_ZNK7Solarus8Treasure8get_itemEv'/>
+<fun r='_ZNK7Solarus8Treasure13get_item_nameEv'/>
+<fun r='_ZNK7Solarus8Treasure11get_variantEv'/>
+<fun r='_ZNK7Solarus8Treasure21get_savegame_variableEv'/>
+<fun r='_ZNK7Solarus8Treasure8is_savedEv'/>
+<fun r='_ZNK7Solarus8Treasure8is_emptyEv'/>
+<fun r='_ZNK7Solarus8Treasure13is_obtainableEv'/>
+<fun r='_ZN7Solarus8Treasure17ensure_obtainableEv'/>
+<fun r='_ZNK7Solarus8Treasure16check_obtainableEv'/>
+<fun r='_ZNK7Solarus8Treasure14give_to_playerEv'/>
+<fun r='_ZNK7Solarus8Treasure8is_foundEv'/>
+<fun r='_ZNK7Solarus8Treasure13create_spriteEv'/>
+<mbr r='Solarus::Treasure::game' o='0' t='Solarus::Game *'/>
+<mbr r='Solarus::Treasure::item_name' o='64' t='std::string'/>
+<mbr r='Solarus::Treasure::variant' o='128' t='int'/>
+<mbr r='Solarus::Treasure::savegame_variable' o='192' t='std::string'/>
